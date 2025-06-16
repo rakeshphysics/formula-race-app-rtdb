@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "86034567867",
+    "firebase_url": "https://formularaceapp-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "formularaceapp",
+    "storage_bucket": "formularaceapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86034567867:android:eaa88391338bd32e6d0f9e",
+        "android_client_info": {
+          "package_name": "com.example.formula_race_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVBt-dWJRu2vFWPYewd4r5DQVrqFjThgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

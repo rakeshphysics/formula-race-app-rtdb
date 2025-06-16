@@ -1,0 +1,47 @@
+[
+  {
+    "question": "What is the key formula from Waves - Q1?",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "answer": "Option A",
+    "tags": {
+      "chapter": "Waves",
+      "difficulty": "Easy",
+      "class": "11"
+    }
+  },
+  {
+    "question": "What is the key formula from Waves - Q2?",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "answer": "Option A",
+    "tags": {
+      "chapter": "Waves",
+      "difficulty": "Easy",
+      "class": "11"
+    }
+  },
+  {
+    "question": "What is the key formula from Waves - Q3?",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "answer": "Option A",
+    "tags": {
+      "chapter": "Waves",
+      "difficulty": "Easy",
+      "class": "11"
+    }
+  }
+]

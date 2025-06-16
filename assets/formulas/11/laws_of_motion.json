@@ -1,0 +1,47 @@
+[
+  {
+    "question": "What is the key formula from Laws of Motion - Q1?",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "answer": "Option A",
+    "tags": {
+      "chapter": "Laws of Motion",
+      "difficulty": "Easy",
+      "class": "11"
+    }
+  },
+  {
+    "question": "What is the key formula from Laws of Motion - Q2?",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "answer": "Option A",
+    "tags": {
+      "chapter": "Laws of Motion",
+      "difficulty": "Easy",
+      "class": "11"
+    }
+  },
+  {
+    "question": "What is the key formula from Laws of Motion - Q3?",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "answer": "Option A",
+    "tags": {
+      "chapter": "Laws of Motion",
+      "difficulty": "Easy",
+      "class": "11"
+    }
+  }
+]

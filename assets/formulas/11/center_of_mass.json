@@ -1,0 +1,47 @@
+[
+  {
+    "question": "What is the key formula from Center of Mass - Q1?",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "answer": "Option A",
+    "tags": {
+      "chapter": "Center of Mass",
+      "difficulty": "Easy",
+      "class": "11"
+    }
+  },
+  {
+    "question": "What is the key formula from Center of Mass - Q2?",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "answer": "Option A",
+    "tags": {
+      "chapter": "Center of Mass",
+      "difficulty": "Easy",
+      "class": "11"
+    }
+  },
+  {
+    "question": "What is the key formula from Center of Mass - Q3?",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "answer": "Option A",
+    "tags": {
+      "chapter": "Center of Mass",
+      "difficulty": "Easy",
+      "class": "11"
+    }
+  }
+]

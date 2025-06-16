@@ -1,0 +1,73 @@
+name: formula_race_app
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  shared_preferences: ^2.2.2
+
+  flutter_math_fork:
+    path: flutter_math_fork
+  audioplayers: ^5.2.0
+  flutter_svg: ^2.0.0+1
+  cupertino_icons: ^1.0.8
+  firebase_core: ^2.30.0
+  firebase_database: ^10.4.0
+  cloud_firestore: ^4.17.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+
+    - assets/sounds/correct.mp3
+    - assets/sounds/wrong.mp3
+    - assets/formulas/batch1.json
+    - assets/logo.png
+    # Class 11
+    - assets/formulas/11/units_and_dimensions.json
+    - assets/formulas/11/kinematics.json
+    - assets/formulas/11/laws_of_motion.json
+    - assets/formulas/11/work_power_energy.json
+    - assets/formulas/11/center_of_mass.json
+    - assets/formulas/11/rotational_motion.json
+    - assets/formulas/11/gravitation.json
+    - assets/formulas/11/mechanical_properties_of_solids.json
+    - assets/formulas/11/mechanical_properties_of_fluids.json
+    - assets/formulas/11/thermodynamics.json
+    - assets/formulas/11/kinetic_theory.json
+    - assets/formulas/11/oscillations.json
+    - assets/formulas/11/waves.json
+
+    # Class 12
+    - assets/formulas/12/electrostatics.json
+    - assets/formulas/12/current_electricity.json
+    - assets/formulas/12/magnetism.json
+    - assets/formulas/12/electromagnetic_induction.json
+    - assets/formulas/12/alternating_current.json
+    - assets/formulas/12/electromagnetic_waves.json
+    - assets/formulas/12/ray_optics.json
+    - assets/formulas/12/wave_optics.json
+    - assets/formulas/12/dual_nature_of_matter.json
+    - assets/formulas/12/atoms.json
+    - assets/formulas/12/nuclei.json
+    - assets/formulas/12/semiconductors.json
+
+dependency_overrides:
+  path_drawing: ^1.0.1

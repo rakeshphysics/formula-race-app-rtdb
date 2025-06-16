@@ -1,0 +1,47 @@
+[
+  {
+    "question": "What is the key formula from Wave Optics - Q1?",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "answer": "Option A",
+    "tags": {
+      "chapter": "Wave Optics",
+      "difficulty": "Easy",
+      "class": "12"
+    }
+  },
+  {
+    "question": "What is the key formula from Wave Optics - Q2?",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "answer": "Option A",
+    "tags": {
+      "chapter": "Wave Optics",
+      "difficulty": "Easy",
+      "class": "12"
+    }
+  },
+  {
+    "question": "What is the key formula from Wave Optics - Q3?",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "answer": "Option A",
+    "tags": {
+      "chapter": "Wave Optics",
+      "difficulty": "Easy",
+      "class": "12"
+    }
+  }
+]

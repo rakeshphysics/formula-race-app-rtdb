@@ -1,0 +1,47 @@
+[
+  {
+    "question": "What is the key formula from Thermodynamics - Q1?",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "answer": "Option A",
+    "tags": {
+      "chapter": "Thermodynamics",
+      "difficulty": "Easy",
+      "class": "11"
+    }
+  },
+  {
+    "question": "What is the key formula from Thermodynamics - Q2?",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "answer": "Option A",
+    "tags": {
+      "chapter": "Thermodynamics",
+      "difficulty": "Easy",
+      "class": "11"
+    }
+  },
+  {
+    "question": "What is the key formula from Thermodynamics - Q3?",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "answer": "Option A",
+    "tags": {
+      "chapter": "Thermodynamics",
+      "difficulty": "Easy",
+      "class": "11"
+    }
+  }
+]
