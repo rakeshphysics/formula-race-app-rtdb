@@ -189,17 +189,17 @@ class _AnimatedButtonState extends State<AnimatedButton> {
               color: Colors.black,
               borderRadius: BorderRadius.circular(4),
             ),
-            child: ElevatedButton(
-              onPressed: widget.onPressed,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.transparent,
-                shadowColor: Colors.transparent,
-                padding: EdgeInsets.zero,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(4),
-                ),
+            child: Material(
+              color: Colors.transparent,
+              borderRadius: BorderRadius.circular(4),
+              child: InkWell(
+                splashColor: Colors.grey.withOpacity(0.3),
+                highlightColor: Colors.grey.withOpacity(0.1),
+                splashFactory: InkRipple.splashFactory,
+                borderRadius: BorderRadius.circular(4),
+                onTap: widget.onPressed,
+                child: Center(child: widget.child),
               ),
-              child: widget.child,
             ),
           ),
         ),
