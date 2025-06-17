@@ -7,6 +7,8 @@
 
 import 'package:flutter/material.dart';
 import 'solo_screen.dart';  // Make sure your SoloScreen accepts selectedChapter param
+import 'solo_mode_selection_screen.dart';
+
 
 class ChapterSelectionScreen extends StatelessWidget {
   // You can customize this list with your real chapter names
@@ -45,7 +47,17 @@ class ChapterSelectionScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return WillPopScope(
+        onWillPop: () async {
+      await Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => SoloModeSelectionScreen()),
+      );
+      return false;
+    },
+
+
+  child: Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
         title: const Text('Select Chapter', style: TextStyle(fontSize:20,color: Colors.white)),
@@ -86,6 +98,6 @@ class ChapterSelectionScreen extends StatelessWidget {
           );
         }).toList(),
       ),
-    );
+    ));
   }
-}
+  }

@@ -67,7 +67,7 @@ class HomeScreen extends StatelessWidget {
                         children: const [
                           Text(
                             'My Mistakes',
-                              style: TextStyle(fontSize: 20, fontWeight:FontWeight.normal, color:Colors.redAccent)
+                              style: TextStyle(fontSize: 17, fontWeight:FontWeight.normal, color:Colors.redAccent)
                           ),
 
                         ],
