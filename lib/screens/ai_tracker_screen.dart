@@ -112,7 +112,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                 final resolvedCount = await Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (_) => SoloScreen(mode: 'mistake'),
+                    builder: (_) => SoloScreen(selectedChapter: 'mistake'),
                   ),
                 );
 

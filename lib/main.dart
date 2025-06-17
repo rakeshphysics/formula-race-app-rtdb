@@ -38,7 +38,7 @@ class FormulaRaceApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const SplashScreen(),
-        '/clear_mistakes': (context) => const SoloScreen(mode: 'mistake'), // ✅ Add this route
+        '/clear_mistakes': (context) => const SoloScreen(selectedChapter: 'mistake'), // ✅ Add this route
       },
     );
   }

@@ -105,7 +105,7 @@ class SoloModeSelectionScreen extends StatelessWidget {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => SoloScreen(mode: mode),
+        builder: (context) => SoloScreen(selectedChapter: mode),
       ),
     );
   }

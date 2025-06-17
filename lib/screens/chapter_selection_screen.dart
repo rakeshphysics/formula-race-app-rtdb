@@ -63,7 +63,7 @@ class ChapterSelectionScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => SoloScreen(mode: 'chapter', chapter: chapter),
+                    builder: (context) => SoloScreen(selectedChapter: chapter),
                   ),
                 );
               },
