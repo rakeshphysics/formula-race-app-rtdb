@@ -96,7 +96,7 @@ class HomeScreen extends StatelessWidget {
                       },
                       child: const Text(
                         'Solo Play',
-                        style: TextStyle(fontSize: 26, color: Colors.white),
+                        style: TextStyle(fontSize: 26, color: Colors.white,fontWeight: FontWeight.normal),
                       ),
                     ),
 
@@ -117,7 +117,7 @@ class HomeScreen extends StatelessWidget {
                         children: const [
                           Text(
                             'Online Play',
-                            style: TextStyle(fontSize: 26, color: Colors.white),
+                            style: TextStyle(fontSize: 26, color: Colors.white,fontWeight: FontWeight.normal),
                           ),
                           SizedBox(height: 4),
                           Text(
@@ -183,7 +183,7 @@ class _AnimatedButtonState extends State<AnimatedButton> {
         child: CustomPaint(
           painter: GradientBorderPainter(),
           child: Container(
-            width: widget.screenWidth * 0.6,
+            width: widget.screenWidth * 0.7,
             height: widget.screenHeight * 0.07,
             decoration: BoxDecoration(
               color: Colors.black,

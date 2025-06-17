@@ -15,7 +15,8 @@ import '../../models/incorrect_answer_model.dart';
 import '../../screens/result_screen.dart';
 import '../../widgets/formula_option_button.dart';
 import 'package:audioplayers/audioplayers.dart';
-import '../../services/mistake_tracker_service.dart'; // ADD THIS IMPORT
+import '../../services/mistake_tracker_service.dart';
+import 'solo_mode_selection_screen.dart';// ADD THIS IMPORT
 
 // ............. Chunk 1 SOLO SCREEN WIDGET .............
 const Map<String, String> chapterToClass = {
@@ -371,11 +372,78 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       shuffledOptions.shuffle();
     }
 
-    return Scaffold(
-      backgroundColor: Colors.black,
-      appBar: AppBar(
+    return WillPopScope(
+      onWillPop: () async {
+        _progressController.stop(); // pause timer
+
+        final shouldExit = await showDialog<bool>(
+          context: context,
+          builder: (context) => AlertDialog(shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(4),
+          ),
+            backgroundColor: Colors.grey[800],
+            title: const Text(
+              'Exit Solo Play?',textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white),
+            ),
+
+            actions: [
+              TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.black,
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(4),
+                  ),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                ),
+                onPressed: () => Navigator.of(context).pop(false),
+                child: const Text(
+                  'Cancel',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+              ),
+              TextButton(style: TextButton.styleFrom(
+                backgroundColor: Colors.black,
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              ),
+                onPressed: () => Navigator.of(context).pop(true),
+                child: const Text(
+                  'Exit',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.normal),
+                ),
+              ),
+            ],
+          ),
+        );
+
+        if (shouldExit ?? false) {
+          await Future.delayed(const Duration(milliseconds: 350));
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => const SoloModeSelectionScreen()),
+          );
+          return false; // prevent default back
+        }
+
+        _progressController.forward(); // resume timer
+        return false; // also handle null or cancel case
+      },
+      child: Scaffold(
         backgroundColor: Colors.black,
-        title: const Text('Solo Play', style: TextStyle(color: Colors.white)),
+        appBar: AppBar(
+            backgroundColor: Colors.black,
+            title: const Text('Solo Play',
+                style: TextStyle(color: Colors.white)),
         iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: Padding(
@@ -430,8 +498,9 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
             }).toList(),
           ],
         ),
-      ),
-    );
+      ), // Padding
+      ), // Scaffold
+    ); // WillPopScope
   }
 }
 ///Push1

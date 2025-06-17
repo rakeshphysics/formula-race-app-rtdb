@@ -48,8 +48,8 @@ class SoloModeSelectionScreen extends StatelessWidget {
             // -------------------- CHUNK 4 — BUTTONS -----------------
          GlowButtonCyan(
               label: 'Chapter Wise',
-              width: screenWidth * 0.65,
-              height: screenHeight * 0.07,
+              width: screenWidth * 0.8,
+              height: screenHeight * 0.08,
               onPressed: () {
                 Navigator.push(
                   context,
@@ -65,8 +65,8 @@ class SoloModeSelectionScreen extends StatelessWidget {
 
             GlowButtonCyan(
               label: 'Full 11th',
-              width: screenWidth * 0.65,
-              height: screenHeight * 0.07,
+              width: screenWidth * 0.8,
+              height: screenHeight * 0.08,
               onPressed: () {
                 _startSoloGame(context, 'full11');
               },
@@ -76,8 +76,8 @@ class SoloModeSelectionScreen extends StatelessWidget {
 
             GlowButtonCyan(
               label: 'Full 12th',
-              width: screenWidth * 0.65,
-              height: screenHeight * 0.07,
+              width: screenWidth * 0.8,
+              height: screenHeight * 0.08,
               onPressed: () {
                 _startSoloGame(context, 'full12');
               },
@@ -87,8 +87,8 @@ class SoloModeSelectionScreen extends StatelessWidget {
 
             GlowButtonCyan(
               label: '11th + 12th',
-              width: screenWidth * 0.65,
-              height: screenHeight * 0.07,
+              width: screenWidth * 0.8,
+              height: screenHeight * 0.08,
               onPressed: () {
                 _startSoloGame(context, 'fullBoth');
               },
