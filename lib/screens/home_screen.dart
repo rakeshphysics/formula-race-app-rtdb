@@ -186,7 +186,7 @@ class _AnimatedButtonState extends State<AnimatedButton> {
             width: widget.screenWidth * 0.6,
             height: widget.screenHeight * 0.07,
             decoration: BoxDecoration(
-              color: Colors.grey[900],
+              color: Colors.black,
               borderRadius: BorderRadius.circular(4),
             ),
             child: ElevatedButton(

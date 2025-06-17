@@ -113,7 +113,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 
       List<String> fullChapters = [];
 
-      if (widget.selectedChapter == 'full11') {
+     if (widget.selectedChapter == 'full11') {
         fullChapters = [
           'Units and Dimensions',
           'Kinematics',
@@ -129,7 +129,8 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'Oscillations',
           'Waves',
         ];
-      } else if (widget.selectedChapter == 'full12') {
+      }
+    else if (widget.selectedChapter == 'full12') {
         fullChapters = [
           'Electrostatics',
           'Current Electricity',
@@ -224,6 +225,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     allQuestions.shuffle();
     setState(() {
       questions = allQuestions.take(totalQuestions).toList();
+
     });
 
     _progressController.reset();
@@ -260,6 +262,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       userId: 'test_user',
         questionData: questions[currentIndex],
       );
+      //print('Mistake saved for question: ${questions[currentIndex]['question']}');
 
     } else {
       // User skipped → count as wrong
@@ -276,6 +279,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
         userId: 'test_user',
         questionData: questions[currentIndex],
       );
+      //print('Mistake saved for question: ${questions[currentIndex]['question']}');
     }
 
     responses.add({
@@ -312,14 +316,14 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   // ............. Chunk 5 OPTION COLOR LOGIC .............
   Color getOptionColor(String option) {
     if (selectedOption == null) {
-      return Colors.grey.shade800;
+      return Colors.black;
     } else {
       if (option == questions[currentIndex]['answer']) {
         return Colors.green;
       } else if (option == selectedOption) {
         return Colors.red;
       } else {
-        return Colors.grey.shade800;
+        return Colors.black;
       }
     }
   }

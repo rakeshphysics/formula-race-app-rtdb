@@ -33,7 +33,8 @@ class MistakeTrackerService {
     try {
       final dir = await getApplicationDocumentsDirectory();
       final file = File('${dir.path}/mistake_tracker.json');
-     // print('Saving mistake to: ${file.path}');
+
+     //print('Saving mistake to: ${file.path}');
 
       List<Map<String, dynamic>> mistakes = [];
       if (await file.exists()) {
@@ -84,4 +85,39 @@ class MistakeTrackerService {
     String key = (questionData['question'] ?? '') + '|' + (questionData['answer'] ?? '');
     return key.hashCode.toString();
   }
+
+
+// -------------------- CHUNK 6 — GET MISTAKE QUESTIONS -----------------
+  static Future<List<Map<String, dynamic>>> loadMistakesFromLocal() async {
+    try {
+      final dir = await getApplicationDocumentsDirectory();
+      final file = File('${dir.path}/mistake_tracker.json');
+
+      if (await file.exists()) {
+        final content = await file.readAsString();
+        return List<Map<String, dynamic>>.from(jsonDecode(content));
+      } else {
+        return [];
+      }
+    } catch (e) {
+      return [];
+    }
+  }
+  //...................JUST DEBUG.............DELETE LATER.........................................................
+  static Future<void> printAllMistakes() async {
+    try {
+      final dir = await getApplicationDocumentsDirectory();
+      final file = File('${dir.path}/mistake_tracker.json');
+
+      if (await file.exists()) {
+        final content = await file.readAsString();
+        print('Full mistake_tracker.json content:\n$content');
+      } else {
+        print('mistake_tracker.json file does not exist.');
+      }
+    } catch (e) {
+      print('Error reading mistake_tracker.json: $e');
+    }
+  }
+//...................JUST DEBUG.............DELETE LATER.........................................................
 }

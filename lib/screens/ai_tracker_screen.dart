@@ -7,10 +7,12 @@
 // -------------------------------------------------------------
 
 // -------------------- CHUNK 1 — IMPORT -----------------------
-import 'solo_screen.dart';
+//import 'solo_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
+import 'clear_mistakes_screen.dart'; // instead of solo_screen.dart
+
 
 // -------------------- CHUNK 2 — CLASS HEADER -----------------
 class AITrackerScreen extends StatefulWidget {
@@ -112,7 +114,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                 final resolvedCount = await Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (_) => SoloScreen(selectedChapter: 'mistake'),
+                    builder: (_) => const ClearMistakesScreen(),
                   ),
                 );
 
