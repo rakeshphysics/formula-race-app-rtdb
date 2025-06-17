@@ -11,6 +11,7 @@ import 'package:flutter/material.dart';
 import 'solo_screen.dart'; // import your SoloScreen
 import 'chapter_selection_screen.dart';
 import '../widgets/glow_button_cyan.dart';
+import 'home_screen.dart';
 
 
 // -------------------- CHUNK 2 — CLASS HEADER -----------------
@@ -21,16 +22,17 @@ class SoloModeSelectionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Screen size → consistent with HomeScreen
-    final screenHeight = MediaQuery
-        .of(context)
-        .size
-        .height;
-    final screenWidth = MediaQuery
-        .of(context)
-        .size
-        .width;
+    final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
 
-    return Scaffold(
+    return WillPopScope(
+        onWillPop: () async {
+      await Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()),
+      );
+      return false;
+    },
+
+    child: Scaffold(
       backgroundColor: Colors.black, // DARK THEME
 
       appBar: AppBar(
@@ -97,7 +99,7 @@ class SoloModeSelectionScreen extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ));
   }
 
   // -------------------- CHUNK 5 — START SOLO GAME -----------------
