@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:formula_race_app/services/matchmaking_service.dart';
 import 'package:formula_race_app/screens/online_game_screen.dart';
+import 'home_screen.dart';
 
 class OnlinePlayScreen extends StatefulWidget {
   const OnlinePlayScreen({Key? key}) : super(key: key);
@@ -44,7 +45,14 @@ class _OnlinePlayScreenState extends State<OnlinePlayScreen> {
       barrierDismissible: false,
       builder: (context) {
         dialogContext = context;
-        return AlertDialog(
+        return WillPopScope(
+            onWillPop: () async {
+          await Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()),
+          );
+          return false;
+        },
+
+        child: AlertDialog(
           title: const Text('Searching for Opponent...'),
           content: Column(
             mainAxisSize: MainAxisSize.min,
@@ -59,7 +67,7 @@ class _OnlinePlayScreenState extends State<OnlinePlayScreen> {
               ),
             ],
           ),
-        );
+        ));
       },
     );
 
