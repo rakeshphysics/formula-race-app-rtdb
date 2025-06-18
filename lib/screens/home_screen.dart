@@ -54,10 +54,10 @@ class HomeScreen extends StatelessWidget {
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.grey[850],
+                        backgroundColor: Colors.black,
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(4)
+                          borderRadius: BorderRadius.circular(4),side: BorderSide(color: Colors.red, width: 1.2),
 
                         ),
                         elevation: 4,
