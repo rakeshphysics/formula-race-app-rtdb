@@ -100,7 +100,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
         title: const Text('My Mistakes', style: TextStyle(fontSize:20,color: Colors.black)),
         iconTheme: const IconThemeData(color: Colors.white),
         actions: [
-          if (totalActiveMistakes >= 5)
+          if (totalActiveMistakes >= 1)
             TextButton(
               onPressed: () async {
                 final resolvedCount = await Navigator.push(

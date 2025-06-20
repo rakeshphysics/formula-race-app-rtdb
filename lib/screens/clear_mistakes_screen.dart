@@ -21,7 +21,7 @@ class ClearMistakesScreen extends StatefulWidget {
 }
 
 class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTickerProviderStateMixin {
-  final int totalQuestions = 5;
+  //final int totalQuestions = 5;
 
   List<Map<String, dynamic>> questions = [];
   int currentIndex = 0;
@@ -67,9 +67,28 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
     }
     all.shuffle();
     setState(() {
-      questions = all.take(totalQuestions).toList();
+      questions = all;
+      Future<void> loadMistakes() async {
+        List<Map<String, dynamic>> all = await MistakeTrackerService.loadMistakesFromLocal();
+        print('Loaded ${all.length} mistakes');
+        for (var q in all) {
+          print('Question: ${q['question']}');
+        }
+        all.shuffle();
+        setState(() {
+          questions = all;
+          currentIndex = 0;       // add this
+          selectedOption = null;  // add this
+          shuffledOptions = [];   // add this
+        });
+
+        _progressController.reset();
+        _progressController.forward();
+      }
+      ;
 
     });
+    _progressController.reset();
     _progressController.forward();
   }
 
@@ -98,7 +117,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
       ));
     }
 
-    if (currentIndex < totalQuestions - 1) {
+    if (currentIndex < questions.length - 1) {
       setState(() {
         currentIndex++;
         selectedOption = null;
@@ -146,7 +165,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
-              children: List.generate(totalQuestions, (index) {
+              children: List.generate(questions.length, (index) {
                 double value;
                 if (index < currentIndex) value = 1;
                 else if (index == currentIndex) value = _progressAnimation.value;
@@ -166,7 +185,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
             ),
             const SizedBox(height: 8),
             Text(
-              'Question ${currentIndex + 1} of $totalQuestions',
+              'Question ${currentIndex + 1} of ${questions.length}',
               style: const TextStyle(color: Colors.white, fontSize: 18),
             ),
             const SizedBox(height: 16),
