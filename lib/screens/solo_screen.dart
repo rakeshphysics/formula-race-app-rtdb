@@ -261,12 +261,9 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       // TRACK MISTAKE
       await MistakeTrackerService.trackMistake(
         userId: 'test_user',
-        questionData: {
-          'question': question['question'],
-          'answer': question['answer'],
-          'options': question['options'],
+        questionData: question,
 
-        },
+
       );
       //print('Mistake saved for question: ${questions[currentIndex]['question']}');
 
@@ -287,6 +284,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'question': question['question'],
           'answer': question['answer'],
           'options': question['options'],
+          'chapter': question['tags']?['chapter'] ?? 'Unknown',
 
         },
       );

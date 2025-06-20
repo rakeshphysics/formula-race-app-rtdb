@@ -49,7 +49,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
     Map<String, int> tempChapterTotals = {};
 
     for (var q in all) {
-      String chapter = 'My Mistakes';
+      String chapter = q['tags']?['chapter'] ?? 'Unknown';
 
       tempChapterMistakes.putIfAbsent(chapter, () => []);
       tempChapterMistakes[chapter]!.add({
@@ -175,7 +175,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
 
                 ListTile(
                   title: Text(
-                    '$chapter — $totalMistakes mistakes',
+                    '$chapter — $totalMistakes',
                     style: const TextStyle(fontWeight: FontWeight.normal),
                   ),
                   trailing: Icon(

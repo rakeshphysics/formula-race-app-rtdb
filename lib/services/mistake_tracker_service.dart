@@ -27,14 +27,12 @@ class MistakeTrackerService {
 
       // Prevent duplicates by question text
       if (!mistakes.any((m) => m['question'] == questionData['question'])) {
-        mistakes.add({
-          'question': questionData['question'],
-          'options': questionData['options'],
-          'answer': questionData['answer'],
-        });
+        mistakes.add(questionData);
 
         await file.writeAsString(jsonEncode(mistakes));
         print('✅ Mistake saved: "${questionData['question']}"');
+        print('DEBUG: Full mistakes json = ${jsonEncode(mistakes)}');
+
       } else {
         print('⚠️ Mistake already exists: "${questionData['question']}"');
       }
