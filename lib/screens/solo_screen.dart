@@ -244,10 +244,10 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     if (selected == correctAnswer) {
       score++;
       // TRACK CORRECT
-      MistakeTrackerService.trackCorrect(
-        userId: 'test_user',  // use real userId when ready
-        questionData: questions[currentIndex],
-      );
+     // MistakeTrackerService.trackCorrect(
+        //userId: 'test_user',  // use real userId when ready
+       // questionData: questions[currentIndex],
+      //);
     } else if (selected != '') {
       // User clicked wrong answer
       wrongAnswers.add(
@@ -259,9 +259,14 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       );
 
       // TRACK MISTAKE
-      MistakeTrackerService.trackMistake(
-      userId: 'test_user',
-        questionData: questions[currentIndex],
+      await MistakeTrackerService.trackMistake(
+        userId: 'test_user',
+        questionData: {
+          'question': question['question'],
+          'answer': question['answer'],
+          'options': question['options'],
+
+        },
       );
       //print('Mistake saved for question: ${questions[currentIndex]['question']}');
 
@@ -278,7 +283,12 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       // TRACK MISTAKE
       await MistakeTrackerService.trackMistake(
         userId: 'test_user',
-        questionData: questions[currentIndex],
+        questionData: {
+          'question': question['question'],
+          'answer': question['answer'],
+          'options': question['options'],
+
+        },
       );
       //print('Mistake saved for question: ${questions[currentIndex]['question']}');
     }

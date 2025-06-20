@@ -37,7 +37,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
   @override
   void initState() {
     super.initState();
-    MistakeTrackerService.printAllMistakes();
+                                     MistakeTrackerService.printAllMistakes();
     _progressController = AnimationController(
       vsync: this,
       duration: const Duration(seconds: 7),
@@ -61,10 +61,10 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
 
   Future<void> loadMistakes() async {
     List<Map<String, dynamic>> all = await MistakeTrackerService.loadMistakesFromLocal();
-    //print('Loaded ${all.length} mistakes');
-   // for (var q in all) {
-     // print('Question: ${q['question']}');
-   // }
+    print('Loaded ${all.length} mistakes');
+   for (var q in all) {
+      print('Question: ${q['question']}');
+    }
     all.shuffle();
     setState(() {
       questions = all.take(totalQuestions).toList();
@@ -79,10 +79,11 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
 
     if (selected == correct) {
       resolvedCount++;
-      await MistakeTrackerService.trackCorrect(
-        userId: 'test_user',
-        questionData: question,
-      );
+      await MistakeTrackerService.removeMistake(question['question']);
+      //await MistakeTrackerService.trackCorrect(
+       // userId: 'test_user',
+        //questionData: question,
+      //);
     } else if (selected != '') {
       wrongAnswers.add(IncorrectAnswer(
         question: question['question'],
@@ -197,9 +198,9 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
                     borderRadius: BorderRadius.circular(12),
                     color: getOptionColor(option),
                   ),
-                  child: Text(
+                  child: Math.tex(
                     option,
-                    style: const TextStyle(color: Colors.white, fontSize: 18),
+                    textStyle: const TextStyle(color: Colors.white, fontSize: 18),
                   ),
                 ),
               );

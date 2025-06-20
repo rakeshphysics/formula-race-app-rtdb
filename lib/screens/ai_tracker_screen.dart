@@ -12,6 +12,8 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'clear_mistakes_screen.dart'; // instead of solo_screen.dart
+import '../../services/mistake_tracker_service.dart';
+
 
 
 // -------------------- CHUNK 2 — CLASS HEADER -----------------
@@ -30,7 +32,6 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
   Map<String, int> chapterTotals = {};
   Map<String, bool> chapterExpanded = {}; // for dropdown state
   bool isLoading = true;
-  List<Map<String, dynamic>> latestMistakeList = [];
 
   @override
   void initState() {
@@ -40,39 +41,29 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
 
   // -------------------- CHUNK 4 — LOAD MISTAKES -----------------
   Future<void> _loadMistakes() async {
-    QuerySnapshot snapshot = await FirebaseFirestore.instance
-        .collection('users')
-        .doc(widget.userId)
-        .collection('weak_areas')
-        .get();
+    List<Map<String, dynamic>> all = await MistakeTrackerService.loadMistakesFromLocal();
+
+    print('Loaded ${all.length} mistakes from local.');
 
     Map<String, List<Map<String, dynamic>>> tempChapterMistakes = {};
     Map<String, int> tempChapterTotals = {};
 
-    for (var doc in snapshot.docs) {
-      int mistakeCount = doc['mistakeCount'] ?? 0;
-      int correctCount = doc['correctCount'] ?? 0;
-      int effectiveMistakeCount = mistakeCount - (correctCount ~/ 2);
+    for (var q in all) {
+      String chapter = 'My Mistakes';
 
-      if (effectiveMistakeCount > 0) {
-        String chapter = doc['chapter'] ?? 'Unknown';
-        String formula = doc['formula'] ?? '';
+      tempChapterMistakes.putIfAbsent(chapter, () => []);
+      tempChapterMistakes[chapter]!.add({
+        'formula': q['question'],
+        'mistakeCount': 1, // since each mistake is one occurrence
+      });
 
-        tempChapterMistakes.putIfAbsent(chapter, () => []);
-        tempChapterMistakes[chapter]!.add({
-          'formula': formula,
-          'mistakeCount': effectiveMistakeCount,
-        });
-
-        tempChapterTotals[chapter] = (tempChapterTotals[chapter] ?? 0) + effectiveMistakeCount;
-      }
+      tempChapterTotals[chapter] = (tempChapterTotals[chapter] ?? 0) + 1;
     }
 
-    // Sort chapters by total mistakes descending.
+    // Sort chapters by total mistakes descending
     List<MapEntry<String, int>> sortedChapters = tempChapterTotals.entries.toList()
       ..sort((a, b) => b.value.compareTo(a.value));
 
-    // Build final maps with sorted order.
     Map<String, List<Map<String, dynamic>>> finalChapterMistakes = {};
     Map<String, int> finalChapterTotals = {};
     Map<String, bool> expandedState = {};
@@ -81,7 +72,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
       String chapter = entry.key;
       finalChapterMistakes[chapter] = tempChapterMistakes[chapter]!;
       finalChapterTotals[chapter] = entry.value;
-      expandedState[chapter] = false; // initially collapsed
+      expandedState[chapter] = false; // collapsed
     }
 
     setState(() {
@@ -91,6 +82,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
       isLoading = false;
     });
   }
+
 
   // -------------------- CHUNK 5 — BUILD FUNCTION -----------------
   @override
@@ -105,7 +97,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: const Text('My Mistakes', style: TextStyle(fontSize:20,color: Colors.white)),
+        title: const Text('My Mistakes', style: TextStyle(fontSize:20,color: Colors.black)),
         iconTheme: const IconThemeData(color: Colors.white),
         actions: [
           if (totalActiveMistakes >= 5)
@@ -145,11 +137,11 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
       ),
       body: isLoading
           ? const Center(child: CircularProgressIndicator())
-          : latestMistakeList.isEmpty && chapterMistakes.isEmpty
+          : chapterMistakes.isEmpty
           ? const Center(
         child: Text(
           'No mistakes to show.',
-          style: TextStyle(fontSize: 20,fontWeight: FontWeight.normal, color: Colors.white),
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal, color: Colors.white),
         ),
       )
           : ListView(
