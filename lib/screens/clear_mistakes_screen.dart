@@ -103,18 +103,6 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
        // userId: 'test_user',
         //questionData: question,
       //);
-    } else if (selected != '') {
-      wrongAnswers.add(IncorrectAnswer(
-        question: question['question'],
-        userAnswer: selected,
-        correctAnswer: correct,
-      ));
-    } else {
-      wrongAnswers.add(IncorrectAnswer(
-        question: question['question'],
-        userAnswer: '(No Answer)',
-        correctAnswer: correct,
-      ));
     }
 
     if (currentIndex < questions.length - 1) {

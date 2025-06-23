@@ -18,17 +18,20 @@ class IncorrectAnswer {
   final String question;
   final String userAnswer;
   final String correctAnswer;
+  String tip;
 
   IncorrectAnswer({
     required this.question,
     required this.userAnswer,
     required this.correctAnswer,
+    required this.tip,
   });
 
   Map<String, dynamic> toJson() => {
     'question': question,
     'userAnswer': userAnswer,
     'correctAnswer': correctAnswer,
+    'tip': tip,
   };
 
   factory IncorrectAnswer.fromJson(Map<String, dynamic> json) {
@@ -36,6 +39,7 @@ class IncorrectAnswer {
       question: json['question'],
       userAnswer: json['userAnswer'],
       correctAnswer: json['correctAnswer'],
+      tip: json['tip'] ?? '',
     );
   }
 }

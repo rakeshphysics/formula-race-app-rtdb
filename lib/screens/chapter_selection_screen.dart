@@ -19,7 +19,7 @@ class ChapterSelectionScreen extends StatelessWidget {
     'Laws of Motion',
     'Work Power Energy',
     'Center of Mass',
-    'Rotation',
+    'Rotational Motion',
     'Gravitation',
     'Mechanical Properties of Solids',
     'Mechanical Properties of Fluids',

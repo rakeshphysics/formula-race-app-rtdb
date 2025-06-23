@@ -1,47 +1,18 @@
 [
   {
-    "question": "What is the key formula from Rotation - Q1?",
+    "question": "\\text{Find the mean poynting vector } \\langle S \\rangle \\text{ of a plane EM wave } \\vec{E} = E_m \\cos(\\omega t - k r) \\text{ if the wave propagates in vacuum }",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{k \\epsilon_0 c^2 E_m^2}{2\\omega}",
+      "\\frac{\\epsilon_0 c^2 E_m}{\\omega k}",
+      "\\frac{c^2 E_m^2}{\\mu_0 \\omega k}",
+      "\\frac{k E_m^2}{2\\omega \\mu_0}"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{k \\epsilon_0 c^2 E_m^2}{2\\omega}",
     "tags": {
-      "chapter": "Rotation",
-      "difficulty": "Easy",
-      "class": "11"
-    }
-  },
-  {
-    "question": "What is the key formula from Rotation - Q2?",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "Option A",
-    "tags": {
-      "chapter": "Rotation",
-      "difficulty": "Easy",
-      "class": "11"
-    }
-  },
-  {
-    "question": "What is the key formula from Rotation - Q3?",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "Option A",
-    "tags": {
-      "chapter": "Rotation",
-      "difficulty": "Easy",
-      "class": "11"
-    }
+      "chapter": "Electromagnetic Waves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "tip": ""
   }
 ]

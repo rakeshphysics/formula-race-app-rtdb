@@ -181,6 +181,61 @@ class ResultScreen extends StatelessWidget {
                               fontSize: 18,
                             ),
                           ),
+                          //.......................Tip Block START................................................
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Q: ${wrongAnswer.question}',
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.normal,
+                                ),
+                              ),
+                              const SizedBox(height: 8),
+                              const Text(
+                                'Your Answer:',
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              Math.tex(
+                                wrongAnswer.userAnswer,
+                                textStyle: const TextStyle(
+                                  color: Color(0xFFDF1B1B), // light red
+                                  fontSize: 18,
+                                ),
+                              ),
+                              const SizedBox(height: 8),
+                              const Text(
+                                'Correct:',
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              Math.tex(
+                                wrongAnswer.correctAnswer,
+                                textStyle: const TextStyle(
+                                  color: Color(0xFFA4FF9D),
+                                  fontSize: 18,
+                                ),
+                              ),
+                              // ........ Tip Block START .........
+                              if (wrongAnswer.tip.isNotEmpty) ...[
+                                const SizedBox(height: 8),
+                                const Text(
+                                  'Tip:',
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                Text(
+                                  wrongAnswer.tip,
+                                  style: const TextStyle(color: Colors.amber, fontSize: 16),
+                                ),
+                              ],
+                              // ........ Tip Block END ...............................
+                            ],
+                          ),
+
+
+
+                          //.......................Tip Block END............................................
                         ],
                       ),
                     );

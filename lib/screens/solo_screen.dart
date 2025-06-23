@@ -79,7 +79,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     super.initState();
     _progressController = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 7), // 7s per segment
+      duration: const Duration(seconds: 1000), // 7s per segment
     );
     _progressAnimation = Tween<double>(begin: 0, end: 1).animate(_progressController);
 
@@ -121,7 +121,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'Laws of Motion',
           'Work Power Energy',
           'Center of Mass',
-          'Rotation',
+          'Rotational Motion',
           'Gravitation',
           'Mechanical Properties of Solids',
           'Mechanical Properties of Fluids',
@@ -154,7 +154,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'Laws of Motion',
           'Work Power Energy',
           'Center of Mass',
-          'Rotation',
+          'Rotational Motion',
           'Gravitation',
           'Mechanical Properties of Solids',
           'Mechanical Properties of Fluids',
@@ -255,6 +255,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           question: question['question'],
           userAnswer: selected,
           correctAnswer: correctAnswer,
+          tip: question['tip'] ?? '',
         ),
       );
 
@@ -274,6 +275,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           question: question['question'],
           userAnswer: '(No Answer)',
           correctAnswer: correctAnswer,
+          tip: question['tip'] ?? '',
         ),
       );
 
@@ -375,6 +377,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 
     final question = questions[currentIndex];
     final List<dynamic> options = question['options'];
+    final String tip = question['tip'] ?? '';//........................TIP ADDED
     if (shuffledOptions.isEmpty) {
       shuffledOptions = List<String>.from(options);
       shuffledOptions.shuffle();
@@ -467,48 +470,63 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
             ),
             const SizedBox(height: 8),
             Text(
-              'Question ${currentIndex + 1} of $totalQuestions',
+              'Q${currentIndex + 1} of $totalQuestions',
               style: const TextStyle(color: Colors.white, fontSize: 18),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 10),
             // Keep the question text as normal Text() for proper rendering
-            Text(
-              question['question'],
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 22,
-                fontWeight: FontWeight.normal,
-              ),
+
+
+        //................DISPLAY QN START...........................
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    // QUESTION
+                    // --- START OF CHANGE ---
+                    Math.tex( // Use Math.tex here
+                      question['question'],
+                      textStyle: const TextStyle(
+                        color: Colors.white, // Keep your desired text color
+                        fontSize: 18,        // Keep your desired font size
+                      ),
+                    ),
+
+                const SizedBox(height: 12), // spacing between Qn and options
+
+                // OPTIONS
+                ...shuffledOptions.map((option) {
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 3.0),
+                    child: FormulaOptionButton(
+                      text: option,
+                      onPressed: selectedOption == null
+                          ? () {
+                        setState(() {
+                          selectedOption = option;
+                        });
+
+                        Future.delayed(const Duration(milliseconds: 700), () {
+                          checkAnswer(option);
+                        });
+                      }
+                          : () {},
+                      color: getOptionColor(option),
+                    ),
+                  );
+                }).toList(),
+              ],
             ),
-            const SizedBox(height: 24),
-            ...shuffledOptions.map((option) {
-              return FormulaOptionButton(
-                text: option,
-                onPressed: selectedOption == null
-                    ? () {
-                  setState(() {
-                    selectedOption = option;
-                  });
-                  // Play sound here only once
-                  if (option == questions[currentIndex]['answer']) {
-                    audioPlayer.play(AssetSource('sounds/correct.mp3'));
-                  } else {
-                    audioPlayer.play(AssetSource('sounds/wrong.mp3'));
-                  }
-                  // Delay before moving to next question
-                  Future.delayed(const Duration(milliseconds: 700), () {
-                    checkAnswer(option);
-                  });
-                }
-                    : () {},
-                color: getOptionColor(option),
-              );
-            }).toList(),
-          ],
+          ),
         ),
-      ), // Padding
-      ), // Scaffold
-    ); // WillPopScope
+
+    ]
+        ),
+    ),
+    ),
+    );// WillPopScope
   }
 }
 ///Push1
