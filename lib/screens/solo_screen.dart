@@ -102,8 +102,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 
   // ............. Chunk 3 LOAD QUESTIONS .............
   Future<void> loadQuestions() async {
-    print('loadQuestions started');
-    print('selectedChapter = ${widget.selectedChapter}');
+
 
     List<Map<String, dynamic>> allQuestions = [];
 
@@ -189,6 +188,10 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           final String data = await rootBundle.loadString(path);
           final List<dynamic> jsonData = json.decode(data);
           allQuestions.addAll(jsonData.cast<Map<String, dynamic>>());
+          print('DEBUG: Loaded ${allQuestions.length} questions');
+          if (allQuestions.isNotEmpty) {
+            print('DEBUG: First question image = ${allQuestions[0]['image']}');
+          }
         } catch (e) {
           print('Error loading $path: $e');
         }
@@ -370,6 +373,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   // ............. Chunk 7 BUILD WIDGET TREE .............
   @override
   Widget build(BuildContext context) {
+    print('DEBUG: Building question index $currentIndex');
     if (questions.isEmpty) {
       return const Scaffold(
         body: Center(child: CircularProgressIndicator()),
@@ -486,7 +490,8 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     // QUESTION
-                    // --- START OF CHANGE ---
+
+                // --- START OF CHANGE ---
                     Html(
                       data: question['question'],
                       style: {
@@ -499,11 +504,22 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                       },
                     ),
 
-                    const SizedBox(height: 12), // spacing between Qn and options
+                    const SizedBox(height: 12),
+
+                    if (question['image'] != "")
+                      Container(
+                        margin: const EdgeInsets.symmetric(vertical: 10),
+                        child: Image.asset(
+                          question['image'],
+                          width: 300,
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                 // spacing between Qn and options
                     // OPTIONS
                 ...shuffledOptions.map((option) {
                   return Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 3.0),
+                    padding: const EdgeInsets.symmetric(vertical: 0.5),
                     child: FormulaOptionButton(
                       text: option,
                       onPressed: selectedOption == null

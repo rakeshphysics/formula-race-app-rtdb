@@ -1,36 +1,20 @@
 [
   {
-    "question":  "The moment of inertia of a rod of mass <i>m</i> and length <i>l</i> about an axis perpendicular to its length and passing through its centre is"
-  ,
-    "options": [
-      "\\frac{m l^2}{3}",
-      "\\frac{m l^2}{12}",
-      "\\frac{m l^2}{4}",
-      "m l^{2}"
-    ],
-    "answer": "\\frac{m l^2}{12}",
-    "tags": {
-      "chapter": "Rotational Motion",
-      "difficulty": "easy",
-      "class": "11"
-    },
-    "tip": ""
+  "id": "Rotational_Motion_qn_001",
+  "question": "The moment of inertia of a point mass <i>m</i> about an axis at a perpendicular distance <i>r</i> from it is",
+  "options": [
+    "mr^2",
+    "\\frac{mr^2}{2}",
+    "\\frac{mr^2}{3}",
+    "2mr^2"
+  ],
+  "answer": "mr^2",
+  "tags": {
+    "chapter": "Rotational_Motion",
+    "difficulty": "easy",
+    "class": "11"
   },
-  {
-    "question":  "The moment of inertia of a rod of mass <i>m</i> and length <i>l</i> about an axis perpendicular to its length and passing through its end is"
-  ,
-    "options": [
-      "\\frac{m l^2}{3}",
-      "\\frac{m l^2}{12}",
-      "\\frac{m l^2}{4}",
-      "m l^{2}"
-    ],
-    "answer": "\\frac{m l^2}{3}",
-    "tags": {
-      "chapter": "Rotational Motion",
-      "difficulty": "easy",
-      "class": "11"
-    },
-    "tip": ""
-  }
+  "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_001.png",
+  "tip": ""
+}
 ]

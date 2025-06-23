@@ -69,6 +69,10 @@ flutter:
     - assets/formulas/12/atoms.json
     - assets/formulas/12/nuclei.json
     - assets/formulas/12/semiconductors.json
+      # images
+
+    - assets/images/11th/Rotational_Motion/
+
 
 dependency_overrides:
   path_drawing: ^1.0.1
