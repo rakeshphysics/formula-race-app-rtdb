@@ -17,7 +17,8 @@ import '../../widgets/formula_option_button.dart';
 import 'package:audioplayers/audioplayers.dart';
 import '../../services/mistake_tracker_service.dart';
 import 'solo_mode_selection_screen.dart';// ADD THIS IMPORT
-
+import 'package:flutter_html/flutter_html.dart';
+import 'package:google_fonts/google_fonts.dart';
 // ............. Chunk 1 SOLO SCREEN WIDGET .............
 const Map<String, String> chapterToClass = {
   "Units and Dimensions": "11",
@@ -79,7 +80,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     super.initState();
     _progressController = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 1000), // 7s per segment
+      duration: const Duration(seconds: 5000), // 7s per segment
     );
     _progressAnimation = Tween<double>(begin: 0, end: 1).animate(_progressController);
 
@@ -486,17 +487,20 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                   children: [
                     // QUESTION
                     // --- START OF CHANGE ---
-                    Math.tex( // Use Math.tex here
-                      question['question'],
-                      textStyle: const TextStyle(
-                        color: Colors.white, // Keep your desired text color
-                        fontSize: 18,        // Keep your desired font size
-                      ),
+                    Html(
+                      data: question['question'],
+                      style: {
+                        "body": Style(
+                          fontSize: FontSize(18),
+                          fontWeight: FontWeight.normal,
+                          color: Colors.white,
+                          fontFamily: GoogleFonts.poppins().fontFamily,   // or GoogleFonts.montserrat()
+                        ),
+                      },
                     ),
 
-                const SizedBox(height: 12), // spacing between Qn and options
-
-                // OPTIONS
+                    const SizedBox(height: 12), // spacing between Qn and options
+                    // OPTIONS
                 ...shuffledOptions.map((option) {
                   return Padding(
                     padding: const EdgeInsets.symmetric(vertical: 3.0),

@@ -1,17 +1,35 @@
 [
   {
-    "question": "\\text{Find the mean poynting vector } \\langle S \\rangle \\text{ of a plane EM wave } \\vec{E} = E_m \\cos(\\omega t - k r) \\text{ if the wave propagates in vacuum }",
+    "question":  "The moment of inertia of a rod of mass <i>m</i> and length <i>l</i> about an axis perpendicular to its length and passing through its centre is"
+  ,
     "options": [
-      "\\frac{k \\epsilon_0 c^2 E_m^2}{2\\omega}",
-      "\\frac{\\epsilon_0 c^2 E_m}{\\omega k}",
-      "\\frac{c^2 E_m^2}{\\mu_0 \\omega k}",
-      "\\frac{k E_m^2}{2\\omega \\mu_0}"
+      "\\frac{m l^2}{3}",
+      "\\frac{m l^2}{12}",
+      "\\frac{m l^2}{4}",
+      "m l^{2}"
     ],
-    "answer": "\\frac{k \\epsilon_0 c^2 E_m^2}{2\\omega}",
+    "answer": "\\frac{m l^2}{12}",
     "tags": {
-      "chapter": "Electromagnetic Waves",
-      "difficulty": "medium",
-      "class": "12"
+      "chapter": "Rotational Motion",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "tip": ""
+  },
+  {
+    "question":  "The moment of inertia of a rod of mass <i>m</i> and length <i>l</i> about an axis perpendicular to its length and passing through its end is"
+  ,
+    "options": [
+      "\\frac{m l^2}{3}",
+      "\\frac{m l^2}{12}",
+      "\\frac{m l^2}{4}",
+      "m l^{2}"
+    ],
+    "answer": "\\frac{m l^2}{3}",
+    "tags": {
+      "chapter": "Rotational Motion",
+      "difficulty": "easy",
+      "class": "11"
     },
     "tip": ""
   }
