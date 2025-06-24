@@ -454,15 +454,23 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
         _progressController.forward(); // resume timer
         return false; // also handle null or cancel case
       },
+
+
+
       child: Scaffold(
         backgroundColor: Colors.black,
-        appBar: AppBar(
-            backgroundColor: Colors.black,
-            title: const Text('Solo Play',
-                style: TextStyle(color: Colors.white)),
-        iconTheme: const IconThemeData(color: Colors.white),
-      ),
-      body: Padding(
+        //appBar: AppBar(
+        //    backgroundColor: Colors.black,
+        //    title: const Text('Solo Play',
+         //       style: TextStyle(color: Colors.white)),
+       // iconTheme: const IconThemeData(color: Colors.white),
+    //  ),
+
+
+      body: SafeArea(
+        top: true,
+        bottom: false,
+        child:Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -484,10 +492,10 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 
         //................DISPLAY QN START...........................
             Padding(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(0),
               child: SingleChildScrollView(
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     // QUESTION
 
@@ -500,18 +508,20 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                           fontWeight: FontWeight.normal,
                           color: Colors.white,
                           fontFamily: GoogleFonts.poppins().fontFamily,   // or GoogleFonts.montserrat()
+
                         ),
                       },
                     ),
 
-                    const SizedBox(height: 12),
+
+                    //const SizedBox(height: 1),
 
                     if (question['image'] != "")
                       Container(
                         margin: const EdgeInsets.symmetric(vertical: 10),
                         child: Image.asset(
                           question['image'],
-                          width: 300,
+                          width: MediaQuery.of(context).size.width * 0.6,
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -544,6 +554,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 
     ]
         ),
+    ),
     ),
     ),
     );// WillPopScope
