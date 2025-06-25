@@ -902,8 +902,192 @@
         "difficulty": "god",
         "class": "11"
       },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_050.png",
+      "tip": ""
+    },
+
+    {
+      "id": "Rotational_Motion_qn_051",
+      "question": "The moment of inertia of a hollow cone (ice cream cone) of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+      "options": [
+        "2 m R^2",
+        "m R^2",
+        "\\frac{5 m R^2}{4}",
+        "\\frac{m R^2}{2}"
+      ],
+      "answer": "\\frac{m R^2}{2}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_051.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_052",
+      "question": "The condition for equilibrium is",
+      "options": [
+        "\\vec{F}_{net} = 0",
+        "\\vec{F}_{net} = 0, \\vec{\\tau}_{net} = 0",
+        "\\vec{\\tau}_{net} = 0",
+        "\\vec{F}_{net} = 0, \\vec{\\tau}_{net} \\ne 0"
+      ],
+      "answer": "\\vec{F}_{net} = 0, \\vec{\\tau}_{net} = 0",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
       "image": "",
       "tip": ""
-    }
+    },
+    {
+      "id": "Rotational_Motion_qn_053",
+      "question": "Parallel axis theorem states that <i>I</i> =",
+      "options": [
+        "2 m d^2",
+        "m d^2",
+        "I_{COM}",
+        "I_{COM} + m d^2"
+      ],
+      "answer": "I_{COM} + m d^2",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_053.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_054",
+      "question": "Perpendicular axis theorem states that <i>I<sub>z</sub></i> =",
+      "options": [
+        "I_x \\times I_y",
+        "I_x + I_y",
+        "2 ( I_x + I_y )",
+        "I_x - I_y"
+      ],
+      "answer": "I_x + I_y",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_055",
+      "question": "The moment of inertia of a solid cone of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+      "options": [
+        "2 m R^2",
+        "m R^2",
+        "\\frac{3 m R^2}{10}",
+        "\\frac{m R^2}{2}"
+      ],
+      "answer": "\\frac{3 m R^2}{10}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_055.png",
+      "tip": ""
+    },
+
+    {
+      "id": "Rotational_Motion_qn_056",
+      "question": "Radius of gyration <i>K</i> is given by",
+      "options": [
+        "\\frac{I}{m}",
+        "\\sqrt{\\frac{m}{I}}",
+        "\\sqrt{m} ",
+        "\\sqrt{ \\frac{I}{m} }"
+      ],
+      "answer": "\\sqrt{ \\frac{I}{m} }",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_057",
+      "question": "The velocity of COM at the bottom of incline is (Object starts from rest and pure rolls down the incline)",
+      "options": [
+        "\\sqrt{ \\frac{2gh}{1 + \\frac{R^2}{K^2}} }",
+        "\\sqrt{ \\frac{2gh}{1 + \\frac{K^2}{R^2}} }",
+        "\\sqrt{ \\frac{2gh \\sin \\theta}{1 + \\frac{R^2}{K^2}} }",
+        "\\sqrt{ \\frac{2gh \\sin \\theta}{1 + \\frac{K^2}{R^2}} }"
+      ],
+      "answer": "\\sqrt{ \\frac{2gh}{1 + \\frac{K^2}{R^2}} }",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_057.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_058",
+      "question": "The minimum value of friction coefficient so that object pure rolls down the incline is",
+      "options": [
+        "\\mu_{min} = \\tan \\theta \\left( 1 + \\frac{R^2}{K^2} \\right)",
+        "\\mu_{min} = \\tan \\theta \\left( 1 + \\frac{K^2}{R^2} \\right)",
+        "\\mu_{min}",
+        "\\mu_{min}"
+      ],
+      "answer": "\\mu_{min} = \\tan \\theta \\left( 1 + \\frac{R^2}{K^2} \\right)",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_058.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_059",
+      "question": "The time taken by the body to reach lowest point on incline is (Assume pure rolling)",
+      "options": [
+        "\\frac{1}{\\sin \\theta} \\sqrt{ \\frac{2h}{g} \\left( 1 + \\frac{R^2}{K^2} \\right) }",
+        "\\frac{1}{\\sin \\theta} \\sqrt{ \\frac{2h}{g} \\left( 1 + \\frac{K^2}{R^2} \\right) }",
+        "\\sqrt{ \\frac{2h}{g} \\left( 1 + \\frac{R^2}{K^2} \\right) }",
+        "\\sqrt{ \\frac{2h}{g} \\left( 1 + \\frac{K^2}{R^2} \\right) }"
+      ],
+      "answer": "\\frac{1}{\\sin \\theta} \\sqrt{ \\frac{2h}{g} \\left( 1 + \\frac{K^2}{R^2} \\right) }",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_059.png",
+      "tip": ""
+    },
+
+  {
+    "id": "Rotational_Motion_qn_060",
+    "question": "The moment of inertia of an annular disc (Disc with cavity of inner radius <i>R<sub>1</sub></i> and outer radius <i>R<sub>2</sub></i>) of mass <i>m</i> about an axis passing through its center and perpendicular to it is",
+    "options": [
+      "\\frac{m}{2} ( R_1^2 - R_2^2 )",
+      "\\frac{m}{4} ( R_1^2 - R_2^2 )",
+      "\\frac{m}{4} ( R_1^2 + R_2^2 )",
+      "\\frac{m}{2} ( R_1^2 + R_2^2 )"
+    ],
+    "answer": "\\frac{m}{2} ( R_1^2 + R_2^2 )",
+    "tags": {
+      "chapter": "Rotational_Motion",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  }
+
 
 ]
