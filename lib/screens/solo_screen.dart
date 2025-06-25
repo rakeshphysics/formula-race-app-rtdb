@@ -484,16 +484,19 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
         bottom: false,
         child:Padding(
         padding: const EdgeInsets.all(16),
-        child: Column(
+
+
+            child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            SizedBox(height: MediaQuery.of(context).size.height * 0.03),
             AnimatedBuilder(
               animation: _progressController,
               builder: (context, child) {
                 return buildProgressBar();
               },
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: 10),
             Text(
               'Q${currentIndex + 1} of $totalQuestions',
               style: const TextStyle(color: Colors.white, fontSize: 18),
