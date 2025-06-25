@@ -1,47 +1,184 @@
 [
   {
-    "question": "What is the key formula from Electrostatics - Q1?",
+    "id": "Electrostatics_qn_001",
+    "question": "The electrostatic force between two point charges <i>q<sub>1</sub></i> and <i>q<sub>2</sub></i> separated by distance <i>r</i> is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{1}{2 \\pi \\varepsilon_0} \\frac{q_1 q_2}{r^2}",
+      "\\frac{1}{4 \\pi \\varepsilon_0} \\frac{q_1 q_2}{r^2}",
+      "\\frac{1}{2 \\pi \\varepsilon_0} \\frac{q_1 q_2}{r^3}",
+      "\\frac{1}{4 \\pi \\varepsilon_0} \\frac{q_1 q_2}{r^3}"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{1}{4 \\pi \\varepsilon_0} \\frac{q_1 q_2}{r^2}",
     "tags": {
       "chapter": "Electrostatics",
-      "difficulty": "Easy",
+      "difficulty": "easy",
       "class": "12"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Electrostatics - Q2?",
+    "id": "Electrostatics_qn_002",
+    "question": "The net electrostatic force on each of two point charges <i>q<sub>1</sub></i> and <i>q<sub>2</sub></i> separated by distance <i>r</i> in a medium of dielectric constant <i>K</i> is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{1}{2 \\pi K \\varepsilon_0} \\frac{q_1 q_2}{r^2}",
+      "\\frac{1}{4 \\pi K \\varepsilon_0} \\frac{q_1 q_2}{r^2}",
+      "\\frac{1}{2 \\pi K^2 \\varepsilon_0} \\frac{q_1 q_2}{r^2}",
+      "\\frac{1}{4 \\pi K^2 \\varepsilon_0} \\frac{q_1 q_2}{r^2}"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{1}{4 \\pi K \\varepsilon_0} \\frac{q_1 q_2}{r^2}",
     "tags": {
       "chapter": "Electrostatics",
-      "difficulty": "Easy",
+      "difficulty": "easy",
       "class": "12"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Electrostatics - Q3?",
+    "id": "Electrostatics_qn_003",
+    "question": "The electric field due to a point charge <i>q</i> at a distance <i>r</i> from it is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{kq}{r^2}",
+      "\\frac{kq}{r}",
+      "\\frac{kq^2}{r}",
+      "\\frac{kq^2}{r^2}"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{kq}{r^2}",
     "tags": {
       "chapter": "Electrostatics",
-      "difficulty": "Easy",
+      "difficulty": "easy",
       "class": "12"
-    }
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "Electrostatics_qn_004",
+    "question": "The electric field due to a charged conducting sphere inside it is",
+    "options": [
+      "0",
+      "\\frac{kq}{r^2}",
+      "\\frac{kq}{R^2}",
+      "\\frac{kq}{r}"
+    ],
+    "answer": "0",
+    "tags": {
+      "chapter": "Electrostatics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_004.png",
+    "tip": ""
+  },
+  {
+    "id": "Electrostatics_qn_005",
+    "question": "The electric field due to a charged conducting sphere outside it is",
+    "options": [
+      "0",
+      "\\frac{kq}{r^2}",
+      "\\frac{kq}{R^2}",
+      "\\frac{kq}{r}"
+    ],
+    "answer": "\\frac{kq}{r^2}",
+    "tags": {
+      "chapter": "Electrostatics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_005.png",
+    "tip": ""
+  },
+
+  {
+    "id": "Electrostatics_qn_006",
+    "question": "The electric field due to a uniformly charged solid non conducting sphere inside it is",
+    "options": [
+      "0",
+      "\\frac{kqr}{R^3}",
+      "\\frac{kq}{R^2}",
+      "\\frac{kq}{r^2}"
+    ],
+    "answer": "\\frac{kqr}{R^3}",
+    "tags": {
+      "chapter": "Electrostatics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_006.png",
+    "tip": ""
+  },
+  {
+    "id": "Electrostatics_qn_007",
+    "question": "The electric field due to a uniformly charged non conducting sphere outside it is",
+    "options": [
+      "0",
+      "\\frac{kqr}{R^3}",
+      "\\frac{kq}{R^2}",
+      "\\frac{kq}{r^2}"
+    ],
+    "answer": "\\frac{kq}{r^2}",
+    "tags": {
+      "chapter": "Electrostatics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_007.png",
+    "tip": ""
+  },
+  {
+    "id": "Electrostatics_qn_008",
+    "question": "The electric field due to an infinite non conducting sheet of charge is (<i>σ</i> = surface charge density)",
+    "options": [
+      "\\frac{\\sigma}{8 \\varepsilon_0}",
+      "\\frac{\\sigma}{2 \\varepsilon_0}",
+      "\\frac{\\sigma}{4 \\varepsilon_0}",
+      "\\frac{\\sigma}{\\varepsilon_0}"
+    ],
+    "answer": "\\frac{\\sigma}{2 \\varepsilon_0}",
+    "tags": {
+      "chapter": "Electrostatics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "Electrostatics_qn_009",
+    "question": "The electric field due to an infinite conducting plate is (<i>σ</i> = surface charge density)",
+    "options": [
+      "\\frac{\\sigma}{8 \\varepsilon_0}",
+      "\\frac{\\sigma}{2 \\varepsilon_0}",
+      "\\frac{\\sigma}{4 \\varepsilon_0}",
+      "\\frac{\\sigma}{\\varepsilon_0}"
+    ],
+    "answer": "\\frac{\\sigma}{\\varepsilon_0}",
+    "tags": {
+      "chapter": "Electrostatics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "Electrostatics_qn_010",
+    "question": "The electric field due to a charged circular ring at an axial point is",
+    "options": [
+      "\\frac{kq}{R^2 + x^2}",
+      "\\frac{kqR}{(R^2 + x^2)^{3/2}}",
+      "\\frac{kqx}{(R^2 + x^2)^{3/2}}",
+      "\\frac{kq}{x^2}"
+    ],
+    "answer": "\\frac{kqx}{(R^2 + x^2)^{3/2}}",
+    "tags": {
+      "chapter": "Electrostatics",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_010.png",
+    "tip": ""
   }
+
 ]

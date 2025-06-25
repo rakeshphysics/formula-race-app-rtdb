@@ -72,6 +72,7 @@ flutter:
       # images
 
     - assets/images/11th/Rotational_Motion/
+    - assets/images/12th/Electrostatics/
 
 
 dependency_overrides:
