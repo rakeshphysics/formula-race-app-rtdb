@@ -1,20 +1,909 @@
 [
   {
-  "id": "Rotational_Motion_qn_001",
-  "question": "The moment of inertia of a point mass <i>m</i> about an axis at a perpendicular distance <i>r</i> from it is aa a a",
-  "options": [
-    "mr^2",
-    "\\frac{mr^2}{2}",
-    "\\frac{mr^2}{3}",
-    "2mr^2"
-  ],
-  "answer": "mr^2",
-  "tags": {
-    "chapter": "Rotational_Motion",
-    "difficulty": "easy",
-    "class": "11"
+    "id": "Rotational_Motion_qn_001",
+    "question": "The moment of inertia of a point mass <i>m</i> at distance <i>r</i> from the axis is",
+    "options": [
+      "m r^2",
+      "\\frac{m r^2}{2}",
+      "\\frac{m r^2}{3}",
+      "2 m r^2"
+    ],
+    "answer": "m r^2",
+    "tags": {
+      "chapter": "Rotational_Motion",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_001.png",
+    "tip": ""
   },
-  "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_001.png",
-  "tip": ""
-}
+  {
+    "id": "Rotational_Motion_qn_002",
+    "question": "The moment of inertia of the rod of mass <i>m</i> length <i>l</i> about the axis shown is",
+    "options": [
+      "m l^2",
+      "\\frac{m l^2}{12}",
+      "\\frac{m l^2}{3}",
+      "2 m l^2"
+    ],
+    "answer": "\\frac{m l^2}{12}",
+    "tags": {
+      "chapter": "Rotational_Motion",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_002.png",
+    "tip": ""
+  },
+  {
+    "id": "Rotational_Motion_qn_003",
+    "question": "The moment of inertia of the rod of mass <i>m</i> length <i>l</i> about the axis shown is",
+    "options": [
+      "m l^2",
+      "\\frac{m l^2}{12}",
+      "\\frac{m l^2}{3}",
+      "2 m l^2"
+    ],
+    "answer": "\\frac{m l^2}{3}",
+    "tags": {
+      "chapter": "Rotational_Motion",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_003.png",
+    "tip": ""
+  },
+  {
+    "id": "Rotational_Motion_qn_004",
+    "question": "The moment of inertia of the rod of mass <i>m</i> length <i>l</i> about the axis which is at a distance <i>r</i> from it is",
+    "options": [
+      "m r^2",
+      "\\frac{m l^2}{4}",
+      "\\frac{m l^2}{3}",
+      "2 m r^2"
+    ],
+    "answer": "m r^2",
+    "tags": {
+      "chapter": "Rotational_Motion",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_004.png",
+    "tip": ""
+  },
+  {
+    "id": "Rotational_Motion_qn_005",
+    "question": "The moment of inertia of the rod of mass <i>m</i> length <i>l</i> about the axis shown is",
+    "options": [
+      "\\frac{m l^2}{12} \\sin^2 \\theta",
+      "\\frac{m l^2}{3} \\sin^2 \\theta",
+      "\\frac{m l^2}{12} \\cos^2 \\theta",
+      "\\frac{m l^2}{3} \\cos^2 \\theta"
+    ],
+    "answer": "\\frac{m l^2}{12} \\sin^2 \\theta",
+    "tags": {
+      "chapter": "Rotational_Motion",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_005.png",
+    "tip": ""
+  },
+  {
+    "id": "Rotational_Motion_qn_006",
+    "question": "The moment of inertia of the rod of mass <i>m</i> length <i>l</i> about the axis shown is",
+    "options": [
+      "\\frac{m l^2}{12} \\sin^2 \\theta",
+      "\\frac{m l^2}{3} \\sin^2 \\theta",
+      "\\frac{m l^2}{12} \\cos^2 \\theta",
+      "\\frac{m l^2}{3} \\cos^2 \\theta"
+    ],
+    "answer": "\\frac{m l^2}{3} \\sin^2 \\theta",
+    "tags": {
+      "chapter": "Rotational_Motion",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_006.png",
+    "tip": ""
+  },
+  {
+    "id": "Rotational_Motion_qn_007",
+    "question": "The moment of inertia of a ring about of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+    "options": [
+      "m R^2",
+      "2 m R^2",
+      "\\frac{m R^2}{2}",
+      "\\frac{m R^2}{4}"
+    ],
+    "answer": "m R^2",
+    "tags": {
+      "chapter": "Rotational_Motion",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_007.png",
+    "tip": ""
+  },
+  {
+    "id": "Rotational_Motion_qn_008",
+    "question": "The moment of inertia of a ring about of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+    "options": [
+      "\\frac{m R^2}{2} (1 + \\cos \\theta)",
+      "\\frac{m R^2}{2} (1 + \\cos^2 \\theta)",
+      "\\frac{m R^2}{2} (1 + \\sin^2 \\theta)",
+      "\\frac{m R^2}{2} (1 + \\sin \\theta)"
+    ],
+    "answer": "\\frac{m R^2}{2} (1 + \\sin^2 \\theta)",
+    "tags": {
+      "chapter": "Rotational_Motion",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_008.png",
+    "tip": ""
+  },
+  {
+    "id": "Rotational_Motion_qn_009",
+    "question": "The moment of inertia of a ring about of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+    "options": [
+      "m R^2",
+      "2 m R^2",
+      "\\frac{m R^2}{2}",
+      "\\frac{m R^2}{4}"
+    ],
+    "answer": "\\frac{m R^2}{2}",
+    "tags": {
+      "chapter": "Rotational_Motion",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_009.png",
+    "tip": ""
+  },
+  {
+    "id": "Rotational_Motion_qn_010",
+    "question": "The moment of inertia of a ring about of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+    "options": [
+      "\\frac{3 m R^2}{2}",
+      "\\frac{m R^2}{2}",
+      "\\frac{4 m R^2}{3}",
+      "2 m R^2"
+    ],
+    "answer": "\\frac{3 m R^2}{2}",
+    "tags": {
+      "chapter": "Rotational_Motion",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_010.png",
+    "tip": ""
+  },
+
+    {
+      "id": "Rotational_Motion_qn_011",
+      "question": "The moment of inertia of a ring of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+      "options": [
+        "2mR^2",
+        "mR^2",
+        "\\frac{mR^2}{4}",
+        "\\frac{mR^2}{2}"
+      ],
+      "answer": "2mR^2",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_011.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_012",
+      "question": "The moment of inertia of a disc of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+      "options": [
+        "2mR^2",
+        "mR^2",
+        "\\frac{mR^2}{4}",
+        "\\frac{mR^2}{2}"
+      ],
+      "answer": "\\frac{mR^2}{2}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_012.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_013",
+      "question": "The moment of inertia of a disc of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+      "options": [
+        "2mR^2",
+        "mR^2",
+        "\\frac{mR^2}{4}",
+        "\\frac{mR^2}{2}"
+      ],
+      "answer": "\\frac{mR^2}{4}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_013.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_014",
+      "question": "The moment of inertia of a disc of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+      "options": [
+        "2mR^2",
+        "mR^2",
+        "\\frac{mR^2}{4}",
+        "\\frac{3}{2} mR^2"
+      ],
+      "answer": "\\frac{3}{2} mR^2",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_014.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_015",
+      "question": "The moment of inertia of a disc of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+      "options": [
+        "2mR^2",
+        "mR^2",
+        "\\frac{5}{4} mR^2",
+        "\\frac{mR^2}{2}"
+      ],
+      "answer": "\\frac{5}{4} mR^2",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_015.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_016",
+      "question": "The moment of inertia of a hollow cylinder of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+      "options": [
+        "2mR^2",
+        "mR^2",
+        "\\frac{mR^2}{2}",
+        "\\frac{mR^2}{4}"
+      ],
+      "answer": "mR^2",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_016.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_017",
+      "question": "The moment of inertia of a solid cylinder of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+      "options": [
+        "2mR^2",
+        "mR^2",
+        "\\frac{mR^2}{2}",
+        "\\frac{mR^2}{4}"
+      ],
+      "answer": "\\frac{mR^2}{2}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_017.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_018",
+      "question": "The moment of inertia of a solid sphere of mass <i>m</i> and radius <i>R</i> about an axis passing through its centre is",
+      "options": [
+        "\\frac{2}{5} mR^2",
+        "mR^2",
+        "\\frac{3}{5} mR^2",
+        "\\frac{2}{3} mR^2"
+      ],
+      "answer": "\\frac{2}{5} mR^2",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_019",
+      "question": "The moment of inertia of a hollow sphere of mass <i>m</i> and radius <i>R</i> about an axis passing through its centre is",
+      "options": [
+        "2mR^2",
+        "mR^2",
+        "\\frac{3}{5} mR^2",
+        "\\frac{2}{3} mR^2"
+      ],
+      "answer": "\\frac{2}{3} mR^2",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_020",
+      "question": "The moment of inertia of a disc of mass <i>m</i> and radius <i>R</i> about the inclined axis shown is",
+      "options": [
+        "\\frac{1}{2} mR^2 (1 + \\cos^2 \\theta)",
+        "\\frac{1}{2} mR^2 (1 + \\sin^2 \\theta)",
+        "\\frac{1}{4} mR^2 (1 + \\cos^2 \\theta)",
+        "\\frac{1}{4} mR^2 (1 + \\sin^2 \\theta)"
+      ],
+      "answer": "\\frac{1}{4} mR^2 (1 + \\sin^2 \\theta)",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_020.png",
+      "tip": ""
+    },
+
+    {
+      "id": "Rotational_Motion_qn_021",
+      "question": "The moment of inertia of a rectangular plate of mass <i>m</i> about the axis shown is",
+      "options": [
+        "\\frac{ma^2}{12}",
+        "\\frac{mb^2}{12}",
+        "\\frac{ma^2}{3}",
+        "\\frac{mb^2}{3}"
+      ],
+      "answer": "\\frac{ma^2}{12}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_021.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_022",
+      "question": "The moment of inertia of a rectangular plate of mass <i>m</i> about the axis shown is",
+      "options": [
+        "\\frac{ma^2}{12}",
+        "\\frac{mb^2}{12}",
+        "\\frac{ma^2}{3}",
+        "\\frac{mb^2}{3}"
+      ],
+      "answer": "\\frac{mb^2}{12}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_022.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_023",
+      "question": "The moment of inertia of a rectangular plate of mass <i>m</i> about the axis shown is",
+      "options": [
+        "\\frac{ma^2}{12}",
+        "\\frac{mb^2}{12}",
+        "\\frac{ma^2}{3}",
+        "\\frac{mb^2}{3}"
+      ],
+      "answer": "\\frac{ma^2}{3}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_023.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_024",
+      "question": "The moment of inertia of a rectangular plate of mass <i>m</i> about the axis shown is",
+      "options": [
+        "\\frac{ma^2}{12}",
+        "\\frac{mb^2}{12}",
+        "\\frac{ma^2}{3}",
+        "\\frac{mb^2}{3}"
+      ],
+      "answer": "\\frac{mb^2}{3}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_024.png",
+      "tip": ""
+    },
+  {
+      "id": "Rotational_Motion_qn_025",
+      "question": "The moment of inertia of a hollow sphere of mass <i>m</i> and radius <i>R</i> about its tangent is",
+      "options": [
+        "\\frac{2mR^2}{5}",
+        "mR^2",
+        "\\frac{5mR^2}{3}",
+        "\\frac{mR^2}{2}"
+      ],
+      "answer": "\\frac{5mR^2}{3}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_026",
+      "question": "The moment of inertia of a solid sphere of mass <i>m</i> and radius <i>R</i> about its tangent is",
+      "options": [
+        "\\frac{7mR^2}{5}",
+        "mR^2",
+        "\\frac{2mR^2}{5}",
+        "\\frac{mR^2}{2}"
+      ],
+      "answer": "\\frac{7mR^2}{5}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_027",
+      "question": "The moment of inertia of a solid cylinder of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+      "options": [
+        "2mR^2",
+        "mR^2",
+        "\\frac{3mR^2}{2}",
+        "\\frac{mR^2}{2}"
+      ],
+      "answer": "\\frac{3mR^2}{2}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_027.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_028",
+      "question": "The moment of inertia of a hollow cylinder of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+      "options": [
+        "2mR^2",
+        "mR^2",
+        "\\frac{3mR^2}{2}",
+        "\\frac{mR^2}{2}"
+      ],
+      "answer": "2mR^2",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_028.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_029",
+      "question": "The moment of inertia of a rectangular plate about the axis shown is",
+      "options": [
+        "\\frac{m(a^2 + b^2)}{12}",
+        "\\frac{mb^2}{12}",
+        "\\frac{ma^2}{3}",
+        "\\frac{m(a^2 + b^2)}{3}"
+      ],
+      "answer": "\\frac{m(a^2 + b^2)}{12}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_029.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_030",
+      "question": "The moment of inertia of a rectangular plate about the axis shown is",
+      "options": [
+        "\\frac{m(a^2 + b^2)}{12}",
+        "\\frac{mb^2}{12}",
+        "\\frac{ma^2}{3}",
+        "\\frac{m(a^2 + b^2)}{3}"
+      ],
+      "answer": "\\frac{m(a^2 + b^2)}{3}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_030.png",
+      "tip": ""
+    },
+
+    {
+      "id": "Rotational_Motion_qn_031",
+      "question": "Torque vector is",
+      "options": [
+        "\\vec{r} \\times \\vec{F}",
+        "\\vec{F} \\times \\vec{r}",
+        "\\vec{r} \\cdot \\vec{F}",
+        "\\frac{\\vec{r}}{\\vec{F}}"
+      ],
+      "answer": "\\vec{r} \\times \\vec{F}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_032",
+      "question": "Torque magnitude is",
+      "options": [
+        "r F \\sin \\theta",
+        "r F \\cos \\theta",
+        "r F",
+        "r F \\tan \\theta"
+      ],
+      "answer": "r F \\sin \\theta",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_033",
+      "question": "Angular momentum vector of a particle is (<i>p</i> = linear momentum):",
+      "options": [
+        "\\vec{r} \\times \\vec{p}",
+        "\\vec{p} \\times \\vec{r}",
+        "\\vec{r} \\cdot \\vec{p}",
+        "\\frac{\\vec{r}}{\\vec{p}}"
+      ],
+      "answer": "\\vec{r} \\times \\vec{p}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_034",
+      "question": "Angular momentum magnitude of a particle is (<i>p</i> = linear momentum):",
+      "options": [
+        "r p \\sin \\theta",
+        "r p \\cos \\theta",
+        "r p",
+        "r p \\tan \\theta"
+      ],
+      "answer": "r p \\sin \\theta",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "Rotational_Motion_qn_035",
+      "question": "The moment of inertia of a hollow cylinder of mass <i>m</i>, radius <i>R</i> and length <i>L</i> about the axis shown is",
+      "options": [
+        "\\frac{mR^2}{2} + \\frac{mL^2}{12}",
+        "\\frac{mR^2}{12} + \\frac{mL^2}{2}",
+        "\\frac{m(R^2 + L^2)}{12}",
+        "\\frac{m(R^2 + L^2)}{2}"
+      ],
+      "answer": "\\frac{mR^2}{2} + \\frac{mL^2}{12}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_035.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_036",
+      "question": "The moment of inertia of a hollow cylinder of mass <i>m</i>, radius <i>R</i> and length <i>L</i> about the axis shown is",
+      "options": [
+        "\\frac{mR^2}{3} + \\frac{mL^2}{2}",
+        "\\frac{mR^2}{2} + \\frac{mL^2}{3}",
+        "\\frac{m(R^2 + L^2)}{2}",
+        "\\frac{m(R^2 + L^2)}{3}"
+      ],
+      "answer": "\\frac{mR^2}{2} + \\frac{mL^2}{3}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_036.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_037",
+      "question": "The moment of inertia of a solid cylinder of mass <i>m</i>, radius <i>R</i> and length <i>L</i> about the axis shown is",
+      "options": [
+        "\\frac{mR^2}{4} + \\frac{mL^2}{12}",
+        "\\frac{mR^2}{12} + \\frac{mL^2}{4}",
+        "\\frac{m(R^2 + L^2)}{12}",
+        "\\frac{m(R^2 + L^2)}{4}"
+      ],
+      "answer": "\\frac{mR^2}{4} + \\frac{mL^2}{12}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_037.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_038",
+      "question": "The moment of inertia of a solid cylinder of mass <i>m</i>, radius <i>R</i> and length <i>L</i> about the axis shown is",
+      "options": [
+        "\\frac{mR^2}{3} + \\frac{mL^2}{4}",
+        "\\frac{mR^2}{4} + \\frac{mL^2}{3}",
+        "\\frac{m(R^2 + L^2)}{3}",
+        "\\frac{m(R^2 + L^2)}{4}"
+      ],
+      "answer": "\\frac{mR^2}{4} + \\frac{mL^2}{3}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_038.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_039",
+      "question": "The moment of inertia of a solid cube of mass <i>m</i>, side <i>a</i> about the axis shown is",
+      "options": [
+        "\\frac{ma^2}{3}",
+        "\\frac{ma^2}{8}",
+        "\\frac{ma^2}{4}",
+        "\\frac{ma^2}{6}"
+      ],
+      "answer": "\\frac{ma^2}{6}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_039.png",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_040",
+      "question": "The moment of inertia of a triangular lamina of mass <i>m</i> and height <i>h</i> about the axis shown is",
+      "options": [
+        "\\frac{mh^2}{3}",
+        "\\frac{mh^2}{8}",
+        "\\frac{mh^2}{4}",
+        "\\frac{mh^2}{6}"
+      ],
+      "answer": "\\frac{mh^2}{6}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_040.png",
+      "tip": ""
+    },
+
+    {
+      "id": "Rotational_Motion_qn_041",
+      "question": "Torque vector equals",
+      "options": [
+        "3 I \\vec{\\alpha}",
+        "2 I \\vec{\\alpha}",
+        "I \\vec{\\alpha}",
+        "\\frac{\\vec{\\alpha}}{I}"
+      ],
+      "answer": "I \\vec{\\alpha}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_042",
+      "question": "Angular impulse vector equals",
+      "options": [
+        "I \\vec{\\omega}_f",
+        "I ( \\vec{\\omega}_f - \\vec{\\omega}_i )",
+        "I \\vec{\\omega}_i",
+        "I \\vec{\\omega}_i \\vec{\\omega}_f"
+      ],
+      "answer": "I ( \\vec{\\omega}_f - \\vec{\\omega}_i )",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_043",
+      "question": "Conservation of angular momentum states",
+      "options": [
+        "I_1 \\vec{\\omega}_1 = I_2 \\vec{\\omega}_2",
+        "I_1 \\vec{\\omega}_1 \\ne I_2 \\vec{\\omega}_2",
+        "I_1 \\vec{\\omega}_1 > I_2 \\vec{\\omega}_2",
+        "I_1 \\vec{\\omega}_1 < I_2 \\vec{\\omega}_2"
+      ],
+      "answer": "I_1 \\vec{\\omega}_1 = I_2 \\vec{\\omega}_2",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_044",
+      "question": "Rotational kinetic energy is given by",
+      "options": [
+        "\\frac{1}{2} m v^2",
+        "\\frac{1}{2} I \\omega^2",
+        "I \\omega^2",
+        "2 I \\omega^2"
+      ],
+      "answer": "\\frac{1}{2} I \\omega^2",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "Rotational_Motion_qn_045",
+      "question": "Work done by torque is given by",
+      "options": [
+        "\\tau \\theta",
+        "\\tau \\theta^2",
+        "\\tau^2 \\theta^2",
+        "\\tau^2 \\theta"
+      ],
+      "answer": "\\tau \\theta",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_046",
+      "question": "Instantaneous Power supplied by torque is",
+      "options": [
+        "\\tau \\omega",
+        "\\tau \\omega^2",
+        "\\tau^2 \\omega^2",
+        "\\tau^2 \\omega"
+      ],
+      "answer": "\\tau \\omega",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_047",
+      "question": "Work done by torque equals",
+      "options": [
+        "I \\omega_f^2",
+        "I \\omega_f^2 - I \\omega_i^2",
+        "\\frac{1}{2} I \\omega_f^2 - \\frac{1}{2} I \\omega_i^2",
+        "I \\omega_i^2"
+      ],
+      "answer": "\\frac{1}{2} I \\omega_f^2 - \\frac{1}{2} I \\omega_i^2",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_048",
+      "question": "The total kinetic energy of a round body in pure rolling is (<i>K</i> = radius of gyration, <i>R</i> = radius of body)",
+      "options": [
+        "\\frac{1}{2} m v_c^2 \\left(1 + \\frac{K^2}{R^2}\\right)",
+        "\\frac{1}{2} m v_c^2 \\left(\\frac{R^2}{K^2}\\right)",
+        "\\frac{1}{2} m v_c^2 \\left( \\frac{K^2}{R^2} \\right)",
+        "\\frac{1}{2} m v_c^2 K^2"
+      ],
+      "answer": "\\frac{1}{2} m v_c^2 \\left(1 + \\frac{K^2}{R^2}\\right)",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_049",
+      "question": "The total angular momentum of a round body in pure rolling is",
+      "options": [
+        "I_c \\vec{\\omega}",
+        "m ( \\vec{r} \\times \\vec{v}_c )",
+        "I_c \\vec{\\omega} + m ( \\vec{r} \\times \\vec{v}_c )",
+        "m ( \\vec{v}_c \\times \\vec{r} )"
+      ],
+      "answer": "I_c \\vec{\\omega} + m ( \\vec{r} \\times \\vec{v}_c )",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Rotational_Motion_qn_050",
+      "question": "The acceleration of COM of a body pure rolling down an incline plane is",
+      "options": [
+        "\\left( \\frac{K^2}{R^2} \\right) g \\sin \\theta",
+        "\\frac{g \\sin \\theta}{1 + \\frac{K^2}{R^2}}",
+        "\\left( \\frac{R^2}{K^2} \\right) g \\sin \\theta",
+        "\\frac{g \\sin \\theta}{1 + \\frac{R^2}{K^2}}"
+      ],
+      "answer": "\\frac{g \\sin \\theta}{1 + \\frac{K^2}{R^2}}",
+      "tags": {
+        "chapter": "Rotational_Motion",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    }
+
 ]

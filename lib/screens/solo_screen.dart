@@ -80,7 +80,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     super.initState();
     _progressController = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 5000), // 7s per segment
+      duration: const Duration(seconds: 7), // 7s per segment
     );
     _progressAnimation = Tween<double>(begin: 0, end: 1).animate(_progressController);
 
@@ -227,15 +227,27 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       }
     }
 
-    allQuestions.shuffle();
-    setState(() {
-      questions = allQuestions.take(totalQuestions).toList();
+    List easy = allQuestions.where((q) => q['tags']['difficulty'] == 'easy').toList();
+    List medium = allQuestions.where((q) => q['tags']['difficulty'] == 'medium').toList();
+    List god = allQuestions.where((q) => q['tags']['difficulty'] == 'god').toList();
 
+    easy.shuffle();
+    medium.shuffle();
+    god.shuffle();
+
+    final List<Map<String, dynamic>> selectedQuestions = [
+      ...easy.take(4),
+      ...medium.take(5),
+      ...god.take(1),
+    ];
+
+    setState(() {
+      questions = selectedQuestions;
+      currentIndex = 0;
     });
 
     _progressController.reset();
     _progressController.forward();
-    print('Loaded ${questions.length} questions');
   }
 
 
