@@ -1,0 +1,93 @@
+[
+  {
+    "id": "Vectors_qn_001",
+    "question": "<b>R</b> = <b>a</b> + <b>b</b> then magnitude of <b>R</b> equals (given θ is angle between <b>a</b> and <b>b</b>)",
+    "options": [
+      "\\sqrt{a^2 + b^2 + 2ab \\cos \\theta}",
+      "\\sqrt{a^2 + b^2 - 2ab \\cos \\theta}",
+      "\\sqrt{a^2 + b^2}",
+      "\\sqrt{a^2 - b^2 + 2ab \\cos \\theta}"
+    ],
+    "answer": "\\sqrt{a^2 + b^2 + 2ab \\cos \\theta}",
+    "tags": {
+      "chapter": "Vectors",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "Vectors_qn_002",
+    "question": "If <b>A</b> = A<sub>x</sub> i + A<sub>y</sub> j + A<sub>z</sub> k, and α is the angle made by the vector with X axis, then cos α equals",
+    "options": [
+      "\\frac{A_y}{\\sqrt{A_x^2 + A_y^2 + A_z^2}}",
+      "\\sqrt{A_x^2 + A_y^2 + A_z^2}",
+      "\\frac{A_z}{\\sqrt{A_x^2 + A_y^2 + A_z^2}}",
+      "\\frac{A_x}{\\sqrt{A_x^2 + A_y^2 + A_z^2}}"
+    ],
+    "answer": "\\frac{A_x}{\\sqrt{A_x^2 + A_y^2 + A_z^2}}",
+    "tags": {
+      "chapter": "Vectors",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "Vectors_qn_003",
+    "question": "If l, m, n are direction cosines of a vector, then l² + m² + n² =",
+    "options": [
+      "2",
+      "1",
+      "0",
+      "0.5"
+    ],
+    "answer": "1",
+    "tags": {
+      "chapter": "Vectors",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "Vectors_qn_004",
+    "question": "The angle between resultant of <b>A</b> and <b>B</b> with <b>A</b> is α, then tan α equals (θ is angle between <b>A</b> and <b>B</b>)",
+    "options": [
+      "\\frac{B \\cos \\theta}{A + B \\cos \\theta}",
+      "\\frac{B \\sin \\theta}{A + B \\cos \\theta}",
+      "\\frac{B \\sin \\theta}{A + B \\sin \\theta}",
+      "\\frac{B \\cos \\theta}{A + B \\sin \\theta}"
+    ],
+    "answer": "\\frac{B \\sin \\theta}{A + B \\cos \\theta}",
+    "tags": {
+      "chapter": "Vectors",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/Vectors/Vectors_qn_004.png",
+    "tip": ""
+  },
+  {
+    "id": "Vectors_qn_005",
+    "question": "Two vectors of equal magnitude r are inclined at an angle θ. Their resultant is",
+    "options": [
+      "2r \\sin \\left(\\frac{\\theta}{2}\\right)",
+      "2r \\cos \\left(\\frac{\\theta}{2}\\right)",
+      "r \\tan \\left(\\frac{\\theta}{2}\\right)",
+      "r^2 \\sin \\left(\\frac{\\theta}{2}\\right)"
+    ],
+    "answer": "2r \\cos \\left(\\frac{\\theta}{2}\\right)",
+    "tags": {
+      "chapter": "Vectors",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/Vectors/Vectors_qn_005.png",
+    "tip": ""
+  }
+
+]

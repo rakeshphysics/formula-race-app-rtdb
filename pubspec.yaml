@@ -44,6 +44,7 @@ flutter:
     # Class 11
     - assets/formulas/11/units_and_dimensions.json
     - assets/formulas/11/kinematics.json
+    - assets/formulas/11/vectors.json
     - assets/formulas/11/laws_of_motion.json
     - assets/formulas/11/work_power_energy.json
     - assets/formulas/11/center_of_mass.json
@@ -70,7 +71,7 @@ flutter:
     - assets/formulas/12/nuclei.json
     - assets/formulas/12/semiconductors.json
       # images
-
+    - assets/images/11th/Vectors/
     - assets/images/11th/Rotational_Motion/
     - assets/images/12th/Electrostatics/
 

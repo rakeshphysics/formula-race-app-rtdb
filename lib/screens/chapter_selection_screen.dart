@@ -14,7 +14,8 @@ class ChapterSelectionScreen extends StatelessWidget {
   // You can customize this list with your real chapter names
   final List<String> chapters = [
     // Class 11
-    'Units and Dimensions',
+    'Vectors',
+     'Units and Dimensions',
     'Kinematics',
     'Laws of Motion',
     'Work Power Energy',

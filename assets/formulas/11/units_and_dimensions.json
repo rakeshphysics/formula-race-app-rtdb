@@ -1,47 +1,22 @@
 [
   {
-    "question": "What is the key formula from Units and Dimensions - Q1?",
+    "id": "Vectors_qn_001",
+    "question": "\"<span style='font-weight:800;'>R</span> = <span style='font-weight:800;'>a</span> + <span style='font-weight:800;'>b</span> then magnitude of <span style='font-weight:800;'>R</span> equals (given θ is angle between <span style='font-weight:800;'>a</span> and <span style='font-weight:800;'>b</span>)",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\sqrt{a^2 + b^2 + 2ab \\cos\\theta}",
+      "\\sqrt{a^2 + b^2 - 2ab \\cos\\theta}",
+      "\\sqrt{a^2 + b^2}",
+      "\\sqrt{a^2 - b^2 + 2ab \\cos\\theta}"
     ],
-    "answer": "Option A",
+    "answer": "\\sqrt{a^2 + b^2 + 2ab \\cos\\theta}",
     "tags": {
-      "chapter": "Units and Dimensions",
-      "difficulty": "Easy",
+      "chapter": "Vectors",
+      "difficulty": "easy",
       "class": "11"
-    }
-  },
-  {
-    "question": "What is the key formula from Units and Dimensions - Q2?",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "Option A",
-    "tags": {
-      "chapter": "Units and Dimensions",
-      "difficulty": "Easy",
-      "class": "11"
-    }
-  },
-  {
-    "question": "What is the key formula from Units and Dimensions - Q3?",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "Option A",
-    "tags": {
-      "chapter": "Units and Dimensions",
-      "difficulty": "Easy",
-      "class": "11"
-    }
+    },
+    "image": "",
+    "tip": ""
   }
+
+
 ]
