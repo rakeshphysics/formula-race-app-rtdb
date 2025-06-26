@@ -1,47 +1,182 @@
 [
   {
-    "question": "What is the key formula from Kinematics - Q1?",
+    "id": "kinematics_qn_001",
+    "question": "Average velocity equals",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{\\text{Total Distance}}{\\text{Total time}}",
+      "\\frac{\\text{Total Displacement}}{\\text{Total time}}",
+      "\\text{Average speed}",
+      "\\text{Average acceleration}"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{\\text{Total Displacement}}{\\text{Total time}}",
     "tags": {
       "chapter": "Kinematics",
-      "difficulty": "Easy",
+      "difficulty": "easy",
       "class": "11"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Kinematics - Q2?",
+    "id": "kinematics_qn_002",
+    "question": "Average velocity equals",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{\\text{Total Distance}}{\\text{Total time}}",
+      "\\frac{\\text{Total Displacement}}{\\text{Total time}}",
+      "\\text{Average speed}",
+      "\\text{Average acceleration}"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{\\text{Total Distance}}{\\text{Total time}}",
     "tags": {
       "chapter": "Kinematics",
-      "difficulty": "Easy",
+      "difficulty": "easy",
       "class": "11"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Kinematics - Q3?",
+    "id": "kinematics_qn_003",
+    "question": "Average acceleration equals",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{\\text{Change in velocity}}{\\text{Total time}}",
+      "\\frac{\\text{Change in speed}}{\\text{Total time}}",
+      "\\text{Average speed}",
+      "\\frac{\\text{Total Displacement}}{\\text{Total time}}"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{\\text{Change in velocity}}{\\text{Total time}}",
     "tags": {
       "chapter": "Kinematics",
-      "difficulty": "Easy",
+      "difficulty": "easy",
       "class": "11"
-    }
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "kinematics_qn_004",
+    "question": "Choose the correct option for uniformly accelerated motion",
+    "options": [
+      "\\vec{v} = \\vec{u} + \\vec{a}t",
+      "\\vec{u} = \\vec{v} + \\vec{a}t",
+      "\\vec{a} = \\frac{\\vec{v} + \\vec{u}}{2}",
+      "\\vec{a} = \\frac{\\vec{v} - \\vec{u}}{2}"
+    ],
+    "answer": "\\vec{v} = \\vec{u} + \\vec{a}t",
+    "tags": {
+      "chapter": "Kinematics",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "kinematics_qn_005",
+    "question": "Choose the correct option for uniformly accelerated motion",
+    "options": [
+      "\\vec{s} = \\vec{u}t + \\vec{a}t^2",
+      "\\vec{s} = \\vec{v}t + \\vec{a}t^2",
+      "\\vec{s} = \\vec{u}t + \\frac{1}{2} \\vec{a}t^2",
+      "\\vec{s} = \\vec{v}t + \\frac{1}{2} \\vec{a}t^2"
+    ],
+    "answer": "\\vec{s} = \\vec{u}t + \\frac{1}{2} \\vec{a}t^2",
+    "tags": {
+      "chapter": "Kinematics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "kinematics_qn_006",
+    "question": "Choose the correct option for uniformly accelerated motion",
+    "options": [
+      "v^2 + u^2 = 2(\\vec{a} \\times \\vec{s})",
+      "v^2 - u^2 = 2(\\vec{a} \\times \\vec{s})",
+      "v^2 + u^2 = 2(\\vec{a} \\cdot \\vec{s})",
+      "v^2 - u^2 = 2(\\vec{a} \\cdot \\vec{s})"
+    ],
+    "answer": "v^2 - u^2 = 2(\\vec{a} \\cdot \\vec{s})",
+    "tags": {
+      "chapter": "Kinematics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "kinematics_qn_007",
+    "question": "The displacement of a body in uniformly accelerated motion can be written as",
+    "options": [
+      "(\\vec{v} + \\vec{u})t",
+      "(\\vec{v} - \\vec{u})t",
+      "\\left(\\frac{\\vec{v} - \\vec{u}}{2}\\right)t",
+      "\\left(\\frac{\\vec{v} + \\vec{u}}{2}\\right)t"
+    ],
+    "answer": "\\left(\\frac{\\vec{v} + \\vec{u}}{2}\\right)t",
+    "tags": {
+      "chapter": "Kinematics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "kinematics_qn_008",
+    "question": "Choose the correct option for uniformly accelerated motion",
+    "options": [
+      "\\vec{s}_n = \\vec{u} + \\frac{\\vec{a}}{2}(2n + 1)",
+      "\\vec{s}_n = \\vec{u} - \\frac{\\vec{a}}{2}(2n - 1)",
+      "\\vec{s}_n = \\vec{u} + \\frac{\\vec{a}}{2}(2n - 1)",
+      "\\vec{s}_n = \\vec{u} - \\frac{\\vec{a}}{2}(2n + 1)"
+    ],
+    "answer": "\\vec{s}_n = \\vec{u} + \\frac{\\vec{a}}{2}(2n - 1)",
+    "tags": {
+      "chapter": "Kinematics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "kinematics_qn_009",
+    "question": "The velocity–time graph given below represents a body having",
+    "options": [
+      "\\text{At rest}",
+      "\\text{Uniform Motion}",
+      "\\text{Uniform acceleration}",
+      "\\text{Constant speed}"
+    ],
+    "answer": "\\text{Uniform acceleration}",
+    "tags": {
+      "chapter": "Kinematics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/kinematics/kinematics_qn_009.png",
+    "tip": ""
+  },
+  {
+    "id": "kinematics_qn_010",
+    "question": "From the below graph of displacement vs time, the velocity of the body",
+    "options": [
+      "\\text{First increases then decreases}",
+      "\\text{First decreases then increases}",
+      "\\text{Always increases}",
+      "\\text{Always decreases}"
+    ],
+    "answer": "\\text{First decreases then increases}",
+    "tags": {
+      "chapter": "Kinematics",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "assets/images/11th/kinematics/kinematics_qn_010.png",
+    "tip": ""
   }
 ]
