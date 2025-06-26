@@ -1,47 +1,185 @@
 [
   {
-    "question": "What is the key formula from Laws of Motion - Q1?",
+    "id": "laws_of_motion_qn_001",
+    "question": "Impulse equals",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\text{Change in linear momentum}",
+      "\\text{Change in angular momentum}",
+      "\\text{Linear momentum}",
+      "\\text{Angular Momentum}"
     ],
-    "answer": "Option A",
+    "answer": "\\text{Change in linear momentum}",
     "tags": {
-      "chapter": "Laws of Motion",
-      "difficulty": "Easy",
+      "chapter": "Laws_of_Motion",
+      "difficulty": "easy",
       "class": "11"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Laws of Motion - Q2?",
+    "id": "laws_of_motion_qn_002",
+    "question": "The acceleration of masses equals",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\left( \\frac{m_2 - m_1}{m_2 + m_1} \\right) g",
+      "2 \\left( \\frac{m_2 - m_1}{m_2 + m_1} \\right) g",
+      "g",
+      "\\frac{g}{2}"
     ],
-    "answer": "Option A",
+    "answer": "\\left( \\frac{m_2 - m_1}{m_2 + m_1} \\right) g",
     "tags": {
-      "chapter": "Laws of Motion",
-      "difficulty": "Easy",
+      "chapter": "Laws_of_Motion",
+      "difficulty": "easy",
       "class": "11"
-    }
+    },
+    "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_002.png",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Laws of Motion - Q3?",
+    "id": "laws_of_motion_qn_003",
+    "question": "The magnitude of static friction is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "= \\mu_k N",
+      "= \\mu_s N",
+      "\\leq \\mu_s N",
+      "\\geq \\mu_s N"
     ],
-    "answer": "Option A",
+    "answer": "\\leq \\mu_s N",
     "tags": {
-      "chapter": "Laws of Motion",
-      "difficulty": "Easy",
+      "chapter": "Laws_of_Motion",
+      "difficulty": "easy",
       "class": "11"
-    }
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "laws_of_motion_qn_004",
+    "question": "The magnitude of kinetic friction is",
+    "options": [
+      "= \\mu_k N",
+      "= \\mu_s N",
+      "\\leq \\mu_k N",
+      "\\geq \\mu_k N"
+    ],
+    "answer": "= \\mu_k N",
+    "tags": {
+      "chapter": "Laws_of_Motion",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "laws_of_motion_qn_005",
+    "question": "The acceleration in the string connecting blocks equals",
+    "options": [
+      "\\mu g,\\ \\left(\\mu = \\frac{m_1 m_2}{m_1 + m_2} \\right)",
+      "2\\mu g,\\ \\left(\\mu = \\frac{m_1 m_2}{m_1 + m_2} \\right)",
+      "3\\mu g,\\ \\left(\\mu = \\frac{m_1 m_2}{m_1 + m_2} \\right)",
+      "4\\mu g,\\ \\left(\\mu = \\frac{m_1 m_2}{m_1 + m_2} \\right)"
+    ],
+    "answer": "2\\mu g,\\ \\left(\\mu = \\frac{m_1 m_2}{m_1 + m_2} \\right)",
+    "tags": {
+      "chapter": "Laws_of_Motion",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_005.png",
+    "tip": ""
+  },
+
+    {
+      "id": "laws_of_motion_qn_006",
+      "question": "If <i>θ</i> is angle of friction, then tan <i>θ</i> equals",
+      "options": [
+        "\\frac{\\mu_s}{\\mu_k}",
+        "\\frac{\\mu_k}{\\mu_s}",
+        "\\mu_k",
+        "\\mu_s"
+      ],
+      "answer": "\\mu_s",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_007",
+      "question": "If <i>θ</i> is angle of repose, then tan <i>θ</i> equals",
+      "options": [
+        "\\frac{\\mu_s}{\\mu_k}",
+        "\\frac{\\mu_k}{\\mu_s}",
+        "\\mu_k",
+        "\\mu_s"
+      ],
+      "answer": "\\mu_s",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+  {
+    "id": "laws_of_motion_qn_008",
+    "question": "The component of gravitational force on block along direction shown is",
+    "options": [
+      "0",
+      "\\text{mg}",
+      "\\text{mg} \\cos \\theta",
+      "\\text{mg} \\sin \\theta"
+    ],
+    "answer": "\\text{mg} \\cos \\theta",
+    "tags": {
+      "chapter": "Laws_of_Motion",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_008.png",
+    "tip": ""
   }
+,
+    {
+      "id": "laws_of_motion_qn_009",
+      "question": "The acceleration of block down the fixed incline is (given tan <i>θ</i> &lt; <i>μ<sub>s</sub></i>)",
+      "options": [
+        "g (\\sin \\theta - \\mu_k \\cos \\theta)",
+        "g (\\sin \\theta - \\mu_s \\cos \\theta)",
+        "0",
+        "g \\sin \\theta"
+      ],
+      "answer": "0",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_009.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_010",
+      "question": "The acceleration of block down the fixed incline is (given tan <i>θ</i> &gt; <i>μ<sub>s</sub></i>)",
+      "options": [
+        "g (\\sin \\theta - \\mu_k \\cos \\theta)",
+        "g (\\sin \\theta - \\mu_s \\cos \\theta)",
+        "0",
+        "g \\sin \\theta"
+      ],
+      "answer": "g (\\sin \\theta - \\mu_k \\cos \\theta)",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_010.png",
+      "tip": ""
+    }
+
 ]

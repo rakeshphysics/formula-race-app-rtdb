@@ -166,12 +166,12 @@
       "id": "Vectors_qn_010",
       "question": "<b>a × (b × c)</b> equals",
       "options": [
-        "(\\vec{a} \\cdot \\vec{b}) \\cdot \\vec{c}",
-        "(\\vec{a} \\cdot \\vec{b}) \\vec{c} - (\\vec{a} \\cdot \\vec{c}) \\vec{b}",
-        "(\\vec{a} \\cdot \\vec{c}) \\vec{b} - (\\vec{a} \\cdot \\vec{b}) \\vec{c}",
-        "(\\vec{a} \\cdot \\vec{c}) \\vec{b}"
+        "(\\vec{a} \\cdot \\vec{b}\\,)\\, \\vec{c} - (\\vec{a} \\cdot \\vec{c}\\,)\\, \\vec{b}",
+        "(\\vec{a} \\cdot \\vec{c}\\,)\\, \\vec{b} - (\\vec{a} \\cdot \\vec{b}\\,)\\, \\vec{c}",
+        "(\\vec{a} \\cdot \\vec{b}\\,) \\cdot \\vec{c}",
+        "(\\vec{a} \\cdot \\vec{c}\\,)\\, \\vec{b}"
       ],
-      "answer": "(\\vec{a} \\cdot \\vec{c}) \\vec{b} - (\\vec{a} \\cdot \\vec{b}) \\vec{c}",
+      "answer": "(\\vec{a} \\cdot \\vec{b}\\,)\\, \\vec{c} - (\\vec{a} \\cdot \\vec{c}\\,)\\, \\vec{b}",
       "tags": {
         "chapter": "Vectors",
         "difficulty": "god",
