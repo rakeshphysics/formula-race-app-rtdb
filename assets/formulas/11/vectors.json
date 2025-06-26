@@ -88,6 +88,97 @@
     },
     "image": "assets/images/11th/Vectors/Vectors_qn_005.png",
     "tip": ""
-  }
+  },
+
+    {
+      "id": "Vectors_qn_006",
+      "question": "The scalar (dot) product of vectors <b>A</b> and <b>B</b> is (θ is angle between <b>A</b> and <b>B</b>)",
+      "options": [
+        "AB \\cos \\theta",
+        "AB \\sin \\theta",
+        "AB",
+        "AB \\cos^2 \\theta"
+      ],
+      "answer": "AB \\cos \\theta",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_007",
+      "question": "The vector (cross) product of vectors <b>A</b> and <b>B</b> is (θ is angle between <b>A</b> and <b>B</b>)",
+      "options": [
+        "AB \\cos \\theta\\, \\hat{n}",
+        "AB \\sin \\theta\\, \\hat{n}",
+        "AB \\hat{n}",
+        "AB \\cos^2 \\theta\\, \\hat{n}"
+      ],
+      "answer": "AB \\sin \\theta\\, \\hat{n}",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_008",
+      "question": "The cross product <b>j × k</b> equals (j and k are unit vectors along Y and Z axes)",
+      "options": [
+        "\\hat{j}",
+        "\\hat{k}",
+        "0",
+        "\\hat{i}"
+      ],
+      "answer": "\\hat{i}",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_009",
+      "question": "The dot product <b>i ⋅ j</b> equals (i and j are unit vectors along X and Y axes)",
+      "options": [
+        "\\hat{j}",
+        "\\hat{k}",
+        "0",
+        "\\hat{i}"
+      ],
+      "answer": "0",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_010",
+      "question": "<b>a × (b × c)</b> equals",
+      "options": [
+        "(\\vec{a} \\cdot \\vec{b}) \\cdot \\vec{c}",
+        "(\\vec{a} \\cdot \\vec{b}) \\vec{c} - (\\vec{a} \\cdot \\vec{c}) \\vec{b}",
+        "(\\vec{a} \\cdot \\vec{c}) \\vec{b} - (\\vec{a} \\cdot \\vec{b}) \\vec{c}",
+        "(\\vec{a} \\cdot \\vec{c}) \\vec{b}"
+      ],
+      "answer": "(\\vec{a} \\cdot \\vec{c}) \\vec{b} - (\\vec{a} \\cdot \\vec{b}) \\vec{c}",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    }
 
 ]
