@@ -1,47 +1,185 @@
 [
   {
-    "question": "What is the key formula from Work Power Energy - Q1?",
+    "id": "work_power_energy_qn_001",
+    "question": "If a constant force <b>F</b> displaces a particle through displacement <b>r</b>, then work done by force is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\text{Zero}",
+      "\\vec{r} \\times \\vec{F}",
+      "\\vec{F} \\times \\vec{r}",
+      "\\vec{F} \\cdot \\vec{r}"
     ],
-    "answer": "Option A",
+    "answer": "\\vec{F} \\cdot \\vec{r}",
     "tags": {
-      "chapter": "Work Power Energy",
-      "difficulty": "Easy",
+      "chapter": "Work_Power_Energy",
+      "difficulty": "easy",
       "class": "11"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Work Power Energy - Q2?",
+    "id": "work_power_energy_qn_002",
+    "question": "A particle moves in a circular path of radius <b>R</b> under action of a centripetal force <b>F</b>. Work done by the force when particle completes one rotation is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "0",
+      "F \\times \\pi R",
+      "F \\times 2\\pi R",
+      "F \\times R"
     ],
-    "answer": "Option A",
+    "answer": "0",
     "tags": {
-      "chapter": "Work Power Energy",
-      "difficulty": "Easy",
+      "chapter": "Work_Power_Energy",
+      "difficulty": "easy",
       "class": "11"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Work Power Energy - Q3?",
+    "id": "work_power_energy_qn_003",
+    "question": "The net work done by all forces on a body equals change in its",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\text{Kinetic Energy}",
+      "\\text{Potential Energy}",
+      "\\text{Velocity}",
+      "\\text{Speed}"
     ],
-    "answer": "Option A",
+    "answer": "\\text{Kinetic Energy}",
     "tags": {
-      "chapter": "Work Power Energy",
-      "difficulty": "Easy",
+      "chapter": "Work_Power_Energy",
+      "difficulty": "easy",
       "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "work_power_energy_qn_004",
+    "question": "The elastic energy stored in a spring is (<i>K</i> = spring constant, <i>x</i> = compression)",
+    "options": [
+      "Kx",
+      "Kx^2",
+      "\\frac{1}{2}Kx^2",
+      "\\frac{1}{4}Kx^2"
+    ],
+    "answer": "\\frac{1}{2}Kx^2",
+    "tags": {
+      "chapter": "Work_Power_Energy",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "work_power_energy_qn_005",
+    "question": "If <i>U</i> is the potential energy field in a region, the conservative force associated with the field is given by",
+    "options": [
+      "-\\text{U}",
+      "\\text{U}",
+      "\\vec{\\nabla}\\, U",
+      "-\\vec{\\nabla}\\, U"
+    ],
+    "answer": "-\\vec{\\nabla}\\, U",
+    "tags": {
+      "chapter": "Work_Power_Energy",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+
+
+    {
+      "id": "work_power_energy_qn_006",
+      "question": "The formula for instantaneous power supplied by a force is (<i>v</i> = velocity of body)",
+      "options": [
+        "2 (\\vec{F} \\times \\vec{v})",
+        "\\vec{v} \\times \\vec{F}",
+        "\\vec{F} \\cdot \\vec{v}",
+        "\\vec{F} \\times \\vec{v}"
+      ],
+      "answer": "\\vec{F} \\cdot \\vec{v}",
+      "tags": {
+        "chapter": "Work_Power_Energy",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "work_power_energy_qn_007",
+      "question": "A particle on the x-axis is in stable equilibrium, if <i>U</i> is its potential energy then",
+      "options": [
+        "\\frac{dU}{dx} > 0, \\quad \\frac{d^2 U}{dx^2} = 0",
+        "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} = 0",
+        "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} > 0",
+        "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} < 0"
+      ],
+      "answer": "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} > 0",
+      "tags": {
+        "chapter": "Work_Power_Energy",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "work_power_energy_qn_008",
+      "question": "A particle on the x-axis is in unstable equilibrium, if <i>U</i> is its potential energy then",
+      "options": [
+        "\\frac{dU}{dx} > 0, \\quad \\frac{d^2 U}{dx^2} = 0",
+        "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} = 0",
+        "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} > 0",
+        "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} < 0"
+      ],
+      "answer": "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} < 0",
+      "tags": {
+        "chapter": "Work_Power_Energy",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "work_power_energy_qn_009",
+      "question": "A particle on the x-axis is in neutral equilibrium, if <i>U</i> is its potential energy then",
+      "options": [
+        "\\frac{dU}{dx} > 0, \\quad \\frac{d^2 U}{dx^2} = 0",
+        "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} = 0",
+        "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} > 0",
+        "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} < 0"
+      ],
+      "answer": "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} = 0",
+      "tags": {
+        "chapter": "Work_Power_Energy",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "work_power_energy_qn_010",
+      "question": "If \\( \\vec{F} \\) is a conservative force, then which is necessarily true",
+      "options": [
+        "\\vec{\\nabla} \\cdot \\vec{F} = 0",
+        "\\vec{\\nabla} \\times \\vec{F} = 0",
+        "\\Delta \\vec{F} = 0",
+        "\\vec{\\nabla} \\cdot \\vec{F} > 0"
+      ],
+      "answer": "\\vec{\\nabla} \\times \\vec{F} = 0",
+      "tags": {
+        "chapter": "Work_Power_Energy",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
     }
-  }
+
 ]

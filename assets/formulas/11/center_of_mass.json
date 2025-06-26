@@ -1,47 +1,184 @@
 [
   {
-    "question": "What is the key formula from Center of Mass - Q1?",
+    "id": "center_of_mass_qn_001",
+    "question": "The center of mass of a semicircular ring of radius <i>R</i> from its base is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{R}{\\pi}",
+      "\\frac{2R}{\\pi}",
+      "\\frac{R}{3}",
+      "\\frac{R}{2}"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{2R}{\\pi}",
     "tags": {
-      "chapter": "Center of Mass",
-      "difficulty": "Easy",
+      "chapter": "Center_of_Mass",
+      "difficulty": "easy",
       "class": "11"
-    }
+    },
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_001.png",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Center of Mass - Q2?",
+    "id": "center_of_mass_qn_002",
+    "question": "The center of mass of a semicircular disc of radius <i>R</i> from its base is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{4R}{3\\pi}",
+      "\\frac{2R}{\\pi}",
+      "\\frac{R}{3}",
+      "\\frac{R}{2}"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{4R}{3\\pi}",
     "tags": {
-      "chapter": "Center of Mass",
-      "difficulty": "Easy",
+      "chapter": "Center_of_Mass",
+      "difficulty": "easy",
       "class": "11"
-    }
+    },
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_002.png",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Center of Mass - Q3?",
+    "id": "center_of_mass_qn_003",
+    "question": "The center of mass of a hollow hemisphere of radius <i>R</i> from its base is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{4R}{3\\pi}",
+      "\\frac{2R}{\\pi}",
+      "\\frac{R}{3}",
+      "\\frac{R}{2}"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{R}{2}",
     "tags": {
-      "chapter": "Center of Mass",
-      "difficulty": "Easy",
+      "chapter": "Center_of_Mass",
+      "difficulty": "easy",
       "class": "11"
+    },
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_003.png",
+    "tip": ""
+  },
+  {
+    "id": "center_of_mass_qn_004",
+    "question": "The center of mass of a solid hemisphere of radius <i>R</i> from its base is",
+    "options": [
+      "\\frac{4R}{3\\pi}",
+      "\\frac{2R}{\\pi}",
+      "\\frac{3R}{8}",
+      "\\frac{R}{2}"
+    ],
+    "answer": "\\frac{3R}{8}",
+    "tags": {
+      "chapter": "Center_of_Mass",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_004.png",
+    "tip": ""
+  },
+  {
+    "id": "center_of_mass_qn_005",
+    "question": "The center of mass of a hollow cone (birthday cap) of height <i>h</i> from its base is",
+    "options": [
+      "\\frac{h}{3}",
+      "\\frac{h}{2}",
+      "\\frac{h}{4}",
+      "\\frac{2h}{3}"
+    ],
+    "answer": "\\frac{h}{3}",
+    "tags": {
+      "chapter": "Center_of_Mass",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_005.png",
+    "tip": ""
+  },
+  {
+    "id": "center_of_mass_qn_006",
+    "question": "The center of mass of a solid cone of height <i>h</i> from its base is",
+    "options": [
+      "\\frac{h}{3}",
+      "\\frac{h}{2}",
+      "\\frac{h}{4}",
+      "\\frac{2h}{3}"
+    ],
+    "answer": "\\frac{h}{4}",
+    "tags": {
+      "chapter": "Center_of_Mass",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_006.png",
+    "tip": ""
+  },
+
+    {
+      "id": "laws_of_motion_qn_007",
+      "question": "The value of <i>e</i> (coefficient of restitution) for a perfectly elastic collision is",
+      "options": [
+        "1",
+        "< 1",
+        "0",
+        "> 1"
+      ],
+      "answer": "1",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_008",
+      "question": "The value of <i>e</i> (coefficient of restitution) for a perfectly inelastic collision is",
+      "options": [
+        "1",
+        "< 1",
+        "0",
+        "> 1"
+      ],
+      "answer": "0",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_009",
+      "question": "In a perfectly elastic head on collision, the velocities of colliding bodies",
+      "options": [
+        "\\text{Are exchanged}",
+        "\\text{Become zero}",
+        "\\text{Become twice their initial value}",
+        "\\text{Become half their initial value}"
+      ],
+      "answer": "\\text{Are exchanged}",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_010",
+      "question": "In a perfectly inelastic head on collision, the loss of kinetic energy equals (<i>μ</i> = reduced mass)",
+      "options": [
+        "\\mu v_{rel}^2",
+        "\\frac{1}{2} \\mu v_{rel}^2",
+        "2 \\mu v_{rel}^2",
+        "0"
+      ],
+      "answer": "\\frac{1}{2} \\mu v_{rel}^2",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
     }
-  }
+
 ]
