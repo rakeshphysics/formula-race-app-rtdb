@@ -1,47 +1,185 @@
 [
   {
-    "question": "What is the key formula from Gravitation - Q1?",
+    "id": "gravitation_qn_001",
+    "question": "The gravitational force of attraction between two point masses <i>m₁</i> and <i>m₂</i> placed at a distance <i>r</i> from each other is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{G m_1 m_2}{r^2}",
+      "\\frac{G m_1 m_2}{r}",
+      "\\frac{m_1 m_2}{G r}",
+      "\\frac{m_1 m_2}{G r^2}"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{G m_1 m_2}{r^2}",
     "tags": {
       "chapter": "Gravitation",
-      "difficulty": "Easy",
+      "difficulty": "easy",
       "class": "11"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Gravitation - Q2?",
+    "id": "gravitation_qn_002",
+    "question": "The gravitational field due to a spherical shell of mass <i>M</i>, radius <i>R</i> inside it at <i>r</i> from centre is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "0",
+      "\\frac{G M}{r^2}",
+      "\\frac{G M}{r}",
+      "\\frac{G M^2}{r^2}"
     ],
-    "answer": "Option A",
+    "answer": "0",
     "tags": {
       "chapter": "Gravitation",
-      "difficulty": "Easy",
+      "difficulty": "easy",
       "class": "11"
-    }
+    },
+    "image": "assets/images/11th/gravitation/gravitation_qn_002.png",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Gravitation - Q3?",
+    "id": "gravitation_qn_003",
+    "question": "The gravitational field due to a spherical shell of mass <i>M</i>, radius <i>R</i> outside it at <i>r</i> from centre is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "0",
+      "\\frac{G M}{r^2}",
+      "\\frac{G M}{r}",
+      "\\frac{G M^2}{r^2}"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{G M}{r^2}",
     "tags": {
       "chapter": "Gravitation",
-      "difficulty": "Easy",
+      "difficulty": "easy",
       "class": "11"
-    }
+    },
+    "image": "assets/images/11th/gravitation/gravitation_qn_003.png",
+    "tip": ""
+  },
+  {
+    "id": "gravitation_qn_004",
+    "question": "The gravitational field due to a solid sphere of mass <i>M</i>, radius <i>R</i> inside it at <i>r</i> from centre is",
+    "options": [
+      "\\frac{G M}{r^2}",
+      "\\frac{G M r}{R^3}",
+      "\\frac{G M}{r}",
+      "\\frac{G M^2}{r^2}"
+    ],
+    "answer": "\\frac{G M r}{R^3}",
+    "tags": {
+      "chapter": "Gravitation",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/gravitation/gravitation_qn_004.png",
+    "tip": ""
+  },
+  {
+    "id": "gravitation_qn_005",
+    "question": "The gravitational field due to a solid sphere of mass <i>M</i>, radius <i>R</i> outside it at <i>r</i> from centre is",
+    "options": [
+      "\\frac{G M}{r^2}",
+      "\\frac{G M r}{R^3}",
+      "\\frac{G M}{r}",
+      "\\frac{G M^2}{r^2}"
+    ],
+    "answer": "\\frac{G M}{r^2}",
+    "tags": {
+      "chapter": "Gravitation",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/gravitation/gravitation_qn_005.png",
+    "tip": ""
+  },
+
+    {
+      "id": "gravitation_qn_006",
+      "question": "The acceleration due to gravity on earth's surface is (<i>M</i> = mass of earth, <i>R</i> = radius of earth)",
+      "options": [
+        "\\frac{G M}{R}",
+        "\\frac{G M}{R^2}",
+        "\\frac{G M^2}{R}",
+        "\\frac{G M^2}{R^2}"
+      ],
+      "answer": "\\frac{G M}{R^2}",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "gravitation_qn_007",
+      "question": "The acceleration due to gravity at a height <i>h</i> from surface of earth is (<i>g</i> = acceleration due to gravity on earth's surface, <i>R</i> = radius of earth)",
+      "options": [
+        "g \\left( 1 + \\left( \\frac{h}{R} \\right)^2 \\right)",
+        "\\frac{g}{1 + \\left( \\frac{h}{R} \\right)^3}",
+        "\\frac{g}{\\left( 1 + \\left( \\frac{h}{R} \\right)^2 \\right)}",
+        "g \\left( 1 + \\left( \\frac{h}{R} \\right)^3 \\right)"
+      ],
+      "answer": "\\frac{g}{\\left( 1 + \\left( \\frac{h}{R} \\right)^2 \\right)}",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/gravitation/gravitation_qn_007.png",
+      "tip": ""
+    },
+    {
+      "id": "gravitation_qn_008",
+      "question": "The acceleration due to gravity at a depth <i>d</i> from surface of earth is (<i>g</i> = acceleration due to gravity on earth’s surface, <i>R</i> = radius of earth)",
+      "options": [
+        "g \\left( 1 - \\frac{d}{R} \\right)",
+        "g \\left( 1 + \\frac{d}{R} \\right)",
+        "\\frac{g}{1 - \\frac{d}{R}}",
+        "\\frac{g}{1 + \\frac{d}{R}}"
+      ],
+      "answer": "g \\left( 1 - \\frac{d}{R} \\right)",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/gravitation/gravitation_qn_008.png",
+      "tip": ""
+    },
+    {
+      "id": "gravitation_qn_009",
+      "question": "If rotation of earth is taken into account, the acceleration due to gravity on surface of earth at latitude <i>θ</i> is (<i>g</i> = acceleration due to gravity on earth’s surface, <i>R</i> = radius of earth, <i>ω</i> = Angular speed of earth rotation)",
+      "options": [
+        "g",
+        "g - R \\omega^2 \\cos \\theta",
+        "g - R \\omega^2",
+        "g - R \\omega^2 \\cos^2 \\theta"
+      ],
+      "answer": "g - R \\omega^2 \\cos^2 \\theta",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/gravitation/gravitation_qn_009.png",
+      "tip": ""
+    },
+  {
+    "id": "gravitation_qn_010",
+    "question": "The gravitational potential due to a solid sphere inside it, at a distance <i>r</i> from its center (<i>M</i> = mass of sphere, <i>R</i> = radius of sphere)",
+    "options": [
+      "-\\frac{G M}{r}",
+      "-\\frac{G M}{2 R^3} \\left(3 R^2 - r^2\\right)",
+      "\\frac{G M}{r}",
+      "\\frac{G M}{2 R^3} \\left(3 R^2 - r^2\\right)"
+    ],
+    "answer": "-\\frac{G M}{2 R^3} \\left(3 R^2 - r^2\\right)",
+    "tags": {
+      "chapter": "Gravitation",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "assets/images/11th/gravitation/gravitation_qn_010.png",
+    "tip": ""
   }
+
+
 ]
