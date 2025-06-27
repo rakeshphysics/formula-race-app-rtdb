@@ -1,7 +1,7 @@
 [
   {
     "id": "gravitation_qn_001",
-    "question": "The gravitational force of attraction between two point masses <i>m₁</i> and <i>m₂</i> placed at a distance <i>r</i> from each other is",
+    "question": "The gravitational force of attraction between two point masses <i>m<sub>1</sub></i> and <i>m<sub>2</sub></i> placed at a distance <i>r</i> from each other is",
     "options": [
       "\\frac{G m_1 m_2}{r^2}",
       "\\frac{G m_1 m_2}{r}",
@@ -146,7 +146,7 @@
     },
     {
       "id": "gravitation_qn_009",
-      "question": "If rotation of earth is taken into account, the acceleration due to gravity on surface of earth at latitude <i>θ</i> is (<i>g</i> = acceleration due to gravity on earth’s surface, <i>R</i> = radius of earth, <i>ω</i> = Angular speed of earth rotation)",
+      "question": "The acceleration due to gravity on surface of earth at latitude <i>θ</i> is (<i>g</i> = acceleration due to gravity on earth’s surface, <i>R</i> = radius of earth, <i>ω</i> = Angular speed of earth rotation)",
       "options": [
         "g",
         "g - R \\omega^2 \\cos \\theta",

@@ -80,7 +80,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     super.initState();
     _progressController = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 7), // 7s per segment
+      duration: const Duration(seconds: 18), // 18s per segment
     );
     _progressAnimation = Tween<double>(begin: 0, end: 1).animate(_progressController);
 
@@ -116,6 +116,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 
      if (widget.selectedChapter == 'full11') {
         fullChapters = [
+          'Vectors'
           'Units and Dimensions',
           'Kinematics',
           'Laws of Motion',
@@ -149,6 +150,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       } else if (widget.selectedChapter == 'fullBoth') {
         fullChapters = [
           // 11th
+          'Vectors'
           'Units and Dimensions',
           'Kinematics',
           'Laws of Motion',

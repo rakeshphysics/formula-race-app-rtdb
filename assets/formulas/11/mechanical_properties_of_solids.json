@@ -1,47 +1,185 @@
 [
   {
-    "question": "What is the key formula from Mechanical Properties of Solids - Q1?",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "answer": "Option A",
-    "tags": {
-      "chapter": "Mechanical Properties of Solids",
-      "difficulty": "Easy",
-      "class": "11"
-    }
+  "id": "mechanical_properties_of_solids_qn_001",
+  "question": "(Tensile stress/Tensile strain) is called",
+  "options": [
+    "\\text{Bulk Modulus}",
+    "\\text{Youngs Modulus}",
+    "\\text{Shear Modulus}",
+    "\\text{Modulus of rigidity}"
+  ],
+  "answer": "\\text{Youngs Modulus}",
+  "tags": {
+    "chapter": "mechanical_properties_of_solids",
+    "difficulty": "easy",
+    "class": "11"
   },
+  "image": "",
+  "tip": ""
+},
+{
+"id": "mechanical_properties_of_solids_qn_002",
+"question": "(Volume stress/Volume strain) is called",
+"options": [
+"\\text{Bulk Modulus}",
+"\\text{Youngs Modulus}",
+"\\text{Shear Modulus}",
+"\\text{Modulus of rigidity}"
+],
+"answer": "\\text{Bulk Modulus}",
+"tags": {
+"chapter": "mechanical_properties_of_solids",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "mechanical_properties_of_solids_qn_003",
+"question": "(Shear stress/Shear strain) is called",
+"options": [
+"\\text{Bulk Modulus}",
+"\\text{Youngs Modulus}",
+"\\text{None of these}",
+"\\text{Modulus of rigidity}"
+],
+"answer": "\\text{Modulus of rigidity}",
+"tags": {
+"chapter": "mechanical_properties_of_solids",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "",
+"tip": ""
+},
   {
-    "question": "What is the key formula from Mechanical Properties of Solids - Q2?",
+    "id": "mechanical_properties_of_solids_qn_004",
+    "question": "Compressibility (K) is defined as (B = bulk modulus, Y = Young's Modulus)",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{1}{B}",
+      "\\frac{1}{Y}",
+      "Y",
+      "B"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{1}{B}",
     "tags": {
-      "chapter": "Mechanical Properties of Solids",
-      "difficulty": "Easy",
+      "chapter": "mechanical_properties_of_solids",
+      "difficulty": "easy",
       "class": "11"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
+{
+"id": "mechanical_properties_of_solids_qn_005",
+"question": "For an ideal gas undergoing isothermal process, PV = const, its bulk modulus is",
+"options": [
+"\\frac{P}{2}",
+"2P",
+"P",
+"\\gamma P"
+],
+"answer": "P",
+"tags": {
+"chapter": "mechanical_properties_of_solids",
+"difficulty": "medium",
+"class": "11"
+},
+"image": "",
+"tip": ""
+},
   {
-    "question": "What is the key formula from Mechanical Properties of Solids - Q3?",
+    "id": "mechanical_properties_of_solids_qn_006",
+    "question": "For an ideal gas undergoing Adiabatic process, its bulk modulus is (P = pressure of gas, γ = adiabatic constant)",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{P}{2}",
+      "2P",
+      "P",
+      "\\gamma P"
     ],
-    "answer": "Option A",
+    "answer": "\\gamma P",
     "tags": {
-      "chapter": "Mechanical Properties of Solids",
-      "difficulty": "Easy",
+      "chapter": "mechanical_properties_of_solids",
+      "difficulty": "medium",
       "class": "11"
-    }
+    },
+    "image": "",
+    "tip": ""
   }
+,
+  {
+    "id": "mechanical_properties_of_solids_qn_007",
+    "question":"For an ideal gas undergoing polytropic process PV<sup>n</sup> = const, its bulk modulus is",
+    "options": [
+      "\\frac{P}{2}",
+      "2P",
+      "nP",
+      "\\gamma P"
+    ],
+    "answer": "nP",
+    "tags": {
+      "chapter": "mechanical_properties_of_solids",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  }
+,
+  {
+    "id": "mechanical_properties_of_solids_qn_008",
+    "question": "Poisson ratio (σ) is defined as",
+    "options": [
+      "\\frac{\\text{Lateral Strain}}{\\text{Longitudinal Strain}}",
+      "\\frac{\\text{Lateral Stress}}{\\text{Longitudinal Strain}}",
+      "\\frac{\\text{Lateral Stress}}{\\text{Longitudinal stress}}",
+      "\\frac{\\text{Longitudinal Strain}}{\\text{Lateral Strain}}"
+    ],
+    "answer": "\\frac{\\text{Lateral Strain}}{\\text{Longitudinal Strain}}",
+    "tags": {
+      "chapter": "mechanical_properties_of_solids",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "mechanical_properties_of_solids_qn_009",
+    "question": "The elastic potential energy density stored in a wire is",
+    "options": [
+      "\\frac{(\\text{stress})^2}{4Y}",
+      "\\frac{\\text{stress} \\times \\text{strain}}{2}",
+      "\\frac{Y (\\text{strain})^2}{4}",
+      "\\frac{(\\text{strain})^2}{2Y}"
+    ],
+    "answer": "\\frac{\\text{stress} \\times \\text{strain}}{2}",
+    "tags": {
+      "chapter": "mechanical_properties_of_solids",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "mechanical_properties_of_solids_qn_010",
+    "question": "A rod is rigidly fixed between two walls. The thermal tension in the rod if temperature is decreased by θ is (Y = Young's modulus, α = thermal expansion coefficient, A = cross section area)",
+    "options": [
+      "\\alpha \\theta",
+      "Y \\alpha \\theta",
+      "Y A \\alpha \\theta",
+      "\\frac{Y A \\theta}{\\alpha}"
+    ],
+    "answer": "Y A \\alpha \\theta",
+    "tags": {
+      "chapter": "mechanical_properties_of_solids",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "assets/images/11th/mechanical_properties_of_solids/mechanical_properties_of_solids_qn_010.png",
+    "tip": ""
+  }
+
 ]
