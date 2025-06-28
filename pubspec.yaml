@@ -51,10 +51,10 @@ flutter:
     - assets/formulas/11/rotational_motion.json
     - assets/formulas/11/gravitation.json
     - assets/formulas/11/mechanical_properties_of_solids.json
-    - assets/formulas/11/mechanical_properties_of_fluids.json
+    - assets/formulas/11/fluids.json
     - assets/formulas/11/thermodynamics.json
     - assets/formulas/11/kinetic_theory.json
-    - assets/formulas/11/oscillations.json
+    - assets/formulas/11/shm.json
     - assets/formulas/11/waves.json
 
     # Class 12
@@ -80,6 +80,9 @@ flutter:
     - assets/images/11th/Rotational_Motion/
     - assets/images/11th/gravitation/
     - assets/images/11th/mechanical_properties_of_solids/
+    - assets/images/11th/fluids/
+    - assets/images/11th/shm/
+    - assets/images/11th/waves/
     - assets/images/12th/Electrostatics/
 
 

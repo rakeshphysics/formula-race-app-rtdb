@@ -1,47 +1,183 @@
 [
   {
-    "question": "What is the key formula from Waves - Q1?",
+  "id": "waves_qn_001",
+  "question": "The relation between frequency <i>f</i> and time period <i>T</i> is",
+  "options": [
+    "f = \\frac{1}{T}",
+    "f = \\frac{2\\pi}{T}",
+    "f = \\frac{T}{2\\pi}",
+    "f = 2\\pi T"
+  ],
+  "answer": "f = \\frac{1}{T}",
+  "tags": {
+    "chapter": "waves",
+    "difficulty": "easy",
+    "class": "11"
+  },
+  "image": "",
+  "tip": ""
+},
+{
+"id": "waves_qn_002",
+"question": "The relation between wave speed <i>v</i>, frequency <i>f</i>, wavelength <i>&lambda;</i> of a travelling wave is",
+"options": [
+"v f = \\frac{1}{\\lambda}",
+"v = \\frac{f}{\\lambda}",
+"v = \\frac{\\lambda}{f}",
+"v = f \\lambda"
+],
+"answer": "v = f \\lambda",
+"tags": {
+"chapter": "waves",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "waves_qn_003",
+"question": "The relation between wave speed <i>v</i>, angular frequency <i>&omega;</i>, angular wavenumber <i>k</i> of a travelling wave is",
+"options": [
+"v \\omega = \\frac{1}{k}",
+"v = \\frac{k}{\\omega}",
+"v = \\frac{\\omega}{k}",
+"v = \\omega k"
+],
+"answer": "v = \\frac{\\omega}{k}",
+"tags": {
+"chapter": "waves",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "waves_qn_004",
+"question": "Wavenumber equals",
+"options": [
+"\\text{Number of waves in 1 meter}",
+"\\text{Number of waves in 2 meter}",
+"\\text{Number of waves in 3 meter}",
+"\\text{Number of waves in 1 cm}"
+],
+"answer": "\\text{Number of waves in 1 meter}",
+"tags": {
+"chapter": "waves",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "waves_qn_005",
+"question": "The relation between particle velocity <i>v<sub>p</sub></i>, wave speed <i>v<sub>w</sub></i>, and slope of wave is",
+"options": [
+"v_p = v_w \\times (\\text{slope})",
+"v_p = -v_w \\times (\\text{slope})",
+"v_w = v_p \\times (\\text{slope})",
+"v_w = -v_p \\times (\\text{slope})"
+],
+"answer": "v_p = -v_w \\times (\\text{slope})",
+"tags": {
+"chapter": "waves",
+"difficulty": "medium",
+"class": "11"
+},
+"image": "",
+"tip": ""
+},
+  {
+    "id": "waves_qn_006",
+    "question": "A transverse wave travels towards right as shown. The directions of acceleration and velocity of particle <i>P</i> is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\text{v}_p \\uparrow \\text{ and a}_p \\uparrow",
+      "\\text{v}_p \\uparrow \\text{ and a}_p \\downarrow",
+      "\\text{v}_p \\rightarrow \\text{ and a}_p \\downarrow",
+      "\\text{v}_p \\rightarrow \\text{ and a}_p \\uparrow"
     ],
-    "answer": "Option A",
+    "answer": "\\text{v}_p \\uparrow \\text{ and a}_p \\downarrow",
     "tags": {
-      "chapter": "Waves",
-      "difficulty": "Easy",
+      "chapter": "waves",
+      "difficulty": "medium",
       "class": "11"
-    }
+    },
+    "image": "assets/images/11th/waves/waves_qn_006.png",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Waves - Q2?",
+    "id": "waves_qn_007",
+    "question": "A transverse wave travels towards right as shown. The directions of acceleration and velocity of particle <i>P</i> is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\text{v}_p \\uparrow \\text{ and a}_p \\uparrow",
+      "\\text{v}_p \\uparrow \\text{ and a}_p \\downarrow",
+      "\\text{v}_p \\rightarrow \\text{ and a}_p \\downarrow",
+      "\\text{v}_p \\rightarrow \\text{ and a}_p \\uparrow"
     ],
-    "answer": "Option A",
+    "answer": "\\text{v}_p \\uparrow \\text{ and a}_p \\downarrow",
     "tags": {
-      "chapter": "Waves",
-      "difficulty": "Easy",
+      "chapter": "waves",
+      "difficulty": "medium",
       "class": "11"
-    }
+    },
+    "image": "assets/images/11th/waves/waves_qn_007.png",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Waves - Q3?",
+    "id": "waves_qn_008",
+    "question": "A transverse wave travels towards right as shown. The directions of acceleration and velocity of particle <i>P</i> is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\text{v}_p \\uparrow \\text{ and a}_p \\uparrow",
+      "\\text{v}_p \\uparrow \\text{ and a}_p \\downarrow",
+      "\\text{v}_p \\rightarrow \\text{ and a}_p \\downarrow",
+      "\\text{v}_p \\rightarrow \\text{ and a}_p \\uparrow"
     ],
-    "answer": "Option A",
+    "answer": "\\text{v}_p \\uparrow \\text{ and a}_p \\downarrow",
     "tags": {
-      "chapter": "Waves",
-      "difficulty": "Easy",
+      "chapter": "waves",
+      "difficulty": "medium",
       "class": "11"
-    }
+    },
+    "image": "assets/images/11th/waves/waves_qn_008.png",
+    "tip": ""
+  },
+  {
+    "id": "waves_qn_009",
+    "question": "A transverse wave travels towards right as shown. The directions of acceleration and velocity of particle <i>P</i> is",
+    "options": [
+      "\\text{v}_p \\downarrow \\text{ and a}_p \\uparrow",
+      "\\text{v}_p \\downarrow \\text{ and a}_p \\downarrow",
+      "\\text{v}_p \\rightarrow \\text{ and a}_p \\downarrow",
+      "\\text{v}_p \\rightarrow \\text{ and a}_p \\uparrow"
+    ],
+    "answer": "\\text{v}_p \\downarrow \\text{ and a}_p \\uparrow",
+    "tags": {
+      "chapter": "waves",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/waves/waves_qn_009.png",
+    "tip": ""
+  },
+  {
+    "id": "waves_qn_010",
+    "question": "The speed of wave pulse on the uniform rope equals (μ = mass per unit length of rope)",
+    "options": [
+      "\\sqrt{\\mu g}",
+      "\\sqrt{\\mu g x}",
+      "\\sqrt{g x}",
+      "\\sqrt{\\mu x}"
+    ],
+    "answer": "\\sqrt{g x}",
+    "tags": {
+      "chapter": "waves",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "assets/images/11th/waves/waves_qn_010.png",
+    "tip": ""
   }
+
 ]

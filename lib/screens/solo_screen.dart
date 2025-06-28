@@ -29,7 +29,7 @@ const Map<String, String> chapterToClass = {
   "Rotation": "11",
   "Gravitation": "11",
   "Mechanical Properties of Solids": "11",
-  "Mechanical Properties of Fluids": "11",
+  "Fluids": "11",
   "Thermodynamics": "11",
   "Kinetic Theory": "11",
   "Oscillations": "11",
@@ -125,10 +125,10 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'Rotational Motion',
           'Gravitation',
           'Mechanical Properties of Solids',
-          'Mechanical Properties of Fluids',
+          'Fluids',
           'Thermodynamics',
           'Kinetic Theory',
-          'Oscillations',
+          'SHM',
           'Waves',
         ];
       }
@@ -159,10 +159,10 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'Rotational Motion',
           'Gravitation',
           'Mechanical Properties of Solids',
-          'Mechanical Properties of Fluids',
+          'Fluids',
           'Thermodynamics',
           'Kinetic Theory',
-          'Oscillations',
+          'SHM',
           'Waves',
           // 12th
           'Electrostatics',
@@ -535,7 +535,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 
                     if (question['image'] != "")
                       Container(
-                        margin: const EdgeInsets.symmetric(vertical: 10),
+                        margin: const EdgeInsets.symmetric(vertical: 0),
                         child: Image.asset(
                           question['image'],
                           width: MediaQuery.of(context).size.width * 0.6,

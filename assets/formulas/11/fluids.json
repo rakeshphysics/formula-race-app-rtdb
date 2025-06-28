@@ -1,0 +1,184 @@
+[
+
+{
+  "id": "fluids_qn_001",
+  "question": "The pressure difference between points <i>a</i> and <i>b</i> is (ρ = density of liquid)",
+  "options": [
+    "\\frac{h \\rho}{g}",
+    "h \\rho g",
+    "\\frac{h}{g \\rho}",
+    "\\frac{\\rho}{h g}"
+  ],
+  "answer": "h \\rho g",
+  "tags": {
+    "chapter": "fluids",
+    "difficulty": "easy",
+    "class": "11"
+  },
+  "image": "assets/images/11th/fluids/fluids_qn_001.png",
+  "tip": ""
+},
+{
+"id": "fluids_qn_002",
+"question": "The buoyancy force on the body immersed in liquid is (V = volume of body, ρ = density of liquid, σ = density of liquid)",
+"options": [
+"V \\sigma g",
+"V \\rho g",
+"V (\\sigma + \\rho) g",
+"V (\\sigma - \\rho) g"
+],
+"answer": "V \\rho g",
+"tags": {
+"chapter": "fluids",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "assets/images/11th/fluids/fluids_qn_002.png",
+"tip": ""
+},
+{
+"id": "fluids_qn_003",
+"question": "Equation of continuity states that (A = cross section area, v = velocity)",
+"options": [
+"A_1 v_1 = A_2 v_2",
+"A_1 v_2 = A_2 v_1",
+"A_1 v_2 > A_2 v_1",
+"A_1 v_1 < A_2 v_2"
+],
+"answer": "A_1 v_1 = A_2 v_2",
+"tags": {
+"chapter": "fluids",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "assets/images/11th/fluids/fluids_qn_003.png",
+"tip": ""
+},
+{
+"id": "fluids_qn_004",
+"question": "Efflux velocity <i>v</i> is given by",
+"options": [
+"\\sqrt{g h}",
+"\\sqrt{\\frac{2 h}{g}}",
+"2 g h",
+"\\sqrt{2 g h}"
+],
+"answer": "\\sqrt{2 g h}",
+"tags": {
+"chapter": "fluids",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "assets/images/11th/fluids/fluids_qn_004.png",
+"tip": ""
+},
+{
+"id": "fluids_qn_005",
+"question": "The buoyancy force on the body immersed in liquid is (m = mass of body, s = specific gravity of body)",
+"options": [
+"\\frac{s}{m g}",
+"\\frac{m s}{g}",
+"\\frac{m g}{s}",
+"m g s"
+],
+"answer": "\\frac{m g}{s}",
+"tags": {
+"chapter": "fluids",
+"difficulty": "medium",
+"class": "11"
+},
+"image": "assets/images/11th/fluids/fluids_qn_005.png",
+"tip": ""
+},
+  {
+    "id": "fluids_qn_006",
+    "question": "Bernoulli’s equation is given by (P = pressure, ρ = density of liquid, h = height of liquid from reference, v = fluid speed)",
+    "options": [
+      "P + \\frac{1}{2} \\rho v^2 + \\rho g h = \\text{const}",
+      "P + \\rho v^2 + \\rho g h = \\text{const}",
+      "P + \\frac{1}{2} \\rho v^2 + p h = \\text{const}",
+      "P + \\frac{1}{2} v^2 + g h = \\text{const}"
+    ],
+    "answer": "P + \\frac{1}{2} \\rho v^2 + \\rho g h = \\text{const}",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/fluids/fluids_qn_006.png",
+    "tip": ""
+  },
+  {
+    "id": "fluids_qn_007",
+    "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated upwards with acceleration <i>a</i> is",
+    "options": [
+      "h \\rho g",
+      "h \\rho (g + a)",
+      "h \\rho (g - a)",
+      "h \\rho (a - g)"
+    ],
+    "answer": "h \\rho (g + a)",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/fluids/fluids_qn_007.png",
+    "tip": ""
+  },
+  {
+    "id": "fluids_qn_008",
+    "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated towards right with acceleration <i>a</i> is",
+    "options": [
+      "l \\rho a",
+      "l \\rho (g + a)",
+      "l \\rho g",
+      "l \\rho (g - a)"
+    ],
+    "answer": "l \\rho a",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/fluids/fluids_qn_008.png",
+    "tip": ""
+  },
+  {
+    "id": "fluids_qn_009",
+    "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated downwards with acceleration <i>a</i> is (<i>a</i> &lt; <i>g</i>)",
+    "options": [
+      "h \\rho g",
+      "h \\rho (g + a)",
+      "h \\rho (g - a)",
+      "h \\rho (a - g)"
+    ],
+    "answer": "h \\rho (g - a)",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/fluids/fluids_qn_009.png",
+    "tip": ""
+  },
+  {
+    "id": "fluids_qn_010",
+    "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated downwards with acceleration <i>a</i> is (<i>a</i> &gt; <i>g</i>)",
+    "options": [
+      "0",
+      "h \\rho (g + a)",
+      "h \\rho (g - a)",
+      "h \\rho (a - g)"
+    ],
+    "answer": "0",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "assets/images/11th/fluids/fluids_qn_010.png",
+    "tip": ""
+  }
+
+]

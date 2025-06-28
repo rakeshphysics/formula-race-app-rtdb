@@ -1,0 +1,183 @@
+[
+  {
+  "id": "shm_qn_001",
+  "question": "For the spring block system, its natural frequency ω is",
+  "options": [
+    "\\sqrt{\\frac{m}{k}}",
+    "\\sqrt{\\frac{k}{m}}",
+    "\\sqrt{k m}",
+    "\\sqrt{\\frac{1}{k m}}"
+  ],
+  "answer": "\\sqrt{\\frac{k}{m}}",
+  "tags": {
+    "chapter": "shm",
+    "difficulty": "easy",
+    "class": "11"
+  },
+  "image": "assets/images/11th/shm/shm_qn_001.png",
+  "tip": ""
+},
+{
+"id": "shm_qn_002",
+"question": "For the torsional pendulum shown, its angular frequency ω is (C = torsional constant, I = moment of inertia)",
+"options": [
+"\\sqrt{C I}",
+"\\sqrt{\\frac{I}{C}}",
+"\\sqrt{\\frac{C}{I}}",
+"\\sqrt{\\frac{1}{C I}}"
+],
+"answer": "\\sqrt{\\frac{C}{I}}",
+"tags": {
+"chapter": "shm",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "assets/images/11th/shm/shm_qn_002.png",
+"tip": ""
+},
+{
+"id": "shm_qn_003",
+"question": "The total energy of the spring block shown in figure is (ω = Angular frequency)",
+"options": [
+"\\frac{1}{2} K x^2",
+"\\frac{1}{2} K A^2",
+"\\frac{1}{2} m \\omega^2 x^2",
+"\\frac{1}{2} m \\omega^2 x"
+],
+"answer": "\\frac{1}{2} K A^2",
+"tags": {
+"chapter": "shm",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "assets/images/11th/shm/shm_qn_003.png",
+"tip": ""
+},
+{
+"id": "shm_qn_004",
+"question": "The potential energy of the spring block system shown in figure is (ω = Angular frequency, spring has zero natural length)",
+"options": [
+"\\frac{1}{2} K x^2",
+"\\frac{1}{2} K A^2",
+"\\frac{1}{2} m \\omega^2 x^2",
+"\\frac{1}{2} m \\omega^2 x"
+],
+"answer": "\\frac{1}{2} K x^2",
+"tags": {
+"chapter": "shm",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "assets/images/11th/shm/shm_qn_004.png",
+"tip": ""
+},
+{
+"id": "shm_qn_005",
+"question": "The kinetic energy of the spring block system shown in figure is (ω = Angular frequency)",
+"options": [
+"\\frac{1}{2} K x^2",
+"\\frac{1}{2} K A^2",
+"\\frac{1}{2} m \\omega^2 x^2",
+"\\frac{1}{2} m \\omega^2 (A^2 - x^2)"
+],
+"answer": "\\frac{1}{2} m \\omega^2 (A^2 - x^2)",
+"tags": {
+"chapter": "shm",
+"difficulty": "medium",
+"class": "11"
+},
+"image": "assets/images/11th/shm/shm_qn_005.png",
+"tip": ""
+},
+  {
+    "id": "shm_qn_006",
+    "question": "The magnitude of acceleration of block at the instant shown is (ω = Angular frequency)",
+    "options": [
+      "\\omega^2 x",
+      "\\omega \\sqrt{A^2 - x^2}",
+      "\\omega^2 A",
+      "\\omega x^2"
+    ],
+    "answer": "\\omega^2 x",
+    "tags": {
+      "chapter": "shm",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/shm/shm_qn_006.png",
+    "tip": ""
+  },
+  {
+    "id": "shm_qn_007",
+    "question": "The speed of block at the instant shown is (ω = Angular frequency)",
+    "options": [
+      "\\omega^2 x",
+      "\\omega \\sqrt{A^2 - x^2}",
+      "\\omega A",
+      "\\omega x"
+    ],
+    "answer": "\\omega \\sqrt{A^2 - x^2}",
+    "tags": {
+      "chapter": "shm",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/shm/shm_qn_007.png",
+    "tip": ""
+  },
+  {
+    "id": "shm_qn_008",
+    "question": "The time average of potential energy over one cycle of SHM is",
+    "options": [
+      "\\frac{1}{8} K A^2",
+      "\\frac{1}{6} K A^2",
+      "\\frac{1}{2} K A^2",
+      "\\frac{1}{4} K A^2"
+    ],
+    "answer": "\\frac{1}{4} K A^2",
+    "tags": {
+      "chapter": "shm",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "shm_qn_009",
+    "question": "The time average of kinetic energy over one cycle of SHM is",
+    "options": [
+      "\\frac{1}{8} K A^2",
+      "\\frac{1}{6} K A^2",
+      "\\frac{1}{2} K A^2",
+      "\\frac{1}{4} K A^2"
+    ],
+    "answer": "\\frac{1}{4} K A^2",
+    "tags": {
+      "chapter": "shm",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "shm_qn_010",
+    "question": "The space average of potential energy over one cycle of SHM is",
+    "options": [
+      "\\frac{1}{8} K A^2",
+      "\\frac{1}{6} K A^2",
+      "\\frac{1}{2} K A^2",
+      "\\frac{1}{4} K A^2"
+    ],
+    "answer": "\\frac{1}{6} K A^2",
+    "tags": {
+      "chapter": "shm",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  }
+
+]

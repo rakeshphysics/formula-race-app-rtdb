@@ -23,10 +23,10 @@ class ChapterSelectionScreen extends StatelessWidget {
     'Rotational Motion',
     'Gravitation',
     'Mechanical Properties of Solids',
-    'Mechanical Properties of Fluids',
+    'Fluids',
     'Thermodynamics',
     'Kinetic Theory',
-    'Oscillations',
+    'SHM',
     'Waves',
 
     // Class 12
