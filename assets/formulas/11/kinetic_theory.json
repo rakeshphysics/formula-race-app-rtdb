@@ -1,47 +1,184 @@
 [
+
+{
+  "id": "kinetic_theory_qn_001",
+  "question": "Boyle's law states that (<i>P, V, T</i> are Pressure volume and temperature of gas)",
+  "options": [
+    "P \\propto \\frac{1}{V}",
+    "P \\propto V",
+    "P \\propto T",
+    "V \\propto T"
+  ],
+  "answer": "P \\propto \\frac{1}{V}",
+  "tags": {
+    "chapter": "kinetic_theory",
+    "difficulty": "easy",
+    "class": "11"
+  },
+  "image": "",
+  "tip": ""
+},
+{
+"id": "kinetic_theory_qn_002",
+"question": "Charles' law states that (<i>P, V, T</i> are Pressure volume and temperature of gas)",
+"options": [
+"P \\propto \\frac{1}{V}",
+"P \\propto V",
+"P \\propto T",
+"V \\propto T"
+],
+"answer": "V \\propto T",
+"tags": {
+"chapter": "kinetic_theory",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "kinetic_theory_qn_003",
+"question": "Gay Lussac's law states that (<i>P, V, T</i> are Pressure volume and temperature of gas)",
+"options": [
+"P \\propto \\frac{1}{V}",
+"P \\propto V",
+"P \\propto T",
+"V \\propto T"
+],
+"answer": "P \\propto T",
+"tags": {
+"chapter": "kinetic_theory",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "kinetic_theory_qn_004",
+"question": "The molar form of ideal gas equation is (Symbols have usual meanings)",
+"options": [
+"PV = nRT",
+"PV = mRT",
+"PV = kRT",
+"PV = MRT"
+],
+"answer": "PV = nRT",
+"tags": {
+"chapter": "kinetic_theory",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "kinetic_theory_qn_005",
+"question": "The correct relation between <i>R</i> = universal gas const, <i>N<sub>A</sub></i> = Avogadro number, <i>k</i> = Boltzmann const",
+"options": [
+"R = \\frac{N_A}{k}",
+"R = N_A k",
+"R = \\frac{k}{N_A}",
+"R = \\frac{1}{N_A k}"
+],
+"answer": "R = N_A k",
+"tags": {
+"chapter": "kinetic_theory",
+"difficulty": "medium",
+"class": "11"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "kinetic_theory_qn_006",
+"question": "The RMS speed of ideal gas molecules is",
+"options": [
+"\\sqrt{\\frac{3RT}{M}}",
+"\\sqrt{\\frac{2RT}{M}}",
+"\\sqrt{\\frac{8RT}{\\pi M}}",
+"\\sqrt{\\frac{8RT}{M}}"
+],
+"answer": "\\sqrt{\\frac{3RT}{M}}",
+"tags": {
+"chapter": "kinetic_theory",
+"difficulty": "medium",
+"class": "11"
+},
+"image": "",
+"tip": ""
+},
   {
-    "question": "What is the key formula from Kinetic Theory - Q1?",
+    "id": "kinetic_theory_qn_007",
+    "question": "The average speed of ideal gas molecules is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\sqrt{\\frac{3RT}{M}}",
+      "\\sqrt{\\frac{2RT}{M}}",
+      "\\sqrt{\\frac{8RT}{\\pi M}}",
+      "\\sqrt{\\frac{8RT}{M}}"
     ],
-    "answer": "Option A",
+    "answer": "\\sqrt{\\frac{8RT}{\\pi M}}",
     "tags": {
-      "chapter": "Kinetic Theory",
-      "difficulty": "Easy",
+      "chapter": "kinetic_theory",
+      "difficulty": "medium",
       "class": "11"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Kinetic Theory - Q2?",
+    "id": "kinetic_theory_qn_008",
+    "question": "The most probable speed of ideal gas molecules is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\sqrt{\\frac{3RT}{M}}",
+      "\\sqrt{\\frac{2RT}{M}}",
+      "\\sqrt{\\frac{8RT}{\\pi M}}",
+      "\\sqrt{\\frac{8RT}{M}}"
     ],
-    "answer": "Option A",
+    "answer": "\\sqrt{\\frac{2RT}{M}}",
     "tags": {
-      "chapter": "Kinetic Theory",
-      "difficulty": "Easy",
+      "chapter": "kinetic_theory",
+      "difficulty": "medium",
       "class": "11"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Kinetic Theory - Q3?",
+    "id": "kinetic_theory_qn_009",
+    "question": "Equipartition of energy states that the kinetic energy associated with each degree of freedom for a gas molecule is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\sqrt{\\frac{kT}{2}}",
+      "\\sqrt{kT}",
+      "kT",
+      "\\frac{1}{2}kT"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{1}{2}kT",
     "tags": {
-      "chapter": "Kinetic Theory",
-      "difficulty": "Easy",
+      "chapter": "kinetic_theory",
+      "difficulty": "medium",
       "class": "11"
-    }
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "kinetic_theory_qn_010",
+    "question": "The average velocity of ideal gas molecules is",
+    "options": [
+      "\\sqrt{\\frac{3RT}{M}}",
+      "\\sqrt{\\frac{2RT}{M}}",
+      "\\sqrt{\\frac{8RT}{\\pi M}}",
+      "0"
+    ],
+    "answer": "0",
+    "tags": {
+      "chapter": "kinetic_theory",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
   }
+
 ]

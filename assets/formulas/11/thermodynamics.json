@@ -1,47 +1,187 @@
 [
   {
-    "question": "What is the key formula from Thermodynamics - Q1?",
+  "id": "thermodynamics_qn_001",
+  "question": "The correct formula for converting temperature in Celsius <i>C</i> to Kelvin <i>K</i> scale is",
+  "options": [
+    "K = C + 273",
+    "K = C - 273",
+    "K = C \\times 273",
+    "C = K \\times 273"
+  ],
+  "answer": "K = C + 273",
+  "tags": {
+    "chapter": "thermodynamics",
+    "difficulty": "easy",
+    "class": "11"
+  },
+  "image": "",
+  "tip": ""
+},
+{
+"id": "thermodynamics_qn_002",
+"question": "The correct formula for converting temperature in Celsius <i>C</i> to Fahrenheit <i>F</i> scale is",
+"options": [
+"F = \\frac{5C}{9} - 32",
+"F = \\frac{5C}{9} + 32",
+"F = \\frac{9C}{5} - 32",
+"F = \\frac{9C}{5} + 32"
+],
+"answer": "F = \\frac{9C}{5} + 32",
+"tags": {
+"chapter": "thermodynamics",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "thermodynamics_qn_003",
+"question": "The new length of the rod when its temperature is increased by ΔT (α = linear expansion coefficient)",
+  "options": [
+    "l_0\\,(1 - \\alpha\\,\\Delta T)",
+    "l_0\\,(1 + \\alpha\\,\\Delta T)",
+    "\\frac{l_0\\,\\alpha\\,\\Delta T}{2}",
+    "l_0\\,\\alpha\\,\\Delta T"
+  ],
+  "answer": "l_0\\,(1 + \\alpha\\,\\Delta T)",
+
+"tags": {
+"chapter": "thermodynamics",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "assets/images/11th/thermodynamics/thermodynamics_qn_003.png",
+"tip": ""
+},
+{
+"id": "thermodynamics_qn_004",
+"question": "The new area of the plate when its temperature is increased by ΔT (β = areal expansion coefficient, A<sub>0</sub> = initial area of the plate)",
+  "options": [
+    "A_0\\,(1 - \\beta\\,\\Delta T)",
+    "A_0\\,(1 + \\beta\\,\\Delta T)",
+    "\\frac{A_0\\,\\beta\\,\\Delta T}{2}",
+    "A_0\\,\\beta\\,\\Delta T"
+  ],
+  "answer": "A_0\\,(1 + \\beta\\,\\Delta T)",
+
+"tags": {
+"chapter": "thermodynamics",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "assets/images/11th/thermodynamics/thermodynamics_qn_004.png",
+"tip": ""
+},
+{
+"id": "thermodynamics_qn_005",
+"question": "The new volume of the body when its temperature is increased by ΔT (γ = volume expansion coefficient, V<sub>0</sub> = initial volume of the body)",
+  "options": [
+    "V_0\\,(1 - \\gamma\\,\\Delta T)",
+    "V_0\\,(1 + \\gamma\\,\\Delta T)",
+    "\\frac{V_0\\,\\gamma\\,\\Delta T}{2}",
+    "V_0\\,\\gamma\\,\\Delta T"
+  ],
+  "answer": "V_0\\,(1 + \\gamma\\,\\Delta T)",
+
+"tags": {
+"chapter": "thermodynamics",
+"difficulty": "medium",
+"class": "11"
+},
+"image": "assets/images/11th/thermodynamics/thermodynamics_qn_005.png",
+"tip": ""
+},
+  {
+    "id": "thermodynamics_qn_006",
+    "question": "For isotropic solids, the ratio α : β : γ equals (α = linear expansion coefficient, β = areal expansion coefficient, γ = volume expansion coefficient)",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "1 : 1 : 1",
+      "1 : 3 : 2",
+      "1 : 2 : 3",
+      "3 : 2 : 1"
     ],
-    "answer": "Option A",
+    "answer": "1 : 2 : 3",
     "tags": {
-      "chapter": "Thermodynamics",
-      "difficulty": "Easy",
+      "chapter": "thermodynamics",
+      "difficulty": "medium",
       "class": "11"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Thermodynamics - Q2?",
+    "id": "thermodynamics_qn_007",
+    "question": "The loss or gain of time per second for a simple pendulum, if the temperature changes by ΔT is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "2\\,\\alpha\\,\\Delta T",
+      "\\frac{1}{4}\\,\\alpha\\,\\Delta T",
+      "\\frac{1}{2}\\,\\alpha\\,\\Delta T",
+      "\\alpha\\,\\Delta T"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{1}{2}\\,\\alpha\\,\\Delta T",
     "tags": {
-      "chapter": "Thermodynamics",
-      "difficulty": "Easy",
+      "chapter": "thermodynamics",
+      "difficulty": "medium",
       "class": "11"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Thermodynamics - Q3?",
+    "id": "thermodynamics_qn_008",
+    "question": "The loss or gain of time per minute for a simple pendulum, if the temperature changes by ΔT is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{1}{2}\\,\\alpha\\,\\Delta T",
+      "10\\,\\alpha\\,\\Delta T",
+      "30\\,\\alpha\\,\\Delta T",
+      "20\\,\\alpha\\,\\Delta T"
     ],
-    "answer": "Option A",
+    "answer": "30\\,\\alpha\\,\\Delta T",
     "tags": {
-      "chapter": "Thermodynamics",
-      "difficulty": "Easy",
+      "chapter": "thermodynamics",
+      "difficulty": "medium",
       "class": "11"
-    }
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "thermodynamics_qn_009",
+    "question": "The relation between γ<sub>r</sub> = real expansion coefficient of a liquid, γ<sub>app</sub> = apparent expansion coefficient of liquid, γ<sub>vessel</sub> = volume expansion coefficient of vessel is",
+    "options": [
+      "\\gamma_r = \\frac{\\gamma_{app}}{\\gamma_{vessel}}",
+      "\\gamma_r = \\frac{\\gamma_{vessel}}{\\gamma_{app}}",
+      "\\gamma_r = \\gamma_{app} - \\gamma_{vessel}",
+      "\\gamma_r = \\gamma_{app} + \\gamma_{vessel}"
+    ],
+    "answer": "\\gamma_r = \\gamma_{app} + \\gamma_{vessel}",
+    "tags": {
+      "chapter": "thermodynamics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "thermodynamics_qn_010",
+    "question": "A glass bulb of volume <i>V<sub>0</sub></i> is filled with a liquid. The value of <i>h</i> when temperature increases by ΔT (<i>A<sub>0</sub></i> = initial area of tube, γ<sub>app</sub> = apparent expansion coefficient of liquid, β = areal expansion coefficient of glass)",
+    "options": [
+      "\\frac{V_0\\,\\gamma_{app}\\,\\Delta T}{A_0\\,(1 + \\beta\\,\\Delta T)}",
+      "\\frac{V_0\\,\\gamma_{app}\\,\\Delta T}{A_0\\,(1 - \\beta\\,\\Delta T)}",
+      "\\frac{V_0\\,\\gamma_{app}\\,\\Delta T}{A_0\\,\\beta\\,\\Delta T}",
+      "\\frac{V_0\\,\\gamma_{real}\\,\\Delta T}{A_0\\,\\beta\\,\\Delta T}"
+    ],
+    "answer": "\\frac{V_0\\,\\gamma_{app}\\,\\Delta T}{A_0\\,(1 + \\beta\\,\\Delta T)}",
+    "tags": {
+      "chapter": "thermodynamics",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "assets/images/11th/thermodynamics/thermodynamics_qn_010.png",
+    "tip": ""
   }
+
+
 ]
