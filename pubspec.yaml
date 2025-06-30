@@ -86,6 +86,8 @@ flutter:
     - assets/images/11th/thermodynamics/
     - assets/images/11th/kinetic_theory/
     - assets/images/12th/Electrostatics/
+    - assets/images/12th/current_electricity/
+    - assets/images/12th/magnetism/
 
 
 dependency_overrides:

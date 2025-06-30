@@ -1,47 +1,184 @@
 [
+
+{
+  "id": "magnetism_qn_001",
+  "question": "The magnetic field due to the infinite current wire at <i>P</i> is",
+  "options": [
+    "\\frac{\\mu_0 i}{\\pi r}",
+    "\\frac{2 \\mu_0 i}{\\pi r}",
+    "\\frac{\\mu_0 i}{2 \\pi r}",
+    "\\frac{\\mu_0 i}{4 \\pi r}"
+  ],
+  "answer": "\\frac{\\mu_0 i}{2 \\pi r}",
+  "tags": {
+    "chapter": "magnetism",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": "assets/images/12th/magnetism/magnetism_qn_001.png",
+  "tip": ""
+},
+{
+"id": "magnetism_qn_002",
+"question": "The magnetic field due to the finite current wire at <i>P</i> is",
+"options": [
+"\\frac{\\mu_0 i}{4 \\pi r} (\\sin \\theta_1 + \\sin \\theta_2)",
+"\\frac{\\mu_0 i}{2 \\pi r} (\\cos \\theta_1 + \\cos \\theta_2)",
+"\\frac{\\mu_0 i}{4 \\pi r} (\\cos \\theta_1 + \\sin \\theta_2)",
+"\\frac{\\mu_0 i}{2 \\pi r} (\\sin \\theta_1 + \\sin \\theta_2)"
+],
+"answer": "\\frac{\\mu_0 i}{4 \\pi r} (\\sin \\theta_1 + \\sin \\theta_2)",
+"tags": {
+"chapter": "magnetism",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "assets/images/12th/magnetism/magnetism_qn_002.png",
+"tip": ""
+},
+{
+"id": "magnetism_qn_003",
+"question": "The magnetic field due to the finite current wire at <i>P</i> is",
+"options": [
+"\\frac{\\mu_0 i}{2 \\pi r} \\cos \\theta",
+"\\frac{\\mu_0 i}{2 \\pi r}",
+"\\frac{\\mu_0 i}{4 \\pi r}",
+"\\frac{\\mu_0 i}{4 \\pi r} \\sin \\theta"
+],
+"answer": "\\frac{\\mu_0 i}{4 \\pi r} \\sin \\theta",
+"tags": {
+"chapter": "magnetism",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "assets/images/12th/magnetism/magnetism_qn_003.png",
+"tip": ""
+},
+{
+"id": "magnetism_qn_004",
+"question": "The magnetic field at the center of circular current carrying loop of <i>N</i> turns is",
+"options": [
+"\\frac{N \\mu_0 i}{4 \\pi R}",
+"\\frac{N \\mu_0 i}{2 \\pi R}",
+"\\frac{N \\mu_0 i}{2 R}",
+"\\frac{N \\mu_0 i}{4 R}"
+],
+"answer": "\\frac{N \\mu_0 i}{2 R}",
+"tags": {
+"chapter": "magnetism",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "assets/images/12th/magnetism/magnetism_qn_004.png",
+"tip": ""
+},
+{
+"id": "magnetism_qn_005",
+"question": "The magnetic field at the center of current carrying circular arc is",
+"options": [
+"\\frac{\\mu_0 i}{4 R} \\left( \\frac{\\theta}{2 \\pi} \\right)",
+"\\frac{\\mu_0 i}{2 R} \\left( \\frac{\\theta}{2 \\pi} \\right)",
+"\\frac{\\mu_0 i}{R} \\left( \\frac{\\theta}{\\pi} \\right)",
+"\\frac{\\mu_0 i}{2 R} \\left( \\frac{\\theta}{\\pi} \\right)"
+],
+"answer": "\\frac{\\mu_0 i}{2 R} \\left( \\frac{\\theta}{2 \\pi} \\right)",
+"tags": {
+"chapter": "magnetism",
+"difficulty": "medium",
+"class": "12"
+},
+"image": "assets/images/12th/magnetism/magnetism_qn_005.png",
+"tip": ""
+},
   {
-    "question": "What is the key formula from Magnetism - Q1?",
+    "id": "magnetism_qn_006",
+    "question": "For the amperian loop shown",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (2i)",
+      "\\oint \\vec{B} \\cdot d\\vec{l} = -\\mu_0 (2i)",
+      "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (i)",
+      "\\oint \\vec{B} \\cdot d\\vec{l} = -\\mu_0 (i)"
     ],
-    "answer": "Option A",
+    "answer": "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (2i)",
     "tags": {
-      "chapter": "Magnetism",
-      "difficulty": "Easy",
+      "chapter": "magnetism",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "assets/images/12th/magnetism/magnetism_qn_006.png",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Magnetism - Q2?",
+    "id": "magnetism_qn_007",
+    "question": "The magnetic field inside (<i>r &lt; R</i>) a hollow cylindrical current carrying wire carrying uniform current <i>i</i> is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{\\mu_0 i}{4 \\pi r}",
+      "\\frac{\\mu_0 i}{2 \\pi r}",
+      "0",
+      "\\frac{\\mu_0 i}{2 r}"
     ],
-    "answer": "Option A",
+    "answer": "0",
     "tags": {
-      "chapter": "Magnetism",
-      "difficulty": "Easy",
+      "chapter": "magnetism",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "assets/images/12th/magnetism/magnetism_qn_007.png",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Magnetism - Q3?",
+    "id": "magnetism_qn_008",
+    "question": "The magnetic field outside (<i>r &gt; R</i>) a hollow cylindrical current carrying wire carrying uniform current <i>i</i> is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{\\mu_0 i}{4 \\pi r}",
+      "\\frac{\\mu_0 i}{2 \\pi r}",
+      "0",
+      "\\frac{\\mu_0 i}{2 r}"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{\\mu_0 i}{2 \\pi r}",
     "tags": {
-      "chapter": "Magnetism",
-      "difficulty": "Easy",
+      "chapter": "magnetism",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "assets/images/12th/magnetism/magnetism_qn_008.png",
+    "tip": ""
+  },
+  {
+    "id": "magnetism_qn_009",
+    "question": "The magnetic field inside (<i>r &lt; R</i>) a solid cylindrical current carrying wire carrying uniform current <i>i</i> is",
+    "options": [
+      "\\frac{\\mu_0 i r}{2 \\pi R^2}",
+      "\\frac{\\mu_0 i r}{4 \\pi R^2}",
+      "0",
+      "\\frac{\\mu_0 i}{2 \\pi R}"
+    ],
+    "answer": "\\frac{\\mu_0 i r}{2 \\pi R^2}",
+    "tags": {
+      "chapter": "magnetism",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/magnetism/magnetism_qn_009.png",
+    "tip": ""
+  },
+  {
+    "id": "magnetism_qn_010",
+    "question": "The magnetic field at the axis point <i>P</i> of current carrying circular coil is (<i>N</i> = number of turns)",
+    "options": [
+      "\\frac{N \\mu_0 i x}{(x^2 + R^2)^{1/2}}",
+      "\\frac{N \\mu_0 i x}{(x^2 + R^2)^{3/2}}",
+      "\\frac{N \\mu_0 i R^2}{2 (x^2 + R^2)^{3/2}}",
+      "\\frac{N \\mu_0 i R^2}{2 (x^2 + R^2)^{1/2}}"
+    ],
+    "answer": "\\frac{N \\mu_0 i R^2}{2 (x^2 + R^2)^{3/2}}",
+    "tags": {
+      "chapter": "magnetism",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "assets/images/12th/magnetism/magnetism_qn_010.png",
+    "tip": ""
   }
+
 ]

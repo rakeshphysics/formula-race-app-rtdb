@@ -1,47 +1,183 @@
 [
   {
-    "question": "What is the key formula from Current Electricity - Q1?",
+  "id": "current_electricity_qn_001",
+  "question": "The correct relation between current <i>i</i>, current density <i>j</i> and area <i>A</i> is",
+  "options": [
+    "i = \\frac{1}{jA}",
+    "i = \\frac{j}{A}",
+    "i = |\\vec{J} \\times \\vec{A}|",
+    "i = \\vec{J} \\cdot \\vec{A}"
+  ],
+  "answer": "i = \\vec{J} \\cdot \\vec{A}",
+  "tags": {
+    "chapter": "current_electricity",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": "",
+  "tip": ""
+},
+{
+"id": "current_electricity_qn_002",
+"question": "The resistance <i>R</i> of a cylindrical conductor is ( <i>ρ</i> = resistivity, <i>l</i> = length, <i>A</i> = area )",
+  "options": [
+"\\frac{\\rho l}{A}",
+"\\frac{\\rho}{lA}",
+"\\frac{l}{\\rho A}",
+"\\frac{A}{l \\rho}"
+],
+"answer": "\\frac{\\rho l}{A}",
+"tags": {
+"chapter": "current_electricity",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "current_electricity_qn_003",
+  "question": "The resistance <i>R</i> of the conductor shown is ( <i>σ</i> = conductivity, <i>l</i> = length, <i>A</i> = area )",
+"options": [
+"\\frac{l}{\\sigma A}",
+"\\frac{\\sigma}{lA}",
+"\\frac{\\sigma l}{A}",
+"\\frac{A}{l \\sigma}"
+],
+"answer": "\\frac{l}{\\sigma A}",
+"tags": {
+"chapter": "current_electricity",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "current_electricity_qn_004",
+"question": "The correct relation between current <i>i</i>, drift velocity <i>v<sub>d</sub></i> and area <i>A</i>, free electron concentration <i>n</i> is (<i>e</i> = charge on electron)",
+"options": [
+"i = n e A v_d",
+"i = \\frac{ne}{A v_d}",
+"i = \\frac{neA}{v_d}",
+"i = \\frac{n}{Ae v_d}"
+],
+"answer": "i = n e A v_d",
+"tags": {
+"chapter": "current_electricity",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "current_electricity_qn_005",
+"question": "The correct relation between current density <i>j</i>, drift velocity <i>v<sub>d</sub></i>, free electron concentration <i>n</i> is (<i>e</i> = charge on electron)",
+"options": [
+"j = \\frac{n e}{v_d}",
+"j = \\frac{n}{e v_d}",
+"j = n e v_d",
+"j = \\frac{n v_d}{e}"
+],
+"answer": "j = n e v_d",
+"tags": {
+"chapter": "current_electricity",
+"difficulty": "medium",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+  {
+    "id": "current_electricity_qn_006",
+    "question": "The correct relation between drift velocity <i>v<sub>d</sub></i>, mobility <i>μ</i> and electric field <i>E</i> in a conductor is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "v_d = \\frac{1}{\\mu E}",
+      "v_d = \\frac{E}{\\mu}",
+      "v_d = \\mu E",
+      "v_d = \\frac{\\mu}{E}"
     ],
-    "answer": "Option A",
+    "answer": "v_d = \\mu E",
     "tags": {
-      "chapter": "Current Electricity",
-      "difficulty": "Easy",
+      "chapter": "current_electricity",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Current Electricity - Q2?",
+    "id": "current_electricity_qn_007",
+    "question": "A wire is stretched to twice its original length. The final resistance becomes ___ times initial resistance.",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "1",
+      "4",
+      "3",
+      "2"
     ],
-    "answer": "Option A",
+    "answer": "4",
     "tags": {
-      "chapter": "Current Electricity",
-      "difficulty": "Easy",
+      "chapter": "current_electricity",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Current Electricity - Q3?",
+    "id": "current_electricity_qn_008",
+    "question": "A wire is compressed to half its initial length. The initial resistance becomes ___ times final resistance.",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "1",
+      "4",
+      "3",
+      "2"
     ],
-    "answer": "Option A",
+    "answer": "4",
     "tags": {
-      "chapter": "Current Electricity",
-      "difficulty": "Easy",
+      "chapter": "current_electricity",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "current_electricity_qn_009",
+    "question": "The radius of a wire is made 3 times its initial value by compressing it. The initial resistance becomes _____ times final resistance.",
+    "options": [
+      "\\frac{1}{9}",
+      "27",
+      "81",
+      "9"
+    ],
+    "answer": "81",
+    "tags": {
+      "chapter": "current_electricity",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "current_electricity_qn_010",
+    "question": "The correct formula for resistivity σ equals (<i>m</i> = mass of electron, <i>n</i> = free electron concentration, <i>e</i> = charge on electron, <i>τ</i> = average relaxation time)",
+    "options": [
+      "\\frac{m \\tau n}{e^2}",
+      "\\frac{m \\tau}{n e^2}",
+      "\\frac{m}{n e^2 \\tau}",
+      "\\frac{m \\tau e^2}{n}"
+    ],
+    "answer": "\\frac{m}{n e^2 \\tau}",
+    "tags": {
+      "chapter": "current_electricity",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
   }
+
 ]
