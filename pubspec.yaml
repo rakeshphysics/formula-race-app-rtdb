@@ -88,6 +88,7 @@ flutter:
     - assets/images/12th/Electrostatics/
     - assets/images/12th/current_electricity/
     - assets/images/12th/magnetism/
+    - assets/images/12th/emi/
 
 
 dependency_overrides:

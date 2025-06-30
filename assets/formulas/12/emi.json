@@ -1,47 +1,184 @@
 [
+
+{
+  "id": "emi_qn_001",
+  "question": "The average emf induced in a loop due to flux change in a loop is (given &phi;<sub>i</sub> = initial flux, &phi;<sub>f</sub> = final flux, <i>t</i> = time)",
+  "options": [
+    "\\frac{\\phi_i - \\phi_f}{t}",
+    "\\frac{\\phi_f - \\phi_i}{t}",
+    "\\frac{\\phi_f}{t}",
+    "\\frac{\\phi_i}{t}"
+  ],
+  "answer": "\\frac{\\phi_i - \\phi_f}{t}",
+  "tags": {
+    "chapter": "emi",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": "",
+  "tip": ""
+},
+{
+"id": "emi_qn_002",
+"question": "The magnetic flux through a loop of area <i>A</i> having <i>N</i> turns placed in a constant magnetic field <i>B</i> is",
+"options": [
+"\\vec{B} \\times \\vec{A}",
+"\\vec{B} \\cdot \\vec{A}",
+"\\frac{(\\vec{B} \\cdot \\vec{A})}{N}",
+"N (\\vec{B} \\cdot \\vec{A})"
+],
+"answer": "N (\\vec{B} \\cdot \\vec{A})",
+"tags": {
+"chapter": "emi",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "emi_qn_003",
+"question": "Lenz law is based on the principle of",
+  "options": [
+    "\\text{Conservation of mass}",
+    "\\text{Conservation of momentum}",
+    "\\text{Conservation of energy}",
+    "\\text{Conservation of angular momentum}"
+  ],
+  "answer": "\\text{Conservation of energy}",
+"tags": {
+"chapter": "emi",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "emi_qn_004",
+"question": "The emf induced across the ends of the rod shown is",
+"options": [
+"\\frac{B v}{l}",
+"B v l",
+"B v l^2",
+"\\frac{B l}{v}"
+],
+"answer": "B v l",
+"tags": {
+"chapter": "emi",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "assets/images/12th/emi/emi_qn_004.png",
+"tip": ""
+},
+{
+"id": "emi_qn_005",
+"question": "The emf induced across the ends of the rod shown is",
+"options": [
+"B v l \\cos^2 \\theta",
+"B v l \\sin \\theta",
+"B v l \\cos \\theta",
+"B v l"
+],
+"answer": "B v l \\sin \\theta",
+"tags": {
+"chapter": "emi",
+"difficulty": "medium",
+"class": "12"
+},
+"image": "assets/images/12th/emi/emi_qn_005.png",
+"tip": ""
+},
   {
-    "question": "What is the key formula from Electromagnetic Induction - Q1?",
+    "id": "emi_qn_006",
+    "question": "The emf induced in the circular loop is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "B v (2 \\pi R)",
+      "2 B v R",
+      "B v R",
+      "0"
     ],
-    "answer": "Option A",
+    "answer": "0",
     "tags": {
-      "chapter": "Electromagnetic Induction",
-      "difficulty": "Easy",
+      "chapter": "emi",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "assets/images/12th/emi/emi_qn_006.png",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Electromagnetic Induction - Q2?",
+    "id": "emi_qn_007",
+    "question": "The emf induced across ends of rod rotating with angular speed <i>ω</i> as shown is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "B l \\omega^2",
+      "\\frac{B l \\omega^2}{2}",
+      "\\frac{B \\omega l^2}{2}",
+      "B \\omega l^2"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{B \\omega l^2}{2}",
     "tags": {
-      "chapter": "Electromagnetic Induction",
-      "difficulty": "Easy",
+      "chapter": "emi",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "assets/images/12th/emi/emi_qn_007.png",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Electromagnetic Induction - Q3?",
+    "id": "emi_qn_008",
+    "question": "The emf induced across ends of rod rotating with angular speed <i>ω</i> as shown is",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "B l \\omega^2",
+      "\\frac{B l \\omega^2}{2}",
+      "\\frac{B \\omega l^2}{2}",
+      "0"
     ],
-    "answer": "Option A",
+    "answer": "0",
     "tags": {
-      "chapter": "Electromagnetic Induction",
-      "difficulty": "Easy",
+      "chapter": "emi",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "assets/images/12th/emi/emi_qn_008.png",
+    "tip": ""
+  },
+  {
+    "id": "emi_qn_009",
+    "question": "The current in the triangular loop at the instant shown is",
+    "options": [
+      "\\frac{B v a}{2}",
+      "B v a",
+      "\\frac{\\sqrt{3} B v a}{2}",
+      "\\frac{B v a}{2 \\sqrt{3}}"
+    ],
+    "answer": "\\frac{B v a}{2}",
+    "tags": {
+      "chapter": "emi",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/emi/emi_qn_009.png",
+    "tip": ""
+  },
+  {
+    "id": "emi_qn_010",
+    "question": "The emf induced in the circular loop at the instant shown is",
+    "options": [
+      "B v (2 \\pi R)",
+      "B v (2 R \\cos \\theta)",
+      "B v (2 R \\sin \\theta)",
+      "B v (2 R)"
+    ],
+    "answer": "B v (2 R \\cos \\theta)",
+    "tags": {
+      "chapter": "emi",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "assets/images/12th/emi/emi_qn_010.png",
+    "tip": ""
   }
+
 ]
