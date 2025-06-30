@@ -9,6 +9,9 @@ import 'package:path_provider/path_provider.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import '../models/incorrect_answer_model.dart';
 import '../widgets/glow_button_cyan.dart';
+import 'package:flutter_html/flutter_html.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 
 Future<void> updateMistakeTracker(List<Map<String, dynamic>> responses) async {
   try {
@@ -144,36 +147,55 @@ class ResultScreen extends StatelessWidget {
                       margin: const EdgeInsets.symmetric(vertical: 8),
                       padding: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
-                        color: Colors.grey.shade900,
+                          color: Color(0xFF1C1C1C),
                         borderRadius: BorderRadius.circular(12),
+                        border: Border.all(
+                          color: Colors.white, // Border color
+                          width: 0.8,            // Border thickness
+                        ),
                       ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            'Q: ${wrongAnswer.question}',
-                            style: const TextStyle(
+                          Html(
+                            data: "<b>Q:</b> ${wrongAnswer.question}",
+                            style: {
+                              "body": Style(
+                                fontSize: FontSize(16),
                                 color: Colors.white,
-                                fontSize: 16,
-                                fontWeight: FontWeight.normal),
+                                fontFamily: GoogleFonts.poppins().fontFamily,
+                              ),
+                            },
                           ),
                           const SizedBox(height: 8),
-                          const Text(
+                          Text(
                             'Your Answer:',
-                            style: TextStyle(color: Colors.white),
+                            style: GoogleFonts.poppins(
+                              color: Colors.white,
+                              fontSize: 14,
+                              fontWeight: FontWeight.normal,
+                            ),
                           ),
+                          SizedBox(height: MediaQuery.of(context).size.height * 0.007), // ~1% of screen height
+
                           Math.tex(
                             wrongAnswer.userAnswer,
                             textStyle: const TextStyle(
-                              color: Color(0xFFDF1B1B), // light red
+                              color:Color(0xFFFF5454), // light red
                               fontSize: 18,
                             ),
                           ),
                           const SizedBox(height: 8),
-                          const Text(
-                            'Correct:',
-                            style: TextStyle(color: Colors.white),
+                          Text(
+                            'Correct Answer:',
+                            style: GoogleFonts.poppins(
+                              color: Colors.white,
+                              fontSize: 14,
+                              fontWeight: FontWeight.normal,
+                            ),
                           ),
+                          SizedBox(height: MediaQuery.of(context).size.height * 0.007), // ~1% of screen height
+
                           Math.tex(
                             wrongAnswer.correctAnswer,
                             textStyle: const TextStyle(
@@ -185,38 +207,6 @@ class ResultScreen extends StatelessWidget {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
-                                'Q: ${wrongAnswer.question}',
-                                style: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.normal,
-                                ),
-                              ),
-                              const SizedBox(height: 8),
-                              const Text(
-                                'Your Answer:',
-                                style: TextStyle(color: Colors.white),
-                              ),
-                              Math.tex(
-                                wrongAnswer.userAnswer,
-                                textStyle: const TextStyle(
-                                  color: Color(0xFFDF1B1B), // light red
-                                  fontSize: 18,
-                                ),
-                              ),
-                              const SizedBox(height: 8),
-                              const Text(
-                                'Correct:',
-                                style: TextStyle(color: Colors.white),
-                              ),
-                              Math.tex(
-                                wrongAnswer.correctAnswer,
-                                textStyle: const TextStyle(
-                                  color: Color(0xFFA4FF9D),
-                                  fontSize: 18,
-                                ),
-                              ),
                               // ........ Tip Block START .........
                               if (wrongAnswer.tip.isNotEmpty) ...[
                                 const SizedBox(height: 8),

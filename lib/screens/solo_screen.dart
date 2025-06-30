@@ -37,8 +37,8 @@ const Map<String, String> chapterToClass = {
   "Electrostatics": "12",
   "Current Electricity": "12",
   "Magnetism": "12",
-  "Electromagnetic Induction": "12",
-  "Alternating Current": "12",
+  "EMI": "12",
+  "AC": "12",
   "Electromagnetic Waves": "12",
   "Ray Optics": "12",
   "Wave Optics": "12",
@@ -137,8 +137,8 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'Electrostatics',
           'Current Electricity',
           'Magnetism',
-          'Electromagnetic Induction',
-          'Alternating Current',
+          'EMI',
+          'AC',
           'Electromagnetic Waves',
           'Ray Optics',
           'Wave Optics',
@@ -168,8 +168,8 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'Electrostatics',
           'Current Electricity',
           'Magnetism',
-          'Electromagnetic Induction',
-          'Alternating Current',
+          'EMI',
+          'AC',
           'Electromagnetic Waves',
           'Ray Optics',
           'Wave Optics',
@@ -481,99 +481,95 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     //  ),
 
 
-      body: SafeArea(
-        top: true,
-        bottom: false,
-        child:Padding(
-        padding: const EdgeInsets.all(16),
-
-
+        body: SafeArea(
+          top: true,
+          bottom: false,
+          child: Padding(
+            padding: const EdgeInsets.all(16),
             child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            SizedBox(height: MediaQuery.of(context).size.height * 0.03),
-            AnimatedBuilder(
-              animation: _progressController,
-              builder: (context, child) {
-                return buildProgressBar();
-              },
-            ),
-            const SizedBox(height: 10),
-            Text(
-              'Q${currentIndex + 1} of $totalQuestions',
-              style: const TextStyle(color: Colors.white, fontSize: 18),
-            ),
-            const SizedBox(height: 10),
-            // Keep the question text as normal Text() for proper rendering
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
 
+                SizedBox(height: MediaQuery.of(context).size.height * 0.03),
+                AnimatedBuilder(
+                  animation: _progressController,
+                  builder: (context, child) => buildProgressBar(),
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  'Q${currentIndex + 1} of $totalQuestions',
+                  style: const TextStyle(color: Colors.white, fontSize: 18),
+                ),
+                const SizedBox(height: 10),
 
-        //................DISPLAY QN START...........................
-            Padding(
-              padding: const EdgeInsets.all(0),
-              child: SingleChildScrollView(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    // QUESTION
-
-                // --- START OF CHANGE ---
-                    Html(
-                      data: question['question'],
-                      style: {
-                        "body": Style(
-                          fontSize: FontSize(18),
-                          fontWeight: FontWeight.normal,
-                          color: Colors.white,
-                          fontFamily: GoogleFonts.poppins().fontFamily,   // or GoogleFonts.montserrat()
-
-                        ),
-                      },
+                // --- Question Block (Fixed) ---
+                Html(
+                  data: question['question'],
+                  style: {
+                    "body": Style(
+                      fontSize: FontSize(18),
+                      fontWeight: FontWeight.normal,
+                      color: Colors.white,
+                      fontFamily: GoogleFonts.poppins().fontFamily,
                     ),
+                  },
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.015, // ~1.5% of screen height
+                ),
 
-
-                    //const SizedBox(height: 1),
-
-                    if (question['image'] != "")
-                      Container(
-                        margin: const EdgeInsets.symmetric(vertical: 0),
-                        child: Image.asset(
-                          question['image'],
-                          width: MediaQuery.of(context).size.width * 0.6,
-                          fit: BoxFit.contain,
-                        ),
-                      ),
-                 // spacing between Qn and options
-                    // OPTIONS
-                ...shuffledOptions.map((option) {
-                  return Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 0.5),
-                    child: FormulaOptionButton(
-                      text: option,
-                      onPressed: selectedOption == null
-                          ? () {
-                        setState(() {
-                          selectedOption = option;
-                        });
-
-                        Future.delayed(const Duration(milliseconds: 700), () {
-                          checkAnswer(option);
-                        });
-                      }
-                          : () {},
-                      color: getOptionColor(option),
+                if (question['image'] != "")
+                  Container(
+                    margin: const EdgeInsets.symmetric(vertical: 0),
+                    child:Center(
+                    child: Image.asset(
+                      question['image'],
+                      width: MediaQuery.of(context).size.width * 0.6,
+                      fit: BoxFit.contain,
                     ),
-                  );
-                }).toList(),
+                    ),
+                  ),
+
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.015, // ~1.5% of screen height
+                ),
+
+
+                // --- Scrollable Options ---
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: shuffledOptions.map((option) {
+                        return Padding(
+                          padding: EdgeInsets.symmetric(
+                            vertical: MediaQuery.of(context).size.height * 0.001,
+                          ),
+                          child: FormulaOptionButton(
+                            text: option,
+                            onPressed: selectedOption == null
+                                ? () {
+                              setState(() {
+                                selectedOption = option;
+                              });
+                              Future.delayed(const Duration(milliseconds: 700), () {
+                                checkAnswer(option);
+                              });
+                            }
+                                : () {},
+                            color: getOptionColor(option),
+                          ),
+                        );
+                      }).toList(),
+                    ),
+                  ),
+                ),
+
               ],
             ),
           ),
         ),
 
-    ]
-        ),
-    ),
-    ),
-    ),
+      ),
     );// WillPopScope
   }
 }

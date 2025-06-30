@@ -61,7 +61,7 @@ flutter:
     - assets/formulas/12/electrostatics.json
     - assets/formulas/12/current_electricity.json
     - assets/formulas/12/magnetism.json
-    - assets/formulas/12/electromagnetic_induction.json
+    - assets/formulas/12/emi.json
     - assets/formulas/12/alternating_current.json
     - assets/formulas/12/electromagnetic_waves.json
     - assets/formulas/12/ray_optics.json

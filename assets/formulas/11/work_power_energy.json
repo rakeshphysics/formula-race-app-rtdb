@@ -165,7 +165,7 @@
     },
     {
       "id": "work_power_energy_qn_010",
-      "question": "If \\( \\vec{F} \\) is a conservative force, then which is necessarily true",
+      "question": "If <b><i>F</i></b>⃗ is a conservative force, then which is necessarily true",
       "options": [
         "\\vec{\\nabla} \\cdot \\vec{F} = 0",
         "\\vec{\\nabla} \\times \\vec{F} = 0",
