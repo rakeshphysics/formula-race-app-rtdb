@@ -1,47 +1,184 @@
 [
   {
-    "question": "What is the key formula from Wave Optics - Q1?",
+  "id": "wave_optics_qn_001",
+  "question": "Two coherent waves of intensity <i>I<sub>1</sub></i> and <i>I<sub>2</sub></i> interfere at P. If their phase difference at P is <b>&#966;</b>, the resultant intensity at P is",
+  "options": [
+    "\\left| I_1 - I_2 \\right|",
+    "I_1 + I_2",
+    "I_1 + I_2 + 2\\sqrt{I_1 I_2} \\cos \\phi",
+    "I_1 + I_2 - 2\\sqrt{I_1 I_2} \\cos \\phi"
+  ],
+  "answer": "I_1 + I_2 + 2\\sqrt{I_1 I_2} \\cos \\phi",
+  "tags": {
+    "chapter": "wave_optics",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": "",
+  "tip": ""
+},
+{
+"id": "wave_optics_qn_002",
+"question": "Two coherent waves of amplitudes <i>A<sub>1</sub></i> and <i>A<sub>2</sub></i> interfere at P. If their phase difference at P is <b>&#966;</b>, the resultant amplitude at P is",
+"options": [
+"\\sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \\cos \\phi}",
+"\\sqrt{A_1^2 + A_2^2}",
+"\\sqrt{A_1^2 - A_2^2}",
+"\\sqrt{A_1^2 + A_2^2 - 2A_1 A_2 \\cos \\phi}"
+],
+"answer": "\\sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \\cos \\phi}",
+"tags": {
+"chapter": "wave_optics",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "wave_optics_qn_003",
+"question": "Two incoherent waves of intensity <i>I<sub>1</sub></i> and <i>I<sub>2</sub></i> interfere at P. The resultant intensity at P is",
+"options": [
+  "\\left| I_1 - I_2 \\right|",
+"I_1 + I_2 - 2\\sqrt{I_1 I_2} \\cos \\phi",
+"I_1 + I_2",
+"I_1 + I_2 + 2\\sqrt{I_1 I_2} \\cos \\phi"
+],
+"answer": "I_1 + I_2",
+"tags": {
+"chapter": "wave_optics",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "wave_optics_qn_004",
+"question": "Two coherent waves of intensity <i>I<sub>1</sub></i> and <i>I<sub>2</sub></i> interfere at P. The ratio of maximum to the minimum intensity at P is",
+"options": [
+"\\frac{I_1 - I_2}{I_1 + I_2}",
+"\\frac{I_1 + I_2}{I_1 - I_2}",
+"\\left(\\frac{\\sqrt{I_1} - \\sqrt{I_2}}{\\sqrt{I_1} + \\sqrt{I_2}}\\right)^2",
+"\\left(\\frac{\\sqrt{I_1} + \\sqrt{I_2}}{\\sqrt{I_1} - \\sqrt{I_2}}\\right)^2"
+],
+"answer": "\\left(\\frac{\\sqrt{I_1} + \\sqrt{I_2}}{\\sqrt{I_1} - \\sqrt{I_2}}\\right)^2",
+"tags": {
+"chapter": "wave_optics",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "wave_optics_qn_005",
+"question": "Two coherent waves of amplitude <i>A<sub>1</sub></i> and <i>A<sub>2</sub></i> interfere at P. The ratio of maximum to the minimum amplitude at P is",
+"options": [
+"\\frac{A_1 + A_2}{A_1 - A_2}",
+"\\frac{A_1 - A_2}{A_1 + A_2}",
+"\\left(\\frac{A_1 - A_2}{A_1 + A_2}\\right)^2",
+"\\left(\\frac{A_1 + A_2}{A_1 - A_2}\\right)^2"
+],
+"answer": "\\left(\\frac{A_1 + A_2}{A_1 - A_2}\\right)^2",
+"tags": {
+"chapter": "wave_optics",
+"difficulty": "medium",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+
+  {
+    "id": "wave_optics_qn_006",
+    "question": "In YDSE the fringe width is given by (<i>d</i> = slit separation, <i>D</i> = distance between slits and screen, <i>λ</i> = wavelength of light)",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{D\\lambda}{d}",
+      "\\frac{D\\lambda}{2d}",
+      "\\frac{2D\\lambda}{d}",
+      "\\frac{D\\lambda}{4d}"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{D\\lambda}{d}",
     "tags": {
-      "chapter": "Wave Optics",
-      "difficulty": "Easy",
+      "chapter": "wave_optics",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Wave Optics - Q2?",
+    "id": "wave_optics_qn_007",
+    "question": "In YDSE, fringe width equals the separation between",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\begin{aligned} &\\text{Centers of consecutive bright and} \\\\ &\\text{dark fringes} \\end{aligned}",
+      "\\text{Centers of consecutive bright fringes}",
+      "\\text{Central fringe and 1st dark fringe}",
+      "\\text{Central fringe and second bright fringe}"
     ],
-    "answer": "Option A",
+    "answer": "\\text{Centers of consecutive bright fringes}",
     "tags": {
-      "chapter": "Wave Optics",
-      "difficulty": "Easy",
+      "chapter": "wave_optics",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Wave Optics - Q3?",
+    "id": "wave_optics_qn_008",
+    "question": "In YDSE, angular fringe width equals (<i>d</i> = slit separation, <i>D</i> = distance between slits and screen, <i>λ</i> = wavelength of light)",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "\\frac{\\lambda}{D}",
+      "\\frac{d\\lambda}{D}",
+      "\\frac{\\lambda}{d}",
+      "\\frac{D\\lambda}{d}"
     ],
-    "answer": "Option A",
+    "answer": "\\frac{\\lambda}{D}",
     "tags": {
-      "chapter": "Wave Optics",
-      "difficulty": "Easy",
+      "chapter": "wave_optics",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "wave_optics_qn_009",
+    "question": "A slab of refractive index <i>μ</i> and thickness <i>t</i> is placed in front of one of the slits in YDSE. The optical path difference between two paths joining slits to the center of screen is",
+    "options": [
+      "\\mu t",
+      "(\\mu - 1)t",
+      "\\frac{t}{\\mu}",
+      "\\frac{\\mu}{t}"
+    ],
+    "answer": "(\\mu - 1)t",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "wave_optics_qn_010",
+    "question": "Fringe visibility in YDSE is given by (<i>I<sub>max</sub></i> = maximum intensity, <i>I<sub>min</sub></i> = minimum intensity)",
+    "options": [
+      "\\frac{I_{min}}{I_{max}}",
+      "\\frac{I_{max}}{I_{min}}",
+      "\\frac{I_{max} + I_{min}}{I_{max} - I_{min}}",
+      "\\frac{I_{max} - I_{min}}{I_{max} + I_{min}}"
+    ],
+    "answer": "\\frac{I_{max} - I_{min}}{I_{max} + I_{min}}",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
   }
+
 ]

@@ -91,6 +91,7 @@ flutter:
     - assets/images/12th/emi/
     - assets/images/12th/ac/
     - assets/images/12th/ray_optics/
+    - assets/images/12th/wave_optics/
 
 
 dependency_overrides:
