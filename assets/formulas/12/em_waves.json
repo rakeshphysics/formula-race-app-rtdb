@@ -1,0 +1,93 @@
+[
+  {
+  "id": "em_waves_qn_001",
+    "question": "Displacement current equals (<i>&phi;<sub>E</sub></i> = electric flux)",
+    "options": [
+    "\\frac{d\\phi_E}{dt}",
+    "\\varepsilon_o \\phi_E",
+    "\\varepsilon_o \\frac{d\\phi_E}{dt}",
+    "\\frac{\\phi_E}{\\varepsilon_o}"
+  ],
+  "answer": "\\varepsilon_o \\frac{d\\phi_E}{dt}",
+  "tags": {
+    "chapter": "em_waves",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": "",
+  "tip": ""
+},
+{
+"id": "em_waves_qn_002",
+"question": "The speed of light in a medium in terms of its electric and magnetic properties is",
+"options": [
+"\\frac{1}{\\mu_o \\varepsilon_o}",
+"\\mu_o \\varepsilon_o",
+"\\sqrt{\\mu_o \\varepsilon_o}",
+"\\frac{1}{\\sqrt{\\mu_o \\varepsilon_o}}"
+],
+"answer": "\\frac{1}{\\sqrt{\\mu_o \\varepsilon_o}}",
+"tags": {
+"chapter": "em_waves",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "em_waves_qn_003",
+  "question": "The relation between Electric field amplitude <i>E<sub>o</sub></i>, magnetic field amplitude <i>B<sub>o</sub></i>, and speed of light <i>c</i> is",
+"options": [
+"E_o = B_o c",
+"E_o = \\frac{B_o}{c}",
+"E_o = \\frac{1}{B_o c}",
+"E_o = \\frac{1}{\\sqrt{B_o c}}"
+],
+"answer": "E_o = B_o c",
+"tags": {
+"chapter": "em_waves",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+  {
+    "id": "em_waves_qn_006",
+    "question": "Which Electromagnetic waves are detected by point contact diodes",
+    "options": [
+      "\\text{Radio}",
+      "\\text{Microwaves}",
+      "\\text{Infrared}",
+      "\\text{X-rays}"
+    ],
+    "answer": "\\text{Microwaves}",
+    "tags": {
+      "chapter": "em_waves",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  },
+
+{
+"id": "em_waves_qn_005",
+"question": "Which Electromagnetic waves are emitted during radioactive decay of nucleus",
+"options": [
+"\\text{Radio}",
+"\\text{UV}",
+"\\text{X-rays}",
+"\\text{Gamma Rays}"
+],
+"answer": "\\text{Gamma Rays}",
+"tags": {
+"chapter": "em_waves",
+"difficulty": "medium",
+"class": "12"
+},
+"image": "",
+"tip": ""
+}
+]

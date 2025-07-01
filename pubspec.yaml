@@ -63,7 +63,7 @@ flutter:
     - assets/formulas/12/magnetism.json
     - assets/formulas/12/emi.json
     - assets/formulas/12/ac.json
-    - assets/formulas/12/electromagnetic_waves.json
+    - assets/formulas/12/em_waves.json
     - assets/formulas/12/ray_optics.json
     - assets/formulas/12/wave_optics.json
     - assets/formulas/12/modern_physics.json
@@ -91,6 +91,8 @@ flutter:
     - assets/images/12th/ray_optics/
     - assets/images/12th/wave_optics/
     - assets/images/12th/modern_physics/
+    - assets/images/12th/semiconductors/
+    - assets/images/12th/em_waves/
 
 
 dependency_overrides:

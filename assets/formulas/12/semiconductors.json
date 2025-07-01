@@ -1,47 +1,183 @@
 [
   {
-    "question": "What is the key formula from Semiconductors - Q1?",
+  "id": "semiconductors_qn_001",
+  "question": "The energy band gap (<i>E<sub>g</sub></i>) in conductors is",
+  "options": [
+    "\\text{> 3 }eV",
+    "\\text{< 3 }eV",
+    "\\sim 0\\,eV",
+    "\\text{> 5 }eV"
+  ],
+  "answer": "\\sim 0\\,eV",
+  "tags": {
+    "chapter": "semiconductors",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": "",
+  "tip": ""
+},
+{
+"id": "semiconductors_qn_002",
+"question": "The energy band gap (<i>E<sub>g</sub></i>) in insulators is",
+"options": [
+"\\text{> 3 }eV",
+"\\text{< 3 }eV",
+"\\sim 0\\,eV",
+"\\text{< 5 }eV"
+],
+"answer": "\\text{> 3 }eV",
+"tags": {
+"chapter": "semiconductors",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "semiconductors_qn_003",
+"question": "The energy band gap (<i>E<sub>g</sub></i>) in semiconductors is",
+"options": [
+"\\text{> 3 }eV",
+"\\text{< 3 }eV",
+"\\sim 0\\,eV",
+"\\text{> 5 }eV"
+],
+"answer": "\\text{< 3 }eV",
+"tags": {
+"chapter": "semiconductors",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "semiconductors_qn_004",
+"question": "The pentavalent dopant used for doping semiconductor is",
+"options": [
+"\\text{Indium}",
+"\\text{Boron}",
+"\\text{Aluminum}",
+"\\text{Phosphorous}"
+],
+"answer": "\\text{Phosphorous}",
+"tags": {
+"chapter": "semiconductors",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "semiconductors_qn_005",
+"question": "The trivalent dopant used for doping semiconductor is",
+"options": [
+"\\text{Boron}",
+"\\text{Arsenic}",
+"\\text{Antimony}",
+"\\text{Phosphorous}"
+],
+"answer": "\\text{Boron}",
+"tags": {
+"chapter": "semiconductors",
+"difficulty": "medium",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "semiconductors_qn_006",
+"question": "The correct relation between <i>n<sub>i</sub></i> = intrinsic carrier concentration, <i>n<sub>e</sub></i> = electron concentration, <i>n<sub>h</sub></i> = holes concentration, in a semiconductor is",
+"options": [
+"n_i = n_e n_h",
+"n_e^2 = n_i n_h",
+"n_i^2 = n_e n_h",
+"n_h^2 = n_i n_e"
+],
+"answer": "n_i^2 = n_e n_h",
+"tags": {
+"chapter": "semiconductors",
+"difficulty": "medium",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+  {
+    "id": "semiconductors_qn_007",
+    "question": "The thickness of depletion region in p-n junction is of the order of",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "10^{-5} m",
+      "10^{-3} m",
+      "10^{-2} m",
+      "10^{-7} m"
     ],
-    "answer": "Option A",
+    "answer": "10^{-7} m",
     "tags": {
-      "chapter": "Semiconductors",
-      "difficulty": "Easy",
+      "chapter": "semiconductors",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Semiconductors - Q2?",
+    "id": "semiconductors_qn_008",
+    "question": "The threshold or cut in voltage of a silicon diode is (voltage at which forward current increases significantly)",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "0.2\\,V",
+      "0.7\\,V",
+      "0.07\\,V",
+      "0.02\\,V"
     ],
-    "answer": "Option A",
+    "answer": "0.7\\,V",
     "tags": {
-      "chapter": "Semiconductors",
-      "difficulty": "Easy",
+      "chapter": "semiconductors",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Semiconductors - Q3?",
+    "id": "semiconductors_qn_009",
+    "question": "The threshold or cut in voltage of a silicon diode is (voltage at which forward current increases significantly)",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "0.2\\,V",
+      "0.7\\,V",
+      "0.07\\,V",
+      "0.02\\,V"
     ],
-    "answer": "Option A",
+    "answer": "0.2\\,V",
     "tags": {
-      "chapter": "Semiconductors",
-      "difficulty": "Easy",
+      "chapter": "semiconductors",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "semiconductors_qn_010",
+    "question": "For an XNOR logic gate with inputs <i>A</i>, <i>B</i> and output <i>C</i>. If <i>A</i> = 1 and <i>B</i> = 0 then <i>C</i> equals",
+    "options": [
+      "1",
+      "0",
+      "1 \\text{ or } 0",
+      "\\text{None of these}"
+    ],
+    "answer": "0",
+    "tags": {
+      "chapter": "semiconductors",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
   }
+
 ]

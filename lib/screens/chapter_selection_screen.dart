@@ -35,7 +35,7 @@ class ChapterSelectionScreen extends StatelessWidget {
     'Magnetism',
     'EMI',
     'AC',
-    'Electromagnetic Waves',
+    'EM Waves',
     'Ray Optics',
     'Wave Optics',
     'Modern Physics',
