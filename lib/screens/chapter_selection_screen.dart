@@ -38,9 +38,7 @@ class ChapterSelectionScreen extends StatelessWidget {
     'Electromagnetic Waves',
     'Ray Optics',
     'Wave Optics',
-    'Dual Nature of Matter',
-    'Atoms',
-    'Nuclei',
+    'Modern Physics',
     'Semiconductors',
   ];
 

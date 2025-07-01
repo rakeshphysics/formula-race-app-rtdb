@@ -42,9 +42,7 @@ const Map<String, String> chapterToClass = {
   "Electromagnetic Waves": "12",
   "Ray Optics": "12",
   "Wave Optics": "12",
-  "Dual Nature of Matter": "12",
-  "Atoms": "12",
-  "Nuclei": "12",
+  "Modern Physics": "12",
   "Semiconductors": "12",
 };
 
@@ -142,9 +140,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'Electromagnetic Waves',
           'Ray Optics',
           'Wave Optics',
-          'Dual Nature of Matter',
-          'Atoms',
-          'Nuclei',
+          'Modern Physics',
           'Semiconductors',
         ];
       } else if (widget.selectedChapter == 'fullBoth') {
@@ -173,9 +169,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'Electromagnetic Waves',
           'Ray Optics',
           'Wave Optics',
-          'Dual Nature of Matter',
-          'Atoms',
-          'Nuclei',
+          'Modern Physics',
           'Semiconductors',
         ];
       }

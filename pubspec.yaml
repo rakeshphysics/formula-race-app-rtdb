@@ -66,9 +66,7 @@ flutter:
     - assets/formulas/12/electromagnetic_waves.json
     - assets/formulas/12/ray_optics.json
     - assets/formulas/12/wave_optics.json
-    - assets/formulas/12/dual_nature_of_matter.json
-    - assets/formulas/12/atoms.json
-    - assets/formulas/12/nuclei.json
+    - assets/formulas/12/modern_physics.json
     - assets/formulas/12/semiconductors.json
       # images
     - assets/images/11th/Vectors/
@@ -92,6 +90,7 @@ flutter:
     - assets/images/12th/ac/
     - assets/images/12th/ray_optics/
     - assets/images/12th/wave_optics/
+    - assets/images/12th/modern_physics/
 
 
 dependency_overrides:
