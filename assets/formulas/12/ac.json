@@ -1,0 +1,185 @@
+[
+
+{
+  "id": "ac_qn_001",
+  "question": "In a purely resistive circuit, the phase difference between current and voltage is",
+  "options": [
+    "\\pi , \\text{ current leads}",
+    "0",
+    "\\frac{\\pi}{2} , \\text{ current leads}",
+    "\\frac{\\pi}{2} , \\text{ current lags}"
+  ],
+  "answer": "0",
+  "tags": {
+    "chapter": "ac",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": "",
+  "tip": ""
+},
+{
+"id": "ac_qn_002",
+"question": "In a purely capacitive circuit, the phase difference between current and voltage is",
+"options": [
+"\\pi , \\text{ current leads}",
+"0",
+"\\frac{\\pi}{2} , \\text{ current leads}",
+"\\frac{\\pi}{2} , \\text{ current lags}"
+],
+"answer": "\\frac{\\pi}{2} , \\text{ current leads}",
+"tags": {
+"chapter": "ac",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "ac_qn_003",
+"question": "In a purely inductive circuit, the phase difference between current and voltage is",
+"options": [
+"\\pi , \\text{ current leads}",
+"0",
+"\\frac{\\pi}{2} , \\text{ current leads}",
+"\\frac{\\pi}{2} , \\text{ current lags}"
+],
+"answer": "\\frac{\\pi}{2} , \\text{ current lags}",
+"tags": {
+"chapter": "ac",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "ac_qn_004",
+"question": "The reactance of a purely inductive circuit is (<i>&omega;</i> = angular frequency, <i>L</i> = inductance)",
+"options": [
+"\\frac{L}{\\omega}",
+"\\frac{\\omega}{L}",
+"\\omega L",
+"\\frac{1}{\\omega L}"
+],
+"answer": "\\omega L",
+"tags": {
+"chapter": "ac",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "ac_qn_005",
+"question": "The reactance of a purely capacitive circuit is (<i>&omega;</i> = angular frequency, <i>C</i> = capacitance)",
+"options": [
+"\\frac{C}{\\omega}",
+"\\frac{\\omega}{C}",
+"\\omega C",
+"\\frac{1}{\\omega C}"
+],
+"answer": "\\frac{1}{\\omega C}",
+"tags": {
+"chapter": "ac",
+"difficulty": "medium",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+
+  {
+    "id": "ac_qn_006",
+    "question": "For a current <i>i = f(t)</i>, average current from 0 to <i>t</i> equals",
+    "options": [
+      "\\sqrt{\\frac{\\int_0^t i^2 dt}{\\int_0^t dt}}",
+      "\\frac{\\int_0^t i dt}{\\int_0^t dt}",
+      "\\sqrt{\\frac{\\int_0^t i dt}{\\int_0^t dt}}",
+      "\\left( \\frac{\\int_0^t i dt}{\\int_0^t dt} \\right)^2"
+    ],
+    "answer": "\\frac{\\int_0^t i dt}{\\int_0^t dt}",
+    "tags": {
+      "chapter": "ac",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "ac_qn_007",
+    "question": "For a current <i>i = f(t)</i>, RMS current from 0 to <i>t</i> equals",
+    "options": [
+      "\\sqrt{\\frac{\\int_0^t i^2 dt}{\\int_0^t dt}}",
+      "\\frac{\\int_0^t i dt}{\\int_0^t dt}",
+      "\\sqrt{\\frac{\\int_0^t i dt}{\\int_0^t dt}}",
+      "\\left( \\frac{\\int_0^t i dt}{\\int_0^t dt} \\right)^2"
+    ],
+    "answer": "\\sqrt{\\frac{\\int_0^t i^2 dt}{\\int_0^t dt}}",
+    "tags": {
+      "chapter": "ac",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "ac_qn_008",
+    "question": "The impedance of an LCR circuit is given by (<i>R</i> = resistance, <i>X<sub>L</sub></i> = inductive reactance, <i>X<sub>C</sub></i> = capacitive reactance)",
+    "options": [
+      "\\left( X_L - X_C \\right)",
+      "R^2 + (X_L - X_C)^2",
+      "\\sqrt{R^2 + (X_L - X_C)^2}",
+      "R"
+    ],
+    "answer": "\\sqrt{R^2 + (X_L - X_C)^2}",
+    "tags": {
+      "chapter": "ac",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "ac_qn_009",
+    "question": "Power factor of an LCR circuit is (<i>R</i> = resistance of circuit, <i>Z</i> = impedance of circuit)",
+    "options": [
+      "\\frac{Z}{R}",
+      "\\frac{1}{RZ}",
+      "\\frac{R}{Z}",
+      "RZ"
+    ],
+    "answer": "\\frac{R}{Z}",
+    "tags": {
+      "chapter": "ac",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "ac_qn_010",
+    "question": "The quality factor of an LCR circuit equals",
+    "options": [
+      "\\frac{1}{\\text{LCR}}",
+      "\\sqrt{\\frac{R}{LC}}",
+      "\\frac{1}{R} \\sqrt{\\frac{C}{L}}",
+      "\\frac{1}{R} \\sqrt{\\frac{L}{C}}"
+    ],
+    "answer": "\\frac{1}{R} \\sqrt{\\frac{L}{C}}",
+    "tags": {
+      "chapter": "ac",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  }
+
+]

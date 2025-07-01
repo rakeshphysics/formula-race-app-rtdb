@@ -1,47 +1,183 @@
 [
   {
-    "question": "What is the key formula from Ray Optics - Q1?",
+  "id": "ray_optics_qn_001",
+  "question": "The total number of images of the object in the mirrors is",
+  "options": [
+    "5",
+    "6",
+    "3",
+    "4"
+  ],
+  "answer": "5",
+  "tags": {
+    "chapter": "ray_optics",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": "assets/images/12th/ray_optics/ray_optics_qn_001.png",
+  "tip": ""
+},
+{
+"id": "ray_optics_qn_002",
+"question": "The total number of images of the object in the mirrors is",
+"options": [
+"5",
+"6",
+"3",
+"2"
+],
+"answer": "2",
+"tags": {
+"chapter": "ray_optics",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "assets/images/12th/ray_optics/ray_optics_qn_002.png",
+"tip": ""
+},
+{
+"id": "ray_optics_qn_003",
+"question": "The total number of images of the object in the mirrors is",
+"options": [
+"5",
+"6",
+"3",
+"2"
+],
+"answer": "3",
+"tags": {
+"chapter": "ray_optics",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "assets/images/12th/ray_optics/ray_optics_qn_003.png",
+"tip": ""
+},
+{
+"id": "ray_optics_qn_004",
+"question": "The mirror formula is (<i>v</i> = image distance, <i>u</i> = object distance, <i>f</i> = focal length)",
+"options": [
+"\\frac{1}{v} - \\frac{1}{u} = \\frac{1}{f}",
+"\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f}",
+"v + u = f",
+"v - u = f"
+],
+"answer": "\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f}",
+"tags": {
+"chapter": "ray_optics",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "ray_optics_qn_005",
+"question": "The lateral magnification in mirror is (<i>v</i> = image distance, <i>u</i> = object distance)",
+"options": [
+"\\frac{v}{u}",
+"-\\frac{v}{u}",
+"vu",
+"\\frac{1}{uv}"
+],
+"answer": "-\\frac{v}{u}",
+"tags": {
+"chapter": "ray_optics",
+"difficulty": "medium",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "ray_optics_qn_006",
+"question": "The lateral magnification in mirror is (<i>f</i> = focal length, <i>u</i> = object distance)",
+"options": [
+"\\frac{u}{f - u}",
+"\\frac{f}{f + u}",
+"\\frac{f}{f - u}",
+"\\frac{u}{f + u}"
+],
+"answer": "\\frac{f}{f - u}",
+"tags": {
+"chapter": "ray_optics",
+"difficulty": "medium",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+  {
+    "id": "ray_optics_qn_007",
+    "question": "The longitudinal magnification of a small object of size <i>du</i> in mirror is (<i>m<sub>L</sub></i> = lateral magnification, object is placed along axis)",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "-m_L",
+      "m_L",
+      "m_L^2",
+      "-m_L^2"
     ],
-    "answer": "Option A",
+    "answer": "-m_L^2",
     "tags": {
-      "chapter": "Ray Optics",
-      "difficulty": "Easy",
+      "chapter": "ray_optics",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Ray Optics - Q2?",
+    "id": "ray_optics_qn_008",
+    "question": "An object moves along the axis of a mirror with velocity <i>v<sub>o</sub></i>, the velocity of image in the mirror is (<i>m<sub>L</sub></i> = lateral magnification)",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "-m_L v_o",
+      "m_L v_o",
+      "-m_L^2 (v_o)",
+      "m_L^2 (v_o)"
     ],
-    "answer": "Option A",
+    "answer": "-m_L^2 (v_o)",
     "tags": {
-      "chapter": "Ray Optics",
-      "difficulty": "Easy",
+      "chapter": "ray_optics",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_008.png",
+    "tip": ""
   },
   {
-    "question": "What is the key formula from Ray Optics - Q3?",
+    "id": "ray_optics_qn_009",
+    "question": "The optical power of a mirror is (<i>f</i> = focal length)",
     "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
+      "-f",
+      "-\\frac{1}{f}",
+      "\\frac{1}{f}",
+      "f"
     ],
-    "answer": "Option A",
+    "answer": "-\\frac{1}{f}",
     "tags": {
-      "chapter": "Ray Optics",
-      "difficulty": "Easy",
+      "chapter": "ray_optics",
+      "difficulty": "medium",
       "class": "12"
-    }
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_010",
+    "question": "If <b><i>i</i></b> is the unit vector along incident ray, <b><i>n</i></b> = unit vector along normal, then <b><i>r</i></b> unit vector along reflected ray equals",
+    "options": [
+      "\\hat{i} - 2(\\hat{i} \\cdot \\hat{n})\\hat{n}",
+      "\\hat{i} + 2(\\hat{i} \\cdot \\hat{n})\\hat{n}",
+      "\\hat{i} - (\\hat{i} \\cdot \\hat{n})\\hat{n}",
+      "\\hat{i} + (\\hat{i} \\cdot \\hat{n})\\hat{n}"
+    ],
+    "answer": "\\hat{i} - 2(\\hat{i} \\cdot \\hat{n})\\hat{n}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_010.png",
+    "tip": ""
   }
+
 ]

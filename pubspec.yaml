@@ -62,7 +62,7 @@ flutter:
     - assets/formulas/12/current_electricity.json
     - assets/formulas/12/magnetism.json
     - assets/formulas/12/emi.json
-    - assets/formulas/12/alternating_current.json
+    - assets/formulas/12/ac.json
     - assets/formulas/12/electromagnetic_waves.json
     - assets/formulas/12/ray_optics.json
     - assets/formulas/12/wave_optics.json
@@ -89,6 +89,8 @@ flutter:
     - assets/images/12th/current_electricity/
     - assets/images/12th/magnetism/
     - assets/images/12th/emi/
+    - assets/images/12th/ac/
+    - assets/images/12th/ray_optics/
 
 
 dependency_overrides:
