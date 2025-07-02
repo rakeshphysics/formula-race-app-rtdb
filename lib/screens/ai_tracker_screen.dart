@@ -13,8 +13,19 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'clear_mistakes_screen.dart'; // instead of solo_screen.dart
 import '../../services/mistake_tracker_service.dart';
+import 'package:flutter_html/flutter_html.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'dart:io';
+import 'package:path_provider/path_provider.dart';
 
-
+//.......START.......Render chapter names Correctly......................
+String formatChapter(String input) {
+  return input
+      .split('_')
+      .map((word) => word.isEmpty ? '' : word[0].toUpperCase() + word.substring(1))
+      .join(' ');
+}
+//.......END.......Render chapter names Correctly...........................
 
 // -------------------- CHUNK 2 — CLASS HEADER -----------------
 class AITrackerScreen extends StatefulWidget {
@@ -54,8 +65,11 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
       tempChapterMistakes.putIfAbsent(chapter, () => []);
       tempChapterMistakes[chapter]!.add({
         'formula': q['question'],
-        'mistakeCount': 1, // since each mistake is one occurrence
+        'answer': q['answer'],       // ✅ load the answer
+        'image': q['image'],         // ✅ load the image
+        'mistakeCount': 1,
       });
+
 
       tempChapterTotals[chapter] = (tempChapterTotals[chapter] ?? 0) + 1;
     }
@@ -175,7 +189,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
 
                 ListTile(
                   title: Text(
-                    '$chapter — $totalMistakes',
+                    '${formatChapter(chapter)} — $totalMistakes',
                     style: const TextStyle(fontWeight: FontWeight.normal),
                   ),
                   trailing: Icon(
@@ -195,35 +209,113 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                         String formula = formulaEntry['formula'];
                         int count = formulaEntry['mistakeCount'];
 
-                        return ListTile(
-                          title: Row(
-                            children: [
-
-
-
-
-                              Expanded(
-                                child: Math.tex(
-                                  formula,
-                                  textStyle: const TextStyle(fontSize: 18, color: Colors.white),
+                        return Material(
+                          color: Colors.transparent,
+                          child: InkWell(
+                            borderRadius: BorderRadius.circular(12),
+                            onLongPress: () {
+                              // Optional: do something on long press (like show full solution)
+                            },
+                            splashColor: Colors.redAccent.withOpacity(0.3),
+                            highlightColor: Colors.red.withOpacity(0.1),
+                            child: Container(
+                              width: double.infinity,
+                              margin: const EdgeInsets.symmetric(vertical: 8),
+                              padding: const EdgeInsets.all(12),
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                borderRadius: BorderRadius.circular(12),
+                                border: Border.all(
+                                  color: Colors.redAccent.withOpacity(0.6),
+                                  width: 1.5,
                                 ),
                               ),
-                              Text(
-                                ' (${count == 1 ? '1 time' : '$count times'})',
-                                style: const TextStyle(fontSize: 16, color: Colors.white),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  if (formulaEntry['image'] != null && formulaEntry['image'].toString().isNotEmpty)
+                                    Padding(
+                                      padding: const EdgeInsets.only(bottom: 8),
+                                      child: Image.asset(
+                                        formulaEntry['image'],
+                                        fit: BoxFit.contain,
+                                        errorBuilder: (context, error, stackTrace) => const Text(
+                                          'Image not found',
+                                          style: TextStyle(color: Colors.redAccent),
+                                        ),
+                                      ),
+                                    ),
+                                  Html(
+                                    data: 'Qn: ${formulaEntry['formula']}',
+                                    style: {
+                                      "body": Style(
+                                        fontSize: FontSize(16),
+                                        color: Colors.white,
+                                        fontFamily: GoogleFonts.poppins().fontFamily,
+                                        margin: Margins.zero,
+                                      ),
+                                    },
+                                  ),
+                                  SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+
+                                  Math.tex(
+                                    'Ans: ${formulaEntry['answer']}',
+                                    textStyle: const TextStyle(fontSize: 16, color: Colors.greenAccent),
+                                  ),
+                                ],
                               ),
-                            ],
+                            ),
                           ),
                         );
+
+
                       }).toList(),
+
                     ),
                   ),
                 const Divider(),
               ],
             );
           }).toList(),
+          ////...........TEMPORARY......START..........BUTTON TO DEL MISTAKES JSON FILE .............................
+          Padding(
+            padding: const EdgeInsets.only(top: 20.0, bottom: 40.0),
+            child: Center(
+              child: ElevatedButton(
+                onPressed: () => deleteMistakeTrackerJson(context),
+                child: Text('CLEAR MISTAKES'),
+              ),
+            ),
+          ),
+////...........TEMPORARY......END..........BUTTON TO DEL MISTAKES JSON FILE .........
+
         ],
       ),
     );
   }
 }
+
+//...........TEMPORARY......START...........FUNCTION TO DEL MISTAKES JSON FILE .................................
+Future<void> deleteMistakeTrackerJson(BuildContext context) async {
+  final dir = await getApplicationDocumentsDirectory();
+  final file = File('${dir.path}/my_mistakes.json');
+
+  if (await file.exists()) {
+    await file.delete();
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('Mistake tracker cleared')),
+    );
+  } else {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('No mistake file found')),
+    );
+  }
+
+  // ✅ Reload the screen with empty mistakes
+  if (context.mounted) {
+    final state = context.findAncestorStateOfType<_AITrackerScreenState>();
+    state?._loadMistakes();
+  }
+}
+
+//...........TEMPORARY.......END...........FUNCTION TO DEL MISTAKES JSON FILE .................................

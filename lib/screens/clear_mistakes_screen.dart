@@ -12,6 +12,11 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/services.dart';
 import '../../services/mistake_tracker_service.dart';
 import '../../models/incorrect_answer_model.dart';
+import '../../widgets/glow_button_red.dart';
+import 'package:flutter_html/flutter_html.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+
 
 class ClearMistakesScreen extends StatefulWidget {
   const ClearMistakesScreen({super.key});
@@ -37,20 +42,24 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
   @override
   void initState() {
     super.initState();
-                                     MistakeTrackerService.printAllMistakes();
+    MistakeTrackerService.printAllMistakes();
     _progressController = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 7),
+      duration: const Duration(seconds: 20),
     );
     _progressAnimation = Tween<double>(begin: 0, end: 1).animate(_progressController);
 
-    loadMistakes();
+
 
     _progressController.addStatusListener((status) {
       if (status == AnimationStatus.completed && selectedOption == null) {
         checkAnswer('');
       }
     });
+    _progressController.addListener(() {
+      setState(() {}); // ✅ this is what was missing
+    });
+    loadMistakes();
   }
 
   @override
@@ -119,10 +128,10 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
   }
 
   Color getOptionColor(String option) {
-    if (selectedOption == null) return Colors.grey.shade800;
+    if (selectedOption == null) return Colors.black;
     if (option == questions[currentIndex]['answer']) return Colors.green;
     if (option == selectedOption) return Colors.red;
-    return Colors.grey.shade800;
+    return Colors.black;
   }
 
   @override
@@ -144,15 +153,17 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: const Text('Clear Mistakes', style: TextStyle(color: Colors.white)),
-        iconTheme: const IconThemeData(color: Colors.white),
+        title: const Text('Clear Mistakes', style: TextStyle(color: Colors.redAccent)),
+        //iconTheme: const IconThemeData(color: Colors.white),
       ),
+
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
+
               children: List.generate(questions.length, (index) {
                 double value;
                 if (index < currentIndex) value = 1;
@@ -164,24 +175,52 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
                     child: LinearProgressIndicator(
                       value: value,
                       backgroundColor: Colors.grey.shade800,
-                      color: Colors.cyanAccent,
+                      color: Color(0xFFFF6F61),
                       minHeight: 6,
                     ),
                   ),
                 );
               }),
             ),
-            const SizedBox(height: 8),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.01),
             Text(
-              'Question ${currentIndex + 1} of ${questions.length}',
+              'Q${currentIndex + 1} of ${questions.length}',
               style: const TextStyle(color: Colors.white, fontSize: 18),
             ),
-            const SizedBox(height: 16),
-            Text(
-              question['question'],
-              style: const TextStyle(color: Colors.white, fontSize: 22),
+
+            SizedBox(height: MediaQuery.of(context).size.height * 0.005),
+
+            Html(
+              data: question['question'],
+              style: {
+                "body": Style(
+                  fontSize: FontSize(18),
+                  fontWeight: FontWeight.normal,
+                  color: Colors.white,
+                  fontFamily: GoogleFonts.poppins().fontFamily,
+                ),
+              },
             ),
-            const SizedBox(height: 24),
+
+            if (question['image'] != null && question['image'].toString().isNotEmpty)
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 0),
+                child:Center(
+                  child: Image.asset(
+                  question['image'],
+                  fit: BoxFit.contain,
+                  errorBuilder: (context, error, stackTrace) {
+                    return const Text(
+                      'Image not found',
+                      style: TextStyle(color: Colors.redAccent),
+                    );
+                  },
+                ),)
+              ),
+
+
+
+            SizedBox(height: MediaQuery.of(context).size.height * 0.005),
             ...shuffledOptions.map((option) {
               return GestureDetector(
                 onTap: selectedOption == null ? () {
@@ -201,14 +240,18 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
                   margin: const EdgeInsets.symmetric(vertical: 10),
                   padding: const EdgeInsets.all(12),
                   width: double.infinity,
+                  height:64,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
                     color: getOptionColor(option),
+                    border: Border.all(color: Color(0xFFFF6F61), width: 1), // warm coral
+
                   ),
-                  child: Math.tex(
+                  child: Center(
+                    child: Math.tex(
                     option,
                     textStyle: const TextStyle(color: Colors.white, fontSize: 18),
-                  ),
+                  ),)
                 ),
               );
             })
