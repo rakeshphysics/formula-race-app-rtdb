@@ -54,7 +54,115 @@
 "tip": ""
 },
   {
+    "id": "em_waves_qn_004",
+    "question": "Which Electromagnetic waves are emitted during radioactive decay of nucleus",
+    "options": [
+      "\\text{Radio}",
+      "\\text{UV}",
+      "\\text{X-rays}",
+      "\\text{Gamma Rays}"
+    ],
+    "answer": "\\text{Gamma Rays}",
+    "tags": {
+      "chapter": "em_waves",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": ""
+  },
+
+
+  {
+    "id": "em_waves_qn_005",
+    "question": "The intensity of electromagnetic wave is given by (Electric field amplitude <i>E<sub>0</sub></i>, speed of light <i>c</i>)",
+    "options": [
+      "\\frac{1}{4}\\, \\varepsilon_0^2\\, E_0^2",
+      "\\frac{1}{4}\\, \\varepsilon_0\\, E_0^2\\, c",
+      "\\frac{1}{2}\\, \\varepsilon_0^2\\, E_0^2\\, c",
+      "\\frac{1}{2}\\, \\varepsilon_0\\, E_0^2\\, c"
+    ],
+    "answer": "\\frac{1}{2}\\, \\varepsilon_0\\, E_0^2\\, c",
+
+    "tags": {
+      "chapter": "em_waves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": ""
+  }
+,
+  {
     "id": "em_waves_qn_006",
+    "question": "The propagation direction of an electromagnetic wave is along",
+    "options": [
+      "\\vec{B} \\times \\vec{E}",
+      "\\vec{E} \\times \\vec{B}",
+      "(\\vec{E} \\times \\vec{B}) \\times \\vec{B}",
+      "(\\vec{E} \\times \\vec{B}) \\times \\vec{E}"
+    ],
+    "answer": "\\vec{E} \\times \\vec{B}",
+    "tags": {
+      "chapter": "em_waves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": ""
+  },
+  {
+    "id": "em_waves_qn_007",
+    "question": "The energy density due to magnetic field in an electromagnetic wave is (<i>B<sub>0</sub></i> = Magnetic field amplitude, <i>B<sub>rms</sub></i> = RMS value of magnetic field)",
+    "options": [
+      "\\frac{B^2_{rms}}{2\\, \\mu_0}",
+      "\\frac{B^2_0}{2\\, \\mu_0}",
+      "\\frac{B^2_{rms}}{4\\, \\mu_0}",
+      "\\frac{B^2_0}{8\\, \\mu_0}"
+    ],
+    "answer": "\\frac{B^2_{rms}}{2\\, \\mu_0}",
+
+    "tags": {
+      "chapter": "em_waves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": ""
+  },
+  {
+    "id": "em_waves_qn_008",
+    "question": "The refractive index of a medium in terms of its electrical and magnetic properties is (<i>&mu;<sub>r</sub></i> = relative permeability, <i>&epsilon;<sub>r</sub></i> = relative permittivity)",
+    "options": [
+      "\\sqrt{\\mu_r \\varepsilon_r}",
+      "\\frac{1}{\\sqrt{\\mu_r \\varepsilon_r}}",
+      "\\mu_r \\varepsilon_r",
+      "\\frac{1}{\\mu_r \\varepsilon_r}"
+    ],
+    "answer": "\\sqrt{\\mu_r \\varepsilon_r}",
+    "tags": {
+      "chapter": "em_waves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": ""
+  },
+  {
+    "id": "em_waves_qn_009",
+    "question": "The intensity of electromagnetic wave is given by (Magnetic field amplitude <i>B<sub>0</sub></i>, speed of light <i>c</i>)",
+    "options": [
+      "\\frac{1}{2} \\mu_0^2\\, B_0^2\\, c",
+      "\\frac{B_0^2\\, c}{4\\, \\mu_0}",
+      "\\frac{B_0^2\\, c}{2\\, \\mu_0}",
+      "\\frac{1}{2}\\, \\mu_0\\, B_0^2\\, c"
+    ],
+    "answer": "\\frac{B_0^2\\, c}{2\\, \\mu_0}",
+
+    "tags": {
+      "chapter": "em_waves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": ""
+  },
+  {
+    "id": "em_waves_qn_010",
     "question": "Which Electromagnetic waves are detected by point contact diodes",
     "options": [
       "\\text{Radio}",
@@ -65,29 +173,10 @@
     "answer": "\\text{Microwaves}",
     "tags": {
       "chapter": "em_waves",
-      "difficulty": "easy",
+      "difficulty": "god",
       "class": "12"
     },
-    "image": "",
-    "tip": ""
-  },
+    "image": ""
+  }
 
-{
-"id": "em_waves_qn_005",
-"question": "Which Electromagnetic waves are emitted during radioactive decay of nucleus",
-"options": [
-"\\text{Radio}",
-"\\text{UV}",
-"\\text{X-rays}",
-"\\text{Gamma Rays}"
-],
-"answer": "\\text{Gamma Rays}",
-"tags": {
-"chapter": "em_waves",
-"difficulty": "medium",
-"class": "12"
-},
-"image": "",
-"tip": ""
-}
 ]
