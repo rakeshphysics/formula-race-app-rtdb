@@ -28,7 +28,7 @@ class FormulaOptionButton extends StatelessWidget {
           foregroundColor: Colors.white,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(4),
-            side: const BorderSide(color: Colors.grey),// nicely rounded corners
+            side: const BorderSide(color: Colors.cyanAccent),// nicely rounded corners
           ),
           padding: const EdgeInsets.symmetric(horizontal: 16),
         ),

@@ -545,6 +545,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                 // --- Scrollable Options ---
                 Expanded(
                   child: SingleChildScrollView(
+                    physics: const BouncingScrollPhysics(),
                     child: Column(
                       children: shuffledOptions.map((option) {
                         return Padding(

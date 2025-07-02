@@ -157,7 +157,8 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
         //iconTheme: const IconThemeData(color: Colors.white),
       ),
 
-      body: Padding(
+      body: SafeArea(
+      child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -221,43 +222,61 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
 
 
             SizedBox(height: MediaQuery.of(context).size.height * 0.005),
-            ...shuffledOptions.map((option) {
-              return GestureDetector(
-                onTap: selectedOption == null ? () {
-                  setState(() {
-                    selectedOption = option;
-                  });
-                  if (option == question['answer']) {
-                    audioPlayer.play(AssetSource('sounds/correct.mp3'));
-                  } else {
-                    audioPlayer.play(AssetSource('sounds/wrong.mp3'));
-                  }
-                  Future.delayed(const Duration(milliseconds: 700), () {
-                    checkAnswer(option);
-                  });
-                } : null,
-                child: Container(
-                  margin: const EdgeInsets.symmetric(vertical: 10),
-                  padding: const EdgeInsets.all(12),
-                  width: double.infinity,
-                  height:64,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    color: getOptionColor(option),
-                    border: Border.all(color: Color(0xFFFF6F61), width: 1), // warm coral
 
-                  ),
-                  child: Center(
-                    child: Math.tex(
-                    option,
-                    textStyle: const TextStyle(color: Colors.white, fontSize: 18),
-                  ),)
-                ),
-              );
-            })
+
+    Expanded(
+    /// adjust as needed
+    child: SingleChildScrollView(
+      physics: const BouncingScrollPhysics(),
+    child: Column(
+    children: shuffledOptions.map((option) {
+    return GestureDetector(
+    onTap: selectedOption == null ? () {
+    setState(() {
+    selectedOption = option;
+    });
+    if (option == question['answer']) {
+    audioPlayer.play(AssetSource('sounds/correct.mp3'));
+    } else {
+    audioPlayer.play(AssetSource('sounds/wrong.mp3'));
+    }
+    Future.delayed(const Duration(milliseconds: 700), () {
+    checkAnswer(option);
+    });
+    } : null,
+    child: Container(
+    margin: const EdgeInsets.symmetric(vertical: 10),
+    padding: const EdgeInsets.all(12),
+    width: double.infinity,
+    height: 64,
+    decoration: BoxDecoration(
+    borderRadius: BorderRadius.circular(4),
+    color: getOptionColor(option),
+    border: Border.all(
+    color: Color(0xFFFF6F61), // Warm coral
+    width: 1,
+    ),
+    ),
+    child: Center(
+    child: Math.tex(
+    option,
+    textStyle: const TextStyle(color: Colors.white, fontSize: 18),
+    ),
+    ),
+    ),
+    );
+    }).toList(),
+    ),
+    ),
+    ),
+
+
+
+
           ],
         ),
       ),
+      )
     );
   }
 }
