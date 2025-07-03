@@ -13,8 +13,11 @@ import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:audioplayers/audioplayers.dart';
-import '../widgets/formula_option_button.dart';
+import '../widgets/formula_option_button_online_play.dart';
 import 'online_result_screen.dart';
+import 'package:flutter_html/flutter_html.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 
 // ............. Chunk 1 ONLINE GAME SCREEN WIDGET .............
 class OnlineGameScreen extends StatefulWidget {
@@ -59,7 +62,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     super.initState();
     _progressController = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 10),
+      duration: const Duration(seconds: 18),
     );
     _progressAnimation = Tween<double>(begin: 0, end: 1).animate(_progressController);
 
@@ -351,7 +354,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     String correctAnswer = questions[currentQuestionIndex]['correctAnswer'];
 
     if (!questionLocked && selectedOption == null) {
-      return Colors.grey.shade800;
+      return Colors.black;
     }
 
     if (option == correctAnswer) {
@@ -359,7 +362,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     } else if (option == selectedOption) {
       return Colors.red;
     } else {
-      return Colors.grey.shade800;
+      return Colors.black;
     }
   }
 
@@ -375,10 +378,12 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     Map<String, dynamic> currentQuestion = Map<String, dynamic>.from(questions[currentQuestionIndex]);
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Question ${currentQuestionIndex + 1} of $totalQuestions'),
-      ),
-      body: Padding(
+      backgroundColor: Colors.black,
+      //appBar: AppBar(
+        //title: Text('Question ${currentQuestionIndex + 1} of $totalQuestions'),
+      //),
+      body: SafeArea(
+        child:Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
@@ -399,7 +404,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                     child: LinearProgressIndicator(
                       value: value,
                       backgroundColor: Colors.grey.shade800,
-                      color: Colors.white,
+                      color: Color(0xFFFFA500),
                       minHeight: 6,
                     ),
                   ),
@@ -407,15 +412,26 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
               }),
             ),
             const SizedBox(height: 8),
-            Text(
-              'Question ${currentQuestionIndex + 1} of $totalQuestions',
-              style: const TextStyle(fontSize: 18),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'Q${currentQuestionIndex + 1} of $totalQuestions',
+                style: const TextStyle(fontSize: 18, color: Colors.white),
+              ),
             ),
             const SizedBox(height: 24),
-            Text(
-              currentQuestion['questionText'],
-              style: const TextStyle(fontSize: 24),
+            Html(
+              data: currentQuestion['questionText'],
+              style: {
+                "body": Style(
+                  fontSize: FontSize(18),
+                  fontWeight: FontWeight.normal,
+                  color: Colors.white,
+                  fontFamily: GoogleFonts.poppins().fontFamily,
+                ),
+              },
             ),
+
             const SizedBox(height: 24),
             ...(currentQuestion['options'] as List<dynamic>).map((option) {
               return FormulaOptionButton(
@@ -428,6 +444,8 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                 color: getOptionColor(option),
               );
             }).toList(),
+
+
             const SizedBox(height: 24),
             Text(
               feedbackMessage,
@@ -435,6 +453,8 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
             ),
           ],
         ),
+      ),
+      ),
       ),
     );
   }
