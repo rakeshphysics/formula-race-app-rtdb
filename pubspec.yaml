@@ -12,6 +12,7 @@ dependencies:
 
 
   shared_preferences: ^2.2.2
+  uuid: ^4.0.0
 
   flutter_math_fork: ^0.7.2
   flutter_html: ^3.0.0
@@ -39,7 +40,6 @@ flutter:
 
     - assets/sounds/correct.mp3
     - assets/sounds/wrong.mp3
-    - assets/formulas/batch1.json
     - assets/logo.png
     # Class 11
     - assets/formulas/11/units_and_dimensions.json
@@ -68,6 +68,11 @@ flutter:
     - assets/formulas/12/wave_optics.json
     - assets/formulas/12/modern_physics.json
     - assets/formulas/12/semiconductors.json
+    # full syllabus
+    - assets/formulas/full_syllabus_online_play.json
+
+
+
       # images
     - assets/images/11th/Vectors/
     - assets/images/11th/units_and_dimensions/

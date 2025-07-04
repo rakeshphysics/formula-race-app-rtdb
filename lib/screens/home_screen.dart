@@ -8,19 +8,48 @@
 
 import 'package:flutter/material.dart';
 import 'solo_screen.dart';
-import 'online_play_screen.dart';
+//import 'online_play_screen.dart';
 import 'solo_mode_selection_screen.dart';
 import 'ai_tracker_screen.dart'; // Add this import
+import 'package:shared_preferences/shared_preferences.dart';
+import 'searching_for_opponent.dart';
+import 'dart:io';
+
+
 
 
 
 // ----------------------------------------------------
 // HomeScreen Widget
 // ----------------------------------------------------
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
   @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  String userId = '';
+
+  @override
+  void initState() {
+    super.initState();
+    loadUserId();
+  }
+
+  Future<void> loadUserId() async {
+    final prefs = await SharedPreferences.getInstance();
+    final storedId = prefs.getString('user_id');
+    if (storedId != null) {
+      setState(() {
+        userId = storedId;
+      });
+    } else {
+      print("No user ID found");
+    }
+  }
+
   Widget build(BuildContext context) {
 
     // --------- SCREEN DIMENSIONS ----------
@@ -106,17 +135,26 @@ class HomeScreen extends StatelessWidget {
                     AnimatedButton(
                       screenWidth: screenWidth*1.2,
                       screenHeight: screenHeight*1.3,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => const OnlinePlayScreen()),
-                        );
-                      },
+                        onPressed: () {
+                          if (userId.isNotEmpty) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => SearchingForOpponent(userId: userId),
+                              ),
+                            );
+                          } else {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(content: Text('User ID not ready yet')),
+                            );
+                          }
+                        },
+
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: const [
                           Text(
-                            'Online Play',
+                            'Play with Friend',
                             style: TextStyle(fontSize: 26, color: Colors.white,fontWeight: FontWeight.normal),
                           ),
                           SizedBox(height: 4),

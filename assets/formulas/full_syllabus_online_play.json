@@ -1,0 +1,1819 @@
+
+ [
+    {
+      "id": "units_and_dimensions_qn_001",
+      "question": "The SI unit of temperature is",
+      "options": [
+        "\\text{Kelvin}",
+        "\\text{Celsius}",
+        "\\text{Fahrenheit}",
+        "\\text{Rankine}"
+      ],
+      "answer": "\\text{Kelvin}",
+      "tags": {
+        "chapter": "Units_and_Dimensions",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "units_and_dimensions_qn_002",
+      "question": "1 Megawatt (MW) equals",
+      "options": [
+        "10^6\\,\\text{Watts}",
+        "10^3\\,\\text{Watts}",
+        "10^2\\,\\text{Watts}",
+        "10^{12}\\,\\text{Watts}"
+      ],
+      "answer": "10^6\\,\\text{Watts}",
+      "tags": {
+        "chapter": "Units_and_Dimensions",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "units_and_dimensions_qn_003",
+      "question": "1 micrometer equals",
+      "options": [
+        "10^{-3}\\,\\text{m}",
+        "10^{-6}\\,\\text{m}",
+        "10^6\\,\\text{m}",
+        "10^{-12}\\,\\text{m}"
+      ],
+      "answer": "10^{-6}\\,\\text{m}",
+      "tags": {
+        "chapter": "Units_and_Dimensions",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "units_and_dimensions_qn_004",
+      "question": "1 nanometer equals",
+      "options": [
+        "10^{-3}\\,\\text{m}",
+        "10^{-6}\\,\\text{m}",
+        "10^{-9}\\,\\text{m}",
+        "10^{-12}\\,\\text{m}"
+      ],
+      "answer": "10^{-9}\\,\\text{m}",
+      "tags": {
+        "chapter": "Units_and_Dimensions",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "units_and_dimensions_qn_005",
+      "question": "The SI unit of Luminous intensity is",
+      "options": [
+        "\\text{Lumen/Steradian}",
+        "\\text{Candela}",
+        "\\text{Candle Power}",
+        "\\text{Hefnerkerze}"
+      ],
+      "answer": "\\text{Candela}",
+      "tags": {
+        "chapter": "Units_and_Dimensions",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "units_and_dimensions_qn_006",
+      "question": "The SI unit of amount of substance is",
+      "options": [
+        "\\text{Kilogram}",
+        "\\text{Grams}",
+        "\\text{Mole}",
+        "\\text{Milligrams}"
+      ],
+      "answer": "\\text{Mole}",
+      "tags": {
+        "chapter": "Units_and_Dimensions",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "units_and_dimensions_qn_007",
+      "question": "1 cm + 1.1 cm equals (Use correct significant figures)",
+      "options": [
+        "2\\,\\text{cm}",
+        "2.1\\,\\text{cm}",
+        "1\\,\\text{cm}",
+        "1.1\\,\\text{cm}"
+      ],
+      "answer": "2\\,\\text{cm}",
+      "tags": {
+        "chapter": "Units_and_Dimensions",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "units_and_dimensions_qn_008",
+      "question": "The density of a body with mass <i>m</i> = 20 kg, Volume V = 5.00 m\u00b3 is (Use correct significant figures)",
+      "options": [
+        "4\\,kg/m\u00b3",
+        "4.0\\,kg/m\u00b3",
+        "4.00\\,kg/m\u00b3",
+        "4.000\\,kg/m\u00b3"
+      ],
+      "answer": "4\\,kg/m\u00b3",
+      "tags": {
+        "chapter": "Units_and_Dimensions",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "units_and_dimensions_qn_009",
+      "question": "2.345 rounded off to three significant digits is",
+      "options": [
+        "2.34",
+        "2.35",
+        "2.40",
+        "2.30"
+      ],
+      "answer": "2.34",
+      "tags": {
+        "chapter": "Units_and_Dimensions",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "units_and_dimensions_qn_010",
+      "question": "2.395 rounded off to three significant digits is",
+      "options": [
+        "2.39",
+        "2.41",
+        "2.40",
+        "2.38"
+      ],
+      "answer": "2.40",
+      "tags": {
+        "chapter": "Units_and_Dimensions",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_001",
+      "question": "<b>R</b> = <b>a</b> + <b>b</b> then magnitude of <b>R</b> equals (given θ is angle between <b>a</b> and <b>b</b>)",
+      "options": [
+        "\\sqrt{a^2 + b^2 + 2ab \\cos \\theta}",
+        "\\sqrt{a^2 + b^2 - 2ab \\cos \\theta}",
+        "\\sqrt{a^2 + b^2}",
+        "\\sqrt{a^2 - b^2 + 2ab \\cos \\theta}"
+      ],
+      "answer": "\\sqrt{a^2 + b^2 + 2ab \\cos \\theta}",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_002",
+      "question": "If <b>A</b> = A<sub>x</sub> i + A<sub>y</sub> j + A<sub>z</sub> k, and α is the angle made by the vector with X axis, then cos α equals",
+      "options": [
+        "\\frac{A_y}{\\sqrt{A_x^2 + A_y^2 + A_z^2}}",
+        "\\sqrt{A_x^2 + A_y^2 + A_z^2}",
+        "\\frac{A_z}{\\sqrt{A_x^2 + A_y^2 + A_z^2}}",
+        "\\frac{A_x}{\\sqrt{A_x^2 + A_y^2 + A_z^2}}"
+      ],
+      "answer": "\\frac{A_x}{\\sqrt{A_x^2 + A_y^2 + A_z^2}}",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_003",
+      "question": "If l, m, n are direction cosines of a vector, then l² + m² + n² =",
+      "options": [
+        "2",
+        "1",
+        "0",
+        "0.5"
+      ],
+      "answer": "1",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_004",
+      "question": "The angle between resultant of <b>A</b> and <b>B</b> with <b>A</b> is α, then tan α equals (θ is angle between <b>A</b> and <b>B</b>)",
+      "options": [
+        "\\frac{B \\cos \\theta}{A + B \\cos \\theta}",
+        "\\frac{B \\sin \\theta}{A + B \\cos \\theta}",
+        "\\frac{B \\sin \\theta}{A + B \\sin \\theta}",
+        "\\frac{B \\cos \\theta}{A + B \\sin \\theta}"
+      ],
+      "answer": "\\frac{B \\sin \\theta}{A + B \\cos \\theta}",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Vectors/Vectors_qn_004.png",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_005",
+      "question": "Two vectors of equal magnitude r are inclined at an angle θ. Their resultant is",
+      "options": [
+        "2r \\sin \\left(\\frac{\\theta}{2}\\right)",
+        "2r \\cos \\left(\\frac{\\theta}{2}\\right)",
+        "r \\tan \\left(\\frac{\\theta}{2}\\right)",
+        "r^2 \\sin \\left(\\frac{\\theta}{2}\\right)"
+      ],
+      "answer": "2r \\cos \\left(\\frac{\\theta}{2}\\right)",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Vectors/Vectors_qn_005.png",
+      "tip": ""
+    },
+
+    {
+      "id": "Vectors_qn_006",
+      "question": "The scalar (dot) product of vectors <b>A</b> and <b>B</b> is (θ is angle between <b>A</b> and <b>B</b>)",
+      "options": [
+        "AB \\cos \\theta",
+        "AB \\sin \\theta",
+        "AB",
+        "AB \\cos^2 \\theta"
+      ],
+      "answer": "AB \\cos \\theta",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_007",
+      "question": "The vector (cross) product of vectors <b>A</b> and <b>B</b> is (θ is angle between <b>A</b> and <b>B</b>)",
+      "options": [
+        "AB \\cos \\theta\\, \\hat{n}",
+        "AB \\sin \\theta\\, \\hat{n}",
+        "AB \\hat{n}",
+        "AB \\cos^2 \\theta\\, \\hat{n}"
+      ],
+      "answer": "AB \\sin \\theta\\, \\hat{n}",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_008",
+      "question": "The cross product <b>j × k</b> equals (j and k are unit vectors along Y and Z axes)",
+      "options": [
+        "\\hat{j}",
+        "\\hat{k}",
+        "0",
+        "\\hat{i}"
+      ],
+      "answer": "\\hat{i}",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_009",
+      "question": "The dot product <b>i ⋅ j</b> equals (i and j are unit vectors along X and Y axes)",
+      "options": [
+        "\\hat{j}",
+        "\\hat{k}",
+        "0",
+        "\\hat{i}"
+      ],
+      "answer": "0",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_010",
+      "question": "<b>a × (b × c)</b> equals",
+      "options": [
+        "(\\vec{a} \\cdot \\vec{b}\\,)\\, \\vec{c} - (\\vec{a} \\cdot \\vec{c}\\,)\\, \\vec{b}",
+        "(\\vec{a} \\cdot \\vec{c}\\,)\\, \\vec{b} - (\\vec{a} \\cdot \\vec{b}\\,)\\, \\vec{c}",
+        "(\\vec{a} \\cdot \\vec{b}\\,) \\cdot \\vec{c}",
+        "(\\vec{a} \\cdot \\vec{c}\\,)\\, \\vec{b}"
+      ],
+      "answer": "(\\vec{a} \\cdot \\vec{b}\\,)\\, \\vec{c} - (\\vec{a} \\cdot \\vec{c}\\,)\\, \\vec{b}",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinematics_qn_001",
+      "question": "Average velocity equals",
+      "options": [
+        "\\frac{\\text{Total Distance}}{\\text{Total time}}",
+        "\\frac{\\text{Total Displacement}}{\\text{Total time}}",
+        "\\text{Average speed}",
+        "\\text{Average acceleration}"
+      ],
+      "answer": "\\frac{\\text{Total Displacement}}{\\text{Total time}}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinematics_qn_002",
+      "question": "Average velocity equals",
+      "options": [
+        "\\frac{\\text{Total Distance}}{\\text{Total time}}",
+        "\\frac{\\text{Total Displacement}}{\\text{Total time}}",
+        "\\text{Average speed}",
+        "\\text{Average acceleration}"
+      ],
+      "answer": "\\frac{\\text{Total Distance}}{\\text{Total time}}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinematics_qn_003",
+      "question": "Average acceleration equals",
+      "options": [
+        "\\frac{\\text{Change in velocity}}{\\text{Total time}}",
+        "\\frac{\\text{Change in speed}}{\\text{Total time}}",
+        "\\text{Average speed}",
+        "\\frac{\\text{Total Displacement}}{\\text{Total time}}"
+      ],
+      "answer": "\\frac{\\text{Change in velocity}}{\\text{Total time}}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinematics_qn_004",
+      "question": "Choose the correct option for uniformly accelerated motion",
+      "options": [
+        "\\vec{v} = \\vec{u} + \\vec{a}t",
+        "\\vec{u} = \\vec{v} + \\vec{a}t",
+        "\\vec{a} = \\frac{\\vec{v} + \\vec{u}}{2}",
+        "\\vec{a} = \\frac{\\vec{v} - \\vec{u}}{2}"
+      ],
+      "answer": "\\vec{v} = \\vec{u} + \\vec{a}t",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinematics_qn_005",
+      "question": "Choose the correct option for uniformly accelerated motion",
+      "options": [
+        "\\vec{s} = \\vec{u}t + \\vec{a}t^2",
+        "\\vec{s} = \\vec{v}t + \\vec{a}t^2",
+        "\\vec{s} = \\vec{u}t + \\frac{1}{2} \\vec{a}t^2",
+        "\\vec{s} = \\vec{v}t + \\frac{1}{2} \\vec{a}t^2"
+      ],
+      "answer": "\\vec{s} = \\vec{u}t + \\frac{1}{2} \\vec{a}t^2",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinematics_qn_006",
+      "question": "Choose the correct option for uniformly accelerated motion",
+      "options": [
+        "v^2 + u^2 = 2(\\vec{a} \\times \\vec{s})",
+        "v^2 - u^2 = 2(\\vec{a} \\times \\vec{s})",
+        "v^2 + u^2 = 2(\\vec{a} \\cdot \\vec{s})",
+        "v^2 - u^2 = 2(\\vec{a} \\cdot \\vec{s})"
+      ],
+      "answer": "v^2 - u^2 = 2(\\vec{a} \\cdot \\vec{s})",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinematics_qn_007",
+      "question": "The displacement of a body in uniformly accelerated motion can be written as",
+      "options": [
+        "(\\vec{v} + \\vec{u})t",
+        "(\\vec{v} - \\vec{u})t",
+        "\\left(\\frac{\\vec{v} - \\vec{u}}{2}\\right)t",
+        "\\left(\\frac{\\vec{v} + \\vec{u}}{2}\\right)t"
+      ],
+      "answer": "\\left(\\frac{\\vec{v} + \\vec{u}}{2}\\right)t",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinematics_qn_008",
+      "question": "Choose the correct option for uniformly accelerated motion",
+      "options": [
+        "\\vec{s}_n = \\vec{u} + \\frac{\\vec{a}}{2}(2n + 1)",
+        "\\vec{s}_n = \\vec{u} - \\frac{\\vec{a}}{2}(2n - 1)",
+        "\\vec{s}_n = \\vec{u} + \\frac{\\vec{a}}{2}(2n - 1)",
+        "\\vec{s}_n = \\vec{u} - \\frac{\\vec{a}}{2}(2n + 1)"
+      ],
+      "answer": "\\vec{s}_n = \\vec{u} + \\frac{\\vec{a}}{2}(2n - 1)",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinematics_qn_009",
+      "question": "The velocity–time graph given below represents a body having",
+      "options": [
+        "\\text{At rest}",
+        "\\text{Uniform Motion}",
+        "\\text{Uniform acceleration}",
+        "\\text{Constant speed}"
+      ],
+      "answer": "\\text{Uniform acceleration}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_009.png",
+      "tip": ""
+    },
+    {
+      "id": "kinematics_qn_010",
+      "question": "From the below graph of displacement vs time, the velocity of the body",
+      "options": [
+        "\\text{First increases then decreases}",
+        "\\text{First decreases then increases}",
+        "\\text{Always increases}",
+        "\\text{Always decreases}"
+      ],
+      "answer": "\\text{First decreases then increases}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_010.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_001",
+      "question": "Impulse equals",
+      "options": [
+        "\\text{Change in linear momentum}",
+        "\\text{Change in angular momentum}",
+        "\\text{Linear momentum}",
+        "\\text{Angular Momentum}"
+      ],
+      "answer": "\\text{Change in linear momentum}",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_002",
+      "question": "The acceleration of masses equals",
+      "options": [
+        "\\left( \\frac{m_2 - m_1}{m_2 + m_1} \\right) g",
+        "2 \\left( \\frac{m_2 - m_1}{m_2 + m_1} \\right) g",
+        "g",
+        "\\frac{g}{2}"
+      ],
+      "answer": "\\left( \\frac{m_2 - m_1}{m_2 + m_1} \\right) g",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_002.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_003",
+      "question": "The magnitude of static friction is",
+      "options": [
+        "= \\mu_k N",
+        "= \\mu_s N",
+        "\\leq \\mu_s N",
+        "\\geq \\mu_s N"
+      ],
+      "answer": "\\leq \\mu_s N",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_004",
+      "question": "The magnitude of kinetic friction is",
+      "options": [
+        "= \\mu_k N",
+        "= \\mu_s N",
+        "\\leq \\mu_k N",
+        "\\geq \\mu_k N"
+      ],
+      "answer": "= \\mu_k N",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_005",
+      "question": "The acceleration in the string connecting blocks equals",
+      "options": [
+        "\\mu g,\\ \\left(\\mu = \\frac{m_1 m_2}{m_1 + m_2} \\right)",
+        "2\\mu g,\\ \\left(\\mu = \\frac{m_1 m_2}{m_1 + m_2} \\right)",
+        "3\\mu g,\\ \\left(\\mu = \\frac{m_1 m_2}{m_1 + m_2} \\right)",
+        "4\\mu g,\\ \\left(\\mu = \\frac{m_1 m_2}{m_1 + m_2} \\right)"
+      ],
+      "answer": "2\\mu g,\\ \\left(\\mu = \\frac{m_1 m_2}{m_1 + m_2} \\right)",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_005.png",
+      "tip": ""
+    },
+
+    {
+      "id": "laws_of_motion_qn_006",
+      "question": "If <i>θ</i> is angle of friction, then tan <i>θ</i> equals",
+      "options": [
+        "\\frac{\\mu_s}{\\mu_k}",
+        "\\frac{\\mu_k}{\\mu_s}",
+        "\\mu_k",
+        "\\mu_s"
+      ],
+      "answer": "\\mu_s",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_007",
+      "question": "If <i>θ</i> is angle of repose, then tan <i>θ</i> equals",
+      "options": [
+        "\\frac{\\mu_s}{\\mu_k}",
+        "\\frac{\\mu_k}{\\mu_s}",
+        "\\mu_k",
+        "\\mu_s"
+      ],
+      "answer": "\\mu_s",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_008",
+      "question": "The component of gravitational force on block along direction shown is",
+      "options": [
+        "0",
+        "\\text{mg}",
+        "\\text{mg} \\cos \\theta",
+        "\\text{mg} \\sin \\theta"
+      ],
+      "answer": "\\text{mg} \\cos \\theta",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_008.png",
+      "tip": ""
+    }
+  ,
+    {
+      "id": "laws_of_motion_qn_009",
+      "question": "The acceleration of block down the fixed incline is (given tan <i>θ</i> &lt; <i>μ<sub>s</sub></i>)",
+      "options": [
+        "g (\\sin \\theta - \\mu_k \\cos \\theta)",
+        "g (\\sin \\theta - \\mu_s \\cos \\theta)",
+        "0",
+        "g \\sin \\theta"
+      ],
+      "answer": "0",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_009.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_010",
+      "question": "The acceleration of block down the fixed incline is (given tan <i>θ</i> &gt; <i>μ<sub>s</sub></i>)",
+      "options": [
+        "g (\\sin \\theta - \\mu_k \\cos \\theta)",
+        "g (\\sin \\theta - \\mu_s \\cos \\theta)",
+        "0",
+        "g \\sin \\theta"
+      ],
+      "answer": "g (\\sin \\theta - \\mu_k \\cos \\theta)",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_010.png",
+      "tip": ""
+    },
+
+  {
+  "id": "fluids_qn_001",
+  "question": "The pressure difference between points <i>a</i> and <i>b</i> is (ρ = density of liquid)",
+  "options": [
+    "\\frac{h \\rho}{g}",
+    "h \\rho g",
+    "\\frac{h}{g \\rho}",
+    "\\frac{\\rho}{h g}"
+  ],
+  "answer": "h \\rho g",
+  "tags": {
+    "chapter": "fluids",
+    "difficulty": "easy",
+    "class": "11"
+  },
+  "image": "assets/images/11th/fluids/fluids_qn_001.png",
+  "tip": ""
+},
+{
+"id": "fluids_qn_002",
+"question": "The buoyancy force on the body immersed in liquid is (V = volume of body, ρ = density of liquid, σ = density of liquid)",
+"options": [
+"V \\sigma g",
+"V \\rho g",
+"V (\\sigma + \\rho) g",
+"V (\\sigma - \\rho) g"
+],
+"answer": "V \\rho g",
+"tags": {
+"chapter": "fluids",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "assets/images/11th/fluids/fluids_qn_002.png",
+"tip": ""
+},
+{
+"id": "fluids_qn_003",
+"question": "Equation of continuity states that (A = cross section area, v = velocity)",
+"options": [
+"A_1 v_1 = A_2 v_2",
+"A_1 v_2 = A_2 v_1",
+"A_1 v_2 > A_2 v_1",
+"A_1 v_1 < A_2 v_2"
+],
+"answer": "A_1 v_1 = A_2 v_2",
+"tags": {
+"chapter": "fluids",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "assets/images/11th/fluids/fluids_qn_003.png",
+"tip": ""
+},
+{
+"id": "fluids_qn_004",
+"question": "Efflux velocity <i>v</i> is given by",
+"options": [
+"\\sqrt{g h}",
+"\\sqrt{\\frac{2 h}{g}}",
+"2 g h",
+"\\sqrt{2 g h}"
+],
+"answer": "\\sqrt{2 g h}",
+"tags": {
+"chapter": "fluids",
+"difficulty": "easy",
+"class": "11"
+},
+"image": "assets/images/11th/fluids/fluids_qn_004.png",
+"tip": ""
+},
+{
+"id": "fluids_qn_005",
+"question": "The buoyancy force on the body immersed in liquid is (m = mass of body, s = specific gravity of body)",
+"options": [
+"\\frac{s}{m g}",
+"\\frac{m s}{g}",
+"\\frac{m g}{s}",
+"m g s"
+],
+"answer": "\\frac{m g}{s}",
+"tags": {
+"chapter": "fluids",
+"difficulty": "medium",
+"class": "11"
+},
+"image": "assets/images/11th/fluids/fluids_qn_005.png",
+"tip": ""
+},
+  {
+    "id": "fluids_qn_006",
+    "question": "Bernoulli’s equation is given by (P = pressure, ρ = density of liquid, h = height of liquid from reference, v = fluid speed)",
+    "options": [
+      "P + \\frac{1}{2} \\rho v^2 + \\rho g h = \\text{const}",
+      "P + \\rho v^2 + \\rho g h = \\text{const}",
+      "P + \\frac{1}{2} \\rho v^2 + p h = \\text{const}",
+      "P + \\frac{1}{2} v^2 + g h = \\text{const}"
+    ],
+    "answer": "P + \\frac{1}{2} \\rho v^2 + \\rho g h = \\text{const}",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/fluids/fluids_qn_006.png",
+    "tip": ""
+  },
+  {
+    "id": "fluids_qn_007",
+    "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated upwards with acceleration <i>a</i> is",
+    "options": [
+      "h \\rho g",
+      "h \\rho (g + a)",
+      "h \\rho (g - a)",
+      "h \\rho (a - g)"
+    ],
+    "answer": "h \\rho (g + a)",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/fluids/fluids_qn_007.png",
+    "tip": ""
+  },
+  {
+    "id": "fluids_qn_008",
+    "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated towards right with acceleration <i>a</i> is",
+    "options": [
+      "l \\rho a",
+      "l \\rho (g + a)",
+      "l \\rho g",
+      "l \\rho (g - a)"
+    ],
+    "answer": "l \\rho a",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/fluids/fluids_qn_008.png",
+    "tip": ""
+  },
+  {
+    "id": "fluids_qn_009",
+    "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated downwards with acceleration <i>a</i> is (<i>a</i> &lt; <i>g</i>)",
+    "options": [
+      "h \\rho g",
+      "h \\rho (g + a)",
+      "h \\rho (g - a)",
+      "h \\rho (a - g)"
+    ],
+    "answer": "h \\rho (g - a)",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/fluids/fluids_qn_009.png",
+    "tip": ""
+  },
+  {
+    "id": "fluids_qn_010",
+    "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated downwards with acceleration <i>a</i> is (<i>a</i> &gt; <i>g</i>)",
+    "options": [
+      "0",
+      "h \\rho (g + a)",
+      "h \\rho (g - a)",
+      "h \\rho (a - g)"
+    ],
+    "answer": "0",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "assets/images/11th/fluids/fluids_qn_010.png",
+    "tip": ""
+  },
+
+     {
+       "id": "Electrostatics_qn_001",
+       "question": "The electrostatic force between two point charges <i>q<sub>1</sub></i> and <i>q<sub>2</sub></i> separated by distance <i>r</i> is",
+       "options": [
+         "\\frac{1}{2 \\pi \\varepsilon_0} \\frac{q_1 q_2}{r^2}",
+         "\\frac{1}{4 \\pi \\varepsilon_0} \\frac{q_1 q_2}{r^2}",
+         "\\frac{1}{2 \\pi \\varepsilon_0} \\frac{q_1 q_2}{r^3}",
+         "\\frac{1}{4 \\pi \\varepsilon_0} \\frac{q_1 q_2}{r^3}"
+       ],
+       "answer": "\\frac{1}{4 \\pi \\varepsilon_0} \\frac{q_1 q_2}{r^2}",
+       "tags": {
+         "chapter": "Electrostatics",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Electrostatics_qn_002",
+       "question": "The net electrostatic force on each of two point charges <i>q<sub>1</sub></i> and <i>q<sub>2</sub></i> separated by distance <i>r</i> in a medium of dielectric constant <i>K</i> is",
+       "options": [
+         "\\frac{1}{2 \\pi K \\varepsilon_0} \\frac{q_1 q_2}{r^2}",
+         "\\frac{1}{4 \\pi K \\varepsilon_0} \\frac{q_1 q_2}{r^2}",
+         "\\frac{1}{2 \\pi K^2 \\varepsilon_0} \\frac{q_1 q_2}{r^2}",
+         "\\frac{1}{4 \\pi K^2 \\varepsilon_0} \\frac{q_1 q_2}{r^2}"
+       ],
+       "answer": "\\frac{1}{4 \\pi K \\varepsilon_0} \\frac{q_1 q_2}{r^2}",
+       "tags": {
+         "chapter": "Electrostatics",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Electrostatics_qn_003",
+       "question": "The electric field due to a point charge <i>q</i> at a distance <i>r</i> from it is",
+       "options": [
+         "\\frac{kq}{r^2}",
+         "\\frac{kq}{r}",
+         "\\frac{kq^2}{r}",
+         "\\frac{kq^2}{r^2}"
+       ],
+       "answer": "\\frac{kq}{r^2}",
+       "tags": {
+         "chapter": "Electrostatics",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Electrostatics_qn_004",
+       "question": "The electric field due to a charged conducting sphere inside it is",
+       "options": [
+         "0",
+         "\\frac{kq}{r^2}",
+         "\\frac{kq}{R^2}",
+         "\\frac{kq}{r}"
+       ],
+       "answer": "0",
+       "tags": {
+         "chapter": "Electrostatics",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "assets/images/12th/Electrostatics/Electrostatics_qn_004.png",
+       "tip": ""
+     },
+     {
+       "id": "Electrostatics_qn_005",
+       "question": "The electric field due to a charged conducting sphere outside it is",
+       "options": [
+         "0",
+         "\\frac{kq}{r^2}",
+         "\\frac{kq}{R^2}",
+         "\\frac{kq}{r}"
+       ],
+       "answer": "\\frac{kq}{r^2}",
+       "tags": {
+         "chapter": "Electrostatics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/Electrostatics/Electrostatics_qn_005.png",
+       "tip": ""
+     },
+
+     {
+       "id": "Electrostatics_qn_006",
+       "question": "The electric field due to a uniformly charged solid non conducting sphere inside it is",
+       "options": [
+         "0",
+         "\\frac{kqr}{R^3}",
+         "\\frac{kq}{R^2}",
+         "\\frac{kq}{r^2}"
+       ],
+       "answer": "\\frac{kqr}{R^3}",
+       "tags": {
+         "chapter": "Electrostatics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/Electrostatics/Electrostatics_qn_006.png",
+       "tip": ""
+     },
+     {
+       "id": "Electrostatics_qn_007",
+       "question": "The electric field due to a uniformly charged non conducting sphere outside it is",
+       "options": [
+         "0",
+         "\\frac{kqr}{R^3}",
+         "\\frac{kq}{R^2}",
+         "\\frac{kq}{r^2}"
+       ],
+       "answer": "\\frac{kq}{r^2}",
+       "tags": {
+         "chapter": "Electrostatics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/Electrostatics/Electrostatics_qn_007.png",
+       "tip": ""
+     },
+     {
+       "id": "Electrostatics_qn_008",
+       "question": "The electric field due to an infinite non conducting sheet of charge is (<i>σ</i> = surface charge density)",
+       "options": [
+         "\\frac{\\sigma}{8 \\varepsilon_0}",
+         "\\frac{\\sigma}{2 \\varepsilon_0}",
+         "\\frac{\\sigma}{4 \\varepsilon_0}",
+         "\\frac{\\sigma}{\\varepsilon_0}"
+       ],
+       "answer": "\\frac{\\sigma}{2 \\varepsilon_0}",
+       "tags": {
+         "chapter": "Electrostatics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Electrostatics_qn_009",
+       "question": "The electric field due to an infinite conducting plate is (<i>σ</i> = surface charge density)",
+       "options": [
+         "\\frac{\\sigma}{8 \\varepsilon_0}",
+         "\\frac{\\sigma}{2 \\varepsilon_0}",
+         "\\frac{\\sigma}{4 \\varepsilon_0}",
+         "\\frac{\\sigma}{\\varepsilon_0}"
+       ],
+       "answer": "\\frac{\\sigma}{\\varepsilon_0}",
+       "tags": {
+         "chapter": "Electrostatics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Electrostatics_qn_010",
+       "question": "The electric field due to a charged circular ring at an axial point is",
+       "options": [
+         "\\frac{kq}{R^2 + x^2}",
+         "\\frac{kqR}{(R^2 + x^2)^{3/2}}",
+         "\\frac{kqx}{(R^2 + x^2)^{3/2}}",
+         "\\frac{kq}{x^2}"
+       ],
+       "answer": "\\frac{kqx}{(R^2 + x^2)^{3/2}}",
+       "tags": {
+         "chapter": "Electrostatics",
+         "difficulty": "god",
+         "class": "12"
+       },
+       "image": "assets/images/12th/Electrostatics/Electrostatics_qn_010.png",
+       "tip": ""
+     },
+     {
+       "id": "current_electricity_qn_001",
+       "question": "The correct relation between current <i>i</i>, current density <i>j</i> and area <i>A</i> is",
+       "options": [
+         "i = \\frac{1}{jA}",
+         "i = \\frac{j}{A}",
+         "i = |\\vec{J} \\times \\vec{A}|",
+         "i = \\vec{J} \\cdot \\vec{A}"
+       ],
+       "answer": "i = \\vec{J} \\cdot \\vec{A}",
+       "tags": {
+         "chapter": "current_electricity",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "current_electricity_qn_002",
+       "question": "The resistance <i>R</i> of a cylindrical conductor is ( <i>ρ</i> = resistivity, <i>l</i> = length, <i>A</i> = area )",
+       "options": [
+         "\\frac{\\rho l}{A}",
+         "\\frac{\\rho}{lA}",
+         "\\frac{l}{\\rho A}",
+         "\\frac{A}{l \\rho}"
+       ],
+       "answer": "\\frac{\\rho l}{A}",
+       "tags": {
+         "chapter": "current_electricity",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "current_electricity_qn_003",
+       "question": "The resistance <i>R</i> of the conductor shown is ( <i>σ</i> = conductivity, <i>l</i> = length, <i>A</i> = area )",
+       "options": [
+         "\\frac{l}{\\sigma A}",
+         "\\frac{\\sigma}{lA}",
+         "\\frac{\\sigma l}{A}",
+         "\\frac{A}{l \\sigma}"
+       ],
+       "answer": "\\frac{l}{\\sigma A}",
+       "tags": {
+         "chapter": "current_electricity",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "current_electricity_qn_004",
+       "question": "The correct relation between current <i>i</i>, drift velocity <i>v<sub>d</sub></i> and area <i>A</i>, free electron concentration <i>n</i> is (<i>e</i> = charge on electron)",
+       "options": [
+         "i = n e A v_d",
+         "i = \\frac{ne}{A v_d}",
+         "i = \\frac{neA}{v_d}",
+         "i = \\frac{n}{Ae v_d}"
+       ],
+       "answer": "i = n e A v_d",
+       "tags": {
+         "chapter": "current_electricity",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "current_electricity_qn_005",
+       "question": "The correct relation between current density <i>j</i>, drift velocity <i>v<sub>d</sub></i>, free electron concentration <i>n</i> is (<i>e</i> = charge on electron)",
+       "options": [
+         "j = \\frac{n e}{v_d}",
+         "j = \\frac{n}{e v_d}",
+         "j = n e v_d",
+         "j = \\frac{n v_d}{e}"
+       ],
+       "answer": "j = n e v_d",
+       "tags": {
+         "chapter": "current_electricity",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "current_electricity_qn_006",
+       "question": "The correct relation between drift velocity <i>v<sub>d</sub></i>, mobility <i>μ</i> and electric field <i>E</i> in a conductor is",
+       "options": [
+         "v_d = \\frac{1}{\\mu E}",
+         "v_d = \\frac{E}{\\mu}",
+         "v_d = \\mu E",
+         "v_d = \\frac{\\mu}{E}"
+       ],
+       "answer": "v_d = \\mu E",
+       "tags": {
+         "chapter": "current_electricity",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "current_electricity_qn_007",
+       "question": "A wire is stretched to twice its original length. The final resistance becomes ___ times initial resistance.",
+       "options": [
+         "1",
+         "4",
+         "3",
+         "2"
+       ],
+       "answer": "4",
+       "tags": {
+         "chapter": "current_electricity",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "current_electricity_qn_008",
+       "question": "A wire is compressed to half its initial length. The initial resistance becomes ___ times final resistance.",
+       "options": [
+         "1",
+         "4",
+         "3",
+         "2"
+       ],
+       "answer": "4",
+       "tags": {
+         "chapter": "current_electricity",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "current_electricity_qn_009",
+       "question": "The radius of a wire is made 3 times its initial value by compressing it. The initial resistance becomes _____ times final resistance.",
+       "options": [
+         "\\frac{1}{9}",
+         "27",
+         "81",
+         "9"
+       ],
+       "answer": "81",
+       "tags": {
+         "chapter": "current_electricity",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "current_electricity_qn_010",
+       "question": "The correct formula for resistivity σ equals (<i>m</i> = mass of electron, <i>n</i> = free electron concentration, <i>e</i> = charge on electron, <i>τ</i> = average relaxation time)",
+       "options": [
+         "\\frac{m \\tau n}{e^2}",
+         "\\frac{m \\tau}{n e^2}",
+         "\\frac{m}{n e^2 \\tau}",
+         "\\frac{m \\tau e^2}{n}"
+       ],
+       "answer": "\\frac{m}{n e^2 \\tau}",
+       "tags": {
+         "chapter": "current_electricity",
+         "difficulty": "god",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+
+
+     {
+       "id": "magnetism_qn_001",
+       "question": "The magnetic field due to the infinite current wire at <i>P</i> is",
+       "options": [
+         "\\frac{\\mu_0 i}{\\pi r}",
+         "\\frac{2 \\mu_0 i}{\\pi r}",
+         "\\frac{\\mu_0 i}{2 \\pi r}",
+         "\\frac{\\mu_0 i}{4 \\pi r}"
+       ],
+       "answer": "\\frac{\\mu_0 i}{2 \\pi r}",
+       "tags": {
+         "chapter": "magnetism",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "assets/images/12th/magnetism/magnetism_qn_001.png",
+       "tip": ""
+     },
+     {
+       "id": "magnetism_qn_002",
+       "question": "The magnetic field due to the finite current wire at <i>P</i> is",
+       "options": [
+         "\\frac{\\mu_0 i}{4 \\pi r} (\\sin \\theta_1 + \\sin \\theta_2)",
+         "\\frac{\\mu_0 i}{2 \\pi r} (\\cos \\theta_1 + \\cos \\theta_2)",
+         "\\frac{\\mu_0 i}{4 \\pi r} (\\cos \\theta_1 + \\sin \\theta_2)",
+         "\\frac{\\mu_0 i}{2 \\pi r} (\\sin \\theta_1 + \\sin \\theta_2)"
+       ],
+       "answer": "\\frac{\\mu_0 i}{4 \\pi r} (\\sin \\theta_1 + \\sin \\theta_2)",
+       "tags": {
+         "chapter": "magnetism",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "assets/images/12th/magnetism/magnetism_qn_002.png",
+       "tip": ""
+     },
+     {
+       "id": "magnetism_qn_003",
+       "question": "The magnetic field due to the finite current wire at <i>P</i> is",
+       "options": [
+         "\\frac{\\mu_0 i}{2 \\pi r} \\cos \\theta",
+         "\\frac{\\mu_0 i}{2 \\pi r}",
+         "\\frac{\\mu_0 i}{4 \\pi r}",
+         "\\frac{\\mu_0 i}{4 \\pi r} \\sin \\theta"
+       ],
+       "answer": "\\frac{\\mu_0 i}{4 \\pi r} \\sin \\theta",
+       "tags": {
+         "chapter": "magnetism",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "assets/images/12th/magnetism/magnetism_qn_003.png",
+       "tip": ""
+     },
+     {
+       "id": "magnetism_qn_004",
+       "question": "The magnetic field at the center of circular current carrying loop of <i>N</i> turns is",
+       "options": [
+         "\\frac{N \\mu_0 i}{4 \\pi R}",
+         "\\frac{N \\mu_0 i}{2 \\pi R}",
+         "\\frac{N \\mu_0 i}{2 R}",
+         "\\frac{N \\mu_0 i}{4 R}"
+       ],
+       "answer": "\\frac{N \\mu_0 i}{2 R}",
+       "tags": {
+         "chapter": "magnetism",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "assets/images/12th/magnetism/magnetism_qn_004.png",
+       "tip": ""
+     },
+     {
+       "id": "magnetism_qn_005",
+       "question": "The magnetic field at the center of current carrying circular arc is",
+       "options": [
+         "\\frac{\\mu_0 i}{4 R} \\left( \\frac{\\theta}{2 \\pi} \\right)",
+         "\\frac{\\mu_0 i}{2 R} \\left( \\frac{\\theta}{2 \\pi} \\right)",
+         "\\frac{\\mu_0 i}{R} \\left( \\frac{\\theta}{\\pi} \\right)",
+         "\\frac{\\mu_0 i}{2 R} \\left( \\frac{\\theta}{\\pi} \\right)"
+       ],
+       "answer": "\\frac{\\mu_0 i}{2 R} \\left( \\frac{\\theta}{2 \\pi} \\right)",
+       "tags": {
+         "chapter": "magnetism",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/magnetism/magnetism_qn_005.png",
+       "tip": ""
+     },
+     {
+       "id": "magnetism_qn_006",
+       "question": "For the amperian loop shown",
+       "options": [
+         "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (2i)",
+         "\\oint \\vec{B} \\cdot d\\vec{l} = -\\mu_0 (2i)",
+         "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (i)",
+         "\\oint \\vec{B} \\cdot d\\vec{l} = -\\mu_0 (i)"
+       ],
+       "answer": "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (2i)",
+       "tags": {
+         "chapter": "magnetism",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/magnetism/magnetism_qn_006.png",
+       "tip": ""
+     },
+     {
+       "id": "magnetism_qn_007",
+       "question": "The magnetic field inside (<i>r &lt; R</i>) a hollow cylindrical current carrying wire carrying uniform current <i>i</i> is",
+       "options": [
+         "\\frac{\\mu_0 i}{4 \\pi r}",
+         "\\frac{\\mu_0 i}{2 \\pi r}",
+         "0",
+         "\\frac{\\mu_0 i}{2 r}"
+       ],
+       "answer": "0",
+       "tags": {
+         "chapter": "magnetism",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/magnetism/magnetism_qn_007.png",
+       "tip": ""
+     },
+     {
+       "id": "magnetism_qn_008",
+       "question": "The magnetic field outside (<i>r &gt; R</i>) a hollow cylindrical current carrying wire carrying uniform current <i>i</i> is",
+       "options": [
+         "\\frac{\\mu_0 i}{4 \\pi r}",
+         "\\frac{\\mu_0 i}{2 \\pi r}",
+         "0",
+         "\\frac{\\mu_0 i}{2 r}"
+       ],
+       "answer": "\\frac{\\mu_0 i}{2 \\pi r}",
+       "tags": {
+         "chapter": "magnetism",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/magnetism/magnetism_qn_008.png",
+       "tip": ""
+     },
+     {
+       "id": "magnetism_qn_009",
+       "question": "The magnetic field inside (<i>r &lt; R</i>) a solid cylindrical current carrying wire carrying uniform current <i>i</i> is",
+       "options": [
+         "\\frac{\\mu_0 i r}{2 \\pi R^2}",
+         "\\frac{\\mu_0 i r}{4 \\pi R^2}",
+         "0",
+         "\\frac{\\mu_0 i}{2 \\pi R}"
+       ],
+       "answer": "\\frac{\\mu_0 i r}{2 \\pi R^2}",
+       "tags": {
+         "chapter": "magnetism",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/magnetism/magnetism_qn_009.png",
+       "tip": ""
+     },
+     {
+       "id": "magnetism_qn_010",
+       "question": "The magnetic field at the axis point <i>P</i> of current carrying circular coil is (<i>N</i> = number of turns)",
+       "options": [
+         "\\frac{N \\mu_0 i x}{(x^2 + R^2)^{1/2}}",
+         "\\frac{N \\mu_0 i x}{(x^2 + R^2)^{3/2}}",
+         "\\frac{N \\mu_0 i R^2}{2 (x^2 + R^2)^{3/2}}",
+         "\\frac{N \\mu_0 i R^2}{2 (x^2 + R^2)^{1/2}}"
+       ],
+       "answer": "\\frac{N \\mu_0 i R^2}{2 (x^2 + R^2)^{3/2}}",
+       "tags": {
+         "chapter": "magnetism",
+         "difficulty": "god",
+         "class": "12"
+       },
+       "image": "assets/images/12th/magnetism/magnetism_qn_010.png",
+       "tip": ""
+     },
+
+     {
+       "id": "emi_qn_001",
+       "question": "The average emf induced in a loop due to flux change in a loop is (given &phi;<sub>i</sub> = initial flux, &phi;<sub>f</sub> = final flux, <i>t</i> = time)",
+       "options": [
+         "\\frac{\\phi_i - \\phi_f}{t}",
+         "\\frac{\\phi_f - \\phi_i}{t}",
+         "\\frac{\\phi_f}{t}",
+         "\\frac{\\phi_i}{t}"
+       ],
+       "answer": "\\frac{\\phi_i - \\phi_f}{t}",
+       "tags": {
+         "chapter": "emi",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "emi_qn_002",
+       "question": "The magnetic flux through a loop of area <i>A</i> having <i>N</i> turns placed in a constant magnetic field <i>B</i> is",
+       "options": [
+         "\\vec{B} \\times \\vec{A}",
+         "\\vec{B} \\cdot \\vec{A}",
+         "\\frac{(\\vec{B} \\cdot \\vec{A})}{N}",
+         "N (\\vec{B} \\cdot \\vec{A})"
+       ],
+       "answer": "N (\\vec{B} \\cdot \\vec{A})",
+       "tags": {
+         "chapter": "emi",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "emi_qn_003",
+       "question": "Lenz law is based on the principle of",
+       "options": [
+         "\\text{Conservation of mass}",
+         "\\text{Conservation of momentum}",
+         "\\text{Conservation of energy}",
+         "\\text{Conservation of angular momentum}"
+       ],
+       "answer": "\\text{Conservation of energy}",
+       "tags": {
+         "chapter": "emi",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "emi_qn_004",
+       "question": "The emf induced across the ends of the rod shown is",
+       "options": [
+         "\\frac{B v}{l}",
+         "B v l",
+         "B v l^2",
+         "\\frac{B l}{v}"
+       ],
+       "answer": "B v l",
+       "tags": {
+         "chapter": "emi",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "assets/images/12th/emi/emi_qn_004.png",
+       "tip": ""
+     },
+     {
+       "id": "emi_qn_005",
+       "question": "The emf induced across the ends of the rod shown is",
+       "options": [
+         "B v l \\cos^2 \\theta",
+         "B v l \\sin \\theta",
+         "B v l \\cos \\theta",
+         "B v l"
+       ],
+       "answer": "B v l \\sin \\theta",
+       "tags": {
+         "chapter": "emi",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/emi/emi_qn_005.png",
+       "tip": ""
+     },
+     {
+       "id": "emi_qn_006",
+       "question": "The emf induced in the circular loop is",
+       "options": [
+         "B v (2 \\pi R)",
+         "2 B v R",
+         "B v R",
+         "0"
+       ],
+       "answer": "0",
+       "tags": {
+         "chapter": "emi",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/emi/emi_qn_006.png",
+       "tip": ""
+     },
+     {
+       "id": "emi_qn_007",
+       "question": "The emf induced across ends of rod rotating with angular speed <i>ω</i> as shown is",
+       "options": [
+         "B l \\omega^2",
+         "\\frac{B l \\omega^2}{2}",
+         "\\frac{B \\omega l^2}{2}",
+         "B \\omega l^2"
+       ],
+       "answer": "\\frac{B \\omega l^2}{2}",
+       "tags": {
+         "chapter": "emi",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/emi/emi_qn_007.png",
+       "tip": ""
+     },
+     {
+       "id": "emi_qn_008",
+       "question": "The emf induced across ends of rod rotating with angular speed <i>ω</i> as shown is",
+       "options": [
+         "B l \\omega^2",
+         "\\frac{B l \\omega^2}{2}",
+         "\\frac{B \\omega l^2}{2}",
+         "0"
+       ],
+       "answer": "0",
+       "tags": {
+         "chapter": "emi",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/emi/emi_qn_008.png",
+       "tip": ""
+     },
+     {
+       "id": "emi_qn_009",
+       "question": "The current in the triangular loop at the instant shown is",
+       "options": [
+         "\\frac{B v a}{2}",
+         "B v a",
+         "\\frac{\\sqrt{3} B v a}{2}",
+         "\\frac{B v a}{2 \\sqrt{3}}"
+       ],
+       "answer": "\\frac{B v a}{2}",
+       "tags": {
+         "chapter": "emi",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/emi/emi_qn_009.png",
+       "tip": ""
+     },
+     {
+       "id": "emi_qn_010",
+       "question": "The emf induced in the circular loop at the instant shown is",
+       "options": [
+         "B v (2 \\pi R)",
+         "B v (2 R \\cos \\theta)",
+         "B v (2 R \\sin \\theta)",
+         "B v (2 R)"
+       ],
+       "answer": "B v (2 R \\cos \\theta)",
+       "tags": {
+         "chapter": "emi",
+         "difficulty": "god",
+         "class": "12"
+       },
+       "image": "assets/images/12th/emi/emi_qn_010.png",
+       "tip": ""
+     },
+
+     {
+       "id": "ac_qn_001",
+       "question": "In a purely resistive circuit, the phase difference between current and voltage is",
+       "options": [
+         "\\pi , \\text{ current leads}",
+         "0",
+         "\\frac{\\pi}{2} , \\text{ current leads}",
+         "\\frac{\\pi}{2} , \\text{ current lags}"
+       ],
+       "answer": "0",
+       "tags": {
+         "chapter": "ac",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "ac_qn_002",
+       "question": "In a purely capacitive circuit, the phase difference between current and voltage is",
+       "options": [
+         "\\pi , \\text{ current leads}",
+         "0",
+         "\\frac{\\pi}{2} , \\text{ current leads}",
+         "\\frac{\\pi}{2} , \\text{ current lags}"
+       ],
+       "answer": "\\frac{\\pi}{2} , \\text{ current leads}",
+       "tags": {
+         "chapter": "ac",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "ac_qn_003",
+       "question": "In a purely inductive circuit, the phase difference between current and voltage is",
+       "options": [
+         "\\pi , \\text{ current leads}",
+         "0",
+         "\\frac{\\pi}{2} , \\text{ current leads}",
+         "\\frac{\\pi}{2} , \\text{ current lags}"
+       ],
+       "answer": "\\frac{\\pi}{2} , \\text{ current lags}",
+       "tags": {
+         "chapter": "ac",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "ac_qn_004",
+       "question": "The reactance of a purely inductive circuit is (<i>&omega;</i> = angular frequency, <i>L</i> = inductance)",
+       "options": [
+         "\\frac{L}{\\omega}",
+         "\\frac{\\omega}{L}",
+         "\\omega L",
+         "\\frac{1}{\\omega L}"
+       ],
+       "answer": "\\omega L",
+       "tags": {
+         "chapter": "ac",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "ac_qn_005",
+       "question": "The reactance of a purely capacitive circuit is (<i>&omega;</i> = angular frequency, <i>C</i> = capacitance)",
+       "options": [
+         "\\frac{C}{\\omega}",
+         "\\frac{\\omega}{C}",
+         "\\omega C",
+         "\\frac{1}{\\omega C}"
+       ],
+       "answer": "\\frac{1}{\\omega C}",
+       "tags": {
+         "chapter": "ac",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+
+     {
+       "id": "ac_qn_006",
+       "question": "For a current <i>i = f(t)</i>, average current from 0 to <i>t</i> equals",
+       "options": [
+         "\\sqrt{\\frac{\\int_0^t i^2 dt}{\\int_0^t dt}}",
+         "\\frac{\\int_0^t i dt}{\\int_0^t dt}",
+         "\\sqrt{\\frac{\\int_0^t i dt}{\\int_0^t dt}}",
+         "\\left( \\frac{\\int_0^t i dt}{\\int_0^t dt} \\right)^2"
+       ],
+       "answer": "\\frac{\\int_0^t i dt}{\\int_0^t dt}",
+       "tags": {
+         "chapter": "ac",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "ac_qn_007",
+       "question": "For a current <i>i = f(t)</i>, RMS current from 0 to <i>t</i> equals",
+       "options": [
+         "\\sqrt{\\frac{\\int_0^t i^2 dt}{\\int_0^t dt}}",
+         "\\frac{\\int_0^t i dt}{\\int_0^t dt}",
+         "\\sqrt{\\frac{\\int_0^t i dt}{\\int_0^t dt}}",
+         "\\left( \\frac{\\int_0^t i dt}{\\int_0^t dt} \\right)^2"
+       ],
+       "answer": "\\sqrt{\\frac{\\int_0^t i^2 dt}{\\int_0^t dt}}",
+       "tags": {
+         "chapter": "ac",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "ac_qn_008",
+       "question": "The impedance of an LCR circuit is given by (<i>R</i> = resistance, <i>X<sub>L</sub></i> = inductive reactance, <i>X<sub>C</sub></i> = capacitive reactance)",
+       "options": [
+         "\\left( X_L - X_C \\right)",
+         "R^2 + (X_L - X_C)^2",
+         "\\sqrt{R^2 + (X_L - X_C)^2}",
+         "R"
+       ],
+       "answer": "\\sqrt{R^2 + (X_L - X_C)^2}",
+       "tags": {
+         "chapter": "ac",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "ac_qn_009",
+       "question": "Power factor of an LCR circuit is (<i>R</i> = resistance of circuit, <i>Z</i> = impedance of circuit)",
+       "options": [
+         "\\frac{Z}{R}",
+         "\\frac{1}{RZ}",
+         "\\frac{R}{Z}",
+         "RZ"
+       ],
+       "answer": "\\frac{R}{Z}",
+       "tags": {
+         "chapter": "ac",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "ac_qn_010",
+       "question": "The quality factor of an LCR circuit equals",
+       "options": [
+         "\\frac{1}{\\text{LCR}}",
+         "\\sqrt{\\frac{R}{LC}}",
+         "\\frac{1}{R} \\sqrt{\\frac{C}{L}}",
+         "\\frac{1}{R} \\sqrt{\\frac{L}{C}}"
+       ],
+       "answer": "\\frac{1}{R} \\sqrt{\\frac{L}{C}}",
+       "tags": {
+         "chapter": "ac",
+         "difficulty": "god",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     }
+
+
+
+]

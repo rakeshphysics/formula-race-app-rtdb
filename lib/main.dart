@@ -9,12 +9,15 @@
 
 import 'package:flutter/material.dart';
 import 'screens/solo_screen.dart';
-import 'screens/online_play_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'services/matchmaking_service.dart';
 import 'screens/home_screen.dart';
-import 'screens/splash_screen.dart';  // ← added SplashScreen import
+import 'screens/splash_screen.dart';
+import 'screens/searching_for_opponent.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+// ← added SplashScreen import
 
 // ............. Chunk 1 MAIN FUNCTION .............
 void main() async {
@@ -22,6 +25,13 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  final prefs = await SharedPreferences.getInstance();
+  if (!prefs.containsKey('user_id')) {
+    final generatedId = 'user_${DateTime.now().millisecondsSinceEpoch}';
+    await prefs.setString('user_id', generatedId);
+    print('Generated userId: $generatedId');
+  }
+
   runApp(const FormulaRaceApp());
 }
 
