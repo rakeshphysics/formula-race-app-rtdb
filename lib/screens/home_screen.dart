@@ -124,7 +124,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         );
                       },
                       child: const Text(
-                        'Solo Play',
+                        'Play Solo',
                         style: TextStyle(fontSize: 26, color: Colors.white,fontWeight: FontWeight.normal),
                       ),
                     ),
@@ -135,26 +135,26 @@ class _HomeScreenState extends State<HomeScreen> {
                     AnimatedButton(
                       screenWidth: screenWidth*1.2,
                       screenHeight: screenHeight*1.3,
-                        onPressed: () {
-                          if (userId.isNotEmpty) {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => SearchingForOpponent(userId: userId),
-                              ),
-                            );
-                          } else {
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              const SnackBar(content: Text('User ID not ready yet')),
-                            );
-                          }
-                        },
+                      onPressed: () {
+                        if (userId.isNotEmpty) {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => SearchingForOpponent(userId: userId),
+                            ),
+                          );
+                        } else {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(content: Text('User ID not ready yet')),
+                          );
+                        }
+                      },
 
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: const [
                           Text(
-                            'Play with Friend',
+                            'Play Online',
                             style: TextStyle(fontSize: 26, color: Colors.white,fontWeight: FontWeight.normal),
                           ),
                           SizedBox(height: 4),
@@ -169,7 +169,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
               ),
-
               // ............. Chunk 5 BOTTOM TEXT (PHYSICS WITH RAKESH) .............
               Padding(
                 padding: const EdgeInsets.only(bottom: 30),
