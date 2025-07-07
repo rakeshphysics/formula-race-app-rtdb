@@ -326,7 +326,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           // Wait another 0.5 sec, then move to next question
           await Future.delayed(const Duration(milliseconds: 500));
           if (!isMovingToNextQuestion) {
-           // _moveToNextQuestion();
+           _moveToNextQuestion();
           }
         }
 
@@ -420,7 +420,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
       audioPlayer.play(AssetSource('sounds/wrong.mp3'));
     }
 
-    await Future.delayed(const Duration(milliseconds: 700));
+    //await Future.delayed(const Duration(milliseconds: 700));
 
     //if (questionLocked) return;
 
