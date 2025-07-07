@@ -22,7 +22,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'dart:math';
 import 'package:cloud_firestore/cloud_firestore.dart'as firestore;
 import 'package:formula_race_app/services/mistake_tracker_service.dart';
-import 'package:formula_race_app/services/bot_engine.dart';
+
 
 // .............END................. Import Dependencies.........................
 
@@ -31,8 +31,14 @@ import 'package:formula_race_app/services/bot_engine.dart';
 
 // .............START................. Load Qns from combined JSON..........................
 Future<List<dynamic>> loadQuestionsFromAssets() async {
+  print("📦 Step 1: Loading JSON from assets...");
   final jsonString = await rootBundle.loadString('assets/formulas/full_syllabus_online_play.json');
-  return jsonDecode(jsonString);
+  print("✅ Step 2: JSON loaded. Length of string: ${jsonString.length}");
+
+  final decoded = jsonDecode(jsonString);
+  print("🔍 Step 3: Decoded JSON length: ${decoded.length}");
+
+  return decoded;
 }
 // .............END................. Load Qns from combined JSON..........................
 
@@ -40,6 +46,7 @@ Future<List<dynamic>> loadQuestionsFromAssets() async {
 Future<List<Map<String, dynamic>>> getRandomQuestions(int seed) async {
   final allQuestions = await loadQuestionsFromAssets();
   final random = Random(seed);
+  print("🎲 Step 4: Shuffling questions with seed: $seed");
 
   Map<String, List<Map<String, dynamic>>> buckets = {
     '11_easy': [],
@@ -106,11 +113,8 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed) async {
 class OnlineGameScreen extends StatefulWidget {
   final String matchId;
   final String playerId;
-  final String opponentType;
-  final int? botLevel;
   final int seed;           // 👈 Add this
   final bool isPlayer1;
-  final BotEngine? bot;
 
 
   // 👈 And this
@@ -119,11 +123,8 @@ class OnlineGameScreen extends StatefulWidget {
     super.key,
     required this.matchId,
     required this.playerId,
-    required this.opponentType,
-    this.botLevel,
     required this.seed,      // 👈 Include in constructor
     required this.isPlayer1,
-     this.bot,// 👈 Include in constructor
   });
   @override
   State<OnlineGameScreen> createState() => _OnlineGameScreenState();
@@ -135,7 +136,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
   // ............. Chunk 2 STATE VARIABLES .............
   final int totalQuestions = 10;  // ← control number of questions and progress bars
-  BotEngine? bot;
+
   final DatabaseReference _database = FirebaseDatabase.instance.ref();
   final AudioPlayer audioPlayer = AudioPlayer();
   List<dynamic> questions = [];
@@ -152,6 +153,13 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   bool isMovingToNextQuestion = false;
   bool isLoading = true;
   String? winnerMessage;
+  bool showCorrectAnswer = false;
+  bool isCorrect = false;
+  int myScore = 0;
+  int opponentScore = 0;
+  bool opponentAnswered = false;
+
+
 
   List<String> shuffledOptions = [];
   late AnimationController _progressController;
@@ -164,7 +172,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 // ................................... both players call the same 10 Qns..........................
   Future<void> loadQuestionsFromRoom() async {
     try {
-      final doc = await firestore.FirebaseFirestore.instance.collection('rooms').doc(widget.matchId).get();
+      final doc = await firestore.FirebaseFirestore.instance.collection('matches').doc(widget.matchId).get();
 
       if (doc.exists) {
         final seed = doc['seed'] ?? 0;
@@ -175,6 +183,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           questions = qns;
           isLoading = false;
         });
+        print("📋 Step 6: Questions assigned. Length = ${qns.length}");
       } else {
         print('Room not found: ${widget.matchId}');
       }
@@ -195,52 +204,29 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
       duration: const Duration(seconds: 18),
     );
     _progressAnimation = Tween<double>(begin: 0, end: 1).animate(_progressController);
-
-    if (widget.opponentType == 'bot') {
-      bot = BotEngine(widget.botLevel ?? 2);
-      loadQuestionsForBot();
-
-    } else {
-      loadQuestionsFromRoom();
-      listenToCurrentQuestionIndex();
-      setPlayerStatusOnline();
-      listenToPlayerStatus();
-    }
-  }
-
-
-
-  //..............START ...............Load questions for BOT play..............................
-  Future<void> loadQuestionsForBot() async {
-    final qns = await getRandomQuestions(widget.seed);
-//..............START................DELETE THIS................................................
-    if (qns == null) {
-      print("❌ getRandomQuestions() returned null");
-    } else {
-      print("✅ getRandomQuestions() returned list of length ${qns.length}");
-      if (qns.isNotEmpty) {
-        print("🧠 First question ID: ${qns[0]['id']}");
-        print("📝 Question text: ${qns[0]['question']}");
-      } else {
-        print("⚠️ No questions returned");
-      }
-    }
-    //.............END................DELETE THIS................................................
-
-    setState(() {
-      questions = qns;
-      isLoading = false;
+    _progressController.addListener(() {
+      setState(() {});
     });
 
-    _progressController.forward(); // Start the first question's timer
+      loadQuestionsFromRoom();
+      listenToCurrentQuestionIndex();
+      listenToAnswers();
+      setPlayerStatusOnline();
+      listenToPlayerStatus();
+    listenToScoreUpdates();
+
+
   }
-  //..............END...............Load questions for BOT play..............................
+
+
+
+
 
 
 
   @override
   void dispose() {
-    answerSubscription?.cancel();
+    //answerSubscription?.cancel();
     questionIndexSubscription?.cancel();
     playerStatusSubscription?.cancel();
     autoSkipTimer?.cancel();
@@ -262,6 +248,32 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
   void setPlayerStatusOffline() {
     _database.child('matches/${widget.matchId}/playerStatus/${widget.playerId}').set('offline');
+  }
+
+  void listenToScoreUpdates() {
+    final scoreRef = _database.child('matches/${widget.matchId}/scores');
+
+    final myId = widget.playerId;
+    final opponentId = widget.isPlayer1 ? 'player2' : 'player1';
+
+    scoreRef.onValue.listen((event) {
+      final data = event.snapshot.value;
+      print('📥 Raw score data from Firebase: $data');
+
+      if (data is Map) {
+        setState(() {
+          if (widget.isPlayer1) {
+            myScore = data['player1'] ?? 0;
+            opponentScore = data['player2'] ?? 0;
+          } else {
+            myScore = data['player2'] ?? 0;
+            opponentScore = data['player1'] ?? 0;
+          }
+
+          print('✅ myScore = $myScore, opponentScore = $opponentScore');
+        });
+      }
+    });
   }
 
 
@@ -286,9 +298,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
       });
 
       listenToAnswers();
-      if (widget.opponentType == 'bot') {
-        triggerBotAnswer();
-      }
+
 
       _progressController.reset();
       _progressController.forward();
@@ -301,7 +311,25 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
             'firstAnswerBy': 'none',
             'isCorrect': false,
           });
+
+          setState(() {
+            questionLocked = true;
+            feedbackMessage = "Time's up! No one answered.";
+          });
+
+          // Wait 0.5 sec, then show correct option in green
+          await Future.delayed(const Duration(milliseconds: 500));
+          setState(() {
+            showCorrectAnswer = true;
+          });
+
+          // Wait another 0.5 sec, then move to next question
+          await Future.delayed(const Duration(milliseconds: 500));
+          if (!isMovingToNextQuestion) {
+           // _moveToNextQuestion();
+          }
         }
+
       });
     });
   }
@@ -329,7 +357,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
           Timer(const Duration(seconds: 1), () {
             if (!isMovingToNextQuestion) {
-              _moveToNextQuestion();
+              //_moveToNextQuestion();
             }
           });
 
@@ -348,7 +376,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
         Timer(const Duration(seconds: 1), () {
           if (!isMovingToNextQuestion) {
-            _moveToNextQuestion();
+            //_moveToNextQuestion();
           }
         });
       }
@@ -380,6 +408,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     if (questionLocked) return;
 
     setState(() {
+      questionLocked = true;
       selectedOption = selectedAnswer;
     });
 
@@ -393,7 +422,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
     await Future.delayed(const Duration(milliseconds: 700));
 
-    if (questionLocked) return;
+    //if (questionLocked) return;
 
     DatabaseReference answerRef = _database
         .child('matches/${widget.matchId}/answers/$currentQuestionIndex');
@@ -410,12 +439,24 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
         'isCorrect': true,
       });
 
+      final playerKey = widget.isPlayer1 ? 'player1' : 'player2';
+
       await _database
-          .child('matches/${widget.matchId}/scores/${widget.playerId}')
+          .child('matches/${widget.matchId}/scores/$playerKey')
           .runTransaction((value) {
         int currentScore = (value ?? 0) as int;
         return Transaction.success(currentScore + 1);
       });
+
+
+      _progressController.stop();
+      autoSkipTimer?.cancel();
+
+      await Future.delayed(const Duration(seconds: 3));
+      if (!isMovingToNextQuestion) {
+        _moveToNextQuestion();
+      }
+
     } else {
       DataSnapshot wrongAnswersSnapshot = await answerRef.child('wrongAnswers').get();
 
@@ -435,54 +476,55 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
       }
 
       setState(() {
-        feedbackMessage = 'Wrong! Try again.';
+        //feedbackMessage = 'Wrong! Try again.';
         questionLocked = true;
       });
 
       if (wrongAnswers.length >= 2) {
-        await answerRef.update({
-          'firstAnswerBy': 'none',
-          'isCorrect': false,
-        });
+        DataSnapshot handledSnapshot = await answerRef.child('handledBy').get();
+
+        // Only one player proceeds
+        if (handledSnapshot.value == null) {
+          // This player becomes the handler
+          await answerRef.update({
+            'firstAnswerBy': 'none',
+            'isCorrect': false,
+            'handledBy': widget.playerId, // lock it
+          });
+
+          setState(() {
+            questionLocked = true;
+            feedbackMessage = 'Both marked incorrect.';
+            showCorrectAnswer = true;
+          });
+
+          _progressController.stop();
+          autoSkipTimer?.cancel();
+
+          await Future.delayed(Duration(seconds: 1));
+          if (!isMovingToNextQuestion) {
+            _moveToNextQuestion();
+          }
+        }
       }
-    }
-  }
 
 
 
-  // ...........START.................Trigger bot answer........................... .............
-  void triggerBotAnswer() async {
-    if (bot == null || questionLocked || currentQuestionIndex >= questions.length) return;
-
-    final currentQuestion = Map<String, dynamic>.from(questions[currentQuestionIndex]);
-    final botAnswer = await bot!.getAnswer(currentQuestion);
-
-    // Before submitting, check if user already answered
-    DataSnapshot snapshot = await _database
-        .child('matches/${widget.matchId}/answers/$currentQuestionIndex/firstAnswerBy')
-        .get();
-
-    if (snapshot.value != null) return; // someone already answered
-
-    // Mark bot's answer as if it were the opponent
-    await _database.child('matches/${widget.matchId}/answers/$currentQuestionIndex').set({
-      'firstAnswerBy': 'bot_${widget.matchId}', // unique tag for bot
-      'isCorrect': botAnswer == currentQuestion['answer'],
-    });
-
-    if (botAnswer == currentQuestion['answer']) {
-      await _database
-          .child('matches/${widget.matchId}/scores/bot_${widget.matchId}')
-          .runTransaction((value) {
-        int currentScore = (value ?? 0) as int;
-        return Transaction.success(currentScore + 1);
+      Future.delayed(const Duration(seconds: 1), () {
+        setState(() {
+          showCorrectAnswer = true;
+        });
       });
     }
   }
-  // ...........END  .................Trigger bot answer........................... .............
+
+
+
+
 
   // ............. Chunk 9 MOVE TO NEXT QUESTION .............
   void _moveToNextQuestion() {
+    listenToAnswers();
     if (isMovingToNextQuestion) return;
     isMovingToNextQuestion = true;
 
@@ -504,7 +546,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   // ............. Chunk 10 SHOW RESULTS .............
   void showResults() async {
     gameOver = true;
-
+    print("🚨 showResults triggered");
     DataSnapshot scoresSnapshot =
     await _database.child('matches/${widget.matchId}/scores').get();
 
@@ -523,7 +565,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   // ............. Chunk 11 SHOW OPPONENT LEFT RESULTS .............
   void showOpponentLeftResults() async {
     gameOver = true;
-
+    print("🚨 showOpponentLeftResults triggered");
     await _database
         .child('matches/${widget.matchId}/scores/${widget.playerId}')
         .set(totalQuestions);  // give full score
@@ -554,14 +596,19 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
       return Colors.black;
     }
 
-    if (option == correctAnswer) {
-      return Colors.green;
-    } else if (option == selectedOption) {
+    // ✅ If this is the user's wrong selected option
+    if (option == selectedOption && option != correctAnswer) {
       return Colors.red;
-    } else {
-      return Colors.black;
     }
+
+    // ✅ If this is the correct answer and should be revealed
+    if ((option == correctAnswer) && (isCorrect || showCorrectAnswer)) {
+      return Colors.green;
+    }
+
+    return Colors.black;
   }
+
 
   // ............. Chunk 13 BUILD WIDGET TREE .............
   @override
@@ -570,6 +617,10 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
       return const Scaffold(
         body: Center(child: CircularProgressIndicator()),
       );
+    }
+
+    if (!isLoading && questions.isNotEmpty) {
+      //print("🖥️ Step 7: Displaying question ${currentQuestionIndex + 1}/${questions.length}");
     }
 
     Map<String, dynamic> currentQuestion = Map<String, dynamic>.from(questions[currentQuestionIndex]);
@@ -584,6 +635,26 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
+            Padding(
+              padding: const EdgeInsets.only(bottom: 12),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Text(
+                    'YOU: $myScore POINT${myScore == 1 ? '' : 'S'}',
+                    style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    'OPPONENT: $opponentScore POINT${opponentScore == 1 ? '' : 'S'}',
+                    style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
+            ),
+
+
+
+
             // Progress bar → 10 segmented bars
             Row(
               children: List.generate(totalQuestions, (index) {
@@ -643,34 +714,20 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                   onPressed: questionLocked
                       ? () {}
                       : () async {
-                    setState(() => questionLocked = true);
+                    final correctAnswer = questions[currentQuestionIndex]['answer'];
 
-                    final currentQuestion = questions[currentQuestionIndex];
+                    setState(() {
+                      selectedOption = option;
+                      isCorrect = (option == correctAnswer);
+                      //questionLocked = true;
+                    });
 
-                    if (widget.opponentType == 'bot') {
-                      // ✅ Forward control to BotEngine
-                      await widget.bot!.handleTurn(
-                        question: currentQuestion,
-                        userAnswer: option,
-                        onBotWins: () {
-                          setState(() {
-                            winnerMessage = 'Bot answered first!';
-                          });
-                          Future.delayed(Duration(seconds: 1), _moveToNextQuestion);
-                        },
-                        onPlayerWins: () {
-                          setState(() {
-                            winnerMessage = 'You answered first!';
-                          });
-                          Future.delayed(Duration(seconds: 1), _moveToNextQuestion);
-                        },
-                      );
-                    } else {
-                      // ✅ Real opponent logic (Firebase, etc.)
-                      submitAnswer(option);
-                    }
+                    submitAnswer(option);
+
+
+
+
                   },
-
                   color: getOptionColor(option),
               );
             }).toList(),

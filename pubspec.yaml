@@ -37,7 +37,7 @@ flutter_icons:
 flutter:
   uses-material-design: true
   assets:
-
+    - assets/formulas/full_syllabus_online_play.json
     - assets/sounds/correct.mp3
     - assets/sounds/wrong.mp3
     - assets/logo.png
@@ -69,7 +69,7 @@ flutter:
     - assets/formulas/12/modern_physics.json
     - assets/formulas/12/semiconductors.json
     # full syllabus
-    - assets/formulas/full_syllabus_online_play.json
+
 
 
 

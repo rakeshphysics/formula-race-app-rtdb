@@ -4,7 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:formula_race_app/services/matchmaking_service.dart';
 import 'online_game_screen.dart';
-import 'package:formula_race_app/services/bot_engine.dart';
+
 
 class SearchingForOpponent extends StatefulWidget {
   final String userId;
@@ -62,46 +62,8 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
         seed = created['seed'];
         isPlayer1 = true;
         listenForPlayer2();
-        startTimeoutFallback(); // ✅ this remains here
       }
     }
-  }
-
-  void startTimeoutFallback() {
-    timeoutTimer = Timer(const Duration(seconds: 2), () {
-      if (!opponentFound) {  // ✅ Only fallback if opponent not found
-        dbListener?.cancel();
-        launchBotMatch();
-      }
-    });
-  }
-
-
-  void launchBotMatch() async {
-    // Clean up the open room from Firebase
-    print("🧹 Attempting to delete /matches/$matchId");
-
-    await FirebaseDatabase.instance
-        .ref('matches/$matchId')
-        .remove()
-        .then((_) => print("✅ Match $matchId deleted from Firebase"))
-        .catchError((e) => print("❌ Failed to delete match $matchId: $e"));
-
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(
-        builder: (_) => OnlineGameScreen(
-          matchId: matchId!,
-          playerId: widget.userId,
-          seed: seed!,
-          isPlayer1: true,
-          opponentType: 'bot',
-          botLevel: 2,
-          // ✅ Add this line:
-          bot: BotEngine(2),
-        ),
-      ),
-    );
   }
 
 
@@ -138,7 +100,6 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
               matchId: matchId!,
               seed: seed!,
               isPlayer1: isPlayer1,
-              opponentType: 'real',
               playerId: widget.userId,
             ),
           ),
