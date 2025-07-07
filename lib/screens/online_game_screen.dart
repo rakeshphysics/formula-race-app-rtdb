@@ -636,20 +636,88 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text(
-                    'YOU: $myScore POINT${myScore == 1 ? '' : 'S'}',
-                    style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 5),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(4),
+                      border: Border.all(color: Color(0xFFFFA500), width: 2), // Cyan border
+                      color: const Color(0x000000),
+                    ),
+                    child: Row(
+                      children: [
+                        const Text(
+                          'YOU:  ',
+                          style: TextStyle(
+                            color: Color(0xFFFFA500),
+                            fontSize: 20,
+                            fontFamily: 'Roboto',
+                            fontWeight: FontWeight.w700,
+                            letterSpacing: 1.4,
+                          ),
+                        ),
+
+                        Text(
+                          '$myScore',
+                          style: const TextStyle(
+                            color: Color(0xFFFFA500),
+                            fontSize: 30,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                  Text(
-                    'OPPONENT: $opponentScore POINT${opponentScore == 1 ? '' : 'S'}',
-                    style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+
+                  Image.asset(
+                    'assets/icon/bolt.png',
+                    width: 36,
+                    height: 49,
+                  ),
+
+
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 5),
+                    decoration: BoxDecoration(
+
+                      borderRadius: BorderRadius.circular(4),
+                      border: Border.all(color: Color(0xFFFFA500), width: 2), // Amber-Orange border
+                      color: const Color(0x000000),
+                    ),
+                    child: Row(
+                      children: [
+                        Text(
+                        '$opponentScore',
+                        style: const TextStyle(
+                          color: Color(0xFFFFA500),
+                          fontSize: 30,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                        const Text(
+                          '  :RIVAL',
+                          style: TextStyle(
+                            color: Color(0xFFFFA500),
+                            fontSize: 20,
+                            fontFamily: 'Roboto',
+                            fontWeight: FontWeight.w700,
+                            letterSpacing: 1.4,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+
+                      ],
+                    ),
                   ),
                 ],
-              ),
+              )
+
             ),
 
 
 
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.005, // 2% of screen height
+            ),
 
             // Progress bar → 10 segmented bars
             Row(
@@ -683,7 +751,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                 style: const TextStyle(fontSize: 18, color: Colors.white),
               ),
             ),
-            const SizedBox(height: 24),
+            //const SizedBox(height: 24),
 
 
 
@@ -699,54 +767,68 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
               },
             ),
 
-            const SizedBox(height: 24),
-
-
-            ...(currentQuestion['options'] as List)
-                .where((opt) => opt != null && opt is String)
-                .map((option) {
-              return FormulaOptionButton(
-                text: option,
-                  onPressed: questionLocked
-                      ? () {}
-                      : () async {
-                    final correctAnswer = questions[currentQuestionIndex]['answer'];
-
-                    setState(() {
-                      selectedOption = option;
-                      isCorrect = (option == correctAnswer);
-                      //questionLocked = true;
-                    });
-
-                    submitAnswer(option);
-
-
-
-
-                  },
-                  color: getOptionColor(option),
-              );
-            }).toList(),
-
-            if (winnerMessage != null)
+            if (currentQuestion['image'] != null &&
+                currentQuestion['image'].toString().isNotEmpty)
               Padding(
-                padding: const EdgeInsets.only(top: 16),
-                child: Text(
-                  winnerMessage!,
-                  style: const TextStyle(
-                    fontSize: 18,
-                    color: Colors.amber,
-                    fontWeight: FontWeight.bold,
+                padding: const EdgeInsets.only(bottom: 16),
+                child: Center(
+                  child: Image.asset(
+                    currentQuestion['image'],
+                    height: MediaQuery.of(context).size.height * 0.22,
+                    fit: BoxFit.contain,
                   ),
                 ),
               ),
 
+            //const SizedBox(height: 24),
+            Expanded(
+              child: SingleChildScrollView(
+                physics: const BouncingScrollPhysics(),
+                child: Column(
+                  children: [
+                    ...(currentQuestion['options'] as List)
+                        .where((opt) => opt != null && opt is String)
+                        .map((option) {
+                      return FormulaOptionButton(
+                        text: option,
+                        onPressed: questionLocked
+                            ? () {}
+                            : () async {
+                          final correctAnswer = questions[currentQuestionIndex]['answer'];
+                          setState(() {
+                            selectedOption = option;
+                            isCorrect = (option == correctAnswer);
+                          });
+                          submitAnswer(option);
+                        },
+                        color: getOptionColor(option),
+                      );
+                    }).toList(),
 
-            const SizedBox(height: 24),
-            Text(
-              feedbackMessage,
-              style: const TextStyle(fontSize: 20, color: Colors.blue),
+                    if (winnerMessage != null)
+                      Padding(
+                        padding: const EdgeInsets.only(top: 16),
+                        child: Text(
+                          winnerMessage!,
+                          style: const TextStyle(
+                            fontSize: 18,
+                            color: Colors.amber,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+
+                   // const SizedBox(height: 24),
+
+                    Text(
+                      feedbackMessage,
+                      style: const TextStyle(fontSize: 20, color: Colors.blue),
+                    ),
+                  ],
+                ),
+              ),
             ),
+
           ],
         ),
       ),

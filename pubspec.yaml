@@ -98,7 +98,7 @@ flutter:
     - assets/images/12th/modern_physics/
     - assets/images/12th/semiconductors/
     - assets/images/12th/em_waves/
-
+    - assets/icon/
 
 dependency_overrides:
   path_drawing: ^1.0.1
