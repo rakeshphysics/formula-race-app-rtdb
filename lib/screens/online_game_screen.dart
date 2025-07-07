@@ -457,60 +457,56 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
         _moveToNextQuestion();
       }
 
-    } else {
-      DataSnapshot wrongAnswersSnapshot = await answerRef.child('wrongAnswers').get();
+    }  else {
+  // ❌ Incorrect answer
 
-      List<dynamic> wrongAnswers = [];
-      if (wrongAnswersSnapshot.value != null) {
-        wrongAnswers = List<dynamic>.from(wrongAnswersSnapshot.value as List<dynamic>);
-      }
+  // Track mistake
+  final currentQuestion = Map<String, dynamic>.from(questions[currentQuestionIndex]);
+  await MistakeTrackerService.trackMistake(
+  questionData: currentQuestion,
+  userId: widget.playerId,
+  );
 
-      if (!wrongAnswers.contains(widget.playerId)) {
-        wrongAnswers.add(widget.playerId);
-        await answerRef.child('wrongAnswers').set(wrongAnswers);
-        final currentQuestion = Map<String, dynamic>.from(questions[currentQuestionIndex]);
-        await MistakeTrackerService.trackMistake(
-          questionData: currentQuestion,
-          userId: widget.playerId,
-        );
-      }
+  // Add to wrongAnswers as a map (safer than list)
+  await answerRef.child('wrongAnswers/${widget.playerId}').set(true);
 
-      setState(() {
-        //feedbackMessage = 'Wrong! Try again.';
-        questionLocked = true;
-      });
+  setState(() {
+  questionLocked = true;
+  });
 
-      if (wrongAnswers.length >= 2) {
-        DataSnapshot handledSnapshot = await answerRef.child('handledBy').get();
+  // Check if both players answered wrong
+  final wrongData = await answerRef.child('wrongAnswers').get();
+  if (wrongData.exists && wrongData.children.length >= 2) {
+  final handledSnapshot = await answerRef.child('handledBy').get();
 
-        // Only one player proceeds
-        if (handledSnapshot.value == null) {
-          // This player becomes the handler
-          await answerRef.update({
-            'firstAnswerBy': 'none',
-            'isCorrect': false,
-            'handledBy': widget.playerId, // lock it
-          });
+  if (handledSnapshot.value == null) {
+  // This player handles the transition
+  await answerRef.update({
+  'firstAnswerBy': 'none',
+  'isCorrect': false,
+  'handledBy': widget.playerId,
+  });
 
-          setState(() {
-            questionLocked = true;
-            feedbackMessage = 'Both marked incorrect.';
-            showCorrectAnswer = true;
-          });
+  setState(() {
+  feedbackMessage = 'Both marked incorrect.';
+  showCorrectAnswer = true;
+  });
 
-          _progressController.stop();
-          autoSkipTimer?.cancel();
+  _progressController.stop();
+  autoSkipTimer?.cancel();
 
-          await Future.delayed(Duration(seconds: 1));
-          if (!isMovingToNextQuestion) {
-            _moveToNextQuestion();
-          }
-        }
-      }
+  await Future.delayed(Duration(seconds: 1));
+  if (!isMovingToNextQuestion) {
+  _moveToNextQuestion();
+  }
+  }
+  }
 
 
 
-      Future.delayed(const Duration(seconds: 1), () {
+
+
+  Future.delayed(const Duration(seconds: 1), () {
         setState(() {
           showCorrectAnswer = true;
         });
