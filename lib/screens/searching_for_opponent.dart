@@ -33,11 +33,11 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
     super.initState();
 
     if (!matchStarted) {
-      print("🚀 handleMatchmaking() called");
+      //print("🚀 handleMatchmaking() called");
       matchStarted = true;
       handleMatchmaking();
     } else {
-      print("⚠️ Skipping duplicate matchmaking");
+      //print("⚠️ Skipping duplicate matchmaking");
     }
   }
 
@@ -64,9 +64,9 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
         isPlayer1 = true;
 
         // STEP 1: Start 10s timeout to delete match and return home
-        timeoutTimer = Timer(const Duration(seconds: 8), () async {
+        timeoutTimer = Timer(const Duration(seconds: 5), () async {
           if (!opponentFound && matchId != null) {
-            print("⏰ No opponent joined in 10s. Deleting match $matchId");
+            //print("⏰ No opponent joined in 10s. Deleting match $matchId");
 
             await FirebaseDatabase.instance.ref('matches/$matchId').remove();
 

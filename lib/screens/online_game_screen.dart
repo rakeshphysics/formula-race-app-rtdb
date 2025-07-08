@@ -27,16 +27,14 @@ import 'package:formula_race_app/services/mistake_tracker_service.dart';
 // .............END................. Import Dependencies.........................
 
 
-
-
 // .............START................. Load Qns from combined JSON..........................
 Future<List<dynamic>> loadQuestionsFromAssets() async {
-  print("📦 Step 1: Loading JSON from assets...");
+  //print("📦 Step 1: Loading JSON from assets...");
   final jsonString = await rootBundle.loadString('assets/formulas/full_syllabus_online_play.json');
-  print("✅ Step 2: JSON loaded. Length of string: ${jsonString.length}");
+  //print("✅ Step 2: JSON loaded. Length of string: ${jsonString.length}");
 
   final decoded = jsonDecode(jsonString);
-  print("🔍 Step 3: Decoded JSON length: ${decoded.length}");
+  //print("🔍 Step 3: Decoded JSON length: ${decoded.length}");
 
   return decoded;
 }
@@ -46,7 +44,7 @@ Future<List<dynamic>> loadQuestionsFromAssets() async {
 Future<List<Map<String, dynamic>>> getRandomQuestions(int seed) async {
   final allQuestions = await loadQuestionsFromAssets();
   final random = Random(seed);
-  print("🎲 Step 4: Shuffling questions with seed: $seed");
+  //print("🎲 Step 4: Shuffling questions with seed: $seed");
 
   Map<String, List<Map<String, dynamic>>> buckets = {
     '11_easy': [],
@@ -95,9 +93,9 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed) async {
   selected.addAll(pickUniqueChapters(buckets['12_medium']!, 2, usedChapters, random));
   selected.addAll(pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
 
-  print("📦 Final selected questions (full data):");
+  //print("📦 Final selected questions (full data):");
   for (var q in selected) {
-    print(jsonEncode(q));
+    //print(jsonEncode(q));
   }
 
 
@@ -135,7 +133,7 @@ class OnlineGameScreen extends StatefulWidget {
 class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerProviderStateMixin {
 
   // ............. Chunk 2 STATE VARIABLES .............
-  final int totalQuestions = 2;  // ← control number of questions and progress bars
+  final int totalQuestions = 10;  // ← control number of questions and progress bars
 
   final DatabaseReference _database = FirebaseDatabase.instance.ref();
   final AudioPlayer audioPlayer = AudioPlayer();
@@ -183,17 +181,16 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           questions = qns;
           isLoading = false;
         });
-        print("📋 Step 6: Questions assigned. Length = ${qns.length}");
+        //print("📋 Step 6: Questions assigned. Length = ${qns.length}");
       } else {
-        print('Room not found: ${widget.matchId}');
+        //print('Room not found: ${widget.matchId}');
       }
     } catch (e) {
-      print('Error fetching room seed: $e');
+      //print('Error fetching room seed: $e');
     }
   }
 // .............END................. This function stores the selected qns in game room so that
 // ................................... both players call the same 10 Qns..........................
-
 
   @override
   void initState() {
@@ -218,12 +215,6 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
 
   }
-
-
-
-
-
-
 
   @override
   void dispose() {
@@ -259,7 +250,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
     scoreRef.onValue.listen((event) {
       final data = event.snapshot.value;
-      print('📥 Raw score data from Firebase: $data');
+      //print('📥 Raw score data from Firebase: $data');
 
       if (data is Map) {
         setState(() {
@@ -271,7 +262,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
             opponentScore = data['player1'] ?? 0;
           }
 
-          print('✅ myScore = $myScore, opponentScore = $opponentScore');
+          //print('✅ myScore = $myScore, opponentScore = $opponentScore');
         });
       }
     });
@@ -462,7 +453,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
       _progressController.stop();
       autoSkipTimer?.cancel();
 
-      await Future.delayed(const Duration(seconds: 3));
+      await Future.delayed(const Duration(seconds: 1));
       if (!isMovingToNextQuestion) {
         _moveToNextQuestion();
       }
@@ -506,12 +497,6 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   autoSkipTimer?.cancel();
 
 
-  Future.delayed(const Duration(seconds: 1), () {
-    setState(() {
-      showCorrectAnswer = true;
-    });
-  });
-
   await Future.delayed(Duration(seconds: 1));
 
   if (currentQuestionIndex + 1 >= totalQuestions) {
@@ -521,6 +506,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   }
 
   if (!isMovingToNextQuestion) {
+    print("DEBUG:  ⚠️ Calling _moveToNextQuestion from submitAnswer (both wrong)");
   _moveToNextQuestion();
   }
   }
@@ -568,7 +554,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
       final value = event.snapshot.value;
       if (value == true && !gameOver) {
         gameOver = true;
-        print("🛑 Game over flag received — showing results");
+        //print("🛑 Game over flag received — showing results");
 
         DataSnapshot scoresSnapshot =
         await _database.child('matches/${widget.matchId}/scores').get();
@@ -594,7 +580,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   // ............. Chunk 10 SHOW RESULTS .............
   void showResults() async {
     gameOver = true;
-    print("🚨 showResults triggered");
+    //print("🚨 showResults triggered");
 
     await _database.child('matches/${widget.matchId}').update({
       'gameOver': true,
@@ -618,7 +604,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   // ............. Chunk 11 SHOW OPPONENT LEFT RESULTS .............
   void showOpponentLeftResults() async {
     gameOver = true;
-    print("🚨 showOpponentLeftResults triggered");
+    //print("🚨 showOpponentLeftResults triggered");
     await _database
         .child('matches/${widget.matchId}/scores/${widget.playerId}')
         .set(totalQuestions);  // give full score
@@ -678,7 +664,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     }
 
     if (!isLoading && questions.isNotEmpty) {
-      //print("🖥️ Step 7: Displaying question ${currentQuestionIndex + 1}/${questions.length}");
+      ////print("🖥️ Step 7: Displaying question ${currentQuestionIndex + 1}/${questions.length}");
     }
 
     Map<String, dynamic> currentQuestion = Map<String, dynamic>.from(questions[currentQuestionIndex]);
