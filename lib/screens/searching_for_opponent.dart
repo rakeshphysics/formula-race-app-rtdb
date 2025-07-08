@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:formula_race_app/services/matchmaking_service.dart';
 import 'online_game_screen.dart';
+import 'home_screen.dart';
 
 
 class SearchingForOpponent extends StatefulWidget {
@@ -61,6 +62,22 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
         matchId = created['matchId'];
         seed = created['seed'];
         isPlayer1 = true;
+
+        // STEP 1: Start 10s timeout to delete match and return home
+        timeoutTimer = Timer(const Duration(seconds: 8), () async {
+          if (!opponentFound && matchId != null) {
+            print("⏰ No opponent joined in 10s. Deleting match $matchId");
+
+            await FirebaseDatabase.instance.ref('matches/$matchId').remove();
+
+            if (mounted) {
+              Navigator.of(context).pushAndRemoveUntil(
+                MaterialPageRoute(builder: (context) => HomeScreen()),
+                    (route) => false,
+              );
+            }
+          }
+        });
         listenForPlayer2();
       }
     }

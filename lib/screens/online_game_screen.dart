@@ -135,7 +135,7 @@ class OnlineGameScreen extends StatefulWidget {
 class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerProviderStateMixin {
 
   // ............. Chunk 2 STATE VARIABLES .............
-  final int totalQuestions = 10;  // ← control number of questions and progress bars
+  final int totalQuestions = 2;  // ← control number of questions and progress bars
 
   final DatabaseReference _database = FirebaseDatabase.instance.ref();
   final AudioPlayer audioPlayer = AudioPlayer();
@@ -214,6 +214,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
       setPlayerStatusOnline();
       listenToPlayerStatus();
     listenToScoreUpdates();
+    listenToGameOverFlag();
 
 
   }
@@ -307,10 +308,12 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
       autoSkipTimer = Timer(const Duration(seconds: 18), () async {
         DataSnapshot snapshot = await _database.child('matches/${widget.matchId}/answers/$currentQuestionIndex/firstAnswerBy').get();
         if (snapshot.value == null) {
-          await _database.child('matches/${widget.matchId}/answers/$currentQuestionIndex').update({
-            'firstAnswerBy': 'none',
-            'isCorrect': false,
-          });
+          await _database.child(
+              'matches/${widget.matchId}/answers/$currentQuestionIndex').update(
+              {
+                'firstAnswerBy': 'none',
+                'isCorrect': false,
+              });
 
           setState(() {
             questionLocked = true;
@@ -322,14 +325,21 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           setState(() {
             showCorrectAnswer = true;
           });
-
           // Wait another 0.5 sec, then move to next question
           await Future.delayed(const Duration(milliseconds: 500));
-          if (!isMovingToNextQuestion) {
-           _moveToNextQuestion();
+
+
+          if (currentQuestionIndex + 1 >= totalQuestions) {
+            await _database.child('matches/${widget.matchId}').update({
+              'gameOver': true,
+            });
+            showResults();
+          } else {
+            if (!isMovingToNextQuestion) {
+              _moveToNextQuestion();
+            }
           }
         }
-
       });
     });
   }
@@ -495,7 +505,21 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   _progressController.stop();
   autoSkipTimer?.cancel();
 
+
+  Future.delayed(const Duration(seconds: 1), () {
+    setState(() {
+      showCorrectAnswer = true;
+    });
+  });
+
   await Future.delayed(Duration(seconds: 1));
+
+  if (currentQuestionIndex + 1 >= totalQuestions) {
+    await _database.child('matches/${widget.matchId}').update({
+      'gameOver': true,
+    });
+  }
+
   if (!isMovingToNextQuestion) {
   _moveToNextQuestion();
   }
@@ -506,11 +530,8 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
 
 
-  Future.delayed(const Duration(seconds: 1), () {
-        setState(() {
-          showCorrectAnswer = true;
-        });
-      });
+
+
     }
   }
 
@@ -539,10 +560,46 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     });
   }
 
+
+  void listenToGameOverFlag() {
+    final gameOverRef = _database.child('matches/${widget.matchId}/gameOver');
+
+    gameOverRef.onValue.listen((DatabaseEvent event) async {
+      final value = event.snapshot.value;
+      if (value == true && !gameOver) {
+        gameOver = true;
+        print("🛑 Game over flag received — showing results");
+
+        DataSnapshot scoresSnapshot =
+        await _database.child('matches/${widget.matchId}/scores').get();
+
+        Map<dynamic, dynamic> scores = scoresSnapshot.value as Map<dynamic, dynamic>;
+
+        if (mounted) {
+          Navigator.of(context).pushReplacement(
+            MaterialPageRoute(
+              builder: (context) => OnlineResultScreen(
+                scores: scores,
+                playerId: widget.playerId,
+              ),
+            ),
+          );
+        }
+      }
+    });
+  }
+
+
+
   // ............. Chunk 10 SHOW RESULTS .............
   void showResults() async {
     gameOver = true;
     print("🚨 showResults triggered");
+
+    await _database.child('matches/${widget.matchId}').update({
+      'gameOver': true,
+    });
+
     DataSnapshot scoresSnapshot =
     await _database.child('matches/${widget.matchId}/scores').get();
 
@@ -568,6 +625,11 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     await _database
         .child('matches/${widget.matchId}/scores/$opponentId')
         .set(0);
+
+    await _database.child('matches/${widget.matchId}').update({
+      'gameOver': true,
+      'opponentLeft': true, // Optional, for debugging/logging
+    });
 
     Map<dynamic, dynamic> scores = {
       widget.playerId: totalQuestions,
@@ -641,7 +703,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
                       border: Border.all(color: Color(0xFFFFA500), width: 2), // Cyan border
-                      color: const Color(0x000000),
+                      color: const Color(0x33FFA500),
                     ),
                     child: Row(
                       children: [
@@ -681,7 +743,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
                       borderRadius: BorderRadius.circular(4),
                       border: Border.all(color: Color(0xFFFFA500), width: 2), // Amber-Orange border
-                      color: const Color(0x000000),
+                      color: const Color(0x33FFA500),
                     ),
                     child: Row(
                       children: [
