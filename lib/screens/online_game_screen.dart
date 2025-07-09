@@ -29,12 +29,12 @@ import 'package:formula_race_app/services/mistake_tracker_service.dart';
 
 // .............START................. Load Qns from combined JSON..........................
 Future<List<dynamic>> loadQuestionsFromAssets() async {
-  ////print("📦 Step 1: Loading JSON from assets...");
+  ////////print("📦 Step 1: Loading JSON from assets...");
   final jsonString = await rootBundle.loadString('assets/formulas/full_syllabus_online_play.json');
-  ////print("✅ Step 2: JSON loaded. Length of string: ${jsonString.length}");
+  ////////print("✅ Step 2: JSON loaded. Length of string: ${jsonString.length}");
 
   final decoded = jsonDecode(jsonString);
-  ////print("🔍 Step 3: Decoded JSON length: ${decoded.length}");
+  ////////print("🔍 Step 3: Decoded JSON length: ${decoded.length}");
 
   return decoded;
 }
@@ -44,7 +44,7 @@ Future<List<dynamic>> loadQuestionsFromAssets() async {
 Future<List<Map<String, dynamic>>> getRandomQuestions(int seed) async {
   final allQuestions = await loadQuestionsFromAssets();
   final random = Random(seed);
-  ////print("🎲 Step 4: Shuffling questions with seed: $seed");
+  ////////print("🎲 Step 4: Shuffling questions with seed: $seed");
 
   Map<String, List<Map<String, dynamic>>> buckets = {
     '11_easy': [],
@@ -93,9 +93,9 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed) async {
   selected.addAll(pickUniqueChapters(buckets['12_medium']!, 2, usedChapters, random));
   selected.addAll(pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
 
-  ////print("📦 Final selected questions (full data):");
+  ////////print("📦 Final selected questions (full data):");
   for (var q in selected) {
-    ////print(jsonEncode(q));
+    ////////print(jsonEncode(q));
   }
 
 
@@ -133,7 +133,8 @@ class OnlineGameScreen extends StatefulWidget {
 class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerProviderStateMixin {
 
   // ............. Chunk 2 STATE VARIABLES .............
-  final int totalQuestions = 2;  // ← control number of questions and progress bars
+  final int totalQuestions = 10;
+  final int questionDurationSeconds = 10;// ← control number of questions and progress bars
 
   final DatabaseReference _database = FirebaseDatabase.instance.ref();
   final AudioPlayer audioPlayer = AudioPlayer();
@@ -182,12 +183,12 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           questions = qns;
           isLoading = false;
         });
-        ////print("📋 Step 6: Questions assigned. Length = ${qns.length}");
+        ////////print("📋 Step 6: Questions assigned. Length = ${qns.length}");
       } else {
-        ////print('Room not found: ${widget.matchId}');
+        ////////print('Room not found: ${widget.matchId}');
       }
     } catch (e) {
-      ////print('Error fetching room seed: $e');
+      ////////print('Error fetching room seed: $e');
     }
   }
 // .............END................. This function stores the selected qns in game room so that
@@ -199,7 +200,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
     _progressController = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 18),
+      duration: Duration(seconds: questionDurationSeconds),
     );
     _progressAnimation = Tween<double>(begin: 0, end: 1).animate(_progressController);
     _progressController.addListener(() {
@@ -251,7 +252,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
     scoreRef.onValue.listen((event) {
       final data = event.snapshot.value;
-      ////print('📥 Raw score data from Firebase: $data');
+      ////////print('📥 Raw score data from Firebase: $data');
 
       if (data is Map) {
         setState(() {
@@ -263,7 +264,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
             opponentScore = data['player1'] ?? 0;
           }
 
-          ////print('✅ myScore = $myScore, opponentScore = $opponentScore');
+          ////////print('✅ myScore = $myScore, opponentScore = $opponentScore');
         });
       }
     });
@@ -280,7 +281,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     questionIndexSubscription = currentQuestionIndexRef.onValue.listen((DatabaseEvent event) {
       int index = (event.snapshot.value ?? 0) as int;
 
-      print('🚀 DEBUG: currentQuestionIndex changed to: $index'); // Debug print
+      //print('🚀 DEBUG: currentQuestionIndex changed to: $index'); // Debug ////print
 
       setState(() {
         currentQuestionIndex = index;
@@ -304,15 +305,15 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
       // Cancel any existing auto-skip timer and set a new one
       autoSkipTimer?.cancel();
-      autoSkipTimer = Timer(const Duration(seconds: 18), () async {
-        print('⏰ DEBUG TIMER: Timer for Q${currentQuestionIndex + 1} expired.');
+      autoSkipTimer = Timer(Duration(seconds: questionDurationSeconds), () async {
+        //print('⏰ DEBUG TIMER: Timer for Q${currentQuestionIndex + 1} expired.');
         DataSnapshot snapshot = await _database.child('matches/${widget.matchId}/answers/$currentQuestionIndex/firstAnswerBy').get();
         String firstAnswerByAtTimer = snapshot.value as String? ?? '';
-        print('🔍 DEBUG TIMER: firstAnswerBy at timer expiry: "$firstAnswerByAtTimer"');
+        //print('🔍 DEBUG TIMER: firstAnswerBy at timer expiry: "$firstAnswerByAtTimer"');
 
         // If no one answered correctly by the timer's end
         if (snapshot.value == null || firstAnswerByAtTimer.isEmpty) {
-          print('✅ DEBUG TIMER: No firstAnswerBy found. Setting to "none" and moving.');
+          //print('✅ DEBUG TIMER: No firstAnswerBy found. Setting to "none" and moving.');
           await _database.child(
               'matches/${widget.matchId}/answers/$currentQuestionIndex').update(
               {
@@ -327,22 +328,22 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           });
 
           // Wait a short delay to display feedback/correct answer
-          await Future.delayed(const Duration(milliseconds: 500));
+          await Future.delayed(const Duration(milliseconds: 1500));
 
           if (currentQuestionIndex + 1 >= totalQuestions) {
-            print("🛑 DEBUG GAME OVER: Timer expired, showing results.");
+            ////print("🛑 DEBUG GAME OVER: Timer expired, showing results.");
             await _database.child('matches/${widget.matchId}').update({
               'gameOver': true,
             });
-            showResults();
+           // showResults();
           } else {
             if (!isMovingToNextQuestion) {
-              print("🚀 DEBUG TIMER: Calling _moveToNextQuestion from timer expiry.");
+              ////print("🚀 DEBUG TIMER: Calling _moveToNextQuestion from timer expiry.");
               _moveToNextQuestion();
             }
           }
         } else {
-          print('⚠️ DEBUG TIMER: firstAnswerBy was NOT null/empty: "$firstAnswerByAtTimer". Not forcing move.');
+          //print('⚠️ DEBUG TIMER: firstAnswerBy was NOT null/empty: "$firstAnswerByAtTimer". Not forcing move.');
           // This 'else' block means a correct answer or 'both wrong' (via 'none') was already
           // submitted before the timer fully expired. The progression should have been
           // handled by the 'submitAnswer' or 'listenToAnswers' logic.
@@ -369,7 +370,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
         bool firstAnswerWasCorrect = answerData['isCorrect'] as bool? ?? false;
         Map<dynamic, dynamic>? wrongAnswersMap = answerData['wrongAnswers'] as Map<dynamic, dynamic>?;
 
-        //print('DEBUG listenToAnswers: My ID: ${widget.playerId}, First Answered By: "$firstAnswerBy", Was Correct: $firstAnswerWasCorrect, Raw Data: $answerData');
+        print('DEBUG listenToAnswers: My ID: ${widget.playerId}, First Answered By: "$firstAnswerBy", Was Correct: $firstAnswerWasCorrect, Raw Data: $answerData');
 
         setState(() {
           //questionLocked = true; // Always lock once an answer is registered
@@ -380,11 +381,15 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           feedbackMessage = ''; // Clear previous feedback
 
           if (firstAnswerBy.isNotEmpty) {
+            questionLocked = true;
             // A definite answer has been registered (either a player ID or 'none')
             if (firstAnswerBy == 'none') {
               bothWrong = true; // For "Both wrong" case, will be set by submitAnswer or timer.
               feedbackMessage = 'No one answered correctly.'; // More general message for 'none'
               showCorrectAnswer = true; // This ensures green highlight for correct answer
+              print('✅ DEBUG 🖼️LISTEN ANSWERS: firstAnswerBy is "none". Setting showCorrectAnswer=true. Player ID: ${widget.playerId}'); // 🚀 Add this //print here
+
+              //await Future.delayed(const Duration(milliseconds: 1500));
             } else {
               // A player answered correctly
               feedbackMessage = (firstAnswerBy == widget.playerId)
@@ -396,12 +401,20 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
             }
           } else if (wrongAnswersMap != null && wrongAnswersMap.containsKey(widget.playerId) && !bothWrong) {
             // NEW: This is for the player who just answered wrong, waiting for opponent or timer
+            questionLocked = false;
             feedbackMessage = 'Waiting for opponent...';
+
             // showCorrectAnswerOnSelfWrong should already be set in submitAnswer for red/green on self
           }
+          else{
+            questionLocked = false;
+          }
+        });
           // If opponent answered wrong, this listener will also trigger for this device.
           // The 'bothWrong' logic in submitAnswer will then set firstAnswerBy to 'none' and trigger above block.
-        });
+        if (firstAnswerBy.isNotEmpty && firstAnswerBy == 'none') {
+          await Future.delayed(const Duration(milliseconds: 1500)); // Overall delay for visibility
+        }
 
         //_progressController.stop();
         //autoSkipTimer?.cancel();
@@ -459,7 +472,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     }
 
     if (selectedAnswer == correctAnswer) {
-      //print('DEBUG:📥📥 Player ${widget.playerId} submitting answer. Selected: $selectedAnswer, Correct: $correctAnswer');
+      print('DEBUG:📥📥 Player ${widget.playerId} submitting answer. Selected: $selectedAnswer, Correct: $correctAnswer');
       await answerRef.set({
         'firstAnswerBy': widget.playerId,
         'isCorrect': true,
@@ -532,7 +545,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   }else{
 
   if (!isMovingToNextQuestion) {
-    //print("DEBUG:  ⚠️ Calling _moveToNextQuestion from submitAnswer (both wrong)");
+    print("DEBUG:  ⚠️ Calling _moveToNextQuestion from submitAnswer (both wrong)");
   _moveToNextQuestion();
   }
   }
@@ -555,36 +568,37 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   // ............. Chunk 9 MOVE TO NEXT QUESTION .............
   // ............. Chunk 9 MOVE TO NEXT QUESTION .............
   void _moveToNextQuestion() {
-    print('🏃 DEBUG MOVE: Entering _moveToNextQuestion(). isMovingToNextQuestion: $isMovingToNextQuestion'); // Debug print
+    ////print('🏃 DEBUG MOVE: Entering _moveToNextQuestion(). isMovingToNextQuestion: $isMovingToNextQuestion'); // Debug ////print
 
     if (isMovingToNextQuestion) {
-      print('🚫 DEBUG MOVE: Already moving to next question. Aborting.'); // Debug print
+      //print('🚫 DEBUG MOVE: Already moving to next question. Aborting.'); // Debug ////print
       return;
     }
     isMovingToNextQuestion = true; // Set flag early
 
     answerSubscription?.cancel();
     autoSkipTimer?.cancel();
-    print('🗑️ DEBUG MOVE: Subscriptions and timers cancelled.'); // Debug print
+    //print('🗑️ DEBUG MOVE: Subscriptions and timers cancelled.'); // Debug ////print
 
 
     _database.child('matches/${widget.matchId}/currentQuestionIndex')
         .get()
         .then((snapshot) async { // Added async here for consistency
       int index = (snapshot.value ?? 0) as int;
-      print('🎯 DEBUG MOVE: Current index from DB: $index'); // Debug print
+      ////print('🎯 DEBUG MOVE: Current index from DB: $index'); // Debug ////print
 
       if (index + 1 >= totalQuestions) {
-        print('🛑 DEBUG MOVE: Game Over condition met. Calling showResults().'); // Debug print
-        showResults();
+        ////print('🛑 DEBUG MOVE: Game Over condition met. Calling showResults().'); // Debug ////print
+        //showResults();
+        await _database.child('matches/${widget.matchId}').update({'gameOver': true,});
       } else {
-        print('✅ DEBUG MOVE: Updating currentQuestionIndex to ${index + 1} in Firebase.'); // Debug print
+        ////print('✅ DEBUG MOVE: Updating currentQuestionIndex to ${index + 1} in Firebase.'); // Debug ////print
         await _database.child('matches/${widget.matchId}/currentQuestionIndex').set(index + 1);
       }
     }).catchError((error) {
-      print('❌ DEBUG MOVE: Error getting currentQuestionIndex from DB: $error'); // Debug print
+      ////print('❌ DEBUG MOVE: Error getting currentQuestionIndex from DB: $error'); // Debug ////print
     });
-    print('🚪 DEBUG MOVE: Exiting _moveToNextQuestion().'); // Debug print
+    ////print('🚪 DEBUG MOVE: Exiting _moveToNextQuestion().'); // Debug ////print
   }
 
   void listenToGameOverFlag() {
@@ -594,14 +608,18 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
       final value = event.snapshot.value;
       if (value == true && !gameOver) {
         gameOver = true;
-        ////print("🛑 Game over flag received — showing results");
+        ////////print("🛑 Game over flag received — showing results");
 
-        DataSnapshot scoresSnapshot =
-        await _database.child('matches/${widget.matchId}/scores').get();
+        // Inside listenToGameOverFlag()
+        DataSnapshot scoresSnapshot = await _database.child('matches/${widget.matchId}/scores').get();
 
-        Map<dynamic, dynamic> scores = scoresSnapshot.value as Map<dynamic, dynamic>;
+
+        Map<dynamic, dynamic> scores = scoresSnapshot.value as Map<dynamic, dynamic>? ?? {}; // ADD '? ?? {}'
+
+        ////print("🔍 DEBUG RESULT: Scores retrieved for navigation: $scores"); // Add debug ////print
 
         if (mounted) {
+          ////print("➡️ DEBUG GAME OVER FLAG: Navigating to OnlineResultScreen with scores: $scores"); // Add scores to ////print
           Navigator.of(context).pushReplacement(
             MaterialPageRoute(
               builder: (context) => OnlineResultScreen(
@@ -610,6 +628,8 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
               ),
             ),
           );
+        } else {
+          ////print("🚫 DEBUG GAME OVER FLAG: Widget not mounted, cannot navigate. Scores: $scores");
         }
       }
     });
@@ -620,7 +640,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   // ............. Chunk 10 SHOW RESULTS .............
   void showResults() async {
     gameOver = true;
-    ////print("🚨 showResults triggered");
+    ////////print("🚨 showResults triggered");
 
     await _database.child('matches/${widget.matchId}').update({
       'gameOver': true,
@@ -644,7 +664,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   // ............. Chunk 11 SHOW OPPONENT LEFT RESULTS .............
   void showOpponentLeftResults() async {
     gameOver = true;
-    ////print("🚨 showOpponentLeftResults triggered");
+    ////////print("🚨 showOpponentLeftResults triggered");
     await _database
         .child('matches/${widget.matchId}/scores/${widget.playerId}')
         .set(totalQuestions);  // give full score
@@ -687,6 +707,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
     // ✅ If this is the correct answer and should be revealed
     if ((option == correctAnswer) && (isCorrect || showCorrectAnswer || revealCorrectAnswerOnOpponentWin || showCorrectAnswerOnSelfWrong)) { // ADD showCorrectAnswerOnSelfWrong
+      print('🟢 🎨DEBUG GET COLOR: Player ID: ${widget.playerId}, Coloring green: $option'); // 🚀 Add this //print
       return Colors.green;
     }
 
@@ -704,7 +725,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     }
 
     if (!isLoading && questions.isNotEmpty) {
-      //////print("🖥️ Step 7: Displaying question ${currentQuestionIndex + 1}/${questions.length}");
+      //////////print("🖥️ Step 7: Displaying question ${currentQuestionIndex + 1}/${questions.length}");
     }
 
     Map<String, dynamic> currentQuestion = Map<String, dynamic>.from(questions[currentQuestionIndex]);
@@ -873,6 +894,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
               child: SingleChildScrollView(
                 physics: const BouncingScrollPhysics(),
                 child: Column(
+                  //key: ValueKey(currentQuestionIndex),
                   children: [
                     ...(currentQuestion['options'] as List)
                         .where((opt) => opt != null && opt is String)
