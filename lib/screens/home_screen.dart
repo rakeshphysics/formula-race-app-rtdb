@@ -97,7 +97,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         children: const [
                           Text(
                             'My Mistakes',
-                              style: TextStyle(fontSize: 17, fontWeight:FontWeight.normal, color:Colors.redAccent)
+                              style: TextStyle(fontSize: 19, fontWeight:FontWeight.normal, color:Colors.redAccent)
                           ),
 
                         ],
@@ -124,6 +124,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           MaterialPageRoute(builder: (context) => const SoloModeSelectionScreen()),
                         );
                       },
+                      gradientColors: const [Color(0xFF00FFFF), Color(0xFF006C6C)],
                       child: const Text(
                         'Play Solo',
                         style: TextStyle(fontSize: 26, color: Colors.white,fontWeight: FontWeight.normal),
@@ -150,7 +151,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           );
                         }
                       },
-
+                      gradientColors: const [Color(0xFFFFA500), Color(
+                          0xFF874A01)],
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: const [
@@ -177,8 +179,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Text(
                   'Physics with Rakesh',
                   style: TextStyle(
-                    color: Color(0xCF00FFFF),
-                    fontSize: 20,
+                    color: Colors.grey,
+                    fontSize: 23,
+
                   ),
                 ),
               ),
@@ -196,12 +199,14 @@ class AnimatedButton extends StatefulWidget {
   final double screenHeight;
   final VoidCallback onPressed;
   final Widget child;
+  final List<Color> gradientColors;
 
   const AnimatedButton({
     required this.screenWidth,
     required this.screenHeight,
     required this.onPressed,
     required this.child,
+    required this.gradientColors,
     Key? key,
   }) : super(key: key);
 
@@ -220,7 +225,7 @@ class _AnimatedButtonState extends State<AnimatedButton> {
       child: Transform.scale(
         scale: _scale,
         child: CustomPaint(
-          painter: GradientBorderPainter(),
+          painter: GradientBorderPainter(gradientColors: widget.gradientColors),
           child: Container(
             width: widget.screenWidth * 0.7,
             height: widget.screenHeight * 0.07,
@@ -248,12 +253,15 @@ class _AnimatedButtonState extends State<AnimatedButton> {
 }
 
 class GradientBorderPainter extends CustomPainter {
+  final List<Color> gradientColors; // ADD THIS LINE
+
+  GradientBorderPainter({required this.gradientColors});
   @override
   void paint(Canvas canvas, Size size) {
     final rect = Rect.fromLTWH(0, 0, size.width, size.height);
     final rrect = RRect.fromRectAndRadius(rect, Radius.circular(4));
     final gradient = LinearGradient(
-      colors: [Color(0xFF00FFFF), Color(0xFF006C6C)],
+      colors: gradientColors,
       begin: Alignment.centerLeft,
       end: Alignment.centerRight,
     );

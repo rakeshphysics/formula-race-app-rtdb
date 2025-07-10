@@ -27,10 +27,19 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
   StreamSubscription<DocumentSnapshot>? readyListener;
 
   bool matchStarted = false;
+  final int roomDeletionTimeoutSeconds = 6;
+  Timer? dotAnimationTimer;
+  String animatedDots = "";
 
   @override
   void initState() {
     super.initState();
+
+    dotAnimationTimer = Timer.periodic(const Duration(milliseconds: 500), (timer) {
+      setState(() {
+        animatedDots = "." * ((timer.tick % 3) + 1); // Cycle . .. ...
+      });
+    });
 
     if (!matchStarted) {
       //print("🚀 handleMatchmaking() called");
@@ -64,7 +73,7 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
         isPlayer1 = true;
 
         // STEP 1: Start 10s timeout to delete match and return home
-        timeoutTimer = Timer(const Duration(seconds: 5), () async {
+        timeoutTimer = Timer(Duration(seconds: roomDeletionTimeoutSeconds), () async {
           if (!opponentFound && matchId != null) {
             //print("⏰ No opponent joined in 10s. Deleting match $matchId");
 
@@ -136,29 +145,88 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
     });
   }
 
+  void cancelSearch() async {
+    // Cancel all listeners and timers
+    dbListener?.cancel();
+    readyListener?.cancel();
+    timeoutTimer?.cancel();
+    dotAnimationTimer?.cancel(); // Cancel the dot animation timer too
+
+    // If this player was Player 1 and no opponent was found, delete the match
+    if (isPlayer1 && !opponentFound && matchId != null) {
+      await FirebaseDatabase.instance.ref('matches/$matchId').remove();
+    }
+
+    // Navigate back to the Home Screen
+    if (mounted) {
+      Navigator.of(context).pushAndRemoveUntil(
+        MaterialPageRoute(builder: (context) => HomeScreen()),
+            (route) => false,
+      );
+    }
+  }
+
   @override
   void dispose() {
     dbListener?.cancel();
     readyListener?.cancel();
+    dotAnimationTimer?.cancel();
+    timeoutTimer?.cancel(); // Ensure timeoutTimer is cancelled on dispose as well
     super.dispose();
   }
 
+
   @override
   Widget build(BuildContext context) {
+    final screenHeight = MediaQuery.of(context).size.height; // Get screen height
+    final screenWidth = MediaQuery.of(context).size.width;   // Get screen width
+
     return Scaffold(
       backgroundColor: Colors.black,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // ... existing widgets ...
             const CircularProgressIndicator(color: Colors.white),
-            const SizedBox(height: 20),
-            Text(statusText, style: const TextStyle(color: Colors.white, fontSize: 18)),
-            const SizedBox(height: 30),
+            SizedBox(height: screenHeight * 0.03), // Use screen height for spacing
+            Text(
+              "Searching for opponent$animatedDots",
+              style: const TextStyle(color: Colors.white, fontSize: 24.0),
+            ),
+            SizedBox(height: screenHeight * 0.05), // Use screen height for spacing
+
+            // Existing Start Game button
             if (opponentFound && !startPressed)
               ElevatedButton(
                 onPressed: markReady,
                 child: const Text("Start Game"),
+              ),
+
+            // NEW: Cancel Search Button styling
+            if (!opponentFound)
+              SizedBox( // Wrap with SizedBox to control size
+                width: screenWidth * 0.6, // Make it big, e.g., 60% of screen width
+                height: screenHeight * 0.07, // Make it big, e.g., 7% of screen height
+                child: ElevatedButton(
+                  onPressed: cancelSearch,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.amber.withOpacity(0.1), // 10% opacity
+                    padding: EdgeInsets.symmetric(
+                      horizontal: screenWidth * 0.04, // Responsive horizontal padding
+                      vertical: screenHeight * 0.015, // Responsive vertical padding
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(4),
+                      side: const BorderSide(color: Color(0xFFFFA500), width: 2), // Amber orange border
+                    ),
+                    textStyle: const TextStyle(fontSize: 18), // Adjust text size
+                  ),
+                  child: const Text(
+                    "Cancel Search",
+                    style: TextStyle(color: Colors.white, fontSize: 22.0), // White text
+                  ),
+                ),
               ),
           ],
         ),
