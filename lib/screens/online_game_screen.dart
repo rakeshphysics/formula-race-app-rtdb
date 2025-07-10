@@ -625,6 +625,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
               builder: (context) => OnlineResultScreen(
                 scores: scores,
                 playerId: widget.playerId,
+                isPlayer1: widget.isPlayer1,
               ),
             ),
           );
@@ -656,6 +657,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
         builder: (context) => OnlineResultScreen(
           scores: scores,
           playerId: widget.playerId,
+          isPlayer1: widget.isPlayer1,
         ),
       ),
     );
@@ -687,6 +689,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
         builder: (context) => OnlineResultScreen(
           scores: scores,
           playerId: widget.playerId,
+          isPlayer1: widget.isPlayer1,
         ),
       ),
     );
