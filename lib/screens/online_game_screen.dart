@@ -626,6 +626,8 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                 scores: scores,
                 playerId: widget.playerId,
                 isPlayer1: widget.isPlayer1,
+                opponentLeftGame: false,
+                totalQuestions: totalQuestions,
               ),
             ),
           );
@@ -658,6 +660,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           scores: scores,
           playerId: widget.playerId,
           isPlayer1: widget.isPlayer1,
+          totalQuestions: totalQuestions,
         ),
       ),
     );
@@ -690,6 +693,8 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           scores: scores,
           playerId: widget.playerId,
           isPlayer1: widget.isPlayer1,
+          opponentLeftGame: true,
+          totalQuestions: totalQuestions,
         ),
       ),
     );
