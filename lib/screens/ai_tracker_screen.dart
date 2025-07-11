@@ -128,11 +128,34 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                   showDialog(
                     context: context,
                     builder: (_) => AlertDialog(
-                      title: Text("✅ $resolvedCount mistakes resolved 🎉"),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(4.0),
+                        side: BorderSide(color: Colors.red, width: 0.8),
+                      ),
+                      backgroundColor: Color(0xFF000000),
+                      title: Text(" $resolvedCount Mistakes Resolved 🎉"),
+                      content: const SizedBox(height: 10.0),
                       actions: [
-                        TextButton(
+                        Row(
+                        mainAxisAlignment: MainAxisAlignment.center, // Center the content of the Row
+                        children: [
+                        OutlinedButton(
                           onPressed: () => Navigator.pop(context),
-                          child: const Text("OK"),
+                          style: OutlinedButton.styleFrom(
+                            side: BorderSide(color: Colors.red, width: 0.8), // Made border thinner (was 1.5)
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(4.0),
+                            ),
+                          ),
+                          child: const Text(
+                            "OK",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20.0,
+                            ),
+                          ),
+                        ),
+                         ],
                         ),
                       ],
                     ),

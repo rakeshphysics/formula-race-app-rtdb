@@ -86,7 +86,7 @@ class ResultScreen extends StatelessWidget {
                 child: Text(
                   'Your Score: $score / $totalQuestions',
                   style: const TextStyle(
-                    color: Colors.amber,
+                    color: Colors.cyan,
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                   ),
@@ -150,7 +150,7 @@ class ResultScreen extends StatelessWidget {
                           color: Color(0xFF1C1C1C),
                         borderRadius: BorderRadius.circular(12),
                         border: Border.all(
-                          color: Colors.white, // Border color
+                          color: Colors.cyan, // Border color
                           width: 0.8,            // Border thickness
                         ),
                       ),
@@ -240,9 +240,9 @@ class ResultScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.black,
+            backgroundColor: Color(0x3500BCD4),
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(4),side: BorderSide(color: Colors.blue, width: 1.2),
+              borderRadius: BorderRadius.circular(4),side: BorderSide(color: Colors.cyan, width: 1.2),
 
             ),
             padding: const EdgeInsets.symmetric(vertical: 16),
@@ -250,7 +250,7 @@ class ResultScreen extends StatelessWidget {
           onPressed: () {
             Navigator.popUntil(context, (route) => route.isFirst);
           },
-          child: const Text('Home', style: TextStyle(fontSize: 18,color: Colors.white)),
+          child: const Text('Home', style: TextStyle(fontSize: 20,color: Colors.white)),
         ),
       ),
     );
