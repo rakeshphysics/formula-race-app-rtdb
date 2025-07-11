@@ -54,7 +54,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
   Future<void> _loadMistakes() async {
     List<Map<String, dynamic>> all = await MistakeTrackerService.loadMistakesFromLocal();
 
-    print('Loaded ${all.length} mistakes from local.');
+   // print('Loaded ${all.length} mistakes from local.');
 
     Map<String, List<Map<String, dynamic>>> tempChapterMistakes = {};
     Map<String, int> tempChapterTotals = {};

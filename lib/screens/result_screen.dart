@@ -45,7 +45,7 @@ Future<void> updateMistakeTracker(List<Map<String, dynamic>> responses) async {
 
     await file.writeAsString(jsonEncode(tracker));
   } catch (e) {
-    print('Error updating mistake tracker: \$e');
+   // print('Error updating mistake tracker: \$e');
   }
 }
 

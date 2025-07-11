@@ -98,7 +98,7 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
     final ref = FirebaseDatabase.instance.ref('matches/$matchId/player2Id');
     dbListener = ref.onValue.listen((event) {
       final val = event.snapshot.value;
-      print("🔍 DEBUG RTDB Player2: received val: $val. OpponentFound: $opponentFound. MatchId: $matchId"); // Debug print
+      //print("🔍 DEBUG RTDB Player2: received val: $val. OpponentFound: $opponentFound. MatchId: $matchId"); // Debug print
 
 
       if (val != null && val.toString().isNotEmpty) {
@@ -117,7 +117,7 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
     readyListener = docRef.snapshots().listen((doc) {
 
       if (!doc.exists) { // This is the more robust check for deletion
-        print("⚠️ DEBUG: Match document deleted. Redirecting opponent to Home Screen."); // Debug print
+        //print("⚠️ DEBUG: Match document deleted. Redirecting opponent to Home Screen."); // Debug print
         readyListener?.cancel(); // Cancel this listener
         dbListener?.cancel(); // Cancel the other listener if active (for Player 1)
         timeoutTimer?.cancel(); // Cancel any timeout timer

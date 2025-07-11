@@ -108,7 +108,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
         widget.selectedChapter == 'full12' ||
         widget.selectedChapter == 'fullBoth') {
 
-      print('Handling full mode: ${widget.selectedChapter}');
+     // print('Handling full mode: ${widget.selectedChapter}');
 
       List<String> fullChapters = [];
 
@@ -179,17 +179,17 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
         final chapterFile = chapter.toLowerCase().replaceAll(" ", "_");
         final path = 'assets/formulas/$chapterClass/$chapterFile.json';
 
-        print('Loading: $path');
+       // print('Loading: $path');
         try {
           final String data = await rootBundle.loadString(path);
           final List<dynamic> jsonData = json.decode(data);
           allQuestions.addAll(jsonData.cast<Map<String, dynamic>>());
-          print('DEBUG: Loaded ${allQuestions.length} questions');
+         // print('DEBUG: Loaded ${allQuestions.length} questions');
           if (allQuestions.isNotEmpty) {
-            print('DEBUG: First question image = ${allQuestions[0]['image']}');
+          //  print('DEBUG: First question image = ${allQuestions[0]['image']}');
           }
         } catch (e) {
-          print('Error loading $path: $e');
+         // print('Error loading $path: $e');
         }
       }
 
@@ -199,13 +199,13 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
         final chapterFile = chapter.toLowerCase().replaceAll(" ", "_");
         final path = 'assets/formulas/$chapterClass/$chapterFile.json';
 
-        print('Loading: $path');
+       // print('Loading: $path');
         try {
           final String data = await rootBundle.loadString(path);
           final List<dynamic> jsonData = json.decode(data);
           allQuestions.addAll(jsonData.cast<Map<String, dynamic>>());
         } catch (e) {
-          print('Error loading $path: $e');
+        //  print('Error loading $path: $e');
         }
       }
     } else {
@@ -213,13 +213,13 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       final chapterFile = widget.selectedChapter.toLowerCase().replaceAll(" ", "_");
       final path = 'assets/formulas/$chapterClass/$chapterFile.json';
 
-      print('Loading: $path');
+     // print('Loading: $path');
       try {
         final String data = await rootBundle.loadString(path);
         final List<dynamic> jsonData = json.decode(data);
         allQuestions = jsonData.cast<Map<String, dynamic>>();
       } catch (e) {
-        print('Error loading $path: $e');
+       // print('Error loading $path: $e');
       }
     }
 
@@ -394,7 +394,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   // ............. Chunk 7 BUILD WIDGET TREE .............
   @override
   Widget build(BuildContext context) {
-    print('DEBUG: Building question index $currentIndex');
+   // print('DEBUG: Building question index $currentIndex');
     if (questions.isEmpty) {
       return const Scaffold(
         body: Center(child: CircularProgressIndicator()),

@@ -29,7 +29,7 @@ void main() async {
   if (!prefs.containsKey('user_id')) {
     final generatedId = 'user_${DateTime.now().millisecondsSinceEpoch}';
     await prefs.setString('user_id', generatedId);
-    print('Generated userId: $generatedId');
+    //print('Generated userId: $generatedId');
   }
 
   runApp(const FormulaRaceApp());

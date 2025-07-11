@@ -57,7 +57,7 @@ class _SplashScreenState extends State<SplashScreen> {
               'Formula Racing',
               style: TextStyle(
                 fontSize: 32,
-                color: Color(0xFF00FFFF),
+                color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),
             ),

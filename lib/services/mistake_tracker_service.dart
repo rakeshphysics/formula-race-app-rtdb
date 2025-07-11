@@ -30,14 +30,14 @@ class MistakeTrackerService {
         mistakes.add(questionData);
 
         await file.writeAsString(jsonEncode(mistakes));
-        print('✅ Mistake saved: "${questionData['question']}"');
-        print('DEBUG: Full mistakes json = ${jsonEncode(mistakes)}');
+       // print('✅ Mistake saved: "${questionData['question']}"');
+       // print('DEBUG: Full mistakes json = ${jsonEncode(mistakes)}');
 
       } else {
-        print('⚠️ Mistake already exists: "${questionData['question']}"');
+       // print('⚠️ Mistake already exists: "${questionData['question']}"');
       }
     } catch (e) {
-      print('❌ Error saving mistake: $e');
+     // print('❌ Error saving mistake: $e');
     }
   }
 
@@ -48,7 +48,7 @@ class MistakeTrackerService {
       final file = File('${dir.path}/my_mistakes.json');
 
       if (!await file.exists()) {
-        print('⚠️ my_mistakes.json not found — nothing to remove.');
+        //print('⚠️ my_mistakes.json not found — nothing to remove.');
         return;
       }
 
