@@ -559,6 +559,11 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                               setState(() {
                                 selectedOption = option;
                               });
+                              if (option == question['answer']) {
+                                audioPlayer.play(AssetSource('sounds/correct.mp3'));
+                              } else {
+                                audioPlayer.play(AssetSource('sounds/wrong.mp3'));
+                              }
                               Future.delayed(const Duration(milliseconds: 700), () {
                                 checkAnswer(option);
                               });

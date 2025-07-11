@@ -159,21 +159,14 @@ class OnlineResultScreen extends StatelessWidget {
                   Navigator.of(context).popUntil((route) => route.isFirst); // Go back to Home Screen
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blueAccent, // More vibrant color
+                  backgroundColor: Colors.black, // More vibrant color
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(screenWidth * 0.04), // Responsive border radius
+                    borderRadius: BorderRadius.circular(4),side: BorderSide(color: Colors.blue, width: 1.2),
+
                   ),
                   elevation: 8,
                 ),
-                child: Text(
-                  'HOME',
-                  style: GoogleFonts.poppins(
-                    fontSize: screenWidth * 0.05, // Responsive font size
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                    letterSpacing: 1.5,
-                  ),
-                ),
+                child: const Text('Home', style: TextStyle(fontSize: 18,color: Colors.white)),
               ),
             ),
             SizedBox(height: screenHeight * 0.04), // Bottom padding

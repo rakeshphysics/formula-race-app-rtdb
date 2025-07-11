@@ -370,7 +370,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
         bool firstAnswerWasCorrect = answerData['isCorrect'] as bool? ?? false;
         Map<dynamic, dynamic>? wrongAnswersMap = answerData['wrongAnswers'] as Map<dynamic, dynamic>?;
 
-        print('DEBUG listenToAnswers: My ID: ${widget.playerId}, First Answered By: "$firstAnswerBy", Was Correct: $firstAnswerWasCorrect, Raw Data: $answerData');
+        //print('DEBUG listenToAnswers: My ID: ${widget.playerId}, First Answered By: "$firstAnswerBy", Was Correct: $firstAnswerWasCorrect, Raw Data: $answerData');
 
         setState(() {
           //questionLocked = true; // Always lock once an answer is registered
@@ -387,7 +387,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
               bothWrong = true; // For "Both wrong" case, will be set by submitAnswer or timer.
               feedbackMessage = 'No one answered correctly.'; // More general message for 'none'
               showCorrectAnswer = true; // This ensures green highlight for correct answer
-              print('✅ DEBUG 🖼️LISTEN ANSWERS: firstAnswerBy is "none". Setting showCorrectAnswer=true. Player ID: ${widget.playerId}'); // 🚀 Add this //print here
+              //print('✅ DEBUG 🖼️LISTEN ANSWERS: firstAnswerBy is "none". Setting showCorrectAnswer=true. Player ID: ${widget.playerId}'); // 🚀 Add this //print here
 
               //await Future.delayed(const Duration(milliseconds: 1500));
             } else {
@@ -715,7 +715,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
     // ✅ If this is the correct answer and should be revealed
     if ((option == correctAnswer) && (isCorrect || showCorrectAnswer || revealCorrectAnswerOnOpponentWin || showCorrectAnswerOnSelfWrong)) { // ADD showCorrectAnswerOnSelfWrong
-      print('🟢 🎨DEBUG GET COLOR: Player ID: ${widget.playerId}, Coloring green: $option'); // 🚀 Add this //print
+      //print('🟢 🎨DEBUG GET COLOR: Player ID: ${widget.playerId}, Coloring green: $option'); // 🚀 Add this //print
       return Colors.green;
     }
 

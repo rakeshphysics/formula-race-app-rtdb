@@ -74,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Padding(
                   padding: const EdgeInsets.only(top: 18),
                   child: SizedBox(
-                    width: screenWidth * 0.4,
+                    width: screenWidth * 0.6,
                     height: screenHeight * 0.07,
                     child: ElevatedButton(
                       onPressed: () {

@@ -240,7 +240,11 @@ class ResultScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.blue,
+            backgroundColor: Colors.black,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(4),side: BorderSide(color: Colors.blue, width: 1.2),
+
+            ),
             padding: const EdgeInsets.symmetric(vertical: 16),
           ),
           onPressed: () {
