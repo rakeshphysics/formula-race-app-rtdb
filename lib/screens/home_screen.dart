@@ -14,6 +14,7 @@ import 'ai_tracker_screen.dart'; // Add this import
 import 'package:shared_preferences/shared_preferences.dart';
 import 'searching_for_opponent.dart';
 import 'dart:io';
+import 'package:firebase_auth/firebase_auth.dart';
 
 
 
@@ -31,25 +32,25 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  String userId = '';
+  //String userId = '';
 
   @override
   void initState() {
     super.initState();
-    loadUserId();
+    //loadUserId();
   }
 
-  Future<void> loadUserId() async {
-    final prefs = await SharedPreferences.getInstance();
-    final storedId = prefs.getString('user_id');
-    if (storedId != null) {
-      setState(() {
-        userId = storedId;
-      });
-    } else {
+  //Future<void> loadUserId() async {
+   // final prefs = await SharedPreferences.getInstance();
+   // final storedId = prefs.getString('user_id');
+   // if (storedId != null) {
+     // setState(() {
+      //  userId = storedId;
+    //  });
+   // } else {
      // print("No user ID found");
-    }
-  }
+   // }
+ // }
 
   Widget build(BuildContext context) {
 
@@ -138,19 +139,26 @@ class _HomeScreenState extends State<HomeScreen> {
                       screenWidth: screenWidth*1.2,
                       screenHeight: screenHeight*1.3,
                       onPressed: () {
-                        if (userId.isNotEmpty) {
+                        final User? currentUser = FirebaseAuth.instance.currentUser; // Get current Firebase User
+
+                        if (currentUser != null && currentUser.uid.isNotEmpty) { // Check if UID is available
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => SearchingForOpponent(userId: userId),
+                              builder: (context) => SearchingForOpponent(userId: currentUser.uid), // <<< USE FIREBASE AUTH UID HERE
                             ),
                           );
                         } else {
+                          // This else block handles the very unlikely case where currentUser or its UID is null
+                          // after main.dart has supposedly signed in anonymously.
+                          // It's good for robustness, but ideally shouldn't be hit.
                           ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(content: Text('User ID not ready yet')),
+                            const SnackBar(content: Text('Error: User not authenticated. Please restart app.')),
                           );
+                          print("Firebase Auth User UID is null when trying to start online game.");
                         }
                       },
+
                       gradientColors: const [Color(0xFFFFA500), Color(
                           0xFF874A01)],
                       child: Column(
