@@ -37,19 +37,19 @@ class OnlineResultScreen extends StatelessWidget {
     Color resultMessageColor;
 
     if (opponentLeftGame) { // If opponent left the game
-      resultMessage = 'Opponent left the Game\nYou Win!'; // Specific message
-      resultMessageColor = Colors.greenAccent; // Winner color
+      resultMessage = 'Opponent left the Game\nYou Win 🥳'; // Specific message
+      resultMessageColor = Colors.amberAccent; // Winner color
       myScore = totalQuestions; // Ensure score is displayed as totalQuestions for the win
       opponentScore = 0; // Ensure opponent's score is 0
     } else if (myScore > opponentScore) {
-      resultMessage = 'You Win!';
-      resultMessageColor = Colors.greenAccent;
+      resultMessage = '🥳 You Win 🥳';
+      resultMessageColor = Colors.amberAccent;
     } else if (myScore < opponentScore) {
-      resultMessage = 'You Lose!';
-      resultMessageColor = Colors.redAccent;
+      resultMessage = 'Opponent Wins 🤝';
+      resultMessageColor = Colors.amberAccent;
     } else {
-      resultMessage = 'It\'s a Draw!';
-      resultMessageColor = Colors.amber;
+      resultMessage = 'It\'s a Draw  🤝';
+      resultMessageColor = Colors.amberAccent;
     }
 
     return Scaffold(
@@ -70,8 +70,8 @@ class OnlineResultScreen extends StatelessWidget {
             // Game Result Message (You Win/Lose/Draw)
             Text(
               resultMessage,
-              style: GoogleFonts.poppins(
-                fontSize: screenWidth * 0.08, // Responsive font size
+              style: GoogleFonts.roboto(
+                fontSize: screenWidth * 0.1, // Responsive font size
                 fontWeight: FontWeight.bold,
                 color: resultMessageColor,
                 letterSpacing: 2.0,
@@ -81,14 +81,15 @@ class OnlineResultScreen extends StatelessWidget {
 
             // Score Display Container
             Container(
-              width: screenWidth * 0.85, // Responsive width
+              width: screenWidth *1, // Responsive width
               padding: EdgeInsets.symmetric(
                 vertical: screenHeight * 0.03,
-                horizontal: screenWidth * 0.05,
+                horizontal: screenWidth * 0.08,
               ),
               decoration: BoxDecoration(
-                color: Colors.grey.shade900,
-                borderRadius: BorderRadius.circular(screenWidth * 0.03), // Responsive border radius
+                color: Color(0xAFFC107),
+                borderRadius: BorderRadius.circular(4),
+                border: Border.all(color: Colors.amber, width: 1.2),// Responsive border radius
                 boxShadow: [
                   BoxShadow(
                     color: Colors.white.withOpacity(0.1),
@@ -105,17 +106,18 @@ class OnlineResultScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'YOUR SCORE:',
-                        style: GoogleFonts.poppins(
-                          fontSize: screenWidth * 0.045, // Responsive font size
-                          color: Colors.white70,
-                          fontWeight: FontWeight.w500,
+                        'YOUR SCORE :',
+                        style: GoogleFonts.roboto(
+                          fontSize: screenWidth * 0.06, // Responsive font size
+                          color: Colors.white,
+                          fontWeight: FontWeight.normal,
+                          letterSpacing: 0.8,
                         ),
                       ),
                       Text(
                         '$myScore',
-                        style: GoogleFonts.poppins(
-                          fontSize: screenWidth * 0.06, // Responsive font size
+                        style: GoogleFonts.roboto(
+                          fontSize: screenWidth * 0.09, // Responsive font size
                           fontWeight: FontWeight.bold,
                           color: Colors.greenAccent,
                         ),
@@ -128,17 +130,18 @@ class OnlineResultScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'OPPONENT SCORE:',
-                        style: GoogleFonts.poppins(
-                          fontSize: screenWidth * 0.045, // Responsive font size
-                          color: Colors.white70,
-                          fontWeight: FontWeight.w500,
+                        'OPPONENT SCORE :',
+                        style: GoogleFonts.roboto(
+                          fontSize: screenWidth * 0.06, // Responsive font size
+                          color: Colors.white,
+                          fontWeight: FontWeight.normal,
+                          letterSpacing: 0.8,
                         ),
                       ),
                       Text(
                         '$opponentScore',
-                        style: GoogleFonts.poppins(
-                          fontSize: screenWidth * 0.06, // Responsive font size
+                        style: GoogleFonts.roboto(
+                          fontSize: screenWidth * 0.09, // Responsive font size
                           fontWeight: FontWeight.bold,
                           color: Colors.redAccent,
                         ),
@@ -152,21 +155,21 @@ class OnlineResultScreen extends StatelessWidget {
 
             // Play Again Button
             SizedBox(
-              width: screenWidth * 0.7, // Responsive width
-              height: screenHeight * 0.08, // Responsive height
+              width: double.infinity, // Responsive width
+              height: screenHeight * 0.07, // Responsive height
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).popUntil((route) => route.isFirst); // Go back to Home Screen
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.black, // More vibrant color
+                  backgroundColor: Color(0x34FFC107), // More vibrant color
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(4),side: BorderSide(color: Colors.blue, width: 1.2),
+                    borderRadius: BorderRadius.circular(4),side: BorderSide(color: Colors.amber, width: 1.2),
 
                   ),
                   elevation: 8,
                 ),
-                child: const Text('Home', style: TextStyle(fontSize: 18,color: Colors.white)),
+                child: const Text('Home', style: TextStyle(fontSize: 20,color: Colors.white, fontWeight: FontWeight.normal)),
               ),
             ),
             SizedBox(height: screenHeight * 0.04), // Bottom padding

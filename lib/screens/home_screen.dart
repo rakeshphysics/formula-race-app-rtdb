@@ -188,7 +188,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   'Physics with Rakesh',
                   style: TextStyle(
                     color: Colors.grey,
-                    fontSize: 23,
+                    fontSize: 20,
 
                   ),
                 ),

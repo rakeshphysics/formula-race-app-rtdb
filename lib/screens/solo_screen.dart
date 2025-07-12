@@ -417,12 +417,14 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           context: context,
           builder: (context) => AlertDialog(shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(4),
+            side: BorderSide(color: Colors.cyan, width: 1.2),
           ),
-            backgroundColor: Colors.grey[800],
+            backgroundColor: Color(0x88000000),
             title: const Text(
               'Exit Solo Play?',textAlign: TextAlign.center,
               style: TextStyle(color: Colors.white),
             ),
+            actionsAlignment: MainAxisAlignment.center,
 
             actions: [
               TextButton(
@@ -431,6 +433,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                   foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(4),
+                    side: BorderSide(color: Color(0xFF006C7A), width: 1.2),
                   ),
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 ),
@@ -439,16 +442,18 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                   'Cancel',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 19,
                     fontWeight: FontWeight.normal,
                   ),
                 ),
               ),
+              const SizedBox(width: 10),
               TextButton(style: TextButton.styleFrom(
                 backgroundColor: Colors.black,
                 foregroundColor: Colors.white,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4),
+                  side: BorderSide(color: Color(0xFF006C7A), width: 1.2),
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               ),
@@ -456,7 +461,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                 child: const Text(
                   'Exit',
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.normal),
+                  style: TextStyle(fontSize: 19, fontWeight: FontWeight.normal),
                 ),
               ),
             ],

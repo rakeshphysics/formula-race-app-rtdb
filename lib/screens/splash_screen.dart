@@ -68,7 +68,7 @@ class _SplashScreenState extends State<SplashScreen> {
             const Text(
               'Physics with Rakesh',
               style: TextStyle(
-                fontSize: 23,
+                fontSize: 20,
                 color: Colors.grey,
               ),
             ),
