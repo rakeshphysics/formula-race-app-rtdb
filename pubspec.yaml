@@ -20,10 +20,12 @@ dependencies:
   audioplayers: ^5.2.0
   flutter_svg: ^2.0.0+1
   cupertino_icons: ^1.0.8
-  firebase_core: ^3.15.1
-  firebase_database: ^11.3.9
-  cloud_firestore: ^5.6.11
-  firebase_auth: ^5.6.2
+  firebase_core: ^2.25.3 # Official latest stable
+  firebase_database: ^10.5.3 # Official latest stable
+  cloud_firestore: ^4.14.0 # Official latest stable
+  firebase_auth: ^4.15.0
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^5.0.0
 
 dev_dependencies:
   flutter_test:

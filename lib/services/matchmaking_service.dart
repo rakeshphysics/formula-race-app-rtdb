@@ -14,6 +14,8 @@ class MatchmakingService {
       'player1Id': userId,
       'status': 'open',
       'createdAt': FieldValue.serverTimestamp(),
+      'player1Ready': false, // Initialize ready states
+      'player2Ready': false,
     });
 
     await FirebaseDatabase.instance.ref('matches/$matchId').set({
@@ -27,35 +29,53 @@ class MatchmakingService {
     };
   }
 
+  // REVISED: Non-transactional findMatch (for Random Matchmaking)
   static Future<Map<String, dynamic>?> findMatch(String userId) async {
     final dbRef = FirebaseDatabase.instance.ref('matches');
-    final snapshot = await dbRef.get();
 
-    if (!snapshot.exists) return null;
+    try {
+      final snapshot = await dbRef.get();
 
-    final matches = Map<String, dynamic>.from(snapshot.value as Map);
+      if (!snapshot.exists || snapshot.value == null) {
+        return null; // No matches found
+      }
 
-    for (final entry in matches.entries) {
-      final data = Map<String, dynamic>.from(entry.value);
-      if (data['player2Id'] == null) {
-        final matchId = entry.key;
+      final matches = Map<String, dynamic>.from(snapshot.value as Map);
 
-        await dbRef.child(matchId).update({
-          'player2Id': userId,
-        });
+      // Iterate through existing matches to find an open one
+      for (final entry in matches.entries) {
+        final data = Map<String, dynamic>.from(entry.value);
+        if (data['player2Id'] == null && data['player1Id'] != userId) {
+          final matchId = entry.key;
 
-        final doc = await FirebaseFirestore.instance.collection('matches').doc(matchId).get();
-        final seed = doc.data()?['seed'];
+          // Attempt to claim this match
+          // WARNING: This update is not atomic. A race condition could still occur here
+          // if two players try to claim the same match simultaneously.
+          await dbRef.child(matchId).update({
+            'player2Id': userId,
+          });
 
-        if (seed != null) {
-          return {
-            'matchId': matchId,
-            'seed': seed,
-          };
+          // After attempting to update, re-read to confirm it was successful
+          final updatedSnapshot = await dbRef.child(matchId).get();
+          final updatedData = Map<String, dynamic>.from(updatedSnapshot.value as Map);
+
+          if (updatedData['player2Id'] == userId) { // Confirmed we claimed it
+            final doc = await FirebaseFirestore.instance.collection('matches').doc(matchId).get();
+            final seed = doc.data()?['seed'];
+
+            if (seed != null) {
+              return {
+                'matchId': matchId,
+                'seed': seed,
+              };
+            }
+          }
         }
       }
+    } catch (e) {
+      print("Error finding match: $e");
     }
 
-    return null;
+    return null; // No open match found or successfully joined
   }
 }
