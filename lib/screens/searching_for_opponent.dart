@@ -1,6 +1,6 @@
-import 'dart:async';
+/*import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+//import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:formula_race_app/services/matchmaking_service.dart';
 import 'online_game_screen.dart';
@@ -21,37 +21,34 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
   int? seed;
   bool isPlayer1 = false;
   bool opponentFound = false;
-  bool startPressed = false;
+  //bool startPressed = false;
   Timer? timeoutTimer;
-  StreamSubscription<DatabaseEvent>? dbListener;
-  StreamSubscription<DocumentSnapshot>? readyListener;
+  //StreamSubscription<DatabaseEvent>? dbListener;
+  late StreamSubscription<DatabaseEvent>? matchStatusListener;
 
   bool matchStarted = false;
   final int roomDeletionTimeoutSeconds = 6;
   Timer? dotAnimationTimer;
   String animatedDots = "";
 
-  @override
   void initState() {
     super.initState();
-
     dotAnimationTimer = Timer.periodic(const Duration(milliseconds: 500), (timer) {
       setState(() {
-        animatedDots = "." * ((timer.tick % 3) + 1); // Cycle . .. ...
+        animatedDots = "." * ((timer.tick % 3) + 1);
       });
     });
 
     if (!matchStarted) {
-      //print("🚀 handleMatchmaking() called");
       matchStarted = true;
-      handleMatchmaking();
-    } else {
-      //print("⚠️ Skipping duplicate matchmaking");
+      // REMOVE: handleMatchmaking(); // This is only called once at startup
+      // The handleMatchmaking will call _listenForMatchStatus from player1 or player2 flow.
     }
+    _startMatchmakingFlow(); // New function to encapsulate flow
   }
 
 
-  Future<void> handleMatchmaking() async {
+  Future<void> _startMatchmakingFlow() async {
     final matchData = await MatchmakingService.findMatch(widget.userId);
 
     if (matchData != null) {
@@ -63,7 +60,7 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
       setState(() {
         statusText = "Match Found!";
       });
-      listenForBothReady();
+      _listenForMatchStatus(); // Start listening for status changes
     } else {
       // Player 1 flow
       final created = await MatchmakingService.createMatch(widget.userId);
@@ -72,72 +69,62 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
         seed = created['seed'];
         isPlayer1 = true;
 
-        // STEP 1: Start 10s timeout to delete match and return home
         timeoutTimer = Timer(Duration(seconds: roomDeletionTimeoutSeconds), () async {
           if (!opponentFound && matchId != null) {
-            //print("⏰ No opponent joined in 10s. Deleting match $matchId");
-
             await FirebaseDatabase.instance.ref('matches/$matchId').remove();
-
             if (mounted) {
               Navigator.of(context).pushAndRemoveUntil(
-                MaterialPageRoute(builder: (context) => HomeScreen()),
+                MaterialPageRoute(builder: (context) => HomeScreen(userId: widget.userId)),
                     (route) => false,
               );
             }
           }
         });
-        listenForPlayer2();
+        _listenForMatchStatus(); // Start listening for status changes
       }
     }
   }
 
+  // New consolidated listener for all match status changes from Realtime Database
+  void _listenForMatchStatus() {
+    matchStatusListener = FirebaseDatabase.instance
+        .ref('matches/$matchId')
+        .onValue
+        .listen((event) {
+      final data = event.snapshot.value as Map<dynamic, dynamic>?;
 
-
-  void listenForPlayer2() {
-    final ref = FirebaseDatabase.instance.ref('matches/$matchId/player2Id');
-    dbListener = ref.onValue.listen((event) {
-      final val = event.snapshot.value;
-      //print("🔍 DEBUG RTDB Player2: received val: $val. OpponentFound: $opponentFound. MatchId: $matchId"); // Debug print
-
-
-      if (val != null && val.toString().isNotEmpty) {
-        setState(() {
-          statusText = "Match Found !";
-          opponentFound = true;
-        });
-        listenForBothReady();
-      }
-
-    });
-  }
-
-  void listenForBothReady() {
-    final docRef = FirebaseFirestore.instance.collection('matches').doc(matchId);
-    readyListener = docRef.snapshots().listen((doc) {
-
-      if (!doc.exists) { // This is the more robust check for deletion
-        //print("⚠️ DEBUG: Match document deleted. Redirecting opponent to Home Screen."); // Debug print
-        readyListener?.cancel(); // Cancel this listener
-        dbListener?.cancel(); // Cancel the other listener if active (for Player 1)
-        timeoutTimer?.cancel(); // Cancel any timeout timer
-
+      if (data == null) { // Match might have been deleted
         if (mounted) {
+          matchStatusListener?.cancel(); // Cancel listener
+          timeoutTimer?.cancel(); // Cancel any timeout
           Navigator.of(context).pushAndRemoveUntil(
-            MaterialPageRoute(builder: (context) => HomeScreen()),
+            MaterialPageRoute(builder: (context) => HomeScreen(userId: widget.userId)),
                 (route) => false,
           );
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Match deleted by opponent or timed out.')),
+          );
         }
-        return; // Exit as match is deleted
+        return;
       }
-      final data = doc.data();
-      if (data == null) return;
+
+      final player2Id = data['player2Id'];
       final p1Ready = data['player1Ready'] == true;
       final p2Ready = data['player2Ready'] == true;
 
-      if (p1Ready && p2Ready) {
-        readyListener?.cancel();
-        dbListener?.cancel();
+      // Detect opponent joining
+      if (!opponentFound && player2Id != null && player2Id.toString().isNotEmpty) {
+        setState(() {
+          statusText = "Match Found!";
+          opponentFound = true;
+        });
+        timeoutTimer?.cancel(); // Cancel timeout if opponent joined
+      }
+
+      // Navigate when both players are ready
+      if (p1Ready && p2Ready && !matchStarted) {
+        matchStarted = true; // Set flag to prevent multiple navigations
+        matchStatusListener?.cancel(); // Cancel listener before navigating
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
@@ -153,23 +140,23 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
     });
   }
 
-  Future<void> markReady() async {
-    final docRef = FirebaseFirestore.instance.collection('matches').doc(matchId);
-    await docRef.update({
-      isPlayer1 ? 'player1Ready' : 'player2Ready': true,
-    });
-    setState(() {
-      startPressed = true;
-      statusText = "Waiting for opponent to start...";
-    });
-  }
+
+
+
+
+
+
+
+
+
 
   void cancelSearch() async {
     // Cancel all listeners and timers
-    dbListener?.cancel();
-    readyListener?.cancel();
+    matchStatusListener?.cancel(); // Use the consolidated listener
+    // REMOVE: dbListener?.cancel();
+    // REMOVE: readyListener?.cancel();
     timeoutTimer?.cancel();
-    dotAnimationTimer?.cancel(); // Cancel the dot animation timer too
+    dotAnimationTimer?.cancel();
 
     // If this player was Player 1 and no opponent was found, delete the match
     if (isPlayer1 && !opponentFound && matchId != null) {
@@ -179,7 +166,7 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
     // Navigate back to the Home Screen
     if (mounted) {
       Navigator.of(context).pushAndRemoveUntil(
-        MaterialPageRoute(builder: (context) => HomeScreen()),
+        MaterialPageRoute(builder: (context) => HomeScreen(userId: widget.userId)),
             (route) => false,
       );
     }
@@ -187,17 +174,18 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
 
   @override
   void dispose() {
-    dbListener?.cancel();
-    readyListener?.cancel();
+    matchStatusListener?.cancel(); // Use the consolidated listener
+    // REMOVE: dbListener?.cancel();
+    // REMOVE: readyListener?.cancel();
     dotAnimationTimer?.cancel();
-    timeoutTimer?.cancel(); // Ensure timeoutTimer is cancelled on dispose as well
+    timeoutTimer?.cancel();
     super.dispose();
   }
 
 
   Future<bool> _onWillPop() async {
     // If opponent is found and start is not pressed, it means we are on the "Start Game" screen.
-    if (opponentFound && !startPressed) {
+    if (opponentFound) {
       // Confirm with user before leaving match
       final confirm = await showDialog<bool>(
         context: context,
@@ -225,8 +213,9 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
   // New function to handle leaving match cleanup
   Future<void> leaveMatchCleanup() async {
     // Cancel all listeners and timers for current player
-    dbListener?.cancel();
-    readyListener?.cancel();
+    matchStatusListener?.cancel(); // Use the consolidated listener
+    // REMOVE: dbListener?.cancel(); // This was replaced by matchStatusListener
+    // REMOVE: readyListener?.cancel(); // This was replaced by matchStatusListener
     timeoutTimer?.cancel();
     dotAnimationTimer?.cancel();
 
@@ -238,7 +227,7 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
     // Navigate current player back to HomeScreen
     if (mounted) {
       Navigator.of(context).pushAndRemoveUntil(
-        MaterialPageRoute(builder: (context) => HomeScreen()),
+        MaterialPageRoute(builder: (context) => HomeScreen(userId: widget.userId)),
             (route) => false,
       );
     }
@@ -280,30 +269,6 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
             SizedBox(height: screenHeight * 0.05), // Use screen height for spacing
 
             // Existing Start Game button
-            if (opponentFound && !startPressed)
-              SizedBox( // Wrap with SizedBox to control size
-                width: screenWidth * 0.6, // Match Cancel button width
-                height: screenHeight * 0.07, // Match Cancel button height
-                child: ElevatedButton(
-                  onPressed: markReady,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.amber.withOpacity(0.1), // 10% opacity
-                    padding: EdgeInsets.symmetric(
-                      horizontal: screenWidth * 0.04, // Responsive horizontal padding
-                      vertical: screenHeight * 0.015, // Responsive vertical padding
-                    ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(4),
-                      side: const BorderSide(color: Colors.amber, width: 2), // Amber orange border
-                    ),
-                    textStyle: const TextStyle(fontSize: 18), // Adjust text size
-                  ),
-                  child: const Text(
-                    "Start Game",
-                    style: TextStyle(color: Colors.white, fontSize: 22.0),  // White text
-                  ),
-                ),
-              ),
 
             // NEW: Cancel Search Button styling
             if (!opponentFound)
@@ -337,4 +302,4 @@ class _SearchingForOpponentState extends State<SearchingForOpponent> {
     );
 
   }
-}
+} */

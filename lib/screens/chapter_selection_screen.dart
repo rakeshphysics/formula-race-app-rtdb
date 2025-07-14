@@ -11,6 +11,7 @@ import 'solo_mode_selection_screen.dart';
 
 
 class ChapterSelectionScreen extends StatelessWidget {
+  final String userId;
   // You can customize this list with your real chapter names
   final List<String> chapters = [
     // Class 11
@@ -42,7 +43,7 @@ class ChapterSelectionScreen extends StatelessWidget {
     'Semiconductors',
   ];
 
-  ChapterSelectionScreen({super.key});
+  ChapterSelectionScreen({super.key, required this.userId});
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +51,7 @@ class ChapterSelectionScreen extends StatelessWidget {
         onWillPop: () async {
       await Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => SoloModeSelectionScreen()),
+        MaterialPageRoute(builder: (context) => SoloModeSelectionScreen(userId: userId)),
       );
       return false;
     },
@@ -74,12 +75,12 @@ class ChapterSelectionScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => SoloScreen(selectedChapter: chapter),
+                    builder: (context) => SoloScreen(selectedChapter: chapter, userId:userId),
                   ),
                 );
               },
               style: OutlinedButton.styleFrom(
-                side: BorderSide(color: Colors.grey[600]!, width: 1.2),
+                side: BorderSide(color: Colors.cyanAccent.withOpacity(0.6), width: 1.2),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4),
                 ),

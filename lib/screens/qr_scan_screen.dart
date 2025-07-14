@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+//import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/services.dart'; // Import for HapticFeedback
 import 'online_game_screen.dart'; // Import your game screen
 
 class QRScanScreen extends StatefulWidget {
-  const QRScanScreen({Key? key}) : super(key: key);
+  final String userId;
+  const QRScanScreen({Key? key, required this.userId}) : super(key: key);
 
   @override
   State<QRScanScreen> createState() => _QRScanScreenState();
@@ -90,30 +91,19 @@ class _QRScanScreenState extends State<QRScanScreen> {
   }
 
   Future<void> _joinMatch(String matchId) async {
-    final User? currentUser = FirebaseAuth.instance.currentUser;
-    if (currentUser == null || currentUser.uid.isEmpty) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Error: User not authenticated.')),
-        );
-        Navigator.of(context).pop(); // Go back to selection screen
-      }
-      return;
-    }
 
-    final userId = currentUser.uid;
+    final userId = widget.userId;
     final dbRef = FirebaseDatabase.instance.ref('matches/$matchId');
 
     try {
-      // --- BEGIN REVISED NON-ATOMIC JOIN LOGIC ---
-      final snapshot = await dbRef.get(); // Get current state of the match
+      final snapshot = await dbRef.get();
 
       if (!snapshot.exists || snapshot.value == null) {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('Match does not exist or has been deleted.')),
           );
-          Navigator.of(context).pop(); // Go back to selection screen
+          Navigator.of(context).pop();
         }
         return;
       }
@@ -125,7 +115,7 @@ class _QRScanScreenState extends State<QRScanScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('Match is already full.')),
           );
-          Navigator.of(context).pop(); // Go back to selection screen
+          Navigator.of(context).pop();
         }
         return;
       }
@@ -135,26 +125,25 @@ class _QRScanScreenState extends State<QRScanScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('You cannot join your own match.')),
           );
-          Navigator.of(context).pop(); // Go back to selection screen
+          Navigator.of(context).pop();
         }
         return;
       }
 
-      // Attempt to update player2Id
+      // Attempt to update player2Id in Realtime Database
       await dbRef.update({
         'player2Id': userId,
       });
 
-      // --- END REVISED NON-ATOMIC JOIN LOGIC ---
-
-      // Now, proceed to get seed from Firestore and navigate
-      final doc = await FirebaseFirestore.instance.collection('matches').doc(matchId).get();
-      final seed = doc.data()?['seed'];
+      // All match data is now in RTDB
+      final seed = matchData['seed']; // Get seed directly from RTDB snapshot
 
       if (seed != null) {
         if (mounted) {
-          // Mark player2 as ready in Firestore
-          await FirebaseFirestore.instance.collection('matches').doc(matchId).update({'player2Ready': true});
+          await dbRef.update({
+            'player1Ready': true, // Set player1 (host) as ready
+            'player2Ready': true, // Set player2 (scanner) as ready
+          });
 
           Navigator.pushReplacement(
             context,
@@ -173,22 +162,20 @@ class _QRScanScreenState extends State<QRScanScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('Failed to get match details (seed).')),
           );
-          Navigator.of(context).pop(); // Go back to selection screen
+          Navigator.of(context).pop();
         }
       }
     } catch (e) {
-      print("Error joining match via QR: $e");
+      print("Error joining match via QR (RTDB only): $e");
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error joining match: ${e.toString()}')),
         );
-        Navigator.of(context).pop(); // Go back to selection screen on error
+        Navigator.of(context).pop();
       }
-    }finally {
-      // Restart scanner after potential error or failed join
-      // Removed controller.isClosed == false check
+    } finally {
       if (mounted) {
-        controller.start(); // Try to start the controller if the widget is still mounted
+        controller.start();
       }
     }
   }

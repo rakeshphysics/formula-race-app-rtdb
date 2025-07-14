@@ -65,23 +65,24 @@ class OnlineResultScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Spacer(), // Pushes content to center/bottom
-
+            //Spacer(), // Pushes content to center/bottom
+            SizedBox(height: screenHeight * 0.17),
             // Game Result Message (You Win/Lose/Draw)
             Text(
               resultMessage,
+              textAlign: TextAlign.center,
               style: GoogleFonts.roboto(
-                fontSize: screenWidth * 0.1, // Responsive font size
+                fontSize: screenWidth * 0.07, // Responsive font size
                 fontWeight: FontWeight.bold,
                 color: resultMessageColor,
                 letterSpacing: 2.0,
               ),
             ),
-            SizedBox(height: screenHeight * 0.04), // Responsive spacing
+            SizedBox(height: screenHeight * 0.08), // Responsive spacing
 
             // Score Display Container
             Container(
-              width: screenWidth *1, // Responsive width
+              width: screenWidth *0.8, // Responsive width
               padding: EdgeInsets.symmetric(
                 vertical: screenHeight * 0.03,
                 horizontal: screenWidth * 0.08,
@@ -108,7 +109,7 @@ class OnlineResultScreen extends StatelessWidget {
                       Text(
                         'YOUR SCORE :',
                         style: GoogleFonts.roboto(
-                          fontSize: screenWidth * 0.06, // Responsive font size
+                          fontSize: screenWidth * 0.05, // Responsive font size
                           color: Colors.white,
                           fontWeight: FontWeight.normal,
                           letterSpacing: 0.8,
@@ -124,7 +125,7 @@ class OnlineResultScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: screenHeight * 0.02), // Responsive spacing
+                  SizedBox(height: screenHeight * 0.01), // Responsive spacing
                   // Opponent Score
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -132,7 +133,7 @@ class OnlineResultScreen extends StatelessWidget {
                       Text(
                         'OPPONENT SCORE :',
                         style: GoogleFonts.roboto(
-                          fontSize: screenWidth * 0.06, // Responsive font size
+                          fontSize: screenWidth * 0.05, // Responsive font size
                           color: Colors.white,
                           fontWeight: FontWeight.normal,
                           letterSpacing: 0.8,
@@ -162,7 +163,7 @@ class OnlineResultScreen extends StatelessWidget {
                   Navigator.of(context).popUntil((route) => route.isFirst); // Go back to Home Screen
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0x34FFC107), // More vibrant color
+                  backgroundColor: Color(0x20FFC107), // More vibrant color
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(4),side: BorderSide(color: Colors.amber, width: 1.2),
 

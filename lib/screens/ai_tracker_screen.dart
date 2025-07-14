@@ -9,7 +9,7 @@
 // -------------------- CHUNK 1 — IMPORT -----------------------
 //import 'solo_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+//import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'clear_mistakes_screen.dart'; // instead of solo_screen.dart
 import '../../services/mistake_tracker_service.dart';

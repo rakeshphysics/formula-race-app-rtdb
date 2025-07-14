@@ -7,16 +7,16 @@
 // ----------------------------------------------------
 
 import 'package:flutter/material.dart';
-import 'solo_screen.dart';
+//import 'solo_screen.dart';
 //import 'online_play_screen.dart';
 import 'solo_mode_selection_screen.dart';
 import 'ai_tracker_screen.dart'; // Add this import
-import 'package:shared_preferences/shared_preferences.dart';
-import 'searching_for_opponent.dart';
-import 'dart:io';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:formula_race_app/services/matchmaking_service.dart'; // For MatchmakingService
-import 'package:formula_race_app/screens/qr_host_screen.dart';
+//import 'package:shared_preferences/shared_preferences.dart';
+//import 'searching_for_opponent.dart';
+//import 'dart:io';
+//import 'package:firebase_auth/firebase_auth.dart';
+//import 'package:formula_race_app/services/matchmaking_service.dart'; // For MatchmakingService
+//import 'package:formula_race_app/screens/qr_host_screen.dart';
 import 'multiplayer_selection_screen.dart';
 
 
@@ -28,7 +28,8 @@ import 'multiplayer_selection_screen.dart';
 // HomeScreen Widget
 // ----------------------------------------------------
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  final String userId;
+  const HomeScreen({super.key, required this.userId});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -84,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => AITrackerScreen(userId: 'test_user')), // use real userId when ready
+                          MaterialPageRoute(builder: (context) => AITrackerScreen(userId: widget.userId)), // use real userId when ready
                         );
                       },
                       style: ElevatedButton.styleFrom(
@@ -125,7 +126,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const SoloModeSelectionScreen()),
+                          MaterialPageRoute(builder: (context) => SoloModeSelectionScreen(userId: widget.userId)),
                         );
                       },
                       gradientColors: const [Color(0xFF00FFFF), Color(0xFF006C6C)],
@@ -145,7 +146,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const MultiplayerSelectionScreen(), // Navigate to the new page
+                            builder: (context) => MultiplayerSelectionScreen(userId: widget.userId), // Navigate to the new page
                           ),
                         );
                       },
@@ -175,10 +176,10 @@ class _HomeScreenState extends State<HomeScreen> {
               Padding(
                 padding: const EdgeInsets.only(bottom: 30),
                 child: Text(
-                  'Physics with Rakesh',
+                  'Physics with Rakesh  |  IIT Madras',
                   style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 20,
+                    color: Color(0xFFC5C5C5),
+                    fontSize: screenWidth * 0.045,
 
                   ),
                 ),

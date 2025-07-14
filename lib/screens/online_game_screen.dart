@@ -20,7 +20,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:math';
-import 'package:cloud_firestore/cloud_firestore.dart'as firestore;
+//import 'package:cloud_firestore/cloud_firestore.dart'as firestore;
 import 'package:formula_race_app/services/mistake_tracker_service.dart';
 
 
@@ -172,10 +172,12 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 // ................................... both players call the same 10 Qns..........................
   Future<void> loadQuestionsFromRoom() async {
     try {
-      final doc = await firestore.FirebaseFirestore.instance.collection('matches').doc(widget.matchId).get();
+      // Use Realtime Database to get match details including seed
+      final matchSnapshot = await _database.child('matches/${widget.matchId}').get();
 
-      if (doc.exists) {
-        final seed = doc['seed'] ?? 0;
+      if (matchSnapshot.exists && matchSnapshot.value != null) {
+        final matchData = Map<String, dynamic>.from(matchSnapshot.value as Map);
+        final seed = matchData['seed'] ?? 0; // Get seed directly from RTDB
 
         final qns = await getRandomQuestions(seed);
 
@@ -185,10 +187,23 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
         });
         ////////print("📋 Step 6: Questions assigned. Length = ${qns.length}");
       } else {
-        ////////print('Room not found: ${widget.matchId}');
+        ////////print('Room not found in RTDB: ${widget.matchId}');
+        // Handle case where match might have been deleted while loading
+        if (mounted) {
+          Navigator.of(context).pop(); // Go back if match not found
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Match not found or deleted.')),
+          );
+        }
       }
     } catch (e) {
-      ////////print('Error fetching room seed: $e');
+      ////////print('Error fetching room seed from RTDB: $e');
+      if (mounted) {
+        Navigator.of(context).pop(); // Go back on error
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error loading match: $e')),
+        );
+      }
     }
   }
 // .............END................. This function stores the selected qns in game room so that
@@ -231,6 +246,132 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     }
     super.dispose();
   }
+
+  // Inside _OnlineGameScreenState class (Chunk 2)
+// ... (existing state variables and other methods) ...
+
+// Function to handle back button press during game
+  Future<bool> _onWillPop() async {
+    // Only show dialog if game is not already over or opponent has not left
+    if (!gameOver && !opponentLeft) {
+      // _progressController.stop(); // This line was removed based on your request.
+
+      // Inside _OnlineGameScreenState class, within _onWillPop() function
+      final confirm = await showDialog<bool>(
+        context: context,
+        builder: (context) => AlertDialog(
+          // APPLY ALERTDIALOG STYLING (Amber Theme)
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(4),
+            side: const BorderSide(color: Color(0xFFFFA500), width: 1.2), // Amber border
+          ),
+          backgroundColor: const Color(0x88000000), // Semi-transparent black background
+          title: const Text(
+            'Opponent wins if you Exit', // Changed from 'Exit Solo Play?'
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.white, fontSize: 20 ),
+          ),
+          // content: const Text(
+          //   'Opponent wins if you exit. Are you sure?', // Your specific content
+          //   textAlign: TextAlign.center, // Center the content text too
+          //   style: TextStyle(color: Colors.white70), // Slightly duller white for content
+          // ),
+          actionsAlignment: MainAxisAlignment.center, // Center the buttons
+
+          actions: [
+            // Cancel Button Styling (Amber Theme)
+            TextButton(
+              style: TextButton.styleFrom(
+                backgroundColor: Colors.black, // Black background for button
+                foregroundColor: Colors.white, // White text color
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(4),
+                  side: const BorderSide(color: Color(0xFFCC8400), width: 1.2), // Darker amber border
+                ),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              ),
+              onPressed: () {
+                Navigator.of(context).pop(false); // Cancel
+              },
+              child: const Text(
+                'Cancel',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 19,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ),
+            const SizedBox(width: 10), // Spacing between buttons
+
+            // Exit Button Styling (Amber Theme)
+            TextButton(
+              style: TextButton.styleFrom(
+                backgroundColor: Colors.black, // Black background for button
+                foregroundColor: Colors.white, // White text color
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(4),
+                  side: const BorderSide(color: Color(0xFFCC8400), width: 1.2), // Darker amber border
+                ),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              ),
+              onPressed: () {
+                Navigator.of(context).pop(true); // Exit
+              },
+              child: const Text(
+                'Exit',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 19, fontWeight: FontWeight.normal),
+              ),
+            ),
+          ],
+        ),
+      );
+
+      if (confirm == true) {
+        await _handleExitMidGame(); // Handle game exit and opponent win
+        return true; // Allow pop (will navigate via _handleExitMidGame)
+      } else {
+        // _progressController.forward(); // This line was removed based on your request.
+        return false; // Don't allow pop
+      }
+    }
+    return true; // Allow pop if game is already over or opponent left
+  }
+
+// New function to handle mid-game exit logic
+  Future<void> _handleExitMidGame() async {
+    // Cancel all active subscriptions and timers
+    answerSubscription?.cancel();
+    questionIndexSubscription?.cancel();
+    playerStatusSubscription?.cancel();
+    autoSkipTimer?.cancel();
+    _progressController.stop(); // Ensure timer is stopped
+
+    // Update Firebase: current player loses, opponent wins
+    final winningPlayerKey = widget.isPlayer1 ? 'player2' : 'player1';
+    final losingPlayerKey = widget.isPlayer1 ? 'player1' : 'player2';
+
+    await _database.child('matches/${widget.matchId}/scores').update({
+      winningPlayerKey: totalQuestions, // Opponent gets full score
+      losingPlayerKey: 0,              // Current player gets 0
+    });
+
+    await _database.child('matches/${widget.matchId}').update({
+      'gameOver': true,
+      'opponentLeft': true, // Flag to indicate opponent left, for results screen
+      'playerLeftId': widget.playerId, // Store who left
+    });
+
+    // Navigation to results screen will be handled by listenToGameOverFlag()
+    // ensure listenToGameOverFlag is active and correctly handles opponentLeft: true
+  }
+
+// ... (rest of your existing methods like initState, dispose, loadQuestionsFromRoom, etc.) ...
+
+
+
+
 
   // ............. Chunk 3 PLAYER STATUS ONLINE/OFFLINE .............
   void setPlayerStatusOnline() {
@@ -641,30 +782,30 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
 
   // ............. Chunk 10 SHOW RESULTS .............
-  void showResults() async {
-    gameOver = true;
-    ////////print("🚨 showResults triggered");
-
-    await _database.child('matches/${widget.matchId}').update({
-      'gameOver': true,
-    });
-
-    DataSnapshot scoresSnapshot =
-    await _database.child('matches/${widget.matchId}/scores').get();
-
-    Map<dynamic, dynamic> scores = scoresSnapshot.value as Map<dynamic, dynamic>;
-
-    Navigator.of(context).pushReplacement(
-      MaterialPageRoute(
-        builder: (context) => OnlineResultScreen(
-          scores: scores,
-          playerId: widget.playerId,
-          isPlayer1: widget.isPlayer1,
-          totalQuestions: totalQuestions,
-        ),
-      ),
-    );
-  }
+  // void showResults() async {
+  //   gameOver = true;
+  //   ////////print("🚨 showResults triggered");
+  //
+  //   await _database.child('matches/${widget.matchId}').update({
+  //     'gameOver': true,
+  //   });
+  //
+  //   DataSnapshot scoresSnapshot =
+  //   await _database.child('matches/${widget.matchId}/scores').get();
+  //
+  //   Map<dynamic, dynamic> scores = scoresSnapshot.value as Map<dynamic, dynamic>;
+  //
+  //   Navigator.of(context).pushReplacement(
+  //     MaterialPageRoute(
+  //       builder: (context) => OnlineResultScreen(
+  //         scores: scores,
+  //         playerId: widget.playerId,
+  //         isPlayer1: widget.isPlayer1,
+  //         totalQuestions: totalQuestions,
+  //       ),
+  //     ),
+  //   );
+  // }
 
   // ............. Chunk 11 SHOW OPPONENT LEFT RESULTS .............
   void showOpponentLeftResults() async {
@@ -738,7 +879,10 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
     Map<String, dynamic> currentQuestion = Map<String, dynamic>.from(questions[currentQuestionIndex]);
 
-    return Scaffold(
+
+    return WillPopScope( // WRAP SCAFFOLD WITH WILLPOPSCOPE HERE
+        onWillPop: _onWillPop,
+    child: Scaffold(
       backgroundColor: Colors.black,
       //appBar: AppBar(
         //title: Text('Question ${currentQuestionIndex + 1} of $totalQuestions'),
@@ -951,7 +1095,8 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
         ),
       ),
       ),
-      );
+      ),
+    );
 
 
   }

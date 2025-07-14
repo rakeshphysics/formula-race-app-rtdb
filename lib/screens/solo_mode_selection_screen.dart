@@ -16,7 +16,8 @@ import 'home_screen.dart';
 
 // -------------------- CHUNK 2 — CLASS HEADER -----------------
 class SoloModeSelectionScreen extends StatelessWidget {
-  const SoloModeSelectionScreen({Key? key}) : super(key: key);
+  final String userId;
+  const SoloModeSelectionScreen({super.key, required this.userId});
 
   // -------------------- CHUNK 3 — BUILD FUNCTION -----------------
   @override
@@ -27,7 +28,7 @@ class SoloModeSelectionScreen extends StatelessWidget {
 
     return WillPopScope(
         onWillPop: () async {
-      await Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()),
+      await Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen(userId:userId,)),
       );
       return false;
     },
@@ -56,7 +57,7 @@ class SoloModeSelectionScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ChapterSelectionScreen(),
+                    builder: (context) => ChapterSelectionScreen(userId:userId),
                   ),
                 );
               },
@@ -107,7 +108,7 @@ class SoloModeSelectionScreen extends StatelessWidget {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => SoloScreen(selectedChapter: mode),
+        builder: (context) => SoloScreen(selectedChapter: mode, userId: userId,),
       ),
     );
   }

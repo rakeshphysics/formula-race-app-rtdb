@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart'; // Make sure you added qr_flutter to pubspec.yaml
 import 'package:firebase_database/firebase_database.dart'; // For listening to player2Id
-import 'package:cloud_firestore/cloud_firestore.dart'; // For listening to ready states
+//import 'package:cloud_firestore/cloud_firestore.dart'; // For listening to ready states
 import 'online_game_screen.dart'; // Import your game screen
 import 'dart:async';
 
@@ -28,66 +28,67 @@ class _QRHostScreenState extends State<QRHostScreen> {
   String status = "Waiting for opponent...";
   bool opponentFound = false;
   bool matchStarted = false;
-  late StreamSubscription<DatabaseEvent> player2Listener;
-  late StreamSubscription<DocumentSnapshot> readyListener;
+  late StreamSubscription<DatabaseEvent> matchStatusListener;
+ // late StreamSubscription<DatabaseEvent> player2Listener;
+ // late StreamSubscription<DocumentSnapshot> readyListener;
 
   @override
   void initState() {
     super.initState();
-    _listenForOpponent();
+    _listenForMatchStatus();
   }
 
-  void _listenForOpponent() {
-    // Listen to Realtime Database for player2Id
-    player2Listener = FirebaseDatabase.instance
-        .ref('matches/${widget.matchId}/player2Id')
-        .onValue
-        .listen((event) {
-      final player2Id = event.snapshot.value;
-      if (player2Id != null && player2Id.toString().isNotEmpty) {
-        setState(() {
-          opponentFound = true;
-          status = "Opponent found! Waiting for them to start...";
-        });
-        _listenForBothReady(); // Start listening for ready states once opponent is found
-      }
+
+  Future<void> markReady() async {
+    // Update player1Ready in Realtime Database
+    await FirebaseDatabase.instance
+        .ref('matches/${widget.matchId}')
+        .update({'player1Ready': true});
+    setState(() {
+      // startPressed is likely removed, so status is the main update
+      status = "You are ready! Waiting for opponent...";
     });
   }
 
-  void _listenForBothReady() {
-    // Listen to Firestore for player1Ready and player2Ready
-    readyListener = FirebaseFirestore.instance
-        .collection('matches')
-        .doc(widget.matchId)
-        .snapshots()
-        .listen((doc) {
-      if (!doc.exists) {
-        // Match was deleted by opponent or an issue, navigate back
+
+  void _listenForMatchStatus() {
+    matchStatusListener = FirebaseDatabase.instance
+        .ref('matches/${widget.matchId}')
+        .onValue
+        .listen((event) {
+      final data = event.snapshot.value as Map<dynamic, dynamic>?;
+
+      if (data == null) {
         if (mounted) {
-          Navigator.of(context).pop(); // Or navigate to HomeScreen
+          Navigator.of(context).pop();
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Opponent left the match.')),
+            const SnackBar(content: Text('Opponent left or match was deleted.')),
           );
         }
         return;
       }
 
-      final data = doc.data();
-      if (data == null) return;
+      final player2Id = data['player2Id'];
+      final p1Ready = data['player1Ready'] == true; // Host's ready state
+      final p2Ready = data['player2Ready'] == true; // Opponent's ready state
 
-      final p1Ready = data['player1Ready'] == true;
-      final p2Ready = data['player2Ready'] == true;
+      if (!opponentFound && player2Id != null && player2Id.toString().isNotEmpty) {
+        setState(() {
+          opponentFound = true;
+          status = "Opponent found! Waiting for them to start...";
+        });
+      }
 
+      // Navigate when both are ready
       if (p1Ready && p2Ready && !matchStarted) {
-        matchStarted = true; // Prevent multiple navigations
-        readyListener.cancel();
-        player2Listener.cancel();
+        matchStarted = true;
+        matchStatusListener.cancel();
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
             builder: (_) => OnlineGameScreen(
               matchId: widget.matchId,
-              seed: widget.seed,
+              seed: widget.seed, // Seed is read from initial match data in RTDB now
               isPlayer1: widget.isPlayer1,
               playerId: widget.playerId,
             ),
@@ -97,21 +98,15 @@ class _QRHostScreenState extends State<QRHostScreen> {
     });
   }
 
-  Future<void> markReady() async {
-    final docRef = FirebaseFirestore.instance.collection('matches').doc(widget.matchId);
-    await docRef.update({'player1Ready': true});
-    setState(() {
-      status = "You are ready! Waiting for opponent...";
-    });
-  }
-
+  // ... (markReady remains for now, will be removed for auto-start later)
 
   @override
   void dispose() {
-    player2Listener.cancel();
-    readyListener.cancel();
+    // Cancel the single consolidated listener
+    matchStatusListener.cancel(); // Ensure this is the correct listener
     super.dispose();
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -141,19 +136,7 @@ class _QRHostScreenState extends State<QRHostScreen> {
               foregroundColor: Colors.black,
             ),
             const SizedBox(height: 30),
-            if (opponentFound)
-              ElevatedButton(
-                onPressed: markReady,
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.amber.withOpacity(0.1),
-                  side: const BorderSide(color: Colors.amber, width: 2),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-                ),
-                child: const Text(
-                  "Start Game",
-                  style: TextStyle(color: Colors.white, fontSize: 20),
-                ),
-              ),
+
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () async {

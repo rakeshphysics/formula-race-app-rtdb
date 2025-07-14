@@ -47,9 +47,10 @@ const Map<String, String> chapterToClass = {
 };
 
 class SoloScreen extends StatefulWidget {
+  final String userId;
   final String selectedChapter;
   final List<String>? selectedChapters;
-  const SoloScreen({super.key, required this.selectedChapter,this.selectedChapters,});
+  const SoloScreen({super.key, required this.selectedChapter,this.selectedChapters,required this.userId});
 
   @override
   State<SoloScreen> createState() => _SoloScreenState();
@@ -472,7 +473,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           await Future.delayed(const Duration(milliseconds: 350));
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => const SoloModeSelectionScreen()),
+            MaterialPageRoute(builder: (context) => SoloModeSelectionScreen(userId: widget.userId)),
           );
           return false; // prevent default back
         }
