@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
   // Inside _SplashScreenState class
   Future<void> _initializeFirebaseAndNavigate() async {
     try {
-      const Duration minDisplayTime = Duration(seconds: 4); // Set your desired minimum duration
+      const Duration minDisplayTime = Duration(seconds: 3); // Set your desired minimum duration
       final startTime = DateTime.now();
 
       // 1. Initialize Firebase
