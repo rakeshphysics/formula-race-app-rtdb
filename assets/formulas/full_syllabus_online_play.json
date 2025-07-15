@@ -726,6 +726,1464 @@
       "tip": ""
     },
 
+     {
+       "id": "work_power_energy_qn_001",
+       "question": "If a constant force <b>F</b> displaces a particle through displacement <b>r</b>, then work done by force is",
+       "options": [
+         "\\text{Zero}",
+         "\\vec{r} \\times \\vec{F}",
+         "\\vec{F} \\times \\vec{r}",
+         "\\vec{F} \\cdot \\vec{r}"
+       ],
+       "answer": "\\vec{F} \\cdot \\vec{r}",
+       "tags": {
+         "chapter": "Work_Power_Energy",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "work_power_energy_qn_002",
+       "question": "A particle moves in a circular path of radius <b>R</b> under action of a centripetal force <b>F</b>. Work done by the force when particle completes one rotation is",
+       "options": [
+         "0",
+         "F \\times \\pi R",
+         "F \\times 2\\pi R",
+         "F \\times R"
+       ],
+       "answer": "0",
+       "tags": {
+         "chapter": "Work_Power_Energy",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "work_power_energy_qn_003",
+       "question": "The net work done by all forces on a body equals change in its",
+       "options": [
+         "\\text{Kinetic Energy}",
+         "\\text{Potential Energy}",
+         "\\text{Velocity}",
+         "\\text{Speed}"
+       ],
+       "answer": "\\text{Kinetic Energy}",
+       "tags": {
+         "chapter": "Work_Power_Energy",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "work_power_energy_qn_004",
+       "question": "The elastic energy stored in a spring is (<i>K</i> = spring constant, <i>x</i> = compression)",
+       "options": [
+         "Kx",
+         "Kx^2",
+         "\\frac{1}{2}Kx^2",
+         "\\frac{1}{4}Kx^2"
+       ],
+       "answer": "\\frac{1}{2}Kx^2",
+       "tags": {
+         "chapter": "Work_Power_Energy",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "work_power_energy_qn_005",
+       "question": "If <i>U</i> is the potential energy field in a region, the conservative force associated with the field is given by",
+       "options": [
+         "-\\text{U}",
+         "\\text{U}",
+         "\\vec{\\nabla}\\, U",
+         "-\\vec{\\nabla}\\, U"
+       ],
+       "answer": "-\\vec{\\nabla}\\, U",
+       "tags": {
+         "chapter": "Work_Power_Energy",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+
+
+     {
+       "id": "work_power_energy_qn_006",
+       "question": "The formula for instantaneous power supplied by a force is (<i>v</i> = velocity of body)",
+       "options": [
+         "2 (\\vec{F} \\times \\vec{v})",
+         "\\vec{v} \\times \\vec{F}",
+         "\\vec{F} \\cdot \\vec{v}",
+         "\\vec{F} \\times \\vec{v}"
+       ],
+       "answer": "\\vec{F} \\cdot \\vec{v}",
+       "tags": {
+         "chapter": "Work_Power_Energy",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "work_power_energy_qn_007",
+       "question": "A particle on the x-axis is in stable equilibrium, if <i>U</i> is its potential energy then",
+       "options": [
+         "\\frac{dU}{dx} > 0, \\quad \\frac{d^2 U}{dx^2} = 0",
+         "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} = 0",
+         "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} > 0",
+         "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} < 0"
+       ],
+       "answer": "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} > 0",
+       "tags": {
+         "chapter": "Work_Power_Energy",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "work_power_energy_qn_008",
+       "question": "A particle on the x-axis is in unstable equilibrium, if <i>U</i> is its potential energy then",
+       "options": [
+         "\\frac{dU}{dx} > 0, \\quad \\frac{d^2 U}{dx^2} = 0",
+         "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} = 0",
+         "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} > 0",
+         "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} < 0"
+       ],
+       "answer": "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} < 0",
+       "tags": {
+         "chapter": "Work_Power_Energy",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "work_power_energy_qn_009",
+       "question": "A particle on the x-axis is in neutral equilibrium, if <i>U</i> is its potential energy then",
+       "options": [
+         "\\frac{dU}{dx} > 0, \\quad \\frac{d^2 U}{dx^2} = 0",
+         "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} = 0",
+         "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} > 0",
+         "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} < 0"
+       ],
+       "answer": "\\frac{dU}{dx} = 0, \\quad \\frac{d^2 U}{dx^2} = 0",
+       "tags": {
+         "chapter": "Work_Power_Energy",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "work_power_energy_qn_010",
+       "question": "If <b><i>F</i></b>⃗ is a conservative force, then which is necessarily true",
+       "options": [
+         "\\vec{\\nabla} \\cdot \\vec{F} = 0",
+         "\\vec{\\nabla} \\times \\vec{F} = 0",
+         "\\Delta \\vec{F} = 0",
+         "\\vec{\\nabla} \\cdot \\vec{F} > 0"
+       ],
+       "answer": "\\vec{\\nabla} \\times \\vec{F} = 0",
+       "tags": {
+         "chapter": "Work_Power_Energy",
+         "difficulty": "god",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+
+
+   {
+       "id": "center_of_mass_qn_001",
+       "question": "The center of mass of a semicircular ring of radius <i>R</i> from its base is",
+       "options": [
+         "\\frac{R}{\\pi}",
+         "\\frac{2R}{\\pi}",
+         "\\frac{R}{3}",
+         "\\frac{R}{2}"
+       ],
+       "answer": "\\frac{2R}{\\pi}",
+       "tags": {
+         "chapter": "Center_of_Mass",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/center_of_mass/center_of_mass_qn_001.png",
+       "tip": ""
+     },
+     {
+       "id": "center_of_mass_qn_002",
+       "question": "The center of mass of a semicircular disc of radius <i>R</i> from its base is",
+       "options": [
+         "\\frac{4R}{3\\pi}",
+         "\\frac{2R}{\\pi}",
+         "\\frac{R}{3}",
+         "\\frac{R}{2}"
+       ],
+       "answer": "\\frac{4R}{3\\pi}",
+       "tags": {
+         "chapter": "Center_of_Mass",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/center_of_mass/center_of_mass_qn_002.png",
+       "tip": ""
+     },
+     {
+       "id": "center_of_mass_qn_003",
+       "question": "The center of mass of a hollow hemisphere of radius <i>R</i> from its base is",
+       "options": [
+         "\\frac{4R}{3\\pi}",
+         "\\frac{2R}{\\pi}",
+         "\\frac{R}{3}",
+         "\\frac{R}{2}"
+       ],
+       "answer": "\\frac{R}{2}",
+       "tags": {
+         "chapter": "Center_of_Mass",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/center_of_mass/center_of_mass_qn_003.png",
+       "tip": ""
+     },
+     {
+       "id": "center_of_mass_qn_004",
+       "question": "The center of mass of a solid hemisphere of radius <i>R</i> from its base is",
+       "options": [
+         "\\frac{4R}{3\\pi}",
+         "\\frac{2R}{\\pi}",
+         "\\frac{3R}{8}",
+         "\\frac{R}{2}"
+       ],
+       "answer": "\\frac{3R}{8}",
+       "tags": {
+         "chapter": "Center_of_Mass",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/center_of_mass/center_of_mass_qn_004.png",
+       "tip": ""
+     },
+     {
+       "id": "center_of_mass_qn_005",
+       "question": "The center of mass of a hollow cone (birthday cap) of height <i>h</i> from its base is",
+       "options": [
+         "\\frac{h}{3}",
+         "\\frac{h}{2}",
+         "\\frac{h}{4}",
+         "\\frac{2h}{3}"
+       ],
+       "answer": "\\frac{h}{3}",
+       "tags": {
+         "chapter": "Center_of_Mass",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/center_of_mass/center_of_mass_qn_005.png",
+       "tip": ""
+     },
+     {
+       "id": "center_of_mass_qn_006",
+       "question": "The center of mass of a solid cone of height <i>h</i> from its base is",
+       "options": [
+         "\\frac{h}{3}",
+         "\\frac{h}{2}",
+         "\\frac{h}{4}",
+         "\\frac{2h}{3}"
+       ],
+       "answer": "\\frac{h}{4}",
+       "tags": {
+         "chapter": "Center_of_Mass",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/center_of_mass/center_of_mass_qn_006.png",
+       "tip": ""
+     },
+
+     {
+       "id": "center_of_mass_qn_007",
+       "question": "The value of <i>e</i> (coefficient of restitution) for a perfectly elastic collision is",
+       "options": [
+         "1",
+         "< 1",
+         "0",
+         "> 1"
+       ],
+       "answer": "1",
+       "tags": {
+         "chapter": "Center_of_Mass",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "center_of_mass_qn_008",
+       "question": "The value of <i>e</i> (coefficient of restitution) for a perfectly inelastic collision is",
+       "options": [
+         "1",
+         "< 1",
+         "0",
+         "> 1"
+       ],
+       "answer": "0",
+       "tags": {
+         "chapter": "Center_of_Mass",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "center_of_mass_qn_009",
+       "question": "In a perfectly elastic head on collision, the velocities of colliding bodies",
+       "options": [
+         "\\text{Are exchanged}",
+         "\\text{Become zero}",
+         "\\text{Become twice their initial value}",
+         "\\text{Become half their initial value}"
+       ],
+       "answer": "\\text{Are exchanged}",
+       "tags": {
+         "chapter": "Center_of_Mass",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "center_of_mass_qn_010",
+       "question": "In a perfectly inelastic head on collision, the loss of kinetic energy equals (<i>μ</i> = reduced mass)",
+       "options": [
+         "\\mu v_{rel}^2",
+         "\\frac{1}{2} \\mu v_{rel}^2",
+         "2 \\mu v_{rel}^2",
+         "0"
+       ],
+       "answer": "\\frac{1}{2} \\mu v_{rel}^2",
+       "tags": {
+         "chapter": "Center_of_Mass",
+         "difficulty": "god",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+
+     {
+       "id": "Rotational_Motion_qn_001",
+       "question": "The moment of inertia of a point mass <i>m</i> at distance <i>r</i> from the axis is",
+       "options": [
+         "m r^2",
+         "\\frac{m r^2}{2}",
+         "\\frac{m r^2}{3}",
+         "2 m r^2"
+       ],
+       "answer": "m r^2",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_001.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_002",
+       "question": "The moment of inertia of the rod of mass <i>m</i> length <i>l</i> about the axis shown is",
+       "options": [
+         "m l^2",
+         "\\frac{m l^2}{12}",
+         "\\frac{m l^2}{3}",
+         "2 m l^2"
+       ],
+       "answer": "\\frac{m l^2}{12}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_002.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_003",
+       "question": "The moment of inertia of the rod of mass <i>m</i> length <i>l</i> about the axis shown is",
+       "options": [
+         "m l^2",
+         "\\frac{m l^2}{12}",
+         "\\frac{m l^2}{3}",
+         "2 m l^2"
+       ],
+       "answer": "\\frac{m l^2}{3}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_003.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_004",
+       "question": "The moment of inertia of the rod of mass <i>m</i> length <i>l</i> about the axis which is at a distance <i>r</i> from it is",
+       "options": [
+         "m r^2",
+         "\\frac{m l^2}{4}",
+         "\\frac{m l^2}{3}",
+         "2 m r^2"
+       ],
+       "answer": "m r^2",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_004.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_005",
+       "question": "The moment of inertia of the rod of mass <i>m</i> length <i>l</i> about the axis shown is",
+       "options": [
+         "\\frac{m l^2}{12} \\sin^2 \\theta",
+         "\\frac{m l^2}{3} \\sin^2 \\theta",
+         "\\frac{m l^2}{12} \\cos^2 \\theta",
+         "\\frac{m l^2}{3} \\cos^2 \\theta"
+       ],
+       "answer": "\\frac{m l^2}{12} \\sin^2 \\theta",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_005.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_006",
+       "question": "The moment of inertia of the rod of mass <i>m</i> length <i>l</i> about the axis shown is",
+       "options": [
+         "\\frac{m l^2}{12} \\sin^2 \\theta",
+         "\\frac{m l^2}{3} \\sin^2 \\theta",
+         "\\frac{m l^2}{12} \\cos^2 \\theta",
+         "\\frac{m l^2}{3} \\cos^2 \\theta"
+       ],
+       "answer": "\\frac{m l^2}{3} \\sin^2 \\theta",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_006.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_007",
+       "question": "The moment of inertia of a ring about of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+       "options": [
+         "m R^2",
+         "2 m R^2",
+         "\\frac{m R^2}{2}",
+         "\\frac{m R^2}{4}"
+       ],
+       "answer": "m R^2",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_007.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_008",
+       "question": "The moment of inertia of a ring about of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+       "options": [
+         "\\frac{m R^2}{2} (1 + \\cos \\theta)",
+         "\\frac{m R^2}{2} (1 + \\cos^2 \\theta)",
+         "\\frac{m R^2}{2} (1 + \\sin^2 \\theta)",
+         "\\frac{m R^2}{2} (1 + \\sin \\theta)"
+       ],
+       "answer": "\\frac{m R^2}{2} (1 + \\sin^2 \\theta)",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "god",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_008.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_009",
+       "question": "The moment of inertia of a ring about of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+       "options": [
+         "m R^2",
+         "2 m R^2",
+         "\\frac{m R^2}{2}",
+         "\\frac{m R^2}{4}"
+       ],
+       "answer": "\\frac{m R^2}{2}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_009.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_010",
+       "question": "The moment of inertia of a ring about of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+       "options": [
+         "\\frac{3 m R^2}{2}",
+         "\\frac{m R^2}{2}",
+         "\\frac{4 m R^2}{3}",
+         "2 m R^2"
+       ],
+       "answer": "\\frac{3 m R^2}{2}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_010.png",
+       "tip": ""
+     },
+
+     {
+       "id": "Rotational_Motion_qn_011",
+       "question": "The moment of inertia of a ring of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+       "options": [
+         "2mR^2",
+         "mR^2",
+         "\\frac{mR^2}{4}",
+         "\\frac{mR^2}{2}"
+       ],
+       "answer": "2mR^2",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_011.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_012",
+       "question": "The moment of inertia of a disc of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+       "options": [
+         "2mR^2",
+         "mR^2",
+         "\\frac{mR^2}{4}",
+         "\\frac{mR^2}{2}"
+       ],
+       "answer": "\\frac{mR^2}{2}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_012.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_013",
+       "question": "The moment of inertia of a disc of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+       "options": [
+         "2mR^2",
+         "mR^2",
+         "\\frac{mR^2}{4}",
+         "\\frac{mR^2}{2}"
+       ],
+       "answer": "\\frac{mR^2}{4}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_013.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_014",
+       "question": "The moment of inertia of a disc of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+       "options": [
+         "2mR^2",
+         "mR^2",
+         "\\frac{mR^2}{4}",
+         "\\frac{3}{2} mR^2"
+       ],
+       "answer": "\\frac{3}{2} mR^2",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_014.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_015",
+       "question": "The moment of inertia of a disc of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+       "options": [
+         "2mR^2",
+         "mR^2",
+         "\\frac{5}{4} mR^2",
+         "\\frac{mR^2}{2}"
+       ],
+       "answer": "\\frac{5}{4} mR^2",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_015.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_016",
+       "question": "The moment of inertia of a hollow cylinder of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+       "options": [
+         "2mR^2",
+         "mR^2",
+         "\\frac{mR^2}{2}",
+         "\\frac{mR^2}{4}"
+       ],
+       "answer": "mR^2",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_016.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_017",
+       "question": "The moment of inertia of a solid cylinder of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+       "options": [
+         "2mR^2",
+         "mR^2",
+         "\\frac{mR^2}{2}",
+         "\\frac{mR^2}{4}"
+       ],
+       "answer": "\\frac{mR^2}{2}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_017.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_018",
+       "question": "The moment of inertia of a solid sphere of mass <i>m</i> and radius <i>R</i> about an axis passing through its centre is",
+       "options": [
+         "\\frac{2}{5} mR^2",
+         "mR^2",
+         "\\frac{3}{5} mR^2",
+         "\\frac{2}{3} mR^2"
+       ],
+       "answer": "\\frac{2}{5} mR^2",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_019",
+       "question": "The moment of inertia of a hollow sphere of mass <i>m</i> and radius <i>R</i> about an axis passing through its centre is",
+       "options": [
+         "2mR^2",
+         "mR^2",
+         "\\frac{3}{5} mR^2",
+         "\\frac{2}{3} mR^2"
+       ],
+       "answer": "\\frac{2}{3} mR^2",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_020",
+       "question": "The moment of inertia of a disc of mass <i>m</i> and radius <i>R</i> about the inclined axis shown is",
+       "options": [
+         "\\frac{1}{2} mR^2 (1 + \\cos^2 \\theta)",
+         "\\frac{1}{2} mR^2 (1 + \\sin^2 \\theta)",
+         "\\frac{1}{4} mR^2 (1 + \\cos^2 \\theta)",
+         "\\frac{1}{4} mR^2 (1 + \\sin^2 \\theta)"
+       ],
+       "answer": "\\frac{1}{4} mR^2 (1 + \\sin^2 \\theta)",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "god",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_020.png",
+       "tip": ""
+     },
+
+     {
+       "id": "Rotational_Motion_qn_021",
+       "question": "The moment of inertia of a rectangular plate of mass <i>m</i> about the axis shown is",
+       "options": [
+         "\\frac{ma^2}{12}",
+         "\\frac{mb^2}{12}",
+         "\\frac{ma^2}{3}",
+         "\\frac{mb^2}{3}"
+       ],
+       "answer": "\\frac{ma^2}{12}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_021.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_022",
+       "question": "The moment of inertia of a rectangular plate of mass <i>m</i> about the axis shown is",
+       "options": [
+         "\\frac{ma^2}{12}",
+         "\\frac{mb^2}{12}",
+         "\\frac{ma^2}{3}",
+         "\\frac{mb^2}{3}"
+       ],
+       "answer": "\\frac{mb^2}{12}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_022.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_023",
+       "question": "The moment of inertia of a rectangular plate of mass <i>m</i> about the axis shown is",
+       "options": [
+         "\\frac{ma^2}{12}",
+         "\\frac{mb^2}{12}",
+         "\\frac{ma^2}{3}",
+         "\\frac{mb^2}{3}"
+       ],
+       "answer": "\\frac{ma^2}{3}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_023.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_024",
+       "question": "The moment of inertia of a rectangular plate of mass <i>m</i> about the axis shown is",
+       "options": [
+         "\\frac{ma^2}{12}",
+         "\\frac{mb^2}{12}",
+         "\\frac{ma^2}{3}",
+         "\\frac{mb^2}{3}"
+       ],
+       "answer": "\\frac{mb^2}{3}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_024.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_025",
+       "question": "The moment of inertia of a hollow sphere of mass <i>m</i> and radius <i>R</i> about its tangent is",
+       "options": [
+         "\\frac{2mR^2}{5}",
+         "mR^2",
+         "\\frac{5mR^2}{3}",
+         "\\frac{mR^2}{2}"
+       ],
+       "answer": "\\frac{5mR^2}{3}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_026",
+       "question": "The moment of inertia of a solid sphere of mass <i>m</i> and radius <i>R</i> about its tangent is",
+       "options": [
+         "\\frac{7mR^2}{5}",
+         "mR^2",
+         "\\frac{2mR^2}{5}",
+         "\\frac{mR^2}{2}"
+       ],
+       "answer": "\\frac{7mR^2}{5}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_027",
+       "question": "The moment of inertia of a solid cylinder of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+       "options": [
+         "2mR^2",
+         "mR^2",
+         "\\frac{3mR^2}{2}",
+         "\\frac{mR^2}{2}"
+       ],
+       "answer": "\\frac{3mR^2}{2}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_027.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_028",
+       "question": "The moment of inertia of a hollow cylinder of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+       "options": [
+         "2mR^2",
+         "mR^2",
+         "\\frac{3mR^2}{2}",
+         "\\frac{mR^2}{2}"
+       ],
+       "answer": "2mR^2",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_028.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_029",
+       "question": "The moment of inertia of a rectangular plate about the axis shown is",
+       "options": [
+         "\\frac{m(a^2 + b^2)}{12}",
+         "\\frac{mb^2}{12}",
+         "\\frac{ma^2}{3}",
+         "\\frac{m(a^2 + b^2)}{3}"
+       ],
+       "answer": "\\frac{m(a^2 + b^2)}{12}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_029.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_030",
+       "question": "The moment of inertia of a rectangular plate about the axis shown is",
+       "options": [
+         "\\frac{m(a^2 + b^2)}{12}",
+         "\\frac{mb^2}{12}",
+         "\\frac{ma^2}{3}",
+         "\\frac{m(a^2 + b^2)}{3}"
+       ],
+       "answer": "\\frac{m(a^2 + b^2)}{3}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "god",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_030.png",
+       "tip": ""
+     },
+
+     {
+       "id": "Rotational_Motion_qn_031",
+       "question": "Torque vector is",
+       "options": [
+         "\\vec{r} \\times \\vec{F}",
+         "\\vec{F} \\times \\vec{r}",
+         "\\vec{r} \\cdot \\vec{F}",
+         "\\frac{\\vec{r}}{\\vec{F}}"
+       ],
+       "answer": "\\vec{r} \\times \\vec{F}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_032",
+       "question": "Torque magnitude is",
+       "options": [
+         "r F \\sin \\theta",
+         "r F \\cos \\theta",
+         "r F",
+         "r F \\tan \\theta"
+       ],
+       "answer": "r F \\sin \\theta",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_033",
+       "question": "Angular momentum vector of a particle is (<i>p</i> = linear momentum):",
+       "options": [
+         "\\vec{r} \\times \\vec{p}",
+         "\\vec{p} \\times \\vec{r}",
+         "\\vec{r} \\cdot \\vec{p}",
+         "\\frac{\\vec{r}}{\\vec{p}}"
+       ],
+       "answer": "\\vec{r} \\times \\vec{p}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_034",
+       "question": "Angular momentum magnitude of a particle is (<i>p</i> = linear momentum):",
+       "options": [
+         "r p \\sin \\theta",
+         "r p \\cos \\theta",
+         "r p",
+         "r p \\tan \\theta"
+       ],
+       "answer": "r p \\sin \\theta",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+
+     {
+       "id": "Rotational_Motion_qn_035",
+       "question": "The moment of inertia of a hollow cylinder of mass <i>m</i>, radius <i>R</i> and length <i>L</i> about the axis shown is",
+       "options": [
+         "\\frac{mR^2}{2} + \\frac{mL^2}{12}",
+         "\\frac{mR^2}{12} + \\frac{mL^2}{2}",
+         "\\frac{m(R^2 + L^2)}{12}",
+         "\\frac{m(R^2 + L^2)}{2}"
+       ],
+       "answer": "\\frac{mR^2}{2} + \\frac{mL^2}{12}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_035.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_036",
+       "question": "The moment of inertia of a hollow cylinder of mass <i>m</i>, radius <i>R</i> and length <i>L</i> about the axis shown is",
+       "options": [
+         "\\frac{mR^2}{3} + \\frac{mL^2}{2}",
+         "\\frac{mR^2}{2} + \\frac{mL^2}{3}",
+         "\\frac{m(R^2 + L^2)}{2}",
+         "\\frac{m(R^2 + L^2)}{3}"
+       ],
+       "answer": "\\frac{mR^2}{2} + \\frac{mL^2}{3}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_036.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_037",
+       "question": "The moment of inertia of a solid cylinder of mass <i>m</i>, radius <i>R</i> and length <i>L</i> about the axis shown is",
+       "options": [
+         "\\frac{mR^2}{4} + \\frac{mL^2}{12}",
+         "\\frac{mR^2}{12} + \\frac{mL^2}{4}",
+         "\\frac{m(R^2 + L^2)}{12}",
+         "\\frac{m(R^2 + L^2)}{4}"
+       ],
+       "answer": "\\frac{mR^2}{4} + \\frac{mL^2}{12}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_037.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_038",
+       "question": "The moment of inertia of a solid cylinder of mass <i>m</i>, radius <i>R</i> and length <i>L</i> about the axis shown is",
+       "options": [
+         "\\frac{mR^2}{3} + \\frac{mL^2}{4}",
+         "\\frac{mR^2}{4} + \\frac{mL^2}{3}",
+         "\\frac{m(R^2 + L^2)}{3}",
+         "\\frac{m(R^2 + L^2)}{4}"
+       ],
+       "answer": "\\frac{mR^2}{4} + \\frac{mL^2}{3}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_038.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_039",
+       "question": "The moment of inertia of a solid cube of mass <i>m</i>, side <i>a</i> about the axis shown is",
+       "options": [
+         "\\frac{ma^2}{3}",
+         "\\frac{ma^2}{8}",
+         "\\frac{ma^2}{4}",
+         "\\frac{ma^2}{6}"
+       ],
+       "answer": "\\frac{ma^2}{6}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_039.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_040",
+       "question": "The moment of inertia of a triangular lamina of mass <i>m</i> and height <i>h</i> about the axis shown is",
+       "options": [
+         "\\frac{mh^2}{3}",
+         "\\frac{mh^2}{8}",
+         "\\frac{mh^2}{4}",
+         "\\frac{mh^2}{6}"
+       ],
+       "answer": "\\frac{mh^2}{6}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "god",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_040.png",
+       "tip": ""
+     },
+
+     {
+       "id": "Rotational_Motion_qn_041",
+       "question": "Torque vector equals",
+       "options": [
+         "3 I \\vec{\\alpha}",
+         "2 I \\vec{\\alpha}",
+         "I \\vec{\\alpha}",
+         "\\frac{\\vec{\\alpha}}{I}"
+       ],
+       "answer": "I \\vec{\\alpha}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_042",
+       "question": "Angular impulse vector equals",
+       "options": [
+         "I \\vec{\\omega}_f",
+         "I ( \\vec{\\omega}_f - \\vec{\\omega}_i )",
+         "I \\vec{\\omega}_i",
+         "I \\vec{\\omega}_i \\vec{\\omega}_f"
+       ],
+       "answer": "I ( \\vec{\\omega}_f - \\vec{\\omega}_i )",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_043",
+       "question": "Conservation of angular momentum states",
+       "options": [
+         "I_1 \\vec{\\omega}_1 = I_2 \\vec{\\omega}_2",
+         "I_1 \\vec{\\omega}_1 \\ne I_2 \\vec{\\omega}_2",
+         "I_1 \\vec{\\omega}_1 > I_2 \\vec{\\omega}_2",
+         "I_1 \\vec{\\omega}_1 < I_2 \\vec{\\omega}_2"
+       ],
+       "answer": "I_1 \\vec{\\omega}_1 = I_2 \\vec{\\omega}_2",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_044",
+       "question": "Rotational kinetic energy is given by",
+       "options": [
+         "\\frac{1}{2} m v^2",
+         "\\frac{1}{2} I \\omega^2",
+         "I \\omega^2",
+         "2 I \\omega^2"
+       ],
+       "answer": "\\frac{1}{2} I \\omega^2",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+
+     {
+       "id": "Rotational_Motion_qn_045",
+       "question": "Work done by torque is given by",
+       "options": [
+         "\\tau \\theta",
+         "\\tau \\theta^2",
+         "\\tau^2 \\theta^2",
+         "\\tau^2 \\theta"
+       ],
+       "answer": "\\tau \\theta",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_046",
+       "question": "Instantaneous Power supplied by torque is",
+       "options": [
+         "\\tau \\omega",
+         "\\tau \\omega^2",
+         "\\tau^2 \\omega^2",
+         "\\tau^2 \\omega"
+       ],
+       "answer": "\\tau \\omega",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_047",
+       "question": "Work done by torque equals",
+       "options": [
+         "I \\omega_f^2",
+         "I \\omega_f^2 - I \\omega_i^2",
+         "\\frac{1}{2} I \\omega_f^2 - \\frac{1}{2} I \\omega_i^2",
+         "I \\omega_i^2"
+       ],
+       "answer": "\\frac{1}{2} I \\omega_f^2 - \\frac{1}{2} I \\omega_i^2",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_048",
+       "question": "The total kinetic energy of a round body in pure rolling is (<i>K</i> = radius of gyration, <i>R</i> = radius of body)",
+       "options": [
+         "\\frac{1}{2} m v_c^2 \\left(1 + \\frac{K^2}{R^2}\\right)",
+         "\\frac{1}{2} m v_c^2 \\left(\\frac{R^2}{K^2}\\right)",
+         "\\frac{1}{2} m v_c^2 \\left( \\frac{K^2}{R^2} \\right)",
+         "\\frac{1}{2} m v_c^2 K^2"
+       ],
+       "answer": "\\frac{1}{2} m v_c^2 \\left(1 + \\frac{K^2}{R^2}\\right)",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_049",
+       "question": "The total angular momentum of a round body in pure rolling is",
+       "options": [
+         "I_c \\vec{\\omega}",
+         "m ( \\vec{r} \\times \\vec{v}_c )",
+         "I_c \\vec{\\omega} + m ( \\vec{r} \\times \\vec{v}_c )",
+         "m ( \\vec{v}_c \\times \\vec{r} )"
+       ],
+       "answer": "I_c \\vec{\\omega} + m ( \\vec{r} \\times \\vec{v}_c )",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_050",
+       "question": "The acceleration of COM of a body pure rolling down an incline plane is",
+       "options": [
+         "\\left( \\frac{K^2}{R^2} \\right) g \\sin \\theta",
+         "\\frac{g \\sin \\theta}{1 + \\frac{K^2}{R^2}}",
+         "\\left( \\frac{R^2}{K^2} \\right) g \\sin \\theta",
+         "\\frac{g \\sin \\theta}{1 + \\frac{R^2}{K^2}}"
+       ],
+       "answer": "\\frac{g \\sin \\theta}{1 + \\frac{K^2}{R^2}}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "god",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_050.png",
+       "tip": ""
+     },
+
+     {
+       "id": "Rotational_Motion_qn_051",
+       "question": "The moment of inertia of a hollow cone (ice cream cone) of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+       "options": [
+         "2 m R^2",
+         "m R^2",
+         "\\frac{5 m R^2}{4}",
+         "\\frac{m R^2}{2}"
+       ],
+       "answer": "\\frac{m R^2}{2}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_051.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_052",
+       "question": "The condition for equilibrium is",
+       "options": [
+         "\\vec{F}_{net} = 0",
+         "\\vec{F}_{net} = 0, \\vec{\\tau}_{net} = 0",
+         "\\vec{\\tau}_{net} = 0",
+         "\\vec{F}_{net} = 0, \\vec{\\tau}_{net} \\ne 0"
+       ],
+       "answer": "\\vec{F}_{net} = 0, \\vec{\\tau}_{net} = 0",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_053",
+       "question": "Parallel axis theorem states that <i>I</i> =",
+       "options": [
+         "2 m d^2",
+         "m d^2",
+         "I_{COM}",
+         "I_{COM} + m d^2"
+       ],
+       "answer": "I_{COM} + m d^2",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_053.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_054",
+       "question": "Perpendicular axis theorem states that <i>I<sub>z</sub></i> =",
+       "options": [
+         "I_x \\times I_y",
+         "I_x + I_y",
+         "2 ( I_x + I_y )",
+         "I_x - I_y"
+       ],
+       "answer": "I_x + I_y",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_055",
+       "question": "The moment of inertia of a solid cone of mass <i>m</i> and radius <i>R</i> about the axis shown is",
+       "options": [
+         "2 m R^2",
+         "m R^2",
+         "\\frac{3 m R^2}{10}",
+         "\\frac{m R^2}{2}"
+       ],
+       "answer": "\\frac{3 m R^2}{10}",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_055.png",
+       "tip": ""
+     },
+
+     {
+       "id": "Rotational_Motion_qn_056",
+       "question": "Radius of gyration <i>K</i> is given by",
+       "options": [
+         "\\frac{I}{m}",
+         "\\sqrt{\\frac{m}{I}}",
+         "\\sqrt{m} ",
+         "\\sqrt{ \\frac{I}{m} }"
+       ],
+       "answer": "\\sqrt{ \\frac{I}{m} }",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_057",
+       "question": "The velocity of COM at the bottom of incline is (Object starts from rest and pure rolls down the incline)",
+       "options": [
+         "\\sqrt{ \\frac{2gh}{1 + \\frac{R^2}{K^2}} }",
+         "\\sqrt{ \\frac{2gh}{1 + \\frac{K^2}{R^2}} }",
+         "\\sqrt{ \\frac{2gh \\sin \\theta}{1 + \\frac{R^2}{K^2}} }",
+         "\\sqrt{ \\frac{2gh \\sin \\theta}{1 + \\frac{K^2}{R^2}} }"
+       ],
+       "answer": "\\sqrt{ \\frac{2gh}{1 + \\frac{K^2}{R^2}} }",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_057.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_058",
+       "question": "The minimum value of friction coefficient so that object pure rolls down the incline is",
+       "options": [
+         "\\mu_{min} = \\tan \\theta \\left( 1 + \\frac{R^2}{K^2} \\right)",
+         "\\mu_{min} = \\tan \\theta \\left( 1 + \\frac{K^2}{R^2} \\right)",
+         "\\mu_{min}",
+         "\\mu_{min}"
+       ],
+       "answer": "\\mu_{min} = \\tan \\theta \\left( 1 + \\frac{R^2}{K^2} \\right)",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_058.png",
+       "tip": ""
+     },
+     {
+       "id": "Rotational_Motion_qn_059",
+       "question": "The time taken by the body to reach lowest point on incline is (Assume pure rolling)",
+       "options": [
+         "\\frac{1}{\\sin \\theta} \\sqrt{ \\frac{2h}{g} \\left( 1 + \\frac{R^2}{K^2} \\right) }",
+         "\\frac{1}{\\sin \\theta} \\sqrt{ \\frac{2h}{g} \\left( 1 + \\frac{K^2}{R^2} \\right) }",
+         "\\sqrt{ \\frac{2h}{g} \\left( 1 + \\frac{R^2}{K^2} \\right) }",
+         "\\sqrt{ \\frac{2h}{g} \\left( 1 + \\frac{K^2}{R^2} \\right) }"
+       ],
+       "answer": "\\frac{1}{\\sin \\theta} \\sqrt{ \\frac{2h}{g} \\left( 1 + \\frac{K^2}{R^2} \\right) }",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_059.png",
+       "tip": ""
+     },
+
+     {
+       "id": "Rotational_Motion_qn_060",
+       "question": "The moment of inertia of an annular disc (Disc with cavity of inner radius <i>R<sub>1</sub></i> and outer radius <i>R<sub>2</sub></i>) of mass <i>m</i> about an axis passing through its center and perpendicular to it is",
+       "options": [
+         "\\frac{m}{2} ( R_1^2 - R_2^2 )",
+         "\\frac{m}{4} ( R_1^2 - R_2^2 )",
+         "\\frac{m}{4} ( R_1^2 + R_2^2 )",
+         "\\frac{m}{2} ( R_1^2 + R_2^2 )"
+       ],
+       "answer": "\\frac{m}{2} ( R_1^2 + R_2^2 )",
+       "tags": {
+         "chapter": "Rotational_Motion",
+         "difficulty": "god",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+
+
+
   {
   "id": "fluids_qn_001",
   "question": "The pressure difference between points <i>a</i> and <i>b</i> is (ρ = density of liquid)",
@@ -908,6 +2366,1099 @@
   },
 
      {
+       "id": "mechanical_properties_of_solids_qn_001",
+       "question": "(Tensile stress/Tensile strain) is called",
+       "options": [
+         "\\text{Bulk Modulus}",
+         "\\text{Youngs Modulus}",
+         "\\text{Shear Modulus}",
+         "\\text{Modulus of rigidity}"
+       ],
+       "answer": "\\text{Youngs Modulus}",
+       "tags": {
+         "chapter": "mechanical_properties_of_solids",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "mechanical_properties_of_solids_qn_002",
+       "question": "(Volume stress/Volume strain) is called",
+       "options": [
+         "\\text{Bulk Modulus}",
+         "\\text{Youngs Modulus}",
+         "\\text{Shear Modulus}",
+         "\\text{Modulus of rigidity}"
+       ],
+       "answer": "\\text{Bulk Modulus}",
+       "tags": {
+         "chapter": "mechanical_properties_of_solids",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "mechanical_properties_of_solids_qn_003",
+       "question": "(Shear stress/Shear strain) is called",
+       "options": [
+         "\\text{Bulk Modulus}",
+         "\\text{Youngs Modulus}",
+         "\\text{None of these}",
+         "\\text{Modulus of rigidity}"
+       ],
+       "answer": "\\text{Modulus of rigidity}",
+       "tags": {
+         "chapter": "mechanical_properties_of_solids",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "mechanical_properties_of_solids_qn_004",
+       "question": "Compressibility (K) is defined as (B = bulk modulus, Y = Young's Modulus)",
+       "options": [
+         "\\frac{1}{B}",
+         "\\frac{1}{Y}",
+         "Y",
+         "B"
+       ],
+       "answer": "\\frac{1}{B}",
+       "tags": {
+         "chapter": "mechanical_properties_of_solids",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "mechanical_properties_of_solids_qn_005",
+       "question": "For an ideal gas undergoing isothermal process, PV = const, its bulk modulus is",
+       "options": [
+         "\\frac{P}{2}",
+         "2P",
+         "P",
+         "\\gamma P"
+       ],
+       "answer": "P",
+       "tags": {
+         "chapter": "mechanical_properties_of_solids",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "mechanical_properties_of_solids_qn_006",
+       "question": "For an ideal gas undergoing Adiabatic process, its bulk modulus is (P = pressure of gas, γ = adiabatic constant)",
+       "options": [
+         "\\frac{P}{2}",
+         "2P",
+         "P",
+         "\\gamma P"
+       ],
+       "answer": "\\gamma P",
+       "tags": {
+         "chapter": "mechanical_properties_of_solids",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     }
+   ,
+     {
+       "id": "mechanical_properties_of_solids_qn_007",
+       "question":"For an ideal gas undergoing polytropic process PV<sup>n</sup> = const, its bulk modulus is",
+       "options": [
+         "\\frac{P}{2}",
+         "2P",
+         "nP",
+         "\\gamma P"
+       ],
+       "answer": "nP",
+       "tags": {
+         "chapter": "mechanical_properties_of_solids",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     }
+   ,
+     {
+       "id": "mechanical_properties_of_solids_qn_008",
+       "question": "Poisson ratio (σ) is defined as",
+       "options": [
+         "\\frac{\\text{Lateral Strain}}{\\text{Longitudinal Strain}}",
+         "\\frac{\\text{Lateral Stress}}{\\text{Longitudinal Strain}}",
+         "\\frac{\\text{Lateral Stress}}{\\text{Longitudinal stress}}",
+         "\\frac{\\text{Longitudinal Strain}}{\\text{Lateral Strain}}"
+       ],
+       "answer": "\\frac{\\text{Lateral Strain}}{\\text{Longitudinal Strain}}",
+       "tags": {
+         "chapter": "mechanical_properties_of_solids",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "mechanical_properties_of_solids_qn_009",
+       "question": "The elastic potential energy density stored in a wire is",
+       "options": [
+         "\\frac{(\\text{stress})^2}{4Y}",
+         "\\frac{\\text{stress} \\times \\text{strain}}{2}",
+         "\\frac{Y (\\text{strain})^2}{4}",
+         "\\frac{(\\text{strain})^2}{2Y}"
+       ],
+       "answer": "\\frac{\\text{stress} \\times \\text{strain}}{2}",
+       "tags": {
+         "chapter": "mechanical_properties_of_solids",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "mechanical_properties_of_solids_qn_010",
+       "question": "A rod is rigidly fixed between two walls. The thermal tension in the rod if temperature is decreased by θ is (Y = Young's modulus, α = thermal expansion coefficient, A = cross section area)",
+       "options": [
+         "\\alpha \\theta",
+         "Y \\alpha \\theta",
+         "Y A \\alpha \\theta",
+         "\\frac{Y A \\theta}{\\alpha}"
+       ],
+       "answer": "Y A \\alpha \\theta",
+       "tags": {
+         "chapter": "mechanical_properties_of_solids",
+         "difficulty": "god",
+         "class": "11"
+       },
+       "image": "assets/images/11th/mechanical_properties_of_solids/mechanical_properties_of_solids_qn_010.png",
+       "tip": ""
+     },
+
+     {
+       "id": "gravitation_qn_001",
+       "question": "The gravitational force of attraction between two point masses <i>m<sub>1</sub></i> and <i>m<sub>2</sub></i> placed at a distance <i>r</i> from each other is",
+       "options": [
+         "\\frac{G m_1 m_2}{r^2}",
+         "\\frac{G m_1 m_2}{r}",
+         "\\frac{m_1 m_2}{G r}",
+         "\\frac{m_1 m_2}{G r^2}"
+       ],
+       "answer": "\\frac{G m_1 m_2}{r^2}",
+       "tags": {
+         "chapter": "Gravitation",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "gravitation_qn_002",
+       "question": "The gravitational field due to a spherical shell of mass <i>M</i>, radius <i>R</i> inside it at <i>r</i> from centre is",
+       "options": [
+         "0",
+         "\\frac{G M}{r^2}",
+         "\\frac{G M}{r}",
+         "\\frac{G M^2}{r^2}"
+       ],
+       "answer": "0",
+       "tags": {
+         "chapter": "Gravitation",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/gravitation/gravitation_qn_002.png",
+       "tip": ""
+     },
+     {
+       "id": "gravitation_qn_003",
+       "question": "The gravitational field due to a spherical shell of mass <i>M</i>, radius <i>R</i> outside it at <i>r</i> from centre is",
+       "options": [
+         "0",
+         "\\frac{G M}{r^2}",
+         "\\frac{G M}{r}",
+         "\\frac{G M^2}{r^2}"
+       ],
+       "answer": "\\frac{G M}{r^2}",
+       "tags": {
+         "chapter": "Gravitation",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/gravitation/gravitation_qn_003.png",
+       "tip": ""
+     },
+     {
+       "id": "gravitation_qn_004",
+       "question": "The gravitational field due to a solid sphere of mass <i>M</i>, radius <i>R</i> inside it at <i>r</i> from centre is",
+       "options": [
+         "\\frac{G M}{r^2}",
+         "\\frac{G M r}{R^3}",
+         "\\frac{G M}{r}",
+         "\\frac{G M^2}{r^2}"
+       ],
+       "answer": "\\frac{G M r}{R^3}",
+       "tags": {
+         "chapter": "Gravitation",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/gravitation/gravitation_qn_004.png",
+       "tip": ""
+     },
+     {
+       "id": "gravitation_qn_005",
+       "question": "The gravitational field due to a solid sphere of mass <i>M</i>, radius <i>R</i> outside it at <i>r</i> from centre is",
+       "options": [
+         "\\frac{G M}{r^2}",
+         "\\frac{G M r}{R^3}",
+         "\\frac{G M}{r}",
+         "\\frac{G M^2}{r^2}"
+       ],
+       "answer": "\\frac{G M}{r^2}",
+       "tags": {
+         "chapter": "Gravitation",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/gravitation/gravitation_qn_005.png",
+       "tip": ""
+     },
+
+     {
+       "id": "gravitation_qn_006",
+       "question": "The acceleration due to gravity on earth's surface is (<i>M</i> = mass of earth, <i>R</i> = radius of earth)",
+       "options": [
+         "\\frac{G M}{R}",
+         "\\frac{G M}{R^2}",
+         "\\frac{G M^2}{R}",
+         "\\frac{G M^2}{R^2}"
+       ],
+       "answer": "\\frac{G M}{R^2}",
+       "tags": {
+         "chapter": "Gravitation",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "gravitation_qn_007",
+       "question": "The acceleration due to gravity at a height <i>h</i> from surface of earth is (<i>g</i> = acceleration due to gravity on earth's surface, <i>R</i> = radius of earth)",
+       "options": [
+         "g \\left( 1 + \\left( \\frac{h}{R} \\right)^2 \\right)",
+         "\\frac{g}{1 + \\left( \\frac{h}{R} \\right)^3}",
+         "\\frac{g}{\\left( 1 + \\left( \\frac{h}{R} \\right)^2 \\right)}",
+         "g \\left( 1 + \\left( \\frac{h}{R} \\right)^3 \\right)"
+       ],
+       "answer": "\\frac{g}{\\left( 1 + \\left( \\frac{h}{R} \\right)^2 \\right)}",
+       "tags": {
+         "chapter": "Gravitation",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/gravitation/gravitation_qn_007.png",
+       "tip": ""
+     },
+     {
+       "id": "gravitation_qn_008",
+       "question": "The acceleration due to gravity at a depth <i>d</i> from surface of earth is (<i>g</i> = acceleration due to gravity on earth’s surface, <i>R</i> = radius of earth)",
+       "options": [
+         "g \\left( 1 - \\frac{d}{R} \\right)",
+         "g \\left( 1 + \\frac{d}{R} \\right)",
+         "\\frac{g}{1 - \\frac{d}{R}}",
+         "\\frac{g}{1 + \\frac{d}{R}}"
+       ],
+       "answer": "g \\left( 1 - \\frac{d}{R} \\right)",
+       "tags": {
+         "chapter": "Gravitation",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/gravitation/gravitation_qn_008.png",
+       "tip": ""
+     },
+     {
+       "id": "gravitation_qn_009",
+       "question": "The acceleration due to gravity on surface of earth at latitude <i>θ</i> is (<i>g</i> = acceleration due to gravity on earth’s surface, <i>R</i> = radius of earth, <i>ω</i> = Angular speed of earth rotation)",
+       "options": [
+         "g",
+         "g - R \\omega^2 \\cos \\theta",
+         "g - R \\omega^2",
+         "g - R \\omega^2 \\cos^2 \\theta"
+       ],
+       "answer": "g - R \\omega^2 \\cos^2 \\theta",
+       "tags": {
+         "chapter": "Gravitation",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/gravitation/gravitation_qn_009.png",
+       "tip": ""
+     },
+     {
+       "id": "gravitation_qn_010",
+       "question": "The gravitational potential due to a solid sphere inside it, at a distance <i>r</i> from its center (<i>M</i> = mass of sphere, <i>R</i> = radius of sphere)",
+       "options": [
+         "-\\frac{G M}{r}",
+         "-\\frac{G M}{2 R^3} \\left(3 R^2 - r^2\\right)",
+         "\\frac{G M}{r}",
+         "\\frac{G M}{2 R^3} \\left(3 R^2 - r^2\\right)"
+       ],
+       "answer": "-\\frac{G M}{2 R^3} \\left(3 R^2 - r^2\\right)",
+       "tags": {
+         "chapter": "Gravitation",
+         "difficulty": "god",
+         "class": "11"
+       },
+       "image": "assets/images/11th/gravitation/gravitation_qn_010.png",
+       "tip": ""
+     },
+
+     {
+       "id": "kinetic_theory_qn_001",
+       "question": "Boyle's law states that (<i>P, V, T</i> are Pressure volume and temperature of gas)",
+       "options": [
+         "P \\propto \\frac{1}{V}",
+         "P \\propto V",
+         "P \\propto T",
+         "V \\propto T"
+       ],
+       "answer": "P \\propto \\frac{1}{V}",
+       "tags": {
+         "chapter": "kinetic_theory",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "kinetic_theory_qn_002",
+       "question": "Charles' law states that (<i>P, V, T</i> are Pressure volume and temperature of gas)",
+       "options": [
+         "P \\propto \\frac{1}{V}",
+         "P \\propto V",
+         "P \\propto T",
+         "V \\propto T"
+       ],
+       "answer": "V \\propto T",
+       "tags": {
+         "chapter": "kinetic_theory",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "kinetic_theory_qn_003",
+       "question": "Gay Lussac's law states that (<i>P, V, T</i> are Pressure volume and temperature of gas)",
+       "options": [
+         "P \\propto \\frac{1}{V}",
+         "P \\propto V",
+         "P \\propto T",
+         "V \\propto T"
+       ],
+       "answer": "P \\propto T",
+       "tags": {
+         "chapter": "kinetic_theory",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "kinetic_theory_qn_004",
+       "question": "The molar form of ideal gas equation is (Symbols have usual meanings)",
+       "options": [
+         "PV = nRT",
+         "PV = mRT",
+         "PV = kRT",
+         "PV = MRT"
+       ],
+       "answer": "PV = nRT",
+       "tags": {
+         "chapter": "kinetic_theory",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "kinetic_theory_qn_005",
+       "question": "The correct relation between <i>R</i> = universal gas const, <i>N<sub>A</sub></i> = Avogadro number, <i>k</i> = Boltzmann const",
+       "options": [
+         "R = \\frac{N_A}{k}",
+         "R = N_A k",
+         "R = \\frac{k}{N_A}",
+         "R = \\frac{1}{N_A k}"
+       ],
+       "answer": "R = N_A k",
+       "tags": {
+         "chapter": "kinetic_theory",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "kinetic_theory_qn_006",
+       "question": "The RMS speed of ideal gas molecules is",
+       "options": [
+         "\\sqrt{\\frac{3RT}{M}}",
+         "\\sqrt{\\frac{2RT}{M}}",
+         "\\sqrt{\\frac{8RT}{\\pi M}}",
+         "\\sqrt{\\frac{8RT}{M}}"
+       ],
+       "answer": "\\sqrt{\\frac{3RT}{M}}",
+       "tags": {
+         "chapter": "kinetic_theory",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "kinetic_theory_qn_007",
+       "question": "The average speed of ideal gas molecules is",
+       "options": [
+         "\\sqrt{\\frac{3RT}{M}}",
+         "\\sqrt{\\frac{2RT}{M}}",
+         "\\sqrt{\\frac{8RT}{\\pi M}}",
+         "\\sqrt{\\frac{8RT}{M}}"
+       ],
+       "answer": "\\sqrt{\\frac{8RT}{\\pi M}}",
+       "tags": {
+         "chapter": "kinetic_theory",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "kinetic_theory_qn_008",
+       "question": "The most probable speed of ideal gas molecules is",
+       "options": [
+         "\\sqrt{\\frac{3RT}{M}}",
+         "\\sqrt{\\frac{2RT}{M}}",
+         "\\sqrt{\\frac{8RT}{\\pi M}}",
+         "\\sqrt{\\frac{8RT}{M}}"
+       ],
+       "answer": "\\sqrt{\\frac{2RT}{M}}",
+       "tags": {
+         "chapter": "kinetic_theory",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "kinetic_theory_qn_009",
+       "question": "Equipartition of energy states that the kinetic energy associated with each degree of freedom for a gas molecule is",
+       "options": [
+         "\\sqrt{\\frac{kT}{2}}",
+         "\\sqrt{kT}",
+         "kT",
+         "\\frac{1}{2}kT"
+       ],
+       "answer": "\\frac{1}{2}kT",
+       "tags": {
+         "chapter": "kinetic_theory",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "kinetic_theory_qn_010",
+       "question": "The average velocity of ideal gas molecules is",
+       "options": [
+         "\\sqrt{\\frac{3RT}{M}}",
+         "\\sqrt{\\frac{2RT}{M}}",
+         "\\sqrt{\\frac{8RT}{\\pi M}}",
+         "0"
+       ],
+       "answer": "0",
+       "tags": {
+         "chapter": "kinetic_theory",
+         "difficulty": "god",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+
+     {
+       "id": "shm_qn_001",
+       "question": "For the spring block system, its natural frequency ω is",
+       "options": [
+         "\\sqrt{\\frac{m}{k}}",
+         "\\sqrt{\\frac{k}{m}}",
+         "\\sqrt{k m}",
+         "\\sqrt{\\frac{1}{k m}}"
+       ],
+       "answer": "\\sqrt{\\frac{k}{m}}",
+       "tags": {
+         "chapter": "shm",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/shm/shm_qn_001.png",
+       "tip": ""
+     },
+     {
+       "id": "shm_qn_002",
+       "question": "For the torsional pendulum shown, its angular frequency ω is (C = torsional constant, I = moment of inertia)",
+       "options": [
+         "\\sqrt{C I}",
+         "\\sqrt{\\frac{I}{C}}",
+         "\\sqrt{\\frac{C}{I}}",
+         "\\sqrt{\\frac{1}{C I}}"
+       ],
+       "answer": "\\sqrt{\\frac{C}{I}}",
+       "tags": {
+         "chapter": "shm",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/shm/shm_qn_002.png",
+       "tip": ""
+     },
+     {
+       "id": "shm_qn_003",
+       "question": "The total energy of the spring block shown in figure is (ω = Angular frequency)",
+       "options": [
+         "\\frac{1}{2} K x^2",
+         "\\frac{1}{2} K A^2",
+         "\\frac{1}{2} m \\omega^2 x^2",
+         "\\frac{1}{2} m \\omega^2 x"
+       ],
+       "answer": "\\frac{1}{2} K A^2",
+       "tags": {
+         "chapter": "shm",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/shm/shm_qn_003.png",
+       "tip": ""
+     },
+     {
+       "id": "shm_qn_004",
+       "question": "The potential energy of the spring block system shown in figure is (ω = Angular frequency, spring has zero natural length)",
+       "options": [
+         "\\frac{1}{2} K x^2",
+         "\\frac{1}{2} K A^2",
+         "\\frac{1}{2} m \\omega^2 x^2",
+         "\\frac{1}{2} m \\omega^2 x"
+       ],
+       "answer": "\\frac{1}{2} K x^2",
+       "tags": {
+         "chapter": "shm",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/shm/shm_qn_004.png",
+       "tip": ""
+     },
+     {
+       "id": "shm_qn_005",
+       "question": "The kinetic energy of the spring block system shown in figure is (ω = Angular frequency)",
+       "options": [
+         "\\frac{1}{2} K x^2",
+         "\\frac{1}{2} K A^2",
+         "\\frac{1}{2} m \\omega^2 x^2",
+         "\\frac{1}{2} m \\omega^2 (A^2 - x^2)"
+       ],
+       "answer": "\\frac{1}{2} m \\omega^2 (A^2 - x^2)",
+       "tags": {
+         "chapter": "shm",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/shm/shm_qn_005.png",
+       "tip": ""
+     },
+     {
+       "id": "shm_qn_006",
+       "question": "The magnitude of acceleration of block at the instant shown is (ω = Angular frequency)",
+       "options": [
+         "\\omega^2 x",
+         "\\omega \\sqrt{A^2 - x^2}",
+         "\\omega^2 A",
+         "\\omega x^2"
+       ],
+       "answer": "\\omega^2 x",
+       "tags": {
+         "chapter": "shm",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/shm/shm_qn_006.png",
+       "tip": ""
+     },
+     {
+       "id": "shm_qn_007",
+       "question": "The speed of block at the instant shown is (ω = Angular frequency)",
+       "options": [
+         "\\omega^2 x",
+         "\\omega \\sqrt{A^2 - x^2}",
+         "\\omega A",
+         "\\omega x"
+       ],
+       "answer": "\\omega \\sqrt{A^2 - x^2}",
+       "tags": {
+         "chapter": "shm",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/shm/shm_qn_007.png",
+       "tip": ""
+     },
+     {
+       "id": "shm_qn_008",
+       "question": "The time average of potential energy over one cycle of SHM is",
+       "options": [
+         "\\frac{1}{8} K A^2",
+         "\\frac{1}{6} K A^2",
+         "\\frac{1}{2} K A^2",
+         "\\frac{1}{4} K A^2"
+       ],
+       "answer": "\\frac{1}{4} K A^2",
+       "tags": {
+         "chapter": "shm",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "shm_qn_009",
+       "question": "The time average of kinetic energy over one cycle of SHM is",
+       "options": [
+         "\\frac{1}{8} K A^2",
+         "\\frac{1}{6} K A^2",
+         "\\frac{1}{2} K A^2",
+         "\\frac{1}{4} K A^2"
+       ],
+       "answer": "\\frac{1}{4} K A^2",
+       "tags": {
+         "chapter": "shm",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "shm_qn_010",
+       "question": "The space average of potential energy over one cycle of SHM is",
+       "options": [
+         "\\frac{1}{8} K A^2",
+         "\\frac{1}{6} K A^2",
+         "\\frac{1}{2} K A^2",
+         "\\frac{1}{4} K A^2"
+       ],
+       "answer": "\\frac{1}{6} K A^2",
+       "tags": {
+         "chapter": "shm",
+         "difficulty": "god",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+
+     {
+       "id": "thermodynamics_qn_001",
+       "question": "The correct formula for converting temperature in Celsius <i>C</i> to Kelvin <i>K</i> scale is",
+       "options": [
+         "K = C + 273",
+         "K = C - 273",
+         "K = C \\times 273",
+         "C = K \\times 273"
+       ],
+       "answer": "K = C + 273",
+       "tags": {
+         "chapter": "thermodynamics",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "thermodynamics_qn_002",
+       "question": "The correct formula for converting temperature in Celsius <i>C</i> to Fahrenheit <i>F</i> scale is",
+       "options": [
+         "F = \\frac{5C}{9} - 32",
+         "F = \\frac{5C}{9} + 32",
+         "F = \\frac{9C}{5} - 32",
+         "F = \\frac{9C}{5} + 32"
+       ],
+       "answer": "F = \\frac{9C}{5} + 32",
+       "tags": {
+         "chapter": "thermodynamics",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "thermodynamics_qn_003",
+       "question": "The new length of the rod when its temperature is increased by ΔT (α = linear expansion coefficient)",
+       "options": [
+         "l_0\\,(1 - \\alpha\\,\\Delta T)",
+         "l_0\\,(1 + \\alpha\\,\\Delta T)",
+         "\\frac{l_0\\,\\alpha\\,\\Delta T}{2}",
+         "l_0\\,\\alpha\\,\\Delta T"
+       ],
+       "answer": "l_0\\,(1 + \\alpha\\,\\Delta T)",
+
+       "tags": {
+         "chapter": "thermodynamics",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/thermodynamics/thermodynamics_qn_003.png",
+       "tip": ""
+     },
+     {
+       "id": "thermodynamics_qn_004",
+       "question": "The new area of the plate when its temperature is increased by ΔT (β = areal expansion coefficient, A<sub>0</sub> = initial area of the plate)",
+       "options": [
+         "A_0\\,(1 - \\beta\\,\\Delta T)",
+         "A_0\\,(1 + \\beta\\,\\Delta T)",
+         "\\frac{A_0\\,\\beta\\,\\Delta T}{2}",
+         "A_0\\,\\beta\\,\\Delta T"
+       ],
+       "answer": "A_0\\,(1 + \\beta\\,\\Delta T)",
+
+       "tags": {
+         "chapter": "thermodynamics",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/thermodynamics/thermodynamics_qn_004.png",
+       "tip": ""
+     },
+     {
+       "id": "thermodynamics_qn_005",
+       "question": "The new volume of the body when its temperature is increased by ΔT (γ = volume expansion coefficient, V<sub>0</sub> = initial volume of the body)",
+       "options": [
+         "V_0\\,(1 - \\gamma\\,\\Delta T)",
+         "V_0\\,(1 + \\gamma\\,\\Delta T)",
+         "\\frac{V_0\\,\\gamma\\,\\Delta T}{2}",
+         "V_0\\,\\gamma\\,\\Delta T"
+       ],
+       "answer": "V_0\\,(1 + \\gamma\\,\\Delta T)",
+
+       "tags": {
+         "chapter": "thermodynamics",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/thermodynamics/thermodynamics_qn_005.png",
+       "tip": ""
+     },
+     {
+       "id": "thermodynamics_qn_006",
+       "question": "For isotropic solids, the ratio α : β : γ equals (α = linear expansion coefficient, β = areal expansion coefficient, γ = volume expansion coefficient)",
+       "options": [
+         "1 : 1 : 1",
+         "1 : 3 : 2",
+         "1 : 2 : 3",
+         "3 : 2 : 1"
+       ],
+       "answer": "1 : 2 : 3",
+       "tags": {
+         "chapter": "thermodynamics",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "thermodynamics_qn_007",
+       "question": "The loss or gain of time per second for a simple pendulum, if the temperature changes by ΔT is",
+       "options": [
+         "2\\,\\alpha\\,\\Delta T",
+         "\\frac{1}{4}\\,\\alpha\\,\\Delta T",
+         "\\frac{1}{2}\\,\\alpha\\,\\Delta T",
+         "\\alpha\\,\\Delta T"
+       ],
+       "answer": "\\frac{1}{2}\\,\\alpha\\,\\Delta T",
+       "tags": {
+         "chapter": "thermodynamics",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "thermodynamics_qn_008",
+       "question": "The loss or gain of time per minute for a simple pendulum, if the temperature changes by ΔT is",
+       "options": [
+         "\\frac{1}{2}\\,\\alpha\\,\\Delta T",
+         "10\\,\\alpha\\,\\Delta T",
+         "30\\,\\alpha\\,\\Delta T",
+         "20\\,\\alpha\\,\\Delta T"
+       ],
+       "answer": "30\\,\\alpha\\,\\Delta T",
+       "tags": {
+         "chapter": "thermodynamics",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "thermodynamics_qn_009",
+       "question": "The relation between γ<sub>r</sub> = real expansion coefficient of a liquid, γ<sub>app</sub> = apparent expansion coefficient of liquid, γ<sub>vessel</sub> = volume expansion coefficient of vessel is",
+       "options": [
+         "\\gamma_r = \\frac{\\gamma_{app}}{\\gamma_{vessel}}",
+         "\\gamma_r = \\frac{\\gamma_{vessel}}{\\gamma_{app}}",
+         "\\gamma_r = \\gamma_{app} - \\gamma_{vessel}",
+         "\\gamma_r = \\gamma_{app} + \\gamma_{vessel}"
+       ],
+       "answer": "\\gamma_r = \\gamma_{app} + \\gamma_{vessel}",
+       "tags": {
+         "chapter": "thermodynamics",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "thermodynamics_qn_010",
+       "question": "A glass bulb of volume <i>V<sub>0</sub></i> is filled with a liquid. The value of <i>h</i> when temperature increases by ΔT (<i>A<sub>0</sub></i> = initial area of tube, γ<sub>app</sub> = apparent expansion coefficient of liquid, β = areal expansion coefficient of glass)",
+       "options": [
+         "\\frac{V_0\\,\\gamma_{app}\\,\\Delta T}{A_0\\,(1 + \\beta\\,\\Delta T)}",
+         "\\frac{V_0\\,\\gamma_{app}\\,\\Delta T}{A_0\\,(1 - \\beta\\,\\Delta T)}",
+         "\\frac{V_0\\,\\gamma_{app}\\,\\Delta T}{A_0\\,\\beta\\,\\Delta T}",
+         "\\frac{V_0\\,\\gamma_{real}\\,\\Delta T}{A_0\\,\\beta\\,\\Delta T}"
+       ],
+       "answer": "\\frac{V_0\\,\\gamma_{app}\\,\\Delta T}{A_0\\,(1 + \\beta\\,\\Delta T)}",
+       "tags": {
+         "chapter": "thermodynamics",
+         "difficulty": "god",
+         "class": "11"
+       },
+       "image": "assets/images/11th/thermodynamics/thermodynamics_qn_010.png",
+       "tip": ""
+     },
+
+     {
+       "id": "waves_qn_001",
+       "question": "The relation between frequency <i>f</i> and time period <i>T</i> is",
+       "options": [
+         "f = \\frac{1}{T}",
+         "f = \\frac{2\\pi}{T}",
+         "f = \\frac{T}{2\\pi}",
+         "f = 2\\pi T"
+       ],
+       "answer": "f = \\frac{1}{T}",
+       "tags": {
+         "chapter": "waves",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "waves_qn_002",
+       "question": "The relation between wave speed <i>v</i>, frequency <i>f</i>, wavelength <i>&lambda;</i> of a travelling wave is",
+       "options": [
+         "v f = \\frac{1}{\\lambda}",
+         "v = \\frac{f}{\\lambda}",
+         "v = \\frac{\\lambda}{f}",
+         "v = f \\lambda"
+       ],
+       "answer": "v = f \\lambda",
+       "tags": {
+         "chapter": "waves",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "waves_qn_003",
+       "question": "The relation between wave speed <i>v</i>, angular frequency <i>&omega;</i>, angular wavenumber <i>k</i> of a travelling wave is",
+       "options": [
+         "v \\omega = \\frac{1}{k}",
+         "v = \\frac{k}{\\omega}",
+         "v = \\frac{\\omega}{k}",
+         "v = \\omega k"
+       ],
+       "answer": "v = \\frac{\\omega}{k}",
+       "tags": {
+         "chapter": "waves",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "waves_qn_004",
+       "question": "Wavenumber equals",
+       "options": [
+         "\\text{Number of waves in 1 meter}",
+         "\\text{Number of waves in 2 meter}",
+         "\\text{Number of waves in 3 meter}",
+         "\\text{Number of waves in 1 cm}"
+       ],
+       "answer": "\\text{Number of waves in 1 meter}",
+       "tags": {
+         "chapter": "waves",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "waves_qn_005",
+       "question": "The relation between particle velocity <i>v<sub>p</sub></i>, wave speed <i>v<sub>w</sub></i>, and slope of wave is",
+       "options": [
+         "v_p = v_w \\times (\\text{slope})",
+         "v_p = -v_w \\times (\\text{slope})",
+         "v_w = v_p \\times (\\text{slope})",
+         "v_w = -v_p \\times (\\text{slope})"
+       ],
+       "answer": "v_p = -v_w \\times (\\text{slope})",
+       "tags": {
+         "chapter": "waves",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "waves_qn_006",
+       "question": "A transverse wave travels towards right as shown. The directions of acceleration and velocity of particle <i>P</i> is",
+       "options": [
+         "\\text{v}_p \\uparrow \\text{ and a}_p \\uparrow",
+         "\\text{v}_p \\uparrow \\text{ and a}_p \\downarrow",
+         "\\text{v}_p \\rightarrow \\text{ and a}_p \\downarrow",
+         "\\text{v}_p \\rightarrow \\text{ and a}_p \\uparrow"
+       ],
+       "answer": "\\text{v}_p \\uparrow \\text{ and a}_p \\downarrow",
+       "tags": {
+         "chapter": "waves",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/waves/waves_qn_006.png",
+       "tip": ""
+     },
+     {
+       "id": "waves_qn_007",
+       "question": "A transverse wave travels towards right as shown. The directions of acceleration and velocity of particle <i>P</i> is",
+       "options": [
+         "\\text{v}_p \\uparrow \\text{ and a}_p \\uparrow",
+         "\\text{v}_p \\uparrow \\text{ and a}_p \\downarrow",
+         "\\text{v}_p \\rightarrow \\text{ and a}_p \\downarrow",
+         "\\text{v}_p \\rightarrow \\text{ and a}_p \\uparrow"
+       ],
+       "answer": "\\text{v}_p \\uparrow \\text{ and a}_p \\downarrow",
+       "tags": {
+         "chapter": "waves",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/waves/waves_qn_007.png",
+       "tip": ""
+     },
+     {
+       "id": "waves_qn_008",
+       "question": "A transverse wave travels towards right as shown. The directions of acceleration and velocity of particle <i>P</i> is",
+       "options": [
+         "\\text{v}_p \\uparrow \\text{ and a}_p \\uparrow",
+         "\\text{v}_p \\uparrow \\text{ and a}_p \\downarrow",
+         "\\text{v}_p \\rightarrow \\text{ and a}_p \\downarrow",
+         "\\text{v}_p \\rightarrow \\text{ and a}_p \\uparrow"
+       ],
+       "answer": "\\text{v}_p \\uparrow \\text{ and a}_p \\downarrow",
+       "tags": {
+         "chapter": "waves",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/waves/waves_qn_008.png",
+       "tip": ""
+     },
+     {
+       "id": "waves_qn_009",
+       "question": "A transverse wave travels towards right as shown. The directions of acceleration and velocity of particle <i>P</i> is",
+       "options": [
+         "\\text{v}_p \\downarrow \\text{ and a}_p \\uparrow",
+         "\\text{v}_p \\downarrow \\text{ and a}_p \\downarrow",
+         "\\text{v}_p \\rightarrow \\text{ and a}_p \\downarrow",
+         "\\text{v}_p \\rightarrow \\text{ and a}_p \\uparrow"
+       ],
+       "answer": "\\text{v}_p \\downarrow \\text{ and a}_p \\uparrow",
+       "tags": {
+         "chapter": "waves",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/waves/waves_qn_009.png",
+       "tip": ""
+     },
+     {
+       "id": "waves_qn_010",
+       "question": "The speed of wave pulse on the uniform rope equals (μ = mass per unit length of rope)",
+       "options": [
+         "\\sqrt{\\mu g}",
+         "\\sqrt{\\mu g x}",
+         "\\sqrt{g x}",
+         "\\sqrt{\\mu x}"
+       ],
+       "answer": "\\sqrt{g x}",
+       "tags": {
+         "chapter": "waves",
+         "difficulty": "god",
+         "class": "11"
+       },
+       "image": "assets/images/11th/waves/waves_qn_010.png",
+       "tip": ""
+     },
+
+
+   {
        "id": "Electrostatics_qn_001",
        "question": "The electrostatic force between two point charges <i>q<sub>1</sub></i> and <i>q<sub>2</sub></i> separated by distance <i>r</i> is",
        "options": [
@@ -1812,7 +4363,919 @@
        },
        "image": "",
        "tip": ""
+     },
+
+
+     {
+       "id": "em_waves_qn_001",
+       "question": "Displacement current equals (<i>&phi;<sub>E</sub></i> = electric flux)",
+       "options": [
+         "\\frac{d\\phi_E}{dt}",
+         "\\varepsilon_o \\phi_E",
+         "\\varepsilon_o \\frac{d\\phi_E}{dt}",
+         "\\frac{\\phi_E}{\\varepsilon_o}"
+       ],
+       "answer": "\\varepsilon_o \\frac{d\\phi_E}{dt}",
+       "tags": {
+         "chapter": "em_waves",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "em_waves_qn_002",
+       "question": "The speed of light in a medium in terms of its electric and magnetic properties is",
+       "options": [
+         "\\frac{1}{\\mu_o \\varepsilon_o}",
+         "\\mu_o \\varepsilon_o",
+         "\\sqrt{\\mu_o \\varepsilon_o}",
+         "\\frac{1}{\\sqrt{\\mu_o \\varepsilon_o}}"
+       ],
+       "answer": "\\frac{1}{\\sqrt{\\mu_o \\varepsilon_o}}",
+       "tags": {
+         "chapter": "em_waves",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "em_waves_qn_003",
+       "question": "The relation between Electric field amplitude <i>E<sub>o</sub></i>, magnetic field amplitude <i>B<sub>o</sub></i>, and speed of light <i>c</i> is",
+       "options": [
+         "E_o = B_o c",
+         "E_o = \\frac{B_o}{c}",
+         "E_o = \\frac{1}{B_o c}",
+         "E_o = \\frac{1}{\\sqrt{B_o c}}"
+       ],
+       "answer": "E_o = B_o c",
+       "tags": {
+         "chapter": "em_waves",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "em_waves_qn_004",
+       "question": "Which Electromagnetic waves are emitted during radioactive decay of nucleus",
+       "options": [
+         "\\text{Radio}",
+         "\\text{UV}",
+         "\\text{X-rays}",
+         "\\text{Gamma Rays}"
+       ],
+       "answer": "\\text{Gamma Rays}",
+       "tags": {
+         "chapter": "em_waves",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": ""
+     },
+
+
+     {
+       "id": "em_waves_qn_005",
+       "question": "The intensity of electromagnetic wave is given by (Electric field amplitude <i>E<sub>0</sub></i>, speed of light <i>c</i>)",
+       "options": [
+         "\\frac{1}{4}\\, \\varepsilon_0^2\\, E_0^2",
+         "\\frac{1}{4}\\, \\varepsilon_0\\, E_0^2\\, c",
+         "\\frac{1}{2}\\, \\varepsilon_0^2\\, E_0^2\\, c",
+         "\\frac{1}{2}\\, \\varepsilon_0\\, E_0^2\\, c"
+       ],
+       "answer": "\\frac{1}{2}\\, \\varepsilon_0\\, E_0^2\\, c",
+
+       "tags": {
+         "chapter": "em_waves",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": ""
      }
+   ,
+     {
+       "id": "em_waves_qn_006",
+       "question": "The propagation direction of an electromagnetic wave is along",
+       "options": [
+         "\\vec{B} \\times \\vec{E}",
+         "\\vec{E} \\times \\vec{B}",
+         "(\\vec{E} \\times \\vec{B}) \\times \\vec{B}",
+         "(\\vec{E} \\times \\vec{B}) \\times \\vec{E}"
+       ],
+       "answer": "\\vec{E} \\times \\vec{B}",
+       "tags": {
+         "chapter": "em_waves",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": ""
+     },
+     {
+       "id": "em_waves_qn_007",
+       "question": "The energy density due to magnetic field in an electromagnetic wave is (<i>B<sub>0</sub></i> = Magnetic field amplitude, <i>B<sub>rms</sub></i> = RMS value of magnetic field)",
+       "options": [
+         "\\frac{B^2_{rms}}{2\\, \\mu_0}",
+         "\\frac{B^2_0}{2\\, \\mu_0}",
+         "\\frac{B^2_{rms}}{4\\, \\mu_0}",
+         "\\frac{B^2_0}{8\\, \\mu_0}"
+       ],
+       "answer": "\\frac{B^2_{rms}}{2\\, \\mu_0}",
+
+       "tags": {
+         "chapter": "em_waves",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": ""
+     },
+     {
+       "id": "em_waves_qn_008",
+       "question": "The refractive index of a medium in terms of its electrical and magnetic properties is (<i>&mu;<sub>r</sub></i> = relative permeability, <i>&epsilon;<sub>r</sub></i> = relative permittivity)",
+       "options": [
+         "\\sqrt{\\mu_r \\varepsilon_r}",
+         "\\frac{1}{\\sqrt{\\mu_r \\varepsilon_r}}",
+         "\\mu_r \\varepsilon_r",
+         "\\frac{1}{\\mu_r \\varepsilon_r}"
+       ],
+       "answer": "\\sqrt{\\mu_r \\varepsilon_r}",
+       "tags": {
+         "chapter": "em_waves",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": ""
+     },
+     {
+       "id": "em_waves_qn_009",
+       "question": "The intensity of electromagnetic wave is given by (Magnetic field amplitude <i>B<sub>0</sub></i>, speed of light <i>c</i>)",
+       "options": [
+         "\\frac{1}{2} \\mu_0^2\\, B_0^2\\, c",
+         "\\frac{B_0^2\\, c}{4\\, \\mu_0}",
+         "\\frac{B_0^2\\, c}{2\\, \\mu_0}",
+         "\\frac{1}{2}\\, \\mu_0\\, B_0^2\\, c"
+       ],
+       "answer": "\\frac{B_0^2\\, c}{2\\, \\mu_0}",
+
+       "tags": {
+         "chapter": "em_waves",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": ""
+     },
+     {
+       "id": "em_waves_qn_010",
+       "question": "Which Electromagnetic waves are detected by point contact diodes",
+       "options": [
+         "\\text{Radio}",
+         "\\text{Microwaves}",
+         "\\text{Infrared}",
+         "\\text{X-rays}"
+       ],
+       "answer": "\\text{Microwaves}",
+       "tags": {
+         "chapter": "em_waves",
+         "difficulty": "god",
+         "class": "12"
+       },
+       "image": ""
+     },
+
+     {
+       "id": "modern_physics_qn_001",
+       "question": "The energy of a photon having wavelength <i>&lambda;</i> is",
+       "options": [
+         "h c \\lambda",
+         "\\frac{c}{h \\lambda}",
+         "\\frac{h c}{\\lambda}",
+         "\\frac{h}{c \\lambda}"
+       ],
+       "answer": "\\frac{h c}{\\lambda}",
+       "tags": {
+         "chapter": "modern_physics",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "modern_physics_qn_002",
+       "question": "The energy of a photon in eV, if its wavelength is <i>&lambda;</i> (in nm) is",
+       "options": [
+         "\\frac{12400}{\\lambda}",
+         "\\frac{1240}{\\lambda}",
+         "\\frac{124}{\\lambda}",
+         "\\frac{12.4}{\\lambda}"
+       ],
+       "answer": "\\frac{1240}{\\lambda}",
+       "tags": {
+         "chapter": "modern_physics",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "modern_physics_qn_003",
+       "question": "The momentum of a photon whose energy is <i>E</i> is (<i>c</i> = speed of light)",
+       "options": [
+         "\\frac{1}{E c}",
+         "\\frac{c}{E}",
+         "E c",
+         "\\frac{E}{c}"
+       ],
+       "answer": "\\frac{E}{c}",
+       "tags": {
+         "chapter": "modern_physics",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "modern_physics_qn_004",
+       "question": "The momentum of a photon whose frequency is <i>&nu;</i> is (<i>c</i> = speed of light)",
+       "options": [
+         "\\frac{h}{\\nu c}",
+         "\\frac{h c}{\\nu}",
+         "\\frac{h \\nu}{c}",
+         "h \\nu"
+       ],
+       "answer": "\\frac{h \\nu}{c}",
+       "tags": {
+         "chapter": "modern_physics",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "modern_physics_qn_005",
+       "question": "The momentum of a photon whose wavelength is <i>&lambda;</i> is (<i>c</i> = speed of light)",
+       "options": [
+         "\\frac{h}{\\lambda}",
+         "\\frac{h c}{\\lambda}",
+         "h c \\lambda",
+         "\\frac{c}{h \\lambda}"
+       ],
+       "answer": "\\frac{h}{\\lambda}",
+       "tags": {
+         "chapter": "modern_physics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "modern_physics_qn_006",
+       "question": "The force exerted by light on the mirror is (<i>c</i> = speed of light, <i>P</i> = power of light)",
+       "options": [
+         "\\frac{P}{c}",
+         "\\frac{2P}{c}",
+         "P c",
+         "2 P c"
+       ],
+       "answer": "\\frac{2P}{c}",
+       "tags": {
+         "chapter": "modern_physics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/modern_physics/modern_physics_qn_006.png",
+       "tip": ""
+     },
+     {
+       "id": "modern_physics_qn_007",
+       "question": "The force exerted by light on nonreflecting surface is (<i>c</i> = speed of light, <i>P</i> = power of light)",
+       "options": [
+         "\\frac{P}{c}",
+         "\\frac{2P}{c}",
+         "P c",
+         "2 P c"
+       ],
+       "answer": "\\frac{P}{c}",
+       "tags": {
+         "chapter": "modern_physics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/modern_physics/modern_physics_qn_007.png",
+       "tip": ""
+     },
+     {
+       "id": "modern_physics_qn_008",
+       "question": "The pressure exerted by light on the mirror is (<i>c</i> = speed of light, <i>I</i> = intensity of light)",
+       "options": [
+         "\\frac{I}{c}",
+         "\\frac{2I}{c}",
+         "I c",
+         "2 I c"
+       ],
+       "answer": "\\frac{2I}{c}",
+       "tags": {
+         "chapter": "modern_physics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/modern_physics/modern_physics_qn_008.png",
+       "tip": ""
+     },
+     {
+       "id": "modern_physics_qn_009",
+       "question": "The pressure exerted by light on the nonreflecting surface is (<i>c</i> = speed of light, <i>I</i> = intensity of light)",
+       "options": [
+         "\\frac{I}{c}",
+         "\\frac{2I}{c}",
+         "I c",
+         "2 I c"
+       ],
+       "answer": "\\frac{I}{c}",
+       "tags": {
+         "chapter": "modern_physics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/modern_physics/modern_physics_qn_009.png",
+       "tip": ""
+     },
+     {
+       "id": "modern_physics_qn_010",
+       "question": "The force exerted by light on the mirror is (<i>c</i> = speed of light, <i>I</i> = intensity of light, <i>A</i> = crossection area of beam)",
+       "options": [
+         "\\frac{I A \\cos \\theta}{c}",
+         "\\frac{2 I A \\cos \\theta}{c}",
+         "\\frac{2 I A \\cos^2 \\theta}{c}",
+         "\\frac{2 I A \\sin^2 \\theta}{c}"
+       ],
+       "answer": "\\frac{2 I A \\cos^2 \\theta}{c}",
+       "tags": {
+         "chapter": "modern_physics",
+         "difficulty": "god",
+         "class": "12"
+       },
+       "image": "assets/images/12th/modern_physics/modern_physics_qn_010.png",
+       "tip": ""
+     },
+
+     {
+       "id": "ray_optics_qn_001",
+       "question": "The total number of images of the object in the mirrors is",
+       "options": [
+         "5",
+         "6",
+         "3",
+         "4"
+       ],
+       "answer": "5",
+       "tags": {
+         "chapter": "ray_optics",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "assets/images/12th/ray_optics/ray_optics_qn_001.png",
+       "tip": ""
+     },
+     {
+       "id": "ray_optics_qn_002",
+       "question": "The total number of images of the object in the mirrors is",
+       "options": [
+         "5",
+         "6",
+         "3",
+         "2"
+       ],
+       "answer": "2",
+       "tags": {
+         "chapter": "ray_optics",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "assets/images/12th/ray_optics/ray_optics_qn_002.png",
+       "tip": ""
+     },
+     {
+       "id": "ray_optics_qn_003",
+       "question": "The total number of images of the object in the mirrors is",
+       "options": [
+         "5",
+         "6",
+         "3",
+         "2"
+       ],
+       "answer": "3",
+       "tags": {
+         "chapter": "ray_optics",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "assets/images/12th/ray_optics/ray_optics_qn_003.png",
+       "tip": ""
+     },
+     {
+       "id": "ray_optics_qn_004",
+       "question": "The mirror formula is (<i>v</i> = image distance, <i>u</i> = object distance, <i>f</i> = focal length)",
+       "options": [
+         "\\frac{1}{v} - \\frac{1}{u} = \\frac{1}{f}",
+         "\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f}",
+         "v + u = f",
+         "v - u = f"
+       ],
+       "answer": "\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f}",
+       "tags": {
+         "chapter": "ray_optics",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "ray_optics_qn_005",
+       "question": "The lateral magnification in mirror is (<i>v</i> = image distance, <i>u</i> = object distance)",
+       "options": [
+         "\\frac{v}{u}",
+         "-\\frac{v}{u}",
+         "vu",
+         "\\frac{1}{uv}"
+       ],
+       "answer": "-\\frac{v}{u}",
+       "tags": {
+         "chapter": "ray_optics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "ray_optics_qn_006",
+       "question": "The lateral magnification in mirror is (<i>f</i> = focal length, <i>u</i> = object distance)",
+       "options": [
+         "\\frac{u}{f - u}",
+         "\\frac{f}{f + u}",
+         "\\frac{f}{f - u}",
+         "\\frac{u}{f + u}"
+       ],
+       "answer": "\\frac{f}{f - u}",
+       "tags": {
+         "chapter": "ray_optics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "ray_optics_qn_007",
+       "question": "The longitudinal magnification of a small object of size <i>du</i> in mirror is (<i>m<sub>L</sub></i> = lateral magnification, object is placed along axis)",
+       "options": [
+         "-m_L",
+         "m_L",
+         "m_L^2",
+         "-m_L^2"
+       ],
+       "answer": "-m_L^2",
+       "tags": {
+         "chapter": "ray_optics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "ray_optics_qn_008",
+       "question": "An object moves along the axis of a mirror with velocity <i>v<sub>o</sub></i>, the velocity of image in the mirror is (<i>m<sub>L</sub></i> = lateral magnification)",
+       "options": [
+         "-m_L v_o",
+         "m_L v_o",
+         "-m_L^2 (v_o)",
+         "m_L^2 (v_o)"
+       ],
+       "answer": "-m_L^2 (v_o)",
+       "tags": {
+         "chapter": "ray_optics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "assets/images/12th/ray_optics/ray_optics_qn_008.png",
+       "tip": ""
+     },
+     {
+       "id": "ray_optics_qn_009",
+       "question": "The optical power of a mirror is (<i>f</i> = focal length)",
+       "options": [
+         "-f",
+         "-\\frac{1}{f}",
+         "\\frac{1}{f}",
+         "f"
+       ],
+       "answer": "-\\frac{1}{f}",
+       "tags": {
+         "chapter": "ray_optics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "ray_optics_qn_010",
+       "question": "If <b><i>i</i></b> is the unit vector along incident ray, <b><i>n</i></b> = unit vector along normal, then <b><i>r</i></b> unit vector along reflected ray equals",
+       "options": [
+         "\\hat{i} - 2(\\hat{i} \\cdot \\hat{n})\\hat{n}",
+         "\\hat{i} + 2(\\hat{i} \\cdot \\hat{n})\\hat{n}",
+         "\\hat{i} - (\\hat{i} \\cdot \\hat{n})\\hat{n}",
+         "\\hat{i} + (\\hat{i} \\cdot \\hat{n})\\hat{n}"
+       ],
+       "answer": "\\hat{i} - 2(\\hat{i} \\cdot \\hat{n})\\hat{n}",
+       "tags": {
+         "chapter": "ray_optics",
+         "difficulty": "god",
+         "class": "12"
+       },
+       "image": "assets/images/12th/ray_optics/ray_optics_qn_010.png",
+       "tip": ""
+     },
+
+     {
+       "id": "semiconductors_qn_001",
+       "question": "The energy band gap (<i>E<sub>g</sub></i>) in conductors is",
+       "options": [
+         "\\text{> 3 }eV",
+         "\\text{< 3 }eV",
+         "\\sim 0\\,eV",
+         "\\text{> 5 }eV"
+       ],
+       "answer": "\\sim 0\\,eV",
+       "tags": {
+         "chapter": "semiconductors",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "semiconductors_qn_002",
+       "question": "The energy band gap (<i>E<sub>g</sub></i>) in insulators is",
+       "options": [
+         "\\text{> 3 }eV",
+         "\\text{< 3 }eV",
+         "\\sim 0\\,eV",
+         "\\text{< 5 }eV"
+       ],
+       "answer": "\\text{> 3 }eV",
+       "tags": {
+         "chapter": "semiconductors",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "semiconductors_qn_003",
+       "question": "The energy band gap (<i>E<sub>g</sub></i>) in semiconductors is",
+       "options": [
+         "\\text{> 3 }eV",
+         "\\text{< 3 }eV",
+         "\\sim 0\\,eV",
+         "\\text{> 5 }eV"
+       ],
+       "answer": "\\text{< 3 }eV",
+       "tags": {
+         "chapter": "semiconductors",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "semiconductors_qn_004",
+       "question": "The pentavalent dopant used for doping semiconductor is",
+       "options": [
+         "\\text{Indium}",
+         "\\text{Boron}",
+         "\\text{Aluminum}",
+         "\\text{Phosphorous}"
+       ],
+       "answer": "\\text{Phosphorous}",
+       "tags": {
+         "chapter": "semiconductors",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "semiconductors_qn_005",
+       "question": "The trivalent dopant used for doping semiconductor is",
+       "options": [
+         "\\text{Boron}",
+         "\\text{Arsenic}",
+         "\\text{Antimony}",
+         "\\text{Phosphorous}"
+       ],
+       "answer": "\\text{Boron}",
+       "tags": {
+         "chapter": "semiconductors",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "semiconductors_qn_006",
+       "question": "The correct relation between <i>n<sub>i</sub></i> = intrinsic carrier concentration, <i>n<sub>e</sub></i> = electron concentration, <i>n<sub>h</sub></i> = holes concentration, in a semiconductor is",
+       "options": [
+         "n_i = n_e n_h",
+         "n_e^2 = n_i n_h",
+         "n_i^2 = n_e n_h",
+         "n_h^2 = n_i n_e"
+       ],
+       "answer": "n_i^2 = n_e n_h",
+       "tags": {
+         "chapter": "semiconductors",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "semiconductors_qn_007",
+       "question": "The thickness of depletion region in p-n junction is of the order of",
+       "options": [
+         "10^{-5} m",
+         "10^{-3} m",
+         "10^{-2} m",
+         "10^{-7} m"
+       ],
+       "answer": "10^{-7} m",
+       "tags": {
+         "chapter": "semiconductors",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "semiconductors_qn_008",
+       "question": "The threshold or cut in voltage of a silicon diode is (voltage at which forward current increases significantly)",
+       "options": [
+         "0.2\\,V",
+         "0.7\\,V",
+         "0.07\\,V",
+         "0.02\\,V"
+       ],
+       "answer": "0.7\\,V",
+       "tags": {
+         "chapter": "semiconductors",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "semiconductors_qn_009",
+       "question": "The threshold or cut in voltage of a silicon diode is (voltage at which forward current increases significantly)",
+       "options": [
+         "0.2\\,V",
+         "0.7\\,V",
+         "0.07\\,V",
+         "0.02\\,V"
+       ],
+       "answer": "0.2\\,V",
+       "tags": {
+         "chapter": "semiconductors",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "semiconductors_qn_010",
+       "question": "For an XNOR logic gate with inputs <i>A</i>, <i>B</i> and output <i>C</i>. If <i>A</i> = 1 and <i>B</i> = 0 then <i>C</i> equals",
+       "options": [
+         "1",
+         "0",
+         "1 \\text{ or } 0",
+         "\\text{None of these}"
+       ],
+       "answer": "0",
+       "tags": {
+         "chapter": "semiconductors",
+         "difficulty": "god",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+
+     {
+       "id": "wave_optics_qn_001",
+       "question": "Two coherent waves of intensity <i>I<sub>1</sub></i> and <i>I<sub>2</sub></i> interfere at P. If their phase difference at P is <b>&#966;</b>, the resultant intensity at P is",
+       "options": [
+         "\\left| I_1 - I_2 \\right|",
+         "I_1 + I_2",
+         "I_1 + I_2 + 2\\sqrt{I_1 I_2} \\cos \\phi",
+         "I_1 + I_2 - 2\\sqrt{I_1 I_2} \\cos \\phi"
+       ],
+       "answer": "I_1 + I_2 + 2\\sqrt{I_1 I_2} \\cos \\phi",
+       "tags": {
+         "chapter": "wave_optics",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "wave_optics_qn_002",
+       "question": "Two coherent waves of amplitudes <i>A<sub>1</sub></i> and <i>A<sub>2</sub></i> interfere at P. If their phase difference at P is <b>&#966;</b>, the resultant amplitude at P is",
+       "options": [
+         "\\sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \\cos \\phi}",
+         "\\sqrt{A_1^2 + A_2^2}",
+         "\\sqrt{A_1^2 - A_2^2}",
+         "\\sqrt{A_1^2 + A_2^2 - 2A_1 A_2 \\cos \\phi}"
+       ],
+       "answer": "\\sqrt{A_1^2 + A_2^2 + 2A_1 A_2 \\cos \\phi}",
+       "tags": {
+         "chapter": "wave_optics",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "wave_optics_qn_003",
+       "question": "Two incoherent waves of intensity <i>I<sub>1</sub></i> and <i>I<sub>2</sub></i> interfere at P. The resultant intensity at P is",
+       "options": [
+         "\\left| I_1 - I_2 \\right|",
+         "I_1 + I_2 - 2\\sqrt{I_1 I_2} \\cos \\phi",
+         "I_1 + I_2",
+         "I_1 + I_2 + 2\\sqrt{I_1 I_2} \\cos \\phi"
+       ],
+       "answer": "I_1 + I_2",
+       "tags": {
+         "chapter": "wave_optics",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "wave_optics_qn_004",
+       "question": "Two coherent waves of intensity <i>I<sub>1</sub></i> and <i>I<sub>2</sub></i> interfere at P. The ratio of maximum to the minimum intensity at P is",
+       "options": [
+         "\\frac{I_1 - I_2}{I_1 + I_2}",
+         "\\frac{I_1 + I_2}{I_1 - I_2}",
+         "\\left(\\frac{\\sqrt{I_1} - \\sqrt{I_2}}{\\sqrt{I_1} + \\sqrt{I_2}}\\right)^2",
+         "\\left(\\frac{\\sqrt{I_1} + \\sqrt{I_2}}{\\sqrt{I_1} - \\sqrt{I_2}}\\right)^2"
+       ],
+       "answer": "\\left(\\frac{\\sqrt{I_1} + \\sqrt{I_2}}{\\sqrt{I_1} - \\sqrt{I_2}}\\right)^2",
+       "tags": {
+         "chapter": "wave_optics",
+         "difficulty": "easy",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "wave_optics_qn_005",
+       "question": "Two coherent waves of amplitude <i>A<sub>1</sub></i> and <i>A<sub>2</sub></i> interfere at P. The ratio of maximum to the minimum amplitude at P is",
+       "options": [
+         "\\frac{A_1 + A_2}{A_1 - A_2}",
+         "\\frac{A_1 - A_2}{A_1 + A_2}",
+         "\\left(\\frac{A_1 - A_2}{A_1 + A_2}\\right)^2",
+         "\\left(\\frac{A_1 + A_2}{A_1 - A_2}\\right)^2"
+       ],
+       "answer": "\\left(\\frac{A_1 + A_2}{A_1 - A_2}\\right)^2",
+       "tags": {
+         "chapter": "wave_optics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+
+     {
+       "id": "wave_optics_qn_006",
+       "question": "In YDSE the fringe width is given by (<i>d</i> = slit separation, <i>D</i> = distance between slits and screen, <i>λ</i> = wavelength of light)",
+       "options": [
+         "\\frac{D\\lambda}{d}",
+         "\\frac{D\\lambda}{2d}",
+         "\\frac{2D\\lambda}{d}",
+         "\\frac{D\\lambda}{4d}"
+       ],
+       "answer": "\\frac{D\\lambda}{d}",
+       "tags": {
+         "chapter": "wave_optics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "wave_optics_qn_007",
+       "question": "In YDSE, fringe width equals the separation between",
+       "options": [
+         "\\begin{aligned} &\\text{Centers of consecutive bright and} \\\\ &\\text{dark fringes} \\end{aligned}",
+         "\\text{Centers of consecutive bright fringes}",
+         "\\text{Central fringe and 1st dark fringe}",
+         "\\text{Central fringe and second bright fringe}"
+       ],
+       "answer": "\\text{Centers of consecutive bright fringes}",
+       "tags": {
+         "chapter": "wave_optics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "wave_optics_qn_008",
+       "question": "In YDSE, angular fringe width equals (<i>d</i> = slit separation, <i>D</i> = distance between slits and screen, <i>λ</i> = wavelength of light)",
+       "options": [
+         "\\frac{\\lambda}{D}",
+         "\\frac{d\\lambda}{D}",
+         "\\frac{\\lambda}{d}",
+         "\\frac{D\\lambda}{d}"
+       ],
+       "answer": "\\frac{\\lambda}{D}",
+       "tags": {
+         "chapter": "wave_optics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "wave_optics_qn_009",
+       "question": "A slab of refractive index <i>μ</i> and thickness <i>t</i> is placed in front of one of the slits in YDSE. The optical path difference between two paths joining slits to the center of screen is",
+       "options": [
+         "\\mu t",
+         "(\\mu - 1)t",
+         "\\frac{t}{\\mu}",
+         "\\frac{\\mu}{t}"
+       ],
+       "answer": "(\\mu - 1)t",
+       "tags": {
+         "chapter": "wave_optics",
+         "difficulty": "medium",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "wave_optics_qn_010",
+       "question": "Fringe visibility in YDSE is given by (<i>I<sub>max</sub></i> = maximum intensity, <i>I<sub>min</sub></i> = minimum intensity)",
+       "options": [
+         "\\frac{I_{min}}{I_{max}}",
+         "\\frac{I_{max}}{I_{min}}",
+         "\\frac{I_{max} + I_{min}}{I_{max} - I_{min}}",
+         "\\frac{I_{max} - I_{min}}{I_{max} + I_{min}}"
+       ],
+       "answer": "\\frac{I_{max} - I_{min}}{I_{max} + I_{min}}",
+       "tags": {
+         "chapter": "wave_optics",
+         "difficulty": "god",
+         "class": "12"
+       },
+       "image": "",
+       "tip": ""
+     }
+
+
+
+
+
+
 
 
 
