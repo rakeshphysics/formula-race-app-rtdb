@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 //import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_database/firebase_database.dart';
-import 'package:formula_race_app/services/matchmaking_service.dart';
+import 'package:formularacing/services/matchmaking_service.dart';
 import 'online_game_screen.dart';
 import 'home_screen.dart';
 

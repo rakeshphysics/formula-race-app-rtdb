@@ -1,4 +1,4 @@
-name: formula_race_app
+name: formularacing
 description: A new Flutter project.
 publish_to: 'none'
 version: 1.0.0+1
@@ -78,9 +78,9 @@ flutter:
 
       # images
     - assets/images/11th/Vectors/
-    - assets/images/11th/units_and_dimensions/
+    # - assets/images/11th/units_and_dimensions/
     - assets/images/11th/kinematics/
-    - assets/images/11th/work_power_energy/
+    # - assets/images/11th/work_power_energy/
     - assets/images/11th/center_of_mass/
     - assets/images/11th/laws_of_motion/
     - assets/images/11th/Rotational_Motion/
@@ -90,17 +90,17 @@ flutter:
     - assets/images/11th/shm/
     - assets/images/11th/waves/
     - assets/images/11th/thermodynamics/
-    - assets/images/11th/kinetic_theory/
+    #- assets/images/11th/kinetic_theory/
     - assets/images/12th/Electrostatics/
-    - assets/images/12th/current_electricity/
+    #- assets/images/12th/current_electricity/
     - assets/images/12th/magnetism/
     - assets/images/12th/emi/
-    - assets/images/12th/ac/
+    #- assets/images/12th/ac/
     - assets/images/12th/ray_optics/
-    - assets/images/12th/wave_optics/
+    #- assets/images/12th/wave_optics/
     - assets/images/12th/modern_physics/
-    - assets/images/12th/semiconductors/
-    - assets/images/12th/em_waves/
+    #- assets/images/12th/semiconductors/
+    #- assets/images/12th/em_waves/
     - assets/icon/
 
 dependency_overrides:

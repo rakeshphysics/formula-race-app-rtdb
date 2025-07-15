@@ -15,8 +15,8 @@ import 'ai_tracker_screen.dart'; // Add this import
 //import 'searching_for_opponent.dart';
 //import 'dart:io';
 //import 'package:firebase_auth/firebase_auth.dart';
-//import 'package:formula_race_app/services/matchmaking_service.dart'; // For MatchmakingService
-//import 'package:formula_race_app/screens/qr_host_screen.dart';
+//import 'package:formularacing/services/matchmaking_service.dart'; // For MatchmakingService
+//import 'package:formularacing/screens/qr_host_screen.dart';
 import 'multiplayer_selection_screen.dart';
 
 

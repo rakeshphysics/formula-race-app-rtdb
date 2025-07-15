@@ -1,7 +1,7 @@
 // lib/screens/multiplayer_selection_screen.dart
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:formula_race_app/services/matchmaking_service.dart';
+import 'package:formularacing/services/matchmaking_service.dart';
 //import 'searching_for_opponent.dart';
 import 'qr_host_screen.dart';
 import 'qr_scan_screen.dart';

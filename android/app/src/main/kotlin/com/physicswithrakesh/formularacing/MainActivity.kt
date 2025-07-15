@@ -1,4 +1,4 @@
-package com.example.formula_race_app
+package com.physicswithrakesh.formularacing
 
 import io.flutter.embedding.android.FlutterActivity
 
