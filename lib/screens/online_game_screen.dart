@@ -87,10 +87,10 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed) async {
   final selected = <Map<String, dynamic>>[];
 
   selected.addAll(pickUniqueChapters(buckets['11_easy']!, 2, usedChapters, random));
-  selected.addAll(pickUniqueChapters(buckets['11_medium']!, 2, usedChapters, random));
-  selected.addAll(pickUniqueChapters(buckets['11_god']!, 1, usedChapters, random));
   selected.addAll(pickUniqueChapters(buckets['12_easy']!, 2, usedChapters, random));
+  selected.addAll(pickUniqueChapters(buckets['11_medium']!, 2, usedChapters, random));
   selected.addAll(pickUniqueChapters(buckets['12_medium']!, 2, usedChapters, random));
+  selected.addAll(pickUniqueChapters(buckets['11_god']!, 1, usedChapters, random));
   selected.addAll(pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
 
   ////////print("📦 Final selected questions (full data):");

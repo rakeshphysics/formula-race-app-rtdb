@@ -88,7 +88,7 @@ class OnlineResultScreen extends StatelessWidget {
                 horizontal: screenWidth * 0.08,
               ),
               decoration: BoxDecoration(
-                color: Color(0xAFFC107),
+                color: Colors.black,
                 borderRadius: BorderRadius.circular(4),
                 border: Border.all(color: Colors.amber, width: 1.2),// Responsive border radius
                 boxShadow: [
@@ -165,7 +165,7 @@ class OnlineResultScreen extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Color(0x20FFC107), // More vibrant color
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(4),side: BorderSide(color: Colors.amber, width: 1.2),
+                    borderRadius: BorderRadius.circular(4),side: BorderSide(color: Colors.amber, width: 0.8),
 
                   ),
                   elevation: 8,
