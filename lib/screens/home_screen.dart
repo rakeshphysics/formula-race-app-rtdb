@@ -143,10 +143,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       screenWidth: screenWidth * 1.2,
                       screenHeight: screenHeight * 1.3,
                       onPressed: () {
+                        print('✅Navigating to MultiplayerSelectionScreen with userId: ${widget.userId}');
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => MultiplayerSelectionScreen(userId: widget.userId), // Navigate to the new page
+                            builder: (context) => MultiplayerSelectionScreen(userId: widget.userId),
+                            // Navigate to the new page
                           ),
                         );
                       },
@@ -192,6 +194,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }//
 }
+
 //...............................CHUNK 6............. ANIMATED BUTTON..................................
 class AnimatedButton extends StatefulWidget {
   final double screenWidth;

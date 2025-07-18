@@ -520,7 +520,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                   data: question['question'],
                   style: {
                     "body": Style(
-                      fontSize: FontSize(18),
+                      fontSize: FontSize(16),
                       fontWeight: FontWeight.normal,
                       color: Colors.white,
                       fontFamily: GoogleFonts.poppins().fontFamily,

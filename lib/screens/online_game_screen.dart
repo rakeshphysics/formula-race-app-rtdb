@@ -1020,7 +1020,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           data: currentQuestion['question'] ?? '⚠️ null',
               style: {
                 "body": Style(
-                  fontSize: FontSize(18),
+                  fontSize: FontSize(16),
                   fontWeight: FontWeight.normal,
                   color: Colors.white,
                   fontFamily: GoogleFonts.poppins().fontFamily,

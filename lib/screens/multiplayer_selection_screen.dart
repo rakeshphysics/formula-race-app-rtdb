@@ -5,6 +5,7 @@ import 'package:formularacing/services/matchmaking_service.dart';
 //import 'searching_for_opponent.dart';
 import 'qr_host_screen.dart';
 import 'qr_scan_screen.dart';
+import 'online_mode_selection_screen.dart';
 // Import other screens or services as needed
 
 class MultiplayerSelectionScreen extends StatelessWidget {
@@ -58,39 +59,15 @@ class MultiplayerSelectionScreen extends StatelessWidget {
           width: screenWidth * 0.75, // Responsive width
           height: screenHeight * 0.075,
             child: ElevatedButton(
-              onPressed: () async {
-                final User? currentUser = FirebaseAuth.instance.currentUser;
-                if (currentUser != null && currentUser.uid.isNotEmpty) {
-                  final createdMatchData = await MatchmakingService.createMatch(userId);
-
-                  // No need for `if (mounted)` here as this is a new page's context
-                  // that is guaranteed to be active until it's popped/replaced.
-                  if (createdMatchData != null) {
-                    final matchId = createdMatchData['matchId'];
-                    final seed = createdMatchData['seed'];
-
+                onPressed: () {
+                  print('✅✅ Navigating to OnlineModeSelectionScreen with userId: $userId');
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => QRHostScreen(
-                          matchId: matchId,
-                          seed: seed,
-                          isPlayer1: true,
-                          playerId: userId,
-                        ),
+                        builder: (context) => OnlineModeSelectionScreen(userId: userId),
                       ),
                     );
-                  } else {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Failed to create match. Check console for Firebase errors.')),
-                    );
-                  }
-                } else {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Error: User not authenticated.')),
-                  );
-                }
-              },
+                },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color(0x34FFC107), // More vibrant color
                 shape: RoundedRectangleBorder(
@@ -114,6 +91,7 @@ class MultiplayerSelectionScreen extends StatelessWidget {
         height: screenHeight * 0.075,
             child: ElevatedButton(
               onPressed: () {
+                print('✅✅Navigating to OnlineModeSelectionScreen with userId: $userId');
                 // Navigate to the QR scanning screen
                 Navigator.push(
                   context,
