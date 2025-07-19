@@ -57,7 +57,7 @@ class MultiplayerSelectionScreen extends StatelessWidget {
             // --- Host Match (QR) Button ---
           SizedBox(
           width: screenWidth * 0.75, // Responsive width
-          height: screenHeight * 0.075,
+          height: screenHeight * 0.1,
             child: ElevatedButton(
                 onPressed: () {
                   print('✅✅ Navigating to OnlineModeSelectionScreen with userId: $userId');
@@ -75,20 +75,30 @@ class MultiplayerSelectionScreen extends StatelessWidget {
 
                 ),
               ),
-              child: const Text(
-                "Host Match (QR)",
-                style: TextStyle(fontSize: 20,color: Colors.white, fontWeight: FontWeight.normal)
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: const [
+                  Text(
+                    'Host Match (QR)',
+                    style: TextStyle(fontSize: 20, color: Colors.white,fontWeight: FontWeight.normal),
+                  ),
+                  SizedBox(height: 4),
+                  Text(
+                    '(Choose Game topics)',
+                    style: TextStyle(fontSize: 16, color: Colors.grey),
+                  ),
+                ],
               ),
             ),
           ),
             SizedBox(
-              height: screenHeight * 0.03, // Using your already defined screenHeight
+              height: screenHeight * 0.04, // Using your already defined screenHeight
             ),
 
             // --- Join Match (Scan QR) Button ---
       SizedBox(
         width: screenWidth * 0.75, // Responsive width
-        height: screenHeight * 0.075,
+        height: screenHeight * 0.1,
             child: ElevatedButton(
               onPressed: () {
                 print('✅✅Navigating to OnlineModeSelectionScreen with userId: $userId');

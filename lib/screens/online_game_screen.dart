@@ -41,8 +41,10 @@ Future<List<dynamic>> loadQuestionsFromAssets() async {
 // .............END................. Load Qns from combined JSON..........................
 
 // .............START................. Fn loads 10Qns from shared seed with given conditions........................
-Future<List<Map<String, dynamic>>> getRandomQuestions(int seed) async {
+Future<List<Map<String, dynamic>>> getRandomQuestions(int seed,String gameMode, int totalQuestions) async {
   final allQuestions = await loadQuestionsFromAssets();
+  print('✅✅✅✅DEBUG: getRandomQuestions - Raw gameMode received: "$gameMode"');
+  print('✅✅DEBUG: Total questions loaded from assets: ${allQuestions.length}');
   final random = Random(seed);
   ////////print("🎲 Step 4: Shuffling questions with seed: $seed");
 
@@ -64,12 +66,13 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed) async {
     }
   }
 
+  print('✅✅DEBUG: GameMode received: $gameMode');
+
   List<Map<String, dynamic>> pickUniqueChapters(
       List<Map<String, dynamic>> questions,
       int count,
       Set<String> usedChapters,
-      Random rng,
-      ) {
+      Random rng,) {
     questions.shuffle(rng);
     final selected = <Map<String, dynamic>>[];
     for (var q in questions) {
@@ -80,27 +83,137 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed) async {
         if (selected.length == count) break;
       }
     }
+    print('✅✅DEBUG: pickUniqueChapters returned ${selected.length} questions.');
     return selected;
   }
 
+  // Inside getRandomQuestions function, after populating buckets
+
   final usedChapters = <String>{};
-  final selected = <Map<String, dynamic>>[];
+  final selectedQuestions = <Map<String, dynamic>>[];
 
-  selected.addAll(pickUniqueChapters(buckets['11_easy']!, 2, usedChapters, random));
-  selected.addAll(pickUniqueChapters(buckets['12_easy']!, 2, usedChapters, random));
-  selected.addAll(pickUniqueChapters(buckets['11_medium']!, 2, usedChapters, random));
-  selected.addAll(pickUniqueChapters(buckets['12_medium']!, 2, usedChapters, random));
-  selected.addAll(pickUniqueChapters(buckets['11_god']!, 1, usedChapters, random));
-  selected.addAll(pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
+  // REPLACING THE SWITCH STATEMENT WITH IF-ELSE IF
+  if (gameMode == 'full_11th') {
+    // 4 easy, 5 medium, 1 god for 11th
+    selectedQuestions.addAll(
+        pickUniqueChapters(buckets['11_easy']!, 4, usedChapters, random));
+    selectedQuestions.addAll(
+        pickUniqueChapters(buckets['11_medium']!, 5, usedChapters, random));
+    selectedQuestions.addAll(
+        pickUniqueChapters(buckets['11_god']!, 1, usedChapters, random));
+  } else if (gameMode == 'full_12th') {
+    // 4 easy, 5 medium, 1 god for 12th
+    selectedQuestions.addAll(
+        pickUniqueChapters(buckets['12_easy']!, 4, usedChapters, random));
+    selectedQuestions.addAll(
+        pickUniqueChapters(buckets['12_medium']!, 5, usedChapters, random));
+    selectedQuestions.addAll(
+        pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
+  } else if (gameMode == 'combined_11_12') {
+    // 11th 2 easy, 12th 2 easy, 11th 2 medium, 12th 2 medium, 11th 1 god, 12th 1 god
+    selectedQuestions.addAll(
+        pickUniqueChapters(buckets['11_easy']!, 2, usedChapters, random));
+    selectedQuestions.addAll(
+        pickUniqueChapters(buckets['12_easy']!, 2, usedChapters, random));
+    selectedQuestions.addAll(
+        pickUniqueChapters(buckets['11_medium']!, 2, usedChapters, random));
+    selectedQuestions.addAll(
+        pickUniqueChapters(buckets['12_medium']!, 2, usedChapters, random));
+    selectedQuestions.addAll(
+        pickUniqueChapters(buckets['11_god']!, 1, usedChapters, random));
+    selectedQuestions.addAll(
+        pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
+  }
+// Inside getRandomQuestions function, within the if-else if structure
+  else if (gameMode.startsWith(
+      'chapter_wise_')) { // This is your 'chapter_wise' condition
+    String? selectedChapterName = gameMode.substring('chapter_wise_'.length);
+    print('DEBUG: Chapter Wise - Extracted chapter name: $selectedChapterName');
 
-  ////////print("📦 Final selected questions (full data):");
-  for (var q in selected) {
-    ////////print(jsonEncode(q));
+    if (selectedChapterName != null && selectedChapterName.isNotEmpty) {
+      final List<Map<String, dynamic>> chapterQuestions = allQuestions
+          .where((q) => q['tags'] != null && (q['tags']['chapter'] as String).toLowerCase() == selectedChapterName!.toLowerCase())
+          .map((q) => Map<String, dynamic>.from(q))
+          .toList();
+
+      print(
+          'DEBUG: Chapter Wise - Total questions for "$selectedChapterName": ${chapterQuestions
+              .length}');
+
+      Map<String, List<Map<String, dynamic>>> chapterBuckets = {
+        'easy': [], 'medium': [], 'god': [],
+      };
+
+      for (var q in chapterQuestions) {
+        final diff = q['tags']['difficulty'];
+        if (chapterBuckets.containsKey(diff)) {
+          chapterBuckets[diff]!.add(q);
+        }
+      }
+      print(
+          'DEBUG: Chapter Wise - Easy count: ${chapterBuckets['easy']?.length ??
+              0}');
+      print('DEBUG: Chapter Wise - Medium count: ${chapterBuckets['medium']
+          ?.length ?? 0}');
+      print('DEBUG: Chapter Wise - God count: ${chapterBuckets['god']?.length ??
+          0}');
+
+// NEW: Create a set to track unique question IDs for this chapter mode
+      final Set<String> pickedQuestionIds = {};
+
+// NEW: Helper function for this specific case to pick unique questions by ID
+      List<Map<String, dynamic>> _pickQuestionsById(
+          List<Map<String, dynamic>> questionsList,
+          int count,
+          Set<String> uniqueIdsTracker,
+          Random rng,) {
+        questionsList.shuffle(rng);
+        final picked = <Map<String, dynamic>>[];
+        for (var q in questionsList) {
+          final questionId = q['id'] as String; // Assuming 'id' exists and is unique
+          if (!uniqueIdsTracker.contains(questionId)) {
+            picked.add(q);
+            uniqueIdsTracker.add(questionId);
+            if (picked.length == count) break;
+          }
+        }
+        print('DEBUG: _pickQuestionsById returned ${picked
+            .length} questions.'); // New debug print
+        return picked;
+      }
+
+
+      selectedQuestions.addAll(_pickQuestionsById(
+          chapterBuckets['easy']!, 4, pickedQuestionIds, random));
+      selectedQuestions.addAll(_pickQuestionsById(
+          chapterBuckets['medium']!, 5, pickedQuestionIds, random));
+      selectedQuestions.addAll(_pickQuestionsById(
+          chapterBuckets['god']!, 1, pickedQuestionIds, random));
+
+      print(
+          'DEBUG: Chapter Wise - Selected questions count after picking: ${selectedQuestions
+              .length}');
+
+      if (selectedQuestions.length < totalQuestions) {
+        print(
+            "Warning: Not enough unique questions in chapter '$selectedChapterName'. Current count: ${selectedQuestions
+                .length}");
+      }
+    } else {
+      print(
+          "Error: 'chapter_wise' mode called without a valid chapter name. Not selecting questions."); // Updated print
+    }
   }
 
+  // ... (rest of your getRandomQuestions function, including the finalQuestions part)
+  final finalQuestions = selectedQuestions.take(totalQuestions).toList();
+  print('✅✅✅✅DEBUG: Final questions list size: ${finalQuestions.length}');
+  ////////print("📦 Final selected questions (full data):");
+  for (var q in finalQuestions) {
+    ////////print(jsonEncode(q));
+  }
+  return finalQuestions;
 
-
-  return selected;
 }
 // .............END................. Fn loads 10Qns from shared seed with given conditions..........................
 
@@ -135,6 +248,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   // ............. Chunk 2 STATE VARIABLES .............
   final int totalQuestions = 10;
   final int questionDurationSeconds = 18;// ← control number of questions and progress bars
+  late String gameMode;
 
   final DatabaseReference _database = FirebaseDatabase.instance.ref();
   final AudioPlayer audioPlayer = AudioPlayer();
@@ -171,6 +285,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 // .............START................. This function stores the selected qns in game room so that
 // ................................... both players call the same 10 Qns..........................
   Future<void> loadQuestionsFromRoom() async {
+    print('✅🔰🟢DEBUG: loadQuestionsFromRoom started.');
     try {
       // Use Realtime Database to get match details including seed
       final matchSnapshot = await _database.child('matches/${widget.matchId}').get();
@@ -178,11 +293,12 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
       if (matchSnapshot.exists && matchSnapshot.value != null) {
         final matchData = Map<String, dynamic>.from(matchSnapshot.value as Map);
         final seed = matchData['seed'] ?? 0; // Get seed directly from RTDB
-
-        final qns = await getRandomQuestions(seed);
+        final fetchedGameMode = matchData['gameMode'] as String? ?? 'combined_11_12';
+        final qns = await getRandomQuestions(seed, fetchedGameMode, totalQuestions);
 
         setState(() {
           questions = qns;
+          gameMode = fetchedGameMode;
           isLoading = false;
         });
         ////////print("📋 Step 6: Questions assigned. Length = ${qns.length}");

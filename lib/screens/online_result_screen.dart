@@ -45,10 +45,10 @@ class OnlineResultScreen extends StatelessWidget {
       resultMessage = '🥳 You Win 🥳';
       resultMessageColor = Colors.amberAccent;
     } else if (myScore < opponentScore) {
-      resultMessage = 'Opponent Wins 🤝';
+      resultMessage = '🤝 Opponent Wins 🤝';
       resultMessageColor = Colors.amberAccent;
     } else {
-      resultMessage = 'It\'s a Draw  🤝';
+      resultMessage = '🤝It\'s a Draw  🤝';
       resultMessageColor = Colors.amberAccent;
     }
 
@@ -71,9 +71,9 @@ class OnlineResultScreen extends StatelessWidget {
             Text(
               resultMessage,
               textAlign: TextAlign.center,
-              style: GoogleFonts.roboto(
+              style: GoogleFonts.hedvigLettersSerif(
                 fontSize: screenWidth * 0.07, // Responsive font size
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.normal,
                 color: resultMessageColor,
                 letterSpacing: 2.0,
               ),
@@ -82,13 +82,13 @@ class OnlineResultScreen extends StatelessWidget {
 
             // Score Display Container
             Container(
-              width: screenWidth *0.8, // Responsive width
+              width: screenWidth *1, // Responsive width
               padding: EdgeInsets.symmetric(
                 vertical: screenHeight * 0.03,
                 horizontal: screenWidth * 0.08,
               ),
               decoration: BoxDecoration(
-                color: Colors.black,
+                color: Color(0xFFFC107),
                 borderRadius: BorderRadius.circular(4),
                 border: Border.all(color: Colors.amber, width: 1.2),// Responsive border radius
                 boxShadow: [
@@ -108,16 +108,16 @@ class OnlineResultScreen extends StatelessWidget {
                     children: [
                       Text(
                         'YOUR SCORE :',
-                        style: GoogleFonts.roboto(
+                        style: GoogleFonts.hedvigLettersSerif(
                           fontSize: screenWidth * 0.05, // Responsive font size
                           color: Colors.white,
                           fontWeight: FontWeight.normal,
-                          letterSpacing: 0.8,
+                          letterSpacing: 1.5,
                         ),
                       ),
                       Text(
                         '$myScore',
-                        style: GoogleFonts.roboto(
+                        style: GoogleFonts.hedvigLettersSerif(
                           fontSize: screenWidth * 0.09, // Responsive font size
                           fontWeight: FontWeight.bold,
                           color: Colors.greenAccent,
@@ -132,16 +132,16 @@ class OnlineResultScreen extends StatelessWidget {
                     children: [
                       Text(
                         'OPPONENT SCORE :',
-                        style: GoogleFonts.roboto(
+                        style: GoogleFonts.hedvigLettersSerif(
                           fontSize: screenWidth * 0.05, // Responsive font size
                           color: Colors.white,
                           fontWeight: FontWeight.normal,
-                          letterSpacing: 0.8,
+                          letterSpacing: 1.5,
                         ),
                       ),
                       Text(
                         '$opponentScore',
-                        style: GoogleFonts.roboto(
+                        style: GoogleFonts.hedvigLettersSerif(
                           fontSize: screenWidth * 0.09, // Responsive font size
                           fontWeight: FontWeight.bold,
                           color: Colors.redAccent,
@@ -163,7 +163,7 @@ class OnlineResultScreen extends StatelessWidget {
                   Navigator.of(context).popUntil((route) => route.isFirst); // Go back to Home Screen
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0x20FFC107), // More vibrant color
+                  backgroundColor: Color(0x00000000), // More vibrant color
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(4),side: BorderSide(color: Colors.amber, width: 0.8),
 

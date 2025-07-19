@@ -86,10 +86,11 @@ class ResultScreen extends StatelessWidget {
             Center(
                 child: Text(
                   'Your Score: $score / $totalQuestions',
-                  style: const TextStyle(
+                  style: GoogleFonts.hedvigLettersSerif(
+                    fontSize: 24, // Responsive font size
                     color: Colors.cyan,
-                    fontSize: 24,
                     fontWeight: FontWeight.bold,
+                    letterSpacing: 1.5,
                   ),
                 ),
               ),
@@ -148,7 +149,7 @@ class ResultScreen extends StatelessWidget {
                       margin: const EdgeInsets.symmetric(vertical: 8),
                       padding: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
-                          color: Color(0xFF1C1C1C),
+                          color: Color(0xFF000000),
                         borderRadius: BorderRadius.circular(12),
                         border: Border.all(
                           color: Colors.cyan, // Border color
@@ -158,6 +159,20 @@ class ResultScreen extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+
+                          if (wrongAnswer.imagePath.isNotEmpty)
+                            Container(
+                              margin: const EdgeInsets.only(bottom: 12), // Add some space below the image
+                              child: Center(
+                                child: Image.asset(
+                                  wrongAnswer.imagePath,
+                                  height: MediaQuery.of(context).size.height * 0.22, // Consistent height with SoloScreen
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ),
+
+
                           Html(
                             data: "<b>Q:</b> ${wrongAnswer.question}",
                             style: {
@@ -168,6 +183,10 @@ class ResultScreen extends StatelessWidget {
                               ),
                             },
                           ),
+
+
+
+
                           const SizedBox(height: 8),
                           Text(
                             'Your Answer:',

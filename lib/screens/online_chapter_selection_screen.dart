@@ -8,15 +8,14 @@
 import 'package:flutter/material.dart';
 import 'online_mode_selection_screen.dart';
 import 'qr_host_screen.dart';
+import 'package:formularacing/services/matchmaking_service.dart';
+import 'package:firebase_auth/firebase_auth.dart'; // Ensure FirebaseAuth is imported if not already
 
 
 
 class OnlineChapterSelectionScreen extends StatelessWidget {
   final String userId;
-  String determinedMatchId = 'your_match_id_here'; // Replace with actual value
-  int determinedSeed = 12345; // Replace with actual value
-  bool determinedIsPlayer1 = true; // Replace with actual value based on role
-  String currentUserId = '123';
+
   // You can customize this list with your real chapter names
   final List<String> chapters = [
     // Class 11
@@ -75,17 +74,38 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
           return Padding(
             padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
             child: OutlinedButton(
-              onPressed: () {
-                // Navigate to SoloScreen with selected chapter
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => QRHostScreen( matchId: determinedMatchId,
-                      playerId: currentUserId,
-                      seed: determinedSeed,
-                      isPlayer1: determinedIsPlayer1,),
-                  ),
+              // Inside your ListView children: chapters.map((chapter) { ... }
+              onPressed: () async { // Make onPressed async
+                // Form the gameMode string for this chapter
+                final String gameMode = 'chapter_wise_$chapter'; // e.g., 'chapter_wise_Vectors'
+
+                print('Attempting to create match for Chapter: $chapter with userId: $userId');
+
+                final createdMatchData = await MatchmakingService.createMatch(
+                  userId, // Use userId directly from constructor
+                  gameMode: gameMode, // Pass the chapter-specific gameMode
                 );
+
+                if (createdMatchData != null) {
+                  final matchId = createdMatchData['matchId'];
+                  final seed = createdMatchData['seed'];
+
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => QRHostScreen(
+                        matchId: matchId,
+                        seed: seed,
+                        isPlayer1: true, // Host is always Player 1
+                        playerId: userId, // Use userId directly
+                      ),
+                    ),
+                  );
+                } else {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Failed to create match for chapter. Please try again.')),
+                  );
+                }
               },
               style: OutlinedButton.styleFrom(
                 side: BorderSide(color: Colors.amberAccent.withOpacity(0.6), width: 1.2),

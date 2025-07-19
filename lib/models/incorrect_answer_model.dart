@@ -19,12 +19,14 @@ class IncorrectAnswer {
   final String userAnswer;
   final String correctAnswer;
   String tip;
+  final String imagePath;
 
   IncorrectAnswer({
     required this.question,
     required this.userAnswer,
     required this.correctAnswer,
     required this.tip,
+    required this.imagePath,
   });
 
   Map<String, dynamic> toJson() => {
@@ -40,6 +42,7 @@ class IncorrectAnswer {
       userAnswer: json['userAnswer'],
       correctAnswer: json['correctAnswer'],
       tip: json['tip'] ?? '',
+      imagePath: json['imagePath'] ?? '',
     );
   }
 }

@@ -161,11 +161,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             'Play Friend',
                             style: TextStyle(fontSize: 26, color: Colors.white,fontWeight: FontWeight.normal),
                           ),
-                          SizedBox(height: 4),
-                          Text(
-                            '(11th + 12th)',
-                            style: TextStyle(fontSize: 16, color: Colors.grey),
-                          ),
+
                         ],
                       ),
                     ),

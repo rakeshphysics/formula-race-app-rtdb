@@ -269,6 +269,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           userAnswer: selected,
           correctAnswer: correctAnswer,
           tip: question['tip'] ?? '',
+          imagePath: question['image'] ?? '',
         ),
       );
 
@@ -302,6 +303,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           userAnswer: '(No Answer)',
           correctAnswer: correctAnswer,
           tip: question['tip'] ?? '',
+          imagePath: question['image'] ?? '',
         ),
       );
 
