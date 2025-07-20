@@ -135,7 +135,80 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
       shuffledOptions.shuffle();
     }
 
-    return Scaffold(
+    return PopScope( // Added PopScope
+        canPop: false, // Prevent default pop behavior
+        onPopInvoked: (didPop) async {
+      if (didPop) {
+        return;
+      }
+      _progressController.stop(); // Pause timer
+
+      final shouldExit = await showDialog<bool>(
+        context: context,
+        builder: (context) => AlertDialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(4),
+            side: BorderSide(color: Color(0xFFFF6F61), width: 1.2), // Red/light red border
+          ),
+          backgroundColor: Color(0x88000000), // Semi-transparent black
+          title: const Text(
+            'Exit Clear Mistakes?',
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Color(0xFFFFFFFF)), // Red title
+          ),
+          actionsAlignment: MainAxisAlignment.center,
+          actions: [
+            TextButton(
+              style: TextButton.styleFrom(
+                backgroundColor: Colors.black, // Black background
+                foregroundColor: Colors.white, // White text
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(4),
+                  side: BorderSide(color: Color(0xFFFF6F61), width: 1.2), // Red/light red border
+                ),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              ),
+              onPressed: () => Navigator.of(context).pop(false),
+              child: const Text(
+                'Cancel',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 19,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ),
+            const SizedBox(width: 10),
+            TextButton(
+              style: TextButton.styleFrom(
+                backgroundColor: Colors.black, // Black background
+                foregroundColor: Colors.white, // White text
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(4),
+                  side: BorderSide(color: Color(0xFFFF6F61), width: 1.2), // Red/light red border
+                ),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              ),
+              onPressed: () => Navigator.of(context).pop(true),
+              child: const Text(
+                'Exit',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 19, fontWeight: FontWeight.normal),
+              ),
+            ),
+          ],
+        ),
+      );
+
+      if (shouldExit ?? false) {
+        // If the user confirms exit, pop the screen with resolvedCount
+        Navigator.pop(context, resolvedCount);
+      } else {
+        _progressController.forward(); // Resume timer if user cancels
+      }
+    },
+
+    child: Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
@@ -263,6 +336,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
         ),
       ),
       )
+    ),
     );
   }
 }

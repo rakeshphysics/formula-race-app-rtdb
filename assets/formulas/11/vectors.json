@@ -179,6 +179,367 @@
       },
       "image": "",
       "tip": ""
+    },
+
+    {
+      "id": "Vectors_qn_011",
+      "question": "Choose the correct options. <b>A</b> and <b>B</b> are vectors",
+      "options": [
+        "\\vec{A} \\times \\vec{B} = \\vec{B} \\times \\vec{A}",
+        "\\vec{A} \\times \\vec{B} = -\\vec{B} \\times \\vec{A}",
+        "\\vec{A} \\times \\vec{B} = -\\vec{A} \\times \\vec{B}",
+        "\\vec{A} \\times \\vec{B} = -\\vec{A} \\cdot \\vec{B}"
+      ],
+      "answer": "\\vec{A} \\times \\vec{B} = -\\vec{B} \\times \\vec{A}",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_012",
+      "question": "Choose the correct options. <b>A</b> and <b>B</b> are vectors",
+      "options": [
+        "\\vec{A} \\cdot \\vec{B} = \\vec{B} \\cdot \\vec{A}",
+        "\\vec{A} \\cdot \\vec{B} = -\\vec{B} \\cdot \\vec{A}",
+        "\\vec{A} \\cdot \\vec{B} = -\\vec{A} \\cdot \\vec{B}",
+        "\\vec{A} \\times \\vec{B} = -\\vec{A} \\cdot \\vec{B}"
+      ],
+      "answer": "\\vec{A} \\cdot \\vec{B} = \\vec{B} \\cdot \\vec{A}",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_013",
+      "question": "If a vector subtends angles &alpha;, &beta;, &gamma; with X, Y and Z axes, then",
+      "options": [
+        "\\cos^2 \\alpha + \\cos^2 \\beta + \\cos^2 \\gamma = 0.5",
+        "\\cos^2 \\alpha + \\cos^2 \\beta + \\cos^2 \\gamma = 1.5",
+        "\\cos^2 \\alpha + \\cos^2 \\beta + \\cos^2 \\gamma = 1",
+        "\\cos^2 \\alpha + \\cos^2 \\beta + \\cos^2 \\gamma = 2"
+      ],
+      "answer": "\\cos^2 \\alpha + \\cos^2 \\beta + \\cos^2 \\gamma = 1",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_014",
+      "question": "If two vectors <b>A</b> and <b>B</b> are perpendicular, then",
+      "options": [
+        "\\vec{A} \\cdot \\vec{B} \\neq 0",
+        "\\vec{A} \\times \\vec{B} < 0",
+        "\\vec{A} \\cdot \\vec{B} = 0",
+        "\\vec{A} \\times \\vec{B} = 0"
+      ],
+      "answer": "\\vec{A} \\cdot \\vec{B} = 0",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_015",
+      "question": "If a vector subtends angles &alpha;, &beta;, &gamma; with X, Y and Z axes, then",
+      "options": [
+        "\\sin^2 \\alpha + \\sin^2 \\beta + \\sin^2 \\gamma = 0.5",
+        "\\sin^2 \\alpha + \\sin^2 \\beta + \\sin^2 \\gamma = 1.5",
+        "\\sin^2 \\alpha + \\sin^2 \\beta + \\sin^2 \\gamma = 1",
+        "\\sin^2 \\alpha + \\sin^2 \\beta + \\sin^2 \\gamma = 2"
+      ],
+      "answer": "\\sin^2 \\alpha + \\sin^2 \\beta + \\sin^2 \\gamma = 2",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_016",
+      "question": "<b>A</b> and <b>b</b> are vectors. The magnitude of diagonal D of the parallelogram is (given &theta; is angle between <b>a</b> and <b>b</b>)",
+      "options": [
+        "\\sqrt{a^2 + b^2 + 2ab \\cos \\theta}",
+        "\\sqrt{a^2 + b^2 - 2ab \\cos \\theta}",
+        "\\sqrt{a^2 + b^2}",
+        "\\sqrt{a^2 - b^2 + 2ab \\cos \\theta}"
+      ],
+      "answer": "\\sqrt{a^2 + b^2 + 2ab \\cos \\theta}",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Vectors/Vectors_qn_016.png",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_017",
+      "question": "<b>A</b> and <b>b</b> are vectors. The magnitude of diagonal D of the parallelogram is (given &theta; is angle between <b>a</b> and <b>b</b>)",
+      "options": [
+        "\\sqrt{a^2 + b^2 + 2ab \\cos \\theta}",
+        "\\sqrt{a^2 + b^2 - 2ab \\cos \\theta}",
+        "\\sqrt{a^2 + b^2}",
+        "\\sqrt{a^2 - b^2 + 2ab \\cos \\theta}"
+      ],
+      "answer": "\\sqrt{a^2 + b^2 - 2ab \\cos \\theta}",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Vectors/Vectors_qn_017.png",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_018",
+      "question": "If two vectors <b>A</b> and <b>B</b> are parallel/Antiparallel, then",
+      "options": [
+        "\\vec{A} \\cdot \\vec{B} = 0",
+        "\\vec{A} \\times \\vec{B} < 0",
+        "\\vec{A} \\times \\vec{B} > 0",
+        "\\vec{A} \\times \\vec{B} = 0"
+      ],
+      "answer": "\\vec{A} \\times \\vec{B} = 0",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_019",
+      "question": "The angle between vectors 3<b>i</b> and 5<b>i</b> + 5<b>j</b> is (Do by observation)",
+      "options": [
+        "45",
+        "60",
+        "90",
+        "0"
+      ],
+      "answer": "45",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_020",
+      "question": "The angle between vectors 3<b>i</b> and -4<b>i</b> + 4<b>j</b> is (Do by observation)",
+      "options": [
+        "45",
+        "60",
+        "90",
+        "135"
+      ],
+      "answer": "135",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_021",
+      "question": "The angle between vectors 2<b>i</b> and 4<b>j</b> is",
+      "options": [
+        "45",
+        "60",
+        "90",
+        "135"
+      ],
+      "answer": "90",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_022",
+      "question": "The angle between vectors 2<b>i</b> and -4<b>i</b> is",
+      "options": [
+        "45",
+        "180",
+        "90",
+        "135"
+      ],
+      "answer": "180",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_023",
+      "question": "The angle between vectors 2<b>i</b> and 4<b>i</b> is",
+      "options": [
+        "45",
+        "180",
+        "90",
+        "0"
+      ],
+      "answer": "0",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_024",
+      "question": "The angle between vectors 2<b>i</b> and 4<b>i</b> is",
+      "options": [
+        "45",
+        "180",
+        "90",
+        "0"
+      ],
+      "answer": "0",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_025",
+      "question": "If <b>A</b> and <b>B</b> are vectors then <b>A</b> + <b>B</b> and <b>A</b> - <b>B</b> are perpendicular if",
+      "options": [
+        "|\\vec{A}| = |\\vec{B}|",
+        "|\\vec{A}| \\neq |\\vec{B}|",
+        "|\\vec{A}| > |\\vec{B}|",
+        "|\\vec{A}| < |\\vec{B}|"
+      ],
+      "answer": "|\\vec{A}| = |\\vec{B}|",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_026",
+      "question": "If <b>A</b> and <b>B</b> are vectors then area of triangle formed by <b>A</b> and <b>B</b> is",
+      "options": [
+        "|\\vec{A} \\times \\vec{B}|",
+        "\\vec{A} \\times \\vec{B}",
+        "\\frac{1}{2} |\\vec{A} \\times \\vec{B}|",
+        "\\frac{1}{2} \\vec{A} \\times \\vec{B}"
+      ],
+      "answer": "\\frac{1}{2} |\\vec{A} \\times \\vec{B}|",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Vectors/Vectors_qn_026.png",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_027",
+      "question": "If <b>A</b> and <b>B</b> are vectors then area of parallelogram formed by <b>A</b> and <b>B</b> is",
+      "options": [
+        "|\\vec{A}| \\times |\\vec{B}|",
+        "|\\vec{A} \\times \\vec{B}|",
+        "\\frac{1}{2} |\\vec{A} \\times \\vec{B}|",
+        "\\frac{1}{2} |\\vec{A}| \\times |\\vec{B}|"
+      ],
+      "answer": "|\\vec{A} \\times \\vec{B}|",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Vectors/Vectors_qn_027.png",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_028",
+      "question": "If <b>A</b> and <b>B</b> are vectors then the scalar component of <b>A</b> along <b>B</b> is",
+      "options": [
+        "\\frac{\\vec{A} \\times \\vec{B}}{A}",
+        "\\frac{\\vec{A} \\cdot \\vec{B}}{A}",
+        "\\frac{\\vec{A} \\cdot \\vec{B}}{B}",
+        "\\frac{\\vec{A} \\times \\vec{B}}{B}"
+      ],
+      "answer": "\\frac{\\vec{A} \\cdot \\vec{B}}{B}",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Vectors/Vectors_qn_028.png",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_029",
+      "question": "If <b>A</b> and <b>B</b> are vectors then the vector component of <b>A</b> along <b>B</b> is",
+      "options": [
+        "\\frac{\\vec{A} \\times \\vec{B}}{A} \\hat{A}",
+        "\\frac{\\vec{A} \\cdot \\vec{B}}{A} \\vec{B}",
+        "\\frac{\\vec{A} \\cdot \\vec{B}}{B^2} \\vec{B}",
+        "\\frac{\\vec{A} \\times \\vec{B}}{B} \\hat{A}"
+      ],
+      "answer": "\\frac{\\vec{A} \\cdot \\vec{B}}{B^2} \\vec{B}",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Vectors/Vectors_qn_029.png",
+      "tip": ""
+    },
+    {
+      "id": "Vectors_qn_030",
+      "question": "If <b>A</b>, <b>B</b> and <b>C</b> are vectors then volume of parallelepiped formed by <b>A</b>, <b>B</b> and <b>C</b> is",
+      "options": [
+        "|\\vec{A}| \\times |\\vec{B}| \\times |\\vec{C}|",
+        "\\vec{A} \\times (\\vec{B} \\times \\vec{C})",
+        "\\vec{A} \\cdot (\\vec{B} \\times \\vec{C})",
+        "\\frac{1}{2} |\\vec{A}| \\times |\\vec{B}| \\times |\\vec{C}|"
+      ],
+      "answer": "\\vec{A} \\cdot (\\vec{B} \\times \\vec{C})",
+      "tags": {
+        "chapter": "Vectors",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/Vectors/Vectors_qn_030.png",
+      "tip": ""
     }
 
 ]

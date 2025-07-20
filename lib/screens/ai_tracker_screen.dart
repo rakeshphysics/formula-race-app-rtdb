@@ -60,7 +60,8 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
     Map<String, int> tempChapterTotals = {};
 
     for (var q in all) {
-      String chapter = q['tags']?['chapter'] ?? 'Unknown';
+     // String chapter = q['tags']?['chapter'] ?? 'Unknown';
+      String chapter = (q['tags']?['chapter'] ?? q['chapter'] ?? 'Unknown').toString();
 
       tempChapterMistakes.putIfAbsent(chapter, () => []);
       tempChapterMistakes[chapter]!.add({
@@ -133,7 +134,13 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                         side: BorderSide(color: Colors.red, width: 0.8),
                       ),
                       backgroundColor: Color(0xFF000000),
-                      title: Text(" $resolvedCount Mistakes Resolved 🎉"),
+                      title: Text(
+                        resolvedCount == 1 // MODIFIED THIS LINE
+                            ? "1 Mistake Resolved 🎉"
+                            : "$resolvedCount Mistakes Resolved 🎉",
+                        style: TextStyle(color: Colors.white), // Ensure text color is visible
+                        textAlign: TextAlign.center, // Center the text
+                      ),
                       content: const SizedBox(height: 10.0),
                       actions: [
                         Row(
