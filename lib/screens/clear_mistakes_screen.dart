@@ -76,29 +76,15 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
     }
     all.shuffle();
     setState(() {
-      questions = all;
-      Future<void> loadMistakes() async {
-        List<Map<String, dynamic>> all = await MistakeTrackerService.loadMistakesFromLocal();
-        //print('Loaded ${all.length} mistakes');
-        for (var q in all) {
-         // print('Question: ${q['question']}');
-        }
-        all.shuffle();
-        setState(() {
-          questions = all;
-          currentIndex = 0;       // add this
-          selectedOption = null;  // add this
-          shuffledOptions = [];   // add this
+      questions = all.take(10).toList();
+      currentIndex = 0;       // add this
+      selectedOption = null;  // add this
+      shuffledOptions = [];   // add this
         });
 
         _progressController.reset();
         _progressController.forward();
-      }
-      ;
 
-    });
-    _progressController.reset();
-    _progressController.forward();
   }
 
   Future<void> checkAnswer(String selected) async {
