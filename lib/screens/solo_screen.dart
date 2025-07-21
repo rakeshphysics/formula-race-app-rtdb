@@ -335,6 +335,15 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   }
 
 
+  // Inside _SoloScreenState class
+
+// ... existing code ...
+
+
+
+// ... rest of _SoloScreenState class ...
+
+
 
 
   // ............. Chunk 4 CHECK ANSWER .............
