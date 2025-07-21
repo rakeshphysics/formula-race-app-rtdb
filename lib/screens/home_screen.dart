@@ -62,7 +62,70 @@ class _HomeScreenState extends State<HomeScreen> {
     final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
 
-    return Scaffold(
+
+    return WillPopScope(
+      onWillPop: () async {
+        final shouldPop = await showDialog<bool>(
+          context: context,
+          builder: (context) {
+            return AlertDialog(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(4),
+                side: BorderSide(color: Colors.cyan, width: 1.2),
+              ),
+              backgroundColor: Color(0x88000000), // Semi-transparent black
+              title: const Text(
+                'Exit App ?',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.white),
+              ),
+              actionsAlignment: MainAxisAlignment.center,
+              actions: [
+                TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: Colors.black,
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(4),
+                      side: BorderSide(color: Colors.cyan, width: 1.2),
+                    ),
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  ),
+                  onPressed: () => Navigator.of(context).pop(false),
+                  child: const Text(
+                    'No',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 19,
+                      fontWeight: FontWeight.normal,
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 10),
+                TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: Colors.black,
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(4),
+                      side: BorderSide(color: Colors.cyan, width: 1.2),
+                    ),
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  ),
+                  onPressed: () => Navigator.of(context).pop(true),
+                  child: const Text(
+                    'Yes',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 19, fontWeight: FontWeight.normal),
+                  ),
+                ),
+              ],
+            );
+          },
+        );
+        return shouldPop ?? false;
+      },
+    child: Scaffold(
 
       // ............. Chunk 1 BACKGROUND SOLID BLACK.............
       body: Container(
@@ -187,6 +250,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
     )
+    ),
     );
   }//
 }
