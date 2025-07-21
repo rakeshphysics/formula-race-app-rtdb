@@ -77,6 +77,8 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   @override
   void initState() {
     super.initState();
+    print('🤢🤢*** SoloScreen initState called for chapter: ${widget.selectedChapter} ***'); // ADD THIS LINE
+
     _progressController = AnimationController(
       vsync: this,
       duration: const Duration(seconds: 18), // 18s per segment
@@ -101,21 +103,17 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 
   // ............. Chunk 3 LOAD QUESTIONS .............
   Future<void> loadQuestions() async {
-
-
-    List<Map<String, dynamic>> allQuestions = [];
+    List<Map<String, dynamic>> finalQuestions = [];
 
     if (widget.selectedChapter == 'full11' ||
         widget.selectedChapter == 'full12' ||
         widget.selectedChapter == 'fullBoth') {
-
-     // print('Handling full mode: ${widget.selectedChapter}');
-
+      List<Map<String, dynamic>> allQuestions = [];
       List<String> fullChapters = [];
 
-     if (widget.selectedChapter == 'full11') {
+      if (widget.selectedChapter == 'full11') {
         fullChapters = [
-          'Vectors'
+          'Vectors',
           'Units and Dimensions',
           'Kinematics',
           'Laws of Motion',
@@ -130,8 +128,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'SHM',
           'Waves',
         ];
-      }
-    else if (widget.selectedChapter == 'full12') {
+      } else if (widget.selectedChapter == 'full12') {
         fullChapters = [
           'Electrostatics',
           'Current Electricity',
@@ -147,7 +144,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       } else if (widget.selectedChapter == 'fullBoth') {
         fullChapters = [
           // 11th
-          'Vectors'
+          'Vectors',
           'Units and Dimensions',
           'Kinematics',
           'Laws of Motion',
@@ -180,72 +177,103 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
         final chapterFile = chapter.toLowerCase().replaceAll(" ", "_");
         final path = 'assets/formulas/$chapterClass/$chapterFile.json';
 
-       // print('Loading: $path');
         try {
           final String data = await rootBundle.loadString(path);
           final List<dynamic> jsonData = json.decode(data);
           allQuestions.addAll(jsonData.cast<Map<String, dynamic>>());
-         // print('DEBUG: Loaded ${allQuestions.length} questions');
-          if (allQuestions.isNotEmpty) {
-          //  print('DEBUG: First question image = ${allQuestions[0]['image']}');
+        } catch (e) {
+          // print('Error loading $path: $e');
+        }
+      }
+
+      // Logic for unique chapters in 'full' modes
+      final Set<String> selectedChapters = {};
+
+      Map<String, List<Map<String, dynamic>>> questionsByDifficulty = {
+        'easy': allQuestions.where((q) => q['tags']['difficulty'] == 'easy').toList(),
+        'medium': allQuestions.where((q) => q['tags']['difficulty'] == 'medium').toList(),
+        'god': allQuestions.where((q) => q['tags']['difficulty'] == 'god').toList(),
+      };
+
+      void addUniqueQuestion(String difficulty, int count) {
+        int addedCount = 0;
+        List<Map<String, dynamic>> currentDifficultyQuestions = questionsByDifficulty[difficulty]!;
+        currentDifficultyQuestions.shuffle();
+
+        for (int i = 0; i < currentDifficultyQuestions.length && addedCount < count; i++) {
+          final question = currentDifficultyQuestions[i];
+          final String chapter = question['tags']['chapter'];
+
+          if (!selectedChapters.contains(chapter)) {
+            finalQuestions.add(question); // Add to finalQuestions
+            selectedChapters.add(chapter);
+            addedCount++;
           }
-        } catch (e) {
-         // print('Error loading $path: $e');
         }
       }
 
-    } else if (widget.selectedChapter == 'mixed' && widget.selectedChapters != null) {
-      for (String chapter in widget.selectedChapters!) {
-        final chapterClass = chapterToClass[chapter] ?? '11';
-        final chapterFile = chapter.toLowerCase().replaceAll(" ", "_");
-        final path = 'assets/formulas/$chapterClass/$chapterFile.json';
+      addUniqueQuestion('easy', 4);
+      addUniqueQuestion('medium', 5);
+      addUniqueQuestion('god', 1);
 
-       // print('Loading: $path');
-        try {
-          final String data = await rootBundle.loadString(path);
-          final List<dynamic> jsonData = json.decode(data);
-          allQuestions.addAll(jsonData.cast<Map<String, dynamic>>());
-        } catch (e) {
-        //  print('Error loading $path: $e');
-        }
-      }
     } else {
-      final chapterClass = chapterToClass[widget.selectedChapter] ?? '11';
-      final chapterFile = widget.selectedChapter.toLowerCase().replaceAll(" ", "_");
-      final path = 'assets/formulas/$chapterClass/$chapterFile.json';
-
-     // print('Loading: $path');
-      try {
-        final String data = await rootBundle.loadString(path);
-        final List<dynamic> jsonData = json.decode(data);
-        allQuestions = jsonData.cast<Map<String, dynamic>>();
-      } catch (e) {
-       // print('Error loading $path: $e');
-      }
+      // If not 'full' mode, call the new function for chapter-wise selection
+      finalQuestions = await _loadChapterWiseQuestions();
     }
 
-    List easy = allQuestions.where((q) => q['tags']['difficulty'] == 'easy').toList();
-    List medium = allQuestions.where((q) => q['tags']['difficulty'] == 'medium').toList();
-    List god = allQuestions.where((q) => q['tags']['difficulty'] == 'god').toList();
-
-    easy.shuffle();
-    medium.shuffle();
-    god.shuffle();
-
-    final List<Map<String, dynamic>> selectedQuestions = [
-      ...easy.take(4),
-      ...medium.take(5),
-      ...god.take(1),
-    ];
+    // Consolidated Print Statements (ONLY ONE LOCATION)
+    // print('--- Selected Questions Chapters (Final List) ---');
+    // for (var i = 0; i < finalQuestions.length; i++) {
+    //   final question = finalQuestions[i];
+    //   final chapter = question['tags']['chapter'] ?? 'Unknown Chapter';
+    //   final difficulty = question['tags']['difficulty'] ?? 'Unknown Difficulty';
+    //   print('😄😄Question ${i + 1}: Chapter - $chapter, Difficulty - $difficulty');
+    // }
+    // print('------------------------------------------------');
 
     setState(() {
-      questions = selectedQuestions;
+      questions = finalQuestions;
       currentIndex = 0;
     });
 
     _progressController.reset();
     _progressController.forward();
   }
+
+// Inside the _SoloScreenState class, replace the previous _loadChapterAndMixedQuestions
+  Future<List<Map<String, dynamic>>> _loadChapterWiseQuestions() async {
+    List<Map<String, dynamic>> chapterSpecificQuestions = [];
+
+    // This block now exclusively handles single 'Chapter Wise' selection
+    final chapterClass = chapterToClass[widget.selectedChapter] ?? '11';
+    final chapterFile = widget.selectedChapter.toLowerCase().replaceAll(" ", "_");
+    final path = 'assets/formulas/$chapterClass/$chapterFile.json';
+
+    try {
+      final String data = await rootBundle.loadString(path);
+      final List<dynamic> jsonData = json.decode(data);
+      chapterSpecificQuestions = jsonData.cast<Map<String, dynamic>>();
+    } catch (e) {
+      // Handle error, e.g., print('Error loading $path: $e');
+    }
+
+    // Now, apply the selection logic for these questions (4 easy, 5 medium, 1 god)
+    final List<Map<String, dynamic>> selectedQuestionsForMode = [];
+
+    List easy = chapterSpecificQuestions.where((q) => q['tags']['difficulty'] == 'easy').toList()..shuffle();
+    List medium = chapterSpecificQuestions.where((q) => q['tags']['difficulty'] == 'medium').toList()..shuffle();
+    List god = chapterSpecificQuestions.where((q) => q['tags']['difficulty'] == 'god').toList()..shuffle();
+
+    selectedQuestionsForMode.addAll([
+      ...easy.take(4),
+      ...medium.take(5),
+      ...god.take(1),
+    ]);
+
+    return selectedQuestionsForMode;
+  }
+
+
 
 
   // ............. Chunk 4 CHECK ANSWER .............
@@ -397,7 +425,8 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   // ............. Chunk 7 BUILD WIDGET TREE .............
   @override
   Widget build(BuildContext context) {
-   // print('DEBUG: Building question index $currentIndex');
+    print('😇😇--- SoloScreen build called for chapter: ${widget.selectedChapter}, currentIndex: $currentIndex ---'); // ADD THIS LINE
+
     if (questions.isEmpty) {
       return const Scaffold(
         body: Center(child: CircularProgressIndicator()),

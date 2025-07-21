@@ -52,7 +52,7 @@ class _GlowButtonamberState extends State<GlowButtonamber> {
         borderRadius: BorderRadius.circular(4),
         clipBehavior: Clip.hardEdge,
         child: InkWell(
-          onTap: widget.onPressed,
+          //onTap: widget.onPressed,
           onTapDown: _onTapDown,
           onTapUp: _onTapUp,
           onTapCancel: _onTapCancel,

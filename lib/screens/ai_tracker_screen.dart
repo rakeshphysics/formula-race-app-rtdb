@@ -309,15 +309,15 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
             );
           }).toList(),
           ////...........TEMPORARY......START..........BUTTON TO DEL MISTAKES JSON FILE .............................
-          // Padding(
-          //   padding: const EdgeInsets.only(top: 20.0, bottom: 40.0),
-          //   child: Center(
-          //     child: ElevatedButton(
-          //       onPressed: () => deleteMistakeTrackerJson(context),
-          //       child: Text('CLEAR MISTAKES'),
+          //  Padding(
+          //    padding: const EdgeInsets.only(top: 20.0, bottom: 40.0),
+          //    child: Center(
+          //      child: ElevatedButton(
+          //        onPressed: () => deleteMistakeTrackerJson(context),
+          //        child: Text('CLEAR MISTAKES'),
           //     ),
-          //   ),
-          // ),
+          //    ),
+          //  ),
 ////...........TEMPORARY......END..........BUTTON TO DEL MISTAKES JSON FILE .........
 
         ],

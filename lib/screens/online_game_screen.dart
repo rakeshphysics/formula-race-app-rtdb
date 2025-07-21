@@ -127,7 +127,7 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed,String gameMode, 
 // Inside getRandomQuestions function, within the if-else if structure
   else if (gameMode.startsWith(
       'chapter_wise_')) { // This is your 'chapter_wise' condition
-    String? selectedChapterName = gameMode.substring('chapter_wise_'.length);
+    String? selectedChapterName = gameMode.substring('chapter_wise_'.length).replaceAll(" ", "_");
     print('DEBUG: Chapter Wise - Extracted chapter name: $selectedChapterName');
 
     if (selectedChapterName != null && selectedChapterName.isNotEmpty) {
@@ -207,11 +207,19 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed,String gameMode, 
 
   // ... (rest of your getRandomQuestions function, including the finalQuestions part)
   final finalQuestions = selectedQuestions.take(totalQuestions).toList();
-  print('✅✅✅✅DEBUG: Final questions list size: ${finalQuestions.length}');
-  ////////print("📦 Final selected questions (full data):");
-  for (var q in finalQuestions) {
-    ////////print(jsonEncode(q));
-  }
+  // print('✅✅✅✅DEBUG: Final questions list size: ${finalQuestions.length}');
+  //
+  // print('--- Online Selected Questions Details ---');
+  // for (var i = 0; i < finalQuestions.length; i++) {
+  //   final question = finalQuestions[i];
+  //   final chapter = question['tags']['chapter'] ?? 'Unknown Chapter';
+  //   final difficulty = question['tags']['difficulty'] ?? 'Unknown Difficulty';
+  //   final questionId = question['id'] ?? 'No ID'; // Also print ID for easier tracking
+  //   print('😄😄Question ${i + 1}: ID - $questionId, Chapter - $chapter, Difficulty - $difficulty');
+  // }
+  // print('-----------------------------------------');
+
+
   return finalQuestions;
 
 }
