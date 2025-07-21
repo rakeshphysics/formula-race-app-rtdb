@@ -103,12 +103,28 @@ class _QRScanScreenState extends State<QRScanScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('Match does not exist or has been deleted.')),
           );
-          Navigator.of(context).pop();
+          // Navigator.of(context).pop(); // Removed immediate pop
+          controller.start(); // ADD THIS: Restart scanner
         }
+        _isProcessingScan = false; // ADD THIS: Important: reset flag
         return;
       }
 
-      final matchData = Map<String, dynamic>.from(snapshot.value as Map);
+      Map<String, dynamic> matchData;
+      try {
+        matchData = Map<String, dynamic>.from(snapshot.value as Map);
+      } catch (e) {
+        // Handle cases where snapshot.value is not a valid Map (e.g., scanned non-match QR)
+        print("Error casting match data: $e"); // Debug print
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Invalid QR Code: Not a valid match data.')), // User-friendly message
+          );
+          controller.start(); // Restart scanner
+        }
+        _isProcessingScan = false; // Important: reset flag
+        return; // Exit the function as the data is invalid
+      }
 
       if (matchData['player2Id'] != null) {
         if (mounted) {
@@ -166,17 +182,18 @@ class _QRScanScreenState extends State<QRScanScreen> {
         }
       }
     } catch (e) {
-      print("Error joining match via QR (RTDB only): $e");
+      // General catch-all for any other unexpected errors during the process
+      print("Error joining match via QR: $e"); // MODIFIED print for clarity
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error joining match: ${e.toString()}')),
+          const SnackBar(content: Text('Invalid QR Code or connection error.')), // MODIFIED: Generic user-friendly message
         );
-        Navigator.of(context).pop();
+        // Navigator.of(context).pop(); // REMOVED immediate pop
+        controller.start(); // ADDED: Restart scanner in case of general error
       }
-    } finally {
-      if (mounted) {
-        controller.start();
-      }
+      _isProcessingScan = false; // ADDED: Important: reset flag in general error
     }
+    // REMOVED THE ENTIRE FINALLY BLOCK HERE
+
   }
 }
