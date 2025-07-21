@@ -12,6 +12,7 @@ import 'solo_mode_selection_screen.dart';
 import 'package:flutter/services.dart'; // Needed for rootBundle
 import 'dart:convert'; // Needed for json.decode
 import 'package:shared_preferences/shared_preferences.dart';
+import '../widgets/chapter_progress_button.dart';
 
 const Map<String, String> chapterToClass = {
   "Units and Dimensions": "11",
@@ -155,9 +156,9 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  'Highlighted Area = Progress.', // As requested
+                  'Highlighted Area = Chapter Completion %', // As requested
                   style: TextStyle(
-                    color: Colors.white.withOpacity(0.7),
+                    color: Colors.white.withOpacity(0.8),
                     fontSize: 16,
                     fontStyle: FontStyle.italic,
                   ),
@@ -173,73 +174,23 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
                   children: chapters.map((chapter) {
                     final double percentage = chapterCompletion[chapter] ?? 0.0;
 
-                    return Center(
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 8),
-                        child: SizedBox(
-                          width: MediaQuery.of(context).size.width * 0.88,
-                          child: OutlinedButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => SoloScreen(selectedChapter: chapter, userId: widget.userId),
-                                ),
-                              ).then((_) {
-                                _loadChapterProgress();
-                              });
-                            },
-                            style: OutlinedButton.styleFrom(
-                              side: BorderSide(color: Colors.cyanAccent.withOpacity(0.6), width: 1.2),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(4),
+                    return Center( // Re-introduce Center to horizontally align the button
+                      child: Padding( // Keep the padding for vertical spacing between buttons
+                        padding: const EdgeInsets.symmetric(vertical: 8.0),
+                        child: ChapterProgressButton( // It defines its own size now
+                          chapterName: chapter,
+                          percentage: percentage,
+                          highlightColor: Colors.cyanAccent,
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => SoloScreen(selectedChapter: chapter, userId: widget.userId),
                               ),
-                              // Remove backgroundColor from here as we'll handle it inside the child
-                              // backgroundColor: Colors.transparent, // DELETE THIS LINE
-                            ),
-                            child: LayoutBuilder( // ADD LayoutBuilder to get the exact size
-                                builder: (context, constraints) {
-                                  return Stack(
-                                    alignment: Alignment.center,
-                                    children: [
-                                      // Black background (full width of the button content area)
-                                      Container(
-                                        width: constraints.maxWidth, // Use actual available width
-                                        height: 50,
-                                        decoration: const BoxDecoration(
-                                          color: Colors.black,
-                                          borderRadius: BorderRadius.all(Radius.circular(4)), // Apply radius here
-                                        ),
-                                      ),
-                                      // CyanAccent fill, positioned correctly
-                                      Align( // Use Align to position the fill
-                                        alignment: Alignment.centerLeft,
-                                        child: Container(
-                                          width: constraints.maxWidth * (percentage / 100), // Fill percentage of exact width
-                                          height: 50,
-                                          decoration: BoxDecoration(
-                                            color: Colors.cyanAccent.withOpacity(0.3),
-                                            borderRadius: const BorderRadius.all(Radius.circular(4)), // Apply radius here
-                                          ),
-                                        ),
-                                      ),
-                                      // Text, layered on top
-                                      Padding( // Padding for the text remains the same
-                                        padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 24),
-                                        child: Text(
-                                          chapter,
-                                          style: const TextStyle(
-                                            fontSize: 18,
-                                            fontWeight: FontWeight.normal,
-                                            color: Colors.white,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  );
-                                }
-                            ),
-                          ),
+                            ).then((_) {
+                              _loadChapterProgress();
+                            });
+                          },
                         ),
                       ),
                     );
