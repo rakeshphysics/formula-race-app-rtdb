@@ -159,7 +159,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
                   'Highlighted Area = Chapter Completion %', // As requested
                   style: TextStyle(
                     color: Colors.white.withOpacity(0.8),
-                    fontSize: 16,
+                    fontSize: 14,
                     fontStyle: FontStyle.italic,
                   ),
                   textAlign: TextAlign.center,
@@ -170,7 +170,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
                     ? const Center(child: CircularProgressIndicator())
                     : ListView(
                   shrinkWrap: true,
-                  physics: const ClampingScrollPhysics(),
+                  physics: const BouncingScrollPhysics(),
                   children: chapters.map((chapter) {
                     final double percentage = chapterCompletion[chapter] ?? 0.0;
 
@@ -180,7 +180,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
                         child: ChapterProgressButton( // It defines its own size now
                           chapterName: chapter,
                           percentage: percentage,
-                          highlightColor: Colors.cyanAccent,
+                          highlightColor: Colors.greenAccent,
                           onPressed: () {
                             Navigator.push(
                               context,

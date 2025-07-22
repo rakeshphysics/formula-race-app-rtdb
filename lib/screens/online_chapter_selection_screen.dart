@@ -69,7 +69,7 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
       ),
       body: ListView(
         shrinkWrap: true,
-        physics: const ClampingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         children: chapters.map((chapter) {
           return Padding(
             padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),

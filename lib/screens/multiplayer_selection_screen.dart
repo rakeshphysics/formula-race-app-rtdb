@@ -6,6 +6,7 @@ import 'package:formularacing/services/matchmaking_service.dart';
 import 'qr_host_screen.dart';
 import 'qr_scan_screen.dart';
 import 'online_mode_selection_screen.dart';
+import 'home_screen.dart';
 // Import other screens or services as needed
 
 class MultiplayerSelectionScreen extends StatelessWidget {
@@ -16,7 +17,24 @@ class MultiplayerSelectionScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
-    return Scaffold(
+
+    return WillPopScope(
+        // This callback is triggered when the user presses the device's back button.
+        onWillPop: () async {
+      // Navigate directly to the actual HomeScreen, replacing the current route.
+      // This prevents the user from navigating back to MultiplayerSelectionScreen again.
+      await Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => HomeScreen(userId: userId), // Navigate to your actual HomeScreen
+        ),
+      );
+      // Return false to prevent the default back navigation behavior,
+      // as we've already handled the navigation explicitly.
+      return false;
+    },
+
+    child: Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
         title: const Text('Choose Mode', style: TextStyle(color: Colors.white)),
@@ -126,6 +144,7 @@ class MultiplayerSelectionScreen extends StatelessWidget {
           ],
         ),
       ),
+    ),
     );
   }
 }

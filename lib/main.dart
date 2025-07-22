@@ -17,19 +17,21 @@ import 'screens/splash_screen.dart';
 import 'screens/searching_for_opponent.dart';
 //import 'package:shared_preferences/shared_preferences.dart';
 //import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/services.dart';
 
 // ← added SplashScreen import
 
 // ............. Chunk 1 MAIN FUNCTION .............
-void main() async {
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  //await Firebase.initializeApp(
-    //options: DefaultFirebaseOptions.currentPlatform,
 
-
-  // --- START: Firebase Anonymous Authentication ---
-
-  runApp(const FormulaRaceApp());
+  // ADD THESE LINES to force portrait mode
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]).then((value) {
+    runApp(const FormulaRaceApp()); // Your main app widget
+  });
 }
 
 // ............. Chunk 2 APP WIDGET .............
