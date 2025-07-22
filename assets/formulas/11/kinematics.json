@@ -178,5 +178,556 @@
     },
     "image": "assets/images/11th/kinematics/kinematics_qn_010.png",
     "tip": ""
-  }
+  },
+
+    {
+      "id": "Kinematics_qn_011",
+      "question": "A body is thrown vertically upwards, its time of flight is",
+      "options": [
+        "\\frac{2u}{g}",
+        "\\frac{u}{g}",
+        "\\frac{3u}{g}",
+        "\\frac{u}{2g}"
+      ],
+      "answer": "\\frac{2u}{g}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_011.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_012",
+      "question": "A body is thrown vertically upwards, the maximum height reached by it is",
+      "options": [
+        "\\frac{u^2}{g}",
+        "\\frac{u^2}{2g}",
+        "\\frac{4u^2}{g}",
+        "\\frac{u^2}{3g}"
+      ],
+      "answer": "\\frac{u^2}{2g}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_012.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_013",
+      "question": "A body is thrown vertically upwards, it reaches the highest point in time",
+      "options": [
+        "\\frac{u}{2g}",
+        "\\frac{2u}{g}",
+        "\\frac{u}{g}",
+        "\\frac{4u}{g}"
+      ],
+      "answer": "\\frac{u}{g}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_013.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_014",
+      "question": "A body is dropped from a tower, the time it takes to reach the ground is",
+      "options": [
+        "\\sqrt{\\frac{2g}{h}}",
+        "\\sqrt{\\frac{h}{2g}}",
+        "\\sqrt{\\frac{h}{g}}",
+        "\\sqrt{\\frac{2h}{g}}"
+      ],
+      "answer": "\\sqrt{\\frac{2h}{g}}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_014.png",
+      "tip": ""
+    },
+
+  {
+    "id": "Kinematics_qn_015",
+    "question": "A body is thrown vertically upwards, at its highest point its",
+    "options": [
+      "\\text{Its speed is non zero}",
+      "\\text{Acceleration is zero}",
+      "\\text{Acceleration is Negative}",
+      "\\text{Acceleration is non zero}"
+    ],
+    "answer": "\\text{Acceleration is non zero}",
+    "tags": {
+      "chapter": "Kinematics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+
+    {
+      "id": "Kinematics_qn_016",
+      "question": "A particle has acceleration and velocity vectors as shown, then the particle",
+      "options": [
+        "\\text{Speed Increases}",
+        "\\text{Speed Decreases}",
+        "\\text{Has constant Speed}",
+        "\\text{Has constant Velocity}"
+      ],
+      "answer": "\\text{Speed Increases}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_016.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_017",
+      "question": "A particle has acceleration and velocity vectors as shown, then the particle",
+      "options": [
+        "\\text{Speed Increases}",
+        "\\text{Speed Decreases}",
+        "\\text{Has constant Speed}",
+        "\\text{Has constant Velocity}"
+      ],
+      "answer":  "\\text{Speed Decreases}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_017.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_018",
+      "question": "A particle has acceleration and velocity vectors as shown, then the particle",
+      "options": [
+        "\\text{Speed Decreases}",
+        "\\text{Speed Decreases}",
+        "\\text{Has constant Speed}",
+        "\\text{Has constant Velocity}"
+      ],
+      "answer": "\\text{Has constant Speed}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_018.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_019",
+      "question": "A body is dropped from a tower, the speed with which it strikes the ground is",
+      "options": [
+        "\\sqrt{\\frac{gh}{4}}",
+        "\\sqrt{\\frac{gh}{2}}",
+        "\\sqrt{2gh}",
+        "\\sqrt{gh}"
+      ],
+      "answer": "\\sqrt{2gh}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_019.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_020",
+      "question": "A body is projected vertically up with speed u. The shortest time it takes to reach half the maximum height is",
+      "options": [
+        "\\frac{u}{g}",
+        "\\frac{u}{g}(1 - \\frac{1}{\\sqrt{2}})",
+        "\\frac{u}{\\sqrt{2}g}",
+        "\\frac{u}{g}(\\sqrt{2}-1)"
+      ],
+      "answer": "\\frac{u}{g}(1 - \\frac{1}{\\sqrt{2}})",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_020.png",
+      "tip": ""
+    },
+
+    {
+      "id": "Kinematics_qn_021",
+      "question": "A body is thrown with speed u as shown, its range R is",
+      "options": [
+        "\\frac{u^2 \\sin \\theta}{g}",
+        "\\frac{u^2 \\sin 2\\theta}{2g}",
+        "\\frac{u^2 \\sin \\theta}{2g}",
+        "\\frac{u^2 \\sin 2\\theta}{g}"
+      ],
+      "answer": "\\frac{u^2 \\sin 2\\theta}{g}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_021.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_022",
+      "question": "A body is thrown with speed u as shown, its maximum height H it reaches is",
+      "options": [
+        "\\frac{u^2 \\sin^2 \\theta}{g}",
+        "\\frac{u^2 \\sin^2 \\theta}{2g}",
+        "\\frac{u^2 \\sin \\theta}{2g}",
+        "\\frac{u^2 \\sin \\theta}{g}"
+      ],
+      "answer": "\\frac{u^2 \\sin^2 \\theta}{2g}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_022.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_023",
+      "question": "A body is thrown with speed u as shown, its time of flight is",
+      "options": [
+        "\\frac{u \\sin 2\\theta}{2g}",
+        "\\frac{u \\sin \\theta}{2g}",
+        "\\frac{2u \\sin \\theta}{g}",
+        "\\frac{u \\sin \\theta}{g}"
+      ],
+      "answer": "\\frac{2u \\sin \\theta}{g}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_023.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_024",
+      "question": "The time taken for boat to cross the river is (V<sub>BR</sub> = velocity of boat with respect to river, V<sub>R</sub> = velocity of river, <b>d</b> = river width)",
+      "options": [
+        "\\frac{d}{V_{BR}}",
+        "\\frac{d}{V_R}",
+        "\\frac{d}{V_{BR} - V_R}",
+        "\\frac{d}{V_{BR} + V_R}"
+      ],
+      "answer": "\\frac{d}{V_{BR}}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_024.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_025",
+      "question": "The time taken for boat to cross the river is (V<sub>BR</sub> = velocity of boat with respect to river, V<sub>R</sub> = velocity of river, <b>d</b> = river width)",
+      "options": [
+        "\\frac{d}{V_{BR} \\cos \\theta}",
+        "\\frac{d}{V_R \\cos \\theta}",
+        "\\frac{d \\cos \\theta}{V_{BR}}",
+        "\\frac{2d \\cos \\theta}{V_{BR}}"
+      ],
+      "answer": "\\frac{d}{V_{BR} \\cos \\theta}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_025.png",
+      "tip": ""
+    },
+
+    {
+      "id": "Kinematics_qn_026",
+      "question": "The angle &theta; so that the boat takes least time to cross the river is",
+      "options": [
+        "45",
+        "0",
+        "90",
+        "180"
+      ],
+      "answer": "0",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_026.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_027",
+      "question": "Rain is falling vertically down with speed V<sub>R</sub>. A person goes with speed V<sub>P</sub> as shown. The angle &theta; with which he must hold his umbrella so that he does not get wet is",
+      "options": [
+        "\\sin^{-1}(\\frac{V_P}{V_R})",
+        "\\sin^{-1}(\\frac{V_R}{V_P})",
+        "\\tan^{-1}(\\frac{V_P}{V_R})",
+        "\\tan^{-1}(\\frac{V_R}{V_P})"
+      ],
+      "answer": "\\tan^{-1}(\\frac{V_R}{V_P})",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_027.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_028",
+      "question": "Two particles move in directions shown with speeds V<sub>1</sub> and V<sub>2</sub>. The magnitude of relative velocity of 1 with respect to 2 is",
+      "options": [
+        "\\sqrt{V_1^2 - V_2^2}",
+        "\\sqrt{V_1^2 + V_2^2}",
+        "V_1 + V_2",
+        "V_1 - V_2"
+      ],
+      "answer": "\\sqrt{V_1^2 + V_2^2}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_028.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_029",
+      "question": "From the x - t graph, the particle has",
+      "options": [
+        "\\text{Constant Speed}",
+        "\\text{Decreasing Speed}",
+        "\\text{Increasing Speed}",
+        "\\text{Zero Speed}"
+      ],
+      "answer":  "\\text{Increasing Speed}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_029.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_030",
+      "question": "The drift of the boat is (V<sub>BR</sub> = velocity of boat with respect to river, V<sub>R</sub> = velocity of river, <b>d</b> = river width)",
+      "options": [
+        "(V_R - V_{BR} \\sin \\theta) \\frac{d}{V_{BR} \\cos \\theta}",
+        "(V_R - V_{BR} \\cos \\theta) \\frac{d}{V_{BR} \\cos \\theta}",
+        "(V_R - V_{BR} \\cos \\theta) \\frac{d}{V_{BR} \\sin \\theta}",
+        "(V_R - V_{BR} \\sin \\theta) \\frac{d}{V_{BR} \\sin \\theta}"
+      ],
+      "answer": "(V_R - V_{BR} \\sin \\theta) \\frac{d}{V_{BR} \\cos \\theta}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_030.png",
+      "tip": ""
+    },
+
+    {
+      "id": "Kinematics_qn_031",
+      "question": "From the x - t graph, the particle",
+      "options": [
+        "\\text{Has Constant Speed}",
+        "\\text{Has Decreasing Speed}",
+        "\\text{Increasing Speed}",
+        "\\text{Has Zero Speed}"
+      ],
+      "answer": "\\text{Has Zero Speed}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_031.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_032",
+      "question": "From the x - t graph, the particle",
+      "options": [
+        "\\text{Has Constant non zero Speed}",
+        "\\text{Has Decreasing Speed}",
+        "\\text{Increasing Speed}",
+        "\\text{Has Zero Speed}"
+      ],
+      "answer": "\\text{Has Constant non zero Speed}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_032.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_033",
+      "question": "From the v - t graph, the particle",
+      "options": [
+        "\\text{Has Constant non zero Speed}",
+        "\\text{Has Decreasing Speed}",
+        "\\text{Increasing Speed}",
+        "\\text{Has Zero Speed}"
+      ],
+      "answer": "\\text{Has Constant non zero Speed}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_033.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_034",
+      "question": "The area under velocity time graph gives",
+      "options": [
+        "\\text{Displacement}",
+        "\\text{Distance}",
+        "\\text{Acceleration}",
+        "\\text{Speed}"
+      ],
+      "answer": "\\text{Displacement}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_035",
+      "question": "From the v - t graph, the particle",
+      "options": [
+        "\\text{Has Constant non zero Speed}",
+        "\\text{Has Decreasing Speed}",
+        "\\text{Has Increasing Speed}",
+        "\\text{Has Zero Speed}"
+      ],
+      "answer": "\\text{Has Decreasing Speed}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_035.png",
+      "tip": ""
+    },
+
+    {
+      "id": "Kinematics_qn_036",
+      "question": "From the x - t graph, the particle",
+      "options": [
+        "\\text{Has Constant non zero Speed}",
+        "\\text{Has Decreasing Speed}",
+        "\\text{Has Increasing Speed}",
+        "\\text{Has Zero Speed}"
+      ],
+      "answer": "\\text{Has Decreasing Speed}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_036.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_037",
+      "question": "From the v - t graph, the particle",
+      "options": [
+        "\\text{Has Constant non zero Speed}",
+        "\\text{Has Decreasing Speed}",
+        "\\text{Has Increasing Speed}",
+        "\\text{Has Zero Speed}"
+      ],
+      "answer": "\\text{Has Increasing Speed}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_037.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_038",
+      "question": "The area under acceleration time graph gives",
+      "options": [
+        "\\text{Displacement}",
+        "\\text{Change in velocity}",
+        "\\text{Velocity}",
+        "\\text{Speed}"
+      ],
+      "answer": "\\text{Change in velocity}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_039",
+      "question": "The correct formula for trajectory of path of oblique projectile is (x,y are coordinates of path, R= range of projectile)",
+      "options": [
+        "y = x \\tan \\theta \\left(1 - \\frac{x}{R}\\right)",
+        "y = x \\tan \\theta \\left(1 + \\frac{x}{R}\\right)",
+        "y = x \\tan \\theta \\left(1 - \\frac{2x}{R}\\right)",
+        "y = x \\tan \\theta \\left(1 + \\frac{x}{2R}\\right)"
+      ],
+      "answer": "y = x \\tan \\theta \\left(1 - \\frac{x}{R}\\right)",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_040",
+      "question": "From the a - t graph, the particle experiences (Jerk is rate of change of acceleration)",
+      "options": [
+        "\\text{First Dec then Inc Jerk}",
+        "\\text{First Inc then Dec Jerk}",
+        "\\text{Zero Jerk}",
+        "\\text{Constant speed}"
+      ],
+      "answer": "\\text{First Dec then Inc Jerk}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_040.png",
+      "tip": ""
+    }
+
+
+
+
 ]

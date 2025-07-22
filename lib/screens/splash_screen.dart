@@ -134,7 +134,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
             // ............. Chunk 5 SUBTITLE TEXT .............
             Text(
-              'Physics with Rakesh  |  IIT Madras',
+              'Physics revision, GAMIFIED 😀',
               style: TextStyle(
                 fontSize: screenWidth * 0.045,
                 color: Color(0xFFC5C5C5),
