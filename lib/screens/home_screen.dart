@@ -18,6 +18,7 @@ import 'ai_tracker_screen.dart'; // Add this import
 //import 'package:formularacing/services/matchmaking_service.dart'; // For MatchmakingService
 //import 'package:formularacing/screens/qr_host_screen.dart';
 import 'multiplayer_selection_screen.dart';
+import 'package:flutter/services.dart';
 
 
 
@@ -123,6 +124,13 @@ class _HomeScreenState extends State<HomeScreen> {
             );
           },
         );
+
+        if (shouldPop == true) {
+
+          SystemNavigator.pop();
+
+          return true; // Indicate that the pop action is handled (though SystemNavigator.pop takes over)
+        }
         return shouldPop ?? false;
       },
     child: Scaffold(

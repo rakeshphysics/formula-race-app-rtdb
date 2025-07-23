@@ -481,7 +481,7 @@
         "\\tan^{-1}(\\frac{V_P}{V_R})",
         "\\tan^{-1}(\\frac{V_R}{V_P})"
       ],
-      "answer": "\\tan^{-1}(\\frac{V_R}{V_P})",
+      "answer": "\\tan^{-1}(\\frac{V_P}{V_R})",
       "tags": {
         "chapter": "Kinematics",
         "difficulty": "medium",

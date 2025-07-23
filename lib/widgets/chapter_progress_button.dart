@@ -16,9 +16,9 @@ class ChapterProgressButton extends StatelessWidget {
   });
 
   Color _getFillColor(double percentage) {
-    if (percentage < 20) {
+    if (percentage < 33) {
       return Colors.red;
-    } else if (percentage >= 20 && percentage <= 60) {
+    } else if (percentage >= 33 && percentage <= 66) {
       return Colors.orange;
     } else {
       return highlightColor; // Use the provided highlightColor (defaulting to cyanAccent)

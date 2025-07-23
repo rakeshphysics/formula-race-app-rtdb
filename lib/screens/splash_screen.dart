@@ -12,6 +12,7 @@ import 'package:firebase_core/firebase_core.dart';
 import '../firebase_options.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 
 class SplashScreen extends StatefulWidget {
@@ -33,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
   // Inside _SplashScreenState class
   Future<void> _initializeFirebaseAndNavigate() async {
     try {
-      const Duration minDisplayTime = Duration(seconds: 3); // Set your desired minimum duration
+      const Duration minDisplayTime = Duration(seconds: 2000); // Set your desired minimum duration
       final startTime = DateTime.now();
 
       // 1. Initialize Firebase
@@ -105,44 +106,57 @@ class _SplashScreenState extends State<SplashScreen> {
     final screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
-      backgroundColor: const Color(0x000000), // dark background
-      body: Center(
-        child: Column(
-          children: [
-            const Spacer(),  // push logo to center
+      backgroundColor: Colors.black, // Assuming this is Color(0x000000) from your previous code
+      body: Center( // This centers the content horizontally
+        child: SizedBox( // Constraint the Column to full screen height
+          height: screenHeight, // Make SizedBox take full screen height
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center, // Centers the content (logo + text block) vertically within the SizedBox
+            mainAxisSize: MainAxisSize.max, // Ensure Column tries to take max space provided by SizedBox
 
-            // ............. Chunk 3 LOGO IMAGE .............
-            Image.asset(
-              'assets/logo.png',
-              width: screenWidth * 0.3,
-              height: screenWidth * 0.3,
-            ),
+            children: [
+              const Spacer(), // Pushes the logo-text block down from the top
 
-            SizedBox(height: screenHeight * 0.02),
-
-            // ............. Chunk 4 APP NAME TEXT .............
-            const Text(
-              'Formula Racing',
-              style: TextStyle(
-                fontSize: 32,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
+              // ............. Chunk 3 LOGO IMAGE .............
+              Image.asset(
+                'assets/logo.png', // Ensure this path is correct
+                width: screenWidth * 0.3,
+                height: screenWidth * 0.3,
               ),
-            ),
 
-            const Spacer(),  // push subtitle way down
+              SizedBox(height: screenHeight * 0.04), // Space between logo and text
 
-            // ............. Chunk 5 SUBTITLE TEXT .............
-            Text(
-              'Physics revision, GAMIFIED 😀',
-              style: TextStyle(
-                fontSize: screenWidth * 0.045,
-                color: Color(0xFFC5C5C5),
+              // ............. Chunk 4 APP NAME TEXT .............
+              Column(
+                mainAxisSize: MainAxisSize.min, // This Column wraps its content tightly
+                children: [ // Removed const here because GoogleFonts.poppins() is not a const constructor
+                  Text(
+                    'Physics revision,',
+                    style: GoogleFonts.poppins( // ✨ USING POPPINS FONT HERE ✨
+                      fontSize: 23,
+                      color: const Color(0xFFD3D3D3), // Using const for color
+                      fontWeight: FontWeight.normal,
+                    ),
+                  ),
+                  const SizedBox(height: 8), // Optional: Add a small space between the lines
+                  Text(
+                    'GAMIFIED !',
+                    style: GoogleFonts.poppins( // ✨ USING POPPINS FONT HERE ✨
+                      fontSize: 25,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 1.5,
+                      // fontFamily: 'Helvetica', // Removed explicit Helvetica, Poppins is now used
+                    ),
+                  ),
+                ],
               ),
-            ),
 
-            SizedBox(height: screenHeight * 0.035),  // small bottom spacing
-          ],
+              const Spacer(), // Pushes the logo-text block up from the bottom
+
+              // Your commented out "Formula Racing" text or other bottom content would go here
+            ],
+          ),
         ),
       ),
     );
