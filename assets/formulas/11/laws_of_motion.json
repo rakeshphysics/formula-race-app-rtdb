@@ -180,6 +180,370 @@
       },
       "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_010.png",
       "tip": ""
-    }
+    },
 
+    {
+      "id": "laws_of_motion_qn_011",
+      "question": "A spring has spring constant <b>k</b>, it natural length is <b>l</b> and its extension is <b>x</b>, spring force is",
+      "options": [
+        "k(l+x)",
+        "k(l-x)",
+        "kl",
+        "kx"
+      ],
+      "answer": "kx",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_012",
+      "question": "A person of mass <b>m</b> stands in a lift moving up with constant velocity. The weighing machine shows weight of person as",
+      "options": [
+        "mg",
+        "0",
+        "2mg",
+        "mg/2"
+      ],
+      "answer": "mg",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_012.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_013",
+      "question": "A person of mass <b>m</b> stands in a lift moving up with constant acceleration <b>a</b>. The weighing machine shows weight of person as",
+      "options": [
+        "m(g-a)",
+        "mg",
+        "m(g+a)",
+        "m(a-g)"
+      ],
+      "answer": "m(g+a)",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_013.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_014",
+      "question": "A person of mass <b>m</b> stands in a lift moving down with constant acceleration <b>a</b>. The weighing machine shows weight of person as (a < g)",
+      "options": [
+        "m(g-a)",
+        "0",
+        "m(g+a)",
+        "mg"
+      ],
+      "answer": "m(g-a)",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_014.png",
+      "tip": ""
+    },
+
+    {
+      "id": "laws_of_motion_qn_015",
+      "question": "A person of mass <b>m</b> stands in a lift moving down with constant acceleration <b>a</b>. The weighing machine shows weight of person as (a > g)",
+      "options": [
+        "m(g-a)",
+        "0",
+        "m(g+a)",
+        "mg"
+      ],
+      "answer": "0",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_015.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_016",
+      "question": "The two blocks are pushed with a force <b>F</b>. The acceleration of blocks is (Do by observation)",
+      "options": [
+        "\\frac{F}{m_2}",
+        "\\frac{F}{m_1 + m_2}",
+        "\\frac{F}{m_1 - m_2}",
+        "\\frac{F}{m_1}"
+      ],
+      "answer": "\\frac{F}{m_1 + m_2}",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_016.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_017",
+      "question": "The two blocks are pushed with a force <b>F</b>. The normal reaction between blocks is (Do by observation)",
+      "options": [
+        "\\frac{F}{m_2}",
+        "\\frac{F m_2}{m_1 + m_2}",
+        "\\frac{F}{m_1 - m_2}",
+        "\\frac{F}{m_1}"
+      ],
+      "answer": "\\frac{F m_2}{m_1 + m_2}",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_017.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_018",
+      "question": "The acceleration of the blocks is (Do by observation)",
+      "options": [
+        "\\frac{m_1 g}{m_1 - m_2}",
+        "\\frac{(m_1 + m_2)g}{m_1 - m_2}",
+        "\\frac{m_2 g}{m_1 + m_2}",
+        "\\frac{m_1 g}{m_1 + m_2}"
+      ],
+      "answer": "\\frac{m_2 g}{m_1 + m_2}",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_018.png",
+      "tip": ""
+    },
+
+    {
+      "id": "laws_of_motion_qn_019",
+      "question": "The acceleration of the blocks is (Do by observation)",
+      "options": [
+        "\\frac{m_1 g \\cos \\theta}{m_1 - m_2}",
+        "\\frac{(m_1 + m_2)g}{m_1 - m_2}",
+        "\\frac{m_2 g \\sin \\theta}{m_1 + m_2}",
+        "\\frac{|m_1 g \\sin \\theta - m_2 g|}{m_1 + m_2}"
+      ],
+      "answer": "\\frac{|m_1 g \\sin \\theta - m_2 g|}{m_1 + m_2}",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_019.png",
+      "tip": ""
+    },
+
+    {
+      "id": "laws_of_motion_qn_020",
+      "question": "The acceleration of the blocks is (Do by observation)",
+      "options": [
+        "\\frac{(m_1 - m_2)}{ (m_1 + m_2)}g",
+        "\\frac{(m_1 + m_2)g}{m_1 - m_2}",
+        "\\frac{m_2 g \\sin \\theta - m_1 g \\sin \\beta}{m_1 + m_2}",
+        "\\frac{m_1 g \\sin \\theta - m_2 g \\sin \\beta}{m_1 + m_2}"
+      ],
+      "answer": "\\frac{m_2 g \\sin \\theta - m_1 g \\sin \\beta}{m_1 + m_2}",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_020.png",
+      "tip": ""
+    },
+
+    {
+      "id": "laws_of_motion_qn_021",
+      "question": "In the frame of 1 (a non inertial frame), the pseudo force that need to be applied on 2 is",
+      "options": [
+        "-\\textbf{m}_2\\textbf{a}_1",
+        "\\textbf{m}_1\\textbf{a}_1",
+        "\\textbf{m}_2\\textbf{a}_2",
+        "\\textbf{m}_2\\textbf{a}_1"
+      ],
+      "answer": "-\\textbf{m}_2\\textbf{a}_1",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_021.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_022",
+      "question": "A block of mass 10 kg is suspended through two light spring balances as shown, then",
+      "options": [
+        "\\text{The lower scale shows higher reading than upper}",
+        "\\text{Bottom one reads 10 kg and upper 0 kg}",
+        "\\text{Both scales read 5 kg}",
+        "\\text{Both scales read 10 kg}"
+      ],
+      "answer": "\\text{Both scales read 10 kg}",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_022.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_023",
+      "question": "A block of mass <i>m</i> rests on ground. Which of the following are newton third law pair (N = Normal reaction)",
+      "options": [
+        "\\text{N on block and } mg \\text{ on block}",
+        "\\text{N on earth and } mg \\text{ on block}",
+        "mg \\text{ on block, } mg \\text{ at earth center}",
+        "\\text{None of these}"
+      ],
+      "answer": "mg \\text{ on block and } mg \\text{ at earth center}",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_023.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_024",
+      "question": "A block of mass <i>m</i> rests on ground. Which of the following are newton third law pair (N = Normal reaction)",
+      "options": [
+        "\\text{N on block and N on ground}",
+        "\\text{N on earth and } mg \\text{ on block}",
+        "mg \\text{ on block and } mg \\text{ at earth center}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{Normal on block and Normal on ground}",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_024.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_025",
+      "question": "The relation between acceleration of A and B is",
+      "options": [
+        "a_A = a_B",
+        "a_A = 2a_B",
+        "2a_A = a_B",
+        "a_A = 4a_B"
+      ],
+      "answer": "2a_A = a_B",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_025.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_026",
+      "question": "The relation between acceleration of A and B is",
+      "options": [
+        "a_A = a_B \\tan \\theta",
+        "a_B = a_A \\tan \\theta",
+        "a_A = a_B \\cos \\theta",
+        "a_A = a_B \\sec \\theta"
+      ],
+      "answer": "a_A = a_B \\tan \\theta",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_026.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_027",
+      "question": "The relation between speeds of A and B is",
+      "options": [
+        "v_A = v_B \\cos \\theta",
+        "v_B = v_A \\cos \\theta",
+        "v_B = v_A",
+        "2v_B = v_A"
+      ],
+      "answer": "v_A = v_B \\cos \\theta",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_027.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_028",
+      "question": "The angular speed &omega; of the conical pendulum is given by",
+      "options": [
+        "\\sqrt{\\frac{g}{l \\tan \\theta}}",
+        "\\sqrt{\\frac{g}{l}}",
+        "\\sqrt{\\frac{g}{l \\cos \\theta}}",
+        "\\sqrt{\\frac{g \\tan \\theta}{l}}"
+      ],
+      "answer": "\\sqrt{\\frac{g}{l \\cos \\theta}}",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_028.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_029",
+      "question": "For a car going on plane road, the maximum speed so that it does not skid is (<i>R</i> = radius of turn, &mu; = coefficient of friction)",
+      "options": [
+        "\\sqrt{2\\mu g}",
+        "\\sqrt{\\mu g}",
+        "\\sqrt{\\mu Rg}",
+        "\\sqrt{gR}"
+      ],
+      "answer": "\\sqrt{\\mu Rg}",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_029.png",
+      "tip": ""
+    },
+    {
+      "id": "laws_of_motion_qn_030",
+      "question": "For a function <i>y</i> = <i>f(x)</i> the radius of curvature at any point is given by",
+      "options": [
+        "(1-(\\frac{dy}{dx})^2)^{1/2} / (\\frac{d^2y}{dx^2})",
+        "(1+(\\frac{dy}{dx})^2)^{3/2} / (\\frac{d^2y}{dx^2})",
+        "(1+(\\frac{dy}{dx})^2)^{3/2}",
+        "(1-(\\frac{dy}{dx})^2)^{3/2}"
+      ],
+      "answer": "(1+(\\frac{dy}{dx})^2)^{3/2} / (\\frac{d^2y}{dx^2})",
+      "tags": {
+        "chapter": "Laws_of_Motion",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_030.png",
+      "tip": ""
+    }
 ]

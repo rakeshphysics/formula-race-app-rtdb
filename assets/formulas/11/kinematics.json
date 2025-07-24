@@ -725,9 +725,189 @@
       },
       "image": "assets/images/11th/kinematics/kinematics_qn_040.png",
       "tip": ""
+    },
+
+    {
+      "id": "Kinematics_qn_041",
+      "question": "The slope of displacement time graph gives",
+      "options": [
+        "\\text{Displacement}",
+        "\\text{Distance}",
+        "\\text{Velocity}",
+        "\\text{Acceleration}"
+      ],
+      "answer": "\\text{Velocity}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_042",
+      "question": "The slope of velocity time graph gives",
+      "options": [
+        "\\text{Displacement}",
+        "\\text{Distance}",
+        "\\text{Velocity}",
+        "\\text{Acceleration}"
+      ],
+      "answer": "\\text{Acceleration}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_043",
+      "question": "A particle is dropped from a tower. The ratio of distances it covers in 1s, 2s, 3s is",
+      "options": [
+        "\\text{1 : 4 : 9}",
+        "\\text{1 : 3 : 5}",
+        "\\text{1 : 2 : 3}",
+        "\\text{3 : 2 : 1}"
+      ],
+      "answer": "\\text{1 : 4 : 9}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_044",
+      "question": "A particle is dropped from a tower. The ratio of distances it covers in 1<sup>st</sup> sec, 2<sup>nd</sup> sec, 3<sup>rd</sup> sec is",
+      "options": [
+        "\\text{1 : 4 : 9}",
+        "\\text{1 : 3 : 5}",
+        "\\text{1 : 2 : 3}",
+        "\\text{3 : 2 : 1}"
+      ],
+      "answer": "\\text{1 : 3 : 5}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_045",
+      "question": "A particle is projected horizontally from a tower. The time of fall equals",
+      "options": [
+        "\\sqrt{\\frac{h}{2g}}",
+        "\\sqrt{\\frac{g}{h}}",
+        "\\sqrt{\\frac{2h}{g}}",
+        "\\sqrt{\\frac{h}{g}}"
+      ],
+      "answer": "\\sqrt{\\frac{2h}{g}}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_045.png",
+      "tip": ""
+    },
+
+    {
+      "id": "Kinematics_qn_046",
+      "question": "A particle is projected horizontally from a tower. Its range equals",
+      "options": [
+        "u \\sqrt{\\frac{h}{2g}}",
+        "u \\sqrt{\\frac{g}{h}}",
+        "u \\sqrt{\\frac{2h}{g}}",
+        "u \\sqrt{\\frac{h}{g}}"
+      ],
+      "answer": "u \\sqrt{\\frac{2h}{g}}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_046.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_047",
+      "question": "A body is thrown with speed u as shown, The equation of trajectory is",
+      "options": [
+        "y = x \\tan \\theta - \\frac{gx^2}{u^2 \\cos^2 \\theta}",
+        "y = x \\tan \\theta - \\frac{gx^2}{2u^2 \\cos^2 \\theta}",
+        "y = x \\cos \\theta - \\frac{gx^2}{u^2 \\cos^2 \\theta}",
+        "y = x \\cos \\theta + \\frac{gx^2}{u^2 \\cos^2 \\theta}"
+      ],
+      "answer": "y = x \\tan \\theta - \\frac{gx^2}{2u^2 \\cos^2 \\theta}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_047.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_048",
+      "question": "The area under acceleration displacement graph gives (&Delta;KE = change in kinetic energy, m = mass)",
+      "options": [
+        "\\text{$\\Delta$KE}",
+        "\\text{$\\Delta$KE/m}",
+        "\\text{Velocity}",
+        "\\text{Change in Velocity}"
+      ],
+      "answer": "\\text{$\\Delta$KE/m}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_049",
+      "question": "The range R of the body is",
+      "options": [
+        "\\frac{u_x^2}{2g}",
+        "\\frac{u_y^2}{g}",
+        "\\frac{2u_x u_y}{g}",
+        "\\frac{u_x u_y}{g}"
+      ],
+      "answer": "\\frac{2u_x u_y}{g}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_049.png",
+      "tip": ""
+    },
+    {
+      "id": "Kinematics_qn_050",
+      "question": "A particle is projected horizontally from a tower. The equation of trajectory is",
+      "options": [
+        "y = \\frac{gx^2}{2u^2}",
+        "y = \\frac{gx^2}{u^2}",
+        "y = \\frac{2gx^2}{u^2}",
+        "y = \\frac{x^2}{gu^2}"
+      ],
+      "answer": "y = \\frac{gx^2}{2u^2}",
+      "tags": {
+        "chapter": "Kinematics",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinematics/kinematics_qn_050.png",
+      "tip": ""
     }
-
-
 
 
 ]

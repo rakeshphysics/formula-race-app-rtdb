@@ -23,6 +23,7 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
      'Units and Dimensions',
     'Kinematics',
     'Laws of Motion',
+    'Circular Motion',
     'Work Power Energy',
     'Center of Mass',
     'Rotational Motion',

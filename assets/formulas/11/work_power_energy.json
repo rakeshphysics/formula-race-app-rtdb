@@ -14,7 +14,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "",
+    "image": "assets/images/11th/work_power_energy/work_power_energy_qn_001.png",
     "tip": ""
   },
   {
@@ -32,7 +32,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "",
+    "image": "assets/images/11th/work_power_energy/work_power_energy_qn_002.png",
     "tip": ""
   },
   {
@@ -124,7 +124,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "",
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_007.png",
       "tip": ""
     },
     {
@@ -142,7 +142,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "",
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_008.png",
       "tip": ""
     },
     {
@@ -160,7 +160,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "",
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_009.png",
       "tip": ""
     },
     {
@@ -179,6 +179,189 @@
         "class": "11"
       },
       "image": "",
+      "tip": ""
+    },
+
+
+    {
+      "id": "work_power_energy_qn_011",
+      "question": "The area under force displacement graph gives",
+      "options": [
+        "\\text{Work done by Force}",
+        "\\text{Power supplied by force}",
+        "\\text{Momentum Imparted by force}",
+        "\\text{Velocity}"
+      ],
+      "answer": "\\text{Work done by Force}",
+      "tags": {
+        "chapter": "Work_Power_Energy",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_011.png",
+      "tip": ""
+    },
+    {
+      "id": "work_power_energy_qn_012",
+      "question": "The area under force time graph gives",
+      "options": [
+        "\\text{Work done by Force}",
+        "\\text{Power supplied by force}",
+        "\\text{Momentum Imparted by force}",
+        "\\text{Velocity}"
+      ],
+      "answer": "\\text{Momentum Imparted by force}",
+      "tags": {
+        "chapter": "Work_Power_Energy",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_012.png",
+      "tip": ""
+    },
+    {
+      "id": "work_power_energy_qn_013",
+      "question": "The work done by a conservative force equals (&Delta;U = change in potential energy due to that force field)",
+      "options": [
+        "\\Delta U",
+        "-\\Delta U",
+        "\\frac{\\Delta U}{2}",
+        "-\\frac{\\Delta U}{2}"
+      ],
+      "answer": "-\\Delta U",
+      "tags": {
+        "chapter": "Work_Power_Energy",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "work_power_energy_qn_014",
+      "question": "1 Hp (horsepower) equals",
+      "options": [
+        "\\text{200 Watts}",
+        "\\text{500 Watts}",
+        "\\text{746 Watts}",
+        "\\text{546 Watts}"
+      ],
+      "answer": "\\text{746 Watts}",
+      "tags": {
+        "chapter": "Work_Power_Energy",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "work_power_energy_qn_015",
+      "question": "The area under Power time graph is",
+      "options": [
+        "\\text{Work done}",
+        "\\text{Displacement}",
+        "\\text{Acceleration}",
+        "\\text{Velocity}"
+      ],
+      "answer": "\\text{Work done}",
+      "tags": {
+        "chapter": "Work_Power_Energy",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_015.png",
+      "tip": ""
+    },
+    {
+      "id": "work_power_energy_qn_016",
+      "question": "The slope of work time graph is",
+      "options": [
+        "\\text{Power}",
+        "\\text{Displacement}",
+        "\\text{Acceleration}",
+        "\\text{Velocity}"
+      ],
+      "answer": "\\text{Power}",
+      "tags": {
+        "chapter": "Work_Power_Energy",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_016.png",
+      "tip": ""
+    },
+  
+    {
+      "id": "work_power_energy_qn_017",
+      "question": "The minimum horizontal speed <i>v</i> to be given to the particle so that it can complete a full circle is",
+      "options": [
+        "\\sqrt{4gl}",
+        "\\sqrt{2gl}",
+        "\\sqrt{5gl}",
+        "\\sqrt{3gl}"
+      ],
+      "answer": "\\sqrt{5gl}",
+      "tags": {
+        "chapter": "Work_Power_Energy",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_017.png",
+      "tip": ""
+    },
+    {
+      "id": "work_power_energy_qn_018",
+      "question": "The minimum horizontal speed <i>v</i> to be given to the particle so that it can complete a full circle is",
+      "options": [
+        "\\sqrt{4gl}",
+        "\\sqrt{2gl}",
+        "\\sqrt{5gl}",
+        "\\sqrt{3gl}"
+      ],
+      "answer": "\\sqrt{4gl}",
+      "tags": {
+        "chapter": "Work_Power_Energy",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_018.png",
+      "tip": ""
+    },
+    {
+      "id": "work_power_energy_qn_019",
+      "question": "The minimum horizontal speed <i>v</i> to be given to the ring so that it can complete a full circle is",
+      "options": [
+        "\\sqrt{4gl}",
+        "\\sqrt{2gl}",
+        "\\sqrt{5gl}",
+        "\\sqrt{3gl}"
+      ],
+      "answer": "\\sqrt{4gl}",
+      "tags": {
+        "chapter": "Work_Power_Energy",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_019.png",
+      "tip": ""
+    },
+    {
+      "id": "work_power_energy_qn_020",
+      "question": "The minimum horizontal speed <i>v</i> to be given to the ring so that it can complete a full circle is",
+      "options": [
+        "\\sqrt{4gl}",
+        "\\sqrt{2gl}",
+        "\\sqrt{5gl}",
+        "\\sqrt{3gl}"
+      ],
+      "answer": "\\sqrt{4gl}",
+      "tags": {
+        "chapter": "Work_Power_Energy",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_020.png",
       "tip": ""
     }
 

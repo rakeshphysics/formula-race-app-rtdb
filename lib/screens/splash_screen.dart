@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
   // Inside _SplashScreenState class
   Future<void> _initializeFirebaseAndNavigate() async {
     try {
-      const Duration minDisplayTime = Duration(seconds: 2000); // Set your desired minimum duration
+      const Duration minDisplayTime = Duration(seconds: 3); // Set your desired minimum duration
       final startTime = DateTime.now();
 
       // 1. Initialize Firebase
@@ -128,32 +128,38 @@ class _SplashScreenState extends State<SplashScreen> {
 
               // ............. Chunk 4 APP NAME TEXT .............
               Column(
-                mainAxisSize: MainAxisSize.min, // This Column wraps its content tightly
-                children: [ // Removed const here because GoogleFonts.poppins() is not a const constructor
+                mainAxisSize: MainAxisSize.min,
+                children: [
                   Text(
-                    'Physics revision,',
-                    style: GoogleFonts.poppins( // ✨ USING POPPINS FONT HERE ✨
-                      fontSize: 23,
-                      color: const Color(0xFFD3D3D3), // Using const for color
-                      fontWeight: FontWeight.normal,
+                    'Physics Revision', // Line 1: The subject and exam context
+                    style: GoogleFonts.poppins(
+                      fontSize: 20, // Slightly larger to be the main subject line
+                      color: const Color(0xFFD3D3D3), // Lighter grey
+                      fontWeight: FontWeight.normal, // Make it bold for more emphasis
                     ),
                   ),
-                  const SizedBox(height: 8), // Optional: Add a small space between the lines
+                  const SizedBox(height: 9), // Increased space for clear separation between context and punchline
                   Text(
-                    'GAMIFIED !',
-                    style: GoogleFonts.poppins( // ✨ USING POPPINS FONT HERE ✨
-                      fontSize: 25,
-                      color: Colors.white,
+                    ' GAMIFIED !', // Line 2: The punchline, largest and white
+                    style: GoogleFonts.poppins(
+                      fontSize: 28, // Largest font size for maximum impact
+                      color: Colors.white, // White for maximum contrast
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.5,
-                      // fontFamily: 'Helvetica', // Removed explicit Helvetica, Poppins is now used
                     ),
                   ),
                 ],
               ),
 
               const Spacer(), // Pushes the logo-text block up from the bottom
-
+              Text(
+                'JEE Mains/Adv', // Line 1: The subject and exam context
+                style: GoogleFonts.poppins(
+                  fontSize: 18,
+                  color: const Color(0xFFA3A3A3), // Lighter grey
+                  fontWeight: FontWeight.normal, // Make it bold for more emphasis
+                ),
+              ),
               // Your commented out "Formula Racing" text or other bottom content would go here
             ],
           ),

@@ -1,0 +1,185 @@
+[
+  {
+    "id": "circular_motion_qn_001",
+    "question": "For a rotating body, its final angular velocity &omega; in terms of known variables is (symbols have usual meanings, &alpha; is constant)",
+    "options": [
+      "\\omega_0 + \\alpha t",
+      "\\omega_0 - \\alpha t",
+      "\\omega_0 \\alpha t",
+      "2\\omega_0 \\alpha t"
+    ],
+    "answer": "\\omega_0 + \\alpha t",
+    "tags": {
+      "chapter": "Circular_Motion",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "circular_motion_qn_002",
+    "question": "For a particle moving in circular path of radius <i>R</i>, its speed <i>v</i> equals (&omega; = angular velocity)",
+    "options": [
+      "R\\omega^2",
+      "R\\omega",
+      "R^2\\omega",
+      "2R\\omega"
+    ],
+    "answer": "R\\omega",
+    "tags": {
+      "chapter": "Circular_Motion",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "circular_motion_qn_003",
+    "question": "For a particle moving in circular path of radius <i>R</i>, its tangential acceleration <i>a<sub>t</sub></i> equals (&alpha; = angular acceleration)",
+    "options": [
+      "R\\alpha^2",
+      "R\\alpha",
+      "R^2\\alpha",
+      "2R\\alpha"
+    ],
+    "answer": "R\\alpha",
+    "tags": {
+      "chapter": "Circular_Motion",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "circular_motion_qn_004",
+    "question": "For a rotating body, its angular displacement &theta; in terms of known variables is (symbols have usual meanings, &alpha; is constant)",
+    "options": [
+      "\\omega_0 t - \\frac{1}{2}\\alpha t^2",
+      "\\omega_0 t + \\frac{1}{2}\\alpha t^2",
+      "\\frac{1}{2}\\alpha t^2",
+      "\\alpha t^2"
+    ],
+    "answer": "\\omega_0 t + \\frac{1}{2}\\alpha t^2",
+    "tags": {
+      "chapter": "Circular_Motion",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "circular_motion_qn_005",
+    "question": "For a rotating body, its final angular velocity &omega;<sup>2</sup> in terms of known variables is (symbols have usual meanings, &alpha; is constant)",
+    "options": [
+      "\\omega_0 + 2\\alpha \\theta",
+      "\\omega_0^2 - 2\\alpha \\theta",
+      "\\omega_0^2 + 2\\alpha \\theta",
+      "\\omega_0 - 2\\alpha \\theta"
+    ],
+    "answer": "\\omega_0^2 + 2\\alpha \\theta",
+    "tags": {
+      "chapter": "Circular_Motion",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "circular_motion_qn_006",
+    "question": "The formula for centripetal acceleration is (<i>v</i> = particle speed, <i>R</i> = radius of circular path)",
+    "options": [
+      "\\frac{v}{R}",
+      "\\frac{v^2}{R}",
+      "\\frac{v^2}{2R}",
+      "\\frac{2v}{R}"
+    ],
+    "answer": "\\frac{v^2}{R}",
+    "tags": {
+      "chapter": "Circular_Motion",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+
+    {
+      "id": "circular_motion_qn_007",
+      "question": "The formula for tangential acceleration is (<i>v</i> = particle speed, <i>R</i> = radius of circular path)",
+      "options": [
+        "v \\frac{dv}{dt}",
+        "\\frac{v^2}{R}",
+        "\\frac{dv}{dt}",
+        "R \\frac{dv}{dt}"
+      ],
+      "answer": "\\frac{dv}{dt}",
+      "tags": {
+        "chapter": "Circular_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "circular_motion_qn_008",
+      "question": "The magnitude of total acceleration of a particle in circular motion is (<i>a<sub>c</sub></i> = centripetal acceleration, <i>a<sub>t</sub></i> = tangential acceleration)",
+      "options": [
+        "|a_c - a_t|",
+        "a_c + a_t",
+        "\\sqrt{a_c^2 + a_t^2}",
+        "\\sqrt{a_c^2 - a_t^2}"
+      ],
+      "answer": "\\sqrt{a_c^2 + a_t^2}",
+      "tags": {
+        "chapter": "Circular_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "circular_motion_qn_009",
+      "question": "For a car going on banked road, the optimum speed is (No friction acts at this speed, less wear and tear of tire)",
+      "options": [
+        "\\sqrt{2gR}",
+        "\\sqrt{gR \\cos \\theta}",
+        "\\sqrt{gR \\sin \\theta}",
+        "\\sqrt{gR \\tan \\theta}"
+      ],
+      "answer": "\\sqrt{gR \\tan \\theta}",
+      "tags": {
+        "chapter": "Circular_Motion",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/circular_motion/circular_motion_qn_009.png",
+      "tip": ""
+    },
+    {
+      "id": "circular_motion_qn_010",
+      "question": "For a car going on banked road, the maximum speed so that it does not skid is (<i>R</i> = radius of turn, &mu; = coefficient of friction)",
+      "options": [
+        "\\sqrt{gR \\frac{(\\mu+\\tan \\theta)}{(1-\\mu \\tan \\theta)}}",
+        "\\sqrt{gR \\frac{(\\mu+\\tan \\theta)}{(1+\\mu \\tan \\theta)}}",
+        "\\sqrt{\\mu Rg}",
+        "\\sqrt{gR \\tan \\theta}"
+      ],
+      "answer": "\\sqrt{gR \\frac{(\\mu+\\tan \\theta)}{(1-\\mu \\tan \\theta)}}",
+      "tags": {
+        "chapter": "Circular_Motion",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/circular_motion/circular_motion_qn_010.png",
+      "tip": ""
+    }
+
+
+]
