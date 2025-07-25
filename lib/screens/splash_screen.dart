@@ -153,7 +153,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
               const Spacer(), // Pushes the logo-text block up from the bottom
               Text(
-                'JEE Mains/Adv', // Line 1: The subject and exam context
+                'For JEE Mains/Adv', // Line 1: The subject and exam context
                 style: GoogleFonts.poppins(
                   fontSize: 18,
                   color: const Color(0xFFA3A3A3), // Lighter grey

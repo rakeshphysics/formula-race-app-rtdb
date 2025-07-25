@@ -179,6 +179,188 @@
       },
       "image": "",
       "tip": ""
+    },
+
+    {
+      "id": "center_of_mass_qn_011",
+      "question": "If point masses <i>m<sub>1</sub></i> and <i>m<sub>2</sub></i> are located at <b>r<sub>1</sub></b> and <b>r<sub>2</sub></b> respectively. The centre of mass of <i>m<sub>1</sub></i> and <i>m<sub>2</sub></i> is located at",
+      "options": [
+        "\\frac{m_1\\textbf{r}_1 + m_2\\textbf{r}_2}{m_1 - m_2}",
+        "\\frac{m_1\\textbf{r}_2 + m_2\\textbf{r}_1}{m_1 + m_2}",
+        "\\frac{m_1\\textbf{r}_1 + m_2\\textbf{r}_2}{m_1 + m_2}",
+        "\\frac{m_1\\textbf{r}_1 - m_2\\textbf{r}_2}{m_1 + m_2}"
+      ],
+      "answer": "\\frac{m_1\\textbf{r}_1 + m_2\\textbf{r}_2}{m_1 + m_2}",
+      "tags": {
+        "chapter": "Center_of_Mass",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/center_of_mass/center_of_mass_qn_011.png",
+      "tip": ""
+    },
+    {
+      "id": "center_of_mass_qn_012",
+      "question": "If masses <i>m<sub>1</sub></i> and <i>m<sub>2</sub></i> are moving with speeds <b>a<sub>1</sub></b> and <b>a<sub>2</sub></b> respectively. The speed of centre of mass is",
+      "options": [
+        "\\frac{m_1\\textbf{a}_1 + m_2\\textbf{a}_2}{m_1 - m_2}",
+        "\\frac{m_1\\textbf{a}_2 + m_2\\textbf{a}_1}{m_1 + m_2}",
+        "\\frac{m_1\\textbf{a}_1 - m_2\\textbf{a}_2}{m_1 + m_2}",
+        "\\frac{m_1\\textbf{a}_1 + m_2\\textbf{a}_2}{m_1 + m_2}"
+      ],
+      "answer": "\\frac{m_1\\textbf{a}_1 + m_2\\textbf{a}_2}{m_1 + m_2}",
+      "tags": {
+        "chapter": "Center_of_Mass",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/center_of_mass/center_of_mass_qn_012.png",
+      "tip": ""
+    },
+    {
+      "id": "center_of_mass_qn_013",
+      "question": "If masses <i>m<sub>1</sub></i> and <i>m<sub>2</sub></i> are moving with speeds <b>v<sub>1</sub></b> and <b>v<sub>2</sub></b> respectively. The speed of center of mass is",
+      "options": [
+        "\\frac{m_1\\textbf{v}_1 + m_2\\textbf{v}_2}{m_1 - m_2}",
+        "\\frac{m_1\\textbf{v}_1 - m_2\\textbf{v}_2}{m_1 + m_2}",
+        "\\frac{m_1\\textbf{v}_2 + m_2\\textbf{v}_1}{m_1 + m_2}",
+        "\\frac{m_1\\textbf{v}_1 + m_2\\textbf{v}_2}{m_1 + m_2}"
+      ],
+      "answer": "\\frac{m_1\\textbf{v}_1 + m_2\\textbf{v}_2}{m_1 + m_2}",
+      "tags": {
+        "chapter": "Center_of_Mass",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/center_of_mass/center_of_mass_qn_013.png",
+      "tip": ""
+    },
+    {
+      "id": "center_of_mass_qn_014",
+      "question": "The area under force time graph gives",
+      "options": [
+        "\\text{Work done by Force}",
+        "\\text{Power supplied by force}",
+        "\\text{Impulse due to force}",
+        "\\text{Velocity}"
+      ],
+      "answer": "\\text{Impulse due to force}",
+      "tags": {
+        "chapter": "Center_of_Mass",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/center_of_mass/center_of_mass_qn_014.png",
+      "tip": ""
+    },
+    {
+      "id": "center_of_mass_qn_015",
+      "question": "If the two bodies collide elastically (<i>m<sub>1</sub></i> >> <i>m<sub>2</sub></i>)(<i>v<sub>1</sub></i>, <i>v<sub>2</sub></i> are final velocities)",
+      "options": [
+        "\\text{v}_1 = 2 \\text{ m/s, v}_2 = 4 \\text{ m/s}",
+        "\\text{v}_1 = 2 \\text{ m/s, v}_2 = 2 \\text{ m/s}",
+        "\\text{v}_1 = 1 \\text{ m/s, v}_2 = 4 \\text{ m/s}",
+        "\\text{v}_1 = 1 \\text{ m/s, v}_2 = 2 \\text{ m/s}"
+      ],
+      "answer": "\\text{v}_1 = 2 \\text{ m/s, v}_2 = 4 \\text{ m/s}",
+      "tags": {
+        "chapter": "Center_of_Mass",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/center_of_mass/center_of_mass_qn_015.png",
+      "tip": ""
+    },
+
+    {
+      "id": "center_of_mass_qn_016",
+      "question": "If the two bodies collide elastically (<i>m<sub>1</sub></i> >> <i>m<sub>2</sub></i>)(<i>v<sub>1</sub></i>, <i>v<sub>2</sub></i> are final velocities)",
+      "options": [
+        "\\text{v}_1 = 0 \\text{ m/s, v}_2 = 2 \\text{ m/s}",
+        "\\text{v}_1 = -1 \\text{ m/s, v}_2 = 2 \\text{ m/s}",
+        "\\text{v}_1 = -1 \\text{ m/s, v}_2 = 1 \\text{ m/s}",
+        "\\text{v}_1 = -0.5 \\text{ m/s, v}_2 = 1.5 \\text{ m/s}"
+      ],
+      "answer": "\\text{v}_1 = 0 \\text{ m/s, v}_2 = 2 \\text{ m/s}",
+      "tags": {
+        "chapter": "Center_of_Mass",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/center_of_mass/center_of_mass_qn_016.png",
+      "tip": ""
+    },
+    {
+      "id": "center_of_mass_qn_017",
+      "question": "The thrust force on the rocket is (<i>v<sub>r</sub></i> = relative exhaust speed of gases, &lambda; = mass ejection rate of gases)",
+      "options": [
+        "\\lambda\\sqrt{v_r}",
+        "\\lambda/v_r",
+        "\\lambda v_r^2",
+        "\\lambda v_r"
+      ],
+      "answer": "\\lambda v_r",
+      "tags": {
+        "chapter": "Center_of_Mass",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/center_of_mass/center_of_mass_qn_017.png",
+      "tip": ""
+    },
+    {
+      "id": "center_of_mass_qn_018",
+      "question": "The velocity of rocket at any instant is (<i>v<sub>r</sub></i> = relative exhaust speed of gases, <i>m<sub>o</sub></i> = initial mass, <i>m</i> = mass at time <i>t</i>, initial velocity is zero)",
+      "options": [
+        "v_r \\ln \\left(\\frac{m_0}{m}\\right) + gt",
+        "v_r \\ln \\left(\\frac{m}{m_0}\\right) + gt",
+        "v_r \\ln \\left(\\frac{m_0}{m}\\right) - gt",
+        "v_r \\ln \\left(\\frac{m}{m_0}\\right)"
+      ],
+      "answer": "v_r \\ln \\left(\\frac{m_0}{m}\\right) - gt",
+      "tags": {
+        "chapter": "Center_of_Mass",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/center_of_mass/center_of_mass_qn_018.png",
+      "tip": ""
+    },
+    {
+      "id": "center_of_mass_qn_019",
+      "question": "The COM of an arc of a circle from base is",
+      "options": [
+        "\\frac{R \\sin \\theta}{\\theta}",
+        "\\frac{R \\sin \\theta}{2\\theta}",
+        "\\frac{R \\sin 2\\theta}{2\\theta}",
+        "\\frac{2R \\sin \\theta}{2\\theta}"
+      ],
+      "answer": "\\frac{R \\sin \\theta}{\\theta}",
+      "tags": {
+        "chapter": "Center_of_Mass",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/center_of_mass/center_of_mass_qn_019.png",
+      "tip": ""
+    },
+    {
+      "id": "center_of_mass_qn_020",
+      "question": "The loss of kinetic energy in an oblique elastic collision is (<i>e</i> = coefficient of restitution)",
+      "options": [
+        "\\frac{m_1 m_2}{(m_1 + m_2)} (1 + e^2) |\\vec{u}_1 - \\vec{u}_2|^2",
+        "\\frac{m_1 m_2}{2(m_1 + m_2)} (1 - e^2) |\\vec{u}_1 - \\vec{u}_2|^2",
+        "\\frac{m_1 m_2}{(m_1 + m_2)} (1 + e^2) |\\vec{u}_1 + \\vec{u}_2|^2",
+        "\\frac{m_1 m_2}{(m_1 + m_2)} (1 - e^2) |\\vec{u}_1 - \\vec{u}_2|^2"
+      ],
+      "answer": "\\frac{m_1 m_2}{2(m_1 + m_2)} (1 - e^2) |\\vec{u}_1 - \\vec{u}_2|^2",
+      "tags": {
+        "chapter": "Center_of_Mass",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/center_of_mass/center_of_mass_qn_020.png",
+      "tip": ""
     }
 
 ]
