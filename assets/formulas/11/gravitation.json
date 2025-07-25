@@ -179,7 +179,191 @@
     },
     "image": "assets/images/11th/gravitation/gravitation_qn_010.png",
     "tip": ""
+  },
+
+    {
+      "id": "gravitation_qn_011",
+      "question": "The gravitational potential due to a point mass <i>m</i> at a distance <i>r</i> from it is",
+      "options": [
+        "\\frac{Gm}{r}",
+        "-\\frac{Gm}{r}",
+        "-\\frac{Gm}{r^2}",
+        "-\\frac{Gm^2}{r}"
+      ],
+      "answer": "-\\frac{Gm}{r}",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/gravitation/gravitation_qn_011.png",
+      "tip": ""
+    },
+    {
+      "id": "gravitation_qn_012",
+      "question": "The gravitational potential due to a spherical shell of mass <i>m</i> at a distance <i>r</i> from its center is (r < R)",
+      "options": [
+        "-\\frac{Gm}{R}",
+        "-\\frac{Gm}{r}",
+        "-\\frac{Gm}{r^2}",
+        "-\\frac{Gm^2}{r}"
+      ],
+      "answer": "-\\frac{Gm}{R}",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/gravitation/gravitation_qn_012.png",
+      "tip": ""
+    },
+    {
+      "id": "gravitation_qn_013",
+      "question": "The gravitational potential due to a spherical shell of mass <i>m</i> at a distance <i>r</i> from its center is (r > R)",
+      "options": [
+        "-\\frac{Gm}{R}",
+        "-\\frac{Gm}{r}",
+        "-\\frac{Gm}{r^2}",
+        "-\\frac{Gm^2}{r}"
+      ],
+      "answer": "-\\frac{Gm}{r}",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/gravitation/gravitation_qn_013.png",
+      "tip": ""
+    },
+    {
+      "id": "gravitation_qn_014",
+      "question": "The gravitational potential due to a solid sphere of mass <i>m</i> at a distance <i>r</i> from its center is (r > R)",
+      "options": [
+        "-\\frac{Gm}{R}",
+        "-\\frac{Gm}{r}",
+        "-\\frac{Gm}{r^2}",
+        "\\frac{Gm^2}{r}"
+      ],
+      "answer": "-\\frac{Gm}{r}",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/gravitation/gravitation_qn_014.png",
+      "tip": ""
+    },
+    {
+      "id": "gravitation_qn_015",
+      "question": "The gravitational potential on the axis of a thin ring of mass <i>m</i> and radius <i>R</i>, at distance <i>x</i> from it is",
+      "options": [
+        "-\\frac{Gm}{R}",
+        "-\\frac{Gm}{x}",
+        "-\\frac{Gm}{\\sqrt{R^2+x^2}}",
+        "-\\frac{Gm}{\\sqrt{R^2-x^2}}"
+      ],
+      "answer": "-\\frac{Gm}{\\sqrt{R^2+x^2}}",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/gravitation/gravitation_qn_015.png",
+      "tip": ""
+    },
+    {
+      "id": "gravitation_qn_016",
+      "question": "The magnitude of gravitational field on the axis of a thin ring of mass <i>m</i> and radius <i>R</i>, at distance <i>x</i> from it is",
+      "options": [
+        "\\frac{Gmx}{(R^2+x^2)^{1/2}}",
+        "\\frac{GmR}{(R^2+x^2)^{3/2}}",
+        "\\frac{Gm}{(R^2+x^2)^{3/2}}",
+        "\\frac{Gmx}{(R^2+x^2)^{3/2}}"
+      ],
+      "answer": "\\frac{Gmx}{(R^2+x^2)^{3/2}}",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/gravitation/gravitation_qn_016.png",
+      "tip": ""
+    },
+
+    {
+      "id": "gravitation_qn_017",
+      "question": "The escape velocity from the surface of a planet of mass <i>M</i> and radius <i>R</i> is",
+      "options": [
+        "\\sqrt{\\frac{GM}{4R}}",
+        "\\sqrt{\\frac{GM}{2R}}",
+        "\\sqrt{\\frac{GM}{R}}",
+        "\\sqrt{\\frac{2GM}{R}}"
+      ],
+      "answer": "\\sqrt{\\frac{2GM}{R}}",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/gravitation/gravitation_qn_017.png",
+      "tip": ""
+    },
+    {
+      "id": "gravitation_qn_018",
+      "question": "The escape velocity from the surface of a planet of radius <i>R</i> is (<i>g</i> = acceleration due to gravity on surface of planet)",
+      "options": [
+        "\\sqrt{gR}",
+        "\\sqrt{2gR}",
+        "\\sqrt{\\frac{gR}{2}}",
+        "2\\sqrt{gR}"
+      ],
+      "answer": "\\sqrt{2gR}",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/gravitation/gravitation_qn_018.png",
+      "tip": ""
+    },
+    {
+      "id": "gravitation_qn_019",
+      "question": "The orbital velocity of a satellite of mass <i>m</i>, orbit radius <i>r</i> (<i>M</i> = mass of planet)",
+      "options": [
+        "\\sqrt{\\frac{Gm}{r}}",
+        "\\sqrt{\\frac{GM}{r}}",
+        "\\sqrt{\\frac{2Gm}{r}}",
+        "\\sqrt{\\frac{2GM}{r}}"
+      ],
+      "answer": "\\sqrt{\\frac{GM}{r}}",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/gravitation/gravitation_qn_019.png",
+      "tip": ""
+    },
+  {
+    "id": "gravitation_qn_020",
+    "question": "The time period of revolution of a satellite of mass <i>m</i>, orbit radius <i>r</i> (<i>M</i> = mass of planet)",
+    "options": [
+      "\\frac{2\\pi r^{3/2}}{\\sqrt{Gm}}",
+      "\\frac{2\\pi r^{3/2}}{\\sqrt{GM}}",
+      "\\frac{2\\pi r^{1/2}}{\\sqrt{Gm}}",
+      "\\frac{2\\pi r^{1/2}}{\\sqrt{GM}}"
+    ],
+    "answer": "\\frac{2\\pi r^{3/2}}{\\sqrt{GM}}",
+    "tags": {
+      "chapter": "Gravitation",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/gravitation/gravitation_qn_020.png",
+    "tip": ""
   }
+
+
 
 
 ]
