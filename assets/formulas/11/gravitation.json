@@ -361,9 +361,191 @@
     },
     "image": "assets/images/11th/gravitation/gravitation_qn_020.png",
     "tip": ""
-  }
+  },
 
 
+    {
+      "id": "gravitation_qn_021",
+      "question": "The potential energy of the (satellite + earth) system is",
+      "options": [
+        "\\frac{GMm}{2r}",
+        "\\frac{GMm}{r}",
+        "-\\frac{GMm}{2r}",
+        "-\\frac{GMm}{r}"
+      ],
+      "answer": "-\\frac{GMm}{r}",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/gravitation/gravitation_qn_021.png",
+      "tip": ""
+    },
+    {
+      "id": "gravitation_qn_022",
+      "question": "The kinetic energy of the satellite is",
+      "options": [
+        "\\frac{GMm}{2r}",
+        "\\frac{GMm}{r}",
+        "-\\frac{GMm}{2r}",
+        "-\\frac{GMm}{r}"
+      ],
+      "answer": "\\frac{GMm}{2r}",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/gravitation/gravitation_qn_022.png",
+      "tip": ""
+    },
+    {
+      "id": "gravitation_qn_023",
+      "question": "The total energy of the (satellite + earth) system is",
+      "options": [
+        "\\frac{GMm}{2r}",
+        "\\frac{GMm}{r}",
+        "-\\frac{GMm}{2r}",
+        "-\\frac{GMm}{r}"
+      ],
+      "answer": "-\\frac{GMm}{2r}",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/gravitation/gravitation_qn_023.png",
+      "tip": ""
+    },
+    {
+      "id": "gravitation_qn_024",
+      "question": "The binding energy of the (satellite + earth) system is (Energy required to remove influence of one over another)",
+      "options": [
+        "\\frac{GMm}{2r}",
+        "\\frac{GMm}{r}",
+        "-\\frac{GMm}{2r}",
+        "-\\frac{GMm}{r}"
+      ],
+      "answer": "\\frac{GMm}{2r}",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/gravitation/gravitation_qn_024.png",
+      "tip": ""
+    },
+    {
+      "id": "gravitation_qn_025",
+      "question": "The areal velocity of the planet around sun is (<i>L</i> = angular momentum of planet about sun, <i>m</i> = mass of planet, <i>M</i> = mass of sun)",
+      "options": [
+        "\\frac{L}{m}",
+        "\\frac{L}{2m}",
+        "\\frac{2L}{m}",
+        "\\frac{4L}{m}"
+      ],
+      "answer": "\\frac{L}{2m}",
+      "tags": {
+        "chapter": "Gravitation",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/gravitation/gravitation_qn_025.png",
+      "tip": ""
+    },
+
+
+      {
+        "id": "gravitation_qn_026",
+        "question": "The total energy of the (sun + earth) system is (<i>a</i> = semimajor axis, <i>b</i> = semi minor axis, <i>m</i> = mass of planet, <i>M</i> = mass of sun)",
+        "options": [
+          "-\\frac{GMm}{2a}",
+          "-\\frac{GMm}{2b}",
+          "-\\frac{GMm}{b}",
+          "-\\frac{GMm}{a}"
+        ],
+        "answer": "-\\frac{GMm}{2a}",
+        "tags": {
+          "chapter": "Gravitation",
+          "difficulty": "medium",
+          "class": "11"
+        },
+        "image": "assets/images/11th/gravitation/gravitation_qn_026.png",
+        "tip": ""
+      },
+      {
+        "id": "gravitation_qn_027",
+        "question": "The gravitational self energy of a hollow sphere is",
+        "options": [
+          "\\frac{GM^2}{R}",
+          "-\\frac{GM^2}{R}",
+          "\\frac{GM^2}{2R}",
+          "-\\frac{GM^2}{2R}"
+        ],
+        "answer": "-\\frac{GM^2}{2R}",
+        "tags": {
+          "chapter": "Gravitation",
+          "difficulty": "medium",
+          "class": "11"
+        },
+        "image": "assets/images/11th/gravitation/gravitation_qn_027.png",
+        "tip": ""
+      },
+      {
+        "id": "gravitation_qn_028",
+        "question": "The gravitational self energy of a solid sphere is",
+        "options": [
+          "\\frac{3GM^2}{5R}",
+          "-\\frac{3GM^2}{5R}",
+          "\\frac{5GM^2}{2R}",
+          "-\\frac{5GM^2}{2R}"
+        ],
+        "answer": "-\\frac{3GM^2}{5R}",
+        "tags": {
+          "chapter": "Gravitation",
+          "difficulty": "medium",
+          "class": "11"
+        },
+        "image": "assets/images/11th/gravitation/gravitation_qn_028.png",
+        "tip": ""
+      },
+      {
+        "id": "gravitation_qn_029",
+        "question": "The total gravitation potential at <i>r</i> due to two hollow spheres is(here <i>a</i> < <i>r</i> < <i>b</i>)",
+        "options": [
+          "-\\left(\\frac{GM_1}{r} + \\frac{GM_2}{b}\\right)",
+          "-\\left(\\frac{GM_1}{a} + \\frac{GM_2}{b}\\right)",
+          "-\\left(\\frac{GM_1}{r} + \\frac{GM_2}{r}\\right)",
+          "-\\left(\\frac{GM_1}{r} + \\frac{GM_2}{r}\\right)"
+        ],
+        "answer": "-\\left(\\frac{GM_1}{r} + \\frac{GM_2}{b}\\right)",
+        "tags": {
+          "chapter": "Gravitation",
+          "difficulty": "medium",
+          "class": "11"
+        },
+        "image": "assets/images/11th/gravitation/gravitation_qn_029.png",
+        "tip": ""
+      },
+      {
+        "id": "gravitation_qn_030",
+        "question": "The time period of the planet around sun is (<i>a</i> = semimajor axis, <i>b</i> = semi minor axis, <i>m</i> = mass of planet, <i>M</i> = mass of sun)",
+        "options": [
+          "\\frac{2\\pi a^{3/2}}{\\sqrt{GM}}",
+          "\\frac{2\\pi b^{3/2}}{\\sqrt{GM}}",
+          "\\frac{2\\pi a^{1/2}}{\\sqrt{Gm}}",
+          "\\frac{2\\pi b^{3/2}}{\\sqrt{Gm}}"
+        ],
+        "answer": "\\frac{2\\pi a^{3/2}}{\\sqrt{GM}}",
+        "tags": {
+          "chapter": "Gravitation",
+          "difficulty": "god",
+          "class": "11"
+        },
+        "image": "assets/images/11th/gravitation/gravitation_qn_030.png",
+        "tip": ""
+      }
 
 
 ]
