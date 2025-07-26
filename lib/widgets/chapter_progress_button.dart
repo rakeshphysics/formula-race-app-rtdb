@@ -16,10 +16,10 @@ class ChapterProgressButton extends StatelessWidget {
   });
 
   Color _getFillColor(double percentage) {
-    if (percentage < 33) {
+    if (percentage < 40) {
       return Colors.red;
-    } else if (percentage >= 33 && percentage <= 66) {
-      return Colors.orange;
+    } else if (percentage >= 40 && percentage <= 70) {
+      return Colors.orangeAccent;
     } else {
       return highlightColor; // Use the provided highlightColor (defaulting to cyanAccent)
     }
@@ -62,7 +62,7 @@ class ChapterProgressButton extends StatelessWidget {
                 width: buttonWidth * (percentage / 100),
                 height: buttonHeight, // Match parent button height
                 decoration: BoxDecoration(
-                  color: baseFillColor.withOpacity(0.23), // Fill color with transparency
+                  color: baseFillColor.withOpacity(0.43), // Fill color with transparency
                   borderRadius: BorderRadius.circular(4), // Apply border radius to the fill
                   border: Border.all( // Optional: Border for the fill color itself
                     color: Colors.white.withOpacity(0.1), // Subtle internal border

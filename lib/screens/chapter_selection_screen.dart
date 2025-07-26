@@ -105,7 +105,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
       final chapterFile = chapter.toLowerCase().replaceAll(" ", "_");
       final path = 'assets/formulas/$chapterClass/$chapterFile.json';
 
-      print('  Loading data for chapter: $chapter from path: $path');
+      //print('  Loading data for chapter: $chapter from path: $path');
 
       try {
         final String data = await rootBundle.loadString(path);

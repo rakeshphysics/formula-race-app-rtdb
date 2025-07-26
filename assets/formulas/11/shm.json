@@ -178,6 +178,371 @@
     },
     "image": "",
     "tip": ""
-  }
+  },
+
+
+    {
+      "id": "shm_qn_011",
+      "question": "For the spring block system, its time period equals",
+      "options": [
+        "\\pi \\sqrt{\\frac{k}{m}}",
+        "2\\pi \\sqrt{\\frac{k}{m}}",
+        "2\\pi \\sqrt{\\frac{m}{k}}",
+        "\\pi \\sqrt{\\frac{m}{k}}"
+      ],
+      "answer": "2\\pi \\sqrt{\\frac{m}{k}}",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/shm/shm_qn_011.png",
+      "tip": ""
+    },
+    {
+      "id": "shm_qn_012",
+      "question": "The time period of the simple pendulum is",
+      "options": [
+        "\\pi \\sqrt{\\frac{L}{g}}",
+        "2\\pi \\sqrt{\\frac{L}{g}}",
+        "2\\pi \\sqrt{\\frac{g}{L}}",
+        "\\pi \\sqrt{\\frac{g}{L}}"
+      ],
+      "answer": "2\\pi \\sqrt{\\frac{L}{g}}",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/shm/shm_qn_012.png",
+      "tip": ""
+    },
+    {
+      "id": "shm_qn_013",
+      "question": "For the spring block system, its time period equals",
+      "options": [
+        "\\pi \\sqrt{\\frac{k}{m}}",
+        "2\\pi \\sqrt{\\frac{k}{m}}",
+        "2\\pi \\sqrt{\\frac{m}{k}}",
+        "\\pi \\sqrt{\\frac{m}{k}}"
+      ],
+      "answer": "2\\pi \\sqrt{\\frac{m}{k}}",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/shm/shm_qn_013.png",
+      "tip": ""
+    },
+    {
+      "id": "shm_qn_014",
+      "question": "The equivalent spring constant for the spring combination shown is",
+      "options": [
+        "k_1 + k_2",
+        "k_1 - k_2",
+        "\\frac{k_1 k_2}{k_1 + k_2}",
+        "\\frac{k_1 k_2}{k_1 - k_2}"
+      ],
+      "answer": "k_1 + k_2",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/shm/shm_qn_014.png",
+      "tip": ""
+    },
+    {
+      "id": "shm_qn_015",
+      "question": "The equivalent spring constant for the spring combination shown is",
+      "options": [
+        "k_1 + k_2",
+        "k_1 - k_2",
+        "\\frac{k_1 k_2}{k_1 + k_2}",
+        "\\frac{k_1 k_2}{k_1 - k_2}"
+      ],
+      "answer": "\\frac{k_1 k_2}{k_1 + k_2}",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/shm/shm_qn_015.png",
+      "tip": ""
+    },
+
+    {
+      "id": "shm_qn_016",
+      "question": "The time period of a seconds pendulum is",
+      "options": [
+        "\\text{1s}",
+        "\\text{2s}",
+        "\\text{3s}",
+        "\\text{0.5s}"
+      ],
+      "answer": "\\text{2s}",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "shm_qn_017",
+      "question": "The time period of a physical pendulum is (<i>I</i> = moment of inertia about point of suspension, <i>m</i> = mass, <i>l</i> = separation between point of suspension and COM of body)",
+      "options": [
+        "2\\pi \\sqrt{\\frac{m}{Igl}}",
+        "\\pi \\sqrt{\\frac{m}{Igl}}",
+        "\\pi \\sqrt{\\frac{I}{mgl}}",
+        "2\\pi \\sqrt{\\frac{I}{mgl}}"
+      ],
+      "answer": "2\\pi \\sqrt{\\frac{I}{mgl}}",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/shm/shm_qn_017.png",
+      "tip": ""
+    },
+    {
+      "id": "shm_qn_018",
+      "question": "The time period of a torsional pendulum is (<i>I</i> = moment of inertia of disc about vertical axis, <i>C</i> = torsional constant of wire)",
+      "options": [
+        "\\pi \\sqrt{\\frac{C}{I}}",
+        "2\\pi \\sqrt{\\frac{C}{I}}",
+        "2\\pi \\sqrt{\\frac{I}{C}}",
+        "\\pi \\sqrt{\\frac{I}{C}}"
+      ],
+      "answer": "2\\pi \\sqrt{\\frac{I}{C}}",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/shm/shm_qn_018.png",
+      "tip": ""
+    },
+    {
+      "id": "shm_qn_019",
+      "question": "The time period of simple pendulum is (Pendulum is in a lift accelerating up with a)",
+      "options": [
+        "2\\pi \\sqrt{\\frac{l}{g-a}}",
+        "2\\pi \\sqrt{\\frac{l}{a}}",
+        "2\\pi \\sqrt{\\frac{l}{g}}",
+        "2\\pi \\sqrt{\\frac{l}{g+a}}"
+      ],
+      "answer": "2\\pi \\sqrt{\\frac{l}{g+a}}",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/shm/shm_qn_019.png",
+      "tip": ""
+    },
+    {
+      "id": "shm_qn_020",
+      "question": "The time period of combined spring mass system is (&mu; = reduced mass)",
+      "options": [
+        "2\\pi \\sqrt{\\frac{\\mu}{k}}",
+        "\\pi \\sqrt{\\frac{\\mu}{k}}",
+        "\\pi \\sqrt{\\frac{2k}{\\mu}}",
+        "2\\pi \\sqrt{\\frac{2k}{\\mu}}"
+      ],
+      "answer": "2\\pi \\sqrt{\\frac{\\mu}{k}}",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/shm/shm_qn_020.png",
+      "tip": ""
+    },
+
+    {
+      "id": "shm_qn_021",
+      "question": "The time period of simple pendulum is (Pendulum is in a lift accelerating down with <i>a</i>) (<i>a</i> < <i>g</i>)",
+      "options": [
+        "2\\pi \\sqrt{\\frac{l}{g}}",
+        "2\\pi \\sqrt{\\frac{l}{g+a}}",
+        "2\\pi \\sqrt{\\frac{l}{g-a}}",
+        "2\\pi \\sqrt{\\frac{l}{a}}"
+      ],
+      "answer": "2\\pi \\sqrt{\\frac{l}{g-a}}",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/shm/shm_qn_021.png",
+      "tip": ""
+    },
+    {
+      "id": "shm_qn_022",
+      "question": "The angular frequency of an underdamped oscillator is (<i>b</i> = damping constant) <i>(In JEE Adv, not in JEE Mains)</i>",
+      "options": [
+        "\\sqrt{\\frac{k}{m} - (\\frac{b}{2m})^2}",
+        "\\sqrt{\\frac{k}{m}}",
+        "\\frac{b}{2m}",
+        "\\sqrt{\\frac{k}{m} + (\\frac{b}{2m})^2}"
+      ],
+      "answer": "\\sqrt{\\frac{k}{m} - (\\frac{b}{2m})^2}",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/shm/shm_qn_022.png",
+      "tip": ""
+    },
+    {
+      "id": "shm_qn_023",
+      "question": "If <i>A<sub>o</sub></i> is the amplitude of an underdamped oscillator at t = 0, then its amplitude at any time <i>t</i> is (<i>b</i> = damping constant) <i>(In JEE Adv, not in JEE Mains)</i>",
+      "options": [
+        "A_o",
+        "A_o e^{-\\frac{bt}{2m}}",
+        "A_o e^{-\\frac{bt}{m}}",
+        "A_o e^{bt}"
+      ],
+      "answer": "A_o e^{-\\frac{bt}{2m}}",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "shm_qn_024",
+      "question": "If <i>E<sub>o</sub></i> is the amplitude of an underdamped oscillator at t = 0, then its amplitude at any time <i>t</i> is (<i>b</i> = damping constant) <i>(In JEE Adv, not in JEE Mains)</i>",
+      "options": [
+        "E_o",
+        "E_o e^{-\\frac{bt}{2m}}",
+        "E_o e^{-\\frac{bt}{m}}",
+        "E_o e^{bt}"
+      ],
+      "answer": "E_o e^{-\\frac{bt}{m}}",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "shm_qn_025",
+      "question": "If the floating body is slightly pushed down and released, its time period of oscillations is",
+      "options": [
+        "2\\pi \\sqrt{\\frac{g}{h}}",
+        "\\pi \\sqrt{\\frac{g}{h}}",
+        "\\pi \\sqrt{\\frac{h}{g}}",
+        "2\\pi \\sqrt{\\frac{h}{g}}"
+      ],
+      "answer": "2\\pi \\sqrt{\\frac{h}{g}}",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/shm/shm_qn_025.png",
+      "tip": ""
+    },
+    {
+      "id": "shm_qn_026",
+      "question": "If one end of liquid column is slightly pushed down and released, the time period of oscillations is",
+      "options": [
+        "2\\pi \\sqrt{\\frac{g}{h}}",
+        "\\pi \\sqrt{\\frac{g}{h}}",
+        "\\pi \\sqrt{\\frac{h}{g}}",
+        "2\\pi \\sqrt{\\frac{h}{g}}"
+      ],
+      "answer": "2\\pi \\sqrt{\\frac{h}{g}}",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/shm/shm_qn_026.png",
+      "tip": ""
+    },
+
+    {
+      "id": "shm_qn_027",
+      "question": "The time period of simple pendulum is (Pendulum is in a box accelerating right with <i>a</i>)",
+      "options": [
+        "2\\pi \\sqrt{\\frac{l}{\\sqrt{g^2+a^2}}}",
+        "2\\pi \\sqrt{\\frac{l}{\\sqrt{g^2-a^2}}}",
+        "2\\pi \\sqrt{\\frac{l}{g+a}}",
+        "2\\pi \\sqrt{\\frac{l}{a}}"
+      ],
+      "answer": "2\\pi \\sqrt{\\frac{l}{\\sqrt{g^2+a^2}}}",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/shm/shm_qn_027.png",
+      "tip": ""
+    },
+    {
+      "id": "shm_qn_028",
+      "question": "If a spring of length <i>l</i> and spring constant <i>k</i> is cut into two parts of length <i>l<sub>1</sub></i> and <i>l<sub>2</sub></i>, then",
+      "options": [
+        "k_1 = (\\frac{l}{l_1})k,  k_2 = (\\frac{l}{l_2})k",
+        "k_1 = (\\frac{l}{l_2})k,  k_2 = (\\frac{l}{l_1})k",
+        "k_1 = (\\frac{l_1}{l})k,  k_2 = (\\frac{l_2}{l})k",
+        "k_1 = (\\frac{l_2}{l})k,  k_2 = (\\frac{l_1}{l})k"
+      ],
+      "answer": "k_1 = (\\frac{l}{l_1})k, k_2 = (\\frac{l}{l_2})k",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/shm/shm_qn_028.png",
+      "tip": ""
+    },
+  {
+    "id": "shm_qn_029",
+    "question": "The time period of revolution of a conical pendulum is",
+    "options": [
+      "2\\pi \\sqrt{\\frac{g}{h}}",
+      "\\pi \\sqrt{\\frac{g}{h}}",
+      "\\pi \\sqrt{\\frac{h}{g}}",
+      "2\\pi \\sqrt{\\frac{h}{g}}"
+    ],
+    "answer": "2\\pi \\sqrt{\\frac{h}{g}}",
+    "tags": {
+      "chapter": "shm",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/shm/shm_qn_029.png",
+    "tip": ""
+  },
+    {
+      "id": "shm_qn_030",
+      "question": "The amplitude of forced oscillation is (<i>b</i> = damping constant, &omega;<sub>d</sub>=frequency of driving force, &omega;=natural frequency, <i>F<sub>o</sub></i> = amplitude of driving force) <i>(In JEE Adv, not in JEE Mains)</i>",
+      "options": [
+        "\\frac{F_o}{b\\omega_d}",
+        "\\frac{F_o}{m \\sqrt{(\\omega_d^2 - \\omega^2)^2 + (\\frac{b\\omega_d}{m})^2}}",
+        "\\frac{F_o}{\\sqrt{m^2(\\omega_d^2 - \\omega^2)^2 + (b\\omega_d)^2}}",
+        "\\frac{F_o}{m(\\omega_d^2 - \\omega^2)}"
+      ],
+      "answer": "\\frac{F_o}{m \\sqrt{(\\omega_d^2 - \\omega^2)^2 + (\\frac{b\\omega_d}{m})^2}}",
+      "tags": {
+        "chapter": "shm",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/shm/shm_qn_030.png",
+      "tip": ""
+    }
 
 ]
