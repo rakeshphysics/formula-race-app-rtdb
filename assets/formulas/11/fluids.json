@@ -179,6 +179,190 @@
     },
     "image": "assets/images/11th/fluids/fluids_qn_010.png",
     "tip": ""
-  }
+  },
+
+    {
+      "id": "fluids_qn_011",
+      "question": "The excess pressure inside a liquid drop is give by (<i>T</i> = surface tension of liquid)",
+      "options": [
+        "\\frac{T}{R}",
+        "\\frac{2T}{R}",
+        "\\frac{4T}{R}",
+        "\\frac{T}{2R}"
+      ],
+      "answer": "\\frac{2T}{R}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_011.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_012",
+      "question": "The force on vertical wall, due to the liquid is (&rho; = density of water, <i>w</i> = wall width)",
+      "options": [
+        "(P_o - \\rho gh)hw",
+        "(P_o + \\rho gh)hw",
+        "(P_o + \\rho gh)h",
+        "(P_o + \\rho g)w"
+      ],
+      "answer": "(P_o + \\rho gh)hw",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_012.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_013",
+      "question": "When you check your car tyre pressure, that pressure is",
+      "options": [
+        "\\text{Absolute pressure}",
+        "\\text{Gauge pressure}",
+        "\\text{Atmospheric pressure}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{Gauge pressure}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_014",
+      "question": "The pressure head, velocity head and gravitational head are given by quantities",
+      "options": [
+        "P, \\frac{1}{2}\\rho v^2, \\rho gh",
+        "\\frac{P}{\\rho g}, \\frac{v^2}{2g}, h",
+        "P, \\rho gh, \\frac{1}{2}\\rho v^2",
+        "\\frac{P}{\\rho g}, \\frac{v^2}{2g}, h"
+      ],
+      "answer": "\\frac{P}{\\rho g}, \\frac{v^2}{2g}, h",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_014.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_015",
+      "question": "Apparent weight of a body in liquid equals (<i>s</i> = specific gravity of body)",
+      "options": [
+        "\\frac{mg}{s}",
+        "mg(1-\\frac{1}{s})",
+        "mgs",
+        "\\frac{ms}{g}"
+      ],
+      "answer": "mg(1-\\frac{1}{s})",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_015.png",
+      "tip": ""
+    },
+
+    {
+      "id": "fluids_qn_016",
+      "question": "For a liquid rotating with a speed &omega;, the coordinates <i>x</i>, <i>y</i> on surface of the liquid are related as",
+      "options": [
+        "y = \\frac{\\omega^2\\sqrt{x}}{g}",
+        "y = \\frac{\\omega x^2}{2g}",
+        "y = \\frac{\\omega x}{g}",
+        "y = \\frac{\\omega^2 x^2}{2g}"
+      ],
+      "answer": "y = \\frac{\\omega^2 x^2}{2g}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_016.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_017",
+      "question": "The speed of liquid <i>v<sub>1</sub></i> in the venturi meter is",
+      "options": [
+        "A_1 \\sqrt{\\frac{2gh}{A_1^2 + A_2^2}}",
+        "A_1 \\sqrt{\\frac{2gh}{A_1^2 + A_2^2}}",
+        "A_2 \\sqrt{\\frac{2gh}{A_1^2 + A_2^2}}",
+        "A_2 \\sqrt{\\frac{2gh}{A_1^2 - A_2^2}}"
+      ],
+      "answer": "A_2 \\sqrt{\\frac{2gh}{A_1^2 - A_2^2}}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_017.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_018",
+      "question": "The speed of liquid <i>v<sub>2</sub></i> in the venturi meter is",
+      "options": [
+        "A_2 \\sqrt{\\frac{2gh}{A_1^2 + A_2^2}}",
+        "A_1 \\sqrt{\\frac{2gh}{A_1^2 - A_2^2}}",
+        "A_1 \\sqrt{\\frac{2gh}{A_1^2 + A_2^2}}",
+        "A_2 \\sqrt{\\frac{2gh}{A_1^2 - A_2^2}}"
+      ],
+      "answer": "A_1 \\sqrt{\\frac{2gh}{A_1^2 - A_2^2}}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_018.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_019",
+      "question": "The horizontal range <i>R</i> of water flowing out of tank is",
+      "options": [
+        "2H",
+        "2h",
+        "2\\sqrt{H(H-h)}",
+        "2\\sqrt{H(H+h)}"
+      ],
+      "answer": "2\\sqrt{H(H-h)}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_019.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_020",
+      "question": "Rate of liquid flowing through the venturi meter is",
+      "options": [
+        "A_1 A_2 \\sqrt{\\frac{2gh}{A_1^2 + A_2^2}}",
+        "A_1 \\sqrt{\\frac{2gh}{A_1^2 - A_2^2}}",
+        "A_1 A_2 \\sqrt{\\frac{2gh}{A_1^2 - A_2^2}}",
+        "A_2 \\sqrt{\\frac{2gh}{A_1^2 - A_2^2}}"
+      ],
+      "answer": "A_1 A_2 \\sqrt{\\frac{2gh}{A_1^2 - A_2^2}}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_020.png",
+      "tip": ""
+    }
+
+
 
 ]
