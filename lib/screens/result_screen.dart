@@ -183,7 +183,7 @@ class ResultScreen extends StatelessWidget {
                             style: {
                               "body": Style(
                                 fontSize: FontSize(14),
-                                color: Colors.white,
+                                color: Color(0xFFDADADA),
                                 fontFamily: GoogleFonts.poppins().fontFamily,
                               ),
                             },
@@ -196,7 +196,7 @@ class ResultScreen extends StatelessWidget {
                           Text(
                             'Your Answer:',
                             style: GoogleFonts.poppins(
-                              color: Color(0xFFDADADA),
+                              color: Color(0xFFFFFFFF),
                               fontSize: 14,
                               fontWeight: FontWeight.normal,
                             ),

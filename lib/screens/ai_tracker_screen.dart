@@ -277,7 +277,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                                       ),
                                     ),
                                   Html(
-                                    data: 'Qn: ${formulaEntry['formula']}',
+                                    data: 'Q: ${formulaEntry['formula']}',
                                     style: {
                                       "body": Style(
                                         fontSize: FontSize(14),

@@ -543,7 +543,208 @@
       },
       "image": "assets/images/11th/fluids/fluids_qn_030.png",
       "tip": ""
-    }
+    },
+
+    {
+      "id": "fluids_qn_031",
+      "question": "The viscous force on the plate due to water is (&eta; = viscous coefficient, <i>A</i> = plate area)",
+      "options": [
+        "\\eta A^2 v",
+        "2\\eta A^2 v",
+        "2\\eta A v",
+        "\\eta A (\\frac{v}{y})"
+      ],
+      "answer": "\\eta A (\\frac{v}{y})",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_031.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_032",
+      "question": "One Poiseuille (SI unit of viscosity) equals ____ Poise",
+      "options": [
+        "\\text{1}",
+        "\\text{10}",
+        "\\text{100}",
+        "\\text{0.1}"
+      ],
+      "answer": "\\text{10}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_033",
+      "question": "When the temperature of a liquid is increased, its viscosity",
+      "options": [
+        "\\text{Increases}",
+        "\\text{Decreases}",
+        "\\text{Remains constant}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{Decreases}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_034",
+      "question": "When the temperature of a gas is increased, its viscosity",
+      "options": [
+        "\\text{Increases}",
+        "\\text{Decreases}",
+        "\\text{Remains constant}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{Increases}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_035",
+      "question": "The viscous force on a spherical body falling in a liquid is (&eta; = viscous coefficient, <i>r</i> = radius of sphere, <i>v</i> = velocity of sphere)",
+      "options": [
+        "2\\pi \\eta r v",
+        "6\\pi \\eta r v",
+        "6\\pi \\eta r^2 v",
+        "3\\pi \\eta r^2 v"
+      ],
+      "answer": "6\\pi \\eta r v",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_035.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_036",
+      "question": "The terminal velocity of a sphere falling in a liquid is (&eta; = viscous coefficient, <i>r</i> = radius of sphere, &rho; = density of sphere, &sigma; = density of liquid)",
+      "options": [
+        "\\frac{2r^2\\rho g}{9\\eta}",
+        "\\frac{2r^2(\\rho-\\sigma)g}{7\\eta}",
+        "\\frac{2r^2(\\rho-\\sigma)g}{9\\eta}",
+        "\\frac{2r^2\\sigma g}{9\\eta}"
+      ],
+      "answer": "\\frac{2r^2(\\rho-\\sigma)g}{9\\eta}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_036.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_037",
+      "question": "The Reynolds number is given by (&eta; = viscous coefficient, <i>d</i> = pipe diameter, &rho; = density of liquid, <i>v</i> = liquid speed)",
+      "options": [
+        "\\frac{\\rho v d}{2\\eta}",
+        "\\frac{\\rho v d}{\\eta}",
+        "\\frac{\\rho d}{\\eta v}",
+        "\\frac{\\rho d}{2\\eta v}"
+      ],
+      "answer": "\\frac{\\rho v d}{\\eta}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_037.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_038",
+      "question": "Reynolds number is used in the design of ships, aero planes. It is the ratio of Inertial to viscous forces, the correct expression for Re is",
+      "options": [
+        "\\frac{\\rho v d}{2\\eta}",
+        "\\frac{\\rho A v^2}{\\eta Av}",
+        "\\frac{\\rho Av^2}{(\\eta Av)/d}",
+        "\\frac{\\rho d}{2\\eta v}"
+      ],
+      "answer": "\\frac{\\rho Av^2}{(\\eta Av)/d}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_038.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_039",
+      "question": "The Reynolds number range for turbulent and laminar flow is ____ and ____ respectively",
+      "options": [
+        "\\text{Re} > 2000, \\text{Re} < 1000",
+        "\\text{Re} < 2000, \\text{Re} < 1000",
+        "\\text{Re} > 2000, \\text{Re} > 1000",
+        "\\text{Re} < 2000, \\text{Re} > 1000"
+      ],
+      "answer": "\\text{Re} > 2000, \\text{Re} < 1000",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "fluids_qn_040",
+      "question": "The flow rate of a viscous liquid through a cylindrical pipe is given by (&Delta;P = pressure difference between pipe ends, <i>r</i> = radius of pipe, &eta; = viscous coefficient, <i>L</i> = pipe length)",
+      "options": [
+        "\\frac{\\pi(\\Delta P) r^4}{4\\eta L}",
+        "\\frac{\\pi(\\Delta P) r^4}{2\\eta L}",
+        "\\frac{(\\Delta P) r^4}{2\\eta L}",
+        "\\frac{\\pi(\\Delta P) r^4}{8\\eta L}"
+      ],
+      "answer": "\\frac{\\pi(\\Delta P) r^4}{8\\eta L}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_040.png",
+      "tip": ""
+    },
+
+  {
+    "id": "fluids_qn_041",
+    "question": "The capillary rise or fall of a liquid in a capillary tube is given by (<i>T</i> = surface tension)",
+    "options": [
+      "\\frac{2T \\cos \\theta}{r \\rho g}",
+      "\\frac{T \\cos \\theta}{r \\rho g}",
+      "\\frac{T \\cos \\theta}{2r \\rho g}",
+      "\\frac{T \\cos \\theta}{3r \\rho g}"
+    ],
+    "answer": "\\frac{2T \\cos \\theta}{r \\rho g}",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/fluids/fluids_qn_041.png",
+    "tip": ""
+  }
 
 
 
