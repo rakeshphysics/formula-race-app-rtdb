@@ -22,6 +22,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'dart:math';
 //import 'package:cloud_firestore/cloud_firestore.dart'as firestore;
 import 'package:formularacing/services/mistake_tracker_service.dart';
+import '../models/online_incorrect_answer_model.dart';
 
 
 // .............END................. Import Dependencies.........................
@@ -289,6 +290,8 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
   String? selectedOption;
   bool bothWrong = false;
+
+  List<OnlineIncorrectAnswer> onlineResponses = [];
 
 // .............START................. This function stores the selected qns in game room so that
 // ................................... both players call the same 10 Qns..........................
