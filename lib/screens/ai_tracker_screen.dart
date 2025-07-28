@@ -280,8 +280,8 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                                     data: 'Qn: ${formulaEntry['formula']}',
                                     style: {
                                       "body": Style(
-                                        fontSize: FontSize(16),
-                                        color: Colors.white,
+                                        fontSize: FontSize(14),
+                                        color: Color(0xFFDCDCDC),
                                         fontFamily: GoogleFonts.poppins().fontFamily,
                                         margin: Margins.zero,
                                       ),

@@ -72,8 +72,13 @@ class ResultScreen extends StatelessWidget {
 
 
 
-
-    return Scaffold(
+    return WillPopScope( // ADD THIS WILLPOPSCOPE
+        onWillPop: () async {
+      // This will pop all routes until the first one (usually your Home Screen)
+      Navigator.popUntil(context, (route) => route.isFirst);
+      return false; // Prevent the default back button behavior
+    },
+    child: Scaffold(
       backgroundColor: Colors.black,
 
       body:SafeArea(
@@ -177,7 +182,7 @@ class ResultScreen extends StatelessWidget {
                             data: "<b>Q:</b> ${wrongAnswer.question}",
                             style: {
                               "body": Style(
-                                fontSize: FontSize(16),
+                                fontSize: FontSize(14),
                                 color: Colors.white,
                                 fontFamily: GoogleFonts.poppins().fontFamily,
                               ),
@@ -191,7 +196,7 @@ class ResultScreen extends StatelessWidget {
                           Text(
                             'Your Answer:',
                             style: GoogleFonts.poppins(
-                              color: Colors.white,
+                              color: Color(0xFFDADADA),
                               fontSize: 14,
                               fontWeight: FontWeight.normal,
                             ),
@@ -273,6 +278,7 @@ class ResultScreen extends StatelessWidget {
           child: const Text('Home', style: TextStyle(fontSize: 20,color: Colors.white)),
         ),
       ),
+    ),
     );
   }
 }
