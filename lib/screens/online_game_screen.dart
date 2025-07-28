@@ -639,6 +639,87 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
         Map<dynamic, dynamic>? wrongAnswersMap = answerData['wrongAnswers'] as Map<dynamic, dynamic>?;
 
         //print('DEBUG listenToAnswers: My ID: ${widget.playerId}, First Answered By: "$firstAnswerBy", Was Correct: $firstAnswerWasCorrect, Raw Data: $answerData');
+// Retrieve opponent's answer from Firebase if available
+        String opponentSelectedAnswer = '';
+        if (answerData != null) {
+          // Attempt to get opponent's selected answer if it's stored
+          // This assumes a structure like answers/questionIndex/playerAnswers/opponentId
+          // For now, we'll derive it from firstAnswerBy if opponent answered correctly,
+          // or assume it's one of the wrong answers if both wrong.
+          // For a more robust solution, you might need to store each player's specific answer.
+          if (firstAnswerBy == opponentId && firstAnswerWasCorrect) {
+            // If opponent answered correctly first, their answer is the correct one.
+            opponentSelectedAnswer = questions[currentQuestionIndex]['answer'];
+          } else if (wrongAnswersMap != null && wrongAnswersMap.containsKey(opponentId)) {
+            // If opponent was tracked as wrong, we don't know their specific wrong answer from this data,
+            // so we can mark it as such. (Requires more Firebase structure to get exact wrong answer)
+            opponentSelectedAnswer = '(Incorrect)';
+          }
+        }
+
+        // Determine the scenario based on firstAnswerBy and current player's selectedOption
+        String currentScenario;
+        String currentUsersAnswer = onlineResponses.length > currentQuestionIndex
+            ? onlineResponses[currentQuestionIndex].userAnswer // Use existing if set by submitAnswer
+            : '(No Answer Yet)'; // Default if not yet set
+
+        // If user hasn't selected an option yet, and timer expired/opponent answered
+        if (selectedOption == null && firstAnswerBy.isNotEmpty) {
+          currentUsersAnswer = '(Skipped)'; // User didn't answer in time
+        }
+
+
+        if (firstAnswerBy == 'none') {
+          currentScenario = 'both_wrong_or_skipped'; // Or 'no_one_correct'
+          // If current user also answered, but it was wrong, and opponent also failed/skipped
+          if (selectedOption != null && selectedOption != questions[currentQuestionIndex]['answer']) {
+            currentUsersAnswer = selectedOption!;
+          } else if (selectedOption == null) {
+            currentUsersAnswer = '(Skipped)';
+          }
+          if (opponentSelectedAnswer.isEmpty) { // If opponent's specific wrong answer isn't tracked
+            opponentSelectedAnswer = '(Incorrect)';
+          }
+        } else if (firstAnswerBy == widget.playerId) {
+          currentScenario = 'you_answered_first_correctly';
+          currentUsersAnswer = questions[currentQuestionIndex]['answer']; // Ensure it's marked as correct
+          opponentSelectedAnswer = opponentSelectedAnswer; // Keep whatever we deduced earlier
+        } else if (firstAnswerBy == opponentId) {
+          currentScenario = 'opponent_answered_first_correctly';
+          currentUsersAnswer = selectedOption ?? '(Skipped/Wrong)'; // User either wrong or skipped
+          opponentSelectedAnswer = questions[currentQuestionIndex]['answer']; // Opponent was correct
+        } else {
+          currentScenario = 'pending_or_unknown';
+        }
+
+
+        // Update the onlineResponses list for the current question index
+        // Ensure the list is large enough before attempting to update an index
+        if (onlineResponses.length <= currentQuestionIndex) {
+          while(onlineResponses.length <= currentQuestionIndex) {
+            onlineResponses.add(OnlineIncorrectAnswer(
+              question: questions[currentQuestionIndex]['question'] ?? '',
+              correctAnswer: questions[currentQuestionIndex]['answer'] ?? '',
+              imagePath: questions[currentQuestionIndex]['image'],
+              userAnswer: '', // Will be filled below
+              opponentAnswer: '', // Will be filled below
+              tip: questions[currentQuestionIndex]['tip'],
+              scenario: '', // Will be filled below
+            ));
+          }
+        }
+
+
+        onlineResponses[currentQuestionIndex] = OnlineIncorrectAnswer(
+          question: onlineResponses[currentQuestionIndex].question,
+          correctAnswer: onlineResponses[currentQuestionIndex].correctAnswer,
+          imagePath: onlineResponses[currentQuestionIndex].imagePath,
+          userAnswer: currentUsersAnswer,
+          opponentAnswer: opponentSelectedAnswer,
+          tip: onlineResponses[currentQuestionIndex].tip,
+          scenario: currentScenario,
+        );
+
 
         setState(() {
           //questionLocked = true; // Always lock once an answer is registered
@@ -719,6 +800,36 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     });
 
     String correctAnswer = questions[currentQuestionIndex]['answer'];
+
+    // Initialize or update the OnlineIncorrectAnswer for the current question
+    // This ensures an entry exists for the current question index
+    if (onlineResponses.length <= currentQuestionIndex) {
+      // Pad the list if necessary (e.g., if a question was skipped by timer initially)
+      while (onlineResponses.length <= currentQuestionIndex) {
+        onlineResponses.add(OnlineIncorrectAnswer(
+          question: questions[currentQuestionIndex]['question'] ?? '',
+          correctAnswer: questions[currentQuestionIndex]['answer'] ?? '',
+          imagePath: questions[currentQuestionIndex]['image'],
+          userAnswer: '', // Will be updated
+          opponentAnswer: '', // Will be updated by listener
+          tip: questions[currentQuestionIndex]['tip'],
+          scenario: 'pending', // Initial state
+        ));
+      }
+    }
+
+    // Update the user's selected option in the current question's entry
+    onlineResponses[currentQuestionIndex] = OnlineIncorrectAnswer(
+      question: onlineResponses[currentQuestionIndex].question,
+      correctAnswer: onlineResponses[currentQuestionIndex].correctAnswer,
+      imagePath: onlineResponses[currentQuestionIndex].imagePath,
+      userAnswer: selectedAnswer, // Set the current player's chosen answer
+      opponentAnswer: onlineResponses[currentQuestionIndex].opponentAnswer, // Keep existing opponent answer if any
+      tip: onlineResponses[currentQuestionIndex].tip,
+      scenario: onlineResponses[currentQuestionIndex].scenario, // Keep existing scenario
+    );
+
+
 
     if (selectedAnswer == correctAnswer) {
       audioPlayer.play(AssetSource('sounds/correct.mp3'));
@@ -896,6 +1007,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                 isPlayer1: widget.isPlayer1,
                 opponentLeftGame: false,
                 totalQuestions: totalQuestions,
+                onlineIncorrectAnswers: onlineResponses,
               ),
             ),
           );
@@ -963,6 +1075,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           isPlayer1: widget.isPlayer1,
           opponentLeftGame: true,
           totalQuestions: totalQuestions,
+          onlineIncorrectAnswers: onlineResponses,
         ),
       ),
     );

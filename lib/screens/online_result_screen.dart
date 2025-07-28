@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart'; // Ensure this is imported
+import 'package:google_fonts/google_fonts.dart';
+import '../models/online_incorrect_answer_model.dart';
+import 'package:flutter_html/flutter_html.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_math_fork/flutter_math.dart';
 
 class OnlineResultScreen extends StatelessWidget {
   final Map<dynamic, dynamic> scores;
@@ -7,6 +11,7 @@ class OnlineResultScreen extends StatelessWidget {
   final bool isPlayer1;
   final bool opponentLeftGame;
   final int totalQuestions;
+  final List<OnlineIncorrectAnswer> onlineIncorrectAnswers;
 
   const OnlineResultScreen({
     Key? key,
@@ -15,6 +20,7 @@ class OnlineResultScreen extends StatelessWidget {
     required this.isPlayer1,
     this.opponentLeftGame = false,
     required this.totalQuestions,
+    required this.onlineIncorrectAnswers,
   }) : super(key: key);
 
   @override
@@ -64,33 +70,34 @@ class OnlineResultScreen extends StatelessWidget {
         padding: EdgeInsets.all(screenWidth * 0.04), // Responsive padding
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             //Spacer(), // Pushes content to center/bottom
-            SizedBox(height: screenHeight * 0.17),
+            SizedBox(height: screenHeight * 0.002),
             // Game Result Message (You Win/Lose/Draw)
             Text(
               resultMessage,
               textAlign: TextAlign.center,
               style: GoogleFonts.hedvigLettersSerif(
-                fontSize: screenWidth * 0.07, // Responsive font size
+                fontSize: screenWidth * 0.05, // Responsive font size
                 fontWeight: FontWeight.normal,
                 color: resultMessageColor,
                 letterSpacing: 2.0,
               ),
             ),
-            SizedBox(height: screenHeight * 0.08), // Responsive spacing
+            SizedBox(height: screenHeight * 0.02), // Responsive spacing
 
             // Score Display Container
             Container(
               width: screenWidth *1, // Responsive width
               padding: EdgeInsets.symmetric(
-                vertical: screenHeight * 0.03,
+                vertical: screenHeight * 0.01,
                 horizontal: screenWidth * 0.08,
               ),
               decoration: BoxDecoration(
                 color: Color(0xFFFC107),
                 borderRadius: BorderRadius.circular(4),
-                border: Border.all(color: Colors.amber, width: 1.2),// Responsive border radius
+                border: Border.all(color: Colors.amber, width: 0.8),// Responsive border radius
                 boxShadow: [
                   BoxShadow(
                     color: Colors.white.withOpacity(0.1),
@@ -107,9 +114,9 @@ class OnlineResultScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'YOUR SCORE :',
+                        'MY SCORE :',
                         style: GoogleFonts.hedvigLettersSerif(
-                          fontSize: screenWidth * 0.05, // Responsive font size
+                          fontSize: screenWidth * 0.04, // Responsive font size
                           color: Colors.white,
                           fontWeight: FontWeight.normal,
                           letterSpacing: 1.5,
@@ -118,14 +125,14 @@ class OnlineResultScreen extends StatelessWidget {
                       Text(
                         '$myScore',
                         style: GoogleFonts.hedvigLettersSerif(
-                          fontSize: screenWidth * 0.09, // Responsive font size
+                          fontSize: screenWidth * 0.07, // Responsive font size
                           fontWeight: FontWeight.bold,
                           color: Colors.greenAccent,
                         ),
                       ),
                     ],
                   ),
-                  SizedBox(height: screenHeight * 0.01), // Responsive spacing
+                  SizedBox(height: screenHeight * 0.001), // Responsive spacing
                   // Opponent Score
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -133,7 +140,7 @@ class OnlineResultScreen extends StatelessWidget {
                       Text(
                         'OPPONENT SCORE :',
                         style: GoogleFonts.hedvigLettersSerif(
-                          fontSize: screenWidth * 0.05, // Responsive font size
+                          fontSize: screenWidth * 0.04, // Responsive font size
                           color: Colors.white,
                           fontWeight: FontWeight.normal,
                           letterSpacing: 1.5,
@@ -142,7 +149,7 @@ class OnlineResultScreen extends StatelessWidget {
                       Text(
                         '$opponentScore',
                         style: GoogleFonts.hedvigLettersSerif(
-                          fontSize: screenWidth * 0.09, // Responsive font size
+                          fontSize: screenWidth * 0.07, // Responsive font size
                           fontWeight: FontWeight.bold,
                           color: Colors.redAccent,
                         ),
@@ -152,10 +159,167 @@ class OnlineResultScreen extends StatelessWidget {
                 ],
               ),
             ),
-            Spacer(), // Pushes content to center/bottom
+            SizedBox(height: screenHeight * 0.02), // Responsive spacing before detailed results
 
-            // Play Again Button
-            SizedBox(
+            // Detailed Question Results (Mistakes and Opponent Wins)
+            if (onlineIncorrectAnswers.isNotEmpty) // Only show if there are questions to display
+              Expanded(
+                child: ListView.builder(
+                  itemCount: onlineIncorrectAnswers.length,
+                  itemBuilder: (context, index) {
+                    final qa = onlineIncorrectAnswers[index]; // qa for question/answer
+                    String userStatus = '';
+                    Color userStatusColor = Colors.white;
+
+                    // Determine user's status message and color
+                    switch (qa.scenario) {
+                      case 'you_answered_first_correctly':
+                        userStatus = 'You answered First !';
+                        userStatusColor = Colors.greenAccent;
+                        break;
+                      case 'opponent_answered_first_correctly':
+                        userStatus = 'Opponent answered First';
+                        userStatusColor = Colors.redAccent;
+                        break;
+                      case 'both_wrong_or_skipped':
+                        userStatus = 'Both were incorrect or skipped.';
+                        userStatusColor = Colors.amberAccent;
+                        break;
+                    // No specific case for 'user_wrong_opponent_wrong' or 'user_wrong_no_answer' here
+                    // as 'both_wrong_or_skipped' covers the outcome display effectively.
+                      default:
+                        userStatus = 'Outcome pending or unknown.'; // Should not typically be seen
+                        userStatusColor = Colors.white;
+                    }
+
+
+                    return Container(
+                      margin: const EdgeInsets.symmetric(vertical: 8),
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF000000), // Black background, from ResultScreen
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(
+                          color: Colors.amber, // Amber border as requested
+                          width: 0.8,
+                        ),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          // Question outcome header
+                          Center(
+                            child: Text(
+                              userStatus,
+                              textAlign: TextAlign.center,
+                              style: GoogleFonts.poppins(
+                                fontSize: 16,
+                                fontWeight: FontWeight.normal,
+                                color: userStatusColor,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 12),
+
+                          if (qa.imagePath != null && qa.imagePath!.isNotEmpty)
+                            Container(
+                              margin: const EdgeInsets.only(bottom: 0),
+                              child: Center(
+                                child: Image.asset(
+                                  qa.imagePath!,
+                                  height: MediaQuery.of(context).size.height * 0.22,
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ),
+
+                          Html(
+                            data: "<b>Q:</b> ${qa.question}",
+                            style: {
+                              "body": Style(
+                                fontSize: FontSize(14),
+                                color: Color(0xFFDCDCDC),
+                                fontFamily: GoogleFonts.poppins().fontFamily,
+                              ),
+                            },
+                          ),
+                          const SizedBox(height: 8),
+
+                          // Your Answer
+                          // Display Your Answer and Correct Answer in a Row
+                          // Your Answer
+                          Text(
+                            'Your Answer:',
+                            style: GoogleFonts.poppins(
+                              color: Colors.white,
+                              fontSize: 14,
+                              fontWeight: FontWeight.normal,
+                            ),
+                          ),
+                          SizedBox(height: MediaQuery.of(context).size.height * 0.007),
+                          Math.tex(
+                            qa.userAnswer,
+                            textStyle: TextStyle(
+                              color: (qa.userAnswer == qa.correctAnswer) ? Color(0xFFA4FF9D) : Color(0xFFFF5454), // Colors from ResultScreen
+                              fontSize: 18,
+                            ),
+                          ),
+                          const SizedBox(height: 8), // Standard spacing after user answer
+
+                          // Correct Answer
+                          Text(
+                            'Correct Answer:',
+                            style: GoogleFonts.poppins(
+                              color: Colors.white,
+                              fontSize: 14,
+                              fontWeight: FontWeight.normal,
+                            ),
+                          ),
+                          SizedBox(height: MediaQuery.of(context).size.height * 0.007),
+                          Math.tex(
+                            qa.correctAnswer,
+                            textStyle: const TextStyle(
+                              color: Color(0xFFA4FF9D), // Green for correct, from ResultScreen
+                              fontSize: 18,
+                            ),
+                          ),
+                          const SizedBox(height: 8), // Standard spacing after correct answer (before tip)
+
+                          // Tip Block remains as is after this
+                          if (qa.tip != null && qa.tip!.isNotEmpty) ...[
+                            const SizedBox(height: 8), // Space above the tip text itself
+                            const Text(
+                              'Tip:',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            Text(
+                              qa.tip!,
+                              style: const TextStyle(color: Colors.amber, fontSize: 16),
+                            ),
+                          ],
+                        ],
+                      ),
+                    );
+                  },
+                ),
+              )
+            else
+            // Fallback if the list is empty (should not happen if game works correctly)
+              const Expanded(
+                child: Center(
+                  child: Text(
+                    'No detailed question outcomes available.',
+                    style: TextStyle(color: Colors.white70, fontSize: 16),
+                  ),
+                ),
+              ),
+            // End of Detailed Question Results
+
+            //Spacer(), // This spacer will push the Home button to the bottom // Pushes content to center/bottom
+
+    Padding(
+            padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.00, vertical: screenHeight * 0.017),
+            child:SizedBox(
               width: double.infinity, // Responsive width
               height: screenHeight * 0.07, // Responsive height
               child: ElevatedButton(
@@ -163,7 +327,7 @@ class OnlineResultScreen extends StatelessWidget {
                   Navigator.of(context).popUntil((route) => route.isFirst); // Go back to Home Screen
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0x00000000), // More vibrant color
+                  backgroundColor: Color(0x2DFFC107), // More vibrant color
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(4),side: BorderSide(color: Colors.amber, width: 0.8),
 
@@ -173,7 +337,10 @@ class OnlineResultScreen extends StatelessWidget {
                 child: const Text('Home', style: TextStyle(fontSize: 20,color: Colors.white, fontWeight: FontWeight.normal)),
               ),
             ),
-            SizedBox(height: screenHeight * 0.04), // Bottom padding
+    ),
+
+
+            //SizedBox(height: screenHeight * 0.02), // Bottom padding
           ],
         ),
       ),
