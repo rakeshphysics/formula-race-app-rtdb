@@ -635,17 +635,23 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                   height: MediaQuery.of(context).size.height * 0.015, // ~1.5% of screen height
                 ),
 
-                if (question['image'] != "")
+                if (question['image'] != null && question['image'] != "")
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 0),
-                    child:Center(
-                    child: Image.asset(
-                      question['image'],
-                      width: MediaQuery.of(context).size.width * 0.6,
-                      fit: BoxFit.contain,
+                    child: Center(
+                      child: SizedBox(
+                        width: MediaQuery.of(context).size.width * 0.6,
+                        height: (MediaQuery.of(context).size.width * 0.6) / 1.5, // Calculated height to maintain aspect ratio
+                        child: Image.asset(
+                          question['image'],
+                          fit: BoxFit.contain,
+                        ),
+                      ),
                     ),
-                    ),
-                  ),
+                  )
+                else
+                // ✨ CHANGE THIS LINE: If no image, use SizedBox.shrink() to take no space ✨
+                  const SizedBox.shrink(), // No image, no gap!
 
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.015, // ~1.5% of screen height

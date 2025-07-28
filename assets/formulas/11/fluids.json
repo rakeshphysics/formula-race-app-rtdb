@@ -242,7 +242,7 @@
         "P, \\frac{1}{2}\\rho v^2, \\rho gh",
         "\\frac{P}{\\rho g}, \\frac{v^2}{2g}, h",
         "P, \\rho gh, \\frac{1}{2}\\rho v^2",
-        "\\frac{P}{\\rho g}, \\frac{v^2}{2g}, h"
+        "\\frac{P}{\\rho g}, \\frac{v^2}{2g}, 2h"
       ],
       "answer": "\\frac{P}{\\rho g}, \\frac{v^2}{2g}, h",
       "tags": {
@@ -332,10 +332,10 @@
       "options": [
         "2H",
         "2h",
-        "2\\sqrt{H(H-h)}",
+        "2\\sqrt{h(H-h)}",
         "2\\sqrt{H(H+h)}"
       ],
-      "answer": "2\\sqrt{H(H-h)}",
+      "answer": "2\\sqrt{h(H-h)}",
       "tags": {
         "chapter": "fluids",
         "difficulty": "medium",
@@ -360,6 +360,188 @@
         "class": "11"
       },
       "image": "assets/images/11th/fluids/fluids_qn_020.png",
+      "tip": ""
+    },
+
+    {
+      "id": "fluids_qn_021",
+      "question": "The excess pressure in a soap bubble is (<i>T</i> = surface tension)",
+      "options": [
+        "\\frac{T}{R}",
+        "\\frac{2T}{R}",
+        "\\frac{4T}{R}",
+        "\\frac{T}{2R}"
+      ],
+      "answer": "\\frac{4T}{R}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_021.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_022",
+      "question": "Surface energy is given by (<i>T</i> = surface tension, <i>A</i> = area of liquid surface)",
+      "options": [
+        "AT^2",
+        "0.5 AT",
+        "2AT",
+        "AT"
+      ],
+      "answer": "AT",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_023",
+      "question": "When we add detergent to water, the surface tension of water",
+      "options": [
+        "\\text{Remains same}",
+        "\\text{Increases}",
+        "\\text{Decreases}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{Decreases}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_024",
+      "question": "When water is heated, its surface tension",
+      "options": [
+        "\\text{Remains same}",
+        "\\text{Increases}",
+        "\\text{Decreases}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{Decreases}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_025",
+      "question": "When we add salt to water, the surface tension of water",
+      "options": [
+        "\\text{Remains same}",
+        "\\text{Increases}",
+        "\\text{Decreases}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{Increases}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_026",
+      "question": "<i>P<sub>A</sub></i> - <i>P<sub>B</sub></i> equals (<i>T</i> = surface tension, <i>P</i> = pressure)",
+      "options": [
+        "\\frac{T}{2r}",
+        "\\frac{4T}{r}",
+        "\\frac{T}{r}",
+        "\\frac{2T}{r}"
+      ],
+      "answer": "\\frac{T}{r}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_026.png",
+      "tip": ""
+    },
+
+    {
+      "id": "fluids_qn_027",
+      "question": "The excess pressure (<i>P<sub>A</sub></i> - <i>P<sub>B</sub></i>) inside the liquid drop stuck between glass plates is (<i>T</i> = surface tension)",
+      "options": [
+        "\\frac{T}{2r}",
+        "\\frac{4T}{r}",
+        "\\frac{T}{r}",
+        "\\frac{2T}{r}"
+      ],
+      "answer": "\\frac{T}{r}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_027.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_028",
+      "question": "The excess pressure inside the liquid film having radius of curvatures <i>r<sub>1</sub></i> and <i>r<sub>2</sub></i> along mutually perpendicular directions is (<i>T</i> = surface tension)",
+      "options": [
+        "2T \\left(\\frac{1}{r_2} + \\frac{1}{r_1}\\right)",
+        "2T \\left(\\frac{1}{r_2} - \\frac{1}{r_1}\\right)",
+        "T \\left(\\frac{1}{r_2} + \\frac{1}{r_1}\\right)",
+        "T \\left(\\frac{1}{r_2} - \\frac{1}{r_1}\\right)"
+      ],
+      "answer": "2T \\left(\\frac{1}{r_2} + \\frac{1}{r_1}\\right)",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_028.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_029",
+      "question": "When two soap bubbles of radius <i>r<sub>1</sub></i> and <i>r<sub>2</sub></i> are in contact, the radius of curvature of common contact surface <i>R</i> is",
+      "options": [
+        "r_1 + r_2",
+        "r_1 - r_2",
+        "\\frac{r_1 r_2}{r_1 - r_2}",
+        "\\frac{r_1 r_2}{r_1 + r_2}"
+      ],
+      "answer": "\\frac{r_1 r_2}{r_1 - r_2}",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_029.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_030",
+      "question": "The excess pressure inside the liquid film formed between the two funnels is (<i>T</i> = surface tension)",
+      "options": [
+        "2T \\left(\\frac{1}{r_2} + \\frac{1}{r_1}\\right)",
+        "2T \\left(\\frac{1}{r_2} - \\frac{1}{r_1}\\right)",
+        "T \\left(\\frac{1}{r_2} + \\frac{1}{r_1}\\right)",
+        "T \\left(\\frac{1}{r_2} - \\frac{1}{r_1}\\right)"
+      ],
+      "answer": "2T \\left(\\frac{1}{r_2} - \\frac{1}{r_1}\\right)",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_030.png",
       "tip": ""
     }
 

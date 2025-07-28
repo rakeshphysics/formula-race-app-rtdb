@@ -115,8 +115,8 @@ class _SplashScreenState extends State<SplashScreen> {
             mainAxisSize: MainAxisSize.max, // Ensure Column tries to take max space provided by SizedBox
 
             children: [
-              //const Spacer(), // Pushes the logo-text block down from the top
-              SizedBox(height: screenHeight * 0.4),
+              const Spacer(), // Pushes the logo-text block down from the top
+              //SizedBox(height: screenHeight * 0.35),
               // ............. Chunk 3 LOGO IMAGE .............
               Image.asset(
                 'assets/logo.png', // Ensure this path is correct
@@ -124,42 +124,16 @@ class _SplashScreenState extends State<SplashScreen> {
                 height: screenWidth * 0.3,
               ),
 
-              SizedBox(height: screenHeight * 0.02), // Space between logo and text
+              SizedBox(height: screenHeight * 0.04), // Space between logo and text
 
               // ............. Chunk 4 APP NAME TEXT .............
               Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Text(
-                  //   'Physics Revision', // Line 1: The subject and exam context
-                  //   style: GoogleFonts.poppins(
-                  //     fontSize: 20, // Slightly larger to be the main subject line
-                  //     color: const Color(0xFFD3D3D3), // Lighter grey
-                  //     fontWeight: FontWeight.normal, // Make it bold for more emphasis
-                  //   ),
-                  // ),
-                  //const SizedBox(height: 9), // Increased space for clear separation between context and punchline
                   Text(
-                    ' Formula  Racing', // Line 2: The punchline, largest and white
+                    'Physics Revision', // Line 1: The subject and exam context
                     style: GoogleFonts.poppins(
-                      fontSize: 28,
-                      fontStyle: FontStyle.italic,// Largest font size for maximum impact
-                      color: Color(0xFFDFDFDF), // White for maximum contrast
-                      fontWeight: FontWeight.w600,
-                      letterSpacing: 1,
-                    ),
-                  ),
-                ],
-              ),
-              //SizedBox(height: screenHeight * 0.1),
-              const Spacer(), // Pushes the logo-text block up from the bottom
-              Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    'Physics Revision for JEE Main/Adv', // Line 1: The subject and exam context
-                    style: GoogleFonts.poppins(
-                      fontSize:screenHeight * 0.024, // Slightly larger to be the main subject line
+                      fontSize:screenWidth * 0.045, // Slightly larger to be the main subject line
                       color: const Color(0xFFD3D3D3), // Lighter grey
                       fontWeight: FontWeight.normal, // Make it bold for more emphasis
                     ),
@@ -178,13 +152,42 @@ class _SplashScreenState extends State<SplashScreen> {
                   Text(
                     ' GAMIFIED !', // Line 2: The punchline, largest and white
                     style: GoogleFonts.poppins(
-                      fontSize: 30, // Largest font size for maximum impact
+                      fontSize: 26, // Largest font size for maximum impact
                       color: Color(0xFFFFFFFF), // White for maximum contrast
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w500,
                       letterSpacing: 1.5,
                     ),
                   ),
                   SizedBox(height: screenHeight * 0.02),
+                ],
+              ),
+
+
+              //SizedBox(height: screenHeight * 0.1),
+              const Spacer(), // Pushes the logo-text block up from the bottom
+
+              Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    'For JEE Mains/Adv', // Line 1: The subject and exam context
+                    style: GoogleFonts.poppins(
+                      fontSize: 18, // Slightly larger to be the main subject line
+                      color: const Color(0xFFD3D3D3), // Lighter grey
+                      fontWeight: FontWeight.normal, // Make it bold for more emphasis
+                    ),
+                  ),
+                  //const SizedBox(height: 9), // Increased space for clear separation between context and punchline
+                  // Text(
+                  //   ' Formula  Racing', // Line 2: The punchline, largest and white
+                  //   style: GoogleFonts.poppins(
+                  //     fontSize: 24,
+                  //     fontStyle: FontStyle.italic,// Largest font size for maximum impact
+                  //     color: Color(0xFFDFDFDF), // White for maximum contrast
+                  //     fontWeight: FontWeight.w600,
+                  //     letterSpacing: 0.8,
+                  //   ),
+                  // ),
                 ],
               ),
 
