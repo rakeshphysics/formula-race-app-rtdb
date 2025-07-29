@@ -235,13 +235,22 @@ class ResultScreen extends StatelessWidget {
                               // ........ Tip Block START .........
                               if (wrongAnswer.tip.isNotEmpty) ...[
                                 const SizedBox(height: 8),
-                                const Text(
+                                Text(
                                   'Tip:',
-                                  style: TextStyle(color: Colors.white),
+                                  style: GoogleFonts.poppins(
+                                    color: Colors.white,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal,
+                                  ),
                                 ),
+                                const SizedBox(height: 4),
                                 Text(
                                   wrongAnswer.tip,
-                                  style: const TextStyle(color: Colors.amber, fontSize: 16),
+                                  style: GoogleFonts.poppins(
+                                    color: Color(0xFF3EF1F1),
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.normal,
+                                  ),
                                 ),
                               ],
                               // ........ Tip Block END ...............................

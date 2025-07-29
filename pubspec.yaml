@@ -54,7 +54,7 @@ flutter:
     - assets/formulas/11/center_of_mass.json
     - assets/formulas/11/rotational_motion.json
     - assets/formulas/11/gravitation.json
-    - assets/formulas/11/mechanical_properties_of_solids.json
+    - assets/formulas/11/elasticity.json
     - assets/formulas/11/fluids.json
     - assets/formulas/11/thermodynamics.json
     - assets/formulas/11/kinetic_theory.json
@@ -87,7 +87,7 @@ flutter:
     - assets/images/11th/circular_motion/
     - assets/images/11th/Rotational_Motion/
     - assets/images/11th/gravitation/
-    - assets/images/11th/mechanical_properties_of_solids/
+    - assets/images/11th/elasticity/
     - assets/images/11th/fluids/
     - assets/images/11th/shm/
     - assets/images/11th/waves/

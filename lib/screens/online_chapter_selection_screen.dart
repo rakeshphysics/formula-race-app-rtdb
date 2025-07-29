@@ -28,7 +28,7 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
     'Center of Mass',
     'Rotational Motion',
     'Gravitation',
-    'Mechanical Properties of Solids',
+    'Elasticity',
     'Fluids',
     'Thermodynamics',
     'Kinetic Theory',

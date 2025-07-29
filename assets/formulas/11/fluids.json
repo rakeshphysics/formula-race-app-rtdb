@@ -744,7 +744,62 @@
     },
     "image": "assets/images/11th/fluids/fluids_qn_041.png",
     "tip": ""
-  }
+  },
+
+    {
+      "id": "fluids_qn_042",
+      "question": "A body is immersed in a liquid as shown. Now the container is accelerated upwards with <i>a</i>. The buoyancy force on the body is (&rho; = density of liquid, &sigma; = density of body, <i>V</i> = volume of body)",
+      "options": [
+        "V \\rho g",
+        "V \\sigma (g+a)",
+        "V \\rho (g+a)",
+        "V \\rho (g-a)"
+      ],
+      "answer": "V \\rho (g+a)",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_042.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_043",
+      "question": "A body is immersed in a liquid as shown. Now the container is accelerated downwards with <i>a</i> (<i>a</i> < <i>g</i>). The buoyancy force on the body is (&rho; = density of liquid, &sigma; = density of body, <i>V</i> = volume of body)",
+      "options": [
+        "V \\rho g",
+        "V \\sigma (g+a)",
+        "V \\rho (g+a)",
+        "V \\rho (g-a)"
+      ],
+      "answer": "V \\rho (g-a)",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_043.png",
+      "tip": ""
+    },
+    {
+      "id": "fluids_qn_044",
+      "question": "A body is immersed in a liquid as shown. Now the container is accelerated downwards with <i>g</i>. The buoyancy force on the body is (&rho; = density of liquid, &sigma; = density of body, <i>V</i> = volume of body)",
+      "options": [
+        "0",
+        "V \\sigma (g+a)",
+        "V \\rho (g+a)",
+        "V \\rho (g-a)"
+      ],
+      "answer": "0",
+      "tags": {
+        "chapter": "fluids",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/fluids/fluids_qn_044.png",
+      "tip": ""
+    }
 
 
 
