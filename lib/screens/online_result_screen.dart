@@ -288,13 +288,23 @@ class OnlineResultScreen extends StatelessWidget {
                           // Tip Block remains as is after this
                           if (qa.tip != null && qa.tip!.isNotEmpty) ...[
                             const SizedBox(height: 8), // Space above the tip text itself
-                            const Text(
+                             Text(
                               'Tip:',
-                              style: TextStyle(color: Colors.white),
+                              style: GoogleFonts.poppins(
+                                color: Colors.white,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600,
+                                fontStyle: FontStyle.italic,
+                              ),
                             ),
                             Text(
                               qa.tip!,
-                              style: const TextStyle(color: Colors.amber, fontSize: 16),
+                              style: GoogleFonts.poppins(
+                                color: Color(0xFFA5FB8F),
+                                fontSize: 14,
+                                fontWeight: FontWeight.normal,
+                                fontStyle: FontStyle.italic,
+                              ),
                             ),
                           ],
                         ],

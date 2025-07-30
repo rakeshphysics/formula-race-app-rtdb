@@ -179,6 +179,189 @@
     },
     "image": "",
     "tip": ""
-  }
+  },
+
+    {
+      "id": "kinetic_theory_qn_011",
+      "question": "According to law of equipartition of energy, the number of degrees of freedom for a monoatomic gas (He) is",
+      "options": [
+        "\\text{1, translational}",
+        "\\text{2, translational}",
+        "\\text{3, translational}",
+        "\\text{4, translational}"
+      ],
+      "answer": "\\text{3, translational}",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_011.png",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_012",
+      "question": "According to law of equipartition of energy, the number of degrees of freedom for a diatomic gas (H<sub>2</sub>) is",
+      "options": [
+        "\\text{1}",
+        "\\text{5}",
+        "\\text{3}",
+        "\\text{4}"
+      ],
+      "answer": "\\text{5}",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_012.png",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_013",
+      "question": "According to law of equipartition of energy, the number of degrees of freedom for a diatomic gas (H<sub>2</sub>) at high temperature is",
+      "options": [
+        "\\text{1}",
+        "\\text{5}",
+        "\\text{7}",
+        "\\text{4}"
+      ],
+      "answer": "\\text{7}",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_013.png",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_014",
+      "question": "According to law of equipartition of energy, each degree of freedom contributes <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;</u> to the energy (<i>k</i> = Boltzmann constant, <i>T</i> = temperature)",
+      "options": [
+        "kT",
+        "\\frac{1}{2}kT",
+        "\\frac{1}{4}kT",
+        "2kT"
+      ],
+      "answer": "\\frac{1}{2}kT",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_015",
+      "question": "The internal energy of a gas is given by (<i>n</i> = number of moles, <i>T</i> = temperature, <i>f</i> = degrees of freedom)",
+      "options": [
+        "2fnRT",
+        "fnRT",
+        "\\frac{f}{2}nRT",
+        "nRT"
+      ],
+      "answer": "\\frac{f}{2}nRT",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_016",
+      "question": "The molar specific heat at constant volume <i>C<sub>v</sub></i> is given by (<i>f</i> = degrees of freedom)",
+      "options": [
+        "2fR",
+        "fR",
+        "\\frac{f}{2}R",
+        "R"
+      ],
+      "answer": "\\frac{f}{2}R",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+
+    {
+      "id": "kinetic_theory_qn_017",
+      "question": "The molar specific heat at constant pressure <i>C<sub>p</sub></i> is given by (<i>f</i> = degrees of freedom)",
+      "options": [
+        "\\left(\\frac{f+2}{2}\\right)R",
+        "fR",
+        "\\frac{f}{2}R",
+        "R"
+      ],
+      "answer": "\\left(\\frac{f+2}{2}\\right)R",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_018",
+      "question": "Mayers relation is given by",
+      "options": [
+        "C_p = C_v - R",
+        "C_p = C_v + R",
+        "C_p = C_v R",
+        "C_v = C_p R"
+      ],
+      "answer": "C_p = C_v + R",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_019",
+      "question": "The ratio of specific heats (Adiabatic constant &gamma;) is given by (<i>f</i> = degrees of freedom)",
+      "options": [
+        "\\frac{f+1}{f}",
+        "f",
+        "1",
+        "\\frac{f+2}{f}"
+      ],
+      "answer": "\\frac{f+2}{f}",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_020",
+      "question": "According to law of equipartition of energy, each vibrational mode has ____ degrees of freedom. They are ____ and ____ energy modes.",
+      "options": [
+        "\\text{2, Kinetic and Potential}",
+        "\\text{2, Both Kinetic}",
+        "\\text{3, Potential}",
+        "\\text{2, Could be any}"
+      ],
+      "answer": "\\text{2, Kinetic and Potential}",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_020.png",
+      "tip": ""
+    }
 
 ]

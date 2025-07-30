@@ -240,7 +240,8 @@ class ResultScreen extends StatelessWidget {
                                   style: GoogleFonts.poppins(
                                     color: Colors.white,
                                     fontSize: 14,
-                                    fontWeight: FontWeight.normal,
+                                    fontWeight: FontWeight.w600,
+                                    fontStyle: FontStyle.italic,
                                   ),
                                 ),
                                 const SizedBox(height: 4),
@@ -250,6 +251,7 @@ class ResultScreen extends StatelessWidget {
                                     color: Color(0xFF3EF1F1),
                                     fontSize: 14,
                                     fontWeight: FontWeight.normal,
+                                    fontStyle: FontStyle.italic,
                                   ),
                                 ),
                               ],

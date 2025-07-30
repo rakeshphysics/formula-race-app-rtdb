@@ -92,7 +92,7 @@ flutter:
     - assets/images/11th/shm/
     - assets/images/11th/waves/
     - assets/images/11th/thermodynamics/
-    #- assets/images/11th/kinetic_theory/
+    - assets/images/11th/kinetic_theory/
     - assets/images/12th/Electrostatics/
     #- assets/images/12th/current_electricity/
     - assets/images/12th/magnetism/

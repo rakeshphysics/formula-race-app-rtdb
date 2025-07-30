@@ -2364,7 +2364,6 @@
     "image": "assets/images/11th/fluids/fluids_qn_010.png",
     "tip": ""
   },
-
      {
        "id": "elasticity_qn_001",
        "question": "(Tensile stress/Tensile strain) is called",
@@ -2380,7 +2379,7 @@
          "difficulty": "easy",
          "class": "11"
        },
-       "image": "",
+       "image": "assets/images/11th/elasticity/elasticity_qn_001.png",
        "tip": ""
      },
      {
@@ -2398,7 +2397,7 @@
          "difficulty": "easy",
          "class": "11"
        },
-       "image": "",
+       "image": "assets/images/11th/elasticity/elasticity_qn_002.png",
        "tip": ""
      },
      {
@@ -2416,7 +2415,7 @@
          "difficulty": "easy",
          "class": "11"
        },
-       "image": "",
+       "image": "assets/images/11th/elasticity/elasticity_qn_003.png",
        "tip": ""
      },
      {
@@ -2508,7 +2507,7 @@
          "difficulty": "medium",
          "class": "11"
        },
-       "image": "",
+       "image": "assets/images/11th/elasticity/elasticity_qn_008.png",
        "tip": ""
      },
      {
@@ -2547,6 +2546,188 @@
        "image": "assets/images/11th/elasticity/elasticity_qn_010.png",
        "tip": ""
      },
+
+     {
+       "id": "elasticity_qn_011",
+       "question": "In the stress-strain graph for an elastic body, <i>hookes</i> law is obeyed in the region",
+       "options": [
+         "\\text{OA}",
+         "\\text{AB}",
+         "\\text{DE}",
+         "\\text{CD}"
+       ],
+       "answer": "\\text{OA}",
+       "tags": {
+         "chapter": "elasticity",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/elasticity/elasticity_qn_011.png",
+       "tip": ""
+     },
+     {
+       "id": "elasticity_qn_012",
+       "question": "In the stress-strain graph for an elastic body, the point B is called",
+       "options": [
+         "\\text{Proportional Limit}",
+         "\\text{Yield point}",
+         "\\text{Fracture point}",
+         "\\text{Ultimate tensile strength}"
+       ],
+       "answer": "\\text{Yield point}",
+       "tags": {
+         "chapter": "elasticity",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/elasticity/elasticity_qn_012.png",
+       "tip": ""
+     },
+     {
+       "id": "elasticity_qn_013",
+       "question": "In the stress-strain graph for an elastic body, which point is called fracture point",
+       "options": [
+         "\\text{D}",
+         "\\text{E}",
+         "\\text{C}",
+         "\\text{B}"
+       ],
+       "answer": "\\text{E}",
+       "tags": {
+         "chapter": "elasticity",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/elasticity/elasticity_qn_013.png",
+       "tip": ""
+     },
+     {
+       "id": "elasticity_qn_014",
+       "question": "Which type pillar supports mode load, and is preferred in buildings and bridges",
+       "options": [
+         "\\text{1}",
+         "\\text{2}",
+         "\\text{Both same}",
+         "\\text{None of these}"
+       ],
+       "answer": "\\text{1}",
+       "tags": {
+         "chapter": "elasticity",
+         "difficulty": "easy",
+         "class": "11"
+       },
+       "image": "assets/images/11th/elasticity/elasticity_qn_014.png",
+       "tip": ""
+     },
+     {
+       "id": "elasticity_qn_015",
+       "question": "The correct relation between young's modulus (<i>Y</i>), Shear modulus (<i>G</i>) and poissons ratio (&sigma;) is",
+       "options": [
+         "Y = G(1+\\sigma)",
+         "Y = 2G(1+\\sigma)",
+         "Y = G(1-\\sigma)",
+         "Y = 3G(1-\\sigma)"
+       ],
+       "answer": "Y = 2G(1+\\sigma)",
+       "tags": {
+         "chapter": "elasticity",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "elasticity_qn_016",
+       "question": "The correct relation between young's modulus (<i>Y</i>), Bulk modulus (<i>B</i>) and poissons ratio (&sigma;) is",
+       "options": [
+         "Y = 3B(1+\\sigma)",
+         "Y = 3B(1-\\sigma)",
+         "Y = B(1+2\\sigma)",
+         "Y = 3B(1-2\\sigma)"
+       ],
+       "answer": "Y = 3B(1-2\\sigma)",
+       "tags": {
+         "chapter": "elasticity",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": ""
+     },
+     {
+       "id": "elasticity_qn_017",
+       "question": "When a material is heated, its young's modulus",
+       "options": [
+         "\\text{Increases}",
+         "\\text{Decreases}",
+         "\\text{Remains Constant}",
+         "\\text{None of these}"
+       ],
+       "answer": "\\text{Decreases}",
+       "tags": {
+         "chapter": "elasticity",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "",
+       "tip": "It becomes easier to stretch atomic bonds at higher temperature"
+     },
+     {
+       "id": "elasticity_qn_018",
+       "question": "The stress-strain graph shown below is for which material",
+       "options": [
+         "\\text{Rubber}",
+         "\\text{Iron}",
+         "\\text{Steel}",
+         "\\text{Brass}"
+       ],
+       "answer": "\\text{Rubber}",
+       "tags": {
+         "chapter": "elasticity",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/elasticity/elasticity_qn_018.png",
+       "tip": ""
+     },
+     {
+       "id": "elasticity_qn_019",
+       "question": "In the stress-strain graph for an elastic body, which point represents the ultimate tensile strength",
+       "options": [
+         "\\text{A}",
+         "\\text{C}",
+         "\\text{E}",
+         "\\text{D}"
+       ],
+       "answer": "\\text{D}",
+       "tags": {
+         "chapter": "elasticity",
+         "difficulty": "medium",
+         "class": "11"
+       },
+       "image": "assets/images/11th/elasticity/elasticity_qn_019.png",
+       "tip": ""
+     },
+     {
+       "id": "elasticity_qn_020",
+       "question": "If the point <i>D</i> and <i>E</i> are near, the material is said to be ____ and if they are far, the material is called ____",
+       "options": [
+         "\\text{Brittle, Elastomer}",
+         "\\text{Elastomer, Ductile}",
+         "\\text{Ductile, Brittle}",
+         "\\text{Brittle, Ductile}"
+       ],
+       "answer": "\\text{Brittle, Ductile}",
+       "tags": {
+         "chapter": "elasticity",
+         "difficulty": "god",
+         "class": "11"
+       },
+       "image": "assets/images/11th/elasticity/elasticity_qn_020.png",
+       "tip": "IF D and E are far apart, they can be drawn to make long wires."
+     },
+
 
      {
        "id": "gravitation_qn_001",

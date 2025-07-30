@@ -69,6 +69,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
         'answer': q['answer'],       // ✅ load the answer
         'image': q['image'],         // ✅ load the image
         'mistakeCount': 1,
+        'tip': q['tip'],
       });
 
 
@@ -292,6 +293,33 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                                   Math.tex(
                                     'Ans: ${formulaEntry['answer']}',
                                     textStyle: const TextStyle(fontSize: 16, color: Colors.greenAccent),
+                                  ),
+
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      if (formulaEntry['tip'] != null && formulaEntry['tip'].toString().isNotEmpty) ...[
+                                        const SizedBox(height: 8), // Spacing before tip
+                                        Text( // 'Tip:' label
+                                          'Tip:',
+                                          style: GoogleFonts.poppins(
+                                            color: Color(0xffffffff),
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.w600,
+                                            fontStyle: FontStyle.italic,
+                                          ),
+                                        ),
+                                        Text( // Actual tip content
+                                          formulaEntry['tip'].toString(), // Ensure it's a string
+                                          style: GoogleFonts.poppins(
+                                            color: Color(0xe2abe6a3), // As per ResultScreen's tip content
+                                            fontSize: 14,
+                                            fontStyle: FontStyle.italic,
+
+                                          ),
+                                        ),
+                                      ],
+                                    ],
                                   ),
                                 ],
                               ),

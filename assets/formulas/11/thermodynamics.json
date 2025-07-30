@@ -181,7 +181,189 @@
     },
     "image": "assets/images/11th/thermodynamics/thermodynamics_qn_010.png",
     "tip": ""
-  }
+  },
+
+    {
+      "id": "thermodynamics_qn_011",
+      "question": "Heat <i>Q</i> given to a body of mass <i>m</i> raises its temperature by &Delta;<i>T</i>, the specific heat capacity of the body is",
+      "options": [
+        "\\frac{Q}{m}",
+        "\\frac{Q}{m\\Delta T}",
+        "\\frac{Q\\Delta T}{m}",
+        "\\frac{Q}{\\Delta T}"
+      ],
+      "answer": "\\frac{Q}{m\\Delta T}",
+      "tags": {
+        "chapter": "thermodynamics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_011.png",
+      "tip": ""
+    },
+    {
+      "id": "thermodynamics_qn_012",
+      "question": "Heat <i>Q</i> given to a gas of <i>n</i> moles raises its temperature by &Delta;<i>T</i>, the molar heat capacity of the body is",
+      "options": [
+        "\\frac{Q}{n}",
+        "\\frac{Q}{n\\Delta T}",
+        "\\frac{Q\\Delta T}{n}",
+        "\\frac{Q}{\\Delta T}"
+      ],
+      "answer": "\\frac{Q}{n\\Delta T}",
+      "tags": {
+        "chapter": "thermodynamics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_012.png",
+      "tip": ""
+    },
+    {
+      "id": "thermodynamics_qn_013",
+      "question": "Heat <i>Q</i> given to a body of mass <i>m</i> raises its temperature by &Delta;<i>T</i>, the heat capacity of the body is",
+      "options": [
+        "\\frac{Q}{m}",
+        "\\frac{Q}{m\\Delta T}",
+        "\\frac{Q\\Delta T}{m}",
+        "\\frac{Q}{\\Delta T}"
+      ],
+      "answer": "\\frac{Q}{\\Delta T}",
+      "tags": {
+        "chapter": "thermodynamics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_013.png",
+      "tip": ""
+    },
+    {
+      "id": "thermodynamics_qn_014",
+      "question": "Latent heat of vaporization is the heat required to change the state of body from",
+      "options": [
+        "\\text{Solid to Liquid}",
+        "\\text{Solid to Gas}",
+        "\\text{Liquid to Gas}",
+        "\\text{Liquid to Solid}"
+      ],
+      "answer": "\\text{Liquid to Gas}",
+      "tags": {
+        "chapter": "thermodynamics",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "thermodynamics_qn_015",
+      "question": "Latent heat of Fusion is the heat required to change the state of body from",
+      "options": [
+        "\\text{Solid to Liquid}",
+        "\\text{Solid to Gas}",
+        "\\text{Liquid to Gas}",
+        "\\text{Gas to Liquid}"
+      ],
+      "answer": "\\text{Solid to Liquid}",
+      "tags": {
+        "chapter": "thermodynamics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "thermodynamics_qn_016",
+      "question": "Water equivalent of a body equals (<i>m</i> = mass of body, <i>s<sub>b</sub></i> = specific heat capacity of body, <i>s<sub>w</sub></i> = specific heat capacity of water)",
+      "options": [
+        "m (\\frac{s_b}{s_w})",
+        "m (\\frac{s_w}{s_b})",
+        "ms_w",
+        "ms_b"
+      ],
+      "answer": "m (\\frac{s_b}{s_w})",
+      "tags": {
+        "chapter": "thermodynamics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_016.png",
+      "tip": ""
+    },
+
+    {
+      "id": "thermodynamics_qn_017",
+      "question": "The rate of heat flow due to conduction, through the rod in steady state is",
+      "options": [
+        "\\frac{(T_2-T_1)}{KA\\Delta t}",
+        "\\frac{K(T_2-T_1)}{Al}",
+        "\\frac{KA(T_2-T_1)}{l}",
+        "\\frac{KA(T_2-T_1)}{l^2}"
+      ],
+      "answer": "\\frac{KA(T_2-T_1)}{l}",
+      "tags": {
+        "chapter": "thermodynamics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_017.png",
+      "tip": ""
+    },
+    {
+      "id": "thermodynamics_qn_018",
+      "question": "The thermal resistance of the rod is given by (<i>K</i> = thermal conductivity, <i>A</i> = crosssection area)",
+      "options": [
+        "\\frac{Kl}{A}",
+        "\\frac{l}{KA}",
+        "\\frac{K}{A}",
+        "\\frac{KA}{l}"
+      ],
+      "answer": "\\frac{l}{KA}",
+      "tags": {
+        "chapter": "thermodynamics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": "Remember this result, very useful in solving questions"
+    },
+    {
+      "id": "thermodynamics_qn_019",
+      "question": "The radiation energy emitted by a body when it is at temperature <i>T</i> is (<i>e</i> = emissivity of body)",
+      "options": [
+        "\\sigma A e T^4",
+        "\\sigma e T^4",
+        "\\sigma A e T^3",
+        "\\sigma T^4"
+      ],
+      "answer": "\\sigma A e T^4",
+      "tags": {
+        "chapter": "thermodynamics",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "thermodynamics_qn_020",
+      "question": "Newtons law of cooling gives the temperature of body at time <i>t</i> is <i>T</i> equals (<i>T<sub>o</sub></i> = surrounding temperature, <i>T<sub>i</sub></i> = initial temperature, <i>k</i> = rate of cooling constant)",
+      "options": [
+        "T_i + (T_i - T_o)e^{kt}",
+        "T_o + (T_i - T_o)e^{kt}",
+        "T_o + (T_i - T_o)e^{-kt}",
+        "T_o + (T_i + T_o)e^{-kt}"
+      ],
+      "answer": "T_o + (T_i - T_o)e^{-kt}",
+      "tags": {
+        "chapter": "thermodynamics",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "",
+      "tip": "Check boundary conditions for t = 0 and t = infinity;"
+    }
 
 
 ]
