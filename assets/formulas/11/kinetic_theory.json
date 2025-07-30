@@ -362,6 +362,188 @@
       },
       "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_020.png",
       "tip": ""
+    },
+
+    {
+      "id": "kinetic_theory_qn_021",
+      "question": "The internal energy of <i>n</i> moles of a gas is (<i>C<sub>v</sub></i> = molar heat capacity at constant volume, <i>T</i> = temperature)",
+      "options": [
+        "nC_vT",
+        "C_vT",
+        "nT",
+        "nC_vT^2"
+      ],
+      "answer": "nC_vT",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_022",
+      "question": "The molar heat capacity for a gas undergoing process PV<sup><i>x</i></sup> = const is (<i>C<sub>v</sub></i> = molar heat capacity at constant volume)",
+      "options": [
+        "C_v + \\frac{R}{1+x}",
+        "C_v + \\frac{R}{1-x}",
+        "C_v + R",
+        "C_v - R"
+      ],
+      "answer": "C_v + \\frac{R}{1-x}",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_023",
+      "question": "The work done by <i>n</i> moles of a gas undergoing process PV<sup><i>x</i></sup> = const is (&Delta;<i>T</i> = change in temperature of gas)",
+      "options": [
+        "\\frac{nR\\Delta T}{x}",
+        "nR\\Delta T",
+        "\\frac{nR\\Delta T}{1-x}",
+        "\\frac{nR\\Delta T}{1+x}"
+      ],
+      "answer": "\\frac{nR\\Delta T}{1-x}",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_024",
+      "question": "The work done by <i>n</i> moles of a gas undergoing process PV<sup>&gamma;</sup> = const is (&Delta;<i>T</i> = change in temperature of gas)",
+      "options": [
+        "\\frac{nR\\Delta T}{\\gamma}",
+        "nR\\Delta T",
+        "\\frac{nR\\Delta T}{1-\\gamma}",
+        "\\frac{nR\\Delta T}{1+\\gamma}"
+      ],
+      "answer": "\\frac{nR\\Delta T}{1-\\gamma}",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_025",
+      "question": "Choose the correct interpretation for kinetic interpretation of pressure (<i>P</i> = pressure, <i>V</i> = volume, <i>m</i> = mass of molecule, <i>N</i> = number of molecules, <i>v<sub>rms</sub></i> = RMS velocity)",
+      "options": [
+        "PV = \\frac{1}{2}mv_{rms}^2",
+        "PV = \\frac{1}{3}mNv_{rms}^2",
+        "PV = \\frac{1}{6}mNv_{rms}^2",
+        "PV = \\frac{1}{1}mv_{rms}^2"
+      ],
+      "answer": "PV = \\frac{1}{3}mNv_{rms}^2",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "kinetic_theory_qn_026",
+      "question": "The mean free path (average distance covered by a molecule between two successive collisions) is (<i>N</i> = total number of molecules, <i>n</i> = number density of molecules, <i>d</i> = diameter of molecules)",
+      "options": [
+        "\\frac{1}{2n \\pi d^2}",
+        "\\frac{1}{2n \\pi d^2}",
+        "\\frac{1}{\\sqrt{2}N \\pi d^2}",
+        "\\frac{1}{\\sqrt{2}n \\pi d^2}"
+      ],
+      "answer": "\\frac{1}{\\sqrt{2}n \\pi d^2}",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_027",
+      "question": "The work done by an ideal gas in an isothermal process is (<i>T</i> = temperature of gas, <i>n</i> = number of moles, <i>V<sub>f</sub></i> = final volume, <i>V<sub>i</sub></i> = initial volume)",
+      "options": [
+        "nRT \\ln \\left(\\frac{V_f}{V_i}\\right)",
+        "nRT \\ln \\left(\\frac{V_i}{V_f}\\right)",
+        "nRT",
+        "nRT \\left(\\frac{V_f}{V_i}\\right)"
+      ],
+      "answer": "nRT \\ln \\left(\\frac{V_f}{V_i}\\right)",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_028",
+      "question": "RMS speed of molecules at temperature <i>T</i> is given by (<i>k<sub>B</sub></i> = Boltzmann constant, <i>m</i> = mass of molecule)",
+      "options": [
+        "\\sqrt{\\frac{8k_B T}{\\pi m}}",
+        "\\sqrt{\\frac{2k_B T}{m}}",
+        "\\sqrt{\\frac{3k_B T}{m}}",
+        "\\sqrt{\\frac{k_B T}{3m}}"
+      ],
+      "answer": "\\sqrt{\\frac{3k_B T}{m}}",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_029",
+      "question": "The kinetic energy of all gas molecules per unit volume is (<i>P</i> = pressure, <i>V</i> = volume)",
+      "options": [
+        "P",
+        "\\frac{3}{2}P",
+        "\\frac{3}{2}V",
+        "V"
+      ],
+      "answer": "\\frac{3}{2}P",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_030",
+      "question": "The relaxation time (time between two successive collisions) is (<i>n</i> = number density of molecules, <i>d</i> = diameter of molecules)",
+      "options": [
+        "\\frac{1}{2Nnd^2_{avg}}",
+        "\\frac{1}{2n\\pi d^2 v_{avg}}",
+        "\\frac{1}{\\sqrt{2}n\\pi d^2 v_{avg}}",
+        "\\frac{1}{\\sqrt{2}n\\pi d^2 v_{avg}}"
+      ],
+      "answer": "\\frac{1}{\\sqrt{2}n d^2 v_{avg}}",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
     }
 
 ]
