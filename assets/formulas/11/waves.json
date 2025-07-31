@@ -98,7 +98,7 @@
       "\\text{v}_p \\rightarrow \\text{ and a}_p \\downarrow",
       "\\text{v}_p \\rightarrow \\text{ and a}_p \\uparrow"
     ],
-    "answer": "\\text{v}_p \\uparrow \\text{ and a}_p \\downarrow",
+    "answer": "\\text{v}_p \\uparrow \\text{ and a}_p \\uparrow",
     "tags": {
       "chapter": "waves",
       "difficulty": "medium",
@@ -130,11 +130,11 @@
     "question": "A transverse wave travels towards right as shown. The directions of acceleration and velocity of particle <i>P</i> is",
     "options": [
       "\\text{v}_p \\uparrow \\text{ and a}_p \\uparrow",
-      "\\text{v}_p \\uparrow \\text{ and a}_p \\downarrow",
+      "\\text{v}_p \\downarrow \\text{ and a}_p \\downarrow",
       "\\text{v}_p \\rightarrow \\text{ and a}_p \\downarrow",
       "\\text{v}_p \\rightarrow \\text{ and a}_p \\uparrow"
     ],
-    "answer": "\\text{v}_p \\uparrow \\text{ and a}_p \\downarrow",
+    "answer": "\\text{v}_p \\downarrow \\text{ and a}_p \\downarrow",
     "tags": {
       "chapter": "waves",
       "difficulty": "medium",
@@ -178,6 +178,188 @@
     },
     "image": "assets/images/11th/waves/waves_qn_010.png",
     "tip": ""
-  }
+  },
+
+    {
+      "id": "waves_qn_011",
+      "question": "The speed of wave on a string equals (&mu; = mass per unit length of string, <i>T</i> = tension)",
+      "options": [
+        "\\sqrt{\\frac{T}{\\mu}}",
+        "\\sqrt{T\\mu}",
+        "\\frac{1}{\\sqrt{T\\mu}}",
+        "T\\mu"
+      ],
+      "answer": "\\sqrt{\\frac{T}{\\mu}}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_012",
+      "question": "The speed of wave on a string equals (&rho; = density of string, <i>A</i> = crosssection area, <i>T</i> = tension)",
+      "options": [
+        "\\sqrt{\\frac{T}{\\rho A}}",
+        "\\sqrt{T\\rho}",
+        "\\sqrt{TA\\rho}",
+        "\\sqrt{\\frac{\\rho T}{A}}"
+      ],
+      "answer": "\\sqrt{\\frac{T}{\\rho A}}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_013",
+      "question": "When a wave travels from one medium to another, its <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> remains unchanged",
+      "options": [
+        "\\text{Wavelength}",
+        "\\text{Frequency}",
+        "\\text{Amplitude}",
+        "\\text{Wavenumber}"
+      ],
+      "answer": "\\text{Frequency}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_014",
+      "question": "In the diagram below, the phase difference between incident and reflected wave is <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> and incident and transmitted wave is <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>",
+      "options": [
+        "\\text{180, 180}",
+        "\\text{0, 0}",
+        "\\text{180, 0}",
+        "\\text{0, 180}"
+      ],
+      "answer": "\\text{180, 0}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_014.png",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_015",
+      "question": "In the diagram below, the phase difference between incident and reflected wave is <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> and transmitted wave is <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>",
+      "options": [
+        "\\text{180, 180}",
+        "\\text{0, 0}",
+        "\\text{180, 0}",
+        "\\text{0, 180}"
+      ],
+      "answer": "\\text{0, 0}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_015.png",
+      "tip": ""
+    },
+
+    {
+      "id": "waves_qn_016",
+      "question": "The energy density of a travelling wave on string is (&rho; = density of string, <i>A</i> = amplitude, &omega; = angular frequency, <i>v</i> = wave speed)",
+      "options": [
+        "\\rho \\omega^2 A^2",
+        "\\frac{1}{2}\\rho \\omega^2 A^2",
+        "\\frac{1}{4}\\rho \\omega^2 A^2 v",
+        "\\frac{1}{2}\\rho \\omega^2 A^2 v"
+      ],
+      "answer": "\\frac{1}{2}\\rho \\omega^2 A^2",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_017",
+      "question": "The intensity of a travelling wave on string is (&rho; = density of string, <i>A</i> = amplitude, &omega; = angular frequency, <i>v</i> = wave speed)",
+      "options": [
+        "\\rho \\omega^2 A^2",
+        "\\frac{1}{2}\\rho \\omega^2 A^2",
+        "\\frac{1}{4}\\rho \\omega^2 A^2 v",
+        "\\frac{1}{2}\\rho \\omega^2 A^2 v"
+      ],
+      "answer": "\\frac{1}{2}\\rho \\omega^2 A^2 v",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_018",
+      "question": "The amplitude of reflected wave is (<i>A<sub>i</sub></i> = incident wave amplitude, <i>v</i> = speed of wave in respective mediums)",
+      "options": [
+        "\\left(\\frac{2v_1}{v_2+v_1}\\right) A_i",
+        "\\left(\\frac{2v_2}{v_2+v_1}\\right) A_i",
+        "\\left(\\frac{v_2-v_1}{v_2+v_1}\\right) A_i",
+        "\\left(\\frac{v_2}{v_1}\\right) A_i"
+      ],
+      "answer": "\\left(\\frac{v_2-v_1}{v_2+v_1}\\right) A_i",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_018.png",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_019",
+      "question": "The amplitude of transmitted wave is (<i>A<sub>i</sub></i> = incident wave amplitude, <i>v</i> = speed of wave in respective mediums)",
+      "options": [
+        "\\left(\\frac{2v_1}{v_2+v_1}\\right) A_i",
+        "\\left(\\frac{2v_2}{v_2+v_1}\\right) A_i",
+        "\\left(\\frac{v_2-v_1}{v_2+v_1}\\right) A_i",
+        "\\left(\\frac{v_2}{v_1}\\right) A_i"
+      ],
+      "answer": "\\left(\\frac{2v_2}{v_2+v_1}\\right) A_i",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_019.png",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_020",
+      "question": "The energy of a longitudinal wave is (&Delta;P<sub>o</sub> = pressure amplitude, &rho; = density of medium, <i>v</i> = wave speed)",
+      "options": [
+        "\\frac{(\\Delta P_o)^2}{2\\rho v}",
+        "\\frac{1}{2}\\rho v (\\Delta P_o)^2",
+        "\\rho v (\\Delta P_o)^2",
+        "\\frac{(\\Delta P_o)^2}{4\\rho v}"
+      ],
+      "answer": "\\frac{(\\Delta P_o)^2}{2\\rho v}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    }
 
 ]

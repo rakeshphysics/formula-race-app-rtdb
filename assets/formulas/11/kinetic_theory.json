@@ -544,6 +544,190 @@
       },
       "image": "",
       "tip": ""
+    },
+
+    {
+      "id": "kinetic_theory_qn_031",
+      "question": "The process equation involving <i>P</i> (pressure), <i>T</i> (temperature) in an adiabatic process is (&gamma; = adiabatic constant)",
+      "options": [
+        "PT^\\gamma = const",
+        "P^{1-\\gamma}T^\\gamma = const",
+        "PT = const",
+        "P T^{1-\\gamma} = const"
+      ],
+      "answer": "P^{1-\\gamma}T^\\gamma = const",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_032",
+      "question": "The process equation involving <i>V</i> (volume), <i>T</i> (temperature) in an adiabatic process is (&gamma; = adiabatic constant)",
+      "options": [
+        "TV^\\gamma = const",
+        "T^{1-\\gamma}V^\\gamma = const",
+        "TV^{\\gamma-1} = const",
+        "TV^{1-\\gamma} = const"
+      ],
+      "answer": "TV^{\\gamma-1} = const",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_033",
+      "question": "The Bulk modulus of a gas when it undergoes isothermal process is (<i>P</i> = pressure, <i>V</i> = volume)",
+      "options": [
+        "V/3",
+        "P/2",
+        "V",
+        "P"
+      ],
+      "answer": "P",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_034",
+      "question": "The Bulk modulus of a gas when it undergoes adiabatic process is (<i>P</i> = pressure, <i>V</i> = volume, &gamma; = adiabatic constant)",
+      "options": [
+        "\\gamma V",
+        "P/\\gamma",
+        "\\gamma P",
+        "V/\\gamma"
+      ],
+      "answer": "\\gamma P",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_035",
+      "question": "For the heat engine below, its efficiency is",
+      "options": [
+        "\\frac{W}{Q_1}",
+        "\\frac{Q_2}{Q_1}",
+        "\\frac{W}{Q_1-Q_2}",
+        "1 - \\frac{T_2}{T_1}"
+      ],
+      "answer": "\\frac{W}{Q_1}",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_035.png",
+      "tip": "Caution! Is it just heat engine or CARNOT heat engine"
+    },
+
+    {
+      "id": "kinetic_theory_qn_036",
+      "question": "For the Carnot heat engine below, its efficiency is",
+      "options": [
+        "1 - \\frac{T_1}{T_2}",
+        "\\frac{T_1}{T_2}",
+        "\\frac{T_2}{T_1}",
+        "1 - \\frac{T_2}{T_1}"
+      ],
+      "answer": "1 - \\frac{T_2}{T_1}",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_036.png",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_037",
+      "question": "For the refrigerator (Heat pump) below, its coefficient of performance (COP) is",
+      "options": [
+        "\\frac{W}{Q_2}",
+        "\\frac{Q_2}{W}",
+        "\\frac{T_2}{T_1-T_2}",
+        "\\frac{T_1}{T_1-T_2}"
+      ],
+      "answer": "\\frac{Q_2}{W}",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_037.png",
+      "tip": "Caution! Is it just heat pump or CARNOT heat pump"
+    },
+    {
+      "id": "kinetic_theory_qn_038",
+      "question": "For the Carnot refrigerator (Heat pump) below, its coefficient of performance (COP) is",
+      "options": [
+        "\\frac{T_2}{T_1}",
+        "\\frac{T_1}{T_2}",
+        "\\frac{T_2}{T_1-T_2}",
+        "\\frac{T_1}{T_1-T_2}"
+      ],
+      "answer": "\\frac{T_2}{T_1-T_2}",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_038.png",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_039",
+      "question": "The formula for change in entropy of a system is &Delta;S is given by",
+      "options": [
+        "\\frac{Q}{T}",
+        "\\frac{T}{Q}",
+        "\\frac{\\Delta Q}{T}",
+        "\\int \\frac{dQ}{T}"
+      ],
+      "answer": "\\int \\frac{dQ}{T}",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "kinetic_theory_qn_040",
+      "question": "Your friend has fever. You put your hand on your friend, take away his heat, make him cooler and you become hot. This is allowed by first law of thermodynamics.",
+      "options": [
+        "\\text{True}",
+        "\\text{False}",
+        "\\text{Can't say}",
+        "\\text{WHATT ??}"
+      ],
+      "answer": "\\text{True}",
+      "tags": {
+        "chapter": "kinetic_theory",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "",
+      "tip": "So why this doesn't happen ? 2<sup>nd</sup> law doesn't allow this."
     }
+
+
 
 ]
