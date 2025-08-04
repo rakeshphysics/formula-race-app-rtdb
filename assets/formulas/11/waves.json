@@ -360,6 +360,553 @@
       },
       "image": "",
       "tip": ""
+    },
+
+    {
+      "id": "waves_qn_021",
+      "question": "When two sound waves of nearly equal frequencies <i>f<sub>1</sub></i> and <i>f<sub>2</sub></i> superpose at a point in space, beats are heard. The beat frequency is",
+      "options": [
+        "\\frac{f_1}{f_2}",
+        "\\frac{f_2}{f_1}",
+        "f_1 + f_2",
+        "|f_1-f_2|"
+      ],
+      "answer": "|f_1-f_2|",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "",
+      "tip": "Download frequency app on two mobiles. Set the frequencies values close, say 100Hz, 102 Hz. Now play them. Voila !"
+    },
+    {
+      "id": "waves_qn_022",
+      "question": "A string fixed at two ends is vibrating as shown, when a tuning fork is put in contact. The frequency of the tuning fork is (<i>v</i> = speed of wave in string)",
+      "options": [
+        "\\frac{v}{l}",
+        "\\frac{v}{2l}",
+        "\\frac{v}{4l}",
+        "\\frac{2v}{l}"
+      ],
+      "answer": "\\frac{v}{2l}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_022.png",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_023",
+      "question": "A string fixed at two ends is vibrating as shown, when a tuning fork is put in contact. The frequency of the tuning fork is (<i>v</i> = speed of wave in string)",
+      "options": [
+        "\\frac{v}{l}",
+        "\\frac{v}{2l}",
+        "\\frac{v}{4l}",
+        "\\frac{2v}{l}"
+      ],
+      "answer": "\\frac{v}{l}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_023.png",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_024",
+      "question": "A string fixed at one end is vibrating as shown, when a tuning fork is put in contact. The frequency of the tuning fork is (<i>v</i> = speed of wave in string)",
+      "options": [
+        "\\frac{v}{l}",
+        "\\frac{v}{2l}",
+        "\\frac{v}{4l}",
+        "\\frac{2v}{l}"
+      ],
+      "answer": "\\frac{v}{4l}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_024.png",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_025",
+      "question": "A string fixed at one end is vibrating as shown, when a tuning fork is put in contact. The frequency of the tuning fork is (<i>v</i> = speed of wave in string)",
+      "options": [
+        "\\frac{v}{l}",
+        "\\frac{5v}{2l}",
+        "\\frac{v}{4l}",
+        "\\frac{3v}{4l}"
+      ],
+      "answer": "\\frac{3v}{4l}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_025.png",
+      "tip": ""
+    },
+
+    {
+      "id": "waves_qn_026",
+      "question": "Newton proposed that speed of sound in a gas is (<i>P</i> = pressure, &rho; = density of gas, &gamma; = adiabatic constant)",
+      "options": [
+        "\\sqrt{\\frac{2P}{\\rho}}",
+        "\\sqrt{\\frac{P}{\\gamma \\rho}}",
+        "\\sqrt{\\frac{P}{\\rho}}",
+        "\\sqrt{\\frac{\\gamma P}{\\rho}}"
+      ],
+      "answer": "\\sqrt{\\frac{P}{\\rho}}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": "Newtons assumption that sound propagation is isothermal was false."
+    },
+    {
+      "id": "waves_qn_027",
+      "question": "The speed of sound in a gas is (<i>P</i> = pressure, &rho; = density of gas, &gamma; = adiabatic constant)",
+      "options": [
+        "\\sqrt{\\frac{2P}{\\rho}}",
+        "\\sqrt{\\frac{P}{\\gamma \\rho}}",
+        "\\sqrt{\\frac{P}{\\rho}}",
+        "\\sqrt{\\frac{\\gamma P}{\\rho}}"
+      ],
+      "answer": "\\sqrt{\\frac{\\gamma P}{\\rho}}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_028",
+      "question": "The speed of sound in a solid is (<i>Y</i> = Youngs modulus, &rho; = density of solid)",
+      "options": [
+        "\\sqrt{\\frac{Y}{\\rho}}",
+        "\\sqrt{\\frac{2Y}{\\rho}}",
+        "\\sqrt{\\frac{Y}{2\\rho}}",
+        "\\sqrt{\\frac{4Y}{\\rho}}"
+      ],
+      "answer": "\\sqrt{\\frac{Y}{\\rho}}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_029",
+      "question": "The speed of sound in a gas is (&gamma; = adiabatic constant, <i>T</i> = absolute temperature, <i>M</i> = molecular weight)",
+      "options": [
+        "\\sqrt{\\frac{RT}{M}}",
+        "\\sqrt{\\frac{\\gamma RT}{M}}",
+        "\\sqrt{\\frac{RT}{\\gamma M}}",
+        "\\sqrt{\\frac{RT}{2M}}"
+      ],
+      "answer": "\\sqrt{\\frac{\\gamma RT}{M}}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": "Take temperature in Kelvin and Molecular weight in kg/mol, many students make mistake in units of M and T"
+    },
+    {
+      "id": "waves_qn_030",
+      "question": "At a given time in a day, the speed of sound in air in Hyderabad is <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> compared to Vizag.",
+      "options": [
+        "\\text{More}",
+        "\\text{Lesser}",
+        "\\text{Equal}",
+        "\\text{Cannot say}"
+      ],
+      "answer": "\\text{Lesser}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "",
+      "tip": "Vizag is more humid than Hyderabad. Avg molecular weight of air in Vizag is less than Hyderabad."
+    },
+
+    {
+      "id": "waves_qn_031",
+      "question": "In the closed organ pipe below, we are showing",
+      "options": [
+        "\\text{Pressure wave}",
+        "\\text{Displacement Wave}",
+        "\\text{Could be any}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{Displacement Wave}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_031.png",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_032",
+      "question": "In the open organ pipe below, we are showing",
+      "options": [
+        "\\text{Pressure wave}",
+        "\\text{Displacement Wave}",
+        "\\text{Could be any}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{Pressure wave}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_032.png",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_033",
+      "question": "The frequency of sound in the closed organ pipe shown below is (<i>v</i> = speed of sound in air)",
+      "options": [
+        "\\frac{v}{l}",
+        "\\frac{v}{2l}",
+        "\\frac{v}{4l}",
+        "\\frac{2v}{l}"
+      ],
+      "answer": "\\frac{v}{4l}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_033.png",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_034",
+      "question": "The frequency of sound in the open organ pipe shown below is (<i>v</i> = speed of sound in air)",
+      "options": [
+        "\\frac{v}{l}",
+        "\\frac{v}{2l}",
+        "\\frac{v}{4l}",
+        "\\frac{2v}{l}"
+      ],
+      "answer": "\\frac{v}{2l}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_034.png",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_035",
+      "question": "The third harmonic frequency of sound in a closed organ pipe of length <i>l</i> is (<i>v</i> = speed of sound in air)",
+      "options": [
+        "\\frac{v}{l}",
+        "\\frac{3v}{2l}",
+        "\\frac{3v}{4l}",
+        "\\frac{5v}{4l}"
+      ],
+      "answer": "\\frac{3v}{4l}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "waves_qn_036",
+      "question": "The third overtone frequency of sound in a closed organ pipe of length <i>l</i> is (<i>v</i> = speed of sound in air)",
+      "options": [
+        "\\frac{v}{l}",
+        "\\frac{3v}{2l}",
+        "\\frac{3v}{4l}",
+        "\\frac{5v}{4l}"
+      ],
+      "answer": "\\frac{5v}{4l}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_037",
+      "question": "The fifth harmonic frequency of sound in a open organ pipe of length <i>l</i> is (<i>v</i> = speed of sound in air)",
+      "options": [
+        "\\frac{5v}{2l}",
+        "\\frac{3v}{2l}",
+        "\\frac{3v}{4l}",
+        "\\frac{5v}{4l}"
+      ],
+      "answer": "\\frac{5v}{2l}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_038",
+      "question": "The fifth overtone frequency of sound in a open organ pipe of length <i>l</i> is (<i>v</i> = speed of sound in air)",
+      "options": [
+        "\\frac{5v}{2l}",
+        "\\frac{3v}{l}",
+        "\\frac{3v}{4l}",
+        "\\frac{5v}{4l}"
+      ],
+      "answer": "\\frac{3v}{l}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_039",
+      "question": "The pressure amplitude &Delta;P of a sound wave is given by (<i>A</i> = displacement amplitude, <i>B</i> = bulk modulus, <i>k</i> = wave number)",
+      "options": [
+        "BAk^2",
+        "\\sqrt{BAk}",
+        "BAk",
+        "BA^2k"
+      ],
+      "answer": "BAk",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_040",
+      "question": "The end correction (<i>e</i>) for a closed organ pipe in terms of radius <i>R</i> of the organ pipe is",
+      "options": [
+        "e = R",
+        "e = 0.2 R",
+        "e = 0.3 R",
+        "e = 0.6 R"
+      ],
+      "answer": "e = 0.6 R",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "waves_qn_041",
+      "question": "The apparent frequency heard by the observer is (<i>f<sub>o</sub></i> = frequency of source, <i>v</i> = speed of sound in air)",
+      "options": [
+        "\\left(\\frac{v}{v+v_s}\\right)f_o",
+        "\\left(\\frac{v}{v-v_s}\\right)f_o",
+        "\\left(\\frac{v-v_s}{v}\\right)f_o",
+        "\\left(\\frac{v+v_s}{v}\\right)f_o"
+      ],
+      "answer": "\\left(\\frac{v}{v-v_s}\\right)f_o",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_041.png",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_042",
+      "question": "The apparent frequency heard by the observer is (<i>f<sub>o</sub></i> = frequency of source, <i>v</i> = speed of sound in air)",
+      "options": [
+        "\\left(\\frac{v}{v+v_o}\\right)f_o",
+        "\\left(\\frac{v}{v-v_o}\\right)f_o",
+        "\\left(\\frac{v-v_o}{v}\\right)f_o",
+        "\\left(\\frac{v+v_o}{v}\\right)f_o"
+      ],
+      "answer": "\\left(\\frac{v+v_o}{v}\\right)f_o",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_042.png",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_043",
+      "question": "The apparent frequency heard by the observer is (<i>f<sub>o</sub></i> = frequency of source, <i>v</i> = speed of sound in air)",
+      "options": [
+        "\\left(\\frac{v}{v-v_s}\\right)f_o",
+        "\\left(\\frac{v}{v+v_s}\\right)f_o",
+        "\\left(\\frac{v-v_s}{v}\\right)f_o",
+        "\\left(\\frac{v+v_s}{v}\\right)f_o"
+      ],
+      "answer": "\\left(\\frac{v}{v+v_s}\\right)f_o",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_043.png",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_044",
+      "question": "The apparent frequency heard by the observer is (<i>f<sub>o</sub></i> = frequency of source, <i>v</i> = speed of sound in air)",
+      "options": [
+        "\\left(\\frac{v}{v+v_o}\\right)f_o",
+        "\\left(\\frac{v}{v-v_o}\\right)f_o",
+        "\\left(\\frac{v-v_o}{v}\\right)f_o",
+        "\\left(\\frac{v+v_o}{v}\\right)f_o"
+      ],
+      "answer": "\\left(\\frac{v-v_o}{v}\\right)f_o",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_044.png",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_045",
+      "question": "The apparent frequency heard by the observer is (<i>f<sub>o</sub></i> = frequency of source, <i>v</i> = speed of sound in air)",
+      "options": [
+        "\\left(\\frac{v+v_o}{v+v_s}\\right)f_o",
+        "\\left(\\frac{v+v_s}{v-v_o}\\right)f_o",
+        "\\left(\\frac{v+v_o}{v-v_s}\\right)f_o",
+        "\\left(\\frac{v-v_o}{v+v_s}\\right)f_o"
+      ],
+      "answer": "\\left(\\frac{v+v_o}{v-v_s}\\right)f_o",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_045.png",
+      "tip": "Remember, Operating/System. Observer in numerator, Source in denominator"
+    },
+
+    {
+      "id": "waves_qn_046",
+      "question": "The frequency with which the sonometer wire vibrates is",
+      "options": [
+        "\\frac{1}{l} \\sqrt{\\frac{mg}{\\mu}}",
+        "\\frac{1}{4l} \\sqrt{\\frac{mg}{\\mu}}",
+        "\\frac{1}{2l} \\sqrt{\\frac{mg}{\\mu}}",
+        "\\frac{3}{4l} \\sqrt{\\frac{mg}{\\mu}}"
+      ],
+      "answer": "\\frac{1}{2l} \\sqrt{\\frac{mg}{\\mu}}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_046.png",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_047",
+      "question": "The loudness of sound in terms of intensity (<i>I</i>) is given by (<i>I<sub>o</sub></i> = 10<sup>-12</sup> W/m<sup>2</sup>)",
+      "options": [
+        "10 \\log_{10} (\\frac{I}{I_o}) dB",
+        "\\log_{10} (\\frac{I}{I_o}) dB",
+        "10 \\log_{e} (\\frac{I}{I_o}) dB",
+        "\\log_{e} (\\frac{I}{I_o}) dB"
+      ],
+      "answer": "10 \\log_{10} (\\frac{I}{I_o}) dB",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_048",
+      "question": "In the resonance column experiment, if <i>l<sub>1</sub></i> and <i>l<sub>2</sub></i> are the successive lengths of resonance tube at which a loud sound occurs, then the wavelength of sound &lambda; is given by",
+      "options": [
+        "l_2 - l_1",
+        "2(l_2-l_1)",
+        "(l_2+l_1)",
+        "2(l_2+l_1)"
+      ],
+      "answer": "2(l_2-l_1)",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_048.png",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_049",
+      "question": "In the resonance column experiment, if <i>l<sub>1</sub></i> and <i>l<sub>2</sub></i> are the successive lengths of resonance tube at which a loud sound occurs, then the end correction (<i>e</i>) is given by",
+      "options": [
+        "\\frac{l_2-l_1}{2}",
+        "2(l_2-l_1)",
+        "\\frac{(l_2-3l_1)}{2}",
+        "\\frac{(3l_2+l_1)}{2}"
+      ],
+      "answer": "\\frac{(l_2-3l_1)}{2}",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_049.png",
+      "tip": ""
+    },
+    {
+      "id": "waves_qn_050",
+      "question": "The apparent frequency heard by the observer is (<i>f<sub>o</sub></i> = frequency of source, <i>v</i> = speed of sound in air, <i>v<sub>w</sub></i> = speed of wind)",
+      "options": [
+        "\\left(\\frac{v+v_w-v_o}{v-v_w+v_s}\\right)f_o",
+        "\\left(\\frac{v-v_w+v_o}{v+v_w-v_s}\\right)f_o",
+        "\\left(\\frac{v+v_w+v_o}{v+v_w-v_s}\\right)f_o",
+        "\\left(\\frac{v+v_w-v_o}{v+v_w+v_s}\\right)f_o"
+      ],
+      "answer": "\\left(\\frac{v+v_w+v_o}{v+v_w-v_s}\\right)f_o",
+      "tags": {
+        "chapter": "waves",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/waves/waves_qn_050.png",
+      "tip": "Remember, Operating/System. Observer in numerator, Source in denominator"
     }
+
 
 ]
