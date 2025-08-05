@@ -3654,7 +3654,7 @@
          "difficulty": "easy",
          "class": "12"
        },
-       "image": "",
+       "image": "assets/images/12th/Electrostatics/Electrostatics_qn_001.png",
        "tip": ""
      },
      {
@@ -3672,7 +3672,7 @@
          "difficulty": "easy",
          "class": "12"
        },
-       "image": "",
+       "image": "assets/images/12th/Electrostatics/Electrostatics_qn_002.png",
        "tip": ""
      },
      {
@@ -3690,7 +3690,7 @@
          "difficulty": "easy",
          "class": "12"
        },
-       "image": "",
+       "image": "assets/images/12th/Electrostatics/Electrostatics_qn_003.png",
        "tip": ""
      },
      {
@@ -3781,7 +3781,7 @@
          "difficulty": "medium",
          "class": "12"
        },
-       "image": "",
+       "image": "assets/images/12th/Electrostatics/Electrostatics_qn_008.png",
        "tip": ""
      },
      {
@@ -3799,8 +3799,8 @@
          "difficulty": "medium",
          "class": "12"
        },
-       "image": "",
-       "tip": ""
+       "image": "assets/images/12th/Electrostatics/Electrostatics_qn_009.png",
+       "tip": "Think of this as, two sheets of charge. The net field is sum due to each sheet"
      },
      {
        "id": "Electrostatics_qn_010",
