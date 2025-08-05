@@ -361,8 +361,191 @@
       },
       "image": "assets/images/12th/Electrostatics/Electrostatics_qn_020.png",
       "tip": ""
-    }
+    },
 
+
+    {
+      "id": "Electrostatics_qn_021",
+      "question": "The electric potential due to a uniformly charged shell with charge <i>q</i> at distance <i>r</i> from center inside it is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)",
+      "options": [
+        "\\frac{kq}{r}",
+        "\\frac{kq}{R}",
+        "-\\frac{kq}{R}",
+        "\\frac{kq}{r^2}"
+      ],
+      "answer": "\\frac{kq}{R}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_021.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_022",
+      "question": "The electric potential due to a uniformly charged shell with charge <i>q</i> at distance <i>r</i> from center outside it is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)",
+      "options": [
+        "\\frac{kq}{r}",
+        "\\frac{kq}{R}",
+        "-\\frac{kq}{R}",
+        "\\frac{kq}{r^2}"
+      ],
+      "answer": "\\frac{kq}{r}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_022.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_023",
+      "question": "The electric potential due to a uniformly charged non conducting sphere with charge <i>q</i> at distance <i>r</i> from center outside it is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)",
+      "options": [
+        "\\frac{kq}{r}",
+        "\\frac{kq}{R}",
+        "-\\frac{kq}{R}",
+        "\\frac{kq}{r^2}"
+      ],
+      "answer": "\\frac{kq}{r}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_023.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_024",
+      "question": "The electric potential due to a uniformly charged ring with charge <i>q</i> at a distance <i>x</i> from it is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)",
+      "options": [
+        "\\frac{kq}{R}",
+        "\\frac{kq}{x}",
+        "\\frac{kq}{r}",
+        "\\frac{kq}{\\sqrt{R^2+x^2}}"
+      ],
+      "answer": "\\frac{kq}{r}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_024.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_025",
+      "question": "The electric potential due to a uniformly charged circular arc with charge <i>q</i> at a distance <i>R</i> from it is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)",
+      "options": [
+        "\\frac{kq}{R}",
+        "-\\frac{kq}{R}",
+        "\\frac{kq}{R^2}",
+        "-\\frac{kq}{R^2}"
+      ],
+      "answer": "\\frac{kq}{R}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_025.png",
+      "tip": ""
+    },
+
+
+    {
+      "id": "Electrostatics_qn_026",
+      "question": "The relation between electric field (<b>E</b>) and electric potential (<i>V</i>) in a region is given by",
+      "options": [
+        "\\vec{V} = \\vec{\\nabla}E",
+        "\\vec{V} = -\\vec{\\nabla}E",
+        "\\vec{E} = -\\vec{\\nabla}V",
+        "\\vec{E} = \\vec{\\nabla}V"
+      ],
+      "answer": "\\vec{E} = -\\vec{\\nabla}V",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": "Use this when potential is given and electric field is asked."
+    },
+    {
+      "id": "Electrostatics_qn_027",
+      "question": "The relation between electric field (<b>E</b>) and electric potential (<i>V</i>) in a region is given by",
+      "options": [
+        "dE = -\\vec{V} \\cdot d\\vec{r}",
+        "dE = \\vec{V} \\cdot d\\vec{r}",
+        "dV = \\vec{E} \\cdot d\\vec{r}",
+        "dV = -\\vec{E} \\cdot d\\vec{r}"
+      ],
+      "answer": "dV = -\\vec{E} \\cdot d\\vec{r}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": "Use this when electric field is given and electric potential is asked."
+    },
+    {
+      "id": "Electrostatics_qn_028",
+      "question": "The electric energy per unit volume (energy density) in a region with electric field <i>E<sub>o</sub></i> is",
+      "options": [
+        "\\frac{E_o^2}{2\\varepsilon_0}",
+        "\\varepsilon_0 E_o^2",
+        "\\frac{1}{2}\\varepsilon_0 E_o^2",
+        "\\frac{1}{4}\\varepsilon_0 E_o^2"
+      ],
+      "answer": "\\frac{1}{2}\\varepsilon_0 E_o^2",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_028.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_029",
+      "question": "The electric potential due to a uniformly charged non conducting sphere with charge <i>q</i> at distance <i>r</i> from center inside it is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)",
+      "options": [
+        "\\frac{3kq}{2R}",
+        "\\frac{kq}{2R^3} (3R^2-r^2)",
+        "\\frac{kq}{2R^3} (3R^2+r^2)",
+        "\\frac{kq}{2R^3} (2R^2-3r^2)"
+      ],
+      "answer": "\\frac{kq}{2R^3} (3R^2-r^2)",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_029.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_030",
+      "question": "The electrostatic pressure on the surface of the charged conductor is (&sigma; = surface charge density)",
+      "options": [
+        "\\frac{\\sigma}{2\\varepsilon_0}",
+        "\\frac{\\sigma^2}{3\\varepsilon_0}",
+        "\\frac{\\sigma^2}{\\varepsilon_0}",
+        "\\frac{\\sigma^2}{2\\varepsilon_0}"
+      ],
+      "answer": "\\frac{\\sigma^2}{2\\varepsilon_0}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_030.png",
+      "tip": ""
+    }
 
 
 ]
