@@ -179,6 +179,190 @@
     },
     "image": "assets/images/12th/Electrostatics/Electrostatics_qn_010.png",
     "tip": ""
-  }
+  },
+
+    {
+      "id": "Electrostatics_qn_011",
+      "question": "The formula for electric flux over an area is (<b>E</b> = electric field, <b>dA</b> = small area)",
+      "options": [
+        "\\int |\\vec{E}| |d\\vec{A}|",
+        "\\int (d\\vec{A} \\times \\vec{E})",
+        "\\int (\\vec{E} \\times d\\vec{A})",
+        "\\int \\vec{E} \\cdot d\\vec{A}"
+      ],
+      "answer": "\\int \\vec{E} \\cdot d\\vec{A}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_012",
+      "question": "The total electric flux through the closed box is",
+      "options": [
+        "\\frac{(q_1 + q_2)}{\\varepsilon_0}",
+        "\\frac{(q_1 + q_2 - q_3)}{\\varepsilon_0}",
+        "\\frac{(q_1 - q_2)}{\\varepsilon_0}",
+        "\\frac{(q_1 + q_2 + q_3)}{\\varepsilon_0}"
+      ],
+      "answer": "\\frac{(q_1 + q_2 - q_3)}{\\varepsilon_0}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_012.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_013",
+      "question": "The electric potential due to a charge <i>q</i> at a distance <i>r</i> from it is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)",
+      "options": [
+        "\\frac{kq}{r^2}",
+        "\\frac{kq}{r}",
+        "\\frac{kq}{r^2}",
+        "-\\frac{kq}{r^2}"
+      ],
+      "answer": "\\frac{kq}{r}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_013.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_014",
+      "question": "The electric potential due to a charge <i>-q</i> at a distance <i>r</i> from it is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)",
+      "options": [
+        "\\frac{kq}{r^2}",
+        "-\\frac{kq}{r}",
+        "\\frac{kq}{r}",
+        "-\\frac{kq}{r^2}"
+      ],
+      "answer": "-\\frac{kq}{r}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_014.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_015",
+      "question": "The magnitude of electric field due to a uniformly charged ring is maximum at <i>x</i> =",
+      "options": [
+        "R",
+        "\\frac{R}{2}",
+        "\\frac{R}{\\sqrt{2}}",
+        "\\frac{R}{\\sqrt{3}}"
+      ],
+      "answer": "\\frac{R}{\\sqrt{2}}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_015.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_016",
+      "question": "The magnitude of electric field due to a finite uniformly charged rod at <i>r</i> is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>, &lambda; = linear charge density)",
+      "options": [
+        "\\frac{k\\lambda}{r} (\\sin\\theta_1 + \\sin\\theta_2)",
+        "\\frac{k\\lambda}{r} (\\sin\\theta_1 - \\sin\\theta_2)",
+        "\\frac{k\\lambda}{r} (\\cos\\theta_1 - \\cos\\theta_2)",
+        "\\frac{k\\lambda}{r} (\\cos\\theta_1 + \\cos\\theta_2)"
+      ],
+      "answer": "\\frac{k\\lambda}{r} (\\sin\\theta_1 + \\sin\\theta_2)",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_016.png",
+      "tip": ""
+    },
+
+    {
+      "id": "Electrostatics_qn_017",
+      "question": "The magnitude of electric field due to a long uniformly charged rod at <i>r</i> is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>, &lambda; = linear charge density)",
+      "options": [
+        "\\frac{k\\lambda}{2r}",
+        "\\frac{k\\lambda}{4r}",
+        "\\frac{k\\lambda}{r}",
+        "\\frac{2k\\lambda}{r}"
+      ],
+      "answer": "\\frac{2k\\lambda}{r}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_017.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_018",
+      "question": "The magnitude of electric field due to a finite uniformly charged rod at <i>r</i> is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>, &lambda; = linear charge density)",
+      "options": [
+        "\\frac{k\\lambda}{r} \\sin \\theta",
+        "\\frac{2k\\lambda}{r} \\sin \\theta",
+        "\\frac{k\\lambda}{r} \\cos \\theta",
+        "\\frac{2k\\lambda}{r} \\cos \\theta"
+      ],
+      "answer": "\\frac{k\\lambda}{r} \\sin \\theta",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_018.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_019",
+      "question": "The magnitude of electric field due to a uniformly charged arc at <i>r</i> is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>, &lambda; = linear charge density)",
+      "options": [
+        "\\frac{k\\lambda}{r} (\\sin\\theta_1 + \\sin\\theta_2)",
+        "\\frac{k\\lambda}{r} (\\sin\\theta_1 - \\sin\\theta_2)",
+        "\\frac{k\\lambda}{r} (\\cos\\theta_1 - \\cos\\theta_2)",
+        "\\frac{k\\lambda}{r} (\\cos\\theta_1 + \\cos\\theta_2)"
+      ],
+      "answer": "\\frac{k\\lambda}{r} (\\sin\\theta_1 + \\sin\\theta_2)",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_019.png",
+      "tip": "This is the same as a finite rod, remember this similarity. Would gravitational field due to an arc be similar ? Think !"
+    },
+    {
+      "id": "Electrostatics_qn_020",
+      "question": "The electric field due to a uniformly charged disc at P is",
+      "options": [
+        "\\frac{\\sigma}{2\\varepsilon_0} (1 - \\sin\\theta)",
+        "\\frac{\\sigma}{2\\varepsilon_0} (1 - \\cos\\theta)",
+        "\\frac{\\sigma}{2\\varepsilon_0} (1 - \\tan\\theta)",
+        "\\frac{\\sigma}{2\\varepsilon_0} (1 + \\cos\\theta)"
+      ],
+      "answer": "\\frac{\\sigma}{2\\varepsilon_0} (1 - \\cos\\theta)",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_020.png",
+      "tip": ""
+    }
+
+
 
 ]
