@@ -545,7 +545,188 @@
       },
       "image": "assets/images/12th/Electrostatics/Electrostatics_qn_030.png",
       "tip": ""
-    }
+    },
 
+    {
+      "id": "Electrostatics_qn_031",
+      "question": "The electrostatic potential energy of two point charges <i>q<sub>1</sub></i> and <i>q<sub>2</sub></i> separated by distance <i>r</i> is",
+      "options": [
+        "\\frac{1}{2\\pi\\epsilon_0} \\frac{q_1q_2}{r}",
+        "\\frac{1}{4\\pi\\epsilon_0} \\frac{q_1q_2}{r}",
+        "\\frac{1}{2\\pi\\epsilon_0} \\frac{q_1q_2}{r^2}",
+        "\\frac{1}{4\\pi\\epsilon_0} \\frac{q_1q_2}{r^2}"
+      ],
+      "answer": "\\frac{1}{4\\pi\\epsilon_0} \\frac{q_1q_2}{r}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_031.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_032",
+      "question": "The formula for electric dipole moment is",
+      "options": [
+        "\\frac{ql}{2}",
+        "ql",
+        "q(2l)",
+        "\\frac{ql}{4}"
+      ],
+      "answer": "q(2l)",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_032.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_033",
+      "question": "The electric field due to dipole at an axial point is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)",
+      "options": [
+        "\\frac{2kp}{r^2}",
+        "\\frac{kp}{r^2}",
+        "\\frac{kp}{r^3}",
+        "\\frac{2kp}{r^3}"
+      ],
+      "answer": "\\frac{2kp}{r^3}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_033.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_034",
+      "question": "The electric field due to dipole at an equatorial point is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)",
+      "options": [
+        "\\frac{2kp}{r^2}",
+        "\\frac{kp}{r^2}",
+        "\\frac{kp}{r^3}",
+        "\\frac{2kp}{r^3}"
+      ],
+      "answer": "\\frac{kp}{r^3}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_034.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_035",
+      "question": "The electric potential due to dipole at a general point is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)",
+      "options": [
+        "\\frac{2kp \\cos \\theta}{r^2}",
+        "\\frac{kp \\cos \\theta}{r^2}",
+        "\\frac{2kp \\cos \\theta}{r^3}",
+        "\\frac{kp \\cos \\theta}{r^3}"
+      ],
+      "answer": "\\frac{kp \\cos \\theta}{r^2}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_035.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_036",
+      "question": "The torque on a dipole <b>p</b> placed in an constant external electric field <b>E</b> is",
+      "options": [
+        "\\vec{p} \\times \\vec{E}",
+        "\\vec{E} \\times \\vec{p}",
+        "\\vec{p} \\cdot \\vec{E}",
+        "\\vec{E} \\cdot \\vec{p}"
+      ],
+      "answer": "\\vec{p} \\times \\vec{E}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_036.png",
+      "tip": "Think of electric field as a commander, all the dipoles (soldiers) are ordered to point in the direction of external electric field"
+    },
+
+    {
+      "id": "Electrostatics_qn_037",
+      "question": "The potential energy of a dipole <b>p</b> placed in an external electric field <b>E</b> is",
+      "options": [
+        "\\vec{p} \\times \\vec{E}",
+        "\\vec{E} \\times \\vec{p}",
+        "-\\vec{p} \\cdot \\vec{E}",
+        "\\vec{p} \\cdot \\vec{E}"
+      ],
+      "answer": "-\\vec{p} \\cdot \\vec{E}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_037.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_038",
+      "question": "The magnitude of force on a dipole placed in a non uniform electric field is",
+      "options": [
+        "\\vec{p} \\cdot \\frac{d\\vec{E}}{dr}",
+        "\\vec{p} \\cdot \\vec{E}",
+        "\\vec{p} \\times \\vec{E}",
+        "p \\frac{d\\vec{E}}{dr}"
+      ],
+      "answer": "\\vec{p} \\cdot \\frac{d\\vec{E}}{dr}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_038.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_039",
+      "question": "The self energy of a charged conducting sphere of charge <i>Q</i> and radius <i>R</i> is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)",
+      "options": [
+        "\\frac{kQ^2}{R}",
+        "\\frac{kQ^2}{2R}",
+        "\\frac{5Q^2}{3R}",
+        "\\frac{2kQ^2}{R}"
+      ],
+      "answer": "\\frac{kQ^2}{2R}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_039.png",
+      "tip": ""
+    },
+    {
+      "id": "Electrostatics_qn_040",
+      "question": "The self energy of a uniformly charged non conducting sphere of charge <i>Q</i> and radius <i>R</i> is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)",
+      "options": [
+        "\\frac{kQ^2}{R}",
+        "\\frac{kQ^2}{2R}",
+        "\\frac{5kQ^2}{3R}",
+        "\\frac{3kQ^2}{5R}"
+      ],
+      "answer": "\\frac{3kQ^2}{5R}",
+      "tags": {
+        "chapter": "Electrostatics",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_040.png",
+      "tip": ""
+    }
 
 ]
