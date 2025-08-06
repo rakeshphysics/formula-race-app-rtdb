@@ -362,6 +362,191 @@
       },
       "image": "assets/images/12th/capacitors/capacitors_qn_020.png",
       "tip": "Notice a similarity ? When two masses undergo an inelastic collision, the loss of energy is ? Think !"
+    },
+
+    {
+      "id": "capacitors_qn_021",
+      "question": "The force on the dielectric placed partially inside the capacitor is (<i>K</i> = dielectric constant, <i>b</i> = width of capacitor plate)",
+      "options": [
+        "\\frac{\\epsilon_0 b V^2}{2d}",
+        "\\frac{\\epsilon_0 b V^2 (K-1)}{2d}",
+        "\\frac{K\\epsilon_0 b V^2}{2d}",
+        "\\frac{\\epsilon_0 b V^2 (K-1)}{d}"
+      ],
+      "answer": "\\frac{\\epsilon_0 b V^2 (K-1)}{2d}",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_021.png",
+      "tip": ""
+    },
+    {
+      "id": "capacitors_qn_022",
+      "question": "A capacitor of 2&mu;F is charged to 5V, now the cell is removed and a dielectric <i>K</i> = 2 is inserted slowly. The charge on the capacitor finally is",
+      "options": [
+        "20 \\mu C",
+        "2 \\mu C",
+        "5 \\mu C",
+        "10 \\mu C"
+      ],
+      "answer": "10 \\mu C",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_022.png",
+      "tip": ""
+    },
+    {
+      "id": "capacitors_qn_023",
+      "question": "A capacitor of 2&mu;F is charged to 5V, now a dielectric <i>K</i> = 2 is inserted slowly. The charge on the capacitor finally is",
+      "options": [
+        "20 \\mu C",
+        "2 \\mu C",
+        "5 \\mu C",
+        "10 \\mu C"
+      ],
+      "answer": "20 \\mu C",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_023.png",
+      "tip": ""
+    },
+    {
+      "id": "capacitors_qn_024",
+      "question": "The electric field between the capacitor plates is",
+      "options": [
+        "\\frac{Q}{\\epsilon_0}",
+        "\\frac{Q}{2\\epsilon_0}",
+        "\\frac{Q}{A\\epsilon_0}",
+        "\\frac{2Q}{A\\epsilon_0}"
+      ],
+      "answer": "\\frac{Q}{A\\epsilon_0}",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_024.png",
+      "tip": ""
+    },
+    {
+      "id": "capacitors_qn_025",
+      "question": "The potential of junction is O",
+      "options": [
+        "\\frac{V_1+V_2+V_3}{3}",
+        "\\frac{C_1 V_2 + C_2 V_3 + C_3 V_1}{C_1+C_2+C_3}",
+        "\\frac{C_1 V_1 - C_2 V_2 - C_3 V_3}{C_1+C_2+C_3}",
+        "\\frac{C_1 V_1 + C_2 V_2 + C_3 V_3}{C_1+C_2+C_3}"
+      ],
+      "answer": "\\frac{C_1 V_1 + C_2 V_2 + C_3 V_3}{C_1+C_2+C_3}",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_025.png",
+      "tip": ""
+    },
+
+    {
+      "id": "capacitors_qn_026",
+      "question": "Two long parallel conductors are given charges 2<i>Q</i> and 4<i>Q</i> as shown. The charges appearing on the outer surfaces of two plates are",
+      "options": [
+        "\\text{3Q, 3Q}",
+        "\\text{2Q, 4Q}",
+        "\\text{-1Q, 1Q}",
+        "\\text{-3Q, -3Q}"
+      ],
+      "answer": "\\text{3Q, 3Q}",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_026.png",
+      "tip": "Charge that appears on outer plates is equal. And its value is half the total charge"
+    },
+    {
+      "id": "capacitors_qn_027",
+      "question": "Four long parallel conductors are given charges 2<i>Q</i>, -10<i>Q</i>, 6<i>Q</i>, 8<i>Q</i> as shown. The charges appearing on the outermost surfaces of the plates are",
+      "options": [
+        "\\text{3Q, 3Q}",
+        "\\text{2Q, 4Q}",
+        "\\text{-1Q, 1Q}",
+        "\\text{13Q, 13Q}"
+      ],
+      "answer": "\\text{3Q, 3Q}",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_027.png",
+      "tip": "Charge that appears on outer plates is equal. And its value is half the total charge"
+    },
+    {
+      "id": "capacitors_qn_028",
+      "question": "If the electric field in the empty space in capacitor is <i>E</i>, then the electric field in dielectric is (<i>K</i> = dielectric constant)",
+      "options": [
+        "KE",
+        "\\frac{E}{K}",
+        "\\sqrt{KE}",
+        "K^2E"
+      ],
+      "answer": "\\frac{E}{K}",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_028.png",
+      "tip": ""
+    },
+    {
+      "id": "capacitors_qn_029",
+      "question": "If the charge on capacitor is <i>Q</i>, then the magnitude of induced charge on the dielectric surface <i>q</i> equals",
+      "options": [
+        "Q(1+\\frac{1}{K})",
+        "\\frac{Q}{K}",
+        "Q(1-\\frac{1}{K})",
+        "Q(K-1)"
+      ],
+      "answer": "Q(1-\\frac{1}{K})",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_029.png",
+      "tip": ""
+    },
+
+    {
+      "id": "capacitors_qn_030",
+      "question": "For the delta to star conversion, the value of <i>C<sub>a</sub></i> is",
+      "options": [
+        "\\frac{C_1 C_2}{C_1+C_2+C_3}",
+        "\\frac{C_1 C_2+C_2 C_3+C_3 C_1}{C_2}",
+        "\\frac{C_1 C_2+C_2 C_3+C_3 C_1}{C_3}",
+        "\\frac{C_1 C_2+C_2 C_3+C_3 C_1}{C_1}"
+      ],
+      "answer": "\\frac{C_1 C_2+C_2 C_3+C_3 C_1}{C_3}",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_030.png",
+      "tip": "This is not in portion, but it helps in solving certain Qns. Observe the symmetry in formula. It is reverse for resistors."
     }
+
+
 
 ]
