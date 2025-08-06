@@ -87,7 +87,7 @@
       "class": "12"
     },
     "image": "assets/images/12th/capacitors/capacitors_qn_005.png",
-    "tip": "Many students calculate 1/C_{eq} and forget to do the reciprocal. This is a very common silly mistake. If you do this correctly, you are already 1000s of ranks ahead."
+    "tip": "Many students calculate (1/Ceq) and forget to do the reciprocal. This is a very common silly mistake. If you do this correctly, you are already 1000s of ranks ahead."
   },
 
     {
@@ -179,6 +179,189 @@
       },
       "image": "assets/images/12th/capacitors/capacitors_qn_010.png",
       "tip": "The force due to equal and opposite polarized charges on a plate cancel out, giving us the same formula if there were no dielectric."
+    },
+
+    {
+      "id": "capacitors_qn_011",
+      "question": "The energy stored in the capacitor is",
+      "options": [
+        "\\frac{1}{2}VC^2",
+        "\\frac{1}{4}CV^2",
+        "\\frac{1}{2}CV^2",
+        "CV^2"
+      ],
+      "answer": "\\frac{1}{2}CV^2",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_011.png",
+      "tip": "Caution, V is potential drop across capacitor, not emf of cell. So its always safer to use the formula Q^2/2C for energy stored in capacitor"
+    },
+    {
+      "id": "capacitors_qn_012",
+      "question": "The energy stored in the capacitor is",
+      "options": [
+        "\\frac{Q^2}{C}",
+        "\\frac{Q^2}{2C}",
+        "\\frac{1}{2}CQ^2",
+        "CQ^2"
+      ],
+      "answer": "\\frac{Q^2}{2C}",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_012.png",
+      "tip": ""
+    },
+    {
+      "id": "capacitors_qn_013",
+      "question": "The time constant of an RC circuit is",
+      "options": [
+        "RC",
+        "\\frac{R}{2C}",
+        "\\frac{1}{RC}",
+        "\\frac{R}{C}"
+      ],
+      "answer": "RC",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_013.png",
+      "tip": ""
+    },
+    {
+      "id": "capacitors_qn_014",
+      "question": "The charge on capacitor in transient state during discharging is (<i>Q<sub>o</sub></i> = charge on capacitor at <i>t</i> = 0)",
+      "options": [
+        "Q_o(1+e^{\\frac{t}{RC}})",
+        "Q_o e^{\\frac{t}{RC}}",
+        "Q_o(1-e^{\\frac{t}{RC}})",
+        "Q_o e^{-\\frac{t}{RC}}"
+      ],
+      "answer": "Q_o e^{-\\frac{t}{RC}}",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_014.png",
+      "tip": ""
+    },
+    {
+      "id": "capacitors_qn_015",
+      "question": "The charge on capacitor in transient state during charging is",
+      "options": [
+        "CV(1+e^{\\frac{t}{RC}})",
+        "CV e^{\\frac{t}{RC}}",
+        "CV(1-e^{-\\frac{t}{RC}})",
+        "CV e^{-\\frac{t}{RC}}"
+      ],
+      "answer": "CV(1-e^{-\\frac{t}{RC}})",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_015.png",
+      "tip": ""
+    },
+
+    {
+      "id": "capacitors_qn_016",
+      "question": "An ideal voltmeter connected across a capacitor reads <i>V</i>. Now a dielectric of dielectric constant <i>K</i> is inserted slowly between capacitor plates. The final reading of voltmeter is",
+      "options": [
+        "KV",
+        "\\frac{V}{K}",
+        "\\sqrt{KV}",
+        "V"
+      ],
+      "answer": "\\frac{V}{K}",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_016.png",
+      "tip": ""
+    },
+    {
+      "id": "capacitors_qn_017",
+      "question": "Two capacitors <i>C<sub>1</sub></i> and <i>C<sub>2</sub></i> are charged to potentials <i>V<sub>1</sub></i> and <i>V<sub>2</sub></i> respectively. Now the positive terminals of both and negative terminals of both are connected to form a closed circuit. The final common potential of capacitors is",
+      "options": [
+        "\\frac{C_1 V_1 + C_2 V_2}{C_1 + C_2}",
+        "\\frac{C_1 V_1 - C_2 V_2}{C_1 + C_2}",
+        "\\frac{C_1 V_2 + C_2 V_1}{C_1 + C_2}",
+        "\\frac{C_1 V_2 - C_2 V_1}{C_1 - C_2}"
+      ],
+      "answer": "\\frac{C_1 V_1 + C_2 V_2}{C_1 + C_2}",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_017.png",
+      "tip": "Notice a similarity ? When two masses undergo an inelastic collision, the final speed of combined mass is ? Think !"
+    },
+    {
+      "id": "capacitors_qn_018",
+      "question": "The charge <i>Q<sub>1</sub></i> in terms of <i>Q</i> and capacitances is",
+      "options": [
+        "(\\frac{C_1+C_2}{C_1})Q",
+        "(\\frac{C_1}{C_1+C_2})Q",
+        "(\\frac{C_2}{C_1+C_2})Q",
+        "(\\frac{C_1+C_2}{C_2})Q"
+      ],
+      "answer": "(\\frac{C_1}{C_1+C_2})Q",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_018.png",
+      "tip": "Remember this. Make qns solving faster. Charge is proportional to the capacitance of the capacitors"
+    },
+    {
+      "id": "capacitors_qn_019",
+      "question": "The potential drop <i>V<sub>1</sub></i> in terms of <i>V</i> and capacitances is",
+      "options": [
+        "(\\frac{C_1+C_2}{C_1})V",
+        "(\\frac{C_2}{C_1+C_2})V",
+        "(\\frac{C_1}{C_1+C_2})V",
+        "(\\frac{C_1+C_2}{C_2})V"
+      ],
+      "answer": "(\\frac{C_2}{C_1+C_2})V",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_019.png",
+      "tip": "Remember this. Make qns solving faster. Potential is inversely proportional to the capacitance of the capacitors"
+    },
+
+    {
+      "id": "capacitors_qn_020",
+      "question": "Two capacitors <i>C<sub>1</sub></i> and <i>C<sub>2</sub></i> are charged to potentials <i>V<sub>1</sub></i> and <i>V<sub>2</sub></i> respectively. Now the positive terminals of both and negative terminals of both are connected to form a closed circuit. The loss of electric energy due to this is (<i>V<sub>rel</sub></i> = (<i>V<sub>1</sub></i> - <i>V<sub>2</sub></i>))",
+      "options": [
+        "\\mu V_{rel}^2, \\mu = \\frac{C_1 C_2}{C_1+C_2}",
+        "\\frac{1}{2}\\mu V_{rel}^2, \\mu = \\frac{C_1 C_2}{C_1+C_2}",
+        "\\frac{1}{4}\\mu V_{rel}^2, \\mu = \\frac{C_1 C_2}{C_1+C_2}",
+        "2\\mu V_{rel}^2, \\mu = \\frac{C_1 C_2}{C_1+C_2}"
+      ],
+      "answer": "\\frac{1}{2}\\mu V_{rel}^2, \\mu = \\frac{C_1 C_2}{C_1+C_2}",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_020.png",
+      "tip": "Notice a similarity ? When two masses undergo an inelastic collision, the loss of energy is ? Think !"
     }
 
 ]
