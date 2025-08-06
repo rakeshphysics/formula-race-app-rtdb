@@ -38,6 +38,7 @@ const Map<String, String> chapterToClass = {
   "Oscillations": "11",
   "Waves": "11",
   "Electrostatics": "12",
+  "Capacitors": "12",
   "Current Electricity": "12",
   "Magnetism": "12",
   "EMI": "12",
@@ -155,6 +156,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       } else if (widget.selectedChapter == 'full12') {
         fullChapters = [
           'Electrostatics',
+          'Capacitors',
           'Current Electricity',
           'Magnetism',
           'EMI',
@@ -185,6 +187,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'Waves',
           // 12th
           'Electrostatics',
+          'Capacitors',
           'Current Electricity',
           'Magnetism',
           'EMI',

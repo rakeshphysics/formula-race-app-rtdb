@@ -1,0 +1,184 @@
+[
+  {
+    "id": "capacitors_qn_001",
+    "question": "Two conductors have equal and opposite charges <i>Q</i>. The potential difference between them is <i>V</i>, the capacitance of this two conductor system is",
+    "options": [
+      "\\frac{Q}{V}",
+      "QV",
+      "\\frac{V}{Q}",
+      "\\frac{1}{QV}"
+    ],
+    "answer": "\\frac{Q}{V}",
+    "tags": {
+      "chapter": "capacitors",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/capacitors/capacitors_qn_001.png",
+    "tip": ""
+  },
+  {
+    "id": "capacitors_qn_002",
+    "question": "The capacitance of a parallel plate capacitor is given by (<i>A</i> = area of plates, <i>d</i> = separation between them)",
+    "options": [
+      "\\frac{d\\epsilon_0}{A}",
+      "\\frac{A\\epsilon_0}{d}",
+      "A\\epsilon_0",
+      "\\frac{A}{d\\epsilon_0}"
+    ],
+    "answer": "\\frac{A\\epsilon_0}{d}",
+    "tags": {
+      "chapter": "capacitors",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/capacitors/capacitors_qn_002.png",
+    "tip": ""
+  },
+  {
+    "id": "capacitors_qn_003",
+    "question": "The capacitance of a parallel plate capacitor with a dielectric of dielectric constant <i>K</i> placed between plates is given by (<i>A</i> = area of plates, <i>d</i> = separation between them)",
+    "options": [
+      "\\frac{A\\epsilon_0}{Kd}",
+      "\\frac{A\\epsilon_0}{d}",
+      "\\frac{KA\\epsilon_0}{d}",
+      "\\sqrt{KA\\epsilon_0}d"
+    ],
+    "answer": "\\frac{KA\\epsilon_0}{d}",
+    "tags": {
+      "chapter": "capacitors",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/capacitors/capacitors_qn_003.png",
+    "tip": ""
+  },
+  {
+    "id": "capacitors_qn_004",
+    "question": "The equivalent capacitance for the capacitors in parallel is given by",
+    "options": [
+      "\\frac{1}{C_{eq}} = \\frac{1}{C_1} + \\frac{1}{C_2}",
+      "C_{eq} = C_1 + C_2",
+      "C_{eq} = C_1 - C_2",
+      "\\frac{1}{C_{eq}} = \\frac{1}{C_1} - \\frac{1}{C_2}"
+    ],
+    "answer": "C_{eq} = C_1 + C_2",
+    "tags": {
+      "chapter": "capacitors",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/capacitors/capacitors_qn_004.png",
+    "tip": ""
+  },
+  {
+    "id": "capacitors_qn_005",
+    "question": "The equivalent capacitance for the capacitors in series is given by",
+    "options": [
+      "\\frac{1}{C_{eq}} = \\frac{1}{C_1} + \\frac{1}{C_2}",
+      "C_{eq} = C_1 + C_2",
+      "C_{eq} = C_1 - C_2",
+      "\\frac{1}{C_{eq}} = \\frac{1}{C_1} - \\frac{1}{C_2}"
+    ],
+    "answer": "\\frac{1}{C_{eq}} = \\frac{1}{C_1} + \\frac{1}{C_2}",
+    "tags": {
+      "chapter": "capacitors",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/capacitors/capacitors_qn_005.png",
+    "tip": "Many students calculate 1/C_{eq} and forget to do the reciprocal. This is a very common silly mistake. If you do this correctly, you are already 1000s of ranks ahead."
+  },
+
+    {
+      "id": "capacitors_qn_006",
+      "question": "The equivalent capacitance for the capacitor with multiple dielectrics is given by",
+      "options": [
+        "(d_1 K_1 + d_2 K_2)A\\epsilon_0",
+        "\\frac{A\\epsilon_0}{d_1 K_1 + d_2 K_2}",
+        "(d_1 K_1 - d_2 K_2)A\\epsilon_0",
+        "\\frac{A\\epsilon_0}{\\frac{d_1}{K_1}+\\frac{d_2}{K_2}}"
+      ],
+      "answer": "\\frac{A\\epsilon_0}{\\frac{d_1}{K_1}+\\frac{d_2}{K_2}}",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_006.png",
+      "tip": "This formula makes many questions simple to solve. If some space is air, then put K for that space as '1'"
+    },
+    {
+      "id": "capacitors_qn_007",
+      "question": "The equivalent capacitance for the capacitor with multiple dielectrics is given by",
+      "options": [
+        "\\frac{\\epsilon_0}{d} (K_1 A_1 + K_2 A_2)",
+        "\\frac{A\\epsilon_0}{A_1K_1 + A_2K_2}",
+        "\\frac{\\epsilon_0}{d} (K_1 A_1 - K_2 A_2)",
+        "\\frac{d\\epsilon_0}{(\\frac{A_1}{K_1} + \\frac{A_2}{K_2})}"
+      ],
+      "answer": "\\frac{\\epsilon_0}{d} (K_1 A_1 + K_2 A_2)",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_007.png",
+      "tip": ""
+    },
+    {
+      "id": "capacitors_qn_008",
+      "question": "The force between plates of a parallel plate capacitor is",
+      "options": [
+        "\\frac{Q^2}{4A\\epsilon_0}",
+        "\\frac{2Q^2}{A\\epsilon_0}",
+        "\\frac{Q^2}{A\\epsilon_0}",
+        "\\frac{Q^2}{2A\\epsilon_0}"
+      ],
+      "answer": "\\frac{Q^2}{2A\\epsilon_0}",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_008.png",
+      "tip": ""
+    },
+    {
+      "id": "capacitors_qn_009",
+      "question": "The capacitance of a isolated spherical conductor of radius <i>R</i> is",
+      "options": [
+        "\\frac{1}{4\\pi\\epsilon_0 R}",
+        "4\\pi\\epsilon_0 R",
+        "\\frac{R}{4\\pi\\epsilon_0}",
+        "\\frac{4\\pi\\epsilon_0}{R}"
+      ],
+      "answer": "4\\pi\\epsilon_0 R",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_009.png",
+      "tip": ""
+    },
+    {
+      "id": "capacitors_qn_010",
+      "question": "The force between plates of a parallel plate capacitor with a dielectric placed between them is",
+      "options": [
+        "\\frac{Q^2}{4KA\\epsilon_0}",
+        "\\frac{2Q^2}{AK\\epsilon_0}",
+        "\\frac{Q^2}{2K A\\epsilon_0}",
+        "\\frac{Q^2}{2A\\epsilon_0}"
+      ],
+      "answer": "\\frac{Q^2}{2A\\epsilon_0}",
+      "tags": {
+        "chapter": "capacitors",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/capacitors/capacitors_qn_010.png",
+      "tip": "The force due to equal and opposite polarized charges on a plate cancel out, giving us the same formula if there were no dielectric."
+    }
+
+]

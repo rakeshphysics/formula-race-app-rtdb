@@ -63,6 +63,7 @@ flutter:
 
     # Class 12
     - assets/formulas/12/electrostatics.json
+    - assets/formulas/12/capacitors.json
     - assets/formulas/12/current_electricity.json
     - assets/formulas/12/magnetism.json
     - assets/formulas/12/emi.json
@@ -94,6 +95,7 @@ flutter:
     - assets/images/11th/thermodynamics/
     - assets/images/11th/kinetic_theory/
     - assets/images/12th/Electrostatics/
+    - assets/images/12th/capacitors/
     #- assets/images/12th/current_electricity/
     - assets/images/12th/magnetism/
     - assets/images/12th/emi/

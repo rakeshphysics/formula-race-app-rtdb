@@ -30,6 +30,7 @@ const Map<String, String> chapterToClass = {
   "SHM": "11",
   "Waves": "11",
   "Electrostatics": "12",
+  "Capacitors": "12",
   "Current Electricity": "12",
   "Magnetism": "12",
   "EMI": "12",
@@ -71,6 +72,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
 
     // Class 12
     'Electrostatics',
+    'Capacitors',
     'Current Electricity',
     'Magnetism',
     'EMI',

@@ -37,6 +37,7 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
 
     // Class 12
     'Electrostatics',
+    'Capacitors',
     'Current Electricity',
     'Magnetism',
     'EMI',
