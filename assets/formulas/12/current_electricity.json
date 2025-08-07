@@ -361,7 +361,188 @@
       },
       "image": "assets/images/12th/current_electricity/current_electricity_qn_020.png",
       "tip": "This relation makes many tough qns very easy. The direction of current can be got from the sign of this answer !"
-    }
+    },
 
+    {
+      "id": "current_electricity_qn_021",
+      "question": "The values of resistances for balanced condition of Wheatstone bridge satisfy",
+      "options": [
+        "\\frac{R_1}{R_2} = \\frac{R_3}{R_4}",
+        "\\frac{R_1}{R_2} = \\frac{R_4}{R_3}",
+        "R_1^2 = R_3R_4",
+        "R_2^2 = R_3R_4"
+      ],
+      "answer": "\\frac{R_1}{R_2} = \\frac{R_3}{R_4}",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_021.png",
+      "tip": ""
+    },
+    {
+      "id": "current_electricity_qn_022",
+      "question": "For the balanced condition of meter bridge",
+      "options": [
+        "x = \\left(\\frac{l}{100-l}\\right)R",
+        "x = \\left(\\frac{100-l}{l}\\right)R",
+        "x = \\left(\\frac{100-l}{lR}\\right)",
+        "x = \\frac{l}{(100-l)R}"
+      ],
+      "answer": "x = \\left(\\frac{100-l}{l}\\right)R",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_022.png",
+      "tip": ""
+    },
+    {
+      "id": "current_electricity_qn_023",
+      "question": "The electric power dissipated in the resistor is",
+      "options": [
+        "iR",
+        "iR^2",
+        "i^2R",
+        "i\\sqrt{R}"
+      ],
+      "answer": "i^2R",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_023.png",
+      "tip": ""
+    },
+    {
+      "id": "current_electricity_qn_024",
+      "question": "The heat dissipated in the resistor in time <i>t</i> is",
+      "options": [
+        "iRt",
+        "i^2R^2t",
+        "i^2Rt",
+        "i\\sqrt{Rt}"
+      ],
+      "answer": "i^2Rt",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_024.png",
+      "tip": ""
+    },
+    {
+      "id": "current_electricity_qn_025",
+      "question": "The total power dissipated in the bulbs is (Rating of bulbs is <i>P</i>, <i>V</i>)",
+      "options": [
+        "P_{total} = |P_1-P_2|",
+        "P_{total} = P_1+P_2",
+        "P_{total} = \\frac{P_1P_2}{P_1+P_2}",
+        "P_{total} = \\frac{P_1P_2}{P_1+P_2}"
+      ],
+      "answer": "P_{total} = P_1+P_2",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_025.png",
+      "tip": "Use this formula with caution ! All bulbs MUST have same voltage rating as cell, only then is this formula applicable."
+    },
+
+    {
+      "id": "current_electricity_qn_026",
+      "question": "The total power dissipated in the bulbs is (Rating of bulbs is <i>P</i>, <i>V</i>)",
+      "options": [
+        "P_{total} = |P_1 - P_2|",
+        "P_{total} = P_1 + P_2",
+        "P_{total} = \\frac{P_1P_2}{P_1+P_2}",
+        "P_{total} = \\frac{P_1P_2}{P_1-P_2}"
+      ],
+      "answer": "P_{total} = \\frac{P_1P_2}{P_1+P_2}",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_026.png",
+      "tip": "Use this formula with caution ! All bulbs MUST have same voltage rating as cell, only then is this formula applicable."
+    },
+    {
+      "id": "current_electricity_qn_027",
+      "question": "A current is flowing through a non uniform crosssection wire, the drift velocities at 1 and 2 compare as",
+      "options": [
+        "v_{d1} > v_{d2}",
+        "v_{d1} < v_{d2}",
+        "v_{d1} = v_{d2}",
+        "\\text{None of these}"
+      ],
+      "answer": "v_{d1} < v_{d2}",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_027.png",
+      "tip": "See the similarity between this and water flowing in a irregular pipe. Voila !"
+    },
+    {
+      "id": "current_electricity_qn_028",
+      "question": "To design a potentiometer, of range <i>V</i>, using a galvanometer having characteristics (<i>i<sub>g</sub></i>, <i>r<sub>g</sub></i>) the resistance <i>R</i> that must be connected in series with galvanometer is",
+      "options": [
+        "(\\frac{V}{i_g}) + r_g",
+        "V i_g + r_g",
+        "(\\frac{V}{i_g}) - r_g",
+        "V i_g - r_g"
+      ],
+      "answer": "(\\frac{V}{i_g}) - r_g",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_028.png",
+      "tip": ""
+    },
+    {
+      "id": "current_electricity_qn_029",
+      "question": "To design an ammeter, of range <i>i</i>, using a galvanometer having characteristics (<i>i<sub>g</sub></i>, <i>r<sub>g</sub></i>) the resistance <i>R</i> that must be connected in parallel with galvanometer is",
+      "options": [
+        "\\frac{i_g r_g}{i - i_g}",
+        "\\frac{i_g r_g}{i + i_g}",
+        "\\frac{(i + i_g) r_g}{i_g}",
+        "\\frac{(i - i_g) r_g}{i_g}"
+      ],
+      "answer": "\\frac{i_g r_g}{i - i_g}",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_029.png",
+      "tip": ""
+    },
+    {
+      "id": "current_electricity_qn_030",
+      "question": "When current <i>i</i> is passed through a galvanometer, the deflection in it is &theta;. Its figure of merit is",
+      "options": [
+        "i\\theta",
+        "\\frac{i}{\\theta}",
+        "i\\theta^2",
+        "(i\\theta)^2"
+      ],
+      "answer": "\\frac{i}{\\theta}",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_030.png",
+      "tip": "Sometimes not covered in class. This is in experiments and had come in JEE Mains. The current that produces a unit deflection in galvanometer is called figure of merit."
+    }
 
 ]
