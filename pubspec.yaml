@@ -96,7 +96,7 @@ flutter:
     - assets/images/11th/kinetic_theory/
     - assets/images/12th/Electrostatics/
     - assets/images/12th/capacitors/
-    #- assets/images/12th/current_electricity/
+    - assets/images/12th/current_electricity/
     - assets/images/12th/magnetism/
     - assets/images/12th/emi/
     #- assets/images/12th/ac/

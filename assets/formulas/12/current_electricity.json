@@ -32,7 +32,7 @@
 "difficulty": "easy",
 "class": "12"
 },
-"image": "",
+"image": "assets/images/12th/current_electricity/current_electricity_qn_002.png",
 "tip": ""
 },
 {
@@ -50,12 +50,12 @@
 "difficulty": "easy",
 "class": "12"
 },
-"image": "",
+"image": "assets/images/12th/current_electricity/current_electricity_qn_003.png",
 "tip": ""
 },
 {
 "id": "current_electricity_qn_004",
-"question": "The correct relation between current <i>i</i>, drift velocity <i>v<sub>d</sub></i> and area <i>A</i>, free electron concentration <i>n</i> is (<i>e</i> = charge on electron)",
+"question": "The correct relation between current <i>i</i>, drift velocity <i>v<sub>d</sub></i>, area <i>A</i>, free electron concentration <i>n</i> is (<i>e</i> = charge on electron)",
 "options": [
 "i = n e A v_d",
 "i = \\frac{ne}{A v_d}",
@@ -68,7 +68,7 @@
 "difficulty": "easy",
 "class": "12"
 },
-"image": "",
+"image": "assets/images/12th/current_electricity/current_electricity_qn_004.png",
 "tip": ""
 },
 {
@@ -86,7 +86,7 @@
 "difficulty": "medium",
 "class": "12"
 },
-"image": "",
+"image": "assets/images/12th/current_electricity/current_electricity_qn_005.png",
 "tip": ""
 },
   {
@@ -104,63 +104,64 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "",
+    "image": "assets/images/12th/current_electricity/current_electricity_qn_006.png",
     "tip": ""
   },
-  {
-    "id": "current_electricity_qn_007",
-    "question": "A wire is stretched to twice its original length. The final resistance becomes ___ times initial resistance.",
-    "options": [
-      "1",
-      "4",
-      "3",
-      "2"
-    ],
-    "answer": "4",
-    "tags": {
-      "chapter": "current_electricity",
-      "difficulty": "medium",
-      "class": "12"
+
+    {
+      "id": "current_electricity_qn_007",
+      "question": "A wire is stretched to twice its original length. The final resistance becomes <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> times initial resistance.",
+      "options": [
+        "\\text{1}",
+        "\\text{4}",
+        "\\text{3}",
+        "\\text{2}"
+      ],
+      "answer": "\\text{4}",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_007.png",
+      "tip": "As volume is constant, if length is doubled, area becomes half. Do this mentally in exam."
     },
-    "image": "",
-    "tip": ""
-  },
-  {
-    "id": "current_electricity_qn_008",
-    "question": "A wire is compressed to half its initial length. The initial resistance becomes ___ times final resistance.",
-    "options": [
-      "1",
-      "4",
-      "3",
-      "2"
-    ],
-    "answer": "4",
-    "tags": {
-      "chapter": "current_electricity",
-      "difficulty": "medium",
-      "class": "12"
+    {
+      "id": "current_electricity_qn_008",
+      "question": "A wire is stretched to make its radius one third. The final resistance becomes <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> times initial resistance.",
+      "options": [
+        "\\text{27}",
+        "\\text{9}",
+        "\\text{81}",
+        "\\text{3}"
+      ],
+      "answer": "\\text{81}",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_008.png",
+      "tip": "As volume is constant ,if radius is made 1/3, Area becomes 1/9, length increases to 9 times. Do this mentally in exam"
     },
-    "image": "",
-    "tip": ""
-  },
-  {
-    "id": "current_electricity_qn_009",
-    "question": "The radius of a wire is made 3 times its initial value by compressing it. The initial resistance becomes _____ times final resistance.",
-    "options": [
-      "\\frac{1}{9}",
-      "27",
-      "81",
-      "9"
-    ],
-    "answer": "81",
-    "tags": {
-      "chapter": "current_electricity",
-      "difficulty": "medium",
-      "class": "12"
+    {
+      "id": "current_electricity_qn_009",
+      "question": "The correct relation between relaxation time &tau;, mass of electron <i>m</i>, and mobility &mu; is (<i>e</i> = charge on electron)",
+      "options": [
+        "\\mu = \\frac{e\\tau}{m}",
+        "\\mu = \\frac{\\tau}{me}",
+        "\\mu = me\\tau",
+        "\\mu = \\frac{1}{me\\tau}"
+      ],
+      "answer": "\\mu = \\frac{e\\tau}{m}",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
     },
-    "image": "",
-    "tip": ""
-  },
   {
     "id": "current_electricity_qn_010",
     "question": "The correct formula for resistivity σ equals (<i>m</i> = mass of electron, <i>n</i> = free electron concentration, <i>e</i> = charge on electron, <i>τ</i> = average relaxation time)",
