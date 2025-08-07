@@ -179,6 +179,189 @@
     },
     "image": "",
     "tip": ""
-  }
+  },
+
+    {
+      "id": "current_electricity_qn_011",
+      "question": "The resistance of a conductor <i>R</i> in terms of initial resistance <i>R<sub>o</sub></i>, temperature coefficient of resistivity &alpha;, and rise in temperature &Delta;<i>T</i> is given by",
+      "options": [
+        "R = R_o(1+2\\alpha\\Delta T)",
+        "R = R_o\\alpha\\Delta T",
+        "R = R_o(1-\\alpha\\Delta T)",
+        "R = R_o(1+\\alpha\\Delta T)"
+      ],
+      "answer": "R = R_o(1+\\alpha\\Delta T)",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "current_electricity_qn_012",
+      "question": "The equivalent resistance for the series resistances is given by",
+      "options": [
+        "R_{eq} = |R_1-R_2|",
+        "R_{eq} = R_1+R_2",
+        "R_{eq} = \\frac{R_1R_2}{R_1+R_2}",
+        "R_{eq} = \\frac{R_1R_2}{|R_1-R_2|}"
+      ],
+      "answer": "R_{eq} = R_1+R_2",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_012.png",
+      "tip": "Formula for equivalent series inductance follows the same pattern"
+    },
+    {
+      "id": "current_electricity_qn_013",
+      "question": "The equivalent resistance for the parallel resistances is given by",
+      "options": [
+        "R_{eq} = |R_1-R_2|",
+        "R_{eq} = R_1+R_2",
+        "R_{eq} = \\frac{R_1R_2}{R_1+R_2}",
+        "R_{eq} = \\frac{R_1R_2}{|R_1-R_2|}"
+      ],
+      "answer": "R_{eq} = \\frac{R_1R_2}{R_1+R_2}",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_013.png",
+      "tip": "Formula for equivalent parallel inductance follows the same pattern"
+    },
+    {
+      "id": "current_electricity_qn_014",
+      "question": "Using Kirchoff's junction rule, the correct relation between currents is",
+      "options": [
+        "i_1 + i_3 = i_2 + i_4",
+        "i_1 + i_4 = i_2 + i_3",
+        "i_1 + i_2 = i_3 + i_4",
+        "i_1 + i_2 = i_3 - i_4"
+      ],
+      "answer": "i_1 + i_3 = i_2 + i_4",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_014.png",
+      "tip": ""
+    },
+    {
+      "id": "current_electricity_qn_015",
+      "question": "Using Kirchoff's loop rule, the correct relation is",
+      "options": [
+        "V_1 - i_2R_2 + i_1R_1 = 0",
+        "V_1 - i_2R_2 - i_1R_1 = 0",
+        "V_1 + i_2R_2 + i_1R_1 = 0",
+        "V_1 + i_2R_2 - i_1R_1 = 0"
+      ],
+      "answer": "V_1 + i_2R_2 - i_1R_1 = 0",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_015.png",
+      "tip": ""
+    },
+
+    {
+      "id": "current_electricity_qn_016",
+      "question": "The potential drop <i>V<sub>1</sub></i> across resistance <i>R<sub>1</sub></i> is",
+      "options": [
+        "\\left(\\frac{R_1+R_2}{R_1}\\right)V",
+        "\\left(\\frac{R_1+R_2}{R_2}\\right)V",
+        "\\left(\\frac{R_1}{R_1+R_2}\\right)V",
+        "\\left(\\frac{R_2}{R_1+R_2}\\right)V"
+      ],
+      "answer": "\\left(\\frac{R_1}{R_1+R_2}\\right)V",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_016.png",
+      "tip": "Remember this, very useful in solving Qns. Potential drop is proportional to resistance"
+    },
+    {
+      "id": "current_electricity_qn_017",
+      "question": "The current <i>i<sub>1</sub></i> across resistance <i>R<sub>1</sub></i> is",
+      "options": [
+        "\\left(\\frac{R_1+R_2}{R_2}\\right)i",
+        "\\left(\\frac{R_1+R_2}{R_1}\\right)i",
+        "\\left(\\frac{R_1}{R_1+R_2}\\right)i",
+        "\\left(\\frac{R_2}{R_1+R_2}\\right)i"
+      ],
+      "answer": "\\left(\\frac{R_2}{R_1+R_2}\\right)i",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_017.png",
+      "tip": "Remember this, very useful in solving Qns. Current is inversely proportional to resistance"
+    },
+    {
+      "id": "current_electricity_qn_018",
+      "question": "The equivalent emf <i>V<sub>eq</sub></i> of the branch equals",
+      "options": [
+        "V_1 + V_2",
+        "|V_1 - V_2|",
+        "\\frac{V_1 V_2}{V_1 + V_2}",
+        "\\frac{2V_1 V_2}{V_1 + V_2}"
+      ],
+      "answer": "V_1 + V_2",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_018.png",
+      "tip": ""
+    },
+    {
+      "id": "current_electricity_qn_019",
+      "question": "The equivalent emf of the branch equals",
+      "options": [
+        "\\frac{V_1R_2 + V_2R_1}{R_1 - R_2}",
+        "\\frac{V_1R_2 + V_2R_1}{R_1 + R_2}",
+        "\\frac{V_1R_1 + V_2R_2}{R_1 + R_2}",
+        "\\frac{V_1R_2 - V_2R_1}{R_1 + R_2}"
+      ],
+      "answer": "\\frac{V_1R_2 + V_2R_1}{R_1 + R_2}",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_019.png",
+      "tip": ""
+    },
+    {
+      "id": "current_electricity_qn_020",
+      "question": "The equivalent emf of the branch equals",
+      "options": [
+        "\\frac{|V_1 R_2 - V_2 R_1|}{R_1 + R_2}",
+        "\\frac{V_1 R_2 + V_2 R_1}{R_1 - R_2}",
+        "\\frac{V_1 R_2 + V_2 R_1}{R_1 + R_2}",
+        "\\frac{V_1 R_1 - V_2 R_2}{R_1 + R_2}"
+      ],
+      "answer": "\\frac{|V_1 R_2 - V_2 R_1|}{R_1 + R_2}",
+      "tags": {
+        "chapter": "current_electricity",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_020.png",
+      "tip": "This relation makes many tough qns very easy. The direction of current can be got from the sign of this answer !"
+    }
+
 
 ]

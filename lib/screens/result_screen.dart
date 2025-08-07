@@ -248,7 +248,7 @@ class ResultScreen extends StatelessWidget {
                                 Text(
                                   wrongAnswer.tip,
                                   style: GoogleFonts.poppins(
-                                    color: Color(0xFF3EF1F1),
+                                    color: Color(0xFF95FBFB),
                                     fontSize: 14,
                                     fontWeight: FontWeight.normal,
                                     fontStyle: FontStyle.italic,
