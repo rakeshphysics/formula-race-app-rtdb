@@ -361,6 +361,188 @@
       },
       "image": "assets/images/12th/magnetism/magnetism_qn_020.png",
       "tip": ""
+    },
+
+    {
+      "id": "magnetism_qn_021",
+      "question": "The current carrying wires in the diagram",
+      "options": [
+        "\\text{Attract}",
+        "\\text{Repel}",
+        "\\text{None of these}",
+        "\\text{Depends on the magnitude}"
+      ],
+      "answer": "\\text{Attract}",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/magnetism/magnetism_qn_021.png",
+      "tip": "Trick to remember. Jo saath chale, sath mile. Jo ulta chale, door bhage ! :)"
+    },
+    {
+      "id": "magnetism_qn_022",
+      "question": "The current carrying wires in the diagram",
+      "options": [
+        "\\text{Attract}",
+        "\\text{Repel}",
+        "\\text{None of these}",
+        "\\text{Depends on the magnitude}"
+      ],
+      "answer": "\\text{Repel}",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/magnetism/magnetism_qn_022.png",
+      "tip": "Trick to remember. Jo saath chale, sath mile. Jo ulta chale, door bhage ! :)"
+    },
+    {
+      "id": "magnetism_qn_023",
+      "question": "The magnetic force per unit length between the two long current carrying wires is",
+      "options": [
+        "\\frac{\\mu_0 i_1 i_2}{2d}",
+        "\\frac{\\mu_0 i_1 i_2}{4\\pi d}",
+        "\\frac{\\mu_0 i_1 i_2}{4d}",
+        "\\frac{\\mu_0 i_1 i_2}{2\\pi d}"
+      ],
+      "answer": "\\frac{\\mu_0 i_1 i_2}{2\\pi d}",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/magnetism/magnetism_qn_023.png",
+      "tip": ""
+    },
+    {
+      "id": "magnetism_qn_024",
+      "question": "The magnetic moment of a current loop carrying current <i>i</i> having <i>N</i> turns and area <i>A</i> is <i>M</i> equals",
+      "options": [
+        "iA",
+        "NiA",
+        "Ni",
+        "N^2 A i"
+      ],
+      "answer": "NiA",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/magnetism/magnetism_qn_024.png",
+      "tip": ""
+    },
+    {
+      "id": "magnetism_qn_025",
+      "question": "The torque on a current loop having magnetic moment <b>M</b> placed in external magnetic field <b>B</b> is &tau; equals",
+      "options": [
+        "\\vec{M} \\times \\vec{B}",
+        "\\vec{B} \\times \\vec{M}",
+        "\\vec{M} \\cdot \\vec{B}",
+        "-\\vec{M} \\cdot \\vec{B}"
+      ],
+      "answer": "\\vec{M} \\times \\vec{B}",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/magnetism/magnetism_qn_025.png",
+      "tip": ""
+    },
+
+    {
+      "id": "magnetism_qn_026",
+      "question": "The potential energy of a current loop having magnetic moment <b>M</b> placed in an external magnetic field <b>B</b> is <i>U</i> equals",
+      "options": [
+        "\\vec{M} \\times \\vec{B}",
+        "\\vec{B} \\times \\vec{M}",
+        "\\vec{M} \\cdot \\vec{B}",
+        "-\\vec{M} \\cdot \\vec{B}"
+      ],
+      "answer": "-\\vec{M} \\cdot \\vec{B}",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/magnetism/magnetism_qn_026.png",
+      "tip": "Magnetic field is itself non conservative. So how did we define a potential energy ? Think !"
+    },
+    {
+      "id": "magnetism_qn_027",
+      "question": "In a galvanometer the deflection &theta; is proportional to current <i>i</i>, then current sensitivity equals (<i>K</i> = torsional constant of spring, <i>N</i> = total number of turns, <i>A</i> = area of coil, <i>B</i> = magnetic field)",
+      "options": [
+        "\\frac{\\theta}{i} = \\frac{NAB}{K}",
+        "\\frac{\\theta}{i} = \\frac{KN}{AB}",
+        "\\frac{\\theta}{i} = \\frac{K}{NAB}",
+        "\\frac{\\theta}{i} = \\frac{AB}{KN}"
+      ],
+      "answer": "\\frac{\\theta}{i} = \\frac{NAB}{K}",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/magnetism/magnetism_qn_027.png",
+      "tip": ""
+    },
+    {
+      "id": "magnetism_qn_028",
+      "question": "In a galvanometer the current &theta; is proportional to potential drop <i>V</i>, then voltage sensitivity equals (<i>K</i> = torsional constant of spring, <i>N</i> = total number of turns, <i>A</i> = area of coil, <i>B</i> = magnetic field, <i>R</i> = resistance of voltmeter)",
+      "options": [
+        "\\frac{\\theta}{V} = \\frac{NAB}{K}",
+        "\\frac{\\theta}{V} = \\frac{(NAB)}{KR}",
+        "\\frac{\\theta}{V} = \\frac{NAB}{KR}",
+        "\\frac{\\theta}{V} = \\frac{AB}{KNR}"
+      ],
+      "answer": "\\frac{\\theta}{V} = \\frac{NAB}{KR}",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/magnetism/magnetism_qn_028.png",
+      "tip": ""
+    },
+    {
+      "id": "magnetism_qn_029",
+      "question": "If a charge <i>q</i> rotates in a circular path with frequency <i>f</i>, then the equivalent current is",
+      "options": [
+        "qf^2",
+        "\\frac{f}{q}",
+        "qf",
+        "\\frac{q}{f}"
+      ],
+      "answer": "qf",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/magnetism/magnetism_qn_029.png",
+      "tip": ""
+    },
+    {
+      "id": "magnetism_qn_030",
+      "question": "Gyromagnetic ratio of a uniform object charged uniformly equals (<i>q</i> = total charge on body, <i>m</i> = mass of body)",
+      "options": [
+        "qm",
+        "\\frac{2q}{m}",
+        "\\frac{q}{m}",
+        "\\frac{q}{2m}"
+      ],
+      "answer": "\\frac{q}{2m}",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/magnetism/magnetism_qn_030.png",
+      "tip": "For uniformly charged rotating bodies, this gives magnetic moment very easily without messy calculations."
     }
 
 ]
