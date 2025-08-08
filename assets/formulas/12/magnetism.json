@@ -179,6 +179,188 @@
     },
     "image": "assets/images/12th/magnetism/magnetism_qn_010.png",
     "tip": ""
-  }
+  },
+
+    {
+      "id": "magnetism_qn_011",
+      "question": "The magnetic field due to a long solenoid at any point inside it is (<i>n</i> = number of turns per unit length, <i>i</i> = current)",
+      "options": [
+        "\\mu_0 n i",
+        "\\mu_0 n i^2",
+        "\\mu_0 i",
+        "\\mu_0 i n^2"
+      ],
+      "answer": "\\mu_0 n i",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/magnetism/magnetism_qn_011.png",
+      "tip": ""
+    },
+    {
+      "id": "magnetism_qn_012",
+      "question": "The magnetic force on a moving charge <i>q</i> moving with velocity <b>v</b> in a magnetic field <b>B</b> is",
+      "options": [
+        "\\frac{q(\\vec{v} \\times \\vec{B})}{q}",
+        "q(\\vec{v} \\cdot \\vec{B})",
+        "q(\\vec{B} \\times \\vec{v})",
+        "q(\\vec{v} \\times \\vec{B})"
+      ],
+      "answer": "q(\\vec{v} \\times \\vec{B})",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/magnetism/magnetism_qn_012.png",
+      "tip": ""
+    },
+    {
+      "id": "magnetism_qn_013",
+      "question": "The radius of circular path of a moving charge <i>q</i> moving with velocity <i>v</i> in a magnetic field <i>B</i> is (<i>m</i> = mass of charge)",
+      "options": [
+        "\\frac{mvB}{q}",
+        "\\frac{mv}{qB}",
+        "\\frac{mB}{qv}",
+        "\\frac{2mB}{qv}"
+      ],
+      "answer": "\\frac{mv}{qB}",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/magnetism/magnetism_qn_013.png",
+      "tip": ""
+    },
+    {
+      "id": "magnetism_qn_014",
+      "question": "The time period of charge <i>q</i> moving in a circular path with velocity <i>v</i> in a magnetic field <i>B</i> is (<i>m</i> = mass of charge)",
+      "options": [
+        "\\frac{\\pi m}{4qB}",
+        "\\frac{\\pi m}{2qB}",
+        "\\frac{\\pi m}{qB}",
+        "\\frac{2\\pi m}{qB}"
+      ],
+      "answer": "\\frac{2\\pi m}{qB}",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/magnetism/magnetism_qn_014.png",
+      "tip": ""
+    },
+    {
+      "id": "magnetism_qn_015",
+      "question": "A charge <i>q</i> of mass <i>m</i>, is projected with speed <i>v</i> at an angle &theta; to a constant magnetic field <i>B</i>. The radius of helical path is",
+      "options": [
+        "\\frac{mv \\sin \\theta}{qB}",
+        "\\frac{mv}{qB}",
+        "\\frac{mv \\cos \\theta}{qB}",
+        "\\frac{mv \\tan \\theta}{qB}"
+      ],
+      "answer": "\\frac{mv \\sin \\theta}{qB}",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "magnetism_qn_016",
+      "question": "A charge <i>q</i> of mass <i>m</i>, is projected with speed <i>v</i> at an angle &theta; to a constant magnetic field <i>B</i>. The pitch of helical path is",
+      "options": [
+        "(v \\sin \\theta) \\frac{2\\pi m}{qB}",
+        "(v) \\frac{2\\pi m}{qB}",
+        "(v \\cos \\theta) \\frac{2\\pi m}{qB}",
+        "(v \\sin \\theta) \\frac{\\pi m}{qB}"
+      ],
+      "answer": "(v \\cos \\theta) \\frac{2\\pi m}{qB}",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "magnetism_qn_017",
+      "question": "The magnetic field due to a toroid at any point inside it is (<i>N</i> = total number of turns, <i>i</i> = current, <i>R</i> = mean radius)",
+      "options": [
+        "\\frac{\\mu_0 Ni}{4\\pi R}",
+        "\\frac{\\mu_0 i}{2R}",
+        "\\frac{\\mu_0 Ni}{2\\pi R}",
+        "\\frac{\\mu_0 Ni}{2R}"
+      ],
+      "answer": "\\frac{\\mu_0 Ni}{2\\pi R}",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "magnetism_qn_018",
+      "question": "The Lorentz force on a moving charge <i>q</i> moving with velocity <b>v</b> in a magnetic field <b>B</b> and electric field <b>E</b> is",
+      "options": [
+        "\\frac{q(\\vec{v} \\times \\vec{B})}{q}",
+        "q(\\vec{v} \\cdot \\vec{B})",
+        "q(\\vec{E} + \\vec{v} \\times \\vec{B})",
+        "q(\\vec{E} + q(\\vec{v} \\cdot \\vec{B}))"
+      ],
+      "answer": "q(\\vec{E} + \\vec{v} \\times \\vec{B})",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/magnetism/magnetism_qn_018.png",
+      "tip": ""
+    },
+    {
+      "id": "magnetism_qn_019",
+      "question": "The magnetic force on a wire carrying current <i>i</i>, length <i>l</i>, placed in a uniform magnetic field <b>B</b> is",
+      "options": [
+        "\\frac{(\\vec{i} \\times \\vec{B})}{i}",
+        "i(\\vec{l} \\cdot \\vec{B})",
+        "i(\\vec{l} \\times \\vec{B})",
+        "i(\\vec{B} \\times \\vec{l})"
+      ],
+      "answer": "i(\\vec{l} \\times \\vec{B})",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/magnetism/magnetism_qn_019.png",
+      "tip": ""
+    },
+    {
+      "id": "magnetism_qn_020",
+      "question": "The magnetic field due to a finite solenoid at any point inside it is (<i>n</i> = number of turns per unit length, <i>i</i> = current)",
+      "options": [
+        "\\mu_0 n i",
+        "\\frac{\\mu_0 n i}{2}(\\cos\\theta_1 + \\cos\\theta_2)",
+        "\\frac{\\mu_0 n i}{2}(\\cos\\theta_1 - \\cos\\theta_2)",
+        "\\frac{\\mu_0 n i}{2}"
+      ],
+      "answer": "\\frac{\\mu_0 n i}{2}(\\cos\\theta_1 + \\cos\\theta_2)",
+      "tags": {
+        "chapter": "magnetism",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/magnetism/magnetism_qn_020.png",
+      "tip": ""
+    }
 
 ]
