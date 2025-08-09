@@ -16,7 +16,7 @@
     "class": "12"
   },
   "image": "",
-  "tip": ""
+  "tip": "According to NCERT textbook it is strictly flux intial - flux final, not other way round"
 },
 {
 "id": "emi_qn_002",
@@ -146,7 +146,7 @@
   },
   {
     "id": "emi_qn_009",
-    "question": "The current in the triangular loop at the instant shown is",
+    "question": "An equilateral triangular loop of side <i>a</i> enters a region of magnetic field. The emf induced in the triangular loop at the instant shown is",
     "options": [
       "\\frac{B v a}{2}",
       "B v a",
@@ -179,6 +179,188 @@
     },
     "image": "assets/images/12th/emi/emi_qn_010.png",
     "tip": ""
-  }
+  },
+
+    {
+      "id": "emi_qn_011",
+      "question": "The magnetic flux &phi; through a coil when a current <i>i</i> passes through it is (<i>L</i> = self inductance)",
+      "options": [
+        "Li",
+        "\\frac{L}{i}",
+        "\\frac{i}{L}",
+        "Li^2"
+      ],
+      "answer": "Li",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_011.png",
+      "tip": ""
+    },
+    {
+      "id": "emi_qn_012",
+      "question": "The equivalent inductance of two inductors in series is",
+      "options": [
+        "L_{eq} = |L_1-L_2|",
+        "L_{eq} = L_1 + L_2",
+        "L_{eq} = \\frac{L_1 L_2}{L_1+L_2}",
+        "L_{eq} = \\frac{L_1 L_2}{|L_1-L_2|}"
+      ],
+      "answer": "L_{eq} = L_1 + L_2",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_012.png",
+      "tip": ""
+    },
+    {
+      "id": "emi_qn_013",
+      "question": "The equivalent inductance of two inductors in parallel is",
+      "options": [
+        "L_{eq} = |L_1-L_2|",
+        "L_{eq} = L_1 + L_2",
+        "L_{eq} = \\frac{L_1 L_2}{L_1+L_2}",
+        "L_{eq} = \\frac{L_1 L_2}{|L_1-L_2|}"
+      ],
+      "answer": "L_{eq} = \\frac{L_1 L_2}{L_1+L_2}",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_013.png",
+      "tip": ""
+    },
+    {
+      "id": "emi_qn_014",
+      "question": "The magnetic energy stored in an inductor of inductance <i>L</i> carrying current <i>i</i> is",
+      "options": [
+        "\\frac{1}{2}Li^2",
+        "Li^2",
+        "\\frac{1}{4}Li^2",
+        "2Li^2"
+      ],
+      "answer": "\\frac{1}{2}Li^2",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_014.png",
+      "tip": ""
+    },
+    {
+      "id": "emi_qn_015",
+      "question": "In a region of uniform magnetic field <i>B</i>, the magnetic energy density is",
+      "options": [
+        "\\frac{B^2}{\\mu_0}",
+        "\\frac{B^2}{2\\mu_0}",
+        "\\frac{1}{2}\\mu_0 B^2",
+        "\\mu_0 B^2"
+      ],
+      "answer": "\\frac{B^2}{2\\mu_0}",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_015.png",
+      "tip": ""
+    },
+
+    {
+      "id": "emi_qn_016",
+      "question": "The self inductance of a solenoid is (<i>n</i> = number of turns per unit length, <i>V</i> = volume of solenoid)",
+      "options": [
+        "\\frac{\\mu_0 n V}{2}",
+        "\\mu_0 n V^2",
+        "\\mu_0 n^2 V",
+        "\\mu_0 n V"
+      ],
+      "answer": "\\mu_0 n^2 V",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_016.png",
+      "tip": "The general form given in books is slightly different. Remembering it this way is easier !"
+    },
+    {
+      "id": "emi_qn_017",
+      "question": "When a current <i>i</i> is passed in coil A, the magnetic flux &phi;<sub>B</sub> in coil B is (<i>M</i> = mutual inductance of coils)",
+      "options": [
+        "\\frac{i}{M}",
+        "\\frac{M}{i}",
+        "Mi^2",
+        "Mi"
+      ],
+      "answer": "Mi",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_017.png",
+      "tip": ""
+    },
+    {
+      "id": "emi_qn_018",
+      "question": "For a transformer if <i>N</i> is the number of turns and <i>V</i> is voltage induced (<i>s</i> = secondary, <i>p</i> = primary)",
+      "options": [
+        "\\left(\\frac{V_s}{V_p}\\right)^2 = \\frac{N_s}{N_p}",
+        "\\frac{V_s}{V_p} = \\frac{N_s}{N_p}",
+        "\\frac{V_s}{V_p} = \\frac{N_p}{N_s}",
+        "\\left(\\frac{V_s}{V_p}\\right)^2 = \\frac{N_p}{N_s}"
+      ],
+      "answer": "\\frac{V_s}{V_p} = \\frac{N_s}{N_p}",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_018.png",
+      "tip": ""
+    },
+    {
+      "id": "emi_qn_019",
+      "question": "For an ideal transformer if <i>N</i> is the number of turns and <i>i</i> is current (<i>s</i> = secondary, <i>p</i> = primary)",
+      "options": [
+        "\\left(\\frac{i_s}{i_p}\\right)^2 = \\frac{N_s}{N_p}",
+        "\\frac{i_s}{i_p} = \\frac{N_s}{N_p}",
+        "\\frac{i_s}{i_p} = \\frac{N_p}{N_s}",
+        "\\left(\\frac{i_s}{i_p}\\right)^2 = \\frac{N_p}{N_s}"
+      ],
+      "answer": "\\frac{i_s}{i_p} = \\frac{N_p}{N_s}",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_019.png",
+      "tip": "Remember, Power in = Power out"
+    },
+    {
+      "id": "emi_qn_020",
+      "question": "The motional emf induced in a conductor moving with velocity <b>V</b> in a magnetic field <b>B</b> in vector form is (<b>dl</b> = small length of conductor)",
+      "options": [
+        "\\int(\\vec{V} \\times \\vec{B})\\cdot d\\vec{l}",
+        "\\int(\\vec{V} \\cdot \\vec{B})d\\vec{l}",
+        "\\int(2\\vec{V} \\times \\vec{B})\\cdot d\\vec{l}",
+        "\\int(2\\vec{V} \\cdot \\vec{B})d\\vec{l}"
+      ],
+      "answer": "\\int(\\vec{V} \\times \\vec{B})\\cdot d\\vec{l}",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_020.png",
+      "tip": ""
+    }
 
 ]

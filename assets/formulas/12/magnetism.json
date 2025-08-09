@@ -495,7 +495,7 @@
       "question": "In a galvanometer the current &theta; is proportional to potential drop <i>V</i>, then voltage sensitivity equals (<i>K</i> = torsional constant of spring, <i>N</i> = total number of turns, <i>A</i> = area of coil, <i>B</i> = magnetic field, <i>R</i> = resistance of voltmeter)",
       "options": [
         "\\frac{\\theta}{V} = \\frac{NAB}{K}",
-        "\\frac{\\theta}{V} = \\frac{(NAB)}{KR}",
+        "\\frac{\\theta}{V} = \\frac{AB}{K}",
         "\\frac{\\theta}{V} = \\frac{NAB}{KR}",
         "\\frac{\\theta}{V} = \\frac{AB}{KNR}"
       ],
