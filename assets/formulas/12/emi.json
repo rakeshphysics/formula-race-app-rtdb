@@ -361,6 +361,188 @@
       },
       "image": "assets/images/12th/emi/emi_qn_020.png",
       "tip": ""
+    },
+
+    {
+      "id": "emi_qn_021",
+      "question": "The time constant of the LR circuit shown equals",
+      "options": [
+        "\\frac{L}{R}",
+        "\\frac{R}{L}",
+        "RL",
+        "\\frac{1}{RL}"
+      ],
+      "answer": "\\frac{L}{R}",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_021.png",
+      "tip": ""
+    },
+    {
+      "id": "emi_qn_022",
+      "question": "The potential drop across inductor <i>V<sub>a</sub></i> - <i>V<sub>b</sub></i> equals",
+      "options": [
+        "-Li",
+        "Li",
+        "L\\frac{di}{dt}",
+        "-L\\frac{di}{dt}"
+      ],
+      "answer": "-L\\frac{di}{dt}",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_022.png",
+      "tip": ""
+    },
+    {
+      "id": "emi_qn_023",
+      "question": "Switch S is closed at t = 0. The current in the inductor at t = 0 is (initial state)",
+      "options": [
+        "\\text{0}",
+        "\\frac{V}{R}",
+        "\\frac{V}{2R}",
+        "\\frac{LV}{R}"
+      ],
+      "answer": "\\text{0}",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_023.png",
+      "tip": "For initial state, we can replace the inductor with broken wire"
+    },
+    {
+      "id": "emi_qn_024",
+      "question": "Switch S is closed at t = 0. The current in the inductor after long time is (steady state)",
+      "options": [
+        "0",
+        "\\frac{V}{R}",
+        "\\frac{V}{2R}",
+        "\\frac{LV}{R}"
+      ],
+      "answer": "\\frac{V}{R}",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_024.png",
+      "tip": "For steady state, we can replace the inductor with a zero resistance wire"
+    },
+    {
+      "id": "emi_qn_025",
+      "question": "The equivalent inductance of two inductors in series is (<i>M</i> = mutual inductance)",
+      "options": [
+        "L_{eq} = \\frac{L_1 L_2 - M^2}{L_1+L_2 - 2M}",
+        "L_{eq} = L_1 + L_2 + 2M",
+        "L_{eq} = L_1 + L_2 - 2M",
+        "L_{eq} = L_1 + L_2 - 2M"
+      ],
+      "answer": "L_{eq} = L_1 + L_2 + 2M",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_025.png",
+      "tip": ""
+    },
+
+    {
+      "id": "emi_qn_026",
+      "question": "The equivalent inductance of two inductors in series is (<i>M</i> = mutual inductance)",
+      "options": [
+        "L_{eq} = \\frac{L_1 L_2 - M^2}{L_1+L_2 - 2M}",
+        "L_{eq} = L_1 + L_2 + 2M",
+        "L_{eq} = \\frac{L_1 L_2 - M^2}{L_1+L_2 + 2M}",
+        "L_{eq} = L_1 + L_2 - 2M"
+      ],
+      "answer": "L_{eq} = L_1 + L_2 - 2M",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_026.png",
+      "tip": ""
+    },
+    {
+      "id": "emi_qn_027",
+      "question": "Switch S is closed at t = 0. The current in the inductor at time <i>t</i> is (transient state)",
+      "options": [
+        "0",
+        "\\frac{V}{R}(1-e^{-\\frac{Rt}{L}})",
+        "\\frac{V}{R}e^{-\\frac{Rt}{L}}",
+        "\\frac{V}{R}e^{\\frac{Rt}{L}}"
+      ],
+      "answer": "\\frac{V}{R}(1-e^{-\\frac{Rt}{L}})",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_027.png",
+      "tip": ""
+    },
+    {
+      "id": "emi_qn_028",
+      "question": "The current in the inductor at t = 0 is <i>i<sub>o</sub></i>. The current at any time <i>t</i> equals",
+      "options": [
+        "0",
+        "i_o(1-e^{-\\frac{Rt}{L}})",
+        "i_o e^{-\\frac{Rt}{L}}",
+        "i_o"
+      ],
+      "answer": "i_o e^{-\\frac{Rt}{L}}",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_028.png",
+      "tip": ""
+    },
+    {
+      "id": "emi_qn_029",
+      "question": "The magnitude of induced electric field <i>E</i> is, (dB/dt = rate of change of magnetic field)",
+      "options": [
+        "0",
+        "R^2(\\frac{dB}{dt})",
+        "\\frac{r^2}{2R} (\\frac{dB}{dt})",
+        "\\frac{R}{2} (\\frac{dB}{dt})"
+      ],
+      "answer": "\\frac{r^2}{2R} (\\frac{dB}{dt})",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_029.png",
+      "tip": ""
+    },
+    {
+      "id": "emi_qn_030",
+      "question": "The magnitude of induced electric field <i>E</i> is, (dB/dt = rate of change of magnetic field)",
+      "options": [
+        "0",
+        "R^2 (\\frac{dB}{dt})",
+        "\\frac{r^2}{2R} (\\frac{dB}{dt})",
+        "\\frac{r}{2} (\\frac{dB}{dt})"
+      ],
+      "answer": "\\frac{r}{2} (\\frac{dB}{dt})",
+      "tags": {
+        "chapter": "emi",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/emi/emi_qn_030.png",
+      "tip": ""
     }
 
 ]
