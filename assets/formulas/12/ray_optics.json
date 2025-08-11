@@ -179,6 +179,188 @@
     },
     "image": "assets/images/12th/ray_optics/ray_optics_qn_010.png",
     "tip": ""
-  }
+  },
+
+    {
+      "id": "ray_optics_qn_011",
+      "question": "The refractive index of a medium &mu; equals (<i>c</i> = speed of light in vacuum, <i>v</i> = speed of light in medium)",
+      "options": [
+        "\\frac{v}{c}",
+        "\\frac{c}{v}",
+        "cv",
+        "\\frac{1}{cv}"
+      ],
+      "answer": "\\frac{c}{v}",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_012",
+      "question": "A ray of light is reflected from a surface, the deviation &delta; of the ray is",
+      "options": [
+        "\\pi - 2\\theta",
+        "\\pi - \\theta",
+        "\\theta",
+        "\\pi + \\theta"
+      ],
+      "answer": "\\pi - 2\\theta",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_012.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_013",
+      "question": "Snells law is",
+      "options": [
+        "\\mu_1^2 \\sin r = \\mu_2^2 \\sin i",
+        "\\mu_1^2 \\sin i = \\mu_2^2 \\sin r",
+        "\\mu_2 \\sin i = \\mu_1 \\sin r",
+        "\\mu_1 \\sin i = \\mu_2 \\sin r"
+      ],
+      "answer": "\\mu_1 \\sin i = \\mu_2 \\sin r",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_013.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_014",
+      "question": "The correct relation between refractive indices and frequencies of light in medium 1 and 2 is",
+      "options": [
+        "\\mu_1 \\sqrt{f_2} = \\mu_2 \\sqrt{f_1}",
+        "\\mu_1 f_2 = \\mu_2 f_1",
+        "\\mu_1 f_1 = \\mu_2 f_2",
+        "f_1 = f_2"
+      ],
+      "answer": "f_1 = f_2",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_014.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_015",
+      "question": "The correct relation between refractive indices and speed of light in medium 1 and 2 is",
+      "options": [
+        "\\mu_1 v_1 = \\mu_2 v_2",
+        "\\mu_1 v_2 = \\mu_2 v_1",
+        "\\mu_1 \\sqrt{v_2} = \\mu_2 \\sqrt{v_1}",
+        "\\mu_1 \\sqrt{v_1} = \\mu_2 \\sqrt{v_2}"
+      ],
+      "answer": "\\mu_1 v_1 = \\mu_2 v_2",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_015.png",
+      "tip": ""
+    },
+
+    {
+      "id": "ray_optics_qn_016",
+      "question": "The correct relation between refractive indices and wavelength of light in medium 1 and 2 is",
+      "options": [
+        "\\mu_1 \\sqrt{\\lambda_2} = \\mu_2 \\sqrt{\\lambda_1}",
+        "\\mu_1 \\lambda_2 = \\mu_2 \\lambda_1",
+        "\\mu_1 \\lambda_1 = \\mu_2 \\lambda_2",
+        "\\mu_1 \\sqrt{\\lambda_1} = \\mu_2 \\sqrt{\\lambda_2}"
+      ],
+      "answer": "\\mu_1 \\lambda_1 = \\mu_2 \\lambda_2",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_016.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_017",
+      "question": "As the ray of light travels from one medium to another, the correct relation is",
+      "options": [
+        "\\mu \\sin\\theta = const",
+        "\\mu \\cos\\theta = const",
+        "\\sqrt{\\mu} \\sin\\theta = const",
+        "\\sqrt{\\mu} \\cos\\theta = const"
+      ],
+      "answer": "\\mu \\sin\\theta = const",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_017.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_018",
+      "question": "The apparent depth <i>d<sub>app</sub></i> of the object is",
+      "options": [
+        "\\mu d",
+        "\\frac{d}{\\mu}",
+        "\\frac{1}{\\mu d}",
+        "\\frac{\\mu}{d}"
+      ],
+      "answer": "\\frac{d}{\\mu}",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_018.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_019",
+      "question": "Which of the following is correct Newtons formula",
+      "options": [
+        "d_2^2 = fd_1",
+        "d_1^2 = fd_2",
+        "d_1d_2 = f^2",
+        "d_1+d_2=f"
+      ],
+      "answer": "d_1d_2 = f^2",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_019.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_020",
+      "question": "The lateral shift of the light ray as it passes through the glass slab is",
+      "options": [
+        "t \\cos r \\sec i",
+        "t \\cos r \\sec(i-r)",
+        "t \\sec r \\cos i",
+        "t \\sec r \\cos(i-r)"
+      ],
+      "answer": "t \\sec r \\cos(i-r)",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_020.png",
+      "tip": ""
+    }
 
 ]
