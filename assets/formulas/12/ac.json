@@ -180,6 +180,189 @@
     },
     "image": "assets/images/12th/ac/ac_qn_010.png",
     "tip": ""
-  }
+  },
+
+    {
+      "id": "ac_qn_011",
+      "question": "A Choke coil is an inductor with a",
+      "options": [
+        "\\text{Very high resistance}",
+        "\\text{Very low resistance}",
+        "\\text{High capacitance}",
+        "\\text{Low capacitance}"
+      ],
+      "answer": "\\text{Very low resistance}",
+      "tags": {
+        "chapter": "ac",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ac/ac_qn_011.png",
+      "tip": ""
+    },
+    {
+      "id": "ac_qn_012",
+      "question": "The natural frequency of an LC oscillator is",
+      "options": [
+        "\\sqrt{LC}",
+        "\\sqrt{\\frac{L}{C}}",
+        "\\sqrt{\\frac{C}{L}}",
+        "\\frac{1}{\\sqrt{LC}}"
+      ],
+      "answer": "\\frac{1}{\\sqrt{LC}}",
+      "tags": {
+        "chapter": "ac",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ac/ac_qn_012.png",
+      "tip": ""
+    },
+    {
+      "id": "ac_qn_013",
+      "question": "The power dissipated in a series LCR circuit is given by (&phi; = phase difference between current and voltage)",
+      "options": [
+        "V_{rms}i_{rms} \\cos \\phi",
+        "V_{rms}i_{rms} \\sin \\phi",
+        "V_{rms}i_{rms} \\tan \\phi",
+        "V_{rms}i_{rms} \\cot \\phi"
+      ],
+      "answer": "V_{rms}i_{rms} \\cos \\phi",
+      "tags": {
+        "chapter": "ac",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ac/ac_qn_013.png",
+      "tip": ""
+    },
+    {
+      "id": "ac_qn_014",
+      "question": "The average of sin &theta; from 0 to &pi; is",
+      "options": [
+        "\\frac{1}{2}",
+        "\\frac{1}{\\sqrt{2}}",
+        "\\frac{1}{\\sqrt{3}}",
+        "\\frac{2}{\\pi}"
+      ],
+      "answer": "\\frac{2}{\\pi}",
+      "tags": {
+        "chapter": "ac",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ac/ac_qn_014.png",
+      "tip": "Remember this. Comes very much in handy while solving AC questions."
+    },
+    {
+      "id": "ac_qn_015",
+      "question": "The average of sin<sup>2</sup> &theta; from 0 to &pi; is",
+      "options": [
+        "\\frac{1}{2}",
+        "\\frac{1}{\\sqrt{2}}",
+        "\\frac{1}{\\sqrt{3}}",
+        "\\frac{2}{\\pi}"
+      ],
+      "answer": "\\frac{1}{\\sqrt{2}}",
+      "tags": {
+        "chapter": "ac",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ac/ac_qn_015.png",
+      "tip": "Remember this. Comes very much in handy while solving AC questions."
+    },
+
+    {
+      "id": "ac_qn_016",
+      "question": "The bandwidth of a series LCR circuit is given by",
+      "options": [
+        "\\frac{L}{R}",
+        "\\frac{R}{L}",
+        "\\sqrt{\\frac{L}{R}}",
+        "\\sqrt{\\frac{R}{L}}"
+      ],
+      "answer": "\\frac{R}{L}",
+      "tags": {
+        "chapter": "ac",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ac/ac_qn_016.png",
+      "tip": ""
+    },
+    {
+      "id": "ac_qn_017",
+      "question": "The product of quality factor and bandwidth in a series LCR circuit gives us",
+      "options": [
+        "\\sqrt{\\frac{1}{LC}}",
+        "\\frac{1}{R}\\sqrt{\\frac{L}{C}}",
+        "\\sqrt{\\frac{L}{R}}",
+        "\\sqrt{\\frac{L}{C}}"
+      ],
+      "answer": "\\sqrt{\\frac{1}{LC}}",
+      "tags": {
+        "chapter": "ac",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "ac_qn_018",
+      "question": "The RMS value of current <i>i</i> = <i>i<sub>1</sub></i> sin &omega;<i>t</i> + <i>i<sub>2</sub></i> cos &omega;<i>t</i> is given by",
+      "options": [
+        "\\frac{i_1+i_2}{\\sqrt{3}}",
+        "\\frac{i_1+i_2}{\\sqrt{2}}",
+        "\\frac{i_1+i_2}{2}",
+        "\\sqrt{\\frac{i_1^2+i_2^2}{2}}"
+      ],
+      "answer": "\\sqrt{\\frac{i_1^2+i_2^2}{2}}",
+      "tags": {
+        "chapter": "ac",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "ac_qn_019",
+      "question": "The correct relation between the voltages is (all are RMS values)",
+      "options": [
+        "V = \\sqrt{V_R^2 + (V_C-V_L)^2}",
+        "V = V_R + V_C + V_L",
+        "V = V_R + V_C - V_L",
+        "V = \\sqrt{V_R^2+V_C^2+V_L^2}"
+      ],
+      "answer": "V = \\sqrt{V_R^2 + (V_C-V_L)^2}",
+      "tags": {
+        "chapter": "ac",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ac/ac_qn_019.png",
+      "tip": ""
+    },
+    {
+      "id": "ac_qn_020",
+      "question": "The correct impedance diagram for a series LCR circuit is",
+      "options": [
+        "\\text{A}",
+        "\\text{B}",
+        "\\text{C}",
+        "\\text{D}"
+      ],
+      "answer": "\\text{A}",
+      "tags": {
+        "chapter": "ac",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ac/ac_qn_020.png",
+      "tip": "Refer to NCERT pg 188. Chapter: AC"
+    }
+
 
 ]
