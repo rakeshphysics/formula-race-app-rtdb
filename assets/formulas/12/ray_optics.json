@@ -361,6 +361,188 @@
       },
       "image": "assets/images/12th/ray_optics/ray_optics_qn_020.png",
       "tip": ""
+    },
+
+    {
+      "id": "ray_optics_qn_021",
+      "question": "A ray of light is refracted at a surface, the deviation &delta; of the ray is",
+      "options": [
+        "i+r",
+        "i-r",
+        "i-2r",
+        "i+2r"
+      ],
+      "answer": "i-r",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_021.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_022",
+      "question": "Lens formula is (<i>v</i> = image distance, <i>u</i> = object distance, <i>f</i> = focal length)",
+      "options": [
+        "\\frac{1}{f} = \\frac{1}{v} - \\frac{1}{u}",
+        "\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f}",
+        "v + u = f",
+        "v - u = f"
+      ],
+      "answer": "\\frac{1}{f} = \\frac{1}{v} - \\frac{1}{u}",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_022.png",
+      "tip": "Trick to remember: Lens 'Less' So Lens formulas has '-' and magnification has '+' !!"
+    },
+    {
+      "id": "ray_optics_qn_023",
+      "question": "The lateral magnification in Lens is (<i>v</i> = image distance, <i>u</i> = object distance)",
+      "options": [
+        "\\frac{v}{u}",
+        "-\\frac{v}{u}",
+        "vu",
+        "\\frac{1}{uv}"
+      ],
+      "answer": "\\frac{v}{u}",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_023.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_024",
+      "question": "The optical power of a Lens is (<i>f</i> = focal length, <i>u</i> = object distance)",
+      "options": [
+        "-f",
+        "-\\frac{1}{f}",
+        "\\frac{1}{f}",
+        "f"
+      ],
+      "answer": "\\frac{1}{f}",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_024.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_025",
+      "question": "The shift of image due to the glass slab is",
+      "options": [
+        "t(1+\\frac{1}{\\mu})",
+        "\\mu t",
+        "t(1-\\frac{1}{\\mu})",
+        "\\frac{t}{\\mu}"
+      ],
+      "answer": "t(1-\\frac{1}{\\mu})",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_025.png",
+      "tip": ""
+    },
+
+    {
+      "id": "ray_optics_qn_026",
+      "question": "The critical angle &theta;<sub>c</sub> when light ray goes from medium 2 to medium 1 is (&mu;<sub>2</sub> > &mu;<sub>1</sub>)",
+      "options": [
+        "\\cos^{-1}(\\frac{\\mu_2}{\\mu_1})",
+        "\\sin^{-1}(\\frac{\\mu_2}{\\mu_1})",
+        "\\sin^{-1}(\\frac{\\mu_1}{\\mu_2})",
+        "\\cos^{-1}(\\frac{\\mu_1}{\\mu_2})"
+      ],
+      "answer": "\\sin^{-1}(\\frac{\\mu_1}{\\mu_2})",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_026.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_027",
+      "question": "The correct relation for image and object distances for refraction at spherical surface is",
+      "options": [
+        "\\frac{\\mu_2}{v} + \\frac{\\mu_1}{u} = \\frac{\\mu_2 + \\mu_1}{R}",
+        "\\frac{\\mu_2}{v} - \\frac{\\mu_1}{u} = \\frac{\\mu_2 + \\mu_1}{R}",
+        "\\frac{\\mu_2}{v} + \\frac{\\mu_1}{u} = \\frac{\\mu_2 - \\mu_1}{R}",
+        "\\frac{\\mu_2}{v} - \\frac{\\mu_1}{u} = \\frac{\\mu_2 - \\mu_1}{R}"
+      ],
+      "answer": "\\frac{\\mu_2}{v} - \\frac{\\mu_1}{u} = \\frac{\\mu_2 - \\mu_1}{R}",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_027.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_028",
+      "question": "The magnification at the spherical surface is given by",
+      "options": [
+        "\\frac{\\mu_1 v}{\\mu_2 u}",
+        "-\\frac{v}{u}",
+        "\\frac{v}{u}",
+        "\\frac{\\mu_2 v}{\\mu_1 u}"
+      ],
+      "answer": "\\frac{\\mu_1 v}{\\mu_2 u}",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_028.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_029",
+      "question": "The lateral magnification in Lens is (<i>f</i> = focal length, <i>u</i> = object distance)",
+      "options": [
+        "\\frac{f}{f-u}",
+        "\\frac{f}{f+u}",
+        "-\\frac{f}{f-u}",
+        "-\\frac{u}{f+u}"
+      ],
+      "answer": "\\frac{f}{f+u}",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_029.png",
+      "tip": "Remember this also apart from general formula, many qns are easily solved using this."
+    },
+    {
+      "id": "ray_optics_qn_030",
+      "question": "Lens maker formula is",
+      "options": [
+        "\\frac{1}{f} = (\\frac{\\mu_2}{\\mu_1}+1)(\\frac{1}{R_1} + \\frac{1}{R_2})",
+        "\\frac{1}{f} = (\\frac{\\mu_2}{\\mu_1}+1)(\\frac{1}{R_1} - \\frac{1}{R_2})",
+        "\\frac{1}{f} = (\\frac{\\mu_2}{\\mu_1}-1)(\\frac{1}{R_1} - \\frac{1}{R_2})",
+        "\\frac{1}{f} = (\\frac{\\mu_2}{\\mu_1}-1)(\\frac{1}{R_1} + \\frac{1}{R_2})"
+      ],
+      "answer": "\\frac{1}{f} = (\\frac{\\mu_2}{\\mu_1}-1)(\\frac{1}{R_1} - \\frac{1}{R_2})",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_030.png",
+      "tip": ""
     }
 
 ]
