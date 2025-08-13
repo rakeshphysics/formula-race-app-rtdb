@@ -543,6 +543,187 @@
       },
       "image": "assets/images/12th/ray_optics/ray_optics_qn_030.png",
       "tip": ""
-    }
+    },
 
+    {
+      "id": "ray_optics_qn_031",
+      "question": "The equivalent focal length for two thin lenses in contact is",
+      "options": [
+        "\\frac{1}{f_{eq}} = \\frac{1}{f_1} + \\frac{1}{f_2}",
+        "f_{eq} = f_1 + f_2",
+        "f_{eq} = f_1 - f_2",
+        "\\frac{1}{f_{eq}} = \\frac{1}{f_1} - \\frac{1}{f_2}"
+      ],
+      "answer": "\\frac{1}{f_{eq}} = \\frac{1}{f_1} + \\frac{1}{f_2}",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_031.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_032",
+      "question": "The equivalent power for two thin lenses in contact is",
+      "options": [
+        "\\frac{1}{P_{eq}} = \\frac{1}{P_1} + \\frac{1}{P_2}",
+        "P_{eq} = P_1 + P_2",
+        "P_{eq} = P_1 - P_2",
+        "\\frac{1}{P_{eq}} = \\frac{1}{P_1} - \\frac{1}{P_2}"
+      ],
+      "answer": "P_{eq} = P_1 + P_2",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_032.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_033",
+      "question": "The equivalent magnification for two thin lenses in contact is",
+      "options": [
+        "m_{eq} = m_1 + m_2",
+        "m_{eq} = m_1 - m_2",
+        "m_{eq} = m_1 m_2",
+        "m_{eq} = \\frac{m_1^2}{m_2}"
+      ],
+      "answer": "m_{eq} = m_1 m_2",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_033.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_034",
+      "question": "The magnifying power of a simple microscope for normal adjustment is (<i>D</i> = least distance of distinct vision, <i>f</i> = focal length of lens)",
+      "options": [
+        "\\frac{D}{f}",
+        "1+\\frac{f}{D}",
+        "\\frac{f}{D}",
+        "1+\\frac{D}{f}"
+      ],
+      "answer": "\\frac{D}{f}",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_034.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_035",
+      "question": "The magnifying power of a simple microscope for image formed at D is (<i>D</i> = least distance of distinct vision, <i>f</i> = focal length of lens)",
+      "options": [
+        "\\frac{f}{D}",
+        "1+\\frac{f}{D}",
+        "\\frac{D}{f}",
+        "1+\\frac{D}{f}"
+      ],
+      "answer": "1+\\frac{D}{f}",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_035.png",
+      "tip": ""
+    },
+
+    {
+      "id": "ray_optics_qn_036",
+      "question": "The magnifying power of a compound microscope for image formed at normal adjustment is (<i>D</i> = least distance of distinct vision, <i>L</i> = tube length, <i>f<sub>o</sub></i> = focal length of objective, <i>f<sub>e</sub></i> = focal length of eyepiece)",
+      "options": [
+        "\\frac{L}{f_o}(\\frac{D}{f_e})",
+        "\\frac{L}{f_e}(\\frac{D}{f_o})",
+        "\\frac{L}{f_o}(1+\\frac{f_e}{D})",
+        "\\frac{f_o}{L}(\\frac{f_e}{D})"
+      ],
+      "answer": "\\frac{L}{f_o}(\\frac{D}{f_e})",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_036.png",
+      "tip": "The definition of tube length slightly differs from NCERT and other books! Go with NCERT definition."
+    },
+    {
+      "id": "ray_optics_qn_037",
+      "question": "The magnifying power of a telescope for normal adjustment is (<i>f<sub>o</sub></i> = focal length of objective, <i>f<sub>e</sub></i> = focal length of eyepiece)",
+      "options": [
+        "1+\\frac{f_o}{f_e}",
+        "1+\\frac{f_e}{f_o}",
+        "\\frac{f_o}{f_e}",
+        "\\frac{f_e}{f_o}"
+      ],
+      "answer": "\\frac{f_o}{f_e}",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_037.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_038",
+      "question": "The tube length of a telescope is (<i>f<sub>o</sub></i> = focal length of objective, <i>f<sub>e</sub></i> = focal length of eyepiece)",
+      "options": [
+        "f_o-f_e",
+        "f_o+f_e",
+        "\\frac{f_o}{f_e}",
+        "\\frac{f_e}{f_o}"
+      ],
+      "answer": "f_o+f_e",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_038.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_039",
+      "question": "For a person with myopia, the correction lens must be <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> and its focal length equals <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>",
+      "options": [
+        "\\text{Concave, Near point}",
+        "\\text{Concave, Far point}",
+        "\\text{Convex, Near Point}",
+        "\\text{Convex, Far point}"
+      ],
+      "answer": "\\text{Concave, Far point}",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_039.png",
+      "tip": ""
+    },
+    {
+      "id": "ray_optics_qn_040",
+      "question": "The focal length <i>f</i> of a lens found from the displacement formula is",
+      "options": [
+        "\\frac{D^2-x^2}{2D}",
+        "\\frac{D^2-x^2}{2d}",
+        "\\frac{D^2-x^2}{4D}",
+        "\\frac{D^2-4x}{2D}"
+      ],
+      "answer": "\\frac{D^2-x^2}{4D}",
+      "tags": {
+        "chapter": "ray_optics",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_040.png",
+      "tip": ""
+    }
 ]
