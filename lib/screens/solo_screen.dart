@@ -20,6 +20,8 @@ import 'solo_mode_selection_screen.dart';// ADD THIS IMPORT
 import 'package:flutter_html/flutter_html.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:provider/provider.dart';
+import '../quiz_data_provider.dart';
 
 // ............. Chunk 1 SOLO SCREEN WIDGET .............
 const Map<String, String> chapterToClass = {
@@ -200,17 +202,12 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
         ];
       }
 
-      for (String chapter in fullChapters) {
-        final chapterClass = chapterToClass[chapter] ?? '11';
-        final chapterFile = chapter.toLowerCase().replaceAll(" ", "_");
-        final path = 'assets/formulas/$chapterClass/$chapterFile.json';
+      final quizProvider = Provider.of<QuizDataProvider>(context, listen: false);
 
-        try {
-          final String data = await rootBundle.loadString(path);
-          final List<dynamic> jsonData = json.decode(data);
-          allQuestions.addAll(jsonData.cast<Map<String, dynamic>>());
-        } catch (e) {
-          // print('Error loading $path: $e');
+      for (String chapter in fullChapters) {
+        final chapterFile = chapter.toLowerCase().replaceAll(" ", "_");
+        if (quizProvider.allQuizData.containsKey(chapterFile)) {
+          allQuestions.addAll(quizProvider.allQuizData[chapterFile].cast<Map<String, dynamic>>());
         }
       }
 
@@ -278,16 +275,11 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   Future<List<Map<String, dynamic>>> _loadChapterWiseQuestions() async {
     List<Map<String, dynamic>> chapterSpecificQuestions = [];
 
-    final chapterClass = chapterToClass[widget.selectedChapter] ?? '11';
+    final quizProvider = Provider.of<QuizDataProvider>(context, listen: false);
     final chapterFile = widget.selectedChapter.toLowerCase().replaceAll(" ", "_");
-    final path = 'assets/formulas/$chapterClass/$chapterFile.json';
 
-    try {
-      final String data = await rootBundle.loadString(path);
-      final List<dynamic> jsonData = json.decode(data);
-      chapterSpecificQuestions = jsonData.cast<Map<String, dynamic>>();
-    } catch (e) {
-      // Handle error, e.g., print('Error loading $path: $e');
+    if (quizProvider.allQuizData.containsKey(chapterFile)) {
+      chapterSpecificQuestions = quizProvider.allQuizData[chapterFile].cast<Map<String, dynamic>>();
     }
 
     List<String> seenIds = await _getSeenQuestionIds(widget.selectedChapter);

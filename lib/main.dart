@@ -18,19 +18,29 @@ import 'screens/searching_for_opponent.dart';
 //import 'package:shared_preferences/shared_preferences.dart';
 //import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
+import 'quiz_data_provider.dart';
 
 // ← added SplashScreen import
 
 // ............. Chunk 1 MAIN FUNCTION .............
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // ADD THESE LINES to force portrait mode
+  // ADD THESE LINES to initialize the provider and load data
+  QuizDataProvider quizProvider = QuizDataProvider();
+  await quizProvider.loadAllQuizData();
+
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]).then((value) {
-    runApp(const FormulaRaceApp()); // Your main app widget
+    runApp(
+      ChangeNotifierProvider(
+        create: (context) => quizProvider,
+        child: const FormulaRaceApp(), // Your main app widget
+      ),
+    );
   });
 }
 

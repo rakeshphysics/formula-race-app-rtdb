@@ -23,27 +23,30 @@ import 'dart:math';
 //import 'package:cloud_firestore/cloud_firestore.dart'as firestore;
 import 'package:formularacing/services/mistake_tracker_service.dart';
 import '../models/online_incorrect_answer_model.dart';
+import 'package:provider/provider.dart';
+import '../quiz_data_provider.dart';
 
 
 // .............END................. Import Dependencies.........................
 
 
 // .............START................. Load Qns from combined JSON..........................
-Future<List<dynamic>> loadQuestionsFromAssets() async {
-  ////////print("📦 Step 1: Loading JSON from assets...");
-  final jsonString = await rootBundle.loadString('assets/formulas/full_syllabus_online_play.json');
-  ////////print("✅ Step 2: JSON loaded. Length of string: ${jsonString.length}");
-
-  final decoded = jsonDecode(jsonString);
-  ////////print("🔍 Step 3: Decoded JSON length: ${decoded.length}");
-
-  return decoded;
-}
+// Future<List<dynamic>> loadQuestionsFromAssets() async {
+//   ////////print("📦 Step 1: Loading JSON from assets...");
+//   final jsonString = await rootBundle.loadString('assets/formulas/full_syllabus_online_play.json');
+//   ////////print("✅ Step 2: JSON loaded. Length of string: ${jsonString.length}");
+//
+//   final decoded = jsonDecode(jsonString);
+//   ////////print("🔍 Step 3: Decoded JSON length: ${decoded.length}");
+//
+//   return decoded;
+// }
 // .............END................. Load Qns from combined JSON..........................
 
 // .............START................. Fn loads 10Qns from shared seed with given conditions........................
-Future<List<Map<String, dynamic>>> getRandomQuestions(int seed,String gameMode, int totalQuestions) async {
-  final allQuestions = await loadQuestionsFromAssets();
+Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode, int totalQuestions, List<Map<String, dynamic>> allQuestions) async {
+  // ...}
+  //final allQuestions = await loadQuestionsFromAssets();
   //print('✅✅✅✅DEBUG: getRandomQuestions - Raw gameMode received: "$gameMode"');
   //print('✅✅DEBUG: Total questions loaded from assets: ${allQuestions.length}');
   final random = Random(seed);
@@ -305,7 +308,11 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
         final matchData = Map<String, dynamic>.from(matchSnapshot.value as Map);
         final seed = matchData['seed'] ?? 0; // Get seed directly from RTDB
         final fetchedGameMode = matchData['gameMode'] as String? ?? 'combined_11_12';
-        final qns = await getRandomQuestions(seed, fetchedGameMode, totalQuestions);
+        //final qns = await getRandomQuestions(seed, fetchedGameMode, totalQuestions);
+
+        final quizProvider = Provider.of<QuizDataProvider>(context, listen: false);
+        final List<Map<String, dynamic>> allQuestions = quizProvider.allQuizData.values.expand((list) => list).cast<Map<String, dynamic>>().toList();
+        final qns = await getRandomQuestions(seed, fetchedGameMode, totalQuestions, allQuestions);
 
         setState(() {
           questions = qns;

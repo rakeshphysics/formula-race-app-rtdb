@@ -300,7 +300,7 @@ class OnlineResultScreen extends StatelessWidget {
                             Text(
                               qa.tip!,
                               style: GoogleFonts.poppins(
-                                color: Color(0xFFA5FB8F),
+                                color: Color(0xFFFFC107),
                                 fontSize: 14,
                                 fontWeight: FontWeight.normal,
                                 fontStyle: FontStyle.italic,
