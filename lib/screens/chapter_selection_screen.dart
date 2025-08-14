@@ -99,7 +99,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
   }
 
   Future<void> _loadChapterProgress() async {
-    print('🔄 _loadChapterProgress started...');
+    //print('🔄 _loadChapterProgress started...');
     Map<String, double> percentages = {};
 
     for (String chapter in chapters) {
@@ -123,10 +123,10 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
         }
 
         percentages[chapter] = percentage;
-        print('    📊 Chapter: $chapter, Total Qns: $totalQuestionsInChapter, Completed Qns: $completedQuestionsInChapter, Percentage: ${percentage.toStringAsFixed(2)}%');
+        //print('    📊 Chapter: $chapter, Total Qns: $totalQuestionsInChapter, Completed Qns: $completedQuestionsInChapter, Percentage: ${percentage.toStringAsFixed(2)}%');
 
       } catch (e) {
-        print('    ❗️ Error loading questions for $chapter in ChapterSelectionScreen: $e');
+       // print('    ❗️ Error loading questions for $chapter in ChapterSelectionScreen: $e');
         percentages[chapter] = 0.0;
       }
     }
@@ -135,7 +135,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
       chapterCompletion = percentages;
       _isLoading = false;
     });
-    print('✅ _loadChapterProgress completed. State updated.');
+   // print('✅ _loadChapterProgress completed. State updated.');
   }
 
   @override

@@ -62,12 +62,12 @@ class MistakeTrackerService {
       await file.writeAsString(jsonEncode(mistakes));
 
       if (beforeCount != afterCount) {
-        print('✅ Mistake removed: "$questionText"');
+        //print('✅ Mistake removed: "$questionText"');
       } else {
-        print('⚠️ Mistake not found in file: "$questionText"');
+        //print('⚠️ Mistake not found in file: "$questionText"');
       }
     } catch (e) {
-      print('❌ Error removing mistake: $e');
+      //print('❌ Error removing mistake: $e');
     }
   }
 
@@ -82,11 +82,11 @@ class MistakeTrackerService {
         List<Map<String, dynamic>> mistakes = List<Map<String, dynamic>>.from(jsonDecode(content));
         return mistakes;
       } else {
-        print('⚠️ No my_mistakes.json found — returning empty list.');
+        //print('⚠️ No my_mistakes.json found — returning empty list.');
         return [];
       }
     } catch (e) {
-      print('❌ Error loading mistakes: $e');
+      //print('❌ Error loading mistakes: $e');
       return [];
     }
   }
@@ -94,9 +94,9 @@ class MistakeTrackerService {
   // PRINT ALL MISTAKES — for debug
   static Future<void> printAllMistakes() async {
     final mistakes = await loadMistakesFromLocal();
-    print('--- Mistakes (${mistakes.length}) ---');
+    //print('--- Mistakes (${mistakes.length}) ---');
     for (var m in mistakes) {
-      print('• ${m['question']}');
+      //print('• ${m['question']}');
     }
   }
 
@@ -108,12 +108,12 @@ class MistakeTrackerService {
 
       if (await file.exists()) {
         await file.delete();
-        print('✅ All mistakes cleared — my_mistakes.json deleted.');
+        //print('✅ All mistakes cleared — my_mistakes.json deleted.');
       } else {
-        print('⚠️ No my_mistakes.json found — nothing to clear.');
+        //print('⚠️ No my_mistakes.json found — nothing to clear.');
       }
     } catch (e) {
-      print('❌ Error clearing mistakes: $e');
+      //print('❌ Error clearing mistakes: $e');
     }
   }
 }

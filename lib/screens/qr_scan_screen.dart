@@ -115,7 +115,7 @@ class _QRScanScreenState extends State<QRScanScreen> {
         matchData = Map<String, dynamic>.from(snapshot.value as Map);
       } catch (e) {
         // Handle cases where snapshot.value is not a valid Map (e.g., scanned non-match QR)
-        print("Error casting match data: $e"); // Debug print
+        //print("Error casting match data: $e"); // Debug print
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('Invalid QR Code: Not a valid match data.')), // User-friendly message
@@ -183,7 +183,7 @@ class _QRScanScreenState extends State<QRScanScreen> {
       }
     } catch (e) {
       // General catch-all for any other unexpected errors during the process
-      print("Error joining match via QR: $e"); // MODIFIED print for clarity
+      //print("Error joining match via QR: $e"); // MODIFIED print for clarity
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Invalid QR Code or connection error.')), // MODIFIED: Generic user-friendly message

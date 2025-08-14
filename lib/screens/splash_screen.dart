@@ -41,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen> {
       await Firebase.initializeApp(
         options: DefaultFirebaseOptions.currentPlatform,
       );
-      print("✅ Firebase initialized in SplashScreen.");
+      //print("✅ Firebase initialized in SplashScreen.");
 
       // 2. Perform Anonymous Authentication
       final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -50,9 +50,9 @@ class _SplashScreenState extends State<SplashScreen> {
       if (user == null) {
         UserCredential userCredential = await _auth.signInAnonymously();
         user = userCredential.user;
-        print("✅ Signed in anonymously with UID: ${user?.uid}");
+        //print("✅ Signed in anonymously with UID: ${user?.uid}");
       } else {
-        print("ℹ️ Already signed in anonymously with UID: ${user.uid}");
+        //print("ℹ️ Already signed in anonymously with UID: ${user.uid}");
       }
 
       // 3. Ensure local user_id in SharedPreferences
@@ -60,9 +60,9 @@ class _SplashScreenState extends State<SplashScreen> {
       final String userIdFromSplash = user!.uid; // Get the userId after auth
       if (!prefs.containsKey('user_id')) {
         await prefs.setString('user_id', userIdFromSplash);
-        print('✅ Generated userId from Firebase Auth: $userIdFromSplash and saved to SharedPreferences.');
+        //print('✅ Generated userId from Firebase Auth: $userIdFromSplash and saved to SharedPreferences.');
       } else {
-        print('ℹ️ Existing SharedPreferences user_id: ${prefs.getString('user_id')}');
+       // print('ℹ️ Existing SharedPreferences user_id: ${prefs.getString('user_id')}');
       }
 
       // --- CONSOLIDATED NAVIGATION LOGIC ---
@@ -72,26 +72,26 @@ class _SplashScreenState extends State<SplashScreen> {
 
       if (timeElapsed < minDisplayTime) {
         await Future.delayed(minDisplayTime - timeElapsed);
-        print("⏳ Splash screen extended for visibility.");
+        //print("⏳ Splash screen extended for visibility.");
       }
 
-      print("🔍 DEBUG NAV: Checking mounted status before scheduling post-frame callback. Mounted: $mounted");
+     // print("🔍 DEBUG NAV: Checking mounted status before scheduling post-frame callback. Mounted: $mounted");
       // FINAL NAVIGATION: Ensure it happens after delay AND after a frame is drawn, with mounted check
       Future.microtask(() {
         if (mounted) { // Crucial: Check mounted status before navigating
-          print("🚀 Navigating to Home Screen now (via microtask)."); // Debug print
+          //print("🚀 Navigating to Home Screen now (via microtask)."); // Debug print
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(builder: (context) => HomeScreen(userId: userIdFromSplash)),
           );
         } else {
-          print("🚫 Widget unmounted before microtask navigation. Cannot navigate."); // Debug print
+          //print("🚫 Widget unmounted before microtask navigation. Cannot navigate."); // Debug print
         }
       });
       // --- END CONSOLIDATED NAVIGATION LOGIC ---
 
     } catch (e) {
-      print("❌ Error during SplashScreen initialization: $e");
+      //print("❌ Error during SplashScreen initialization: $e");
       // Handle initialization errors (e.g., show an error message to the user, retry option)
     }
   }

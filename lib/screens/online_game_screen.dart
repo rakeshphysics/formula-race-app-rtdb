@@ -44,8 +44,8 @@ Future<List<dynamic>> loadQuestionsFromAssets() async {
 // .............START................. Fn loads 10Qns from shared seed with given conditions........................
 Future<List<Map<String, dynamic>>> getRandomQuestions(int seed,String gameMode, int totalQuestions) async {
   final allQuestions = await loadQuestionsFromAssets();
-  print('✅✅✅✅DEBUG: getRandomQuestions - Raw gameMode received: "$gameMode"');
-  print('✅✅DEBUG: Total questions loaded from assets: ${allQuestions.length}');
+  //print('✅✅✅✅DEBUG: getRandomQuestions - Raw gameMode received: "$gameMode"');
+  //print('✅✅DEBUG: Total questions loaded from assets: ${allQuestions.length}');
   final random = Random(seed);
   ////////print("🎲 Step 4: Shuffling questions with seed: $seed");
 
@@ -67,7 +67,7 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed,String gameMode, 
     }
   }
 
-  print('✅✅DEBUG: GameMode received: $gameMode');
+  //print('✅✅DEBUG: GameMode received: $gameMode');
 
   List<Map<String, dynamic>> pickUniqueChapters(
       List<Map<String, dynamic>> questions,
@@ -84,7 +84,7 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed,String gameMode, 
         if (selected.length == count) break;
       }
     }
-    print('✅✅DEBUG: pickUniqueChapters returned ${selected.length} questions.');
+   // print('✅✅DEBUG: pickUniqueChapters returned ${selected.length} questions.');
     return selected;
   }
 
@@ -129,7 +129,7 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed,String gameMode, 
   else if (gameMode.startsWith(
       'chapter_wise_')) { // This is your 'chapter_wise' condition
     String? selectedChapterName = gameMode.substring('chapter_wise_'.length).replaceAll(" ", "_");
-    print('DEBUG: Chapter Wise - Extracted chapter name: $selectedChapterName');
+    //print('DEBUG: Chapter Wise - Extracted chapter name: $selectedChapterName');
 
     if (selectedChapterName != null && selectedChapterName.isNotEmpty) {
       final List<Map<String, dynamic>> chapterQuestions = allQuestions
@@ -137,9 +137,9 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed,String gameMode, 
           .map((q) => Map<String, dynamic>.from(q))
           .toList();
 
-      print(
-          'DEBUG: Chapter Wise - Total questions for "$selectedChapterName": ${chapterQuestions
-              .length}');
+      // print(
+      //     'DEBUG: Chapter Wise - Total questions for "$selectedChapterName": ${chapterQuestions
+      //         .length}');
 
       Map<String, List<Map<String, dynamic>>> chapterBuckets = {
         'easy': [], 'medium': [], 'god': [],
@@ -151,13 +151,13 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed,String gameMode, 
           chapterBuckets[diff]!.add(q);
         }
       }
-      print(
-          'DEBUG: Chapter Wise - Easy count: ${chapterBuckets['easy']?.length ??
-              0}');
-      print('DEBUG: Chapter Wise - Medium count: ${chapterBuckets['medium']
-          ?.length ?? 0}');
-      print('DEBUG: Chapter Wise - God count: ${chapterBuckets['god']?.length ??
-          0}');
+      // print(
+      //     'DEBUG: Chapter Wise - Easy count: ${chapterBuckets['easy']?.length ??
+      //         0}');
+      // print('DEBUG: Chapter Wise - Medium count: ${chapterBuckets['medium']
+      //     ?.length ?? 0}');
+      // print('DEBUG: Chapter Wise - God count: ${chapterBuckets['god']?.length ??
+      //     0}');
 
 // NEW: Create a set to track unique question IDs for this chapter mode
       final Set<String> pickedQuestionIds = {};
@@ -178,8 +178,8 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed,String gameMode, 
             if (picked.length == count) break;
           }
         }
-        print('DEBUG: _pickQuestionsById returned ${picked
-            .length} questions.'); // New debug print
+        // print('DEBUG: _pickQuestionsById returned ${picked
+        //     .length} questions.'); // New debug print
         return picked;
       }
 
@@ -191,18 +191,18 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed,String gameMode, 
       selectedQuestions.addAll(_pickQuestionsById(
           chapterBuckets['god']!, 1, pickedQuestionIds, random));
 
-      print(
-          'DEBUG: Chapter Wise - Selected questions count after picking: ${selectedQuestions
-              .length}');
+      // print(
+      //     'DEBUG: Chapter Wise - Selected questions count after picking: ${selectedQuestions
+      //         .length}');
 
       if (selectedQuestions.length < totalQuestions) {
-        print(
-            "Warning: Not enough unique questions in chapter '$selectedChapterName'. Current count: ${selectedQuestions
-                .length}");
+        // print(
+        //     "Warning: Not enough unique questions in chapter '$selectedChapterName'. Current count: ${selectedQuestions
+        //         .length}");
       }
     } else {
-      print(
-          "Error: 'chapter_wise' mode called without a valid chapter name. Not selecting questions."); // Updated print
+      // print(
+      //     "Error: 'chapter_wise' mode called without a valid chapter name. Not selecting questions."); // Updated print
     }
   }
 
@@ -296,7 +296,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 // .............START................. This function stores the selected qns in game room so that
 // ................................... both players call the same 10 Qns..........................
   Future<void> loadQuestionsFromRoom() async {
-    print('✅🔰🟢DEBUG: loadQuestionsFromRoom started.');
+   // print('✅🔰🟢DEBUG: loadQuestionsFromRoom started.');
     try {
       // Use Realtime Database to get match details including seed
       final matchSnapshot = await _database.child('matches/${widget.matchId}').get();
@@ -851,7 +851,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     }
 
     if (selectedAnswer == correctAnswer) {
-      print('DEBUG:📥📥 Player ${widget.playerId} submitting answer. Selected: $selectedAnswer, Correct: $correctAnswer');
+      //print('DEBUG:📥📥 Player ${widget.playerId} submitting answer. Selected: $selectedAnswer, Correct: $correctAnswer');
       await answerRef.set({
         'firstAnswerBy': widget.playerId,
         'isCorrect': true,
@@ -924,7 +924,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   }else{
 
   if (!isMovingToNextQuestion) {
-    print("DEBUG:  ⚠️ Calling _moveToNextQuestion from submitAnswer (both wrong)");
+   // print("DEBUG:  ⚠️ Calling _moveToNextQuestion from submitAnswer (both wrong)");
   _moveToNextQuestion();
   }
   }

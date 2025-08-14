@@ -65,7 +65,7 @@ class OnlineModeSelectionScreen extends StatelessWidget {
           height: screenHeight * 0.08,
           onPressed: () { // No need for async if not calling createMatch here
             // Removed the FirebaseAuth.instance.currentUser check and related if statement
-            print('Navigating to OnlineChapterSelectionScreen with userId: $userId'); // Using userId directly
+            //print('Navigating to OnlineChapterSelectionScreen with userId: $userId'); // Using userId directly
 
             Navigator.push(
               context,
@@ -86,7 +86,7 @@ class OnlineModeSelectionScreen extends StatelessWidget {
               height: screenHeight * 0.08,
               onPressed: () async { // Make onPressed async
                 // Removed the FirebaseAuth.instance.currentUser check and related if statement
-                print('Navigating to QRHostScreen for Full 11th with userId: $userId'); // Using userId directly
+                //print('Navigating to QRHostScreen for Full 11th with userId: $userId'); // Using userId directly
 
                 final createdMatchData = await MatchmakingService.createMatch(
                   userId, // Directly use the userId from the widget's constructor
@@ -125,7 +125,7 @@ class OnlineModeSelectionScreen extends StatelessWidget {
               height: screenHeight * 0.08,
               onPressed: () async { // Make onPressed async
                 // Removed the FirebaseAuth.instance.currentUser check and related if statement
-                print('Navigating to QRHostScreen for Full 12th with userId: $userId'); // Using userId directly
+                //print('Navigating to QRHostScreen for Full 12th with userId: $userId'); // Using userId directly
 
                 final createdMatchData = await MatchmakingService.createMatch(
                   userId, // Directly use the userId from the widget's constructor
@@ -164,7 +164,7 @@ class OnlineModeSelectionScreen extends StatelessWidget {
               height: screenHeight * 0.08,
               onPressed: () async { // Keep async because of MatchmakingService.createMatch
                 // Removed the FirebaseAuth.instance.currentUser check and related if statement
-                print('Navigating to QRHostScreen for 11th + 12th with userId: $userId'); // Using userId directly
+               // print('Navigating to QRHostScreen for 11th + 12th with userId: $userId'); // Using userId directly
 
                 final createdMatchData = await MatchmakingService.createMatch(
                   userId, // Directly use the userId from the widget's constructor

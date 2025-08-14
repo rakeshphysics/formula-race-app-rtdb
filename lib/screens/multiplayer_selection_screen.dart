@@ -78,7 +78,7 @@ class MultiplayerSelectionScreen extends StatelessWidget {
           height: screenHeight * 0.1,
             child: ElevatedButton(
                 onPressed: () {
-                  print('✅✅ Navigating to OnlineModeSelectionScreen with userId: $userId');
+                  //print('✅✅ Navigating to OnlineModeSelectionScreen with userId: $userId');
                     Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -119,7 +119,7 @@ class MultiplayerSelectionScreen extends StatelessWidget {
         height: screenHeight * 0.1,
             child: ElevatedButton(
               onPressed: () {
-                print('✅✅Navigating to OnlineModeSelectionScreen with userId: $userId');
+                //print('✅✅Navigating to OnlineModeSelectionScreen with userId: $userId');
                 // Navigate to the QR scanning screen
                 Navigator.push(
                   context,

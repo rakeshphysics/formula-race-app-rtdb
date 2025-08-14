@@ -146,7 +146,7 @@ class _QRHostScreenState extends State<QRHostScreen> {
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.red.withOpacity(0.1),
-                side: const BorderSide(color: Colors.red, width: 2),
+                side: const BorderSide(color: Colors.red, width: 1.2),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
               ),
               child: const Text(

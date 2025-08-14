@@ -73,7 +73,7 @@ class MatchmakingService {
         }
       }
     } catch (e) {
-      print("Error finding match (RTDB only): $e");
+      //print("Error finding match (RTDB only): $e");
     }
 
     return null; // No open match found or successfully joined
