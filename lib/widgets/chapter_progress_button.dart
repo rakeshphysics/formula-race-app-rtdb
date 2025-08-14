@@ -48,8 +48,8 @@ class ChapterProgressButton extends StatelessWidget {
           color: Colors.black, // Background color for the unfilled part
           borderRadius: BorderRadius.circular(4),
           border: Border.all(
-            color: highlightColor.withOpacity(0.6), // Outer border of the button
-            width: 1.2,
+            color: Colors.cyanAccent, // Outer border of the button
+            width: 1,
           ),
         ),
         child: Stack( // Stack allows us to layer the progress fill and the text on top

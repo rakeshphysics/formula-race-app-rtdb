@@ -13,6 +13,8 @@ import 'package:flutter/services.dart'; // Needed for rootBundle
 import 'dart:convert'; // Needed for json.decode
 import 'package:shared_preferences/shared_preferences.dart';
 import '../widgets/chapter_progress_button.dart';
+import 'package:provider/provider.dart';
+import '../quiz_data_provider.dart';
 
 const Map<String, String> chapterToClass = {
   "Units and Dimensions": "11",
@@ -102,16 +104,13 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
     //print('🔄 _loadChapterProgress started...');
     Map<String, double> percentages = {};
 
+    final quizProvider = Provider.of<QuizDataProvider>(context, listen: false);
+
     for (String chapter in chapters) {
-      final chapterClass = chapterToClass[chapter] ?? '11';
       final chapterFile = chapter.toLowerCase().replaceAll(" ", "_");
-      final path = 'assets/formulas/$chapterClass/$chapterFile.json';
 
-      //print('  Loading data for chapter: $chapter from path: $path');
-
-      try {
-        final String data = await rootBundle.loadString(path);
-        final List<dynamic> allQuestionsInChapter = json.decode(data).cast<Map<String, dynamic>>();
+      if (quizProvider.allQuizData.containsKey(chapterFile)) {
+        final List<dynamic> allQuestionsInChapter = quizProvider.allQuizData[chapterFile];
         final int totalQuestionsInChapter = allQuestionsInChapter.length;
 
         List<String> seenIds = await _getSeenQuestionIds(chapter);
@@ -123,10 +122,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
         }
 
         percentages[chapter] = percentage;
-        //print('    📊 Chapter: $chapter, Total Qns: $totalQuestionsInChapter, Completed Qns: $completedQuestionsInChapter, Percentage: ${percentage.toStringAsFixed(2)}%');
-
-      } catch (e) {
-       // print('    ❗️ Error loading questions for $chapter in ChapterSelectionScreen: $e');
+      } else {
         percentages[chapter] = 0.0;
       }
     }
