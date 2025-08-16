@@ -1112,12 +1112,12 @@
       "id": "fluids_qn_012",
       "question": "The force on vertical wall, due to the liquid is (&rho; = density of water, <i>w</i> = wall width)",
       "options": [
-        "(P_o - \\rho gh)hw",
-        "(P_o + \\rho gh)hw",
-        "(P_o + \\rho gh)h",
-        "(P_o + \\rho g)w"
+        "(P_o - h\\rho g)hw",
+        "(P_o + \\frac{h\\rho g}{2})hw",
+        "(P_o + \\frac{h\\rho g}{2})h",
+        "(P_o + h\\rho g)w"
       ],
-      "answer": "(P_o + \\rho gh)hw",
+      "answer": "(P_o + \\frac{h\\rho g}{2})hw",
       "tags": {
         "chapter": "fluids",
         "difficulty": "easy",
@@ -6644,7 +6644,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "",
+      "image": "assets/images/11th/Vectors/Vectors_qn_001.png",
       "tip": ""
     },
     {
@@ -6735,7 +6735,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "",
+      "image": "assets/images/11th/Vectors/Vectors_qn_006.png",
       "tip": ""
     },
     {
@@ -6753,7 +6753,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "",
+      "image": "assets/images/11th/Vectors/Vectors_qn_007.png",
       "tip": ""
     },
     {
@@ -7079,7 +7079,7 @@
         "class": "11"
       },
       "image": "",
-      "tip": ""
+      "tip": "In this condition, A and B vectors form a rhombus"
     },
     {
       "id": "Vectors_qn_026",

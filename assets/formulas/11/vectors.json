@@ -14,7 +14,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "",
+    "image": "assets/images/11th/Vectors/Vectors_qn_001.png",
     "tip": ""
   },
   {
@@ -105,7 +105,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "",
+      "image": "assets/images/11th/Vectors/Vectors_qn_006.png",
       "tip": ""
     },
     {
@@ -123,7 +123,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "",
+      "image": "assets/images/11th/Vectors/Vectors_qn_007.png",
       "tip": ""
     },
     {
@@ -449,7 +449,7 @@
         "class": "11"
       },
       "image": "",
-      "tip": ""
+      "tip": "In this condition, A and B vectors form a rhombus!"
     },
     {
       "id": "Vectors_qn_026",
