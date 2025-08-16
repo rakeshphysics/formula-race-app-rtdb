@@ -493,7 +493,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   // ............. Chunk 7 BUILD WIDGET TREE .............
   @override
   Widget build(BuildContext context) {
-    print('😇😇--- SoloScreen build called for chapter: ${widget.selectedChapter}, currentIndex: $currentIndex ---'); // ADD THIS LINE
+    //print('😇😇--- SoloScreen build called for chapter: ${widget.selectedChapter}, currentIndex: $currentIndex ---'); // ADD THIS LINE
 
     if (questions.isEmpty) {
       return const Scaffold(

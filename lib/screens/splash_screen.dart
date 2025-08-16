@@ -107,94 +107,58 @@ class _SplashScreenState extends State<SplashScreen> {
 
     return Scaffold(
       backgroundColor: Colors.black, // Assuming this is Color(0x000000) from your previous code
-      body: Center( // This centers the content horizontally
-        child: SizedBox( // Constraint the Column to full screen height
-          height: screenHeight, // Make SizedBox take full screen height
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centers the content (logo + text block) vertically within the SizedBox
-            mainAxisSize: MainAxisSize.max, // Ensure Column tries to take max space provided by SizedBox
-
-            children: [
-              const Spacer(), // Pushes the logo-text block down from the top
-              //SizedBox(height: screenHeight * 0.35),
-              // ............. Chunk 3 LOGO IMAGE .............
-              Image.asset(
-                'assets/logo.png', // Ensure this path is correct
-                width: screenWidth * 0.3,
-                height: screenWidth * 0.3,
-              ),
-
-              SizedBox(height: screenHeight * 0.04), // Space between logo and text
-
-              // ............. Chunk 4 APP NAME TEXT .............
-              Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    'Physics Revision', // Line 1: The subject and exam context
-                    style: GoogleFonts.poppins(
-                      fontSize:screenWidth * 0.045, // Slightly larger to be the main subject line
-                      color: const Color(0xFFD3D3D3), // Lighter grey
-                      fontWeight: FontWeight.normal, // Make it bold for more emphasis
-                    ),
+      body: Stack(
+        children: [
+          // The main centered content (logo and text block)
+          Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Image.asset(
+                  'assets/logo.png',
+                  width: screenWidth * 0.3,
+                  height: screenWidth * 0.3,
+                ),
+                SizedBox(height: screenHeight * 0.04),
+                Text(
+                  'Physics Revision',
+                  style: GoogleFonts.poppins(
+                    fontSize: screenWidth * 0.045,
+                    color: const Color(0xFFD3D3D3),
+                    fontWeight: FontWeight.normal,
                   ),
-                  const SizedBox(height: 9),
-
-                  // Text(
-                  //   'for JEE Mains/Adv', // Line 1: The subject and exam context
-                  //   style: GoogleFonts.poppins(
-                  //     fontSize: 20, // Slightly larger to be the main subject line
-                  //     color: const Color(0xFFD3D3D3), // Lighter grey
-                  //     fontWeight: FontWeight.normal, // Make it bold for more emphasis
-                  //   ),
-                  // ),
-                  //const SizedBox(height: 9),// Increased space for clear separation between context and punchline
-                  Text(
-                    ' GAMIFIED !', // Line 2: The punchline, largest and white
-                    style: GoogleFonts.poppins(
-                      fontSize: 26, // Largest font size for maximum impact
-                      color: Color(0xFFFFFFFF), // White for maximum contrast
-                      fontWeight: FontWeight.w500,
-                      letterSpacing: 1.5,
-                    ),
+                ),
+                const SizedBox(height: 7),
+                Text(
+                  'GAMIFIED !',
+                  style: GoogleFonts.poppins(
+                    fontSize: 26,
+                    color: const Color(0xFFFFFFFF),
+                    fontWeight: FontWeight.w500,
+                    letterSpacing: 1.5,
                   ),
-                  SizedBox(height: screenHeight * 0.02),
-                ],
-              ),
-
-
-              //SizedBox(height: screenHeight * 0.1),
-              const Spacer(), // Pushes the logo-text block up from the bottom
-
-              Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    'For JEE Mains/Adv', // Line 1: The subject and exam context
-                    style: GoogleFonts.poppins(
-                      fontSize: 18, // Slightly larger to be the main subject line
-                      color: const Color(0xFFD3D3D3), // Lighter grey
-                      fontWeight: FontWeight.normal, // Make it bold for more emphasis
-                    ),
-                  ),
-                  //const SizedBox(height: 9), // Increased space for clear separation between context and punchline
-                  // Text(
-                  //   ' Formula  Racing', // Line 2: The punchline, largest and white
-                  //   style: GoogleFonts.poppins(
-                  //     fontSize: 24,
-                  //     fontStyle: FontStyle.italic,// Largest font size for maximum impact
-                  //     color: Color(0xFFDFDFDF), // White for maximum contrast
-                  //     fontWeight: FontWeight.w600,
-                  //     letterSpacing: 0.8,
-                  //   ),
-                  // ),
-                ],
-              ),
-
-              // Your commented out "Formula Racing" text or other bottom content would go here
-            ],
+                ),
+              ],
+            ),
           ),
-        ),
+
+          // The text fixed to the bottom of the screen
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 25),
+              child: Text(
+                'For JEE Mains/Adv',
+                textAlign: TextAlign.center,
+                style: GoogleFonts.poppins(
+                  fontSize: 18,
+                  color: const Color(0xFFD3D3D3),
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

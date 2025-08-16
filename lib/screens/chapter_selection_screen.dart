@@ -87,7 +87,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
   ];
 
   Map<String, double> chapterCompletion = {};
-  bool _isLoading = true;
+  // _isLoading = true;
 
   @override
   void initState() {
@@ -128,14 +128,15 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
     }
 
     setState(() {
-      chapterCompletion = percentages;
-      _isLoading = false;
-    });
+       chapterCompletion = percentages;
+    //   _isLoading = false;
+     });
    // print('✅ _loadChapterProgress completed. State updated.');
   }
 
   @override
   Widget build(BuildContext context) {
+    final quizProvider = Provider.of<QuizDataProvider>(context);
     return WillPopScope(
       onWillPop: () async {
         await Navigator.pushReplacement(
@@ -165,8 +166,10 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
                   textAlign: TextAlign.center,
                 ),
               ),
+
+
               Expanded(
-                child: _isLoading
+                child: quizProvider.isLoading
                     ? const Center(child: CircularProgressIndicator())
                     : ListView(
                   shrinkWrap: true,

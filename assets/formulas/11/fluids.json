@@ -295,7 +295,7 @@
       "question": "The speed of liquid <i>v<sub>1</sub></i> in the venturi meter is",
       "options": [
         "A_1 \\sqrt{\\frac{2gh}{A_1^2 + A_2^2}}",
-        "A_1 \\sqrt{\\frac{2gh}{A_1^2 + A_2^2}}",
+        "A_1 \\sqrt{\\frac{2gh}{A_1^2 - A_2^2}}",
         "A_2 \\sqrt{\\frac{2gh}{A_1^2 + A_2^2}}",
         "A_2 \\sqrt{\\frac{2gh}{A_1^2 - A_2^2}}"
       ],
