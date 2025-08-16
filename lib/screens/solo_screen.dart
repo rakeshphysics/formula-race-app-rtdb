@@ -107,7 +107,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 
     _progressController = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 18), // 18s per segment
+      duration: const Duration(seconds: 30), // 18s per segment
     );
     _progressAnimation = Tween<double>(begin: 0, end: 1).animate(_progressController);
 

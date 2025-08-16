@@ -45,7 +45,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
     MistakeTrackerService.printAllMistakes();
     _progressController = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 20),
+      duration: const Duration(seconds: 30),
     );
     _progressAnimation = Tween<double>(begin: 0, end: 1).animate(_progressController);
 

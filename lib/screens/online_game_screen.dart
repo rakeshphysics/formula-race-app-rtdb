@@ -259,7 +259,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
   // ............. Chunk 2 STATE VARIABLES .............
   final int totalQuestions = 10;
-  final int questionDurationSeconds = 18;// ← control number of questions and progress bars
+  final int questionDurationSeconds = 30;// ← control number of questions and progress bars
   late String gameMode;
 
   final DatabaseReference _database = FirebaseDatabase.instance.ref();
