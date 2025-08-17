@@ -1,113 +1,113 @@
 [
-    {
-      "id": "ray_optics_qn_001",
-      "question": "The total number of images of the object O in the mirrors is",
-      "options": [
-        "\\left(\\frac{360}{\\theta}-1\\right), \\text{if } \\frac{360}{\\theta} \\text{is even}",
-        "\\left(\\frac{360}{\\theta}\\right), \\text{if } \\frac{360}{\\theta} \\text{is even}",
-        "\\left(\\frac{360}{\\theta}+1\\right), \\text{if } \\frac{360}{\\theta} \\text{is even}",
-        "\\left(\\frac{360}{\\theta}-2\\right), \\text{if } \\frac{360}{\\theta} \\text{is even}"
-      ],
-      "answer": "\\left(\\frac{360}{\\theta}-1\\right), \\text{if } \\frac{360}{\\theta} \\text{is even}",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_001.png",
-      "tip": ""
+  {
+    "id": "ray_optics_qn_001",
+    "question": "The total number of images of the object O in the mirrors is",
+    "options": [
+      "\\left(\\frac{360}{\\theta}-1\\right), \\text{if } \\frac{360}{\\theta} \\text{is even}",
+      "\\left(\\frac{360}{\\theta}\\right), \\text{if } \\frac{360}{\\theta} \\text{is even}",
+      "\\left(\\frac{360}{\\theta}+1\\right), \\text{if } \\frac{360}{\\theta} \\text{is even}",
+      "\\left(\\frac{360}{\\theta}-2\\right), \\text{if } \\frac{360}{\\theta} \\text{is even}"
+    ],
+    "answer": "\\left(\\frac{360}{\\theta}-1\\right), \\text{if } \\frac{360}{\\theta} \\text{is even}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_002",
-      "question": "The total number of images of the object O in the mirrors is",
-      "options": [
-        "\\left(\\frac{360}{\\theta}-1\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}",
-        "\\left(\\frac{360}{\\theta}\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}",
-        "\\left(\\frac{360}{\\theta}+1\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}",
-        "\\left(\\frac{360}{\\theta}-2\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}"
-      ],
-      "answer": "\\left(\\frac{360}{\\theta}\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_002.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_001.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_002",
+    "question": "The total number of images of the object O in the mirrors is",
+    "options": [
+      "\\left(\\frac{360}{\\theta}-1\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}",
+      "\\left(\\frac{360}{\\theta}\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}",
+      "\\left(\\frac{360}{\\theta}+1\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}",
+      "\\left(\\frac{360}{\\theta}-2\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}"
+    ],
+    "answer": "\\left(\\frac{360}{\\theta}\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_003",
-      "question": "The total number of images of the object O in the mirrors is",
-      "options": [
-        "\\left(\\frac{360}{\\theta}-1\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}",
-        "\\left(\\frac{360}{\\theta}\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}",
-        "\\left(\\frac{360}{\\theta}+1\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}",
-        "\\left(\\frac{360}{\\theta}-2\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}"
-      ],
-      "answer": "\\left(\\frac{360}{\\theta}-1\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_003.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_002.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_003",
+    "question": "The total number of images of the object O in the mirrors is",
+    "options": [
+      "\\left(\\frac{360}{\\theta}-1\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}",
+      "\\left(\\frac{360}{\\theta}\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}",
+      "\\left(\\frac{360}{\\theta}+1\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}",
+      "\\left(\\frac{360}{\\theta}-2\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}"
+    ],
+    "answer": "\\left(\\frac{360}{\\theta}-1\\right), \\text{if } \\frac{360}{\\theta} \\text{is odd}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
     },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_003.png",
+    "tip": ""
+  },
 
-{
-"id": "ray_optics_qn_004",
-"question": "The mirror formula is (<i>v</i> = image distance, <i>u</i> = object distance, <i>f</i> = focal length)",
-"options": [
-"\\frac{1}{v} - \\frac{1}{u} = \\frac{1}{f}",
-"\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f}",
-"v + u = f",
-"v - u = f"
-],
-"answer": "\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f}",
-"tags": {
-"chapter": "ray_optics",
-"difficulty": "easy",
-"class": "12"
-},
-"image": "assets/images/12th/ray_optics/ray_optics_qn_004.png",
-"tip": ""
-},
-{
-"id": "ray_optics_qn_005",
-"question": "The lateral magnification in mirror is (<i>v</i> = image distance, <i>u</i> = object distance)",
-"options": [
-"\\frac{v}{u}",
-"-\\frac{v}{u}",
-"vu",
-"\\frac{1}{uv}"
-],
-"answer": "-\\frac{v}{u}",
-"tags": {
-"chapter": "ray_optics",
-"difficulty": "medium",
-"class": "12"
-},
-"image": "assets/images/12th/ray_optics/ray_optics_qn_005.png",
-"tip": ""
-},
-{
-"id": "ray_optics_qn_006",
-"question": "The lateral magnification in mirror is (<i>f</i> = focal length, <i>u</i> = object distance)",
-"options": [
-"\\frac{u}{f - u}",
-"\\frac{f}{f + u}",
-"\\frac{f}{f - u}",
-"\\frac{u}{f + u}"
-],
-"answer": "\\frac{f}{f - u}",
-"tags": {
-"chapter": "ray_optics",
-"difficulty": "medium",
-"class": "12"
-},
-"image": "assets/images/12th/ray_optics/ray_optics_qn_006.png",
-"tip": "Remember this also apart from general formula, many qns are easily solved using this."
-},
+  {
+    "id": "ray_optics_qn_004",
+    "question": "The mirror formula is (<i>v</i> = image distance, <i>u</i> = object distance, <i>f</i> = focal length)",
+    "options": [
+      "\\frac{1}{v} - \\frac{1}{u} = \\frac{1}{f}",
+      "\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f}",
+      "v + u = f",
+      "v - u = f"
+    ],
+    "answer": "\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_004.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_005",
+    "question": "The lateral magnification in mirror is (<i>v</i> = image distance, <i>u</i> = object distance)",
+    "options": [
+      "\\frac{v}{u}",
+      "-\\frac{v}{u}",
+      "vu",
+      "\\frac{1}{uv}"
+    ],
+    "answer": "-\\frac{v}{u}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_005.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_006",
+    "question": "The lateral magnification in mirror is (<i>f</i> = focal length, <i>u</i> = object distance)",
+    "options": [
+      "\\frac{u}{f - u}",
+      "\\frac{f}{f + u}",
+      "\\frac{f}{f - u}",
+      "\\frac{u}{f + u}"
+    ],
+    "answer": "\\frac{f}{f - u}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_006.png",
+    "tip": "Remember this also apart from general formula, many qns are easily solved using this."
+  },
   {
     "id": "ray_optics_qn_007",
     "question": "The longitudinal magnification of a small object of size <i>du</i> in mirror is (<i>m<sub>L</sub></i> = lateral magnification, object is placed along axis)",
@@ -181,549 +181,731 @@
     "tip": ""
   },
 
-    {
-      "id": "ray_optics_qn_011",
-      "question": "The refractive index of a medium &mu; equals (<i>c</i> = speed of light in vacuum, <i>v</i> = speed of light in medium)",
-      "options": [
-        "\\frac{v}{c}",
-        "\\frac{c}{v}",
-        "cv",
-        "\\frac{1}{cv}"
-      ],
-      "answer": "\\frac{c}{v}",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "",
-      "tip": ""
+  {
+    "id": "ray_optics_qn_011",
+    "question": "The refractive index of a medium &mu; equals (<i>c</i> = speed of light in vacuum, <i>v</i> = speed of light in medium)",
+    "options": [
+      "\\frac{v}{c}",
+      "\\frac{c}{v}",
+      "cv",
+      "\\frac{1}{cv}"
+    ],
+    "answer": "\\frac{c}{v}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_012",
-      "question": "A ray of light is reflected from a surface, the deviation &delta; of the ray is",
-      "options": [
-        "\\pi - 2\\theta",
-        "\\pi - \\theta",
-        "\\theta",
-        "\\pi + \\theta"
-      ],
-      "answer": "\\pi - 2\\theta",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_012.png",
-      "tip": ""
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_012",
+    "question": "A ray of light is reflected from a surface, the deviation &delta; of the ray is",
+    "options": [
+      "\\pi - 2\\theta",
+      "\\pi - \\theta",
+      "\\theta",
+      "\\pi + \\theta"
+    ],
+    "answer": "\\pi - 2\\theta",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_013",
-      "question": "Snells law is",
-      "options": [
-        "\\mu_1^2 \\sin r = \\mu_2^2 \\sin i",
-        "\\mu_1^2 \\sin i = \\mu_2^2 \\sin r",
-        "\\mu_2 \\sin i = \\mu_1 \\sin r",
-        "\\mu_1 \\sin i = \\mu_2 \\sin r"
-      ],
-      "answer": "\\mu_1 \\sin i = \\mu_2 \\sin r",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_013.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_012.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_013",
+    "question": "Snells law is",
+    "options": [
+      "\\mu_1^2 \\sin r = \\mu_2^2 \\sin i",
+      "\\mu_1^2 \\sin i = \\mu_2^2 \\sin r",
+      "\\mu_2 \\sin i = \\mu_1 \\sin r",
+      "\\mu_1 \\sin i = \\mu_2 \\sin r"
+    ],
+    "answer": "\\mu_1 \\sin i = \\mu_2 \\sin r",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_014",
-      "question": "The correct relation between refractive indices and frequencies of light in medium 1 and 2 is",
-      "options": [
-        "\\mu_1 \\sqrt{f_2} = \\mu_2 \\sqrt{f_1}",
-        "\\mu_1 f_2 = \\mu_2 f_1",
-        "\\mu_1 f_1 = \\mu_2 f_2",
-        "f_1 = f_2"
-      ],
-      "answer": "f_1 = f_2",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_014.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_013.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_014",
+    "question": "The correct relation between refractive indices and frequencies of light in medium 1 and 2 is",
+    "options": [
+      "\\mu_1 \\sqrt{f_2} = \\mu_2 \\sqrt{f_1}",
+      "\\mu_1 f_2 = \\mu_2 f_1",
+      "\\mu_1 f_1 = \\mu_2 f_2",
+      "f_1 = f_2"
+    ],
+    "answer": "f_1 = f_2",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_015",
-      "question": "The correct relation between refractive indices and speed of light in medium 1 and 2 is",
-      "options": [
-        "\\mu_1 v_1 = \\mu_2 v_2",
-        "\\mu_1 v_2 = \\mu_2 v_1",
-        "\\mu_1 \\sqrt{v_2} = \\mu_2 \\sqrt{v_1}",
-        "\\mu_1 \\sqrt{v_1} = \\mu_2 \\sqrt{v_2}"
-      ],
-      "answer": "\\mu_1 v_1 = \\mu_2 v_2",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_015.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_014.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_015",
+    "question": "The correct relation between refractive indices and speed of light in medium 1 and 2 is",
+    "options": [
+      "\\mu_1 v_1 = \\mu_2 v_2",
+      "\\mu_1 v_2 = \\mu_2 v_1",
+      "\\mu_1 \\sqrt{v_2} = \\mu_2 \\sqrt{v_1}",
+      "\\mu_1 \\sqrt{v_1} = \\mu_2 \\sqrt{v_2}"
+    ],
+    "answer": "\\mu_1 v_1 = \\mu_2 v_2",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
     },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_015.png",
+    "tip": ""
+  },
 
-    {
-      "id": "ray_optics_qn_016",
-      "question": "The correct relation between refractive indices and wavelength of light in medium 1 and 2 is",
-      "options": [
-        "\\mu_1 \\sqrt{\\lambda_2} = \\mu_2 \\sqrt{\\lambda_1}",
-        "\\mu_1 \\lambda_2 = \\mu_2 \\lambda_1",
-        "\\mu_1 \\lambda_1 = \\mu_2 \\lambda_2",
-        "\\mu_1 \\sqrt{\\lambda_1} = \\mu_2 \\sqrt{\\lambda_2}"
-      ],
-      "answer": "\\mu_1 \\lambda_1 = \\mu_2 \\lambda_2",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_016.png",
-      "tip": ""
+  {
+    "id": "ray_optics_qn_016",
+    "question": "The correct relation between refractive indices and wavelength of light in medium 1 and 2 is",
+    "options": [
+      "\\mu_1 \\sqrt{\\lambda_2} = \\mu_2 \\sqrt{\\lambda_1}",
+      "\\mu_1 \\lambda_2 = \\mu_2 \\lambda_1",
+      "\\mu_1 \\lambda_1 = \\mu_2 \\lambda_2",
+      "\\mu_1 \\sqrt{\\lambda_1} = \\mu_2 \\sqrt{\\lambda_2}"
+    ],
+    "answer": "\\mu_1 \\lambda_1 = \\mu_2 \\lambda_2",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_017",
-      "question": "As the ray of light travels from one medium to another, the correct relation is",
-      "options": [
-        "\\mu \\sin\\theta = const",
-        "\\mu \\cos\\theta = const",
-        "\\sqrt{\\mu} \\sin\\theta = const",
-        "\\sqrt{\\mu} \\cos\\theta = const"
-      ],
-      "answer": "\\mu \\sin\\theta = const",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_017.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_016.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_017",
+    "question": "As the ray of light travels from one medium to another, the correct relation is",
+    "options": [
+      "\\mu \\sin\\theta = const",
+      "\\mu \\cos\\theta = const",
+      "\\sqrt{\\mu} \\sin\\theta = const",
+      "\\sqrt{\\mu} \\cos\\theta = const"
+    ],
+    "answer": "\\mu \\sin\\theta = const",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_018",
-      "question": "The apparent depth <i>d<sub>app</sub></i> of the object is",
-      "options": [
-        "\\mu d",
-        "\\frac{d}{\\mu}",
-        "\\frac{1}{\\mu d}",
-        "\\frac{\\mu}{d}"
-      ],
-      "answer": "\\frac{d}{\\mu}",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_018.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_017.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_018",
+    "question": "The apparent depth <i>d<sub>app</sub></i> of the object is",
+    "options": [
+      "\\mu d",
+      "\\frac{d}{\\mu}",
+      "\\frac{1}{\\mu d}",
+      "\\frac{\\mu}{d}"
+    ],
+    "answer": "\\frac{d}{\\mu}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_019",
-      "question": "Which of the following is correct Newtons formula",
-      "options": [
-        "d_2^2 = fd_1",
-        "d_1^2 = fd_2",
-        "d_1d_2 = f^2",
-        "d_1+d_2=f"
-      ],
-      "answer": "d_1d_2 = f^2",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_019.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_018.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_019",
+    "question": "Which of the following is correct Newtons formula",
+    "options": [
+      "d_2^2 = fd_1",
+      "d_1^2 = fd_2",
+      "d_1d_2 = f^2",
+      "d_1+d_2=f"
+    ],
+    "answer": "d_1d_2 = f^2",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_020",
-      "question": "The lateral shift of the light ray as it passes through the glass slab is",
-      "options": [
-        "t \\cos r \\sec i",
-        "t \\cos r \\sec(i-r)",
-        "t \\sec r \\cos i",
-        "t \\sec r \\cos(i-r)"
-      ],
-      "answer": "t \\sec r \\cos(i-r)",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "god",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_020.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_019.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_020",
+    "question": "The lateral shift of the light ray as it passes through the glass slab is",
+    "options": [
+      "t \\cos r \\sec i",
+      "t \\cos r \\sec(i-r)",
+      "t \\sec r \\cos i",
+      "t \\sec r \\cos(i-r)"
+    ],
+    "answer": "t \\sec r \\cos(i-r)",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "god",
+      "class": "12"
     },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_020.png",
+    "tip": ""
+  },
 
-    {
-      "id": "ray_optics_qn_021",
-      "question": "A ray of light is refracted at a surface, the deviation &delta; of the ray is",
-      "options": [
-        "i+r",
-        "i-r",
-        "i-2r",
-        "i+2r"
-      ],
-      "answer": "i-r",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_021.png",
-      "tip": ""
+  {
+    "id": "ray_optics_qn_021",
+    "question": "A ray of light is refracted at a surface, the deviation &delta; of the ray is",
+    "options": [
+      "i+r",
+      "i-r",
+      "i-2r",
+      "i+2r"
+    ],
+    "answer": "i-r",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_022",
-      "question": "Lens formula is (<i>v</i> = image distance, <i>u</i> = object distance, <i>f</i> = focal length)",
-      "options": [
-        "\\frac{1}{f} = \\frac{1}{v} - \\frac{1}{u}",
-        "\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f}",
-        "v + u = f",
-        "v - u = f"
-      ],
-      "answer": "\\frac{1}{f} = \\frac{1}{v} - \\frac{1}{u}",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_022.png",
-      "tip": "Trick to remember: Lens 'Less' So Lens formulas has '-' and magnification has '+' !!"
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_021.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_022",
+    "question": "Lens formula is (<i>v</i> = image distance, <i>u</i> = object distance, <i>f</i> = focal length)",
+    "options": [
+      "\\frac{1}{f} = \\frac{1}{v} - \\frac{1}{u}",
+      "\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f}",
+      "v + u = f",
+      "v - u = f"
+    ],
+    "answer": "\\frac{1}{f} = \\frac{1}{v} - \\frac{1}{u}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_023",
-      "question": "The lateral magnification in Lens is (<i>v</i> = image distance, <i>u</i> = object distance)",
-      "options": [
-        "\\frac{v}{u}",
-        "-\\frac{v}{u}",
-        "vu",
-        "\\frac{1}{uv}"
-      ],
-      "answer": "\\frac{v}{u}",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_023.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_022.png",
+    "tip": "Trick to remember: Lens 'Less' So Lens formulas has '-' and magnification has '+' !!"
+  },
+  {
+    "id": "ray_optics_qn_023",
+    "question": "The lateral magnification in Lens is (<i>v</i> = image distance, <i>u</i> = object distance)",
+    "options": [
+      "\\frac{v}{u}",
+      "-\\frac{v}{u}",
+      "vu",
+      "\\frac{1}{uv}"
+    ],
+    "answer": "\\frac{v}{u}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_024",
-      "question": "The optical power of a Lens is (<i>f</i> = focal length, <i>u</i> = object distance)",
-      "options": [
-        "-f",
-        "-\\frac{1}{f}",
-        "\\frac{1}{f}",
-        "f"
-      ],
-      "answer": "\\frac{1}{f}",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_024.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_023.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_024",
+    "question": "The optical power of a Lens is (<i>f</i> = focal length, <i>u</i> = object distance)",
+    "options": [
+      "-f",
+      "-\\frac{1}{f}",
+      "\\frac{1}{f}",
+      "f"
+    ],
+    "answer": "\\frac{1}{f}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_025",
-      "question": "The shift of image due to the glass slab is",
-      "options": [
-        "t(1+\\frac{1}{\\mu})",
-        "\\mu t",
-        "t(1-\\frac{1}{\\mu})",
-        "\\frac{t}{\\mu}"
-      ],
-      "answer": "t(1-\\frac{1}{\\mu})",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_025.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_024.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_025",
+    "question": "The shift of image due to the glass slab is",
+    "options": [
+      "t(1+\\frac{1}{\\mu})",
+      "\\mu t",
+      "t(1-\\frac{1}{\\mu})",
+      "\\frac{t}{\\mu}"
+    ],
+    "answer": "t(1-\\frac{1}{\\mu})",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
     },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_025.png",
+    "tip": ""
+  },
 
-    {
-      "id": "ray_optics_qn_026",
-      "question": "The critical angle &theta;<sub>c</sub> when light ray goes from medium 2 to medium 1 is (&mu;<sub>2</sub> > &mu;<sub>1</sub>)",
-      "options": [
-        "\\cos^{-1}(\\frac{\\mu_2}{\\mu_1})",
-        "\\sin^{-1}(\\frac{\\mu_2}{\\mu_1})",
-        "\\sin^{-1}(\\frac{\\mu_1}{\\mu_2})",
-        "\\cos^{-1}(\\frac{\\mu_1}{\\mu_2})"
-      ],
-      "answer": "\\sin^{-1}(\\frac{\\mu_1}{\\mu_2})",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_026.png",
-      "tip": ""
+  {
+    "id": "ray_optics_qn_026",
+    "question": "The critical angle &theta;<sub>c</sub> when light ray goes from medium 2 to medium 1 is (&mu;<sub>2</sub> > &mu;<sub>1</sub>)",
+    "options": [
+      "\\cos^{-1}(\\frac{\\mu_2}{\\mu_1})",
+      "\\sin^{-1}(\\frac{\\mu_2}{\\mu_1})",
+      "\\sin^{-1}(\\frac{\\mu_1}{\\mu_2})",
+      "\\cos^{-1}(\\frac{\\mu_1}{\\mu_2})"
+    ],
+    "answer": "\\sin^{-1}(\\frac{\\mu_1}{\\mu_2})",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_027",
-      "question": "The correct relation for image and object distances for refraction at spherical surface is",
-      "options": [
-        "\\frac{\\mu_2}{v} + \\frac{\\mu_1}{u} = \\frac{\\mu_2 + \\mu_1}{R}",
-        "\\frac{\\mu_2}{v} - \\frac{\\mu_1}{u} = \\frac{\\mu_2 + \\mu_1}{R}",
-        "\\frac{\\mu_2}{v} + \\frac{\\mu_1}{u} = \\frac{\\mu_2 - \\mu_1}{R}",
-        "\\frac{\\mu_2}{v} - \\frac{\\mu_1}{u} = \\frac{\\mu_2 - \\mu_1}{R}"
-      ],
-      "answer": "\\frac{\\mu_2}{v} - \\frac{\\mu_1}{u} = \\frac{\\mu_2 - \\mu_1}{R}",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_027.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_026.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_027",
+    "question": "The correct relation for image and object distances for refraction at spherical surface is",
+    "options": [
+      "\\frac{\\mu_2}{v} + \\frac{\\mu_1}{u} = \\frac{\\mu_2 + \\mu_1}{R}",
+      "\\frac{\\mu_2}{v} - \\frac{\\mu_1}{u} = \\frac{\\mu_2 + \\mu_1}{R}",
+      "\\frac{\\mu_2}{v} + \\frac{\\mu_1}{u} = \\frac{\\mu_2 - \\mu_1}{R}",
+      "\\frac{\\mu_2}{v} - \\frac{\\mu_1}{u} = \\frac{\\mu_2 - \\mu_1}{R}"
+    ],
+    "answer": "\\frac{\\mu_2}{v} - \\frac{\\mu_1}{u} = \\frac{\\mu_2 - \\mu_1}{R}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_028",
-      "question": "The magnification at the spherical surface is given by",
-      "options": [
-        "\\frac{\\mu_1 v}{\\mu_2 u}",
-        "-\\frac{v}{u}",
-        "\\frac{v}{u}",
-        "\\frac{\\mu_2 v}{\\mu_1 u}"
-      ],
-      "answer": "\\frac{\\mu_1 v}{\\mu_2 u}",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_028.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_027.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_028",
+    "question": "The magnification at the spherical surface is given by",
+    "options": [
+      "\\frac{\\mu_1 v}{\\mu_2 u}",
+      "-\\frac{v}{u}",
+      "\\frac{v}{u}",
+      "\\frac{\\mu_2 v}{\\mu_1 u}"
+    ],
+    "answer": "\\frac{\\mu_1 v}{\\mu_2 u}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_029",
-      "question": "The lateral magnification in Lens is (<i>f</i> = focal length, <i>u</i> = object distance)",
-      "options": [
-        "\\frac{f}{f-u}",
-        "\\frac{f}{f+u}",
-        "-\\frac{f}{f-u}",
-        "-\\frac{u}{f+u}"
-      ],
-      "answer": "\\frac{f}{f+u}",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_029.png",
-      "tip": "Remember this also apart from general formula, many qns are easily solved using this."
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_028.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_029",
+    "question": "The lateral magnification in Lens is (<i>f</i> = focal length, <i>u</i> = object distance)",
+    "options": [
+      "\\frac{f}{f-u}",
+      "\\frac{f}{f+u}",
+      "-\\frac{f}{f-u}",
+      "-\\frac{u}{f+u}"
+    ],
+    "answer": "\\frac{f}{f+u}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_030",
-      "question": "Lens maker formula is",
-      "options": [
-        "\\frac{1}{f} = (\\frac{\\mu_2}{\\mu_1}+1)(\\frac{1}{R_1} + \\frac{1}{R_2})",
-        "\\frac{1}{f} = (\\frac{\\mu_2}{\\mu_1}+1)(\\frac{1}{R_1} - \\frac{1}{R_2})",
-        "\\frac{1}{f} = (\\frac{\\mu_2}{\\mu_1}-1)(\\frac{1}{R_1} - \\frac{1}{R_2})",
-        "\\frac{1}{f} = (\\frac{\\mu_2}{\\mu_1}-1)(\\frac{1}{R_1} + \\frac{1}{R_2})"
-      ],
-      "answer": "\\frac{1}{f} = (\\frac{\\mu_2}{\\mu_1}-1)(\\frac{1}{R_1} - \\frac{1}{R_2})",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "god",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_030.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_029.png",
+    "tip": "Remember this also apart from general formula, many qns are easily solved using this."
+  },
+  {
+    "id": "ray_optics_qn_030",
+    "question": "Lens maker formula is",
+    "options": [
+      "\\frac{1}{f} = (\\frac{\\mu_2}{\\mu_1}+1)(\\frac{1}{R_1} + \\frac{1}{R_2})",
+      "\\frac{1}{f} = (\\frac{\\mu_2}{\\mu_1}+1)(\\frac{1}{R_1} - \\frac{1}{R_2})",
+      "\\frac{1}{f} = (\\frac{\\mu_2}{\\mu_1}-1)(\\frac{1}{R_1} - \\frac{1}{R_2})",
+      "\\frac{1}{f} = (\\frac{\\mu_2}{\\mu_1}-1)(\\frac{1}{R_1} + \\frac{1}{R_2})"
+    ],
+    "answer": "\\frac{1}{f} = (\\frac{\\mu_2}{\\mu_1}-1)(\\frac{1}{R_1} - \\frac{1}{R_2})",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "god",
+      "class": "12"
     },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_030.png",
+    "tip": ""
+  },
 
-    {
-      "id": "ray_optics_qn_031",
-      "question": "The equivalent focal length for two thin lenses in contact is",
-      "options": [
-        "\\frac{1}{f_{eq}} = \\frac{1}{f_1} + \\frac{1}{f_2}",
-        "f_{eq} = f_1 + f_2",
-        "f_{eq} = f_1 - f_2",
-        "\\frac{1}{f_{eq}} = \\frac{1}{f_1} - \\frac{1}{f_2}"
-      ],
-      "answer": "\\frac{1}{f_{eq}} = \\frac{1}{f_1} + \\frac{1}{f_2}",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_031.png",
-      "tip": ""
+  {
+    "id": "ray_optics_qn_031",
+    "question": "The equivalent focal length for two thin lenses in contact is",
+    "options": [
+      "\\frac{1}{f_{eq}} = \\frac{1}{f_1} + \\frac{1}{f_2}",
+      "f_{eq} = f_1 + f_2",
+      "f_{eq} = f_1 - f_2",
+      "\\frac{1}{f_{eq}} = \\frac{1}{f_1} - \\frac{1}{f_2}"
+    ],
+    "answer": "\\frac{1}{f_{eq}} = \\frac{1}{f_1} + \\frac{1}{f_2}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_032",
-      "question": "The equivalent power for two thin lenses in contact is",
-      "options": [
-        "\\frac{1}{P_{eq}} = \\frac{1}{P_1} + \\frac{1}{P_2}",
-        "P_{eq} = P_1 + P_2",
-        "P_{eq} = P_1 - P_2",
-        "\\frac{1}{P_{eq}} = \\frac{1}{P_1} - \\frac{1}{P_2}"
-      ],
-      "answer": "P_{eq} = P_1 + P_2",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_032.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_031.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_032",
+    "question": "The equivalent power for two thin lenses in contact is",
+    "options": [
+      "\\frac{1}{P_{eq}} = \\frac{1}{P_1} + \\frac{1}{P_2}",
+      "P_{eq} = P_1 + P_2",
+      "P_{eq} = P_1 - P_2",
+      "\\frac{1}{P_{eq}} = \\frac{1}{P_1} - \\frac{1}{P_2}"
+    ],
+    "answer": "P_{eq} = P_1 + P_2",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_033",
-      "question": "The equivalent magnification for two thin lenses in contact is",
-      "options": [
-        "m_{eq} = m_1 + m_2",
-        "m_{eq} = m_1 - m_2",
-        "m_{eq} = m_1 m_2",
-        "m_{eq} = \\frac{m_1^2}{m_2}"
-      ],
-      "answer": "m_{eq} = m_1 m_2",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_033.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_032.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_033",
+    "question": "The equivalent magnification for two thin lenses in contact is",
+    "options": [
+      "m_{eq} = m_1 + m_2",
+      "m_{eq} = m_1 - m_2",
+      "m_{eq} = m_1 m_2",
+      "m_{eq} = \\frac{m_1^2}{m_2}"
+    ],
+    "answer": "m_{eq} = m_1 m_2",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_034",
-      "question": "The magnifying power of a simple microscope for normal adjustment is (<i>D</i> = least distance of distinct vision, <i>f</i> = focal length of lens)",
-      "options": [
-        "\\frac{D}{f}",
-        "1+\\frac{f}{D}",
-        "\\frac{f}{D}",
-        "1+\\frac{D}{f}"
-      ],
-      "answer": "\\frac{D}{f}",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_034.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_033.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_034",
+    "question": "The magnifying power of a simple microscope for normal adjustment is (<i>D</i> = least distance of distinct vision, <i>f</i> = focal length of lens)",
+    "options": [
+      "\\frac{D}{f}",
+      "1+\\frac{f}{D}",
+      "\\frac{f}{D}",
+      "1+\\frac{D}{f}"
+    ],
+    "answer": "\\frac{D}{f}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_035",
-      "question": "The magnifying power of a simple microscope for image formed at D is (<i>D</i> = least distance of distinct vision, <i>f</i> = focal length of lens)",
-      "options": [
-        "\\frac{f}{D}",
-        "1+\\frac{f}{D}",
-        "\\frac{D}{f}",
-        "1+\\frac{D}{f}"
-      ],
-      "answer": "1+\\frac{D}{f}",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_035.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_034.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_035",
+    "question": "The magnifying power of a simple microscope for image formed at D is (<i>D</i> = least distance of distinct vision, <i>f</i> = focal length of lens)",
+    "options": [
+      "\\frac{f}{D}",
+      "1+\\frac{f}{D}",
+      "\\frac{D}{f}",
+      "1+\\frac{D}{f}"
+    ],
+    "answer": "1+\\frac{D}{f}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
     },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_035.png",
+    "tip": ""
+  },
 
-    {
-      "id": "ray_optics_qn_036",
-      "question": "The magnifying power of a compound microscope for image formed at normal adjustment is (<i>D</i> = least distance of distinct vision, <i>L</i> = tube length, <i>f<sub>o</sub></i> = focal length of objective, <i>f<sub>e</sub></i> = focal length of eyepiece)",
-      "options": [
-        "\\frac{L}{f_o}(\\frac{D}{f_e})",
-        "\\frac{L}{f_e}(\\frac{D}{f_o})",
-        "\\frac{L}{f_o}(1+\\frac{f_e}{D})",
-        "\\frac{f_o}{L}(\\frac{f_e}{D})"
-      ],
-      "answer": "\\frac{L}{f_o}(\\frac{D}{f_e})",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_036.png",
-      "tip": "The definition of tube length slightly differs from NCERT and other books! Go with NCERT definition."
+  {
+    "id": "ray_optics_qn_036",
+    "question": "The magnifying power of a compound microscope for image formed at normal adjustment is (<i>D</i> = least distance of distinct vision, <i>L</i> = tube length, <i>f<sub>o</sub></i> = focal length of objective, <i>f<sub>e</sub></i> = focal length of eyepiece)",
+    "options": [
+      "\\frac{L}{f_o}(\\frac{D}{f_e})",
+      "\\frac{L}{f_e}(\\frac{D}{f_o})",
+      "\\frac{L}{f_o}(1+\\frac{f_e}{D})",
+      "\\frac{f_o}{L}(\\frac{f_e}{D})"
+    ],
+    "answer": "\\frac{L}{f_o}(\\frac{D}{f_e})",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_037",
-      "question": "The magnifying power of a telescope for normal adjustment is (<i>f<sub>o</sub></i> = focal length of objective, <i>f<sub>e</sub></i> = focal length of eyepiece)",
-      "options": [
-        "1+\\frac{f_o}{f_e}",
-        "1+\\frac{f_e}{f_o}",
-        "\\frac{f_o}{f_e}",
-        "\\frac{f_e}{f_o}"
-      ],
-      "answer": "\\frac{f_o}{f_e}",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_037.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_036.png",
+    "tip": "The definition of tube length slightly differs from NCERT and other books! Go with NCERT definition."
+  },
+  {
+    "id": "ray_optics_qn_037",
+    "question": "The magnifying power of a telescope for normal adjustment is (<i>f<sub>o</sub></i> = focal length of objective, <i>f<sub>e</sub></i> = focal length of eyepiece)",
+    "options": [
+      "1+\\frac{f_o}{f_e}",
+      "1+\\frac{f_e}{f_o}",
+      "\\frac{f_o}{f_e}",
+      "\\frac{f_e}{f_o}"
+    ],
+    "answer": "\\frac{f_o}{f_e}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_038",
-      "question": "The tube length of a telescope is (<i>f<sub>o</sub></i> = focal length of objective, <i>f<sub>e</sub></i> = focal length of eyepiece)",
-      "options": [
-        "f_o-f_e",
-        "f_o+f_e",
-        "\\frac{f_o}{f_e}",
-        "\\frac{f_e}{f_o}"
-      ],
-      "answer": "f_o+f_e",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_038.png",
-      "tip": ""
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_037.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_038",
+    "question": "The tube length of a telescope is (<i>f<sub>o</sub></i> = focal length of objective, <i>f<sub>e</sub></i> = focal length of eyepiece)",
+    "options": [
+      "f_o-f_e",
+      "f_o+f_e",
+      "\\frac{f_o}{f_e}",
+      "\\frac{f_e}{f_o}"
+    ],
+    "answer": "f_o+f_e",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_039",
-      "question": "For a person with myopia, the correction lens must be <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> and its focal length equals <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>",
-      "options": [
-        "\\text{Concave, Near point}",
-        "\\text{Concave, Far point}",
-        "\\text{Convex, Near Point}",
-        "\\text{Convex, Far point}"
-      ],
-      "answer": "\\text{Concave, Far point}",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_039.png",
-      "tip": "Trick to remember, Myopia – Minus(Concave lens)"
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_038.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_039",
+    "question": "For a person with myopia, the correction lens must be <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> and its focal length equals <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>",
+    "options": [
+      "\\text{Concave, Near point}",
+      "\\text{Concave, Far point}",
+      "\\text{Convex, Near Point}",
+      "\\text{Convex, Far point}"
+    ],
+    "answer": "\\text{Concave, Far point}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
     },
-    {
-      "id": "ray_optics_qn_040",
-      "question": "The focal length <i>f</i> of a lens found from the displacement formula is",
-      "options": [
-        "\\frac{D^2-x^2}{2D}",
-        "\\frac{D^2-x^2}{2d}",
-        "\\frac{D^2-x^2}{4D}",
-        "\\frac{D^2-4x}{2D}"
-      ],
-      "answer": "\\frac{D^2-x^2}{4D}",
-      "tags": {
-        "chapter": "ray_optics",
-        "difficulty": "god",
-        "class": "12"
-      },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_040.png",
-      "tip": ""
-    }
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_039.png",
+    "tip": "Trick to remember, Myopia – Minus(Concave lens)"
+  },
+  {
+    "id": "ray_optics_qn_040",
+    "question": "The focal length <i>f</i> of a lens found from the displacement formula is",
+    "options": [
+      "\\frac{D^2-x^2}{2D}",
+      "\\frac{D^2-x^2}{2d}",
+      "\\frac{D^2-x^2}{4D}",
+      "\\frac{D^2-4x}{2D}"
+    ],
+    "answer": "\\frac{D^2-x^2}{4D}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_040.png",
+    "tip": ""
+  },
+
+  {
+    "id": "ray_optics_qn_041",
+    "question": "The deviation for thin prism shown is (&mu; = refractive index, <i>A</i> = prism angle)",
+    "options": [
+      "\\mu A",
+      "(\\mu-1)A",
+      "(\\mu-1)\\frac{A}{2}",
+      "\\frac{\\mu A}{2}"
+    ],
+    "answer": "(\\mu-1)A",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_041.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_042",
+    "question": "In the diagram shown, the correct relation is",
+    "options": [
+      "\\delta = (i_1-i_2) + A",
+      "\\delta = (i_1+i_2) + A",
+      "\\delta = (i_1+i_2) - A",
+      "\\delta = (i_1+i_2)"
+    ],
+    "answer": "\\delta = (i_1+i_2) - A",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_042.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_043",
+    "question": "In the diagram shown, the correct relation is",
+    "options": [
+      "r_1-r_2 = A",
+      "r_1+r_2 = A",
+      "r_1r_2 = A",
+      "r_1+r_2 = 2A"
+    ],
+    "answer": "r_1+r_2 = A",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_043.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_044",
+    "question": "For a person with hypermetropia, the correction is done by",
+    "options": [
+      "\\text{Convex Lens}",
+      "\\text{Concave lens}",
+      "\\text{Cylindrical lens}",
+      "\\text{Spherical lens}"
+    ],
+    "answer": "\\text{Convex Lens}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "",
+    "tip": "Trick to remember, Myopia - Minus(Concave lens)... So hyperopia is Convex lens"
+  },
+  {
+    "id": "ray_optics_qn_045",
+    "question": "Angle of dispersion is given by (&delta;<sub>c</sub> = deviation of a color)",
+    "options": [
+      "\\delta_b - \\delta_r",
+      "\\delta_v - \\delta_r",
+      "\\frac{\\delta_v+\\delta_r}{2}",
+      "\\delta_v + \\delta_r"
+    ],
+    "answer": "\\delta_v - \\delta_r",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_045.png",
+    "tip": ""
+  },
+
+  {
+    "id": "ray_optics_qn_046",
+    "question": "Dispersive power of a prism is given by (&delta;<sub>c</sub> = deviation of a color)",
+    "options": [
+      "\\frac{\\delta_v+\\delta_r}{2\\delta_y}",
+      "\\frac{\\delta_v-\\delta_r}{\\delta_y}",
+      "\\frac{\\delta_v+\\delta_r}{\\delta_y}",
+      "\\frac{\\delta_v-\\delta_r}{2\\delta_y}"
+    ],
+    "answer": "\\frac{\\delta_v-\\delta_r}{\\delta_y}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_046.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_047",
+    "question": "Cauchy's formula for refractive index &mu; is (&lambda; = wavelength of light, A, B are constants)",
+    "options": [
+      "A+\\frac{B}{\\lambda^2}",
+      "A+\\frac{B}{\\lambda}",
+      "A+B\\lambda",
+      "A-B\\lambda"
+    ],
+    "answer": "A+\\frac{B}{\\lambda^2}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_048",
+    "question": "The refractive index of prism &mu; in terms of prism angle <i>A</i> and minimum deviation &delta;<sub>m</sub> is",
+    "options": [
+      "\\frac{\\sin(\\frac{A+\\delta_m}{2})}{\\sin(\\frac{A}{2})}",
+      "\\frac{\\sin(\\frac{A-\\delta_m}{2})}{\\sin(\\frac{A}{2})}",
+      "\\frac{\\sin(\\frac{A+\\delta_m}{2})}{\\sin(\\frac{A}{2})}",
+      "\\frac{\\sin(\\frac{A-\\delta_m}{2})}{\\sin(\\frac{A}{2})}"
+    ],
+    "answer": "\\frac{\\sin(\\frac{A+\\delta_m}{2})}{\\sin(\\frac{A}{2})}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_048.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_049",
+    "question": "Snells law in vector form is",
+    "options": [
+      "\\mu_2 |\\vec{i} \\times \\hat{n}| = \\mu_1 |\\vec{r} \\times \\hat{n}|",
+      "\\mu_1 |\\vec{i} \\times \\hat{n}| = \\mu_2 |\\vec{r} \\times \\hat{n}|",
+      "\\mu_1 (\\vec{i} \\cdot \\hat{n}) = \\mu_2 (\\vec{r} \\cdot \\hat{n})",
+      "\\mu_2 (\\vec{i} \\cdot \\hat{n}) = \\mu_1 (\\vec{r} \\cdot \\hat{n})"
+    ],
+    "answer": "\\mu_1 |\\vec{i} \\times \\hat{n}| = \\mu_2 |\\vec{r} \\times \\hat{n}|",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_049.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_050",
+    "question": "For Achromatic combination of lenses, the condition is (&omega; = dispersive power, <i>f</i> = focal length)",
+    "options": [
+      "\\frac{\\omega_1}{f_1} + \\frac{\\omega_2}{f_2} = 0",
+      "\\omega_1 f_2 + \\omega_2 f_1 = 0",
+      "\\frac{\\omega_1}{f_2} + \\frac{\\omega_2}{f_1} = 0",
+      "\\omega_1 f_1 + \\omega_2 f_2 = 0"
+    ],
+    "answer": "\\frac{\\omega_1}{f_1} + \\frac{\\omega_2}{f_2} = 0",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_050.png",
+    "tip": ""
+  }
 ]

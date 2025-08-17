@@ -12814,6 +12814,188 @@
       "tip": ""
     },
 
+  {
+    "id": "ray_optics_qn_041",
+    "question": "The deviation for thin prism shown is (&mu; = refractive index, <i>A</i> = prism angle)",
+    "options": [
+      "\\mu A",
+      "(\\mu-1)A",
+      "(\\mu-1)\\frac{A}{2}",
+      "\\frac{\\mu A}{2}"
+    ],
+    "answer": "(\\mu-1)A",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_041.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_042",
+    "question": "In the diagram shown, the correct relation is",
+    "options": [
+      "\\delta = (i_1-i_2) + A",
+      "\\delta = (i_1+i_2) + A",
+      "\\delta = (i_1+i_2) - A",
+      "\\delta = (i_1+i_2)"
+    ],
+    "answer": "\\delta = (i_1+i_2) - A",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_042.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_043",
+    "question": "In the diagram shown, the correct relation is",
+    "options": [
+      "r_1-r_2 = A",
+      "r_1+r_2 = A",
+      "r_1r_2 = A",
+      "r_1+r_2 = 2A"
+    ],
+    "answer": "r_1+r_2 = A",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_043.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_044",
+    "question": "For a person with hypermetropia, the correction is done by",
+    "options": [
+      "\\text{Convex Lens}",
+      "\\text{Concave lens}",
+      "\\text{Cylindrical lens}",
+      "\\text{Spherical lens}"
+    ],
+    "answer": "\\text{Convex Lens}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "",
+    "tip": "Trick to remember, Myopia - Minus(Concave lens)... So hyperopia is Convex lens"
+  },
+  {
+    "id": "ray_optics_qn_045",
+    "question": "Angle of dispersion is given by (&delta;<sub>c</sub> = deviation of a color)",
+    "options": [
+      "\\delta_b - \\delta_r",
+      "\\delta_v - \\delta_r",
+      "\\frac{\\delta_v+\\delta_r}{2}",
+      "\\delta_v + \\delta_r"
+    ],
+    "answer": "\\delta_v - \\delta_r",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_045.png",
+    "tip": ""
+  },
+
+  {
+    "id": "ray_optics_qn_046",
+    "question": "Dispersive power of a prism is given by (&delta;<sub>c</sub> = deviation of a color)",
+    "options": [
+      "\\frac{\\delta_v+\\delta_r}{2\\delta_y}",
+      "\\frac{\\delta_v-\\delta_r}{\\delta_y}",
+      "\\frac{\\delta_v+\\delta_r}{\\delta_y}",
+      "\\frac{\\delta_v-\\delta_r}{2\\delta_y}"
+    ],
+    "answer": "\\frac{\\delta_v-\\delta_r}{\\delta_y}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_046.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_047",
+    "question": "Cauchy's formula for refractive index &mu; is (&lambda; = wavelength of light, A, B are constants)",
+    "options": [
+      "A+\\frac{B}{\\lambda^2}",
+      "A+\\frac{B}{\\lambda}",
+      "A+B\\lambda",
+      "A-B\\lambda"
+    ],
+    "answer": "A+\\frac{B}{\\lambda^2}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_048",
+    "question": "The refractive index of prism &mu; in terms of prism angle <i>A</i> and minimum deviation &delta;<sub>m</sub> is",
+    "options": [
+      "\\frac{\\sin(\\frac{A+\\delta_m}{2})}{\\sin(\\frac{A}{2})}",
+      "\\frac{\\sin(\\frac{A-\\delta_m}{2})}{\\sin(\\frac{A}{2})}",
+      "\\frac{\\sin(\\frac{A+\\delta_m}{2})}{\\sin(\\frac{A}{2})}",
+      "\\frac{\\sin(\\frac{A-\\delta_m}{2})}{\\sin(\\frac{A}{2})}"
+    ],
+    "answer": "\\frac{\\sin(\\frac{A+\\delta_m}{2})}{\\sin(\\frac{A}{2})}",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_048.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_049",
+    "question": "Snells law in vector form is",
+    "options": [
+      "\\mu_2 |\\vec{i} \\times \\hat{n}| = \\mu_1 |\\vec{r} \\times \\hat{n}|",
+      "\\mu_1 |\\vec{i} \\times \\hat{n}| = \\mu_2 |\\vec{r} \\times \\hat{n}|",
+      "\\mu_1 (\\vec{i} \\cdot \\hat{n}) = \\mu_2 (\\vec{r} \\cdot \\hat{n})",
+      "\\mu_2 (\\vec{i} \\cdot \\hat{n}) = \\mu_1 (\\vec{r} \\cdot \\hat{n})"
+    ],
+    "answer": "\\mu_1 |\\vec{i} \\times \\hat{n}| = \\mu_2 |\\vec{r} \\times \\hat{n}|",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_049.png",
+    "tip": ""
+  },
+  {
+    "id": "ray_optics_qn_050",
+    "question": "For Achromatic combination of lenses, the condition is (&omega; = dispersive power, <i>f</i> = focal length)",
+    "options": [
+      "\\frac{\\omega_1}{f_1} + \\frac{\\omega_2}{f_2} = 0",
+      "\\omega_1 f_2 + \\omega_2 f_1 = 0",
+      "\\frac{\\omega_1}{f_2} + \\frac{\\omega_2}{f_1} = 0",
+      "\\omega_1 f_1 + \\omega_2 f_2 = 0"
+    ],
+    "answer": "\\frac{\\omega_1}{f_1} + \\frac{\\omega_2}{f_2} = 0",
+    "tags": {
+      "chapter": "ray_optics",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_050.png",
+    "tip": ""
+  },
+
     {
       "id": "semiconductors_qn_001",
       "question": "The energy band gap (<i>E<sub>g</sub></i>) in conductors is",
