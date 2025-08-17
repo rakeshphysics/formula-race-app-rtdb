@@ -7,8 +7,6 @@
     android:label="Formula Racing"
     android:icon="@mipmap/ic_launcher">
 
-    <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/app_id_games" />
-    <meta-data android:name="com.google.android.play.games.app_name" android:value="true" />
     <meta-data android:name="com.google.android.play.games.is_game" android:value="false" />
 
     <uses-library android:name="org.apache.http.legacy" android:required="false"/>

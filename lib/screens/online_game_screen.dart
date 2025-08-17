@@ -988,43 +988,43 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   }
 
   void listenToGameOverFlag() {
-    final gameOverRef = _database.child('matches/${widget.matchId}/gameOver');
+    final gameOverRef = _database.child('matches/${widget.matchId}'); // 👈 Listen to the whole match node
 
     gameOverRef.onValue.listen((DatabaseEvent event) async {
-      final value = event.snapshot.value;
-      if (value == true && !gameOver) {
-        gameOver = true;
-        ////////print("🛑 Game over flag received — showing results");
+      final matchData = event.snapshot.value as Map<dynamic, dynamic>?;
 
-        // Inside listenToGameOverFlag()
-        DataSnapshot scoresSnapshot = await _database.child('matches/${widget.matchId}/scores').get();
+      if (matchData != null) {
+        final bool gameOverFlag = matchData['gameOver'] as bool? ?? false; // Extract 'gameOver'
+        final bool opponentLeftFromDb = matchData['opponentLeft'] as bool? ?? false; // Extract 'opponentLeft'
 
+        if (gameOverFlag == true && !gameOver) {
+          gameOver = true;
+          //print("🛑 Game over flag received — showing results");
 
-        Map<dynamic, dynamic> scores = scoresSnapshot.value as Map<dynamic, dynamic>? ?? {}; // ADD '? ?? {}'
+          DataSnapshot scoresSnapshot = await _database.child('matches/${widget.matchId}/scores').get();
+          Map<dynamic, dynamic> scores = scoresSnapshot.value as Map<dynamic, dynamic>? ?? {};
 
-        ////print("🔍 DEBUG RESULT: Scores retrieved for navigation: $scores"); // Add debug ////print
-
-        if (mounted) {
-          ////print("➡️ DEBUG GAME OVER FLAG: Navigating to OnlineResultScreen with scores: $scores"); // Add scores to ////print
-          Navigator.of(context).pushReplacement(
-            MaterialPageRoute(
-              builder: (context) => OnlineResultScreen(
-                scores: scores,
-                playerId: widget.playerId,
-                isPlayer1: widget.isPlayer1,
-                opponentLeftGame: false,
-                totalQuestions: totalQuestions,
-                onlineIncorrectAnswers: onlineResponses,
+          if (mounted) {
+            //print("➡️ DEBUG GAME OVER FLAG: Navigating to OnlineResultScreen with scores: $scores");
+            Navigator.of(context).pushReplacement(
+              MaterialPageRoute(
+                builder: (context) => OnlineResultScreen(
+                  scores: scores,
+                  playerId: widget.playerId,
+                  isPlayer1: widget.isPlayer1,
+                  opponentLeftGame: opponentLeftFromDb, // ✨ Use the variable that holds the correct value ✨
+                  totalQuestions: totalQuestions,
+                  onlineIncorrectAnswers: onlineResponses,
+                ),
               ),
-            ),
-          );
-        } else {
-          ////print("🚫 DEBUG GAME OVER FLAG: Widget not mounted, cannot navigate. Scores: $scores");
+            );
+          } else {
+            //print("🚫 DEBUG GAME OVER FLAG: Widget not mounted, cannot navigate. Scores: $scores");
+          }
         }
       }
     });
   }
-
 
 
   // ............. Chunk 10 SHOW RESULTS .............
