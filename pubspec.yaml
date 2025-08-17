@@ -102,7 +102,7 @@ flutter:
     - assets/images/12th/emi/
     - assets/images/12th/ac/
     - assets/images/12th/ray_optics/
-    #- assets/images/12th/wave_optics/
+    - assets/images/12th/wave_optics/
     - assets/images/12th/modern_physics/
     #- assets/images/12th/semiconductors/
     #- assets/images/12th/em_waves/
