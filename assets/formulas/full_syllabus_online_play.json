@@ -13258,7 +13258,7 @@
         "\\left(\\frac{A_1 - A_2}{A_1 + A_2}\\right)^2",
         "\\left(\\frac{A_1 + A_2}{A_1 - A_2}\\right)^2"
       ],
-      "answer": "\\left(\\frac{A_1 + A_2}{A_1 - A_2}\\right)^2",
+      "answer": "\\frac{A_1 + A_2}{A_1 - A_2}",
       "tags": {
         "chapter": "wave_optics",
         "difficulty": "medium",
@@ -13313,7 +13313,7 @@
         "\\frac{\\lambda}{d}",
         "\\frac{D\\lambda}{d}"
       ],
-      "answer": "\\frac{\\lambda}{D}",
+      "answer": "\\frac{\\lambda}{d}",
       "tags": {
         "chapter": "wave_optics",
         "difficulty": "medium",
@@ -13357,8 +13357,191 @@
       },
       "image": "",
       "tip": ""
-    }
-    ]
+    },
+
+  {
+    "id": "wave_optics_qn_011",
+    "question": "A light ray passes through a slab of thickness <i>t</i> and refractive index &mu;, its optical path length when it passes through slab AB is",
+    "options": [
+      "\\mu t",
+      "(\\mu-1)t",
+      "\\frac{t}{\\mu}",
+      "\\frac{\\mu}{t}"
+    ],
+    "answer": "\\mu t",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_011.png",
+    "tip": ""
+  },
+  {
+    "id": "wave_optics_qn_012",
+    "question": "The optical path difference when a light ray moves from A to B in the two cases is",
+    "options": [
+      "\\mu t",
+      "(\\mu-1)t",
+      "\\frac{t}{\\mu}",
+      "\\frac{\\mu}{t}"
+    ],
+    "answer": "(\\mu-1)t",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_012.png",
+    "tip": ""
+  },
+  {
+    "id": "wave_optics_qn_013",
+    "question": "The optical path difference when a light ray moves from A to B in the two cases is",
+    "options": [
+      "\\mu_1 t",
+      "\\mu_2 t",
+      "(\\mu_2 - \\mu_1)t",
+      "(\\mu_2 + \\mu_1)t"
+    ],
+    "answer": "(\\mu_2 - \\mu_1)t",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_013.png",
+    "tip": ""
+  },
+  {
+    "id": "wave_optics_qn_014",
+    "question": "In YDSE, the distance of the first maximum from the central bright is",
+    "options": [
+      "\\frac{D\\lambda}{d}",
+      "\\frac{D\\lambda}{2d}",
+      "\\frac{2D\\lambda}{d}",
+      "\\frac{3D\\lambda}{4d}"
+    ],
+    "answer": "\\frac{D\\lambda}{d}",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_014.png",
+    "tip": ""
+  },
+  {
+    "id": "wave_optics_qn_015",
+    "question": "In YDSE, the distance of the first dark from the central bright is",
+    "options": [
+      "\\frac{D\\lambda}{d}",
+      "\\frac{D\\lambda}{2d}",
+      "\\frac{2D\\lambda}{d}",
+      "\\frac{3D\\lambda}{4d}"
+    ],
+    "answer": "\\frac{D\\lambda}{2d}",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_015.png",
+    "tip": ""
+  },
+
+  {
+    "id": "wave_optics_qn_016",
+    "question": "In the single slit diffraction shown, the width of the central maxima is",
+    "options": [
+      "\\frac{D\\lambda}{a}",
+      "\\frac{D\\lambda}{2a}",
+      "\\frac{2D\\lambda}{a}",
+      "\\frac{3D\\lambda}{4a}"
+    ],
+    "answer": "\\frac{2D\\lambda}{a}",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_016.png",
+    "tip": ""
+  },
+  {
+    "id": "wave_optics_qn_017",
+    "question": "In the single slit diffraction shown, the angular position of the first dark is",
+    "options": [
+      "\\frac{\\lambda}{a}",
+      "\\frac{\\lambda}{2a}",
+      "\\frac{2\\lambda}{a}",
+      "\\frac{3\\lambda}{4a}"
+    ],
+    "answer": "\\frac{\\lambda}{a}",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_017.png",
+    "tip": ""
+  },
+  {
+    "id": "wave_optics_qn_018",
+    "question": "In the single slit diffraction shown, the angular position of the first bright is",
+    "options": [
+      "\\frac{\\lambda}{a}",
+      "\\frac{\\lambda}{2a}",
+      "\\frac{2\\lambda}{a}",
+      "\\frac{3\\lambda}{2a}"
+    ],
+    "answer": "\\frac{3\\lambda}{2a}",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_018.png",
+    "tip": ""
+  },
+  {
+    "id": "wave_optics_qn_019",
+    "question": "When a slab is placed in front of a slit in YDSE, the central bright fringe shifts by",
+    "options": [
+      "\\frac{D(\\mu-1)t}{2d}",
+      "\\frac{D\\mu t}{d}",
+      "\\frac{Dt}{d(\\mu-1)}",
+      "\\frac{D(\\mu-1)t}{d}"
+    ],
+    "answer": "\\frac{D(\\mu-1)t}{d}",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_019.png",
+    "tip": ""
+  },
+  {
+    "id": "wave_optics_qn_020",
+    "question": "When a slab is placed in front of a slit in YDSE, the number of fringes crossing the centre is",
+    "options": [
+      "\\frac{(\\mu-1)t}{2\\lambda}",
+      "\\frac{\\mu t}{\\lambda}",
+      "\\frac{t\\lambda}{(\\mu-1)}",
+      "\\frac{(\\mu-1)t}{\\lambda}"
+    ],
+    "answer": "\\frac{(\\mu-1)t}{\\lambda}",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_020.png",
+    "tip": ""
+  }
+
+]
 
 
 

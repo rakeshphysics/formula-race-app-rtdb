@@ -84,7 +84,7 @@ class _QRHostScreenState extends State<QRHostScreen> {
         matchStarted = true;
         matchStatusListener.cancel();
 
-        print('✅ DEBUG: Navigating to OnlineGameScreen. Seed: ${widget.seed}, MatchId: ${widget.matchId}, PlayerId: ${widget.playerId}');
+        //print('✅ DEBUG: Navigating to OnlineGameScreen. Seed: ${widget.seed}, MatchId: ${widget.matchId}, PlayerId: ${widget.playerId}');
 
         Navigator.pushReplacement(
           context,
