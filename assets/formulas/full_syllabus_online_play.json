@@ -13539,8 +13539,189 @@
     },
     "image": "assets/images/12th/wave_optics/wave_optics_qn_020.png",
     "tip": ""
-  }
+  },
 
+  {
+    "id": "wave_optics_qn_021",
+    "question": "When unpolarized light of intensity <i>I<sub>o</sub></i> passes through a polarizer, its intensity becomes",
+    "options": [
+      "\\frac{I_o}{2}",
+      "2I_o",
+      "\\frac{I_o}{4}",
+      "\\frac{3I_o}{4}"
+    ],
+    "answer": "\\frac{I_o}{2}",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_021.png",
+    "tip": ""
+  },
+  {
+    "id": "wave_optics_qn_022",
+    "question": "Unpolarized light of intensity <i>I<sub>o</sub></i> passes through a polarizer. This light is now passed through an analyser whose pass axis is at angle &theta; to the polarizer. The final intensity of light is",
+    "options": [
+      "I_o \\cos^2 \\theta",
+      "I_o \\sin \\theta",
+      "I_o \\sin^2 \\theta",
+      "\\frac{I_o}{2} \\cos^2 \\theta"
+    ],
+    "answer": "\\frac{I_o}{2} \\cos^2 \\theta",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_022.png",
+    "tip": "This is called Malus Law, named after a french scientist, Louis Malus"
+  },
+  {
+    "id": "wave_optics_qn_023",
+    "question": "Plane wavefronts perpendicular to principal axis are incident on a convex lens from left to right. Choose the correct wavefronts after refraction from lens",
+    "options": [
+      "\\text{A}",
+      "\\text{B}",
+      "\\text{C}",
+      "\\text{D}"
+    ],
+    "answer": "\\text{B}",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_023.png",
+    "tip": ""
+  },
+  {
+    "id": "wave_optics_qn_024",
+    "question": "Plane wavefronts perpendicular to principal axis are incident on a concave lens from left to right. Choose the correct wavefronts after refraction from lens",
+    "options": [
+      "\\text{A}",
+      "\\text{B}",
+      "\\text{C}",
+      "\\text{D}"
+    ],
+    "answer": "\\text{A}",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_024.png",
+    "tip": ""
+  },
+  {
+    "id": "wave_optics_qn_025",
+    "question": "Plane wavefronts perpendicular to principal axis are incident on a concave mirror from left to right. Choose the correct wavefronts after reflection from mirror",
+    "options": [
+      "\\text{A}",
+      "\\text{B}",
+      "\\text{C}",
+      "\\text{D}"
+    ],
+    "answer": "\\text{C}",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_025.png",
+    "tip": ""
+  },
+
+  {
+    "id": "wave_optics_qn_026",
+    "question": "Plane wavefronts perpendicular to principal axis are incident on a convex mirror from left to right. Choose the correct wavefronts after reflection from mirror",
+    "options": [
+      "\\text{A}",
+      "\\text{B}",
+      "\\text{C}",
+      "\\text{D}"
+    ],
+    "answer": "\\text{D}",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_026.png",
+    "tip": ""
+  },
+  {
+    "id": "wave_optics_qn_027",
+    "question": "When unpolarized light is incident on a transparent medium, the reflected light gets polarized when the angle of incidence is (&mu; = refractive index of transparent medium)",
+    "options": [
+      "\\sin^{-1}\\mu",
+      "\\cos^{-1}\\mu",
+      "\\tan^{-1}\\mu",
+      "\\cot^{-1}\\mu"
+    ],
+    "answer": "\\tan^{-1}\\mu",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_027.png",
+    "tip": "The angle of incidence is called Brewsters angle, named after a Scottish scientist, David Brewster."
+  },
+  {
+    "id": "wave_optics_qn_028",
+    "question": "When unpolarized light is incident on a transparent medium, the reflected light gets polarized when the angle of incidence is (&mu; = refractive index of transparent medium)",
+    "options": [
+      "\\sin^{-1}\\mu",
+      "\\cos^{-1}\\mu",
+      "\\tan^{-1}\\mu",
+      "\\cot^{-1}\\mu"
+    ],
+    "answer": "\\cot^{-1}\\mu",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_028.png",
+    "tip": "Silly mistake possible! Be wary of where the light is incident from, rarer or denser."
+  },
+  {
+    "id": "wave_optics_qn_029",
+    "question": "When unpolarized light is incident on a transparent medium, the reflected light gets polarized for a particular angle of incidence. The angle between reflected and refracted ray in this case is",
+    "options": [
+      "\\text{60}",
+      "\\text{90}",
+      "\\text{45}",
+      "\\text{30}"
+    ],
+    "answer": "\\text{90}",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_029.png",
+    "tip": ""
+  },
+  {
+    "id": "wave_optics_qn_030",
+    "question": "The optical path difference when a light ray moves from A to B in the two cases is (&mu;<sub>2</sub> > &mu;<sub>1</sub>)",
+    "options": [
+      "(\\mu_2-1)t_2 - (\\mu_1-1)t_1",
+      "(\\mu_2-\\mu_1)t_2",
+      "(\\mu_2+1)t_2 - (\\mu_1+1)t_1",
+      "(\\mu_2-\\mu_1)t_1"
+    ],
+    "answer": "(\\mu_2-1)t_2 - (\\mu_1-1)t_1",
+    "tags": {
+      "chapter": "wave_optics",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_030.png",
+    "tip": ""
+  }
 ]
 
 
