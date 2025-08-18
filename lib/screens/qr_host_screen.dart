@@ -83,6 +83,9 @@ class _QRHostScreenState extends State<QRHostScreen> {
       if (p1Ready && p2Ready && !matchStarted) {
         matchStarted = true;
         matchStatusListener.cancel();
+
+        print('✅ DEBUG: Navigating to OnlineGameScreen. Seed: ${widget.seed}, MatchId: ${widget.matchId}, PlayerId: ${widget.playerId}');
+
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(

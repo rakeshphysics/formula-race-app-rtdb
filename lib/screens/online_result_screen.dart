@@ -54,18 +54,19 @@ class OnlineResultScreen extends StatelessWidget {
       resultMessage = '🤝 Opponent Wins 🤝';
       resultMessageColor = Colors.amberAccent;
     } else {
-      resultMessage = '🤝It\'s a Draw  🤝';
+      resultMessage = '🤝  It\'s a Draw  🤝';
       resultMessageColor = Colors.amberAccent;
     }
 
     return Scaffold(
       backgroundColor: Colors.black,
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        title: Text('Game Over', style: GoogleFonts.poppins(color: Colors.white)),
-        iconTheme: const IconThemeData(color: Colors.white),
-        automaticallyImplyLeading: false, // Hide back button
-      ),
+          appBar: AppBar(
+          backgroundColor: Colors.black,
+          toolbarHeight: 10,
+          title: Text('', style: GoogleFonts.poppins(color: Colors.white)),
+          iconTheme: const IconThemeData(color: Colors.white),
+          automaticallyImplyLeading: false, // Hide back button
+           ),
       body: Padding(
         padding: EdgeInsets.all(screenWidth * 0.04), // Responsive padding
         child: Column(
@@ -78,9 +79,9 @@ class OnlineResultScreen extends StatelessWidget {
             Text(
               resultMessage,
               textAlign: TextAlign.center,
-              style: GoogleFonts.hedvigLettersSerif(
+              style: GoogleFonts.poppins(
                 fontSize: screenWidth * 0.05, // Responsive font size
-                fontWeight: FontWeight.normal,
+                fontWeight: FontWeight.w500,
                 color: resultMessageColor,
                 letterSpacing: 2.0,
               ),
@@ -97,7 +98,7 @@ class OnlineResultScreen extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Color(0xFFFC107),
                 borderRadius: BorderRadius.circular(4),
-                border: Border.all(color: Colors.amber, width: 0.8),// Responsive border radius
+                border: Border.all(color: Colors.amber, width: 1.8),// Responsive border radius
                 boxShadow: [
                   BoxShadow(
                     color: Colors.white.withOpacity(0.1),
@@ -115,10 +116,10 @@ class OnlineResultScreen extends StatelessWidget {
                     children: [
                       Text(
                         'MY SCORE :',
-                        style: GoogleFonts.hedvigLettersSerif(
-                          fontSize: screenWidth * 0.04, // Responsive font size
+                        style: GoogleFonts.poppins(
+                          fontSize: screenWidth * 0.05, // Responsive font size
                           color: Colors.white,
-                          fontWeight: FontWeight.normal,
+                          fontWeight: FontWeight.w500,
                           letterSpacing: 1.5,
                         ),
                       ),
@@ -139,10 +140,10 @@ class OnlineResultScreen extends StatelessWidget {
                     children: [
                       Text(
                         'OPPONENT SCORE :',
-                        style: GoogleFonts.hedvigLettersSerif(
-                          fontSize: screenWidth * 0.04, // Responsive font size
+                        style: GoogleFonts.poppins(
+                          fontSize: screenWidth * 0.05, // Responsive font size
                           color: Colors.white,
-                          fontWeight: FontWeight.normal,
+                          fontWeight: FontWeight.w500,
                           letterSpacing: 1.5,
                         ),
                       ),
