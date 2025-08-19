@@ -1,0 +1,183 @@
+[
+  {
+  "id": "modern_physics_qn_001",
+  "question": "The energy of a photon having wavelength <i>&lambda;</i> is",
+  "options": [
+    "h c \\lambda",
+    "\\frac{c}{h \\lambda}",
+    "\\frac{h c}{\\lambda}",
+    "\\frac{h}{c \\lambda}"
+  ],
+  "answer": "\\frac{h c}{\\lambda}",
+  "tags": {
+    "chapter": "nuclei",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": "",
+  "tip": ""
+},
+{
+"id": "modern_physics_qn_002",
+"question": "The energy of a photon in eV, if its wavelength is <i>&lambda;</i> (in nm) is",
+"options": [
+"\\frac{12400}{\\lambda}",
+"\\frac{1240}{\\lambda}",
+"\\frac{124}{\\lambda}",
+"\\frac{12.4}{\\lambda}"
+],
+"answer": "\\frac{1240}{\\lambda}",
+"tags": {
+"chapter": "modern_physics",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "modern_physics_qn_003",
+"question": "The momentum of a photon whose energy is <i>E</i> is (<i>c</i> = speed of light)",
+"options": [
+"\\frac{1}{E c}",
+"\\frac{c}{E}",
+"E c",
+"\\frac{E}{c}"
+],
+"answer": "\\frac{E}{c}",
+"tags": {
+"chapter": "modern_physics",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "modern_physics_qn_004",
+"question": "The momentum of a photon whose frequency is <i>&nu;</i> is (<i>c</i> = speed of light)",
+"options": [
+"\\frac{h}{\\nu c}",
+"\\frac{h c}{\\nu}",
+"\\frac{h \\nu}{c}",
+"h \\nu"
+],
+"answer": "\\frac{h \\nu}{c}",
+"tags": {
+"chapter": "modern_physics",
+"difficulty": "easy",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+{
+"id": "modern_physics_qn_005",
+"question": "The momentum of a photon whose wavelength is <i>&lambda;</i> is (<i>c</i> = speed of light)",
+"options": [
+"\\frac{h}{\\lambda}",
+"\\frac{h c}{\\lambda}",
+"h c \\lambda",
+"\\frac{c}{h \\lambda}"
+],
+"answer": "\\frac{h}{\\lambda}",
+"tags": {
+"chapter": "modern_physics",
+"difficulty": "medium",
+"class": "12"
+},
+"image": "",
+"tip": ""
+},
+  {
+    "id": "modern_physics_qn_006",
+    "question": "The force exerted by light on the mirror is (<i>c</i> = speed of light, <i>P</i> = power of light)",
+    "options": [
+      "\\frac{P}{c}",
+      "\\frac{2P}{c}",
+      "P c",
+      "2 P c"
+    ],
+    "answer": "\\frac{2P}{c}",
+    "tags": {
+      "chapter": "modern_physics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/modern_physics/modern_physics_qn_006.png",
+    "tip": ""
+  },
+  {
+    "id": "modern_physics_qn_007",
+    "question": "The force exerted by light on nonreflecting surface is (<i>c</i> = speed of light, <i>P</i> = power of light)",
+    "options": [
+      "\\frac{P}{c}",
+      "\\frac{2P}{c}",
+      "P c",
+      "2 P c"
+    ],
+    "answer": "\\frac{P}{c}",
+    "tags": {
+      "chapter": "modern_physics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/modern_physics/modern_physics_qn_007.png",
+    "tip": ""
+  },
+  {
+    "id": "modern_physics_qn_008",
+    "question": "The pressure exerted by light on the mirror is (<i>c</i> = speed of light, <i>I</i> = intensity of light)",
+    "options": [
+      "\\frac{I}{c}",
+      "\\frac{2I}{c}",
+      "I c",
+      "2 I c"
+    ],
+    "answer": "\\frac{2I}{c}",
+    "tags": {
+      "chapter": "modern_physics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/modern_physics/modern_physics_qn_008.png",
+    "tip": ""
+  },
+  {
+    "id": "modern_physics_qn_009",
+    "question": "The pressure exerted by light on the nonreflecting surface is (<i>c</i> = speed of light, <i>I</i> = intensity of light)",
+    "options": [
+      "\\frac{I}{c}",
+      "\\frac{2I}{c}",
+      "I c",
+      "2 I c"
+    ],
+    "answer": "\\frac{I}{c}",
+    "tags": {
+      "chapter": "modern_physics",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/modern_physics/modern_physics_qn_009.png",
+    "tip": ""
+  },
+  {
+    "id": "modern_physics_qn_010",
+    "question": "The force exerted by light on the mirror is (<i>c</i> = speed of light, <i>I</i> = intensity of light, <i>A</i> = crossection area of beam)",
+    "options": [
+      "\\frac{I A \\cos \\theta}{c}",
+      "\\frac{2 I A \\cos \\theta}{c}",
+      "\\frac{2 I A \\cos^2 \\theta}{c}",
+      "\\frac{2 I A \\sin^2 \\theta}{c}"
+    ],
+    "answer": "\\frac{2 I A \\cos^2 \\theta}{c}",
+    "tags": {
+      "chapter": "modern_physics",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "assets/images/12th/modern_physics/modern_physics_qn_010.png",
+    "tip": ""
+  }
+
+]

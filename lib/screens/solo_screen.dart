@@ -48,7 +48,9 @@ const Map<String, String> chapterToClass = {
   "EM Waves": "12",
   "Ray Optics": "12",
   "Wave Optics": "12",
-  "Modern Physics": "12",
+  "Dual Nature of Light": "12",
+  "Atoms": "12",
+  "Nuclei": "12",
   "Semiconductors": "12",
 };
 
@@ -103,7 +105,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   @override
   void initState() {
     super.initState();
-    //print('🤢🤢*** SoloScreen initState called for chapter: ${widget.selectedChapter} ***'); // ADD THIS LINE
+    print('🤢🤢*** SoloScreen initState called for chapter: ${widget.selectedChapter} ***'); // ADD THIS LINE
 
     _progressController = AnimationController(
       vsync: this,
@@ -166,7 +168,9 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'EM Waves',
           'Ray Optics',
           'Wave Optics',
-          'Modern Physics',
+          'Dual Nature of Light',
+          'Atoms',
+          'Nuclei',
           'Semiconductors',
         ];
       } else if (widget.selectedChapter == 'fullBoth') {
@@ -197,7 +201,9 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'EM Waves',
           'Ray Optics',
           'Wave Optics',
-          'Modern Physics',
+          'Dual Nature of Light',
+          'Atoms',
+          'Nuclei',
           'Semiconductors',
         ];
       }
@@ -247,13 +253,13 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     }
 
     //Consolidated Print Statements (ONLY ONE LOCATION)
-    //print('--- Selected Questions Chapters (Final List) ---');
+    print('--- Selected Questions Chapters (Final List) ---');
     for (var i = 0; i < finalQuestions.length; i++) {
       final question = finalQuestions[i];
       final chapter = question['tags']['chapter'] ?? 'Unknown Chapter';
       final difficulty = question['tags']['difficulty'] ?? 'Unknown Difficulty';
       final questionId = question['id'] ?? 'Unknown ID'; // Correctly accessing the 'id' at the top level
-      //print('😄😄Question ${i + 1}: ID - $questionId, Chapter - $chapter, Difficulty - $difficulty');
+      print('😄😄Question ${i + 1}: ID - $questionId, Chapter - $chapter, Difficulty - $difficulty');
     }
     //print('------------------------------------------------');
     setState(() {

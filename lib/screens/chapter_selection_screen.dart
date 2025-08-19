@@ -40,7 +40,9 @@ const Map<String, String> chapterToClass = {
   "EM Waves": "12",
   "Ray Optics": "12",
   "Wave Optics": "12",
-  "Modern Physics": "12",
+  "Dual Nature of Light": "12",
+  "Atoms": "12",
+  "Nuclei": "12",
   "Semiconductors": "12",
   "Vectors": "11",
 };
@@ -82,7 +84,9 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
     'EM Waves',
     'Ray Optics',
     'Wave Optics',
-    'Modern Physics',
+    'Dual Nature of Light',
+    'Atoms',
+    'Nuclei',
     'Semiconductors',
   ];
 
@@ -101,7 +105,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
   }
 
   Future<void> _loadChapterProgress() async {
-    //print('🔄 _loadChapterProgress started...');
+    print('🔄 _loadChapterProgress started...');
     Map<String, double> percentages = {};
 
     final quizProvider = Provider.of<QuizDataProvider>(context, listen: false);
@@ -131,7 +135,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
        chapterCompletion = percentages;
     //   _isLoading = false;
      });
-   // print('✅ _loadChapterProgress completed. State updated.');
+    print('✅ _loadChapterProgress completed. State updated.');
   }
 
   @override

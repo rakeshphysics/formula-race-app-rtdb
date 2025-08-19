@@ -68,7 +68,8 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": ""
+    "image": "",
+    "tip": ""
   },
 
 
@@ -88,7 +89,8 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": ""
+    "image": "",
+    "tip": ""
   }
 ,
   {
@@ -106,7 +108,8 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": ""
+    "image": "",
+    "tip": ""
   },
   {
     "id": "em_waves_qn_007",
@@ -124,7 +127,8 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": ""
+    "image": "",
+    "tip": ""
   },
   {
     "id": "em_waves_qn_008",
@@ -141,7 +145,8 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": ""
+    "image": "",
+    "tip": ""
   },
   {
     "id": "em_waves_qn_009",
@@ -159,7 +164,8 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": ""
+    "image": "",
+    "tip": ""
   },
   {
     "id": "em_waves_qn_010",
@@ -176,7 +182,8 @@
       "difficulty": "god",
       "class": "12"
     },
-    "image": ""
+    "image": "",
+    "tip": "NCERT pg 211, EM waves production and detection Table. "
   }
 
 ]

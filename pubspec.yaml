@@ -70,7 +70,9 @@ flutter:
     - assets/formulas/12/em_waves.aes
     - assets/formulas/12/emi.aes
     - assets/formulas/12/magnetism.aes
-    - assets/formulas/12/modern_physics.aes
+    - assets/formulas/12/dual_nature_of_light.aes
+    - assets/formulas/12/atoms.aes
+    - assets/formulas/12/nuclei.aes
     - assets/formulas/12/ray_optics.aes
     - assets/formulas/12/semiconductors.aes
     - assets/formulas/12/wave_optics.aes
@@ -103,9 +105,11 @@ flutter:
     - assets/images/12th/ac/
     - assets/images/12th/ray_optics/
     - assets/images/12th/wave_optics/
-    - assets/images/12th/modern_physics/
-    #- assets/images/12th/semiconductors/
-    #- assets/images/12th/em_waves/
+    - assets/images/12th/dual_nature_of_light/
+    - assets/images/12th/atoms/
+    - assets/images/12th/nuclei/
+    - assets/images/12th/semiconductors/
+    - assets/images/12th/em_waves/
     - assets/icon/
 
 dependency_overrides:

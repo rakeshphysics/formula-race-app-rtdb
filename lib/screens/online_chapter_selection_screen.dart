@@ -45,7 +45,9 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
     'EM Waves',
     'Ray Optics',
     'Wave Optics',
-    'Modern Physics',
+    'Dual Nature of Light',
+    'Atoms',
+    'Nuclei',
     'Semiconductors',
   ];
 
