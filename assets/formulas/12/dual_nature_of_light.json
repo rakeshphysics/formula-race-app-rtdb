@@ -360,6 +360,188 @@
       },
       "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_020.png",
       "tip": ""
+    },
+
+    {
+      "id": "dual_nature_of_light_qn_021",
+      "question": "In photoelectric effect, quantum efficiency is defined as (<i>n<sub>e</sub></i> = number of electrons emitted per second, <i>n<sub>ph</sub></i> = number of photons emitted per second)",
+      "options": [
+        "\\frac{n_e}{n_{ph}}",
+        "\\frac{n_{ph}}{n_e}",
+        "\\frac{n_{ph}}{n_e+n_{ph}}",
+        "\\frac{n_e}{n_{ph}+n_e}"
+      ],
+      "answer": "\\frac{n_e}{n_{ph}}",
+      "tags": {
+        "chapter": "Dual Nature of Light",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_021.png",
+      "tip": ""
+    },
+    {
+      "id": "dual_nature_of_light_qn_022",
+      "question": "The debroglie wavelength of a particle having momentum <i>p</i> is",
+      "options": [
+        "\\frac{p}{h}",
+        "\\frac{1}{hp}",
+        "\\frac{h}{p}",
+        "hp"
+      ],
+      "answer": "\\frac{h}{p}",
+      "tags": {
+        "chapter": "Dual Nature of Light",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_022.png",
+      "tip": ""
+    },
+    {
+      "id": "dual_nature_of_light_qn_023",
+      "question": "The debroglie wavelength of a particle of mass <i>m</i> having kinetic energy <i>KE</i> is",
+      "options": [
+        "\\frac{h}{\\sqrt{2m(KE)}}",
+        "\\sqrt{2m(KE)}",
+        "\\frac{2m(KE)}{h}",
+        "\\frac{h}{2m(KE)}"
+      ],
+      "answer": "\\frac{h}{\\sqrt{2m(KE)}}",
+      "tags": {
+        "chapter": "Dual Nature of Light",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_023.png",
+      "tip": ""
+    },
+    {
+      "id": "dual_nature_of_light_qn_024",
+      "question": "According to heinsbergs uncertainty principle",
+      "options": [
+        "\\Delta x \\cdot \\Delta p \\leq \\frac{h}{2\\pi}",
+        "\\Delta x \\cdot \\Delta p \\leq \\frac{h}{4\\pi}",
+        "\\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi}",
+        "\\Delta x \\cdot \\Delta p \\geq \\frac{h}{2\\pi}"
+      ],
+      "answer": "\\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi}",
+      "tags": {
+        "chapter": "Dual Nature of Light",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "dual_nature_of_light_qn_025",
+      "question": "For an electron rotating in <i>n</i>th bohr orbit of radius <i>r</i>, the correct expression for its debroglie wavelength &lambda; is",
+      "options": [
+        "n^2 \\lambda = 2\\pi r",
+        "n^2 \\lambda = 4\\pi r",
+        "n\\lambda = 4\\pi r",
+        "n\\lambda = 2\\pi r"
+      ],
+      "answer": "n\\lambda = 2\\pi r",
+      "tags": {
+        "chapter": "Dual Nature of Light",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_025.png",
+      "tip": ""
+    },
+
+    {
+      "id": "dual_nature_of_light_qn_026",
+      "question": "When an electron is accelerated from rest through a potential <i>V</i>, it debroglie wavelength becomes",
+      "options": [
+        "1.227 \\sqrt{V} \\text{ nm}",
+        "\\frac{12.27}{\\sqrt{V}} \\text{ nm}",
+        "\\frac{1.227}{\\sqrt{V}} \\text{ nm}",
+        "12.27 \\sqrt{V} \\text{ nm}"
+      ],
+      "answer": "\\frac{1.227}{\\sqrt{V}} \\text{ nm}",
+      "tags": {
+        "chapter": "Dual Nature of Light",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_026.png",
+      "tip": ""
+    },
+    {
+      "id": "dual_nature_of_light_qn_027",
+      "question": "A graph is plotted photo current and collector potential for different incident photon frequencies. The relation between frequencies is",
+      "options": [
+        "\\nu_1 > \\nu_2",
+        "\\nu_1 = \\nu_2",
+        "\\text{None of these}",
+        "\\nu_1 < \\nu_2"
+      ],
+      "answer": "\\nu_1 = \\nu_2",
+      "tags": {
+        "chapter": "Dual Nature of Light",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_027.png",
+      "tip": ""
+    },
+    {
+      "id": "dual_nature_of_light_qn_028",
+      "question": "The debroglie wavelength of proton and &alpha; particle are in ratio 1:2. The ratio of velocities of proton and &alpha; particle are in ratio",
+      "options": [
+        "\\text{1 : 8}",
+        "\\text{2 : 1}",
+        "\\text{4 : 1}",
+        "\\text{8 : 1}"
+      ],
+      "answer": "\\text{8 : 1}",
+      "tags": {
+        "chapter": "Dual Nature of Light",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_028.png",
+      "tip": ""
+    },
+    {
+      "id": "dual_nature_of_light_qn_029",
+      "question": "For an electron rotating in <i>n</i>th bohr orbit of hydrogen atom, the correct expression for its debroglie wavelength &lambda; is (<i>a<sub>o</sub></i> = Bohr radius)",
+      "options": [
+        "n^2 \\lambda = 2\\pi r",
+        "n^2 \\lambda = 4\\pi r",
+        "n\\lambda = 2\\pi r",
+        "n\\lambda = 2\\pi n^2 a_o"
+      ],
+      "answer": "n\\lambda = 2\\pi r",
+      "tags": {
+        "chapter": "Dual Nature of Light",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_029.png",
+      "tip": ""
+    },
+    {
+      "id": "dual_nature_of_light_qn_030",
+      "question": "An electron and a photon have same kinetic energies. Their debroglie wavelengths are related by",
+      "options": [
+        "\\lambda_{ph} \\propto \\lambda_e^2",
+        "\\lambda_{ph} \\propto \\lambda_e",
+        "\\lambda_{ph} \\propto \\sqrt{\\lambda_e}",
+        "\\lambda_{ph} \\propto \\frac{1}{\\lambda_e}"
+      ],
+      "answer": "\\lambda_{ph} \\propto \\lambda_e^2",
+      "tags": {
+        "chapter": "Dual Nature of Light",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
     }
 
 ]
