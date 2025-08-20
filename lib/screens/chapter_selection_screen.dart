@@ -105,7 +105,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
   }
 
   Future<void> _loadChapterProgress() async {
-    print('🔄 _loadChapterProgress started...');
+    //print('🔄 _loadChapterProgress started...');
     Map<String, double> percentages = {};
 
     final quizProvider = Provider.of<QuizDataProvider>(context, listen: false);
@@ -135,7 +135,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
        chapterCompletion = percentages;
     //   _isLoading = false;
      });
-    print('✅ _loadChapterProgress completed. State updated.');
+    //print('✅ _loadChapterProgress completed. State updated.');
   }
 
   @override

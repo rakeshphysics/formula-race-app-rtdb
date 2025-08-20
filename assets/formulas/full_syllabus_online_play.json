@@ -11913,7 +11913,7 @@
     },
 
     {
-      "id": "modern_physics_qn_001",
+      "id": "dual_nature_of_light_qn_001",
       "question": "The energy of a photon having wavelength <i>&lambda;</i> is",
       "options": [
         "h c \\lambda",
@@ -11923,7 +11923,7 @@
       ],
       "answer": "\\frac{h c}{\\lambda}",
       "tags": {
-        "chapter": "modern_physics",
+        "chapter": "Dual Nature of Light",
         "difficulty": "easy",
         "class": "12"
       },
@@ -11931,7 +11931,7 @@
       "tip": ""
     },
     {
-      "id": "modern_physics_qn_002",
+      "id": "dual_nature_of_light_qn_002",
       "question": "The energy of a photon in eV, if its wavelength is <i>&lambda;</i> (in nm) is",
       "options": [
         "\\frac{12400}{\\lambda}",
@@ -11941,7 +11941,7 @@
       ],
       "answer": "\\frac{1240}{\\lambda}",
       "tags": {
-        "chapter": "modern_physics",
+        "chapter": "Dual Nature of Light",
         "difficulty": "easy",
         "class": "12"
       },
@@ -11949,7 +11949,7 @@
       "tip": ""
     },
     {
-      "id": "modern_physics_qn_003",
+      "id": "dual_nature_of_light_qn_003",
       "question": "The momentum of a photon whose energy is <i>E</i> is (<i>c</i> = speed of light)",
       "options": [
         "\\frac{1}{E c}",
@@ -11959,7 +11959,7 @@
       ],
       "answer": "\\frac{E}{c}",
       "tags": {
-        "chapter": "modern_physics",
+        "chapter": "Dual Nature of Light",
         "difficulty": "easy",
         "class": "12"
       },
@@ -11967,7 +11967,7 @@
       "tip": ""
     },
     {
-      "id": "modern_physics_qn_004",
+      "id": "dual_nature_of_light_qn_004",
       "question": "The momentum of a photon whose frequency is <i>&nu;</i> is (<i>c</i> = speed of light)",
       "options": [
         "\\frac{h}{\\nu c}",
@@ -11977,7 +11977,7 @@
       ],
       "answer": "\\frac{h \\nu}{c}",
       "tags": {
-        "chapter": "modern_physics",
+        "chapter": "Dual Nature of Light",
         "difficulty": "easy",
         "class": "12"
       },
@@ -11985,7 +11985,7 @@
       "tip": ""
     },
     {
-      "id": "modern_physics_qn_005",
+      "id": "dual_nature_of_light_qn_005",
       "question": "The momentum of a photon whose wavelength is <i>&lambda;</i> is (<i>c</i> = speed of light)",
       "options": [
         "\\frac{h}{\\lambda}",
@@ -11995,7 +11995,7 @@
       ],
       "answer": "\\frac{h}{\\lambda}",
       "tags": {
-        "chapter": "modern_physics",
+        "chapter": "Dual Nature of Light",
         "difficulty": "medium",
         "class": "12"
       },
@@ -12003,7 +12003,7 @@
       "tip": ""
     },
     {
-      "id": "modern_physics_qn_006",
+      "id": "dual_nature_of_light_qn_006",
       "question": "The force exerted by light on the mirror is (<i>c</i> = speed of light, <i>P</i> = power of light)",
       "options": [
         "\\frac{P}{c}",
@@ -12013,15 +12013,15 @@
       ],
       "answer": "\\frac{2P}{c}",
       "tags": {
-        "chapter": "modern_physics",
+        "chapter": "Dual Nature of Light",
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/modern_physics/modern_physics_qn_006.png",
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_006.png",
       "tip": ""
     },
     {
-      "id": "modern_physics_qn_007",
+      "id": "dual_nature_of_light_qn_007",
       "question": "The force exerted by light on nonreflecting surface is (<i>c</i> = speed of light, <i>P</i> = power of light)",
       "options": [
         "\\frac{P}{c}",
@@ -12031,15 +12031,15 @@
       ],
       "answer": "\\frac{P}{c}",
       "tags": {
-        "chapter": "modern_physics",
+        "chapter": "Dual Nature of Light",
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/modern_physics/modern_physics_qn_007.png",
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_007.png",
       "tip": ""
     },
     {
-      "id": "modern_physics_qn_008",
+      "id": "dual_nature_of_light_qn_008",
       "question": "The pressure exerted by light on the mirror is (<i>c</i> = speed of light, <i>I</i> = intensity of light)",
       "options": [
         "\\frac{I}{c}",
@@ -12049,15 +12049,15 @@
       ],
       "answer": "\\frac{2I}{c}",
       "tags": {
-        "chapter": "modern_physics",
+        "chapter": "Dual Nature of Light",
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/modern_physics/modern_physics_qn_008.png",
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_008.png",
       "tip": ""
     },
     {
-      "id": "modern_physics_qn_009",
+      "id": "dual_nature_of_light_qn_009",
       "question": "The pressure exerted by light on the nonreflecting surface is (<i>c</i> = speed of light, <i>I</i> = intensity of light)",
       "options": [
         "\\frac{I}{c}",
@@ -12067,15 +12067,15 @@
       ],
       "answer": "\\frac{I}{c}",
       "tags": {
-        "chapter": "modern_physics",
+        "chapter": "Dual Nature of Light",
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/modern_physics/modern_physics_qn_009.png",
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_009.png",
       "tip": ""
     },
     {
-      "id": "modern_physics_qn_010",
+      "id": "dual_nature_of_light_qn_010",
       "question": "The force exerted by light on the mirror is (<i>c</i> = speed of light, <i>I</i> = intensity of light, <i>A</i> = crossection area of beam)",
       "options": [
         "\\frac{I A \\cos \\theta}{c}",
@@ -12085,13 +12085,195 @@
       ],
       "answer": "\\frac{2 I A \\cos^2 \\theta}{c}",
       "tags": {
-        "chapter": "modern_physics",
+        "chapter": "Dual Nature of Light",
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/modern_physics/modern_physics_qn_010.png",
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_010.png",
       "tip": ""
     },
+
+  {
+    "id": "dual_nature_of_light_qn_011",
+    "question": "Einsteins photoelectric effect equation is (<i>v</i> = frequency of incident photon, &phi; = work function, <i>KE<sub>max</sub></i> = maximum kinetic energy of electron)",
+    "options": [
+      "h\\nu = \\phi - KE_{max}",
+      "h\\nu = \\phi + KE_{max}",
+      "h\\nu + \\phi + KE_{max} = 0",
+      "\\phi = KE_{max}"
+    ],
+    "answer": "h\\nu = \\phi + KE_{max}",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_011.png",
+    "tip": ""
+  },
+  {
+    "id": "dual_nature_of_light_qn_012",
+    "question": "The relation between threshold frequency <i>v<sub>o</sub></i> and work function &phi; in photoelectric effect is",
+    "options": [
+      "\\phi = h\\nu_o",
+      "\\phi = \\frac{h}{\\nu_o}",
+      "\\phi = \\frac{1}{h\\nu_o}",
+      "\\phi = h\\sqrt{\\nu_o}"
+    ],
+    "answer": "\\phi = h\\nu_o",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_012.png",
+    "tip": ""
+  },
+  {
+    "id": "dual_nature_of_light_qn_013",
+    "question": "The relation between threshold wavelength &lambda;<sub>o</sub> and work function &phi; in photoelectric effect is",
+    "options": [
+      "\\phi = hc\\lambda_o",
+      "\\phi = \\frac{hc}{\\lambda_o}",
+      "\\phi = hc\\lambda_o",
+      "\\phi = h\\sqrt{\\lambda_o}"
+    ],
+    "answer": "\\phi = \\frac{hc}{\\lambda_o}",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_013.png",
+    "tip": ""
+  },
+  {
+    "id": "dual_nature_of_light_qn_014",
+    "question": "The relation between stopping potential <i>V<sub>o</sub></i> and maximum kinetic energy of electron <i>KE<sub>max</sub></i> in photoelectric effect is (<i>e</i> = charge on electron)",
+    "options": [
+      "KE_{max} = \\frac{V_o}{e}",
+      "KE_{max} = V_o",
+      "KE_{max} = eV_o",
+      "KE_{max} = \\frac{1}{V_o e}"
+    ],
+    "answer": "KE_{max} = eV_o",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_014.png",
+    "tip": ""
+  },
+  {
+    "id": "dual_nature_of_light_qn_015",
+    "question": "A graph is plotted for photo current and intensity of incident photons in photoelectric effect. The correct graph is",
+    "options": [
+      "\\text{A}",
+      "\\text{B}",
+      "\\text{C}",
+      "\\text{D}"
+    ],
+    "answer": "\\text{B}",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_015.png",
+    "tip": ""
+  },
+
+  {
+    "id": "dual_nature_of_light_qn_016",
+    "question": "A graph is plotted between maximum kinetic energy and incident photon frequency in photoelectric effect. The slope of line is (<i>h</i> = plancks constant, <i>c</i> = speed of light)",
+    "options": [
+      "he",
+      "hc",
+      "\\frac{h}{e}",
+      "h"
+    ],
+    "answer": "h",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_016.png",
+    "tip": ""
+  },
+  {
+    "id": "dual_nature_of_light_qn_017",
+    "question": "A graph is plotted between maximum kinetic energy and incident photon frequency in photoelectric effect. The y intercept of this line is (&phi; = work function)",
+    "options": [
+      "\\frac{1}{\\phi e}",
+      "\\frac{\\phi}{e}",
+      "\\phi",
+      "\\phi e"
+    ],
+    "answer": "\\phi",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_017.png",
+    "tip": ""
+  },
+  {
+    "id": "dual_nature_of_light_qn_018",
+    "question": "A graph is plotted between stopping potential and incident photon frequency in photoelectric effect. The slope of line is (<i>h</i> = plancks constant, <i>c</i> = speed of light)",
+    "options": [
+      "he",
+      "hc",
+      "\\frac{h}{e}",
+      "h"
+    ],
+    "answer": "\\frac{h}{e}",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_018.png",
+    "tip": ""
+  },
+  {
+    "id": "dual_nature_of_light_qn_019",
+    "question": "A graph is plotted between stopping potential and incident photon frequency in photoelectric effect. The y intercept of this line is (&phi; = work function)",
+    "options": [
+      "\\frac{1}{\\phi e}",
+      "-\\frac{\\phi}{e}",
+      "\\phi",
+      "\\phi e"
+    ],
+    "answer": "-\\frac{\\phi}{e}",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_019.png",
+    "tip": ""
+  },
+  {
+    "id": "dual_nature_of_light_qn_020",
+    "question": "A graph is plotted photo current and collector potential for different incident photon frequencies. The relation between frequencies is",
+    "options": [
+      "\\nu_1 > \\nu_2",
+      "\\nu_1 = \\nu_2",
+      "\\text{None of these}",
+      "\\nu_1 < \\nu_2"
+    ],
+    "answer": "\\nu_1 > \\nu_2",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_020.png",
+    "tip": ""
+  },
 
     {
       "id": "ray_optics_qn_001",

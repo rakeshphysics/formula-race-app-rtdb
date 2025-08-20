@@ -121,7 +121,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
                 SizedBox(height: screenHeight * 0.04),
                 Text(
-                  'Physics Revision',
+                  'Physics Formulas',
                   style: GoogleFonts.poppins(
                     fontSize: screenWidth * 0.045,
                     color: const Color(0xFFD3D3D3),

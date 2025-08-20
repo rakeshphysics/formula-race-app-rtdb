@@ -105,7 +105,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   @override
   void initState() {
     super.initState();
-    print('🤢🤢*** SoloScreen initState called for chapter: ${widget.selectedChapter} ***'); // ADD THIS LINE
+    //print('🤢🤢*** SoloScreen initState called for chapter: ${widget.selectedChapter} ***'); // ADD THIS LINE
 
     _progressController = AnimationController(
       vsync: this,
@@ -253,13 +253,13 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     }
 
     //Consolidated Print Statements (ONLY ONE LOCATION)
-    print('--- Selected Questions Chapters (Final List) ---');
+    //print('--- Selected Questions Chapters (Final List) ---');
     for (var i = 0; i < finalQuestions.length; i++) {
       final question = finalQuestions[i];
       final chapter = question['tags']['chapter'] ?? 'Unknown Chapter';
       final difficulty = question['tags']['difficulty'] ?? 'Unknown Difficulty';
       final questionId = question['id'] ?? 'Unknown ID'; // Correctly accessing the 'id' at the top level
-      print('😄😄Question ${i + 1}: ID - $questionId, Chapter - $chapter, Difficulty - $difficulty');
+      //print('😄😄Question ${i + 1}: ID - $questionId, Chapter - $chapter, Difficulty - $difficulty');
     }
     //print('------------------------------------------------');
     setState(() {
