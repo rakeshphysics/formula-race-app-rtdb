@@ -14095,7 +14095,193 @@
     },
     "image": "assets/images/12th/wave_optics/wave_optics_qn_030.png",
     "tip": ""
-  }
+  },
+
+    {
+      "id": "atoms_qn_001",
+      "question": "The angular momentum of an electron in <b><i>n<sup>th</sup></i></b> bohr orbit is given by <i>h</i> = h/2&pi;",
+      "options": [
+        "n\\hbar",
+        "\\frac{n\\hbar}{2}",
+        "2n\\hbar",
+        "4n\\hbar"
+      ],
+      "answer": "n\\hbar",
+      "tags": {
+        "chapter": "atoms",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "atoms_qn_002",
+      "question": "Bohr radius equals",
+      "options": [
+        "\\text{0.8 A}",
+        "\\text{0.529 A}",
+        "\\text{0.312 A}",
+        "\\text{1.6 A}"
+      ],
+      "answer": "\\text{0.529 A}",
+      "tags": {
+        "chapter": "atoms",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "atoms_qn_003",
+      "question": "The radius of nth orbit of hydrogen like atom is (<i>Z</i> = atomic number)",
+      "options": [
+        "0.529 \\frac{n^2}{Z^2} \\text{ A}",
+        "0.529 \\frac{Z}{n} \\text{ A}",
+        "0.529 \\frac{n^2}{Z} \\text{ A}",
+        "0.529 \\frac{n}{Z^2} \\text{ A}"
+      ],
+      "answer": "0.529 \\frac{n^2}{Z} \\text{ A}",
+      "tags": {
+        "chapter": "atoms",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "atoms_qn_004",
+      "question": "The energy of an electron in nth Bohr orbit of hydrogen like atom is (<i>Z</i> = atomic number)",
+      "options": [
+        "-13.6 (\\frac{Z^2}{n^2}) \\text{ eV}",
+        "-13.6 (\\frac{n}{Z}) \\text{ eV}",
+        "-13.6 (\\frac{Z}{n}) \\text{ eV}",
+        "-13.6 (\\frac{n^2}{Z^2}) \\text{ eV}"
+      ],
+      "answer": "-13.6 (\\frac{Z^2}{n^2}) \\text{ eV}",
+      "tags": {
+        "chapter": "atoms",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "atoms_qn_005",
+      "question": "When an electron makes transition from <i>n<sub>2</sub></i> orbit to <i>n<sub>1</sub></i> orbit, the energy of photon released is (<i>Z</i> = atomic number)",
+      "options": [
+        "13.6 Z^2 (\\frac{1}{n_1^2} - \\frac{1}{n_2^2}) \\text{ eV}",
+        "13.6 Z (\\frac{1}{n_2^2} - \\frac{1}{n_1^2}) \\text{ eV}",
+        "13.6 Z^2 (\\frac{1}{n_1^2} + \\frac{1}{n_2^2}) \\text{ eV}",
+        "13.6 Z^2 (\\frac{1}{n_1^2} + \\frac{1}{n_2^2}) \\text{ eV}"
+      ],
+      "answer": "13.6 Z^2 (\\frac{1}{n_1^2} - \\frac{1}{n_2^2}) \\text{ eV}",
+      "tags": {
+        "chapter": "atoms",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "atoms_qn_006",
+      "question": "When an electron makes transition from <i>n<sub>2</sub></i> orbit to <i>n<sub>1</sub></i> orbit, the wavelength of photon released is (<i>Z</i> = atomic number)",
+      "options": [
+        "\\frac{1}{\\lambda} = RZ^2 \\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right)",
+        "\\frac{1}{\\lambda} = RZ^2 \\left(\\frac{1}{n_1} - \\frac{1}{n_2}\\right)",
+        "\\frac{1}{\\lambda} = RZ^2 \\left(\\frac{1}{n_1^2} + \\frac{1}{n_2^2}\\right)",
+        "\\frac{1}{\\lambda} = RZ^2 \\left(\\frac{1}{n_1^2} + \\frac{1}{n_2^2}\\right)"
+      ],
+      "answer": "\\frac{1}{\\lambda} = RZ^2 \\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right)",
+      "tags": {
+        "chapter": "atoms",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "atoms_qn_007",
+      "question": "When an electron makes transition from <i>n</i> orbit to ground state, the total number of spectral lines in the emission spectrum is",
+      "options": [
+        "\\frac{n(n-1)}{2}",
+        "\\frac{n(n+1)}{2}",
+        "\\frac{n(2n-1)}{2}",
+        "n(2n-1)"
+      ],
+      "answer": "\\frac{n(n-1)}{2}",
+      "tags": {
+        "chapter": "atoms",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": "When asked for 5 -> 3, you can rather find 3 -> 1. The difference matters, not the n value per se !"
+    },
+    {
+      "id": "atoms_qn_008",
+      "question": "Which electron transition in Bohr atom gives emission of visible light",
+      "options": [
+        "n \\to 2, \\text{ Balmer}",
+        "n \\to 1, \\text{ Lyman}",
+        "n \\to 3, \\text{ Paschen}",
+        "n \\to 1, \\text{ Brackett}"
+      ],
+      "answer": "n \\to 2, \\text{ Balmer}",
+      "tags": {
+        "chapter": "atoms",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "atoms_qn_009",
+      "question": "Which electron transition in Bohr atom gives emission of UV radiation",
+      "options": [
+        "n \\to 2, \\text{ Balmer}",
+        "n \\to 1, \\text{ Lyman}",
+        "n \\to 3, \\text{ Paschen}",
+        "n \\to 1, \\text{ Brackett}"
+      ],
+      "answer": "n \\to 1, \\text{ Lyman}",
+      "tags": {
+        "chapter": "atoms",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "atoms_qn_010",
+      "question": "The energy of an electron in nth orbit, if motion of nucleus is also considered (&mu; = reduced mass of nucleus electron, <i>m</i> = mass of electron)",
+      "options": [
+        "-13.6 (\\frac{Z^2}{n^2}) (\\frac{m}{\\mu}) \\text{ eV}",
+        "-13.6 (\\frac{Z}{n}) (\\frac{m}{\\mu}) \\text{ eV}",
+        "-13.6 (\\frac{Z}{n}) (\\frac{\\mu}{m}) \\text{ eV}",
+        "-13.6 (\\frac{Z^2}{n^2}) (\\frac{\\mu}{m}) \\text{ eV}"
+      ],
+      "answer": "-13.6 (\\frac{Z^2}{n^2}) (\\frac{\\mu}{m}) \\text{ eV}",
+      "tags": {
+        "chapter": "atoms",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "",
+      "tip": "Not in NCERT, but was asked in JEE Adv 2025"
+    }
+
 ]
 
 
