@@ -184,6 +184,189 @@
     },
     "image": "",
     "tip": "NCERT pg 211, EM waves production and detection Table. "
-  }
+  },
+
+    {
+      "id": "em_waves_qn_011",
+      "question": "Electric flux &phi;<sub>E</sub> is given by (<b>E</b> = electric field, <b>A</b> = Area vector)",
+      "options": [
+        "\\int \\vec{E} \\times d\\vec{A}",
+        "\\int \\vec{E} \\cdot d\\vec{A}",
+        "\\int d\\vec{A} \\times \\vec{E}",
+        "\\int \\vec{A} \\cdot d\\vec{A}"
+      ],
+      "answer": "\\int \\vec{E} \\cdot d\\vec{A}",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "em_waves_qn_012",
+      "question": "Choose the correct relation for an electromagnetic wave (<b>E</b> = electric field, <b>B</b> = magnetic field, <i>K</i> = angular wave number, &omega; = angular frequency)",
+      "options": [
+        "E = B\\omega K",
+        "EB = \\omega K",
+        "EK = B\\omega",
+        "E\\omega = BK"
+      ],
+      "answer": "EK = B\\omega",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "em_waves_qn_013",
+      "question": "Gauss Law for electricity is given by (variables have their usual meanings)",
+      "options": [
+        "\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{enc}}{\\epsilon_0}",
+        "\\oint \\vec{B} \\cdot d\\vec{A} = 0",
+        "\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}",
+        "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (I_c + \\epsilon_0 \\frac{d\\Phi_E}{dt})"
+      ],
+      "answer": "\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{enc}}{\\epsilon_0}",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "em_waves_qn_014",
+      "question": "Gauss Law for magnetism is given by (variables have their usual meanings)",
+      "options": [
+        "\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{enc}}{\\epsilon_0}",
+        "\\oint \\vec{B} \\cdot d\\vec{A} = 0",
+        "\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}",
+        "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (I_c + \\epsilon_0 \\frac{d\\Phi_E}{dt})"
+      ],
+      "answer": "\\oint \\vec{B} \\cdot d\\vec{A} = 0",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "em_waves_qn_015",
+      "question": "The correct relation between electric displacement vector <b>D</b> area <b>dA</b> and free charge <i>Q</i> is (Not in NCERT, but was asked in Mains 2023)",
+      "options": [
+        "\\oint \\vec{D} \\cdot d\\vec{A} = Q",
+        "\\oint \\vec{D} \\cdot d\\vec{A} = \\frac{Q}{\\epsilon_0}",
+        "\\oint \\vec{D} \\cdot d\\vec{A} = Q\\epsilon_0",
+        "\\oint \\vec{D} \\cdot d\\vec{A} = Q\\mu_0"
+      ],
+      "answer": "\\oint \\vec{D} \\cdot d\\vec{A} = Q",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "em_waves_qn_016",
+      "question": "Correct form of amperes law is (<b>E</b> = electric field, <b>B</b> = magnetic field)",
+      "options": [
+        "\\int \\vec{E} \\cdot d\\vec{A} = \\int \\vec{B} \\cdot d\\vec{A}",
+        "\\int \\vec{E} \\cdot d\\vec{l} = \\frac{d}{dt} \\int \\vec{B} \\cdot d\\vec{A}",
+        "\\int \\vec{E} \\cdot d\\vec{l} = -\\frac{d}{dt} \\int \\vec{B} \\cdot d\\vec{A}",
+        "\\int \\vec{E} \\times d\\vec{l} = \\int \\vec{B} \\times d\\vec{A}"
+      ],
+      "answer": "\\int \\vec{E} \\cdot d\\vec{l} = -\\frac{d}{dt} \\int \\vec{B} \\cdot d\\vec{A}",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "em_waves_qn_017",
+      "question": "The electromagnetic radiation energy crossing a unit area is given by Poynting vector <b>S</b> which equals",
+      "options": [
+        "\\mu_0 (\\vec{B} \\times \\vec{E})",
+        "\\mu_0 (\\vec{E} \\times \\vec{B})",
+        "\\frac{1}{\\mu_0}(\\vec{E} \\times \\vec{B})",
+        "\\frac{1}{\\mu_0}(\\vec{B} \\times \\vec{E})"
+      ],
+      "answer": "\\frac{1}{\\mu_0}(\\vec{E} \\times \\vec{B})",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "em_waves_qn_018",
+      "question": "Faradays law is given by (variables have their usual meanings)",
+      "options": [
+        "\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{enc}}{\\epsilon_0}",
+        "\\oint \\vec{B} \\cdot d\\vec{A} = 0",
+        "\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}",
+        "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (I_c + \\epsilon_0 \\frac{d\\Phi_E}{dt})"
+      ],
+      "answer": "\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "em_waves_qn_019",
+      "question": "Maxwell amperes law is given by (variables have their usual meanings)",
+      "options": [
+        "\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{enc}}{\\epsilon_0}",
+        "\\oint \\vec{B} \\cdot d\\vec{A} = 0",
+        "\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}",
+        "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (I_c + \\epsilon_0 \\frac{d\\Phi_E}{dt})"
+      ],
+      "answer": "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (I_c + \\epsilon_0 \\frac{d\\Phi_E}{dt})",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "em_waves_qn_020",
+      "question": "Choose the correct relation for an electromagnetic wave (<b>E</b> = electric field, <b>B</b> = magnetic field, <b>K</b> = propagation vector (angular wave number), &omega; = angular frequency)",
+      "options": [
+        "\\vec{B} = \\frac{1}{\\omega}(\\vec{K} \\times \\vec{E})",
+        "\\vec{B} = \\omega(\\vec{K} \\times \\vec{E})",
+        "\\vec{B} = \\omega(\\vec{E} \\times \\vec{K})",
+        "\\vec{B} = (\\vec{K} \\times \\vec{E})"
+      ],
+      "answer": "\\vec{B} = \\frac{1}{\\omega}(\\vec{K} \\times \\vec{E})",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    }
 
 ]
