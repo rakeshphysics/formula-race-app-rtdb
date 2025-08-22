@@ -14,7 +14,7 @@
     "difficulty": "easy",
     "class": "12"
   },
-  "image": "",
+  "image": "assets/images/12th/em_waves/em_waves_qn_001.png",
   "tip": ""
 },
 {
@@ -50,7 +50,7 @@
 "difficulty": "easy",
 "class": "12"
 },
-"image": "",
+"image": "assets/images/12th/em_waves/em_waves_qn_003.png",
 "tip": ""
 },
   {
@@ -68,7 +68,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "",
+    "image": "assets/images/12th/em_waves/em_waves_qn_004.png",
     "tip": ""
   },
 
@@ -108,7 +108,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "",
+    "image": "assets/images/12th/em_waves/em_waves_qn_006.png",
     "tip": ""
   },
   {
@@ -201,7 +201,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/em_waves/em_waves_qn_011.png",
       "tip": ""
     },
     {
@@ -237,7 +237,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/em_waves/em_waves_qn_013.png",
       "tip": ""
     },
     {
@@ -255,7 +255,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/em_waves/em_waves_qn_014.png",
       "tip": ""
     },
     {
@@ -279,7 +279,7 @@
 
     {
       "id": "em_waves_qn_016",
-      "question": "Correct form of amperes law is (<b>E</b> = electric field, <b>B</b> = magnetic field)",
+      "question": "Correct form of Faradays law is (<b>E</b> = electric field, <b>B</b> = magnetic field)",
       "options": [
         "\\int \\vec{E} \\cdot d\\vec{A} = \\int \\vec{B} \\cdot d\\vec{A}",
         "\\int \\vec{E} \\cdot d\\vec{l} = \\frac{d}{dt} \\int \\vec{B} \\cdot d\\vec{A}",
@@ -292,7 +292,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/em_waves/em_waves_qn_016.png",
       "tip": ""
     },
     {
@@ -310,7 +310,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/em_waves/em_waves_qn_017.png",
       "tip": ""
     },
     {
@@ -328,7 +328,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/em_waves/em_waves_qn_018.png",
       "tip": ""
     },
     {
@@ -346,7 +346,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/em_waves/em_waves_qn_019.png",
       "tip": ""
     },
 
@@ -365,7 +365,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/em_waves/em_waves_qn_020.png",
       "tip": ""
     }
 

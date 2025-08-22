@@ -458,7 +458,7 @@
         "|\\vec{A} \\times \\vec{B}|",
         "\\vec{A} \\times \\vec{B}",
         "\\frac{1}{2} |\\vec{A} \\times \\vec{B}|",
-        "\\frac{1}{2} \\vec{A} \\times \\vec{B}"
+        "\\frac{1}{3} \\vec{A} \\times \\vec{B}"
       ],
       "answer": "\\frac{1}{2} |\\vec{A} \\times \\vec{B}|",
       "tags": {

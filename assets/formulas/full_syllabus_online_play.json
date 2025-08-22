@@ -3701,10 +3701,10 @@
       "options": [
         "\\frac{1}{2Nnd^2_{avg}}",
         "\\frac{1}{2n\\pi d^2 v_{avg}}",
-        "\\frac{1}{\\sqrt{2}n\\pi d^2 v_{avg}}",
+        "\\frac{1}{\\sqrt{2}n d^2 v_{avg}}",
         "\\frac{1}{\\sqrt{2}n\\pi d^2 v_{avg}}"
       ],
-      "answer": "\\frac{1}{\\sqrt{2}n d^2 v_{avg}}",
+      "answer": "\\frac{1}{\\sqrt{2}n\\pi d^2 v_{avg}}",
       "tags": {
         "chapter": "kinetic_theory",
         "difficulty": "god",
@@ -4308,7 +4308,7 @@
         "mg \\text{ on block, } mg \\text{ at earth center}",
         "\\text{None of these}"
       ],
-      "answer": "mg \\text{ on block and } mg \\text{ at earth center}",
+      "answer": "mg \\text{ on block, } mg \\text{ at earth center}",
       "tags": {
         "chapter": "Laws_of_Motion",
         "difficulty": "easy",
@@ -4321,7 +4321,7 @@
       "id": "laws_of_motion_qn_024",
       "question": "A block of mass <i>m</i> rests on ground. Which of the following are newton third law pair (N = Normal reaction)",
       "options": [
-        "\\text{N on block and N on ground}",
+        "\\text{Normal on block and Normal on ground}",
         "\\text{N on earth and } mg \\text{ on block}",
         "mg \\text{ on block and } mg \\text{ at earth center}",
         "\\text{None of these}"
@@ -7088,7 +7088,7 @@
         "|\\vec{A} \\times \\vec{B}|",
         "\\vec{A} \\times \\vec{B}",
         "\\frac{1}{2} |\\vec{A} \\times \\vec{B}|",
-        "\\frac{1}{2} \\vec{A} \\times \\vec{B}"
+        "\\frac{1}{3} \\vec{A} \\times \\vec{B}"
       ],
       "answer": "\\frac{1}{2} |\\vec{A} \\times \\vec{B}|",
       "tags": {
@@ -7815,9 +7815,9 @@
         "\\frac{v}{l}",
         "\\frac{3v}{2l}",
         "\\frac{3v}{4l}",
-        "\\frac{5v}{4l}"
+        "\\frac{7v}{4l}"
       ],
-      "answer": "\\frac{5v}{4l}",
+      "answer": "\\frac{7v}{4l}",
       "tags": {
         "chapter": "waves",
         "difficulty": "medium",
@@ -10635,6 +10635,7 @@
       "tip": ""
     },
 
+
     {
       "id": "em_waves_qn_001",
       "question": "Displacement current equals (<i>&phi;<sub>E</sub></i> = electric flux)",
@@ -10650,7 +10651,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/em_waves/em_waves_qn_001.png",
       "tip": ""
     },
     {
@@ -10686,7 +10687,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/em_waves/em_waves_qn_003.png",
       "tip": ""
     },
     {
@@ -10704,7 +10705,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/em_waves/em_waves_qn_004.png",
       "tip": ""
     },
 
@@ -10744,7 +10745,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/em_waves/em_waves_qn_006.png",
       "tip": ""
     },
     {
@@ -10822,188 +10823,188 @@
       "tip": "NCERT pg 211, EM waves production and detection Table. "
     },
 
-  {
-    "id": "em_waves_qn_011",
-    "question": "Electric flux &phi;<sub>E</sub> is given by (<b>E</b> = electric field, <b>A</b> = Area vector)",
-    "options": [
-      "\\int \\vec{E} \\times d\\vec{A}",
-      "\\int \\vec{E} \\cdot d\\vec{A}",
-      "\\int d\\vec{A} \\times \\vec{E}",
-      "\\int \\vec{A} \\cdot d\\vec{A}"
-    ],
-    "answer": "\\int \\vec{E} \\cdot d\\vec{A}",
-    "tags": {
-      "chapter": "em_waves",
-      "difficulty": "easy",
-      "class": "12"
+    {
+      "id": "em_waves_qn_011",
+      "question": "Electric flux &phi;<sub>E</sub> is given by (<b>E</b> = electric field, <b>A</b> = Area vector)",
+      "options": [
+        "\\int \\vec{E} \\times d\\vec{A}",
+        "\\int \\vec{E} \\cdot d\\vec{A}",
+        "\\int d\\vec{A} \\times \\vec{E}",
+        "\\int \\vec{A} \\cdot d\\vec{A}"
+      ],
+      "answer": "\\int \\vec{E} \\cdot d\\vec{A}",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/em_waves/em_waves_qn_011.png",
+      "tip": ""
     },
-    "image": "",
-    "tip": ""
-  },
-  {
-    "id": "em_waves_qn_012",
-    "question": "Choose the correct relation for an electromagnetic wave (<b>E</b> = electric field, <b>B</b> = magnetic field, <i>K</i> = angular wave number, &omega; = angular frequency)",
-    "options": [
-      "E = B\\omega K",
-      "EB = \\omega K",
-      "EK = B\\omega",
-      "E\\omega = BK"
-    ],
-    "answer": "EK = B\\omega",
-    "tags": {
-      "chapter": "em_waves",
-      "difficulty": "easy",
-      "class": "12"
+    {
+      "id": "em_waves_qn_012",
+      "question": "Choose the correct relation for an electromagnetic wave (<b>E</b> = electric field, <b>B</b> = magnetic field, <i>K</i> = angular wave number, &omega; = angular frequency)",
+      "options": [
+        "E = B\\omega K",
+        "EB = \\omega K",
+        "EK = B\\omega",
+        "E\\omega = BK"
+      ],
+      "answer": "EK = B\\omega",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
     },
-    "image": "",
-    "tip": ""
-  },
-  {
-    "id": "em_waves_qn_013",
-    "question": "Gauss Law for electricity is given by (variables have their usual meanings)",
-    "options": [
-      "\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{enc}}{\\epsilon_0}",
-      "\\oint \\vec{B} \\cdot d\\vec{A} = 0",
-      "\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}",
-      "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (I_c + \\epsilon_0 \\frac{d\\Phi_E}{dt})"
-    ],
-    "answer": "\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{enc}}{\\epsilon_0}",
-    "tags": {
-      "chapter": "em_waves",
-      "difficulty": "easy",
-      "class": "12"
+    {
+      "id": "em_waves_qn_013",
+      "question": "Gauss Law for electricity is given by (variables have their usual meanings)",
+      "options": [
+        "\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{enc}}{\\epsilon_0}",
+        "\\oint \\vec{B} \\cdot d\\vec{A} = 0",
+        "\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}",
+        "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (I_c + \\epsilon_0 \\frac{d\\Phi_E}{dt})"
+      ],
+      "answer": "\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{enc}}{\\epsilon_0}",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/em_waves/em_waves_qn_013.png",
+      "tip": ""
     },
-    "image": "",
-    "tip": ""
-  },
-  {
-    "id": "em_waves_qn_014",
-    "question": "Gauss Law for magnetism is given by (variables have their usual meanings)",
-    "options": [
-      "\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{enc}}{\\epsilon_0}",
-      "\\oint \\vec{B} \\cdot d\\vec{A} = 0",
-      "\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}",
-      "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (I_c + \\epsilon_0 \\frac{d\\Phi_E}{dt})"
-    ],
-    "answer": "\\oint \\vec{B} \\cdot d\\vec{A} = 0",
-    "tags": {
-      "chapter": "em_waves",
-      "difficulty": "easy",
-      "class": "12"
+    {
+      "id": "em_waves_qn_014",
+      "question": "Gauss Law for magnetism is given by (variables have their usual meanings)",
+      "options": [
+        "\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{enc}}{\\epsilon_0}",
+        "\\oint \\vec{B} \\cdot d\\vec{A} = 0",
+        "\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}",
+        "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (I_c + \\epsilon_0 \\frac{d\\Phi_E}{dt})"
+      ],
+      "answer": "\\oint \\vec{B} \\cdot d\\vec{A} = 0",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/em_waves/em_waves_qn_014.png",
+      "tip": ""
     },
-    "image": "",
-    "tip": ""
-  },
-  {
-    "id": "em_waves_qn_015",
-    "question": "The correct relation between electric displacement vector <b>D</b> area <b>dA</b> and free charge <i>Q</i> is (Not in NCERT, but was asked in Mains 2023)",
-    "options": [
-      "\\oint \\vec{D} \\cdot d\\vec{A} = Q",
-      "\\oint \\vec{D} \\cdot d\\vec{A} = \\frac{Q}{\\epsilon_0}",
-      "\\oint \\vec{D} \\cdot d\\vec{A} = Q\\epsilon_0",
-      "\\oint \\vec{D} \\cdot d\\vec{A} = Q\\mu_0"
-    ],
-    "answer": "\\oint \\vec{D} \\cdot d\\vec{A} = Q",
-    "tags": {
-      "chapter": "em_waves",
-      "difficulty": "medium",
-      "class": "12"
+    {
+      "id": "em_waves_qn_015",
+      "question": "The correct relation between electric displacement vector <b>D</b> area <b>dA</b> and free charge <i>Q</i> is (Not in NCERT, but was asked in Mains 2023)",
+      "options": [
+        "\\oint \\vec{D} \\cdot d\\vec{A} = Q",
+        "\\oint \\vec{D} \\cdot d\\vec{A} = \\frac{Q}{\\epsilon_0}",
+        "\\oint \\vec{D} \\cdot d\\vec{A} = Q\\epsilon_0",
+        "\\oint \\vec{D} \\cdot d\\vec{A} = Q\\mu_0"
+      ],
+      "answer": "\\oint \\vec{D} \\cdot d\\vec{A} = Q",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
     },
-    "image": "",
-    "tip": ""
-  },
 
-  {
-    "id": "em_waves_qn_016",
-    "question": "Correct form of amperes law is (<b>E</b> = electric field, <b>B</b> = magnetic field)",
-    "options": [
-      "\\int \\vec{E} \\cdot d\\vec{A} = \\int \\vec{B} \\cdot d\\vec{A}",
-      "\\int \\vec{E} \\cdot d\\vec{l} = \\frac{d}{dt} \\int \\vec{B} \\cdot d\\vec{A}",
-      "\\int \\vec{E} \\cdot d\\vec{l} = -\\frac{d}{dt} \\int \\vec{B} \\cdot d\\vec{A}",
-      "\\int \\vec{E} \\times d\\vec{l} = \\int \\vec{B} \\times d\\vec{A}"
-    ],
-    "answer": "\\int \\vec{E} \\cdot d\\vec{l} = -\\frac{d}{dt} \\int \\vec{B} \\cdot d\\vec{A}",
-    "tags": {
-      "chapter": "em_waves",
-      "difficulty": "medium",
-      "class": "12"
+    {
+      "id": "em_waves_qn_016",
+      "question": "Correct form of Faradays law is (<b>E</b> = electric field, <b>B</b> = magnetic field)",
+      "options": [
+        "\\int \\vec{E} \\cdot d\\vec{A} = \\int \\vec{B} \\cdot d\\vec{A}",
+        "\\int \\vec{E} \\cdot d\\vec{l} = \\frac{d}{dt} \\int \\vec{B} \\cdot d\\vec{A}",
+        "\\int \\vec{E} \\cdot d\\vec{l} = -\\frac{d}{dt} \\int \\vec{B} \\cdot d\\vec{A}",
+        "\\int \\vec{E} \\times d\\vec{l} = \\int \\vec{B} \\times d\\vec{A}"
+      ],
+      "answer": "\\int \\vec{E} \\cdot d\\vec{l} = -\\frac{d}{dt} \\int \\vec{B} \\cdot d\\vec{A}",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/em_waves/em_waves_qn_016.png",
+      "tip": ""
     },
-    "image": "",
-    "tip": ""
-  },
-  {
-    "id": "em_waves_qn_017",
-    "question": "The electromagnetic radiation energy crossing a unit area is given by Poynting vector <b>S</b> which equals",
-    "options": [
-      "\\mu_0 (\\vec{B} \\times \\vec{E})",
-      "\\mu_0 (\\vec{E} \\times \\vec{B})",
-      "\\frac{1}{\\mu_0}(\\vec{E} \\times \\vec{B})",
-      "\\frac{1}{\\mu_0}(\\vec{B} \\times \\vec{E})"
-    ],
-    "answer": "\\frac{1}{\\mu_0}(\\vec{E} \\times \\vec{B})",
-    "tags": {
-      "chapter": "em_waves",
-      "difficulty": "medium",
-      "class": "12"
+    {
+      "id": "em_waves_qn_017",
+      "question": "The electromagnetic radiation energy crossing a unit area is given by Poynting vector <b>S</b> which equals",
+      "options": [
+        "\\mu_0 (\\vec{B} \\times \\vec{E})",
+        "\\mu_0 (\\vec{E} \\times \\vec{B})",
+        "\\frac{1}{\\mu_0}(\\vec{E} \\times \\vec{B})",
+        "\\frac{1}{\\mu_0}(\\vec{B} \\times \\vec{E})"
+      ],
+      "answer": "\\frac{1}{\\mu_0}(\\vec{E} \\times \\vec{B})",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/em_waves/em_waves_qn_017.png",
+      "tip": ""
     },
-    "image": "",
-    "tip": ""
-  },
-  {
-    "id": "em_waves_qn_018",
-    "question": "Faradays law is given by (variables have their usual meanings)",
-    "options": [
-      "\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{enc}}{\\epsilon_0}",
-      "\\oint \\vec{B} \\cdot d\\vec{A} = 0",
-      "\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}",
-      "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (I_c + \\epsilon_0 \\frac{d\\Phi_E}{dt})"
-    ],
-    "answer": "\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}",
-    "tags": {
-      "chapter": "em_waves",
-      "difficulty": "medium",
-      "class": "12"
+    {
+      "id": "em_waves_qn_018",
+      "question": "Faradays law is given by (variables have their usual meanings)",
+      "options": [
+        "\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{enc}}{\\epsilon_0}",
+        "\\oint \\vec{B} \\cdot d\\vec{A} = 0",
+        "\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}",
+        "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (I_c + \\epsilon_0 \\frac{d\\Phi_E}{dt})"
+      ],
+      "answer": "\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/em_waves/em_waves_qn_018.png",
+      "tip": ""
     },
-    "image": "",
-    "tip": ""
-  },
-  {
-    "id": "em_waves_qn_019",
-    "question": "Maxwell amperes law is given by (variables have their usual meanings)",
-    "options": [
-      "\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{enc}}{\\epsilon_0}",
-      "\\oint \\vec{B} \\cdot d\\vec{A} = 0",
-      "\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}",
-      "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (I_c + \\epsilon_0 \\frac{d\\Phi_E}{dt})"
-    ],
-    "answer": "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (I_c + \\epsilon_0 \\frac{d\\Phi_E}{dt})",
-    "tags": {
-      "chapter": "em_waves",
-      "difficulty": "medium",
-      "class": "12"
+    {
+      "id": "em_waves_qn_019",
+      "question": "Maxwell amperes law is given by (variables have their usual meanings)",
+      "options": [
+        "\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{q_{enc}}{\\epsilon_0}",
+        "\\oint \\vec{B} \\cdot d\\vec{A} = 0",
+        "\\oint \\vec{E} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}",
+        "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (I_c + \\epsilon_0 \\frac{d\\Phi_E}{dt})"
+      ],
+      "answer": "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 (I_c + \\epsilon_0 \\frac{d\\Phi_E}{dt})",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/em_waves/em_waves_qn_019.png",
+      "tip": ""
     },
-    "image": "",
-    "tip": ""
-  },
 
-  {
-    "id": "em_waves_qn_020",
-    "question": "Choose the correct relation for an electromagnetic wave (<b>E</b> = electric field, <b>B</b> = magnetic field, <b>K</b> = propagation vector (angular wave number), &omega; = angular frequency)",
-    "options": [
-      "\\vec{B} = \\frac{1}{\\omega}(\\vec{K} \\times \\vec{E})",
-      "\\vec{B} = \\omega(\\vec{K} \\times \\vec{E})",
-      "\\vec{B} = \\omega(\\vec{E} \\times \\vec{K})",
-      "\\vec{B} = (\\vec{K} \\times \\vec{E})"
-    ],
-    "answer": "\\vec{B} = \\frac{1}{\\omega}(\\vec{K} \\times \\vec{E})",
-    "tags": {
-      "chapter": "em_waves",
-      "difficulty": "god",
-      "class": "12"
+    {
+      "id": "em_waves_qn_020",
+      "question": "Choose the correct relation for an electromagnetic wave (<b>E</b> = electric field, <b>B</b> = magnetic field, <b>K</b> = propagation vector (angular wave number), &omega; = angular frequency)",
+      "options": [
+        "\\vec{B} = \\frac{1}{\\omega}(\\vec{K} \\times \\vec{E})",
+        "\\vec{B} = \\omega(\\vec{K} \\times \\vec{E})",
+        "\\vec{B} = \\omega(\\vec{E} \\times \\vec{K})",
+        "\\vec{B} = (\\vec{K} \\times \\vec{E})"
+      ],
+      "answer": "\\vec{B} = \\frac{1}{\\omega}(\\vec{K} \\times \\vec{E})",
+      "tags": {
+        "chapter": "em_waves",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/em_waves/em_waves_qn_020.png",
+      "tip": ""
     },
-    "image": "",
-    "tip": ""
-  },
 
 
 
@@ -14131,7 +14132,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/atoms/atoms_qn_002.png",
       "tip": ""
     },
     {
@@ -14186,7 +14187,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/atoms/atoms_qn_005.png",
       "tip": ""
     },
 
@@ -14205,7 +14206,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/atoms/atoms_qn_006.png",
       "tip": ""
     },
     {
@@ -14223,7 +14224,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/atoms/atoms_qn_007.png",
       "tip": "When asked for 5 -> 3, you can rather find 3 -> 1. The difference matters, not the n value per se !"
     },
     {
@@ -14241,7 +14242,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/atoms/atoms_qn_008.png",
       "tip": ""
     },
     {
@@ -14259,7 +14260,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/atoms/atoms_qn_009.png",
       "tip": ""
     },
 
@@ -14278,13 +14279,11 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/atoms/atoms_qn_010.png",
       "tip": "Not in NCERT, but was asked in JEE Adv 2025"
     }
 
-]
-
-
+  ]
 
 
 

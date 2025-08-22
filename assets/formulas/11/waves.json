@@ -642,9 +642,9 @@
         "\\frac{v}{l}",
         "\\frac{3v}{2l}",
         "\\frac{3v}{4l}",
-        "\\frac{5v}{4l}"
+        "\\frac{7v}{4l}"
       ],
-      "answer": "\\frac{5v}{4l}",
+      "answer": "\\frac{7v}{4l}",
       "tags": {
         "chapter": "waves",
         "difficulty": "medium",

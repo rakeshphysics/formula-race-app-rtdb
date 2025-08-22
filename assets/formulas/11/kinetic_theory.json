@@ -533,10 +533,10 @@
       "options": [
         "\\frac{1}{2Nnd^2_{avg}}",
         "\\frac{1}{2n\\pi d^2 v_{avg}}",
-        "\\frac{1}{\\sqrt{2}n\\pi d^2 v_{avg}}",
+        "\\frac{1}{\\sqrt{2}n d^2 v_{avg}}",
         "\\frac{1}{\\sqrt{2}n\\pi d^2 v_{avg}}"
       ],
-      "answer": "\\frac{1}{\\sqrt{2}n d^2 v_{avg}}",
+      "answer": "\\frac{1}{\\sqrt{2}n\\pi d^2 v_{avg}}",
       "tags": {
         "chapter": "kinetic_theory",
         "difficulty": "god",
