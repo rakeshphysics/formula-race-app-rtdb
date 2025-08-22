@@ -87,7 +87,7 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
         if (selected.length == count) break;
       }
     }
-   // print('✅✅DEBUG: pickUniqueChapters returned ${selected.length} questions.');
+    //print('✅✅DEBUG: pickUniqueChapters returned ${selected.length} questions.');
     return selected;
   }
 
@@ -140,9 +140,9 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
           .map((q) => Map<String, dynamic>.from(q))
           .toList();
 
-      // print(
-      //     'DEBUG: Chapter Wise - Total questions for "$selectedChapterName": ${chapterQuestions
-      //         .length}');
+       // print(
+       //     'DEBUG: Chapter Wise - Total questions for "$selectedChapterName": ${chapterQuestions
+       //        .length}');
 
       Map<String, List<Map<String, dynamic>>> chapterBuckets = {
         'easy': [], 'medium': [], 'god': [],

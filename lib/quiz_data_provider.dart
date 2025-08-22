@@ -38,6 +38,7 @@ class QuizDataProvider extends ChangeNotifier {
       'assets/formulas/12/dual_nature_of_light.aes',
       'assets/formulas/12/atoms.aes',
       'assets/formulas/12/nuclei.aes',
+      'assets/formulas/12/x_rays.aes',
       'assets/formulas/12/ray_optics.aes',
       'assets/formulas/12/semiconductors.aes',
       'assets/formulas/12/wave_optics.aes',

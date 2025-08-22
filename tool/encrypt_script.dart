@@ -40,6 +40,7 @@ void main() {
     '${baseDir}12/dual_nature_of_light.json',
     '${baseDir}12/atoms.json',
     '${baseDir}12/nuclei.json',
+    '${baseDir}12/x_rays.json',
     '${baseDir}12/ray_optics.json',
     '${baseDir}12/semiconductors.json',
     '${baseDir}12/wave_optics.json',

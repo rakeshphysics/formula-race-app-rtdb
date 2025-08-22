@@ -14281,6 +14281,188 @@
       },
       "image": "assets/images/12th/atoms/atoms_qn_010.png",
       "tip": "Not in NCERT, but was asked in JEE Adv 2025"
+    },
+
+    {
+      "id": "xrays_qn_001",
+      "question": "The X-rays emitted that correspond to the smooth line in the Intensity wavelength graph are called",
+      "options": [
+        "\\text{Continuous X-rays}",
+        "\\text{Characteristic X-rays}",
+        "\\text{Soft X-rays}",
+        "\\text{Hard X-rays}"
+      ],
+      "answer": "\\text{Continuous X-rays}",
+      "tags": {
+        "chapter": "X_Rays",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/xrays/xrays_qn_001.png",
+      "tip": ""
+    },
+    {
+      "id": "xrays_qn_002",
+      "question": "The X-rays emitted that correspond to the spikes in the Intensity wavelength graph are called",
+      "options": [
+        "\\text{Continuous X-rays}",
+        "\\text{Characteristic X-rays}",
+        "\\text{Soft X-rays}",
+        "\\text{Hard X-rays}"
+      ],
+      "answer": "\\text{Characteristic X-rays}",
+      "tags": {
+        "chapter": "X_Rays",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/xrays/xrays_qn_002.png",
+      "tip": ""
+    },
+    {
+      "id": "xrays_qn_003",
+      "question": "The wavelength of most energetic X rays emitted is called",
+      "options": [
+        "\\text{Cut off wavelength}",
+        "\\text{Cut on wavelength}",
+        "\\text{Short wavelength}",
+        "\\text{Long wavelength}"
+      ],
+      "answer": "\\text{Cut off wavelength}",
+      "tags": {
+        "chapter": "X_Rays",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/xrays/xrays_qn_003.png",
+      "tip": ""
+    },
+    {
+      "id": "xrays_qn_004",
+      "question": "If the DC source has potential <i>V</i>, the cut off wavelength (threshold) of X-rays emitted is",
+      "options": [
+        "eV",
+        "\\frac{eV}{hc}",
+        "\\frac{hc}{eV}",
+        "\\frac{hcv}{e}"
+      ],
+      "answer": "\\frac{hc}{eV}",
+      "tags": {
+        "chapter": "X_Rays",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/xrays/xrays_qn_004.png",
+      "tip": ""
+    },
+    {
+      "id": "xrays_qn_005",
+      "question": "Moseleys law for characteristic X-rays is (<i>v</i> = frequency of photon emitted, <i>a</i>, <i>b</i> = constants, <i>Z</i> = Atomic number)",
+      "options": [
+        "\\nu = a(Z+b)",
+        "\\nu = a(Z-b)",
+        "\\sqrt{\\nu} = a(Z+b)",
+        "\\sqrt{\\nu} = a(Z-b)"
+      ],
+      "answer": "\\sqrt{\\nu} = a(Z-b)",
+      "tags": {
+        "chapter": "X_Rays",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "xrays_qn_006",
+      "question": "The X-rays emitted due to electron transitions in the target atoms are called",
+      "options": [
+        "\\text{Continuous X-rays}",
+        "\\text{Characteristic X-rays}",
+        "\\text{Soft X-rays}",
+        "\\text{Hard X-rays}"
+      ],
+      "answer": "\\text{Characteristic X-rays}",
+      "tags": {
+        "chapter": "X_Rays",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/xrays/xrays_qn_006.png",
+      "tip": ""
+    },
+    {
+      "id": "xrays_qn_007",
+      "question": "The X-rays emitted due to energy loss by fast moving electrons converting to photons are called",
+      "options": [
+        "\\text{Continuous X-rays}",
+        "\\text{Characteristic X-rays}",
+        "\\text{Soft X-rays}",
+        "\\text{Hard X-rays}"
+      ],
+      "answer": "\\text{Continuous X-rays}",
+      "tags": {
+        "chapter": "X_Rays",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/xrays/xrays_qn_007.png",
+      "tip": ""
+    },
+    {
+      "id": "xrays_qn_008",
+      "question": "The three spikes in graph correspond to K&alpha;, K&beta; and K&gamma; X-rays. Which one corresponds to K&alpha; X-ray",
+      "options": [
+        "\\text{1}",
+        "\\text{2}",
+        "\\text{3}",
+        "\\text{NA}"
+      ],
+      "answer": "\\text{3}",
+      "tags": {
+        "chapter": "X_Rays",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/xrays/xrays_qn_008.png",
+      "tip": ""
+    },
+    {
+      "id": "xrays_qn_009",
+      "question": "The three spikes in graph correspond to K&alpha;, K&beta; and K&gamma; X-rays. Which one corresponds to K&gamma; X-ray",
+      "options": [
+        "\\text{1}",
+        "\\text{2}",
+        "\\text{3}",
+        "\\text{NA}"
+      ],
+      "answer": "\\text{1}",
+      "tags": {
+        "chapter": "X_Rays",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/xrays/xrays_qn_009.png",
+      "tip": ""
+    },
+    {
+      "id": "xrays_qn_010",
+      "question": "The wavelength of K&alpha; X ray is (<i>R</i> = Rydberg constant, <i>Z</i> = atomic number)",
+      "options": [
+        "\\lambda_{K\\alpha} = \\frac{1}{R(Z-1)^2}",
+        "\\lambda_{K\\alpha} = \\frac{4}{3R(Z-1)^2}",
+        "\\lambda_{K\\alpha} = \\frac{4}{3R(Z-1)}",
+        "\\lambda_{K\\alpha} = \\frac{3}{4R(Z-1)^2}"
+      ],
+      "answer": "\\lambda_{K\\alpha} = \\frac{4}{3R(Z-1)^2}",
+      "tags": {
+        "chapter": "X_Rays",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/xrays/xrays_qn_010.png",
+      "tip": ""
     }
 
   ]

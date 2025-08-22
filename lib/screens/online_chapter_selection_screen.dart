@@ -48,6 +48,7 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
     'Dual Nature of Light',
     'Atoms',
     'Nuclei',
+    'X Rays',
     'Semiconductors',
   ];
 

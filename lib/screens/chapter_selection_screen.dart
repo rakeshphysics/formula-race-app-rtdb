@@ -43,6 +43,7 @@ const Map<String, String> chapterToClass = {
   "Dual Nature of Light": "12",
   "Atoms": "12",
   "Nuclei": "12",
+  "X Rays": "12",
   "Semiconductors": "12",
   "Vectors": "11",
 };
@@ -87,6 +88,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
     'Dual Nature of Light',
     'Atoms',
     'Nuclei',
+    'X Rays',
     'Semiconductors',
   ];
 
@@ -105,7 +107,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
   }
 
   Future<void> _loadChapterProgress() async {
-    //print('🔄 _loadChapterProgress started...');
+   // print('🔄 _loadChapterProgress started...');
     Map<String, double> percentages = {};
 
     final quizProvider = Provider.of<QuizDataProvider>(context, listen: false);
