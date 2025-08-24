@@ -360,6 +360,189 @@
       },
       "image": "assets/images/12th/semiconductors/semiconductors_qn_020.png",
       "tip": "Remember, this is XNOR Gate"
+    },
+
+    {
+      "id": "semiconductors_qn_021",
+      "question": "For an intrinsic semiconductor, which relation is correct (<i>n<sub>e</sub></i> = concentration of electrons, <i>n<sub>h</sub></i> = concentration of holes, <i>n<sub>i</sub></i> = intrinsic carrier concentration)",
+      "options": [
+        "n_i > n_h = n_e",
+        "n_i = n_h = n_e",
+        "n_i < n_h = n_e",
+        "n_i = n_h > n_e"
+      ],
+      "answer": "n_i = n_h = n_e",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_021.png",
+      "tip": ""
+    },
+    {
+      "id": "semiconductors_qn_022",
+      "question": "In p-type semiconductors, the impurity energy level is formed (VB: Valence Band, CB: Conduction Band)",
+      "options": [
+        "\\text{Inside VB}",
+        "\\text{Inside CB}",
+        "\\text{Near VB}",
+        "\\text{Near CB}"
+      ],
+      "answer": "\\text{Near VB}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_022.png",
+      "tip": "JEE Mains 2023 Qn. This explains proximity of Fermi-Level to CB or VB"
+    },
+    {
+      "id": "semiconductors_qn_023",
+      "question": "In n-type semiconductors, the impurity energy level is formed (VB: Valence Band, CB: Conduction Band)",
+      "options": [
+        "\\text{Inside VB}",
+        "\\text{Inside CB}",
+        "\\text{Near VB}",
+        "\\text{Near CB}"
+      ],
+      "answer": "\\text{Near CB}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_023.png",
+      "tip": "JEE Mains 2023 Qn. This explains proximity of Fermi-Level to CB or VB"
+    },
+    {
+      "id": "semiconductors_qn_024",
+      "question": "In <i>p-n</i> junction, the diffusion current is from",
+      "options": [
+        "p \\to n",
+        "n \\to p",
+        "\\text{Any side}",
+        "\\text{None of these}"
+      ],
+      "answer": "p \\to n",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_024.png",
+      "tip": "It is the flow of majority charge carriers from p to n due to difference in concentration of charge carriers"
+    },
+
+    {
+      "id": "semiconductors_qn_025",
+      "question": "In <i>p-n</i> junction, the drift current is from",
+      "options": [
+        "p \\to n",
+        "n \\to p",
+        "\\text{Any side}",
+        "\\text{None of these}"
+      ],
+      "answer": "n \\to p",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_025.png",
+      "tip": "It is the flow of minority charge carriers from n to p due to inbuilt electric field"
+    },
+    {
+      "id": "semiconductors_qn_026",
+      "question": "In <i>p-n</i> junction, when doping concentration is increased the depletion layer width",
+      "options": [
+        "\\text{Increases}",
+        "\\text{Decreases}",
+        "\\text{Either increase or decrease}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{Decreases}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_026.png",
+      "tip": "Just remember this, derivation is not in NCERT. It can be done using electrostatics concepts."
+    },
+    {
+      "id": "semiconductors_qn_027",
+      "question": "In a <i>p-n</i> junction, in forward bias, the depletion layer width <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> and <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> current dominates",
+      "options": [
+        "\\text{Inc, Diffusion}",
+        "\\text{Inc, Drift}",
+        "\\text{Dec, Diffusion}",
+        "\\text{Dec, Drift}"
+      ],
+      "answer": "\\text{Dec, Diffusion}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_027.png",
+      "tip": ""
+    },
+    {
+      "id": "semiconductors_qn_028",
+      "question": "In a <i>p-n</i> junction, in reverse bias, the depletion layer width <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> and <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> current dominates",
+      "options": [
+        "\\text{Inc, Diffusion}",
+        "\\text{Inc, Drift}",
+        "\\text{Dec, Diffusion}",
+        "\\text{Dec, Drift}"
+      ],
+      "answer": "\\text{Inc, Drift}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_028.png",
+      "tip": ""
+    },
+
+    {
+      "id": "semiconductors_qn_029",
+      "question": "Current density <i>J</i> in a semiconductor is given by (<i>n<sub>e</sub></i> = concentration of electrons, <i>n<sub>h</sub></i> = concentration of holes, <i>e</i> = electron charge, <i>v<sub>e</sub></i> = drift speed of electrons, <i>v<sub>h</sub></i> = drift speed of holes)",
+      "options": [
+        "e(n_e v_h + n_h v_e^2)",
+        "e(n_e v_e^2 + n_h v_h^2)",
+        "e(n_e v_e + n_h v_h)",
+        "e(n_e v_h + n_h v_e)"
+      ],
+      "answer": "e(n_e v_e + n_h v_h)",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_029.png",
+      "tip": ""
+    },
+    {
+      "id": "semiconductors_qn_030",
+      "question": "Conductivity &sigma; of a semiconductor is given by (<i>n<sub>e</sub></i> = concentration of electrons, <i>n<sub>h</sub></i> = concentration of holes, <i>e</i> = electron charge, &mu;<sub>e</sub> = mobility of electrons, &mu;<sub>h</sub> = mobility of holes)",
+      "options": [
+        "e(n_e \\mu_h^2 + n_h \\mu_e^2)",
+        "e(n_e \\mu_e^2 + n_h \\mu_h^2)",
+        "e(n_e \\mu_e + n_h \\mu_h)",
+        "e(n_e \\mu_h + n_h \\mu_e)"
+      ],
+      "answer": "e(n_e \\mu_e + n_h \\mu_h)",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_030.png",
+      "tip": ""
     }
 
 ]
