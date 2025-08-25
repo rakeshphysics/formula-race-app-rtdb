@@ -499,7 +499,7 @@
         "k_1 = (\\frac{l_1}{l})k,  k_2 = (\\frac{l_2}{l})k",
         "k_1 = (\\frac{l_2}{l})k,  k_2 = (\\frac{l_1}{l})k"
       ],
-      "answer": "k_1 = (\\frac{l}{l_1})k, k_2 = (\\frac{l}{l_2})k",
+      "answer": "k_1 = (\\frac{l}{l_1})k,  k_2 = (\\frac{l}{l_2})k",
       "tags": {
         "chapter": "shm",
         "difficulty": "medium",

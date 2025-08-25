@@ -543,6 +543,371 @@
       },
       "image": "assets/images/12th/semiconductors/semiconductors_qn_030.png",
       "tip": ""
+    },
+
+    {
+      "id": "semiconductors_qn_031",
+      "question": "The I-V characteristics of <i>p-n</i> junction diode for forward bias is",
+      "options": [
+        "\\text{A}",
+        "\\text{B}",
+        "\\text{C}",
+        "\\text{D}"
+      ],
+      "answer": "\\text{A}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_031.png",
+      "tip": ""
+    },
+    {
+      "id": "semiconductors_qn_032",
+      "question": "The I-V characteristics of <i>p-n</i> junction diode in reverse bias is",
+      "options": [
+        "\\text{A}",
+        "\\text{B}",
+        "\\text{C}",
+        "\\text{D}"
+      ],
+      "answer": "\\text{C}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_032.png",
+      "tip": ""
+    },
+    {
+      "id": "semiconductors_qn_033",
+      "question": "Compared to a normal <i>p-n</i> junction, a Zener diode is",
+      "options": [
+        "\\text{Lightly doped}",
+        "\\text{Moderately doped}",
+        "\\text{Heavily doped}",
+        "\\text{Undoped}"
+      ],
+      "answer": "\\text{Heavily doped}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_033.png",
+      "tip": "Heavy doping dec depletion layer width. This results in very high electric field in that region even for small values of applied voltage"
+    },
+    {
+      "id": "semiconductors_qn_034",
+      "question": "A Zener diode is operated in which region to be used a voltage regulator",
+      "options": [
+        "\\text{Forward bias}",
+        "\\text{Reverse bias}",
+        "\\text{No bias}",
+        "\\text{Forward or reverse bias}"
+      ],
+      "answer": "\\text{Reverse bias}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_034.png",
+      "tip": ""
+    },
+    {
+      "id": "semiconductors_qn_035",
+      "question": "The I-V characteristics of a Zener diode is",
+      "options": [
+        "\\text{A}",
+        "\\text{B}",
+        "\\text{C}",
+        "\\text{D}"
+      ],
+      "answer": "\\text{C}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_035.png",
+      "tip": ""
+    },
+    {
+      "id": "semiconductors_qn_036",
+      "question": "The current through Zener diode in the below circuit is",
+      "options": [
+        "\\text{0.15 A}",
+        "\\text{0.1 A}",
+        "\\text{0.01 A}",
+        "\\text{25 mA}"
+      ],
+      "answer": "\\text{25 mA}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_036.png",
+      "tip": ""
+    },
+
+    {
+      "id": "semiconductors_qn_037",
+      "question": "The below circuit acts as a",
+      "options": [
+        "\\text{Half wave rectifier}",
+        "\\text{Full wave rectifier}",
+        "\\text{Voltage doubler circuit}",
+        "\\text{Bridge rectifier}"
+      ],
+      "answer": "\\text{Half wave rectifier}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_037.png",
+      "tip": "Voltage doubler circuit and Bridge rectifier are not in syllabus. Don't worry about those terms. They were just given for options"
+    },
+    {
+      "id": "semiconductors_qn_038",
+      "question": "The below circuit acts as a",
+      "options": [
+        "\\text{Half wave rectifier}",
+        "\\text{Full wave rectifier}",
+        "\\text{Voltage doubler circuit}",
+        "\\text{Bridge Rectifier}"
+      ],
+      "answer": "\\text{Full wave rectifier}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_038.png",
+      "tip": "Voltage doubler circuit and Bridge rectifier are not in syllabus. Don't worry about those terms. They were just given for options"
+    },
+    {
+      "id": "semiconductors_qn_039",
+      "question": "A photo diode is operated in which condition to detect light effectively",
+      "options": [
+        "\\text{Forward bias}",
+        "\\text{Reverse bias}",
+        "\\text{No bias}",
+        "\\text{Forward or reverse bias}"
+      ],
+      "answer": "\\text{Reverse bias}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_039.png",
+      "tip": "Only in reverse bias is the small change in intensity noticeable. We could operate in forward bias also but the change in current is negligible compared to the actual current, so detection becomes difficult."
+    },
+    {
+      "id": "semiconductors_qn_040",
+      "question": "The I-V characteristics of a Photo diode is",
+      "options": [
+        "\\text{A}",
+        "\\text{B}",
+        "\\text{C}",
+        "\\text{D}"
+      ],
+      "answer": "\\text{D}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_040.png",
+      "tip": ""
+    },
+
+    {
+      "id": "semiconductors_qn_041",
+      "question": "The current in the circuit is",
+      "options": [
+        "\\frac{5}{1200} A",
+        "\\frac{4.8}{1200} A",
+        "\\frac{4.3}{1200} A",
+        "\\frac{3}{1200} A"
+      ],
+      "answer": "\\frac{4.8}{1200} A",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_041.png",
+      "tip": "Threshold voltage across germanium diode is 0.2V"
+    },
+    {
+      "id": "semiconductors_qn_042",
+      "question": "The I-V characteristics of an LED is",
+      "options": [
+        "\\text{A}",
+        "\\text{B}",
+        "\\text{C}",
+        "\\text{D}"
+      ],
+      "answer": "\\text{A}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_042.png",
+      "tip": ""
+    },
+    {
+      "id": "semiconductors_qn_043",
+      "question": "For an extrinsic semiconductor (<i>n<sub>e</sub></i> = concentration of electrons, <i>n<sub>h</sub></i> = concentration of holes)",
+      "options": [
+        "n_e > n_h",
+        "n_e < n_h",
+        "n_e = n_h",
+        "n_e \\neq n_h"
+      ],
+      "answer": "n_e \\neq n_h",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "semiconductors_qn_044",
+      "question": "A <i>p</i> type semiconductor is <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>",
+      "options": [
+        "\\text{Positive}",
+        "\\text{Negatively}",
+        "\\text{Uncharged}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{Uncharged}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "semiconductors_qn_045",
+      "question": "Compared to a normal <i>p-n</i> junction, a LED is",
+      "options": [
+        "\\text{Lightly doped}",
+        "\\text{Moderately doped}",
+        "\\text{Heavily doped}",
+        "\\text{Undoped}"
+      ],
+      "answer": "\\text{Heavily doped}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_045.png",
+      "tip": "Heavy doping inc the no of electron hole combinations, thus giving more light"
+    },
+    {
+      "id": "semiconductors_qn_046",
+      "question": "An LED will emit light when it is operated in",
+      "options": [
+        "\\text{Forward bias}",
+        "\\text{Reverse bias}",
+        "\\text{No bias}",
+        "\\text{Forward or reverse bias}"
+      ],
+      "answer": "\\text{Forward bias}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_046.png",
+      "tip": "Reverse bias connection leads to very low current. So less electron hole combinations, so no light emitted."
+    },
+
+    {
+      "id": "semiconductors_qn_047",
+      "question": "Compared to a normal <i>p-n</i> junction, a solar cell is",
+      "options": [
+        "\\text{Lightly doped}",
+        "\\text{Moderately doped}",
+        "\\text{Heavily doped}",
+        "\\text{Undoped}"
+      ],
+      "answer": "\\text{Lightly doped}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_047.png",
+      "tip": "Less doping inc the depletion width. So more number of photons fall, increasing the electron hole pair generation"
+    },
+    {
+      "id": "semiconductors_qn_048",
+      "question": "Carbon(Diamond), silicon and Germanium have valence and conduction bands separated by energy gap <i>E<sub>g</sub></i>. The correct order of their energy gaps is",
+      "options": [
+        "(E_g)_{Si} > (E_g)_{Ge} > (E_g)_C",
+        "(E_g)_{Ge} < (E_g)_{Si} > (E_g)_C",
+        "(E_g)_{Ge} < (E_g)_{Si} < (E_g)_C",
+        "(E_g)_{Si} = (E_g)_{Ge} = (E_g)_C"
+      ],
+      "answer": "(E_g)_{Ge} < (E_g)_{Si} < (E_g)_C",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_048.png",
+      "tip": "This can be related to the threshold voltages. Si: 0.7V, Ge, 0.2V. Think! Carbon is anyways an insulator."
+    },
+    {
+      "id": "semiconductors_qn_049",
+      "question": "The I-V characteristics of a solar cell is",
+      "options": [
+        "\\text{A}",
+        "\\text{B}",
+        "\\text{C}",
+        "\\text{D}"
+      ],
+      "answer": "\\text{B}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_049.png",
+      "tip": "The graph is in fourth quadrant as solar cell supplies current."
+    },
+    {
+      "id": "semiconductors_qn_050",
+      "question": "For LED to emit light, it must have energy gap in range of (visible light has wavelength ranging 400-700nm)",
+      "options": [
+        "\\text{0.1 eV to 0.4 eV}",
+        "\\text{0.9 eV to 1.6 eV}",
+        "\\text{0.5 eV to 1.8 eV}",
+        "\\text{1.7 eV to 3 eV}"
+      ],
+      "answer": "\\text{1.7 eV to 3 eV}",
+      "tags": {
+        "chapter": "semiconductors",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_050.png",
+      "tip": "Use formula E = (1240)/&lambda; eV"
     }
+
 
 ]
