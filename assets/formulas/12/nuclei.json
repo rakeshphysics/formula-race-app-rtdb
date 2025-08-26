@@ -1,183 +1,549 @@
 [
   {
-  "id": "modern_physics_qn_001",
-  "question": "The energy of a photon having wavelength <i>&lambda;</i> is",
-  "options": [
-    "h c \\lambda",
-    "\\frac{c}{h \\lambda}",
-    "\\frac{h c}{\\lambda}",
-    "\\frac{h}{c \\lambda}"
-  ],
-  "answer": "\\frac{h c}{\\lambda}",
-  "tags": {
-    "chapter": "nuclei",
-    "difficulty": "easy",
-    "class": "12"
-  },
-  "image": "",
-  "tip": ""
-},
-{
-"id": "modern_physics_qn_002",
-"question": "The energy of a photon in eV, if its wavelength is <i>&lambda;</i> (in nm) is",
-"options": [
-"\\frac{12400}{\\lambda}",
-"\\frac{1240}{\\lambda}",
-"\\frac{124}{\\lambda}",
-"\\frac{12.4}{\\lambda}"
-],
-"answer": "\\frac{1240}{\\lambda}",
-"tags": {
-"chapter": "modern_physics",
-"difficulty": "easy",
-"class": "12"
-},
-"image": "",
-"tip": ""
-},
-{
-"id": "modern_physics_qn_003",
-"question": "The momentum of a photon whose energy is <i>E</i> is (<i>c</i> = speed of light)",
-"options": [
-"\\frac{1}{E c}",
-"\\frac{c}{E}",
-"E c",
-"\\frac{E}{c}"
-],
-"answer": "\\frac{E}{c}",
-"tags": {
-"chapter": "modern_physics",
-"difficulty": "easy",
-"class": "12"
-},
-"image": "",
-"tip": ""
-},
-{
-"id": "modern_physics_qn_004",
-"question": "The momentum of a photon whose frequency is <i>&nu;</i> is (<i>c</i> = speed of light)",
-"options": [
-"\\frac{h}{\\nu c}",
-"\\frac{h c}{\\nu}",
-"\\frac{h \\nu}{c}",
-"h \\nu"
-],
-"answer": "\\frac{h \\nu}{c}",
-"tags": {
-"chapter": "modern_physics",
-"difficulty": "easy",
-"class": "12"
-},
-"image": "",
-"tip": ""
-},
-{
-"id": "modern_physics_qn_005",
-"question": "The momentum of a photon whose wavelength is <i>&lambda;</i> is (<i>c</i> = speed of light)",
-"options": [
-"\\frac{h}{\\lambda}",
-"\\frac{h c}{\\lambda}",
-"h c \\lambda",
-"\\frac{c}{h \\lambda}"
-],
-"answer": "\\frac{h}{\\lambda}",
-"tags": {
-"chapter": "modern_physics",
-"difficulty": "medium",
-"class": "12"
-},
-"image": "",
-"tip": ""
-},
-  {
-    "id": "modern_physics_qn_006",
-    "question": "The force exerted by light on the mirror is (<i>c</i> = speed of light, <i>P</i> = power of light)",
+    "id": "nuclei_qn_001",
+    "question": "The radius of a nucleus <i>R</i> is given by (<i>R<sub>o</sub></i> = 1.2 fm, <i>A</i> = Mass number)",
     "options": [
-      "\\frac{P}{c}",
-      "\\frac{2P}{c}",
-      "P c",
-      "2 P c"
+      "R_o A",
+      "R_o A^{\\frac{1}{3}}",
+      "R_o \\sqrt{A}",
+      "R_o A^2"
     ],
-    "answer": "\\frac{2P}{c}",
+    "answer": "R_o A^{\\frac{1}{3}}",
     "tags": {
-      "chapter": "modern_physics",
+      "chapter": "nuclei",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "nuclei_qn_002",
+    "question": "The density of nucleus is proportional to (<i>A</i> = Mass number)",
+    "options": [
+      "A",
+      "A^{\\frac{1}{3}}",
+      "\\sqrt{A}",
+      "\\text{Is a Constant}"
+    ],
+    "answer": "\\text{Is a Constant}",
+    "tags": {
+      "chapter": "nuclei",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "nuclei_qn_003",
+    "question": "For a nucleus <sub>Z</sub><sup>A</sup>X, <i>A</i> represents",
+    "options": [
+      "\\text{Mass Number}",
+      "\\text{Atomic Number}",
+      "\\text{Proton Number}",
+      "\\text{Neutron number}"
+    ],
+    "answer": "\\text{Mass Number}",
+    "tags": {
+      "chapter": "nuclei",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "nuclei_qn_004",
+    "question": "For a nucleus <sub>Z</sub><sup>A</sup>X, <i>Z</i> represents",
+    "options": [
+      "\\text{Mass Number}",
+      "\\text{Atomic Number}",
+      "\\text{Atomic mass}",
+      "\\text{Neutron number}"
+    ],
+    "answer": "\\text{Atomic Number}",
+    "tags": {
+      "chapter": "nuclei",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "nuclei_qn_005",
+    "question": "Isotopes have (<i>Z</i> = atomic number(proton number), <i>A</i> = Mass number, <i>N</i> = Neutron number)",
+    "options": [
+      "\\text{Diff Z}",
+      "\\text{Same N}",
+      "\\text{Same Z}",
+      "\\text{Same A}"
+    ],
+    "answer": "\\text{Same Z}",
+    "tags": {
+      "chapter": "nuclei",
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/modern_physics/modern_physics_qn_006.png",
-    "tip": ""
+    "image": "assets/images/12th/nuclei/nuclei_qn_005.png",
+    "tip": "Trick to remember ! isotoPES same proton number"
   },
-  {
-    "id": "modern_physics_qn_007",
-    "question": "The force exerted by light on nonreflecting surface is (<i>c</i> = speed of light, <i>P</i> = power of light)",
-    "options": [
-      "\\frac{P}{c}",
-      "\\frac{2P}{c}",
-      "P c",
-      "2 P c"
-    ],
-    "answer": "\\frac{P}{c}",
-    "tags": {
-      "chapter": "modern_physics",
-      "difficulty": "medium",
-      "class": "12"
+
+    {
+      "id": "nuclei_qn_006",
+      "question": "Isotones have (<i>Z</i> = atomic number(proton number), <i>A</i> = Mass number, <i>N</i> = Neutron number)",
+      "options": [
+        "\\text{Diff N}",
+        "\\text{Same N}",
+        "\\text{Same Z}",
+        "\\text{Same A}"
+      ],
+      "answer": "\\text{Same N}",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/nuclei/nuclei_qn_006.png",
+      "tip": "Trick to remember ! isotoNES same neutron number"
     },
-    "image": "assets/images/12th/modern_physics/modern_physics_qn_007.png",
-    "tip": ""
-  },
-  {
-    "id": "modern_physics_qn_008",
-    "question": "The pressure exerted by light on the mirror is (<i>c</i> = speed of light, <i>I</i> = intensity of light)",
-    "options": [
-      "\\frac{I}{c}",
-      "\\frac{2I}{c}",
-      "I c",
-      "2 I c"
-    ],
-    "answer": "\\frac{2I}{c}",
-    "tags": {
-      "chapter": "modern_physics",
-      "difficulty": "medium",
-      "class": "12"
+    {
+      "id": "nuclei_qn_007",
+      "question": "Isobars have (<i>Z</i> = atomic number(proton number), <i>A</i> = Mass number, <i>N</i> = Neutron number)",
+      "options": [
+        "\\text{Diff A}",
+        "\\text{Same N}",
+        "\\text{Same Z}",
+        "\\text{Same A}"
+      ],
+      "answer": "\\text{Same A}",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/nuclei/nuclei_qn_007.png",
+      "tip": ""
     },
-    "image": "assets/images/12th/modern_physics/modern_physics_qn_008.png",
-    "tip": ""
-  },
-  {
-    "id": "modern_physics_qn_009",
-    "question": "The pressure exerted by light on the nonreflecting surface is (<i>c</i> = speed of light, <i>I</i> = intensity of light)",
-    "options": [
-      "\\frac{I}{c}",
-      "\\frac{2I}{c}",
-      "I c",
-      "2 I c"
-    ],
-    "answer": "\\frac{I}{c}",
-    "tags": {
-      "chapter": "modern_physics",
-      "difficulty": "medium",
-      "class": "12"
+    {
+      "id": "nuclei_qn_008",
+      "question": "Einsteins mass energy equivalence is (<i>m</i> = mass, <i>c</i> = speed of light)",
+      "options": [
+        "E = mc^2",
+        "E = mc",
+        "E = m\\sqrt{c}",
+        "E = mc^3"
+      ],
+      "answer": "E = mc^2",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/nuclei/nuclei_qn_008.png",
+      "tip": ""
     },
-    "image": "assets/images/12th/modern_physics/modern_physics_qn_009.png",
-    "tip": ""
-  },
-  {
-    "id": "modern_physics_qn_010",
-    "question": "The force exerted by light on the mirror is (<i>c</i> = speed of light, <i>I</i> = intensity of light, <i>A</i> = crossection area of beam)",
-    "options": [
-      "\\frac{I A \\cos \\theta}{c}",
-      "\\frac{2 I A \\cos \\theta}{c}",
-      "\\frac{2 I A \\cos^2 \\theta}{c}",
-      "\\frac{2 I A \\sin^2 \\theta}{c}"
-    ],
-    "answer": "\\frac{2 I A \\cos^2 \\theta}{c}",
-    "tags": {
-      "chapter": "modern_physics",
-      "difficulty": "god",
-      "class": "12"
+    {
+      "id": "nuclei_qn_009",
+      "question": "Binding energy of a nucleus <i>BE</i> is given by (&Delta;<i>m</i> = mass defect, <i>c</i> = speed of light)",
+      "options": [
+        "\\Delta mc^3",
+        "\\Delta m\\sqrt{c}",
+        "\\Delta mc",
+        "\\Delta mc^2"
+      ],
+      "answer": "\\Delta mc^2",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/nuclei/nuclei_qn_009.png",
+      "tip": "Stability of a nucleus is decided by binding energy per nucleon and NOT Binding energy"
     },
-    "image": "assets/images/12th/modern_physics/modern_physics_qn_010.png",
-    "tip": ""
-  }
+    {
+      "id": "nuclei_qn_010",
+      "question": "Mass defect of a nucleus &Delta;m is given by (<i>Z</i> = atomic number, <i>A</i> = Mass number, <i>M</i> = mass of nucleus, <i>m<sub>p</sub></i> = mass of proton, <i>m<sub>n</sub></i> = mass of neutron)",
+      "options": [
+        "(Zm_p + (A-Z)m_n) - M",
+        "(Zm_p + (A+Z)m_n) - M",
+        "(Zm_p + (A-Z)m_n) + M",
+        "(Zm_p + (A+Z)m_n) + M"
+      ],
+      "answer": "(Zm_p + (A-Z)m_n) - M",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/nuclei/nuclei_qn_010.png",
+      "tip": ""
+    },
+
+    {
+      "id": "nuclei_qn_011",
+      "question": "The number of radioactive nuclei at time <i>t</i> is (<i>N<sub>o</sub></i> = number of nuclei at <i>t</i> = 0, &lambda; = decay constant)",
+      "options": [
+        "N_o e^{-2\\lambda t}",
+        "N_o e^{-\\lambda t}",
+        "N_o e^{2\\lambda t}",
+        "N_o e^{4\\lambda t}"
+      ],
+      "answer": "N_o e^{-\\lambda t}",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/nuclei/nuclei_qn_011.png",
+      "tip": ""
+    },
+    {
+      "id": "nuclei_qn_012",
+      "question": "The decay rate <i>R</i> of a radioactive nuclei at time <i>t</i> is (<i>N<sub>o</sub></i> = number of nuclei at <i>t</i> = 0, &lambda; = decay constant)",
+      "options": [
+        "\\lambda N_o e^{-\\lambda t}",
+        "N_o e^{-\\lambda t}",
+        "2\\lambda N_o e^{2\\lambda t}",
+        "\\lambda N_o e^{2\\lambda t}"
+      ],
+      "answer": "\\lambda N_o e^{-\\lambda t}",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "nuclei_qn_013",
+      "question": "The correct relation between rate of nuclei decay <i>R</i> and number of nuclei <i>N</i> at time <i>t</i> is (&lambda; = decay constant)",
+      "options": [
+        "R = \\lambda N",
+        "R = \\lambda \\sqrt{N}",
+        "R = \\lambda N^2",
+        "R = \\lambda^2 N"
+      ],
+      "answer": "R = \\lambda N",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "nuclei_qn_014",
+      "question": "The correct relation between mean life &tau; and decay constant &lambda; is",
+      "options": [
+        "\\tau = \\lambda^2",
+        "\\tau = \\lambda",
+        "\\tau = \\frac{1}{\\lambda}",
+        "\\tau = \\frac{1}{\\lambda^2}"
+      ],
+      "answer": "\\tau = \\frac{1}{\\lambda}",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "nuclei_qn_015",
+      "question": "The correct relation between half-life <i>t<sub>1/2</sub></i> and decay constant &lambda; is",
+      "options": [
+        "t_{1/2} = \\frac{\\ln 2}{\\lambda}",
+        "t_{1/2} = \\frac{\\ln 2}{\\lambda^2}",
+        "t_{1/2} = \\lambda \\ln 2",
+        "t_{1/2} = \\sqrt{\\lambda \\ln 2}"
+      ],
+      "answer": "t_{1/2} = \\frac{\\ln 2}{\\lambda}",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "nuclei_qn_016",
+      "question": "The number of neutrons released per fission of uranium nucleus is",
+      "options": [
+        "\\text{2}",
+        "\\text{3}",
+        "\\text{2.5}",
+        "\\text{1.5}"
+      ],
+      "answer": "\\text{2.5}",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": "In some reactions it is 2, in some it is 3. So the average is taken as 2.5."
+    },
+    {
+      "id": "nuclei_qn_017",
+      "question": "For the parallel radioactive disintegration shown, the effective decay constant &lambda;<sub>eff</sub> is",
+      "options": [
+        "|\\lambda_1 - \\lambda_2|",
+        "\\lambda_1 + \\lambda_2",
+        "\\frac{\\lambda_1 \\lambda_2}{\\lambda_1 + \\lambda_2}",
+        "\\frac{\\lambda_1 \\lambda_2}{|\\lambda_1 - \\lambda_2|}"
+      ],
+      "answer": "\\lambda_1 + \\lambda_2",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/nuclei/nuclei_qn_017.png",
+      "tip": ""
+    },
+    {
+      "id": "nuclei_qn_018",
+      "question": "For the parallel radioactive disintegration shown, the effective mean life &tau;<sub>eff</sub> is",
+      "options": [
+        "|\\tau_1 - \\tau_2|",
+        "\\tau_1 + \\tau_2",
+        "\\frac{\\tau_1 \\tau_2}{\\tau_1 + \\tau_2}",
+        "\\frac{\\tau_1 \\tau_2}{|\\tau_1 - \\tau_2|}"
+      ],
+      "answer": "\\frac{\\tau_1 \\tau_2}{\\tau_1 + \\tau_2}",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/nuclei/nuclei_qn_018.png",
+      "tip": ""
+    },
+    {
+      "id": "nuclei_qn_019",
+      "question": "The correct reaction for &alpha; decay is",
+      "options": [
+        "_Z^A X \\to _{Z-2}^{A-4} Y + _2^4 He",
+        "_Z^A X \\to _{Z-2}^{A-2} Y + _2^2 He",
+        "_Z^A X \\to _{Z+2}^{A-2} Y + _2^2 He",
+        "_Z^A X \\to _{Z-2}^{A-3} Y + _3^2 He"
+      ],
+      "answer": "_Z^A X \\to _{Z-2}^{A-4} Y + _2^4 He",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "nuclei_qn_020",
+      "question": "The probability that a nucleus will decay in time <i>t</i> is (<i>t<sub>1/2</sub></i> = half-life)",
+      "options": [
+        "1 - 2^{-t/t_{1/2}}",
+        "\\frac{1}{2^{t/t_{1/2}}}",
+        "1 - \\frac{1}{2^{t/t_{1/2}}}",
+        "2^{t/t_{1/2}}"
+      ],
+      "answer": "1 - \\frac{1}{2^{t/t_{1/2}}}",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "nuclei_qn_021",
+      "question": "The <i>Q</i> value for &alpha; decay is (<i>m</i> = mass, <i>R</i> = reactants, <i>P</i> = products)",
+      "options": [
+        "(m_R - m_P - m_{He})c^2",
+        "(m_R + m_P + m_{He})c^2",
+        "(m_P - m_R - m_{He})c^2",
+        "(m_P + m_R + m_{He})c^2"
+      ],
+      "answer": "(m_R - m_P - m_{He})c^2",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "nuclei_qn_022",
+      "question": "The <i>Q</i> value for &beta;<sup>-</sup> decay is (<i>m</i> = mass, <i>R</i> = reactants, <i>P</i> = products, <i>e</i> = electron)",
+      "options": [
+        "(m_R - m_P)c^2",
+        "(m_R - m_P - 2m_e)c^2",
+        "(m_R + m_P)c^2",
+        "(m_R - m_P - m_e)c^2"
+      ],
+      "answer": "(m_R - m_P)c^2",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": "Students get confused if its 2 electrons for beta plus or beta minus. Trick to remember! Minus: zero kharcha. Plus: do ka jhatka !!"
+    },
+    {
+      "id": "nuclei_qn_023",
+      "question": "The correct reaction for &gamma; decay is",
+      "options": [
+        "_Z^A X^* \\to _Z^A X + \\gamma",
+        "_Z^A X^* \\to _{Z+1}^A Y + \\gamma",
+        "_Z^A X^* \\to _{Z-1}^A Y + \\gamma",
+        "_Z^A X^* \\to _{Z}^{A-1} Y + \\gamma"
+      ],
+      "answer": "_Z^A X^* \\to _Z^A X + \\gamma",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "nuclei_qn_024",
+      "question": "<i>Q</i> value of a nuclear reaction is given by (<i>BE</i> = binding energy, <i>R</i> = reactants, <i>P</i> = products)",
+      "options": [
+        "2BE_P + BE_R",
+        "BE_P + BE_R",
+        "BE_R - BE_P",
+        "BE_P - BE_R"
+      ],
+      "answer": "BE_P - BE_R",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "",
+      "tip": "Students gets confused if its products-reactants or vice versa. Trick to remember! For BE, P>R.. Q value is P-R. Be careful, It is reverse if masses of nucleus are taken."
+    },
+
+    {
+      "id": "nuclei_qn_025",
+      "question": "The correct reaction for &beta;<sup>-</sup> decay is",
+      "options": [
+        "_Z^A X \\to _{Z-1}^A Y + e^- + \\overline{\\nu}",
+        "_Z^A X \\to _{Z-1}^A Y + e^- + \\nu",
+        "_Z^A X \\to _{Z+1}^A Y + e^- + \\overline{\\nu}",
+        "_Z^A X \\to _{Z+1}^A Y + e^- + \\nu"
+      ],
+      "answer": "_Z^A X \\to _{Z+1}^A Y + e^- + \\overline{\\nu}",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": "Student get confused between neutrino and antineutrino. Trick to remember ! For beta- , there is a minus(bar) on neutrinos head, so antineutrino!"
+    },
+    {
+      "id": "nuclei_qn_026",
+      "question": "The correct reaction for &beta;<sup>+</sup> decay is",
+      "options": [
+        "_Z^A X \\to _{Z-1}^A Y + e^+ + \\overline{\\nu}",
+        "_Z^A X \\to _{Z-1}^A Y + e^+ + \\nu",
+        "_Z^A X \\to _{Z+1}^A Y + e^+ + \\overline{\\nu}",
+        "_Z^A X \\to _{Z+1}^A Y + e^+ + \\nu"
+      ],
+      "answer": "_Z^A X \\to _{Z-1}^A Y + e^+ + \\nu",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": "Student get confused between neutrino and antineutrino. Trick to remember ! For beta+, there is NO minus(bar) on neutrinos head, so neutrino!"
+    },
+    {
+      "id": "nuclei_qn_027",
+      "question": "The correct reaction for <i>e</i> capture is",
+      "options": [
+        "_Z^A X + e^- \\to _{Z+1}^A Y + \\nu",
+        "_Z^A X + e^- \\to _{Z+1}^A Y + \\overline{\\nu}",
+        "_Z^A X + e^- \\to _{Z-1}^A Y + \\nu",
+        "_Z^A X + e^- \\to _{Z-1}^A Y + \\overline{\\nu}"
+      ],
+      "answer": "_Z^A X + e^- \\to _{Z-1}^A Y + \\overline{\\nu}",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+    {
+      "id": "nuclei_qn_028",
+      "question": "The <i>Q</i> value for electron capture is (<i>m</i> = mass, <i>R</i> = reactants, <i>P</i> = products, <i>e</i> = electron)",
+      "options": [
+        "(m_R - m_P)c^2",
+        "(m_R - m_P - 2m_e)c^2",
+        "(m_R - m_P + m_e)c^2",
+        "(m_R - m_P - m_e)c^2"
+      ],
+      "answer": "(m_R - m_P)c^2",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": ""
+    },
+
+    {
+      "id": "nuclei_qn_029",
+      "question": "The number of radioactive nuclei at time <i>t</i> is (<i>N<sub>o</sub></i> = number of nuclei at <i>t</i> = 0, <i>t<sub>1/2</sub></i> = half-life)",
+      "options": [
+        "\\frac{N_o}{2^{t_{1/2}/t}}",
+        "N_o 2^{t_{1/2}/t}",
+        "\\frac{N_o}{2^{t/t_{1/2}}}",
+        "N_o 2^{t/t_{1/2}}"
+      ],
+      "answer": "\\frac{N_o}{2^{t/t_{1/2}}}",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "",
+      "tip": "Remember this! very useful in solving Qns."
+    },
+    {
+      "id": "nuclei_qn_030",
+      "question": "The <i>Q</i> value for &beta;<sup>+</sup> decay is (<i>m</i> = mass, <i>R</i> = reactants, <i>P</i> = products, <i>e</i> = electron)",
+      "options": [
+        "(m_R - m_P)c^2",
+        "(m_R - m_P - 2m_e)c^2",
+        "(m_R + m_P)c^2",
+        "(m_R - m_P - m_e)c^2"
+      ],
+      "answer": "(m_R - m_P - 2m_e)c^2",
+      "tags": {
+        "chapter": "nuclei",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "",
+      "tip": "Students get confused if its 2 electrons for beta plus or beta minus. Trick to remember! Minus: Zero kharcha. Plus: do ka jhatka !!"
+    }
 
 ]
