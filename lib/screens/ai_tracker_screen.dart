@@ -103,6 +103,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
   // -------------------- CHUNK 5 — BUILD FUNCTION -----------------
   @override
   Widget build(BuildContext context) {
+    final double screenWidth = MediaQuery.of(context).size.width;
     // Calculate total active mistakes
     int totalActiveMistakes = chapterMistakes.entries.fold(0, (sum, entry) {
       return sum + entry.value.fold(0, (chapterSum, formulaEntry) {
@@ -139,7 +140,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                         resolvedCount == 1 // MODIFIED THIS LINE
                             ? "1 Mistake Resolved 🎉"
                             : "$resolvedCount Mistakes Resolved 🎉",
-                        style: TextStyle(color: Colors.white), // Ensure text color is visible
+                        style: TextStyle(color: Colors.white, fontSize:screenWidth*0.044), // Ensure text color is visible
                         textAlign: TextAlign.center, // Center the text
                       ),
                       content: const SizedBox(height: 10.0),
@@ -155,11 +156,11 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                               borderRadius: BorderRadius.circular(4.0),
                             ),
                           ),
-                          child: const Text(
+                          child:  Text(
                             "OK",
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 20.0,
+                              fontSize: screenWidth*0.044,
                             ),
                           ),
                         ),
@@ -201,8 +202,8 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 12),
             child: Text(
-              'Total active mistakes: $totalActiveMistakes',
-              style: const TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold),
+              'Total active Mistakes: $totalActiveMistakes',
+              style:TextStyle(fontSize: screenWidth*0.043, color: Colors.white, fontWeight: FontWeight.bold),
             ),
           ),
           // -----------------------------------------------------
@@ -222,7 +223,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                 ListTile(
                   title: Text(
                     '${formatChapter(chapter)} — $totalMistakes',
-                    style: const TextStyle(fontWeight: FontWeight.normal),
+                    style:  TextStyle(fontWeight: FontWeight.normal, fontSize: screenWidth*0.041),
                   ),
                   trailing: Icon(
                     expanded ? Icons.expand_less : Icons.expand_more,
@@ -281,7 +282,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                                     data: 'Q: ${formulaEntry['formula']}',
                                     style: {
                                       "body": Style(
-                                        fontSize: FontSize(14),
+                                        fontSize: FontSize(screenWidth * 0.034),
                                         color: Color(0xFFDCDCDC),
                                         fontFamily: GoogleFonts.poppins().fontFamily,
                                         margin: Margins.zero,
@@ -292,7 +293,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
 
                                   Math.tex(
                                     'Ans: ${formulaEntry['answer']}',
-                                    textStyle: const TextStyle(fontSize: 16, color: Colors.greenAccent),
+                                    textStyle:  TextStyle(fontSize: screenWidth * 0.038, color: Colors.greenAccent),
                                   ),
 
                                   Column(
@@ -313,7 +314,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                                           formulaEntry['tip'].toString(), // Ensure it's a string
                                           style: GoogleFonts.poppins(
                                             color: Color(0xe2abe6a3), // As per ResultScreen's tip content
-                                            fontSize: 14,
+                                            fontSize: screenWidth * 0.032,
                                             fontStyle: FontStyle.italic,
 
                                           ),

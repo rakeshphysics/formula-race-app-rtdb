@@ -493,7 +493,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
     await _database.child('matches/${widget.matchId}').update({
       'gameOver': true,
-      'opponentLeft': true, // Flag to indicate opponent left, for results screen
+      //'opponentLeft': true, // Flag to indicate opponent left, for results screen
       'playerLeftId': widget.playerId, // Store who left
     });
 
@@ -995,7 +995,8 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
       if (matchData != null) {
         final bool gameOverFlag = matchData['gameOver'] as bool? ?? false; // Extract 'gameOver'
-        final bool opponentLeftFromDb = matchData['opponentLeft'] as bool? ?? false; // Extract 'opponentLeft'
+        //final bool opponentLeftFromDb = matchData['opponentLeft'] as bool? ?? false; // Extract 'opponentLeft'
+        final String? playerLeftId = matchData['playerLeftId'] as String?;
 
         if (gameOverFlag == true && !gameOver) {
           gameOver = true;
@@ -1003,6 +1004,9 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
           DataSnapshot scoresSnapshot = await _database.child('matches/${widget.matchId}/scores').get();
           Map<dynamic, dynamic> scores = scoresSnapshot.value as Map<dynamic, dynamic>? ?? {};
+
+          bool opponentLeft = (playerLeftId != null && playerLeftId != widget.playerId);
+          bool youLeft = (playerLeftId != null && playerLeftId == widget.playerId);
 
           if (mounted) {
             //print("➡️ DEBUG GAME OVER FLAG: Navigating to OnlineResultScreen with scores: $scores");
@@ -1012,7 +1016,8 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                   scores: scores,
                   playerId: widget.playerId,
                   isPlayer1: widget.isPlayer1,
-                  opponentLeftGame: opponentLeftFromDb, // ✨ Use the variable that holds the correct value ✨
+                  opponentLeftGame: opponentLeft, // ✨ Use the variable that holds the correct value ✨
+                  youLeftGame: youLeft,
                   totalQuestions: totalQuestions,
                   onlineIncorrectAnswers: onlineResponses,
                 ),
@@ -1118,6 +1123,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   // ............. Chunk 13 BUILD WIDGET TREE .............
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
     if (questions.isEmpty) {
       return const Scaffold(
         body: Center(child: CircularProgressIndicator()),
@@ -1157,11 +1163,11 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                     ),
                     child: Row(
                       children: [
-                        const Text(
+                        Text(
                           'YOU:  ',
                           style: TextStyle(
                             color: Color(0xFFFFA500),
-                            fontSize: 20,
+                            fontSize: screenWidth*0.042,
                             fontFamily: 'Roboto',
                             fontWeight: FontWeight.w700,
                             letterSpacing: 1.4,
@@ -1170,9 +1176,9 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
                         Text(
                           '$myScore',
-                          style: const TextStyle(
+                          style:  TextStyle(
                             color: Color(0xFFFFA500),
-                            fontSize: 30,
+                            fontSize: screenWidth*0.065,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
@@ -1182,8 +1188,8 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
                   Image.asset(
                     'assets/icon/bolt.png',
-                    width: 36,
-                    height: 49,
+                    width:  screenWidth*0.08,
+                    height: screenWidth*0.1
                   ),
 
 
@@ -1199,17 +1205,17 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                       children: [
                         Text(
                         '$opponentScore',
-                        style: const TextStyle(
+                        style:  TextStyle(
                           color: Color(0xFFFFA500),
-                          fontSize: 30,
+                          fontSize: screenWidth*0.065,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
-                        const Text(
+                         Text(
                           '  :RIVAL',
                           style: TextStyle(
                             color: Color(0xFFFFA500),
-                            fontSize: 20,
+                            fontSize: screenWidth*0.042,
                             fontFamily: 'Roboto',
                             fontWeight: FontWeight.w700,
                             letterSpacing: 1.4,
@@ -1260,7 +1266,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
               alignment: Alignment.centerLeft,
               child: Text(
                 'Q${currentQuestionIndex + 1} of $totalQuestions',
-                style: const TextStyle(fontSize: 18, color: Colors.white),
+                style:  TextStyle(fontSize:screenWidth*0.04, color: Colors.white),
               ),
             ),
             //const SizedBox(height: 24),
@@ -1271,7 +1277,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           data: currentQuestion['question'] ?? '⚠️ null',
               style: {
                 "body": Style(
-                  fontSize: FontSize(16),
+                  fontSize: FontSize(screenWidth * 0.037),
                   fontWeight: FontWeight.normal,
                   color: Colors.white,
                   fontFamily: GoogleFonts.poppins().fontFamily,

@@ -171,10 +171,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
+                        children: [
                           Text(
                             'My Mistakes',
-                              style: TextStyle(fontSize: 19, fontWeight:FontWeight.normal, color:Colors.redAccent)
+                              style: TextStyle(fontSize: screenWidth * 0.042, fontWeight:FontWeight.normal, color:Colors.redAccent)
                           ),
 
                         ],
@@ -202,9 +202,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         );
                       },
                       gradientColors: const [Color(0xFF00FFFF), Color(0xFF006C6C)],
-                      child: const Text(
+                      child:  Text(
                         'Play Solo',
-                        style: TextStyle(fontSize: 26, color: Colors.white,fontWeight: FontWeight.normal),
+                        style: TextStyle(fontSize: screenWidth * 0.057, color: Colors.white,fontWeight: FontWeight.normal),
                       ),
                     ),
 
@@ -228,10 +228,10 @@ class _HomeScreenState extends State<HomeScreen> {
                           0xFF874A01)],
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
-                        children: const [
+                        children:  [
                           Text(
                             'Play Friend',
-                            style: TextStyle(fontSize: 26, color: Colors.white,fontWeight: FontWeight.normal),
+                            style: TextStyle(fontSize: screenWidth * 0.057, color: Colors.white,fontWeight: FontWeight.normal),
                           ),
 
                         ],

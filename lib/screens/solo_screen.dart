@@ -503,7 +503,8 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   @override
   Widget build(BuildContext context) {
     //print('😇😇--- SoloScreen build called for chapter: ${widget.selectedChapter}, currentIndex: $currentIndex ---'); // ADD THIS LINE
-
+    final double screenWidth = MediaQuery.of(context).size.width;
+    //final double screenHeight = MediaQuery.of(context).size.height;
     if (questions.isEmpty) {
       return const Scaffold(
         body: Center(child: CircularProgressIndicator()),
@@ -628,7 +629,8 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                   data: question['question'],
                   style: {
                     "body": Style(
-                      fontSize: FontSize(16),
+                      //fontSize: FontSize(16),
+                      fontSize: FontSize(screenWidth * 0.037),
                       fontWeight: FontWeight.normal,
                       color: Colors.white,
                       fontFamily: GoogleFonts.poppins().fontFamily,

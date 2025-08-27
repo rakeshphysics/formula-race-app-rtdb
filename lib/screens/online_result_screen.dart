@@ -10,6 +10,7 @@ class OnlineResultScreen extends StatelessWidget {
   final String playerId;
   final bool isPlayer1;
   final bool opponentLeftGame;
+  final bool youLeftGame;
   final int totalQuestions;
   final List<OnlineIncorrectAnswer> onlineIncorrectAnswers;
 
@@ -19,6 +20,7 @@ class OnlineResultScreen extends StatelessWidget {
     required this.playerId,
     required this.isPlayer1,
     this.opponentLeftGame = false,
+    this.youLeftGame = false,
     required this.totalQuestions,
     required this.onlineIncorrectAnswers,
   }) : super(key: key);
@@ -42,7 +44,10 @@ class OnlineResultScreen extends StatelessWidget {
     String resultMessage;
     Color resultMessageColor;
 
-    if (opponentLeftGame) { // If opponent left the game
+    if (youLeftGame) { // Check this first
+      resultMessage = 'You left the Game\nYou Lose \u{1F622}';
+      resultMessageColor = Colors.redAccent;
+    } else if (opponentLeftGame) { // If opponent left the game
       resultMessage = 'Opponent left the Game\nYou Win 🥳'; // Specific message
       resultMessageColor = Colors.amberAccent; // Winner color
       myScore = totalQuestions; // Ensure score is displayed as totalQuestions for the win
@@ -214,7 +219,7 @@ class OnlineResultScreen extends StatelessWidget {
                               userStatus,
                               textAlign: TextAlign.center,
                               style: GoogleFonts.poppins(
-                                fontSize: 16,
+                                fontSize: screenWidth*0.038,
                                 fontWeight: FontWeight.normal,
                                 color: userStatusColor,
                               ),
@@ -238,7 +243,7 @@ class OnlineResultScreen extends StatelessWidget {
                             data: "<b>Q:</b> ${qa.question}",
                             style: {
                               "body": Style(
-                                fontSize: FontSize(14),
+                                fontSize: FontSize(screenWidth * 0.033),
                                 color: Color(0xFFDCDCDC),
                                 fontFamily: GoogleFonts.poppins().fontFamily,
                               ),
@@ -253,7 +258,7 @@ class OnlineResultScreen extends StatelessWidget {
                             'Your Answer:',
                             style: GoogleFonts.poppins(
                               color: Colors.white,
-                              fontSize: 14,
+                              fontSize: screenWidth*0.033,
                               fontWeight: FontWeight.normal,
                             ),
                           ),
@@ -262,7 +267,7 @@ class OnlineResultScreen extends StatelessWidget {
                             qa.userAnswer,
                             textStyle: TextStyle(
                               color: (qa.userAnswer == qa.correctAnswer) ? Color(0xFFA4FF9D) : Color(0xFFFF5454), // Colors from ResultScreen
-                              fontSize: 18,
+                              fontSize: screenWidth * 0.042,
                             ),
                           ),
                           const SizedBox(height: 8), // Standard spacing after user answer
@@ -272,16 +277,16 @@ class OnlineResultScreen extends StatelessWidget {
                             'Correct Answer:',
                             style: GoogleFonts.poppins(
                               color: Colors.white,
-                              fontSize: 14,
+                              fontSize: screenWidth*0.033,
                               fontWeight: FontWeight.normal,
                             ),
                           ),
                           SizedBox(height: MediaQuery.of(context).size.height * 0.007),
                           Math.tex(
                             qa.correctAnswer,
-                            textStyle: const TextStyle(
+                            textStyle:  TextStyle(
                               color: Color(0xFFA4FF9D), // Green for correct, from ResultScreen
-                              fontSize: 18,
+                              fontSize: screenWidth * 0.042,
                             ),
                           ),
                           const SizedBox(height: 8), // Standard spacing after correct answer (before tip)
@@ -293,7 +298,7 @@ class OnlineResultScreen extends StatelessWidget {
                               'Tip:',
                               style: GoogleFonts.poppins(
                                 color: Colors.white,
-                                fontSize: 14,
+                                fontSize: screenWidth*0.033,
                                 fontWeight: FontWeight.w600,
                                 fontStyle: FontStyle.italic,
                               ),
@@ -302,7 +307,7 @@ class OnlineResultScreen extends StatelessWidget {
                               qa.tip!,
                               style: GoogleFonts.poppins(
                                 color: Color(0xFFFFC107),
-                                fontSize: 14,
+                                fontSize: screenWidth*0.033,
                                 fontWeight: FontWeight.normal,
                                 fontStyle: FontStyle.italic,
                               ),
@@ -319,7 +324,7 @@ class OnlineResultScreen extends StatelessWidget {
               const Expanded(
                 child: Center(
                   child: Text(
-                    'No detailed question outcomes available.',
+                    'No Questions attempted',
                     style: TextStyle(color: Colors.white70, fontSize: 16),
                   ),
                 ),
@@ -345,7 +350,7 @@ class OnlineResultScreen extends StatelessWidget {
                   ),
                   elevation: 8,
                 ),
-                child: const Text('Home', style: TextStyle(fontSize: 20,color: Colors.white, fontWeight: FontWeight.normal)),
+                child:  Text('Home', style: TextStyle(fontSize: screenWidth*0.046,color: Colors.white, fontWeight: FontWeight.normal)),
               ),
             ),
     ),

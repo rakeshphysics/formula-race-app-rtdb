@@ -78,8 +78,8 @@ class ChapterProgressButton extends StatelessWidget {
                 padding: EdgeInsets.symmetric(vertical: buttonHeight * 0.2, horizontal: 24),
                 child: Text(
                   chapterName,
-                  style: const TextStyle(
-                    fontSize: 18,
+                  style:  TextStyle(
+                    fontSize: screenWidth*0.041,
                     fontWeight: FontWeight.normal,
                     color: Colors.white,
                   ),

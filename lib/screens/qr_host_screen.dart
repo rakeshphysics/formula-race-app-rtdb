@@ -113,6 +113,8 @@ class _QRHostScreenState extends State<QRHostScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
@@ -151,10 +153,11 @@ class _QRHostScreenState extends State<QRHostScreen> {
                 backgroundColor: Colors.red.withOpacity(0.1),
                 side: const BorderSide(color: Colors.red, width: 1.2),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+                padding:  EdgeInsets.symmetric(horizontal: screenWidth*0.06, vertical: screenWidth*0.04),
               ),
-              child: const Text(
+              child: Text(
                 "Cancel Match",
-                style: TextStyle(color: Colors.white, fontSize: 20),
+                style: TextStyle(color: Colors.white, fontSize: screenWidth*0.044),
               ),
             ),
           ],

@@ -44,6 +44,7 @@ class _GlowButtonamberState extends State<GlowButtonamber> {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
     return AnimatedScale(
       duration: const Duration(milliseconds: 100),
       scale: _scale,
@@ -82,8 +83,8 @@ class _GlowButtonamberState extends State<GlowButtonamber> {
             alignment: Alignment.center,
             child: Text(
               widget.label,
-              style: const TextStyle(
-                fontSize: 20,
+              style: TextStyle(
+                fontSize: screenWidth*0.044,
                 fontWeight: FontWeight.normal,
                 color: Colors.white,
               ),

@@ -39,7 +39,7 @@ class SoloModeSelectionScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black, // DARK THEME
         title: const Text(
-            'Choose Solo Mode', style: TextStyle(fontSize:20,color: Colors.white)),
+            'Choose Portion', style: TextStyle(fontSize:20,color: Colors.white)),
         iconTheme: const IconThemeData(color: Colors.white),
       ),
 

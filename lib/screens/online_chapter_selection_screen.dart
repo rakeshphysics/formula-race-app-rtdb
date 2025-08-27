@@ -56,6 +56,7 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
     return WillPopScope(
         onWillPop: () async {
       await Navigator.pushReplacement(
@@ -117,12 +118,12 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4),
                 ),
-                padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 24),
+                padding:  EdgeInsets.symmetric(vertical: screenWidth*0.047,  horizontal: screenWidth*0.06),
               ),
               child: Text(
                 chapter,
-                style: const TextStyle(
-                  fontSize: 20,
+                style:  TextStyle(
+                  fontSize: screenWidth*0.041,
                   fontWeight: FontWeight.normal,
                   color: Colors.white,
                 ),

@@ -61,6 +61,8 @@ class ResultScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final screenWidth = MediaQuery.of(context).size.width;
     // Calculate score
     final int totalQuestions = ModalRoute.of(context)?.settings.arguments as int;
     final int score = totalQuestions - incorrectAnswers.length;
@@ -92,7 +94,7 @@ class ResultScreen extends StatelessWidget {
                 child: Text(
                   'Your Score: $score / $totalQuestions',
                   style: GoogleFonts.hedvigLettersSerif(
-                    fontSize: 24, // Responsive font size
+                    fontSize: screenWidth*0.057, // Responsive font size
                     color: Colors.cyan,
                     fontWeight: FontWeight.bold,
                     letterSpacing: 1.5,
@@ -182,7 +184,7 @@ class ResultScreen extends StatelessWidget {
                             data: "<b>Q:</b> ${wrongAnswer.question}",
                             style: {
                               "body": Style(
-                                fontSize: FontSize(14),
+                                fontSize: FontSize(screenWidth * 0.033),
                                 color: Color(0xFFDADADA),
                                 fontFamily: GoogleFonts.poppins().fontFamily,
                               ),
@@ -197,7 +199,7 @@ class ResultScreen extends StatelessWidget {
                             'Your Answer:',
                             style: GoogleFonts.poppins(
                               color: Color(0xFFFFFFFF),
-                              fontSize: 14,
+                              fontSize: screenWidth*0.033,
                               fontWeight: FontWeight.normal,
                             ),
                           ),
@@ -205,9 +207,9 @@ class ResultScreen extends StatelessWidget {
 
                           Math.tex(
                             wrongAnswer.userAnswer,
-                            textStyle: const TextStyle(
+                            textStyle: TextStyle(
                               color:Color(0xFFFF5454), // light red
-                              fontSize: 18,
+                                fontSize: screenWidth * 0.042,
                             ),
                           ),
                           const SizedBox(height: 8),
@@ -215,7 +217,7 @@ class ResultScreen extends StatelessWidget {
                             'Correct Answer:',
                             style: GoogleFonts.poppins(
                               color: Colors.white,
-                              fontSize: 14,
+                              fontSize: screenWidth*0.033,
                               fontWeight: FontWeight.normal,
                             ),
                           ),
@@ -223,9 +225,9 @@ class ResultScreen extends StatelessWidget {
 
                           Math.tex(
                             wrongAnswer.correctAnswer,
-                            textStyle: const TextStyle(
+                            textStyle:  TextStyle(
                               color: Color(0xFFA4FF9D),
-                              fontSize: 18,
+                              fontSize: screenWidth * 0.042,
                             ),
                           ),
                           //.......................Tip Block START................................................
@@ -286,7 +288,7 @@ class ResultScreen extends StatelessWidget {
           onPressed: () {
             Navigator.popUntil(context, (route) => route.isFirst);
           },
-          child: const Text('Home', style: TextStyle(fontSize: 20,color: Colors.white)),
+          child: Text('Home', style: TextStyle(fontSize: screenWidth*0.046,color: Colors.white)),
         ),
       ),
     ),

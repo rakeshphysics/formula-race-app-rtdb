@@ -142,6 +142,8 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
 
   @override
   Widget build(BuildContext context) {
+    //final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
     final quizProvider = Provider.of<QuizDataProvider>(context);
     return WillPopScope(
       onWillPop: () async {

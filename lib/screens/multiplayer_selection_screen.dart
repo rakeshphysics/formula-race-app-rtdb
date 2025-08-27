@@ -95,15 +95,15 @@ class MultiplayerSelectionScreen extends StatelessWidget {
               ),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
-                children: const [
+                children: [
                   Text(
                     'Host Match (QR)',
-                    style: TextStyle(fontSize: 20, color: Colors.white,fontWeight: FontWeight.normal),
+                    style: TextStyle(fontSize: screenWidth*0.045, color: Colors.white,fontWeight: FontWeight.normal),
                   ),
                   SizedBox(height: 4),
                   Text(
                     '(Choose Game topics)',
-                    style: TextStyle(fontSize: 16, color: Colors.grey),
+                    style: TextStyle(fontSize: screenWidth*0.038, color: Colors.grey),
                   ),
                 ],
               ),
@@ -135,9 +135,9 @@ class MultiplayerSelectionScreen extends StatelessWidget {
 
                 ),
               ),
-              child: const Text(
+              child: Text(
                 "Join Match (Scan QR)",
-                style: TextStyle(fontSize: 20,color: Colors.white, fontWeight: FontWeight.normal)
+                style: TextStyle(fontSize: screenWidth*0.045,color: Colors.white, fontWeight: FontWeight.normal)
               ),
             ),
       ),

@@ -122,6 +122,8 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
 
   @override
   Widget build(BuildContext context) {
+   // final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
     if (questions.isEmpty) {
       return const Scaffold(
         body: Center(child: CircularProgressIndicator()),
@@ -151,10 +153,10 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
             side: BorderSide(color: Color(0xFFFF6F61), width: 1.2), // Red/light red border
           ),
           backgroundColor: Color(0x88000000), // Semi-transparent black
-          title: const Text(
+          title: Text(
             'Exit Clear Mistakes?',
             textAlign: TextAlign.center,
-            style: TextStyle(color: Color(0xFFFFFFFF)), // Red title
+            style: TextStyle(color: Color(0xFFFFFFFF), fontSize: screenWidth*0.048), // Red title
           ),
           actionsAlignment: MainAxisAlignment.center,
           actions: [
@@ -169,11 +171,11 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               ),
               onPressed: () => Navigator.of(context).pop(false),
-              child: const Text(
+              child:  Text(
                 'Cancel',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 19,
+                  fontSize: screenWidth*0.043,
                   fontWeight: FontWeight.normal,
                 ),
               ),
@@ -190,10 +192,10 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               ),
               onPressed: () => Navigator.of(context).pop(true),
-              child: const Text(
+              child: Text(
                 'Exit',
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 19, fontWeight: FontWeight.normal),
+                style: TextStyle(fontSize: screenWidth*0.043, fontWeight: FontWeight.normal),
               ),
             ),
           ],
@@ -254,7 +256,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
               data: question['question'],
               style: {
                 "body": Style(
-                  fontSize: FontSize(16),
+                  fontSize: FontSize(screenWidth * 0.035),
                   fontWeight: FontWeight.normal,
                   color: Colors.white,
                   fontFamily: GoogleFonts.poppins().fontFamily,
@@ -319,7 +321,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
     child: Center(
     child: Math.tex(
     option,
-    textStyle: const TextStyle(color: Colors.white, fontSize: 18),
+    textStyle:  TextStyle(color: Colors.white, fontSize: screenWidth * 0.042),
     ),
     ),
     ),

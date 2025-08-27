@@ -18,6 +18,8 @@ class FormulaOptionButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double screenWidth = MediaQuery.of(context).size.width;
+    //final double screenHeight = MediaQuery.of(context).size.height;
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 8), // spacing between buttons
       width: double.infinity, // full width button
@@ -35,7 +37,7 @@ class FormulaOptionButton extends StatelessWidget {
         onPressed: onPressed,
         child: Math.tex(
           text,
-          textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.normal),
+          textStyle: TextStyle(fontSize: screenWidth * 0.042, fontWeight: FontWeight.normal),
         ),
       ),
     );
