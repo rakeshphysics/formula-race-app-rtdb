@@ -46,6 +46,7 @@ class _GlowButtonCyanState extends State<GlowButtonCyan> {
   Widget build(BuildContext context) {
    // final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
+    final screenHeight = MediaQuery.of(context).size.height;
     return AnimatedScale(
       duration: const Duration(milliseconds: 100),
       scale: _scale,
@@ -64,7 +65,7 @@ class _GlowButtonCyanState extends State<GlowButtonCyan> {
             width: widget.width,
             height: widget.height,
            // margin: const EdgeInsets.symmetric(vertical: 10),
-            padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+            padding: EdgeInsets.symmetric(vertical: screenHeight*0.004, horizontal: screenWidth*0.04),
             decoration: BoxDecoration(
               color: Colors.grey[900],
               borderRadius: BorderRadius.circular(4),

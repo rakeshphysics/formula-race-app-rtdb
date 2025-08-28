@@ -102,7 +102,7 @@ class ResultScreen extends StatelessWidget {
                 ),
               ),
 
-            const SizedBox(height: 20),
+            SizedBox(height: screenWidth * 0.03),
             // If no incorrect answers
             if (incorrectAnswers.isEmpty)
               const Expanded(
@@ -153,8 +153,8 @@ class ResultScreen extends StatelessWidget {
                   itemBuilder: (context, index) {
                     final wrongAnswer = incorrectAnswers[index];
                     return Container(
-                      margin: const EdgeInsets.symmetric(vertical: 8),
-                      padding: const EdgeInsets.all(12),
+                      margin:  EdgeInsets.symmetric(vertical:screenWidth * 0.02),
+                      padding: EdgeInsets.all(screenWidth * 0.02),
                       decoration: BoxDecoration(
                           color: Color(0xFF000000),
                         borderRadius: BorderRadius.circular(12),
@@ -169,11 +169,11 @@ class ResultScreen extends StatelessWidget {
 
                           if (wrongAnswer.imagePath.isNotEmpty)
                             Container(
-                              margin: const EdgeInsets.only(bottom: 12), // Add some space below the image
+                              margin: EdgeInsets.only(bottom: screenWidth * 0.004), // Add some space below the image
                               child: Center(
                                 child: Image.asset(
                                   wrongAnswer.imagePath,
-                                  height: MediaQuery.of(context).size.height * 0.22, // Consistent height with SoloScreen
+                                  height: MediaQuery.of(context).size.height * 0.2, // Consistent height with SoloScreen
                                   fit: BoxFit.contain,
                                 ),
                               ),
@@ -185,7 +185,7 @@ class ResultScreen extends StatelessWidget {
                             style: {
                               "body": Style(
                                 fontSize: FontSize(screenWidth * 0.033),
-                                color: Color(0xFFDADADA),
+                                color: Color(0xFFFFFFFF),
                                 fontFamily: GoogleFonts.poppins().fontFamily,
                               ),
                             },
@@ -194,7 +194,7 @@ class ResultScreen extends StatelessWidget {
 
 
 
-                          const SizedBox(height: 8),
+                           SizedBox(height: screenWidth*0.015),
                           Text(
                             'Your Answer:',
                             style: GoogleFonts.poppins(
@@ -209,7 +209,7 @@ class ResultScreen extends StatelessWidget {
                             wrongAnswer.userAnswer,
                             textStyle: TextStyle(
                               color:Color(0xFFFF5454), // light red
-                                fontSize: screenWidth * 0.042,
+                                fontSize: screenWidth * 0.04,
                             ),
                           ),
                           const SizedBox(height: 8),
@@ -227,7 +227,7 @@ class ResultScreen extends StatelessWidget {
                             wrongAnswer.correctAnswer,
                             textStyle:  TextStyle(
                               color: Color(0xFFA4FF9D),
-                              fontSize: screenWidth * 0.042,
+                              fontSize: screenWidth * 0.04,
                             ),
                           ),
                           //.......................Tip Block START................................................
@@ -241,7 +241,7 @@ class ResultScreen extends StatelessWidget {
                                   'Tip:',
                                   style: GoogleFonts.poppins(
                                     color: Colors.white,
-                                    fontSize: 14,
+                                    fontSize:screenWidth * 0.033,
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FontStyle.italic,
                                   ),
@@ -251,7 +251,7 @@ class ResultScreen extends StatelessWidget {
                                   wrongAnswer.tip,
                                   style: GoogleFonts.poppins(
                                     color: Color(0xFF95FBFB),
-                                    fontSize: 14,
+                                    fontSize: screenWidth * 0.033,
                                     fontWeight: FontWeight.normal,
                                     fontStyle: FontStyle.italic,
                                   ),

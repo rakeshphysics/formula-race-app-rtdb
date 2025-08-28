@@ -154,9 +154,9 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
           ),
           backgroundColor: Color(0x88000000), // Semi-transparent black
           title: Text(
-            'Exit Clear Mistakes?',
+            'Exit Clear Mistakes ?',
             textAlign: TextAlign.center,
-            style: TextStyle(color: Color(0xFFFFFFFF), fontSize: screenWidth*0.048), // Red title
+            style: TextStyle(color: Color(0xFFFFFFFF), fontSize: screenWidth*0.042), // Red title
           ),
           actionsAlignment: MainAxisAlignment.center,
           actions: [
@@ -175,7 +175,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
                 'Cancel',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: screenWidth*0.043,
+                  fontSize: screenWidth*0.04,
                   fontWeight: FontWeight.normal,
                 ),
               ),
@@ -195,7 +195,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
               child: Text(
                 'Exit',
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: screenWidth*0.043, fontWeight: FontWeight.normal),
+                style: TextStyle(fontSize: screenWidth*0.04, fontWeight: FontWeight.normal),
               ),
             ),
           ],
@@ -214,7 +214,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: const Text('Clear Mistakes', style: TextStyle(color: Colors.white70)),
+        title:  Text('Clear Mistakes', style: TextStyle(color: Colors.white, fontSize: screenWidth*0.043)),
         //iconTheme: const IconThemeData(color: Colors.white),
       ),
 
@@ -247,7 +247,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
             SizedBox(height: MediaQuery.of(context).size.height * 0.01),
             Text(
               'Q${currentIndex + 1} of ${questions.length}',
-              style: const TextStyle(color: Colors.white, fontSize: 18),
+              style: TextStyle(color: Colors.white, fontSize: screenWidth*0.038),
             ),
 
             SizedBox(height: MediaQuery.of(context).size.height * 0.005),

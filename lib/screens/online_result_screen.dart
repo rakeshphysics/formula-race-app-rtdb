@@ -122,16 +122,16 @@ class OnlineResultScreen extends StatelessWidget {
                       Text(
                         'MY SCORE :',
                         style: GoogleFonts.poppins(
-                          fontSize: screenWidth * 0.05, // Responsive font size
+                          fontSize: screenWidth * 0.045, // Responsive font size
                           color: Colors.white,
-                          fontWeight: FontWeight.w500,
+                          fontWeight: FontWeight.normal,
                           letterSpacing: 1.5,
                         ),
                       ),
                       Text(
                         '$myScore',
                         style: GoogleFonts.hedvigLettersSerif(
-                          fontSize: screenWidth * 0.07, // Responsive font size
+                          fontSize: screenWidth * 0.06, // Responsive font size
                           fontWeight: FontWeight.bold,
                           color: Colors.greenAccent,
                         ),
@@ -146,16 +146,16 @@ class OnlineResultScreen extends StatelessWidget {
                       Text(
                         'OPPONENT SCORE :',
                         style: GoogleFonts.poppins(
-                          fontSize: screenWidth * 0.05, // Responsive font size
+                          fontSize: screenWidth * 0.045, // Responsive font size
                           color: Colors.white,
-                          fontWeight: FontWeight.w500,
+                          fontWeight: FontWeight.normal,
                           letterSpacing: 1.5,
                         ),
                       ),
                       Text(
                         '$opponentScore',
                         style: GoogleFonts.hedvigLettersSerif(
-                          fontSize: screenWidth * 0.07, // Responsive font size
+                          fontSize: screenWidth * 0.06, // Responsive font size
                           fontWeight: FontWeight.bold,
                           color: Colors.redAccent,
                         ),
@@ -200,8 +200,8 @@ class OnlineResultScreen extends StatelessWidget {
 
 
                     return Container(
-                      margin: const EdgeInsets.symmetric(vertical: 8),
-                      padding: const EdgeInsets.all(12),
+                      margin: EdgeInsets.symmetric(vertical:screenWidth * 0.02),
+                      padding: EdgeInsets.all(screenWidth * 0.02),
                       decoration: BoxDecoration(
                         color: const Color(0xFF000000), // Black background, from ResultScreen
                         borderRadius: BorderRadius.circular(12),
@@ -225,7 +225,7 @@ class OnlineResultScreen extends StatelessWidget {
                               ),
                             ),
                           ),
-                          const SizedBox(height: 12),
+                           SizedBox(height: screenWidth * 0.02),
 
                           if (qa.imagePath != null && qa.imagePath!.isNotEmpty)
                             Container(
@@ -244,12 +244,12 @@ class OnlineResultScreen extends StatelessWidget {
                             style: {
                               "body": Style(
                                 fontSize: FontSize(screenWidth * 0.033),
-                                color: Color(0xFFDCDCDC),
+                                color: Color(0xFFFFFFFF),
                                 fontFamily: GoogleFonts.poppins().fontFamily,
                               ),
                             },
                           ),
-                          const SizedBox(height: 8),
+                           SizedBox(height: screenWidth * 0.01),
 
                           // Your Answer
                           // Display Your Answer and Correct Answer in a Row

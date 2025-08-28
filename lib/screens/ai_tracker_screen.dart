@@ -104,6 +104,8 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
   @override
   Widget build(BuildContext context) {
     final double screenWidth = MediaQuery.of(context).size.width;
+    final double screenHeight = MediaQuery.of(context).size.height;
+
     // Calculate total active mistakes
     int totalActiveMistakes = chapterMistakes.entries.fold(0, (sum, entry) {
       return sum + entry.value.fold(0, (chapterSum, formulaEntry) {
@@ -114,11 +116,14 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: const Text('My Mistakes', style: TextStyle(fontSize:20,color: Colors.black)),
+        title:  Text('My Mi', style: TextStyle(fontSize:screenWidth*0.04,color: Colors.black)),
         iconTheme: const IconThemeData(color: Colors.white),
         actions: [
           if (totalActiveMistakes >= 1)
-            TextButton(
+
+        Padding(
+            padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.04),
+           child: OutlinedButton(
               onPressed: () async {
                 final resolvedCount = await Navigator.push(
                   context,
@@ -143,7 +148,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                         style: TextStyle(color: Colors.white, fontSize:screenWidth*0.044), // Ensure text color is visible
                         textAlign: TextAlign.center, // Center the text
                       ),
-                      content: const SizedBox(height: 10.0),
+                      //content: SizedBox(height: screenWidth*0.02),
                       actions: [
                         Row(
                         mainAxisAlignment: MainAxisAlignment.center, // Center the content of the Row
@@ -160,7 +165,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                             "OK",
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: screenWidth*0.044,
+                              fontSize: screenWidth*0.04,
                             ),
                           ),
                         ),
@@ -174,11 +179,25 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                 }
               },
 
-              child: const Text(
+              style: OutlinedButton.styleFrom(
+                // Border color and width are controlled by the 'side' property.
+                side: BorderSide(
+                  color: Colors.redAccent, // Change the border color here
+                  width: 1.2,              // Change the border thickness here
+                ),
+                // Border radius and shape are controlled by the 'shape' property.
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(4), // Change the corner radius here
+                ),
+                padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.04, vertical: screenHeight * 0.015),
+              ),
+
+              child: Text(
                 'Clear Mistakes',
-                style: TextStyle(fontSize:20,color: Colors.redAccent),
+                style: TextStyle(fontSize:screenWidth*0.04,color: Colors.redAccent),
               ),
             ),
+        ),
 
         ],
       ),
@@ -192,7 +211,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
         ),
       )
           : ListView(
-        padding: const EdgeInsets.all(16.0),
+        padding:  EdgeInsets.all(screenWidth*0.03),
         children: [
 
 
@@ -200,7 +219,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
 
           // ---------- TOTAL ACTIVE MISTAKES → NEW PART ----------
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 12),
+            padding:  EdgeInsets.symmetric(vertical: screenHeight*0.01),
             child: Text(
               'Total active Mistakes: $totalActiveMistakes',
               style:TextStyle(fontSize: screenWidth*0.043, color: Colors.white, fontWeight: FontWeight.bold),
@@ -269,14 +288,15 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                                   if (formulaEntry['image'] != null && formulaEntry['image'].toString().isNotEmpty)
                                     Padding(
                                       padding: const EdgeInsets.only(bottom: 8),
-                                      child: Image.asset(
+                          child: Center(
+                            child: Image.asset(
                                         formulaEntry['image'],
                                         fit: BoxFit.contain,
                                         errorBuilder: (context, error, stackTrace) => const Text(
                                           'Image not found',
                                           style: TextStyle(color: Colors.redAccent),
                                         ),
-                                      ),
+                                      ),),
                                     ),
                                   Html(
                                     data: 'Q: ${formulaEntry['formula']}',
@@ -289,7 +309,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                                       ),
                                     },
                                   ),
-                                  SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+                                  SizedBox(height: screenWidth * 0.03),
 
                                   Math.tex(
                                     'Ans: ${formulaEntry['answer']}',

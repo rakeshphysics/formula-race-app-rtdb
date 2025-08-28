@@ -460,7 +460,7 @@
       "question": "The mean free path (average distance covered by a molecule between two successive collisions) is (<i>N</i> = total number of molecules, <i>n</i> = number density of molecules, <i>d</i> = diameter of molecules)",
       "options": [
         "\\frac{1}{2n \\pi d^2}",
-        "\\frac{1}{2n \\pi d^2}",
+        "\\frac{1}{2n \\pi d}",
         "\\frac{1}{\\sqrt{2}N \\pi d^2}",
         "\\frac{1}{\\sqrt{2}n \\pi d^2}"
       ],

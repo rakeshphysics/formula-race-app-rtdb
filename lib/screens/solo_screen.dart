@@ -504,7 +504,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   Widget build(BuildContext context) {
     //print('😇😇--- SoloScreen build called for chapter: ${widget.selectedChapter}, currentIndex: $currentIndex ---'); // ADD THIS LINE
     final double screenWidth = MediaQuery.of(context).size.width;
-    //final double screenHeight = MediaQuery.of(context).size.height;
+    final double screenHeight = MediaQuery.of(context).size.height;
     if (questions.isEmpty) {
       return const Scaffold(
         body: Center(child: CircularProgressIndicator()),
@@ -530,9 +530,9 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
             side: BorderSide(color: Colors.cyan, width: 1.2),
           ),
             backgroundColor: Color(0x88000000),
-            title: const Text(
+            title: Text(
               'Exit Solo Play?',textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.white),
+              style: TextStyle(color: Colors.white,fontSize: screenWidth * 0.042),
             ),
             actionsAlignment: MainAxisAlignment.center,
 
@@ -545,19 +545,19 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                     borderRadius: BorderRadius.circular(4),
                     side: BorderSide(color: Color(0xFF006C7A), width: 1.2),
                   ),
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  padding:  EdgeInsets.symmetric(horizontal: screenWidth * 0.04, vertical: screenHeight * 0.013),
                 ),
                 onPressed: () => Navigator.of(context).pop(false),
-                child: const Text(
+                child:  Text(
                   'Cancel',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 19,
+                    fontSize: screenWidth*0.04,
                     fontWeight: FontWeight.normal,
                   ),
                 ),
               ),
-              const SizedBox(width: 10),
+              SizedBox(width: screenWidth * 0.025),
               TextButton(style: TextButton.styleFrom(
                 backgroundColor: Colors.black,
                 foregroundColor: Colors.white,
@@ -565,13 +565,13 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                   borderRadius: BorderRadius.circular(4),
                   side: BorderSide(color: Color(0xFF006C7A), width: 1.2),
                 ),
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                padding:  EdgeInsets.symmetric(horizontal: screenWidth * 0.04, vertical: screenHeight * 0.013),
               ),
                 onPressed: () => Navigator.of(context).pop(true),
-                child: const Text(
+                child:  Text(
                   'Exit',
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 19, fontWeight: FontWeight.normal),
+                  style: TextStyle( fontSize: screenWidth*0.04, fontWeight: FontWeight.normal),
                 ),
               ),
             ],
@@ -607,22 +607,22 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           top: true,
           bottom: false,
           child: Padding(
-            padding: const EdgeInsets.all(16),
+            padding: EdgeInsets.all(screenWidth*0.04),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
 
-                SizedBox(height: MediaQuery.of(context).size.height * 0.03),
+                SizedBox(height: screenWidth * 0.04),
                 AnimatedBuilder(
                   animation: _progressController,
                   builder: (context, child) => buildProgressBar(),
                 ),
-                const SizedBox(height: 10),
+                SizedBox(height: screenWidth * 0.025),
                 Text(
                   'Q${currentIndex + 1} of $totalQuestions',
-                  style: const TextStyle(color: Colors.white, fontSize: 18),
+                  style:  TextStyle(color: Colors.white, fontSize: screenWidth * 0.037),
                 ),
-                const SizedBox(height: 10),
+               // SizedBox(height: screenWidth * 0.02),
 
                 // --- Question Block (Fixed) ---
                 Html(
@@ -637,9 +637,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                     ),
                   },
                 ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.015, // ~1.5% of screen height
-                ),
+                SizedBox(height: screenWidth * 0.03),
 
                 if (question['image'] != null && question['image'] != "")
                   Container(
@@ -659,9 +657,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                 // ✨ CHANGE THIS LINE: If no image, use SizedBox.shrink() to take no space ✨
                   const SizedBox.shrink(), // No image, no gap!
 
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.015, // ~1.5% of screen height
-                ),
+                SizedBox(height: screenWidth * 0.03),
 
 
                 // --- Scrollable Options ---
@@ -672,7 +668,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                       children: shuffledOptions.map((option) {
                         return Padding(
                           padding: EdgeInsets.symmetric(
-                            vertical: MediaQuery.of(context).size.height * 0.001,
+                            vertical:  screenHeight * 0.001,
                           ),
                           child: FormulaOptionButton(
                             text: option,

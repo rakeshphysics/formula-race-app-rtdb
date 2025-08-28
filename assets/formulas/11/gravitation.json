@@ -516,7 +516,7 @@
         "options": [
           "-\\left(\\frac{GM_1}{r} + \\frac{GM_2}{b}\\right)",
           "-\\left(\\frac{GM_1}{a} + \\frac{GM_2}{b}\\right)",
-          "-\\left(\\frac{GM_1}{r} + \\frac{GM_2}{r}\\right)",
+          "-\\left(\\frac{GM_1}{r} - \\frac{GM_2}{r}\\right)",
           "-\\left(\\frac{GM_1}{r} + \\frac{GM_2}{r}\\right)"
         ],
         "answer": "-\\left(\\frac{GM_1}{r} + \\frac{GM_2}{b}\\right)",

@@ -35,10 +35,11 @@ class _QRScanScreenState extends State<QRScanScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text('Scan QR Code', style: TextStyle(color: Colors.white)),
+        title: Text('Scan QR Code', style: TextStyle(color: Colors.white, fontSize: screenWidth*0.042)),
         backgroundColor: Colors.black,
         iconTheme: const IconThemeData(color: Colors.white),
       ),

@@ -46,8 +46,8 @@ class OnlineModeSelectionScreen extends StatelessWidget {
 
       appBar: AppBar(
         backgroundColor: Colors.black, // DARK THEME
-        title: const Text(
-            'Choose Game portion', style: TextStyle(fontSize:20,color: Colors.white)),
+        title:  Text(
+            'Choose Game portion', style: TextStyle(fontSize:screenWidth*0.042,color: Colors.white)),
         iconTheme: const IconThemeData(color: Colors.white),
       ),
 

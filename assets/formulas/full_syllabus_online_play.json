@@ -2227,7 +2227,7 @@
       "options": [
         "-\\left(\\frac{GM_1}{r} + \\frac{GM_2}{b}\\right)",
         "-\\left(\\frac{GM_1}{a} + \\frac{GM_2}{b}\\right)",
-        "-\\left(\\frac{GM_1}{r} + \\frac{GM_2}{r}\\right)",
+        "-\\left(\\frac{GM_1}{r} - \\frac{GM_2}{r}\\right)",
         "-\\left(\\frac{GM_1}{r} + \\frac{GM_2}{r}\\right)"
       ],
       "answer": "-\\left(\\frac{GM_1}{r} + \\frac{GM_2}{b}\\right)",
@@ -3628,7 +3628,7 @@
       "question": "The mean free path (average distance covered by a molecule between two successive collisions) is (<i>N</i> = total number of molecules, <i>n</i> = number density of molecules, <i>d</i> = diameter of molecules)",
       "options": [
         "\\frac{1}{2n \\pi d^2}",
-        "\\frac{1}{2n \\pi d^2}",
+        "\\frac{1}{2n \\pi d}",
         "\\frac{1}{\\sqrt{2}N \\pi d^2}",
         "\\frac{1}{\\sqrt{2}n \\pi d^2}"
       ],
@@ -15544,7 +15544,7 @@
       "id": "nuclei_qn_020",
       "question": "The probability that a nucleus will decay in time <i>t</i> is (<i>t<sub>1/2</sub></i> = half-life)",
       "options": [
-        "1 - 2^{-t/t_{1/2}}",
+        "1 - 2^{t/t_{1/2}}",
         "\\frac{1}{2^{t/t_{1/2}}}",
         "1 - \\frac{1}{2^{t/t_{1/2}}}",
         "2^{t/t_{1/2}}"

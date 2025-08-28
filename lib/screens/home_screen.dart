@@ -76,10 +76,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 side: BorderSide(color: Colors.cyan, width: 1.2),
               ),
               backgroundColor: Color(0x88000000), // Semi-transparent black
-              title: const Text(
+              title: Text(
                 'Exit App ?',
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.white, fontSize: screenWidth*0.042),
               ),
               actionsAlignment: MainAxisAlignment.center,
               actions: [
@@ -94,16 +94,16 @@ class _HomeScreenState extends State<HomeScreen> {
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   ),
                   onPressed: () => Navigator.of(context).pop(false),
-                  child: const Text(
+                  child:  Text(
                     'No',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 19,
+                      fontSize: screenWidth*0.04,
                       fontWeight: FontWeight.normal,
                     ),
                   ),
                 ),
-                const SizedBox(width: 10),
+                SizedBox(width: screenWidth*0.03),
                 TextButton(
                   style: TextButton.styleFrom(
                     backgroundColor: Colors.black,
@@ -115,10 +115,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   ),
                   onPressed: () => Navigator.of(context).pop(true),
-                  child: const Text(
+                  child:  Text(
                     'Yes',
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 19, fontWeight: FontWeight.normal),
+                    style: TextStyle(fontSize: screenWidth*0.04, fontWeight: FontWeight.normal),
                   ),
                 ),
               ],
@@ -149,10 +149,10 @@ class _HomeScreenState extends State<HomeScreen> {
               Align(
                 alignment: Alignment.topCenter,
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 18),
+                  padding: EdgeInsets.only(top: screenWidth*0.04),
                   child: SizedBox(
                     width: screenWidth * 0.6,
-                    height: screenHeight * 0.07,
+                    height: screenWidth * 0.15,
                     child: ElevatedButton(
                       onPressed: () {
                         Navigator.push(
@@ -162,7 +162,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.black,
-                        padding: const EdgeInsets.symmetric(horizontal: 20),
+                       // minimumSize: Size(screenWidth * 18, screenWidth * 1),
+                        padding: EdgeInsets.zero,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(4),side: BorderSide(color: Colors.red, width: 1.2),
 
@@ -192,8 +193,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
                     // Solo Play button → your original style
                     AnimatedButton(
-                      screenWidth: screenWidth*1.2,
-                      screenHeight: screenHeight*1.3,
+                      screenWidth: screenWidth,
+                      screenHeight: screenWidth,
 
                       onPressed: () {
                         Navigator.push(
@@ -208,12 +209,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
 
-                    const SizedBox(height: 26),
+                    SizedBox(height: screenWidth*0.055),
 
                     // Online Play button → your original style
                     AnimatedButton(
-                      screenWidth: screenWidth * 1.2,
-                      screenHeight: screenHeight * 1.3,
+                      screenWidth: screenWidth,
+                      screenHeight: screenWidth,
                       onPressed: () {
                         //print('✅Navigating to MultiplayerSelectionScreen with userId: ${widget.userId}');
                         Navigator.push(
@@ -298,8 +299,8 @@ class _AnimatedButtonState extends State<AnimatedButton> {
         child: CustomPaint(
           painter: GradientBorderPainter(gradientColors: widget.gradientColors),
           child: Container(
-            width: widget.screenWidth * 0.7,
-            height: widget.screenHeight * 0.07,
+            width: widget.screenWidth * 0.8,
+            height: widget.screenHeight * 0.19,
             decoration: BoxDecoration(
               color: Colors.black,
               borderRadius: BorderRadius.circular(4),

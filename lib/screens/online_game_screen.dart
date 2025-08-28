@@ -389,7 +389,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     // Only show dialog if game is not already over or opponent has not left
     if (!gameOver && !opponentLeft) {
       // _progressController.stop(); // This line was removed based on your request.
-
+      final screenWidth = MediaQuery.of(context).size.width;
       // Inside _OnlineGameScreenState class, within _onWillPop() function
       final confirm = await showDialog<bool>(
         context: context,
@@ -400,10 +400,10 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
             side: const BorderSide(color: Color(0xFFFFA500), width: 1.2), // Amber border
           ),
           backgroundColor: const Color(0x88000000), // Semi-transparent black background
-          title: const Text(
-            'Opponent wins if you Exit', // Changed from 'Exit Solo Play?'
+          title: Text(
+            'Opponent wins if you exit', // Changed from 'Exit Solo Play?'
             textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white, fontSize: 20 ),
+            style: TextStyle(color: Colors.white, fontSize: screenWidth*0.042),
           ),
           // content: const Text(
           //   'Opponent wins if you exit. Are you sure?', // Your specific content
@@ -427,11 +427,11 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
               onPressed: () {
                 Navigator.of(context).pop(false); // Cancel
               },
-              child: const Text(
+              child:  Text(
                 'Cancel',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 19,
+                  fontSize: screenWidth*0.04,
                   fontWeight: FontWeight.normal,
                 ),
               ),
@@ -452,10 +452,10 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
               onPressed: () {
                 Navigator.of(context).pop(true); // Exit
               },
-              child: const Text(
+              child:  Text(
                 'Exit',
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 19, fontWeight: FontWeight.normal),
+                style: TextStyle(fontSize: screenWidth*0.04, fontWeight: FontWeight.normal),
               ),
             ),
           ],

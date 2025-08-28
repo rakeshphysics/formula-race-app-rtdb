@@ -118,7 +118,7 @@ class _QRHostScreenState extends State<QRHostScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text('Host Match', style: TextStyle(color: Colors.white)),
+        title:  Text('Host Match', style: TextStyle(color: Colors.white, fontSize:screenWidth*0.042)),
         backgroundColor: Colors.black,
         iconTheme: const IconThemeData(color: Colors.white), // For back arrow
       ),
