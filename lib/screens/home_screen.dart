@@ -175,7 +175,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         children: [
                           Text(
                             'My Mistakes',
-                              style: TextStyle(fontSize: screenWidth * 0.042, fontWeight:FontWeight.normal, color:Colors.redAccent)
+                              style: TextStyle(fontSize: screenWidth * 0.05, fontWeight:FontWeight.normal, color:Colors.redAccent)
                           ),
 
                         ],
@@ -250,7 +250,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   'Physics with Rakesh  |  IIT Madras',
                   style: TextStyle(
                     color: Color(0xFFC5C5C5),
-                    fontSize: screenWidth * 0.045,
+                    fontSize: screenWidth * 0.05,
 
                   ),
                 ),

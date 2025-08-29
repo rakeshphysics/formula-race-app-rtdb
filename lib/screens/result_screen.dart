@@ -193,7 +193,7 @@ class ResultScreen extends StatelessWidget {
                             data: "<b>Q:</b> ${wrongAnswer.question}",
                             style: {
                               "body": Style(
-                                fontSize: FontSize(screenWidth * 0.033),
+                                fontSize: FontSize(screenWidth * 0.037),
                                 color: Color(0xFFFFFFFF),
                                 fontFamily: GoogleFonts.poppins().fontFamily,
                               ),
@@ -203,64 +203,66 @@ class ResultScreen extends StatelessWidget {
 
 
 
-                           SizedBox(height: screenWidth*0.015),
+                          // SizedBox(height: screenWidth*0.02),
                           Text(
                             'Your Answer:',
                             style: GoogleFonts.poppins(
                               color: Color(0xFFFFFFFF),
-                              fontSize: screenWidth*0.033,
+                              fontSize: screenWidth*0.037,
                               fontWeight: FontWeight.normal,
                             ),
                           ),
-                          SizedBox(height: MediaQuery.of(context).size.height * 0.007), // ~1% of screen height
+                          SizedBox(height: screenWidth*0.01), // ~1% of screen height
 
                           Math.tex(
                             wrongAnswer.userAnswer,
                             textStyle: TextStyle(
                               color:Color(0xFFFF5454), // light red
-                                fontSize: screenWidth * 0.04,
+                                fontSize: screenWidth * 0.043,
                             ),
                           ),
-                          const SizedBox(height: 8),
+                          SizedBox(height: screenWidth*0.03),
                           Text(
                             'Correct Answer:',
                             style: GoogleFonts.poppins(
                               color: Colors.white,
-                              fontSize: screenWidth*0.033,
+                              fontSize: screenWidth*0.037,
                               fontWeight: FontWeight.normal,
                             ),
                           ),
-                          SizedBox(height: MediaQuery.of(context).size.height * 0.007), // ~1% of screen height
+                          SizedBox(height: screenWidth*0.01), // ~1% of screen height
 
                           Math.tex(
                             wrongAnswer.correctAnswer,
                             textStyle:  TextStyle(
                               color: Color(0xFFA4FF9D),
-                              fontSize: screenWidth * 0.04,
+                              fontSize: screenWidth * 0.043,
                             ),
                           ),
+                          //SizedBox(height: screenWidth*0.02),
                           //.......................Tip Block START................................................
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               // ........ Tip Block START .........
                               if (wrongAnswer.tip.isNotEmpty) ...[
-                                const SizedBox(height: 8),
+                                 SizedBox(height: screenWidth*0.05),
                                 Text(
-                                  'Tip:',
+                                  'Tip :',
                                   style: GoogleFonts.poppins(
-                                    color: Colors.white,
-                                    fontSize:screenWidth * 0.033,
+                                    color: Color(0xFFF8A46F),
+                                    fontSize:screenWidth * 0.045,
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FontStyle.italic,
+                                    //decoration: TextDecoration.underline,
                                   ),
                                 ),
-                                const SizedBox(height: 4),
+                                SizedBox(height: screenWidth*0.01),
                                 Text(
                                   wrongAnswer.tip,
                                   style: GoogleFonts.poppins(
-                                    color: Color(0xFF95FBFB),
-                                    fontSize: screenWidth * 0.033,
+                                    color: Color(0xFFF8A46F),
+                                    fontSize: screenWidth * 0.039,
                                     fontWeight: FontWeight.normal,
                                     fontStyle: FontStyle.italic,
                                   ),

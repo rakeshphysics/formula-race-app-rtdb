@@ -247,7 +247,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
             SizedBox(height: MediaQuery.of(context).size.height * 0.01),
             Text(
               'Q${currentIndex + 1} of ${questions.length}',
-              style: TextStyle(color: Colors.white, fontSize: screenWidth*0.038),
+              style: TextStyle(color: Colors.white, fontSize: screenWidth*0.044),
             ),
 
             SizedBox(height: MediaQuery.of(context).size.height * 0.005),
@@ -256,7 +256,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
               data: question['question'],
               style: {
                 "body": Style(
-                  fontSize: FontSize(screenWidth * 0.035),
+                  fontSize: FontSize(screenWidth * 0.04),
                   fontWeight: FontWeight.normal,
                   color: Colors.white,
                   fontFamily: GoogleFonts.poppins().fontFamily,
@@ -327,7 +327,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
     child: Center(
     child: Math.tex(
     option,
-    textStyle:  TextStyle(color: Colors.white, fontSize: screenWidth * 0.042),
+    textStyle:  TextStyle(color: Colors.white, fontSize: screenWidth * 0.045),
     ),
     ),
     ),

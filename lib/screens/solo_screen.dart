@@ -620,7 +620,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                 SizedBox(height: screenWidth * 0.025),
                 Text(
                   'Q${currentIndex + 1} of $totalQuestions',
-                  style:  TextStyle(color: Colors.white, fontSize: screenWidth * 0.037),
+                  style:  TextStyle(color: Colors.white, fontSize: screenWidth * 0.044),
                 ),
                // SizedBox(height: screenWidth * 0.02),
 
@@ -630,7 +630,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                   style: {
                     "body": Style(
                       //fontSize: FontSize(16),
-                      fontSize: FontSize(screenWidth * 0.037),
+                      fontSize: FontSize(screenWidth * 0.04),
                       fontWeight: FontWeight.normal,
                       color: Colors.white,
                       fontFamily: GoogleFonts.poppins().fontFamily,

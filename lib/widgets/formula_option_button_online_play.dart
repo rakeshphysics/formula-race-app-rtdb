@@ -36,7 +36,7 @@ class FormulaOptionButton extends StatelessWidget {
         onPressed: onPressed,
         child: Math.tex(
           text,
-          textStyle: TextStyle(fontSize: screenWidth * 0.042, fontWeight: FontWeight.normal),
+          textStyle: TextStyle(fontSize: screenWidth * 0.045, fontWeight: FontWeight.normal),
         ),
       ),
     );

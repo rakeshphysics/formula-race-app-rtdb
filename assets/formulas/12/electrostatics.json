@@ -223,7 +223,7 @@
       "options": [
         "\\frac{kq}{r^2}",
         "\\frac{kq}{r}",
-        "\\frac{kq}{r^2}",
+        "-\\frac{kq}{r}",
         "-\\frac{kq}{r^2}"
       ],
       "answer": "\\frac{kq}{r}",

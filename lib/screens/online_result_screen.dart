@@ -219,7 +219,7 @@ class OnlineResultScreen extends StatelessWidget {
                               userStatus,
                               textAlign: TextAlign.center,
                               style: GoogleFonts.poppins(
-                                fontSize: screenWidth*0.038,
+                                fontSize: screenWidth*0.04,
                                 fontWeight: FontWeight.normal,
                                 color: userStatusColor,
                               ),
@@ -252,13 +252,13 @@ class OnlineResultScreen extends StatelessWidget {
                             data: "<b>Q:</b> ${qa.question}",
                             style: {
                               "body": Style(
-                                fontSize: FontSize(screenWidth * 0.033),
+                                fontSize: FontSize(screenWidth * 0.037),
                                 color: Color(0xFFFFFFFF),
                                 fontFamily: GoogleFonts.poppins().fontFamily,
                               ),
                             },
                           ),
-                           SizedBox(height: screenWidth * 0.01),
+                          // SizedBox(height: screenWidth * 0.01),
 
                           // Your Answer
                           // Display Your Answer and Correct Answer in a Row
@@ -267,56 +267,57 @@ class OnlineResultScreen extends StatelessWidget {
                             'Your Answer:',
                             style: GoogleFonts.poppins(
                               color: Colors.white,
-                              fontSize: screenWidth*0.033,
+                              fontSize: screenWidth*0.037,
                               fontWeight: FontWeight.normal,
                             ),
                           ),
-                          SizedBox(height: MediaQuery.of(context).size.height * 0.007),
+                          SizedBox(height: screenWidth*0.01),
                           Math.tex(
                             qa.userAnswer,
                             textStyle: TextStyle(
                               color: (qa.userAnswer == qa.correctAnswer) ? Color(0xFFA4FF9D) : Color(0xFFFF5454), // Colors from ResultScreen
-                              fontSize: screenWidth * 0.042,
+                              fontSize: screenWidth * 0.043,
                             ),
                           ),
-                          const SizedBox(height: 8), // Standard spacing after user answer
+                          SizedBox(height: screenWidth*0.03), // Standard spacing after user answer
 
                           // Correct Answer
                           Text(
                             'Correct Answer:',
                             style: GoogleFonts.poppins(
                               color: Colors.white,
-                              fontSize: screenWidth*0.033,
+                              fontSize: screenWidth*0.037,
                               fontWeight: FontWeight.normal,
                             ),
                           ),
-                          SizedBox(height: MediaQuery.of(context).size.height * 0.007),
+                          SizedBox(height: screenWidth*0.01),
                           Math.tex(
                             qa.correctAnswer,
                             textStyle:  TextStyle(
                               color: Color(0xFFA4FF9D), // Green for correct, from ResultScreen
-                              fontSize: screenWidth * 0.042,
+                              fontSize: screenWidth * 0.043,
                             ),
                           ),
-                          const SizedBox(height: 8), // Standard spacing after correct answer (before tip)
+                          //const SizedBox(height: 8), // Standard spacing after correct answer (before tip)
 
                           // Tip Block remains as is after this
                           if (qa.tip != null && qa.tip!.isNotEmpty) ...[
-                            const SizedBox(height: 8), // Space above the tip text itself
+                            SizedBox(height: screenWidth*0.04), // Space above the tip text itself
                              Text(
-                              'Tip:',
+                              'Tip :',
                               style: GoogleFonts.poppins(
-                                color: Colors.white,
-                                fontSize: screenWidth*0.033,
+                                color: Color(0xFFF8A46F),
+                                fontSize: screenWidth*0.045,
                                 fontWeight: FontWeight.w600,
                                 fontStyle: FontStyle.italic,
                               ),
                             ),
+                            SizedBox(height: screenWidth*0.01),
                             Text(
                               qa.tip!,
                               style: GoogleFonts.poppins(
-                                color: Color(0xFFFFC107),
-                                fontSize: screenWidth*0.033,
+                                color: Color(0xFFF8A46F),
+                                fontSize: screenWidth * 0.039,
                                 fontWeight: FontWeight.normal,
                                 fontStyle: FontStyle.italic,
                               ),

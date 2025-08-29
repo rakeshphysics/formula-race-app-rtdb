@@ -33,6 +33,7 @@ String formatChapter(String input) {
     'emi': 'EMI',
     'em_waves': 'EM Waves',
     'ac': 'AC',
+    'xrays':'X Rays'
   };
 
   // Convert the input to a consistent format (lowercase with underscores) for the lookup.
@@ -329,39 +330,40 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                                     data: 'Q: ${formulaEntry['formula']}',
                                     style: {
                                       "body": Style(
-                                        fontSize: FontSize(screenWidth * 0.034),
+                                        fontSize: FontSize(screenWidth * 0.037),
                                         color: Color(0xFFDCDCDC),
                                         fontFamily: GoogleFonts.poppins().fontFamily,
                                         margin: Margins.zero,
                                       ),
                                     },
                                   ),
-                                  SizedBox(height: screenWidth * 0.03),
+                                  SizedBox(height: screenWidth * 0.016),
 
                                   Math.tex(
                                     'Ans: ${formulaEntry['answer']}',
-                                    textStyle:  TextStyle(fontSize: screenWidth * 0.038, color: Colors.greenAccent),
+                                    textStyle:  TextStyle(fontSize: screenWidth * 0.043, color: Colors.greenAccent),
                                   ),
 
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       if (formulaEntry['tip'] != null && formulaEntry['tip'].toString().isNotEmpty) ...[
-                                        const SizedBox(height: 8), // Spacing before tip
+                                        SizedBox(height: screenWidth*0.05), // Spacing before tip
                                         Text( // 'Tip:' label
                                           'Tip:',
                                           style: GoogleFonts.poppins(
-                                            color: Color(0xffffffff),
-                                            fontSize: 14,
+                                            color: Color(0xFFF8A46F),
+                                            fontSize:screenWidth * 0.045,
                                             fontWeight: FontWeight.w600,
                                             fontStyle: FontStyle.italic,
                                           ),
                                         ),
+                                        SizedBox(height: screenWidth*0.01),
                                         Text( // Actual tip content
                                           formulaEntry['tip'].toString(), // Ensure it's a string
                                           style: GoogleFonts.poppins(
-                                            color: Color(0xe2abe6a3), // As per ResultScreen's tip content
-                                            fontSize: screenWidth * 0.032,
+                                            color: Color(0xFFF8A46F),
+                                            fontSize: screenWidth * 0.039,
                                             fontStyle: FontStyle.italic,
 
                                           ),

@@ -10311,7 +10311,7 @@
       "options": [
         "\\frac{kq}{r^2}",
         "\\frac{kq}{r}",
-        "\\frac{kq}{r^2}",
+        "-\\frac{kq}{r}",
         "-\\frac{kq}{r^2}"
       ],
       "answer": "\\frac{kq}{r}",
@@ -11632,7 +11632,7 @@
         "L_{eq} = \\frac{L_1 L_2 - M^2}{L_1+L_2 - 2M}",
         "L_{eq} = L_1 + L_2 + 2M",
         "L_{eq} = L_1 + L_2 - 2M",
-        "L_{eq} = L_1 + L_2 - 2M"
+        "L_{eq} = L_1 + L_2 - M"
       ],
       "answer": "L_{eq} = L_1 + L_2 + 2M",
       "tags": {
@@ -14643,7 +14643,7 @@
       "class": "12"
     },
     "image": "assets/images/12th/semiconductors/semiconductors_qn_050.png",
-    "tip": "Use formula E = (1240)/&lambda; eV"
+    "tip": "Use formula E = (1240)/lambda eV"
   },
 
 
@@ -15994,7 +15994,7 @@
         "class": "12"
       },
       "image": "",
-      "tip": "Students gets confused if its products-reactants or vice versa. Trick to remember! For BE, P>R.. Q value is P-R. Be careful, It is reverse if masses of nucleus are taken."
+      "tip": "Students gets confused if its products-reactants or vice versa. Trick to remember! For BE, PQR.. Q value is P-R. Be careful, It is reverse if masses of nucleus are taken."
     },
 
     {

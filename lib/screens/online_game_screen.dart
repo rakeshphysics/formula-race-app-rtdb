@@ -1266,7 +1266,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
               alignment: Alignment.centerLeft,
               child: Text(
                 'Q${currentQuestionIndex + 1} of $totalQuestions',
-                style:  TextStyle(fontSize:screenWidth*0.04, color: Colors.white),
+                style:  TextStyle(fontSize:screenWidth*0.044, color: Colors.white),
               ),
             ),
             //const SizedBox(height: 24),
@@ -1277,7 +1277,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           data: currentQuestion['question'] ?? '⚠️ null',
               style: {
                 "body": Style(
-                  fontSize: FontSize(screenWidth * 0.037),
+                  fontSize: FontSize(screenWidth * 0.04),
                   fontWeight: FontWeight.normal,
                   color: Colors.white,
                   fontFamily: GoogleFonts.poppins().fontFamily,
