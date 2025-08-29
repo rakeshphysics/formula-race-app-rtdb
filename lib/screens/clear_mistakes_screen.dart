@@ -152,7 +152,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
             borderRadius: BorderRadius.circular(4),
             side: BorderSide(color: Color(0xFFFF6F61), width: 1.2), // Red/light red border
           ),
-          backgroundColor: Color(0x88000000), // Semi-transparent black
+          backgroundColor: Color(0xFF000000), // Semi-transparent black
           title: Text(
             'Exit Clear Mistakes ?',
             textAlign: TextAlign.center,
@@ -268,6 +268,9 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 0),
                 child:Center(
+                child: SizedBox(
+                width: screenWidth * 0.6,
+                height: (screenWidth * 0.6) / 1.5,
                   child: Image.asset(
                   question['image'],
                   fit: BoxFit.contain,
@@ -277,8 +280,11 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
                       style: TextStyle(color: Colors.redAccent),
                     );
                   },
-                ),)
-              ),
+                ),),),
+              )
+              else
+              // If no image, use SizedBox.shrink() to take no space
+              const SizedBox.shrink(),
 
 
 

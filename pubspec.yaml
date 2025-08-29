@@ -1,7 +1,7 @@
 name: formularacing
 description: A new Flutter project.
 publish_to: 'none'
-version: 1.0.0+4
+version: 1.0.0+6
 
 environment:
   sdk: '>=3.3.0 <4.0.0'
@@ -84,7 +84,7 @@ flutter:
 
       # images
     - assets/images/11th/Vectors/
-    # - assets/images/11th/units_and_dimensions/
+    - assets/images/11th/units_and_dimensions/
     - assets/images/11th/kinematics/
     - assets/images/11th/work_power_energy/
     - assets/images/11th/center_of_mass/

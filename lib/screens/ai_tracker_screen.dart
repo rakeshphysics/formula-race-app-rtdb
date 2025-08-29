@@ -19,7 +19,31 @@ import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 
 //.......START.......Render chapter names Correctly......................
+// String formatChapter(String input) {
+//   return input
+//       .split('_')
+//       .map((word) => word.isEmpty ? '' : word[0].toUpperCase() + word.substring(1))
+//       .join(' ');
+// }
+
 String formatChapter(String input) {
+  // Define a map for specific acronyms or multi-word exceptions.
+  final Map<String, String> specialCases = {
+    'shm': 'SHM',
+    'emi': 'EMI',
+    'em_waves': 'EM Waves',
+    'ac': 'AC',
+  };
+
+  // Convert the input to a consistent format (lowercase with underscores) for the lookup.
+  final formattedInput = input.toLowerCase().replaceAll(' ', '_');
+
+  // Check if the formatted input is a special case.
+  if (specialCases.containsKey(formattedInput)) {
+    return specialCases[formattedInput]!;
+  }
+
+  // If not a special case, format the string by capitalizing each word and joining with a space.
   return input
       .split('_')
       .map((word) => word.isEmpty ? '' : word[0].toUpperCase() + word.substring(1))
@@ -143,8 +167,8 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                       backgroundColor: Color(0xFF000000),
                       title: Text(
                         resolvedCount == 1 // MODIFIED THIS LINE
-                            ? "1 Mistake Resolved 🎉"
-                            : "$resolvedCount Mistakes Resolved 🎉",
+                            ? "1 Mistake Resolved  🎉"
+                            : "$resolvedCount Mistakes Resolved  🎉",
                         style: TextStyle(color: Colors.white, fontSize:screenWidth*0.044), // Ensure text color is visible
                         textAlign: TextAlign.center, // Center the text
                       ),
@@ -222,7 +246,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
             padding:  EdgeInsets.symmetric(vertical: screenHeight*0.01),
             child: Text(
               'Total active Mistakes: $totalActiveMistakes',
-              style:TextStyle(fontSize: screenWidth*0.043, color: Colors.white, fontWeight: FontWeight.bold),
+              style:TextStyle(fontSize: screenWidth*0.043, color: Colors.white, fontWeight: FontWeight.w500),
             ),
           ),
           // -----------------------------------------------------
@@ -287,16 +311,19 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                                 children: [
                                   if (formulaEntry['image'] != null && formulaEntry['image'].toString().isNotEmpty)
                                     Padding(
-                                      padding: const EdgeInsets.only(bottom: 8),
-                          child: Center(
-                            child: Image.asset(
-                                        formulaEntry['image'],
-                                        fit: BoxFit.contain,
-                                        errorBuilder: (context, error, stackTrace) => const Text(
+                                          padding:  EdgeInsets.only(bottom: screenWidth * 0.02),
+                                          child: Center(
+                                            child: SizedBox(
+                                              width: screenWidth * 0.6,
+                                              height: (screenWidth * 0.6) / 1.5,
+                                          child: Image.asset(
+                                         formulaEntry['image'],
+                                          fit: BoxFit.contain,
+                                           errorBuilder: (context, error, stackTrace) => const Text(
                                           'Image not found',
                                           style: TextStyle(color: Colors.redAccent),
                                         ),
-                                      ),),
+                                      ),),),
                                     ),
                                   Html(
                                     data: 'Q: ${formulaEntry['formula']}',

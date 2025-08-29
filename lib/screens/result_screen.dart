@@ -105,37 +105,37 @@ class ResultScreen extends StatelessWidget {
             SizedBox(height: screenWidth * 0.03),
             // If no incorrect answers
             if (incorrectAnswers.isEmpty)
-              const Expanded(
+               Expanded(
                 child: Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        '🎉🎉',
+                        '🎉 🎉',
                         style: TextStyle(
                           color: Colors.green,
-                          fontSize: 32,
-                          fontWeight: FontWeight.bold,
+                          fontSize: screenWidth*0.06,
+                          fontWeight: FontWeight.normal,
                         ),
                         textAlign: TextAlign.center,
                       ),
                       SizedBox(height: 12),
                       Text(
-                        'All correct answers!',
+                        'All Correct Answers!',
                         style: TextStyle(
                           color: Colors.green,
-                          fontSize: 32,
-                          fontWeight: FontWeight.bold,
+                          fontSize: screenWidth*0.06,
+                          fontWeight: FontWeight.normal,
                         ),
                         textAlign: TextAlign.center,
                       ),
                       SizedBox(height: 20),
                       Text(
-                        '🎉🎉',
+                        '🎉 🎉',
                         style: TextStyle(
                           color: Colors.green,
-                          fontSize: 32,
-                          fontWeight: FontWeight.bold,
+                          fontSize: screenWidth*0.06,
+                          fontWeight: FontWeight.normal,
                         ),
                         textAlign: TextAlign.center,
                       ),
@@ -169,12 +169,21 @@ class ResultScreen extends StatelessWidget {
 
                           if (wrongAnswer.imagePath.isNotEmpty)
                             Container(
-                              margin: EdgeInsets.only(bottom: screenWidth * 0.004), // Add some space below the image
+                              margin: const EdgeInsets.symmetric(vertical: 0),
                               child: Center(
-                                child: Image.asset(
-                                  wrongAnswer.imagePath,
-                                  height: MediaQuery.of(context).size.height * 0.2, // Consistent height with SoloScreen
-                                  fit: BoxFit.contain,
+                                child: SizedBox(
+                                  width: screenWidth * 0.6,
+                                  height: (screenWidth * 0.6) / 1.5,
+                                  child: Image.asset(
+                                    wrongAnswer.imagePath,
+                                    fit: BoxFit.contain,
+                                    errorBuilder: (context, error, stackTrace) {
+                                      return const Text(
+                                        'Image not found',
+                                        style: TextStyle(color: Colors.redAccent),
+                                      );
+                                    },
+                                  ),
                                 ),
                               ),
                             ),

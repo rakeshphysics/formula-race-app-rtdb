@@ -417,14 +417,14 @@
     },
     {
       "id": "Vectors_qn_024",
-      "question": "The angle between vectors 2<b>i</b> and 4<b>i</b> is",
+      "question": "The angle between vectors 2<b>i</b> and -4<b>j</b> is",
       "options": [
         "45",
         "180",
         "90",
-        "0"
+        "270"
       ],
-      "answer": "0",
+      "answer": "90",
       "tags": {
         "chapter": "Vectors",
         "difficulty": "easy",

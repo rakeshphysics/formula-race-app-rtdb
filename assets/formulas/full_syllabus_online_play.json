@@ -6629,6 +6629,188 @@
       "tip": ""
     },
 
+  {
+    "id": "units_and_dimensions_qn_011",
+    "question": "The order of magnitude of number 13 is",
+    "options": [
+      "\\text{1}",
+      "\\text{2}",
+      "\\text{-1}",
+      "\\text{1.5}"
+    ],
+    "answer": "\\text{1}",
+    "tags": {
+      "chapter": "Units_and_Dimensions",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "units_and_dimensions_qn_012",
+    "question": "The order of magnitude of number 62 is",
+    "options": [
+      "\\text{1}",
+      "\\text{2}",
+      "\\text{-1}",
+      "\\text{1.5}"
+    ],
+    "answer": "\\text{2}",
+    "tags": {
+      "chapter": "Units_and_Dimensions",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "units_and_dimensions_qn_013",
+    "question": "If a quantity <i>X</i> = <i>a</i> - <i>b</i>, then error in <i>X</i> is (&Delta;<i>a</i> = error in <i>a</i>, &Delta;<i>b</i> = error in <i>b</i>)",
+    "options": [
+      "\\Delta X = |\\Delta a - \\Delta b|",
+      "\\Delta X = \\Delta a \\times \\Delta b",
+      "\\Delta X = |\\Delta a| + |\\Delta b|",
+      "\\Delta X = |\\Delta a| - |\\Delta b|"
+    ],
+    "answer": "\\Delta X = |\\Delta a| + |\\Delta b|",
+    "tags": {
+      "chapter": "Units_and_Dimensions",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "",
+    "tip": "Always errors must be added, to get the maximum error"
+  },
+  {
+    "id": "units_and_dimensions_qn_014",
+    "question": "If a quantity <i>X</i> = a<sup>m</sup>/b<sup>n</sup>, then error in <i>X</i> is (&Delta;<i>a</i> = error in <i>a</i>, &Delta;<i>b</i> = error in <i>b</i>, <i>m</i> > 0, <i>n</i> > 0)",
+    "options": [
+      "\\frac{\\Delta X}{X} = |m\\frac{\\Delta a}{a}| + |n\\frac{\\Delta b}{b}|",
+      "\\frac{\\Delta X}{X} = |m\\frac{\\Delta a}{a}| - |n\\frac{\\Delta b}{b}|",
+      "\\frac{\\Delta X}{X} = |n\\frac{\\Delta a}{a}| + |m\\frac{\\Delta b}{b}|",
+      "\\frac{\\Delta X}{X} = |n\\frac{\\Delta a}{a}| - |m\\frac{\\Delta b}{b}|"
+    ],
+    "answer": "\\frac{\\Delta X}{X} = |m\\frac{\\Delta a}{a}| + |n\\frac{\\Delta b}{b}|",
+    "tags": {
+      "chapter": "Units_and_Dimensions",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "",
+    "tip": "Always errors must be added, to get the maximum error"
+  },
+  {
+    "id": "units_and_dimensions_qn_015",
+    "question": "The least count (<i>LC</i>) of vernier calipers is (<i>VSD</i> = vernier scale division, <i>MSD</i> = main scale division)",
+    "options": [
+      "\\text{1 MSD – 1 VSD}",
+      "\\text{1 MSD + 1 VSD}",
+      "\\text{2 MSD – 1 VSD}",
+      "\\text{2 VSD}"
+    ],
+    "answer": "\\text{1 MSD – 1 VSD}",
+    "tags": {
+      "chapter": "Units_and_Dimensions",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/units_and_dimensions/units_and_dimensions_qn_015.png",
+    "tip": "Very rare case! If its given VSD>MSD, then LC = 1 VSD – 1 MSD. Refer to JEE Adv 2016 qn and JEE Adv 2021 qn"
+  },
+
+  {
+    "id": "units_and_dimensions_qn_016",
+    "question": "The least count (<i>LC</i>) of a screw gauge is (<i>p</i> = pitch, <i>n</i> = total number of circular scale divisions)",
+    "options": [
+      "pn",
+      "\\frac{n}{p}",
+      "\\frac{p}{n}",
+      "\\frac{1}{np}"
+    ],
+    "answer": "\\frac{p}{n}",
+    "tags": {
+      "chapter": "Units_and_Dimensions",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "units_and_dimensions_qn_017",
+    "question": "The dimensions of an object measured using a vernier calipers is given by (<i>MSR</i> = Mains scale reading, <i>VC</i> = vernier coincidence, <i>LC</i>=Least count, assume no zero error)",
+    "options": [
+      "MSR + (VC - LC)",
+      "(MSR \\times LC) + VC",
+      "MSR + (VC + LC)",
+      "MSR + (VC \\times LC)"
+    ],
+    "answer": "MSR + (VC \\times LC)",
+    "tags": {
+      "chapter": "Units_and_Dimensions",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "units_and_dimensions_qn_018",
+    "question": "The below vernier caliper has a positive zero error. The zero error is <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> mm",
+    "options": [
+      "\\text{0.8 mm}",
+      "\\text{0.1 mm}",
+      "\\text{0.3 mm}",
+      "\\text{0.5 mm}"
+    ],
+    "answer": "\\text{0.3 mm}",
+    "tags": {
+      "chapter": "Units_and_Dimensions",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/units_and_dimensions/units_and_dimensions_qn_018.png",
+    "tip": ""
+  },
+  {
+    "id": "units_and_dimensions_qn_019",
+    "question": "The dimensions of an object measured using a screw gauge is given by (<i>LSR</i> = Linear scale reading, <i>CSR</i> = circular scale reading, <i>LC</i>=Least count, assume no zero error)",
+    "options": [
+      "(LSR \\times LC) + CSR",
+      "LSR + (CSR - LC)",
+      "LSR + (CSR \\times LC)",
+      "LSR + (CSR + LC)"
+    ],
+    "answer": "LSR + (CSR \\times LC)",
+    "tags": {
+      "chapter": "Units_and_Dimensions",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "units_and_dimensions_qn_020",
+    "question": "The below vernier caliper has a negative zero error. The zero error is <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> mm",
+    "options": [
+      "\\text{0.4 mm}",
+      "\\text{0.1 mm}",
+      "\\text{0.6 mm}",
+      "\\text{0.5 mm}"
+    ],
+    "answer": "\\text{0.4 mm}",
+    "tags": {
+      "chapter": "Units_and_Dimensions",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "assets/images/11th/units_and_dimensions/units_and_dimensions_qn_020.png",
+    "tip": "Be careful ! for negative zero error, vernier coincidence must be taken from the end."
+  },
+
     {
       "id": "Vectors_qn_001",
       "question": "<b>R</b> = <b>a</b> + <b>b</b> then magnitude of <b>R</b> equals (given θ is angle between <b>a</b> and <b>b</b>)",
@@ -7047,14 +7229,14 @@
     },
     {
       "id": "Vectors_qn_024",
-      "question": "The angle between vectors 2<b>i</b> and 4<b>i</b> is",
+      "question": "The angle between vectors 2<b>i</b> and -4<b>j</b> is",
       "options": [
         "45",
         "180",
         "90",
-        "0"
+        "270"
       ],
-      "answer": "0",
+      "answer": "90",
       "tags": {
         "chapter": "Vectors",
         "difficulty": "easy",
@@ -12461,7 +12643,190 @@
     "tip": ""
   },
 
-    {
+  {
+    "id": "dual_nature_of_light_qn_021",
+    "question": "In photoelectric effect, quantum efficiency is defined as (<i>n<sub>e</sub></i> = number of electrons emitted per second, <i>n<sub>ph</sub></i> = number of photons emitted per second)",
+    "options": [
+      "\\frac{n_e}{n_{ph}}",
+      "\\frac{n_{ph}}{n_e}",
+      "\\frac{n_{ph}}{n_e+n_{ph}}",
+      "\\frac{n_e}{n_{ph}+n_e}"
+    ],
+    "answer": "\\frac{n_e}{n_{ph}}",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_021.png",
+    "tip": ""
+  },
+  {
+    "id": "dual_nature_of_light_qn_022",
+    "question": "The debroglie wavelength of a particle having momentum <i>p</i> is",
+    "options": [
+      "\\frac{p}{h}",
+      "\\frac{1}{hp}",
+      "\\frac{h}{p}",
+      "hp"
+    ],
+    "answer": "\\frac{h}{p}",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_022.png",
+    "tip": ""
+  },
+  {
+    "id": "dual_nature_of_light_qn_023",
+    "question": "The debroglie wavelength of a particle of mass <i>m</i> having kinetic energy <i>KE</i> is",
+    "options": [
+      "\\frac{h}{\\sqrt{2m(KE)}}",
+      "\\sqrt{2m(KE)}",
+      "\\frac{2m(KE)}{h}",
+      "\\frac{h}{2m(KE)}"
+    ],
+    "answer": "\\frac{h}{\\sqrt{2m(KE)}}",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_023.png",
+    "tip": ""
+  },
+  {
+    "id": "dual_nature_of_light_qn_024",
+    "question": "According to heinsbergs uncertainty principle",
+    "options": [
+      "\\Delta x \\cdot \\Delta p \\leq \\frac{h}{2\\pi}",
+      "\\Delta x \\cdot \\Delta p \\leq \\frac{h}{4\\pi}",
+      "\\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi}",
+      "\\Delta x \\cdot \\Delta p \\geq \\frac{h}{2\\pi}"
+    ],
+    "answer": "\\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi}",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  },
+  {
+    "id": "dual_nature_of_light_qn_025",
+    "question": "For an electron rotating in <i>n</i>th bohr orbit of radius <i>r</i>, the correct expression for its debroglie wavelength &lambda; is",
+    "options": [
+      "n^2 \\lambda = 2\\pi r",
+      "n^2 \\lambda = 4\\pi r",
+      "n\\lambda = 4\\pi r",
+      "n\\lambda = 2\\pi r"
+    ],
+    "answer": "n\\lambda = 2\\pi r",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_025.png",
+    "tip": ""
+  },
+
+  {
+    "id": "dual_nature_of_light_qn_026",
+    "question": "When an electron is accelerated from rest through a potential <i>V</i>, it debroglie wavelength becomes",
+    "options": [
+      "1.227 \\sqrt{V} \\text{ nm}",
+      "\\frac{12.27}{\\sqrt{V}} \\text{ nm}",
+      "\\frac{1.227}{\\sqrt{V}} \\text{ nm}",
+      "12.27 \\sqrt{V} \\text{ nm}"
+    ],
+    "answer": "\\frac{1.227}{\\sqrt{V}} \\text{ nm}",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_026.png",
+    "tip": ""
+  },
+  {
+    "id": "dual_nature_of_light_qn_027",
+    "question": "A graph is plotted photo current and collector potential for different incident photon frequencies. The relation between frequencies is",
+    "options": [
+      "\\nu_1 > \\nu_2",
+      "\\nu_1 = \\nu_2",
+      "\\text{None of these}",
+      "\\nu_1 < \\nu_2"
+    ],
+    "answer": "\\nu_1 = \\nu_2",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_027.png",
+    "tip": ""
+  },
+  {
+    "id": "dual_nature_of_light_qn_028",
+    "question": "The debroglie wavelength of proton and &alpha; particle are in ratio 1:2. The ratio of velocities of proton and &alpha; particle are in ratio",
+    "options": [
+      "\\text{1 : 8}",
+      "\\text{2 : 1}",
+      "\\text{4 : 1}",
+      "\\text{8 : 1}"
+    ],
+    "answer": "\\text{8 : 1}",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_028.png",
+    "tip": ""
+  },
+  {
+    "id": "dual_nature_of_light_qn_029",
+    "question": "For an electron rotating in <i>n</i>th bohr orbit of hydrogen atom, the correct expression for its debroglie wavelength &lambda; is (<i>a<sub>o</sub></i> = Bohr radius)",
+    "options": [
+      "n^2 \\lambda = 2\\pi r",
+      "n^2 \\lambda = 4\\pi r",
+      "n\\lambda = 2\\pi r",
+      "n\\lambda = 2\\pi n^2 a_o"
+    ],
+    "answer": "n\\lambda = 2\\pi r",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_029.png",
+    "tip": ""
+  },
+  {
+    "id": "dual_nature_of_light_qn_030",
+    "question": "An electron and a photon have same kinetic energies. Their debroglie wavelengths are related by",
+    "options": [
+      "\\lambda_{ph} \\propto \\lambda_e^2",
+      "\\lambda_{ph} \\propto \\lambda_e",
+      "\\lambda_{ph} \\propto \\sqrt{\\lambda_e}",
+      "\\lambda_{ph} \\propto \\frac{1}{\\lambda_e}"
+    ],
+    "answer": "\\lambda_{ph} \\propto \\lambda_e^2",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "",
+    "tip": ""
+  },
+
+
+  {
       "id": "ray_optics_qn_001",
       "question": "The total number of images of the object O in the mirrors is",
       "options": [

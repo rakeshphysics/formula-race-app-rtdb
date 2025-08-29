@@ -75,7 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 borderRadius: BorderRadius.circular(4),
                 side: BorderSide(color: Colors.cyan, width: 1.2),
               ),
-              backgroundColor: Color(0x88000000), // Semi-transparent black
+              backgroundColor: Color(0xFF000000),
               title: Text(
                 'Exit App ?',
                 textAlign: TextAlign.center,

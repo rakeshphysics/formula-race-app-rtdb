@@ -529,7 +529,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
             borderRadius: BorderRadius.circular(4),
             side: BorderSide(color: Colors.cyan, width: 1.2),
           ),
-            backgroundColor: Color(0x88000000),
+            backgroundColor: Color(0xFF000000),
             title: Text(
               'Exit Solo Play?',textAlign: TextAlign.center,
               style: TextStyle(color: Colors.white,fontSize: screenWidth * 0.042),
@@ -644,8 +644,8 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                     margin: const EdgeInsets.symmetric(vertical: 0),
                     child: Center(
                       child: SizedBox(
-                        width: MediaQuery.of(context).size.width * 0.6,
-                        height: (MediaQuery.of(context).size.width * 0.6) / 1.5, // Calculated height to maintain aspect ratio
+                        width: screenWidth * 0.6,
+                        height: (screenWidth * 0.6) / 1.5, // Calculated height to maintain aspect ratio
                         child: Image.asset(
                           question['image'],
                           fit: BoxFit.contain,

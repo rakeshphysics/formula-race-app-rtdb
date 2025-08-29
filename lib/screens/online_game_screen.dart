@@ -399,7 +399,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
             borderRadius: BorderRadius.circular(4),
             side: const BorderSide(color: Color(0xFFFFA500), width: 1.2), // Amber border
           ),
-          backgroundColor: const Color(0x88000000), // Semi-transparent black background
+          backgroundColor: const Color(0xFF000000), // Semi-transparent black background
           title: Text(
             'Opponent wins if you exit', // Changed from 'Exit Solo Play?'
             textAlign: TextAlign.center,
@@ -1287,16 +1287,28 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
             if (currentQuestion['image'] != null &&
                 currentQuestion['image'].toString().isNotEmpty)
-              Padding(
-                padding: const EdgeInsets.only(bottom: 16),
+              Container(
+                margin: const EdgeInsets.symmetric(vertical: 0),
                 child: Center(
-                  child: Image.asset(
-                    currentQuestion['image'],
-                    height: MediaQuery.of(context).size.height * 0.22,
-                    fit: BoxFit.contain,
+                  child: SizedBox(
+                    width: screenWidth * 0.6,
+                    height: (screenWidth * 0.6) / 1.5,
+                    child: Image.asset(
+                      currentQuestion['image'],
+                      fit: BoxFit.contain,
+                      errorBuilder: (context, error, stackTrace) {
+                        return const Text(
+                          'Image not found',
+                          style: TextStyle(color: Colors.redAccent),
+                        );
+                      },
+                    ),
                   ),
                 ),
-              ),
+              )
+            else
+            // If no image, use SizedBox.shrink() to take no space
+              const SizedBox.shrink(),
 
             //const SizedBox(height: 24),
             Expanded(
@@ -1329,8 +1341,8 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                         padding: const EdgeInsets.only(top: 16),
                         child: Text(
                           winnerMessage!,
-                          style: const TextStyle(
-                            fontSize: 18,
+                          style: TextStyle(
+                            fontSize: screenWidth*0.04,
                             color: Colors.amber,
                             fontWeight: FontWeight.bold,
                           ),
@@ -1341,7 +1353,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
                     Text(
                       feedbackMessage,
-                      style: const TextStyle(fontSize: 20, color: Colors.blue),
+                      style:  TextStyle(fontSize: screenWidth*0.04, color: Colors.amber),
                     ),
                   ],
                 ),

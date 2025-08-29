@@ -229,12 +229,21 @@ class OnlineResultScreen extends StatelessWidget {
 
                           if (qa.imagePath != null && qa.imagePath!.isNotEmpty)
                             Container(
-                              margin: const EdgeInsets.only(bottom: 0),
+                              margin: const EdgeInsets.symmetric(vertical: 0),
                               child: Center(
-                                child: Image.asset(
-                                  qa.imagePath!,
-                                  height: MediaQuery.of(context).size.height * 0.22,
-                                  fit: BoxFit.contain,
+                                child: SizedBox(
+                                  width: screenWidth * 0.6,
+                                  height: (screenWidth * 0.6) / 1.5,
+                                  child: Image.asset(
+                                    qa.imagePath!,
+                                    fit: BoxFit.contain,
+                                    errorBuilder: (context, error, stackTrace) {
+                                      return const Text(
+                                        'Image not found',
+                                        style: TextStyle(color: Colors.redAccent),
+                                      );
+                                    },
+                                  ),
                                 ),
                               ),
                             ),

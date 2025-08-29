@@ -75,7 +75,7 @@ class _QRHostScreenState extends State<QRHostScreen> {
       if (!opponentFound && player2Id != null && player2Id.toString().isNotEmpty) {
         setState(() {
           opponentFound = true;
-          status = "Opponent found! Waiting for them to start...";
+          //status = "Opponent found! Waiting for them to start...";
         });
       }
 
