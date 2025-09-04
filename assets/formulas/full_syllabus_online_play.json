@@ -1636,81 +1636,191 @@
       "tip": ""
     },
 
-    {
-      "id": "fluids_qn_041",
-      "question": "The capillary rise or fall of a liquid in a capillary tube is given by (<i>T</i> = surface tension)",
-      "options": [
-        "\\frac{2T \\cos \\theta}{r \\rho g}",
-        "\\frac{T \\cos \\theta}{r \\rho g}",
-        "\\frac{T \\cos \\theta}{2r \\rho g}",
-        "\\frac{T \\cos \\theta}{3r \\rho g}"
-      ],
-      "answer": "\\frac{2T \\cos \\theta}{r \\rho g}",
-      "tags": {
-        "chapter": "fluids",
-        "difficulty": "easy",
-        "class": "11"
-      },
-      "image": "assets/images/11th/fluids/fluids_qn_041.png",
-      "tip": ""
+  {
+    "id": "fluids_qn_041",
+    "question": "The capillary rise or fall of a liquid in a capillary tube is given by (<i>T</i> = surface tension)",
+    "options": [
+      "\\frac{2T \\cos \\theta}{r \\rho g}",
+      "\\frac{T \\cos \\theta}{r \\rho g}",
+      "\\frac{T \\cos \\theta}{2r \\rho g}",
+      "\\frac{T \\cos \\theta}{3r \\rho g}"
+    ],
+    "answer": "\\frac{2T \\cos \\theta}{r \\rho g}",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "easy",
+      "class": "11"
     },
+    "image": "assets/images/11th/fluids/fluids_qn_041.png",
+    "tip": ""
+  },
+  {
+    "id": "fluids_qn_042",
+    "question": "A TT ball is immersed in water and held inside with help of a thread. If the beaker is now pushed forward, the movement of TT ball relative to beaker is",
+    "options": [
+      "\\text{Backward}",
+      "\\text{Forward}",
+      "\\text{At rest}",
+      "\\text{Vertically down}"
+    ],
+    "answer": "\\text{Forward}",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/fluids/fluids_qn_042.png",
+    "tip": ""
+  },
+  {
+    "id": "fluids_qn_043",
+    "question": "The direction of net force due to water on the curved surface of the beaker is",
+    "options": [
+      "\\text{Right}",
+      "\\text{Left}",
+      "\\text{Vertically Up}",
+      "\\text{Vertically down}"
+    ],
+    "answer": "\\text{Vertically Up}",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/fluids/fluids_qn_043.png",
+    "tip": ""
+  },
+  {
+    "id": "fluids_qn_044",
+    "question": "There are two buckets containing the same liquid. In the first one an object of mass m floats. In the second bucket there is a different object of same mass m. Which bucket is easier to carry?",
+    "options": [
+      "1",
+      "2",
+      "\\text{Both same}",
+      "\\text{Depends on density of masses}"
+    ],
+    "answer": "\\text{Both same}",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/fluids/fluids_qn_044.png",
+    "tip": ""
+  },
 
-    {
-      "id": "fluids_qn_042",
-      "question": "A body is immersed in a liquid as shown. Now the container is accelerated upwards with <i>a</i>. The buoyancy force on the body is (&rho; = density of liquid, &sigma; = density of body, <i>V</i> = volume of body)",
-      "options": [
-        "V \\rho g",
-        "V \\sigma (g+a)",
-        "V \\rho (g+a)",
-        "V \\rho (g-a)"
-      ],
-      "answer": "V \\rho (g+a)",
-      "tags": {
-        "chapter": "fluids",
-        "difficulty": "medium",
-        "class": "11"
-      },
-      "image": "assets/images/11th/fluids/fluids_qn_042.png",
-      "tip": ""
+  {
+    "id": "fluids_qn_045",
+    "question": "A body is immersed in a liquid as shown. Now the container is accelerated upwards with <i>a</i>. The buoyancy force on the body is (&rho; = density of liquid, &sigma; = density of body, <i>V</i> = volume of body)",
+    "options": [
+      "V \\rho g",
+      "V \\sigma (g+a)",
+      "V \\rho (g+a)",
+      "V \\rho (g-a)"
+    ],
+    "answer": "V \\rho (g+a)",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "medium",
+      "class": "11"
     },
-    {
-      "id": "fluids_qn_043",
-      "question": "A body is immersed in a liquid as shown. Now the container is accelerated downwards with <i>a</i> (<i>a</i> < <i>g</i>). The buoyancy force on the body is (&rho; = density of liquid, &sigma; = density of body, <i>V</i> = volume of body)",
-      "options": [
-        "V \\rho g",
-        "V \\sigma (g+a)",
-        "V \\rho (g+a)",
-        "V \\rho (g-a)"
-      ],
-      "answer": "V \\rho (g-a)",
-      "tags": {
-        "chapter": "fluids",
-        "difficulty": "medium",
-        "class": "11"
-      },
-      "image": "assets/images/11th/fluids/fluids_qn_043.png",
-      "tip": ""
+    "image": "assets/images/11th/fluids/fluids_qn_045.png",
+    "tip": ""
+  },
+  {
+    "id": "fluids_qn_046",
+    "question": "A body is immersed in a liquid as shown. Now the container is accelerated downwards with <i>a</i> (<i>a</i> < <i>g</i>). The buoyancy force on the body is (&rho; = density of liquid, &sigma; = density of body, <i>V</i> = volume of body)",
+    "options": [
+      "V \\rho g",
+      "V \\sigma (g+a)",
+      "V \\rho (g+a)",
+      "V \\rho (g-a)"
+    ],
+    "answer": "V \\rho (g-a)",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "medium",
+      "class": "11"
     },
-    {
-      "id": "fluids_qn_044",
-      "question": "A body is immersed in a liquid as shown. Now the container is accelerated downwards with <i>g</i>. The buoyancy force on the body is (&rho; = density of liquid, &sigma; = density of body, <i>V</i> = volume of body)",
-      "options": [
-        "0",
-        "V \\sigma (g+a)",
-        "V \\rho (g+a)",
-        "V \\rho (g-a)"
-      ],
-      "answer": "0",
-      "tags": {
-        "chapter": "fluids",
-        "difficulty": "medium",
-        "class": "11"
-      },
-      "image": "assets/images/11th/fluids/fluids_qn_044.png",
-      "tip": ""
+    "image": "assets/images/11th/fluids/fluids_qn_046.png",
+    "tip": ""
+  },
+  {
+    "id": "fluids_qn_047",
+    "question": "A body is immersed in a liquid as shown. Now the container is accelerated downwards with <i>g</i>. The buoyancy force on the body is (&rho; = density of liquid, &sigma; = density of body, <i>V</i> = volume of body)",
+    "options": [
+      "0",
+      "V \\sigma (g+a)",
+      "V \\rho (g+a)",
+      "V \\rho (g-a)"
+    ],
+    "answer": "0",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "medium",
+      "class": "11"
     },
+    "image": "assets/images/11th/fluids/fluids_qn_047.png",
+    "tip": ""
+  },
 
-    {
+  {
+    "id": "fluids_qn_048",
+    "question": "A beaker is moving with a constant velocity. There is a TT ball immersed in it and held inside with help of a thread. If the beaker is pulled such that it slows down, the movement of TT ball relative to beaker is",
+    "options": [
+      "\\text{Backward}",
+      "\\text{Forward}",
+      "\\text{At rest}",
+      "\\text{Vertically down}"
+    ],
+    "answer": "\\text{Backward}",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/fluids/fluids_qn_048.png",
+    "tip": ""
+  },
+  {
+    "id": "fluids_qn_049",
+    "question": "The reading of weighing machine is (mass of water = 5 kg, mass of body = 2 kg, density of water = 1000 kg/m³)",
+    "options": [
+      "5 \\text{ kg}",
+      "2 \\text{ kg}",
+      "7 \\text{ kg}",
+      "6 \\text{ kg}"
+    ],
+    "answer": "7 \\text{ kg}",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/fluids/fluids_qn_049.png",
+    "tip": ""
+  },
+  {
+    "id": "fluids_qn_050",
+    "question": "A tank is filled to water till height h. The hole at bottom is now opened. Time taken to empty the tank is ( A =  area of beaker,  a = area of hole) (Do by observation)",
+    "options": [
+      "\\frac{2a}{A} \\sqrt{\\frac{2h}{g}}",
+      "\\frac{a}{A} \\sqrt{\\frac{2h}{g}}",
+      "\\sqrt{\\frac{2h}{g}}",
+      "\\frac{A}{a} \\sqrt{\\frac{2h}{g}}"
+    ],
+    "answer": "\\frac{A}{a} \\sqrt{\\frac{2h}{g}}",
+    "tags": {
+      "chapter": "fluids",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "assets/images/11th/fluids/fluids_qn_050.png",
+    "tip": "Surface of water moves down with constant acceleration. Now think !!"
+  },
+
+
+  {
       "id": "gravitation_qn_001",
       "question": "The gravitational force of attraction between two point masses <i>m<sub>1</sub></i> and <i>m<sub>2</sub></i> placed at a distance <i>r</i> from each other is",
       "options": [
