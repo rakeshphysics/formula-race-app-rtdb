@@ -1037,12 +1037,12 @@
       "id": "Rotational_Motion_qn_058",
       "question": "The minimum value of friction coefficient so that object pure rolls down the incline is",
       "options": [
-        "\\mu_{min} = \\tan \\theta \\left( 1 + \\frac{R^2}{K^2} \\right)",
-        "\\mu_{min} = \\tan \\theta \\left( 1 + \\frac{K^2}{R^2} \\right)",
-        "\\mu_{min}",
-        "\\mu_{min}"
+        "\\mu_{min} = \\frac{\\tan \\theta}{\\left(1 + \\frac{K^2}{R^2}\\right)}",
+        "\\mu_{min} = \\frac{\\tan \\theta}{\\left(1 + \\frac{R^2}{K^2}\\right)}",
+        "\\mu_{min} = \\tan \\theta \\left(1 + \\frac{K^2}{R^2}\\right)",
+        "\\mu_{min} = \\tan \\theta \\left(1 + \\frac{R^2}{K^2}\\right)"
       ],
-      "answer": "\\mu_{min} = \\tan \\theta \\left( 1 + \\frac{R^2}{K^2} \\right)",
+      "answer": "\\mu_{min} = \\frac{\\tan \\theta}{\\left(1 + \\frac{K^2}{R^2}\\right)}",
       "tags": {
         "chapter": "Rotational_Motion",
         "difficulty": "medium",

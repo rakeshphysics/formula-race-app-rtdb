@@ -11,7 +11,7 @@
     "answer": "\\frac{2R}{\\pi}",
     "tags": {
       "chapter": "Center_of_Mass",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "class": "11"
     },
     "image": "assets/images/11th/center_of_mass/center_of_mass_qn_001.png",
@@ -29,7 +29,7 @@
     "answer": "\\frac{4R}{3\\pi}",
     "tags": {
       "chapter": "Center_of_Mass",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "class": "11"
     },
     "image": "assets/images/11th/center_of_mass/center_of_mass_qn_002.png",
@@ -47,7 +47,7 @@
     "answer": "\\frac{R}{2}",
     "tags": {
       "chapter": "Center_of_Mass",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "class": "11"
     },
     "image": "assets/images/11th/center_of_mass/center_of_mass_qn_003.png",
@@ -120,7 +120,7 @@
       "answer": "1",
       "tags": {
         "chapter": "Center_of_Mass",
-        "difficulty": "medium",
+        "difficulty": "easy",
         "class": "11"
       },
       "image": "",
@@ -138,7 +138,7 @@
       "answer": "0",
       "tags": {
         "chapter": "Center_of_Mass",
-        "difficulty": "medium",
+        "difficulty": "easy",
         "class": "11"
       },
       "image": "",
@@ -156,7 +156,7 @@
       "answer": "\\text{Are exchanged}",
       "tags": {
         "chapter": "Center_of_Mass",
-        "difficulty": "medium",
+        "difficulty": "easy",
         "class": "11"
       },
       "image": "",

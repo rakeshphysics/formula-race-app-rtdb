@@ -425,7 +425,7 @@
         "\\frac{kq}{R}",
         "\\frac{kq}{x}",
         "\\frac{kq}{r}",
-        "\\frac{kq}{\\sqrt{R^2+x^2}}"
+        "\\frac{kq}{\\sqrt{R^2-x^2}}"
       ],
       "answer": "\\frac{kq}{r}",
       "tags": {
@@ -585,7 +585,7 @@
     },
     {
       "id": "Electrostatics_qn_033",
-      "question": "The electric field due to dipole at an axial point is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)",
+      "question": "The electric field due to dipole at an axial point is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)(<i>p</i> = dipolemoment)",
       "options": [
         "\\frac{2kp}{r^2}",
         "\\frac{kp}{r^2}",
@@ -603,7 +603,7 @@
     },
     {
       "id": "Electrostatics_qn_034",
-      "question": "The electric field due to dipole at an equatorial point is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)",
+      "question": "The electric field due to dipole at an equatorial point is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)(<i>p</i> = dipolemoment)",
       "options": [
         "\\frac{2kp}{r^2}",
         "\\frac{kp}{r^2}",

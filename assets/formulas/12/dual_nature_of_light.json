@@ -345,7 +345,7 @@
     },
     {
       "id": "dual_nature_of_light_qn_020",
-      "question": "A graph is plotted photo current and collector potential for different incident photon frequencies. The relation between frequencies is",
+      "question": "A graph is plotted between photo current and collector potential for different incident photon frequencies. The relation between frequencies is",
       "options": [
         "\\nu_1 > \\nu_2",
         "\\nu_1 = \\nu_2",
@@ -355,7 +355,7 @@
       "answer": "\\nu_1 > \\nu_2",
       "tags": {
         "chapter": "Dual Nature of Light",
-        "difficulty": "medium",
+        "difficulty": "god",
         "class": "12"
       },
       "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_020.png",
@@ -473,7 +473,7 @@
     },
     {
       "id": "dual_nature_of_light_qn_027",
-      "question": "A graph is plotted photo current and collector potential for different incident photon frequencies. The relation between frequencies is",
+      "question": "A graph is plotted between photo current and collector potential for different incident photon frequencies. The relation between frequencies is",
       "options": [
         "\\nu_1 > \\nu_2",
         "\\nu_1 = \\nu_2",
@@ -507,24 +507,24 @@
       "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_028.png",
       "tip": ""
     },
-    {
-      "id": "dual_nature_of_light_qn_029",
-      "question": "For an electron rotating in <i>n</i>th bohr orbit of hydrogen atom, the correct expression for its debroglie wavelength &lambda; is (<i>a<sub>o</sub></i> = Bohr radius)",
-      "options": [
-        "n^2 \\lambda = 2\\pi r",
-        "n^2 \\lambda = 4\\pi r",
-        "n\\lambda = 2\\pi r",
-        "n\\lambda = 2\\pi n^2 a_o"
-      ],
-      "answer": "n\\lambda = 2\\pi r",
-      "tags": {
-        "chapter": "Dual Nature of Light",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_029.png",
-      "tip": ""
+  {
+    "id": "dual_nature_of_light_qn_029",
+    "question": "For an electron rotating in nth bohr orbit of hydrogen atom, the correct expression for its debroglie wavelength &lambda; is (<i>a<sub>o</sub></i> = Bohr radius)",
+    "options": [
+      "\\lambda = 4\\pi n a_o",
+      "\\lambda = 4\\pi n^2 a_o",
+      "\\lambda = 2\\pi n a_o",
+      "\\lambda = 2\\pi n^2 a_o"
+    ],
+    "answer": "\\lambda = 2\\pi n a_o",
+    "tags": {
+      "chapter": "Dual Nature of Light",
+      "difficulty": "medium",
+      "class": "12"
     },
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_029.png",
+    "tip": ""
+  },
     {
       "id": "dual_nature_of_light_qn_030",
       "question": "An electron and a photon have same kinetic energies. Their debroglie wavelengths are related by",

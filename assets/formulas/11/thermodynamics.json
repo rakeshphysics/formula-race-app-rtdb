@@ -330,7 +330,7 @@
     },
     {
       "id": "thermodynamics_qn_019",
-      "question": "The radiation energy emitted by a body when it is at temperature <i>T</i> is (<i>e</i> = emissivity of body)",
+      "question": "The radiation energy emitted by a body when it is at temperature <i>T</i> is (<i>e</i> = emissivity of body, <i>A</i> = surface area of body)",
       "options": [
         "\\sigma A e T^4",
         "\\sigma e T^4",

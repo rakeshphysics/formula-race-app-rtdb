@@ -83,7 +83,7 @@
     "answer": "\\frac{1}{C_{eq}} = \\frac{1}{C_1} + \\frac{1}{C_2}",
     "tags": {
       "chapter": "capacitors",
-      "difficulty": "medium",
+      "difficulty": "easy",
       "class": "12"
     },
     "image": "assets/images/12th/capacitors/capacitors_qn_005.png",
@@ -376,7 +376,7 @@
       "answer": "\\frac{\\epsilon_0 b V^2 (K-1)}{2d}",
       "tags": {
         "chapter": "capacitors",
-        "difficulty": "easy",
+        "difficulty": "medium",
         "class": "12"
       },
       "image": "assets/images/12th/capacitors/capacitors_qn_021.png",

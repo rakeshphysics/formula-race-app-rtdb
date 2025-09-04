@@ -390,7 +390,7 @@
         "L\\frac{di}{dt}",
         "-L\\frac{di}{dt}"
       ],
-      "answer": "-L\\frac{di}{dt}",
+      "answer": "L\\frac{di}{dt}",
       "tags": {
         "chapter": "emi",
         "difficulty": "easy",

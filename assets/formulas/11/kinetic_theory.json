@@ -92,7 +92,7 @@
 },
 {
 "id": "kinetic_theory_qn_006",
-"question": "The RMS speed of ideal gas molecules is",
+"question": "The RMS speed of ideal gas molecules is (T = temperature in K, M = molecular wt in kg/mol)",
 "options": [
 "\\sqrt{\\frac{3RT}{M}}",
 "\\sqrt{\\frac{2RT}{M}}",
@@ -110,7 +110,7 @@
 },
   {
     "id": "kinetic_theory_qn_007",
-    "question": "The average speed of ideal gas molecules is",
+    "question": "The average speed of ideal gas molecules is (T = temperature in K, M = molecular wt in kg/mol)",
     "options": [
       "\\sqrt{\\frac{3RT}{M}}",
       "\\sqrt{\\frac{2RT}{M}}",
@@ -128,7 +128,7 @@
   },
   {
     "id": "kinetic_theory_qn_008",
-    "question": "The most probable speed of ideal gas molecules is",
+    "question": "The most probable speed of ideal gas molecules is (T = temperature in K, M = molecular wt in kg/mol)",
     "options": [
       "\\sqrt{\\frac{3RT}{M}}",
       "\\sqrt{\\frac{2RT}{M}}",
@@ -237,7 +237,7 @@
     },
     {
       "id": "kinetic_theory_qn_014",
-      "question": "According to law of equipartition of energy, each degree of freedom contributes <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;</u> to the energy (<i>k</i> = Boltzmann constant, <i>T</i> = temperature)",
+      "question": "According to law of equipartition of energy, each degree of freedom contributes <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> to the energy (<i>k</i> = Boltzmann constant, <i>T</i> = temperature)",
       "options": [
         "kT",
         "\\frac{1}{2}kT",

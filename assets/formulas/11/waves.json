@@ -254,7 +254,7 @@
     },
     {
       "id": "waves_qn_015",
-      "question": "In the diagram below, the phase difference between incident and reflected wave is <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> and transmitted wave is <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>",
+      "question": "In the diagram below, the phase difference between incident and reflected wave is <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> and incident and transmitted wave is <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>",
       "options": [
         "\\text{180, 180}",
         "\\text{0, 0}",

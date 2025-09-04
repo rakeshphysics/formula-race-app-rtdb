@@ -20,7 +20,7 @@
 
     {
       "id": "atoms_qn_002",
-      "question": "Bohr radius equals",
+      "question": "Bohr radius equals (A = Angstrom)",
       "options": [
         "\\text{0.8 A}",
         "\\text{0.529 A}",
@@ -38,7 +38,7 @@
     },
     {
       "id": "atoms_qn_003",
-      "question": "The radius of nth orbit of hydrogen like atom is (<i>Z</i> = atomic number)",
+      "question": "The radius of nth orbit of hydrogen like atom is (<i>Z</i> = atomic number)(A = Angstrom)",
       "options": [
         "0.529 \\frac{n^2}{Z^2} \\text{ A}",
         "0.529 \\frac{Z}{n} \\text{ A}",

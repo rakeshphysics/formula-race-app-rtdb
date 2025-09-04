@@ -20,7 +20,7 @@
 },
 {
 "id": "fluids_qn_002",
-"question": "The buoyancy force on the body immersed in liquid is (V = volume of body, ρ = density of liquid, σ = density of liquid)",
+"question": "The buoyancy force on the body immersed in liquid is (V = volume of body, ρ = density of liquid, σ = density of body)",
 "options": [
 "V \\sigma g",
 "V \\rho g",
@@ -110,7 +110,7 @@
   },
   {
     "id": "fluids_qn_007",
-    "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated upwards with acceleration <i>a</i> is",
+    "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated upwards with acceleration <i>a</i> is (ρ = density of liquid)",
     "options": [
       "h \\rho g",
       "h \\rho (g + a)",
@@ -128,7 +128,7 @@
   },
   {
     "id": "fluids_qn_008",
-    "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated towards right with acceleration <i>a</i> is",
+    "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated towards right with acceleration <i>a</i> is (ρ = density of liquid)",
     "options": [
       "l \\rho a",
       "l \\rho (g + a)",
@@ -146,7 +146,7 @@
   },
   {
     "id": "fluids_qn_009",
-    "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated downwards with acceleration <i>a</i> is (<i>a</i> &lt; <i>g</i>)",
+    "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated downwards with acceleration <i>a</i> is (<i>a</i> &lt; <i>g</i>) (ρ = density of liquid)",
     "options": [
       "h \\rho g",
       "h \\rho (g + a)",
@@ -164,7 +164,7 @@
   },
   {
     "id": "fluids_qn_010",
-    "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated downwards with acceleration <i>a</i> is (<i>a</i> &gt; <i>g</i>)",
+    "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated downwards with acceleration <i>a</i> is (<i>a</i> &gt; <i>g</i>) (ρ = density of liquid)",
     "options": [
       "0",
       "h \\rho (g + a)",
@@ -637,14 +637,14 @@
     },
     {
       "id": "fluids_qn_036",
-      "question": "The terminal velocity of a sphere falling in a liquid is (&eta; = viscous coefficient, <i>r</i> = radius of sphere, &rho; = density of sphere, &sigma; = density of liquid)",
+      "question": "The terminal velocity of a sphere falling in a liquid is (&eta; = viscous coefficient, <i>r</i> = radius of sphere, &rho; = density of liquid, &sigma; = density of sphere)",
       "options": [
         "\\frac{2r^2\\rho g}{9\\eta}",
-        "\\frac{2r^2(\\rho-\\sigma)g}{7\\eta}",
-        "\\frac{2r^2(\\rho-\\sigma)g}{9\\eta}",
+        "\\frac{2r^2(\\sigma-\\rho)g}{7\\eta}",
+        "\\frac{2r^2(\\sigma-\\rho)g}{9\\eta}",
         "\\frac{2r^2\\sigma g}{9\\eta}"
       ],
-      "answer": "\\frac{2r^2(\\rho-\\sigma)g}{9\\eta}",
+      "answer": "\\frac{2r^2(\\sigma-\\rho)g}{9\\eta}",
       "tags": {
         "chapter": "fluids",
         "difficulty": "medium",

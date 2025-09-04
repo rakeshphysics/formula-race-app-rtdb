@@ -385,12 +385,12 @@
     "id": "ray_optics_qn_022",
     "question": "Lens formula is (<i>v</i> = image distance, <i>u</i> = object distance, <i>f</i> = focal length)",
     "options": [
-      "\\frac{1}{f} = \\frac{1}{v} - \\frac{1}{u}",
+      "\\frac{1}{v} - \\frac{1}{u} = \\frac{1}{f}",
       "\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f}",
       "v + u = f",
       "v - u = f"
     ],
-    "answer": "\\frac{1}{f} = \\frac{1}{v} - \\frac{1}{u}",
+    "answer": "\\frac{1}{v} - \\frac{1}{u} = \\frac{1}{f}",
     "tags": {
       "chapter": "ray_optics",
       "difficulty": "easy",
@@ -713,7 +713,7 @@
     "question": "The focal length <i>f</i> of a lens found from the displacement formula is",
     "options": [
       "\\frac{D^2-x^2}{2D}",
-      "\\frac{D^2-x^2}{2d}",
+      "\\frac{D^2-x^2}{2D}",
       "\\frac{D^2-x^2}{4D}",
       "\\frac{D^2-4x}{2D}"
     ],
@@ -747,7 +747,7 @@
   },
   {
     "id": "ray_optics_qn_042",
-    "question": "In the diagram shown, the correct relation is",
+    "question": "In the diagram shown, the correct relation is (δ = deviation of ray)",
     "options": [
       "\\delta = (i_1-i_2) + A",
       "\\delta = (i_1+i_2) + A",
@@ -860,7 +860,7 @@
     "options": [
       "\\frac{\\sin(\\frac{A+\\delta_m}{2})}{\\sin(\\frac{A}{2})}",
       "\\frac{\\sin(\\frac{A-\\delta_m}{2})}{\\sin(\\frac{A}{2})}",
-      "\\frac{\\sin(\\frac{A+\\delta_m}{2})}{\\sin(\\frac{A}{2})}",
+      "\\frac{\\sin(\\frac{A+\\delta_m}{3})}{\\sin(\\frac{A}{3})}",
       "\\frac{\\sin(\\frac{A-\\delta_m}{2})}{\\sin(\\frac{A}{2})}"
     ],
     "answer": "\\frac{\\sin(\\frac{A+\\delta_m}{2})}{\\sin(\\frac{A}{2})}",

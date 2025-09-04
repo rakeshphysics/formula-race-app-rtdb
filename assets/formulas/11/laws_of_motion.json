@@ -73,7 +73,7 @@
   },
   {
     "id": "laws_of_motion_qn_005",
-    "question": "The acceleration in the string connecting blocks equals",
+    "question": "The tension in string connecting the blocks equals",
     "options": [
       "\\mu g,\\ \\left(\\mu = \\frac{m_1 m_2}{m_1 + m_2} \\right)",
       "2\\mu g,\\ \\left(\\mu = \\frac{m_1 m_2}{m_1 + m_2} \\right)",
@@ -297,10 +297,10 @@
       "options": [
         "\\frac{F}{m_2}",
         "\\frac{F m_2}{m_1 + m_2}",
-        "\\frac{F}{m_1 - m_2}",
+        "\\frac{F m_1}{m_1 + m_2}",
         "\\frac{F}{m_1}"
       ],
-      "answer": "\\frac{F m_2}{m_1 + m_2}",
+      "answer": "\\frac{F m_1}{m_1 + m_2}",
       "tags": {
         "chapter": "Laws_of_Motion",
         "difficulty": "medium",
@@ -426,7 +426,7 @@
       "options": [
         "\\text{Normal on block and Normal on ground}",
         "\\text{N on earth and } mg \\text{ on block}",
-        "mg \\text{ on block and } mg \\text{ at earth center}",
+        "N \\text{ on block and } mg \\text{ at earth center}",
         "\\text{None of these}"
       ],
       "answer": "\\text{Normal on block and Normal on ground}",

@@ -11,7 +11,7 @@
     "answer": "\\frac{2R}{\\pi}",
     "tags": {
       "chapter": "Center_of_Mass",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "class": "11"
     },
     "image": "assets/images/11th/center_of_mass/center_of_mass_qn_001.png",
@@ -29,7 +29,7 @@
     "answer": "\\frac{4R}{3\\pi}",
     "tags": {
       "chapter": "Center_of_Mass",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "class": "11"
     },
     "image": "assets/images/11th/center_of_mass/center_of_mass_qn_002.png",
@@ -47,7 +47,7 @@
     "answer": "\\frac{R}{2}",
     "tags": {
       "chapter": "Center_of_Mass",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "class": "11"
     },
     "image": "assets/images/11th/center_of_mass/center_of_mass_qn_003.png",
@@ -120,7 +120,7 @@
     "answer": "1",
     "tags": {
       "chapter": "Center_of_Mass",
-      "difficulty": "medium",
+      "difficulty": "easy",
       "class": "11"
     },
     "image": "",
@@ -138,7 +138,7 @@
     "answer": "0",
     "tags": {
       "chapter": "Center_of_Mass",
-      "difficulty": "medium",
+      "difficulty": "easy",
       "class": "11"
     },
     "image": "",
@@ -156,7 +156,7 @@
     "answer": "\\text{Are exchanged}",
     "tags": {
       "chapter": "Center_of_Mass",
-      "difficulty": "medium",
+      "difficulty": "easy",
       "class": "11"
     },
     "image": "",
@@ -929,7 +929,7 @@
     },
     {
       "id": "fluids_qn_002",
-      "question": "The buoyancy force on the body immersed in liquid is (V = volume of body, ρ = density of liquid, σ = density of liquid)",
+      "question": "The buoyancy force on the body immersed in liquid is (V = volume of body, ρ = density of liquid, σ = density of body)",
       "options": [
         "V \\sigma g",
         "V \\rho g",
@@ -1019,7 +1019,7 @@
     },
     {
       "id": "fluids_qn_007",
-      "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated upwards with acceleration <i>a</i> is",
+      "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated upwards with acceleration <i>a</i> is (ρ = density of liquid)",
       "options": [
         "h \\rho g",
         "h \\rho (g + a)",
@@ -1037,7 +1037,7 @@
     },
     {
       "id": "fluids_qn_008",
-      "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated towards right with acceleration <i>a</i> is",
+      "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated towards right with acceleration <i>a</i> is (ρ = density of liquid)",
       "options": [
         "l \\rho a",
         "l \\rho (g + a)",
@@ -1055,7 +1055,7 @@
     },
     {
       "id": "fluids_qn_009",
-      "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated downwards with acceleration <i>a</i> is (<i>a</i> &lt; <i>g</i>)",
+      "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated downwards with acceleration <i>a</i> is (<i>a</i> &lt; <i>g</i>) (ρ = density of liquid)",
       "options": [
         "h \\rho g",
         "h \\rho (g + a)",
@@ -1073,7 +1073,7 @@
     },
     {
       "id": "fluids_qn_010",
-      "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated downwards with acceleration <i>a</i> is (<i>a</i> &gt; <i>g</i>)",
+      "question": "The pressure difference between <i>a</i> and <i>b</i> in liquid, if container is accelerated downwards with acceleration <i>a</i> is (<i>a</i> &gt; <i>g</i>) (ρ = density of liquid)",
       "options": [
         "0",
         "h \\rho (g + a)",
@@ -1546,14 +1546,14 @@
     },
     {
       "id": "fluids_qn_036",
-      "question": "The terminal velocity of a sphere falling in a liquid is (&eta; = viscous coefficient, <i>r</i> = radius of sphere, &rho; = density of sphere, &sigma; = density of liquid)",
+      "question": "The terminal velocity of a sphere falling in a liquid is (&eta; = viscous coefficient, <i>r</i> = radius of sphere, &rho; = density of liquid, &sigma; = density of sphere)",
       "options": [
         "\\frac{2r^2\\rho g}{9\\eta}",
-        "\\frac{2r^2(\\rho-\\sigma)g}{7\\eta}",
-        "\\frac{2r^2(\\rho-\\sigma)g}{9\\eta}",
+        "\\frac{2r^2(\\sigma-\\rho)g}{7\\eta}",
+        "\\frac{2r^2(\\sigma-\\rho)g}{9\\eta}",
         "\\frac{2r^2\\sigma g}{9\\eta}"
       ],
-      "answer": "\\frac{2r^2(\\rho-\\sigma)g}{9\\eta}",
+      "answer": "\\frac{2r^2(\\sigma-\\rho)g}{9\\eta}",
       "tags": {
         "chapter": "fluids",
         "difficulty": "medium",
@@ -2067,7 +2067,7 @@
       "answer": "\\frac{2\\pi r^{3/2}}{\\sqrt{GM}}",
       "tags": {
         "chapter": "Gravitation",
-        "difficulty": "medium",
+        "difficulty": "god",
         "class": "11"
       },
       "image": "assets/images/11th/gravitation/gravitation_qn_020.png",
@@ -3107,7 +3107,7 @@
       "answer": "y = x \\tan \\theta - \\frac{gx^2}{2u^2 \\cos^2 \\theta}",
       "tags": {
         "chapter": "Kinematics",
-        "difficulty": "easy",
+        "difficulty": "medium",
         "class": "11"
       },
       "image": "assets/images/11th/kinematics/kinematics_qn_047.png",
@@ -3125,7 +3125,7 @@
       "answer": "\\text{$\\Delta$KE/m}",
       "tags": {
         "chapter": "Kinematics",
-        "difficulty": "easy",
+        "difficulty": "medium",
         "class": "11"
       },
       "image": "",
@@ -3143,7 +3143,7 @@
       "answer": "\\frac{2u_x u_y}{g}",
       "tags": {
         "chapter": "Kinematics",
-        "difficulty": "easy",
+        "difficulty": "medium",
         "class": "11"
       },
       "image": "assets/images/11th/kinematics/kinematics_qn_049.png",
@@ -3260,7 +3260,7 @@
     },
     {
       "id": "kinetic_theory_qn_006",
-      "question": "The RMS speed of ideal gas molecules is",
+      "question": "The RMS speed of ideal gas molecules is (T = temperature in K, M = molecular wt in kg/mol)",
       "options": [
         "\\sqrt{\\frac{3RT}{M}}",
         "\\sqrt{\\frac{2RT}{M}}",
@@ -3278,7 +3278,7 @@
     },
     {
       "id": "kinetic_theory_qn_007",
-      "question": "The average speed of ideal gas molecules is",
+      "question": "The average speed of ideal gas molecules is (T = temperature in K, M = molecular wt in kg/mol)",
       "options": [
         "\\sqrt{\\frac{3RT}{M}}",
         "\\sqrt{\\frac{2RT}{M}}",
@@ -3296,7 +3296,7 @@
     },
     {
       "id": "kinetic_theory_qn_008",
-      "question": "The most probable speed of ideal gas molecules is",
+      "question": "The most probable speed of ideal gas molecules is (T = temperature in K, M = molecular wt in kg/mol)",
       "options": [
         "\\sqrt{\\frac{3RT}{M}}",
         "\\sqrt{\\frac{2RT}{M}}",
@@ -3405,7 +3405,7 @@
     },
     {
       "id": "kinetic_theory_qn_014",
-      "question": "According to law of equipartition of energy, each degree of freedom contributes <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;</u> to the energy (<i>k</i> = Boltzmann constant, <i>T</i> = temperature)",
+      "question": "According to law of equipartition of energy, each degree of freedom contributes <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> to the energy (<i>k</i> = Boltzmann constant, <i>T</i> = temperature)",
       "options": [
         "kT",
         "\\frac{1}{2}kT",
@@ -3970,7 +3970,7 @@
     },
     {
       "id": "laws_of_motion_qn_005",
-      "question": "The acceleration in the string connecting blocks equals",
+      "question": "The tension in string connecting the blocks equals",
       "options": [
         "\\mu g,\\ \\left(\\mu = \\frac{m_1 m_2}{m_1 + m_2} \\right)",
         "2\\mu g,\\ \\left(\\mu = \\frac{m_1 m_2}{m_1 + m_2} \\right)",
@@ -4194,10 +4194,10 @@
       "options": [
         "\\frac{F}{m_2}",
         "\\frac{F m_2}{m_1 + m_2}",
-        "\\frac{F}{m_1 - m_2}",
+        "\\frac{F m_1}{m_1 + m_2}",
         "\\frac{F}{m_1}"
       ],
-      "answer": "\\frac{F m_2}{m_1 + m_2}",
+      "answer": "\\frac{F m_1}{m_1 + m_2}",
       "tags": {
         "chapter": "Laws_of_Motion",
         "difficulty": "medium",
@@ -4323,7 +4323,7 @@
       "options": [
         "\\text{Normal on block and Normal on ground}",
         "\\text{N on earth and } mg \\text{ on block}",
-        "mg \\text{ on block and } mg \\text{ at earth center}",
+        "N \\text{ on block and } mg \\text{ at earth center}",
         "\\text{None of these}"
       ],
       "answer": "\\text{Normal on block and Normal on ground}",
@@ -5482,12 +5482,12 @@
       "id": "Rotational_Motion_qn_058",
       "question": "The minimum value of friction coefficient so that object pure rolls down the incline is",
       "options": [
-        "\\mu_{min} = \\tan \\theta \\left( 1 + \\frac{R^2}{K^2} \\right)",
-        "\\mu_{min} = \\tan \\theta \\left( 1 + \\frac{K^2}{R^2} \\right)",
-        "\\mu_{min}",
-        "\\mu_{min}"
+        "\\mu_{min} = \\frac{\\tan \\theta}{\\left(1 + \\frac{K^2}{R^2}\\right)}",
+        "\\mu_{min} = \\frac{\\tan \\theta}{\\left(1 + \\frac{R^2}{K^2}\\right)}",
+        "\\mu_{min} = \\tan \\theta \\left(1 + \\frac{K^2}{R^2}\\right)",
+        "\\mu_{min} = \\tan \\theta \\left(1 + \\frac{R^2}{K^2}\\right)"
       ],
-      "answer": "\\mu_{min} = \\tan \\theta \\left( 1 + \\frac{R^2}{K^2} \\right)",
+      "answer": "\\mu_{min} = \\frac{\\tan \\theta}{\\left(1 + \\frac{K^2}{R^2}\\right)}",
       "tags": {
         "chapter": "Rotational_Motion",
         "difficulty": "medium",
@@ -5594,7 +5594,7 @@
       "options": [
         "\\frac{1}{2} K x^2",
         "\\frac{1}{2} K A^2",
-        "\\frac{1}{2} m \\omega^2 x^2",
+        "\\frac{1}{2} m \\omega x^2",
         "\\frac{1}{2} m \\omega^2 x"
       ],
       "answer": "\\frac{1}{2} K x^2",
@@ -6411,7 +6411,7 @@
     },
     {
       "id": "thermodynamics_qn_019",
-      "question": "The radiation energy emitted by a body when it is at temperature <i>T</i> is (<i>e</i> = emissivity of body)",
+      "question": "The radiation energy emitted by a body when it is at temperature <i>T</i> is (<i>e</i> = emissivity of body, <i>A</i> = surface area of body)",
       "options": [
         "\\sigma A e T^4",
         "\\sigma e T^4",
@@ -7609,7 +7609,7 @@
     },
     {
       "id": "waves_qn_015",
-      "question": "In the diagram below, the phase difference between incident and reflected wave is <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> and transmitted wave is <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>",
+      "question": "In the diagram below, the phase difference between incident and reflected wave is <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> and incident and transmitted wave is <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>",
       "options": [
         "\\text{180, 180}",
         "\\text{0, 0}",
@@ -8612,7 +8612,7 @@
     },
     {
       "id": "work_power_energy_qn_020",
-      "question": "The minimum horizontal speed <i>v</i> to be given to the ring so that it can complete a full circle is",
+      "question": "The minimum horizontal speed <i>v</i> to be given to the sphere so that it can complete a full circle is",
       "options": [
         "\\sqrt{4gl}",
         "\\sqrt{2gl}",
@@ -9077,7 +9077,7 @@
       "answer": "\\frac{1}{C_{eq}} = \\frac{1}{C_1} + \\frac{1}{C_2}",
       "tags": {
         "chapter": "capacitors",
-        "difficulty": "medium",
+        "difficulty": "easy",
         "class": "12"
       },
       "image": "assets/images/12th/capacitors/capacitors_qn_005.png",
@@ -9370,7 +9370,7 @@
       "answer": "\\frac{\\epsilon_0 b V^2 (K-1)}{2d}",
       "tags": {
         "chapter": "capacitors",
-        "difficulty": "easy",
+        "difficulty": "medium",
         "class": "12"
       },
       "image": "assets/images/12th/capacitors/capacitors_qn_021.png",
@@ -9784,9 +9784,9 @@
         "i_1 + i_3 = i_2 + i_4",
         "i_1 + i_4 = i_2 + i_3",
         "i_1 + i_2 = i_3 + i_4",
-        "i_1 + i_2 = i_3 - i_4"
+        "i_1 + i_3 = i_2 - i_4"
       ],
-      "answer": "i_1 + i_3 = i_2 + i_4",
+      "answer": "i_1 + i_3 = i_2 - i_4",
       "tags": {
         "chapter": "current_electricity",
         "difficulty": "easy",
@@ -10513,7 +10513,7 @@
         "\\frac{kq}{R}",
         "\\frac{kq}{x}",
         "\\frac{kq}{r}",
-        "\\frac{kq}{\\sqrt{R^2+x^2}}"
+        "\\frac{kq}{\\sqrt{R^2-x^2}}"
       ],
       "answer": "\\frac{kq}{r}",
       "tags": {
@@ -10673,7 +10673,7 @@
     },
     {
       "id": "Electrostatics_qn_033",
-      "question": "The electric field due to dipole at an axial point is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)",
+      "question": "The electric field due to dipole at an axial point is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)(<i>p</i> = dipolemoment)",
       "options": [
         "\\frac{2kp}{r^2}",
         "\\frac{kp}{r^2}",
@@ -10691,7 +10691,7 @@
     },
     {
       "id": "Electrostatics_qn_034",
-      "question": "The electric field due to dipole at an equatorial point is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)",
+      "question": "The electric field due to dipole at an equatorial point is (<i>k</i> = 1/4&pi;&epsilon;<sub>o</sub>)(<i>p</i> = dipolemoment)",
       "options": [
         "\\frac{2kp}{r^2}",
         "\\frac{kp}{r^2}",
@@ -11580,7 +11580,7 @@
         "L\\frac{di}{dt}",
         "-L\\frac{di}{dt}"
       ],
-      "answer": "-L\\frac{di}{dt}",
+      "answer": "L\\frac{di}{dt}",
       "tags": {
         "chapter": "emi",
         "difficulty": "easy",
@@ -12626,7 +12626,7 @@
   },
   {
     "id": "dual_nature_of_light_qn_020",
-    "question": "A graph is plotted photo current and collector potential for different incident photon frequencies. The relation between frequencies is",
+    "question": "A graph is plotted between photo current and collector potential for different incident photon frequencies. The relation between frequencies is",
     "options": [
       "\\nu_1 > \\nu_2",
       "\\nu_1 = \\nu_2",
@@ -12636,7 +12636,7 @@
     "answer": "\\nu_1 > \\nu_2",
     "tags": {
       "chapter": "Dual Nature of Light",
-      "difficulty": "medium",
+      "difficulty": "god",
       "class": "12"
     },
     "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_020.png",
@@ -12754,7 +12754,7 @@
   },
   {
     "id": "dual_nature_of_light_qn_027",
-    "question": "A graph is plotted photo current and collector potential for different incident photon frequencies. The relation between frequencies is",
+    "question": "A graph is plotted between photo current and collector potential for different incident photon frequencies. The relation between frequencies is",
     "options": [
       "\\nu_1 > \\nu_2",
       "\\nu_1 = \\nu_2",
@@ -12790,14 +12790,14 @@
   },
   {
     "id": "dual_nature_of_light_qn_029",
-    "question": "For an electron rotating in <i>n</i>th bohr orbit of hydrogen atom, the correct expression for its debroglie wavelength &lambda; is (<i>a<sub>o</sub></i> = Bohr radius)",
+    "question": "For an electron rotating in nth bohr orbit of hydrogen atom, the correct expression for its debroglie wavelength &lambda; is (<i>a<sub>o</sub></i> = Bohr radius)",
     "options": [
-      "n^2 \\lambda = 2\\pi r",
-      "n^2 \\lambda = 4\\pi r",
-      "n\\lambda = 2\\pi r",
-      "n\\lambda = 2\\pi n^2 a_o"
+      "\\lambda = 4\\pi n a_o",
+      "\\lambda = 4\\pi n^2 a_o",
+      "\\lambda = 2\\pi n a_o",
+      "\\lambda = 2\\pi n^2 a_o"
     ],
-    "answer": "n\\lambda = 2\\pi r",
+    "answer": "\\lambda = 2\\pi n a_o",
     "tags": {
       "chapter": "Dual Nature of Light",
       "difficulty": "medium",
@@ -13212,12 +13212,12 @@
       "id": "ray_optics_qn_022",
       "question": "Lens formula is (<i>v</i> = image distance, <i>u</i> = object distance, <i>f</i> = focal length)",
       "options": [
-        "\\frac{1}{f} = \\frac{1}{v} - \\frac{1}{u}",
+        "\\frac{1}{v} - \\frac{1}{u} = \\frac{1}{f}",
         "\\frac{1}{v} + \\frac{1}{u} = \\frac{1}{f}",
         "v + u = f",
         "v - u = f"
       ],
-      "answer": "\\frac{1}{f} = \\frac{1}{v} - \\frac{1}{u}",
+      "answer": "\\frac{1}{v} - \\frac{1}{u} = \\frac{1}{f}",
       "tags": {
         "chapter": "ray_optics",
         "difficulty": "easy",
@@ -13540,7 +13540,7 @@
       "question": "The focal length <i>f</i> of a lens found from the displacement formula is",
       "options": [
         "\\frac{D^2-x^2}{2D}",
-        "\\frac{D^2-x^2}{2d}",
+        "\\frac{D^2-x^2}{2D}",
         "\\frac{D^2-x^2}{4D}",
         "\\frac{D^2-4x}{2D}"
       ],
@@ -13574,7 +13574,7 @@
   },
   {
     "id": "ray_optics_qn_042",
-    "question": "In the diagram shown, the correct relation is",
+    "question": "In the diagram shown, the correct relation is (δ = deviation of ray)",
     "options": [
       "\\delta = (i_1-i_2) + A",
       "\\delta = (i_1+i_2) + A",
@@ -13687,7 +13687,7 @@
     "options": [
       "\\frac{\\sin(\\frac{A+\\delta_m}{2})}{\\sin(\\frac{A}{2})}",
       "\\frac{\\sin(\\frac{A-\\delta_m}{2})}{\\sin(\\frac{A}{2})}",
-      "\\frac{\\sin(\\frac{A+\\delta_m}{2})}{\\sin(\\frac{A}{2})}",
+      "\\frac{\\sin(\\frac{A+\\delta_m}{3})}{\\sin(\\frac{A}{3})}",
       "\\frac{\\sin(\\frac{A-\\delta_m}{2})}{\\sin(\\frac{A}{2})}"
     ],
     "answer": "\\frac{\\sin(\\frac{A+\\delta_m}{2})}{\\sin(\\frac{A}{2})}",
@@ -15214,7 +15214,7 @@
 
     {
       "id": "atoms_qn_002",
-      "question": "Bohr radius equals",
+      "question": "Bohr radius equals (A = Angstrom)",
       "options": [
         "\\text{0.8 A}",
         "\\text{0.529 A}",
@@ -15232,7 +15232,7 @@
     },
     {
       "id": "atoms_qn_003",
-      "question": "The radius of nth orbit of hydrogen like atom is (<i>Z</i> = atomic number)",
+      "question": "The radius of nth orbit of hydrogen like atom is (<i>Z</i> = atomic number) (A = Angstrom)",
       "options": [
         "0.529 \\frac{n^2}{Z^2} \\text{ A}",
         "0.529 \\frac{Z}{n} \\text{ A}",
@@ -15699,7 +15699,7 @@
       "answer": "E = mc^2",
       "tags": {
         "chapter": "nuclei",
-        "difficulty": "easy",
+        "difficulty": "medium",
         "class": "12"
       },
       "image": "assets/images/12th/nuclei/nuclei_qn_008.png",

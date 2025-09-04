@@ -242,9 +242,9 @@
         "i_1 + i_3 = i_2 + i_4",
         "i_1 + i_4 = i_2 + i_3",
         "i_1 + i_2 = i_3 + i_4",
-        "i_1 + i_2 = i_3 - i_4"
+        "i_1 + i_3 = i_2 - i_4"
       ],
-      "answer": "i_1 + i_3 = i_2 + i_4",
+      "answer": "i_1 + i_3 = i_2 - i_4",
       "tags": {
         "chapter": "current_electricity",
         "difficulty": "easy",

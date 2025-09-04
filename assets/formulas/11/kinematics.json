@@ -848,7 +848,7 @@
       "answer": "y = x \\tan \\theta - \\frac{gx^2}{2u^2 \\cos^2 \\theta}",
       "tags": {
         "chapter": "Kinematics",
-        "difficulty": "easy",
+        "difficulty": "medium",
         "class": "11"
       },
       "image": "assets/images/11th/kinematics/kinematics_qn_047.png",
@@ -866,7 +866,7 @@
       "answer": "\\text{$\\Delta$KE/m}",
       "tags": {
         "chapter": "Kinematics",
-        "difficulty": "easy",
+        "difficulty": "medium",
         "class": "11"
       },
       "image": "",
@@ -884,7 +884,7 @@
       "answer": "\\frac{2u_x u_y}{g}",
       "tags": {
         "chapter": "Kinematics",
-        "difficulty": "easy",
+        "difficulty": "medium",
         "class": "11"
       },
       "image": "assets/images/11th/kinematics/kinematics_qn_049.png",

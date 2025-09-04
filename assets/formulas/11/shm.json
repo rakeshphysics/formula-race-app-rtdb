@@ -59,7 +59,7 @@
 "options": [
 "\\frac{1}{2} K x^2",
 "\\frac{1}{2} K A^2",
-"\\frac{1}{2} m \\omega^2 x^2",
+"\\frac{1}{2} m \\omega x^2",
 "\\frac{1}{2} m \\omega^2 x"
 ],
 "answer": "\\frac{1}{2} K x^2",
