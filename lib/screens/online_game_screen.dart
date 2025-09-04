@@ -105,6 +105,7 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
         pickUniqueChapters(buckets['11_medium']!, 5, usedChapters, random));
     selectedQuestions.addAll(
         pickUniqueChapters(buckets['11_god']!, 1, usedChapters, random));
+    //print('Online Selected Chapters: $usedChapters');
   } else if (gameMode == 'full_12th') {
     // 4 easy, 5 medium, 1 god for 12th
     selectedQuestions.addAll(
@@ -113,6 +114,7 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
         pickUniqueChapters(buckets['12_medium']!, 5, usedChapters, random));
     selectedQuestions.addAll(
         pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
+    //print('Online Selected Chapters: $usedChapters');
   } else if (gameMode == 'combined_11_12') {
     // 11th 2 easy, 12th 2 easy, 11th 2 medium, 12th 2 medium, 11th 1 god, 12th 1 god
     selectedQuestions.addAll(
@@ -127,6 +129,7 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
         pickUniqueChapters(buckets['11_god']!, 1, usedChapters, random));
     selectedQuestions.addAll(
         pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
+    //print('Online Selected Chapters: $usedChapters');
   }
 // Inside getRandomQuestions function, within the if-else if structure
   else if (gameMode.startsWith(

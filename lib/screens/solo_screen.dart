@@ -82,6 +82,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 
   late AnimationController _progressController;
   late Animation<double> _progressAnimation;
+  bool showCorrectAnswerOnTimeout = false;
 
   Future<List<String>> _getSeenQuestionIds(String chapter) async {
     final prefs = await SharedPreferences.getInstance();
@@ -158,6 +159,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'SHM',
           'Waves',
         ];
+
       } else if (widget.selectedChapter == 'full12') {
         fullChapters = [
           'Electrostatics',
@@ -175,6 +177,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'X Rays',
           'Semiconductors',
         ];
+
       } else if (widget.selectedChapter == 'fullBoth') {
         fullChapters = [
           // 11th
@@ -209,6 +212,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'X Rays'
           'Semiconductors',
         ];
+
       }
 
       final quizProvider = Provider.of<QuizDataProvider>(context, listen: false);
@@ -249,6 +253,8 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       addUniqueQuestion('easy', 4);
       addUniqueQuestion('medium', 5);
       addUniqueQuestion('god', 1);
+
+      //print('Final Selected Chapters: $selectedChapters');
 
     } else {
       // If not 'full' mode, call the new function for chapter-wise selection
@@ -412,6 +418,16 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
         ),
       );
 
+      setState(() {
+        showCorrectAnswerOnTimeout = true;
+      });
+
+      await Future.delayed(const Duration(milliseconds: 700));
+
+      setState(() {
+        showCorrectAnswerOnTimeout = false;
+      });
+
       // TRACK MISTAKE
       await MistakeTrackerService.trackMistake(
         userId: 'test_user',
@@ -460,6 +476,9 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   // ............. Chunk 5 OPTION COLOR LOGIC .............
   Color getOptionColor(String option) {
     if (selectedOption == null) {
+      if (showCorrectAnswerOnTimeout && option == questions[currentIndex]['answer']) {
+        return Colors.green; // Highlight correct answer on timeout
+      }
       return Colors.black;
     } else {
       if (option == questions[currentIndex]['answer']) {
