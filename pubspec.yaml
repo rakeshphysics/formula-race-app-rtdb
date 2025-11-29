@@ -1,7 +1,7 @@
 name: formularacing
 description: A new Flutter project.
 publish_to: 'none'
-version: 1.0.0+8
+version: 1.0.0+9
 
 environment:
   sdk: '>=3.3.0 <4.0.0'
@@ -28,6 +28,7 @@ dependencies:
   mobile_scanner: ^5.0.0
   encrypt: ^5.0.1
   provider: ^6.0.5
+  confetti: ^0.7.0
 
 dev_dependencies:
   flutter_test:

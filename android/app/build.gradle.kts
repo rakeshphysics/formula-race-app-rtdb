@@ -53,7 +53,7 @@ android {
 
     defaultConfig {
         applicationId = "com.physicswithrakesh.formularacing" // Your updated application ID
-        minSdk = 23 // Using 23 directly as per your previous snippet
+        minSdk = flutter.minSdkVersion // Using 23 directly as per your previous snippet
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
