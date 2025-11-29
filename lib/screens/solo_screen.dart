@@ -22,6 +22,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:provider/provider.dart';
 import '../quiz_data_provider.dart';
+import 'package:confetti/confetti.dart';
 
 // ............. Chunk 1 SOLO SCREEN WIDGET .............
 const Map<String, String> chapterToClass = {
@@ -83,6 +84,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   late AnimationController _progressController;
   late Animation<double> _progressAnimation;
   bool showCorrectAnswerOnTimeout = false;
+  int _consecutiveCorrectAnswers = 0;
 
   Future<List<String>> _getSeenQuestionIds(String chapter) async {
     final prefs = await SharedPreferences.getInstance();
@@ -103,10 +105,12 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     await prefs.remove('seen_questions_$chapter');
   }
 
+  late ConfettiController _confettiController;
 
   @override
   void initState() {
     super.initState();
+    _confettiController = ConfettiController(duration: const Duration(seconds: 2));
    // print('🤢🤢*** SoloScreen initState called for chapter: ${widget.selectedChapter} ***'); // ADD THIS LINE
 
     _progressController = AnimationController(
@@ -128,6 +132,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   @override
   void dispose() {
     _progressController.dispose();
+    _confettiController.dispose();
     super.dispose();
   }
 
@@ -367,12 +372,14 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 
     if (selected == correctAnswer) {
       score++;
+      _consecutiveCorrectAnswers++; // Increment counter
       // TRACK CORRECT
      // MistakeTrackerService.trackCorrect(
         //userId: 'test_user',  // use real userId when ready
        // questionData: questions[currentIndex],
       //);
     } else if (selected != '') {
+      _consecutiveCorrectAnswers = 0;
       // User clicked wrong answer
       wrongAnswers.add(
         IncorrectAnswer(
@@ -407,6 +414,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       //print('Mistake saved for question: ${questions[currentIndex]['question']}');
 
     } else {
+      _consecutiveCorrectAnswers = 0;
       // User skipped → count as wrong
       wrongAnswers.add(
         IncorrectAnswer(
@@ -447,6 +455,21 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       'selected': selected == '' ? '(No Answer)' : selected,
       'correct': correctAnswer,
     });
+
+    setState(() {
+      selectedOption = selected;
+    });
+
+// Check for confetti condition and apply delay
+    if (_consecutiveCorrectAnswers >= 5) {
+      _confettiController.play();
+      await Future.delayed(const Duration(seconds: 2)); // Wait 2 seconds for confetti
+      _confettiController.stop();
+      _consecutiveCorrectAnswers = 0;
+    } else {
+      // Standard delay to show the answer before moving on
+      await Future.delayed(const Duration(milliseconds: 400));
+    }
 
     if (currentIndex < totalQuestions - 1) {
       setState(() {
@@ -612,7 +635,10 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 
 
 
-      child: Scaffold(
+    child: Stack(
+    alignment: Alignment.topCenter,
+      children:[
+       Scaffold(
         backgroundColor: Colors.black,
         //appBar: AppBar(
         //    backgroundColor: Colors.black,
@@ -720,6 +746,17 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
         ),
 
       ),
+        ConfettiWidget(
+          confettiController: _confettiController,
+          blastDirectionality: BlastDirectionality.explosive,
+          numberOfParticles: 30,
+          emissionFrequency: 0.05,
+          gravity: 0.3,
+          shouldLoop: false,
+          colors: const [
+            Colors.cyanAccent
+          ],
+        ),],),
     );// WillPopScope
   }
 }
