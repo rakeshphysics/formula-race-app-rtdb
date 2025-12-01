@@ -461,9 +461,9 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     });
 
 // Check for confetti condition and apply delay
-    if (_consecutiveCorrectAnswers >= 5) {
+    if (_consecutiveCorrectAnswers >= 6) {
       _confettiController.play();
-      await Future.delayed(const Duration(seconds: 2)); // Wait 2 seconds for confetti
+      await Future.delayed(const Duration(seconds: 1)); // Wait 2 seconds for confetti
       _confettiController.stop();
       _consecutiveCorrectAnswers = 0;
     } else {
@@ -749,8 +749,8 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
         ConfettiWidget(
           confettiController: _confettiController,
           blastDirectionality: BlastDirectionality.explosive,
-          numberOfParticles: 30,
-          emissionFrequency: 0.05,
+          numberOfParticles: 20,
+          emissionFrequency: 0.02,
           gravity: 0.3,
           shouldLoop: false,
           colors: const [

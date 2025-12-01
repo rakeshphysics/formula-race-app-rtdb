@@ -13,6 +13,7 @@ import 'package:flutter_html/flutter_html.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'home_screen.dart';
 import 'package:confetti/confetti.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 
 Future<void> updateMistakeTracker(List<Map<String, dynamic>> responses) async {
@@ -73,6 +74,8 @@ class _ResultScreenState extends State<ResultScreen> {
   int totalQuestions = 0;
   List<Color> _confettiColors = [];
   int _particleCount = 0;
+  double _emissionFrequency = 0.05;
+  final AudioPlayer _audioPlayer = AudioPlayer();
 
   @override
   void initState() {
@@ -84,45 +87,67 @@ class _ResultScreenState extends State<ResultScreen> {
   @override
   void dispose() {
     _confettiController.dispose();
+    _audioPlayer.dispose();
     super.dispose();
   }
 
 
   void _triggerConfetti() {
+    // 1. Wait for the first frame to be built and painted.
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (!mounted) return;
+      // 2. After the frame is painted, start a user-visible delay.
+      Future.delayed(const Duration(milliseconds: 0), () {
+        // 3. After the delay, check if the widget is still on screen.
+        if (!mounted) return;
 
-      totalQuestions = ModalRoute.of(context)?.settings.arguments as int;
-      score = totalQuestions - widget.incorrectAnswers.length;
+        // 4. Now it's safe to get context-dependent data and calculate the score.
+        totalQuestions = ModalRoute.of(context)?.settings.arguments as int;
+        score = totalQuestions - widget.incorrectAnswers.length;
 
-      // Define local variables for confetti settings
-      int localParticleCount = 0;
-      List<Color> localConfettiColors = [];
+        // ... (all your score calculation logic for particles/colors is correct)
+        int localParticleCount = 0;
+        List<Color> localConfettiColors = [];
+        double localEmissionFrequency = 0.05;
 
-      if (score == 10) {
-        localParticleCount = 120;
-        localConfettiColors = [Colors.green, Colors.blue, Colors.pink, Colors.orange, Colors.purple, Colors.yellow, Colors.red];
-      } else if (score == 9) {
-        localParticleCount = 80;
-        localConfettiColors = [Colors.green, Colors.blue, Colors.pink, Colors.orange, Colors.purple];
-      } else if (score == 8) {
-        localParticleCount = 70;
-        localConfettiColors = [Colors.green, Colors.blue, Colors.pink, Colors.orange];
-      } else if (score == 7) {
-        localParticleCount = 40;
-        localConfettiColors = [Colors.green, Colors.blue];
-      }
+        if (score == 10) {
+          localParticleCount = 50;
+          localConfettiColors = [Colors.green, Colors.blue, Colors.pink, Colors.orange, Colors.purple, Colors.yellow, Colors.red];
+          localEmissionFrequency = 0.05;
+        } else if (score >= 8) {
+          localParticleCount = 30;
+          localConfettiColors = [Colors.green, Colors.blue, Colors.pink, Colors.orange, Colors.purple];
+          localEmissionFrequency = 0.04;
+        } else if (score >= 6) {
+          localParticleCount = 20;
+          localConfettiColors = [Colors.green, Colors.blue, Colors.pink, Colors.orange];
+          localEmissionFrequency = 0.04;
+        } else if (score >= 4) {
+          localParticleCount = 10;
+          localConfettiColors = [Colors.green, Colors.blue];
+          localEmissionFrequency = 0.04;
+        } else if (score >= 0) {
+          localParticleCount = 5;
+          localConfettiColors = [Colors.green];
+          localEmissionFrequency = 0.03;
+        }
 
-      // Update the state, which will cause the ConfettiWidget to rebuild with the new values
-      setState(() {
-        _particleCount = localParticleCount;
-        _confettiColors = localConfettiColors;
+        // 5. Finally, update the state and play the effects from within setState.
+        setState(() {
+          _particleCount = localParticleCount;
+          _confettiColors = localConfettiColors;
+          _emissionFrequency = localEmissionFrequency;
+
+        });
+        if (score >= 6) {
+          //_audioPlayer.play(AssetSource('sounds/pop.wav'));
+        }
+
+        // Play confetti if there are particles to show
+        if (_particleCount > 0) {
+          _confettiController.play();
+        }
+
       });
-
-      // If there are particles to show, just play the animation
-      if (_particleCount > 0) {
-        _confettiController.play();
-      }
     });
   }
 
@@ -161,7 +186,7 @@ class _ResultScreenState extends State<ResultScreen> {
             shouldLoop: false,
             numberOfParticles: _particleCount, // A default value, will be overridden by the controller
             gravity: 0.3,
-            emissionFrequency: 0.05,
+            emissionFrequency: _emissionFrequency,
             colors: _confettiColors.isNotEmpty ? _confettiColors : const [Colors.green, Colors.blue, Colors.pink], // Use the state variable
           ),
 

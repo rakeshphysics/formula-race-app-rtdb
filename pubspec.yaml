@@ -16,8 +16,8 @@ dependencies:
 
   flutter_math_fork: ^0.7.2
   flutter_html: ^3.0.0
-  google_fonts: ^6.2.1
-  audioplayers: ^5.2.0
+  google_fonts: ^6.3.1
+  audioplayers: ^6.5.0
   #flutter_svg: ^2.0.0+1
   #cupertino_icons: ^1.0.8
   firebase_core:  ^2.29.0 # Official latest stable
@@ -46,6 +46,7 @@ flutter:
 
     - assets/sounds/correct.mp3
     - assets/sounds/wrong.mp3
+    - assets/sounds/pop.wav
     - assets/logo.png
 
 

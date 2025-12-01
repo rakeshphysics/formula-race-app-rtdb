@@ -20,6 +20,7 @@ import 'screens/searching_for_opponent.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'quiz_data_provider.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 // ← added SplashScreen import
 
@@ -50,6 +51,9 @@ class FormulaRaceApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final ThemeData base = ThemeData.dark();
+
     return MaterialApp(
       title: 'Formula Race',
       theme: ThemeData.dark(),
