@@ -180,15 +180,7 @@ class _ResultScreenState extends State<ResultScreen> {
         alignment: Alignment.topCenter,
         children:[
 
-          ConfettiWidget(
-            confettiController: _confettiController,
-            blastDirectionality: BlastDirectionality.explosive,
-            shouldLoop: false,
-            numberOfParticles: _particleCount, // A default value, will be overridden by the controller
-            gravity: 0.3,
-            emissionFrequency: _emissionFrequency,
-            colors: _confettiColors.isNotEmpty ? _confettiColors : const [Colors.green, Colors.blue, Colors.pink], // Use the state variable
-          ),
+
 
         SafeArea(
           child: Padding(
@@ -391,7 +383,17 @@ class _ResultScreenState extends State<ResultScreen> {
               ],
             ),
           ),
-        ),],),
+        ),
+
+          ConfettiWidget(
+            confettiController: _confettiController,
+            blastDirectionality: BlastDirectionality.explosive,
+            shouldLoop: false,
+            numberOfParticles: _particleCount, // A default value, will be overridden by the controller
+            gravity: 0.3,
+            emissionFrequency: _emissionFrequency,
+            colors: _confettiColors.isNotEmpty ? _confettiColors : const [Colors.green, Colors.blue, Colors.pink], // Use the state variable
+          ),],),
 
 
         bottomNavigationBar: Padding(
