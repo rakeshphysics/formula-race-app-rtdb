@@ -69,112 +69,54 @@ class ResultScreen extends StatefulWidget {
 
 class _ResultScreenState extends State<ResultScreen> {
 
-  late ConfettiController _confettiController;
+
   int score = 0;
   int totalQuestions = 0;
   List<Color> _confettiColors = [];
   int _particleCount = 0;
   double _emissionFrequency = 0.05;
   final AudioPlayer _audioPlayer = AudioPlayer();
-  //bool _confettiTriggered = false;
+  late ConfettiController _confetti10Controller;
+  late ConfettiController _confetti8Controller;
+  late ConfettiController _confetti6Controller;
+  late ConfettiController _confetti4Controller;
+  late ConfettiController _confetti0Controller;
 
   @override
   void initState() {
     super.initState();
-    _confettiController = ConfettiController(duration: const Duration(seconds: 3));
-    //_triggerConfetti();
+    _confetti10Controller = ConfettiController(duration: const Duration(seconds: 3));
+    _confetti8Controller = ConfettiController(duration: const Duration(seconds: 3));
+    _confetti6Controller = ConfettiController(duration: const Duration(seconds: 2));
+    _confetti4Controller = ConfettiController(duration: const Duration(seconds: 2));
+    _confetti0Controller = ConfettiController(duration: const Duration(seconds: 1));
   }
 
   @override
   void dispose() {
-    _confettiController.dispose();
+    _confetti10Controller.dispose();
+    _confetti8Controller.dispose();
+    _confetti6Controller.dispose();
+    _confetti4Controller.dispose();
+    _confetti0Controller.dispose();
     _audioPlayer.dispose();
     super.dispose();
   }
 
 
-  // void _triggerConfetti() {
-  //   // 1. Wait for the first frame to be built and painted.
-  //   WidgetsBinding.instance.addPostFrameCallback((_) {
-  //     // 2. After the frame is painted, start a user-visible delay.
-  //     Future.delayed(const Duration(milliseconds: 120), () {
-  //       // 3. After the delay, check if the widget is still on screen.
-  //       if (!mounted) return;
-  //
-  //       // 4. Now it's safe to get context-dependent data and calculate the score.
-  //       totalQuestions = ModalRoute.of(context)?.settings.arguments as int;
-  //       score = totalQuestions - widget.incorrectAnswers.length;
-  //
-  //       // ... (all your score calculation logic for particles/colors is correct)
-  //       int localParticleCount = 0;
-  //       List<Color> localConfettiColors = [];
-  //       double localEmissionFrequency = 0.05;
-  //
-  //       if (score == 10) {
-  //         localParticleCount = 50;
-  //         localConfettiColors = [Colors.green, Colors.blue, Colors.pink, Colors.orange, Colors.purple, Colors.yellow, Colors.red];
-  //         localEmissionFrequency = 0.05;
-  //       } else if (score >= 8) {
-  //         localParticleCount = 30;
-  //         localConfettiColors = [Colors.green, Colors.blue, Colors.pink, Colors.orange, Colors.purple];
-  //         localEmissionFrequency = 0.04;
-  //       } else if (score >= 6) {
-  //         localParticleCount = 20;
-  //         localConfettiColors = [Colors.green, Colors.blue, Colors.pink, Colors.orange];
-  //         localEmissionFrequency = 0.04;
-  //       } else if (score >= 4) {
-  //         localParticleCount = 10;
-  //         localConfettiColors = [Colors.green, Colors.blue];
-  //         localEmissionFrequency = 0.04;
-  //       } else if (score >= 0) {
-  //         localParticleCount = 5;
-  //         localConfettiColors = [Colors.green];
-  //         localEmissionFrequency = 0.03;
-  //       }
-  //
-  //       // 5. Finally, update the state and play the effects from within setState.
-  //       setState(() {
-  //         _particleCount = localParticleCount;
-  //         _confettiColors = localConfettiColors;
-  //         _emissionFrequency = localEmissionFrequency;
-  //
-  //       });
-  //       if (score >= 6) {
-  //         //_audioPlayer.play(AssetSource('sounds/pop.wav'));
-  //       }
-  //
-  //       // Play confetti if there are particles to show
-  //       if (_particleCount > 0) {
-  //         print('🎉 TRIGGERED - particles: $_particleCount');
-  //         _confettiController.play();
-  //       }
-  //
-  //     });
-  //   });
-  // }
-
   @override
   Widget build(BuildContext context) {
-
-
-    // WidgetsBinding.instance.addPostFrameCallback((_) {
-    //   if (!_confettiTriggered) {
-    //     _confettiTriggered = true;
-    //     Future.delayed(const Duration(milliseconds: 50), () {
-    //       _triggerConfetti();
-    //     });
-    //   }
-    // });
-
 
     final screenWidth = MediaQuery.of(context).size.width;
     // Calculate score
     final int totalQuestions = ModalRoute.of(context)?.settings.arguments as int;
     final int score = totalQuestions - widget.incorrectAnswers.length;
 
-    if (score >= 6) {
-      _confettiController.play();
-    }
+    if (score == 10) _confetti10Controller.play();
+    else if (score >= 8) _confetti8Controller.play();
+    else if (score >= 6) _confetti6Controller.play();
+    else if (score >= 4) _confetti4Controller.play();
+    else if (score >= 0) _confetti0Controller.play();
 
     // 👇 Mistake tracker update (insert actual mode check)
     if (widget.mode == 'mistake') {
@@ -403,17 +345,54 @@ class _ResultScreenState extends State<ResultScreen> {
         ),
 
           ConfettiWidget(
-            confettiController: _confettiController,
+            confettiController: _confetti10Controller,
             blastDirectionality: BlastDirectionality.explosive,
             shouldLoop: false,
-            //numberOfParticles: _particleCount,
-            numberOfParticles: 30,// A default value, will be overridden by the controller
+            numberOfParticles: 40,// A default value, will be overridden by the controller
             gravity: 0.3,
-            //emissionFrequency: _emissionFrequency,
             emissionFrequency: 0.05,
-            //colors: _confettiColors.isNotEmpty ? _confettiColors : const [Colors.green, Colors.blue, Colors.pink], // Use the state variable
+            colors: [Colors.green, Colors.blue, Colors.pink, Colors.orange, Colors.purple, Colors.yellow, Colors.red],
+            ),
+
+          ConfettiWidget(
+              confettiController: _confetti8Controller,
+              blastDirectionality: BlastDirectionality.explosive,
+              shouldLoop: false,
+              numberOfParticles: 30,// A default value, will be overridden by the controller
+              gravity: 0.3,
+              emissionFrequency: 0.04,
+              colors: [Colors.green, Colors.blue, Colors.pink, Colors.orange, Colors.purple],
           ),
 
+          ConfettiWidget(
+              confettiController: _confetti6Controller,
+              blastDirectionality: BlastDirectionality.explosive,
+              shouldLoop: false,
+              numberOfParticles: 20,// A default value, will be overridden by the controller
+              gravity: 0.3,
+              emissionFrequency: 0.04,
+              colors: [Colors.green, Colors.blue, Colors.pink],
+          ),
+
+          ConfettiWidget(
+              confettiController: _confetti4Controller,
+              blastDirectionality: BlastDirectionality.explosive,
+              shouldLoop: false,
+              numberOfParticles: 10,// A default value, will be overridden by the controller
+              gravity: 0.3,
+              emissionFrequency: 0.04,
+              colors: [Colors.green, Colors.blue],
+          ),
+
+          ConfettiWidget(
+              confettiController: _confetti0Controller,
+              blastDirectionality: BlastDirectionality.explosive,
+              shouldLoop: false,
+              numberOfParticles: 10,// A default value, will be overridden by the controller
+              gravity: 0.3,
+              emissionFrequency: 0.03,
+              colors: [Colors.white],
+          ),
 
 
 
