@@ -4,8 +4,9 @@ import '../models/online_incorrect_answer_model.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
+import 'package:confetti/confetti.dart';
 
-class OnlineResultScreen extends StatelessWidget {
+class OnlineResultScreen extends StatefulWidget {
   final Map<dynamic, dynamic> scores;
   final String playerId;
   final bool isPlayer1;
@@ -26,6 +27,29 @@ class OnlineResultScreen extends StatelessWidget {
   }) : super(key: key);
 
   @override
+  State<OnlineResultScreen> createState() => _OnlineResultScreenState();
+}
+
+class _OnlineResultScreenState extends State<OnlineResultScreen> {
+  late ConfettiController _confettiController;
+  late ConfettiController _confettiDrawController;
+
+
+  @override
+  void initState() {
+    super.initState();
+    _confettiController = ConfettiController(duration: const Duration(seconds: 3));
+    _confettiDrawController = ConfettiController(duration: const Duration(seconds: 2));
+  }
+
+  @override
+  void dispose() {
+    _confettiController.dispose();
+    _confettiDrawController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
@@ -33,24 +57,24 @@ class OnlineResultScreen extends StatelessWidget {
     int myScore;
     int opponentScore;
 
-    if (isPlayer1) {
-      myScore = scores['player1'] ?? 0;
-      opponentScore = scores['player2'] ?? 0;
+    if (widget.isPlayer1) {
+      myScore = widget.scores['player1'] ?? 0;
+      opponentScore = widget.scores['player2'] ?? 0;
     } else {
-      myScore = scores['player2'] ?? 0;
-      opponentScore = scores['player1'] ?? 0;
+      myScore = widget.scores['player2'] ?? 0;
+      opponentScore = widget.scores['player1'] ?? 0;
     }
 
     String resultMessage;
     Color resultMessageColor;
 
-    if (youLeftGame) { // Check this first
+    if (widget.youLeftGame) { // Check this first
       resultMessage = 'You left the Game\nYou Lose \u{1F622}';
       resultMessageColor = Colors.redAccent;
-    } else if (opponentLeftGame) { // If opponent left the game
+    } else if (widget.opponentLeftGame) { // If opponent left the game
       resultMessage = 'Opponent left the Game\nYou Win 🥳'; // Specific message
       resultMessageColor = Colors.amberAccent; // Winner color
-      myScore = totalQuestions; // Ensure score is displayed as totalQuestions for the win
+      myScore = widget.totalQuestions; // Ensure score is displayed as totalQuestions for the win
       opponentScore = 0; // Ensure opponent's score is 0
     } else if (myScore > opponentScore) {
       resultMessage = '🥳 You Win 🥳';
@@ -63,6 +87,14 @@ class OnlineResultScreen extends StatelessWidget {
       resultMessageColor = Colors.amberAccent;
     }
 
+
+    if (resultMessage.contains('You Win')) {
+      _confettiController.play();
+    } else if (resultMessage.contains("Draw")) {
+      _confettiDrawController.play();
+    }
+
+
     return Scaffold(
       backgroundColor: Colors.black,
           appBar: AppBar(
@@ -72,7 +104,11 @@ class OnlineResultScreen extends StatelessWidget {
           iconTheme: const IconThemeData(color: Colors.white),
           automaticallyImplyLeading: false, // Hide back button
            ),
-      body: Padding(
+
+      body: Stack(
+        alignment: Alignment.topCenter,
+      children:[
+      Padding(
         padding: EdgeInsets.all(screenWidth * 0.04), // Responsive padding
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -168,12 +204,12 @@ class OnlineResultScreen extends StatelessWidget {
             SizedBox(height: screenHeight * 0.02), // Responsive spacing before detailed results
 
             // Detailed Question Results (Mistakes and Opponent Wins)
-            if (onlineIncorrectAnswers.isNotEmpty) // Only show if there are questions to display
+            if (widget.onlineIncorrectAnswers.isNotEmpty) // Only show if there are questions to display
               Expanded(
                 child: ListView.builder(
-                  itemCount: onlineIncorrectAnswers.length,
+                  itemCount: widget.onlineIncorrectAnswers.length,
                   itemBuilder: (context, index) {
-                    final qa = onlineIncorrectAnswers[index]; // qa for question/answer
+                    final qa = widget.onlineIncorrectAnswers[index]; // qa for question/answer
                     String userStatus = '';
                     Color userStatusColor = Colors.white;
 
@@ -369,6 +405,30 @@ class OnlineResultScreen extends StatelessWidget {
             //SizedBox(height: screenHeight * 0.02), // Bottom padding
           ],
         ),
+      ),
+
+        ConfettiWidget(
+          confettiController: _confettiController,
+          blastDirectionality: BlastDirectionality.explosive,
+          shouldLoop: false,
+          numberOfParticles: 40,// A default value, will be overridden by the controller
+          gravity: 0.3,
+          emissionFrequency: 0.05,
+          colors: const [Colors.green, Colors.blue, Colors.pink, Colors.orange, Colors.purple, Colors.yellow, Colors.red],
+        ),
+
+        ConfettiWidget(
+          confettiController: _confettiDrawController,
+          blastDirectionality: BlastDirectionality.explosive,
+          shouldLoop: false,
+          numberOfParticles: 20,// A default value, will be overridden by the controller
+          gravity: 0.3,
+          emissionFrequency: 0.05,
+          colors: const [Colors.white,Colors.orange],
+        ),
+
+
+      ],
       ),
     );
   }
