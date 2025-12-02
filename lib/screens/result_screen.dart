@@ -393,7 +393,12 @@ class _ResultScreenState extends State<ResultScreen> {
             gravity: 0.3,
             emissionFrequency: _emissionFrequency,
             colors: _confettiColors.isNotEmpty ? _confettiColors : const [Colors.green, Colors.blue, Colors.pink], // Use the state variable
-          ),],),
+          ),
+
+
+
+
+        ],),
 
 
         bottomNavigationBar: Padding(
