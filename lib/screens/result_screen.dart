@@ -76,12 +76,13 @@ class _ResultScreenState extends State<ResultScreen> {
   int _particleCount = 0;
   double _emissionFrequency = 0.05;
   final AudioPlayer _audioPlayer = AudioPlayer();
+  //bool _confettiTriggered = false;
 
   @override
   void initState() {
     super.initState();
     _confettiController = ConfettiController(duration: const Duration(seconds: 3));
-    _triggerConfetti();
+    //_triggerConfetti();
   }
 
   @override
@@ -92,72 +93,88 @@ class _ResultScreenState extends State<ResultScreen> {
   }
 
 
-  void _triggerConfetti() {
-    // 1. Wait for the first frame to be built and painted.
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      // 2. After the frame is painted, start a user-visible delay.
-      Future.delayed(const Duration(milliseconds: 0), () {
-        // 3. After the delay, check if the widget is still on screen.
-        if (!mounted) return;
-
-        // 4. Now it's safe to get context-dependent data and calculate the score.
-        totalQuestions = ModalRoute.of(context)?.settings.arguments as int;
-        score = totalQuestions - widget.incorrectAnswers.length;
-
-        // ... (all your score calculation logic for particles/colors is correct)
-        int localParticleCount = 0;
-        List<Color> localConfettiColors = [];
-        double localEmissionFrequency = 0.05;
-
-        if (score == 10) {
-          localParticleCount = 50;
-          localConfettiColors = [Colors.green, Colors.blue, Colors.pink, Colors.orange, Colors.purple, Colors.yellow, Colors.red];
-          localEmissionFrequency = 0.05;
-        } else if (score >= 8) {
-          localParticleCount = 30;
-          localConfettiColors = [Colors.green, Colors.blue, Colors.pink, Colors.orange, Colors.purple];
-          localEmissionFrequency = 0.04;
-        } else if (score >= 6) {
-          localParticleCount = 20;
-          localConfettiColors = [Colors.green, Colors.blue, Colors.pink, Colors.orange];
-          localEmissionFrequency = 0.04;
-        } else if (score >= 4) {
-          localParticleCount = 10;
-          localConfettiColors = [Colors.green, Colors.blue];
-          localEmissionFrequency = 0.04;
-        } else if (score >= 0) {
-          localParticleCount = 5;
-          localConfettiColors = [Colors.green];
-          localEmissionFrequency = 0.03;
-        }
-
-        // 5. Finally, update the state and play the effects from within setState.
-        setState(() {
-          _particleCount = localParticleCount;
-          _confettiColors = localConfettiColors;
-          _emissionFrequency = localEmissionFrequency;
-
-        });
-        if (score >= 6) {
-          //_audioPlayer.play(AssetSource('sounds/pop.wav'));
-        }
-
-        // Play confetti if there are particles to show
-        if (_particleCount > 0) {
-          _confettiController.play();
-        }
-
-      });
-    });
-  }
+  // void _triggerConfetti() {
+  //   // 1. Wait for the first frame to be built and painted.
+  //   WidgetsBinding.instance.addPostFrameCallback((_) {
+  //     // 2. After the frame is painted, start a user-visible delay.
+  //     Future.delayed(const Duration(milliseconds: 120), () {
+  //       // 3. After the delay, check if the widget is still on screen.
+  //       if (!mounted) return;
+  //
+  //       // 4. Now it's safe to get context-dependent data and calculate the score.
+  //       totalQuestions = ModalRoute.of(context)?.settings.arguments as int;
+  //       score = totalQuestions - widget.incorrectAnswers.length;
+  //
+  //       // ... (all your score calculation logic for particles/colors is correct)
+  //       int localParticleCount = 0;
+  //       List<Color> localConfettiColors = [];
+  //       double localEmissionFrequency = 0.05;
+  //
+  //       if (score == 10) {
+  //         localParticleCount = 50;
+  //         localConfettiColors = [Colors.green, Colors.blue, Colors.pink, Colors.orange, Colors.purple, Colors.yellow, Colors.red];
+  //         localEmissionFrequency = 0.05;
+  //       } else if (score >= 8) {
+  //         localParticleCount = 30;
+  //         localConfettiColors = [Colors.green, Colors.blue, Colors.pink, Colors.orange, Colors.purple];
+  //         localEmissionFrequency = 0.04;
+  //       } else if (score >= 6) {
+  //         localParticleCount = 20;
+  //         localConfettiColors = [Colors.green, Colors.blue, Colors.pink, Colors.orange];
+  //         localEmissionFrequency = 0.04;
+  //       } else if (score >= 4) {
+  //         localParticleCount = 10;
+  //         localConfettiColors = [Colors.green, Colors.blue];
+  //         localEmissionFrequency = 0.04;
+  //       } else if (score >= 0) {
+  //         localParticleCount = 5;
+  //         localConfettiColors = [Colors.green];
+  //         localEmissionFrequency = 0.03;
+  //       }
+  //
+  //       // 5. Finally, update the state and play the effects from within setState.
+  //       setState(() {
+  //         _particleCount = localParticleCount;
+  //         _confettiColors = localConfettiColors;
+  //         _emissionFrequency = localEmissionFrequency;
+  //
+  //       });
+  //       if (score >= 6) {
+  //         //_audioPlayer.play(AssetSource('sounds/pop.wav'));
+  //       }
+  //
+  //       // Play confetti if there are particles to show
+  //       if (_particleCount > 0) {
+  //         print('🎉 TRIGGERED - particles: $_particleCount');
+  //         _confettiController.play();
+  //       }
+  //
+  //     });
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
 
+
+    // WidgetsBinding.instance.addPostFrameCallback((_) {
+    //   if (!_confettiTriggered) {
+    //     _confettiTriggered = true;
+    //     Future.delayed(const Duration(milliseconds: 50), () {
+    //       _triggerConfetti();
+    //     });
+    //   }
+    // });
+
+
     final screenWidth = MediaQuery.of(context).size.width;
     // Calculate score
-    //final int totalQuestions = ModalRoute.of(context)?.settings.arguments as int;
-    //final int score = totalQuestions - widget.incorrectAnswers.length;
+    final int totalQuestions = ModalRoute.of(context)?.settings.arguments as int;
+    final int score = totalQuestions - widget.incorrectAnswers.length;
+
+    if (score >= 6) {
+      _confettiController.play();
+    }
 
     // 👇 Mistake tracker update (insert actual mode check)
     if (widget.mode == 'mistake') {
@@ -389,10 +406,12 @@ class _ResultScreenState extends State<ResultScreen> {
             confettiController: _confettiController,
             blastDirectionality: BlastDirectionality.explosive,
             shouldLoop: false,
-            numberOfParticles: _particleCount, // A default value, will be overridden by the controller
+            //numberOfParticles: _particleCount,
+            numberOfParticles: 30,// A default value, will be overridden by the controller
             gravity: 0.3,
-            emissionFrequency: _emissionFrequency,
-            colors: _confettiColors.isNotEmpty ? _confettiColors : const [Colors.green, Colors.blue, Colors.pink], // Use the state variable
+            //emissionFrequency: _emissionFrequency,
+            emissionFrequency: 0.05,
+            //colors: _confettiColors.isNotEmpty ? _confettiColors : const [Colors.green, Colors.blue, Colors.pink], // Use the state variable
           ),
 
 
