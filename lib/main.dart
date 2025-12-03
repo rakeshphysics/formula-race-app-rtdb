@@ -56,7 +56,11 @@ class FormulaRaceApp extends StatelessWidget {
 
     return MaterialApp(
       title: 'Formula Race',
-      theme: ThemeData.dark(),
+      theme: ThemeData(
+       fontFamily: GoogleFonts.poppins().fontFamily,
+        brightness: Brightness.dark, // Example: Set a dark theme globally
+        scaffoldBackgroundColor: Colors.black, // Example: Set default background color
+      ),
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {

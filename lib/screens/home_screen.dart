@@ -20,6 +20,10 @@ import 'ai_tracker_screen.dart'; // Add this import
 import 'multiplayer_selection_screen.dart';
 import 'package:flutter/services.dart';
 //import 'package:cupertino_icons/cupertino_icons.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'dart:async';
+
+
 
 
 
@@ -37,13 +41,59 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
-  //String userId = '';
+class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateMixin { // Add mixin
+  Timer? _timer;
+  int _charIndex = 0;
+  final String _fullAiMessage = "Good morning! Let's solve some questions.";
+  String _displayedAiMessage = "";
+  late AnimationController _breathingController; // <-- ADD THIS
+  late Animation<double> _breathingAnimation;
 
   @override
   void initState() {
     super.initState();
-    //loadUserId();
+    _startTypingAnimation();
+    _breathingController = AnimationController( // <-- ADD THIS BLOCK
+      vsync: this,
+      duration: const Duration(seconds: 2),
+    );
+
+    _breathingAnimation = Tween<double>(begin: 0.18, end: 0.22).animate( // <-- ADD THIS BLOCK
+      CurvedAnimation(
+        parent: _breathingController,
+        curve: Curves.easeInOut,
+      ),
+    )..addStatusListener((status) {
+      if (status == AnimationStatus.completed) {
+        _breathingController.reverse();
+      } else if (status == AnimationStatus.dismissed) {
+        _breathingController.forward();
+      }
+    });
+
+    _breathingController.forward();
+  }
+
+  void _startTypingAnimation() {
+    const typingSpeed = Duration(milliseconds: 70);
+    _timer = Timer.periodic(typingSpeed, (timer) {
+      if (_charIndex < _fullAiMessage.length) {
+        setState(() {
+          _charIndex++;
+          _displayedAiMessage = _fullAiMessage.substring(0, _charIndex);
+        });
+      } else {
+        _timer?.cancel();
+        _breathingController.stop();
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    _breathingController.dispose(); // Important: cancel the timer to avoid memory leaks
+    super.dispose();
   }
 
   //Future<void> loadUserId() async {
@@ -144,46 +194,79 @@ class _HomeScreenState extends State<HomeScreen> {
 
           child: Column(
             children: [
-
-              // . Chunk 3 MY MISTAKES BUTTON AT TOP .
-              Align(
-                alignment: Alignment.topCenter,
-                child: Padding(
-                  padding: EdgeInsets.only(top: screenWidth*0.04),
-                  child: SizedBox(
-                    width: screenWidth * 0.6,
-                    height: screenWidth * 0.15,
-                    child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => AITrackerScreen(userId: widget.userId)), // use real userId when ready
-                        );
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.black,
-                       // minimumSize: Size(screenWidth * 18, screenWidth * 1),
-                        padding: EdgeInsets.zero,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(4),side: BorderSide(color: Colors.red, width: 1.2),
-
-                        ),
-                        elevation: 4,
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            'My Mistakes',
-                              style: TextStyle(fontSize: screenWidth * 0.05, fontWeight:FontWeight.normal, color:Colors.redAccent)
+              // =========== TOP HALF: AI CHAT AREA ===========
+              Expanded(
+                flex: 1, // This makes it take up half the space
+                child: Container( // Placeholder for your AI chat UI
+                  width: double.infinity,
+                  child: Column(
+                    children: [
+                      // You can re-add your title here
+                      Padding(
+                        padding: EdgeInsets.symmetric(vertical: screenHeight * 0.02),
+                        child: Text(
+                          'Formula Racing',
+                          style: GoogleFonts.poppins(
+                            color: const Color(0xFFA8A8A8),
+                            fontSize: screenWidth * 0.06,
+                            fontWeight: FontWeight.w400,
                           ),
-
-                        ],
+                        ),
                       ),
-                    ),
+                      // This is where your AI chat UI will go
+                      // =========== AI AVATAR AND CHAT BUBBLE ===========
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            // --- AVATAR ---
+                            // Placeholder for your animated blob
+                            // --- AVATAR ---
+                            AnimatedBuilder(
+                              animation: _breathingAnimation,
+                              builder: (context, child) {
+                                return Icon(
+                                  Icons.bubble_chart,
+                                  color: Colors.cyan,
+                                  // The size is now driven by the animation!
+                                  size: screenWidth * _breathingAnimation.value,
+                                );
+                              },
+                            ),
+                            SizedBox(height: screenHeight * 0.02),
+
+                            // --- CHAT BUBBLE ---
+                            Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFF1E1E1E), // Dark grey bubble
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              child: Text(
+                                _displayedAiMessage, // Use the state variable here
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: screenWidth * 0.04,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
+
+
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: Divider(
+                  color: Colors.grey.withOpacity(0.5),
+                  thickness: 1,
+                ),
+              ),
+
 
               // ............. Chunk 4 SOLO / ONLINE CENTERED .............
               Expanded(
@@ -192,29 +275,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
 
                     // Solo Play button → your original style
-                    AnimatedButton(
-                      screenWidth: screenWidth,
-                      screenHeight: screenWidth,
 
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => SoloModeSelectionScreen(userId: widget.userId)),
-                        );
-                      },
-                      gradientColors: const [Color(0xFF00FFFF), Color(0xFF006C6C)],
-                      child:  Text(
-                        'Play Solo',
-                        style: TextStyle(fontSize: screenWidth * 0.057, color: Colors.white,fontWeight: FontWeight.normal),
-                      ),
-                    ),
 
-                    SizedBox(height: screenWidth*0.055),
+
 
                     // Online Play button → your original style
                     AnimatedButton(
                       screenWidth: screenWidth,
                       screenHeight: screenWidth,
+
                       onPressed: () {
                         //print('✅Navigating to MultiplayerSelectionScreen with userId: ${widget.userId}');
                         Navigator.push(
@@ -238,7 +307,46 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
                     ),
-                    
+
+                    SizedBox(height: screenWidth*0.055),
+                    //SizedBox(height: screenWidth*0.055),
+
+                    AnimatedButton(
+                      screenWidth: screenWidth,
+                      screenHeight: screenWidth,
+
+
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => SoloModeSelectionScreen(userId: widget.userId)),
+                        );
+                      },
+                      gradientColors: const [Color(0xFF00FFFF), Color(0xFF006C6C)],
+                      child:  Text(
+                        'Play Solo',
+                        style: TextStyle(fontSize: screenWidth * 0.057, color: Colors.white,fontWeight: FontWeight.normal),
+                      ),
+                    ),
+
+                    SizedBox(height: screenWidth*0.055),
+
+                    AnimatedButton(
+                      screenWidth: screenWidth,
+                      screenHeight: screenWidth,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => AITrackerScreen(userId: widget.userId)),
+                        );
+                      },
+                      gradientColors: const [Colors.red, Color(0xFF8B0000)], // Red gradient
+                      color: const Color(0xFF000000), // Black background
+                      child: Text(
+                        'My Mistakes',
+                        style: TextStyle(fontSize: screenWidth * 0.057, color: Colors.redAccent, fontWeight: FontWeight.normal),
+                      ),
+                    ),
 
                   ],
                 ),
@@ -249,7 +357,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Text(
                   'Physics with Rakesh  |  IIT Madras',
                   style: TextStyle(
-                    color: Color(0xFFC5C5C5),
+                    color: Color(0xFFA8A8A8),
                     fontSize: screenWidth * 0.05,
 
                   ),
@@ -272,6 +380,8 @@ class AnimatedButton extends StatefulWidget {
   final VoidCallback onPressed;
   final Widget child;
   final List<Color> gradientColors;
+  final Color color;
+
 
   const AnimatedButton({
     required this.screenWidth,
@@ -279,6 +389,8 @@ class AnimatedButton extends StatefulWidget {
     required this.onPressed,
     required this.child,
     required this.gradientColors,
+    this.color = Colors.black,
+
     Key? key,
   }) : super(key: key);
 
@@ -302,7 +414,7 @@ class _AnimatedButtonState extends State<AnimatedButton> {
             width: widget.screenWidth * 0.8,
             height: widget.screenHeight * 0.19,
             decoration: BoxDecoration(
-              color: Colors.black,
+              color: widget.color,
               borderRadius: BorderRadius.circular(4),
             ),
             child: Material(
