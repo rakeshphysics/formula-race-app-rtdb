@@ -23,6 +23,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:provider/provider.dart';
 import '../quiz_data_provider.dart';
 import 'package:confetti/confetti.dart';
+import '../../services/database_helper.dart';
+import '../../models/practice_attempt.dart';
 
 // ............. Chunk 1 SOLO SCREEN WIDGET .............
 const Map<String, String> chapterToClass = {

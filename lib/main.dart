@@ -21,12 +21,14 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'quiz_data_provider.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:formularacing/services/database_helper.dart';
 
 // ← added SplashScreen import
 
 // ............. Chunk 1 MAIN FUNCTION .............
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await DatabaseHelper.instance.database;
 
   // ADD THESE LINES to initialize the provider and load data
   QuizDataProvider quizProvider = QuizDataProvider();
