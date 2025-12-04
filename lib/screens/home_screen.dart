@@ -49,32 +49,11 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
   int _charIndex = 0;
   String _fullAiMessage = "Loading...";
   String _displayedAiMessage = "";
-  late AnimationController _breathingController; // <-- ADD THIS
-  late Animation<double> _breathingAnimation;
 
   @override
   void initState() {
     super.initState();
     _loadAiMessage();
-    _breathingController = AnimationController( // <-- ADD THIS BLOCK
-      vsync: this,
-      duration: const Duration(seconds: 2),
-    );
-
-    _breathingAnimation = Tween<double>(begin: 0.18, end: 0.22).animate( // <-- ADD THIS BLOCK
-      CurvedAnimation(
-        parent: _breathingController,
-        curve: Curves.easeInOut,
-      ),
-    )..addStatusListener((status) {
-      if (status == AnimationStatus.completed) {
-        _breathingController.reverse();
-      } else if (status == AnimationStatus.dismissed) {
-        _breathingController.forward();
-      }
-    });
-
-    //_breathingController.forward();
   }
 
 
@@ -102,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
     const typingSpeed = Duration(milliseconds: 70);
     _timer?.cancel(); // Cancel any previous timer
 
-    _breathingController.forward(); // <-- START the breathing animation here
+     // <-- START the breathing animation here
 
     _timer = Timer.periodic(typingSpeed, (timer) {
       if (_charIndex < _fullAiMessage.length) {
@@ -114,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
         }
       } else {
         _timer?.cancel();
-        _breathingController.stop(); // <-- STOP the breathing animation here
+         // <-- STOP the breathing animation here
       }
     });
   }
@@ -122,7 +101,6 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
   @override
   void dispose() {
     _timer?.cancel();
-    _breathingController.dispose(); // Important: cancel the timer to avoid memory leaks
     super.dispose();
   }
 
@@ -319,32 +297,17 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             // --- AVATAR ---
-                            // Placeholder for your animated blob
-                            // --- AVATAR ---
-                            // --- AVATAR ---
-                          SizedBox(
-                          height: screenHeight * 0.15,
-                            child:InkWell(
-                              onTap: _loadAiMessage, // <-- Call our existing function on tap!
-                              borderRadius: BorderRadius.circular(100), // Makes the splash effect circular
-                              child: AnimatedBuilder(
-                                animation: _breathingAnimation,
-                                builder: (context, child) {
-                                  return Container(
-                                    padding: const EdgeInsets.all(16.0), // Add some padding so the tap area is larger
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      border: Border.all(color: Colors.transparent, width: 2), // Transparent border
-                                    ),
-                                    child: Icon(
-                                      Icons.bubble_chart,
-                                      color: Colors.cyan,
-                                      size: screenWidth * _breathingAnimation.value,
-                                    ),
-                                  );
-                                },
+                            SizedBox(
+                              height: screenHeight * 0.2, // Give it a bit more space
+                              child: GestureDetector(
+                                onTap: _loadAiMessage, // We keep your original function call!
+                                child: Lottie.asset(
+                                  'assets/pandaai/panda.json',
+                                  fit: BoxFit.contain,
+                                ),
                               ),
-                            ),),
+                            ),
+
                             SizedBox(height: screenHeight * 0.02),
 
 
