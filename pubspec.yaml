@@ -31,6 +31,7 @@ dependencies:
   confetti: ^0.7.0
   sqflite: ^2.3.3      
   path: ^1.9.0
+  lottie: ^3.3.1
 
 dev_dependencies:
   flutter_test:
@@ -50,6 +51,7 @@ flutter:
     - assets/sounds/wrong.mp3
     - assets/sounds/pop.wav
     - assets/logo.png
+    - assets/pandaai/panda.json
 
 
     - assets/formulas/11/center_of_mass.aes

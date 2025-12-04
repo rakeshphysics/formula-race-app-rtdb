@@ -83,6 +83,64 @@ class DatabaseHelper {
     });
   }
 
+
+  // lib/services/database_helper.dart
+
+// ... (add this after your getMistakes() method)
+
+  /// Fetches all practice attempts within a specific time range.
+  /// This is a flexible method we can use to get data for "today", "yesterday", "this week", etc.
+  Future<List<PracticeAttempt>> getAttemptsInDateRange(DateTime start, DateTime end) async {
+    final db = await instance.database;
+
+    final List<Map<String, dynamic>> maps = await db.query(
+      'practice_attempts',
+      where: 'timestamp >= ? AND timestamp < ?',
+      whereArgs: [start.millisecondsSinceEpoch, end.millisecondsSinceEpoch],
+      orderBy: 'timestamp DESC',
+    );
+
+    // Re-use the same conversion logic from getMistakes()
+    return List.generate(maps.length, (i) {
+      return PracticeAttempt(
+        id: maps[i]['id'],
+        userId: maps[i]['userId'],
+        questionId: maps[i]['questionId'],
+        wasCorrect: maps[i]['wasCorrect'] == 1,
+        topic: maps[i]['topic'],
+        timestamp: DateTime.fromMillisecondsSinceEpoch(maps[i]['timestamp']),
+      );
+    });
+  }
+
+// lib/services/database_helper.dart
+
+// ... (inside the DatabaseHelper class)
+
+  // TEMPORARY METHOD FOR DEBUGGING: Prints all attempts in the database.
+  // Future<void> printAllAttempts() async {
+  //   final db = await instance.database;
+  //   final List<Map<String, dynamic>> maps = await db.query('practice_attempts');
+  //
+  //   if (maps.isEmpty) {
+  //     print('--- DATABASE IS EMPTY ---');
+  //     return;
+  //   }
+  //
+  //   print('--- PRINTING ALL DATABASE ATTEMPTS ---');
+  //   for (var map in maps) {
+  //     print('  ID: ${map['id']}, '
+  //         'UserID: ${map['userId']}, '
+  //         'QuestionID: ${map['questionId']}, '
+  //         'Correct: ${map['wasCorrect'] == 1}, ' // Convert 1/0 back to true/false
+  //         'Topic: ${map['topic']}, '
+  //         'Timestamp: ${DateTime.fromMillisecondsSinceEpoch(map['timestamp'])}');
+  //   }
+  //   print('--- END OF DATABASE ATTEMPTS ---');
+  // }
+
+ // End of class
+
 // We will add methods here later to insert, query, and delete data.
 // For example: Future<void> addAttempt(...)
 }

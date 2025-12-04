@@ -372,6 +372,18 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     final String correctAnswer = question['answer'];
     //print('DEBUG → MistakeTracker: question="${question['question']}", formula="${question['answer']}", chapter="${question['tags']?['chapter'] ?? ''}"');
 
+    final bool wasCorrect = selected == correctAnswer;
+
+    final attempt = PracticeAttempt(
+      userId: widget.userId,
+      questionId: question['id'],
+      wasCorrect: wasCorrect, // This is the key part
+      topic: question['tags']['chapter'] ?? 'Unknown',
+      timestamp: DateTime.now(),
+    );
+    await DatabaseHelper.instance.addAttempt(attempt);
+    //await DatabaseHelper.instance.printAllAttempts();
+
     if (selected == correctAnswer) {
       score++;
       _consecutiveCorrectAnswers++; // Increment counter

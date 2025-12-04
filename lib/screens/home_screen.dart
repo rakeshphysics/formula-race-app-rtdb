@@ -22,6 +22,9 @@ import 'package:flutter/services.dart';
 //import 'package:cupertino_icons/cupertino_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'dart:async';
+import '../services/home_message_service.dart';
+import 'package:formularacing/screens/info_screen.dart';
+import 'package:lottie/lottie.dart';
 
 
 
@@ -44,7 +47,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateMixin { // Add mixin
   Timer? _timer;
   int _charIndex = 0;
-  final String _fullAiMessage = "Good morning! Let's solve some questions.";
+  String _fullAiMessage = "Loading...";
   String _displayedAiMessage = "";
   late AnimationController _breathingController; // <-- ADD THIS
   late Animation<double> _breathingAnimation;
@@ -52,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
   @override
   void initState() {
     super.initState();
-    _startTypingAnimation();
+    _loadAiMessage();
     _breathingController = AnimationController( // <-- ADD THIS BLOCK
       vsync: this,
       duration: const Duration(seconds: 2),
@@ -71,20 +74,47 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
       }
     });
 
-    _breathingController.forward();
+    //_breathingController.forward();
   }
+
+
+  // Add this new method inside _HomeScreenState
+  void _loadAiMessage() async {
+    // Create an instance of our service
+    final messageService = HomeMessageService.instance;
+    // Call the service to get the message, passing the user's ID
+    final message = await messageService.getHomePageMessage(widget.userId);
+
+    // Update the state with the new message and reset the animation
+    if (mounted) { // Good practice to check if the widget is still in the tree
+      setState(() {
+        _fullAiMessage = message;
+        _charIndex = 0; // Reset animation index
+        _displayedAiMessage = ""; // Clear the displayed message
+      });
+      _startTypingAnimation(); // Start the typing animation with the new message
+    }
+  }
+
+  // In _HomeScreenState
 
   void _startTypingAnimation() {
     const typingSpeed = Duration(milliseconds: 70);
+    _timer?.cancel(); // Cancel any previous timer
+
+    _breathingController.forward(); // <-- START the breathing animation here
+
     _timer = Timer.periodic(typingSpeed, (timer) {
       if (_charIndex < _fullAiMessage.length) {
-        setState(() {
-          _charIndex++;
-          _displayedAiMessage = _fullAiMessage.substring(0, _charIndex);
-        });
+        if (mounted) {
+          setState(() {
+            _charIndex++;
+            _displayedAiMessage = _fullAiMessage.substring(0, _charIndex);
+          });
+        }
       } else {
         _timer?.cancel();
-        _breathingController.stop();
+        _breathingController.stop(); // <-- STOP the breathing animation here
       }
     });
   }
@@ -185,7 +215,88 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
         return shouldPop ?? false;
       },
     child: Scaffold(
+        appBar: AppBar(
+          leading: Builder(
+            builder: (BuildContext context) {
+              return IconButton(
+                icon: const Icon(Icons.menu, color: Color(0xFFA8A8A8)), // Hamburger icon
+                onPressed: () {
+                  // We'll add the drawer opening logic here later
+                  Scaffold.of(context).openDrawer();
+                },
+                tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+              );
+            },
+          ),
+          title: Text(
+            'Formula Racing',
+            style: GoogleFonts.poppins(
+              color: const Color(0xFFA8A8A8),
+              fontSize: screenWidth * 0.06,
+              fontWeight: FontWeight.w400,
+            ),
+          ),
+          centerTitle: true, // This will center the title
+          backgroundColor: Colors.transparent, // Makes the AppBar invisible
+          elevation: 0, // Removes the shadow
+        ),
 
+        drawer: Padding(
+         padding: EdgeInsets.only(top: 30.0),
+        child: Align(
+          alignment: Alignment.topLeft,
+
+          child: Container(
+          width: screenWidth * 0.5,
+          height: screenHeight * 0.5,
+
+        child: Drawer(
+          backgroundColor: const Color(0xFF1E1E1E), // A dark background for the drawer
+          child: ListView(
+            // Important: Remove any padding from the ListView.
+            padding: EdgeInsets.only(top: 50.0),
+            children: <Widget>[
+
+              // --- MENU ITEMS ---
+              ListTile(
+                leading: const Icon(Icons.help_outline, color: Color(0xFFA8A8A8)),
+                title: Text(
+                  'How to Play',
+                  style: GoogleFonts.poppins(color: const Color(0xFFA8A8A8)),
+                ),
+                onTap: () {
+                  Navigator.pop(context); // Close the drawer first
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>  InfoScreen(
+                        title: 'How to Play',
+                        ),
+                    ),
+                  );
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.info_outline, color: Color(0xFFA8A8A8)),
+                title: Text(
+                  'About Me', // Changed from "About Me" to match the screen title
+                  style: GoogleFonts.poppins(color: const Color(0xFFA8A8A8)),
+                ),
+                onTap: () {
+                  Navigator.pop(context); // Close the drawer first
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>  InfoScreen(
+                        title: 'About',
+                         ),
+                    ),
+                  );
+                },
+              ),
+            ],
+          ),
+        ),),),),
       // ............. Chunk 1 BACKGROUND SOLID BLACK.............
       body: Container(
         color: Colors.black,
@@ -201,52 +312,59 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                   width: double.infinity,
                   child: Column(
                     children: [
-                      // You can re-add your title here
-                      Padding(
-                        padding: EdgeInsets.symmetric(vertical: screenHeight * 0.02),
-                        child: Text(
-                          'Formula Racing',
-                          style: GoogleFonts.poppins(
-                            color: const Color(0xFFA8A8A8),
-                            fontSize: screenWidth * 0.06,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                      ),
-                      // This is where your AI chat UI will go
+
                       // =========== AI AVATAR AND CHAT BUBBLE ===========
                       Expanded(
                         child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             // --- AVATAR ---
                             // Placeholder for your animated blob
                             // --- AVATAR ---
-                            AnimatedBuilder(
-                              animation: _breathingAnimation,
-                              builder: (context, child) {
-                                return Icon(
-                                  Icons.bubble_chart,
-                                  color: Colors.cyan,
-                                  // The size is now driven by the animation!
-                                  size: screenWidth * _breathingAnimation.value,
-                                );
-                              },
-                            ),
+                            // --- AVATAR ---
+                          SizedBox(
+                          height: screenHeight * 0.15,
+                            child:InkWell(
+                              onTap: _loadAiMessage, // <-- Call our existing function on tap!
+                              borderRadius: BorderRadius.circular(100), // Makes the splash effect circular
+                              child: AnimatedBuilder(
+                                animation: _breathingAnimation,
+                                builder: (context, child) {
+                                  return Container(
+                                    padding: const EdgeInsets.all(16.0), // Add some padding so the tap area is larger
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      border: Border.all(color: Colors.transparent, width: 2), // Transparent border
+                                    ),
+                                    child: Icon(
+                                      Icons.bubble_chart,
+                                      color: Colors.cyan,
+                                      size: screenWidth * _breathingAnimation.value,
+                                    ),
+                                  );
+                                },
+                              ),
+                            ),),
                             SizedBox(height: screenHeight * 0.02),
 
+
                             // --- CHAT BUBBLE ---
-                            Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                              decoration: BoxDecoration(
-                                color: const Color(0xFF1E1E1E), // Dark grey bubble
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                              child: Text(
-                                _displayedAiMessage, // Use the state variable here
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: screenWidth * 0.04,
+                            // --- CHAT BUBBLE ---
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.1), // <-- ADD THIS WRAPPER
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFF1E1E1E), // Dark grey bubble
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                                child: Text(
+                                  _displayedAiMessage,
+                                  textAlign: TextAlign.center, // <-- Optional: Looks better when centered
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: screenWidth * 0.04,
+                                  ),
                                 ),
                               ),
                             ),
@@ -358,7 +476,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                   'Physics with Rakesh  |  IIT Madras',
                   style: TextStyle(
                     color: Color(0xFFA8A8A8),
-                    fontSize: screenWidth * 0.05,
+                    fontSize: screenWidth * 0.04,
 
                   ),
                 ),
