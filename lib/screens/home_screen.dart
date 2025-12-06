@@ -45,45 +45,85 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateMixin { // Add mixin
-  Timer? _timer;
+  Timer? _typingTimer;
+  Timer? _pandaUpdateTimer;
   int _charIndex = 0;
   String _fullAiMessage = "Loading...";
   String _displayedAiMessage = "";
+  int _bamboos = 5;
+  String _currentPandaLottie = 'assets/pandaai/eat.json';
+  bool _isTalking = false;
 
   @override
   void initState() {
     super.initState();
     _loadAiMessage();
+    _updatePandaAnimation();
+    _pandaUpdateTimer = Timer.periodic(const Duration(minutes: 1), (timer) {
+      _updatePandaAnimation();
+    });
   }
 
 
   // Add this new method inside _HomeScreenState
   void _loadAiMessage() async {
-    // Create an instance of our service
-    final messageService = HomeMessageService.instance;
-    // Call the service to get the message, passing the user's ID
-    final message = await messageService.getHomePageMessage(widget.userId);
+    // Prevent starting a new talk if already talking
+    if (_isTalking) return;
 
-    // Update the state with the new message and reset the animation
-    if (mounted) { // Good practice to check if the widget is still in the tree
-      setState(() {
-        _fullAiMessage = message;
-        _charIndex = 0; // Reset animation index
-        _displayedAiMessage = ""; // Clear the displayed message
-      });
-      _startTypingAnimation(); // Start the typing animation with the new message
+    // --- Bamboo Logic ---
+    if (_bamboos > 0) {
+      if (mounted) {
+        setState(() {
+          _bamboos--; // Use one bamboo
+        });
+      }
+      // If user has bamboos, get a real message from the service
+      final messageService = HomeMessageService.instance;
+      final message = await messageService.getHomePageMessage(widget.userId);
+      _fullAiMessage = message;
+    } else {
+      // If user has no bamboos, use a predefined message
+      _fullAiMessage = "I'm hungry! Please earn some bamboos by playing, and then we can talk.";
     }
+
+    // --- Animation Logic ---
+    if (mounted) {
+      setState(() {
+        _isTalking = true;
+        _currentPandaLottie = 'assets/pandaai/talk.json'; // Switch to talking animation
+        _charIndex = 0;
+        _displayedAiMessage = "";
+      });
+    }
+
+    // Start the typing animation for the message
+    _startTypingAnimation();
+
+    // --- Wait for Talk Animation to Finish ---
+    // This duration should match your talking.json animation's length.
+    // Adjust it if necessary. A common length is 2-3 seconds.
+    const talkAnimationDuration = Duration(seconds: 3);
+
+    Future.delayed(talkAnimationDuration, () {
+      if (mounted) {
+        setState(() {
+          _isTalking = false; // Panda is no longer talking
+        });
+        // After talking, revert to the correct time-based animation
+        _updatePandaAnimation();
+      }
+    });
   }
 
   // In _HomeScreenState
 
   void _startTypingAnimation() {
     const typingSpeed = Duration(milliseconds: 70);
-    _timer?.cancel(); // Cancel any previous timer
+    _typingTimer?.cancel(); // Cancel any previous timer
 
      // <-- START the breathing animation here
 
-    _timer = Timer.periodic(typingSpeed, (timer) {
+    _typingTimer = Timer.periodic(typingSpeed, (timer) {
       if (_charIndex < _fullAiMessage.length) {
         if (mounted) {
           setState(() {
@@ -92,15 +132,46 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
           });
         }
       } else {
-        _timer?.cancel();
+        _typingTimer?.cancel();
          // <-- STOP the breathing animation here
       }
     });
   }
 
+  void _updatePandaAnimation() {
+    final hour = DateTime.now().hour;
+    final minute = DateTime.now().minute;
+    // Convert current time to minutes from midnight for easier comparison
+    final nowInMinutes = hour * 60 + minute;
+
+    // 9:30 PM = 21 * 60 + 30 = 1290 minutes
+    const sleepStart = 1290;
+    // 4:30 AM = 4 * 60 + 30 = 270 minutes
+    const sleepEnd = 270;
+    // 6:30 AM = 6 * 60 + 30 = 390 minutes
+    const meditateEnd = 390;
+
+    String newLottie;
+    if (nowInMinutes >= sleepStart || nowInMinutes < sleepEnd) {
+      newLottie = 'assets/pandaai/sleep.json';
+    } else if (nowInMinutes >= sleepEnd && nowInMinutes < meditateEnd) {
+      newLottie = 'assets/pandaai/meditate.json';
+    } else {
+      newLottie = 'assets/pandaai/eat.json';
+    }
+
+    // Only update the state if the animation has changed and the panda is not talking
+    if (!_isTalking && _currentPandaLottie != newLottie) {
+      setState(() {
+        _currentPandaLottie = newLottie;
+      });
+    }
+  }
+
   @override
   void dispose() {
-    _timer?.cancel();
+    _typingTimer?.cancel();
+    _pandaUpdateTimer?.cancel();
     super.dispose();
   }
 
@@ -297,15 +368,56 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             // --- AVATAR ---
-                            SizedBox(
-                              height: screenHeight * 0.2, // Give it a bit more space
-                              child: GestureDetector(
-                                onTap: _loadAiMessage, // We keep your original function call!
-                                child: Lottie.asset(
-                                  'assets/pandaai/panda.json',
-                                  fit: BoxFit.contain,
+                            // --- AVATAR & BAMBOO COUNT ROW ---
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                // --- AVATAR ---
+                                SizedBox(
+                                  height: screenWidth * 0.5,
+                                  width: screenWidth * 0.5, // Assign a width for the panda
+                                  child: GestureDetector(
+                                    onTap: _loadAiMessage,
+                                    child: Lottie.asset(
+                                      _currentPandaLottie,
+                                      repeat: !_isTalking,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
                                 ),
-                              ),
+
+                                // --- BAMBOO COUNTER ---
+                                // --- BAMBOO COUNTER ---
+                                SizedBox(
+                                  width: screenWidth * 0.4, // <-- CHANGE: Match panda's width
+                                  height: screenWidth * 0.4, // <-- ADD: Match panda's height
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center, // Center the items in the row
+                                    crossAxisAlignment: CrossAxisAlignment.center, // Vertically align them
+                                    children: [
+                                      // Bamboo Image
+                                      Image.asset(
+                                        _bamboos > 5
+                                            ? 'assets/pandaai/bamboo_full.png'
+                                            : 'assets/pandaai/bamboo_low.png',
+                                        width: screenHeight*0.12, // Let's use a defined size for now
+                                        height:screenHeight*0.12,
+                                      ),
+                                      const SizedBox(width: 8), // Space between image and text
+                                      // Bamboo Count Text
+                                      Text(
+                                        '$_bamboos',
+                                        style: const TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 16, // A slightly smaller font
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
                             ),
 
                             SizedBox(height: screenHeight * 0.02),
@@ -325,7 +437,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                                   _displayedAiMessage,
                                   textAlign: TextAlign.center, // <-- Optional: Looks better when centered
                                   style: TextStyle(
-                                    color: Colors.white,
+                                    color: const Color(0xFFDCDCDC),
                                     fontSize: screenWidth * 0.04,
                                   ),
                                 ),
@@ -340,13 +452,22 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
               ),
 
 
+              // --- DOTTED DIVIDER ---
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                child: Divider(
-                  color: Colors.grey.withOpacity(0.5),
-                  thickness: 1,
+                padding: const EdgeInsets.symmetric(vertical: 10.0), // Add some vertical spacing
+                child: Text(
+                  // Using a string of dots. Adjust the number of dots to fit your design.
+                  '• • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •',
+                  maxLines: 1,
+                  overflow: TextOverflow.clip, // Prevents wrapping
+                  style: TextStyle(
+                    color: Colors.grey.withOpacity(0.5),
+                    letterSpacing: 0, // Adjust spacing between dots
+                    fontSize: 10,
+                  ),
                 ),
               ),
+// --- END OF DOTTED DIVIDER ---
 
 
               // ............. Chunk 4 SOLO / ONLINE CENTERED .............
@@ -364,6 +485,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                     AnimatedButton(
                       screenWidth: screenWidth,
                       screenHeight: screenWidth,
+                      color: const Color(0xFF201100),
 
                       onPressed: () {
                         //print('✅Navigating to MultiplayerSelectionScreen with userId: ${widget.userId}');
@@ -382,19 +504,20 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                         children:  [
                           Text(
                             'Play Friend',
-                            style: TextStyle(fontSize: screenWidth * 0.057, color: Colors.white,fontWeight: FontWeight.normal),
+                            style: TextStyle(fontSize: screenWidth * 0.053, color: Colors.white,fontWeight: FontWeight.normal),
                           ),
 
                         ],
                       ),
                     ),
 
-                    SizedBox(height: screenWidth*0.055),
+                    SizedBox(height: screenWidth*0.06),
                     //SizedBox(height: screenWidth*0.055),
 
                     AnimatedButton(
                       screenWidth: screenWidth,
                       screenHeight: screenWidth,
+                      color: const Color(0xFF001E1E),
 
 
                       onPressed: () {
@@ -406,15 +529,16 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                       gradientColors: const [Color(0xFF00FFFF), Color(0xFF006C6C)],
                       child:  Text(
                         'Play Solo',
-                        style: TextStyle(fontSize: screenWidth * 0.057, color: Colors.white,fontWeight: FontWeight.normal),
+                        style: TextStyle(fontSize: screenWidth * 0.053, color: Colors.white,fontWeight: FontWeight.normal),
                       ),
                     ),
 
-                    SizedBox(height: screenWidth*0.055),
+                    SizedBox(height: screenWidth*0.06),
 
                     AnimatedButton(
                       screenWidth: screenWidth,
                       screenHeight: screenWidth,
+                      color: const Color(0xFF230000),
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -422,10 +546,10 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                         );
                       },
                       gradientColors: const [Colors.red, Color(0xFF8B0000)], // Red gradient
-                      color: const Color(0xFF000000), // Black background
+                      //color: const Color(0xFF000000), // Black background
                       child: Text(
                         'My Mistakes',
-                        style: TextStyle(fontSize: screenWidth * 0.057, color: Colors.redAccent, fontWeight: FontWeight.normal),
+                        style: TextStyle(fontSize: screenWidth * 0.053, color: Colors.redAccent, fontWeight: FontWeight.normal),
                       ),
                     ),
 
@@ -492,8 +616,8 @@ class _AnimatedButtonState extends State<AnimatedButton> {
         child: CustomPaint(
           painter: GradientBorderPainter(gradientColors: widget.gradientColors),
           child: Container(
-            width: widget.screenWidth * 0.8,
-            height: widget.screenHeight * 0.19,
+            width: widget.screenWidth * 0.64,
+            height: widget.screenHeight * 0.17,
             decoration: BoxDecoration(
               color: widget.color,
               borderRadius: BorderRadius.circular(4),
