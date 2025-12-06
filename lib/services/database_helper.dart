@@ -25,24 +25,36 @@ class DatabaseHelper {
     String path = join(await getDatabasesPath(), 'student_practice.db');
     return await openDatabase(
       path,
-      version: 1,
-      onCreate: _onCreate, // This runs the first time the database is created.
+      version: 2,
+      onCreate: _onCreate,
+      onUpgrade: _onUpgrade,
     );
+  }
+
+  // This method is called when the database version is increased.
+  Future _onUpgrade(Database db, int oldVersion, int newVersion) async {
+    if (oldVersion < 2) {
+      // We are upgrading from version 1 to 2, so add the new column.
+      await db.execute('''
+      ALTER TABLE practice_attempts ADD COLUMN bamboo_counted INTEGER NOT NULL DEFAULT 0
+    ''');
+    }
   }
 
   // This method defines the table structure.
   // It's called only when the database is created for the first time.
   Future _onCreate(Database db, int version) async {
     await db.execute('''
-      CREATE TABLE practice_attempts (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        userId TEXT NOT NULL,
-        questionId TEXT NOT NULL,
-        wasCorrect INTEGER NOT NULL, -- 0 for false, 1 for true
-        topic TEXT NOT NULL,
-        timestamp INTEGER NOT NULL -- Storing date as milliseconds since epoch
-      )
-    ''');
+  CREATE TABLE practice_attempts (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    userId TEXT NOT NULL,
+    questionId TEXT NOT NULL,
+    wasCorrect INTEGER NOT NULL, -- 0 for false, 1 for true
+    topic TEXT NOT NULL,
+    timestamp INTEGER NOT NULL, -- Storing date as milliseconds since epoch
+    bamboo_counted INTEGER NOT NULL DEFAULT 0
+  )
+''');
   }
 
   Future<void> addAttempt(PracticeAttempt attempt) async {
@@ -140,6 +152,31 @@ class DatabaseHelper {
   // }
 
  // End of class
+  /// Counts all correct answers that have not yet been counted for bamboos.
+  Future<int> countUncountedCorrectAnswers() async {
+    final db = await instance.database;
+    final result = await db.rawQuery(
+        'SELECT COUNT(*) FROM practice_attempts WHERE wasCorrect = 1 AND bamboo_counted = 0'
+    );
+    return Sqflite.firstIntValue(result) ?? 0;
+  }
+
+  /// Marks all uncounted attempts as counted.
+  Future<void> spendOneBamboo() async {
+    final db = await instance.database;
+    // Find one row that is a correct answer and hasn't been counted,
+    // then update its bamboo_counted status to 1.
+    await db.rawUpdate('''
+    UPDATE practice_attempts
+    SET bamboo_counted = 1
+    WHERE id = (
+      SELECT id FROM practice_attempts
+      WHERE wasCorrect = 1 AND bamboo_counted = 0
+      LIMIT 1
+    )
+  ''');
+  }
+
 
 // We will add methods here later to insert, query, and delete data.
 // For example: Future<void> addAttempt(...)

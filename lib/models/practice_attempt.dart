@@ -6,7 +6,8 @@ class PracticeAttempt {
   final String questionId; // From your JSON, e.g., "center_of_mass_qn_001"
   final bool wasCorrect; // The result of the user's answer
   final String topic; // From your JSON tags.chapter, e.g., "Center_of_Mass"
-  final DateTime timestamp; // The time the attempt was made
+  final DateTime timestamp;
+  final bool bambooCounted;// The time the attempt was made
 
   PracticeAttempt({
     this.id,
@@ -15,6 +16,7 @@ class PracticeAttempt {
     required this.wasCorrect,
     required this.topic,
     required this.timestamp,
+    this.bambooCounted = false,
   });
 
   // Helper method to convert the object to a Map for database insertion.
@@ -26,6 +28,7 @@ class PracticeAttempt {
       'wasCorrect': wasCorrect ? 1 : 0, // Convert bool to integer
       'topic': topic,
       'timestamp': timestamp.millisecondsSinceEpoch, // Convert DateTime to integer
+      'bamboo_counted': bambooCounted ? 1 : 0,
     };
   }
 }

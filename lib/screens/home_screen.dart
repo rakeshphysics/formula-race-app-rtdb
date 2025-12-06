@@ -25,7 +25,7 @@ import 'dart:async';
 import '../services/home_message_service.dart';
 import 'package:formularacing/screens/info_screen.dart';
 import 'package:lottie/lottie.dart';
-
+import 'package:formularacing/services/database_helper.dart';
 
 
 
@@ -44,19 +44,20 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateMixin { // Add mixin
-  Timer? _typingTimer;
+class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateMixin, WidgetsBindingObserver {  Timer? _typingTimer;
   Timer? _pandaUpdateTimer;
   int _charIndex = 0;
   String _fullAiMessage = "Loading...";
   String _displayedAiMessage = "";
-  int _bamboos = 5;
-  String _currentPandaLottie = 'assets/pandaai/eat.json';
+  int _bamboos = 0;
+  String _currentPandaLottie = 'assets/pandaai/meditate.json';
   bool _isTalking = false;
 
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
+    _checkForNewBamboos(); // Check for bamboos on initial load
     _loadAiMessage();
     _updatePandaAnimation();
     _pandaUpdateTimer = Timer.periodic(const Duration(minutes: 1), (timer) {
@@ -66,54 +67,56 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
 
 
   // Add this new method inside _HomeScreenState
-  void _loadAiMessage() async {
-    // Prevent starting a new talk if already talking
-    if (_isTalking) return;
+void _loadAiMessage() async {
+  // Prevent starting a new talk if already talking
+  if (_isTalking) return;
 
-    // --- Bamboo Logic ---
-    if (_bamboos > 0) {
-      if (mounted) {
-        setState(() {
-          _bamboos--; // Use one bamboo
-        });
-      }
-      // If user has bamboos, get a real message from the service
-      final messageService = HomeMessageService.instance;
-      final message = await messageService.getHomePageMessage(widget.userId);
-      _fullAiMessage = message;
-    } else {
-      // If user has no bamboos, use a predefined message
-      _fullAiMessage = "I'm hungry! Please earn some bamboos by playing, and then we can talk.";
-    }
-
-    // --- Animation Logic ---
+  // First, check if there are any bamboos to spend
+  if (_bamboos > 0) {
+    // --- This is the new logic ---
+    // 1. Immediately update the UI to show one less bamboo.
     if (mounted) {
       setState(() {
-        _isTalking = true;
-        _currentPandaLottie = 'assets/pandaai/talk.json'; // Switch to talking animation
-        _charIndex = 0;
-        _displayedAiMessage = "";
+        _bamboos--;
       });
     }
 
-    // Start the typing animation for the message
-    _startTypingAnimation();
+    // 2. In the background, tell the database that one bamboo has been spent.
+    final dbHelper = DatabaseHelper.instance;
+    await dbHelper.spendOneBamboo();
+    print("Bamboo spent. Marked one row as counted in the database.");
+    // --- End of new logic ---
 
-    // --- Wait for Talk Animation to Finish ---
-    // This duration should match your talking.json animation's length.
-    // Adjust it if necessary. A common length is 2-3 seconds.
-    const talkAnimationDuration = Duration(seconds: 3);
+    // Get a real message from the service
+    final messageService = HomeMessageService.instance;
+    final message = await messageService.getHomePageMessage(widget.userId);
+    _fullAiMessage = message;
 
-    Future.delayed(talkAnimationDuration, () {
-      if (mounted) {
-        setState(() {
-          _isTalking = false; // Panda is no longer talking
-        });
-        // After talking, revert to the correct time-based animation
-        _updatePandaAnimation();
-      }
+  } else {
+    // If user has no bamboos, use a predefined message
+    _fullAiMessage = "I'm hungry! Please earn some bamboos by playing, and then we can talk.";
+  }
+
+  // --- Animation Logic (remains the same) ---
+  if (mounted) {
+    setState(() {
+      _isTalking = true;
+      _currentPandaLottie = 'assets/pandaai/talk.json';
+      _charIndex = 0;
+      _displayedAiMessage = "";
     });
   }
+  _startTypingAnimation();
+  const talkAnimationDuration = Duration(milliseconds: 1850 * 2);
+  Future.delayed(talkAnimationDuration, () {
+    if (mounted) {
+      setState(() {
+        _isTalking = false;
+      });
+      _updatePandaAnimation();
+    }
+  });
+}
 
   // In _HomeScreenState
 
@@ -158,6 +161,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
       newLottie = 'assets/pandaai/meditate.json';
     } else {
       newLottie = 'assets/pandaai/eat.json';
+
     }
 
     // Only update the state if the animation has changed and the panda is not talking
@@ -170,10 +174,41 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     _typingTimer?.cancel();
     _pandaUpdateTimer?.cancel();
     super.dispose();
   }
+
+@override
+void didChangeAppLifecycleState(AppLifecycleState state) {
+  super.didChangeAppLifecycleState(state);
+  // When the app resumes (e.g., user comes back from a quiz screen)
+  if (state == AppLifecycleState.resumed) {
+    _checkForNewBamboos();
+  }
+}
+
+void _checkForNewBamboos() async {
+  print("--- Calculating available bamboo balance... ---");
+  final dbHelper = DatabaseHelper.instance;
+
+  // Get the count of correct answers that have NOT been spent yet.
+  final availableBamboos = await dbHelper.countUncountedCorrectAnswers();
+
+  print("DATABASE REPORT: Found $availableBamboos available bamboos.");
+
+  if (mounted) {
+    setState(() {
+      // Directly set the UI count to the available balance
+      _bamboos = availableBamboos;
+    });
+  }
+  print("--- Load complete. Final balance on screen: $_bamboos ---");
+}
+
+
+
 
   //Future<void> loadUserId() async {
    // final prefs = await SharedPreferences.getInstance();
@@ -362,63 +397,78 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                   child: Column(
                     children: [
 
-                      // =========== AI AVATAR AND CHAT BUBBLE ===========
-                      Expanded(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            // --- AVATAR ---
-                            // --- AVATAR & BAMBOO COUNT ROW ---
-                            Row(
+                            Padding(
+                            padding: EdgeInsets.only(top: screenHeight * 0.0),
+                            child:Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 // --- AVATAR ---
-                                SizedBox(
-                                  height: screenWidth * 0.5,
-                                  width: screenWidth * 0.5, // Assign a width for the panda
-                                  child: GestureDetector(
-                                    onTap: _loadAiMessage,
-                                    child: Lottie.asset(
-                                      _currentPandaLottie,
-                                      repeat: !_isTalking,
-                                      fit: BoxFit.contain,
+                                Padding(
+                                  padding: EdgeInsets.only(left: screenWidth * 0.1), // <-- ADD THIS PADDING
+                                  child: SizedBox(
+                                    height: screenWidth * 0.5,
+                                    width: screenWidth * 0.5,
+                                    child: GestureDetector(
+                                      onTap: _loadAiMessage,
+                                      child: Lottie.asset(
+                                        _currentPandaLottie,
+                                        repeat: !_isTalking,
+                                        fit: BoxFit.contain,
+                                      ),
                                     ),
                                   ),
                                 ),
+                               // const SizedBox(width: 16), // A bit of space between panda and bamboo
 
-                                // --- BAMBOO COUNTER ---
-                                // --- BAMBOO COUNTER ---
-                                SizedBox(
-                                  width: screenWidth * 0.4, // <-- CHANGE: Match panda's width
-                                  height: screenWidth * 0.4, // <-- ADD: Match panda's height
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center, // Center the items in the row
-                                    crossAxisAlignment: CrossAxisAlignment.center, // Vertically align them
+                                // --- BAMBOO COUNTER (Image and Text) ---
+                                // --- BAMBOO COUNTER (Image and Text) ---
+// Wrap with Padding for manual vertical adjustment
+                                Padding(
+                                  padding: EdgeInsets.only(top: screenHeight * 0.07,right: screenWidth * 0.01), // <-- ADJUST THIS VALUE
+                                  child: Stack(
+                                    clipBehavior: Clip.none, // Allow badge to go outside the boundary
+                                    alignment: Alignment.center,
                                     children: [
-                                      // Bamboo Image
+                                      // 1. The Bamboo Image (its position is preserved)
                                       Image.asset(
-                                        _bamboos > 5
+                                        _bamboos > 2
                                             ? 'assets/pandaai/bamboo_full.png'
                                             : 'assets/pandaai/bamboo_low.png',
-                                        width: screenHeight*0.12, // Let's use a defined size for now
-                                        height:screenHeight*0.12,
+                                        width: screenWidth * 0.3, // Responsive size
+                                        height: screenWidth * 0.3, // Responsive size
                                       ),
-                                      const SizedBox(width: 8), // Space between image and text
-                                      // Bamboo Count Text
-                                      Text(
-                                        '$_bamboos',
-                                        style: const TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16, // A slightly smaller font
-                                          fontWeight: FontWeight.bold,
+
+                                      // 2. The Circular Counter, positioned on top
+                                      Positioned(
+                                        top: -10,  // <-- Negative value shifts it UP. Adjust as needed.
+                                        right: 0, // <-- Adjust to position horizontally.
+                                        child: Container(
+                                          padding: const EdgeInsets.all(6),
+                                          decoration: const BoxDecoration(
+                                            color: Colors.green,
+                                            shape: BoxShape.circle,
+                                          ),
+                                          constraints: const BoxConstraints(
+                                            minWidth: 28,
+                                            minHeight: 28,
+                                          ),
+                                          child: Text(
+                                            '$_bamboos',
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                              color: Colors.black,
+                                              fontSize: screenWidth * 0.035,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
                                         ),
                                       ),
                                     ],
                                   ),
                                 ),
                               ],
-                            ),
+                            ),),
 
                             SizedBox(height: screenHeight * 0.02),
 
@@ -444,9 +494,8 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                               ),
                             ),
                           ],
-                        ),
-                      ),
-                    ],
+
+
                   ),
                 ),
               ),
@@ -520,11 +569,18 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                       color: const Color(0xFF001E1E),
 
 
-                      onPressed: () {
-                        Navigator.push(
+                      onPressed: () async {
+                        print("\n>>> User pressed 'Play Solo'. Navigating to selection screen and waiting...");
+                        // Navigate to the solo mode selection screen and wait for it to complete.
+                        await Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => SoloModeSelectionScreen(userId: widget.userId)),
+                          MaterialPageRoute(
+                            builder: (context) => SoloModeSelectionScreen(userId: widget.userId),
+                          ),
                         );
+
+                        print("<<< User has returned to HomeScreen. Triggering bamboo check.");
+                        _checkForNewBamboos();
                       },
                       gradientColors: const [Color(0xFF00FFFF), Color(0xFF006C6C)],
                       child:  Text(
