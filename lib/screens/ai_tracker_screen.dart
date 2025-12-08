@@ -17,6 +17,7 @@ import 'package:flutter_html/flutter_html.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
+import 'package:confetti/confetti.dart';
 
 //.......START.......Render chapter names Correctly......................
 // String formatChapter(String input) {
@@ -68,12 +69,25 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
   Map<String, int> chapterTotals = {};
   Map<String, bool> chapterExpanded = {}; // for dropdown state
   bool isLoading = true;
+ late ConfettiController _confettiController;
 
   @override
   void initState() {
     super.initState();
+    _confettiController = ConfettiController(duration: const Duration(seconds: 2));
     _loadMistakes();
   }
+
+
+  @override
+  void dispose() {
+    // _confettiControllerSmall.dispose();
+    // _confettiControllerLarge.dispose(); // ADD THIS LINE
+    _confettiController.dispose();
+    super.dispose();
+  }
+
+  // ... rest of the class
 
   // -------------------- CHUNK 4 — LOAD MISTAKES -----------------
   Future<void> _loadMistakes() async {
@@ -138,10 +152,14 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
       });
     });
 
-    return Scaffold(
+
+    return Stack(
+   alignment: Alignment.topCenter,
+    children:[
+    Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title:  Text('My Mi', style: TextStyle(fontSize:screenWidth*0.04,color: Colors.black)),
+        title:  Text('My Mistakes', style: TextStyle(fontSize:screenWidth*0.04,color: Colors.black)),
         iconTheme: const IconThemeData(color: Colors.white),
         actions: [
           if (totalActiveMistakes >= 1)
@@ -158,9 +176,21 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                 );
 
                 if (resolvedCount != null && resolvedCount > 0) {
+
+                  // if (resolvedCount < 5) {
+                  //   _confettiControllerSmall.play(); // Play the small animation
+                  // } else {
+                  //   _confettiControllerLarge.play(); // Play the large animation
+                  // }
+
+                  _confettiController.play();
+
                   showDialog(
                     context: context,
-                    builder: (_) => AlertDialog(
+                    builder: (_) => Stack(
+                            alignment: Alignment.topCenter,
+                            children: [
+                        AlertDialog(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(4.0),
                         side: BorderSide(color: Colors.red, width: 0.8),
@@ -198,6 +228,18 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                         ),
                       ],
                     ),
+
+                              ConfettiWidget(
+                                confettiController: _confettiController,
+                                blastDirectionality: BlastDirectionality.explosive,
+                                shouldLoop: false,
+                                numberOfParticles: resolvedCount == 1 ? 10 : (resolvedCount < 5 ? 20 : (resolvedCount < 10 ? 30 : 40)),
+                                gravity: 0.3,
+                                emissionFrequency: 0.04,
+                                colors: const [
+                                  Colors.green, Colors.blue, Colors.pink, Colors.orange, Colors.purple
+                                ],
+                              ),],),
                   );
                   // Optional: reload mistakes from Firebase
                   _loadMistakes();
@@ -400,6 +442,29 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
 
         ],
       ),
+    ),
+
+    //   ConfettiWidget(
+    //     confettiController: _confettiControllerSmall,
+    // blastDirectionality: BlastDirectionality.explosive,
+    // shouldLoop: false,
+    // numberOfParticles: 15, // Fewer particles
+    // emissionFrequency: 0.03,
+    // gravity: 0.2,
+    // colors: const [Colors.green, Colors.blue, Colors.pink],
+    // ),
+    //
+    // // ADD another ConfettiWidget for the LARGE blast
+    // ConfettiWidget(
+    // confettiController: _confettiControllerLarge,
+    // blastDirectionality: BlastDirectionality.explosive,
+    // shouldLoop: false,
+    // numberOfParticles: 60, // More particles
+    // emissionFrequency: 0.01,
+    // gravity: 0.3,
+    // colors: const [Colors.orange, Colors.purple, Colors.yellow, Colors.red],
+    // ),
+    ],
     );
   }
 }

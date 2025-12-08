@@ -38,7 +38,7 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
   @override
   void initState() {
     super.initState();
-    _confettiController = ConfettiController(duration: const Duration(seconds: 3));
+    _confettiController = ConfettiController(duration: const Duration(seconds: 2));
     _confettiDrawController = ConfettiController(duration: const Duration(seconds: 2));
   }
 

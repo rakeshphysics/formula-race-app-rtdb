@@ -85,8 +85,8 @@ class _ResultScreenState extends State<ResultScreen> {
   @override
   void initState() {
     super.initState();
-    _confetti10Controller = ConfettiController(duration: const Duration(seconds: 3));
-    _confetti8Controller = ConfettiController(duration: const Duration(seconds: 3));
+    _confetti10Controller = ConfettiController(duration: const Duration(seconds: 2));
+    _confetti8Controller = ConfettiController(duration: const Duration(seconds: 2));
     _confetti6Controller = ConfettiController(duration: const Duration(seconds: 2));
     _confetti4Controller = ConfettiController(duration: const Duration(seconds: 2));
     _confetti0Controller = ConfettiController(duration: const Duration(seconds: 1));
