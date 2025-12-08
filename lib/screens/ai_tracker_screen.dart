@@ -233,9 +233,9 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                                 confettiController: _confettiController,
                                 blastDirectionality: BlastDirectionality.explosive,
                                 shouldLoop: false,
-                                numberOfParticles: resolvedCount == 1 ? 10 : (resolvedCount < 5 ? 20 : (resolvedCount < 10 ? 30 : 40)),
+                                numberOfParticles: resolvedCount == 1 ? 5 : (resolvedCount < 5 ? 10 : (resolvedCount < 10 ? 20 : 40)),
                                 gravity: 0.3,
-                                emissionFrequency: 0.04,
+                                emissionFrequency: 0.03,
                                 colors: const [
                                   Colors.green, Colors.blue, Colors.pink, Colors.orange, Colors.purple
                                 ],

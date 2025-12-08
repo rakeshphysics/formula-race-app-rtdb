@@ -4,6 +4,16 @@ import 'dart:math';
 import 'package:collection/collection.dart';
 import 'package:formularacing/models/practice_attempt.dart';
 import 'package:formularacing/services/database_helper.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+
+class PandaResponse {
+  final String message;
+  final bool showMealButtons;
+
+  PandaResponse({required this.message, this.showMealButtons = false});
+}
+
 
 class HomeMessageService {
   HomeMessageService._privateConstructor() {
@@ -64,6 +74,39 @@ class HomeMessageService {
     // 5. Remember this new message for next time
     _lastMessage = newMessage;
     return newMessage;
+  }
+
+  // --- New Main Method for Greetings ---
+  Future<PandaResponse> getGreeting(String userId) async {
+    final bool alreadyAsked = await _hasAskedMealQuestionToday();
+    if (alreadyAsked) {
+      // If we already asked, fall back to the original message logic.
+      final message = await getHomePageMessage(userId);
+      return PandaResponse(message: message, showMealButtons: false);
+    }
+
+    final DateTime now = DateTime.now();
+    final int hour = now.hour;
+
+    // Check for breakfast time (7:00 AM to 9:59 AM)
+    if (hour >= 7 && hour < 10) {
+      await _markMealQuestionAsAsked();
+      return PandaResponse(message: "Hola! Did you have a good breakfast?", showMealButtons: true);
+    }
+    // Check for lunch time (12:30 PM to 2:59 PM)
+    else if (hour >= 12 && hour < 15) {
+      await _markMealQuestionAsAsked();
+      return PandaResponse(message: "Hola! Did you have a nice lunch?", showMealButtons: true);
+    }
+    // Check for dinner time (7:30 PM to 10:29 PM)
+    else if (hour >= 19 && hour < 22) {
+      await _markMealQuestionAsAsked();
+      return PandaResponse(message: "Hey there! Did you have dinner?", showMealButtons: true);
+    }
+
+    // If it's outside meal times, use the original logic for a regular message.
+    final message = await getHomePageMessage(userId);
+    return PandaResponse(message: message, showMealButtons: false);
   }
 
   // --- Message Generation Logic ---
@@ -157,4 +200,55 @@ class HomeMessageService {
       "Let's get started!",
     ];
   }
+
+  // --- Private Helper Methods for Meal Questions ---
+
+  Future<bool> _hasAskedMealQuestionToday() async {
+    final prefs = await SharedPreferences.getInstance();
+    final lastAskedString = prefs.getString('lastMealQuestionDate');
+
+    if (lastAskedString == null) {
+      return false; // Never asked before.
+    }
+
+    final lastAskedDate = DateTime.parse(lastAskedString);
+    final now = DateTime.now();
+
+    // Compare year, month, and day to see if it's the same calendar day.
+    return now.year == lastAskedDate.year &&
+        now.month == lastAskedDate.month &&
+        now.day == lastAskedDate.day;
+  }
+
+  Future<void> _markMealQuestionAsAsked() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('lastMealQuestionDate', DateTime.now().toIso8601String());
+  }
+
+  // --- New function for meal responses ---
+  Future<String> getMealResponseMessage(bool hadMeal) async {
+    // This function doesn't need to be async for now, but it's good practice
+    // in case we want to add complex logic or API calls later.
+
+    if (hadMeal) {
+      // User tapped "Yes"
+      // You can add more variations to this list
+      const positiveResponses = [
+        "Great! A good meal is a great start to any challenge.",
+        "Excellent! That's the fuel a champion needs.",
+        "Fantastic! Keep that energy up.",
+      ];
+      return (positiveResponses..shuffle()).first;
+    } else {
+      // User tapped "No"
+      // You can add more variations to this list
+      const encouragingResponses = [
+        "Oh, remember to eat! Your brain needs fuel to learn.",
+        "Don't forget to refuel! A sharp mind needs good food.",
+        "Make sure to grab a bite when you can. It's important!",
+      ];
+      return (encouragingResponses..shuffle()).first;
+    }
+  }
+
 }

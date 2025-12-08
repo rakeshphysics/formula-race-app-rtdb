@@ -514,18 +514,37 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   Color getOptionColor(String option) {
     if (selectedOption == null) {
       if (showCorrectAnswerOnTimeout && option == questions[currentIndex]['answer']) {
-        return Colors.green; // Highlight correct answer on timeout
+        return const Color(0xCC4CAF50); // Highlight correct answer on timeout
       }
-      return Colors.black;
+      return Colors.grey[900]!;
     } else {
       if (option == questions[currentIndex]['answer']) {
-        return Colors.green;
+        return const Color(0x994CAF50);
       } else if (option == selectedOption) {
-        return Colors.red;
+        //return Colors.red;
+        return const Color(0x99F44336);
       } else {
-        return Colors.black;
+        return Colors.grey[900]!; ;
       }
     }
+  }
+
+  // Add this function right after getOptionColor
+  Color getBorderColor(String option) {
+    if (selectedOption == null) {
+      // Default border color
+      return Colors.grey.shade700;
+    }
+    if (option == questions[currentIndex]['answer']) {
+      // Correct answer border color - More vibrant green
+      return Colors.greenAccent[400]!;
+    }
+    if (option == selectedOption) {
+      // Selected incorrect answer border color - More vibrant red
+      return Colors.redAccent;
+    }
+    // Border color for other non-selected options
+    return Colors.grey.shade700;
   }
 
   // ............. Chunk 6 PROGRESS BAR BUILDER .............
@@ -747,6 +766,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                             }
                                 : () {},
                             color: getOptionColor(option),
+                            borderColor: getBorderColor(option),
                           ),
                         );
                       }).toList(),

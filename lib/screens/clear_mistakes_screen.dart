@@ -114,10 +114,28 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
   }
 
   Color getOptionColor(String option) {
-    if (selectedOption == null) return Colors.black;
-    if (option == questions[currentIndex]['answer']) return Colors.green;
-    if (option == selectedOption) return Colors.red;
-    return Colors.black;
+    if (selectedOption == null) return Colors.grey[900]!;
+    if (option == questions[currentIndex]['answer']) return const Color(0xCC4CAF50);
+    if (option == selectedOption) return const Color(0x99F44336);
+    return Colors.grey[900]!;
+  }
+
+  // Add this new function
+  Color getBorderColor(String option) {
+    if (selectedOption == null) {
+      // Default border color
+      return Colors.grey.shade700;
+    }
+    if (option == questions[currentIndex]['answer']) {
+      // Correct answer border color
+      return Colors.greenAccent;
+    }
+    if (option == selectedOption) {
+      // Selected incorrect answer border color
+      return Colors.redAccent;
+    }
+    // Border color for other non-selected options
+    return Colors.grey.shade700;
   }
 
   @override
@@ -320,7 +338,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
     borderRadius: BorderRadius.circular(4),
     color: getOptionColor(option),
     border: Border.all(
-    color: Color(0xFFFF6F61), // Warm coral
+    color: getBorderColor(option), // Warm coral
     width: 1,
     ),
     ),

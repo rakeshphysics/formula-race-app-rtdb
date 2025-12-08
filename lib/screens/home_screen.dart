@@ -52,6 +52,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
   int _bamboos = 0;
   String _currentPandaLottie = 'assets/pandaai/meditate.json';
   bool _isTalking = false;
+  bool _showMealButtons = false;
 
   @override
   void initState() {
@@ -71,31 +72,47 @@ void _loadAiMessage() async {
   // Prevent starting a new talk if already talking
   if (_isTalking) return;
 
-  // First, check if there are any bamboos to spend
-  if (_bamboos > 0) {
-    // --- This is the new logic ---
-    // 1. Immediately update the UI to show one less bamboo.
+  final messageService = HomeMessageService.instance;
+  final response = await messageService.getGreeting(widget.userId);
+
+  // If we get a meal question, handle it separately.
+  if (response.showMealButtons) {
+    _fullAiMessage = response.message;
     if (mounted) {
       setState(() {
-        _bamboos--;
+        _showMealButtons = true; // Show the Yes/No buttons
       });
     }
-
-    // 2. In the background, tell the database that one bamboo has been spent.
-    final dbHelper = DatabaseHelper.instance;
-    await dbHelper.spendOneBamboo();
-    print("Bamboo spent. Marked one row as counted in the database.");
-    // --- End of new logic ---
-
-    // Get a real message from the service
-    final messageService = HomeMessageService.instance;
-    final message = await messageService.getHomePageMessage(widget.userId);
-    _fullAiMessage = message;
-
   } else {
-    // If user has no bamboos, use a predefined message
-    _fullAiMessage = "I'm hungry! Please earn some bamboos by playing, and then we can talk.";
+
+    if (_bamboos > 0) {
+      // --- This is the new logic ---
+      _fullAiMessage = response.message; // 1. Immediately update the UI to show one less bamboo.
+      if (mounted) {
+        setState(() {
+          _bamboos--;
+        });
+      }
+
+      // 2. In the background, tell the database that one bamboo has been spent.
+      final dbHelper = DatabaseHelper.instance;
+      await dbHelper.spendOneBamboo();
+      print("Bamboo spent. Marked one row as counted in the database.");
+      // --- End of new logic ---
+
+      // Get a real message from the service
+      // final messageService = HomeMessageService.instance;
+      // final message = await messageService.getHomePageMessage(widget.userId);
+      // _fullAiMessage = message;
+
+    } else {
+      // If user has no bamboos, use a predefined message
+      _fullAiMessage = "I'm hungry! Please earn some bamboos by playing, and then we can talk.";
+    }
+
+
   }
+  // First, check if there are any bamboos to spend
 
   // --- Animation Logic (remains the same) ---
   if (mounted) {
@@ -108,6 +125,40 @@ void _loadAiMessage() async {
   }
   _startTypingAnimation();
   const talkAnimationDuration = Duration(milliseconds: 1850 * 2);
+  Future.delayed(talkAnimationDuration, () {
+    if (mounted) {
+      setState(() {
+        _isTalking = false;
+      });
+      _updatePandaAnimation();
+    }
+  });
+}
+
+void _handleMealResponse(bool hadMeal) async {
+  // 1. Hide the buttons immediately
+  if (mounted) {
+    setState(() {
+      _showMealButtons = false;
+    });
+  }
+
+  // 2. Call the service to get the correct follow-up message
+  final messageService = HomeMessageService.instance;
+  final message = await messageService.getMealResponseMessage(hadMeal);
+
+  // 3. Display the new message using the same animation logic
+  _fullAiMessage = message;
+  if (mounted) {
+    setState(() {
+      _isTalking = true;
+      _currentPandaLottie = 'assets/pandaai/talk.json';
+      _charIndex = 0;
+      _displayedAiMessage = "";
+    });
+  }
+  _startTypingAnimation();
+  const talkAnimationDuration = Duration(milliseconds: 1850 * 2); // Same duration
   Future.delayed(talkAnimationDuration, () {
     if (mounted) {
       setState(() {
@@ -493,7 +544,34 @@ void _checkForNewBamboos() async {
                                 ),
                               ),
                             ),
-                          ],
+
+                      // --- YES/NO BUTTONS FOR MEAL QUESTIONS ---
+                      if (_showMealButtons)
+                        Padding(
+                          padding: const EdgeInsets.only(top: 12.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              ElevatedButton(
+                                onPressed: () {
+                                  // Call the handler with 'true' for Yes
+                                  _handleMealResponse(true);
+                                },
+                                child: Text('Yes'),
+                              ),
+                              SizedBox(width: 16),
+                              ElevatedButton(
+                                onPressed: () {
+                                  // Call the handler with 'false' for No
+                                  _handleMealResponse(false);
+                                },
+                                child: Text('No'),
+                              ),
+                            ],
+                          ),
+                        ),
+
+                    ],
 
 
                   ),

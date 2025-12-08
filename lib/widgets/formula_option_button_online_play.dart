@@ -8,12 +8,14 @@ class FormulaOptionButton extends StatelessWidget {
   final String text;
   final VoidCallback onPressed;
   final Color color;
+  final Color? borderColor;
 
   const FormulaOptionButton({
     Key? key,
     required this.text,
     required this.onPressed,
     required this.color,
+    this.borderColor,
   }) : super(key: key);
 
   @override
@@ -29,7 +31,10 @@ class FormulaOptionButton extends StatelessWidget {
           foregroundColor: Colors.white,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(4),
-            side: const BorderSide(color: Color(0xFFFFA500), width: 1),// nicely rounded corners
+            side: BorderSide(
+              color: borderColor ?? Colors.grey.shade700, // Use borderColor if available, otherwise default
+              width: 1.2, // A slightly thicker border is often more visible
+            ),// nicely rounded corners
           ),
           padding: const EdgeInsets.symmetric(horizontal: 16),
         ),

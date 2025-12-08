@@ -45,7 +45,7 @@ class ChapterProgressButton extends StatelessWidget {
         height: buttonHeight, // Use responsive height
         width: buttonWidth, // Use responsive width
         decoration: BoxDecoration(
-          color: Colors.black, // Background color for the unfilled part
+          color: const Color(0xB3001E1E), // Background color for the unfilled part
           borderRadius: BorderRadius.circular(4),
           border: Border.all(
             color: Colors.cyanAccent, // Outer border of the button

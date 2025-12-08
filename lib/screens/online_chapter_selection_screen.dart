@@ -114,6 +114,7 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
                 }
               },
               style: OutlinedButton.styleFrom(
+                backgroundColor: const Color(0x99201100),
                 side: BorderSide(color: Colors.amberAccent.withOpacity(0.6), width: 1.2),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4),

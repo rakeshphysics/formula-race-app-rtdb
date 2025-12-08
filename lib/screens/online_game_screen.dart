@@ -1105,21 +1105,47 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     String correctAnswer = questions[currentQuestionIndex]['answer'];
 
     if (!questionLocked && selectedOption == null) {
-      return Colors.black;
+      return Colors.grey[900]!;
     }
 
     // ✅ If this is the user's wrong selected option
     if (option == selectedOption && option != correctAnswer) {
-      return Colors.red;
+      return const Color(0x99F44336);
     }
 
     // ✅ If this is the correct answer and should be revealed
     if ((option == correctAnswer) && (isCorrect || showCorrectAnswer || revealCorrectAnswerOnOpponentWin || showCorrectAnswerOnSelfWrong)) { // ADD showCorrectAnswerOnSelfWrong
       //print('🟢 🎨DEBUG GET COLOR: Player ID: ${widget.playerId}, Coloring green: $option'); // 🚀 Add this //print
-      return Colors.green;
+      return const Color(0xCC4CAF50);
     }
 
-    return Colors.black;
+    return Colors.grey[900]!;
+  }
+
+  Color getBorderColor(String option) {
+    String correctAnswer = questions[currentQuestionIndex]['answer'];
+
+    // If no option has been selected yet
+    if (selectedOption == null) {
+      // Default border color
+      return Colors.grey.shade700;
+    }
+
+    // If this is the correct answer
+    if (option == correctAnswer) {
+      // Correct answer border color - More vibrant green
+      return Colors.greenAccent[400]!;
+    }
+    // If this is the user's wrong selected option
+    else if (option == selectedOption) {
+      // Selected incorrect answer border color - More vibrant red
+      return Colors.redAccent;
+    }
+    // For all other non-selected options after a choice is made
+    else {
+      // Default border color
+      return Colors.grey.shade700;
+    }
   }
 
 
@@ -1336,6 +1362,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                           submitAnswer(option);
                         },
                         color: getOptionColor(option),
+                        borderColor: getBorderColor(option),
                       );
                     }).toList(),
 
