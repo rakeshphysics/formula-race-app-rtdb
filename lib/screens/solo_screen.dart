@@ -112,7 +112,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   @override
   void initState() {
     super.initState();
-    _confettiController = ConfettiController(duration: const Duration(seconds: 2));
+    //_confettiController = ConfettiController(duration: const Duration(seconds: 2));
    // print('🤢🤢*** SoloScreen initState called for chapter: ${widget.selectedChapter} ***'); // ADD THIS LINE
 
     _progressController = AnimationController(
@@ -134,7 +134,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   @override
   void dispose() {
     _progressController.dispose();
-    _confettiController.dispose();
+    //_confettiController.dispose();
     super.dispose();
   }
 
@@ -476,9 +476,9 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 
 // Check for confetti condition and apply delay
     if (_consecutiveCorrectAnswers >= 6) {
-      _confettiController.play();
+     // _confettiController.play();
       await Future.delayed(const Duration(seconds: 1)); // Wait 2 seconds for confetti
-      _confettiController.stop();
+      //_confettiController.stop();
       _consecutiveCorrectAnswers = 0;
     } else {
       // Standard delay to show the answer before moving on
@@ -760,17 +760,18 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
         ),
 
       ),
-        ConfettiWidget(
-          confettiController: _confettiController,
-          blastDirectionality: BlastDirectionality.explosive,
-          numberOfParticles: 20,
-          emissionFrequency: 0.02,
-          gravity: 0.3,
-          shouldLoop: false,
-          colors: const [
-            Colors.cyanAccent
-          ],
-        ),],),
+        // ConfettiWidget(
+        //   confettiController: _confettiController,
+        //   blastDirectionality: BlastDirectionality.explosive,
+        //   numberOfParticles: 20,
+        //   emissionFrequency: 0.02,
+        //   gravity: 0.3,
+        //   shouldLoop: false,
+        //   colors: const [
+        //     Colors.cyanAccent
+        //   ],
+        // ),
+       ],),
     );// WillPopScope
   }
 }

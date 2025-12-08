@@ -405,26 +405,26 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
 }
 
 //...........TEMPORARY......START...........FUNCTION TO DEL MISTAKES JSON FILE .................................
-Future<void> deleteMistakeTrackerJson(BuildContext context) async {
-  final dir = await getApplicationDocumentsDirectory();
-  final file = File('${dir.path}/my_mistakes.json');
-
-  if (await file.exists()) {
-    await file.delete();
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Mistake tracker cleared')),
-    );
-  } else {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('No mistake file found')),
-    );
-  }
-
-  // ✅ Reload the screen with empty mistakes
-  if (context.mounted) {
-    final state = context.findAncestorStateOfType<_AITrackerScreenState>();
-    state?._loadMistakes();
-  }
-}
+// Future<void> deleteMistakeTrackerJson(BuildContext context) async {
+//   final dir = await getApplicationDocumentsDirectory();
+//   final file = File('${dir.path}/my_mistakes.json');
+//
+//   if (await file.exists()) {
+//     await file.delete();
+//     ScaffoldMessenger.of(context).showSnackBar(
+//       SnackBar(content: Text('Mistake tracker cleared')),
+//     );
+//   } else {
+//     ScaffoldMessenger.of(context).showSnackBar(
+//       SnackBar(content: Text('No mistake file found')),
+//     );
+//   }
+//
+//   // ✅ Reload the screen with empty mistakes
+//   if (context.mounted) {
+//     final state = context.findAncestorStateOfType<_AITrackerScreenState>();
+//     state?._loadMistakes();
+//   }
+// }
 
 //...........TEMPORARY.......END...........FUNCTION TO DEL MISTAKES JSON FILE .................................

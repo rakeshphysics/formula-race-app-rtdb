@@ -25,6 +25,23 @@ import 'package:formularacing/services/database_helper.dart';
 
 // ← added SplashScreen import
 
+class FadePageTransitionsBuilder extends PageTransitionsBuilder {
+  const FadePageTransitionsBuilder();
+
+  @override
+  Widget buildTransitions<T>(
+      PageRoute<T> route,
+      BuildContext context,
+      Animation<double> animation,
+      Animation<double> secondaryAnimation,
+      Widget child,
+      ) {
+    return FadeTransition(opacity: animation, child: child);
+  }
+  @override
+  Duration get transitionDuration => const Duration(milliseconds: 400);
+}
+
 // ............. Chunk 1 MAIN FUNCTION .............
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -61,7 +78,13 @@ class FormulaRaceApp extends StatelessWidget {
       theme: ThemeData(
        fontFamily: GoogleFonts.poppins().fontFamily,
         brightness: Brightness.dark, // Example: Set a dark theme globally
-        scaffoldBackgroundColor: Colors.black, // Example: Set default background color
+        scaffoldBackgroundColor: Colors.black,
+        pageTransitionsTheme: const PageTransitionsTheme(
+          builders: {
+            TargetPlatform.android: FadePageTransitionsBuilder(),
+            TargetPlatform.iOS: FadePageTransitionsBuilder(),
+          },
+        ),// Example: Set default background color
       ),
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
