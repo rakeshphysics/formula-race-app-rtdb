@@ -5,7 +5,7 @@ import 'package:collection/collection.dart';
 import 'package:formularacing/models/practice_attempt.dart';
 import 'package:formularacing/services/database_helper.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
+import 'package:formularacing/models/game_performance.dart';
 
 class PandaResponse {
   final String message;
@@ -34,54 +34,66 @@ class HomeMessageService {
 
   void _initialize() {
     _messageGenerators = [
-      _generateTodayPraiseMessage,
-      _generateTodayEncouragementMessage,
-      _generateYesterdayRecapMessage,
-      _generateComebackMessage,
+
     ];
   }
 
-  // --- Main public method ---
-  Future<String> getHomePageMessage(String userId) async {
-    final possibleMessages = <String>[];
+  // lib/services/home_message_service.dart
 
-    // 1. Gather all possible messages from all generators
-    for (var generator in _messageGenerators) {
-      final message = await generator(userId);
-      if (message.isNotEmpty) {
-        possibleMessages.add(message);
-      }
-    }
+  List<String> _getGenericWelcomeMessages() {
+    // 1. Define the original messages as a local, constant list.
+    const messages = [
+      "Welcome back!! 👋",
+      "Good to see you! 😊",
+      "Hey there! ✨",
+      "Let's get started! 🚀",
+      "Time for some fun! 🎉",
+      "Let's do this! 💪",
+      "Glad you're here. 🤗",
+      "Let the games begin! 🎮",
+    ];
 
-    // 2. Add generic messages to the list as fallbacks
-    possibleMessages.addAll(_getGenericWelcomeMessages());
+    // 2. Create a new, modifiable list from the constant one.
+    final modifiableList = List<String>.from(messages);
 
-    // 3. Filter out the last message shown
-    final uniqueMessages = possibleMessages.where((m) => m != _lastMessage).toList();
+    // 3. Shuffle the new list.
+    modifiableList.shuffle();
 
-    String newMessage;
-    if (uniqueMessages.isNotEmpty) {
-      // 4. Pick a random message from the unique list
-      newMessage = uniqueMessages[_random.nextInt(uniqueMessages.length)];
-    } else if (possibleMessages.isNotEmpty) {
-      // This happens if there's only one possible message and it's the same as the last one
-      newMessage = possibleMessages.first;
-    } else {
-      // Absolute fallback
-      newMessage = "Ready to start?";
-    }
-
-    // 5. Remember this new message for next time
-    _lastMessage = newMessage;
-    return newMessage;
+    // 4. Return the shuffled list.
+    return modifiableList;
   }
+// lib/services/home_message_service.dart
 
-  // --- New Main Method for Greetings ---
+// --- New Main Method for Greetings ---
   Future<PandaResponse> getGreeting(String userId) async {
     final bool alreadyAsked = await _hasAskedMealQuestionToday();
+
+    // This is the shared logic that was previously in getHomePageMessage
+    Future<String> generateRegularMessage() async {
+      final possibleMessages = <String>[];
+      for (var generator in _messageGenerators) {
+        final message = await generator(userId);
+        if (message.isNotEmpty) {
+          possibleMessages.add(message);
+        }
+      }
+      possibleMessages.addAll(_getGenericWelcomeMessages());
+      final uniqueMessages = possibleMessages.where((m) => m != _lastMessage).toList();
+      String newMessage;
+      if (uniqueMessages.isNotEmpty) {
+        newMessage = uniqueMessages[_random.nextInt(uniqueMessages.length)];
+      } else if (possibleMessages.isNotEmpty) {
+        newMessage = possibleMessages.first;
+      } else {
+        newMessage = "Ready to start?";
+      }
+      _lastMessage = newMessage;
+      return newMessage;
+    }
+
     if (alreadyAsked) {
-      // If we already asked, fall back to the original message logic.
-      final message = await getHomePageMessage(userId);
+      // If we already asked, fall back to the regular message logic.
+      final message = await generateRegularMessage();
       return PandaResponse(message: message, showMealButtons: false);
     }
 
@@ -104,104 +116,10 @@ class HomeMessageService {
       return PandaResponse(message: "Hey there! Did you have dinner?", showMealButtons: true);
     }
 
-    // If it's outside meal times, use the original logic for a regular message.
-    final message = await getHomePageMessage(userId);
+    // If it's outside meal times, use the regular message logic.
+    final message = await generateRegularMessage();
     return PandaResponse(message: message, showMealButtons: false);
   }
-
-  // --- Message Generation Logic ---
-
-  /// Praises the user for good work today.
-  Future<String> _generateTodayPraiseMessage(String userId) async {
-    final now = DateTime.now();
-    final startOfToday = DateTime(now.year, now.month, now.day);
-    final todaysAttempts = await _dbHelper.getAttemptsInDateRange(startOfToday, now);
-
-    if (todaysAttempts.isEmpty) return '';
-
-    final total = todaysAttempts.length;
-    final correct = todaysAttempts.where((a) => a.wasCorrect).length;
-    final accuracy = (correct / total) * 100;
-
-    if (accuracy == 100 && total > 5) {
-      return "Perfect streak! You've nailed all $total questions today. Amazing!";
-    }
-    if (total > 20) {
-      return "Wow, $total questions today! Your dedication is impressive.";
-    }
-    if (accuracy > 80 && total > 10) {
-      return "Great session! Over 80% accuracy on $total questions. You're getting it!";
-    }
-    return '';
-  }
-
-  /// Encourages the user based on today's mistakes.
-  Future<String> _generateTodayEncouragementMessage(String userId) async {
-    final now = DateTime.now();
-    final startOfToday = DateTime(now.year, now.month, now.day);
-    final todaysAttempts = await _dbHelper.getAttemptsInDateRange(startOfToday, now);
-
-    final mistakes = todaysAttempts.where((a) => !a.wasCorrect).toList();
-    if (mistakes.isEmpty) return '';
-
-    final mostCommonMistakeTopic = groupBy(mistakes, (PracticeAttempt a) => a.topic)
-        .entries
-        .sortedBy<num>((e) => e.value.length)
-        .lastOrNull;
-
-    if (mostCommonMistakeTopic != null) {
-      return "Mistakes in '${mostCommonMistakeTopic.key}' are just learning opportunities. Let's try again!";
-    }
-    return "Every mistake is a step forward. Don't give up!";
-  }
-
-  /// Gives a quick recap of yesterday's work.
-  Future<String> _generateYesterdayRecapMessage(String userId) async {
-    final now = DateTime.now();
-    final startOfYesterday = DateTime(now.year, now.month, now.day - 1);
-    final endOfYesterday = startOfYesterday.add(const Duration(days: 1));
-    final yesterdaysAttempts = await _dbHelper.getAttemptsInDateRange(startOfYesterday, endOfYesterday);
-
-    if (yesterdaysAttempts.isEmpty) return '';
-
-    final total = yesterdaysAttempts.length;
-    final mostPracticed = groupBy(yesterdaysAttempts, (PracticeAttempt a) => a.topic)
-        .entries
-        .sortedBy<num>((e) => e.value.length)
-        .lastOrNull;
-
-    if (mostPracticed != null && total > 5) {
-      return "Yesterday you focused on ${mostPracticed.key}. Ready for round two?";
-    }
-    return '';
-  }
-
-  /// Encourages users who haven't practiced in a while.
-  Future<String> _generateComebackMessage(String userId) async {
-    final now = DateTime.now();
-    final startOfYesterday = DateTime(now.year, now.month, now.day - 1);
-    final allAttempts = await _dbHelper.getAttemptsInDateRange(DateTime(2020), startOfYesterday);
-
-    if (allAttempts.isEmpty) {
-      // This is a brand new user, so no comeback message needed.
-      return '';
-    }
-    // If we get here, it means the user has past data but didn't play today or yesterday.
-    return "It's been a little while! How about a quick practice session to warm up?";
-  }
-
-  /// Returns a random generic message for new users or as a fallback.
-  /// Returns a list of generic messages.
-  List<String> _getGenericWelcomeMessages() {
-    return [
-      "Ready to test your knowledge?",
-      "Consistency is key. Let's solve some problems!",
-      "Every question is a new opportunity to learn.",
-      "Let's get started!",
-    ];
-  }
-
-  // --- Private Helper Methods for Meal Questions ---
 
   Future<bool> _hasAskedMealQuestionToday() async {
     final prefs = await SharedPreferences.getInstance();
@@ -219,13 +137,10 @@ class HomeMessageService {
         now.month == lastAskedDate.month &&
         now.day == lastAskedDate.day;
   }
-
   Future<void> _markMealQuestionAsAsked() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('lastMealQuestionDate', DateTime.now().toIso8601String());
-  }
-
-  // --- New function for meal responses ---
+  }   // --- New function for meal responses ---
   Future<String> getMealResponseMessage(bool hadMeal) async {
     // This function doesn't need to be async for now, but it's good practice
     // in case we want to add complex logic or API calls later.
@@ -238,7 +153,11 @@ class HomeMessageService {
         "Excellent! That's the fuel a champion needs.",
         "Fantastic! Keep that energy up.",
       ];
-      return (positiveResponses..shuffle()).first;
+      final modifiableList = List<String>.from(positiveResponses);
+      // Shuffle the new list
+      modifiableList.shuffle();
+      // Return an item from the shuffled list
+      return modifiableList.first;
     } else {
       // User tapped "No"
       // You can add more variations to this list
@@ -247,7 +166,108 @@ class HomeMessageService {
         "Don't forget to refuel! A sharp mind needs good food.",
         "Make sure to grab a bite when you can. It's important!",
       ];
-      return (encouragingResponses..shuffle()).first;
+      final modifiableList = List<String>.from(encouragingResponses);
+      modifiableList.shuffle();
+      return modifiableList.first;
+    }
+  }
+
+
+  // lib/services/home_message_service.dart
+
+// lib/services/home_message_service.dart
+
+
+// ... inside the HomeMessageService class
+
+  Future<String> getPostGameAnalysisMessage(String userId) async {
+    final dbHelper = DatabaseHelper.instance;
+    final lastGame = await dbHelper.getLastGameDetails();
+
+    // If there's no last game, return a generic message.
+    // This is a fallback, though it's unlikely to be hit because this function
+    // is only called when bamboos (i.e., correct answers) exist.
+    if (lastGame == null) {
+      return "Let's play a round to see how you're doing!";
+    }
+
+    // --- Part 1: Generate a comment about the last game ---
+    final int correct = lastGame['correct_count'];
+    final int total = lastGame['total_questions'];
+    final double score = total > 0 ? correct / total : 0;
+
+    String gameRecap;
+    if (score == 1.0) {
+      gameRecap = "A perfect score of $correct out of $total in the last round! Incredible work! 🏆";
+    } else if (score >= 0.8) {
+      gameRecap = "Great job on the last game! You got $correct out of $total correct. You're on fire! 🔥";
+    } else if (score >= 0.5) {
+      gameRecap = "Solid effort in the last round, scoring $correct out of $total. Keep that momentum going!";
+    } else if (score > 0) {
+      gameRecap = "Good start in the last game with $correct correct answers. Every correct answer is a step forward!";
+    } else {
+      gameRecap = "That was a tough round, but don't worry. The most important thing is to learn and try again. Let's go! 💪";
+    }
+
+    // --- Parts 2 & 3 (Placeholders for now) ---
+    String advice = "\n\nHere's some advice for next time...";
+    String quote = "\n\nAnd here's a little motivation for you...";
+
+    // Combine the parts into the final message
+    String finalMessage = gameRecap; // We will add advice and quote later
+
+    return finalMessage;
+  }
+
+  // lib/services/home_message_service.dart -> inside HomeMessageService class
+
+  // --- New method for motivational quotes ---
+  Future<String> getMotivationalQuote() async {
+    const quotes = [
+      "The secret of getting ahead is getting started. 🚀",
+      "Believe you can and you're halfway there. ✨",
+      "Success is not final, failure is not fatal: it is the courage to continue that counts. 💪",
+      "It does not matter how slowly you go as long as you do not stop. 🐢",
+      "Everything you’ve ever wanted is on the other side of fear. 🦁",
+      "The best way to predict the future is to create it. 🎨",
+      "Strive for progress, not perfection. 🌱",
+    ];
+    // Return a random quote
+    final modifiableQuotes = List<String>.from(quotes);
+    modifiableQuotes.shuffle();
+    return modifiableQuotes.first;
+  }
+
+  // --- New method for game advice ---
+  // lib/services/home_message_service.dart
+
+  // --- New method for game advice ---
+  // lib/services/home_message_service.dart
+
+// Add this import at the top of the file with your other imports
+// ... inside the HomeMessageService class
+
+  // --- New method for game advice ---
+  Future<String> getGameAdviceMessage(String userId) async {
+    final dbHelper = DatabaseHelper.instance;
+
+    // --- THIS IS THE UPDATED PART ---
+    // We now call the real database function.
+    final List<GamePerformance> recentPerformance = await dbHelper.getPerformanceOverLast5Games();
+
+    if (recentPerformance.isEmpty) {
+      return "Keep playing a few more games, and I'll have some specific advice for you!";
+    }
+
+    // Calculate the average score from the GamePerformance objects.
+    final averageScore = recentPerformance.map((p) => p.score).average;
+
+    if (averageScore >= 0.8) {
+      return "Your recent performance is outstanding! 🏆 Keep focusing on those tricky questions to achieve perfection.";
+    } else if (averageScore >= 0.5) {
+      return "You're showing great consistency. 👍 Try to review the questions you get wrong to spot any patterns.";
+    } else {
+      return "You're building a good foundation. Let's focus on understanding the core concepts of the questions you miss. 🧠";
     }
   }
 

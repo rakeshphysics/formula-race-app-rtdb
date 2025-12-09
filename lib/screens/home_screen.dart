@@ -26,12 +26,25 @@ import '../services/home_message_service.dart';
 import 'package:formularacing/screens/info_screen.dart';
 import 'package:lottie/lottie.dart';
 import 'package:formularacing/services/database_helper.dart';
+import 'package:characters/characters.dart';
 
 
 
 
 
+// Add this enum at the top of the file, outside the class
+enum AiMessageTrigger {
+  dailyGreeting,      // For normal app startup
+  postGameAnalysis,   // For right after a game
+}
 
+// Add this enum at the top of the file
+enum PandaConversationStage {
+  idle,
+  showingGameAnalysis,
+  showingAdvice,
+  showingQuote,
+}
 
 // ----------------------------------------------------
 // HomeScreen Widget
@@ -53,13 +66,20 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
   String _currentPandaLottie = 'assets/pandaai/meditate.json';
   bool _isTalking = false;
   bool _showMealButtons = false;
+  PandaConversationStage _conversationStage = PandaConversationStage.idle;
+  String? _adviceMessage;
 
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
     _checkForNewBamboos(); // Check for bamboos on initial load
-    _loadAiMessage();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      // If the panda is not already talking (from the post-game trigger), then show the daily greeting.
+      if (!_isTalking) {
+        _loadAiMessage(trigger: AiMessageTrigger.dailyGreeting);
+      }
+    });
     _updatePandaAnimation();
     _pandaUpdateTimer = Timer.periodic(const Duration(minutes: 1), (timer) {
       _updatePandaAnimation();
@@ -68,63 +88,130 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
 
 
   // Add this new method inside _HomeScreenState
-void _loadAiMessage() async {
-  // Prevent starting a new talk if already talking
+// lib/screens/home_screen.dart
+
+// lib/screens/home_screen.dart
+
+// lib/screens/home_screen.dart
+
+// lib/screens/home_screen.dart
+
+void _loadAiMessage({required AiMessageTrigger trigger}) async {
   if (_isTalking) return;
 
   final messageService = HomeMessageService.instance;
-  final response = await messageService.getGreeting(widget.userId);
 
-  // If we get a meal question, handle it separately.
-  if (response.showMealButtons) {
+  if (trigger == AiMessageTrigger.postGameAnalysis) {
+    _conversationStage = PandaConversationStage.showingGameAnalysis;
+    _adviceMessage = null; // Reset advice message
+
+    // Fetch both the analysis and the upcoming advice message
+    _fullAiMessage = await messageService.getPostGameAnalysisMessage(widget.userId);
+    _adviceMessage = await messageService.getGameAdviceMessage(widget.userId);
+
+    // --- THIS IS THE FIX ---
+    // We NO LONGER spend a bamboo here. The analysis is a free reward.
+    if (mounted) {
+      setState(() {
+        _showMealButtons = false;
+      });
+    }
+    print("Displaying FREE game analysis. Stage: $_conversationStage");
+    // --- END OF FIX ---
+
+  }  else {
+    _conversationStage = PandaConversationStage.idle;
+    final response = await messageService.getGreeting(widget.userId);
+
     _fullAiMessage = response.message;
     if (mounted) {
       setState(() {
-        _showMealButtons = true; // Show the Yes/No buttons
+        _showMealButtons = response.showMealButtons;
       });
     }
+  }
+
+  if (mounted) {
+    setState(() {
+      _isTalking = true;
+      _currentPandaLottie = 'assets/pandaai/talk.json';
+      _charIndex = 0;
+      _displayedAiMessage = "";
+    });
+  }
+  _startTypingAnimation();
+  const talkAnimationDuration = Duration(milliseconds: 3700);
+  Future.delayed(talkAnimationDuration, () {
+    if (mounted) {
+      setState(() {
+        _isTalking = false;
+      });
+      _updatePandaAnimation();
+    }
+  });
+}
+// lib/screens/home_screen.dart -> inside _HomeScreenState
+
+// Add this new function after _loadAiMessage
+// lib/screens/home_screen.dart
+
+// lib/screens/home_screen.dart -> inside _HomeScreenState
+
+void _handlePandaTap() async {
+  if (_isTalking) return;
+
+  // If the panda is idle, just show a new greeting and stop.
+  if (_conversationStage == PandaConversationStage.idle) {
+    _loadAiMessage(trigger: AiMessageTrigger.dailyGreeting);
+    return;
+  }
+
+  final messageService = HomeMessageService.instance;
+  String newMessage;
+  bool bambooWasSpent = false;
+
+  if (_bamboos <= 0) {
+    // Case 1: Out of bamboos. Get the "hungry" message.
+    newMessage = _getOutOfEnergyMessage();
+    bambooWasSpent = false;
+
   } else {
+    // Case 2: User has bamboos.
+    bambooWasSpent = true; // Mark that we are spending a bamboo.
 
-    if (_bamboos > 0) {
-      // --- This is the new logic ---
-      _fullAiMessage = response.message; // 1. Immediately update the UI to show one less bamboo.
-      if (mounted) {
-        setState(() {
-          _bamboos--;
-        });
-      }
-
-      // 2. In the background, tell the database that one bamboo has been spent.
-      final dbHelper = DatabaseHelper.instance;
-      await dbHelper.spendOneBamboo();
-      print("Bamboo spent. Marked one row as counted in the database.");
-      // --- End of new logic ---
-
-      // Get a real message from the service
-      // final messageService = HomeMessageService.instance;
-      // final message = await messageService.getHomePageMessage(widget.userId);
-      // _fullAiMessage = message;
+    if (_conversationStage == PandaConversationStage.showingGameAnalysis) {
+      // First tap after a game -> show advice.
+      _conversationStage = PandaConversationStage.showingAdvice;
+      newMessage = _adviceMessage ?? "Keep playing and I'll have more advice for you soon!";
+      print("Bamboo spent for advice. Stage: $_conversationStage");
 
     } else {
-      // If user has no bamboos, use a predefined message
-      _fullAiMessage = "I'm hungry! Please earn some bamboos by playing, and then we can talk.";
+      // Any other tap -> show a quote.
+      _conversationStage = PandaConversationStage.showingQuote;
+      // CRITICAL: We 'await' for the message here BEFORE the final setState.
+      newMessage = await messageService.getMotivationalQuote();
+      print("Bamboo spent for quote. Stage: $_conversationStage");
     }
-
-
   }
-  // First, check if there are any bamboos to spend
 
-  // --- Animation Logic (remains the same) ---
+  // --- CONSOLIDATED STATE UPDATE ---
+  // All logic paths lead here. This is the ONLY place we call setState.
   if (mounted) {
     setState(() {
+      if (bambooWasSpent) {
+        _bamboos--; // Decrement bamboos here, just before the UI rebuilds.
+      }
+      _fullAiMessage = newMessage; // Set the new message.
       _isTalking = true;
       _currentPandaLottie = 'assets/pandaai/talk.json';
       _charIndex = 0;
       _displayedAiMessage = "";
     });
   }
+
+  // This part remains the same.
   _startTypingAnimation();
-  const talkAnimationDuration = Duration(milliseconds: 1850 * 2);
+  const talkAnimationDuration = Duration(milliseconds: 3700);
   Future.delayed(talkAnimationDuration, () {
     if (mounted) {
       setState(() {
@@ -135,30 +222,52 @@ void _loadAiMessage() async {
   });
 }
 
-void _handleMealResponse(bool hadMeal) async {
-  // 1. Hide the buttons immediately
-  if (mounted) {
-    setState(() {
-      _showMealButtons = false;
-    });
-  }
+// lib/screens/home_screen.dart -> inside _HomeScreenState
 
-  // 2. Call the service to get the correct follow-up message
+// lib/screens/home_screen.dart -> inside _HomeScreenState
+
+String _getOutOfEnergyMessage() {
+  const messages = [
+    "My tummy is rumbling... I need more bamboo to think! 😫",
+    "I'm running on empty! Play a game to earn more bamboo. 🎮",
+    "Brainpower low... must have bamboo! 🧠",
+    "All out of snacks, all out of facts. 🤷‍♂️",
+    "Can't talk, too hungry. Need bamboo! 🎋",
+    "My wisdom generator requires bamboo fuel. We're all out! ⛽️",
+  ];
+  // Return a random message from the list
+  final modifiableList = List<String>.from(messages);
+  modifiableList.shuffle();
+  return modifiableList.first;
+}
+
+
+// lib/screens/home_screen.dart
+
+void _handlePersonalQuestionResponse(bool hadMeal) async {
+  // 1. Hide the buttons and get the new message
   final messageService = HomeMessageService.instance;
-  final message = await messageService.getMealResponseMessage(hadMeal);
+  final newMessage = await messageService.getMealResponseMessage(hadMeal);
+  _fullAiMessage = newMessage;
 
-  // 3. Display the new message using the same animation logic
-  _fullAiMessage = message;
+  // 2. --- THIS IS THE FIX ---
+  //    Trigger the talking state and animation properly.
   if (mounted) {
     setState(() {
-      _isTalking = true;
-      _currentPandaLottie = 'assets/pandaai/talk.json';
-      _charIndex = 0;
-      _displayedAiMessage = "";
+      _showMealButtons = false; // Hide buttons
+      _isTalking = true; // Start talking
+      _currentPandaLottie = 'assets/pandaai/talk.json'; // Change animation
+      _charIndex = 0; // Reset text
+      _displayedAiMessage = ""; // Clear display
     });
   }
+  // --- END OF FIX ---
+
+  // 3. Start the typing animation for the new message
   _startTypingAnimation();
-  const talkAnimationDuration = Duration(milliseconds: 1850 * 2); // Same duration
+
+  // 4. After a delay, stop the talking animation
+  const talkAnimationDuration = Duration(milliseconds: 3700);
   Future.delayed(talkAnimationDuration, () {
     if (mounted) {
       setState(() {
@@ -168,7 +277,6 @@ void _handleMealResponse(bool hadMeal) async {
     }
   });
 }
-
   // In _HomeScreenState
 
   void _startTypingAnimation() {
@@ -178,11 +286,12 @@ void _handleMealResponse(bool hadMeal) async {
      // <-- START the breathing animation here
 
     _typingTimer = Timer.periodic(typingSpeed, (timer) {
-      if (_charIndex < _fullAiMessage.length) {
+      if (_charIndex < _fullAiMessage.characters.length) { // Use .characters.length
         if (mounted) {
           setState(() {
             _charIndex++;
-            _displayedAiMessage = _fullAiMessage.substring(0, _charIndex);
+            // Use .characters.take() to safely get the first N characters
+            _displayedAiMessage = _fullAiMessage.characters.take(_charIndex).toString();
           });
         }
       } else {
@@ -248,12 +357,17 @@ void _checkForNewBamboos() async {
   final availableBamboos = await dbHelper.countUncountedCorrectAnswers();
 
   print("DATABASE REPORT: Found $availableBamboos available bamboos.");
-
+  final bool hasNewBamboos = availableBamboos > _bamboos;
   if (mounted) {
     setState(() {
       // Directly set the UI count to the available balance
       _bamboos = availableBamboos;
     });
+  }
+
+  if (hasNewBamboos) {
+    print("New bamboos detected! Triggering AI message automatically.");
+    _loadAiMessage(trigger: AiMessageTrigger.postGameAnalysis); // <-- THIS IS THE CRUCIAL ADDITION
   }
   print("--- Load complete. Final balance on screen: $_bamboos ---");
 }
@@ -461,7 +575,9 @@ void _checkForNewBamboos() async {
                                     height: screenWidth * 0.5,
                                     width: screenWidth * 0.5,
                                     child: GestureDetector(
-                                      onTap: _loadAiMessage,
+                                      onTap: () {
+                                        _handlePandaTap();
+                                        },
                                       child: Lottie.asset(
                                         _currentPandaLottie,
                                         repeat: !_isTalking,
@@ -555,7 +671,7 @@ void _checkForNewBamboos() async {
                               ElevatedButton(
                                 onPressed: () {
                                   // Call the handler with 'true' for Yes
-                                  _handleMealResponse(true);
+                                  _handlePersonalQuestionResponse(true);
                                 },
                                 child: Text('Yes'),
                               ),
@@ -563,7 +679,7 @@ void _checkForNewBamboos() async {
                               ElevatedButton(
                                 onPressed: () {
                                   // Call the handler with 'false' for No
-                                  _handleMealResponse(false);
+                                  _handlePersonalQuestionResponse(false);
                                 },
                                 child: Text('No'),
                               ),
