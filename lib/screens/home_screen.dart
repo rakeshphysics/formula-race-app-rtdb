@@ -27,6 +27,7 @@ import 'package:formularacing/screens/info_screen.dart';
 import 'package:lottie/lottie.dart';
 import 'package:formularacing/services/database_helper.dart';
 import 'package:characters/characters.dart';
+import 'package:formularacing/screens/revise_chapter_selection_screen.dart';
 
 
 
@@ -507,6 +508,23 @@ void _checkForNewBamboos() async {
             children: <Widget>[
 
               // --- MENU ITEMS ---
+
+              ListTile(
+                leading: const Icon(Icons.school_outlined, color: Color(0xFFA8A8A8)), // An icon for learning/revising
+                title: Text(
+                  'Revise All Formulas',
+                  style: GoogleFonts.poppins(color: const Color(0xFFA8A8A8)),
+                ),
+                onTap: () {
+                  Navigator.pop(context); // Close the drawer first
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ReviseChapterSelectionScreen(),
+                    ),
+                  );
+                },
+              ),
               ListTile(
                 leading: const Icon(Icons.help_outline, color: Color(0xFFA8A8A8)),
                 title: Text(
