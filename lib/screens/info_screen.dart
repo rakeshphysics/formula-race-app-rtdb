@@ -52,7 +52,7 @@ class InfoScreen extends StatelessWidget {
           child: Text(
             content, // This now uses the content variable defined above
             style: GoogleFonts.poppins(
-              color: Colors.white,
+              color: Color(0xD9FFFFFF),
               fontSize: screenWidth * 0.04,
               height: 1.5,
             ),

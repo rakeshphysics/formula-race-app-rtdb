@@ -14,6 +14,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'home_screen.dart';
 import 'package:confetti/confetti.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 
 Future<void> updateMistakeTracker(List<Map<String, dynamic>> responses) async {
@@ -153,7 +154,7 @@ class _ResultScreenState extends State<ResultScreen> {
                     'Your Score: $score / $totalQuestions',
                     style: GoogleFonts.hedvigLettersSerif(
                       fontSize: screenWidth*0.057, // Responsive font size
-                      color: Colors.cyan,
+                      color: const Color(0xD900FFFF),
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.5,
                     ),
@@ -208,6 +209,7 @@ class _ResultScreenState extends State<ResultScreen> {
                   Expanded(
                     child: ListView.builder(
                       itemCount: widget.incorrectAnswers.length,
+                      physics: const BouncingScrollPhysics(),
                       itemBuilder: (context, index) {
                         final wrongAnswer = widget.incorrectAnswers[index];
                         return Container(
@@ -217,7 +219,7 @@ class _ResultScreenState extends State<ResultScreen> {
                             color: Color(0xFF000000),
                             borderRadius: BorderRadius.circular(12),
                             border: Border.all(
-                              color: Colors.cyan, // Border color
+                              color: const Color(0xD900FFFF), // Border color
                               width: 0.8,            // Border thickness
                             ),
                           ),
@@ -246,13 +248,28 @@ class _ResultScreenState extends State<ResultScreen> {
                                   ),
                                 ),
 
+                              // if (wrongAnswer.imagePath.isNotEmpty)
+                              //   Container(
+                              //     margin: const EdgeInsets.symmetric(vertical: 0),
+                              //     child: Center(
+                              //       child: SizedBox(
+                              //         width: screenWidth * 0.6,
+                              //         height: (screenWidth * 0.6) / 1.5, // Maintain the same aspect ratio
+                              //         child: SvgPicture.asset(
+                              //           wrongAnswer.imagePath, // This path now points to a .svg file
+                              //           fit: BoxFit.contain,
+                              //         ),
+                              //       ),
+                              //     ),
+                              //   ),
+
 
                               Html(
                                 data: "<b>Q:</b> ${wrongAnswer.question}",
                                 style: {
                                   "body": Style(
                                     fontSize: FontSize(screenWidth * 0.037),
-                                    color: Color(0xFFFFFFFF),
+                                    color: Color(0xD9FFFFFF),
                                     fontFamily: GoogleFonts.poppins().fontFamily,
                                   ),
                                 },
@@ -265,7 +282,7 @@ class _ResultScreenState extends State<ResultScreen> {
                               Text(
                                 'Your Answer:',
                                 style: GoogleFonts.poppins(
-                                  color: Color(0xFFFFFFFF),
+                                  color: Color(0xD9FFFFFF),
                                   fontSize: screenWidth*0.037,
                                   fontWeight: FontWeight.normal,
                                 ),
@@ -275,7 +292,7 @@ class _ResultScreenState extends State<ResultScreen> {
                               Math.tex(
                                 wrongAnswer.userAnswer,
                                 textStyle: TextStyle(
-                                  color:Color(0xFFFF5454), // light red
+                                  color:Color(0xD9FF5454), // light red
                                   fontSize: screenWidth * 0.043,
                                 ),
                               ),
@@ -293,7 +310,7 @@ class _ResultScreenState extends State<ResultScreen> {
                               Math.tex(
                                 wrongAnswer.correctAnswer,
                                 textStyle:  TextStyle(
-                                  color: Color(0xFFA4FF9D),
+                                  color: Color(0xD9A4FF9D),
                                   fontSize: screenWidth * 0.043,
                                 ),
                               ),
@@ -413,7 +430,8 @@ class _ResultScreenState extends State<ResultScreen> {
             onPressed: () {
               Navigator.popUntil(context, (route) => route.isFirst);
             },
-            child: Text('Home', style: TextStyle(fontSize: screenWidth*0.046,color: Colors.white)),
+            child: Text('Home', style: TextStyle(fontSize: screenWidth*0.046,color: Color(
+                0xD9FFFFFF))),
           ),
         ),
       ),

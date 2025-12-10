@@ -765,7 +765,8 @@ void _checkForNewBamboos() async {
                         children:  [
                           Text(
                             'Play Friend',
-                            style: TextStyle(fontSize: screenWidth * 0.053, color: Colors.white,fontWeight: FontWeight.normal),
+                            style: TextStyle(fontSize: screenWidth * 0.053, color: Color(
+                                0xD9FFFFFF),fontWeight: FontWeight.normal),
                           ),
 
                         ],
@@ -797,7 +798,8 @@ void _checkForNewBamboos() async {
                       gradientColors: const [Color(0xFF00FFFF), Color(0xFF006C6C)],
                       child:  Text(
                         'Play Solo',
-                        style: TextStyle(fontSize: screenWidth * 0.053, color: Colors.white,fontWeight: FontWeight.normal),
+                        style: TextStyle(fontSize: screenWidth * 0.053, color: Color(
+                            0xD9FFFFFF),fontWeight: FontWeight.normal),
                       ),
                     ),
 

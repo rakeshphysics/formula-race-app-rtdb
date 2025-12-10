@@ -88,7 +88,7 @@ class _GlowButtonCyanState extends State<GlowButtonCyan> {
               style: TextStyle(
                 fontSize: screenWidth * 0.044,
                 fontWeight: FontWeight.normal,
-                color: Colors.white,
+                  color: Color(0xD9FFFFFF)
               ),
             ),
           ),

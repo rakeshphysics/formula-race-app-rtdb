@@ -39,9 +39,9 @@ class _QRScanScreenState extends State<QRScanScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Scan QR Code', style: TextStyle(color: Colors.white, fontSize: screenWidth*0.042)),
+        title: Text('Scan QR Code', style: TextStyle(color: Color(0xD9FFFFFF), fontSize: screenWidth*0.042)),
         backgroundColor: Colors.black,
-        iconTheme: const IconThemeData(color: Colors.white),
+        iconTheme: const IconThemeData(color: Color(0xD9FFFFFF),),
       ),
       body: Stack(
         children: [
@@ -83,7 +83,7 @@ class _QRScanScreenState extends State<QRScanScreen> {
             child: Text(
               'Align QR code within the frame',
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.white, fontSize: 16),
+              style: TextStyle(color: Color(0xD9FFFFFF), fontSize: 16),
             ),
           ),
         ],

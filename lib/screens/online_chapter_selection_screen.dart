@@ -70,7 +70,7 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
   child: Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Select Chapter', style: TextStyle(fontSize:screenWidth*0.042,color: Colors.white)),
+        title: Text('Select Chapter', style: TextStyle(fontSize:screenWidth*0.042,color: Color(0xD9FFFFFF),)),
         backgroundColor: Colors.black,
       ),
       body: ListView(
@@ -126,7 +126,7 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
                 style:  TextStyle(
                   fontSize: screenWidth*0.041,
                   fontWeight: FontWeight.normal,
-                  color: Colors.white,
+                  color: Color(0xD9FFFFFF),
                 ),
               ),
             ),

@@ -15,6 +15,7 @@ import '../../models/incorrect_answer_model.dart';
 import '../../widgets/glow_button_red.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 
 
@@ -174,7 +175,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
           title: Text(
             'Exit Clear Mistakes ?',
             textAlign: TextAlign.center,
-            style: TextStyle(color: Color(0xFFFFFFFF), fontSize: screenWidth*0.042), // Red title
+            style: TextStyle(color: Color(0xD9FFFFFF), fontSize: screenWidth*0.042), // Red title
           ),
           actionsAlignment: MainAxisAlignment.center,
           actions: [
@@ -193,6 +194,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
                 'Cancel',
                 textAlign: TextAlign.center,
                 style: TextStyle(
+                  color: Color(0xD9FFFFFF),
                   fontSize: screenWidth*0.04,
                   fontWeight: FontWeight.normal,
                 ),
@@ -205,7 +207,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
                 foregroundColor: Colors.white, // White text
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4),
-                  side: BorderSide(color: Color(0xFFFF6F61), width: 1.2), // Red/light red border
+                  side: BorderSide(color: Color(0xD9FF6F61), width: 1.2), // Red/light red border
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               ),
@@ -213,7 +215,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
               child: Text(
                 'Exit',
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: screenWidth*0.04, fontWeight: FontWeight.normal),
+                style: TextStyle(color: Color(0xD9FFFFFF),fontSize: screenWidth*0.04, fontWeight: FontWeight.normal),
               ),
             ),
           ],
@@ -232,7 +234,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title:  Text('Clear Mistakes', style: TextStyle(color: Colors.white, fontSize: screenWidth*0.043)),
+        title:  Text('Clear Mistakes', style: TextStyle(color: Color(0xD9FFFFFF), fontSize: screenWidth*0.043)),
         //iconTheme: const IconThemeData(color: Colors.white),
       ),
 
@@ -265,7 +267,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
             SizedBox(height: MediaQuery.of(context).size.height * 0.01),
             Text(
               'Q${currentIndex + 1} of ${questions.length}',
-              style: TextStyle(color: Colors.white, fontSize: screenWidth*0.044),
+              style: TextStyle(color: Color(0xD9FFFFFF), fontSize: screenWidth*0.044),
             ),
 
             SizedBox(height: MediaQuery.of(context).size.height * 0.005),
@@ -276,7 +278,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
                 "body": Style(
                   fontSize: FontSize(screenWidth * 0.04),
                   fontWeight: FontWeight.normal,
-                  color: Colors.white,
+                  color: Color(0xD9FFFFFF),
                   fontFamily: GoogleFonts.poppins().fontFamily,
                 ),
               },
@@ -300,6 +302,22 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
                   },
                 ),),),
               )
+
+
+            // if (question['image'] != null && question['image'].toString().isNotEmpty)
+            //   Padding(
+            //     padding: const EdgeInsets.symmetric(vertical: 0),
+            //     child: Center(
+            //       child: SizedBox(
+            //         width: screenWidth * 0.6,
+            //         height: (screenWidth * 0.6) / 1.5, // Maintain the same aspect ratio
+            //         child: SvgPicture.asset(
+            //           question['image'], // This path now points to a .svg file
+            //           fit: BoxFit.contain,
+            //         ),
+            //       ),
+            //     ),
+            //   )
               else
               // If no image, use SizedBox.shrink() to take no space
               const SizedBox.shrink(),
@@ -345,7 +363,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
     child: Center(
     child: Math.tex(
     option,
-    textStyle:  TextStyle(color: Colors.white, fontSize: screenWidth * 0.045),
+    textStyle:  TextStyle(color: Color(0xD9FFFFFF), fontSize: screenWidth * 0.045),
     ),
     ),
     ),

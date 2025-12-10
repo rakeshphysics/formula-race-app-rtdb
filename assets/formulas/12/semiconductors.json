@@ -851,7 +851,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_047.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_047.svg",
       "tip": "Less doping inc the depletion width. So more number of photons fall, increasing the electron hole pair generation"
     },
     {

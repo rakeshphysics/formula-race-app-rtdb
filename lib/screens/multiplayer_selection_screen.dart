@@ -37,9 +37,9 @@ class MultiplayerSelectionScreen extends StatelessWidget {
     child: Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Choose Mode', style: TextStyle(color: Colors.white, fontSize: screenWidth*0.042)),
+        title: Text('Choose Mode', style: TextStyle(color: Color(0xD9FFFFFF), fontSize: screenWidth*0.042)),
         backgroundColor: Colors.black,
-        iconTheme: const IconThemeData(color: Colors.white), // For back arrow
+        iconTheme: const IconThemeData(color: Color(0xD9FFFFFF)), // For back arrow
       ),
       body: Center(
         child: Column(
@@ -98,7 +98,7 @@ class MultiplayerSelectionScreen extends StatelessWidget {
                 children: [
                   Text(
                     'Host Match (QR)',
-                    style: TextStyle(fontSize: screenWidth*0.045, color: Colors.white,fontWeight: FontWeight.normal),
+                    style: TextStyle(fontSize: screenWidth*0.045, color: Color(0xD9FFFFFF),fontWeight: FontWeight.normal),
                   ),
                   SizedBox(height: 4),
                   Text(
@@ -137,7 +137,7 @@ class MultiplayerSelectionScreen extends StatelessWidget {
               ),
               child: Text(
                 "Join Match (Scan QR)",
-                style: TextStyle(fontSize: screenWidth*0.045,color: Colors.white, fontWeight: FontWeight.normal)
+                style: TextStyle(fontSize: screenWidth*0.045,color: Color(0xD9FFFFFF), fontWeight: FontWeight.normal)
               ),
             ),
       ),

@@ -18,6 +18,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 import 'package:confetti/confetti.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 //.......START.......Render chapter names Correctly......................
 // String formatChapter(String input) {
@@ -160,7 +161,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         title:  Text('My Mistakes', style: TextStyle(fontSize:screenWidth*0.04,color: Colors.black)),
-        iconTheme: const IconThemeData(color: Colors.white),
+        iconTheme: const IconThemeData(color: Color(0xD9FFFFFF)),
         actions: [
           if (totalActiveMistakes >= 1)
 
@@ -200,7 +201,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                         resolvedCount == 1 // MODIFIED THIS LINE
                             ? "1 Mistake Resolved  🎉"
                             : "$resolvedCount Mistakes Resolved  🎉",
-                        style: TextStyle(color: Colors.white, fontSize:screenWidth*0.044), // Ensure text color is visible
+                        style: TextStyle(color: Color(0xD9FFFFFF), fontSize:screenWidth*0.044), // Ensure text color is visible
                         textAlign: TextAlign.center, // Center the text
                       ),
                       //content: SizedBox(height: screenWidth*0.02),
@@ -211,7 +212,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                         OutlinedButton(
                           onPressed: () => Navigator.pop(context),
                           style: OutlinedButton.styleFrom(
-                            side: BorderSide(color: Colors.red, width: 0.8), // Made border thinner (was 1.5)
+                            side: BorderSide(color: const Color(0xD9FF0000), width: 0.8), // Made border thinner (was 1.5)
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(4.0),
                             ),
@@ -219,7 +220,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                           child:  Text(
                             "OK",
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Color(0xD9FFFFFF),
                               fontSize: screenWidth*0.04,
                             ),
                           ),
@@ -274,7 +275,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
           ? const Center(
         child: Text(
           'No mistakes to show.',
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal, color: Colors.white),
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal, color: Color(0xD9FFFFFF)),
         ),
       )
           : ListView(
@@ -289,7 +290,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
             padding:  EdgeInsets.symmetric(vertical: screenHeight*0.01),
             child: Text(
               'Total active Mistakes: $totalActiveMistakes',
-              style:TextStyle(fontSize: screenWidth*0.043, color: Colors.white, fontWeight: FontWeight.w500),
+              style:TextStyle(fontSize: screenWidth*0.043, color: Color(0xD9FFFFFF), fontWeight: FontWeight.w500),
             ),
           ),
           // -----------------------------------------------------
@@ -368,6 +369,23 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                                         ),
                                       ),),),
                                     ),
+
+                                  // if (formulaEntry['image'] != null && formulaEntry['image'].toString().isNotEmpty)
+                                  //   Padding(
+                                  //     padding: EdgeInsets.only(bottom: screenWidth * 0.02),
+                                  //     child: Center(
+                                  //       child: SizedBox(
+                                  //         width: screenWidth * 0.6,
+                                  //         height: (screenWidth * 0.6) / 1.5, // Maintain the same aspect ratio
+                                  //         child: SvgPicture.asset(
+                                  //           formulaEntry['image'], // This path now correctly points to a .svg
+                                  //           fit: BoxFit.contain,
+                                  //         ),
+                                  //       ),
+                                  //     ),
+                                  //   ),
+
+
                                   Html(
                                     data: 'Q: ${formulaEntry['formula']}',
                                     style: {

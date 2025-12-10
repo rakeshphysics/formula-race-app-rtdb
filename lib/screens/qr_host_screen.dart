@@ -118,9 +118,9 @@ class _QRHostScreenState extends State<QRHostScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title:  Text('Host Match', style: TextStyle(color: Colors.white, fontSize:screenWidth*0.042)),
+        title:  Text('Host Match', style: TextStyle(color: Color(0xD9FFFFFF), fontSize:screenWidth*0.042)),
         backgroundColor: Colors.black,
-        iconTheme: const IconThemeData(color: Colors.white), // For back arrow
+        iconTheme: const IconThemeData(color: Color(0xD9FFFFFF),), // For back arrow
       ),
       body: Center(
         child: Column(
@@ -129,7 +129,7 @@ class _QRHostScreenState extends State<QRHostScreen> {
             Text(
               status,
               textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: 22, color: Colors.white),
+              style: const TextStyle(fontSize: 22, color: Color(0xD9FFFFFF)),
             ),
             const SizedBox(height: 30),
             // Display QR Code
@@ -137,7 +137,7 @@ class _QRHostScreenState extends State<QRHostScreen> {
               data: widget.matchId, // The data encoded in the QR code is the matchId
               version: QrVersions.auto,
               size: 250.0,
-              backgroundColor: Colors.white,
+              backgroundColor: Color(0xD9FFFFFF),
               foregroundColor: Colors.black,
             ),
             const SizedBox(height: 30),
@@ -157,7 +157,7 @@ class _QRHostScreenState extends State<QRHostScreen> {
               ),
               child: Text(
                 "Cancel Match",
-                style: TextStyle(color: Colors.white, fontSize: screenWidth*0.044),
+                style: TextStyle(color: Color(0xD9FFFFFF), fontSize: screenWidth*0.044),
               ),
             ),
           ],

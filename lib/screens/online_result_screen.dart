@@ -289,7 +289,7 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                             style: {
                               "body": Style(
                                 fontSize: FontSize(screenWidth * 0.037),
-                                color: Color(0xFFFFFFFF),
+                                color: Color(0xD9FFFFFF),
                                 fontFamily: GoogleFonts.poppins().fontFamily,
                               ),
                             },
@@ -302,7 +302,7 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                           Text(
                             'Your Answer:',
                             style: GoogleFonts.poppins(
-                              color: Colors.white,
+                              color: Color(0xD9FFFFFF),
                               fontSize: screenWidth*0.037,
                               fontWeight: FontWeight.normal,
                             ),
@@ -311,7 +311,8 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                           Math.tex(
                             qa.userAnswer,
                             textStyle: TextStyle(
-                              color: (qa.userAnswer == qa.correctAnswer) ? Color(0xFFA4FF9D) : Color(0xFFFF5454), // Colors from ResultScreen
+                              color: (qa.userAnswer == qa.correctAnswer) ? Color(
+                                  0xD9A4FF9D) : Color(0xD9FF5454), // Colors from ResultScreen
                               fontSize: screenWidth * 0.043,
                             ),
                           ),
@@ -321,7 +322,7 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                           Text(
                             'Correct Answer:',
                             style: GoogleFonts.poppins(
-                              color: Colors.white,
+                              color: Color(0xD9FFFFFF),
                               fontSize: screenWidth*0.037,
                               fontWeight: FontWeight.normal,
                             ),
@@ -330,7 +331,7 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                           Math.tex(
                             qa.correctAnswer,
                             textStyle:  TextStyle(
-                              color: Color(0xFFA4FF9D), // Green for correct, from ResultScreen
+                              color: Color(0xD9A4FF9D), // Green for correct, from ResultScreen
                               fontSize: screenWidth * 0.043,
                             ),
                           ),
@@ -396,7 +397,7 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                   ),
                   elevation: 8,
                 ),
-                child:  Text('Home', style: TextStyle(fontSize: screenWidth*0.046,color: Colors.white, fontWeight: FontWeight.normal)),
+                child:  Text('Home', style: TextStyle(fontSize: screenWidth*0.046,color: Color(0xD9FFFFFF), fontWeight: FontWeight.normal)),
               ),
             ),
     ),

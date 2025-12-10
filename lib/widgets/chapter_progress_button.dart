@@ -48,7 +48,7 @@ class ChapterProgressButton extends StatelessWidget {
           color: const Color(0xB3001E1E), // Background color for the unfilled part
           borderRadius: BorderRadius.circular(4),
           border: Border.all(
-            color: Colors.cyanAccent, // Outer border of the button
+            color: Colors.cyanAccent.withOpacity(0.85), // Outer border of the button
             width: 1,
           ),
         ),
@@ -81,7 +81,7 @@ class ChapterProgressButton extends StatelessWidget {
                   style:  TextStyle(
                     fontSize: screenWidth*0.041,
                     fontWeight: FontWeight.normal,
-                    color: Colors.white,
+                      color: Color(0xD9FFFFFF)
                   ),
                 ),
               ),

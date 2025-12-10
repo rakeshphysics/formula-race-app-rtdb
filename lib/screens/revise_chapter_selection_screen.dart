@@ -38,9 +38,9 @@ class _ReviseChapterSelectionScreenState extends State<ReviseChapterSelectionScr
       backgroundColor: Colors.black,
       appBar: AppBar(
         // 5. UPDATED AppBar to be more generic and have a back button by default
-        title: Text('Select Chapter to Revise', style: TextStyle(fontSize: screenWidth * 0.042, color: Colors.white)),
+        title: Text('Select Chapter to Revise', style: TextStyle(fontSize: screenWidth * 0.042, color: Color(0xD9FFFFFF))),
         backgroundColor: Colors.black,
-        iconTheme: const IconThemeData(color: Colors.white), // Ensure back arrow is white
+        iconTheme: const IconThemeData(color: Color(0xD9FFFFFF)), // Ensure back arrow is white
       ),
       body: SafeArea(
         child: quizProvider.isLoading

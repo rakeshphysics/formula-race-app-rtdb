@@ -400,13 +400,13 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           // APPLY ALERTDIALOG STYLING (Amber Theme)
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(4),
-            side: const BorderSide(color: Color(0xFFFFA500), width: 1.2), // Amber border
+            side: const BorderSide(color: Color(0xD9FFA500), width: 1.2), // Amber border
           ),
           backgroundColor: const Color(0xFF000000), // Semi-transparent black background
           title: Text(
             'Opponent wins if you exit', // Changed from 'Exit Solo Play?'
             textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white, fontSize: screenWidth*0.042),
+            style: TextStyle(color: Color(0xD9FFFFFF), fontSize: screenWidth*0.042),
           ),
           // content: const Text(
           //   'Opponent wins if you exit. Are you sure?', // Your specific content
@@ -423,7 +423,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                 foregroundColor: Colors.white, // White text color
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4),
-                  side: const BorderSide(color: Color(0xFFCC8400), width: 1.2), // Darker amber border
+                  side: const BorderSide(color: Color(0xD9CC8400), width: 1.2), // Darker amber border
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               ),
@@ -434,6 +434,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                 'Cancel',
                 textAlign: TextAlign.center,
                 style: TextStyle(
+                  color: Color(0xD9FFFFFF),
                   fontSize: screenWidth*0.04,
                   fontWeight: FontWeight.normal,
                 ),
@@ -458,7 +459,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
               child:  Text(
                 'Exit',
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: screenWidth*0.04, fontWeight: FontWeight.normal),
+                style: TextStyle(fontSize: screenWidth*0.04, fontWeight: FontWeight.normal,color: Color(0xD9FFFFFF)),
               ),
             ),
           ],
@@ -1283,7 +1284,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                     child: LinearProgressIndicator(
                       value: value,
                       backgroundColor: Colors.grey.shade800,
-                      color: Color(0xFFFFA500),
+                      color: Color(0xD9FFA500),
                       minHeight: 6,
                     ),
                   ),
@@ -1295,7 +1296,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
               alignment: Alignment.centerLeft,
               child: Text(
                 'Q${currentQuestionIndex + 1} of $totalQuestions',
-                style:  TextStyle(fontSize:screenWidth*0.044, color: Colors.white),
+                style:  TextStyle(fontSize:screenWidth*0.044, color: Color(0xD9FFFFFF)),
               ),
             ),
             //const SizedBox(height: 24),
@@ -1308,7 +1309,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                 "body": Style(
                   fontSize: FontSize(screenWidth * 0.04),
                   fontWeight: FontWeight.normal,
-                  color: Colors.white,
+                  color: Color(0xD9FFFFFF),
                   fontFamily: GoogleFonts.poppins().fontFamily,
                 ),
               },

@@ -25,6 +25,7 @@ import '../quiz_data_provider.dart';
 import 'package:confetti/confetti.dart';
 import '../../services/database_helper.dart';
 import '../../models/practice_attempt.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 // ............. Chunk 1 SOLO SCREEN WIDGET .............
 const Map<String, String> chapterToClass = {
@@ -367,50 +368,205 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 
 
   // ............. Chunk 4 CHECK ANSWER .............
+//   Future<void> checkAnswer(String selected) async {
+//     final question = questions[currentIndex];
+//     final String correctAnswer = question['answer'];
+//     //print('DEBUG → MistakeTracker: question="${question['question']}", formula="${question['answer']}", chapter="${question['tags']?['chapter'] ?? ''}"');
+//
+//     final bool wasCorrect = selected == correctAnswer;
+//
+//     final attempt = PracticeAttempt(
+//       userId: widget.userId,
+//       questionId: question['id'],
+//       wasCorrect: wasCorrect, // This is the key part
+//       topic: question['tags']['chapter'] ?? 'Unknown',
+//       timestamp: DateTime.now(),
+//     );
+//     await DatabaseHelper.instance.addAttempt(attempt);
+//     //await DatabaseHelper.instance.printAllAttempts();
+//
+//     if (selected == correctAnswer) {
+//       score++;
+//       _consecutiveCorrectAnswers++; // Increment counter
+//       // TRACK CORRECT
+//      // MistakeTrackerService.trackCorrect(
+//         //userId: 'test_user',  // use real userId when ready
+//        // questionData: questions[currentIndex],
+//       //);
+//     } else if (selected != '') {
+//       _consecutiveCorrectAnswers = 0;
+//       // User clicked wrong answer
+//       wrongAnswers.add(
+//         IncorrectAnswer(
+//           question: question['question'],
+//           userAnswer: selected,
+//           correctAnswer: correctAnswer,
+//           tip: question['tip'] ?? '',
+//           imagePath: question['image'] ?? '',
+//         ),
+//       );
+//
+//       // TRACK MISTAKE
+//       await MistakeTrackerService.trackMistake(
+//         userId: 'test_user',
+//         questionData: {
+//           ...question,
+//           'answer': question['answer'], //
+//           'image': question['image'] ?? '',
+//           'tags': {
+//             ...?question['tags'],
+//             'chapter': question['tags']?['chapter'] ?? 'misc',
+//             'difficulty': question['tags']?['difficulty'] ?? '',
+//             'class': question['tags']?['class'] ?? '',
+//           },
+//         },
+//       );
+//
+//
+//
+//       //print('🔍 Saving mistake: ${question['question']} → image: ${question['image']}');
+//
+//       //print('Mistake saved for question: ${questions[currentIndex]['question']}');
+//
+//     } else {
+//       _consecutiveCorrectAnswers = 0;
+//       // User skipped → count as wrong
+//       wrongAnswers.add(
+//         IncorrectAnswer(
+//           question: question['question'],
+//           userAnswer: '(No Answer)',
+//           correctAnswer: correctAnswer,
+//           tip: question['tip'] ?? '',
+//           imagePath: question['image'] ?? '',
+//         ),
+//       );
+//
+//       setState(() {
+//         showCorrectAnswerOnTimeout = true;
+//       });
+//
+//       await Future.delayed(const Duration(milliseconds: 700));
+//
+//       setState(() {
+//         showCorrectAnswerOnTimeout = false;
+//       });
+//
+//       // TRACK MISTAKE
+//       await MistakeTrackerService.trackMistake(
+//         userId: 'test_user',
+//         questionData: {
+//           'question': question['question'],
+//           'answer': question['answer'],
+//           'options': question['options'],
+//           'chapter': question['tags']?['chapter'] ?? 'Unknown',
+//
+//         },
+//       );
+//       //print('Mistake saved for question: ${questions[currentIndex]['question']}');
+//     }
+//
+//     responses.add({
+//       'question': question['question'],
+//       'selected': selected == '' ? '(No Answer)' : selected,
+//       'correct': correctAnswer,
+//     });
+//
+//     setState(() {
+//       selectedOption = selected;
+//     });
+//
+// // Check for confetti condition and apply delay
+//     if (_consecutiveCorrectAnswers >= 6) {
+//      // _confettiController.play();
+//       await Future.delayed(const Duration(seconds: 1)); // Wait 2 seconds for confetti
+//       //_confettiController.stop();
+//       _consecutiveCorrectAnswers = 0;
+//     } else {
+//       // Standard delay to show the answer before moving on
+//       await Future.delayed(const Duration(milliseconds: 400));
+//     }
+//
+//     if (currentIndex < totalQuestions - 1) {
+//       setState(() {
+//         currentIndex++;
+//         selectedOption = null;
+//         shuffledOptions = [];
+//       });
+//
+//       // Restart progress bar for next question
+//       _progressController.reset();
+//       _progressController.forward();
+//     } else {
+//       Navigator.push(
+//         context,
+//         MaterialPageRoute(
+//           builder: (context) => ResultScreen(
+//             incorrectAnswers: wrongAnswers,
+//             mode: widget.selectedChapter,
+//             responses: responses,
+//           ),
+//           settings: RouteSettings(arguments: totalQuestions), // pass total qns here
+//         ),
+//       );
+//     }
+//   }
+
+
+  // ............. Chunk 4 CHECK ANSWER .............
   Future<void> checkAnswer(String selected) async {
+    // Stop the timer as soon as an answer is processed (either by tap or timeout)
+    _progressController.stop();
+
     final question = questions[currentIndex];
     final String correctAnswer = question['answer'];
-    //print('DEBUG → MistakeTracker: question="${question['question']}", formula="${question['answer']}", chapter="${question['tags']?['chapter'] ?? ''}"');
-
     final bool wasCorrect = selected == correctAnswer;
+    final bool timedOut = selected.isEmpty;
 
+    // --- State Update for UI ---
+    // This single setState call now handles all UI changes for showing the result.
+    setState(() {
+      // If timed out, we need to pretend the correct answer was selected for UI purposes.
+      // Otherwise, use the actual selection. This fixes the border color issue.
+      selectedOption = timedOut ? correctAnswer : selected;
+
+      // This flag is now redundant because we handle the timeout case by setting selectedOption,
+      // but we will keep the logic clean.
+      if (timedOut) {
+        showCorrectAnswerOnTimeout = true;
+      }
+    });
+
+    // --- Sound and Database Logic ---
     final attempt = PracticeAttempt(
       userId: widget.userId,
       questionId: question['id'],
-      wasCorrect: wasCorrect, // This is the key part
+      wasCorrect: wasCorrect,
       topic: question['tags']['chapter'] ?? 'Unknown',
       timestamp: DateTime.now(),
     );
     await DatabaseHelper.instance.addAttempt(attempt);
-    //await DatabaseHelper.instance.printAllAttempts();
 
-    if (selected == correctAnswer) {
+    if (wasCorrect) {
       score++;
-      _consecutiveCorrectAnswers++; // Increment counter
-      // TRACK CORRECT
-     // MistakeTrackerService.trackCorrect(
-        //userId: 'test_user',  // use real userId when ready
-       // questionData: questions[currentIndex],
-      //);
-    } else if (selected != '') {
+      _consecutiveCorrectAnswers++;
+    } else {
       _consecutiveCorrectAnswers = 0;
-      // User clicked wrong answer
       wrongAnswers.add(
         IncorrectAnswer(
           question: question['question'],
-          userAnswer: selected,
+          userAnswer: timedOut ? '(No Answer)' : selected,
           correctAnswer: correctAnswer,
           tip: question['tip'] ?? '',
           imagePath: question['image'] ?? '',
         ),
       );
 
-      // TRACK MISTAKE
+      // TRACK MISTAKE (for both wrong answers and timeouts)
       await MistakeTrackerService.trackMistake(
         userId: 'test_user',
         questionData: {
           ...question,
-          'answer': question['answer'], //
+          'answer': question['answer'],
           'image': question['image'] ?? '',
           'tags': {
             ...?question['tags'],
@@ -420,83 +576,32 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           },
         },
       );
-
-
-
-      //print('🔍 Saving mistake: ${question['question']} → image: ${question['image']}');
-
-      //print('Mistake saved for question: ${questions[currentIndex]['question']}');
-
-    } else {
-      _consecutiveCorrectAnswers = 0;
-      // User skipped → count as wrong
-      wrongAnswers.add(
-        IncorrectAnswer(
-          question: question['question'],
-          userAnswer: '(No Answer)',
-          correctAnswer: correctAnswer,
-          tip: question['tip'] ?? '',
-          imagePath: question['image'] ?? '',
-        ),
-      );
-
-      setState(() {
-        showCorrectAnswerOnTimeout = true;
-      });
-
-      await Future.delayed(const Duration(milliseconds: 700));
-
-      setState(() {
-        showCorrectAnswerOnTimeout = false;
-      });
-
-      // TRACK MISTAKE
-      await MistakeTrackerService.trackMistake(
-        userId: 'test_user',
-        questionData: {
-          'question': question['question'],
-          'answer': question['answer'],
-          'options': question['options'],
-          'chapter': question['tags']?['chapter'] ?? 'Unknown',
-
-        },
-      );
-      //print('Mistake saved for question: ${questions[currentIndex]['question']}');
     }
 
     responses.add({
       'question': question['question'],
-      'selected': selected == '' ? '(No Answer)' : selected,
+      'selected': timedOut ? '(No Answer)' : selected,
       'correct': correctAnswer,
     });
 
-    setState(() {
-      selectedOption = selected;
-    });
+    // --- Controlled Delay and Transition ---
+    // A single, clear delay to show the result before moving on.
+    // Increased slightly to make the answer review clear.
+    await Future.delayed(const Duration(milliseconds: 900));
 
-// Check for confetti condition and apply delay
-    if (_consecutiveCorrectAnswers >= 6) {
-     // _confettiController.play();
-      await Future.delayed(const Duration(seconds: 1)); // Wait 2 seconds for confetti
-      //_confettiController.stop();
-      _consecutiveCorrectAnswers = 0;
-    } else {
-      // Standard delay to show the answer before moving on
-      await Future.delayed(const Duration(milliseconds: 400));
-    }
-
+    // --- Move to Next Question or Results ---
     if (currentIndex < totalQuestions - 1) {
       setState(() {
         currentIndex++;
-        selectedOption = null;
+        selectedOption = null; // Reset for the new question
         shuffledOptions = [];
+        showCorrectAnswerOnTimeout = false; // Reset the timeout flag
       });
-
-      // Restart progress bar for next question
       _progressController.reset();
       _progressController.forward();
     } else {
-      Navigator.push(
+      // Use pushReplacement to prevent user from going back to the quiz
+      Navigator.pushReplacement(
         context,
         MaterialPageRoute(
           builder: (context) => ResultScreen(
@@ -504,12 +609,11 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
             mode: widget.selectedChapter,
             responses: responses,
           ),
-          settings: RouteSettings(arguments: totalQuestions), // pass total qns here
+          settings: RouteSettings(arguments: totalQuestions),
         ),
       );
     }
   }
-
   // ............. Chunk 5 OPTION COLOR LOGIC .............
   Color getOptionColor(String option) {
     if (selectedOption == null) {
@@ -565,7 +669,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
             child: LinearProgressIndicator(
               value: value,
               backgroundColor: Colors.grey.shade800,
-              color: Colors.cyanAccent,
+              color: const Color(0xD918FFFF),
               minHeight: 6,
             ),
           ),
@@ -607,7 +711,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
             backgroundColor: Color(0xFF000000),
             title: Text(
               'Exit Solo Play?',textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.white,fontSize: screenWidth * 0.042),
+              style: TextStyle(color: const Color(0xD9FFFFFF),fontSize: screenWidth * 0.042),
             ),
             actionsAlignment: MainAxisAlignment.center,
 
@@ -626,7 +730,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                 child:  Text(
                   'Cancel',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
+                  style: TextStyle(color: const Color(0xD9FFFFFF),
                     fontSize: screenWidth*0.04,
                     fontWeight: FontWeight.normal,
                   ),
@@ -646,7 +750,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                 child:  Text(
                   'Exit',
                   textAlign: TextAlign.center,
-                  style: TextStyle( fontSize: screenWidth*0.04, fontWeight: FontWeight.normal),
+                  style: TextStyle( color: const Color(0xD9FFFFFF),fontSize: screenWidth*0.04, fontWeight: FontWeight.normal),
                 ),
               ),
             ],
@@ -698,7 +802,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                 SizedBox(height: screenWidth * 0.025),
                 Text(
                   'Q${currentIndex + 1} of $totalQuestions',
-                  style:  TextStyle(color: Colors.white, fontSize: screenWidth * 0.044),
+                  style:  TextStyle(color: const Color(0xD9FFFFFF), fontSize: screenWidth * 0.044),
                 ),
                // SizedBox(height: screenWidth * 0.02),
 
@@ -710,7 +814,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                       //fontSize: FontSize(16),
                       fontSize: FontSize(screenWidth * 0.04),
                       fontWeight: FontWeight.normal,
-                      color: Colors.white,
+                      color: const Color(0xD9FFFFFF),
                       fontFamily: GoogleFonts.poppins().fontFamily,
                     ),
                   },
@@ -731,6 +835,27 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                       ),
                     ),
                   )
+///////  SVG NEW CODE START....................................
+//                   Container(
+//                     margin: const EdgeInsets.symmetric(vertical: 0),
+//                     child: Center(
+//                       child: SizedBox(
+//                         width: screenWidth * 0.6,
+//                         height: (screenWidth * 0.6) / 1.5, // Maintain the same aspect ratio
+//                         child: Opacity(
+//                           opacity: 0.85, // Apply 85% opacity
+//                           child: SvgPicture.asset(
+//                             question['image'], // Directly use the .svg path from your JSON
+//                             fit: BoxFit.contain,
+//                             // This makes the SVG's vector shapes white.
+//                             // Crucial for visibility on a dark theme.
+//                             //colorFilter: const ColorFilter.mode(Colors.white, BlendMode.srcIn),
+//                           ),
+//                         ),
+//                       ),
+//                     ),
+//                   )
+///////  SVG NEW CODE END....................................
                 else
                 // ✨ CHANGE THIS LINE: If no image, use SizedBox.shrink() to take no space ✨
                   const SizedBox.shrink(), // No image, no gap!
@@ -744,11 +869,13 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                     physics: const BouncingScrollPhysics(),
                     child: Column(
                       children: shuffledOptions.map((option) {
+                        final questionId = questions[currentIndex]['id'] ?? currentIndex;
                         return Padding(
                           padding: EdgeInsets.symmetric(
                             vertical:  screenHeight * 0.001,
                           ),
                           child: FormulaOptionButton(
+                            key: ValueKey('$questionId-$option'),
                             text: option,
                             onPressed: selectedOption == null
                                 ? () {
