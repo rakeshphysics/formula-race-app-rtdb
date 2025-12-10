@@ -54,11 +54,11 @@ class _ReviseChapterSelectionScreenState extends State<ReviseChapterSelectionScr
                 padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF1E1E1E),
+                    backgroundColor: const Color(0x1A00FFFF),
                     minimumSize: const Size(double.infinity, 60),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                      side: const BorderSide(color: Colors.cyan, width: 1),
+                      borderRadius: BorderRadius.circular(4),
+                      side:  BorderSide(color: const Color(0x9900FFFF), width: 1),
                     ),
                   ),
                   onPressed: () {
@@ -74,7 +74,7 @@ class _ReviseChapterSelectionScreenState extends State<ReviseChapterSelectionScr
                   },
                   child: Text(
                     chapter,
-                    style: const TextStyle(color: Colors.white, fontSize: 16),
+                    style: const TextStyle(color: Color(0xD9FFFFFF), fontSize: 16),
                   ),
                 ),
               ),
