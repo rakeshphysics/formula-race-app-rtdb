@@ -14,7 +14,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_001.png",
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_001.svg",
     "tip": ""
   },
   {
@@ -32,7 +32,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_002.png",
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_002.svg",
     "tip": ""
   },
   {
@@ -50,7 +50,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_003.png",
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_003.svg",
     "tip": ""
   },
   {
@@ -68,7 +68,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_004.png",
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_004.svg",
     "tip": ""
   },
   {
@@ -86,7 +86,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_005.png",
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_005.svg",
     "tip": ""
   },
   {
@@ -104,7 +104,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_006.png",
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_006.svg",
     "tip": ""
   },
   {
@@ -122,7 +122,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_007.png",
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_007.svg",
     "tip": ""
   },
   {
@@ -140,7 +140,7 @@
       "difficulty": "god",
       "class": "11"
     },
-    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_008.png",
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_008.svg",
     "tip": ""
   },
   {
@@ -158,7 +158,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_009.png",
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_009.svg",
     "tip": ""
   },
   {
@@ -176,7 +176,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_010.png",
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_010.svg",
     "tip": ""
   },
 
@@ -195,7 +195,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_011.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_011.svg",
       "tip": ""
     },
     {
@@ -213,7 +213,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_012.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_012.svg",
       "tip": ""
     },
     {
@@ -231,7 +231,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_013.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_013.svg",
       "tip": ""
     },
     {
@@ -249,7 +249,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_014.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_014.svg",
       "tip": ""
     },
     {
@@ -267,7 +267,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_015.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_015.svg",
       "tip": ""
     },
     {
@@ -285,7 +285,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_016.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_016.svg",
       "tip": ""
     },
     {
@@ -303,7 +303,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_017.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_017.svg",
       "tip": ""
     },
     {
@@ -321,7 +321,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_018.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_018.svg",
       "tip": ""
     },
     {
@@ -339,7 +339,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_019.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_019.svg",
       "tip": ""
     },
     {
@@ -357,7 +357,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_020.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_020.svg",
       "tip": ""
     },
 
@@ -376,7 +376,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_021.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_021.svg",
       "tip": ""
     },
     {
@@ -394,7 +394,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_022.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_022.svg",
       "tip": ""
     },
     {
@@ -412,7 +412,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_023.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_023.svg",
       "tip": ""
     },
     {
@@ -430,7 +430,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_024.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_024.svg",
       "tip": ""
     },
   {
@@ -448,7 +448,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_025.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_025.svg",
       "tip": ""
     },
     {
@@ -466,7 +466,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_026.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_026.svg",
       "tip": ""
     },
     {
@@ -484,7 +484,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_027.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_027.svg",
       "tip": ""
     },
     {
@@ -502,7 +502,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_028.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_028.svg",
       "tip": ""
     },
     {
@@ -520,7 +520,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_029.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_029.svg",
       "tip": ""
     },
     {
@@ -538,7 +538,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_030.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_030.svg",
       "tip": ""
     },
 
@@ -630,7 +630,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_035.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_035.svg",
       "tip": ""
     },
     {
@@ -648,7 +648,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_036.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_036.svg",
       "tip": ""
     },
     {
@@ -666,7 +666,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_037.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_037.svg",
       "tip": ""
     },
     {
@@ -684,7 +684,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_038.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_038.svg",
       "tip": ""
     },
     {
@@ -702,7 +702,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_039.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_039.svg",
       "tip": ""
     },
     {
@@ -720,7 +720,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_040.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_040.svg",
       "tip": ""
     },
 
@@ -866,7 +866,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_048.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_048.svg",
       "tip": ""
     },
     {
@@ -902,7 +902,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_050.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_050.svg",
       "tip": ""
     },
 
@@ -921,7 +921,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_051.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_051.svg",
       "tip": ""
     },
     {
@@ -957,7 +957,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_053.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_053.svg",
       "tip": ""
     },
     {
@@ -993,7 +993,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_055.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_055.svg",
       "tip": ""
     },
 
@@ -1030,7 +1030,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_057.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_057.svg",
       "tip": ""
     },
     {
@@ -1048,7 +1048,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_058.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_058.svg",
       "tip": ""
     },
     {
@@ -1066,7 +1066,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_059.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_059.svg",
       "tip": ""
     },
 
@@ -1085,7 +1085,7 @@
       "difficulty": "god",
       "class": "11"
     },
-    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_060.png",
+    "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_060.svg",
     "tip": ""
   }
 

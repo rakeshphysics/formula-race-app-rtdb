@@ -14,7 +14,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "assets/images/11th/Vectors/Vectors_qn_001.png",
+    "image": "assets/images/11th/Vectors/Vectors_qn_001.svg",
     "tip": ""
   },
   {
@@ -68,7 +68,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "assets/images/11th/Vectors/Vectors_qn_004.png",
+    "image": "assets/images/11th/Vectors/Vectors_qn_004.svg",
     "tip": ""
   },
   {
@@ -86,7 +86,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/Vectors/Vectors_qn_005.png",
+    "image": "assets/images/11th/Vectors/Vectors_qn_005.svg",
     "tip": ""
   },
 
@@ -105,7 +105,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_006.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_006.svg",
       "tip": ""
     },
     {
@@ -123,7 +123,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_007.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_007.svg",
       "tip": ""
     },
     {
@@ -286,7 +286,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_016.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_016.svg",
       "tip": ""
     },
     {
@@ -304,7 +304,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_017.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_017.svg",
       "tip": ""
     },
     {
@@ -466,7 +466,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_026.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_026.svg",
       "tip": ""
     },
     {
@@ -484,7 +484,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_027.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_027.svg",
       "tip": ""
     },
     {
@@ -502,7 +502,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_028.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_028.svg",
       "tip": ""
     },
     {
@@ -520,7 +520,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_029.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_029.svg",
       "tip": ""
     },
     {
@@ -538,7 +538,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_030.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_030.svg",
       "tip": ""
     }
 
