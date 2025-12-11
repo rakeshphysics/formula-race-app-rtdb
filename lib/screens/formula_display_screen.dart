@@ -14,8 +14,9 @@ class Formula {
   final String id;
   final Map<String, dynamic> data;
   bool isPinned;
+  bool isBookmarked;
 
-  Formula({required this.id, required this.data, this.isPinned = false});
+  Formula({required this.id, required this.data, this.isPinned = false, this.isBookmarked = false});
 }
 
 class FormulaDisplayScreen extends StatefulWidget {
@@ -31,13 +32,17 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
   List<Formula> _allFormulas = [];
   List<Formula> _sortedFormulas = [];
   bool _isLoading = true;
-  late final String _prefsKey;
+  late final String _prefsPinKey; // Rename this from _prefsKey
+  late final String _prefsBookmarkKey;
 
   @override
   void initState() {
     super.initState();
-    _prefsKey =
-    'pinned_formulas_${widget.chapterName.toLowerCase().replaceAll(" ", "_")}';
+    // Generate unique keys for pin and bookmark states per chapter
+    final chapterKey = widget.chapterName.toLowerCase().replaceAll(" ", "_");
+    _prefsPinKey = 'pinned_formulas_$chapterKey';
+    _prefsBookmarkKey = 'bookmarked_formulas_$chapterKey'; // Add this line
+
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _loadFormulas();
     });
@@ -49,13 +54,16 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
     _sortedFormulas = [...pinned, ...unpinned];
   }
 
+  // In _FormulaDisplayScreenState class
+
   Future<void> _loadFormulas() async {
     final quizProvider =
     Provider.of<QuizDataProvider>(context, listen: false);
     final chapterFile =
     widget.chapterName.toLowerCase().replaceAll(" ", "_");
     final prefs = await SharedPreferences.getInstance();
-    final pinnedIds = prefs.getStringList(_prefsKey) ?? [];
+    final pinnedIds = prefs.getStringList(_prefsPinKey) ?? [];
+    final bookmarkedIds = prefs.getStringList(_prefsBookmarkKey) ?? []; // Add this line
 
     if (quizProvider.allQuizData.containsKey(chapterFile)) {
       final List<dynamic> questions = quizProvider.allQuizData[chapterFile];
@@ -66,6 +74,7 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
           id: id,
           data: q,
           isPinned: pinnedIds.contains(id),
+          isBookmarked: bookmarkedIds.contains(id), // Add this line
         );
       }).toList();
 
@@ -89,8 +98,24 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
     final prefs = await SharedPreferences.getInstance();
     final List<String> pinnedIds =
     _allFormulas.where((f) => f.isPinned).map((f) => f.id).toList();
-    await prefs.setStringList(_prefsKey, pinnedIds);
+    await prefs.setStringList(_prefsPinKey, pinnedIds);
   }
+
+
+  Future<void> _toggleBookmark(Formula formula) async {
+    setState(() {
+      formula.isBookmarked = !formula.isBookmarked;
+      // No sorting is needed, just a state update
+    });
+
+    final prefs = await SharedPreferences.getInstance();
+    final List<String> bookmarkedIds = _allFormulas
+        .where((f) => f.isBookmarked)
+        .map((f) => f.id)
+        .toList();
+    await prefs.setStringList(_prefsBookmarkKey, bookmarkedIds);
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -182,6 +207,21 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
                   //   ),
                   // ),
 
+                  // Padding(
+                  //   padding:
+                  //   EdgeInsets.only(bottom: screenWidth * 0.02),
+                  //   child: Center(
+                  //     child: SizedBox(
+                  //       width: screenWidth * 0.6,
+                  //       height: (screenWidth * 0.6) / 1.5,
+                  //       child: Image.asset( // <-- Changed from SvgPicture.asset
+                  //         questionData['image'],
+                  //         fit: BoxFit.contain,
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
+
                   Padding(
                     padding:
                     EdgeInsets.only(bottom: screenWidth * 0.02),
@@ -189,7 +229,15 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
                       child: SizedBox(
                         width: screenWidth * 0.6,
                         height: (screenWidth * 0.6) / 1.5,
-                        child: Image.asset( // <-- Changed from SvgPicture.asset
+                        child: questionData['image'].endsWith('.svg')
+                            ? Opacity(
+                          opacity: 0.85, // Apply 85% opacity
+                          child: SvgPicture.asset(
+                            questionData['image'],
+                            fit: BoxFit.contain,
+                          ),
+                        )
+                            : Image.asset(
                           questionData['image'],
                           fit: BoxFit.contain,
                         ),
@@ -266,6 +314,23 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
                 size: 20,
               ),
               onPressed: () => _togglePin(formula),
+            ),
+          ),
+
+          Positioned(
+            top: 28, // Position it below the pin icon
+            right: -8,
+            child: IconButton(
+              icon: Icon(
+                formula.isBookmarked
+                    ? Icons.bookmark // Filled icon when bookmarked
+                    : Icons.bookmark_border, // Outline icon when not
+                color: formula.isBookmarked
+                    ? Colors.amber.shade700 // Highlight color
+                    : Colors.grey,
+                size: 20,
+              ),
+              onPressed: () => _toggleBookmark(formula),
             ),
           ),
         ],

@@ -821,20 +821,20 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                 ),
                 SizedBox(height: screenWidth * 0.03),
 
-                if (question['image'] != null && question['image'] != "")
-                  Container(
-                    margin: const EdgeInsets.symmetric(vertical: 0),
-                    child: Center(
-                      child: SizedBox(
-                        width: screenWidth * 0.6,
-                        height: (screenWidth * 0.6) / 1.5, // Calculated height to maintain aspect ratio
-                        child: Image.asset(
-                          question['image'],
-                          fit: BoxFit.contain,
-                        ),
-                      ),
-                    ),
-                  )
+                // if (question['image'] != null && question['image'] != "")
+                //   Container(
+                //     margin: const EdgeInsets.symmetric(vertical: 0),
+                //     child: Center(
+                //       child: SizedBox(
+                //         width: screenWidth * 0.6,
+                //         height: (screenWidth * 0.6) / 1.5, // Calculated height to maintain aspect ratio
+                //         child: Image.asset(
+                //           question['image'],
+                //           fit: BoxFit.contain,
+                //         ),
+                //       ),
+                //     ),
+                //   )
 ///////  SVG NEW CODE START....................................
 //                   Container(
 //                     margin: const EdgeInsets.symmetric(vertical: 0),
@@ -855,6 +855,33 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 //                       ),
 //                     ),
 //                   )
+
+                if (question['image'] != null && question['image'] != "")
+                  Container(
+                    margin: const EdgeInsets.symmetric(vertical: 0),
+                    child: Center(
+                      child: SizedBox(
+                        width: screenWidth * 0.6,
+                        height: (screenWidth * 0.6) /
+                            1.5, // Calculated height to maintain aspect ratio
+                        child: question['image'].endsWith('.svg')
+                            ? Opacity(
+                          opacity: 0.85, // Apply 85% opacity
+                          child: SvgPicture.asset(
+                            question['image'], // Directly use the .svg path
+                            fit: BoxFit.contain,
+                            // The colorFilter below is useful for making SVGs visible on dark themes
+                            // by coloring their vector shapes. Uncomment if your SVGs are not visible.
+                            // colorFilter: const ColorFilter.mode(Colors.white, BlendMode.srcIn),
+                          ),
+                        )
+                            : Image.asset(
+                          question['image'], // Use for .png, .jpg, etc.
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                    ),
+                  )
 ///////  SVG NEW CODE END....................................
                 else
                 // ✨ CHANGE THIS LINE: If no image, use SizedBox.shrink() to take no space ✨

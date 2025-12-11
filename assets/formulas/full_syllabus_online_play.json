@@ -14,7 +14,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_001.png",
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_001.svg",
     "tip": ""
   },
   {
@@ -32,7 +32,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_002.png",
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_002.svg",
     "tip": ""
   },
   {
@@ -50,7 +50,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_003.png",
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_003.svg",
     "tip": ""
   },
   {
@@ -68,7 +68,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_004.png",
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_004.svg",
     "tip": ""
   },
   {
@@ -86,7 +86,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_005.png",
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_005.svg",
     "tip": ""
   },
   {
@@ -104,7 +104,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_006.png",
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_006.svg",
     "tip": ""
   },
 
@@ -196,7 +196,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_011.png",
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_011.svg",
     "tip": ""
   },
   {
@@ -214,7 +214,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_012.png",
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_012.svg",
     "tip": ""
   },
   {
@@ -232,7 +232,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_013.png",
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_013.svg",
     "tip": ""
   },
   {
@@ -250,7 +250,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_014.png",
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_014.svg",
     "tip": ""
   },
   {
@@ -268,7 +268,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_015.png",
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_015.svg",
     "tip": ""
   },
 
@@ -287,7 +287,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_016.png",
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_016.svg",
     "tip": ""
   },
   {
@@ -305,7 +305,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_017.png",
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_017.svg",
     "tip": ""
   },
   {
@@ -323,7 +323,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_018.png",
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_018.svg",
     "tip": ""
   },
   {
@@ -341,7 +341,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_019.png",
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_019.svg",
     "tip": ""
   },
   {
@@ -359,7 +359,7 @@
       "difficulty": "god",
       "class": "11"
     },
-    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_020.png",
+    "image": "assets/images/11th/center_of_mass/center_of_mass_qn_020.svg",
     "tip": ""
   },
 
@@ -523,7 +523,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/circular_motion/circular_motion_qn_009.png",
+      "image": "assets/images/11th/circular_motion/circular_motion_qn_009.svg",
       "tip": ""
     },
     {
@@ -541,7 +541,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/circular_motion/circular_motion_qn_010.png",
+      "image": "assets/images/11th/circular_motion/circular_motion_qn_010.svg",
       "tip": ""
     },
 
@@ -560,7 +560,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/elasticity/elasticity_qn_001.png",
+      "image": "assets/images/11th/elasticity/elasticity_qn_001.svg",
       "tip": ""
     },
     {
@@ -578,7 +578,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/elasticity/elasticity_qn_002.png",
+      "image": "assets/images/11th/elasticity/elasticity_qn_002.svg",
       "tip": ""
     },
     {
@@ -596,7 +596,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/elasticity/elasticity_qn_003.png",
+      "image": "assets/images/11th/elasticity/elasticity_qn_003.svg",
       "tip": ""
     },
     {
@@ -688,7 +688,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/elasticity/elasticity_qn_008.png",
+      "image": "assets/images/11th/elasticity/elasticity_qn_008.svg",
       "tip": ""
     },
     {
@@ -724,7 +724,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/elasticity/elasticity_qn_010.png",
+      "image": "assets/images/11th/elasticity/elasticity_qn_010.svg",
       "tip": ""
     },
 
@@ -743,7 +743,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/elasticity/elasticity_qn_011.png",
+      "image": "assets/images/11th/elasticity/elasticity_qn_011.svg",
       "tip": ""
     },
     {
@@ -761,7 +761,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/elasticity/elasticity_qn_012.png",
+      "image": "assets/images/11th/elasticity/elasticity_qn_012.svg",
       "tip": ""
     },
     {
@@ -779,7 +779,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/elasticity/elasticity_qn_013.png",
+      "image": "assets/images/11th/elasticity/elasticity_qn_013.svg",
       "tip": ""
     },
     {
@@ -797,7 +797,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/elasticity/elasticity_qn_014.png",
+      "image": "assets/images/11th/elasticity/elasticity_qn_014.svg",
       "tip": ""
     },
     {
@@ -869,7 +869,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/elasticity/elasticity_qn_018.png",
+      "image": "assets/images/11th/elasticity/elasticity_qn_018.svg",
       "tip": ""
     },
     {
@@ -887,7 +887,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/elasticity/elasticity_qn_019.png",
+      "image": "assets/images/11th/elasticity/elasticity_qn_019.svg",
       "tip": ""
     },
     {
@@ -905,7 +905,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/elasticity/elasticity_qn_020.png",
+      "image": "assets/images/11th/elasticity/elasticity_qn_020.svg",
       "tip": "IF D and E are far apart, they can be drawn to make long wires."
     },
 
@@ -924,7 +924,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_001.png",
+      "image": "assets/images/11th/fluids/fluids_qn_001.svg",
       "tip": ""
     },
     {
@@ -942,7 +942,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_002.png",
+      "image": "assets/images/11th/fluids/fluids_qn_002.svg",
       "tip": ""
     },
     {
@@ -960,7 +960,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_003.png",
+      "image": "assets/images/11th/fluids/fluids_qn_003.svg",
       "tip": ""
     },
     {
@@ -978,7 +978,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_004.png",
+      "image": "assets/images/11th/fluids/fluids_qn_004.svg",
       "tip": ""
     },
     {
@@ -996,7 +996,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_005.png",
+      "image": "assets/images/11th/fluids/fluids_qn_005.svg",
       "tip": ""
     },
     {
@@ -1014,7 +1014,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_006.png",
+      "image": "assets/images/11th/fluids/fluids_qn_006.svg",
       "tip": ""
     },
     {
@@ -1032,7 +1032,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_007.png",
+      "image": "assets/images/11th/fluids/fluids_qn_007.svg",
       "tip": ""
     },
     {
@@ -1050,7 +1050,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_008.png",
+      "image": "assets/images/11th/fluids/fluids_qn_008.svg",
       "tip": ""
     },
     {
@@ -1068,7 +1068,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_009.png",
+      "image": "assets/images/11th/fluids/fluids_qn_009.svg",
       "tip": ""
     },
     {
@@ -1086,7 +1086,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_010.png",
+      "image": "assets/images/11th/fluids/fluids_qn_010.svg",
       "tip": ""
     },
 
@@ -1105,7 +1105,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_011.png",
+      "image": "assets/images/11th/fluids/fluids_qn_011.svg",
       "tip": ""
     },
     {
@@ -1123,7 +1123,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_012.png",
+      "image": "assets/images/11th/fluids/fluids_qn_012.svg",
       "tip": ""
     },
     {
@@ -1159,7 +1159,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_014.png",
+      "image": "assets/images/11th/fluids/fluids_qn_014.svg",
       "tip": ""
     },
     {
@@ -1177,7 +1177,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_015.png",
+      "image": "assets/images/11th/fluids/fluids_qn_015.svg",
       "tip": ""
     },
 
@@ -1196,7 +1196,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_016.png",
+      "image": "assets/images/11th/fluids/fluids_qn_016.svg",
       "tip": ""
     },
     {
@@ -1214,7 +1214,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_017.png",
+      "image": "assets/images/11th/fluids/fluids_qn_017.svg",
       "tip": ""
     },
     {
@@ -1232,7 +1232,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_018.png",
+      "image": "assets/images/11th/fluids/fluids_qn_018.svg",
       "tip": ""
     },
     {
@@ -1250,7 +1250,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_019.png",
+      "image": "assets/images/11th/fluids/fluids_qn_019.svg",
       "tip": ""
     },
     {
@@ -1268,7 +1268,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_020.png",
+      "image": "assets/images/11th/fluids/fluids_qn_020.svg",
       "tip": ""
     },
 
@@ -1287,7 +1287,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_021.png",
+      "image": "assets/images/11th/fluids/fluids_qn_021.svg",
       "tip": ""
     },
     {
@@ -1377,7 +1377,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_026.png",
+      "image": "assets/images/11th/fluids/fluids_qn_026.svg",
       "tip": ""
     },
 
@@ -1396,7 +1396,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_027.png",
+      "image": "assets/images/11th/fluids/fluids_qn_027.svg",
       "tip": ""
     },
     {
@@ -1414,7 +1414,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_028.png",
+      "image": "assets/images/11th/fluids/fluids_qn_028.svg",
       "tip": ""
     },
     {
@@ -1432,7 +1432,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_029.png",
+      "image": "assets/images/11th/fluids/fluids_qn_029.svg",
       "tip": ""
     },
     {
@@ -1450,7 +1450,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_030.png",
+      "image": "assets/images/11th/fluids/fluids_qn_030.svg",
       "tip": ""
     },
 
@@ -1469,7 +1469,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_031.png",
+      "image": "assets/images/11th/fluids/fluids_qn_031.svg",
       "tip": ""
     },
     {
@@ -1541,7 +1541,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_035.png",
+      "image": "assets/images/11th/fluids/fluids_qn_035.svg",
       "tip": ""
     },
     {
@@ -1559,7 +1559,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_036.png",
+      "image": "assets/images/11th/fluids/fluids_qn_036.svg",
       "tip": ""
     },
     {
@@ -1577,7 +1577,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_037.png",
+      "image": "assets/images/11th/fluids/fluids_qn_037.svg",
       "tip": ""
     },
     {
@@ -1595,7 +1595,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_038.png",
+      "image": "assets/images/11th/fluids/fluids_qn_038.svg",
       "tip": ""
     },
     {
@@ -1632,7 +1632,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/fluids/fluids_qn_040.png",
+      "image": "assets/images/11th/fluids/fluids_qn_040.svg",
       "tip": ""
     },
 
@@ -1651,7 +1651,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "assets/images/11th/fluids/fluids_qn_041.png",
+    "image": "assets/images/11th/fluids/fluids_qn_041.svg",
     "tip": ""
   },
   {
@@ -1669,7 +1669,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "assets/images/11th/fluids/fluids_qn_042.png",
+    "image": "assets/images/11th/fluids/fluids_qn_042.svg",
     "tip": ""
   },
   {
@@ -1687,7 +1687,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "assets/images/11th/fluids/fluids_qn_043.png",
+    "image": "assets/images/11th/fluids/fluids_qn_043.svg",
     "tip": ""
   },
   {
@@ -1705,7 +1705,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "assets/images/11th/fluids/fluids_qn_044.png",
+    "image": "assets/images/11th/fluids/fluids_qn_044.svg",
     "tip": ""
   },
 
@@ -1724,7 +1724,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/fluids/fluids_qn_045.png",
+    "image": "assets/images/11th/fluids/fluids_qn_045.svg",
     "tip": ""
   },
   {
@@ -1742,7 +1742,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/fluids/fluids_qn_046.png",
+    "image": "assets/images/11th/fluids/fluids_qn_046.svg",
     "tip": ""
   },
   {
@@ -1760,7 +1760,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/fluids/fluids_qn_047.png",
+    "image": "assets/images/11th/fluids/fluids_qn_047.svg",
     "tip": ""
   },
 
@@ -1779,7 +1779,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/fluids/fluids_qn_048.png",
+    "image": "assets/images/11th/fluids/fluids_qn_048.svg",
     "tip": ""
   },
   {
@@ -1797,7 +1797,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/fluids/fluids_qn_049.png",
+    "image": "assets/images/11th/fluids/fluids_qn_049.svg",
     "tip": ""
   },
   {
@@ -1815,7 +1815,7 @@
       "difficulty": "god",
       "class": "11"
     },
-    "image": "assets/images/11th/fluids/fluids_qn_050.png",
+    "image": "assets/images/11th/fluids/fluids_qn_050.svg",
     "tip": "Surface of water moves down with constant acceleration. Now think !!"
   },
 
@@ -1853,7 +1853,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_002.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_002.svg",
       "tip": ""
     },
     {
@@ -1871,7 +1871,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_003.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_003.svg",
       "tip": ""
     },
     {
@@ -1889,7 +1889,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_004.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_004.svg",
       "tip": ""
     },
     {
@@ -1907,7 +1907,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_005.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_005.svg",
       "tip": ""
     },
 
@@ -1944,7 +1944,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_007.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_007.svg",
       "tip": ""
     },
     {
@@ -1962,7 +1962,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_008.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_008.svg",
       "tip": ""
     },
     {
@@ -1980,7 +1980,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_009.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_009.svg",
       "tip": ""
     },
     {
@@ -1998,7 +1998,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_010.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_010.svg",
       "tip": ""
     },
 
@@ -2017,7 +2017,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_011.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_011.svg",
       "tip": ""
     },
     {
@@ -2035,7 +2035,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_012.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_012.svg",
       "tip": ""
     },
     {
@@ -2053,7 +2053,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_013.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_013.svg",
       "tip": ""
     },
     {
@@ -2071,7 +2071,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_014.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_014.svg",
       "tip": ""
     },
     {
@@ -2089,7 +2089,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_015.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_015.svg",
       "tip": ""
     },
     {
@@ -2107,7 +2107,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_016.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_016.svg",
       "tip": ""
     },
 
@@ -2126,7 +2126,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_017.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_017.svg",
       "tip": ""
     },
     {
@@ -2144,7 +2144,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_018.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_018.svg",
       "tip": ""
     },
     {
@@ -2162,7 +2162,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_019.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_019.svg",
       "tip": ""
     },
     {
@@ -2180,7 +2180,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_020.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_020.svg",
       "tip": ""
     },
 
@@ -2200,7 +2200,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_021.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_021.svg",
       "tip": ""
     },
     {
@@ -2218,7 +2218,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_022.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_022.svg",
       "tip": ""
     },
     {
@@ -2236,7 +2236,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_023.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_023.svg",
       "tip": ""
     },
     {
@@ -2254,7 +2254,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_024.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_024.svg",
       "tip": ""
     },
     {
@@ -2272,7 +2272,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_025.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_025.svg",
       "tip": ""
     },
 
@@ -2292,7 +2292,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_026.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_026.svg",
       "tip": ""
     },
     {
@@ -2310,7 +2310,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_027.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_027.svg",
       "tip": ""
     },
     {
@@ -2328,7 +2328,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_028.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_028.svg",
       "tip": ""
     },
     {
@@ -2346,7 +2346,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_029.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_029.svg",
       "tip": ""
     },
     {
@@ -2364,7 +2364,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_030.png",
+      "image": "assets/images/11th/gravitation/gravitation_qn_030.svg",
       "tip": ""
     },
 
@@ -2527,7 +2527,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_009.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_009.svg",
       "tip": ""
     },
     {
@@ -2545,7 +2545,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_010.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_010.svg",
       "tip": ""
     },
 
@@ -2564,7 +2564,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_011.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_011.svg",
       "tip": ""
     },
     {
@@ -2582,7 +2582,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_012.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_012.svg",
       "tip": ""
     },
     {
@@ -2600,7 +2600,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_013.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_013.svg",
       "tip": ""
     },
     {
@@ -2618,7 +2618,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_014.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_014.svg",
       "tip": ""
     },
 
@@ -2656,7 +2656,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_016.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_016.svg",
       "tip": ""
     },
     {
@@ -2674,7 +2674,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_017.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_017.svg",
       "tip": ""
     },
     {
@@ -2692,7 +2692,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_018.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_018.svg",
       "tip": ""
     },
     {
@@ -2710,7 +2710,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_019.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_019.svg",
       "tip": ""
     },
     {
@@ -2728,7 +2728,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_020.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_020.svg",
       "tip": ""
     },
 
@@ -2747,7 +2747,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_021.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_021.svg",
       "tip": ""
     },
     {
@@ -2765,7 +2765,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_022.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_022.svg",
       "tip": ""
     },
     {
@@ -2783,7 +2783,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_023.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_023.svg",
       "tip": ""
     },
     {
@@ -2801,7 +2801,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_024.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_024.svg",
       "tip": ""
     },
     {
@@ -2819,7 +2819,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_025.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_025.svg",
       "tip": ""
     },
 
@@ -2838,7 +2838,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_026.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_026.svg",
       "tip": ""
     },
     {
@@ -2856,7 +2856,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_027.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_027.svg",
       "tip": ""
     },
     {
@@ -2874,7 +2874,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_028.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_028.svg",
       "tip": ""
     },
     {
@@ -2892,7 +2892,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_029.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_029.svg",
       "tip": ""
     },
     {
@@ -2910,7 +2910,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_030.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_030.svg",
       "tip": ""
     },
 
@@ -2929,7 +2929,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_031.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_031.svg",
       "tip": ""
     },
     {
@@ -2947,7 +2947,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_032.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_032.svg",
       "tip": ""
     },
     {
@@ -2965,7 +2965,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_033.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_033.svg",
       "tip": ""
     },
     {
@@ -3001,7 +3001,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_035.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_035.svg",
       "tip": ""
     },
 
@@ -3020,7 +3020,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_036.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_036.svg",
       "tip": ""
     },
     {
@@ -3038,7 +3038,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_037.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_037.svg",
       "tip": ""
     },
     {
@@ -3092,7 +3092,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_040.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_040.svg",
       "tip": ""
     },
 
@@ -3183,7 +3183,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_045.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_045.svg",
       "tip": ""
     },
 
@@ -3202,7 +3202,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_046.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_046.svg",
       "tip": ""
     },
     {
@@ -3220,7 +3220,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_047.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_047.svg",
       "tip": ""
     },
     {
@@ -3256,7 +3256,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_049.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_049.svg",
       "tip": ""
     },
     {
@@ -3274,7 +3274,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_050.png",
+      "image": "assets/images/11th/kinematics/kinematics_qn_050.svg",
       "tip": ""
     },
 
@@ -3474,7 +3474,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_011.png",
+      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_011.svg",
       "tip": ""
     },
     {
@@ -3492,7 +3492,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_012.png",
+      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_012.svg",
       "tip": ""
     },
     {
@@ -3510,7 +3510,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_013.png",
+      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_013.svg",
       "tip": ""
     },
     {
@@ -3638,7 +3638,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_020.png",
+      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_020.svg",
       "tip": ""
     },
 
@@ -3911,7 +3911,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_035.png",
+      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_035.svg",
       "tip": "Caution! Is it just heat engine or CARNOT heat engine"
     },
 
@@ -3930,7 +3930,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_036.png",
+      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_036.svg",
       "tip": ""
     },
     {
@@ -3948,7 +3948,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_037.png",
+      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_037.svg",
       "tip": "Caution! Is it just heat pump or CARNOT heat pump"
     },
     {
@@ -3966,7 +3966,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_038.png",
+      "image": "assets/images/11th/kinetic_theory/kinetic_theory_qn_038.svg",
       "tip": ""
     },
     {
@@ -4039,7 +4039,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_002.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_002.svg",
       "tip": ""
     },
     {
@@ -4093,7 +4093,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_005.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_005.svg",
       "tip": ""
     },
 
@@ -4148,7 +4148,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_008.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_008.svg",
       "tip": ""
     }
   ,
@@ -4167,7 +4167,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_009.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_009.svg",
       "tip": ""
     },
     {
@@ -4185,7 +4185,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_010.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_010.svg",
       "tip": ""
     },
 
@@ -4222,7 +4222,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_012.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_012.svg",
       "tip": ""
     },
     {
@@ -4240,7 +4240,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_013.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_013.svg",
       "tip": ""
     },
     {
@@ -4258,7 +4258,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_014.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_014.svg",
       "tip": ""
     },
 
@@ -4277,7 +4277,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_015.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_015.svg",
       "tip": ""
     },
     {
@@ -4295,7 +4295,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_016.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_016.svg",
       "tip": ""
     },
     {
@@ -4313,7 +4313,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_017.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_017.svg",
       "tip": ""
     },
     {
@@ -4331,7 +4331,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_018.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_018.svg",
       "tip": ""
     },
 
@@ -4350,7 +4350,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_019.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_019.svg",
       "tip": ""
     },
 
@@ -4369,7 +4369,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_020.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_020.svg",
       "tip": ""
     },
 
@@ -4388,7 +4388,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_021.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_021.svg",
       "tip": ""
     },
     {
@@ -4406,7 +4406,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_022.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_022.svg",
       "tip": ""
     },
     {
@@ -4424,7 +4424,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_023.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_023.svg",
       "tip": ""
     },
     {
@@ -4442,7 +4442,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_024.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_024.svg",
       "tip": ""
     },
     {
@@ -4460,7 +4460,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_025.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_025.svg",
       "tip": ""
     },
     {
@@ -4478,7 +4478,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_026.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_026.svg",
       "tip": ""
     },
     {
@@ -4496,7 +4496,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_027.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_027.svg",
       "tip": ""
     },
     {
@@ -4514,7 +4514,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_028.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_028.svg",
       "tip": ""
     },
     {
@@ -4532,7 +4532,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_029.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_029.svg",
       "tip": ""
     },
     {
@@ -4550,7 +4550,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_030.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_030.svg",
       "tip": ""
     },
 
@@ -4569,7 +4569,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_001.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_001.svg",
       "tip": ""
     },
     {
@@ -4587,7 +4587,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_002.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_002.svg",
       "tip": ""
     },
     {
@@ -4605,7 +4605,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_003.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_003.svg",
       "tip": ""
     },
     {
@@ -4623,7 +4623,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_004.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_004.svg",
       "tip": ""
     },
     {
@@ -4641,7 +4641,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_005.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_005.svg",
       "tip": ""
     },
     {
@@ -4659,7 +4659,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_006.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_006.svg",
       "tip": ""
     },
     {
@@ -4677,7 +4677,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_007.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_007.svg",
       "tip": ""
     },
     {
@@ -4695,7 +4695,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_008.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_008.svg",
       "tip": ""
     },
     {
@@ -4713,7 +4713,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_009.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_009.svg",
       "tip": ""
     },
     {
@@ -4731,7 +4731,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_010.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_010.svg",
       "tip": ""
     },
 
@@ -4750,7 +4750,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_011.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_011.svg",
       "tip": ""
     },
     {
@@ -4768,7 +4768,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_012.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_012.svg",
       "tip": ""
     },
     {
@@ -4786,7 +4786,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_013.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_013.svg",
       "tip": ""
     },
     {
@@ -4804,7 +4804,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_014.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_014.svg",
       "tip": ""
     },
     {
@@ -4822,7 +4822,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_015.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_015.svg",
       "tip": ""
     },
     {
@@ -4840,7 +4840,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_016.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_016.svg",
       "tip": ""
     },
     {
@@ -4858,7 +4858,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_017.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_017.svg",
       "tip": ""
     },
     {
@@ -4876,7 +4876,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_018.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_018.svg",
       "tip": ""
     },
     {
@@ -4894,7 +4894,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_019.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_019.svg",
       "tip": ""
     },
     {
@@ -4912,7 +4912,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_020.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_020.svg",
       "tip": ""
     },
 
@@ -4931,7 +4931,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_021.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_021.svg",
       "tip": ""
     },
     {
@@ -4949,7 +4949,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_022.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_022.svg",
       "tip": ""
     },
     {
@@ -4967,7 +4967,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_023.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_023.svg",
       "tip": ""
     },
     {
@@ -4985,7 +4985,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_024.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_024.svg",
       "tip": ""
     },
     {
@@ -5003,7 +5003,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_025.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_025.svg",
       "tip": ""
     },
     {
@@ -5021,7 +5021,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_026.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_026.svg",
       "tip": ""
     },
     {
@@ -5039,7 +5039,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_027.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_027.svg",
       "tip": ""
     },
     {
@@ -5057,7 +5057,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_028.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_028.svg",
       "tip": ""
     },
     {
@@ -5075,7 +5075,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_029.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_029.svg",
       "tip": ""
     },
     {
@@ -5093,7 +5093,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_030.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_030.svg",
       "tip": ""
     },
 
@@ -5185,7 +5185,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_035.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_035.svg",
       "tip": ""
     },
     {
@@ -5203,7 +5203,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_036.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_036.svg",
       "tip": ""
     },
     {
@@ -5221,7 +5221,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_037.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_037.svg",
       "tip": ""
     },
     {
@@ -5239,7 +5239,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_038.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_038.svg",
       "tip": ""
     },
     {
@@ -5257,7 +5257,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_039.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_039.svg",
       "tip": ""
     },
     {
@@ -5275,7 +5275,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_040.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_040.svg",
       "tip": ""
     },
 
@@ -5421,7 +5421,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_048.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_048.svg",
       "tip": ""
     },
     {
@@ -5457,7 +5457,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_050.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_050.svg",
       "tip": ""
     },
 
@@ -5476,7 +5476,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_051.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_051.svg",
       "tip": ""
     },
     {
@@ -5512,7 +5512,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_053.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_053.svg",
       "tip": ""
     },
     {
@@ -5548,7 +5548,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_055.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_055.svg",
       "tip": ""
     },
 
@@ -5585,7 +5585,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_057.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_057.svg",
       "tip": ""
     },
     {
@@ -5603,7 +5603,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_058.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_058.svg",
       "tip": ""
     },
     {
@@ -5621,7 +5621,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_059.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_059.svg",
       "tip": ""
     },
 
@@ -5640,7 +5640,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_060.png",
+      "image": "assets/images/11th/Rotational_Motion/Rotational_Motion_qn_060.svg",
       "tip": ""
     },
 
@@ -5659,7 +5659,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_001.png",
+      "image": "assets/images/11th/shm/shm_qn_001.svg",
       "tip": ""
     },
     {
@@ -5677,7 +5677,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_002.png",
+      "image": "assets/images/11th/shm/shm_qn_002.svg",
       "tip": ""
     },
     {
@@ -5695,7 +5695,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_003.png",
+      "image": "assets/images/11th/shm/shm_qn_003.svg",
       "tip": ""
     },
     {
@@ -5713,7 +5713,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_004.png",
+      "image": "assets/images/11th/shm/shm_qn_004.svg",
       "tip": ""
     },
     {
@@ -5731,7 +5731,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_005.png",
+      "image": "assets/images/11th/shm/shm_qn_005.svg",
       "tip": ""
     },
     {
@@ -5749,7 +5749,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_006.png",
+      "image": "assets/images/11th/shm/shm_qn_006.svg",
       "tip": ""
     },
     {
@@ -5767,7 +5767,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_007.png",
+      "image": "assets/images/11th/shm/shm_qn_007.svg",
       "tip": ""
     },
     {
@@ -5841,7 +5841,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_011.png",
+      "image": "assets/images/11th/shm/shm_qn_011.svg",
       "tip": ""
     },
     {
@@ -5859,7 +5859,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_012.png",
+      "image": "assets/images/11th/shm/shm_qn_012.svg",
       "tip": ""
     },
     {
@@ -5877,7 +5877,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_013.png",
+      "image": "assets/images/11th/shm/shm_qn_013.svg",
       "tip": ""
     },
     {
@@ -5895,7 +5895,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_014.png",
+      "image": "assets/images/11th/shm/shm_qn_014.svg",
       "tip": ""
     },
     {
@@ -5913,7 +5913,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_015.png",
+      "image": "assets/images/11th/shm/shm_qn_015.svg",
       "tip": ""
     },
 
@@ -5950,7 +5950,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_017.png",
+      "image": "assets/images/11th/shm/shm_qn_017.svg",
       "tip": ""
     },
     {
@@ -5968,7 +5968,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_018.png",
+      "image": "assets/images/11th/shm/shm_qn_018.svg",
       "tip": ""
     },
     {
@@ -5986,7 +5986,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_019.png",
+      "image": "assets/images/11th/shm/shm_qn_019.svg",
       "tip": ""
     },
     {
@@ -6004,7 +6004,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_020.png",
+      "image": "assets/images/11th/shm/shm_qn_020.svg",
       "tip": ""
     },
 
@@ -6023,7 +6023,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_021.png",
+      "image": "assets/images/11th/shm/shm_qn_021.svg",
       "tip": ""
     },
     {
@@ -6041,7 +6041,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_022.png",
+      "image": "assets/images/11th/shm/shm_qn_022.svg",
       "tip": ""
     },
     {
@@ -6095,7 +6095,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_025.png",
+      "image": "assets/images/11th/shm/shm_qn_025.svg",
       "tip": ""
     },
     {
@@ -6113,7 +6113,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_026.png",
+      "image": "assets/images/11th/shm/shm_qn_026.svg",
       "tip": ""
     },
 
@@ -6132,7 +6132,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_027.png",
+      "image": "assets/images/11th/shm/shm_qn_027.svg",
       "tip": ""
     },
     {
@@ -6150,7 +6150,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_028.png",
+      "image": "assets/images/11th/shm/shm_qn_028.svg",
       "tip": ""
     },
     {
@@ -6168,7 +6168,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_029.png",
+      "image": "assets/images/11th/shm/shm_qn_029.svg",
       "tip": ""
     },
     {
@@ -6186,7 +6186,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/shm/shm_qn_030.png",
+      "image": "assets/images/11th/shm/shm_qn_030.svg",
       "tip": ""
     },
 
@@ -6242,7 +6242,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_003.png",
+      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_003.svg",
       "tip": ""
     },
     {
@@ -6261,7 +6261,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_004.png",
+      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_004.svg",
       "tip": ""
     },
     {
@@ -6280,7 +6280,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_005.png",
+      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_005.svg",
       "tip": ""
     },
     {
@@ -6370,7 +6370,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_010.png",
+      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_010.svg",
       "tip": ""
     },
 
@@ -6389,7 +6389,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_011.png",
+      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_011.svg",
       "tip": ""
     },
     {
@@ -6407,7 +6407,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_012.png",
+      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_012.svg",
       "tip": ""
     },
     {
@@ -6425,7 +6425,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_013.png",
+      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_013.svg",
       "tip": ""
     },
     {
@@ -6479,7 +6479,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_016.png",
+      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_016.svg",
       "tip": ""
     },
 
@@ -6498,7 +6498,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_017.png",
+      "image": "assets/images/11th/thermodynamics/thermodynamics_qn_017.svg",
       "tip": ""
     },
     {
@@ -6826,7 +6826,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/units_and_dimensions/units_and_dimensions_qn_015.png",
+    "image": "assets/images/11th/units_and_dimensions/units_and_dimensions_qn_015.svg",
     "tip": "Very rare case! If its given VSD>MSD, then LC = 1 VSD – 1 MSD. Refer to JEE Adv 2016 qn and JEE Adv 2021 qn"
   },
 
@@ -6881,7 +6881,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/units_and_dimensions/units_and_dimensions_qn_018.png",
+    "image": "assets/images/11th/units_and_dimensions/units_and_dimensions_qn_018.svg",
     "tip": ""
   },
   {
@@ -6917,7 +6917,7 @@
       "difficulty": "god",
       "class": "11"
     },
-    "image": "assets/images/11th/units_and_dimensions/units_and_dimensions_qn_020.png",
+    "image": "assets/images/11th/units_and_dimensions/units_and_dimensions_qn_020.svg",
     "tip": "Be careful ! for negative zero error, vernier coincidence must be taken from the end."
   },
 
@@ -6936,7 +6936,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_001.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_001.svg",
       "tip": ""
     },
     {
@@ -6990,7 +6990,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_004.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_004.svg",
       "tip": ""
     },
     {
@@ -7008,7 +7008,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_005.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_005.svg",
       "tip": ""
     },
 
@@ -7027,7 +7027,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_006.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_006.svg",
       "tip": ""
     },
     {
@@ -7045,7 +7045,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_007.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_007.svg",
       "tip": ""
     },
     {
@@ -7208,7 +7208,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_016.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_016.svg",
       "tip": ""
     },
     {
@@ -7226,7 +7226,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_017.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_017.svg",
       "tip": ""
     },
     {
@@ -7388,7 +7388,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_026.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_026.svg",
       "tip": ""
     },
     {
@@ -7406,7 +7406,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_027.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_027.svg",
       "tip": ""
     },
     {
@@ -7424,7 +7424,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_028.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_028.svg",
       "tip": ""
     },
     {
@@ -7442,7 +7442,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_029.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_029.svg",
       "tip": ""
     },
     {
@@ -7460,7 +7460,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/Vectors/Vectors_qn_030.png",
+      "image": "assets/images/11th/Vectors/Vectors_qn_030.svg",
       "tip": ""
     },
 
@@ -7569,7 +7569,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_006.png",
+      "image": "assets/images/11th/waves/waves_qn_006.svg",
       "tip": ""
     },
     {
@@ -7587,7 +7587,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_007.png",
+      "image": "assets/images/11th/waves/waves_qn_007.svg",
       "tip": ""
     },
     {
@@ -7605,7 +7605,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_008.png",
+      "image": "assets/images/11th/waves/waves_qn_008.svg",
       "tip": ""
     },
     {
@@ -7623,7 +7623,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_009.png",
+      "image": "assets/images/11th/waves/waves_qn_009.svg",
       "tip": ""
     },
     {
@@ -7641,7 +7641,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_010.png",
+      "image": "assets/images/11th/waves/waves_qn_010.svg",
       "tip": ""
     },
 
@@ -7714,7 +7714,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_014.png",
+      "image": "assets/images/11th/waves/waves_qn_014.svg",
       "tip": ""
     },
     {
@@ -7732,7 +7732,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_015.png",
+      "image": "assets/images/11th/waves/waves_qn_015.svg",
       "tip": ""
     },
 
@@ -7787,7 +7787,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_018.png",
+      "image": "assets/images/11th/waves/waves_qn_018.svg",
       "tip": ""
     },
     {
@@ -7805,7 +7805,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_019.png",
+      "image": "assets/images/11th/waves/waves_qn_019.svg",
       "tip": ""
     },
     {
@@ -7860,7 +7860,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_022.png",
+      "image": "assets/images/11th/waves/waves_qn_022.svg",
       "tip": ""
     },
     {
@@ -7878,7 +7878,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_023.png",
+      "image": "assets/images/11th/waves/waves_qn_023.svg",
       "tip": ""
     },
     {
@@ -7896,7 +7896,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_024.png",
+      "image": "assets/images/11th/waves/waves_qn_024.svg",
       "tip": ""
     },
     {
@@ -7914,7 +7914,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_025.png",
+      "image": "assets/images/11th/waves/waves_qn_025.svg",
       "tip": ""
     },
 
@@ -8024,7 +8024,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_031.png",
+      "image": "assets/images/11th/waves/waves_qn_031.svg",
       "tip": ""
     },
     {
@@ -8042,7 +8042,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_032.png",
+      "image": "assets/images/11th/waves/waves_qn_032.svg",
       "tip": ""
     },
     {
@@ -8060,7 +8060,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_033.png",
+      "image": "assets/images/11th/waves/waves_qn_033.svg",
       "tip": ""
     },
     {
@@ -8078,7 +8078,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_034.png",
+      "image": "assets/images/11th/waves/waves_qn_034.svg",
       "tip": ""
     },
     {
@@ -8206,7 +8206,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_041.png",
+      "image": "assets/images/11th/waves/waves_qn_041.svg",
       "tip": ""
     },
     {
@@ -8224,7 +8224,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_042.png",
+      "image": "assets/images/11th/waves/waves_qn_042.svg",
       "tip": ""
     },
     {
@@ -8242,7 +8242,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_043.png",
+      "image": "assets/images/11th/waves/waves_qn_043.svg",
       "tip": ""
     },
     {
@@ -8260,7 +8260,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_044.png",
+      "image": "assets/images/11th/waves/waves_qn_044.svg",
       "tip": ""
     },
     {
@@ -8278,7 +8278,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_045.png",
+      "image": "assets/images/11th/waves/waves_qn_045.svg",
       "tip": "Remember, Operating/System. Observer in numerator, Source in denominator"
     },
 
@@ -8297,7 +8297,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_046.png",
+      "image": "assets/images/11th/waves/waves_qn_046.svg",
       "tip": ""
     },
     {
@@ -8333,7 +8333,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_048.png",
+      "image": "assets/images/11th/waves/waves_qn_048.svg",
       "tip": ""
     },
     {
@@ -8351,7 +8351,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_049.png",
+      "image": "assets/images/11th/waves/waves_qn_049.svg",
       "tip": ""
     },
     {
@@ -8369,7 +8369,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_050.png",
+      "image": "assets/images/11th/waves/waves_qn_050.svg",
       "tip": "Remember, Operating/System. Observer in numerator, Source in denominator"
     },
 
@@ -8388,7 +8388,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_001.png",
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_001.svg",
       "tip": ""
     },
     {
@@ -8406,7 +8406,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_002.png",
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_002.svg",
       "tip": ""
     },
     {
@@ -8498,7 +8498,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_007.png",
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_007.svg",
       "tip": ""
     },
     {
@@ -8516,7 +8516,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_008.png",
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_008.svg",
       "tip": ""
     },
     {
@@ -8534,7 +8534,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_009.png",
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_009.svg",
       "tip": ""
     },
     {
@@ -8572,7 +8572,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_011.png",
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_011.svg",
       "tip": ""
     },
     {
@@ -8590,7 +8590,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_012.png",
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_012.svg",
       "tip": ""
     },
     {
@@ -8644,7 +8644,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_015.png",
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_015.svg",
       "tip": ""
     },
     {
@@ -8662,7 +8662,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_016.png",
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_016.svg",
       "tip": ""
     },
 
@@ -8681,7 +8681,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_017.png",
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_017.svg",
       "tip": ""
     },
     {
@@ -8699,7 +8699,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_018.png",
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_018.svg",
       "tip": ""
     },
     {
@@ -8717,7 +8717,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_019.png",
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_019.svg",
       "tip": ""
     },
     {
@@ -8735,7 +8735,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_020.png",
+      "image": "assets/images/11th/work_power_energy/work_power_energy_qn_020.svg",
       "tip": ""
     },
 
@@ -8754,7 +8754,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_001.png",
+      "image": "assets/images/12th/ac/ac_qn_001.svg",
       "tip": ""
     },
     {
@@ -8772,7 +8772,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_002.png",
+      "image": "assets/images/12th/ac/ac_qn_002.svg",
       "tip": ""
     },
     {
@@ -8790,7 +8790,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_003.png",
+      "image": "assets/images/12th/ac/ac_qn_003.svg",
       "tip": ""
     },
     {
@@ -8808,7 +8808,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_004.png",
+      "image": "assets/images/12th/ac/ac_qn_004.svg",
       "tip": ""
     },
     {
@@ -8826,7 +8826,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_005.png",
+      "image": "assets/images/12th/ac/ac_qn_005.svg",
       "tip": ""
     },
 
@@ -8881,7 +8881,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_008.png",
+      "image": "assets/images/12th/ac/ac_qn_008.svg",
       "tip": ""
     },
     {
@@ -8899,7 +8899,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_009.png",
+      "image": "assets/images/12th/ac/ac_qn_009.svg",
       "tip": ""
     },
     {
@@ -8917,7 +8917,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_010.png",
+      "image": "assets/images/12th/ac/ac_qn_010.svg",
       "tip": ""
     },
 
@@ -8936,7 +8936,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_011.png",
+      "image": "assets/images/12th/ac/ac_qn_011.svg",
       "tip": ""
     },
     {
@@ -8954,7 +8954,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_012.png",
+      "image": "assets/images/12th/ac/ac_qn_012.svg",
       "tip": ""
     },
     {
@@ -8972,7 +8972,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_013.png",
+      "image": "assets/images/12th/ac/ac_qn_013.svg",
       "tip": ""
     },
     {
@@ -8990,7 +8990,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_014.png",
+      "image": "assets/images/12th/ac/ac_qn_014.svg",
       "tip": "Remember this. Comes very much in handy while solving AC questions."
     },
     {
@@ -9008,7 +9008,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_015.png",
+      "image": "assets/images/12th/ac/ac_qn_015.svg",
       "tip": "Remember this. Comes very much in handy while solving AC questions."
     },
 
@@ -9027,7 +9027,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_016.png",
+      "image": "assets/images/12th/ac/ac_qn_016.svg",
       "tip": ""
     },
     {
@@ -9081,7 +9081,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_019.png",
+      "image": "assets/images/12th/ac/ac_qn_019.svg",
       "tip": ""
     },
     {
@@ -9099,7 +9099,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_020.png",
+      "image": "assets/images/12th/ac/ac_qn_020.svg",
       "tip": "Refer to NCERT pg 188. Chapter: AC"
     },
 
@@ -9118,7 +9118,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_001.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_001.svg",
       "tip": ""
     },
     {
@@ -9136,7 +9136,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_002.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_002.svg",
       "tip": ""
     },
     {
@@ -9154,7 +9154,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_003.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_003.svg",
       "tip": ""
     },
     {
@@ -9172,7 +9172,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_004.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_004.svg",
       "tip": ""
     },
     {
@@ -9190,7 +9190,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_005.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_005.svg",
       "tip": "Many students calculate (1/Ceq) and forget to do the reciprocal. This is a very common silly mistake. If you do this correctly, you are already 1000s of ranks ahead."
     },
 
@@ -9209,7 +9209,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_006.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_006.svg",
       "tip": "This formula makes many questions simple to solve. If some space is air, then put K for that space as '1'"
     },
     {
@@ -9227,7 +9227,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_007.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_007.svg",
       "tip": ""
     },
     {
@@ -9245,7 +9245,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_008.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_008.svg",
       "tip": ""
     },
     {
@@ -9263,7 +9263,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_009.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_009.svg",
       "tip": ""
     },
     {
@@ -9281,7 +9281,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_010.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_010.svg",
       "tip": "The force due to equal and opposite polarized charges on a plate cancel out, giving us the same formula if there were no dielectric."
     },
 
@@ -9300,7 +9300,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_011.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_011.svg",
       "tip": "Caution, V is potential drop across capacitor, not emf of cell. So its always safer to use the formula Q^2/2C for energy stored in capacitor"
     },
     {
@@ -9318,7 +9318,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_012.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_012.svg",
       "tip": ""
     },
     {
@@ -9336,7 +9336,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_013.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_013.svg",
       "tip": ""
     },
     {
@@ -9354,7 +9354,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_014.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_014.svg",
       "tip": ""
     },
     {
@@ -9372,7 +9372,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_015.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_015.svg",
       "tip": ""
     },
 
@@ -9391,7 +9391,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_016.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_016.svg",
       "tip": ""
     },
     {
@@ -9409,7 +9409,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_017.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_017.svg",
       "tip": "Notice a similarity ? When two masses undergo an inelastic collision, the final speed of combined mass is ? Think !"
     },
     {
@@ -9427,7 +9427,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_018.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_018.svg",
       "tip": "Remember this. Make qns solving faster. Charge is proportional to the capacitance of the capacitors"
     },
     {
@@ -9445,7 +9445,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_019.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_019.svg",
       "tip": "Remember this. Make qns solving faster. Potential is inversely proportional to the capacitance of the capacitors"
     },
 
@@ -9464,7 +9464,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_020.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_020.svg",
       "tip": "Notice a similarity ? When two masses undergo an inelastic collision, the loss of energy is ? Think !"
     },
 
@@ -9483,7 +9483,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_021.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_021.svg",
       "tip": ""
     },
     {
@@ -9501,7 +9501,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_022.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_022.svg",
       "tip": ""
     },
     {
@@ -9519,7 +9519,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_023.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_023.svg",
       "tip": ""
     },
     {
@@ -9537,7 +9537,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_024.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_024.svg",
       "tip": ""
     },
     {
@@ -9555,7 +9555,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_025.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_025.svg",
       "tip": ""
     },
 
@@ -9574,7 +9574,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_026.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_026.svg",
       "tip": "Charge that appears on outer plates is equal. And its value is half the total charge"
     },
     {
@@ -9592,7 +9592,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_027.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_027.svg",
       "tip": "Charge that appears on outer plates is equal. And its value is half the total charge"
     },
     {
@@ -9610,7 +9610,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_028.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_028.svg",
       "tip": ""
     },
     {
@@ -9628,7 +9628,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_029.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_029.svg",
       "tip": ""
     },
 
@@ -9647,7 +9647,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_030.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_030.svg",
       "tip": "This is not in portion, but it helps in solving certain Qns. Observe the symmetry in formula. It is reverse for resistors."
     },
 
@@ -9684,7 +9684,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_002.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_002.svg",
       "tip": ""
     },
     {
@@ -9702,7 +9702,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_003.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_003.svg",
       "tip": ""
     },
     {
@@ -9720,7 +9720,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_004.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_004.svg",
       "tip": ""
     },
     {
@@ -9738,7 +9738,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_005.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_005.svg",
       "tip": ""
     },
     {
@@ -9756,7 +9756,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_006.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_006.svg",
       "tip": ""
     },
 
@@ -9775,7 +9775,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_007.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_007.svg",
       "tip": "As volume is constant, if length is doubled, area becomes half. Do this mentally in exam."
     },
     {
@@ -9793,7 +9793,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_008.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_008.svg",
       "tip": "As volume is constant ,if radius is made 1/3, Area becomes 1/9, length increases to 9 times. Do this mentally in exam"
     },
     {
@@ -9866,7 +9866,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_012.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_012.svg",
       "tip": "Formula for equivalent series inductance follows the same pattern"
     },
     {
@@ -9884,7 +9884,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_013.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_013.svg",
       "tip": "Formula for equivalent parallel inductance follows the same pattern"
     },
     {
@@ -9902,7 +9902,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_014.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_014.svg",
       "tip": ""
     },
     {
@@ -9920,7 +9920,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_015.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_015.svg",
       "tip": ""
     },
 
@@ -9939,7 +9939,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_016.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_016.svg",
       "tip": "Remember this, very useful in solving Qns. Potential drop is proportional to resistance"
     },
     {
@@ -9957,7 +9957,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_017.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_017.svg",
       "tip": "Remember this, very useful in solving Qns. Current is inversely proportional to resistance"
     },
     {
@@ -9975,7 +9975,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_018.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_018.svg",
       "tip": ""
     },
     {
@@ -9993,7 +9993,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_019.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_019.svg",
       "tip": ""
     },
     {
@@ -10011,7 +10011,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_020.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_020.svg",
       "tip": "This relation makes many tough qns very easy. The direction of current can be got from the sign of this answer !"
     },
 
@@ -10030,7 +10030,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_021.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_021.svg",
       "tip": ""
     },
     {
@@ -10048,7 +10048,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_022.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_022.svg",
       "tip": ""
     },
     {
@@ -10066,7 +10066,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_023.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_023.svg",
       "tip": ""
     },
     {
@@ -10084,7 +10084,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_024.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_024.svg",
       "tip": ""
     },
     {
@@ -10102,7 +10102,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_025.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_025.svg",
       "tip": "Use this formula with caution ! All bulbs MUST have same voltage rating as cell, only then is this formula applicable."
     },
 
@@ -10121,7 +10121,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_026.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_026.svg",
       "tip": "Use this formula with caution ! All bulbs MUST have same voltage rating as cell, only then is this formula applicable."
     },
     {
@@ -10139,7 +10139,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_027.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_027.svg",
       "tip": "See the similarity between this and water flowing in a irregular pipe. Voila !"
     },
     {
@@ -10157,7 +10157,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_028.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_028.svg",
       "tip": ""
     },
     {
@@ -10175,7 +10175,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_029.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_029.svg",
       "tip": ""
     },
     {
@@ -10193,7 +10193,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_030.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_030.svg",
       "tip": "Sometimes not covered in class. This is in experiments and had come in JEE Mains. The current that produces a unit deflection in galvanometer is called figure of merit."
     },
 
@@ -10212,7 +10212,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_001.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_001.svg",
       "tip": ""
     },
     {
@@ -10230,7 +10230,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_002.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_002.svg",
       "tip": ""
     },
     {
@@ -10248,7 +10248,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_003.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_003.svg",
       "tip": ""
     },
     {
@@ -10266,7 +10266,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_004.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_004.svg",
       "tip": ""
     },
     {
@@ -10284,7 +10284,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_005.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_005.svg",
       "tip": ""
     },
 
@@ -10303,7 +10303,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_006.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_006.svg",
       "tip": ""
     },
     {
@@ -10321,7 +10321,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_007.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_007.svg",
       "tip": ""
     },
     {
@@ -10339,7 +10339,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_008.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_008.svg",
       "tip": ""
     },
     {
@@ -10357,7 +10357,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_009.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_009.svg",
       "tip": "Think of this as, two sheets of charge. The net field is sum due to each sheet"
     },
     {
@@ -10375,7 +10375,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_010.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_010.svg",
       "tip": ""
     },
 
@@ -10412,7 +10412,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_012.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_012.svg",
       "tip": ""
     },
     {
@@ -10430,7 +10430,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_013.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_013.svg",
       "tip": ""
     },
     {
@@ -10448,7 +10448,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_014.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_014.svg",
       "tip": ""
     },
     {
@@ -10466,7 +10466,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_015.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_015.svg",
       "tip": ""
     },
     {
@@ -10484,7 +10484,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_016.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_016.svg",
       "tip": ""
     },
 
@@ -10503,7 +10503,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_017.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_017.svg",
       "tip": ""
     },
     {
@@ -10521,7 +10521,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_018.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_018.svg",
       "tip": ""
     },
     {
@@ -10539,7 +10539,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_019.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_019.svg",
       "tip": "This is the same as a finite rod, remember this similarity. Would gravitational field due to an arc be similar ? Think !"
     },
     {
@@ -10557,7 +10557,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_020.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_020.svg",
       "tip": ""
     },
 
@@ -10577,7 +10577,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_021.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_021.svg",
       "tip": ""
     },
     {
@@ -10595,7 +10595,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_022.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_022.svg",
       "tip": ""
     },
     {
@@ -10613,7 +10613,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_023.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_023.svg",
       "tip": ""
     },
     {
@@ -10631,7 +10631,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_024.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_024.svg",
       "tip": ""
     },
     {
@@ -10649,7 +10649,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_025.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_025.svg",
       "tip": ""
     },
 
@@ -10705,7 +10705,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_028.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_028.svg",
       "tip": ""
     },
     {
@@ -10723,7 +10723,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_029.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_029.svg",
       "tip": ""
     },
     {
@@ -10741,7 +10741,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_030.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_030.svg",
       "tip": ""
     },
 
@@ -10760,7 +10760,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_031.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_031.svg",
       "tip": ""
     },
     {
@@ -10778,7 +10778,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_032.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_032.svg",
       "tip": ""
     },
     {
@@ -10796,7 +10796,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_033.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_033.svg",
       "tip": ""
     },
     {
@@ -10814,7 +10814,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_034.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_034.svg",
       "tip": ""
     },
     {
@@ -10832,7 +10832,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_035.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_035.svg",
       "tip": ""
     },
     {
@@ -10850,7 +10850,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_036.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_036.svg",
       "tip": "Think of electric field as a commander, all the dipoles (soldiers) are ordered to point in the direction of external electric field"
     },
 
@@ -10869,7 +10869,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_037.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_037.svg",
       "tip": ""
     },
     {
@@ -10887,7 +10887,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_038.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_038.svg",
       "tip": ""
     },
     {
@@ -10905,7 +10905,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_039.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_039.svg",
       "tip": ""
     },
     {
@@ -10923,7 +10923,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_040.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_040.svg",
       "tip": ""
     },
 
@@ -10943,7 +10943,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/em_waves/em_waves_qn_001.png",
+      "image": "assets/images/12th/em_waves/em_waves_qn_001.svg",
       "tip": ""
     },
     {
@@ -10979,7 +10979,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/em_waves/em_waves_qn_003.png",
+      "image": "assets/images/12th/em_waves/em_waves_qn_003.svg",
       "tip": ""
     },
     {
@@ -10997,7 +10997,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/em_waves/em_waves_qn_004.png",
+      "image": "assets/images/12th/em_waves/em_waves_qn_004.svg",
       "tip": ""
     },
 
@@ -11037,7 +11037,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/em_waves/em_waves_qn_006.png",
+      "image": "assets/images/12th/em_waves/em_waves_qn_006.svg",
       "tip": ""
     },
     {
@@ -11130,7 +11130,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/em_waves/em_waves_qn_011.png",
+      "image": "assets/images/12th/em_waves/em_waves_qn_011.svg",
       "tip": ""
     },
     {
@@ -11166,7 +11166,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/em_waves/em_waves_qn_013.png",
+      "image": "assets/images/12th/em_waves/em_waves_qn_013.svg",
       "tip": ""
     },
     {
@@ -11184,7 +11184,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/em_waves/em_waves_qn_014.png",
+      "image": "assets/images/12th/em_waves/em_waves_qn_014.svg",
       "tip": ""
     },
     {
@@ -11239,7 +11239,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/em_waves/em_waves_qn_017.png",
+      "image": "assets/images/12th/em_waves/em_waves_qn_017.svg",
       "tip": ""
     },
     {
@@ -11275,7 +11275,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/em_waves/em_waves_qn_019.png",
+      "image": "assets/images/12th/em_waves/em_waves_qn_019.svg",
       "tip": ""
     },
 
@@ -11294,7 +11294,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/em_waves/em_waves_qn_020.png",
+      "image": "assets/images/12th/em_waves/em_waves_qn_020.svg",
       "tip": ""
     },
 
@@ -11369,7 +11369,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_004.png",
+      "image": "assets/images/12th/emi/emi_qn_004.svg",
       "tip": ""
     },
     {
@@ -11387,7 +11387,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_005.png",
+      "image": "assets/images/12th/emi/emi_qn_005.svg",
       "tip": ""
     },
     {
@@ -11405,7 +11405,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_006.png",
+      "image": "assets/images/12th/emi/emi_qn_006.svg",
       "tip": ""
     },
     {
@@ -11423,7 +11423,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_007.png",
+      "image": "assets/images/12th/emi/emi_qn_007.svg",
       "tip": ""
     },
     {
@@ -11441,7 +11441,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_008.png",
+      "image": "assets/images/12th/emi/emi_qn_008.svg",
       "tip": ""
     },
     {
@@ -11459,7 +11459,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_009.png",
+      "image": "assets/images/12th/emi/emi_qn_009.svg",
       "tip": ""
     },
     {
@@ -11477,7 +11477,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_010.png",
+      "image": "assets/images/12th/emi/emi_qn_010.svg",
       "tip": ""
     },
 
@@ -11496,7 +11496,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_011.png",
+      "image": "assets/images/12th/emi/emi_qn_011.svg",
       "tip": ""
     },
     {
@@ -11514,7 +11514,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_012.png",
+      "image": "assets/images/12th/emi/emi_qn_012.svg",
       "tip": ""
     },
     {
@@ -11532,7 +11532,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_013.png",
+      "image": "assets/images/12th/emi/emi_qn_013.svg",
       "tip": ""
     },
     {
@@ -11550,7 +11550,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_014.png",
+      "image": "assets/images/12th/emi/emi_qn_014.svg",
       "tip": ""
     },
     {
@@ -11568,7 +11568,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_015.png",
+      "image": "assets/images/12th/emi/emi_qn_015.svg",
       "tip": ""
     },
 
@@ -11587,7 +11587,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_016.png",
+      "image": "assets/images/12th/emi/emi_qn_016.svg",
       "tip": "The general form given in books is slightly different. Remembering it this way is easier !"
     },
     {
@@ -11605,7 +11605,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_017.png",
+      "image": "assets/images/12th/emi/emi_qn_017.svg",
       "tip": ""
     },
     {
@@ -11623,7 +11623,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_018.png",
+      "image": "assets/images/12th/emi/emi_qn_018.svg",
       "tip": ""
     },
     {
@@ -11641,7 +11641,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_019.png",
+      "image": "assets/images/12th/emi/emi_qn_019.svg",
       "tip": "Remember, Power in = Power out"
     },
     {
@@ -11659,7 +11659,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_020.png",
+      "image": "assets/images/12th/emi/emi_qn_020.svg",
       "tip": ""
     },
 
@@ -11678,7 +11678,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_021.png",
+      "image": "assets/images/12th/emi/emi_qn_021.svg",
       "tip": ""
     },
     {
@@ -11696,7 +11696,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_022.png",
+      "image": "assets/images/12th/emi/emi_qn_022.svg",
       "tip": ""
     },
     {
@@ -11714,7 +11714,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_023.png",
+      "image": "assets/images/12th/emi/emi_qn_023.svg",
       "tip": "For initial state, we can replace the inductor with broken wire"
     },
     {
@@ -11732,7 +11732,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_024.png",
+      "image": "assets/images/12th/emi/emi_qn_024.svg",
       "tip": "For steady state, we can replace the inductor with a zero resistance wire"
     },
     {
@@ -11750,7 +11750,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_025.png",
+      "image": "assets/images/12th/emi/emi_qn_025.svg",
       "tip": ""
     },
 
@@ -11769,7 +11769,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_026.png",
+      "image": "assets/images/12th/emi/emi_qn_026.svg",
       "tip": ""
     },
     {
@@ -11787,7 +11787,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_027.png",
+      "image": "assets/images/12th/emi/emi_qn_027.svg",
       "tip": ""
     },
     {
@@ -11805,7 +11805,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_028.png",
+      "image": "assets/images/12th/emi/emi_qn_028.svg",
       "tip": ""
     },
     {
@@ -11823,7 +11823,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_029.png",
+      "image": "assets/images/12th/emi/emi_qn_029.svg",
       "tip": ""
     },
     {
@@ -11841,7 +11841,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_030.png",
+      "image": "assets/images/12th/emi/emi_qn_030.svg",
       "tip": ""
     },
 
@@ -11860,7 +11860,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_001.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_001.svg",
       "tip": ""
     },
     {
@@ -11878,7 +11878,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_002.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_002.svg",
       "tip": ""
     },
     {
@@ -11896,7 +11896,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_003.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_003.svg",
       "tip": ""
     },
     {
@@ -11914,7 +11914,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_004.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_004.svg",
       "tip": ""
     },
     {
@@ -11932,7 +11932,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_005.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_005.svg",
       "tip": ""
     },
     {
@@ -11950,7 +11950,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_006.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_006.svg",
       "tip": ""
     },
     {
@@ -11968,7 +11968,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_007.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_007.svg",
       "tip": ""
     },
     {
@@ -11986,7 +11986,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_008.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_008.svg",
       "tip": ""
     },
     {
@@ -12004,7 +12004,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_009.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_009.svg",
       "tip": ""
     },
     {
@@ -12022,7 +12022,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_010.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_010.svg",
       "tip": ""
     },
 
@@ -12041,7 +12041,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_011.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_011.svg",
       "tip": ""
     },
     {
@@ -12059,7 +12059,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_012.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_012.svg",
       "tip": ""
     },
     {
@@ -12077,7 +12077,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_013.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_013.svg",
       "tip": ""
     },
     {
@@ -12095,7 +12095,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_014.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_014.svg",
       "tip": ""
     },
     {
@@ -12113,7 +12113,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_015.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_015.svg",
       "tip": ""
     },
 
@@ -12132,7 +12132,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_016.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_016.svg",
       "tip": ""
     },
     {
@@ -12168,7 +12168,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_018.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_018.svg",
       "tip": ""
     },
     {
@@ -12186,7 +12186,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_019.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_019.svg",
       "tip": ""
     },
     {
@@ -12204,7 +12204,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_020.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_020.svg",
       "tip": ""
     },
 
@@ -12223,7 +12223,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_021.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_021.svg",
       "tip": "Trick to remember. Jo saath chale, sath mile. Jo ulta chale, door bhage ! :)"
     },
     {
@@ -12241,7 +12241,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_022.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_022.svg",
       "tip": "Trick to remember. Jo saath chale, sath mile. Jo ulta chale, door bhage ! :)"
     },
     {
@@ -12259,7 +12259,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_023.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_023.svg",
       "tip": ""
     },
     {
@@ -12277,7 +12277,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_024.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_024.svg",
       "tip": ""
     },
     {
@@ -12295,7 +12295,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_025.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_025.svg",
       "tip": ""
     },
 
@@ -12314,7 +12314,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_026.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_026.svg",
       "tip": "Magnetic field is itself non conservative. So how did we define a potential energy ? Think !"
     },
     {
@@ -12332,7 +12332,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_027.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_027.svg",
       "tip": ""
     },
     {
@@ -12350,7 +12350,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_028.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_028.svg",
       "tip": ""
     },
     {
@@ -12368,7 +12368,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_029.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_029.svg",
       "tip": ""
     },
     {
@@ -12386,7 +12386,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/magnetism/magnetism_qn_030.png",
+      "image": "assets/images/12th/magnetism/magnetism_qn_030.svg",
       "tip": "For uniformly charged rotating bodies, this gives magnetic moment very easily without messy calculations."
     },
 
@@ -12495,7 +12495,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_006.png",
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_006.svg",
       "tip": ""
     },
     {
@@ -12513,7 +12513,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_007.png",
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_007.svg",
       "tip": ""
     },
     {
@@ -12531,7 +12531,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_008.png",
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_008.svg",
       "tip": ""
     },
     {
@@ -12549,7 +12549,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_009.png",
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_009.svg",
       "tip": ""
     },
     {
@@ -12567,7 +12567,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_010.png",
+      "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_010.svg",
       "tip": ""
     },
 
@@ -12586,7 +12586,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_011.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_011.svg",
     "tip": ""
   },
   {
@@ -12604,7 +12604,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_012.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_012.svg",
     "tip": ""
   },
   {
@@ -12622,7 +12622,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_013.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_013.svg",
     "tip": ""
   },
   {
@@ -12640,7 +12640,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_014.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_014.svg",
     "tip": ""
   },
   {
@@ -12658,7 +12658,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_015.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_015.svg",
     "tip": ""
   },
 
@@ -12677,7 +12677,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_016.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_016.svg",
     "tip": ""
   },
   {
@@ -12695,7 +12695,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_017.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_017.svg",
     "tip": ""
   },
   {
@@ -12713,7 +12713,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_018.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_018.svg",
     "tip": ""
   },
   {
@@ -12731,7 +12731,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_019.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_019.svg",
     "tip": ""
   },
   {
@@ -12749,7 +12749,7 @@
       "difficulty": "god",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_020.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_020.svg",
     "tip": ""
   },
 
@@ -12768,7 +12768,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_021.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_021.svg",
     "tip": ""
   },
   {
@@ -12786,7 +12786,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_022.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_022.svg",
     "tip": ""
   },
   {
@@ -12804,7 +12804,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_023.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_023.svg",
     "tip": ""
   },
   {
@@ -12840,7 +12840,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_025.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_025.svg",
     "tip": ""
   },
 
@@ -12859,7 +12859,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_026.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_026.svg",
     "tip": ""
   },
   {
@@ -12877,7 +12877,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_027.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_027.svg",
     "tip": ""
   },
   {
@@ -12895,7 +12895,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_028.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_028.svg",
     "tip": ""
   },
   {
@@ -12913,7 +12913,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_029.png",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_029.svg",
     "tip": ""
   },
   {
@@ -12951,7 +12951,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_001.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_001.svg",
       "tip": ""
     },
     {
@@ -12969,7 +12969,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_002.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_002.svg",
       "tip": ""
     },
     {
@@ -12987,7 +12987,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_003.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_003.svg",
       "tip": ""
     },
 
@@ -13006,7 +13006,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_004.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_004.svg",
       "tip": ""
     },
     {
@@ -13024,7 +13024,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_005.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_005.svg",
       "tip": ""
     },
     {
@@ -13042,7 +13042,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_006.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_006.svg",
       "tip": "Remember this also apart from general formula, many qns are easily solved using this."
     },
     {
@@ -13060,7 +13060,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_007.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_007.svg",
       "tip": ""
     },
     {
@@ -13078,7 +13078,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_008.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_008.svg",
       "tip": ""
     },
     {
@@ -13096,7 +13096,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_009.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_009.svg",
       "tip": ""
     },
     {
@@ -13114,7 +13114,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_010.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_010.svg",
       "tip": ""
     },
 
@@ -13151,7 +13151,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_012.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_012.svg",
       "tip": ""
     },
     {
@@ -13169,7 +13169,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_013.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_013.svg",
       "tip": ""
     },
     {
@@ -13187,7 +13187,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_014.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_014.svg",
       "tip": ""
     },
     {
@@ -13205,7 +13205,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_015.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_015.svg",
       "tip": ""
     },
 
@@ -13224,7 +13224,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_016.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_016.svg",
       "tip": ""
     },
     {
@@ -13242,7 +13242,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_017.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_017.svg",
       "tip": ""
     },
     {
@@ -13260,7 +13260,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_018.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_018.svg",
       "tip": ""
     },
     {
@@ -13278,7 +13278,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_019.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_019.svg",
       "tip": ""
     },
     {
@@ -13296,7 +13296,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_020.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_020.svg",
       "tip": ""
     },
 
@@ -13315,7 +13315,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_021.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_021.svg",
       "tip": ""
     },
     {
@@ -13333,7 +13333,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_022.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_022.svg",
       "tip": "Trick to remember: Lens 'Less' So Lens formulas has '-' and magnification has '+' !!"
     },
     {
@@ -13351,7 +13351,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_023.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_023.svg",
       "tip": ""
     },
     {
@@ -13369,7 +13369,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_024.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_024.svg",
       "tip": ""
     },
     {
@@ -13387,7 +13387,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_025.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_025.svg",
       "tip": ""
     },
 
@@ -13406,7 +13406,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_026.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_026.svg",
       "tip": ""
     },
     {
@@ -13424,7 +13424,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_027.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_027.svg",
       "tip": ""
     },
     {
@@ -13442,7 +13442,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_028.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_028.svg",
       "tip": ""
     },
     {
@@ -13460,7 +13460,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_029.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_029.svg",
       "tip": "Remember this also apart from general formula, many qns are easily solved using this."
     },
     {
@@ -13478,7 +13478,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_030.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_030.svg",
       "tip": ""
     },
 
@@ -13497,7 +13497,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_031.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_031.svg",
       "tip": ""
     },
     {
@@ -13515,7 +13515,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_032.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_032.svg",
       "tip": ""
     },
     {
@@ -13533,7 +13533,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_033.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_033.svg",
       "tip": ""
     },
     {
@@ -13551,7 +13551,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_034.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_034.svg",
       "tip": ""
     },
     {
@@ -13569,7 +13569,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_035.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_035.svg",
       "tip": ""
     },
 
@@ -13588,7 +13588,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_036.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_036.svg",
       "tip": "The definition of tube length slightly differs from NCERT and other books! Go with NCERT definition."
     },
     {
@@ -13606,7 +13606,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_037.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_037.svg",
       "tip": ""
     },
     {
@@ -13624,7 +13624,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_038.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_038.svg",
       "tip": ""
     },
     {
@@ -13642,7 +13642,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_039.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_039.svg",
       "tip": "Trick to remember, Myopia – Minus(Concave lens)"
     },
     {
@@ -13660,7 +13660,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/ray_optics/ray_optics_qn_040.png",
+      "image": "assets/images/12th/ray_optics/ray_optics_qn_040.svg",
       "tip": ""
     },
 
@@ -13679,7 +13679,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/ray_optics/ray_optics_qn_041.png",
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_041.svg",
     "tip": ""
   },
   {
@@ -13697,7 +13697,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/ray_optics/ray_optics_qn_042.png",
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_042.svg",
     "tip": ""
   },
   {
@@ -13715,7 +13715,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/ray_optics/ray_optics_qn_043.png",
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_043.svg",
     "tip": ""
   },
   {
@@ -13751,7 +13751,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/ray_optics/ray_optics_qn_045.png",
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_045.svg",
     "tip": ""
   },
 
@@ -13770,7 +13770,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/ray_optics/ray_optics_qn_046.png",
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_046.svg",
     "tip": ""
   },
   {
@@ -13806,7 +13806,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/ray_optics/ray_optics_qn_048.png",
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_048.svg",
     "tip": ""
   },
   {
@@ -13824,7 +13824,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/ray_optics/ray_optics_qn_049.png",
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_049.svg",
     "tip": ""
   },
   {
@@ -13842,7 +13842,7 @@
       "difficulty": "god",
       "class": "12"
     },
-    "image": "assets/images/12th/ray_optics/ray_optics_qn_050.png",
+    "image": "assets/images/12th/ray_optics/ray_optics_qn_050.svg",
     "tip": ""
   },
 
@@ -13861,7 +13861,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_001.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_001.svg",
       "tip": ""
     },
     {
@@ -13879,7 +13879,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_002.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_002.svg",
       "tip": ""
     },
     {
@@ -13897,7 +13897,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_003.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_003.svg",
       "tip": ""
     },
     {
@@ -13915,7 +13915,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_004.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_004.svg",
       "tip": ""
     },
     {
@@ -13933,7 +13933,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_005.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_005.svg",
       "tip": ""
     },
     {
@@ -13951,7 +13951,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_006.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_006.svg",
       "tip": ""
     },
     {
@@ -13969,7 +13969,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_007.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_007.svg",
       "tip": ""
     },
     {
@@ -13987,7 +13987,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_008.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_008.svg",
       "tip": ""
     },
     {
@@ -14005,7 +14005,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_009.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_009.svg",
       "tip": ""
     },
     {
@@ -14023,7 +14023,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_010.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_010.svg",
       "tip": ""
     },
 
@@ -14042,7 +14042,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_011.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_011.svg",
     "tip": ""
   },
   {
@@ -14060,7 +14060,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_012.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_012.svg",
     "tip": "Students get confused between AND and OR. Trick to remember. This gate looks like a \"D\"... so AND !"
   },
   {
@@ -14078,7 +14078,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_013.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_013.svg",
     "tip": ""
   },
   {
@@ -14096,7 +14096,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_014.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_014.svg",
     "tip": ""
   },
   {
@@ -14114,7 +14114,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_015.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_015.svg",
     "tip": ""
   },
 
@@ -14133,7 +14133,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_016.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_016.svg",
     "tip": "Remember, this is XOR Gate"
   },
   {
@@ -14151,7 +14151,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_017.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_017.svg",
     "tip": "The bulb glows (1) when both switches are open (0)"
   },
   {
@@ -14169,7 +14169,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_018.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_018.svg",
     "tip": "Connect one terminal of 5V cell to A and ground the other terminal of cell. The potential at C is 5V"
   },
   {
@@ -14187,7 +14187,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_019.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_019.svg",
     "tip": "The bulb glows (1) when any one or both switches are open (0)"
   },
   {
@@ -14205,7 +14205,7 @@
       "difficulty": "god",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_020.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_020.svg",
     "tip": "Remember, this is XNOR Gate"
   },
 
@@ -14224,7 +14224,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_021.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_021.svg",
     "tip": ""
   },
   {
@@ -14242,7 +14242,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_022.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_022.svg",
     "tip": "JEE Mains 2023 Qn. This explains proximity of Fermi-Level to CB or VB"
   },
   {
@@ -14260,7 +14260,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_023.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_023.svg",
     "tip": "JEE Mains 2023 Qn. This explains proximity of Fermi-Level to CB or VB"
   },
   {
@@ -14278,7 +14278,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_024.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_024.svg",
     "tip": "It is the flow of majority charge carriers from p to n due to difference in concentration of charge carriers"
   },
 
@@ -14297,7 +14297,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_025.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_025.svg",
     "tip": "It is the flow of minority charge carriers from n to p due to inbuilt electric field"
   },
   {
@@ -14315,7 +14315,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_026.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_026.svg",
     "tip": "Just remember this, derivation is not in NCERT. It can be done using electrostatics concepts."
   },
   {
@@ -14333,7 +14333,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_027.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_027.svg",
     "tip": ""
   },
   {
@@ -14351,7 +14351,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_028.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_028.svg",
     "tip": ""
   },
 
@@ -14370,7 +14370,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_029.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_029.svg",
     "tip": ""
   },
   {
@@ -14388,7 +14388,7 @@
       "difficulty": "god",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_030.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_030.svg",
     "tip": ""
   },
 
@@ -14407,7 +14407,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_031.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_031.svg",
       "tip": ""
     },
     {
@@ -14425,7 +14425,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_032.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_032.svg",
       "tip": ""
     },
     {
@@ -14443,7 +14443,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_033.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_033.svg",
       "tip": "Heavy doping dec depletion layer width. This results in very high electric field in that region even for small values of applied voltage"
     },
     {
@@ -14461,7 +14461,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_034.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_034.svg",
       "tip": ""
     },
     {
@@ -14479,7 +14479,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_035.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_035.svg",
       "tip": ""
     },
     {
@@ -14497,7 +14497,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_036.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_036.svg",
       "tip": ""
     },
 
@@ -14516,7 +14516,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_037.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_037.svg",
       "tip": "Voltage doubler circuit and Bridge rectifier are not in syllabus. Don't worry about those terms. They were just given for options"
     },
     {
@@ -14534,7 +14534,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_038.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_038.svg",
       "tip": "Voltage doubler circuit and Bridge rectifier are not in syllabus. Don't worry about those terms. They were just given for options"
     },
     {
@@ -14552,7 +14552,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_039.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_039.svg",
       "tip": "Only in reverse bias is the small change in intensity noticeable. We could operate in forward bias also but the change in current is negligible compared to the actual current, so detection becomes difficult."
     },
     {
@@ -14570,7 +14570,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_040.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_040.svg",
       "tip": ""
     },
 
@@ -14589,7 +14589,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_041.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_041.svg",
     "tip": "Threshold voltage across germanium diode is 0.2V"
   },
   {
@@ -14607,7 +14607,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_042.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_042.svg",
     "tip": ""
   },
   {
@@ -14661,7 +14661,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_045.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_045.svg",
     "tip": "Heavy doping inc the no of electron hole combinations, thus giving more light"
   },
   {
@@ -14679,7 +14679,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_046.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_046.svg",
     "tip": "Reverse bias connection leads to very low current. So less electron hole combinations, so no light emitted."
   },
 
@@ -14698,7 +14698,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_047.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_047.svg",
     "tip": "Less doping inc the depletion width. So more number of photons fall, increasing the electron hole pair generation"
   },
   {
@@ -14716,7 +14716,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_048.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_048.svg",
     "tip": "This can be related to the threshold voltages. Si: 0.7V, Ge, 0.2V. Think! Carbon is anyways an insulator."
   },
   {
@@ -14734,7 +14734,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_049.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_049.svg",
     "tip": "The graph is in fourth quadrant as solar cell supplies current."
   },
   {
@@ -14752,7 +14752,7 @@
       "difficulty": "god",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_050.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_050.svg",
     "tip": "Use formula E = (1240)/lambda eV"
   },
 
@@ -14954,7 +14954,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_011.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_011.svg",
     "tip": ""
   },
   {
@@ -14972,7 +14972,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_012.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_012.svg",
     "tip": ""
   },
   {
@@ -14990,7 +14990,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_013.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_013.svg",
     "tip": ""
   },
   {
@@ -15008,7 +15008,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_014.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_014.svg",
     "tip": ""
   },
   {
@@ -15026,7 +15026,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_015.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_015.svg",
     "tip": ""
   },
 
@@ -15045,7 +15045,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_016.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_016.svg",
     "tip": ""
   },
   {
@@ -15063,7 +15063,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_017.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_017.svg",
     "tip": ""
   },
   {
@@ -15081,7 +15081,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_018.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_018.svg",
     "tip": ""
   },
   {
@@ -15099,7 +15099,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_019.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_019.svg",
     "tip": ""
   },
   {
@@ -15117,7 +15117,7 @@
       "difficulty": "god",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_020.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_020.svg",
     "tip": ""
   },
 
@@ -15136,7 +15136,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_021.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_021.svg",
     "tip": ""
   },
   {
@@ -15154,7 +15154,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_022.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_022.svg",
     "tip": "This is called Malus Law, named after a french scientist, Louis Malus"
   },
   {
@@ -15172,7 +15172,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_023.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_023.svg",
     "tip": ""
   },
   {
@@ -15190,7 +15190,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_024.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_024.svg",
     "tip": ""
   },
   {
@@ -15208,7 +15208,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_025.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_025.svg",
     "tip": ""
   },
 
@@ -15227,7 +15227,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_026.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_026.svg",
     "tip": ""
   },
   {
@@ -15245,7 +15245,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_027.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_027.svg",
     "tip": "The angle of incidence is called Brewsters angle, named after a Scottish scientist, David Brewster."
   },
   {
@@ -15263,7 +15263,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_028.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_028.svg",
     "tip": "Silly mistake possible! Be wary of where the light is incident from, rarer or denser."
   },
   {
@@ -15281,7 +15281,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_029.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_029.svg",
     "tip": ""
   },
   {
@@ -15299,7 +15299,7 @@
       "difficulty": "god",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_030.png",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_030.svg",
     "tip": ""
   },
 
@@ -15337,7 +15337,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/atoms/atoms_qn_002.png",
+      "image": "assets/images/12th/atoms/atoms_qn_002.svg",
       "tip": ""
     },
     {
@@ -15392,7 +15392,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/atoms/atoms_qn_005.png",
+      "image": "assets/images/12th/atoms/atoms_qn_005.svg",
       "tip": ""
     },
 
@@ -15411,7 +15411,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/atoms/atoms_qn_006.png",
+      "image": "assets/images/12th/atoms/atoms_qn_006.svg",
       "tip": ""
     },
     {
@@ -15429,7 +15429,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/atoms/atoms_qn_007.png",
+      "image": "assets/images/12th/atoms/atoms_qn_007.svg",
       "tip": "When asked for 5 -> 3, you can rather find 3 -> 1. The difference matters, not the n value per se !"
     },
     {
@@ -15447,7 +15447,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/atoms/atoms_qn_008.png",
+      "image": "assets/images/12th/atoms/atoms_qn_008.svg",
       "tip": ""
     },
     {
@@ -15465,7 +15465,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/atoms/atoms_qn_009.png",
+      "image": "assets/images/12th/atoms/atoms_qn_009.svg",
       "tip": ""
     },
 
@@ -15484,7 +15484,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/atoms/atoms_qn_010.png",
+      "image": "assets/images/12th/atoms/atoms_qn_010.svg",
       "tip": "Not in NCERT, but was asked in JEE Adv 2025"
     },
 
@@ -15503,7 +15503,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/xrays/xrays_qn_001.png",
+      "image": "assets/images/12th/xrays/xrays_qn_001.svg",
       "tip": ""
     },
     {
@@ -15521,7 +15521,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/xrays/xrays_qn_002.png",
+      "image": "assets/images/12th/xrays/xrays_qn_002.svg",
       "tip": ""
     },
     {
@@ -15539,7 +15539,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/xrays/xrays_qn_003.png",
+      "image": "assets/images/12th/xrays/xrays_qn_003.svg",
       "tip": ""
     },
     {
@@ -15557,7 +15557,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/xrays/xrays_qn_004.png",
+      "image": "assets/images/12th/xrays/xrays_qn_004.svg",
       "tip": ""
     },
     {
@@ -15594,7 +15594,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/xrays/xrays_qn_006.png",
+      "image": "assets/images/12th/xrays/xrays_qn_006.svg",
       "tip": ""
     },
     {
@@ -15612,7 +15612,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/xrays/xrays_qn_007.png",
+      "image": "assets/images/12th/xrays/xrays_qn_007.svg",
       "tip": ""
     },
     {
@@ -15630,7 +15630,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/xrays/xrays_qn_008.png",
+      "image": "assets/images/12th/xrays/xrays_qn_008.svg",
       "tip": ""
     },
     {
@@ -15648,7 +15648,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/xrays/xrays_qn_009.png",
+      "image": "assets/images/12th/xrays/xrays_qn_009.svg",
       "tip": ""
     },
     {
@@ -15666,7 +15666,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/xrays/xrays_qn_010.png",
+      "image": "assets/images/12th/xrays/xrays_qn_010.svg",
       "tip": ""
     },
 
@@ -15757,7 +15757,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/nuclei/nuclei_qn_005.png",
+      "image": "assets/images/12th/nuclei/nuclei_qn_005.svg",
       "tip": "Trick to remember ! isotoPES same proton number"
     },
 
@@ -15776,7 +15776,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/nuclei/nuclei_qn_006.png",
+      "image": "assets/images/12th/nuclei/nuclei_qn_006.svg",
       "tip": "Trick to remember ! isotoNES same neutron number"
     },
     {
@@ -15794,7 +15794,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/nuclei/nuclei_qn_007.png",
+      "image": "assets/images/12th/nuclei/nuclei_qn_007.svg",
       "tip": ""
     },
     {
@@ -15812,7 +15812,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/nuclei/nuclei_qn_008.png",
+      "image": "assets/images/12th/nuclei/nuclei_qn_008.svg",
       "tip": ""
     },
     {
@@ -15830,7 +15830,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/nuclei/nuclei_qn_009.png",
+      "image": "assets/images/12th/nuclei/nuclei_qn_009.svg",
       "tip": "Stability of a nucleus is decided by binding energy per nucleon and NOT Binding energy"
     },
     {
@@ -15848,7 +15848,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/nuclei/nuclei_qn_010.png",
+      "image": "assets/images/12th/nuclei/nuclei_qn_010.svg",
       "tip": ""
     },
 
@@ -15867,7 +15867,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/nuclei/nuclei_qn_011.png",
+      "image": "assets/images/12th/nuclei/nuclei_qn_011.svg",
       "tip": ""
     },
     {
@@ -15976,7 +15976,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/nuclei/nuclei_qn_017.png",
+      "image": "assets/images/12th/nuclei/nuclei_qn_017.svg",
       "tip": ""
     },
     {
@@ -15994,7 +15994,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/nuclei/nuclei_qn_018.png",
+      "image": "assets/images/12th/nuclei/nuclei_qn_018.svg",
       "tip": ""
     },
     {

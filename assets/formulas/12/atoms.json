@@ -33,7 +33,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/atoms/atoms_qn_002.png",
+      "image": "assets/images/12th/atoms/atoms_qn_002.svg",
       "tip": ""
     },
     {
@@ -88,7 +88,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/atoms/atoms_qn_005.png",
+    "image": "assets/images/12th/atoms/atoms_qn_005.svg",
     "tip": ""
   },
 
@@ -107,7 +107,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/atoms/atoms_qn_006.png",
+      "image": "assets/images/12th/atoms/atoms_qn_006.svg",
       "tip": ""
     },
     {
@@ -125,7 +125,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/atoms/atoms_qn_007.png",
+      "image": "assets/images/12th/atoms/atoms_qn_007.svg",
       "tip": "When asked for 5 -> 3, you can rather find 3 -> 1. The difference matters, not the n value per se !"
     },
     {
@@ -143,7 +143,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/atoms/atoms_qn_008.png",
+      "image": "assets/images/12th/atoms/atoms_qn_008.svg",
       "tip": ""
     },
     {
@@ -161,7 +161,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/atoms/atoms_qn_009.png",
+      "image": "assets/images/12th/atoms/atoms_qn_009.svg",
       "tip": ""
     },
 
@@ -180,7 +180,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/atoms/atoms_qn_010.png",
+      "image": "assets/images/12th/atoms/atoms_qn_010.svg",
       "tip": "Not in NCERT, but was asked in JEE Adv 2025"
     }
 
