@@ -375,7 +375,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
     } else {
     audioPlayer.play(AssetSource('sounds/wrong.mp3'));
     }
-    Future.delayed(const Duration(milliseconds: 700), () {
+    Future.delayed(const Duration(milliseconds: 1500), () {
     checkAnswer(option);
     });
     } : null,
