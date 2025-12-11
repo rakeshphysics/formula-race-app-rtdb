@@ -227,26 +227,26 @@ class _ResultScreenState extends State<ResultScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
 
-                              if (wrongAnswer.imagePath.isNotEmpty)
-                                Container(
-                                  margin: const EdgeInsets.symmetric(vertical: 0),
-                                  child: Center(
-                                    child: SizedBox(
-                                      width: screenWidth * 0.6,
-                                      height: (screenWidth * 0.6) / 1.5,
-                                      child: Image.asset(
-                                        wrongAnswer.imagePath,
-                                        fit: BoxFit.contain,
-                                        errorBuilder: (context, error, stackTrace) {
-                                          return const Text(
-                                            'Image not found',
-                                            style: TextStyle(color: Colors.redAccent),
-                                          );
-                                        },
-                                      ),
-                                    ),
-                                  ),
-                                ),
+                              // if (wrongAnswer.imagePath.isNotEmpty)
+                              //   Container(
+                              //     margin: const EdgeInsets.symmetric(vertical: 0),
+                              //     child: Center(
+                              //       child: SizedBox(
+                              //         width: screenWidth * 0.6,
+                              //         height: (screenWidth * 0.6) / 1.5,
+                              //         child: Image.asset(
+                              //           wrongAnswer.imagePath,
+                              //           fit: BoxFit.contain,
+                              //           errorBuilder: (context, error, stackTrace) {
+                              //             return const Text(
+                              //               'Image not found',
+                              //               style: TextStyle(color: Colors.redAccent),
+                              //             );
+                              //           },
+                              //         ),
+                              //       ),
+                              //     ),
+                              //   ),
 
                               // if (wrongAnswer.imagePath.isNotEmpty)
                               //   Container(
@@ -262,6 +262,33 @@ class _ResultScreenState extends State<ResultScreen> {
                               //       ),
                               //     ),
                               //   ),
+
+                              if (wrongAnswer.imagePath.isNotEmpty)
+                                Container(
+                                  margin: const EdgeInsets.symmetric(vertical: 0),
+                                  child: Center(
+                                    child: SizedBox(
+                                      width: screenWidth * 0.6,
+                                      height: (screenWidth * 0.6) / 1.5, // Calculated height to maintain aspect ratio
+                                      child: wrongAnswer.imagePath.endsWith('.svg')
+                                          ? SvgPicture.asset(
+                                        wrongAnswer.imagePath,
+                                        fit: BoxFit.contain,
+                                        placeholderBuilder: (context) => const SizedBox.shrink(), // Prevents errors if SVG fails
+                                      )
+                                          : Image.asset(
+                                        wrongAnswer.imagePath,
+                                        fit: BoxFit.contain,
+                                        errorBuilder: (context, error, stackTrace) {
+                                          return const Text(
+                                            'Image not found',
+                                            style: TextStyle(color: Colors.redAccent),
+                                          );
+                                        },
+                                      ),
+                                    ),
+                                  ),
+                                ),
 
 
                               Html(

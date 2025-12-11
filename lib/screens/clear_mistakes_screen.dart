@@ -284,24 +284,24 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
               },
             ),
 
-            if (question['image'] != null && question['image'].toString().isNotEmpty)
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 0),
-                child:Center(
-                child: SizedBox(
-                width: screenWidth * 0.6,
-                height: (screenWidth * 0.6) / 1.5,
-                  child: Image.asset(
-                  question['image'],
-                  fit: BoxFit.contain,
-                  errorBuilder: (context, error, stackTrace) {
-                    return const Text(
-                      'Image not found',
-                      style: TextStyle(color: Colors.redAccent),
-                    );
-                  },
-                ),),),
-              )
+            // if (question['image'] != null && question['image'].toString().isNotEmpty)
+            //   Padding(
+            //     padding: const EdgeInsets.symmetric(vertical: 0),
+            //     child:Center(
+            //     child: SizedBox(
+            //     width: screenWidth * 0.6,
+            //     height: (screenWidth * 0.6) / 1.5,
+            //       child: Image.asset(
+            //       question['image'],
+            //       fit: BoxFit.contain,
+            //       errorBuilder: (context, error, stackTrace) {
+            //         return const Text(
+            //           'Image not found',
+            //           style: TextStyle(color: Colors.redAccent),
+            //         );
+            //       },
+            //     ),),),
+            //   )
 
 
             // if (question['image'] != null && question['image'].toString().isNotEmpty)
@@ -318,9 +318,41 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
             //       ),
             //     ),
             //   )
-              else
-              // If no image, use SizedBox.shrink() to take no space
+            // lib/screens/clear_mistakes_screen.dart
+
+// ... (previous code remains the same)
+
+            if (question['image'] != null && question['image'].toString().isNotEmpty)
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 0),
+                child: Center(
+                  child: SizedBox(
+                    width: screenWidth * 0.6,
+                    height: (screenWidth * 0.6) / 1.5,
+                    child: question['image'].endsWith('.svg')
+                        ? SvgPicture.asset(
+                      question['image'],
+                      fit: BoxFit.contain,
+                      placeholderBuilder: (context) => const SizedBox.shrink(),
+                    )
+                        : Image.asset(
+                      question['image'],
+                      fit: BoxFit.contain,
+                      errorBuilder: (context, error, stackTrace) {
+                        return const Text(
+                          'Image not found',
+                          style: TextStyle(color: Colors.redAccent),
+                        );
+                      },
+                    ),
+                  ),
+                ),
+              )
+            else
+            // If no image, use SizedBox.shrink() to take no space
               const SizedBox.shrink(),
+
+// ... (rest of the code remains the same)
 
 
 

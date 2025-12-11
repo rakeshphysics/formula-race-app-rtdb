@@ -25,6 +25,7 @@ import 'package:formularacing/services/mistake_tracker_service.dart';
 import '../models/online_incorrect_answer_model.dart';
 import 'package:provider/provider.dart';
 import '../quiz_data_provider.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 
 // .............END................. Import Dependencies.........................
@@ -1315,6 +1316,31 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
               },
             ),
 
+            // if (currentQuestion['image'] != null &&
+            //     currentQuestion['image'].toString().isNotEmpty)
+            //   Container(
+            //     margin: const EdgeInsets.symmetric(vertical: 0),
+            //     child: Center(
+            //       child: SizedBox(
+            //         width: screenWidth * 0.6,
+            //         height: (screenWidth * 0.6) / 1.5,
+            //         child: Image.asset(
+            //           currentQuestion['image'],
+            //           fit: BoxFit.contain,
+            //           errorBuilder: (context, error, stackTrace) {
+            //             return const Text(
+            //               'Image not found',
+            //               style: TextStyle(color: Colors.redAccent),
+            //             );
+            //           },
+            //         ),
+            //       ),
+            //     ),
+            //   )
+            // lib/screens/online_game_screen.dart
+
+// ... (inside the build method's Column)
+
             if (currentQuestion['image'] != null &&
                 currentQuestion['image'].toString().isNotEmpty)
               Container(
@@ -1323,7 +1349,13 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                   child: SizedBox(
                     width: screenWidth * 0.6,
                     height: (screenWidth * 0.6) / 1.5,
-                    child: Image.asset(
+                    child: currentQuestion['image'].endsWith('.svg')
+                        ? SvgPicture.asset(
+                      currentQuestion['image'],
+                      fit: BoxFit.contain,
+                      placeholderBuilder: (context) => const SizedBox.shrink(),
+                    )
+                        : Image.asset(
                       currentQuestion['image'],
                       fit: BoxFit.contain,
                       errorBuilder: (context, error, stackTrace) {
@@ -1339,6 +1371,8 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
             else
             // If no image, use SizedBox.shrink() to take no space
               const SizedBox.shrink(),
+
+// ... (rest of the build method)
 
             //const SizedBox(height: 24),
             Expanded(

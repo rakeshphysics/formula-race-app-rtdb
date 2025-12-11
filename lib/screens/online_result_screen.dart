@@ -5,6 +5,7 @@ import 'package:flutter_html/flutter_html.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:confetti/confetti.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class OnlineResultScreen extends StatefulWidget {
   final Map<dynamic, dynamic> scores;
@@ -263,6 +264,29 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                           ),
                            SizedBox(height: screenWidth * 0.02),
 
+                          // if (qa.imagePath != null && qa.imagePath!.isNotEmpty)
+                          //   Container(
+                          //     margin: const EdgeInsets.symmetric(vertical: 0),
+                          //     child: Center(
+                          //       child: SizedBox(
+                          //         width: screenWidth * 0.6,
+                          //         height: (screenWidth * 0.6) / 1.5,
+                          //         child: Image.asset(
+                          //           qa.imagePath!,
+                          //           fit: BoxFit.contain,
+                          //           errorBuilder: (context, error, stackTrace) {
+                          //             return const Text(
+                          //               'Image not found',
+                          //               style: TextStyle(color: Colors.redAccent),
+                          //             );
+                          //           },
+                          //         ),
+                          //       ),
+                          //     ),
+                          //   ),
+
+                          // ... inside the ListView.builder's itemBuilder
+
                           if (qa.imagePath != null && qa.imagePath!.isNotEmpty)
                             Container(
                               margin: const EdgeInsets.symmetric(vertical: 0),
@@ -270,7 +294,13 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                                 child: SizedBox(
                                   width: screenWidth * 0.6,
                                   height: (screenWidth * 0.6) / 1.5,
-                                  child: Image.asset(
+                                  child: qa.imagePath!.endsWith('.svg')
+                                      ? SvgPicture.asset(
+                                    qa.imagePath!,
+                                    fit: BoxFit.contain,
+                                    placeholderBuilder: (context) => const SizedBox.shrink(),
+                                  )
+                                      : Image.asset(
                                     qa.imagePath!,
                                     fit: BoxFit.contain,
                                     errorBuilder: (context, error, stackTrace) {
@@ -283,6 +313,9 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                                 ),
                               ),
                             ),
+
+// ... rest of the code
+
 
                           Html(
                             data: "<b>Q:</b> ${qa.question}",

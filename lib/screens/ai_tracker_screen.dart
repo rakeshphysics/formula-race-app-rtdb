@@ -353,22 +353,22 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  if (formulaEntry['image'] != null && formulaEntry['image'].toString().isNotEmpty)
-                                    Padding(
-                                          padding:  EdgeInsets.only(bottom: screenWidth * 0.02),
-                                          child: Center(
-                                            child: SizedBox(
-                                              width: screenWidth * 0.6,
-                                              height: (screenWidth * 0.6) / 1.5,
-                                          child: Image.asset(
-                                         formulaEntry['image'],
-                                          fit: BoxFit.contain,
-                                           errorBuilder: (context, error, stackTrace) => const Text(
-                                          'Image not found',
-                                          style: TextStyle(color: Colors.redAccent),
-                                        ),
-                                      ),),),
-                                    ),
+                                  // if (formulaEntry['image'] != null && formulaEntry['image'].toString().isNotEmpty)
+                                  //   Padding(
+                                  //         padding:  EdgeInsets.only(bottom: screenWidth * 0.02),
+                                  //         child: Center(
+                                  //           child: SizedBox(
+                                  //             width: screenWidth * 0.6,
+                                  //             height: (screenWidth * 0.6) / 1.5,
+                                  //         child: Image.asset(
+                                  //        formulaEntry['image'],
+                                  //         fit: BoxFit.contain,
+                                  //          errorBuilder: (context, error, stackTrace) => const Text(
+                                  //         'Image not found',
+                                  //         style: TextStyle(color: Colors.redAccent),
+                                  //       ),
+                                  //     ),),),
+                                  //   ),
 
                                   // if (formulaEntry['image'] != null && formulaEntry['image'].toString().isNotEmpty)
                                   //   Padding(
@@ -384,6 +384,35 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                                   //       ),
                                   //     ),
                                   //   ),
+
+                                  // ... inside the Column's children array in the _buildFormulaCard method
+
+                                  if (formulaEntry['image'] != null && formulaEntry['image'].toString().isNotEmpty)
+                                    Padding(
+                                      padding: EdgeInsets.only(bottom: screenWidth * 0.02),
+                                      child: Center(
+                                        child: SizedBox(
+                                          width: screenWidth * 0.6,
+                                          height: (screenWidth * 0.6) / 1.5,
+                                          child: formulaEntry['image'].endsWith('.svg')
+                                              ? SvgPicture.asset(
+                                            formulaEntry['image'],
+                                            fit: BoxFit.contain,
+                                            placeholderBuilder: (context) => const SizedBox.shrink(), // Optional: handle loading/errors
+                                          )
+                                              : Image.asset(
+                                            formulaEntry['image'],
+                                            fit: BoxFit.contain,
+                                            errorBuilder: (context, error, stackTrace) => const Text(
+                                              'Image not found',
+                                              style: TextStyle(color: Colors.redAccent),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+
+// ... rest of the widgets in the Column
 
 
                                   Html(
