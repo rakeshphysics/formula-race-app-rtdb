@@ -508,12 +508,22 @@ void _checkForNewBamboos() async {
             children: <Widget>[
 
               // --- MENU ITEMS ---
-
-              ListTile(
-                leading: const Icon(Icons.school_outlined, color: Color(0xFFA8A8A8)), // An icon for learning/revising
+          Container(
+          margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0), // Adds space around the item
+          decoration: BoxDecoration(
+            color: const Color(0xD00BCD4),
+            border: Border.all(
+              color: const Color(0xCC00BCD4), // Using a cyan color to match your exit dialog
+              width: 1.2,
+            ),
+            borderRadius: BorderRadius.circular(8.0),
+          ),
+              child: ListTile(
+                leading: const Icon(Icons.school_outlined, color: Color(
+                    0xCC00BCD4)), // An icon for learning/revising
                 title: Text(
                   'Revise All Formulas',
-                  style: GoogleFonts.poppins(color: const Color(0xFFA8A8A8)),
+                  style: GoogleFonts.poppins(color: const Color(0xCCFFFFFF)),
                 ),
                 onTap: () {
                   Navigator.pop(context); // Close the drawer first
@@ -524,7 +534,9 @@ void _checkForNewBamboos() async {
                     ),
                   );
                 },
-              ),
+              ),),
+
+
               ListTile(
                 leading: const Icon(Icons.help_outline, color: Color(0xFFA8A8A8)),
                 title: Text(
