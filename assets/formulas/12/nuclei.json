@@ -86,7 +86,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/nuclei/nuclei_qn_005.png",
+    "image": "assets/images/12th/nuclei/nuclei_qn_005.svg",
     "tip": "Trick to remember ! isotoPES same proton number"
   },
 
@@ -105,7 +105,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/nuclei/nuclei_qn_006.png",
+      "image": "assets/images/12th/nuclei/nuclei_qn_006.svg",
       "tip": "Trick to remember ! isotoNES same neutron number"
     },
     {
@@ -123,7 +123,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/nuclei/nuclei_qn_007.png",
+      "image": "assets/images/12th/nuclei/nuclei_qn_007.svg",
       "tip": ""
     },
     {

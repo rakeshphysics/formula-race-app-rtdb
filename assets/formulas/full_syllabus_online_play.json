@@ -8991,7 +8991,7 @@
         "class": "12"
       },
       "image": "assets/images/12th/ac/ac_qn_014.svg",
-      "tip": "Remember this. Comes very much in handy while solving AC questions."
+      "tip": "Remember this. Comes very much in handy while solving AC questions. It is similar for cos, but cos is slightly shifted compared to sin"
     },
     {
       "id": "ac_qn_015",
@@ -9009,7 +9009,7 @@
         "class": "12"
       },
       "image": "assets/images/12th/ac/ac_qn_015.svg",
-      "tip": "Remember this. Comes very much in handy while solving AC questions."
+      "tip": "Remember this. Comes very much in handy while solving AC questions. It is similar for cos, but cos is slightly shifted comapred to sin"
     },
 
     {
@@ -9300,7 +9300,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_011.svg",
+      "image": "assets/images/12th/capacitors/capacitors_qn_011.png",
       "tip": "Caution, V is potential drop across capacitor, not emf of cell. So its always safer to use the formula Q^2/2C for energy stored in capacitor"
     },
     {
@@ -9318,7 +9318,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_012.svg",
+      "image": "assets/images/12th/capacitors/capacitors_qn_012.png",
       "tip": ""
     },
     {
@@ -9336,7 +9336,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_013.svg",
+      "image": "assets/images/12th/capacitors/capacitors_qn_013.png",
       "tip": ""
     },
     {
@@ -9372,7 +9372,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_015.svg",
+      "image": "assets/images/12th/capacitors/capacitors_qn_015.png",
       "tip": ""
     },
 
@@ -9445,7 +9445,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_019.svg",
+      "image": "assets/images/12th/capacitors/capacitors_qn_019.png",
       "tip": "Remember this. Make qns solving faster. Potential is inversely proportional to the capacitance of the capacitors"
     },
 
@@ -9483,7 +9483,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_021.svg",
+      "image": "assets/images/12th/capacitors/capacitors_qn_021.png",
       "tip": ""
     },
     {
@@ -9501,7 +9501,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_022.svg",
+      "image": "assets/images/12th/capacitors/capacitors_qn_022.png",
       "tip": ""
     },
     {
@@ -9519,7 +9519,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_023.svg",
+      "image": "assets/images/12th/capacitors/capacitors_qn_023.png",
       "tip": ""
     },
     {
@@ -9720,7 +9720,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_004.svg",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_004.png",
       "tip": ""
     },
     {
@@ -9738,7 +9738,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_005.svg",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_005.png",
       "tip": ""
     },
     {
@@ -9756,7 +9756,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_006.svg",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_006.png",
       "tip": ""
     },
 
@@ -10102,7 +10102,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_025.svg",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_025.png",
       "tip": "Use this formula with caution ! All bulbs MUST have same voltage rating as cell, only then is this formula applicable."
     },
 
@@ -10121,7 +10121,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_026.svg",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_026.png",
       "tip": "Use this formula with caution ! All bulbs MUST have same voltage rating as cell, only then is this formula applicable."
     },
     {
@@ -10144,7 +10144,7 @@
     },
     {
       "id": "current_electricity_qn_028",
-      "question": "To design a potentiometer, of range <i>V</i>, using a galvanometer having characteristics (<i>i<sub>g</sub></i>, <i>r<sub>g</sub></i>) the resistance <i>R</i> that must be connected in series with galvanometer is",
+      "question": "To design a voltmeter, of range <i>V</i>, using a galvanometer having characteristics (<i>i<sub>g</sub></i>, <i>r<sub>g</sub></i>) the resistance <i>R</i> that must be connected in series with galvanometer is",
       "options": [
         "(\\frac{V}{i_g}) + r_g",
         "V i_g + r_g",
@@ -12640,7 +12640,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_014.svg",
+    "image": "assets/images/12th/dual_nature_of_light/dual_nature_of_light_qn_014.png",
     "tip": ""
   },
   {
@@ -13969,7 +13969,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_007.svg",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_007.png",
       "tip": ""
     },
     {
@@ -14151,7 +14151,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_017.svg",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_017.png",
     "tip": "The bulb glows (1) when both switches are open (0)"
   },
   {
@@ -14187,7 +14187,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_019.svg",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_019.png",
     "tip": "The bulb glows (1) when any one or both switches are open (0)"
   },
   {
@@ -14278,7 +14278,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_024.svg",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_024.png",
     "tip": "It is the flow of majority charge carriers from p to n due to difference in concentration of charge carriers"
   },
 
@@ -14297,7 +14297,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_025.svg",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_025.png",
     "tip": "It is the flow of minority charge carriers from n to p due to inbuilt electric field"
   },
   {
@@ -14315,7 +14315,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_026.svg",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_026.png",
     "tip": "Just remember this, derivation is not in NCERT. It can be done using electrostatics concepts."
   },
   {
@@ -14333,7 +14333,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_027.svg",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_027.png",
     "tip": ""
   },
   {
@@ -14351,7 +14351,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_028.svg",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_028.png",
     "tip": ""
   },
 
@@ -14443,7 +14443,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_033.svg",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_033.png",
       "tip": "Heavy doping dec depletion layer width. This results in very high electric field in that region even for small values of applied voltage"
     },
     {
@@ -14461,7 +14461,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_034.svg",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_034.png",
       "tip": ""
     },
     {
@@ -14497,7 +14497,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_036.svg",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_036.png",
       "tip": ""
     },
 
@@ -14552,7 +14552,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_039.svg",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_039.png",
       "tip": "Only in reverse bias is the small change in intensity noticeable. We could operate in forward bias also but the change in current is negligible compared to the actual current, so detection becomes difficult."
     },
     {
@@ -14589,7 +14589,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_041.svg",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_041.png",
     "tip": "Threshold voltage across germanium diode is 0.2V"
   },
   {
@@ -14661,7 +14661,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_045.svg",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_045.png",
     "tip": "Heavy doping inc the no of electron hole combinations, thus giving more light"
   },
   {
@@ -14679,7 +14679,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_046.svg",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_046.png",
     "tip": "Reverse bias connection leads to very low current. So less electron hole combinations, so no light emitted."
   },
 
@@ -14698,7 +14698,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_047.svg",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_047.png",
     "tip": "Less doping inc the depletion width. So more number of photons fall, increasing the electron hole pair generation"
   },
   {
@@ -14863,7 +14863,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/wave_optics/wave_optics_qn_006.png",
       "tip": ""
     },
     {
@@ -14881,7 +14881,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/wave_optics/wave_optics_qn_007.png",
       "tip": ""
     },
     {
@@ -14899,7 +14899,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/wave_optics/wave_optics_qn_008.png",
       "tip": ""
     },
     {
@@ -14917,7 +14917,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "",
+      "image": "assets/images/12th/wave_optics/wave_optics_qn_009.svg",
       "tip": ""
     },
     {
@@ -15008,7 +15008,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_014.svg",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_014.png",
     "tip": ""
   },
   {
@@ -15026,7 +15026,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_015.svg",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_015.png",
     "tip": ""
   },
 
@@ -15045,7 +15045,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_016.svg",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_016.png",
     "tip": ""
   },
   {
@@ -15063,7 +15063,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_017.svg",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_017.png",
     "tip": ""
   },
   {
@@ -15081,7 +15081,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_018.svg",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_018.png",
     "tip": ""
   },
   {
@@ -15099,7 +15099,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_019.svg",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_019.png",
     "tip": ""
   },
   {
@@ -15117,7 +15117,7 @@
       "difficulty": "god",
       "class": "12"
     },
-    "image": "assets/images/12th/wave_optics/wave_optics_qn_020.svg",
+    "image": "assets/images/12th/wave_optics/wave_optics_qn_020.png",
     "tip": ""
   },
 
@@ -15557,7 +15557,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/xrays/xrays_qn_004.svg",
+      "image": "assets/images/12th/xrays/xrays_qn_004.png",
       "tip": ""
     },
     {
@@ -15612,7 +15612,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/xrays/xrays_qn_007.svg",
+      "image": "assets/images/12th/xrays/xrays_qn_007.png",
       "tip": ""
     },
     {
@@ -15812,7 +15812,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/nuclei/nuclei_qn_008.svg",
+      "image": "assets/images/12th/nuclei/nuclei_qn_008.png",
       "tip": ""
     },
     {
@@ -15830,7 +15830,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/nuclei/nuclei_qn_009.svg",
+      "image": "assets/images/12th/nuclei/nuclei_qn_009.png",
       "tip": "Stability of a nucleus is decided by binding energy per nucleon and NOT Binding energy"
     },
     {
@@ -15848,7 +15848,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/nuclei/nuclei_qn_010.svg",
+      "image": "assets/images/12th/nuclei/nuclei_qn_010.png",
       "tip": ""
     },
 
@@ -15867,7 +15867,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/nuclei/nuclei_qn_011.svg",
+      "image": "assets/images/12th/nuclei/nuclei_qn_011.png",
       "tip": ""
     },
     {
@@ -15976,7 +15976,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/nuclei/nuclei_qn_017.svg",
+      "image": "assets/images/12th/nuclei/nuclei_qn_017.png",
       "tip": ""
     },
     {
@@ -15994,7 +15994,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/nuclei/nuclei_qn_018.svg",
+      "image": "assets/images/12th/nuclei/nuclei_qn_018.png",
       "tip": ""
     },
     {

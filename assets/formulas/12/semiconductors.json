@@ -14,7 +14,7 @@
     "difficulty": "easy",
     "class": "12"
   },
-  "image": "assets/images/12th/semiconductors/semiconductors_qn_001.png",
+  "image": "assets/images/12th/semiconductors/semiconductors_qn_001.svg",
   "tip": ""
 },
 {
@@ -32,7 +32,7 @@
 "difficulty": "easy",
 "class": "12"
 },
-"image": "assets/images/12th/semiconductors/semiconductors_qn_002.png",
+"image": "assets/images/12th/semiconductors/semiconductors_qn_002.svg",
 "tip": ""
 },
 {
@@ -50,7 +50,7 @@
 "difficulty": "easy",
 "class": "12"
 },
-"image": "assets/images/12th/semiconductors/semiconductors_qn_003.png",
+"image": "assets/images/12th/semiconductors/semiconductors_qn_003.svg",
 "tip": ""
 },
 {
@@ -68,7 +68,7 @@
 "difficulty": "easy",
 "class": "12"
 },
-"image": "assets/images/12th/semiconductors/semiconductors_qn_004.png",
+"image": "assets/images/12th/semiconductors/semiconductors_qn_004.svg",
 "tip": ""
 },
 {
@@ -86,7 +86,7 @@
 "difficulty": "medium",
 "class": "12"
 },
-"image": "assets/images/12th/semiconductors/semiconductors_qn_005.png",
+"image": "assets/images/12th/semiconductors/semiconductors_qn_005.svg",
 "tip": ""
 },
 {
@@ -104,7 +104,7 @@
 "difficulty": "medium",
 "class": "12"
 },
-"image": "assets/images/12th/semiconductors/semiconductors_qn_006.png",
+"image": "assets/images/12th/semiconductors/semiconductors_qn_006.svg",
 "tip": ""
 },
   {
@@ -140,7 +140,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_008.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_008.svg",
     "tip": ""
   },
   {
@@ -158,7 +158,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_009.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_009.svg",
     "tip": ""
   },
   {
@@ -176,7 +176,7 @@
       "difficulty": "god",
       "class": "12"
     },
-    "image": "assets/images/12th/semiconductors/semiconductors_qn_010.png",
+    "image": "assets/images/12th/semiconductors/semiconductors_qn_010.svg",
     "tip": ""
   },
 
@@ -195,7 +195,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_011.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_011.svg",
       "tip": ""
     },
     {
@@ -213,7 +213,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_012.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_012.svg",
       "tip": "Students get confused between AND and OR. Trick to remember. This gate looks like a \"D\"... so AND !"
     },
     {
@@ -231,7 +231,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_013.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_013.svg",
       "tip": ""
     },
     {
@@ -249,7 +249,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_014.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_014.svg",
       "tip": ""
     },
     {
@@ -267,7 +267,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_015.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_015.svg",
       "tip": ""
     },
 
@@ -286,7 +286,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_016.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_016.svg",
       "tip": "Remember, this is XOR Gate"
     },
     {
@@ -322,7 +322,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_018.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_018.svg",
       "tip": "Connect one terminal of 5V cell to A and ground the other terminal of cell. The potential at C is 5V"
     },
     {
@@ -358,7 +358,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_020.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_020.svg",
       "tip": "Remember, this is XNOR Gate"
     },
 
@@ -377,7 +377,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_021.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_021.svg",
       "tip": ""
     },
     {
@@ -395,7 +395,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_022.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_022.svg",
       "tip": "JEE Mains 2023 Qn. This explains proximity of Fermi-Level to CB or VB"
     },
     {
@@ -413,7 +413,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_023.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_023.svg",
       "tip": "JEE Mains 2023 Qn. This explains proximity of Fermi-Level to CB or VB"
     },
     {
@@ -523,7 +523,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_029.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_029.svg",
       "tip": ""
     },
     {
@@ -541,7 +541,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_030.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_030.svg",
       "tip": ""
     },
 
@@ -560,7 +560,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_031.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_031.svg",
       "tip": ""
     },
     {
@@ -578,7 +578,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_032.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_032.svg",
       "tip": ""
     },
     {
@@ -632,7 +632,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_035.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_035.svg",
       "tip": ""
     },
     {
@@ -669,7 +669,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_037.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_037.svg",
       "tip": "Voltage doubler circuit and Bridge rectifier are not in syllabus. Don't worry about those terms. They were just given for options"
     },
     {
@@ -687,7 +687,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_038.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_038.svg",
       "tip": "Voltage doubler circuit and Bridge rectifier are not in syllabus. Don't worry about those terms. They were just given for options"
     },
     {
@@ -723,7 +723,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_040.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_040.svg",
       "tip": ""
     },
 
@@ -760,7 +760,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_042.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_042.svg",
       "tip": ""
     },
     {
@@ -851,7 +851,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_047.svg",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_047.png",
       "tip": "Less doping inc the depletion width. So more number of photons fall, increasing the electron hole pair generation"
     },
     {
@@ -869,7 +869,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_048.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_048.svg",
       "tip": "This can be related to the threshold voltages. Si: 0.7V, Ge, 0.2V. Think! Carbon is anyways an insulator."
     },
     {
@@ -887,7 +887,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_049.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_049.svg",
       "tip": "The graph is in fourth quadrant as solar cell supplies current."
     },
     {
@@ -905,7 +905,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/semiconductors/semiconductors_qn_050.png",
+      "image": "assets/images/12th/semiconductors/semiconductors_qn_050.svg",
       "tip": "Use formula E = (1240)/lambda eV"
     }
 

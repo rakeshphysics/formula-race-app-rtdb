@@ -14,7 +14,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/capacitors/capacitors_qn_001.png",
+    "image": "assets/images/12th/capacitors/capacitors_qn_001.svg",
     "tip": ""
   },
   {
@@ -32,7 +32,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/capacitors/capacitors_qn_002.png",
+    "image": "assets/images/12th/capacitors/capacitors_qn_002.svg",
     "tip": ""
   },
   {
@@ -50,7 +50,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/capacitors/capacitors_qn_003.png",
+    "image": "assets/images/12th/capacitors/capacitors_qn_003.svg",
     "tip": ""
   },
   {
@@ -68,7 +68,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/capacitors/capacitors_qn_004.png",
+    "image": "assets/images/12th/capacitors/capacitors_qn_004.svg",
     "tip": ""
   },
   {
@@ -86,7 +86,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/capacitors/capacitors_qn_005.png",
+    "image": "assets/images/12th/capacitors/capacitors_qn_005.svg",
     "tip": "Many students calculate (1/Ceq) and forget to do the reciprocal. This is a very common silly mistake. If you do this correctly, you are already 1000s of ranks ahead."
   },
 
@@ -105,7 +105,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_006.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_006.svg",
       "tip": "This formula makes many questions simple to solve. If some space is air, then put K for that space as '1'"
     },
     {
@@ -123,7 +123,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_007.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_007.svg",
       "tip": ""
     },
     {
@@ -141,7 +141,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_008.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_008.svg",
       "tip": ""
     },
     {
@@ -159,7 +159,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_009.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_009.svg",
       "tip": ""
     },
     {
@@ -177,7 +177,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_010.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_010.svg",
       "tip": "The force due to equal and opposite polarized charges on a plate cancel out, giving us the same formula if there were no dielectric."
     },
 
@@ -250,7 +250,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_014.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_014.svg",
       "tip": ""
     },
     {
@@ -287,7 +287,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_016.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_016.svg",
       "tip": ""
     },
     {
@@ -305,7 +305,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_017.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_017.svg",
       "tip": "Notice a similarity ? When two masses undergo an inelastic collision, the final speed of combined mass is ? Think !"
     },
     {
@@ -323,7 +323,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_018.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_018.svg",
       "tip": "Remember this. Make qns solving faster. Charge is proportional to the capacitance of the capacitors"
     },
     {
@@ -360,7 +360,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_020.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_020.svg",
       "tip": "Notice a similarity ? When two masses undergo an inelastic collision, the loss of energy is ? Think !"
     },
 
@@ -433,7 +433,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_024.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_024.svg",
       "tip": ""
     },
     {
@@ -451,7 +451,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_025.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_025.svg",
       "tip": ""
     },
 
@@ -470,7 +470,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_026.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_026.svg",
       "tip": "Charge that appears on outer plates is equal. And its value is half the total charge"
     },
     {
@@ -488,7 +488,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_027.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_027.svg",
       "tip": "Charge that appears on outer plates is equal. And its value is half the total charge"
     },
     {
@@ -506,7 +506,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_028.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_028.svg",
       "tip": ""
     },
     {
@@ -524,7 +524,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_029.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_029.svg",
       "tip": ""
     },
 
@@ -543,7 +543,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/capacitors/capacitors_qn_030.png",
+      "image": "assets/images/12th/capacitors/capacitors_qn_030.svg",
       "tip": "This is not in portion, but it helps in solving certain Qns. Observe the symmetry in formula. It is reverse for resistors."
     }
 

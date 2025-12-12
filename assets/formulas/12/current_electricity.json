@@ -32,7 +32,7 @@
 "difficulty": "easy",
 "class": "12"
 },
-"image": "assets/images/12th/current_electricity/current_electricity_qn_002.png",
+"image": "assets/images/12th/current_electricity/current_electricity_qn_002.svg",
 "tip": ""
 },
 {
@@ -50,7 +50,7 @@
 "difficulty": "easy",
 "class": "12"
 },
-"image": "assets/images/12th/current_electricity/current_electricity_qn_003.png",
+"image": "assets/images/12th/current_electricity/current_electricity_qn_003.svg",
 "tip": ""
 },
 {
@@ -123,7 +123,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_007.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_007.svg",
       "tip": "As volume is constant, if length is doubled, area becomes half. Do this mentally in exam."
     },
     {
@@ -141,7 +141,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_008.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_008.svg",
       "tip": "As volume is constant ,if radius is made 1/3, Area becomes 1/9, length increases to 9 times. Do this mentally in exam"
     },
     {
@@ -214,7 +214,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_012.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_012.svg",
       "tip": "Formula for equivalent series inductance follows the same pattern"
     },
     {
@@ -232,7 +232,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_013.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_013.svg",
       "tip": "Formula for equivalent parallel inductance follows the same pattern"
     },
     {
@@ -250,7 +250,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_014.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_014.svg",
       "tip": ""
     },
     {
@@ -268,7 +268,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_015.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_015.svg",
       "tip": ""
     },
 
@@ -287,7 +287,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_016.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_016.svg",
       "tip": "Remember this, very useful in solving Qns. Potential drop is proportional to resistance"
     },
     {
@@ -305,7 +305,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_017.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_017.svg",
       "tip": "Remember this, very useful in solving Qns. Current is inversely proportional to resistance"
     },
     {
@@ -323,7 +323,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_018.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_018.svg",
       "tip": ""
     },
     {
@@ -341,7 +341,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_019.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_019.svg",
       "tip": ""
     },
     {
@@ -359,7 +359,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_020.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_020.svg",
       "tip": "This relation makes many tough qns very easy. The direction of current can be got from the sign of this answer !"
     },
 
@@ -378,7 +378,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_021.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_021.svg",
       "tip": ""
     },
     {
@@ -396,7 +396,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_022.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_022.svg",
       "tip": ""
     },
     {
@@ -414,7 +414,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_023.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_023.svg",
       "tip": ""
     },
     {
@@ -432,7 +432,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_024.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_024.svg",
       "tip": ""
     },
     {
@@ -487,12 +487,12 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_027.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_027.svg",
       "tip": "See the similarity between this and water flowing in a irregular pipe. Voila !"
     },
     {
       "id": "current_electricity_qn_028",
-      "question": "To design a potentiometer, of range <i>V</i>, using a galvanometer having characteristics (<i>i<sub>g</sub></i>, <i>r<sub>g</sub></i>) the resistance <i>R</i> that must be connected in series with galvanometer is",
+      "question": "To design a voltmeter, of range <i>V</i>, using a galvanometer having characteristics (<i>i<sub>g</sub></i>, <i>r<sub>g</sub></i>) the resistance <i>R</i> that must be connected in series with galvanometer is",
       "options": [
         "(\\frac{V}{i_g}) + r_g",
         "V i_g + r_g",
@@ -505,7 +505,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_028.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_028.svg",
       "tip": ""
     },
     {
@@ -523,7 +523,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_029.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_029.svg",
       "tip": ""
     },
     {
@@ -541,7 +541,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/current_electricity/current_electricity_qn_030.png",
+      "image": "assets/images/12th/current_electricity/current_electricity_qn_030.svg",
       "tip": "Sometimes not covered in class. This is in experiments and had come in JEE Mains. The current that produces a unit deflection in galvanometer is called figure of merit."
     }
 
