@@ -15,7 +15,7 @@
     "difficulty": "easy",
     "class": "12"
   },
-  "image": "assets/images/12th/ac/ac_qn_001.png",
+  "image": "assets/images/12th/ac/ac_qn_001.svg",
   "tip": ""
 },
 {
@@ -33,7 +33,7 @@
 "difficulty": "easy",
 "class": "12"
 },
-"image": "assets/images/12th/ac/ac_qn_002.png",
+"image": "assets/images/12th/ac/ac_qn_002.svg",
 "tip": ""
 },
 {
@@ -51,7 +51,7 @@
 "difficulty": "easy",
 "class": "12"
 },
-"image": "assets/images/12th/ac/ac_qn_003.png",
+"image": "assets/images/12th/ac/ac_qn_003.svg",
 "tip": ""
 },
 {
@@ -69,7 +69,7 @@
 "difficulty": "easy",
 "class": "12"
 },
-"image": "assets/images/12th/ac/ac_qn_004.png",
+"image": "assets/images/12th/ac/ac_qn_004.svg",
 "tip": ""
 },
 {
@@ -87,7 +87,7 @@
 "difficulty": "medium",
 "class": "12"
 },
-"image": "assets/images/12th/ac/ac_qn_005.png",
+"image": "assets/images/12th/ac/ac_qn_005.svg",
 "tip": ""
 },
 
@@ -142,7 +142,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/ac/ac_qn_008.png",
+    "image": "assets/images/12th/ac/ac_qn_008.svg",
     "tip": ""
   },
   {
@@ -160,7 +160,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/ac/ac_qn_009.png",
+    "image": "assets/images/12th/ac/ac_qn_009.svg",
     "tip": ""
   },
   {
@@ -178,7 +178,7 @@
       "difficulty": "god",
       "class": "12"
     },
-    "image": "assets/images/12th/ac/ac_qn_010.png",
+    "image": "assets/images/12th/ac/ac_qn_010.svg",
     "tip": ""
   },
 
@@ -215,7 +215,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_012.png",
+      "image": "assets/images/12th/ac/ac_qn_012.svg",
       "tip": ""
     },
     {
@@ -233,7 +233,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_013.png",
+      "image": "assets/images/12th/ac/ac_qn_013.svg",
       "tip": ""
     },
     {
@@ -251,7 +251,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_014.png",
+      "image": "assets/images/12th/ac/ac_qn_014.svg",
       "tip": "Remember this. Comes very much in handy while solving AC questions."
     },
     {
@@ -269,7 +269,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_015.png",
+      "image": "assets/images/12th/ac/ac_qn_015.svg",
       "tip": "Remember this. Comes very much in handy while solving AC questions."
     },
 
@@ -288,7 +288,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_016.png",
+      "image": "assets/images/12th/ac/ac_qn_016.svg",
       "tip": ""
     },
     {
@@ -342,7 +342,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_019.png",
+      "image": "assets/images/12th/ac/ac_qn_019.svg",
       "tip": ""
     },
     {
@@ -360,7 +360,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_020.png",
+      "image": "assets/images/12th/ac/ac_qn_020.svg",
       "tip": "Refer to NCERT pg 188. Chapter: AC"
     }
 

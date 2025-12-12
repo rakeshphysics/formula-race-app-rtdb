@@ -201,7 +201,7 @@
   },
   {
     "id": "center_of_mass_qn_012",
-    "question": "If masses <i>m<sub>1</sub></i> and <i>m<sub>2</sub></i> are moving with speeds <b>a<sub>1</sub></b> and <b>a<sub>2</sub></b> respectively. The speed of centre of mass is",
+    "question": "If masses <i>m<sub>1</sub></i> and <i>m<sub>2</sub></i> are moving with accelerations <b>a<sub>1</sub></b> and <b>a<sub>2</sub></b> respectively. The speed of centre of mass is",
     "options": [
       "\\frac{m_1\\textbf{a}_1 + m_2\\textbf{a}_2}{m_1 - m_2}",
       "\\frac{m_1\\textbf{a}_2 + m_2\\textbf{a}_1}{m_1 + m_2}",
@@ -523,7 +523,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/circular_motion/circular_motion_qn_009.svg",
+      "image": "assets/images/11th/circular_motion/circular_motion_qn_009.png",
       "tip": ""
     },
     {
@@ -541,7 +541,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/circular_motion/circular_motion_qn_010.svg",
+      "image": "assets/images/11th/circular_motion/circular_motion_qn_010.png",
       "tip": ""
     },
 
@@ -1853,7 +1853,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_002.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_002.png",
       "tip": ""
     },
     {
@@ -1871,7 +1871,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_003.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_003.png",
       "tip": ""
     },
     {
@@ -1889,7 +1889,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_004.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_004.png",
       "tip": ""
     },
     {
@@ -1907,7 +1907,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_005.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_005.png",
       "tip": ""
     },
 
@@ -1944,7 +1944,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_007.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_007.png",
       "tip": ""
     },
     {
@@ -1962,7 +1962,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_008.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_008.png",
       "tip": ""
     },
     {
@@ -1980,7 +1980,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_009.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_009.png",
       "tip": ""
     },
     {
@@ -1998,7 +1998,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_010.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_010.png",
       "tip": ""
     },
 
@@ -2017,7 +2017,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_011.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_011.png",
       "tip": ""
     },
     {
@@ -2035,7 +2035,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_012.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_012.png",
       "tip": ""
     },
     {
@@ -2053,7 +2053,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_013.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_013.png",
       "tip": ""
     },
     {
@@ -2071,7 +2071,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_014.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_014.png",
       "tip": ""
     },
     {
@@ -2089,7 +2089,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_015.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_015.png",
       "tip": ""
     },
     {
@@ -2107,7 +2107,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_016.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_016.png",
       "tip": ""
     },
 
@@ -2126,7 +2126,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_017.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_017.png",
       "tip": ""
     },
     {
@@ -2144,7 +2144,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_018.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_018.png",
       "tip": ""
     },
     {
@@ -2162,7 +2162,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_019.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_019.png",
       "tip": ""
     },
     {
@@ -2180,7 +2180,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_020.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_020.png",
       "tip": ""
     },
 
@@ -2200,7 +2200,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_021.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_021.png",
       "tip": ""
     },
     {
@@ -2218,7 +2218,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_022.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_022.png",
       "tip": ""
     },
     {
@@ -2236,7 +2236,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_023.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_023.png",
       "tip": ""
     },
     {
@@ -2254,7 +2254,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_024.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_024.png",
       "tip": ""
     },
     {
@@ -2272,7 +2272,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_025.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_025.png",
       "tip": ""
     },
 
@@ -2292,7 +2292,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_026.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_026.png",
       "tip": ""
     },
     {
@@ -2310,7 +2310,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_027.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_027.png",
       "tip": ""
     },
     {
@@ -2328,7 +2328,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_028.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_028.png",
       "tip": ""
     },
     {
@@ -2346,7 +2346,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_029.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_029.png",
       "tip": ""
     },
     {
@@ -2364,7 +2364,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/gravitation/gravitation_qn_030.svg",
+      "image": "assets/images/11th/gravitation/gravitation_qn_030.png",
       "tip": ""
     },
 
@@ -2801,7 +2801,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_024.svg",
+      "image": "assets/images/11th/kinematics/kinematics_qn_024.png",
       "tip": ""
     },
     {
@@ -2819,7 +2819,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_025.svg",
+      "image": "assets/images/11th/kinematics/kinematics_qn_025.png",
       "tip": ""
     },
 
@@ -2838,7 +2838,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_026.svg",
+      "image": "assets/images/11th/kinematics/kinematics_qn_026.png",
       "tip": ""
     },
     {
@@ -2856,7 +2856,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_027.svg",
+      "image": "assets/images/11th/kinematics/kinematics_qn_027.png",
       "tip": ""
     },
     {
@@ -2910,7 +2910,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/kinematics/kinematics_qn_030.svg",
+      "image": "assets/images/11th/kinematics/kinematics_qn_030.png",
       "tip": ""
     },
 
@@ -4222,7 +4222,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_012.svg",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_012.png",
       "tip": ""
     },
     {
@@ -4240,7 +4240,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_013.svg",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_013.png",
       "tip": ""
     },
     {
@@ -4258,7 +4258,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_014.svg",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_014.png",
       "tip": ""
     },
 
@@ -4277,7 +4277,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_015.svg",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_015.png",
       "tip": ""
     },
     {
@@ -4532,7 +4532,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_029.svg",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_029.png",
       "tip": ""
     },
     {
@@ -8206,7 +8206,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_041.svg",
+      "image": "assets/images/11th/waves/waves_qn_041.png",
       "tip": ""
     },
     {
@@ -8224,7 +8224,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_042.svg",
+      "image": "assets/images/11th/waves/waves_qn_042.png",
       "tip": ""
     },
     {
@@ -8242,7 +8242,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_043.svg",
+      "image": "assets/images/11th/waves/waves_qn_043.png",
       "tip": ""
     },
     {
@@ -8260,7 +8260,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_044.svg",
+      "image": "assets/images/11th/waves/waves_qn_044.png",
       "tip": ""
     },
     {
@@ -8278,7 +8278,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_045.svg",
+      "image": "assets/images/11th/waves/waves_qn_045.png",
       "tip": "Remember, Operating/System. Observer in numerator, Source in denominator"
     },
 
@@ -8369,7 +8369,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/waves/waves_qn_050.svg",
+      "image": "assets/images/11th/waves/waves_qn_050.png",
       "tip": "Remember, Operating/System. Observer in numerator, Source in denominator"
     },
 
@@ -8936,7 +8936,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/ac/ac_qn_011.svg",
+      "image": "assets/images/12th/ac/ac_qn_011.png",
       "tip": ""
     },
     {

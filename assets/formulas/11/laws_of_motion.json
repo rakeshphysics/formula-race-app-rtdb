@@ -32,7 +32,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_002.png",
+    "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_002.svg",
     "tip": ""
   },
   {
@@ -86,7 +86,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_005.png",
+    "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_005.svg",
     "tip": ""
   },
 
@@ -141,7 +141,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_008.png",
+    "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_008.svg",
     "tip": ""
   }
 ,
@@ -160,7 +160,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_009.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_009.svg",
       "tip": ""
     },
     {
@@ -178,7 +178,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_010.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_010.svg",
       "tip": ""
     },
 
@@ -288,7 +288,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_016.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_016.svg",
       "tip": ""
     },
     {
@@ -306,7 +306,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_017.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_017.svg",
       "tip": ""
     },
     {
@@ -324,7 +324,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_018.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_018.svg",
       "tip": ""
     },
 
@@ -343,7 +343,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_019.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_019.svg",
       "tip": ""
     },
 
@@ -362,7 +362,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_020.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_020.svg",
       "tip": ""
     },
 
@@ -381,7 +381,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_021.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_021.svg",
       "tip": ""
     },
     {
@@ -399,7 +399,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_022.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_022.svg",
       "tip": ""
     },
     {
@@ -417,7 +417,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_023.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_023.svg",
       "tip": ""
     },
     {
@@ -435,7 +435,7 @@
         "difficulty": "easy",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_024.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_024.svg",
       "tip": ""
     },
     {
@@ -453,7 +453,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_025.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_025.svg",
       "tip": ""
     },
     {
@@ -471,7 +471,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_026.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_026.svg",
       "tip": ""
     },
     {
@@ -489,7 +489,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_027.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_027.svg",
       "tip": ""
     },
     {
@@ -507,7 +507,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_028.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_028.svg",
       "tip": ""
     },
     {
@@ -543,7 +543,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_030.png",
+      "image": "assets/images/11th/laws_of_motion/laws_of_motion_qn_030.svg",
       "tip": ""
     }
 ]
