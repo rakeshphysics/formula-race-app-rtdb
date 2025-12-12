@@ -270,7 +270,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/units_and_dimensions/units_and_dimensions_qn_015.png",
+      "image": "assets/images/11th/units_and_dimensions/units_and_dimensions_qn_015.svg",
       "tip": "Very rare case! If its given VSD>MSD, then LC = 1 VSD – 1 MSD. Refer to JEE Adv 2016 qn and JEE Adv 2021 qn"
     },
 
@@ -325,7 +325,7 @@
         "difficulty": "medium",
         "class": "11"
       },
-      "image": "assets/images/11th/units_and_dimensions/units_and_dimensions_qn_018.png",
+      "image": "assets/images/11th/units_and_dimensions/units_and_dimensions_qn_018.svg",
       "tip": ""
     },
     {
@@ -361,7 +361,7 @@
         "difficulty": "god",
         "class": "11"
       },
-      "image": "assets/images/11th/units_and_dimensions/units_and_dimensions_qn_020.png",
+      "image": "assets/images/11th/units_and_dimensions/units_and_dimensions_qn_020.svg",
       "tip": "Be careful ! for negative zero error, vernier coincidence must be taken from the end."
     }
 
