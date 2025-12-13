@@ -69,7 +69,7 @@
 "difficulty": "easy",
 "class": "12"
 },
-"image": "assets/images/12th/emi/emi_qn_004.png",
+"image": "assets/images/12th/emi/emi_qn_004.svg",
 "tip": ""
 },
 {
@@ -87,7 +87,7 @@
 "difficulty": "medium",
 "class": "12"
 },
-"image": "assets/images/12th/emi/emi_qn_005.png",
+"image": "assets/images/12th/emi/emi_qn_005.svg",
 "tip": ""
 },
   {
@@ -105,7 +105,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/emi/emi_qn_006.png",
+    "image": "assets/images/12th/emi/emi_qn_006.svg",
     "tip": ""
   },
   {
@@ -123,7 +123,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/emi/emi_qn_007.png",
+    "image": "assets/images/12th/emi/emi_qn_007.svg",
     "tip": ""
   },
   {
@@ -141,7 +141,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/emi/emi_qn_008.png",
+    "image": "assets/images/12th/emi/emi_qn_008.svg",
     "tip": ""
   },
   {
@@ -159,7 +159,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/emi/emi_qn_009.png",
+    "image": "assets/images/12th/emi/emi_qn_009.svg",
     "tip": ""
   },
   {
@@ -177,7 +177,7 @@
       "difficulty": "god",
       "class": "12"
     },
-    "image": "assets/images/12th/emi/emi_qn_010.png",
+    "image": "assets/images/12th/emi/emi_qn_010.svg",
     "tip": ""
   },
 
@@ -196,7 +196,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_011.png",
+      "image": "assets/images/12th/emi/emi_qn_011.svg",
       "tip": ""
     },
     {
@@ -214,7 +214,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_012.png",
+      "image": "assets/images/12th/emi/emi_qn_012.svg",
       "tip": ""
     },
     {
@@ -232,7 +232,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_013.png",
+      "image": "assets/images/12th/emi/emi_qn_013.svg",
       "tip": ""
     },
     {
@@ -250,7 +250,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_014.png",
+      "image": "assets/images/12th/emi/emi_qn_014.svg",
       "tip": ""
     },
     {
@@ -268,7 +268,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_015.png",
+      "image": "assets/images/12th/emi/emi_qn_015.svg",
       "tip": ""
     },
 
@@ -287,7 +287,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_016.png",
+      "image": "assets/images/12th/emi/emi_qn_016.svg",
       "tip": "The general form given in books is slightly different. Remembering it this way is easier !"
     },
     {
@@ -305,7 +305,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_017.png",
+      "image": "assets/images/12th/emi/emi_qn_017.svg",
       "tip": ""
     },
     {
@@ -378,7 +378,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_021.png",
+      "image": "assets/images/12th/emi/emi_qn_021.svg",
       "tip": ""
     },
     {
@@ -396,7 +396,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_022.png",
+      "image": "assets/images/12th/emi/emi_qn_022.svg",
       "tip": ""
     },
     {
@@ -414,7 +414,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_023.png",
+      "image": "assets/images/12th/emi/emi_qn_023.svg",
       "tip": "For initial state, we can replace the inductor with broken wire"
     },
     {
@@ -432,7 +432,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_024.png",
+      "image": "assets/images/12th/emi/emi_qn_024.svg",
       "tip": "For steady state, we can replace the inductor with a zero resistance wire"
     },
     {
@@ -450,7 +450,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_025.png",
+      "image": "assets/images/12th/emi/emi_qn_025.svg",
       "tip": ""
     },
 
@@ -469,7 +469,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_026.png",
+      "image": "assets/images/12th/emi/emi_qn_026.svg",
       "tip": ""
     },
     {
@@ -487,7 +487,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_027.png",
+      "image": "assets/images/12th/emi/emi_qn_027.svg",
       "tip": ""
     },
     {
@@ -505,7 +505,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/emi/emi_qn_028.png",
+      "image": "assets/images/12th/emi/emi_qn_028.svg",
       "tip": ""
     },
     {

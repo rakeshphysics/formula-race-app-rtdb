@@ -14,7 +14,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_001.png",
+    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_001.svg",
     "tip": ""
   },
   {
@@ -32,7 +32,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_002.png",
+    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_002.svg",
     "tip": ""
   },
   {
@@ -50,7 +50,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_003.png",
+    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_003.svg",
     "tip": ""
   },
   {
@@ -68,7 +68,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_004.png",
+    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_004.svg",
     "tip": ""
   },
   {
@@ -86,7 +86,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_005.png",
+    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_005.svg",
     "tip": ""
   },
 
@@ -105,7 +105,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_006.png",
+    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_006.svg",
     "tip": ""
   },
   {
@@ -123,7 +123,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_007.png",
+    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_007.svg",
     "tip": ""
   },
   {
@@ -141,7 +141,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_008.png",
+    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_008.svg",
     "tip": ""
   },
   {
@@ -159,7 +159,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_009.png",
+    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_009.svg",
     "tip": "Think of this as, two sheets of charge. The net field is sum due to each sheet"
   },
   {
@@ -177,7 +177,7 @@
       "difficulty": "god",
       "class": "12"
     },
-    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_010.png",
+    "image": "assets/images/12th/Electrostatics/Electrostatics_qn_010.svg",
     "tip": ""
   },
 
@@ -214,7 +214,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_012.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_012.svg",
       "tip": ""
     },
     {
@@ -232,7 +232,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_013.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_013.svg",
       "tip": ""
     },
     {
@@ -250,7 +250,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_014.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_014.svg",
       "tip": ""
     },
     {
@@ -268,7 +268,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_015.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_015.svg",
       "tip": ""
     },
     {
@@ -286,7 +286,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_016.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_016.svg",
       "tip": ""
     },
 
@@ -305,7 +305,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_017.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_017.svg",
       "tip": ""
     },
     {
@@ -323,7 +323,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_018.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_018.svg",
       "tip": ""
     },
     {
@@ -341,7 +341,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_019.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_019.svg",
       "tip": "This is the same as a finite rod, remember this similarity. Would gravitational field due to an arc be similar ? Think !"
     },
     {
@@ -359,7 +359,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_020.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_020.svg",
       "tip": ""
     },
 
@@ -379,7 +379,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_021.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_021.svg",
       "tip": ""
     },
     {
@@ -397,7 +397,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_022.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_022.svg",
       "tip": ""
     },
     {
@@ -415,7 +415,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_023.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_023.svg",
       "tip": ""
     },
     {
@@ -433,7 +433,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_024.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_024.svg",
       "tip": ""
     },
     {
@@ -451,7 +451,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_025.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_025.svg",
       "tip": ""
     },
 
@@ -507,7 +507,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_028.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_028.svg",
       "tip": ""
     },
     {
@@ -525,7 +525,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_029.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_029.svg",
       "tip": ""
     },
     {
@@ -543,7 +543,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_030.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_030.svg",
       "tip": ""
     },
 
@@ -562,7 +562,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_031.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_031.svg",
       "tip": ""
     },
     {
@@ -580,7 +580,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_032.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_032.svg",
       "tip": ""
     },
     {
@@ -598,7 +598,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_033.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_033.svg",
       "tip": ""
     },
     {
@@ -616,7 +616,7 @@
         "difficulty": "easy",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_034.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_034.svg",
       "tip": ""
     },
     {
@@ -634,7 +634,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_035.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_035.svg",
       "tip": ""
     },
     {
@@ -652,7 +652,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_036.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_036.svg",
       "tip": "Think of electric field as a commander, all the dipoles (soldiers) are ordered to point in the direction of external electric field"
     },
 
@@ -671,7 +671,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_037.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_037.svg",
       "tip": ""
     },
     {
@@ -689,7 +689,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_038.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_038.svg",
       "tip": ""
     },
     {
@@ -707,7 +707,7 @@
         "difficulty": "medium",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_039.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_039.svg",
       "tip": ""
     },
     {
@@ -725,7 +725,7 @@
         "difficulty": "god",
         "class": "12"
       },
-      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_040.png",
+      "image": "assets/images/12th/Electrostatics/Electrostatics_qn_040.svg",
       "tip": ""
     }
 
