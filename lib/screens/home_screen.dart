@@ -87,16 +87,6 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
     });
   }
 
-
-  // Add this new method inside _HomeScreenState
-// lib/screens/home_screen.dart
-
-// lib/screens/home_screen.dart
-
-// lib/screens/home_screen.dart
-
-// lib/screens/home_screen.dart
-
 void _loadAiMessage({required AiMessageTrigger trigger}) async {
   if (_isTalking) return;
 
@@ -151,12 +141,6 @@ void _loadAiMessage({required AiMessageTrigger trigger}) async {
     }
   });
 }
-// lib/screens/home_screen.dart -> inside _HomeScreenState
-
-// Add this new function after _loadAiMessage
-// lib/screens/home_screen.dart
-
-// lib/screens/home_screen.dart -> inside _HomeScreenState
 
 void _handlePandaTap() async {
   if (_isTalking) return;
@@ -223,10 +207,6 @@ void _handlePandaTap() async {
   });
 }
 
-// lib/screens/home_screen.dart -> inside _HomeScreenState
-
-// lib/screens/home_screen.dart -> inside _HomeScreenState
-
 String _getOutOfEnergyMessage() {
   const messages = [
     "My tummy is rumbling... I need more bamboo to think! 😫",
@@ -241,9 +221,6 @@ String _getOutOfEnergyMessage() {
   modifiableList.shuffle();
   return modifiableList.first;
 }
-
-
-// lib/screens/home_screen.dart
 
 void _handlePersonalQuestionResponse(bool hadMeal) async {
   // 1. Hide the buttons and get the new message
@@ -278,7 +255,7 @@ void _handlePersonalQuestionResponse(bool hadMeal) async {
     }
   });
 }
-  // In _HomeScreenState
+
 
   void _startTypingAnimation() {
     const typingSpeed = Duration(milliseconds: 70);
@@ -373,20 +350,6 @@ void _checkForNewBamboos() async {
   print("--- Load complete. Final balance on screen: $_bamboos ---");
 }
 
-
-
-
-  //Future<void> loadUserId() async {
-   // final prefs = await SharedPreferences.getInstance();
-   // final storedId = prefs.getString('user_id');
-   // if (storedId != null) {
-     // setState(() {
-      //  userId = storedId;
-    //  });
-   // } else {
-     // print("No user ID found");
-   // }
- // }
 
   Widget build(BuildContext context) {
 
@@ -948,3 +911,17 @@ class GradientBorderPainter extends CustomPainter {
   @override
   bool shouldRepaint(CustomPainter oldDelegate) => false;
 }
+
+
+
+//Future<void> loadUserId() async {
+// final prefs = await SharedPreferences.getInstance();
+// final storedId = prefs.getString('user_id');
+// if (storedId != null) {
+// setState(() {
+//  userId = storedId;
+//  });
+// } else {
+// print("No user ID found");
+// }
+// }

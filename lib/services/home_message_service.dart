@@ -196,17 +196,141 @@ class HomeMessageService {
     final int total = lastGame['total_questions'];
     final double score = total > 0 ? correct / total : 0;
 
+    // lib/services/home_message_service.dart
+
+    // lib/services/home_message_service.dart
+
     String gameRecap;
     if (score == 1.0) {
-      gameRecap = "A perfect score of $correct out of $total in the last round! Incredible work! 🏆";
+      const messages = [
+        // Original
+        "A perfect score! Are you even human?! 🤖🏆",
+        "Flawless victory! You're unstoppable! 🚀",
+        "Perfection! Bow down to the master. 👑",
+        // Added
+        "10/10! Is your middle name 'Perfect'? ✨",
+        "Wow, a flawless run! Genius at play. 🧠",
+        "Perfect score! You didn't miss a beat. 🎶",
+        "Nailed it! Every single one. 🎯",
+        "That was legendary! A perfect round! 🌟",
+        "You're in a league of your own! Perfect! 🥇",
+        "Absolutely brilliant! A perfect score! 💡",
+        "Clean sweep! Nothing gets past you. 🧹",
+        "Incredible! You're on another level. 👽",
+        "Perfection achieved! Take a bow. 🙇",
+        "Stunning performance! Acing it! ✅",
+        "You're a quiz ninja! Silent but deadly. 🥷",
+        "That was a masterclass! Bravo! 👏",
+        "Not a single mistake. Impressive! 👌",
+        "You ate that quiz for breakfast. 🍽️",
+        "The GOAT! Greatest of all time! 🐐",
+        "Boom! Perfect score. Mic drop. 🎤",
+      ];
+      gameRecap = (messages..shuffle()).first;
     } else if (score >= 0.8) {
-      gameRecap = "Great job on the last game! You got $correct out of $total correct. You're on fire! 🔥";
+      const messages = [
+        // Original
+        "Awesome score! You're on fire! 🔥",
+        "Nearly perfect! You've got this! 😎",
+        "Fantastic work! A true pro. ✨",
+        // Added
+        "So close to perfection! Amazing! 🤏",
+        "That was top-tier! Excellent job! 👍",
+        "Incredible effort! You're a star! ⭐",
+        "You've got the magic touch! 🎩",
+        "Superb performance! Keep it up! ⚡",
+        "That score is glowing! Great work! 🌟",
+        "You're crushing it! What a result! 💪",
+        "Almost perfect! The next one is yours. 😉",
+        "Brilliant! Your brain is a powerhouse. 🧠",
+        "That's how it's done! High-five! 🙌",
+        "You're a force to be reckoned with! 🌪️",
+        "Top marks! You really know your stuff. 📚",
+        "Outstanding! You made that look easy. 😊",
+        "You're getting hotter than a jalapeño! 🌶️",
+        "That was seriously impressive! 🤩",
+        "Great score! You're in the zone. 🎯",
+        "Excellent! Your hard work is showing. 📈",
+      ];
+      gameRecap = "$correct/$total! ${(messages..shuffle()).first}";
     } else if (score >= 0.5) {
-      gameRecap = "Solid effort in the last round, scoring $correct out of $total. Keep that momentum going!";
+      const messages = [
+        // Original
+        "Solid round! Keep that brain buzzing! 🧠",
+        "Nice one! Progress is looking good. 👍",
+        "Great effort! Let's keep climbing. 🧗",
+        // Added
+        "Good stuff! You're on the right path. 🛤️",
+        "That's a great score! Keep pushing! 🏃",
+        "Well done! Building up that knowledge. 🧱",
+        "You're doing great! Keep the rhythm. 🥁",
+        "Solid! You're warming up nicely. 🔥",
+        "Nice work! Every round makes you stronger. 💪",
+        "Looking good! You've got a great handle on this. 👌",
+        "That's the way! Consistency is key. 🔑",
+        "Good job! Let's aim even higher next time. 🚀",
+        "You're making real progress! 🌱",
+        "A very respectable score! Pat on the back. 🤗",
+        "Keep it up! You're doing awesome. 😄",
+        "Solid performance! Your brain is getting a workout. 🏋️",
+        "That's more than halfway to perfect! 🎉",
+        "Great job! You're connecting the dots. ✨",
+        "Nice! You're really getting the hang of it. 👍",
+        "Strong showing! Let's go again! 🔄",
+      ];
+      gameRecap = "$correct/$total! ${(messages..shuffle()).first}";
     } else if (score > 0) {
-      gameRecap = "Good start in the last game with $correct correct answers. Every correct answer is a step forward!";
+      const messages = [
+        // Original
+        "Good start! Every point counts. 🎯",
+        "On the board! Let's build on it. 🏗️",
+        "That's the spirit! Onwards and upwards! 🎈",
+        // Added
+        "A great first step! Let's keep going. 🚶",
+        "Every expert starts somewhere! Nice one. 👍",
+        "You're in the game! Let's level up. 🎮",
+        "That's a foundation for greatness! 🏛️",
+        "Well done! The only way from here is up. 📈",
+        "You've sparked the engine! Vroom! 🏎️",
+        "Points on the board! That's what matters. ✅",
+        "Good job grabbing those points! 👏",
+        "The journey has begun! Keep at it. ✨",
+        "Nice! Let's turn that spark into a fire. 🔥",
+        "A solid starting block to launch from! 🚀",
+        "You've got this! One step at a time. 🐾",
+        "That's the beginning of a winning streak! 😉",
+        "Great start! Let's add to it. ➕",
+        "Every correct answer is a victory! 🏆",
+        "You're officially on a roll! 🍥",
+        "Keep that positive energy! It's working. 😊",
+      ];
+      gameRecap = "$correct/$total! ${(messages..shuffle()).first}";
     } else {
-      gameRecap = "That was a tough round, but don't worry. The most important thing is to learn and try again. Let's go! 💪";
+      const messages = [
+        // Original
+        "A tough round, huh? Let's shake it off!",
+        "Okay, that was just a warm-up lap! 😉",
+        "Don't sweat it. The comeback is always stronger! 💪",
+        // Added
+        "No worries! The next round is a fresh start. 🌅",
+        "That round was just for practice, right? 😉",
+        "Shake it off! Even champions have off-days. 🥊",
+        "Alright, we've found the boss level! Let's try again. 👾",
+        "Don't you worry! We learn the most from challenges. 🧠",
+        "That was a tricky one! Let's get 'em next time. 🎯",
+        "Think of it as a strategic retreat. Now, we attack! ⚔️",
+        "Okay, let's pretend that didn't happen. 😂",
+        "Every stumble is a chance to learn to fly. 🦅",
+        "That quiz was spicy! Let's get some water. 💧",
+        "Failure is just a plot twist. The story isn't over! 📖",
+        "No big deal! Let's reboot and go again. 🔄",
+        "Even the best miss sometimes. On to the next! 🚀",
+        "That was just clearing the cobwebs out! 🕸️",
+        "Don't give up! A smooth sea never made a skilled sailor. ⛵",
+        "Okay, new plan: be even more awesome. Ready? ✨",
+        "It's not about the fall, it's about the epic comeback! 💥",
+      ];
+      gameRecap = (messages..shuffle()).first;
     }
 
     // --- Parts 2 & 3 (Placeholders for now) ---
