@@ -41,10 +41,12 @@ enum AiMessageTrigger {
 
 // Add this enum at the top of the file
 enum PandaConversationStage {
-  idle,
-  showingGameAnalysis,
-  showingAdvice,
-  showingQuote,
+  idle,                   // Nothing is happening
+  showingPostGameAnalysis,  // A: Post-test summary
+  showingDetailedAdvice,    // B: Specific advice (e.g., "Focus on Fluids")
+  showingFirstMotivation,   // C: First tailored motivation
+  showingSecondMotivation,  // D: Second tailored motivation
+  showingAppAdvice,         // E: General app tip
 }
 
 // ----------------------------------------------------
@@ -69,6 +71,8 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
   bool _showMealButtons = false;
   PandaConversationStage _conversationStage = PandaConversationStage.idle;
   String? _adviceMessage;
+  bool _postGameAnalysisTriggered = false;
+
 
   @override
   void initState() {
@@ -77,7 +81,11 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
     _checkForNewBamboos(); // Check for bamboos on initial load
     WidgetsBinding.instance.addPostFrameCallback((_) {
       // If the panda is not already talking (from the post-game trigger), then show the daily greeting.
-      if (!_isTalking) {
+      // if (!_isTalking) {
+      //   _loadAiMessage(trigger: AiMessageTrigger.dailyGreeting);
+      // }
+
+      if (!_postGameAnalysisTriggered) {
         _loadAiMessage(trigger: AiMessageTrigger.dailyGreeting);
       }
     });
@@ -93,7 +101,8 @@ void _loadAiMessage({required AiMessageTrigger trigger}) async {
   final messageService = HomeMessageService.instance;
 
   if (trigger == AiMessageTrigger.postGameAnalysis) {
-    _conversationStage = PandaConversationStage.showingGameAnalysis;
+    //_conversationStage = PandaConversationStage.showingPostGameAnalysis;
+    _conversationStage = PandaConversationStage.showingDetailedAdvice;
     _adviceMessage = null; // Reset advice message
 
     // Fetch both the analysis and the upcoming advice message
@@ -131,7 +140,7 @@ void _loadAiMessage({required AiMessageTrigger trigger}) async {
     });
   }
   _startTypingAnimation();
-  const talkAnimationDuration = Duration(milliseconds: 3700);
+  const talkAnimationDuration = Duration(milliseconds: 1000);
   Future.delayed(talkAnimationDuration, () {
     if (mounted) {
       setState(() {
@@ -141,6 +150,71 @@ void _loadAiMessage({required AiMessageTrigger trigger}) async {
     }
   });
 }
+
+// void _handlePandaTap() async {
+//   if (_isTalking) return;
+//
+//   // If the panda is idle, just show a new greeting and stop.
+//   if (_conversationStage == PandaConversationStage.idle) {
+//     _loadAiMessage(trigger: AiMessageTrigger.dailyGreeting);
+//     return;
+//   }
+//
+//   final messageService = HomeMessageService.instance;
+//   String newMessage;
+//   bool bambooWasSpent = false;
+//
+//   if (_bamboos <= 0) {
+//     // Case 1: Out of bamboos. Get the "hungry" message.
+//     newMessage = _getOutOfEnergyMessage();
+//     bambooWasSpent = false;
+//
+//   } else {
+//     // Case 2: User has bamboos.
+//     bambooWasSpent = true; // Mark that we are spending a bamboo.
+//
+//     if (_conversationStage == PandaConversationStage.showingGameAnalysis) {
+//       // First tap after a game -> show advice.
+//       _conversationStage = PandaConversationStage.showingAdvice;
+//       newMessage = _adviceMessage ?? "Keep playing and I'll have more advice for you soon!";
+//       print("Bamboo spent for advice. Stage: $_conversationStage");
+//
+//     } else {
+//       // Any other tap -> show a quote.
+//       _conversationStage = PandaConversationStage.showingQuote;
+//       // CRITICAL: We 'await' for the message here BEFORE the final setState.
+//       newMessage = await messageService.getMotivationalQuote();
+//       print("Bamboo spent for quote. Stage: $_conversationStage");
+//     }
+//   }
+//
+//   // --- CONSOLIDATED STATE UPDATE ---
+//   // All logic paths lead here. This is the ONLY place we call setState.
+//   if (mounted) {
+//     setState(() {
+//       if (bambooWasSpent) {
+//         _bamboos--; // Decrement bamboos here, just before the UI rebuilds.
+//       }
+//       _fullAiMessage = newMessage; // Set the new message.
+//       _isTalking = true;
+//       _currentPandaLottie = 'assets/pandaai/talk.json';
+//       _charIndex = 0;
+//       _displayedAiMessage = "";
+//     });
+//   }
+//
+//   // This part remains the same.
+//   _startTypingAnimation();
+//   const talkAnimationDuration = Duration(milliseconds: 3700);
+//   Future.delayed(talkAnimationDuration, () {
+//     if (mounted) {
+//       setState(() {
+//         _isTalking = false;
+//       });
+//       _updatePandaAnimation();
+//     }
+//   });
+// }
 
 void _handlePandaTap() async {
   if (_isTalking) return;
@@ -156,26 +230,53 @@ void _handlePandaTap() async {
   bool bambooWasSpent = false;
 
   if (_bamboos <= 0) {
-    // Case 1: Out of bamboos. Get the "hungry" message.
+    // Case 1: Out of bamboos. Get the "hungry" message and reset the conversation.
     newMessage = _getOutOfEnergyMessage();
+    _conversationStage = PandaConversationStage.idle;
     bambooWasSpent = false;
 
   } else {
-    // Case 2: User has bamboos.
-    bambooWasSpent = true; // Mark that we are spending a bamboo.
+    // Case 2: User has bamboos. Spend one and advance the conversation.
+    bambooWasSpent = true;
 
-    if (_conversationStage == PandaConversationStage.showingGameAnalysis) {
-      // First tap after a game -> show advice.
-      _conversationStage = PandaConversationStage.showingAdvice;
-      newMessage = _adviceMessage ?? "Keep playing and I'll have more advice for you soon!";
-      print("Bamboo spent for advice. Stage: $_conversationStage");
+    switch (_conversationStage) {
 
-    } else {
-      // Any other tap -> show a quote.
-      _conversationStage = PandaConversationStage.showingQuote;
-      // CRITICAL: We 'await' for the message here BEFORE the final setState.
-      newMessage = await messageService.getMotivationalQuote();
-      print("Bamboo spent for quote. Stage: $_conversationStage");
+
+      case PandaConversationStage.showingDetailedAdvice:
+      // The user has seen the analysis (A) and is now tapping for advice (B).
+      // Use the pre-fetched advice message.
+        newMessage = _adviceMessage ?? "RKeep playing and I'll have more advice for you soon!";
+        // Now that we've used the pre-fetched advice, clear it to prevent reuse.
+       // _adviceMessage = null;
+        // Set the stage for the NEXT tap (C).
+        _conversationStage = PandaConversationStage.showingFirstMotivation;
+        break;
+
+      case PandaConversationStage.showingFirstMotivation:
+      // C -> D: Show second motivation
+        newMessage = await messageService.getMotivationalQuote();
+        _conversationStage = PandaConversationStage.showingSecondMotivation;
+        break;
+
+      case PandaConversationStage.showingSecondMotivation:
+      // D -> E: Show app advice
+        newMessage = await messageService.getMotivationalQuote();
+        _conversationStage = PandaConversationStage.showingAppAdvice;
+        break;
+
+      case PandaConversationStage.showingAppAdvice:
+      // E -> B (Loop): Show detailed advice again
+        _adviceMessage = await messageService.getGameAdviceMessage(widget.userId); // <-- Fetches and SAVES the new advice.
+        newMessage = _adviceMessage ?? "Let's try another round of advice!";
+        _conversationStage = PandaConversationStage.showingDetailedAdvice;
+        break;
+
+      default:
+      // Fallback case
+        newMessage = "Hmm, I seem to have lost my train of thought.";
+        _conversationStage = PandaConversationStage.idle;
+        bambooWasSpent = false; // Don't spend a bamboo on an error.
+        break;
     }
   }
 
@@ -209,12 +310,9 @@ void _handlePandaTap() async {
 
 String _getOutOfEnergyMessage() {
   const messages = [
-    "My tummy is rumbling... I need more bamboo to think! 😫",
-    "I'm running on empty! Play a game to earn more bamboo. 🎮",
-    "Brainpower low... must have bamboo! 🧠",
-    "All out of snacks, all out of facts. 🤷‍♂️",
-    "Can't talk, too hungry. Need bamboo! 🎋",
-    "My wisdom generator requires bamboo fuel. We're all out! ⛽️",
+    "NO BAMBOO 1",
+    "NO BAMBOO 2",
+    "NO BAMBOO 3",
   ];
   // Return a random message from the list
   final modifiableList = List<String>.from(messages);
@@ -332,19 +430,22 @@ void _checkForNewBamboos() async {
   final dbHelper = DatabaseHelper.instance;
 
   // Get the count of correct answers that have NOT been spent yet.
-  final availableBamboos = await dbHelper.countUncountedCorrectAnswers();
+  final availableBamboos = await dbHelper.countUncountedCorrectAnswers(widget.userId);
 
   print("DATABASE REPORT: Found $availableBamboos available bamboos.");
   final bool hasNewBamboos = availableBamboos > _bamboos;
-  if (mounted) {
+  final int newBamboos = availableBamboos;
+
+  if (mounted && newBamboos > 0) { // Only update state if there's something new
     setState(() {
-      // Directly set the UI count to the available balance
-      _bamboos = availableBamboos;
+      // Add the new bamboos to the existing count.
+      _bamboos += newBamboos;
     });
   }
 
   if (hasNewBamboos) {
     print("New bamboos detected! Triggering AI message automatically.");
+    _postGameAnalysisTriggered = true;
     _loadAiMessage(trigger: AiMessageTrigger.postGameAnalysis); // <-- THIS IS THE CRUCIAL ADDITION
   }
   print("--- Load complete. Final balance on screen: $_bamboos ---");

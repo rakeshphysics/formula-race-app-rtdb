@@ -154,12 +154,34 @@ class DatabaseHelper {
 
  // End of class
   /// Counts all correct answers that have not yet been counted for bamboos.
-  Future<int> countUncountedCorrectAnswers() async {
+  // Future<int> countUncountedCorrectAnswers() async {
+  //   final db = await instance.database;
+  //   final result = await db.rawQuery(
+  //       'SELECT COUNT(*) FROM practice_attempts WHERE wasCorrect = 1 AND bamboo_counted = 0'
+  //   );
+  //   return Sqflite.firstIntValue(result) ?? 0;
+  // }
+
+  Future<int> countUncountedCorrectAnswers(String userId) async {
     final db = await instance.database;
+
+    // First, count the rows that are about to be updated.
     final result = await db.rawQuery(
-        'SELECT COUNT(*) FROM practice_attempts WHERE wasCorrect = 1 AND bamboo_counted = 0'
+      'SELECT COUNT(*) FROM practice_attempts WHERE userId = ? AND wasCorrect = 1 AND bamboo_counted = 0',
+      [userId],
     );
-    return Sqflite.firstIntValue(result) ?? 0;
+    final int newBamboos = Sqflite.firstIntValue(result) ?? 0;
+
+    // If there are new bamboos to count, mark them as counted.
+    if (newBamboos > 0) {
+      await db.rawUpdate(
+        'UPDATE practice_attempts SET bamboo_counted = 1 WHERE userId = ? AND wasCorrect = 1 AND bamboo_counted = 0',
+        [userId],
+      );
+    }
+
+    // Return ONLY the count of newly earned bamboos.
+    return newBamboos;
   }
 
   /// Marks all uncounted attempts as counted.
