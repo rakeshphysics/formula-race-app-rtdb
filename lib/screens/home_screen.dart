@@ -74,6 +74,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
   bool _postGameAnalysisTriggered = false;
 
 
+
   @override
   void initState() {
     super.initState();
@@ -317,14 +318,34 @@ void _handlePandaTap() async {
 
 String _getOutOfEnergyMessage() {
   const messages = [
-    "NO BAMBOO 1",
-    "NO BAMBOO 2",
-    "NO BAMBOO 3",
+    "Arre! My energy is low. I need more bamboo to talk. 🐼",
+    "Oops, out of bamboo! Play a game and win some more for me. 🙏",
+    "My brain has stopped working... please insert bamboo to continue. 😂",
+    "I'm too hungry to talk! Go ace a quiz to earn some bamboo for me. 😋",
+    "No bamboo, no gyaan! It's that simple. Go play! 😉",
+    "My battery is dead! Bamboo is my charger. Go get some! 🔋",
+    "I'm on low power mode. Only bamboo can fix this. ⚡",
+    "Sorry, can't talk. I'm dreaming of bamboo. Go win some for me! 😴",
+    "My throat is dry... from not eating bamboo! Help a panda out? 🥺",
+    "Topper banne ke liye energy lagti hai! Mere liye thoda bamboo jeet lo. 💪",
+    "Connection lost... please reconnect with bamboo. 📶",
+    "I've run out of fuel! Go fill me up with some bamboo. ⛽",
+    "You need to pay the toll... in bamboo! Go play a game.  टोल 😜",
+    "I'm on a bamboo strike until you earn some more! ✊",
+    "Error 404: Bamboo not found. Please play a game to resolve. 💻",
+    "All this wisdom isn't free, you know! It costs bamboo. 😉",
+    "I'm feeling hangry! A quiz victory is the only cure. 😠",
+    "My 'gyaan' factory is closed for now. Reopens with bamboo supply! 🏭",
+    "To unlock more advice, you must first defeat a quiz! ⚔️",
+    "I'm saving my energy. Come back when you have more bamboo! 🤫"
   ];
+  // This is an efficient way to get a random item from a const list.
   // Return a random message from the list
   final modifiableList = List<String>.from(messages);
   modifiableList.shuffle();
   return modifiableList.first;
+
+  // return messages[_random.nextInt(messages.length)];
 }
 
 void _handlePersonalQuestionResponse(bool hadMeal) async {

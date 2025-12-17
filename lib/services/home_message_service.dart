@@ -22,6 +22,7 @@ class HomeMessageService {
   static final HomeMessageService instance = HomeMessageService._privateConstructor();
   final DatabaseHelper _dbHelper = DatabaseHelper.instance;
   final Random _random = Random();
+  int _lastAdviceCategoryIndex = -1;
   String _lastMessage = '';
 
   late final List<Future<String> Function(String)> _messageGenerators;
@@ -38,21 +39,58 @@ class HomeMessageService {
 
 
 
-  List<String> _getGenericWelcomeMessages() {
-    // 1. Define the original messages as a local, constant list.
-    const messages = [
-      "GENERIC WELCOME 1 👋",
-      "GENERAIC WELCOME 2 😊",
+  Future<List<String>> _getGenericWelcomeMessages() async {
+    final prefs = await SharedPreferences.getInstance();
+    // Get the current session count, defaulting to 0 if it's the first time.
+    int sessionCount = prefs.getInt('sessionCount') ?? 0;
 
-    ];
+    List<String> messages;
 
-    // 2. Create a new, modifiable list from the constant one.
+    if (sessionCount < 3) {
+      // --- Tier 1: First 3 sessions ---
+      // For the first few times, give a simple, warm welcome.
+      const welcomeMessages = [
+        "Hey there! Ready to get started? 👋",
+        "Welcome back! Let's make today productive. 😊",
+        "Hola! Ready to challenge your brain? 🧠",
+        "Hey! Good to see you again. Let's do this! 💪",
+        "Welcome! What are we learning today? 🤔",
+      ];
+      messages = welcomeMessages;
+    } else {
+      // --- Tier 2: After the first 3 sessions ---
+      // Now, start nudging the user towards actions.
+      const nudgeMessages = [
+        // Nudge to revise formulas
+        "Feeling a bit rusty? A quick look at the formulas might help! 📜",
+        "Pro-tip: Revising formulas before a game can give you an edge. 😉",
+        "Why not start with a quick formula revision? It's in the menu! ☰",
+        "A quick formula check can warm up your brain. Give it a shot! 🔥",
+        "Ready for a quiz? Maybe a quick glance at the formulas first? 🤓",
+
+        // Nudge to play a game
+        "Ready to test your knowledge? Let's play a round! 🚀",
+        "Feeling confident? Jump into a 'Play Solo' game! 🎯",
+        "How about a quick game to get the brain cells firing? ⚡",
+        "The leaderboard is waiting. Let's play a game and climb up! 🏆",
+        "Challenge yourself! A quick game is just a tap away. 😎",
+
+        // Humorous / Engaging Nudges
+        "Your brain called, it wants a workout. Let's play! 📞",
+        "Welcome back to your personal brain gym! 💪",
+        "Let's get this bread! (and the right answers) 🍞",
+        "Time to be awesome. Let's start with a quiz! 💥",
+        "Ready to be the 'Sharmaji ka beta' of quizzes today? 😉",
+      ];
+      messages = nudgeMessages;
+    }
+
+    // Increment the session count for the next time.
+    await prefs.setInt('sessionCount', sessionCount + 1);
+
+    // Shuffle the chosen list of messages to provide variety within the tier.
     final modifiableList = List<String>.from(messages);
-
-    // 3. Shuffle the new list.
     modifiableList.shuffle();
-
-    // 4. Return the shuffled list.
     return modifiableList;
   }
 
@@ -68,7 +106,7 @@ class HomeMessageService {
           possibleMessages.add(message);
         }
       }
-      possibleMessages.addAll(_getGenericWelcomeMessages());
+      possibleMessages.addAll(await _getGenericWelcomeMessages());
       final uniqueMessages = possibleMessages.where((m) => m != _lastMessage).toList();
       String newMessage;
       if (uniqueMessages.isNotEmpty) {
@@ -855,17 +893,45 @@ class HomeMessageService {
   }
 
   Future<String> getGeneralAppAdvice() async {
-    const adviceList = [
-      "General App Advice 1",
-      "General App Advice 2",
-      "General App Advice 3",
-      "General App Advice 4",
-      "General App Advice 5"
-    ];
+    // We group advice by category to ensure users see a variety of tips.
+    const adviceByCategory = {
+      'formulas': [
+        "Feeling lost in formulas? Hamburger menu (top-left) -> 'Revise all formulas'. Sorted! 📜",
+        "Psst! All the formulas you'll ever need are hiding in the hamburger menu. Go find 'em! 🕵️",
+        "Forget a formula? No stress! Just tap the top-left menu and hit 'Revise all formulas'. Easy peasy. 😎",
+      ],
+      'solo': [
+        "Think you're a pro? 'Play Solo' gives you 10 questions that get tougher and tougher. Dum hai? 💪",
+        "Heads up: 'Play Solo' isn't a walk in the park. The questions get harder as you go. 🔥",
+        "Wanna test yourself? 'Play Solo' mode has 10 questions with increasing difficulty. Let's see what you've got! 🚀",
+      ],
+      'friend': [
+        "Studying alone is boring! Challenge your friends using 'Play with Friend' and show 'em who's boss. 🏆",
+        "Why practice alone? Use 'Play with Friend' to make things more exciting. Loser treats, maybe? 😉",
+        "Make revision fun! Grab a friend and battle it out in 'Play with Friend'. Game on! 🎮",
+      ],
+      'mistakes': [
+        "Every mistake you make is saved in 'My Mistakes'. It's your own personal 'what-not-to-do' list! 😂",
+        "Want to see where you're going wrong? Check out 'My Mistakes'. It's your secret weapon for improvement. 🤫",
+        "Once you've mastered your errors, hit 'Clear Mistakes' to delete them forever. Bye-bye, silly mistakes! 👋",
+      ],
+      'creator': [
+        "Fun Fact: This app was made by Rakesh, an IIT Madras grad, to make revision less boring. Is it working? 🤔",
+        "This app was built by a guy from IIT Madras who got tired of seeing his students bored. You're welcome! 😉",
+        "My creator, Rakesh, made me to spice up your revision. Hope you're having fun! 🎉",
+      ],
+    };
 
-    final modifiableList = List<String>.from(adviceList);
-    modifiableList.shuffle();
-    return modifiableList.first;
+    // 1. Move to the next category in a cycle.
+    _lastAdviceCategoryIndex = (_lastAdviceCategoryIndex + 1) % adviceByCategory.length;
+
+    // 2. Get the list of messages for the current category.
+    final categoryKeys = adviceByCategory.keys.toList();
+    final currentCategoryKey = categoryKeys[_lastAdviceCategoryIndex];
+    final messagesForCategory = adviceByCategory[currentCategoryKey]!;
+
+    // 3. Return a random message from within that category.
+    return messagesForCategory[_random.nextInt(messagesForCategory.length)];
   }
 
 }
