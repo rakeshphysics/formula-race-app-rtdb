@@ -422,9 +422,188 @@ class HomeMessageService {
 
   Future<String> getMotivationalQuote() async {
     const quotes = [
-      "MOTIVATION 1 🚀",
-      "MOTIVATION2 ✨",
-      "MOTIVATION 3 💪",
+      // Top Tier - Indian Icons
+      "Arise, awake, and stop not till the goal is reached. - Swami Vivekananda",
+      "You have to dream before your dreams can come true. - A.P.J. Abdul Kalam",
+      "If you want to shine like a sun, first burn like a sun. - A.P.J. Abdul Kalam",
+      "Live as if you were to die tomorrow. Learn as if you were to live forever. - Mahatma Gandhi",
+      "A man is but a product of his thoughts. What he thinks, he becomes. - Mahatma Gandhi",
+      "You can't cross the sea merely by standing and staring at the water. - Rabindranath Tagore",
+      "It is very important to be a master of your own mind rather than letting your mind master you. - Kapil Dev",
+      "The harder the battle, the sweeter the victory. - Les Brown",
+      "Don't be afraid of moving slowly. Be afraid of standing still. - Chinese Proverb",
+      "We are what we repeatedly do. Excellence, then, is not an act, but a habit. - Aristotle",
+
+      // Global Thinkers & Innovators
+      "The only way to do great work is to love what you do. - Steve Jobs",
+      "Your time is limited, so don't waste it living someone else's life. - Steve Jobs",
+      "Stay hungry, stay foolish. - Steve Jobs",
+      "An investment in knowledge pays the best interest. - Benjamin Franklin",
+      "The best way to predict the future is to create it. - Abraham Lincoln",
+      "I find that the harder I work, the more luck I seem to have. - Thomas Jefferson",
+      "Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time. - Thomas Edison",
+      "Genius is one percent inspiration and ninety-nine percent perspiration. - Thomas Edison",
+      "The secret of getting ahead is getting started. - Mark Twain",
+      "Believe you can and you're halfway there. - Theodore Roosevelt",
+      "A person who never made a mistake never tried anything new. - Albert Einstein",
+      "Try not to become a man of success, but rather try to become a man of value. - Albert Einstein",
+      "In the middle of difficulty lies opportunity. - Albert Einstein",
+      "Logic will get you from A to B. Imagination will take you everywhere. - Albert Einstein",
+      "The journey of a thousand miles begins with a single step. - Lao Tzu",
+
+      // Perseverance & Hard Work
+      "It does not matter how slowly you go as long as you do not stop. - Confucius",
+      "Hard work beats talent when talent doesn't work hard. - Tim Notke",
+      "The difference between ordinary and extraordinary is that little extra. - Jimmy Johnson",
+      "Success is the sum of small efforts, repeated day in and day out. - Robert Collier",
+      "There are no shortcuts to any place worth going. - Beverly Sills",
+      "Push yourself, because no one else is going to do it for you. - Unknown",
+      "The pain you feel today will be the strength you feel tomorrow. - Unknown",
+      "It's not whether you get knocked down, it's whether you get up. - Vince Lombardi",
+      "I have not failed. I've just found 10,000 ways that won't work. - Thomas Edison",
+      "Amateurs practice until they get it right. Professionals practice until they can't get it wrong. - Unknown",
+      "The only place where success comes before work is in the dictionary. - Vidal Sassoon",
+      "I’m a greater believer in luck, and I find the harder I work the more I have of it. - Thomas Jefferson",
+      "Discipline is the bridge between goals and accomplishment. - Jim Rohn",
+      "Without hard work, nothing grows but weeds. - Gordon B. Hinckley",
+      "If people knew how hard I worked to get my mastery, it wouldn't seem so wonderful at all. - Michelangelo",
+      "Perseverance is not a long race; it is many short races one after the other. - Walter Elliot",
+      "The brick walls are there for a reason. They are not there to keep us out. The brick walls are there to give us a chance to show how badly we want something. - Randy Pausch",
+      "Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing. - Pelé",
+      "You can't have a million-dollar dream with a minimum-wage work ethic. - Stephen C. Hogan",
+      "The road to success is dotted with many tempting parking spaces. - Will Rogers",
+
+      // Mindset & Belief
+      "Whether you think you can, or you think you can't – you're right. - Henry Ford",
+      "The expert in anything was once a beginner. - Helen Hayes",
+      "Strive for progress, not perfection. - Unknown",
+      "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart. - Roy T. Bennett",
+      "I am not a product of my circumstances. I am a product of my decisions. - Stephen Covey",
+      "What you get by achieving your goals is not as important as what you become by achieving your goals. - Zig Ziglar",
+      "The mind is everything. What you think you become. - Buddha",
+      "If you are not willing to learn, no one can help you. If you are determined to learn, no one can stop you. - Zig Ziglar",
+      "To be a champion, I think you have to see the big picture. It's not about winning and losing; it's about every day hard work and about thriving on a challenge. - Summer Sanders",
+      "The man who says he can, and the man who says he can't are both correct. - Confucius",
+      "It is our choices that show what we truly are, far more than our abilities. - J.K. Rowling",
+      "Your positive action combined with positive thinking results in success. - Shiv Khera",
+      "Small minds discuss people. Average minds discuss events. Great minds discuss ideas. - Eleanor Roosevelt",
+      "The only limit to our realization of tomorrow will be our dreams of today. - Franklin D. Roosevelt",
+      "A creative man is motivated by the desire to achieve, not by the desire to beat others. - Ayn Rand",
+      "What lies behind us and what lies before us are tiny matters compared to what lies within us. - Ralph Waldo Emerson",
+      "Do not wait to strike till the iron is hot; but make it hot by striking. - William Butler Yeats",
+      "The will to win, the desire to succeed, the urge to reach your full potential... these are the keys that will unlock the door to personal excellence. - Confucius",
+      "You are never too old to set another goal or to dream a new dream. - C.S. Lewis",
+      "Act as if what you do makes a difference. It does. - William James",
+
+      // Facing Failure & Challenges
+      "Success is not final, failure is not fatal: it is the courage to continue that counts. - Winston Churchill",
+      "If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward. - Martin Luther King Jr.",
+      "Our greatest glory is not in never falling, but in rising every time we fall. - Confucius",
+      "A smooth sea never made a skilled sailor. - Franklin D. Roosevelt",
+      "Fall seven times, stand up eight. - Japanese Proverb",
+      "It's hard to beat a person who never gives up. - Babe Ruth",
+      "Challenges are what make life interesting and overcoming them is what makes life meaningful. - Joshua J. Marine",
+      "I can accept failure, everyone fails at something. But I can't accept not trying. - Michael Jordan",
+      "Everything you’ve ever wanted is on the other side of fear. - George Addair",
+      "The gem cannot be polished without friction, nor man perfected without trials. - Chinese Proverb",
+      "Failure is simply the opportunity to begin again, this time more intelligently. - Henry Ford",
+      "What seems to us as bitter trials are often blessings in disguise. - Oscar Wilde",
+      "The ultimate measure of a man is not where he stands in moments of comfort and convenience, but where he stands at times of challenge and controversy. - Martin Luther King, Jr.",
+      "Strength does not come from winning. Your struggles develop your strengths. - Arnold Schwarzenegger",
+      "When you have a dream, you've got to grab it and never let go. - Carol Burnett",
+      "Do what you can, with what you have, where you are. - Theodore Roosevelt",
+      "You just can't beat the person who won't give up. - Babe Ruth",
+      "It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default. - J.K. Rowling",
+      "A winner is a dreamer who never gives up. - Nelson Mandela",
+      "When everything seems to be going against you, remember that the airplane takes off against the wind, not with it. - Henry Ford",
+
+      // Dreams & Vision
+      "All our dreams can come true, if we have the courage to pursue them. - Walt Disney",
+      "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt",
+      "Go confidently in the direction of your dreams. Live the life you have imagined. - Henry David Thoreau",
+      "The size of your success is measured by the strength of your desire; the size of your dream; and how you handle disappointment along the way. - Robert Kiyosaki",
+      "A goal is a dream with a deadline. - Napoleon Hill",
+      "You are the master of your destiny. You can influence, direct and control your own environment. You can make your life what you want it to be. - Napoleon Hill",
+      "If your dreams don’t scare you, they are too small. - Richard Branson",
+      "The tragedy of life doesn't lie in not reaching your goal. The tragedy lies in having no goal to reach. - Benjamin E. Mays",
+      "Without dreams and goals, there is no living, only merely existing, and that is not why we are here. - Mark Twain",
+      "Set a goal so big that you can't achieve it until you grow into the person who can. - Zig Ziglar",
+      "The distance between your dreams and reality is called action. - Unknown",
+      "Dream big and dare to fail. - Norman Vaughan",
+      "If you can imagine it, you can achieve it. If you can dream it, you can become it. - William Arthur Ward",
+      "Never give up on a dream just because of the time it will take to accomplish it. The time will pass anyway. - Earl Nightingale",
+      "A dream does not become reality through magic; it takes sweat, determination, and hard work. - Colin Powell",
+      "The key to realizing a dream is to focus not on success but significance—and then even the small steps and little victories along your path will take on greater meaning. - Oprah Winfrey",
+      "There is only one thing that makes a dream impossible to achieve: the fear of failure. - Paulo Coelho",
+      "Dreams are the seedlings of realities. - James Allen",
+      "The biggest adventure you can take is to live the life of your dreams. - Oprah Winfrey",
+      "To accomplish great things, we must not only act, but also dream; not only plan, but also believe. - Anatole France",
+
+      // Action & Procrastination
+      "Don't watch the clock; do what it does. Keep going. - Sam Levenson",
+      "The way to get started is to quit talking and begin doing. - Walt Disney",
+      "A year from now you may wish you had started today. - Karen Lamb",
+      "Action is the foundational key to all success. - Pablo Picasso",
+      "You don't have to be great to start, but you have to start to be great. - Zig Ziglar",
+      "The secret to getting ahead is getting started. The secret of getting started is breaking your complex overwhelming tasks into small manageable tasks, and then starting on the first one. - Mark Twain",
+      "Do not wait for the perfect time and place to enter, for you are already onstage. - Unknown",
+      "The value of an idea lies in the using of it. - Thomas Edison",
+      "Thinking will not overcome fear but action will. - W. Clement Stone",
+      "Your future is created by what you do today, not tomorrow. - Robert Kiyosaki",
+      "Procrastination is the thief of time. - Edward Young",
+      "Take the first step in faith. You don't have to see the whole staircase, just take the first step. - Martin Luther King Jr.",
+      "Someday is not a day of the week. - Janet Dailey",
+      "The best time to plant a tree was 20 years ago. The second best time is now. - Chinese Proverb",
+      "Don't let what you cannot do interfere with what you can do. - John Wooden",
+      "To think too long about doing a thing often becomes its undoing. - Eva Young",
+      "If you spend too much time thinking about a thing, you'll never get it done. - Bruce Lee",
+      "The great aim of education is not knowledge but action. - Herbert Spencer",
+      "Small deeds done are better than great deeds planned. - Peter Marshall",
+      "Well done is better than well said. - Benjamin Franklin",
+
+      // More from Indian Icons
+      "My religion is very simple. My religion is kindness. - Dalai Lama",
+      "All power is within you; you can do anything and everything. - Swami Vivekananda",
+      "Take risks in your life. If you win, you can lead. If you lose, you can guide. - Swami Vivekananda",
+      "Thinking is the capital, Enterprise is the way, Hard Work is the solution. - A.P.J. Abdul Kalam",
+      "Man needs his difficulties because they are necessary to enjoy success. - A.P.J. Abdul Kalam",
+      "Strength is Life, Weakness is Death. - Swami Vivekananda",
+      "You have to grow from the inside out. None can teach you, none can make you spiritual. There is no other teacher but your own soul. - Swami Vivekananda",
+      "Be the change that you wish to see in the world. - Mahatma Gandhi",
+      "First they ignore you, then they laugh at you, then they fight you, then you win. - Mahatma Gandhi",
+      "An eye for an eye will only make the whole world blind. - Mahatma Gandhi",
+      "Where the mind is without fear and the head is held high; Where knowledge is free... Into that heaven of freedom, my Father, let my country awake. - Rabindranath Tagore",
+      "Don't limit a child to your own learning, for he was born in another time. - Rabindranath Tagore",
+      "True leaders are those who help others to be leaders. - Bill Gates (relevant for group study)",
+      "Patience is a key element of success. - Bill Gates",
+      "It's fine to celebrate success but it is more important to heed the lessons of failure. - Bill Gates",
+      "If you are born poor it's not your mistake, but if you die poor it's your mistake. - Bill Gates",
+      "We cannot solve our problems with the same thinking we used when we created them. - Albert Einstein",
+      "Education is the most powerful weapon which you can use to change the world. - Nelson Mandela",
+      "It always seems impossible until it's done. - Nelson Mandela",
+      "I learned that courage was not the absence of fear, but the triumph over it. - Nelson Mandela",
+
+      // Final Boosters
+      "The future starts today, not tomorrow. - Pope John Paul II",
+      "Either you run the day or the day runs you. - Jim Rohn",
+      "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle. - Christian D. Larson",
+      "The successful warrior is the average man, with laser-like focus. - Bruce Lee",
+      "In order to succeed, we must first believe that we can. - Nikos Kazantzakis",
+      "With the new day comes new strength and new thoughts. - Eleanor Roosevelt",
+      "The secret of your future is hidden in your daily routine. - Mike Murdock",
+      "Quality is not an act, it is a habit. - Aristotle",
+      "Setting goals is the first step in turning the invisible into the visible. - Tony Robbins",
+      "If you're going through hell, keep going. - Winston Churchill",
+      "What you do today can improve all your tomorrows. - Ralph Marston",
+      "A little progress each day adds up to big results. - Satya Nani",
+      "The key is not to prioritize what's on your schedule, but to schedule your priorities. - Stephen Covey",
+      "Focus on being productive instead of busy. - Tim Ferriss",
+      "You are capable of more than you know. - Glinda the Good Witch",
+      "The day you plant the seed is not the day you eat the fruit. - Unknown",
+      "Doubt kills more dreams than failure ever will. - Suzy Kassem",
+      "Work hard in silence, let your success be your noise. - Frank Ocean",
+      "Success doesn't just find you. You have to go out and get it. - Unknown",
+      "Don't stop when you're tired. Stop when you're done. - Unknown",
     ];
     // Return a random quote
     final modifiableQuotes = List<String>.from(quotes);
@@ -484,7 +663,43 @@ class HomeMessageService {
 
     if (unattemptedChapters.isNotEmpty) {
       final chapterToSuggest = unattemptedChapters[_random.nextInt(unattemptedChapters.length)];
-      possibleInsights.add("You haven't tried any questions from '$chapterToSuggest' yet. Why not start with this chapter?");
+
+      final messages = [
+        "I see you're avoiding '$chapterToSuggest'. Darr lag raha hai kya? 😉 Let's try it!",
+        "The chapter '$chapterToSuggest' is feeling lonely. Let's give it some attention! 😂",
+        "Psst... '$chapterToSuggest' is an unexplored territory. Time for an adventure? 🗺️",
+        "You haven't touched '$chapterToSuggest' yet. Is it the 'Sharmaji ka beta' of chapters? Let's beat it! 💪",
+        "'$chapterToSuggest' is waiting for you. Don't leave it on 'seen'. 😜",
+        "Let's try some questions from '$chapterToSuggest'. What's the worst that could happen? 🤔",
+        "New chapter unlocked: '$chapterToSuggest'. Ready to play this level? 🎮",
+        "You've been ghosting '$chapterToSuggest'. Time to face your fears! 👻",
+        "I dare you to try a few questions from '$chapterToSuggest'. Challenge accepted? 😎",
+        "'$chapterToSuggest' is calling your name. Let's see what it has to say. 📞",
+        "Let's give '$chapterToSuggest' a shot. It's not as scary as it looks, promise! 🙏",
+        "You've mastered others, but '$chapterToSuggest' is still a mystery. Let's solve it! 🕵️",
+        "Time to say 'Hi' to '$chapterToSuggest'. It won't bite! 🐍",
+        "Let's break the ice with '$chapterToSuggest'. You might actually like it! 😊",
+        "Are you and '$chapterToSuggest' in a fight? Let's make up by trying a few questions. 😂",
+        "'$chapterToSuggest' is like the final boss of a game you haven't started. Let's go! 👾",
+        "Let's add '$chapterToSuggest' to your list of conquered chapters. Ready for battle? ⚔️",
+        "The only thing to fear is fear itself... and maybe '$chapterToSuggest'? Let's find out! 🧐",
+        "You've been swiping left on '$chapterToSuggest'. Let's give it a 'super like'! ✨",
+        "Let's see if you can handle the 'josh' of '$chapterToSuggest'. How's the josh? High sir! 💪",
+        "What's the deal with '$chapterToSuggest'? Let's investigate and crack the case. 🔍",
+        "'$chapterToSuggest' is the new trend. Let's see what the hype is about. 😉",
+        "You've left '$chapterToSuggest' on the bench. Time to put it in the game! 🏏",
+        "Let's take a small detour to '$chapterToSuggest'. It might be a scenic route! 🏞️",
+        "Be a hero and tackle '$chapterToSuggest'. Your future self will thank you. 🦸",
+        "Let's see if '$chapterToSuggest' is as tough as they say. Spoilers: it's not. 😎",
+        "You've got 99 problems but '$chapterToSuggest' ain't one... yet. Let's try it! 😜",
+        "Time to face the music and try '$chapterToSuggest'. Let's make it a hit song! 🎶",
+        "Let's give '$chapterToSuggest' a try. It's easier than talking to your crush, promise. 😂",
+        "The chapter '$chapterToSuggest' is like that one street food you're scared to try. Let's be brave! 🌶️"
+      ];
+
+      // Get a random message from the list and add it to possible insights
+      final randomMessage = messages[_random.nextInt(messages.length)];
+      possibleInsights.add(randomMessage);
     }
 
     // 4. Logic for Attempted Chapters
@@ -494,22 +709,145 @@ class HomeMessageService {
       final accuracyPercent = (performance.accuracy * 100).round();
       final chapterName = performance.chapterName;
 
+      // --- Start of Replacement ---
+
       if (accuracyPercent >= 90) {
-        possibleInsights.add("You're a master of '$chapterName' with $accuracyPercent% accuracy. Keep up the brilliant work! ✨");
+        final messages = [
+          "You're a pro at '$chapterName' with $accuracyPercent% accuracy. Bohot hard! 🔥",
+          "Boss level performance in '$chapterName' ($accuracyPercent%)! Keep slaying! 👑",
+          "You've totally nailed '$chapterName' with $accuracyPercent% accuracy. What a legend! 😎",
+          "'$chapterName' mein toh aap expert ho ($accuracyPercent%)! Keep up the josh! 💪",
+          "Your $accuracyPercent% score in '$chapterName' is just lit! ✨ Keep shining!",
+          "Is there anything you don't know in '$chapterName'? ($accuracyPercent%) Rocking it! 🎸",
+          "You're the Virat Kohli of '$chapterName' with $accuracyPercent% accuracy. Unstoppable! 🏏",
+          "'$chapterName' seems to be your favorite subject! $accuracyPercent% is no joke. 😂",
+          "You've cracked the code for '$chapterName' with $accuracyPercent% accuracy. Genius! 🧠",
+          "That $accuracyPercent% in '$chapterName' is just 'wow'! Keep being awesome. 🌟",
+          "'$chapterName' mein $accuracyPercent%? You're on fire! Someone call the fire brigade! 🚒",
+          "You and '$chapterName' are a perfect match! ($accuracyPercent%) Made for each other. ❤️",
+          "With $accuracyPercent% in '$chapterName', you're basically a walking textbook. 📚",
+          "That $accuracyPercent% in '$chapterName' is top-notch! Sharmaji ka beta would be jealous. 😉",
+          "You're acing '$chapterName' ($accuracyPercent%)! Are you a wizard? 🧙‍♂️",
+          "'$chapterName' mein $accuracyPercent% score... Mast hai! Keep it up. 👍",
+          "You've got '$chapterName' on lock! ($accuracyPercent%) What's your secret? 🤫",
+          "That's a god-tier score ($accuracyPercent%) in '$chapterName'! 🕉️",
+          "You're a 'Topper' in '$chapterName' with $accuracyPercent%! Party toh banti hai. 🎉",
+          "'$chapterName' ($accuracyPercent%) is your playground. You're just having fun, right? 😜",
+          "Your brain is on another level with '$chapterName' ($accuracyPercent%). Super impressive! 🤯",
+          "You're the Baahubali of '$chapterName' with $accuracyPercent%! Unbeatable! 💪",
+          "'$chapterName' mein $accuracyPercent%? Ekdum rapchik score! 😎",
+          "You didn't just study '$chapterName', you conquered it! ($accuracyPercent%) ⚔️",
+          "With $accuracyPercent% in '$chapterName', you're setting new records! 📈",
+          "That's a 'dhaakad' performance in '$chapterName' ($accuracyPercent%)! 💥",
+          "You're the 'Don' of '$chapterName' ($accuracyPercent%). Isko pakadna mushkil hi nahi, namumkin hai. 🕶️",
+          "'$chapterName' ($accuracyPercent%) seems too easy for you. Should we find a harder one? 🤔",
+          "Mind-blowing score in '$chapterName' ($accuracyPercent%)! Are you even human? 👽",
+          "You're a real 'khiladi' in '$chapterName' with $accuracyPercent%!  Akshay Kumar would be proud. 🤸"
+        ];
+        possibleInsights.add(messages[_random.nextInt(messages.length)]);
+
       } else if (accuracyPercent >= 50) {
-        possibleInsights.add("Your accuracy in '$chapterName' is $accuracyPercent%. A little more revision and you'll master it. 💪");
+        final messages = [
+          "Not bad in '$chapterName' ($accuracyPercent%)! Thoda aur practice and you'll be a pro. 💪",
+          "You're on the right track with '$chapterName' ($accuracyPercent%). Keep pushing! 🛤️",
+          "Solid $accuracyPercent% in '$chapterName'! You're halfway to becoming a master. 🥋",
+          "Good effort in '$chapterName' ($accuracyPercent%)! Picture abhi baaki hai mere dost. 🎬",
+          "Your $accuracyPercent% in '$chapterName' is a great start! Let's aim for 100 now. 🎯",
+          "Okay, I see you in '$chapterName' with $accuracyPercent%! Potential toh hai. 🔥",
+          "You're getting warmer in '$chapterName' ($accuracyPercent%). The top is closer than you think. 🧗",
+          "A for effort in '$chapterName' ($accuracyPercent%)! Now let's get an A+ in the score. 💯",
+          "Decent score in '$chapterName' ($accuracyPercent%), but legends aim higher! 😉",
+          "You're in the game with $accuracyPercent% in '$chapterName'! Now let's play to win. 🏆",
+          "A solid 50+ in '$chapterName' ($accuracyPercent%)! Let's turn this 50 into a century. 🏏",
+          "Good innings in '$chapterName' ($accuracyPercent%)! Let's avoid getting run-out next time. 😉",
+          "You've got the basics down for '$chapterName' ($accuracyPercent%). Time to build the skyscraper! 🏙️",
+          "'$chapterName' ($accuracyPercent%) is a work in progress. And it's looking good! 🚧",
+          "You're climbing the ladder in '$chapterName' ($accuracyPercent%)! Don't look down. 🪜",
+          "This is where the comeback story for '$chapterName' ($accuracyPercent%) begins. Let's write it! ✍️",
+          "You have the power for '$chapterName' ($accuracyPercent%)! Thoda sa concentration is all you need. 🧠",
+          "A good foundation in '$chapterName' ($accuracyPercent%)! Let's build an empire on it. 🏰",
+          "You're learning and growing in '$chapterName' ($accuracyPercent%)! That's what matters most. 🌱",
+          "Nice try in '$chapterName' ($accuracyPercent%)! Ab thoda sa aur 'josh' dikhao! 💪",
+          "You've got the skill for '$chapterName' ($accuracyPercent%)! Now let's add some more 'will'. ✨",
+          "Keep at it in '$chapterName' ($accuracyPercent%)! Practice makes perfect, and you're on your way. 🚶",
+          "A decent score in '$chapterName' ($accuracyPercent%)! But 'decent' is not what legends are made of. 😎",
+          "You're a fighter! '$chapterName' ($accuracyPercent%) threw some punches, but you're still standing. 🥊",
+          "'$chapterName' ($accuracyPercent%) is like climbing a hill. You're halfway to the peak! ⛰️",
+          "Good job! Now let's turn that 'good' in '$chapterName' ($accuracyPercent%) into 'great'. 🚀",
+          "You're getting the hang of '$chapterName' ($accuracyPercent%). Soon you'll be swinging like a pro. 🐒",
+          "That's the spirit for '$chapterName' ($accuracyPercent%)! Mistakes are proof that you are trying. 👍",
+          "'$chapterName' ($accuracyPercent%) is loading... You're more than 50% complete! 🟩",
+          "You're on the right page with '$chapterName' ($accuracyPercent%). Let's finish the book! 📖"
+        ];
+        possibleInsights.add(messages[_random.nextInt(messages.length)]);
+
       } else {
-        possibleInsights.add("You seem to be finding '$chapterName' tricky, with $accuracyPercent% accuracy. It might be a good idea to review the concepts. 📚");
+        final messages = [
+          "Looks like '$chapterName' ($accuracyPercent%) is a bit tricky. Thoda revision ho jaye? 📚",
+          "Koi baat nahi! '$chapterName' ($accuracyPercent%) needs a little more love. Let's try again. ❤️",
+          "Don't worry, '$chapterName' ($accuracyPercent%) is a tough cookie. Let's crack it together! 🍪",
+          "'$chapterName' ($accuracyPercent%) seems to be your villain. Time to be the hero! 🦸",
+          "A few bumps on the '$chapterName' road ($accuracyPercent%). Let's find a smoother route. 🛣️",
+          "Every expert was a beginner. Let's level up your game in '$chapterName' ($accuracyPercent%). 👾",
+          "Okay, '$chapterName' ($accuracyPercent%) was a bouncer! Let's practice our hook shot. 🏏",
+          "This is just a lesson from '$chapterName' ($accuracyPercent%). The comeback will be stronger! 💥",
+          "'$chapterName' ($accuracyPercent%) is challenging you. Challenge accepted? Let's go! 💪",
+          "Don't stress about '$chapterName' ($accuracyPercent%). Learning is a marathon, not a sprint. 🏃",
+          "'$chapterName' ($accuracyPercent%) is just a chapter, not the whole book. We can fix this! 🛠️",
+          "Think of this as net practice for '$chapterName' ($accuracyPercent%). The real match is yet to come. 🔥",
+          "Himmat mat haro! '$chapterName' ($accuracyPercent%) is tough, but you are tougher. 🦁",
+          "Okay, so '$chapterName' ($accuracyPercent%) was a 'googly'. Let's learn to read the spin. 🏏",
+          "This is just level 1 of '$chapterName' ($accuracyPercent%). The boss level is waiting! 😉",
+          "Every mistake is a lesson. You just got a few free lessons in '$chapterName' ($accuracyPercent%)! 🎓",
+          "Chin up! You're learning, and that's a victory in itself for '$chapterName' ($accuracyPercent%). 🏅",
+          "Rome wasn't built in a day. Keep building your knowledge of '$chapterName' ($accuracyPercent%). 🏛️",
+          "You didn't lose in '$chapterName' ($accuracyPercent%), you just learned what doesn't work. That's a win! 💡",
+          "Let's hit the refresh button on '$chapterName' ($accuracyPercent%). A fresh start is all you need. 🔄",
+          "'$chapterName' ($accuracyPercent%) is like that one dance step you can't get. Let's practice it! 🕺",
+          "Don't let '$chapterName' ($accuracyPercent%) scare you. We'll face it together. 🤝",
+          "This is just the 'before' picture for '$chapterName' ($accuracyPercent%). The 'after' will be amazing. 😎",
+          "The first attempt is for courage. The next, for winning. Let's go again on '$chapterName' ($accuracyPercent%)! 🏆",
+          "Okay, that was a tough one! Let's try an easier level for '$chapterName' ($accuracyPercent%). 😅",
+          "You've found the hard questions in '$chapterName' ($accuracyPercent%). Now let's find the answers. 🗺️",
+          "This round of '$chapterName' ($accuracyPercent%) was just a system reboot. Let's start again! 💻",
+          "Failure is not the opposite of success, it's part of it. Keep learning '$chapterName' ($accuracyPercent%)! 🌟",
+          "'$chapterName' ($accuracyPercent%) is just a puzzle. We just need to find the right pieces. 🧩",
+          "Don't give up on '$chapterName' ($accuracyPercent%)! The comeback is always stronger than the setback. 🚀"
+        ];
+        possibleInsights.add(messages[_random.nextInt(messages.length)]);
       }
+
+// --- End of Replacement ---
+
+
+
+
     }
 
     // 5. Select and Return an Insight
+    // 5. Select and Return an Insight
     if (possibleInsights.isEmpty) {
+      // This block runs if the user has played, but not enough questions in any single chapter
+      // to generate specific advice. We give them a general nudge instead.
       final averageScore = performanceByChapter.map((p) => p.accuracy).average;
       if (averageScore >= 0.7) {
-        return "You're doing great overall! Keep practicing to get more specific advice on different chapters.";
+        const messages = [
+          "You're doing great! Just play a few more questions in one chapter so I can give you some solid advice. 👍",
+          "Good start! I'm still gathering data. Play a bit more in one topic and I'll have some tips for you. 📊",
+          "You're warming up nicely! Focus on one chapter for a few more questions to unlock detailed insights. 🗝️",
+          "Nice! You're exploring a lot. Settle on one chapter for a bit, and I can give you a proper analysis. 🕵️",
+          "Keep this energy up! I need a little more data from a single chapter to give you pro-level advice. 🚀"
+        ];
+        return messages[_random.nextInt(messages.length)];
       } else {
-        return "Keep up the practice! The more questions you do, the better your understanding will become.";
+        const messages = [
+          "Good first attempt! Play a few more questions in one chapter, and I can help you pinpoint where to focus. 🎯",
+          "Every journey starts with a single step! Play some more in one topic so I can guide you better. 🗺️",
+          "Keep going! The more you play in one chapter, the better I can understand your style and help you out.🤝",
+          "You've started the engine! Now let's go for a short drive in one chapter to see how it handles. 🚗",
+          "Don't stop now! A few more questions in one chapter is all I need to give you some killer advice. 😎"
+        ];
+        return messages[_random.nextInt(messages.length)];
       }
     }
 
