@@ -8,6 +8,7 @@ class PracticeAttempt {
   final String topic; // From your JSON tags.chapter, e.g., "Center_of_Mass"
   final DateTime timestamp;
   final bool bambooCounted;// The time the attempt was made
+  final String gameSessionId;
 
   PracticeAttempt({
     this.id,
@@ -17,6 +18,7 @@ class PracticeAttempt {
     required this.topic,
     required this.timestamp,
     this.bambooCounted = false,
+    required this.gameSessionId,
   });
 
   // Helper method to convert the object to a Map for database insertion.
@@ -29,6 +31,7 @@ class PracticeAttempt {
       'topic': topic,
       'timestamp': timestamp.millisecondsSinceEpoch, // Convert DateTime to integer
       'bamboo_counted': bambooCounted ? 1 : 0,
+      'game_session_id': gameSessionId,
     };
   }
 }

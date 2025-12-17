@@ -63,7 +63,8 @@ class SoloScreen extends StatefulWidget {
   final String userId;
   final String selectedChapter;
   final List<String>? selectedChapters;
-  const SoloScreen({super.key, required this.selectedChapter,this.selectedChapters,required this.userId});
+  final String game_session_id;
+  const SoloScreen({super.key, required this.selectedChapter,this.selectedChapters,required this.userId,required this.game_session_id});
 
   @override
   State<SoloScreen> createState() => _SoloScreenState();
@@ -543,6 +544,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       wasCorrect: wasCorrect,
       topic: question['tags']['chapter'] ?? 'Unknown',
       timestamp: DateTime.now(),
+      gameSessionId: widget.game_session_id,
     );
     await DatabaseHelper.instance.addAttempt(attempt);
 

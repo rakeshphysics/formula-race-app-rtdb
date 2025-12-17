@@ -193,10 +193,11 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
                           percentage: percentage,
                           highlightColor: Colors.greenAccent,
                           onPressed: () {
+                            final String gameSessionId = DateTime.now().millisecondsSinceEpoch.toString();
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => SoloScreen(selectedChapter: chapter, userId: widget.userId),
+                                builder: (context) => SoloScreen(selectedChapter: chapter, userId: widget.userId,game_session_id: gameSessionId),
                               ),
                             ).then((_) {
                               _loadChapterProgress();

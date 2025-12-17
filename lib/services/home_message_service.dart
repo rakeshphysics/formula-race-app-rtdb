@@ -142,7 +142,36 @@ class HomeMessageService {
       // User tapped "Yes"
       // You can add more variations to this list
       const positiveResponses = [
-        "MEAL POSITIVE RESPONSE",
+        "Nice! Fuel for the brain to get more right answers. 😉",
+        "Good, good. An empty stomach can't solve tough questions. 🧠",
+        "Awesome! Now you're ready to smash some quizzes. 💪",
+        "Great! A well-fed mind is a smart mind. 🤓",
+        "Perfect! Now let's turn that food into fuel for a high score. 🔥",
+        "Excellent! Ready to conquer the leaderboard now? 🏆",
+        "Sweet! A happy tummy leads to happy learning. 😊",
+        "That's the spirit! Now let's get this bread (and the right answers). 🍞",
+        "Brilliant! You're all set for a winning streak. 🚀",
+        "Good stuff! Now your brain has the energy to be a genius. ✨",
+        "Nice one! Let's see if that meal powered up your brain cells. ⚡",
+        "Great to hear! Now you're officially ready to roll. 🚗",
+        "Perfecto! A full stomach is the secret weapon of a topper. 😉",
+        "Awesome! Now let's put that energy to the test. 🎯",
+        "That's what I like to hear! Ready for a challenge? 😎",
+        "Fantastic! A fed panda is a happy panda. And a smart one too! 🐼",
+        "Good! Now your brain won't make 'hangry' mistakes. 😂",
+        "Superb! Let's channel that energy into some epic wins. 🎉",
+        "Right on! Now you're in the perfect state to learn something new. 🌟",
+        "Cool! Let's see if that meal was a 'power-up'. 🍄",
+        "Love it! A happy meal for a happy student. 😄",
+        "Perfect! Now you're unstoppable. Let's go! 💨",
+        "Great! You've completed the first mission of the day. ✅",
+        "Excellent choice! Now let's make some excellent choices in the quiz. 🤔",
+        "Nice! You're all charged up and ready to go. 🔋",
+        "Good job! Taking care of yourself is the first step to success. 🥇",
+        "Sweet! Now let's get some sweet, sweet victory. 🍬",
+        "Perfect! Now your brain is running on premium fuel. ⛽",
+        "Awesome! You're ready to be the Virat Kohli of quizzes. 🏏",
+        "Great! Now let's make your brain do a happy dance. 🕺"
       ];
       final modifiableList = List<String>.from(positiveResponses);
       // Shuffle the new list
@@ -153,7 +182,36 @@ class HomeMessageService {
       // User tapped "No"
       // You can add more variations to this list
       const encouragingResponses = [
-        "MEAL NEGATIVE RESPONSE",
+        "Arre! Go grab a bite. Your brain needs fuel! 🍎",
+        "Dude, food first! Quizzes can wait a minute. 🥪",
+        "Nooo! An empty stomach is the enemy of a high score. Go eat! 😠",
+        "Bro, don't skip meals! Your brain will thank you. 🙏",
+        "Go eat something! I'll wait. I'm a patient panda. 🐼",
+        "Hey! Even superheros need to eat. Go get your power-up. ⚡",
+        "Don't be a hero, go eat! A 'hangry' brain makes silly mistakes. 😂",
+        "Chal, chal, pehle khaana! Your health is more important. ❤️",
+        "Seriously? Go grab a snack at least. Your brain is begging you. 🧠",
+        "Food is not a bug, it's a feature! Go install it. 😉",
+        "Remember: A happy tummy = a happy mind. Go make it happy! 😊",
+        "Go on, take a break. Even I'm feeling hungry just thinking about it. 🍕",
+        "Don't run on empty! A quick snack can make all the difference. 🍌",
+        "Your brain just sent me a low battery notification. Please recharge! 🔋",
+        "How can you focus on acing quizzes with a rumbling tummy? Go eat! 🤔",
+        "Stop everything! This is a food emergency. 🚨",
+        "Go grab something quick! We need you at 100%. 💪",
+        "You wouldn't drive a car with no fuel, right? Same for your brain! 🚗",
+        "Abe, jaa ke kha le! Sharmaji ka beta already kha chuka hai. 😉",
+        "Your quest for knowledge can pause for a quick meal break. ⏸️",
+        "Don't ignore the rumble! Your stomach is trying to tell you something. 🗣️",
+        "Go eat! You can't download new information on an empty drive. 💾",
+        "A snack break is a smart break! Go take one. 🍪",
+        "Come on! You need energy to beat your high score. Go get it! 🏆",
+        "Even I need my bamboo shoots! Go get your version of it. 🎋",
+        "Don't let hunger be the reason for a wrong answer! Go eat. ❌",
+        "Your brain cells are on strike until you feed them. Go negotiate! 😂",
+        "Quick, find food! It's the ultimate cheat code for focus. 🎮",
+        "Health is wealth! Go invest in a good meal. 💰",
+        "Go eat! I'll save your spot on the leaderboard. 😉"
       ];
       final modifiableList = List<String>.from(encouragingResponses);
       modifiableList.shuffle();

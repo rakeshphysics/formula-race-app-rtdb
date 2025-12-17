@@ -105,11 +105,12 @@ class SoloModeSelectionScreen extends StatelessWidget {
 
   // -------------------- CHUNK 5 — START SOLO GAME -----------------
   void _startSoloGame(BuildContext context, String mode) {
+    final String gameSessionId = DateTime.now().millisecondsSinceEpoch.toString();
     //print('✅✅✅✅✅>>> Navigating to SoloScreen for mode: $mode <<<');
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => SoloScreen(selectedChapter: mode, userId: userId,),
+        builder: (context) => SoloScreen(selectedChapter: mode, userId: userId,game_session_id: gameSessionId),
       ),
     );
   }

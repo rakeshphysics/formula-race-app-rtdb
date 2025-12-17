@@ -26,7 +26,7 @@ class DatabaseHelper {
     String path = join(await getDatabasesPath(), 'student_practice.db');
     return await openDatabase(
       path,
-      version: 2,
+      version: 3,
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
     );
@@ -53,7 +53,8 @@ class DatabaseHelper {
     wasCorrect INTEGER NOT NULL, -- 0 for false, 1 for true
     topic TEXT NOT NULL,
     timestamp INTEGER NOT NULL, -- Storing date as milliseconds since epoch
-    bamboo_counted INTEGER NOT NULL DEFAULT 0
+    bamboo_counted INTEGER NOT NULL DEFAULT 0,
+    game_session_id TEXT NOT NULL
   )
 ''');
   }
@@ -91,7 +92,9 @@ class DatabaseHelper {
         questionId: maps[i]['questionId'],
         wasCorrect: maps[i]['wasCorrect'] == 1, // Convert integer back to bool
         topic: maps[i]['topic'],
-        timestamp: DateTime.fromMillisecondsSinceEpoch(maps[i]['timestamp']), // Convert int to DateTime
+        timestamp: DateTime.fromMillisecondsSinceEpoch(maps[i]['timestamp']),
+        gameSessionId: maps[i]['game_session_id'] ?? 'unknown',
+        // Convert int to DateTime
       );
     });
   }
@@ -103,28 +106,28 @@ class DatabaseHelper {
 
   /// Fetches all practice attempts within a specific time range.
   /// This is a flexible method we can use to get data for "today", "yesterday", "this week", etc.
-  Future<List<PracticeAttempt>> getAttemptsInDateRange(DateTime start, DateTime end) async {
-    final db = await instance.database;
-
-    final List<Map<String, dynamic>> maps = await db.query(
-      'practice_attempts',
-      where: 'timestamp >= ? AND timestamp < ?',
-      whereArgs: [start.millisecondsSinceEpoch, end.millisecondsSinceEpoch],
-      orderBy: 'timestamp DESC',
-    );
-
-    // Re-use the same conversion logic from getMistakes()
-    return List.generate(maps.length, (i) {
-      return PracticeAttempt(
-        id: maps[i]['id'],
-        userId: maps[i]['userId'],
-        questionId: maps[i]['questionId'],
-        wasCorrect: maps[i]['wasCorrect'] == 1,
-        topic: maps[i]['topic'],
-        timestamp: DateTime.fromMillisecondsSinceEpoch(maps[i]['timestamp']),
-      );
-    });
-  }
+  // Future<List<PracticeAttempt>> getAttemptsInDateRange(DateTime start, DateTime end) async {
+  //   final db = await instance.database;
+  //
+  //   final List<Map<String, dynamic>> maps = await db.query(
+  //     'practice_attempts',
+  //     where: 'timestamp >= ? AND timestamp < ?',
+  //     whereArgs: [start.millisecondsSinceEpoch, end.millisecondsSinceEpoch],
+  //     orderBy: 'timestamp DESC',
+  //   );
+  //
+  //   // Re-use the same conversion logic from getMistakes()
+  //   return List.generate(maps.length, (i) {
+  //     return PracticeAttempt(
+  //       id: maps[i]['id'],
+  //       userId: maps[i]['userId'],
+  //       questionId: maps[i]['questionId'],
+  //       wasCorrect: maps[i]['wasCorrect'] == 1,
+  //       topic: maps[i]['topic'],
+  //       timestamp: DateTime.fromMillisecondsSinceEpoch(maps[i]['timestamp']),
+  //     );
+  //   });
+  // }
 
 // lib/services/database_helper.dart
 
@@ -203,25 +206,38 @@ class DatabaseHelper {
   Future<Map<String, dynamic>?> getLastGameDetails() async {
     final db = await instance.database;
 
-    // 1. Get the last 10 attempts from the database, ordering by the auto-incrementing ID.
+    // 1. Find the game_session_id of the most recently played game.
+    final List<Map<String, dynamic>> lastAttemptResult = await db.query(
+      'practice_attempts',
+      columns: ['game_session_id'],
+      orderBy: 'id DESC', // Order by ID to get the absolute last entry
+      limit: 1,
+    );
+
+    if (lastAttemptResult.isEmpty) {
+      return null; // No games ever played.
+    }
+
+    final String lastGameSessionId = lastAttemptResult.first['game_session_id'] as String;
+
+    // 2. Get all attempts that share that specific game_session_id.
     final List<Map<String, dynamic>> gameAttempts = await db.query(
       'practice_attempts',
-      orderBy: 'id DESC', // Get the most recent ones first using the primary key
-      limit: 10,          // Limit the result to 10
+      where: 'game_session_id = ?',
+      whereArgs: [lastGameSessionId],
     );
 
     if (gameAttempts.isEmpty) {
-      return null; // No attempts ever made.
+      return null; // Should not happen, but a safe check.
     }
 
-    // 2. The timestamp of the last game is from the first item in our sorted list.
-    final int lastTimestamp = gameAttempts.first['timestamp'] as int;
+    // 3. The timestamp of the last game is the highest timestamp from that session.
+    final int lastTimestamp = gameAttempts.map((e) => e['timestamp'] as int).reduce((a, b) => a > b ? a : b);
 
-    // 3. Calculate stats for that game session.
+    // 4. Calculate stats for that precise game session.
     int correctCount = 0;
-    // The total questions will be 10, or less if the user has played fewer than 10 questions ever.
-    int totalQuestions = gameAttempts.length;
-    Set<String> topics = {}; // Use a Set to store unique topics.
+    int totalQuestions = gameAttempts.length; // This is now accurate, even for abandoned games.
+    Set<String> topics = {};
 
     for (var attempt in gameAttempts) {
       if (attempt['wasCorrect'] == 1) {
@@ -230,15 +246,14 @@ class DatabaseHelper {
       topics.add(attempt['topic'] as String);
     }
 
-    // 4. Return a map with the game's summary.
+    // 5. Return a map with the game's accurate summary.
     return {
       'correct_count': correctCount,
       'total_questions': totalQuestions,
-      'topics': topics.toList(), // Convert the Set of topics to a List.
-      'timestamp': lastTimestamp, // The timestamp of the very last answer.
+      'topics': topics.toList(),
+      'timestamp': lastTimestamp,
     };
   }
-
   Future<List<ChapterPerformance>> getPerformanceOverLast5Games() async {
     final db = await instance.database;
 

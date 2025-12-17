@@ -450,11 +450,11 @@ void _checkForNewBamboos() async {
     });
   }
 
-  if (hasNewBamboos) {
-    print("New bamboos detected! Triggering AI message automatically.");
-    _postGameAnalysisTriggered = true;
-    _loadAiMessage(trigger: AiMessageTrigger.postGameAnalysis); // <-- THIS IS THE CRUCIAL ADDITION
-  }
+  // if (hasNewBamboos) {
+  //   print("New bamboos detected! Triggering AI message automatically.");
+  //   _postGameAnalysisTriggered = true;
+  //   _loadAiMessage(trigger: AiMessageTrigger.postGameAnalysis); // <-- THIS IS THE CRUCIAL ADDITION
+  // }
   print("--- Load complete. Final balance on screen: $_bamboos ---");
 }
 
@@ -875,7 +875,10 @@ void _checkForNewBamboos() async {
                           ),
                         );
 
+
                         print("<<< User has returned to HomeScreen. Triggering bamboo check.");
+                        _postGameAnalysisTriggered = true;
+                        _loadAiMessage(trigger: AiMessageTrigger.postGameAnalysis);
                         _checkForNewBamboos();
                       },
                       gradientColors: const [Color(0xFF00FFFF), Color(0xFF006C6C)],
