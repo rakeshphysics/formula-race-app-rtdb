@@ -899,16 +899,22 @@ class HomeMessageService {
         "Feeling lost in formulas? Hamburger menu (top-left) -> 'Revise all formulas'. Sorted! 📜",
         "Psst! All the formulas you'll ever need are hiding in the hamburger menu. Go find 'em! 🕵️",
         "Forget a formula? No stress! Just tap the top-left menu and hit 'Revise all formulas'. Easy peasy. 😎",
+        "Did you know? You can pin and bookmark important formulas to find them faster next time! 📌",
+        "Found a tricky formula? Just bookmark it to create your own quick-access list. ✨",
+        "Don't just read the formulas, bookmark the important ones so they're always ready for you! 🔖"
       ],
       'solo': [
         "Think you're a pro? 'Play Solo' gives you 10 questions that get tougher and tougher. Dum hai? 💪",
         "Heads up: 'Play Solo' isn't a walk in the park. The questions get harder as you go. 🔥",
         "Wanna test yourself? 'Play Solo' mode has 10 questions with increasing difficulty. Let's see what you've got! 🚀",
+        "Chapter colors show your score: 🔴(<40%) 🟠(40-70%) 🟢(>70%). Aim for Green!",
+        "Quick Tip: Chapter colors track your progress. Red needs work, Green means you're a pro! 📊",
+        "See the chapter colors? Your goal is to turn them all Green (>70%)! ✅"
       ],
       'friend': [
-        "Studying alone is boring! Challenge your friends using 'Play with Friend' and show 'em who's boss. 🏆",
-        "Why practice alone? Use 'Play with Friend' to make things more exciting. Loser treats, maybe? 😉",
-        "Make revision fun! Grab a friend and battle it out in 'Play with Friend'. Game on! 🎮",
+        "Studying alone is boring! Challenge your friends using 'Play Friend' and show 'em who's boss. 🏆",
+        "Why practice alone? Use 'Play Friend' to make things more exciting. Loser treats, maybe? 😉",
+        "Make revision fun! Grab a friend and battle it out in 'Play Friend'. Game on! 🎮",
       ],
       'mistakes': [
         "Every mistake you make is saved in 'My Mistakes'. It's your own personal 'what-not-to-do' list! 😂",
@@ -916,9 +922,11 @@ class HomeMessageService {
         "Once you've mastered your errors, hit 'Clear Mistakes' to delete them forever. Bye-bye, silly mistakes! 👋",
       ],
       'creator': [
-        "Fun Fact: This app was made by Rakesh, an IIT Madras grad, to make revision less boring. Is it working? 🤔",
-        "This app was built by a guy from IIT Madras who got tired of seeing his students bored. You're welcome! 😉",
+        "Fun Fact: This app was made by Rakesh, an IIT Madras grad, to make revision less boring. Pretty cool, right? ✨",
+        "This app was built by a guy from IIT Madras who got tired of seeing his students bored during revision. 😉",
         "My creator, Rakesh, made me to spice up your revision. Hope you're having fun! 🎉",
+        "Want more tips? My creator has a YouTube channel: 'Physics with Rakesh | IIT Madras'. Check it out! 📺",
+        "For more cool concepts, search for 'Physics with Rakesh | IIT Madras' on YouTube! 🚀"
       ],
     };
 
