@@ -200,44 +200,26 @@ class DatabaseHelper {
   ''');
   }
 
-  // lib/services/database_helper.dart
-
   Future<Map<String, dynamic>?> getLastGameDetails() async {
     final db = await instance.database;
 
-    // 1. Find the timestamp of the most recent attempt.
-    final List<Map<String, dynamic>> lastAttemptResult = await db.query(
-      'practice_attempts',
-      columns: ['timestamp'],
-      orderBy: 'timestamp DESC',
-      limit: 1,
-    );
-
-    if (lastAttemptResult.isEmpty) {
-      return null; // No attempts ever made.
-    }
-
-    final int lastTimestamp = lastAttemptResult.first['timestamp'] as int;
-
-    // 2. Define a "session" as all attempts within a 5-minute window of the last one.
-    // This groups all questions from the last game together.
-    final int sessionThreshold = Duration(minutes: 5).inMilliseconds;
-    final int sessionStartTime = lastTimestamp - sessionThreshold;
-
-    // 3. Get all attempts from that last session.
+    // 1. Get the last 10 attempts from the database, ordering by the auto-incrementing ID.
     final List<Map<String, dynamic>> gameAttempts = await db.query(
       'practice_attempts',
-      where: 'timestamp >= ?',
-      whereArgs: [sessionStartTime],
-      orderBy: 'timestamp DESC',
+      orderBy: 'id DESC', // Get the most recent ones first using the primary key
+      limit: 10,          // Limit the result to 10
     );
 
     if (gameAttempts.isEmpty) {
-      return null; // Should not happen, but it's a safe check.
+      return null; // No attempts ever made.
     }
 
-    // 4. Calculate stats for that game session.
+    // 2. The timestamp of the last game is from the first item in our sorted list.
+    final int lastTimestamp = gameAttempts.first['timestamp'] as int;
+
+    // 3. Calculate stats for that game session.
     int correctCount = 0;
+    // The total questions will be 10, or less if the user has played fewer than 10 questions ever.
     int totalQuestions = gameAttempts.length;
     Set<String> topics = {}; // Use a Set to store unique topics.
 
@@ -248,7 +230,7 @@ class DatabaseHelper {
       topics.add(attempt['topic'] as String);
     }
 
-    // 5. Return a map with the game's summary.
+    // 4. Return a map with the game's summary.
     return {
       'correct_count': correctCount,
       'total_questions': totalQuestions,
@@ -257,101 +239,210 @@ class DatabaseHelper {
     };
   }
 
-// lib/services/database_helper.dart
-
-  // Future<Map<String, dynamic>?> getLastGameDetails() async {
-  //   final db = await instance.database;
-  //
-  //   // TWEAK: Instead of using a time window, we will now fetch the last 10 attempts directly.
-  //   // This simplifies the function significantly.
-  //
-  //   // 1. Get the last 10 attempts from the database.
-  //   final List<Map<String, dynamic>> gameAttempts = await db.query(
-  //     'practice_attempts',
-  //     orderBy: 'timestamp DESC', // Get the most recent ones first
-  //     limit: 10,                 // Limit the result to 10
-  //   );
-  //
-  //   if (gameAttempts.isEmpty) {
-  //     return null; // No attempts ever made.
-  //   }
-  //
-  //   // 2. The timestamp of the last game is from the first item in our sorted list.
-  //   final int lastTimestamp = gameAttempts.first['timestamp'] as int;
-  //
-  //
-  //   // 3. Calculate stats for that game session.
-  //   int correctCount = 0;
-  //   int totalQuestions = gameAttempts.length; // This will be 10 or less
-  //   Set<String> topics = {}; // Use a Set to store unique topics.
-  //
-  //   for (var attempt in gameAttempts) {
-  //     if (attempt['wasCorrect'] == 1) {
-  //       correctCount++;
-  //     }
-  //     topics.add(attempt['topic'] as String);
-  //   }
-  //
-  //   // 4. Return a map with the game's summary.
-  //   return {
-  //     'correct_count': correctCount,
-  //     'total_questions': totalQuestions,
-  //     'topics': topics.toList(), // Convert the Set of topics to a List.
-  //     'timestamp': lastTimestamp, // The timestamp of the very last answer.
-  //   };
-  // }
-  // --- New function to get performance of recent games ---
-  Future<List<GamePerformance>> getPerformanceOverLast5Games() async {
+  Future<List<ChapterPerformance>> getPerformanceOverLast5Games() async {
     final db = await instance.database;
 
-    // Step 1: Get the timestamps of the last 5 distinct game sessions.
-    // A "game session" is defined by a group of questions answered at the exact same time.
-    final List<Map<String, dynamic>> distinctTimestamps = await db.rawQuery('''
-      SELECT DISTINCT timestamp
+    // This query gets the performance for each topic from the last 1000 attempts.
+    // It groups by 'topic' and calculates the total attempts and the accuracy.
+    // SUM(wasCorrect) works because correct attempts are stored as 1 and incorrect as 0.
+    // CAST(SUM(wasCorrect) AS REAL) is important to ensure floating-point division.
+    final List<Map<String, dynamic>> maps = await db.rawQuery('''
+    SELECT
+      topic,
+      COUNT(*) as totalAttempts,
+      CAST(SUM(wasCorrect) AS REAL) / COUNT(*) as accuracy
+    FROM (
+      SELECT topic, wasCorrect
       FROM practice_attempts
-      ORDER BY timestamp DESC
-      LIMIT 5
-    ''');
+      ORDER BY id DESC
+      LIMIT 1000
+    ) AS recent_attempts
+    GROUP BY topic
+  ''');
 
-    if (distinctTimestamps.isEmpty) {
+    // Check if the query returned any results
+    if (maps.isEmpty) {
       return [];
     }
 
-    final List<GamePerformance> performanceList = [];
-
-    // Step 2: For each of those 5 timestamps, calculate the score.
-    for (var row in distinctTimestamps) {
-      final int timestamp = row['timestamp'];
-
-      // Get total questions for this timestamp
-      final totalResult = await db.rawQuery(
-        'SELECT COUNT(*) as count FROM practice_attempts WHERE timestamp = ?',
-        [timestamp],
+    // Convert the query result into a list of ChapterPerformance objects
+    return List.generate(maps.length, (i) {
+      return ChapterPerformance(
+        // The column name from the query is 'topic'
+        chapterName: maps[i]['topic'],
+        // The column name from the query is 'accuracy'
+        accuracy: maps[i]['accuracy'],
+        // The column name from the query is 'totalAttempts'
+        totalAttempts: maps[i]['totalAttempts'],
       );
-      final int totalQuestions = totalResult.first['count'] as int;
-
-      // Get correct questions for this timestamp
-      final correctResult = await db.rawQuery(
-        'SELECT COUNT(*) as count FROM practice_attempts WHERE timestamp = ? AND wasCorrect = 1',
-        [timestamp],
-      );
-      final int correctQuestions = correctResult.first['count'] as int;
-
-      if (totalQuestions > 0) {
-        final double score = correctQuestions / totalQuestions;
-        performanceList.add(
-          GamePerformance(
-            score: score,
-            timestamp: DateTime.fromMillisecondsSinceEpoch(timestamp),
-          ),
-        );
-      }
-    }
-
-    // The list might be in descending order from the query, so let's reverse it
-    // to have the oldest of the 5 games first.
-    return performanceList.reversed.toList();
+    });
   }
 
 
 }
+
+// You can place this class inside database_helper.dart or in a new model file.
+class ChapterPerformance {
+  final String chapterName;
+  final double accuracy; // e.g., 0.9 for 90%
+  final int totalAttempts;
+
+  ChapterPerformance({
+    required this.chapterName,
+    required this.accuracy,
+    required this.totalAttempts,
+  });
+}
+
+
+
+// Future<Map<String, dynamic>?> getLastGameDetails() async {
+//   final db = await instance.database;
+//
+//   // 1. Find the timestamp of the most recent attempt.
+//   final List<Map<String, dynamic>> lastAttemptResult = await db.query(
+//     'practice_attempts',
+//     columns: ['timestamp'],
+//     orderBy: 'timestamp DESC',
+//     limit: 1,
+//   );
+//
+//   if (lastAttemptResult.isEmpty) {
+//     return null; // No attempts ever made.
+//   }
+//
+//   final int lastTimestamp = lastAttemptResult.first['timestamp'] as int;
+//
+//   // 2. Define a "session" as all attempts within a 5-minute window of the last one.
+//   // This groups all questions from the last game together.
+//   final int sessionThreshold = Duration(minutes: 5).inMilliseconds;
+//   final int sessionStartTime = lastTimestamp - sessionThreshold;
+//
+//   // 3. Get all attempts from that last session.
+//   final List<Map<String, dynamic>> gameAttempts = await db.query(
+//     'practice_attempts',
+//     where: 'timestamp >= ?',
+//     whereArgs: [sessionStartTime],
+//     orderBy: 'timestamp DESC',
+//   );
+//
+//   if (gameAttempts.isEmpty) {
+//     return null; // Should not happen, but it's a safe check.
+//   }
+//
+//   // 4. Calculate stats for that game session.
+//   int correctCount = 0;
+//   int totalQuestions = gameAttempts.length;
+//   Set<String> topics = {}; // Use a Set to store unique topics.
+//
+//   for (var attempt in gameAttempts) {
+//     if (attempt['wasCorrect'] == 1) {
+//       correctCount++;
+//     }
+//     topics.add(attempt['topic'] as String);
+//   }
+//
+//   // 5. Return a map with the game's summary.
+//   return {
+//     'correct_count': correctCount,
+//     'total_questions': totalQuestions,
+//     'topics': topics.toList(), // Convert the Set of topics to a List.
+//     'timestamp': lastTimestamp, // The timestamp of the very last answer.
+//   };
+// }
+
+// lib/services/database_helper.dart
+
+// Future<Map<String, dynamic>?> getLastGameDetails() async {
+//   final db = await instance.database;
+//
+//   // TWEAK: Instead of using a time window, we will now fetch the last 10 attempts directly.
+//   // This simplifies the function significantly.
+//
+//   // 1. Get the last 10 attempts from the database.
+//   final List<Map<String, dynamic>> gameAttempts = await db.query(
+//     'practice_attempts',
+//     orderBy: 'timestamp DESC', // Get the most recent ones first
+//     limit: 10,                 // Limit the result to 10
+//   );
+//
+//   if (gameAttempts.isEmpty) {
+//     return null; // No attempts ever made.
+//   }
+//
+//   // 2. The timestamp of the last game is from the first item in our sorted list.
+//   final int lastTimestamp = gameAttempts.first['timestamp'] as int;
+//
+//
+//   // 3. Calculate stats for that game session.
+//   int correctCount = 0;
+//   int totalQuestions = gameAttempts.length; // This will be 10 or less
+//   Set<String> topics = {}; // Use a Set to store unique topics.
+//
+//   for (var attempt in gameAttempts) {
+//     if (attempt['wasCorrect'] == 1) {
+//       correctCount++;
+//     }
+//     topics.add(attempt['topic'] as String);
+//   }
+//
+//   // 4. Return a map with the game's summary.
+//   return {
+//     'correct_count': correctCount,
+//     'total_questions': totalQuestions,
+//     'topics': topics.toList(), // Convert the Set of topics to a List.
+//     'timestamp': lastTimestamp, // The timestamp of the very last answer.
+//   };
+// }
+// --- New function to get performance of recent games ---
+// Future<List<GamePerformance>> getPerformanceOverLast5Games() async {
+//   final db = await instance.database;
+//
+//   // Step 1: Get the timestamps of the last 5 distinct game sessions.
+//   // A "game session" is defined by a group of questions answered at the exact same time.
+//   final List<Map<String, dynamic>> distinctTimestamps = await db.rawQuery('''
+//     SELECT DISTINCT timestamp
+//     FROM practice_attempts
+//     ORDER BY timestamp DESC
+//     LIMIT 5
+//   ''');
+//
+//   if (distinctTimestamps.isEmpty) {
+//     return [];
+//   }
+//
+//   final List<GamePerformance> performanceList = [];
+//
+//   // Step 2: For each of those 5 timestamps, calculate the score.
+//   for (var row in distinctTimestamps) {
+//     final int timestamp = row['timestamp'];
+//
+//     // Get total questions for this timestamp
+//     final totalResult = await db.rawQuery(
+//       'SELECT COUNT(*) as count FROM practice_attempts WHERE timestamp = ?',
+//       [timestamp],
+//     );
+//     final int totalQuestions = totalResult.first['count'] as int;
+//
+//     // Get correct questions for this timestamp
+//     final correctResult = await db.rawQuery(
+//       'SELECT COUNT(*) as count FROM practice_attempts WHERE timestamp = ? AND wasCorrect = 1',
+//       [timestamp],
+//     );
+//     final int correctQuestions = correctResult.first['count'] as int;
+//
+//     if (totalQuestions > 0) {
+//       final double score = correctQuestions / totalQuestions;
+//       performanceList.add(
+//         GamePerformance(
+//           score: score,
+//           timestamp: DateTime.fromMillisecondsSinceEpoch(timestamp),
+//         ),
+//       );
+//     }
+//   }
+//
+//   // The list might be in descending order from the query, so let's reverse it
+//   // to have the oldest of the 5 games first.
+//   return performanceList.reversed.toList();
+// }

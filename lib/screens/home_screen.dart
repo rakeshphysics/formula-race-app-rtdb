@@ -118,7 +118,7 @@ void _loadAiMessage({required AiMessageTrigger trigger}) async {
     }
     print("Displaying FREE game analysis. Stage: $_conversationStage");
     // --- END OF FIX ---
-
+    _postGameAnalysisTriggered = false;
   }  else {
     _conversationStage = PandaConversationStage.idle;
     final response = await messageService.getGreeting(widget.userId);
@@ -265,6 +265,13 @@ void _handlePandaTap() async {
         break;
 
       case PandaConversationStage.showingAppAdvice:
+      // E -> B (Loop): Show detailed advice again
+        newMessage = await messageService.getGeneralAppAdvice();
+        _conversationStage = PandaConversationStage.showingDetailedAdvice;
+        break;
+
+
+      case PandaConversationStage.showingDetailedAdvice:
       // E -> B (Loop): Show detailed advice again
         _adviceMessage = await messageService.getGameAdviceMessage(widget.userId); // <-- Fetches and SAVES the new advice.
         newMessage = _adviceMessage ?? "Let's try another round of advice!";
