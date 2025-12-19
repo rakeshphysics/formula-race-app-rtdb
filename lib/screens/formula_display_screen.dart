@@ -8,6 +8,7 @@ import 'package:provider/provider.dart';
 import '../quiz_data_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:model_viewer_plus/model_viewer_plus.dart';
 
 // Data model remains the same
 class Formula {
@@ -222,20 +223,53 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
                   //   ),
                   // ),
 
+                  // Padding(
+                  //   padding:
+                  //   EdgeInsets.only(bottom: screenWidth * 0.02),
+                  //   child: Center(
+                  //     child: SizedBox(
+                  //       width: screenWidth * 0.6,
+                  //       height: (screenWidth * 0.6) / 1.5,
+                  //       child: questionData['image'].endsWith('.svg')
+                  //           ? Opacity(
+                  //         opacity: 0.85, // Apply 85% opacity
+                  //         child: SvgPicture.asset(
+                  //           questionData['image'],
+                  //           fit: BoxFit.contain,
+                  //         ),
+                  //       )
+                  //           : Image.asset(
+                  //         questionData['image'],
+                  //         fit: BoxFit.contain,
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
+
+
                   Padding(
-                    padding:
-                    EdgeInsets.only(bottom: screenWidth * 0.02),
+                    padding: EdgeInsets.only(bottom: screenWidth * 0.02),
                     child: Center(
                       child: SizedBox(
                         width: screenWidth * 0.6,
                         height: (screenWidth * 0.6) / 1.5,
                         child: questionData['image'].endsWith('.svg')
                             ? Opacity(
-                          opacity: 0.85, // Apply 85% opacity
+                          opacity: 0.85,
                           child: SvgPicture.asset(
                             questionData['image'],
                             fit: BoxFit.contain,
                           ),
+                        )
+                            : questionData['image'].endsWith('.glb')
+                            ? ModelViewer(
+                          src: questionData['image'],
+                          backgroundColor: Colors.transparent,
+                          alt: "A 3D model",
+                          ar: false, // Disable AR for list view stability
+                          autoRotate: false,
+                          disableZoom: true, // Prevents scroll conflicts
+                          cameraControls: true,
                         )
                             : Image.asset(
                           questionData['image'],

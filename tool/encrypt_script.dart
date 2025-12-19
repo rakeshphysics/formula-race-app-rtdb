@@ -45,6 +45,7 @@ void main() {
     '${baseDir}12/semiconductors.json',
     '${baseDir}12/wave_optics.json',
     '${baseDir}full_syllabus_online_play.json',
+    '${baseDir}11/solid_state.json',
   ];
 
   final encrypter = Encrypter(AES(key));
