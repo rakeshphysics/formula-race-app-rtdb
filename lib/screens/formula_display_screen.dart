@@ -570,6 +570,10 @@ class _Formula3DViewerState extends State<Formula3DViewer> with AutomaticKeepAli
       disablePan: true,
       cameraControls: true,
       interactionPrompt: InteractionPrompt.none,
+      environmentImage: "neutral",
+      exposure: 1.2,
+      shadowIntensity: 0,
+
     );
   }
 }
