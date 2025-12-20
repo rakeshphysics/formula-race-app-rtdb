@@ -289,7 +289,7 @@
   },
   {
     "id": "solid_state_qn_017",
-    "question": "The void that you see below is a ________ void",
+    "question": "The void that you see below is a _____ void",
     "options": [
       "\\text{Trigonal}",
       "\\text{Tetrahedral}",
@@ -307,7 +307,7 @@
   },
   {
     "id": "solid_state_qn_018",
-    "question": "The void that you see below is a ________ void and its radius is ________ the radius of sphere",
+    "question": "The void that you see below is a _____ void and its radius is _____ the radius of sphere",
     "options": [
       "\\text{Trigonal, 0.414}",
       "\\text{Tetrahedral, 0.225}",
@@ -325,7 +325,7 @@
   },
   {
     "id": "solid_state_qn_019",
-    "question": "The void that you see below is a ________ void and its radius is ________ the radius of sphere",
+    "question": "The void that you see below is a _____ void and its radius is _____ the radius of sphere",
     "options": [
       "\\text{Trigonal, 0.225}",
       "\\text{Tetrahedral, 0.414}",
@@ -343,7 +343,7 @@
   },
   {
     "id": "solid_state_qn_020",
-    "question": "The Coordination number ________ with increase in temperature and ________ with increase in pressure",
+    "question": "The Coordination number _____ with increase in temperature and _____ with increase in pressure",
     "options": [
       "\\text{Increases, Decreases}",
       "\\text{Decreases, Increases}",
