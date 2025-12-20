@@ -785,25 +785,59 @@ void _checkForNewBamboos() async {
 
                       // --- YES/NO BUTTONS FOR MEAL QUESTIONS ---
                       if (_showMealButtons)
+                        // Padding(
+                        //   padding: const EdgeInsets.only(top: 12.0),
+                        //   child: Row(
+                        //     mainAxisAlignment: MainAxisAlignment.center,
+                        //     children: [
+                        //       ElevatedButton(
+                        //         onPressed: () {
+                        //           // Call the handler with 'true' for Yes
+                        //           _handlePersonalQuestionResponse(true);
+                        //         },
+                        //         child: Text('Yes'),
+                        //       ),
+                        //       SizedBox(width: 16),
+                        //       ElevatedButton(
+                        //         onPressed: () {
+                        //           // Call the handler with 'false' for No
+                        //           _handlePersonalQuestionResponse(false);
+                        //         },
+                        //         child: Text('No'),
+                        //       ),
+                        //     ],
+                        //   ),
+                        // ),
+
                         Padding(
                           padding: const EdgeInsets.only(top: 12.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                  foregroundColor: Colors.grey, // Text color
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(4), // Border radius
+                                  ),
+                                ),
                                 onPressed: () {
-                                  // Call the handler with 'true' for Yes
                                   _handlePersonalQuestionResponse(true);
                                 },
-                                child: Text('Yes'),
+                                child: const Text('Yes'),
                               ),
-                              SizedBox(width: 16),
+                              const SizedBox(width: 16),
                               ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                  foregroundColor: Colors.grey, // Text color
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(4), // Border radius
+                                  ),
+                                ),
                                 onPressed: () {
-                                  // Call the handler with 'false' for No
                                   _handlePersonalQuestionResponse(false);
                                 },
-                                child: Text('No'),
+                                child: const Text('No'),
                               ),
                             ],
                           ),
