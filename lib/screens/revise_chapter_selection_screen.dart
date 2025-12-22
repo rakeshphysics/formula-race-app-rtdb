@@ -118,6 +118,7 @@ class _ReviseChapterSelectionScreenState extends State<ReviseChapterSelectionScr
                             MaterialPageRoute(
                               builder: (context) => FormulaDisplayScreen(
                                 chapterName: chapter,
+                                subject: _selectedSubject,
                               ),
                             ),
                           );

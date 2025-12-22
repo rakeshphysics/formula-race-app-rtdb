@@ -22,8 +22,9 @@ class Formula {
 
 class FormulaDisplayScreen extends StatefulWidget {
   final String chapterName;
+  final String subject;
 
-  const FormulaDisplayScreen({super.key, required this.chapterName});
+  const FormulaDisplayScreen({super.key, required this.chapterName, required this.subject});
 
   @override
   State<FormulaDisplayScreen> createState() => _FormulaDisplayScreenState();
@@ -35,6 +36,8 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
   bool _isLoading = true;
   late final String _prefsPinKey; // Rename this from _prefsKey
   late final String _prefsBookmarkKey;
+  final Set<int> _active3DIndices = {};
+  final int _maxActive3DModels = 6;
 
   @override
   void initState() {
@@ -47,6 +50,45 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _loadFormulas();
     });
+
+  }
+
+
+
+
+  void _activate3DModel(int index) {
+    setState(() {
+      if (_active3DIndices.contains(index)) return;
+_active3DIndices.add(index);
+      if (_active3DIndices.length > _maxActive3DModels) {
+        _active3DIndices.remove(_active3DIndices.first);
+      }
+    });
+  }
+
+// Helper to manually close a model
+  void _deactivate3DModel(int index) {
+    setState(() {
+      _active3DIndices.remove(index);
+    });
+  }
+
+  void _initializeActiveModels() {
+    _active3DIndices.clear();
+    int count = 0;
+
+    // Loop through the sorted formulas to find the first few GLB files
+    for (int i = 0; i < _sortedFormulas.length; i++) {
+      final image = _sortedFormulas[i].data['image'];
+
+      if (image != null && image.toString().endsWith('.glb')) {
+        _active3DIndices.add(i);
+        count++;
+
+        // Stop once we reach our limit (6)
+        if (count >= _maxActive3DModels) break;
+      }
+    }
   }
 
   void _sortFormulas() {
@@ -82,10 +124,12 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
       setState(() {
         _sortFormulas();
         _isLoading = false;
+        _initializeActiveModels();
       });
     } else {
       setState(() {
         _isLoading = false;
+
       });
     }
   }
@@ -148,6 +192,7 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
         padding: const EdgeInsets.all(8.0),
         itemCount: _sortedFormulas.length,
         physics: const BouncingScrollPhysics(),
+        cacheExtent: MediaQuery.of(context).size.height * 2,
         itemBuilder: (context, index) {
           final formula = _sortedFormulas[index];
           return _buildFormulaCard(
@@ -373,6 +418,20 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
   //     ),
   //   );
   // }
+  Color _getSubjectColor() {
+    // Check if widget.subject is null just in case, though usually it isn't
+    final subject = widget.subject ?? 'Physics';
+
+    if (subject.contains('Chem')) {
+      return Colors.green.shade700.withOpacity(0.7);
+    } else if (subject.contains('Math')) {
+      return Colors.blue.shade700.withOpacity(0.7);
+    }
+    // Default to Physics (Cyan)
+    return Colors.cyan.shade700.withOpacity(0.7);
+  }
+
+
 
   Widget _buildFormulaCard(
       Formula formula,
@@ -381,6 +440,7 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
       }) {
     final questionData = formula.data;
     final screenWidth = MediaQuery.of(context).size.width;
+    final themeColor = _getSubjectColor();
 
     return Container(
       key: key,
@@ -390,7 +450,7 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
         color: Colors.black,
         borderRadius: BorderRadius.circular(4),
         border: Border.all(
-          color: Colors.cyan.shade900,
+          color: themeColor,
           width: 1.5,
         ),
       ),
@@ -420,7 +480,11 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
                         ),
                       )
                           : questionData['image'].endsWith('.glb')
-                          ? Formula3DViewer(src: questionData['image'])
+                          ? Formula3DViewer(src: questionData['image'], themeColor: themeColor, index:index,
+                        isActive: _active3DIndices.contains(index), // Pass current state
+                        onActivate: () => _activate3DModel(index),  // Pass callback
+                        onDeactivate: () => _deactivate3DModel(index), // Pass callback
+                      )
                           : Image.asset(
                         questionData['image'],
                         fit: BoxFit.contain,
@@ -519,7 +583,7 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
                   padding: const EdgeInsets.fromLTRB(8,8,8,0),
                   icon: Icon(
                     formula.isPinned ? Icons.push_pin : Icons.push_pin_outlined,
-                    color: formula.isPinned ? Colors.cyan.shade600 : Colors.grey,
+                    color: formula.isPinned ? themeColor : Colors.grey,
                     size: 20,
                   ),
                   onPressed: () => _togglePin(formula),
@@ -543,37 +607,73 @@ class _FormulaDisplayScreenState extends State<FormulaDisplayScreen> {
   }
 
 }
-
 class Formula3DViewer extends StatefulWidget {
   final String src;
-  const Formula3DViewer({Key? key, required this.src}) : super(key: key);
+  final int index;
+  final Color themeColor;
+  final bool isActive;            // Received from parent
+  final VoidCallback onActivate;  // Callback to parent
+  final VoidCallback onDeactivate;// Callback to parent
+
+  const Formula3DViewer({
+    Key? key,
+    required this.src,
+    required this.index,
+    required this.themeColor,
+    required this.isActive,       // Required
+    required this.onActivate,     // Required
+    required this.onDeactivate,   // Required
+  }) : super(key: key);
 
   @override
   State<Formula3DViewer> createState() => _Formula3DViewerState();
 }
-
 class _Formula3DViewerState extends State<Formula3DViewer> with AutomaticKeepAliveClientMixin {
+  // Keep alive if active so it doesn't reload when scrolling slightly off-screen
   @override
-  bool get wantKeepAlive => true; // <--- Keeps the model alive!
+  bool get wantKeepAlive => widget.isActive;
 
   @override
   Widget build(BuildContext context) {
     super.build(context);
-    return ModelViewer(
-      key: ValueKey(widget.src),
-      src: widget.src,
-      backgroundColor: Colors.transparent,
-      alt: "A 3D model",
-      ar: false,
-      autoRotate: true,
-      disableZoom: false,
-      disablePan: true,
-      cameraControls: true,
-      interactionPrompt: InteractionPrompt.none,
-      environmentImage: "neutral",
-      exposure: 1.2,
-      shadowIntensity: 0,
 
+    // STATE 1: ACTIVE 3D MODEL
+    if (widget.isActive) {
+      // We removed the Stack and the Close button.
+      // Now it just returns the 3D viewer directly.
+      return ModelViewer(
+        key: ValueKey("${widget.src}_active"),
+        src: widget.src,
+        backgroundColor: Colors.transparent,
+        alt: "A 3D model",
+        ar: false,
+        autoRotate: true,
+        disableZoom: false,
+        disablePan: false,
+        cameraControls: true,
+        interactionPrompt: InteractionPrompt.none,
+        shadowIntensity: 0,
+        autoPlay: true,
+      );
+    }
+
+    // STATE 2: PLACEHOLDER
+    return GestureDetector(
+      onTap: widget.onActivate, // Call parent to open
+      child: Container(
+        width: double.infinity,
+        height: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.threed_rotation_outlined,
+              color: widget.themeColor,
+              size: 48,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
