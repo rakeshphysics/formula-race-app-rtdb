@@ -374,7 +374,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": null,
+    "image": "assets/images/12th/solid_state/solid_state_qn_021.svg",
     "tip": null
   },
   {
@@ -392,7 +392,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": null,
+    "image": "assets/images/12th/solid_state/solid_state_qn_022.svg",
     "tip": null
   },
   {
@@ -410,7 +410,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": null,
+    "image": "assets/images/12th/solid_state/solid_state_qn_023.svg",
     "tip": null
   },
   {
@@ -428,7 +428,7 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": null,
+    "image": "assets/images/12th/solid_state/solid_state_qn_024.svg",
     "tip": null
   },
   {
@@ -446,7 +446,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": null,
+    "image": "assets/images/12th/solid_state/solid_state_qn_025.svg",
     "tip": null
   },
   {
@@ -464,8 +464,8 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": null,
-    "tip": null
+    "image": "assets/images/12th/solid_state/solid_state_qn_026.glb",
+    "tip": "The 3D model is an FCC. Total number of atoms are 4. The red cubes are octahedral voids. We have one at body centre and 12 at edge centres. The contribution of each edge centre is 1/4 and body centre is 1. So total voids = 4 = number of particles. One Facecentre particle is removed so you can peek inside !!"
   },
   {
     "id": "solid_state_qn_027",
@@ -482,8 +482,8 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": null,
-    "tip": null
+    "image": "assets/images/12th/solid_state/solid_state_qn_027.glb",
+    "tip": "The 3D model is an FCC. One corner particle and 3 face centre particles form a tetrahedral void. On each body diagonal we have 2 voids. So total number of voids = 8 = Twice total number of particles. One face centre particle is removed so you can peek inside!!"
   },
   {
     "id": "solid_state_qn_028",
@@ -500,7 +500,7 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": null,
+    "image": "assets/images/12th/solid_state/solid_state_qn_028.svg",
     "tip": null
   },
   {
@@ -572,8 +572,8 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": null,
-    "tip": null
+    "image": "assets/images/12th/solid_state/solid_state_qn_032.glb",
+    "tip": "Calcium ion forms FCC, F ions occupy tetrahedral voids. Ca is black and F are the cubes in 3D model "
   },
   {
     "id": "solid_state_qn_033",
@@ -590,8 +590,8 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": null,
-    "tip": null
+    "image": "assets/images/12th/solid_state/solid_state_qn_033.glb",
+    "tip": "Cs sits at body centre and Cl are on the corners. Vice versa is also fine"
   },
   {
     "id": "solid_state_qn_034",
@@ -608,8 +608,8 @@
       "difficulty": "easy",
       "class": "12"
     },
-    "image": null,
-    "tip": null
+    "image": "assets/images/12th/solid_state/solid_state_qn_034.glb",
+    "tip": "Cl is in an FCC framework and Na sits in all octahedral voids. In the 3D model, spheres are Cl and cubes are Na"
   },
   {
     "id": "solid_state_qn_035",
@@ -626,8 +626,8 @@
       "difficulty": "medium",
       "class": "12"
     },
-    "image": null,
-    "tip": null
+    "image": "assets/images/12th/solid_state/solid_state_qn_035.glb",
+    "tip": "In 3D model, the spheres are Sulphur and Zn are the cubes. Notice exactly half the tetrahedral voids are filled. I removed one Face centre sphere, so you can peek inside !!"
   },
   {
     "id": "solid_state_qn_036",

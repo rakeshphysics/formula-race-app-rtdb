@@ -170,14 +170,14 @@ _active3DIndices.add(index);
       backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text(
-          widget.chapterName,
+          '${widget.chapterName} Formulas',
           style: TextStyle(
             fontSize: screenWidth * 0.042,
-            color: Colors.white,
+            color: Color(0xD9FFFFFF)
           ),
         ),
         backgroundColor: Colors.black,
-        iconTheme: const IconThemeData(color: Colors.white),
+        iconTheme: const IconThemeData(color: Color(0xD9FFFFFF)),
       ),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
@@ -649,7 +649,7 @@ class _Formula3DViewerState extends State<Formula3DViewer> with AutomaticKeepAli
         ar: false,
         autoRotate: true,
         disableZoom: false,
-        disablePan: false,
+        disablePan: true,
         cameraControls: true,
         interactionPrompt: InteractionPrompt.none,
         shadowIntensity: 0,
@@ -669,7 +669,7 @@ class _Formula3DViewerState extends State<Formula3DViewer> with AutomaticKeepAli
             Icon(
               Icons.threed_rotation_outlined,
               color: widget.themeColor,
-              size: 48,
+              size: 40,
             ),
           ],
         ),
