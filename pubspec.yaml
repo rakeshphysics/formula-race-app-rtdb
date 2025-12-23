@@ -94,6 +94,7 @@ flutter:
     - assets/formulas/12/wave_optics.aes
     - assets/formulas/full_syllabus_online_play.aes
     - assets/formulas/12/solid_state.aes
+    - assets/formulas/12/3d_geometry.aes
 
 
 
@@ -129,6 +130,7 @@ flutter:
     - assets/images/12th/semiconductors/
     - assets/images/12th/em_waves/
     - assets/images/12th/solid_state/
+    - assets/images/12th/3d_geometry/
     - assets/icon/
 
 dependency_overrides:

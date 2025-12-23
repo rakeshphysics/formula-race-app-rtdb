@@ -341,13 +341,19 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                             ),
                           ),
                           SizedBox(height: screenWidth*0.01),
-                          Math.tex(
+
+
+                          SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              physics: const BouncingScrollPhysics(),
+                              child:Math.tex(
                             qa.userAnswer,
                             textStyle: TextStyle(
                               color: (qa.userAnswer == qa.correctAnswer) ? Color(
                                   0xD9A4FF9D) : Color(0xD9FF5454), // Colors from ResultScreen
                               fontSize: screenWidth * 0.043,
                             ),
+                          ),
                           ),
                           SizedBox(height: screenWidth*0.03), // Standard spacing after user answer
 
@@ -361,12 +367,18 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                             ),
                           ),
                           SizedBox(height: screenWidth*0.01),
-                          Math.tex(
+
+
+                          SingleChildScrollView(
+                              scrollDirection: Axis.horizontal,
+                              physics: const BouncingScrollPhysics(),
+                              child: Math.tex(
                             qa.correctAnswer,
                             textStyle:  TextStyle(
                               color: Color(0xD9A4FF9D), // Green for correct, from ResultScreen
                               fontSize: screenWidth * 0.043,
                             ),
+                          ),
                           ),
                           //const SizedBox(height: 8), // Standard spacing after correct answer (before tip)
 

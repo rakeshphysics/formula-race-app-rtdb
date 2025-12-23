@@ -428,10 +428,14 @@ class _AITrackerScreenState extends State<AITrackerScreen> {
                                   ),
                                   SizedBox(height: screenWidth * 0.016),
 
-                                  Math.tex(
+                        SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        physics: const BouncingScrollPhysics(),
+                                  child:Math.tex(
                                     'Ans: ${formulaEntry['answer']}',
                                     textStyle:  TextStyle(fontSize: screenWidth * 0.043, color: Colors.greenAccent),
                                   ),
+                        ),
 
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,

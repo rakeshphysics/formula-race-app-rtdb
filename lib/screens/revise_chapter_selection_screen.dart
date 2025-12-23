@@ -29,7 +29,7 @@ class _ReviseChapterSelectionScreenState extends State<ReviseChapterSelectionScr
       'Solid State','Some Basic Concepts of Chemistry', 'Structure of Atom', 'Classification of Elements'
     ],
     'Maths': [
-      'Sets', 'Relations and Functions', 'Trigonometric Functions'
+      '3D Geometry','Sets', 'Relations and Functions', 'Trigonometric Functions'
     ],
   };
 

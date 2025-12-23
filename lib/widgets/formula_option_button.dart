@@ -40,10 +40,14 @@ class FormulaOptionButton extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16),
         ),
         onPressed: onPressed,
+    child: SingleChildScrollView(
+    scrollDirection: Axis.horizontal,
+    physics: const BouncingScrollPhysics(),
         child: Math.tex(
           text,
           textStyle: TextStyle(color: const Color(0xD9FFFFFF),fontSize: screenWidth * 0.045, fontWeight: FontWeight.normal),
         ),
+    ),
       ),
     );
   }

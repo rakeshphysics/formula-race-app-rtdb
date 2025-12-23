@@ -1,0 +1,905 @@
+[
+
+{
+  "id": "3d_geometry_qn_001",
+  "question": "The distance between two points P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) is given by",
+  "options": [
+    "\\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}",
+    "\\sqrt{(x_2+x_1)^2 + (y_2+y_1)^2 + (z_2+z_1)^2}",
+    "\\sqrt{(x_2+x_1)^2 - (y_2+y_1)^2 - (z_2+z_1)^2}",
+    "\\sqrt{(x_2+x_1)^2 - (y_2-y_1)^2 + (z_2-z_1)^2}"
+  ],
+  "answer": "\\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_001.svg",
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_002",
+  "question": "The coordinates of mid point M of P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) is",
+  "options": [
+    "(\\frac{x_1-x_2}{2}, \\frac{y_1-y_2}{2}, \\frac{z_1-z_2}{2})",
+    "(\\frac{x_1+x_2}{3}, \\frac{y_1+y_2}{3}, \\frac{z_1+z_2}{3})",
+    "(\\frac{x_1-x_2}{3}, \\frac{y_1-y_2}{3}, \\frac{z_1-z_2}{3})",
+    "(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}, \\frac{z_1+z_2}{2})"
+  ],
+  "answer": "(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}, \\frac{z_1+z_2}{2})",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_002.svg",
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_003",
+  "question": "The coordinates of a point O which divide P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) in ratio m:n internally is",
+  "options": [
+    "(\\frac{mx_1-nx_2}{m+n}, \\frac{my_1-ny_2}{m+n}, \\frac{mz_1-nz_2}{m+n})",
+    "(\\frac{mx_1-nx_2}{m-n}, \\frac{my_1-ny_2}{m-n}, \\frac{mz_1-nz_2}{m-n})",
+    "(\\frac{mx_2+nx_1}{m+n}, \\frac{my_2+ny_1}{m+n}, \\frac{mz_2+nz_1}{m+n})",
+    "(\\frac{mx_2+nx_1}{m-n}, \\frac{my_2+ny_1}{m-n}, \\frac{mz_2+nz_1}{m-n})"
+  ],
+  "answer": "(\\frac{mx_2+nx_1}{m+n}, \\frac{my_2+ny_1}{m+n}, \\frac{mz_2+nz_1}{m+n})",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_003.svg",
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_004",
+  "question": "The coordinates of centroid of triangle with vertices P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>), Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>), R(x<sub>3</sub>, y<sub>3</sub>, z<sub>3</sub>) is",
+  "options": [
+    "(\\frac{x_1+x_2+x_3}{2}, \\frac{y_1+y_2+y_3}{2}, \\frac{z_1+z_2+z_3}{2})",
+    "(\\frac{x_1+x_2+x_3}{3}, \\frac{y_1+y_2+y_3}{3}, \\frac{z_1+z_2+z_3}{3})",
+    "(\\frac{x_1-x_2-x_3}{2}, \\frac{y_1-y_2-y_3}{2}, \\frac{z_1-z_2-z_3}{2})",
+    "(\\frac{x_1-x_2-x_3}{3}, \\frac{y_1-y_2-y_3}{3}, \\frac{z_1-z_2-z_3}{3})"
+  ],
+  "answer": "(\\frac{x_1+x_2+x_3}{3}, \\frac{y_1+y_2+y_3}{3}, \\frac{z_1+z_2+z_3}{3})",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_004.svg",
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_005",
+  "question": "The coordinates of a point O which divide P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) in ratio m:n externally is",
+  "options": [
+    "(\\frac{mx_2-nx_1}{m+n}, \\frac{my_2-ny_1}{m+n}, \\frac{mz_2-nz_1}{m+n})",
+    "(\\frac{mx_2-nx_1}{m-n}, \\frac{my_2-ny_1}{m-n}, \\frac{mz_2-nz_1}{m-n})",
+    "(\\frac{mx_2+nx_1}{m+n}, \\frac{my_2+ny_1}{m+n}, \\frac{mz_2+nz_1}{m+n})",
+    "(\\frac{mx_2+nx_1}{m-n}, \\frac{my_2+ny_1}{m-n}, \\frac{mz_2+nz_1}{m-n})"
+  ],
+  "answer": "(\\frac{mx_2-nx_1}{m-n}, \\frac{my_2-ny_1}{m-n}, \\frac{mz_2-nz_1}{m-n})",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_005.svg",
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_006",
+  "question": "The coordinates of centroid of tetrahedron with vertices P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>), Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>), R(x<sub>3</sub>, y<sub>3</sub>, z<sub>3</sub>), S(x<sub>4</sub>, y<sub>4</sub>, z<sub>4</sub>) is",
+  "options": [
+    "(\\frac{x_1+x_2+x_3+x_4}{2}, \\frac{y_1+y_2+y_3+y_4}{2}, \\frac{z_1+z_2+z_3+z_4}{2})",
+    "(\\frac{x_1+x_2+x_3+x_4}{3}, \\frac{y_1+y_2+y_3+y_4}{3}, \\frac{z_1+z_2+z_3+z_4}{3})",
+    "(\\frac{x_1+x_2+x_3+x_4}{4}, \\frac{y_1+y_2+y_3+y_4}{4}, \\frac{z_1+z_2+z_3+z_4}{4})",
+    "(\\frac{x_1+x_2+x_3+x_4}{12}, \\frac{y_1+y_2+y_3+y_4}{12}, \\frac{z_1+z_2+z_3+z_4}{12})"
+  ],
+  "answer": "(\\frac{x_1+x_2+x_3+x_4}{4}, \\frac{y_1+y_2+y_3+y_4}{4}, \\frac{z_1+z_2+z_3+z_4}{4})",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_006.glb",
+  "tip": "I have removed a face, so you can peek inside!! 👀"
+},
+{
+  "id": "3d_geometry_qn_007",
+  "question": "If l, m, n are direction cosines of a vector, then",
+  "options": [
+    "l^2 + m^2 + n^2 = 2",
+    "l^2 + m^2 + n^2 = 1",
+    "l + m + n = 2",
+    "l^3 + m^3 + n^3 = 1"
+  ],
+  "answer": "l^2 + m^2 + n^2 = 1",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_008",
+  "question": "If &alpha;, &beta;, &gamma; are angles made by a vector with X, Y, Z axes respectively, then",
+  "options": [
+    "\\cos^2 \\alpha + \\cos^2 \\beta + \\cos^2 \\gamma = 1",
+    "\\cos^2 \\alpha + \\cos^2 \\beta + \\cos^2 \\gamma = 2",
+    "\\cos \\alpha + \\cos \\beta + \\cos \\gamma = 1",
+    "\\sin^2 \\alpha + \\sin^2 \\beta + \\sin^2 \\gamma = 1"
+  ],
+  "answer": "\\cos^2 \\alpha + \\cos^2 \\beta + \\cos^2 \\gamma = 1",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_008.svg",
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_009",
+  "question": "If &alpha;, &beta;, &gamma; are angles made by a vector with X, Y, Z axes respectively, then",
+  "options": [
+    "\\cos \\alpha + \\cos \\beta + \\cos \\gamma = 2",
+    "\\cos 2\\alpha + \\cos 2\\beta + \\cos 2\\gamma = 2",
+    "\\cos \\alpha + \\cos \\beta + \\cos \\gamma = 1",
+    "\\sin^2 \\alpha + \\sin^2 \\beta + \\sin^2 \\gamma = 2"
+  ],
+  "answer": "\\sin^2 \\alpha + \\sin^2 \\beta + \\sin^2 \\gamma = 2",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_009.svg",
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_010",
+  "question": "The angle between the diagonal of a cube and diagonal of a face of a cube is",
+  "options": [
+    "\\cos^{-1} \\frac{1}{2}",
+    "\\sin^{-1} \\frac{2}{3}",
+    "\\cos^{-1} \\frac{2}{3}",
+    "\\cos^{-1} \\frac{1}{3}"
+  ],
+  "answer": "\\cos^{-1} \\sqrt{\\frac{2}{3}}",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "god",
+    "class": "12"
+  },
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_010.glb",
+  "tip": "I have removed a face, so you can peek inside!! 👀"
+},
+{
+  "id": "3d_geometry_qn_011",
+  "question": "The coordinates of P if the direction cosines of OP are l, m, n is (OP = r)",
+  "options": [
+    "(l, m, n)",
+    "(lm, mn, nl)",
+    "(lr, mr, nr)",
+    "(l^2r, m^2r, n^2r)"
+  ],
+  "answer": "(lr, mr, nr)",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_012",
+  "question": "For two points P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>), the direction cosines of PQ are l, m, n. Then x<sub>2</sub> - x<sub>1</sub> equals",
+  "options": [
+    "m |PQ|",
+    "l |PQ|",
+    "n |PQ|",
+    "(l^2 + m^2 + n^2) |PQ|"
+  ],
+  "answer": "l |PQ|",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_013",
+  "question": "If a, b, c are direction ratios of a vector and l, m, n are direction cosines such that l/a = m/b = n/c, then l equals",
+  "options": [
+    "\\pm \\frac{a}{\\sqrt{a^2 + b^2 + c^2}}",
+    "\\pm \\frac{c}{\\sqrt{a^2 + b^2 + c^2}}",
+    "\\pm \\frac{b}{\\sqrt{a^2 + b^2 + c^2}}",
+    "\\pm \\frac{abc}{\\sqrt{a^2 + b^2 + c^2}}"
+  ],
+  "answer": "\\pm \\frac{a}{\\sqrt{a^2 + b^2 + c^2}}",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_014",
+  "question": "If l<sub>1</sub>, m<sub>1</sub>, n<sub>1</sub> and l<sub>2</sub>, m<sub>2</sub>, n<sub>2</sub> are direction cosines of two given lines, then the lines are parallel if",
+  "options": [
+    "l_1l_2 + m_1m_2 + n_1n_2 = 0",
+    "l_1l_2 = m_1m_2 + n_1n_2",
+    "\\frac{l_1}{l_2} = \\frac{m_1}{m_2} = \\frac{n_1}{n_2}",
+    "l_1l_2 = m_1m_2 + n_1n_2"
+  ],
+  "answer": "\\frac{l_1}{l_2} = \\frac{m_1}{m_2} = \\frac{n_1}{n_2}",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_015",
+  "question": "If l<sub>1</sub>, m<sub>1</sub>, n<sub>1</sub> and l<sub>2</sub>, m<sub>2</sub>, n<sub>2</sub> are direction cosines of two given lines, then the lines are perpendicular if",
+  "options": [
+    "l_1l_2 + m_1m_2 + n_1n_2 = 0",
+    "l_1l_2 = m_1m_2 + n_1n_2",
+    "\\frac{l_1}{l_2} = \\frac{m_1}{m_2} = \\frac{n_1}{n_2}",
+    "l_1l_2 = m_1m_2 + n_1n_2"
+  ],
+  "answer": "l_1l_2 + m_1m_2 + n_1n_2 = 0",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_016",
+  "question": "The projection of a line segment joining points P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) on a line having direction cosines l, m, n is",
+  "options": [
+    "l(x_2-x_1) - m(y_2-y_1) - n(z_2-z_1)",
+    "l(x_2+x_1) - m(y_2+y_1) - n(z_2+z_1)",
+    "l(x_2+x_1) + m(y_2+y_1) + n(z_2+z_1)",
+    "l(x_2-x_1) + m(y_2-y_1) + n(z_2-z_1)"
+  ],
+  "answer": "l(x_2-x_1) + m(y_2-y_1) + n(z_2-z_1)",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_017",
+  "question": "If l<sub>1</sub>, m<sub>1</sub>, n<sub>1</sub> and l<sub>2</sub>, m<sub>2</sub>, n<sub>2</sub> are direction cosines of two given lines and &theta; is angle between them, then cos &theta; equals",
+  "options": [
+    "l_1m_1n_1 + l_2m_2n_2",
+    "l_1l_2 + m_1m_2 + n_1n_2",
+    "l_1m_1n_1 - l_2m_2n_2",
+    "l_1l_2 - m_1m_2 - n_1n_2"
+  ],
+  "answer": "l_1l_2 + m_1m_2 + n_1n_2",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_018",
+  "question": "The angle between any two diagonals of a cube is",
+  "options": [
+    "\\cos^{-1} \\frac{1}{3}",
+    "\\sin^{-1} \\frac{1}{3}",
+    "\\cos^{-1} \\frac{2}{3}",
+    "\\cos^{-1} \\frac{1}{3}"
+  ],
+  "answer": "\\cos^{-1} \\frac{1}{3}",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_019",
+  "question": "The vector equation of a line passing through two points with position vector a and b is (&lambda; = any real number)",
+  "options": [
+    "r = \\lambda a \\cdot b",
+    "r = a + \\lambda b",
+    "r = \\lambda a \\times b",
+    "r = a + \\lambda (b - a)"
+  ],
+  "answer": "r = a + \\lambda (b - a)",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_020",
+  "question": "The length of perpendicular from point P(c) on the line r = a + &lambda;b is",
+  "options": [
+    "\\frac{|(c \\times b)|}{|b|}",
+    "\\frac{|(c \\times b)|}{|b|^2}",
+    "\\frac{|(c - a) \\times b|}{|b|}",
+    "\\frac{|(c - a) \\times b|}{|b|^2}"
+  ],
+  "answer": "\\frac{|(c - a) \\times b|}{|b|}",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "god",
+    "class": "12"
+  },
+  "image": null,
+  "tip": "You can also think of this like, Area of parallelogram formed by c-a and b, divided by its base. Gives height of parallelogram, which is nothing but the length of perpendicular from c to line."
+},
+{
+  "id": "3d_geometry_qn_021",
+  "question": "The vector equation of a line passing through a point with position vector a and parallel to vector b is (&lambda; = any real number)",
+  "options": [
+    "r = \\lambda a \\cdot b",
+    "r = a + \\lambda b",
+    "r = \\lambda a \\times b",
+    "r = a + \\lambda (b - a)"
+  ],
+  "answer": "r = a + \\lambda b",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_022",
+  "question": "The cartesian equation of a line passing through point (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) having direction ratios a, b, c is",
+  "options": [
+    "\\frac{x+x_1}{a} = \\frac{y+y_1}{b} = \\frac{z+z_1}{c}",
+    "\\frac{x-x_1}{a} = \\frac{y-y_1}{b} = \\frac{z-z_1}{c}",
+    "\\frac{x}{a} = \\frac{y}{b} = \\frac{z}{c}",
+    "\\frac{x+x_1}{a^2} = \\frac{y+y_1}{b^2} = \\frac{z+z_1}{c^2}"
+  ],
+  "answer": "\\frac{x-x_1}{a} = \\frac{y-y_1}{b} = \\frac{z-z_1}{c}",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_023",
+  "question": "The vector form of a plane is (r = position vector of any point on plane, n = unit normal vector, d = perpendicular distance of plane from origin)",
+  "options": [
+    "r \\times n = d^2",
+    "r \\cdot n = d^2",
+    "r \\times n = d",
+    "r \\cdot n = d"
+  ],
+  "answer": "r \\cdot n = d",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_024",
+  "question": "The equation of a plane which is at distance p from origin and direction cosines of normal from origin to plane are l, m, n is",
+  "options": [
+    "lx + my + nz = p^2",
+    "l^2x + m^2y + n^2z = p^2",
+    "lx + my + nz = p",
+    "l^2x + m^2y + n^2z = p"
+  ],
+  "answer": "lx + my + nz = p",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_025",
+  "question": "The shortest distance between parallel lines r = a<sub>1</sub> + &lambda;b and r = a<sub>2</sub> + &mu;b is given by",
+  "options": [
+    "\\frac{|(a_2-a_1) \\cdot b|}{|b|}",
+    "\\frac{|(a_2-a_1) \\times b|}{|b|}",
+    "\\frac{|(a_2-a_1) \\cdot b|}{|b|^2}",
+    "\\frac{|(a_2-a_1) \\times b|}{|b|^2}"
+  ],
+  "answer": "\\frac{|(a_2-a_1) \\times b|}{|b|}",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_026",
+  "question": "The coordinates of foot of perpendicular from origin on the plane lx + my + nz = p is",
+  "options": [
+    "(lp^2, mp^2, np^2)",
+    "(pl, pm, pn)",
+    "(l^2p, m^2p, n^2p)",
+    "(lp, mp, np)"
+  ],
+  "answer": "(lp, mp, np)",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_027",
+  "question": "The vector equation of a plane passing through point A(a) and perpendicular to given vector n is",
+  "options": [
+    "(r+a) \\cdot n = 0",
+    "(r-a) \\cdot n = 0",
+    "(r \\times a) \\cdot n = 0",
+    "r \\cdot (a \\times n) = 0"
+  ],
+  "answer": "(r-a) \\cdot n = 0",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_028",
+  "question": "The length of perpendicular from point P(x<sub>o</sub>, y<sub>o</sub>, z<sub>o</sub>) on the line (x-x<sub>1</sub>)/a = (y-y<sub>1</sub>)/b = (z-z<sub>1</sub>)/c is (Take A(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and d = ai + bj + ck)",
+  "options": [
+    "\\frac{|\\vec{PA} \\times \\vec{d}|}{|\\vec{d}|}",
+    "\\frac{|\\vec{PA} \\times \\vec{d}|}{|\\vec{d}|^2}",
+    "\\frac{|\\vec{PA} \\times \\vec{d}|}{|\\vec{d}|^3}",
+    "\\frac{|\\vec{PA} \\times \\vec{d}|^2}{|\\vec{d}|^2}"
+  ],
+  "answer": "\\frac{|\\vec{PA} \\times \\vec{d}|}{|\\vec{d}|}",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_029",
+  "question": "Two lines r = a<sub>1</sub> + &lambda;b<sub>1</sub> and r = a<sub>2</sub> + &mu;b<sub>2</sub> are intersecting or coplanar if",
+  "options": [
+    "(a_2+a_1) \\cdot (b_1 \\times b_2) = 0",
+    "(a_2-a_1) \\cdot (b_1 \\times b_2) = 0",
+    "(a_2 \\times a_1) \\cdot (b_1 \\times b_2) = 0",
+    "(a_2 \\times a_1) \\cdot (b_1 + b_2) = 0"
+  ],
+  "answer": "(a_2-a_1) \\cdot (b_1 \\times b_2) = 0",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_030",
+  "question": "The shortest distance between lines r = a<sub>1</sub> + &lambda;b<sub>1</sub> and r = a<sub>2</sub> + &mu;b<sub>2</sub> is given by",
+  "options": [
+    "\\frac{|(a_2 \\times a_1) \\cdot (b_1 - b_2)|}{|b_1 - b_2|}",
+    "\\frac{|(a_2 - a_1) \\cdot (b_1 \\times b_2)|}{|b_1 \\times b_2|}",
+    "\\frac{|(a_2 \\times a_1) \\cdot (b_1 + b_2)|}{|b_1 + b_2|}",
+    "\\frac{|(a_2 + a_1) \\cdot (b_1 \\times b_2)|}{|b_1 \\times b_2|}"
+  ],
+  "answer": "\\frac{|(a_2 - a_1) \\cdot (b_1 \\times b_2)|}{|b_1 \\times b_2|}",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "god",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_031",
+  "question": "The equation of a plane having intercepts a, b, c on X, Y, Z axes respectively is",
+  "options": [
+    "\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 1",
+    "ax + by + cz = 1",
+    "ax + by + cz = 1",
+    "ax + by + cz = 0"
+  ],
+  "answer": "\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 1",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_032",
+  "question": "The equation of a plane passing through (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and having direction ratios a, b, c normal to the plane is",
+  "options": [
+    "a(x-x_1) - b(y-y_1) - c(z-z_1) = 1",
+    "a(x+x_1) + b(y+y_1) + c(z+z_1) = 1",
+    "a(x+x_1) + b(y+y_1) + c(z+z_1) = 0",
+    "a(x-x_1) + b(y-y_1) + c(z-z_1) = 0"
+  ],
+  "answer": "a(x-x_1) + b(y-y_1) + c(z-z_1) = 0",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_033",
+  "question": "The equation of a plane passing through three non collinear points A(a), B(b), C(c) is",
+  "options": [
+    "(r-a) \\cdot [(b-a) \\times (c-a)] = 1",
+    "(r-a) \\cdot [(b-a) \\times (c-a)] = 0",
+    "(r-a) \\cdot [(b+a) \\times (c+a)] = 1",
+    "(r-a) \\cdot [(b+a) \\times (c+a)] = 0"
+  ],
+  "answer": "(r-a) \\cdot [(b-a) \\times (c-a)] = 0",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_034",
+  "question": "The equation of a plane parallel to ax + by + cz + d<sub>1</sub> = 0 is",
+  "options": [
+    "ax - by - cz - d_1 = 0",
+    "a_2x + b_2y + c_2z + d_2 = 0",
+    "a_2x + b_2y + c_2z + d_1 = 0",
+    "ax + by + cz + d_2 = 0"
+  ],
+  "answer": "ax + by + cz + d_2 = 0",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_035",
+  "question": "The vector equation of a plane parallel to r &middot; n = d<sub>1</sub> is",
+  "options": [
+    "r \\cdot n = d_2",
+    "r \\times n = d_1",
+    "r \\times n = d_2",
+    "r \\cdot (r \\times n) = d_1"
+  ],
+  "answer": "r \\cdot n = d_2",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_036",
+  "question": "The equation of a plane passing through intersection of planes r &middot; n<sub>1</sub> = d<sub>1</sub> and r &middot; n<sub>2</sub> = d<sub>2</sub> is",
+  "options": [
+    "r \\cdot (n_1 - n_2) = d_1 d_2",
+    "r \\cdot (n_1 - n_2) = d_1 + d_2",
+    "r \\cdot (n_1 + \\lambda n_2) = d_1 + \\lambda d_2",
+    "r \\cdot (n_1 \\times n_2) = d_1 d_2"
+  ],
+  "answer": "r \\cdot (n_1 + \\lambda n_2) = d_1 + \\lambda d_2",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_037",
+  "question": "The x coordinate foot of perpendicular of point (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) on plane ax + by + cz + d = 0 is (given &alpha; = (ax<sub>1</sub>+by<sub>1</sub>+cz<sub>1</sub>+d)/(a<sup>2</sup>+b<sup>2</sup>+c<sup>2</sup>))",
+  "options": [
+    "x_1 + 2a\\alpha",
+    "x_1 - 2a\\alpha",
+    "x_1 + a\\alpha",
+    "x_1 - a\\alpha"
+  ],
+  "answer": "x_1 - a\\alpha",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": "Think of it like this, we start from x1 and move towards the plane (negative sign indicates moving towards, positive sign indicates moving away) in direction normal to it (indicated by direction ratio a of normal) by a factor α."
+},
+{
+  "id": "3d_geometry_qn_038",
+  "question": "The angle between planes r &middot; n<sub>1</sub> = d<sub>1</sub> and r &middot; n<sub>2</sub> = d<sub>2</sub> is",
+  "options": [
+    "\\cos^{-1} \\frac{|n_1 \\cdot n_2|}{|n_1||n_2|}",
+    "\\sin^{-1} \\frac{|n_1 \\cdot n_2|}{|n_1||n_2|}",
+    "\\tan^{-1} \\frac{|n_1 \\cdot n_2|}{|n_1||n_2|}",
+    "\\cot^{-1} \\frac{|n_1 \\cdot n_2|}{|n_1||n_2|}"
+  ],
+  "answer": "\\cos^{-1} \\frac{|n_1 \\cdot n_2|}{|n_1||n_2|}",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": "Angle between planes equals angle between their normals"
+},
+{
+  "id": "3d_geometry_qn_039",
+  "question": "The x coordinate of image of point (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) in plane ax + by + cz + d = 0 is (given &alpha; = (ax<sub>1</sub>+by<sub>1</sub>+cz<sub>1</sub>+d)/(a<sup>2</sup>+b<sup>2</sup>+c<sup>2</sup>))",
+  "options": [
+    "x_1 + 2a\\alpha",
+    "x_1 - 2a\\alpha",
+    "x_1 + a\\alpha",
+    "x_1 - a\\alpha"
+  ],
+  "answer": "x_1 - 2a\\alpha",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "god",
+    "class": "12"
+  },
+  "image": null,
+  "tip": "Think of it like this, we start from x1 and move towards the plane (negative sign indicates moving towards, positive sign indicates moving away) in direction normal to it (indicated by direction ratio a of normal) by a factor 2 α. Factor α is for foot of perpendicular"
+},
+{
+  "id": "3d_geometry_qn_040",
+  "question": "The planes r &middot; n<sub>1</sub> = d<sub>1</sub> and r &middot; n<sub>2</sub> = d<sub>2</sub> are perpendicular if",
+  "options": [
+    "n_1 \\cdot n_2 = 0.5",
+    "n_1 \\cdot n_2 = 0",
+    "n_1 \\cdot n_2 = 1",
+    "n_1 \\times n_2 = 0"
+  ],
+  "answer": "n_1 \\cdot n_2 = 0",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_041",
+  "question": "The planes r &middot; n<sub>1</sub> = d<sub>1</sub> and r &middot; n<sub>2</sub> = d<sub>2</sub> are parallel if",
+  "options": [
+    "n_1 \\cdot n_2 = 0.5",
+    "n_1 \\cdot n_2 = 0",
+    "n_1 \\cdot n_2 = 1",
+    "n_1 = \\lambda n_2"
+  ],
+  "answer": "n_1 = \\lambda n_2",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_042",
+  "question": "The distance of a point A(a) from a plane r &middot; n = d is",
+  "options": [
+    "\\vec{a} \\cdot \\vec{n} + d/|\\vec{n}|",
+    "\\vec{a} \\cdot \\vec{n} + d/|\\vec{n}|^2",
+    "|\\vec{a} \\cdot \\vec{n} - d| / |\\vec{n}|",
+    "\\vec{a} \\cdot \\vec{n} - d/|\\vec{n}|^2"
+  ],
+  "answer": "|\\vec{a} \\cdot \\vec{n} - d| / |\\vec{n}|",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_043",
+  "question": "The distance of a point P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) from a plane ax + by + cz + d = 0 is",
+  "options": [
+    "\\frac{d}{\\sqrt{a^2+b^2+c^2}}",
+    "\\frac{ax_1+by_1+cz_1+d}{\\sqrt{a^2+b^2+c^2}}",
+    "\\frac{|ax_1+by_1+cz_1+d|}{\\sqrt{a^2+b^2+c^2}}",
+    "\\frac{d}{a^2+b^2+c^2}"
+  ],
+  "answer": "\\frac{|ax_1+by_1+cz_1+d|}{\\sqrt{a^2+b^2+c^2}}",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "easy",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_044",
+  "question": "The distance between two parallel planes ax + by + cz + d<sub>1</sub> = 0 and ax + by + cz + d<sub>2</sub> = 0",
+  "options": [
+    "\\frac{d_2-d_1}{\\sqrt{a^2+b^2+c^2}}",
+    "\\frac{|d_2-d_1|}{\\sqrt{a^2+b^2+c^2}}",
+    "\\frac{d_2+d_1}{\\sqrt{a^2+b^2+c^2}}",
+    "\\frac{|d_2+d_1|}{\\sqrt{a^2+b^2+c^2}}"
+  ],
+  "answer": "\\frac{|d_2-d_1|}{\\sqrt{a^2+b^2+c^2}}",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+{
+  "id": "3d_geometry_qn_045",
+  "question": "The angle between line r = a + &lambda;b and plane r &middot; n = d is",
+  "options": [
+    "\\tan^{-1} \\frac{|n \\cdot b|}{|n||b|}",
+    "\\cos^{-1} \\frac{|n \\cdot b|}{|n||b|}",
+    "\\sin^{-1} \\frac{|n \\cdot b|}{|n||b|}",
+    "\\cot^{-1} \\frac{|n \\cdot b|}{|n||b|}"
+  ],
+  "answer": "\\sin^{-1} \\frac{|n \\cdot b|}{|n||b|}",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": "Be careful, it is cos inverse if angle between line and normal to plane is asked."
+},
+{
+  "id": "3d_geometry_qn_046",
+  "question": "For two planes a<sub>1</sub>x + b<sub>1</sub>y + c<sub>1</sub>z + d<sub>1</sub> = 0 and a<sub>2</sub>x + b<sub>2</sub>y + c<sub>2</sub>z + d<sub>2</sub> = 0 origin will lie in acute angle between planes if",
+  "options": [
+    "a_1a_2 + b_1b_2 + c_1c_2 < 0",
+    "a_1a_2 + b_1b_2 + c_1c_2 > 0",
+    "a_1a_2 + b_1b_2 + c_1c_2 = 0",
+    "a_1a_2 + b_1b_2 + c_1c_2 = 1"
+  ],
+  "answer": "a_1a_2 + b_1b_2 + c_1c_2 < 0",
+  "tags": {
+    "chapter": "3D Geometry",
+    "difficulty": "medium",
+    "class": "12"
+  },
+  "image": null,
+  "tip": null
+},
+
+  {
+    "id": "3d_geometry_qn_047",
+    "question": "For two planes a<sub>1</sub>x + b<sub>1</sub>y + c<sub>1</sub>z + d<sub>1</sub> = 0 and a<sub>2</sub>x + b<sub>2</sub>y + c<sub>2</sub>z + d<sub>2</sub> = 0, origin will lie in acute angle between planes if",
+    "options": [
+      "a_1a_2 + b_1b_2 + c_1c_2 < 0",
+      "a_1a_2 + b_1b_2 + c_1c_2 > 0",
+      "a_1a_2 + b_1b_2 + c_1c_2 = 0",
+      "a_1a_2 + b_1b_2 + c_1c_2 = 1"
+    ],
+    "answer": "a_1a_2 + b_1b_2 + c_1c_2 < 0",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_048",
+    "question": "The equation of a plane passing through point A (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and parallel to two lines with direction ratios a<sub>1</sub>, b<sub>1</sub>, c<sub>1</sub> and a<sub>2</sub>, b<sub>2</sub>, c<sub>2</sub> is",
+    "options": [
+      "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x+x_1 & y+y_1 & z+z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ a_1 & a_2 & a_3 \\\\ b_1 & b_2 & b_3 \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0"
+    ],
+    "answer": "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_049",
+    "question": "The equation of a plane passing through point A (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>), B (x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) and parallel to a line with direction ratios a, b, c is",
+    "options": [
+      "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a & b & c \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x+x_1 & y+y_1 & z+z_1 \\\\ x_2+x_1 & y_2+y_1 & z_2+z_1 \\\\ a & b & c \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a & b & c \\end{vmatrix} = 1",
+      "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a & b & c \\end{vmatrix} = 0"
+    ],
+    "answer": "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a & b & c \\end{vmatrix} = 0",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_050",
+    "question": "Four points A (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>), B (x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>), C (x<sub>3</sub>, y<sub>3</sub>, z<sub>3</sub>), D (x<sub>4</sub>, y<sub>4</sub>, z<sub>4</sub>) are coplanar if and only if",
+    "options": [
+      "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ x_3-x_1 & y_3-y_1 & z_3-z_1 \\\\ x_4-x_1 & y_4-y_1 & z_4-z_1 \\end{vmatrix} = 1",
+      "\\begin{vmatrix} x_2+x_1 & y_2+y_1 & z_2+z_1 \\\\ x_3+x_1 & y_3+y_1 & z_3+z_1 \\\\ x_4+x_1 & y_4+y_1 & z_4+z_1 \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ x_3-x_1 & y_3-y_1 & z_3-z_1 \\\\ x_4-x_1 & y_4-y_1 & z_4-z_1 \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x_1 & y_1 & z_1 \\\\ x_2 & y_2 & z_2 \\\\ x_3 & y_3 & z_3 \\end{vmatrix} = 0"
+    ],
+    "answer": "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ x_3-x_1 & y_3-y_1 & z_3-z_1 \\\\ x_4-x_1 & y_4-y_1 & z_4-z_1 \\end{vmatrix} = 0",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  }
+
+]

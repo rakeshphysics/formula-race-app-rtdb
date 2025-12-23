@@ -393,10 +393,14 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
     ),
     ),
     child: Center(
+      child:SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      physics: const BouncingScrollPhysics(),
     child: Math.tex(
     option,
     textStyle:  TextStyle(color: Color(0xD9FFFFFF), fontSize: screenWidth * 0.045),
     ),
+      ),
     ),
     ),
     );

@@ -314,15 +314,21 @@ class _ResultScreenState extends State<ResultScreen> {
                                   fontWeight: FontWeight.normal,
                                 ),
                               ),
-                              SizedBox(height: screenWidth*0.01), // ~1% of screen height
+                              SizedBox(height: screenWidth*0.01),
 
-                              Math.tex(
+                              // ~1% of screen height
+
+                        SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        physics: const BouncingScrollPhysics(),
+                              child:Math.tex(
                                 wrongAnswer.userAnswer,
                                 textStyle: TextStyle(
                                   color:Color(0xD9FF5454), // light red
                                   fontSize: screenWidth * 0.043,
                                 ),
                               ),
+                        ),
                               SizedBox(height: screenWidth*0.03),
                               Text(
                                 'Correct Answer:',
@@ -334,13 +340,17 @@ class _ResultScreenState extends State<ResultScreen> {
                               ),
                               SizedBox(height: screenWidth*0.01), // ~1% of screen height
 
-                              Math.tex(
+                        SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        physics: const BouncingScrollPhysics(),
+                        child:Math.tex(
                                 wrongAnswer.correctAnswer,
                                 textStyle:  TextStyle(
                                   color: Color(0xD9A4FF9D),
                                   fontSize: screenWidth * 0.043,
                                 ),
                               ),
+                        ),
                               //SizedBox(height: screenWidth*0.02),
                               //.......................Tip Block START................................................
                               Column(

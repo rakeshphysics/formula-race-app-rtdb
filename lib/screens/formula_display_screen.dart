@@ -531,12 +531,16 @@ _active3DIndices.add(index);
                     Center(
                       child: Padding(
                         padding: EdgeInsets.symmetric(vertical: screenWidth * 0.02),
+                          child: SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                            physics: const BouncingScrollPhysics(),
                         child: Math.tex(
                           '${questionData['answer'] ?? 'N/A'}',
                           textStyle: TextStyle(
                             fontSize: screenWidth * 0.048,
                             color: const Color(0xCCA5FB8F),
                           ),
+                        ),
                         ),
                       ),
                     ),
