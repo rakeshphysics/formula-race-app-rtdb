@@ -106,7 +106,7 @@
     "class": "12"
   },
   "image": "assets/images/12th/3d_geometry/3d_geometry_qn_006.glb",
-  "tip": "I have removed a face, so you can peek inside!! 👀"
+  "tip": null
 },
 {
   "id": "3d_geometry_qn_007",
@@ -195,7 +195,7 @@
     "difficulty": "easy",
     "class": "12"
   },
-  "image": null,
+  "image":"assets/images/12th/3d_geometry/3d_geometry_qn_011.svg",
   "tip": null
 },
 {
@@ -213,7 +213,7 @@
     "difficulty": "easy",
     "class": "12"
   },
-  "image": null,
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_012.svg",
   "tip": null
 },
 {
@@ -285,7 +285,7 @@
     "difficulty": "medium",
     "class": "12"
   },
-  "image": null,
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_016.svg",
   "tip": null
 },
 {
@@ -321,7 +321,7 @@
     "difficulty": "medium",
     "class": "12"
   },
-  "image": null,
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_018.glb",
   "tip": null
 },
 {
@@ -339,7 +339,7 @@
     "difficulty": "medium",
     "class": "12"
   },
-  "image": null,
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_019.svg",
   "tip": null
 },
 {
@@ -357,7 +357,7 @@
     "difficulty": "god",
     "class": "12"
   },
-  "image": null,
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_020.svg",
   "tip": "You can also think of this like, Area of parallelogram formed by c-a and b, divided by its base. Gives height of parallelogram, which is nothing but the length of perpendicular from c to line."
 },
 {
@@ -375,7 +375,7 @@
     "difficulty": "easy",
     "class": "12"
   },
-  "image": null,
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_021.svg",
   "tip": null
 },
 {
@@ -411,7 +411,7 @@
     "difficulty": "easy",
     "class": "12"
   },
-  "image": null,
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_023.glb",
   "tip": null
 },
 {
@@ -447,8 +447,8 @@
     "difficulty": "medium",
     "class": "12"
   },
-  "image": null,
-  "tip": null
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_025.svg",
+  "tip": "Also we can say, its area of the yellow parallelogram by its base"
 },
 {
   "id": "3d_geometry_qn_026",
@@ -465,7 +465,7 @@
     "difficulty": "medium",
     "class": "12"
   },
-  "image": null,
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_026.svg",
   "tip": null
 },
 {
@@ -483,7 +483,7 @@
     "difficulty": "medium",
     "class": "12"
   },
-  "image": null,
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_027.glb",
   "tip": null
 },
 {
@@ -520,7 +520,7 @@
     "class": "12"
   },
   "image": null,
-  "tip": null
+  "tip": "The shortest distance between them must be zero"
 },
 {
   "id": "3d_geometry_qn_030",
@@ -537,8 +537,8 @@
     "difficulty": "god",
     "class": "12"
   },
-  "image": null,
-  "tip": null
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_030.glb",
+  "tip": "Its the component of a2-a1 along b1xb2"
 },
 {
   "id": "3d_geometry_qn_031",
@@ -555,7 +555,7 @@
     "difficulty": "easy",
     "class": "12"
   },
-  "image": null,
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_031.glb",
   "tip": null
 },
 {
@@ -591,7 +591,7 @@
     "difficulty": "easy",
     "class": "12"
   },
-  "image": null,
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_033.glb",
   "tip": null
 },
 {
@@ -663,7 +663,7 @@
     "difficulty": "medium",
     "class": "12"
   },
-  "image": null,
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_037.svg",
   "tip": "Think of it like this, we start from x1 and move towards the plane (negative sign indicates moving towards, positive sign indicates moving away) in direction normal to it (indicated by direction ratio a of normal) by a factor α."
 },
 {
@@ -681,29 +681,12 @@
     "difficulty": "medium",
     "class": "12"
   },
-  "image": null,
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_038.glb",
   "tip": "Angle between planes equals angle between their normals"
 },
+
 {
   "id": "3d_geometry_qn_039",
-  "question": "The x coordinate of image of point (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) in plane ax + by + cz + d = 0 is (given &alpha; = (ax<sub>1</sub>+by<sub>1</sub>+cz<sub>1</sub>+d)/(a<sup>2</sup>+b<sup>2</sup>+c<sup>2</sup>))",
-  "options": [
-    "x_1 + 2a\\alpha",
-    "x_1 - 2a\\alpha",
-    "x_1 + a\\alpha",
-    "x_1 - a\\alpha"
-  ],
-  "answer": "x_1 - 2a\\alpha",
-  "tags": {
-    "chapter": "3D Geometry",
-    "difficulty": "god",
-    "class": "12"
-  },
-  "image": null,
-  "tip": "Think of it like this, we start from x1 and move towards the plane (negative sign indicates moving towards, positive sign indicates moving away) in direction normal to it (indicated by direction ratio a of normal) by a factor 2 α. Factor α is for foot of perpendicular"
-},
-{
-  "id": "3d_geometry_qn_040",
   "question": "The planes r &middot; n<sub>1</sub> = d<sub>1</sub> and r &middot; n<sub>2</sub> = d<sub>2</sub> are perpendicular if",
   "options": [
     "n_1 \\cdot n_2 = 0.5",
@@ -720,6 +703,25 @@
   "image": null,
   "tip": null
 },
+
+  {
+    "id": "3d_geometry_qn_040",
+    "question": "The x coordinate of image of point (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) in plane ax + by + cz + d = 0 is (given &alpha; = (ax<sub>1</sub>+by<sub>1</sub>+cz<sub>1</sub>+d)/(a<sup>2</sup>+b<sup>2</sup>+c<sup>2</sup>))",
+    "options": [
+      "x_1 + 2a\\alpha",
+      "x_1 - 2a\\alpha",
+      "x_1 + a\\alpha",
+      "x_1 - a\\alpha"
+    ],
+    "answer": "x_1 - 2a\\alpha",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_040.svg",
+    "tip": "Think of it like this, we start from x1 and move towards the plane (negative sign indicates moving towards, positive sign indicates moving away) in direction normal to it (indicated by direction ratio a of normal) by a factor 2 α. Factor α is for foot of perpendicular"
+  },
 {
   "id": "3d_geometry_qn_041",
   "question": "The planes r &middot; n<sub>1</sub> = d<sub>1</sub> and r &middot; n<sub>2</sub> = d<sub>2</sub> are parallel if",
@@ -753,7 +755,7 @@
     "difficulty": "easy",
     "class": "12"
   },
-  "image": null,
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_042.glb",
   "tip": null
 },
 {
@@ -807,27 +809,27 @@
     "difficulty": "medium",
     "class": "12"
   },
-  "image": null,
+  "image": "assets/images/12th/3d_geometry/3d_geometry_qn_045.svg",
   "tip": "Be careful, it is cos inverse if angle between line and normal to plane is asked."
 },
-{
-  "id": "3d_geometry_qn_046",
-  "question": "For two planes a<sub>1</sub>x + b<sub>1</sub>y + c<sub>1</sub>z + d<sub>1</sub> = 0 and a<sub>2</sub>x + b<sub>2</sub>y + c<sub>2</sub>z + d<sub>2</sub> = 0 origin will lie in acute angle between planes if",
-  "options": [
-    "a_1a_2 + b_1b_2 + c_1c_2 < 0",
-    "a_1a_2 + b_1b_2 + c_1c_2 > 0",
-    "a_1a_2 + b_1b_2 + c_1c_2 = 0",
-    "a_1a_2 + b_1b_2 + c_1c_2 = 1"
-  ],
-  "answer": "a_1a_2 + b_1b_2 + c_1c_2 < 0",
-  "tags": {
-    "chapter": "3D Geometry",
-    "difficulty": "medium",
-    "class": "12"
+  {
+    "id": "3d_geometry_qn_046",
+    "question": "Two lines (x-x<sub>1</sub>)/a<sub>1</sub> = (y-y<sub>1</sub>)/b<sub>1</sub> = (z-z<sub>1</sub>)/c<sub>1</sub> and (x-x<sub>2</sub>)/a<sub>2</sub> = (y-y<sub>2</sub>)/b<sub>2</sub> = (z-z<sub>2</sub>)/c<sub>2</sub> are coplanar if",
+    "options": [
+      "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 1",
+      "\\begin{vmatrix} x_2+x_1 & y_2+y_1 & z_2+z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x_1 & y_1 & z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0"
+    ],
+    "answer": "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
   },
-  "image": null,
-  "tip": null
-},
 
   {
     "id": "3d_geometry_qn_047",
