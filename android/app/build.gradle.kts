@@ -8,15 +8,17 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+configurations.all {
+    resolutionStrategy {
+        force("androidx.browser:browser:1.8.0")
+        force("androidx.core:core-ktx:1.15.0")
+        force("androidx.core:core:1.15.0")
+    }
+}
+
 dependencies {
     // Import the Firebase BoM
-    implementation(platform("com.google.firebase:firebase-bom:33.16.0"))
-    implementation("com.google.firebase:firebase-database-ktx") // <--- ADD THIS LINE
-    implementation("com.google.firebase:firebase-auth-ktx")
 
-    // TODO: Add the dependencies for Firebase products you want to use
-    // When using the BoM, don't specify versions in Firebase dependencies
-    implementation("com.google.firebase:firebase-analytics")
     implementation("androidx.multidex:multidex:2.0.1")
 
     // Add the dependencies for any other desired Firebase products
