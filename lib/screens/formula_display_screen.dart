@@ -468,7 +468,7 @@ _active3DIndices.add(index);
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(icon, color: themeColor, size: 20),
+            Icon(icon, color: themeColor, size: 16),
 
             if (label.isNotEmpty) ...[
               const SizedBox(width: 4),
@@ -568,14 +568,14 @@ _active3DIndices.add(index);
                       width: questionData['image'].endsWith('.glb')
                           ? screenWidth * 0.6
                           : questionData['image'].endsWith('.riv')
-                          ? screenWidth * 0.7 // Custom size for Rive (currently same as image)
+                          ? screenWidth * 0.8 // Custom size for Rive (currently same as image)
                           : screenWidth * 0.62,
 
                       // HEIGHT LOGIC
                       height: questionData['image'].endsWith('.glb')
                           ? screenWidth * 0.6
                           : questionData['image'].endsWith('.riv')
-                          ? (screenWidth * 0.7) / 1.5 // Custom size for Rive (currently same as image)
+                          ? (screenWidth * 0.8) / 1.5 // Custom size for Rive (currently same as image)
                           : (screenWidth * 0.62) / 1.5,
 
                       child: questionData['image'].endsWith('.svg')
@@ -596,8 +596,11 @@ _active3DIndices.add(index);
                         onDeactivate: () => _deactivate3DModel(index),
                       )
                           : questionData['image'].endsWith('.riv')
-                          ? FormulaRiveViewer(
-                        src: questionData['image'],
+                          ? Opacity(
+                        opacity: 0.8, // <--- Add this
+                        child: FormulaRiveViewer(
+                          src: questionData['image'],
+                        ),
                       )
                           : Image.asset(
                         questionData['image'],
