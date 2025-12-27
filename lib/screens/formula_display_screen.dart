@@ -432,6 +432,60 @@ _active3DIndices.add(index);
   }
 
 
+  // Widget _buildMediaTypeBadge(String? imagePath) {
+  //   if (imagePath == null || imagePath.isEmpty) return const SizedBox.shrink();
+  //
+  //   IconData icon;
+  //   String label;
+  //   Color color;
+  //
+  //   if (imagePath.endsWith('.glb')) {
+  //     icon = Icons.threed_rotation;
+  //     label = "";
+  //     color = Colors.grey;
+  //   } else if (imagePath.endsWith('.riv')) {
+  //     icon = Icons.touch_app;
+  //     label = "Interactive";
+  //     color = Colors.orangeAccent;
+  //   } else if (imagePath.endsWith('.svg') || imagePath.endsWith('.png') || imagePath.endsWith('.jpg')) {
+  //     // Optional: You can return SizedBox.shrink() here if you don't want badges for static images
+  //     icon = Icons.image;
+  //     label = "";
+  //     color = Colors.grey;
+  //   } else {
+  //     return const SizedBox.shrink();
+  //   }
+  //
+  //   return Positioned(
+  //     bottom: 8,
+  //     right: 8,
+  //     child: Container(
+  //       padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+  //       // decoration: BoxDecoration(
+  //       //   color: Colors.black.withOpacity(0.7),
+  //       //   borderRadius: BorderRadius.circular(6),
+  //       //   border: Border.all(color: color.withOpacity(0.6), width: 1),
+  //       // ),
+  //       child: Row(
+  //         mainAxisSize: MainAxisSize.min,
+  //         children: [
+  //           Icon(icon, color: color, size: 20),
+  //           const SizedBox(width: 4),
+  //           Text(
+  //             label,
+  //             style: const TextStyle(
+  //               color: Colors.white,
+  //               fontSize: 10,
+  //               fontWeight: FontWeight.bold,
+  //               letterSpacing: 0.5,
+  //             ),
+  //           ),
+  //         ],
+  //       ),
+  //     ),
+  //   );
+  // }
+
 
   Widget _buildFormulaCard(
       Formula formula,
@@ -469,8 +523,12 @@ _active3DIndices.add(index);
                   child: Padding(
                     padding: EdgeInsets.symmetric(vertical: screenWidth * 0.02),
                     child: SizedBox(
-                      width: screenWidth * 0.6,
-                      height: (screenWidth * 0.6) / 1.5,
+                      width: questionData['image'].endsWith('.glb')
+                          ? screenWidth * 0.6
+                          : screenWidth * 0.62,
+                      height: questionData['image'].endsWith('.glb')
+                          ? screenWidth * 0.6
+                          : (screenWidth * 0.62) / 1.5,
                       child: questionData['image'].endsWith('.svg')
                           ? Opacity(
                         opacity: 0.85,
@@ -492,7 +550,54 @@ _active3DIndices.add(index);
                     ),
                   ),
                 ),
-              // Note: No 'else' block needed here anymore!
+              // Note: No
+              //
+              // A. Image/Model (If exists)
+              // if (questionData['image'] != null &&
+              //     questionData['image'].toString().isNotEmpty)
+              //   Align(
+              //     alignment: Alignment.center,
+              //     child: Padding(
+              //       padding: EdgeInsets.symmetric(vertical: screenWidth * 0.02),
+              //       child: Stack(
+              //         children: [
+              //           // 1. THE CONTENT
+              //           SizedBox(
+              //             width: questionData['image'].endsWith('.glb')
+              //                 ? screenWidth * 0.7
+              //                 : screenWidth * 0.65,
+              //             height: questionData['image'].endsWith('.glb')
+              //                 ? screenWidth * 0.7 // Square for 3D
+              //                 : (screenWidth * 0.65) / 1.5, // Rectangular for images
+              //             child: questionData['image'].endsWith('.svg')
+              //                 ? Opacity(
+              //               opacity: 0.85,
+              //               child: SvgPicture.asset(
+              //                 questionData['image'],
+              //                 fit: BoxFit.contain,
+              //               ),
+              //             )
+              //                 : questionData['image'].endsWith('.glb')
+              //                 ? Formula3DViewer(
+              //               src: questionData['image'],
+              //               themeColor: themeColor,
+              //               index: index,
+              //               isActive: _active3DIndices.contains(index),
+              //               onActivate: () => _activate3DModel(index),
+              //               onDeactivate: () => _deactivate3DModel(index),
+              //             )
+              //                 : Image.asset(
+              //               questionData['image'],
+              //               fit: BoxFit.contain,
+              //             ),
+              //           ),
+              //
+              //           // 2. THE BADGE (Overlay)
+              //           _buildMediaTypeBadge(questionData['image']),
+              //         ],
+              //       ),
+              //     ),
+              //   ),
 
               // B. Text Content
               Padding(
@@ -673,7 +778,17 @@ class _Formula3DViewerState extends State<Formula3DViewer> with AutomaticKeepAli
             Icon(
               Icons.threed_rotation_outlined,
               color: widget.themeColor,
-              size: 40,
+              size: 48,
+            ),
+            const SizedBox(height: 8), // Spacing
+            Text(
+              "Tap to view",
+              style: TextStyle(
+                color: widget.themeColor,
+                fontSize: 12,
+                fontWeight: FontWeight.w500,
+                letterSpacing: 0.5,
+              ),
             ),
           ],
         ),

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "chemical_equilibrium_qn_001",
+    "question": "For the reaction aA + bB &rightleftharpoons; cC + dD, the value of equilibrium constant K<sub>c</sub> is given by (All concentrations given below are at equilibrium):",
+    "options": [
+      "\\frac{[C][D]}{[A][B]}",
+      "\\frac{[A][B]}{[C][D]}",
+      "\\frac{[C]^c [D]^d}{[A]^a [B]^b}",
+      "\\frac{[A]^a [B]^b}{[C]^c [D]^d}"
+    ],
+    "answer": "\\frac{[C]^c [D]^d}{[A]^a [B]^b}",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_002",
+    "question": "For the reaction aA + bB &rightleftharpoons; cC + dD, the value of equilibrium constant K<sub>p</sub> is given by (All partial pressures given below are at equilibrium):",
+    "options": [
+      "\\frac{p_C p_D}{p_A p_B}",
+      "\\frac{p_A p_B}{p_C p_D}",
+      "\\frac{p_C^c \\cdot p_D^d}{p_A^a \\cdot p_B^b}",
+      "\\frac{p_A^a \\cdot p_B^b}{p_C^c \\cdot p_D^d}"
+    ],
+    "answer": "\\frac{p_C^c \\cdot p_D^d}{p_A^a \\cdot p_B^b}",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_003",
+    "question": "The correct relation between K<sub>c</sub> and K<sub>p</sub> is (T = Absolute temperature, &Delta;n<sub>g</sub> = n<sub>products</sub> - n<sub>reactants</sub>):",
+    "options": [
+      "K_p = K_c [RT]^{\\Delta n_g}",
+      "K_c = K_p [RT]^{\\Delta n_g}",
+      "K_p = K_c [RT]^{-\\Delta n_g}",
+      "K_p = K_c [RT \\Delta n_g]"
+    ],
+    "answer": "K_p = K_c [RT]^{\\Delta n_g}",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_004",
+    "question": "The partial pressure of a gas p equals ( [gas] = concentration of gas, T = Absolute temperature):",
+    "options": [
+      "[gas]RT",
+      "\\frac{[gas]}{RT}",
+      "\\frac{RT}{[gas]}",
+      "\\frac{1}{[gas]RT}"
+    ],
+    "answer": "[gas]RT",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_005",
+    "question": "The units of equilibrium constant K<sub>p</sub> are:",
+    "options": [
+      "mol \\cdot L^{\\Delta n_g}",
+      "mol \\cdot L^{-\\Delta n_g}",
+      "atm^{-\\Delta n_g}",
+      "atm^{\\Delta n_g}"
+    ],
+    "answer": "atm^{\\Delta n_g}",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_006",
+    "question": "The units of equilibrium constant K<sub>c</sub> are:",
+    "options": [
+      "(mol/L)^{\\Delta n_g}",
+      "(mol/L)^{-\\Delta n_g}",
+      "atm^{-\\Delta n_g}",
+      "atm^{\\Delta n_g}"
+    ],
+    "answer": "(mol/L)^{\\Delta n_g}",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_007",
+    "question": "For the reaction aA + bB &rightleftharpoons; cC + dD, the value of Reaction Quotient Q<sub>c</sub> is given by (All concentrations given below are at any time):",
+    "options": [
+      "\\frac{[C][D]}{[A][B]}",
+      "\\frac{[A][B]}{[C][D]}",
+      "\\frac{[C]^c [D]^d}{[A]^a [B]^b}",
+      "\\frac{[A]^a [B]^b}{[C]^c [D]^d}"
+    ],
+    "answer": "\\frac{[C]^c [D]^d}{[A]^a [B]^b}",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_008",
+    "question": "The equilibrium constant K<sub>c</sub> is correctly given by the relation (T = temperature, &Delta;G<sup>&ominus;</sup> = standard Gibbs free energy change):",
+    "options": [
+      "e^{-\\Delta G^{\\ominus}/RT}",
+      "e^{\\Delta G^{\\ominus}/RT}",
+      "e^{\\Delta G^{\\ominus}RT}",
+      "e^{-\\Delta G^{\\ominus}RT}"
+    ],
+    "answer": "e^{-\\Delta G^{\\ominus}/RT}",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_009",
+    "question": "For the reaction AB &rightleftharpoons; A + B, if the initial number of moles of AB is a and x moles dissociate in equilibrium, then the degree of dissociation &alpha; is given by:",
+    "options": [
+      "1 - \\frac{x}{a}",
+      "\\frac{x}{a}",
+      "\\frac{2x}{a}",
+      "1 - \\frac{x}{a^2}"
+    ],
+    "answer": "\\frac{x}{a}",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_010",
+    "question": "The variation of equilibrium constant with temperature is given by (K<sub>1</sub>, K<sub>2</sub> = equilibrium constants at temperatures T<sub>1</sub>, T<sub>2</sub>, &Delta;H<sup>o</sup> = enthalpy of reaction, R = gas constant):",
+    "options": [
+      "\\ln \\frac{K_2}{K_1} = \\frac{\\Delta H^o}{2.303R} \\left( \\frac{T_1 - T_2}{T_1 + T_2} \\right)",
+      "\\ln \\frac{K_2}{K_1} = \\frac{\\Delta H^o}{R} \\left( \\frac{T_1 - T_2}{T_1 T_2} \\right)",
+      "\\ln \\frac{K_2}{K_1} = \\frac{\\Delta H^o}{R} \\left( \\frac{T_2 - T_1}{T_1 T_2} \\right)",
+      "\\ln \\frac{K_2}{K_1} = \\frac{\\Delta H^o}{R} \\left( \\frac{T_1 + T_2}{T_1 - T_2} \\right)"
+    ],
+    "answer": "\\ln \\frac{K_2}{K_1} = \\frac{\\Delta H^o}{R} \\left( \\frac{T_2 - T_1}{T_1 T_2} \\right)",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  }
+]

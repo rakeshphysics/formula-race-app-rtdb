@@ -47,6 +47,7 @@ void main() {
     '${baseDir}full_syllabus_online_play.json',
     '${baseDir}12/solid_state.json',
     '${baseDir}12/3d_geometry.json',
+    '${baseDir}11/chemical_equilibrium.json',
   ];
 
   final encrypter = Encrypter(AES(key));

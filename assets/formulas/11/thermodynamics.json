@@ -255,24 +255,24 @@
       "image": "",
       "tip": ""
     },
-    {
-      "id": "thermodynamics_qn_015",
-      "question": "Latent heat of Fusion is the heat required to change the state of body from",
-      "options": [
-        "\\text{Solid to Liquid}",
-        "\\text{Solid to Gas}",
-        "\\text{Liquid to Gas}",
-        "\\text{Gas to Liquid}"
-      ],
-      "answer": "\\text{Solid to Liquid}",
-      "tags": {
-        "chapter": "thermodynamics",
-        "difficulty": "medium",
-        "class": "11"
-      },
-      "image": "",
-      "tip": ""
+  {
+    "id": "thermodynamics_qn_015",
+    "question": "Weins displacement law states that (&lambda;<sub>m</sub> = wavelength of most intense radiation, T = temperature of black body, b = weins constant)",
+    "options": [
+      "\\lambda_m = bT",
+      "\\lambda_mT = b",
+      "\\lambda_mT^2 = b",
+      "\\lambda_m\\sqrt{T} = b"
+    ],
+    "answer": "\\lambda_mT = b",
+    "tags": {
+      "chapter": "thermodynamics",
+      "difficulty": "medium",
+      "class": "11"
     },
+    "image": null,
+    "tip": null
+  },
     {
       "id": "thermodynamics_qn_016",
       "question": "Water equivalent of a body equals (<i>m</i> = mass of body, <i>s<sub>b</sub></i> = specific heat capacity of body, <i>s<sub>w</sub></i> = specific heat capacity of water)",

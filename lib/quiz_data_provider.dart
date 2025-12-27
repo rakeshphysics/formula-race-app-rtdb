@@ -45,6 +45,7 @@ class QuizDataProvider extends ChangeNotifier {
       'assets/formulas/full_syllabus_online_play.aes',
       'assets/formulas/12/solid_state.aes',
       'assets/formulas/12/3d_geometry.aes',
+      'assets/formulas/11/chemical_equilibrium.aes',
     ];
 
     for (var filePath in encryptedFiles) {
