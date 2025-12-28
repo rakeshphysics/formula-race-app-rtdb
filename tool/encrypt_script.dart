@@ -48,6 +48,7 @@ void main() {
     '${baseDir}12/solid_state.json',
     '${baseDir}12/3d_geometry.json',
     '${baseDir}11/chemical_equilibrium.json',
+    '${baseDir}11/ellipse.json',
   ];
 
   final encrypter = Encrypter(AES(key));

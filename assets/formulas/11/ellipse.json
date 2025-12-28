@@ -1,0 +1,722 @@
+[
+  {
+    "id": "ellipse_qn_001",
+    "question": "For the horizontal ellipse, its vertices are at",
+    "options": [
+      "(a,0) and (-a,0)",
+      "(0,b) and (0,-b)",
+      "(0,be) and (0,-be)",
+      "(ae,0) and (-ae,0)"
+    ],
+    "answer": "(a,0) and (-a,0)",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_002",
+    "question": "For the horizontal ellipse, the length of its major and minor axis are",
+    "options": [
+      "b, a",
+      "a, b",
+      "2a, 2b",
+      "2b, 2a"
+    ],
+    "answer": "2a, 2b",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_003",
+    "question": "For the horizontal ellipse, its foci are at",
+    "options": [
+      "(a,0) and (-a,0)",
+      "(0,b) and (0,-b)",
+      "(0,be) and (0,-be)",
+      "(ae,0) and (-ae,0)"
+    ],
+    "answer": "(ae,0) and (-ae,0)",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_004",
+    "question": "For the horizontal ellipse, the equation of its directrices are",
+    "options": [
+      "x = a/e, x = -a/e",
+      "x = ae, x = -ae",
+      "x = b/e, x = -b/e",
+      "x = be, x = -be"
+    ],
+    "answer": "x = a/e, x = -a/e",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_005",
+    "question": "For the horizontal ellipse, the length of its latus rectum is",
+    "options": [
+      "\\frac{2a^2}{b}",
+      "\\frac{a^2}{2b}",
+      "\\frac{b^2}{2a}",
+      "\\frac{2b^2}{a}"
+    ],
+    "answer": "\\frac{2b^2}{a}",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_006",
+    "question": "The eccentricity of this horizontal ellipse is",
+    "options": [
+      "e = \\frac{b}{a} - 1",
+      "e = \\frac{b^2}{a^2} - 1",
+      "e = \\sqrt{1 - \\frac{b^2}{a^2}}",
+      "e = 1 - \\frac{b}{a}"
+    ],
+    "answer": "e = \\sqrt{1 - \\frac{b^2}{a^2}}",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_007",
+    "question": "The focal distances of a point P (x,y) on the ellipse are SP and S<sub>1</sub>P equals",
+    "options": [
+      "a+ex, a-ex",
+      "a-ex, a+ex",
+      "b+ex, b-ex",
+      "b-ex, b+ex"
+    ],
+    "answer": "a-ex, a+ex",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_008",
+    "question": "The distance between two focus of the ellipse is",
+    "options": [
+      "ae",
+      "2ae",
+      "\\frac{2a}{e}",
+      "\\frac{a}{e}"
+    ],
+    "answer": "2ae",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_009",
+    "question": "The distance between two directrices of the ellipse is",
+    "options": [
+      "ae",
+      "2ae",
+      "\\frac{2a}{e}",
+      "\\frac{a}{e}"
+    ],
+    "answer": "\\frac{2a}{e}",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_010",
+    "question": "The equation of tangents of slope m to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is given by",
+    "options": [
+      "y = mx \\pm \\sqrt{a^2m^2 - b^2}",
+      "y = mx \\pm \\sqrt{a^2m^2 + b^2}",
+      "y = mx \\pm \\sqrt{a^2m - b^2}",
+      "y = mx \\pm \\sqrt{a^2m + b^2}"
+    ],
+    "answer": "y = mx \\pm \\sqrt{a^2m^2 + b^2}",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_011",
+    "question": "If the center of ellipse is (h,k) and the direction of its axes are parallel to the coordinate axes, its equation is",
+    "options": [
+      "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1",
+      "\\frac{x^2}{h^2} + \\frac{y^2}{k^2} = 1",
+      "\\frac{(x-h)^2}{a^2} + \\frac{(y-k)^2}{b^2} = 1",
+      "\\frac{(x+h)^2}{a^2} + \\frac{(y+k)^2}{b^2} = 1"
+    ],
+    "answer": "\\frac{(x-h)^2}{a^2} + \\frac{(y-k)^2}{b^2} = 1",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_012",
+    "question": "If the point (x<sub>1</sub>, y<sub>1</sub>) lies outside the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, then",
+    "options": [
+      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 > 0",
+      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 = 0",
+      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 < 0",
+      "None of these"
+    ],
+    "answer": "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 > 0",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_013",
+    "question": "For the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, a > b the equation of auxiliary circle is",
+    "options": [
+      "x^2 + y^2 = a^2 + b^2",
+      "x^2 + y^2 = a^4 + b^4",
+      "x^2 + y^2 = b^2",
+      "x^2 + y^2 = a^2"
+    ],
+    "answer": "x^2 + y^2 = a^2",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_014",
+    "question": "The eccentric angle of point P on the ellipse is",
+    "options": [
+      "\\angle ACQ",
+      "\\angle CQM",
+      "\\angle BCQ",
+      "\\angle QMC"
+    ],
+    "answer": "\\angle ACQ",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_015",
+    "question": "The equation of tangent to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 at point (x<sub>1</sub>, y<sub>1</sub>) is",
+    "options": [
+      "\\frac{xx_1}{2a} + \\frac{yy_1}{2b} = 1",
+      "\\frac{xx_1}{a} + \\frac{yy_1}{b} = 1",
+      "\\frac{xx_1}{a^2} + \\frac{yy_1}{b^2} = 1",
+      "\\frac{xx_1}{2a^2} + \\frac{yy_1}{2b^2} = 1"
+    ],
+    "answer": "\\frac{xx_1}{a^2} + \\frac{yy_1}{b^2} = 1",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_016",
+    "question": "The equation of tangent to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 at point (a cos &theta;<sub>1</sub>, b sin &theta;<sub>1</sub>) is",
+    "options": [
+      "\\frac{x}{a^2}\\cos\\theta_1 + \\frac{y}{b^2}\\sin\\theta_1 = 1",
+      "\\frac{x}{a}\\cos\\theta_1 + \\frac{y}{b}\\sin\\theta_1 = 1",
+      "\\frac{x}{a}\\sin\\theta_1 + \\frac{y}{b}\\cos\\theta_1 = 1",
+      "\\frac{x}{a^2}\\sin\\theta_1 + \\frac{y}{b^2}\\cos\\theta_1 = 1"
+    ],
+    "answer": "\\frac{x}{a}\\cos\\theta_1 + \\frac{y}{b}\\sin\\theta_1 = 1",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_017",
+    "question": "The equation of tangents to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 at points P(a cos &theta;<sub>1</sub>, b sin &theta;<sub>1</sub>) and Q(a cos &theta;<sub>2</sub>, b sin &theta;<sub>2</sub>) intersect at point",
+    "options": [
+      "\\left( a\\frac{\\cos\\frac{\\theta_1-\\theta_2}{2}}{\\cos\\frac{\\theta_1+\\theta_2}{2}}, b\\frac{\\sin\\frac{\\theta_1-\\theta_2}{2}}{\\sin\\frac{\\theta_1+\\theta_2}{2}} \\right)",
+      "\\left( a\\frac{\\cos\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}}, b\\frac{\\sin\\frac{\\theta_1+\\theta_2}{2}}{\\sin\\frac{\\theta_1-\\theta_2}{2}} \\right)",
+      "\\left( a\\frac{\\cos\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}}, b\\frac{\\cos\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}} \\right)",
+      "\\left( a\\frac{\\cos\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}}, b\\frac{\\sin\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}} \\right)"
+    ],
+    "answer": "\\left( a\\frac{\\cos\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}}, b\\frac{\\sin\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}} \\right)",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_018",
+    "question": "The combined equation of pair of tangents drawn from point (x<sub>1</sub>, y<sub>1</sub>) to ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is",
+    "options": [
+      "SS_1 = T",
+      "SS_1 = T^2",
+      "SS_1 = 2T^2",
+      "SS_1 = T"
+    ],
+    "answer": "SS_1 = T^2",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_019",
+    "question": "For the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, the director circle is",
+    "options": [
+      "x^2 + y^2 = a^2 + b^2",
+      "x^2 + y^2 = a^4 + b^4",
+      "x^2 + y^2 = b^2",
+      "x^2 + y^2 = a^2"
+    ],
+    "answer": "x^2 + y^2 = a^2 + b^2",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_020",
+    "question": "The point of contact of tangent of slope m to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is given by",
+    "options": [
+      "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2+b^2}}, \\pm \\frac{b^2}{\\sqrt{a^2m^2+b^2}} \\right)",
+      "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m+b^2}}, \\mp \\frac{b^2}{\\sqrt{a^2m+b^2}} \\right)",
+      "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2-b^2}}, \\pm \\frac{b^2}{\\sqrt{a^2m^2-b^2}} \\right)",
+      "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2+b^2}}, \\mp \\frac{b^2}{\\sqrt{a^2m^2+b^2}} \\right)"
+    ],
+    "answer": "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2+b^2}}, \\mp \\frac{b^2}{\\sqrt{a^2m^2+b^2}} \\right)",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_021",
+    "question": "The equation of normal to ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 at (x<sub>1</sub>, y<sub>1</sub>) is given by",
+    "options": [
+      "\\frac{a^2x}{x_1} + \\frac{b^2y}{y_1} = a^2 - b^2",
+      "\\frac{a^2x}{x_1} - \\frac{b^2y}{y_1} = a^2 - b^2",
+      "\\frac{a^2x}{x_1} - \\frac{b^2y}{y_1} = a^2 + b^2",
+      "\\frac{a^2x}{x_1} + \\frac{b^2y}{y_1} = a^2 + b^2"
+    ],
+    "answer": "\\frac{a^2x}{x_1} - \\frac{b^2y}{y_1} = a^2 - b^2",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_022",
+    "question": "The equation of normal of slope m to ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is given by",
+    "options": [
+      "y = mx \\pm \\frac{m(a^2-b^2)}{\\sqrt{a^2-b^2m^2}}",
+      "y = mx \\pm \\frac{m(a^2+b^2)}{\\sqrt{a^2-b^2m^2}}",
+      "y = mx \\pm \\frac{m(a^2-b^2)}{\\sqrt{a^2+b^2m^2}}",
+      "y = mx \\pm \\frac{m(a^2+b^2)}{\\sqrt{a^2+b^2m^2}}"
+    ],
+    "answer": "y = mx \\pm \\frac{m(a^2-b^2)}{\\sqrt{a^2+b^2m^2}}",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_023",
+    "question": "If a normal is drawn from a point on the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, then",
+    "options": [
+      "\\theta_1 = 2\\theta_2",
+      "\\theta_1 = \\theta_2",
+      "\\theta_1 + \\theta_2 = 90",
+      "2\\theta_1 = \\theta_2"
+    ],
+    "answer": "\\theta_1 = \\theta_2",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_024",
+    "question": "The maximum number of normals that can be drawn from a point to an ellipse is",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "4",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_025",
+    "question": "The equation of chord of contact of tangents drawn from (x<sub>1</sub>, y<sub>1</sub>) to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is given by",
+    "options": [
+      "T = S_1",
+      "T = S_1^2",
+      "T = S_1",
+      "T = 0"
+    ],
+    "answer": "T = 0",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_026",
+    "question": "The equation of chord of ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 bisected at (x<sub>1</sub>, y<sub>1</sub>) is given by",
+    "options": [
+      "T = S_1",
+      "T = S_1^2",
+      "T = S_1",
+      "T = 0"
+    ],
+    "answer": "T = S_1",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_027",
+    "question": "If &theta;<sub>1</sub>, &theta;<sub>2</sub>, &theta;<sub>3</sub>, &theta;<sub>4</sub> are eccentric angles of conormal points to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 then, &theta;<sub>1</sub> + &theta;<sub>2</sub> + &theta;<sub>3</sub> + &theta;<sub>4</sub> equals (n &isin; Z)",
+    "options": [
+      "2\\pi",
+      "(2n+1)\\pi",
+      "(2n+1)\\pi",
+      "4\\pi"
+    ],
+    "answer": "(2n+1)\\pi",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_028",
+    "question": "If &theta;<sub>1</sub>, &theta;<sub>2</sub>, &theta;<sub>3</sub>, &theta;<sub>4</sub> are eccentric angles of conormal points to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 then",
+    "options": [
+      "\\Sigma \\cos(\\theta_1 + \\theta_2) = 0",
+      "\\Sigma \\text{cosec}(\\theta_1 + \\theta_2) = 0",
+      "\\Sigma \\cot(\\theta_1 + \\theta_2) = 0",
+      "\\Sigma \\tan(\\theta_1 + \\theta_2) = 0"
+    ],
+    "answer": "\\Sigma \\tan(\\theta_1 + \\theta_2) = 0",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_029",
+    "question": "If the normal at four points P(x<sub>1</sub>, y<sub>1</sub>), Q(x<sub>2</sub>, y<sub>2</sub>), R(x<sub>3</sub>, y<sub>3</sub>), S(x<sub>4</sub>, y<sub>4</sub>) on the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 are concurrent then",
+    "options": [
+      "(x_1+x_2+x_3+x_4)(\\frac{1}{x_1}+\\frac{1}{x_2}+\\frac{1}{x_3}+\\frac{1}{x_4}) = 4",
+      "(x_1+x_2+x_3+x_4)(\\frac{1}{x_1}+\\frac{1}{x_2}+\\frac{1}{x_3}+\\frac{1}{x_4}) = 2",
+      "(x_1+x_2+x_3+x_4)(\\frac{1}{x_1}+\\frac{1}{x_2}+\\frac{1}{x_3}+\\frac{1}{x_4}) = 0",
+      "(x_1+x_2+x_3+x_4)(\\frac{1}{x_1}+\\frac{1}{x_2}+\\frac{1}{x_3}+\\frac{1}{x_4}) = 1"
+    ],
+    "answer": "(x_1+x_2+x_3+x_4)(\\frac{1}{x_1}+\\frac{1}{x_2}+\\frac{1}{x_3}+\\frac{1}{x_4}) = 4",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_030",
+    "question": "The coordinates of point of contact of normals of slope m to ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is",
+    "options": [
+      "\\left( \\pm \\frac{a^2}{\\sqrt{a^2+b^2m^2}}, \\pm \\frac{b^2m}{\\sqrt{a^2+b^2m^2}} \\right)",
+      "\\left( \\pm \\frac{a^2}{\\sqrt{a^2-b^2m^2}}, \\pm \\frac{b^2m}{\\sqrt{a^2-b^2m^2}} \\right)",
+      "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2-b^2}}, \\pm \\frac{b^2}{\\sqrt{a^2m^2-b^2}} \\right)",
+      "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2+b^2}}, \\mp \\frac{b^2}{\\sqrt{a^2m^2+b^2}} \\right)"
+    ],
+    "answer": "(\\pm \\frac{a^2}{\\sqrt{a^2+b^2m^2}}, \\pm \\frac{b^2m}{\\sqrt{a^2+b^2m^2}})",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_031",
+    "question": "If D<sub>1</sub> and D<sub>2</sub> are two conjugate diameters of an ellipse, and a chord C of ellipse is drawn parallel to D<sub>2</sub>, intersecting D<sub>1</sub> at M, the relation between the two segments of chord C created by M is",
+    "options": [
+      "AM \\times MB = ab",
+      "2AM = MB",
+      "AM = MB",
+      "AM \\times MB = ab^2"
+    ],
+    "answer": "AM = MB",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_032",
+    "question": "The eccentric angles of extremities of latus rectum of ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 are",
+    "options": [
+      "\\text{cosec}^{-1} \\pm \\frac{b}{ae}",
+      "\\cos^{-1} \\pm \\frac{b}{ae}",
+      "\\sin^{-1} \\pm \\frac{b}{ae}",
+      "\\tan^{-1} \\pm \\frac{b}{ae}"
+    ],
+    "answer": "\\tan^{-1} \\pm \\frac{b}{ae}",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_033",
+    "question": "If the point (x<sub>1</sub>, y<sub>1</sub>) lies on the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, then",
+    "options": [
+      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 > 0",
+      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 = 0",
+      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 < 0",
+      "None of these"
+    ],
+    "answer": "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 = 0",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_034",
+    "question": "If the point (x<sub>1</sub>, y<sub>1</sub>) lies inside the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, then",
+    "options": [
+      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 > 0",
+      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 = 0",
+      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 < 0",
+      "None of these"
+    ],
+    "answer": "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 < 0",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_035",
+    "question": "If SM and S'M' are perpendiculars from the foci to any tangent of the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 then SM &times; S'M' equals",
+    "options": [
+      "a^2",
+      "b^2",
+      "ab",
+      "ab"
+    ],
+    "answer": "b^2",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_036",
+    "question": "If the lines y = m<sub>1</sub>x and y = m<sub>2</sub>x are conjugate diameters of ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 then m<sub>1</sub>m<sub>2</sub> =",
+    "options": [
+      "-\\frac{b^2}{a^2}",
+      "\\frac{b^2}{a^2}",
+      "\\frac{a^2}{b^2}",
+      "-\\frac{a^2}{b^2}"
+    ],
+    "answer": "-\\frac{b^2}{a^2}",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_037",
+    "question": "The locus of midpoints of focal chords of ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is",
+    "options": [
+      "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = \\frac{eb}{a}",
+      "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = \\frac{ex}{b}",
+      "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = \\frac{ex}{a}",
+      "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = \\frac{ea}{x}"
+    ],
+    "answer": "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = \\frac{ex}{a}",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_038",
+    "question": "The polar of point (x<sub>1</sub>, y<sub>1</sub>) with respect to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is (e = eccentricity)",
+    "options": [
+      "T = S_1",
+      "T = S_1^2",
+      "T = S_1",
+      "T = 0"
+    ],
+    "answer": "T = 0",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_039",
+    "question": "The pole of line xx<sub>1</sub>/a<sup>2</sup> + yy<sub>1</sub>/b<sup>2</sup> = 1 with respect to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is",
+    "options": [
+      "(-x_1, y_1)",
+      "(x_1, y_1)",
+      "(x_1, -y_1)",
+      "(y_1, x_1)"
+    ],
+    "answer": "(x_1, y_1)",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ellipse_qn_040",
+    "question": "The locus of midpoints of normal chords of ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is",
+    "options": [
+      "(\\frac{x^2}{a^2} - \\frac{y^2}{b^2})^2 (\\frac{a^6}{x^2} + \\frac{b^6}{y^2}) = (a^2 - b^2)^2",
+      "(\\frac{x^2}{a^2} + \\frac{y^2}{b^2})^2 (\\frac{a^6}{x^2} + \\frac{b^6}{y^2}) = (a^2 - b^2)^2",
+      "(\\frac{x^2}{a^2} + \\frac{y^2}{b^2})^2 (\\frac{a^6}{x^2} - \\frac{b^6}{y^2}) = (a^2 - b^2)^2",
+      "(\\frac{x^2}{a^2} + \\frac{y^2}{b^2})^2 (\\frac{a^6}{x^2} + \\frac{b^6}{y^2}) = (a^2 + b^2)^2"
+    ],
+    "answer": "(\\frac{x^2}{a^2} + \\frac{y^2}{b^2})^2 (\\frac{a^6}{x^2} + \\frac{b^6}{y^2}) = (a^2 - b^2)^2",
+    "tags": {
+      "chapter": "ellipse",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  }
+]

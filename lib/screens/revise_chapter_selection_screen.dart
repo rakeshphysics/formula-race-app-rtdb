@@ -29,7 +29,7 @@ class _ReviseChapterSelectionScreenState extends State<ReviseChapterSelectionScr
       'Solid State','Chemical Equilibrium'
     ],
     'Maths': [
-      '3D Geometry','Vectors Math'
+      '3D Geometry','Ellipse'
     ],
   };
 
