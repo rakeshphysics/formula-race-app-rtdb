@@ -600,33 +600,63 @@ void _checkForNewBamboos() async {
             children: <Widget>[
 
               // --- MENU ITEMS ---
-          Container(
-          margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0), // Adds space around the item
-          decoration: BoxDecoration(
-            color: const Color(0xD00BCD4),
-            border: Border.all(
-              color: const Color(0xCC00BCD4), // Using a cyan color to match your exit dialog
-              width: 1.2,
-            ),
-            borderRadius: BorderRadius.circular(8.0),
-          ),
-              child: ListTile(
-                leading: const Icon(Icons.school_outlined, color: Color(
-                    0xCC00BCD4)), // An icon for learning/revising
-                title: Text(
-                  'Revise All Formulas',
-                  style: GoogleFonts.poppins(color: const Color(0xCCFFFFFF)),
+          // Container(
+          // margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0), // Adds space around the item
+          // decoration: BoxDecoration(
+          //   color: const Color(0xD00BCD4),
+          //   border: Border.all(
+          //     color: const Color(0xCC00BCD4), // Using a cyan color to match your exit dialog
+          //     width: 1.2,
+          //   ),
+          //   borderRadius: BorderRadius.circular(8.0),
+          // ),
+          //     child: ListTile(
+          //       leading: const Icon(Icons.school_outlined, color: Color(
+          //           0xCC00BCD4)), // An icon for learning/revising
+          //       title: Text(
+          //         'Revise All Formulas',
+          //         style: GoogleFonts.poppins(color: const Color(0xCCFFFFFF)),
+          //       ),
+          //       onTap: () {
+          //         Navigator.pop(context); // Close the drawer first
+          //         Navigator.push(
+          //           context,
+          //           MaterialPageRoute(
+          //             builder: (context) => const ReviseChapterSelectionScreen(),
+          //           ),
+          //         );
+          //       },
+          //     ),),
+
+              // REPLACE the "Revise All Formulas" Container in the Drawer with this:
+              Container(
+                margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+                decoration: BoxDecoration(
+                  color: const Color(0x1AFD698C), // Keeping your existing color style
+                  border: Border.all(
+                    color: const Color(0xCCFD698C),
+                    width: 1.2,
+                  ),
+                  borderRadius: BorderRadius.circular(8.0),
                 ),
-                onTap: () {
-                  Navigator.pop(context); // Close the drawer first
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const ReviseChapterSelectionScreen(),
-                    ),
-                  );
-                },
-              ),),
+                child: ListTile(
+                  leading: const Icon(Icons.assignment_late_outlined, color: Color(
+                      0xCCFD698C)), // Icon changed to represent Mistakes
+                  title: Text(
+                    'My Mistakes',
+                    style: GoogleFonts.poppins(color: const Color(0xCCFD698C)),
+                  ),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => AITrackerScreen(userId: widget.userId), // Navigate to Mistakes
+                      ),
+                    );
+                  },
+                ),
+              ),
 
 
               ListTile(
@@ -946,21 +976,46 @@ void _checkForNewBamboos() async {
 
                     SizedBox(height: screenWidth*0.06),
 
+                    // AnimatedButton(
+                    //   screenWidth: screenWidth,
+                    //   screenHeight: screenWidth,
+                    //   color: const Color(0xFF230000),
+                    //   onPressed: () {
+                    //     Navigator.push(
+                    //       context,
+                    //       MaterialPageRoute(builder: (context) => AITrackerScreen(userId: widget.userId)),
+                    //     );
+                    //   },
+                    //   gradientColors: const [Colors.red, Color(0xFF8B0000)], // Red gradient
+                    //   //color: const Color(0xFF000000), // Black background
+                    //   child: Text(
+                    //     'My Mistakes',
+                    //     style: TextStyle(fontSize: screenWidth * 0.053, color: Colors.redAccent, fontWeight: FontWeight.normal),
+                    //   ),
+                    // ),
+
+                    // REPLACE the "My Mistakes" AnimatedButton in the Body with this:
                     AnimatedButton(
                       screenWidth: screenWidth,
                       screenHeight: screenWidth,
-                      color: const Color(0xFF230000),
+                      color: const Color(0x33AE9B52), // Dark Cyan/Black background
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => AITrackerScreen(userId: widget.userId)),
+                          MaterialPageRoute(builder: (context) => const ReviseChapterSelectionScreen()), // Navigate to Revise
                         );
                       },
-                      gradientColors: const [Colors.red, Color(0xFF8B0000)], // Red gradient
-                      //color: const Color(0xFF000000), // Black background
+                      // Changed gradient to Cyan/Blue to match the "Learning" theme
+                      gradientColors: const [ Color(0xFFAE9B52), Color(
+                          0xFF503F01)],
                       child: Text(
-                        'My Mistakes',
-                        style: TextStyle(fontSize: screenWidth * 0.053, color: Colors.redAccent, fontWeight: FontWeight.normal),
+                        'Revise All Formulas',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontSize: screenWidth * 0.053,
+                            color: const Color(0xF2FFFFFF), // Changed text color to match
+                            fontWeight: FontWeight.normal
+                        ),
                       ),
                     ),
 
