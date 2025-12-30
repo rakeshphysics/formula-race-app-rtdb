@@ -121,7 +121,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
                 SizedBox(height: screenHeight * 0.04),
                 Text(
-                  'Physics Formulas',
+                  'JEE Mains/Adv Formulas',
                   style: GoogleFonts.poppins(
                     fontSize: screenWidth * 0.045,
                     color: const Color(0xFFD3D3D3),
@@ -143,21 +143,21 @@ class _SplashScreenState extends State<SplashScreen> {
           ),
 
           // The text fixed to the bottom of the screen
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 25),
-              child: Text(
-                'For JEE Mains/Adv',
-                textAlign: TextAlign.center,
-                style: GoogleFonts.poppins(
-                  fontSize: 18,
-                  color: const Color(0xFFD3D3D3),
-                  fontWeight: FontWeight.normal,
-                ),
-              ),
-            ),
-          ),
+          // Align(
+          //   alignment: Alignment.bottomCenter,
+          //   child: Padding(
+          //     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 25),
+          //     child: Text(
+          //       'For JEE Mains/Adv',
+          //       textAlign: TextAlign.center,
+          //       style: GoogleFonts.poppins(
+          //         fontSize: 18,
+          //         color: const Color(0xFFD3D3D3),
+          //         fontWeight: FontWeight.normal,
+          //       ),
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );

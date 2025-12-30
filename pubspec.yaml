@@ -134,6 +134,7 @@ flutter:
     - assets/images/12th/em_waves/
     - assets/images/12th/solid_state/
     - assets/images/12th/3d_geometry/
+    - assets/images/11th/ellipse/
     - assets/icon/
 
 dependency_overrides:

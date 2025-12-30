@@ -14,7 +14,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_001.svg",
     "tip": null
   },
   {
@@ -32,7 +32,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_002.svg",
     "tip": null
   },
   {
@@ -50,7 +50,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_003.svg",
     "tip": null
   },
   {
@@ -68,7 +68,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_004.svg",
     "tip": null
   },
   {
@@ -86,7 +86,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_005.svg",
     "tip": null
   },
   {
@@ -104,7 +104,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_006.riv",
     "tip": null
   },
   {
@@ -122,7 +122,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_007.svg",
     "tip": null
   },
   {
@@ -140,7 +140,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_008.svg",
     "tip": null
   },
   {
@@ -158,7 +158,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image":"assets/images/11th/ellipse/ellipse_qn_009.svg",
     "tip": null
   },
   {
@@ -176,7 +176,7 @@
       "difficulty": "god",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_010.svg",
     "tip": null
   },
   {
@@ -194,7 +194,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_011.svg",
     "tip": null
   },
   {
@@ -212,7 +212,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_012.svg",
     "tip": null
   },
   {
@@ -230,7 +230,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_013.svg",
     "tip": null
   },
   {
@@ -238,9 +238,9 @@
     "question": "The eccentric angle of point P on the ellipse is",
     "options": [
       "\\angle ACQ",
-      "\\angle CQM",
+      "\\angle CQA",
       "\\angle BCQ",
-      "\\angle QMC"
+      "\\angle QAC"
     ],
     "answer": "\\angle ACQ",
     "tags": {
@@ -248,7 +248,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_014.svg",
     "tip": null
   },
   {
@@ -266,7 +266,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_015.svg",
     "tip": null
   },
   {
@@ -284,7 +284,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_016.svg",
     "tip": null
   },
   {
@@ -302,7 +302,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_017.svg",
     "tip": null
   },
   {
@@ -320,7 +320,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_018.svg",
     "tip": null
   },
   {
@@ -338,8 +338,8 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
-    "tip": null
+    "image": "assets/images/11th/ellipse/ellipse_qn_019.riv",
+    "tip": "The director circle is the locus of point of intersection of two perpendicular tangents drawn to the ellipse"
   },
   {
     "id": "ellipse_qn_020",
@@ -356,7 +356,7 @@
       "difficulty": "god",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_020.svg",
     "tip": null
   },
   {
@@ -374,7 +374,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_021.svg",
     "tip": null
   },
   {
@@ -392,12 +392,12 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_022.svg",
     "tip": null
   },
   {
     "id": "ellipse_qn_023",
-    "question": "If a normal is drawn from a point on the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, then",
+    "question": "If a normal is drawn from a point on the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, then (S1 and S are foci of ellipse)",
     "options": [
       "\\theta_1 = 2\\theta_2",
       "\\theta_1 = \\theta_2",
@@ -410,7 +410,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_023.svg",
     "tip": null
   },
   {
@@ -446,7 +446,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_025.svg",
     "tip": null
   },
   {
@@ -464,7 +464,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_026.svg",
     "tip": null
   },
   {
@@ -518,7 +518,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_029.svg",
     "tip": null
   },
   {
@@ -536,7 +536,7 @@
       "difficulty": "god",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_030.svg",
     "tip": null
   },
   {
@@ -554,7 +554,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_031.svg",
     "tip": null
   },
   {
@@ -572,7 +572,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_032.svg",
     "tip": null
   },
   {
@@ -590,7 +590,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_033.svg",
     "tip": null
   },
   {
@@ -608,7 +608,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_034.svg",
     "tip": null
   },
   {
@@ -626,7 +626,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_035.svg",
     "tip": null
   },
   {
@@ -644,7 +644,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_036.svg",
     "tip": null
   },
   {
@@ -662,8 +662,8 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
-    "tip": null
+    "image": "assets/images/11th/ellipse/ellipse_qn_037.svg",
+    "tip": "The locus are smaller ellipse of same eccentricity such that one extremity is at origin and another at the focus. They are exact replicas but smaller, KIDS, TWINS !!"
   },
   {
     "id": "ellipse_qn_038",
@@ -680,7 +680,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_038.svg",
     "tip": null
   },
   {
@@ -698,7 +698,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/ellipse/ellipse_qn_039.svg",
     "tip": null
   },
   {
@@ -716,7 +716,7 @@
       "difficulty": "god",
       "class": "11"
     },
-    "image": null,
-    "tip": null
+    "image":"assets/images/11th/ellipse/ellipse_qn_040.svg",
+    "tip": "A Flower !!"
   }
 ]
