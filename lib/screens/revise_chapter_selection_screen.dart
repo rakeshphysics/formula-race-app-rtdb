@@ -45,12 +45,12 @@ class _ReviseChapterSelectionScreenState extends State<ReviseChapterSelectionScr
         });
       },
       style: ElevatedButton.styleFrom(
-        backgroundColor: isSelected ? subjectColors[subjectName] : subjectColors[subjectName]!.withOpacity(0.2),foregroundColor: Colors.white,
+        backgroundColor: isSelected ? subjectColors[subjectName] : Colors.grey[900]!,foregroundColor: Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(4),
           side: BorderSide(
-            color: subjectColors[subjectName]!,
-            width: isSelected ? 2.0 : 2.0,
+            color: isSelected ? subjectColors[subjectName]!: Colors.grey[800]!,
+            width: isSelected ? 2.0 : 1.5,
           ),
         ),
       ),
@@ -81,7 +81,7 @@ class _ReviseChapterSelectionScreenState extends State<ReviseChapterSelectionScr
       backgroundColor: Colors.black,
       appBar: AppBar(
         // 5. UPDATED AppBar to be more generic and have a back button by default
-        title: Text('Select Chapter to Revise', style: TextStyle(fontSize: screenWidth * 0.042, color: Color(0xD9FFFFFF))),
+        title: Text('Revise all Formulas', style: TextStyle(fontSize: screenWidth * 0.042, color: Color(0xD9FFFFFF))),
         backgroundColor: Colors.black,
         iconTheme: const IconThemeData(color: Color(0xD9FFFFFF)), // Ensure back arrow is white
       ),

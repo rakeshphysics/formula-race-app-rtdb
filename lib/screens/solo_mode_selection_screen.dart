@@ -224,7 +224,7 @@ class _SoloModeSelectionScreenState extends State<SoloModeSelectionScreen> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(4),
                 side: BorderSide(
-                  color: color,
+                  color: isSelected ? color: Colors.grey[800]!,
                   width: isSelected ? 2.0 : 1.5,
                 ),
               ),
@@ -388,7 +388,7 @@ class _SoloModeSelectionScreenState extends State<SoloModeSelectionScreen> {
         appBar: AppBar(
           backgroundColor: Colors.black,
           title: Text(
-            'Choose Subject & Portion',
+            'Play a Solo Game',
             style: TextStyle(fontSize: screenWidth * 0.042, color: const Color(0xD9FFFFFF)),
           ),
           iconTheme: const IconThemeData(color: Color(0xD9FFFFFF)),

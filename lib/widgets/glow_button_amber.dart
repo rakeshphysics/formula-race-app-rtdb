@@ -58,7 +58,7 @@ class _GlowButtonamberState extends State<GlowButtonamber> {
           onTapUp: _onTapUp,
           onTapCancel: _onTapCancel,
           borderRadius: BorderRadius.circular(4),
-          splashColor: Colors.amberAccent.withOpacity(0.2),
+          splashColor: widget.glowColor.withOpacity(0.2),
           child: Container(
             width: widget.width,
             height: widget.height,
@@ -69,14 +69,14 @@ class _GlowButtonamberState extends State<GlowButtonamber> {
               borderRadius: BorderRadius.circular(4),
               gradient: LinearGradient(
                 colors: [
-                  Colors.amberAccent.withOpacity(0.15),
+                  widget.glowColor.withOpacity(0.15),
                   Colors.transparent,
                 ],
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
               ),
               border: Border.all(
-                color: Colors.amberAccent.withOpacity(0.6),
+                color: widget.glowColor.withOpacity(0.6),
                 width: 1.3,
               ),
             ),

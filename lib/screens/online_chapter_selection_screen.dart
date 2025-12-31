@@ -15,48 +15,79 @@ import 'package:firebase_auth/firebase_auth.dart'; // Ensure FirebaseAuth is imp
 
 class OnlineChapterSelectionScreen extends StatelessWidget {
   final String userId;
+  final String subject;
 
   // You can customize this list with your real chapter names
-  final List<String> chapters = [
-    // Class 11
-    'Vectors',
-     'Units and Dimensions',
-    'Kinematics',
-    'Laws of Motion',
-    'Circular Motion',
-    'Work Power Energy',
-    'Center of Mass',
-    'Rotational Motion',
-    'Gravitation',
-    'Elasticity',
-    'Fluids',
-    'Thermodynamics',
-    'Kinetic Theory',
-    'SHM',
-    'Waves',
+  // final List<String> chapters = [
+  //   // Class 11
+  //   'Vectors',
+  //    'Units and Dimensions',
+  //   'Kinematics',
+  //   'Laws of Motion',
+  //   'Circular Motion',
+  //   'Work Power Energy',
+  //   'Center of Mass',
+  //   'Rotational Motion',
+  //   'Gravitation',
+  //   'Elasticity',
+  //   'Fluids',
+  //   'Thermodynamics',
+  //   'Kinetic Theory',
+  //   'SHM',
+  //   'Waves',
+  //
+  //   // Class 12
+  //   'Electrostatics',
+  //   'Capacitors',
+  //   'Current Electricity',
+  //   'Magnetism',
+  //   'EMI',
+  //   'AC',
+  //   'EM Waves',
+  //   'Ray Optics',
+  //   'Wave Optics',
+  //   'Dual Nature of Light',
+  //   'Atoms',
+  //   'Nuclei',
+  //   'X Rays',
+  //   'Semiconductors',
+  // ];
 
-    // Class 12
-    'Electrostatics',
-    'Capacitors',
-    'Current Electricity',
-    'Magnetism',
-    'EMI',
-    'AC',
-    'EM Waves',
-    'Ray Optics',
-    'Wave Optics',
-    'Dual Nature of Light',
-    'Atoms',
-    'Nuclei',
-    'X Rays',
-    'Semiconductors',
-  ];
+  OnlineChapterSelectionScreen({super.key, required this.userId,required this.subject,});
 
-  OnlineChapterSelectionScreen({super.key, required this.userId});
+  final Map<String, Color> subjectColors = {
+    'Physics': Colors.cyan.shade700.withOpacity(0.7),
+    'Chemistry': Colors.green.shade700.withOpacity(0.7),
+    'Maths': Colors.blue.shade700.withOpacity(0.7),
+  };
+
+  final Map<String, List<String>> subjectChapters = {
+    'Physics': [
+      'Vectors', 'Units and Dimensions', 'Kinematics', 'Laws of Motion',
+      'Circular Motion', 'Work Power Energy', 'Center of Mass', 'Rotational Motion',
+      'Gravitation', 'Elasticity', 'Fluids', 'Thermodynamics', 'Kinetic Theory',
+      'SHM', 'Waves', 'Electrostatics', 'Capacitors', 'Current Electricity',
+      'Magnetism', 'EMI', 'AC', 'EM Waves', 'Ray Optics', 'Wave Optics',
+      'Dual Nature of Light', 'Atoms', 'Nuclei', 'X Rays', 'Semiconductors',
+    ],
+    'Chemistry': [
+      'Solid State','Chemical Equilibrium',
+    ],
+    'Maths': [
+      '3D Geometry','Ellipse',
+    ],
+  };
+
+
+
 
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
+
+    final List<String> currentChapters = subjectChapters[subject] ?? subjectChapters['Physics']!;
+    final Color themeColor = subjectColors[subject] ?? Colors.amber;
+
     return WillPopScope(
         onWillPop: () async {
       await Navigator.pushReplacement(
@@ -69,14 +100,23 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
 
   child: Scaffold(
       backgroundColor: Colors.black,
-      appBar: AppBar(
-        title: Text('Select Chapter', style: TextStyle(fontSize:screenWidth*0.042,color: Color(0xD9FFFFFF),)),
-        backgroundColor: Colors.black,
+    appBar: AppBar(
+      // Show the subject in the title
+      title: Text(
+        '$subject Chapters',
+        style: TextStyle(fontSize: screenWidth * 0.042, color: const Color(0xD9FFFFFF)),
       ),
+      backgroundColor: Colors.black,
+      iconTheme: const IconThemeData(color: Color(0xD9FFFFFF)),
+    ),
+
+
+
+
       body: ListView(
         shrinkWrap: true,
         physics: const BouncingScrollPhysics(),
-        children: chapters.map((chapter) {
+        children: currentChapters.map((chapter) {
           return Padding(
             padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
             child: OutlinedButton(
@@ -89,7 +129,8 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
 
                 final createdMatchData = await MatchmakingService.createMatch(
                   userId, // Use userId directly from constructor
-                  gameMode: gameMode, // Pass the chapter-specific gameMode
+                  gameMode: gameMode,
+                  subject: subject,// Pass the chapter-specific gameMode
                 );
 
                 if (createdMatchData != null) {
@@ -114,8 +155,8 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
                 }
               },
               style: OutlinedButton.styleFrom(
-                backgroundColor: const Color(0x99201100),
-                side: BorderSide(color: Colors.amberAccent.withOpacity(0.6), width: 1.2),
+                backgroundColor: themeColor.withOpacity(0.1), // Subtle background tint
+                side: BorderSide(color: themeColor.withOpacity(0.6), width: 1.2),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4),
                 ),

@@ -6,6 +6,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:confetti/confetti.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:model_viewer_plus/model_viewer_plus.dart';
+import 'package:formularacing/widgets/rive_viewer.dart';
 
 class OnlineResultScreen extends StatefulWidget {
   final Map<dynamic, dynamic> scores;
@@ -287,34 +289,111 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
 
                           // ... inside the ListView.builder's itemBuilder
 
+                          // if (qa.imagePath != null && qa.imagePath!.isNotEmpty)
+                          //   Container(
+                          //     margin: const EdgeInsets.symmetric(vertical: 0),
+                          //     child: Center(
+                          //       child: SizedBox(
+                          //         width: screenWidth * 0.6,
+                          //         height: (screenWidth * 0.6) / 1.5,
+                          //         child: qa.imagePath!.endsWith('.svg')
+                          //             ? SvgPicture.asset(
+                          //           qa.imagePath!,
+                          //           fit: BoxFit.contain,
+                          //           placeholderBuilder: (context) => const SizedBox.shrink(),
+                          //         )
+                          //             : Image.asset(
+                          //           qa.imagePath!,
+                          //           fit: BoxFit.contain,
+                          //           errorBuilder: (context, error, stackTrace) {
+                          //             return const Text(
+                          //               'Image not found',
+                          //               style: TextStyle(color: Colors.redAccent),
+                          //             );
+                          //           },
+                          //         ),
+                          //       ),
+                          //     ),
+                          //   ),
+
+// ... rest of the code
+
                           if (qa.imagePath != null && qa.imagePath!.isNotEmpty)
                             Container(
                               margin: const EdgeInsets.symmetric(vertical: 0),
                               child: Center(
                                 child: SizedBox(
-                                  width: screenWidth * 0.6,
-                                  height: (screenWidth * 0.6) / 1.5,
-                                  child: qa.imagePath!.endsWith('.svg')
-                                      ? SvgPicture.asset(
-                                    qa.imagePath!,
-                                    fit: BoxFit.contain,
-                                    placeholderBuilder: (context) => const SizedBox.shrink(),
-                                  )
-                                      : Image.asset(
-                                    qa.imagePath!,
-                                    fit: BoxFit.contain,
-                                    errorBuilder: (context, error, stackTrace) {
-                                      return const Text(
-                                        'Image not found',
-                                        style: TextStyle(color: Colors.redAccent),
-                                      );
+                                  // WIDTH LOGIC
+                                  width: qa.imagePath!.endsWith('.glb')
+                                      ? screenWidth * 0.6
+                                      : qa.imagePath!.endsWith('.riv')
+                                      ? screenWidth * 0.65
+                                      : screenWidth * 0.62,
+
+                                  // HEIGHT LOGIC
+                                  height: qa.imagePath!.endsWith('.glb')
+                                      ? screenWidth * 0.6
+                                      : qa.imagePath!.endsWith('.riv')
+                                      ? (screenWidth * 0.65) / 1.5
+                                      : (screenWidth * 0.62) / 1.5,
+
+                                  child: Builder(
+                                    builder: (context) {
+                                      String path = qa.imagePath!;
+
+                                      // 1. Handle SVG
+                                      if (path.endsWith('.svg')) {
+                                        return Opacity(
+                                          opacity: 0.85,
+                                          child: SvgPicture.asset(
+                                            path,
+                                            fit: BoxFit.contain,
+                                            placeholderBuilder: (context) =>
+                                            const SizedBox.shrink(),
+                                          ),
+                                        );
+                                      }
+                                      // 2. Handle Rive Animation (.riv)
+                                      else if (path.endsWith('.riv')) {
+                                        return Opacity(
+                                          opacity: 0.8,
+                                          child: FormulaRiveViewer(
+                                            src:path,
+                                            //fit: BoxFit.contain,
+                                          ),
+                                        );
+                                      }
+                                      // 3. Handle 3D Model (.glb)
+                                      else if (path.endsWith('.glb')) {
+                                        return ModelViewer(
+                                          src: path,
+                                          alt: "3D Model",
+                                          autoRotate: true,
+                                          cameraControls: true,
+                                          backgroundColor: Colors.transparent,
+                                          disableZoom: false,
+                                        );
+                                      }
+                                      // 4. Handle Standard Images
+                                      else {
+                                        return Image.asset(
+                                          path,
+                                          fit: BoxFit.contain,
+                                          errorBuilder:
+                                              (context, error, stackTrace) {
+                                            return const Text(
+                                              'Image not found',
+                                              style: TextStyle(
+                                                  color: Colors.redAccent),
+                                            );
+                                          },
+                                        );
+                                      }
                                     },
                                   ),
                                 ),
                               ),
                             ),
-
-// ... rest of the code
 
 
                           Html(

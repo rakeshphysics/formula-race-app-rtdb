@@ -26,6 +26,9 @@ import '../models/online_incorrect_answer_model.dart';
 import 'package:provider/provider.dart';
 import '../quiz_data_provider.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:model_viewer_plus/model_viewer_plus.dart';
+import 'package:formularacing/widgets/rive_viewer.dart';
+
 
 
 // .............END................. Import Dependencies.........................
@@ -263,8 +266,9 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
   // ............. Chunk 2 STATE VARIABLES .............
   final int totalQuestions = 10;
-  final int questionDurationSeconds = 30;// ← control number of questions and progress bars
+  final int questionDurationSeconds = 60;// ← control number of questions and progress bars
   late String gameMode;
+  String subject = 'Physics';
 
   final DatabaseReference _database = FirebaseDatabase.instance.ref();
   final AudioPlayer audioPlayer = AudioPlayer();
@@ -302,50 +306,111 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
 // .............START................. This function stores the selected qns in game room so that
 // ................................... both players call the same 10 Qns..........................
+//   Future<void> loadQuestionsFromRoom() async {
+//    // print('✅🔰🟢DEBUG: loadQuestionsFromRoom started.');
+//     try {
+//       // Use Realtime Database to get match details including seed
+//       final matchSnapshot = await _database.child('matches/${widget.matchId}').get();
+//
+//       if (matchSnapshot.exists && matchSnapshot.value != null) {
+//         final matchData = Map<String, dynamic>.from(matchSnapshot.value as Map);
+//         final String subject = matchData['subject'] as String? ?? 'Physics';
+//         final seed = matchData['seed'] ?? 0; // Get seed directly from RTDB
+//         final fetchedGameMode = matchData['gameMode'] as String? ?? 'combined_11_12';
+//         //final qns = await getRandomQuestions(seed, fetchedGameMode, totalQuestions);
+//
+//         final quizProvider = Provider.of<QuizDataProvider>(context, listen: false);
+//         final List<Map<String, dynamic>> allQuestions = quizProvider.allQuizData.values.expand((list) => list).cast<Map<String, dynamic>>().toList();
+//         final qns = await getRandomQuestions(seed, fetchedGameMode, totalQuestions, allQuestions);
+//
+//         setState(() {
+//           questions = qns;
+//           gameMode = fetchedGameMode;
+//           isLoading = false;
+//         });
+//         ////////print("📋 Step 6: Questions assigned. Length = ${qns.length}");
+//       } else {
+//         ////////print('Room not found in RTDB: ${widget.matchId}');
+//         // Handle case where match might have been deleted while loading
+//         if (mounted) {
+//           Navigator.of(context).pop(); // Go back if match not found
+//           ScaffoldMessenger.of(context).showSnackBar(
+//             const SnackBar(content: Text('Match not found or deleted.')),
+//           );
+//         }
+//       }
+//     } catch (e) {
+//       ////////print('Error fetching room seed from RTDB: $e');
+//       if (mounted) {
+//         Navigator.of(context).pop(); // Go back on error
+//         ScaffoldMessenger.of(context).showSnackBar(
+//           SnackBar(content: Text('Error loading match: $e')),
+//         );
+//       }
+//     }
+//   }
+// .............END................. This function stores the selected qns in game room so that
+// ................................... both players call the same 10 Qns..........................
+// .............START................. This function stores the selected qns in game room
   Future<void> loadQuestionsFromRoom() async {
-   // print('✅🔰🟢DEBUG: loadQuestionsFromRoom started.');
     try {
       // Use Realtime Database to get match details including seed
       final matchSnapshot = await _database.child('matches/${widget.matchId}').get();
 
       if (matchSnapshot.exists && matchSnapshot.value != null) {
         final matchData = Map<String, dynamic>.from(matchSnapshot.value as Map);
-        final seed = matchData['seed'] ?? 0; // Get seed directly from RTDB
+
+        // 1. Get the Subject & GameMode
+        // REMOVED: final String subject = ... (This was causing the error)
+
+        final String fetchedSubject = matchData['subject'] as String? ?? 'Physics'; // Use this local variable for logic
+        final seed = matchData['seed'] ?? 0;
         final fetchedGameMode = matchData['gameMode'] as String? ?? 'combined_11_12';
-        //final qns = await getRandomQuestions(seed, fetchedGameMode, totalQuestions);
 
         final quizProvider = Provider.of<QuizDataProvider>(context, listen: false);
-        final List<Map<String, dynamic>> allQuestions = quizProvider.allQuizData.values.expand((list) => list).cast<Map<String, dynamic>>().toList();
-        final qns = await getRandomQuestions(seed, fetchedGameMode, totalQuestions, allQuestions);
+
+        // 2. STRICTLY SELECT THE SOURCE FILE BASED ON SUBJECT
+        String fileKey = 'full_syllabus_online_play'; // Default to Physics
+
+        // Use 'fetchedSubject' here for the check
+        if (fetchedSubject == 'Maths') {
+          fileKey = 'full_syllabus_online_play_maths';
+        } else if (fetchedSubject == 'Chemistry') {
+          fileKey = 'full_syllabus_online_play_chemistry';
+        }
+
+        // 3. Get ONLY the questions from that specific file
+        final List<Map<String, dynamic>> sourceQuestions =
+            quizProvider.allQuizData[fileKey]?.cast<Map<String, dynamic>>() ?? [];
+
+        // 4. Pass this specific list to the randomizer
+        final qns = await getRandomQuestions(seed, fetchedGameMode, totalQuestions, sourceQuestions);
 
         setState(() {
           questions = qns;
           gameMode = fetchedGameMode;
+          subject = fetchedSubject; // ✅ Now this correctly updates the class-level variable
           isLoading = false;
         });
-        ////////print("📋 Step 6: Questions assigned. Length = ${qns.length}");
       } else {
-        ////////print('Room not found in RTDB: ${widget.matchId}');
-        // Handle case where match might have been deleted while loading
         if (mounted) {
-          Navigator.of(context).pop(); // Go back if match not found
+          Navigator.of(context).pop();
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('Match not found or deleted.')),
           );
         }
       }
     } catch (e) {
-      ////////print('Error fetching room seed from RTDB: $e');
       if (mounted) {
-        Navigator.of(context).pop(); // Go back on error
+        Navigator.of(context).pop();
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error loading match: $e')),
         );
       }
     }
   }
-// .............END................. This function stores the selected qns in game room so that
-// ................................... both players call the same 10 Qns..........................
+// .............END.................
+
 
   @override
   void initState() {
@@ -550,7 +615,16 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     });
   }
 
-
+  Color _getSubjectColor() {
+    // You can adjust these specific shades to match your design preference
+    if (subject.contains('Chem')) {
+      return Colors.green.shade700.withOpacity(0.7);
+    } else if (subject.contains('Math')) {
+      return Colors.blue.shade700.withOpacity(0.7);
+    }
+    // Default to Physics (Cyan)
+    return Colors.cyan.shade700.withOpacity(0.7);
+  }
 
   // ............. Chunk 5 LISTEN TO QUESTION INDEX .............
   // ............. Chunk 5 LISTEN TO QUESTION INDEX .............
@@ -1155,6 +1229,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
+    final themeColor = _getSubjectColor();
     if (questions.isEmpty) {
       return const Scaffold(
         body: Center(child: CircularProgressIndicator()),
@@ -1189,15 +1264,15 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
-                      border: Border.all(color: Color(0xFFFFA500), width: 2), // Cyan border
-                      color: const Color(0x33FFA500),
+                      border: Border.all(color: themeColor, width: 2), // Cyan border
+                      color: themeColor.withOpacity(0.2),
                     ),
                     child: Row(
                       children: [
                         Text(
                           'YOU:  ',
                           style: TextStyle(
-                            color: Color(0xFFFFA500),
+                            color:  themeColor,
                             fontSize: screenWidth*0.042,
                             fontFamily: 'Roboto',
                             fontWeight: FontWeight.w700,
@@ -1208,7 +1283,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                         Text(
                           '$myScore',
                           style:  TextStyle(
-                            color: Color(0xFFFFA500),
+                            color:  themeColor,
                             fontSize: screenWidth*0.065,
                             fontWeight: FontWeight.w600,
                           ),
@@ -1229,15 +1304,16 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                     decoration: BoxDecoration(
 
                       borderRadius: BorderRadius.circular(4),
-                      border: Border.all(color: Color(0xFFFFA500), width: 2), // Amber-Orange border
-                      color: const Color(0x33FFA500),
+                      border: Border.all(color: themeColor, width: 2),
+                      // Use the dynamic theme color with opacity for the background
+                      color: themeColor.withOpacity(0.2),
                     ),
                     child: Row(
                       children: [
                         Text(
                         '$opponentScore',
                         style:  TextStyle(
-                          color: Color(0xFFFFA500),
+                          color: themeColor,
                           fontSize: screenWidth*0.065,
                           fontWeight: FontWeight.w600,
                         ),
@@ -1245,7 +1321,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                          Text(
                           '  :RIVAL',
                           style: TextStyle(
-                            color: Color(0xFFFFA500),
+                            color: themeColor,
                             fontSize: screenWidth*0.042,
                             fontFamily: 'Roboto',
                             fontWeight: FontWeight.w700,
@@ -1285,7 +1361,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                     child: LinearProgressIndicator(
                       value: value,
                       backgroundColor: Colors.grey.shade800,
-                      color: Color(0xD9FFA500),
+                      color: themeColor,
                       minHeight: 6,
                     ),
                   ),
@@ -1341,33 +1417,113 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
 // ... (inside the build method's Column)
 
-            if (currentQuestion['image'] != null &&
-                currentQuestion['image'].toString().isNotEmpty)
-              Container(
-                margin: const EdgeInsets.symmetric(vertical: 0),
-                child: Center(
-                  child: SizedBox(
-                    width: screenWidth * 0.6,
-                    height: (screenWidth * 0.6) / 1.5,
-                    child: currentQuestion['image'].endsWith('.svg')
-                        ? SvgPicture.asset(
-                      currentQuestion['image'],
-                      fit: BoxFit.contain,
-                      placeholderBuilder: (context) => const SizedBox.shrink(),
-                    )
-                        : Image.asset(
-                      currentQuestion['image'],
-                      fit: BoxFit.contain,
-                      errorBuilder: (context, error, stackTrace) {
-                        return const Text(
-                          'Image not found',
-                          style: TextStyle(color: Colors.redAccent),
-                        );
-                      },
-                    ),
-                  ),
-                ),
-              )
+            // if (currentQuestion['image'] != null &&
+            //     currentQuestion['image'].toString().isNotEmpty)
+            //   Container(
+            //     margin: const EdgeInsets.symmetric(vertical: 0),
+            //     child: Center(
+            //       child: SizedBox(
+            //         width: screenWidth * 0.6,
+            //         height: (screenWidth * 0.6) / 1.5,
+            //         child: currentQuestion['image'].endsWith('.svg')
+            //             ? SvgPicture.asset(
+            //           currentQuestion['image'],
+            //           fit: BoxFit.contain,
+            //           placeholderBuilder: (context) => const SizedBox.shrink(),
+            //         )
+            //             : Image.asset(
+            //           currentQuestion['image'],
+            //           fit: BoxFit.contain,
+            //           errorBuilder: (context, error, stackTrace) {
+            //             return const Text(
+            //               'Image not found',
+            //               style: TextStyle(color: Colors.redAccent),
+            //             );
+            //           },
+            //         ),
+            //       ),
+            //     ),
+            //   )
+
+          // IMAGE / MODEL / ANIMATION DISPLAY
+          if (currentQuestion['image'] != null &&
+          currentQuestion['image'].toString().isNotEmpty)
+        Container(
+    margin: const EdgeInsets.symmetric(vertical: 0),
+    child: Center(
+    child: SizedBox(
+    // WIDTH LOGIC
+    width: currentQuestion['image'].toString().endsWith('.glb')
+    ? screenWidth * 0.6
+        : currentQuestion['image'].toString().endsWith('.riv')
+    ? screenWidth * 0.65
+        : screenWidth * 0.62,
+
+    // HEIGHT LOGIC
+    height: currentQuestion['image'].toString().endsWith('.glb')
+    ? screenWidth * 0.6
+        : currentQuestion['image'].toString().endsWith('.riv')
+    ? (screenWidth * 0.65) / 1.5
+        : (screenWidth * 0.62) / 1.5,
+
+    child: Builder(
+    builder: (context) {
+    String imagePath = currentQuestion['image'].toString();
+
+    // 1. Handle SVG
+    if (imagePath.endsWith('.svg')) {
+    return Opacity(
+    opacity: 0.85,
+    child: SvgPicture.asset(
+    imagePath,
+    fit: BoxFit.contain,
+    placeholderBuilder: (context) =>
+    const SizedBox.shrink(),
+    ),
+    );
+    }
+    // 2. Handle Rive Animation (.riv)
+    else if (imagePath.endsWith('.riv')) {
+    return Opacity(
+    opacity: 0.8,
+    child: FormulaRiveViewer(
+    src: imagePath
+    //fit: BoxFit.contain,
+    ),
+    );
+    }
+    // 3. Handle 3D Model (.glb)
+    else if (imagePath.endsWith('.glb')) {
+    return ModelViewer(
+    src: imagePath,
+    alt: "3D Model",
+    autoRotate: true,
+    cameraControls: true,
+    backgroundColor: Colors.transparent,
+    disableZoom: false,
+    );
+    }
+    // 4. Handle Standard Images (PNG, JPG, etc.)
+    else {
+    return Image.asset(
+    imagePath,
+    fit: BoxFit.contain,
+    errorBuilder: (context, error, stackTrace) {
+    return const Text(
+    'Image not found',
+    style: TextStyle(color: Colors.redAccent),
+    );
+    },
+    );
+    }
+    },
+    ),
+    ),
+    ),
+    )
+
+
+
             else
             // If no image, use SizedBox.shrink() to take no space
               const SizedBox.shrink(),
