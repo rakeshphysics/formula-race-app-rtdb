@@ -772,6 +772,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
             incorrectAnswers: wrongAnswers,
             mode: widget.selectedChapter,
             responses: responses,
+            subject: widget.subject,
           ),
           settings: RouteSettings(arguments: totalQuestions),
         ),
@@ -817,6 +818,19 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 
   // ............. Chunk 6 PROGRESS BAR BUILDER .............
   Widget buildProgressBar() {
+    Color themeColor;
+    switch (widget.subject) {
+      case 'Chemistry':
+        themeColor = Colors.green.shade700;
+        break;
+      case 'Maths':
+        themeColor = Colors.blue.shade700;
+        break;
+      case 'Physics':
+      default:
+        themeColor = Colors.cyan.shade700;
+        break;
+    }
     return Row(
       children: List.generate(totalQuestions, (index) {
         double value;
@@ -833,7 +847,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
             child: LinearProgressIndicator(
               value: value,
               backgroundColor: Colors.grey.shade800,
-              color: const Color(0xD918FFFF),
+              color: themeColor,
               minHeight: 6,
             ),
           ),
@@ -848,9 +862,24 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     //print('😇😇--- SoloScreen build called for chapter: ${widget.selectedChapter}, currentIndex: $currentIndex ---'); // ADD THIS LINE
     final double screenWidth = MediaQuery.of(context).size.width;
     final double screenHeight = MediaQuery.of(context).size.height;
+
+    Color themeColor;
+    switch (widget.subject) {
+      case 'Chemistry':
+        themeColor = Colors.green.shade700;
+        break;
+      case 'Maths':
+        themeColor = Colors.blue.shade700;
+        break;
+      case 'Physics':
+      default:
+        themeColor = Colors.cyan.shade700;
+        break;
+    }
     if (questions.isEmpty) {
-      return const Scaffold(
-        body: Center(child: CircularProgressIndicator()),
+      return Scaffold(
+        backgroundColor: Colors.black,
+        body: Center(child: CircularProgressIndicator(color: themeColor)),
       );
     }
 
@@ -870,7 +899,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           context: context,
           builder: (context) => AlertDialog(shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(4),
-            side: BorderSide(color: Colors.cyan, width: 1.2),
+            side: BorderSide(color: themeColor, width: 1.2),
           ),
             backgroundColor: Color(0xFF000000),
             title: Text(
@@ -886,7 +915,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                   foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(4),
-                    side: BorderSide(color: Color(0xFF006C7A), width: 1.2),
+                    side: BorderSide(color: themeColor, width: 1.2),
                   ),
                   padding:  EdgeInsets.symmetric(horizontal: screenWidth * 0.04, vertical: screenHeight * 0.013),
                 ),
@@ -906,7 +935,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                 foregroundColor: Colors.white,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4),
-                  side: BorderSide(color: Color(0xFF006C7A), width: 1.2),
+                  side: BorderSide(color: themeColor, width: 1.2),
                 ),
                 padding:  EdgeInsets.symmetric(horizontal: screenWidth * 0.04, vertical: screenHeight * 0.013),
               ),
@@ -1048,6 +1077,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                 //   )
                 if (question['image'] != null && question['image'] != "")
                   Container(
+                    key: ValueKey(currentIndex),
                     margin: const EdgeInsets.symmetric(vertical: 0),
                     child: Center(
                       child: SizedBox(
@@ -1101,6 +1131,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                             : Image.asset(
                           question['image'],
                           fit: BoxFit.contain,
+                          key: ValueKey('img_$currentIndex'),
                         ),
                       ),
                     ),

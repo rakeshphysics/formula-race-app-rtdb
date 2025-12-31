@@ -6,13 +6,16 @@ class ChapterProgressButton extends StatelessWidget {
   final double percentage;
   final VoidCallback onPressed;
   final Color highlightColor;
+  final Color borderColor;
 
   const ChapterProgressButton({
     super.key,
     required this.chapterName,
     required this.percentage,
     required this.onPressed,
-    this.highlightColor = Colors.greenAccent, // Default to cyanAccent
+    this.highlightColor = Colors.greenAccent,
+    this.borderColor = Colors.cyan,
+    // Default to cyanAccent
   });
 
   Color _getFillColor(double percentage) {
@@ -21,7 +24,7 @@ class ChapterProgressButton extends StatelessWidget {
     } else if (percentage >= 40 && percentage <= 70) {
       return Colors.orangeAccent;
     } else {
-      return highlightColor; // Use the provided highlightColor (defaulting to cyanAccent)
+      return highlightColor;  // Use the provided highlightColor (defaulting to cyanAccent)
     }
   }
 
@@ -45,10 +48,10 @@ class ChapterProgressButton extends StatelessWidget {
         height: buttonHeight, // Use responsive height
         width: buttonWidth, // Use responsive width
         decoration: BoxDecoration(
-          color: const Color(0xB3001E1E), // Background color for the unfilled part
+          color: borderColor.withOpacity(0.15), // Background color for the unfilled part
           borderRadius: BorderRadius.circular(4),
           border: Border.all(
-            color: Colors.cyanAccent.withOpacity(0.85), // Outer border of the button
+            color: borderColor.withOpacity(0.6),  // Outer border of the button
             width: 1,
           ),
         ),
@@ -62,7 +65,7 @@ class ChapterProgressButton extends StatelessWidget {
                 width: buttonWidth * (percentage / 100),
                 height: buttonHeight, // Match parent button height
                 decoration: BoxDecoration(
-                  color: baseFillColor.withOpacity(0.43), // Fill color with transparency
+                  color: baseFillColor.withOpacity(0.3), // Fill color with transparency
                   borderRadius: BorderRadius.circular(4), // Apply border radius to the fill
                   border: Border.all( // Optional: Border for the fill color itself
                     color: Colors.white.withOpacity(0.1), // Subtle internal border

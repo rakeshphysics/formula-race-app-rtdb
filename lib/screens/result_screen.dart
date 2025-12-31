@@ -61,9 +61,10 @@ class ResultScreen extends StatefulWidget {
   final List<IncorrectAnswer> incorrectAnswers;
   final String mode;
   final List<Map<String, dynamic>> responses;
+  final String subject;
 
 
-  const ResultScreen({Key? key, required this.incorrectAnswers, required this.mode, required this.responses}) : super(key: key);
+  const ResultScreen({Key? key, required this.incorrectAnswers, required this.mode, required this.responses,this.subject = 'Physics',}) : super(key: key);
   @override
   State<ResultScreen> createState() => _ResultScreenState();
 }
@@ -115,6 +116,20 @@ class _ResultScreenState extends State<ResultScreen> {
     final int totalQuestions = ModalRoute.of(context)?.settings.arguments as int;
     final int score = totalQuestions - widget.incorrectAnswers.length;
 
+    Color themeColor;
+    switch (widget.subject) {
+      case 'Chemistry':
+        themeColor = Colors.green.shade700;
+        break;
+      case 'Maths':
+        themeColor = Colors.blue.shade700;
+        break;
+      case 'Physics':
+      default:
+        themeColor = Colors.cyan.shade700;
+        break;
+    }
+
     if (score == 10) _confetti10Controller.play();
     else if (score >= 8) _confetti8Controller.play();
     else if (score >= 6) _confetti6Controller.play();
@@ -156,7 +171,7 @@ class _ResultScreenState extends State<ResultScreen> {
                     'Your Score: $score / $totalQuestions',
                     style: GoogleFonts.hedvigLettersSerif(
                       fontSize: screenWidth*0.057, // Responsive font size
-                      color: const Color(0xD900FFFF),
+                      color: themeColor,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.5,
                     ),
@@ -174,7 +189,7 @@ class _ResultScreenState extends State<ResultScreen> {
                           Text(
                             '🎉 🎉',
                             style: TextStyle(
-                              color: Colors.green,
+                              color: themeColor,
                               fontSize: screenWidth*0.06,
                               fontWeight: FontWeight.normal,
                             ),
@@ -221,7 +236,7 @@ class _ResultScreenState extends State<ResultScreen> {
                             color: Color(0xFF000000),
                             borderRadius: BorderRadius.circular(12),
                             border: Border.all(
-                              color: const Color(0xD900FFFF), // Border color
+                              color: themeColor, // Border color
                               width: 0.8,            // Border thickness
                             ),
                           ),
@@ -524,9 +539,9 @@ class _ResultScreenState extends State<ResultScreen> {
           padding: const EdgeInsets.all(16.0),
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: Color(0x3500BCD4),
+              backgroundColor: themeColor.withOpacity(0.2),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(4),side: BorderSide(color: Colors.cyan, width: 1.2),
+                borderRadius: BorderRadius.circular(4),side: BorderSide(color: themeColor, width: 1.4),
 
               ),
               padding: const EdgeInsets.symmetric(vertical: 16),

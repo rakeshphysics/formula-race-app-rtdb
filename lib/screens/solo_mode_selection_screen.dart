@@ -140,9 +140,12 @@ class _SoloModeSelectionScreenState extends State<SoloModeSelectionScreen> {
 
   // Define colors for subjects (using the Gold/Bronze theme you requested previously)
   final Map<String, Color> subjectColors = {
-    'Physics': const Color(0x8000BCD4),
-    'Chemistry': const Color(0x8000BCD4),
-    'Maths': const Color(0x8000BCD4),
+    // 'Physics': const Color(0x8000BCD4),
+    // 'Chemistry': const Color(0x8000BCD4),
+    // 'Maths': const Color(0x8000BCD4),
+    'Physics': Colors.cyan.shade700.withOpacity(0.7),
+    'Chemistry': Colors.green.shade700.withOpacity(0.7),
+    'Maths': Colors.blue.shade700.withOpacity(0.7),
   };
 
   // Helper widget to build the subject selection buttons
@@ -194,12 +197,12 @@ class _SoloModeSelectionScreenState extends State<SoloModeSelectionScreen> {
           transform: isSelected ? Matrix4.identity().scaled(1.05) : Matrix4.identity().scaled(0.95),
           transformAlignment: Alignment.center, // <--- THIS FIXES THE SCALING ORIGIN
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.circular(4),
             boxShadow: isSelected
                 ? [
               BoxShadow(
                 color: color.withOpacity(0.3),
-                blurRadius: 12,
+                blurRadius: 0,
                 spreadRadius: 0,
                 offset: const Offset(0, 0),
               )
@@ -213,12 +216,13 @@ class _SoloModeSelectionScreenState extends State<SoloModeSelectionScreen> {
               });
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: isSelected ? color.withOpacity(0.1) : Colors.transparent,
+              //backgroundColor: isSelected ? color.withOpacity(0.1) : Colors.grey[900],
+              backgroundColor: isSelected ? color.withOpacity(0.1) : Colors.grey[900],
               foregroundColor: Colors.white,
               elevation: 0,
               padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 12),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8),
+                borderRadius: BorderRadius.circular(4),
                 side: BorderSide(
                   color: color,
                   width: isSelected ? 2.0 : 1.5,
@@ -230,10 +234,10 @@ class _SoloModeSelectionScreenState extends State<SoloModeSelectionScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               mainAxisSize: MainAxisSize.min,
               children: [
-                if (isSelected) ...[
-                  const Icon(Icons.check_circle, size: 18, color: Color(0xD9FFFFFF)),
-                  const SizedBox(width: 4),
-                ],
+                // if (isSelected) ...[
+                //   const Icon(Icons.check_circle, size: 18, color: Color(0xD9FFFFFF)),
+                //   const SizedBox(width: 4),
+                // ],
                 Flexible(
                   child: FittedBox(
                     fit: BoxFit.scaleDown,
@@ -384,19 +388,43 @@ class _SoloModeSelectionScreenState extends State<SoloModeSelectionScreen> {
         appBar: AppBar(
           backgroundColor: Colors.black,
           title: Text(
-            'Choose Portion',
+            'Choose Subject & Portion',
             style: TextStyle(fontSize: screenWidth * 0.042, color: const Color(0xD9FFFFFF)),
           ),
           iconTheme: const IconThemeData(color: Color(0xD9FFFFFF)),
         ),
-        body: Center( // Center everything on the screen
-          child: SingleChildScrollView(
+        // 1. REMOVED 'Center' WIDGET
+        body: SingleChildScrollView(
+          child: SizedBox(
+            width: double.infinity, // Ensures content is centered horizontally
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start, // Aligns content to top
+              crossAxisAlignment: CrossAxisAlignment.center, // Centers buttons horizontally
               children: [
-                // 1. SUBJECT SELECTION ROW (Now part of the centered block)
+                // 2. ADDED TOP SPACING
+                //SizedBox(height: screenHeight * 0.05),
+
+
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 0.0, left: 16.0, right: 16.0), // Add bottom spacing
+                  padding: const EdgeInsets.only(top: 0.0, bottom: 15.0),
+                  child: Text(
+                    "................................................................................................................................................",
+                    maxLines: 1,
+                    overflow: TextOverflow.clip, // Cuts off extra dots so it fits perfectly
+                    softWrap: false,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white.withOpacity(0.7),
+                      fontSize: 20,
+                      fontWeight: FontWeight.w900,
+                      letterSpacing: 1, // Adjust this to change space between dots
+                      height: 0.5, // Reduces vertical height
+                    ),
+                  ),
+                ),
+                // SUBJECT SELECTION ROW
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
@@ -407,22 +435,30 @@ class _SoloModeSelectionScreenState extends State<SoloModeSelectionScreen> {
                   ),
                 ),
 
-
                 Padding(
-                  padding: const EdgeInsets.only(top: 10.0, bottom: 50.0),// Spacing around the line
-                  child: Divider(
-                    color: Colors.white.withOpacity(0.3), // Subtle white line
-                    thickness: 2,
-                    indent: screenWidth * 0.02, // Leave 10% space on left
-                    endIndent: screenWidth * 0.02, // Leave 10% space on right
+                  padding: const EdgeInsets.only(top: 8.0, bottom: 40.0),
+                  child: Text(
+                    "................................................................................................................................................",
+                    maxLines: 1,
+                    overflow: TextOverflow.clip, // Cuts off extra dots so it fits perfectly
+                    softWrap: false,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white.withOpacity(0.7),
+                      fontSize: 20,
+                      fontWeight: FontWeight.w900,
+                      letterSpacing: 1, // Adjust this to change space between dots
+                      height: 0.5, // Reduces vertical height
+                    ),
                   ),
                 ),
 
-                // 2. MAIN BUTTONS
+                // MAIN BUTTONS
                 GlowButtonCyan(
                   label: 'Chapter Wise',
                   width: screenWidth * 0.8,
                   height: screenHeight * 0.08,
+                  glowColor: subjectColors[_selectedSubject]!,
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -440,6 +476,7 @@ class _SoloModeSelectionScreenState extends State<SoloModeSelectionScreen> {
                   label: 'Full 11th',
                   width: screenWidth * 0.8,
                   height: screenHeight * 0.08,
+                  glowColor: subjectColors[_selectedSubject]!,
                   onPressed: () {
                     _startSoloGame(context, 'full11');
                   },
@@ -449,6 +486,7 @@ class _SoloModeSelectionScreenState extends State<SoloModeSelectionScreen> {
                   label: 'Full 12th',
                   width: screenWidth * 0.8,
                   height: screenHeight * 0.08,
+                  glowColor: subjectColors[_selectedSubject]!,
                   onPressed: () {
                     _startSoloGame(context, 'full12');
                   },
@@ -458,10 +496,14 @@ class _SoloModeSelectionScreenState extends State<SoloModeSelectionScreen> {
                   label: '11th + 12th',
                   width: screenWidth * 0.8,
                   height: screenHeight * 0.08,
+                  glowColor: subjectColors[_selectedSubject]!,
                   onPressed: () {
                     _startSoloGame(context, 'fullBoth');
                   },
                 ),
+
+                // Bottom spacing for scrolling
+                SizedBox(height: screenHeight * 0.1),
               ],
             ),
           ),

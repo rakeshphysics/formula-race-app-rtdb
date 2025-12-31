@@ -45,6 +45,8 @@ void main() {
     '${baseDir}12/semiconductors.json',
     '${baseDir}12/wave_optics.json',
     '${baseDir}full_syllabus_online_play.json',
+    '${baseDir}full_syllabus_online_play_maths.json',
+    '${baseDir}full_syllabus_online_play_chemistry.json',
     '${baseDir}12/solid_state.json',
     '${baseDir}12/3d_geometry.json',
     '${baseDir}11/chemical_equilibrium.json',

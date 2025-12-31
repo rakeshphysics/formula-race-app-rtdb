@@ -20,7 +20,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 
 class ClearMistakesScreen extends StatefulWidget {
-  const ClearMistakesScreen({super.key});
+  final String subject;
+  const ClearMistakesScreen({super.key,required this.subject});
 
   @override
   State<ClearMistakesScreen> createState() => _ClearMistakesScreenState();

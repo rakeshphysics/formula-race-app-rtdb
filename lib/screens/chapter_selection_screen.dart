@@ -285,6 +285,12 @@ class ChapterSelectionScreen extends StatefulWidget {
 
 class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
 
+
+  final Map<String, Color> subjectColors = {
+    'Physics': Colors.cyan.shade700,
+    'Chemistry': Colors.green.shade700,
+    'Maths': Colors.blue.shade700,
+  };
   // 2. DEFINED CHAPTERS FOR ALL SUBJECTS
   final Map<String, List<String>> allChapters = {
     'Physics': [
@@ -362,7 +368,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
     final quizProvider = Provider.of<QuizDataProvider>(context);
-
+    final Color themeColor = subjectColors[widget.subject] ?? Colors.cyan;
     return WillPopScope(
       onWillPop: () async {
         await Navigator.pushReplacement(
@@ -377,10 +383,23 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
           // 4. UPDATED TITLE TO SHOW SUBJECT NAME
           title: Text(
               'Select ${widget.subject} Chapter',
-              style: TextStyle(fontSize: screenWidth * 0.042, color: const Color(0xD9FFFFFF))
+              style: TextStyle(fontSize: screenWidth * 0.042, color: const Color(0xD9FFFFFF),shadows: [
+                Shadow(
+                  blurRadius: 10.0,
+                  color: themeColor.withOpacity(0.5),
+                  offset: const Offset(0, 0),
+                ),
+              ],)
           ),
           backgroundColor: Colors.black,
           iconTheme: const IconThemeData(color: Color(0xD9FFFFFF)),
+          bottom: PreferredSize(
+            preferredSize: const Size.fromHeight(1.0),
+            child: Container(
+              color: themeColor.withOpacity(0.3), // Colored divider under AppBar
+              height: 1.0,
+            ),
+          ),
         ),
         body: SafeArea(
           child: Column(
@@ -415,6 +434,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
                           chapterName: chapter,
                           percentage: percentage,
                           highlightColor: Colors.greenAccent,
+                          borderColor: themeColor,
                           onPressed: () {
                             final String gameSessionId = DateTime.now().millisecondsSinceEpoch.toString();
                             Navigator.push(
@@ -424,6 +444,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
                                   selectedChapter: chapter,
                                   userId: widget.userId,
                                   game_session_id: gameSessionId,
+                                  subject: widget.subject,
                                   // Note: You might need to pass 'subject' to SoloScreen too if it needs it
                                 ),
                               ),

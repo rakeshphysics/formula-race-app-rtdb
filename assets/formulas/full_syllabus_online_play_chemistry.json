@@ -1,0 +1,905 @@
+[
+  {
+    "id": "chemical_equilibrium_qn_001",
+    "question": "For the reaction aA + bB &rightleftharpoons; cC + dD, the value of equilibrium constant K<sub>c</sub> is given by (All concentrations given below are at equilibrium):",
+    "options": [
+      "\\frac{[C][D]}{[A][B]}",
+      "\\frac{[A][B]}{[C][D]}",
+      "\\frac{[C]^c [D]^d}{[A]^a [B]^b}",
+      "\\frac{[A]^a [B]^b}{[C]^c [D]^d}"
+    ],
+    "answer": "\\frac{[C]^c [D]^d}{[A]^a [B]^b}",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_002",
+    "question": "For the reaction aA + bB &rightleftharpoons; cC + dD, the value of equilibrium constant K<sub>p</sub> is given by (All partial pressures given below are at equilibrium):",
+    "options": [
+      "\\frac{p_C p_D}{p_A p_B}",
+      "\\frac{p_A p_B}{p_C p_D}",
+      "\\frac{p_C^c \\cdot p_D^d}{p_A^a \\cdot p_B^b}",
+      "\\frac{p_A^a \\cdot p_B^b}{p_C^c \\cdot p_D^d}"
+    ],
+    "answer": "\\frac{p_C^c \\cdot p_D^d}{p_A^a \\cdot p_B^b}",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_003",
+    "question": "The correct relation between K<sub>c</sub> and K<sub>p</sub> is (T = Absolute temperature, &Delta;n<sub>g</sub> = n<sub>products</sub> - n<sub>reactants</sub>):",
+    "options": [
+      "K_p = K_c [RT]^{\\Delta n_g}",
+      "K_c = K_p [RT]^{\\Delta n_g}",
+      "K_p = K_c [RT]^{-\\Delta n_g}",
+      "K_p = K_c [RT \\Delta n_g]"
+    ],
+    "answer": "K_p = K_c [RT]^{\\Delta n_g}",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_004",
+    "question": "The partial pressure of a gas p equals ( [gas] = concentration of gas, T = Absolute temperature):",
+    "options": [
+      "[gas]RT",
+      "\\frac{[gas]}{RT}",
+      "\\frac{RT}{[gas]}",
+      "\\frac{1}{[gas]RT}"
+    ],
+    "answer": "[gas]RT",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_005",
+    "question": "The units of equilibrium constant K<sub>p</sub> are:",
+    "options": [
+      "mol \\cdot L^{\\Delta n_g}",
+      "mol \\cdot L^{-\\Delta n_g}",
+      "atm^{-\\Delta n_g}",
+      "atm^{\\Delta n_g}"
+    ],
+    "answer": "atm^{\\Delta n_g}",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_006",
+    "question": "The units of equilibrium constant K<sub>c</sub> are:",
+    "options": [
+      "(mol/L)^{\\Delta n_g}",
+      "(mol/L)^{-\\Delta n_g}",
+      "atm^{-\\Delta n_g}",
+      "atm^{\\Delta n_g}"
+    ],
+    "answer": "(mol/L)^{\\Delta n_g}",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_007",
+    "question": "For the reaction aA + bB &rightleftharpoons; cC + dD, the value of Reaction Quotient Q<sub>c</sub> is given by (All concentrations given below are at any time):",
+    "options": [
+      "\\frac{[C][D]}{[A][B]}",
+      "\\frac{[A][B]}{[C][D]}",
+      "\\frac{[C]^c [D]^d}{[A]^a [B]^b}",
+      "\\frac{[A]^a [B]^b}{[C]^c [D]^d}"
+    ],
+    "answer": "\\frac{[C]^c [D]^d}{[A]^a [B]^b}",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_008",
+    "question": "The equilibrium constant K<sub>c</sub> is correctly given by the relation (T = temperature, &Delta;G<sup>&ominus;</sup> = standard Gibbs free energy change):",
+    "options": [
+      "e^{-\\Delta G^{\\ominus}/RT}",
+      "e^{\\Delta G^{\\ominus}/RT}",
+      "e^{\\Delta G^{\\ominus}RT}",
+      "e^{-\\Delta G^{\\ominus}RT}"
+    ],
+    "answer": "e^{-\\Delta G^{\\ominus}/RT}",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_009",
+    "question": "For the reaction AB &rightleftharpoons; A + B, if the initial number of moles of AB is a and x moles dissociate in equilibrium, then the degree of dissociation &alpha; is given by:",
+    "options": [
+      "1 - \\frac{x}{a}",
+      "\\frac{x}{a}",
+      "\\frac{2x}{a}",
+      "1 - \\frac{x}{a^2}"
+    ],
+    "answer": "\\frac{x}{a}",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_equilibrium_qn_010",
+    "question": "The variation of equilibrium constant with temperature is given by (K<sub>1</sub>, K<sub>2</sub> = equilibrium constants at temperatures T<sub>1</sub>, T<sub>2</sub>, &Delta;H<sup>o</sup> = enthalpy of reaction, R = gas constant):",
+    "options": [
+      "\\ln \\frac{K_2}{K_1} = \\frac{\\Delta H^o}{2.303R} \\left( \\frac{T_1 - T_2}{T_1 + T_2} \\right)",
+      "\\ln \\frac{K_2}{K_1} = \\frac{\\Delta H^o}{R} \\left( \\frac{T_1 - T_2}{T_1 T_2} \\right)",
+      "\\ln \\frac{K_2}{K_1} = \\frac{\\Delta H^o}{R} \\left( \\frac{T_2 - T_1}{T_1 T_2} \\right)",
+      "\\ln \\frac{K_2}{K_1} = \\frac{\\Delta H^o}{R} \\left( \\frac{T_1 + T_2}{T_1 - T_2} \\right)"
+    ],
+    "answer": "\\ln \\frac{K_2}{K_1} = \\frac{\\Delta H^o}{R} \\left( \\frac{T_2 - T_1}{T_1 T_2} \\right)",
+    "tags": {
+      "chapter": "Chemical Equilibrium",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+
+    {
+      "id": "solid_state_qn_001",
+      "question": "Braggs equation is given by (n = integer, &lambda; = wavelength of incident X rays, &theta; = glancing angle)",
+      "options": [
+        "2d \\sin \\theta = n\\lambda",
+        "d \\sin \\theta = n\\lambda",
+        "d \\sin \\theta = 2n\\lambda",
+        "3d \\sin \\theta = n\\lambda"
+      ],
+      "answer": "2d \\sin \\theta = n\\lambda",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image":"assets/images/12th/solid_state/solid_state_qn_001.svg",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_002",
+      "question": "The number of atoms in a primitive unit cell is",
+      "options": [
+        "1",
+        "2",
+        "8",
+        "4"
+      ],
+      "answer": "1",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_002.glb",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_003",
+      "question": "The number of atoms in a Body centered cubic (BCC) unit cell is",
+      "options": [
+        "4",
+        "2",
+        "8",
+        "9"
+      ],
+      "answer": "2",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_003.glb",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_004",
+      "question": "The number of atoms in a face centered cubic (FCC) unit cell is",
+      "options": [
+        "14",
+        "2",
+        "4",
+        "9"
+      ],
+      "answer": "4",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_004.glb",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_005",
+      "question": "The number of atoms in an end centered unit cell is",
+      "options": [
+        "14",
+        "2",
+        "4",
+        "9"
+      ],
+      "answer": "2",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_005.glb",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_006",
+      "question": "The coordination number of Simple cubic, BCC and FCC is ________, ________, ________ respectively",
+      "options": [
+        "8, 12, 6",
+        "12, 8, 6",
+        "6, 6, 12",
+        "6, 8, 12"
+      ],
+      "answer": "6, 8, 12",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_007",
+      "question": "For a simple cubic system, the packing efficiency is",
+      "options": [
+        "52.4 \\%",
+        "68 \\%",
+        "74 \\%",
+        "90 \\%"
+      ],
+      "answer": "52.4 \\%",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_008",
+      "question": "For a FCC (HCP and CCP), the packing efficiency is",
+      "options": [
+        "52.4 \\%",
+        "68 \\%",
+        "74 \\%",
+        "90 \\%"
+      ],
+      "answer": "74 \\%",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_009",
+      "question": "For a BCC the packing efficiency is",
+      "options": [
+        "52.4 \\%",
+        "68 \\%",
+        "74 \\%",
+        "90 \\%"
+      ],
+      "answer": "68 \\%",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_010",
+      "question": "The density of a unit cell is (Z = number of atoms per unit cell, M = molecular weight, a = edge length of unit cell, N<sub>A</sub> = Avogadro number)",
+      "options": [
+        "\\frac{2ZM}{a^2 N_A}",
+        "\\frac{ZM}{a^2 N_A}",
+        "\\frac{ZM}{a^3 N_A}",
+        "\\frac{2ZM}{a^3 N_A}"
+      ],
+      "answer": "\\frac{ZM}{a^3 N_A}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_011",
+      "question": "The contribution of a particle to a unit cell when it is at its corner is",
+      "options": [
+        "1/2",
+        "1/8",
+        "1/3",
+        "1"
+      ],
+      "answer": "1/8",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_011.glb",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_012",
+      "question": "The contribution of a particle to a unit cell when it is at a face centre is",
+      "options": [
+        "1/2",
+        "1/8",
+        "1/3",
+        "1"
+      ],
+      "answer": "1/2",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_013",
+      "question": "The contribution of a particle to a unit cell when it is at its body centre is",
+      "options": [
+        "1/2",
+        "1/8",
+        "1/3",
+        "1"
+      ],
+      "answer": "1",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_014",
+      "question": "For a simple cubic unit cell the relation between edge length a and atomic radius r is",
+      "options": [
+        "a = \\frac{4r}{\\sqrt{3}}",
+        "a = 2r",
+        "a = 2\\sqrt{2}r",
+        "a = \\sqrt{2}r"
+      ],
+      "answer": "a = 2r",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_014.glb",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_015",
+      "question": "For a BCC unit cell the relation between edge length a and atomic radius r is",
+      "options": [
+        "a = \\frac{4r}{\\sqrt{3}}",
+        "a = 2r",
+        "a = 2\\sqrt{2}r",
+        "a = \\sqrt{2}r"
+      ],
+      "answer": "a = \\frac{4r}{\\sqrt{3}}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_015.glb",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_016",
+      "question": "For a FCC unit cell the relation between edge length a and atomic radius r is",
+      "options": [
+        "a = \\frac{4r}{\\sqrt{3}}",
+        "a = 2r",
+        "a = 2\\sqrt{2}r",
+        "a = \\sqrt{2}r"
+      ],
+      "answer": "a = 2\\sqrt{2}r",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_016.glb",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_017",
+      "question": "The void that you see below is a _____ void",
+      "options": [
+        "\\text{Trigonal}",
+        "\\text{Tetrahedral}",
+        "\\text{Octahedral}",
+        "\\text{Cubic}"
+      ],
+      "answer": "\\text{Trigonal}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_017.glb",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_018",
+      "question": "The void that you see below is a _____ void and its radius is _____ the radius of sphere",
+      "options": [
+        "\\text{Trigonal, 0.414}",
+        "\\text{Tetrahedral, 0.225}",
+        "\\text{Octahedral, 0.414}",
+        "\\text{Octahedral, 0.225}"
+      ],
+      "answer": "\\text{Tetrahedral, 0.225}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_018.glb",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_019",
+      "question": "The void that you see below is a _____ void and its radius is _____ the radius of sphere",
+      "options": [
+        "\\text{Trigonal, 0.225}",
+        "\\text{Tetrahedral, 0.414}",
+        "\\text{Octahedral, 0.414}",
+        "\\text{Octahedral, 0.225}"
+      ],
+      "answer": "\\text{Octahedral, 0.414}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_019.glb",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_020",
+      "question": "The Coordination number _____ with increase in temperature and _____ with increase in pressure",
+      "options": [
+        "\\text{Increases, Decreases}",
+        "\\text{Decreases, Increases}",
+        "\\text{Decreases, Decreases}",
+        "\\text{Increases, Increases}"
+      ],
+      "answer": "\\text{Decreases, Increases}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_021",
+      "question": "The crystal system characterized by the axial relationship a = b &ne; c and &alpha; = &beta; = &gamma; = 90<sup>o</sup> is",
+      "options": [
+        "\\text{Monoclinic}",
+        "\\text{Cubic}",
+        "\\text{Orthorhombic}",
+        "\\text{Tetragonal}"
+      ],
+      "answer": "\\text{Tetragonal}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_021.svg",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_022",
+      "question": "The most asymmetrical crystal system a &ne; b &ne; c and &alpha; &ne; &beta; &ne; &gamma; &ne; 90<sup>o</sup> is",
+      "options": [
+        "\\text{Monoclinic}",
+        "\\text{Cubic}",
+        "\\text{Triclinic}",
+        "\\text{Rhombohedral}"
+      ],
+      "answer": "\\text{Triclinic}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_022.svg",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_023",
+      "question": "A unit cell with a = b = c and &alpha; = &beta; = &gamma; &ne; 90<sup>o</sup> is",
+      "options": [
+        "\\text{Monoclinic}",
+        "\\text{Cubic}",
+        "\\text{Triclinic}",
+        "\\text{Rhombohedral}"
+      ],
+      "answer": "\\text{Rhombohedral}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_023.svg",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_024",
+      "question": "The monoclinic system is characterized by which relation ship",
+      "options": [
+        "a \\neq b \\neq c \\text{ and } \\alpha = \\beta \\neq \\gamma = 90^o",
+        "a = b \\neq c \\text{ and } \\alpha \\neq \\beta \\neq \\gamma = 90^o",
+        "a \\neq b \\neq c \\text{ and } \\alpha = \\gamma = 90^o, \\beta \\neq 90^o",
+        "a = b = c \\text{ and } \\alpha = \\gamma = 90^o, \\beta \\neq 90^o"
+      ],
+      "answer": "a \\neq b \\neq c \\text{ and } \\alpha = \\gamma = 90^o, \\beta \\neq 90^o",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_024.svg",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_025",
+      "question": "For the orthorhombic system, the edge length relationship is",
+      "options": [
+        "a \\neq b \\neq c",
+        "a = b \\neq c",
+        "a \\neq b = c",
+        "a = b = c"
+      ],
+      "answer": "a \\neq b \\neq c",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_025.svg",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_026",
+      "question": "The number of octahedral voids in a lattice equals ________ to the number of closed packed particles",
+      "options": [
+        "\\text{Twice}",
+        "\\text{Equal}",
+        "\\text{Three times}",
+        "\\text{Four times}"
+      ],
+      "answer": "\\text{Equal}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_026.glb",
+      "tip": "The 3D model is an FCC. Total number of atoms are 4. The red cubes are octahedral voids. We have one at body centre and 12 at edge centres. The contribution of each edge centre is 1/4 and body centre is 1. So total voids = 4 = number of particles. One Facecentre particle is removed so you can peek inside !!"
+    },
+    {
+      "id": "solid_state_qn_027",
+      "question": "The number of tetrahedral voids in a lattice equals ________ the number of closed packed particles",
+      "options": [
+        "\\text{Twice}",
+        "\\text{Equal}",
+        "\\text{Three times}",
+        "\\text{Four times}"
+      ],
+      "answer": "\\text{Twice}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_027.glb",
+      "tip": "The 3D model is an FCC. One corner particle and 3 face centre particles form a tetrahedral void. On each body diagonal we have 2 voids. So total number of voids = 8 = Twice total number of particles. One face centre particle is removed so you can peek inside!!"
+    },
+    {
+      "id": "solid_state_qn_028",
+      "question": "The value of &gamma; for the hexagonal crystal system is",
+      "options": [
+        "60",
+        "90",
+        "120",
+        "104"
+      ],
+      "answer": "120",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_028.svg",
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_029",
+      "question": "The crystal system with maximum number of bravais lattice is",
+      "options": [
+        "\\text{Cubic}",
+        "\\text{Orthorhombic}",
+        "\\text{Tetragonal}",
+        "\\text{Monoclinic}"
+      ],
+      "answer": "\\text{Orthorhombic}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_030",
+      "question": "Schottky defect ________ density of crystal and Frenkel Defect ________ the density of crystal",
+      "options": [
+        "\\text{Dec, Inc}",
+        "\\text{Dec, Dec}",
+        "\\text{Inc, Dec}",
+        "\\text{Dec, No Effect}"
+      ],
+      "answer": "\\text{Dec, No Effect}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_031",
+      "question": "The radius ratio of an ionic crystal structure is given by (r<sup>+</sup> = radius of cation, r<sup>-</sup> = radius of anion)",
+      "options": [
+        "r^- / r^+",
+        "r^+ + r^-",
+        "r^+ / r^-",
+        "r^+ - r^-"
+      ],
+      "answer": "r^+ / r^-",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_032",
+      "question": "The coordination number for cation and anion in fluorite (CaF<sub>2</sub>) structure is",
+      "options": [
+        "8:4",
+        "4:8",
+        "8:8",
+        "6:6"
+      ],
+      "answer": "8:4",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_032.glb",
+      "tip": "Calcium ion forms FCC, F ions occupy tetrahedral voids. Ca is black and F are the cubes in 3D model "
+    },
+    {
+      "id": "solid_state_qn_033",
+      "question": "A crystal structure with radius ratio 0.85 is most likely to adopt which structure",
+      "options": [
+        "\\text{Octahedral, NaCl}",
+        "\\text{Cube, CsCl}",
+        "\\text{Tetrahedral, ZnS}",
+        "\\text{Linear}"
+      ],
+      "answer": "\\text{Cube, CsCl}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_033.glb",
+      "tip": "Cs sits at body centre and Cl are on the corners. Vice versa is also fine"
+    },
+    {
+      "id": "solid_state_qn_034",
+      "question": "A crystal structure with radius ratio 0.6 is most likely to adopt which structure",
+      "options": [
+        "\\text{Octahedral, NaCl}",
+        "\\text{Cube, CsCl}",
+        "\\text{Tetrahedral, ZnS}",
+        "\\text{Linear}"
+      ],
+      "answer": "\\text{Octahedral, NaCl}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_034.glb",
+      "tip": "Cl is in an FCC framework and Na sits in all octahedral voids. In the 3D model, spheres are Cl and cubes are Na"
+    },
+    {
+      "id": "solid_state_qn_035",
+      "question": "A crystal structure with radius ratio 0.35 is most likely to adopt which structure",
+      "options": [
+        "\\text{Octahedral, NaCl}",
+        "\\text{Cube, CsCl}",
+        "\\text{Tetrahedral, ZnS}",
+        "\\text{Linear}"
+      ],
+      "answer": "\\text{Tetrahedral, ZnS}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solid_state/solid_state_qn_035.glb",
+      "tip": "In 3D model, the spheres are Sulphur and Zn are the cubes. Notice exactly half the tetrahedral voids are filled. I removed one Face centre sphere, so you can peek inside !!"
+    },
+    {
+      "id": "solid_state_qn_036",
+      "question": "A crystal structure with radius ratio 0.22 is most likely to adopt which structure",
+      "options": [
+        "\\text{Octahedral, NaCl}",
+        "\\text{Cube, CsCl}",
+        "\\text{Tetrahedral, ZnS}",
+        "\\text{Linear}"
+      ],
+      "answer": "\\text{Linear}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_037",
+      "question": "In NaCl structure, which positions do the cations(C) and anions(A) occupy to maintain a 6 : 6 coordination",
+      "options": [
+        "\\text{C: Octahedral Voids, A: FCC}",
+        "\\text{C: Tetrahedral Voids, A: FCC}",
+        "\\text{C: Body Center, A: Cubic}",
+        "\\text{A: Body Center, C: Cubic}"
+      ],
+      "answer": "\\text{C: Octahedral Voids, A: FCC}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_038",
+      "question": "In Antiflourite structure (Na<sub>2</sub>O), the sodium ions are located in ________ voids",
+      "options": [
+        "\\text{All Octahedral}",
+        "\\text{At Facecentre}",
+        "\\text{Alt Tetrahedral}",
+        "\\text{All Tetrahedral}"
+      ],
+      "answer": "\\text{All Tetrahedral}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_039",
+      "question": "The radius ratio of an ionic crystal falls in range 0.225 to 0.414, The expected coordination number and shape of crystal is",
+      "options": [
+        "\\text{3, Triangular}",
+        "\\text{6, Octahedral}",
+        "\\text{4, Tetrahedral}",
+        "\\text{8, Cubic}"
+      ],
+      "answer": "\\text{4, Tetrahedral}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solid_state_qn_040",
+      "question": "A certain ionic crystal has a large difference in size of its cations and anions and low coordination number, Which defect does this crystal exibit ?",
+      "options": [
+        "\\text{Schottky}",
+        "\\text{Frenkel}",
+        "\\text{Metal excess}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{Frenkel}",
+      "tags": {
+        "chapter": "Solid State",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    }
+
+
+]

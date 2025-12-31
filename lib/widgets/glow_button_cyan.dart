@@ -60,7 +60,8 @@ class _GlowButtonCyanState extends State<GlowButtonCyan> {
           onTapUp: _onTapUp,
           onTapCancel: _onTapCancel,
           borderRadius: BorderRadius.circular(4),
-          splashColor: Colors.cyanAccent.withOpacity(0.2),
+          // splashColor: Colors.cyanAccent.withOpacity(0.2),
+         splashColor: widget.glowColor.withOpacity(0.2),
           child: Container(
             width: widget.width,
             height: widget.height,
@@ -71,14 +72,15 @@ class _GlowButtonCyanState extends State<GlowButtonCyan> {
               borderRadius: BorderRadius.circular(4),
               gradient: LinearGradient(
                 colors: [
-                  Colors.cyanAccent.withOpacity(0.15),
+                  widget.glowColor.withOpacity(0.2),
                   Colors.transparent,
                 ],
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
               ),
               border: Border.all(
-                color: Colors.cyanAccent.withOpacity(0.6),
+                // color: Colors.cyanAccent.withOpacity(0.6),
+                color: widget.glowColor.withOpacity(0.6),
                 width: 1.3,
               ),
             ),

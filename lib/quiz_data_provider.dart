@@ -43,6 +43,8 @@ class QuizDataProvider extends ChangeNotifier {
       'assets/formulas/12/semiconductors.aes',
       'assets/formulas/12/wave_optics.aes',
       'assets/formulas/full_syllabus_online_play.aes',
+      'assets/formulas/full_syllabus_online_play_chemistry.aes',
+      'assets/formulas/full_syllabus_online_play_maths.aes',
       'assets/formulas/12/solid_state.aes',
       'assets/formulas/12/3d_geometry.aes',
       'assets/formulas/11/chemical_equilibrium.aes',

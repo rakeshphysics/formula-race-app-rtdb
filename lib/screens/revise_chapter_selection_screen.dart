@@ -67,13 +67,13 @@ class _ReviseChapterSelectionScreenState extends State<ReviseChapterSelectionScr
     final quizProvider = Provider.of<QuizDataProvider>(context);
     final List<String> currentChapters = allChaptersBySubject[_selectedSubject] ?? [];
     final Map<String, Color> subjectColors = {
-      // 'Physics': Colors.cyan.shade700.withOpacity(0.7),
-      // 'Chemistry': Colors.green.shade700.withOpacity(0.7),
-      // 'Maths': Colors.blue.shade700.withOpacity(0.7),
+      'Physics': Colors.cyan.shade700.withOpacity(0.7),
+      'Chemistry': Colors.green.shade700.withOpacity(0.7),
+      'Maths': Colors.blue.shade700.withOpacity(0.7),
 
-      'Physics': Color(0xB3AE9B52),
-      'Chemistry': Color(0xB3AE9B52),
-      'Maths': Color(0xB3AE9B52),
+      // 'Physics': Color(0xB3AE9B52),
+      // 'Chemistry': Color(0xB3AE9B52),
+      // 'Maths': Color(0xB3AE9B52),
     };
     final Color currentSubjectColor = subjectColors[_selectedSubject] ?? Colors.cyan.shade700;
     // 4. REMOVED WillPopScope as default back behavior is fine.
@@ -90,8 +90,28 @@ class _ReviseChapterSelectionScreenState extends State<ReviseChapterSelectionScr
             ? const Center(child: CircularProgressIndicator())
             : Column(
           children: [
+
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 12.0),
+              padding: const EdgeInsets.only(top: 0.0, bottom: 6.0),
+              child: Text(
+                "................................................................................................................................................",
+                maxLines: 1,
+                overflow: TextOverflow.clip, // Cuts off extra dots so it fits perfectly
+                softWrap: false,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white.withOpacity(0.7),
+                  fontSize: 20,
+                  fontWeight: FontWeight.w900,
+                  letterSpacing: 1, // Adjust this to change space between dots
+                  height: 0.5, // Reduces vertical height
+                ),
+              ),
+            ),
+
+
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 3.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -101,6 +121,26 @@ class _ReviseChapterSelectionScreenState extends State<ReviseChapterSelectionScr
                 ],
               ),
             ),
+
+            Padding(
+              padding: const EdgeInsets.only(top: 0.0, bottom: 25.0),
+              child: Text(
+                "................................................................................................................................................",
+                maxLines: 1,
+                overflow: TextOverflow.clip, // Cuts off extra dots so it fits perfectly
+                softWrap: false,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white.withOpacity(0.7),
+                  fontSize: 20,
+                  fontWeight: FontWeight.w900,
+                  letterSpacing: 1, // Adjust this to change space between dots
+                  height: 0.5, // Reduces vertical height
+                ),
+              ),
+            ),
+
+
             Expanded(
               child: ListView(
                 physics: const BouncingScrollPhysics(),
