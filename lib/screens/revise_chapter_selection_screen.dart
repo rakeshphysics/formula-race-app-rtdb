@@ -67,9 +67,13 @@ class _ReviseChapterSelectionScreenState extends State<ReviseChapterSelectionScr
     final quizProvider = Provider.of<QuizDataProvider>(context);
     final List<String> currentChapters = allChaptersBySubject[_selectedSubject] ?? [];
     final Map<String, Color> subjectColors = {
-      'Physics': Colors.cyan.shade700.withOpacity(0.7),
-      'Chemistry': Colors.green.shade700.withOpacity(0.7),
-      'Maths': Colors.blue.shade700.withOpacity(0.7),
+      // 'Physics': Colors.cyan.shade700.withOpacity(0.7),
+      // 'Chemistry': Colors.green.shade700.withOpacity(0.7),
+      // 'Maths': Colors.blue.shade700.withOpacity(0.7),
+
+      'Physics': Color(0xB3AE9B52),
+      'Chemistry': Color(0xB3AE9B52),
+      'Maths': Color(0xB3AE9B52),
     };
     final Color currentSubjectColor = subjectColors[_selectedSubject] ?? Colors.cyan.shade700;
     // 4. REMOVED WillPopScope as default back behavior is fine.

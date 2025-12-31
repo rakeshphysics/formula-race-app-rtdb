@@ -26,6 +26,8 @@ import 'package:confetti/confetti.dart';
 import '../../services/database_helper.dart';
 import '../../models/practice_attempt.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:model_viewer_plus/model_viewer_plus.dart';
+import 'package:formularacing/widgets/rive_viewer.dart';
 
 // ............. Chunk 1 SOLO SCREEN WIDGET .............
 const Map<String, String> chapterToClass = {
@@ -64,7 +66,8 @@ class SoloScreen extends StatefulWidget {
   final String selectedChapter;
   final List<String>? selectedChapters;
   final String game_session_id;
-  const SoloScreen({super.key, required this.selectedChapter,this.selectedChapters,required this.userId,required this.game_session_id});
+  final String subject;
+  const SoloScreen({super.key, required this.selectedChapter,this.selectedChapters,required this.userId,required this.game_session_id,this.subject = 'Physics',});
 
   @override
   State<SoloScreen> createState() => _SoloScreenState();
@@ -141,87 +144,202 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
   }
 
   // ............. Chunk 3 LOAD QUESTIONS .............
+  // Future<void> loadQuestions() async {
+  //   List<Map<String, dynamic>> finalQuestions = [];
+  //
+  //   if (widget.selectedChapter == 'full11' ||
+  //       widget.selectedChapter == 'full12' ||
+  //       widget.selectedChapter == 'fullBoth') {
+  //     List<Map<String, dynamic>> allQuestions = [];
+  //     List<String> fullChapters = [];
+  //
+  //     if (widget.selectedChapter == 'full11') {
+  //       fullChapters = [
+  //         'Vectors',
+  //         'Units and Dimensions',
+  //         'Kinematics',
+  //         'Laws of Motion',
+  //         'Circular Motion',
+  //         'Work Power Energy',
+  //         'Center of Mass',
+  //         'Rotational Motion',
+  //         'Gravitation',
+  //         'Elasticity',
+  //         'Fluids',
+  //         'Thermodynamics',
+  //         'Kinetic Theory',
+  //         'SHM',
+  //         'Waves',
+  //       ];
+  //
+  //     } else if (widget.selectedChapter == 'full12') {
+  //       fullChapters = [
+  //         'Electrostatics',
+  //         'Capacitors',
+  //         'Current Electricity',
+  //         'Magnetism',
+  //         'EMI',
+  //         'AC',
+  //         'EM Waves',
+  //         'Ray Optics',
+  //         'Wave Optics',
+  //         'Dual Nature of Light',
+  //         'Atoms',
+  //         'Nuclei',
+  //         'X Rays',
+  //         'Semiconductors',
+  //       ];
+  //
+  //     } else if (widget.selectedChapter == 'fullBoth') {
+  //       fullChapters = [
+  //         // 11th
+  //         'Vectors',
+  //         'Units and Dimensions',
+  //         'Kinematics',
+  //         'Laws of Motion',
+  //         'Circular Motion',
+  //         'Work Power Energy',
+  //         'Center of Mass',
+  //         'Rotational Motion',
+  //         'Gravitation',
+  //         'Elasticity',
+  //         'Fluids',
+  //         'Thermodynamics',
+  //         'Kinetic Theory',
+  //         'SHM',
+  //         'Waves',
+  //         // 12th
+  //         'Electrostatics',
+  //         'Capacitors',
+  //         'Current Electricity',
+  //         'Magnetism',
+  //         'EMI',
+  //         'AC',
+  //         'EM Waves',
+  //         'Ray Optics',
+  //         'Wave Optics',
+  //         'Dual Nature of Light',
+  //         'Atoms',
+  //         'Nuclei',
+  //         'X Rays'
+  //         'Semiconductors',
+  //       ];
+  //
+  //     }
+  //
+  //     final quizProvider = Provider.of<QuizDataProvider>(context, listen: false);
+  //
+  //     for (String chapter in fullChapters) {
+  //       final chapterFile = chapter.toLowerCase().replaceAll(" ", "_");
+  //       if (quizProvider.allQuizData.containsKey(chapterFile)) {
+  //         allQuestions.addAll(quizProvider.allQuizData[chapterFile].cast<Map<String, dynamic>>());
+  //       }
+  //     }
+  //
+  //     // Logic for unique chapters in 'full' modes
+  //     final Set<String> selectedChapters = {};
+  //
+  //     Map<String, List<Map<String, dynamic>>> questionsByDifficulty = {
+  //       'easy': allQuestions.where((q) => q['tags']['difficulty'] == 'easy').toList(),
+  //       'medium': allQuestions.where((q) => q['tags']['difficulty'] == 'medium').toList(),
+  //       'god': allQuestions.where((q) => q['tags']['difficulty'] == 'god').toList(),
+  //     };
+  //
+  //     void addUniqueQuestion(String difficulty, int count) {
+  //       int addedCount = 0;
+  //       List<Map<String, dynamic>> currentDifficultyQuestions = questionsByDifficulty[difficulty]!;
+  //       currentDifficultyQuestions.shuffle();
+  //
+  //       for (int i = 0; i < currentDifficultyQuestions.length && addedCount < count; i++) {
+  //         final question = currentDifficultyQuestions[i];
+  //         final String chapter = question['tags']['chapter'];
+  //
+  //         if (!selectedChapters.contains(chapter)) {
+  //           finalQuestions.add(question); // Add to finalQuestions
+  //           selectedChapters.add(chapter);
+  //           addedCount++;
+  //         }
+  //       }
+  //     }
+  //
+  //     addUniqueQuestion('easy', 4);
+  //     addUniqueQuestion('medium', 5);
+  //     addUniqueQuestion('god', 1);
+  //
+  //     //print('Final Selected Chapters: $selectedChapters');
+  //
+  //   } else {
+  //     // If not 'full' mode, call the new function for chapter-wise selection
+  //     finalQuestions = await _loadChapterWiseQuestions();
+  //   }
+  //
+  //   //Consolidated Print Statements (ONLY ONE LOCATION)
+  //  // print('--- Selected Questions Chapters (Final List) ---');
+  //   for (var i = 0; i < finalQuestions.length; i++) {
+  //     final question = finalQuestions[i];
+  //     final chapter = question['tags']['chapter'] ?? 'Unknown Chapter';
+  //     final difficulty = question['tags']['difficulty'] ?? 'Unknown Difficulty';
+  //     final questionId = question['id'] ?? 'Unknown ID'; // Correctly accessing the 'id' at the top level
+  //    // print('😄😄Question ${i + 1}: ID - $questionId, Chapter - $chapter, Difficulty - $difficulty');
+  //   }
+  //   //print('------------------------------------------------');
+  //   setState(() {
+  //     questions = finalQuestions;
+  //     currentIndex = 0;
+  //   });
+  //
+  //   _progressController.reset();
+  //   _progressController.forward();
+  // }
+
+  // ............. Chunk 3 LOAD QUESTIONS .............
+  // ............. Chunk 3 LOAD QUESTIONS .............
   Future<void> loadQuestions() async {
     List<Map<String, dynamic>> finalQuestions = [];
+
+    // 1. Define the Syllabus for all subjects
+    final Map<String, Map<String, List<String>>> subjectSyllabus = {
+      'Physics': {
+        '11': [
+          'Vectors', 'Units and Dimensions', 'Kinematics', 'Laws of Motion',
+          'Circular Motion', 'Work Power Energy', 'Center of Mass', 'Rotational Motion',
+          'Gravitation', 'Elasticity', 'Fluids', 'Thermodynamics', 'Kinetic Theory',
+          'SHM', 'Waves'
+        ],
+        '12': [
+          'Electrostatics', 'Capacitors', 'Current Electricity', 'Magnetism',
+          'EMI', 'AC', 'EM Waves', 'Ray Optics', 'Wave Optics',
+          'Dual Nature of Light', 'Atoms', 'Nuclei', 'X Rays', 'Semiconductors'
+        ],
+      },
+      'Chemistry': {
+        '11': ['Chemical Equilibrium'], // Add more chapters here
+        '12': ['Solid State'],          // Add more chapters here
+      },
+      'Maths': {
+        '11': ['Ellipse'],              // Add more chapters here
+        '12': ['3D Geometry'],          // Add more chapters here
+      },
+    };
 
     if (widget.selectedChapter == 'full11' ||
         widget.selectedChapter == 'full12' ||
         widget.selectedChapter == 'fullBoth') {
+
       List<Map<String, dynamic>> allQuestions = [];
       List<String> fullChapters = [];
 
+      // 2. Get the syllabus for the selected subject
+      final currentSyllabus = subjectSyllabus[widget.subject] ?? subjectSyllabus['Physics']!;
+
+      // 3. Select chapters based on mode
       if (widget.selectedChapter == 'full11') {
-        fullChapters = [
-          'Vectors',
-          'Units and Dimensions',
-          'Kinematics',
-          'Laws of Motion',
-          'Circular Motion',
-          'Work Power Energy',
-          'Center of Mass',
-          'Rotational Motion',
-          'Gravitation',
-          'Elasticity',
-          'Fluids',
-          'Thermodynamics',
-          'Kinetic Theory',
-          'SHM',
-          'Waves',
-        ];
-
+        fullChapters.addAll(currentSyllabus['11'] ?? []);
       } else if (widget.selectedChapter == 'full12') {
-        fullChapters = [
-          'Electrostatics',
-          'Capacitors',
-          'Current Electricity',
-          'Magnetism',
-          'EMI',
-          'AC',
-          'EM Waves',
-          'Ray Optics',
-          'Wave Optics',
-          'Dual Nature of Light',
-          'Atoms',
-          'Nuclei',
-          'X Rays',
-          'Semiconductors',
-        ];
-
+        fullChapters.addAll(currentSyllabus['12'] ?? []);
       } else if (widget.selectedChapter == 'fullBoth') {
-        fullChapters = [
-          // 11th
-          'Vectors',
-          'Units and Dimensions',
-          'Kinematics',
-          'Laws of Motion',
-          'Circular Motion',
-          'Work Power Energy',
-          'Center of Mass',
-          'Rotational Motion',
-          'Gravitation',
-          'Elasticity',
-          'Fluids',
-          'Thermodynamics',
-          'Kinetic Theory',
-          'SHM',
-          'Waves',
-          // 12th
-          'Electrostatics',
-          'Capacitors',
-          'Current Electricity',
-          'Magnetism',
-          'EMI',
-          'AC',
-          'EM Waves',
-          'Ray Optics',
-          'Wave Optics',
-          'Dual Nature of Light',
-          'Atoms',
-          'Nuclei',
-          'X Rays'
-          'Semiconductors',
-        ];
-
+        fullChapters.addAll(currentSyllabus['11'] ?? []);
+        fullChapters.addAll(currentSyllabus['12'] ?? []);
       }
 
       final quizProvider = Provider.of<QuizDataProvider>(context, listen: false);
@@ -233,61 +351,105 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
         }
       }
 
-      // Logic for unique chapters in 'full' modes
-      final Set<String> selectedChapters = {};
-
+      // 4. Categorize by difficulty
       Map<String, List<Map<String, dynamic>>> questionsByDifficulty = {
         'easy': allQuestions.where((q) => q['tags']['difficulty'] == 'easy').toList(),
         'medium': allQuestions.where((q) => q['tags']['difficulty'] == 'medium').toList(),
         'god': allQuestions.where((q) => q['tags']['difficulty'] == 'god').toList(),
       };
 
-      void addUniqueQuestion(String difficulty, int count) {
-        int addedCount = 0;
-        List<Map<String, dynamic>> currentDifficultyQuestions = questionsByDifficulty[difficulty]!;
-        currentDifficultyQuestions.shuffle();
+      // Shuffle everything initially
+      questionsByDifficulty['easy']!.shuffle();
+      questionsByDifficulty['medium']!.shuffle();
+      questionsByDifficulty['god']!.shuffle();
 
-        for (int i = 0; i < currentDifficultyQuestions.length && addedCount < count; i++) {
-          final question = currentDifficultyQuestions[i];
-          final String chapter = question['tags']['chapter'];
+      final Set<String> usedQuestionIds = {};
+      final Set<String> usedChapters = {};
 
-          if (!selectedChapters.contains(chapter)) {
-            finalQuestions.add(question); // Add to finalQuestions
-            selectedChapters.add(chapter);
-            addedCount++;
+      // Helper to add questions safely
+      void fillQuestions(String difficulty, int targetCount) {
+        List<Map<String, dynamic>> pool = questionsByDifficulty[difficulty] ?? [];
+
+        // Phase 1: Try to find questions from UNIQUE chapters
+        for (var question in pool) {
+          if (finalQuestions.length >= (finalQuestions.length + targetCount)) break; // Safety break
+
+          String qId = question['id'];
+          String chapter = question['tags']['chapter'];
+
+          if (!usedQuestionIds.contains(qId) && !usedChapters.contains(chapter)) {
+            finalQuestions.add(question);
+            usedQuestionIds.add(qId);
+            usedChapters.add(chapter);
           }
+
+          // Stop if we reached the target for this difficulty block
+          int currentCountForDiff = finalQuestions.where((q) => q['tags']['difficulty'] == difficulty).length;
+          if (currentCountForDiff >= targetCount) return;
+        }
+
+        // Phase 2: If we still need questions, RELAX the chapter constraint
+        // (This fixes the issue for Chemistry/Maths where chapters are few)
+        for (var question in pool) {
+          String qId = question['id'];
+
+          // Only check if ID is unique, ignore chapter uniqueness now
+          if (!usedQuestionIds.contains(qId)) {
+            finalQuestions.add(question);
+            usedQuestionIds.add(qId);
+          }
+
+          int currentCountForDiff = finalQuestions.where((q) => q['tags']['difficulty'] == difficulty).length;
+          if (currentCountForDiff >= targetCount) return;
         }
       }
 
-      addUniqueQuestion('easy', 4);
-      addUniqueQuestion('medium', 5);
-      addUniqueQuestion('god', 1);
+      // Try to fill 4 Easy, 5 Medium, 1 God
+      fillQuestions('easy', 4);
+      fillQuestions('medium', 5);
+      fillQuestions('god', 1);
 
-      //print('Final Selected Chapters: $selectedChapters');
+      // Phase 3: Emergency Fill
+      // If we still don't have 10 questions (e.g., no God questions existed),
+      // fill the remaining slots with ANY available question from the pool.
+      if (finalQuestions.length < totalQuestions) {
+        List<Map<String, dynamic>> remainingPool = allQuestions
+            .where((q) => !usedQuestionIds.contains(q['id']))
+            .toList();
+        remainingPool.shuffle();
+
+        while (finalQuestions.length < totalQuestions && remainingPool.isNotEmpty) {
+          finalQuestions.add(remainingPool.removeAt(0));
+        }
+      }
 
     } else {
       // If not 'full' mode, call the new function for chapter-wise selection
       finalQuestions = await _loadChapterWiseQuestions();
     }
 
-    //Consolidated Print Statements (ONLY ONE LOCATION)
-   // print('--- Selected Questions Chapters (Final List) ---');
-    for (var i = 0; i < finalQuestions.length; i++) {
-      final question = finalQuestions[i];
-      final chapter = question['tags']['chapter'] ?? 'Unknown Chapter';
-      final difficulty = question['tags']['difficulty'] ?? 'Unknown Difficulty';
-      final questionId = question['id'] ?? 'Unknown ID'; // Correctly accessing the 'id' at the top level
-     // print('😄😄Question ${i + 1}: ID - $questionId, Chapter - $chapter, Difficulty - $difficulty');
+    // If we STILL have 0 questions (e.g., empty database for subject), handle gracefully
+    if (finalQuestions.isEmpty) {
+      // You might want to show an alert dialog here or pop back
+      // For now, we just avoid the crash
+      print("⚠️ No questions found for this selection!");
     }
-    //print('------------------------------------------------');
+
     setState(() {
       questions = finalQuestions;
       currentIndex = 0;
     });
 
-    _progressController.reset();
-    _progressController.forward();
+    if (questions.isNotEmpty) {
+      _progressController.reset();
+      _progressController.forward();
+    }
   }
+
+
+
+
+
 
 // Inside the _SoloScreenState class, replace the previous _loadChapterAndMixedQuestions
   // Inside _SoloScreenState class
@@ -858,32 +1020,92 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 //                     ),
 //                   )
 
+                // if (question['image'] != null && question['image'] != "")
+                //   Container(
+                //     margin: const EdgeInsets.symmetric(vertical: 0),
+                //     child: Center(
+                //       child: SizedBox(
+                //         width: screenWidth * 0.6,
+                //         height: (screenWidth * 0.6) /
+                //             1.5, // Calculated height to maintain aspect ratio
+                //         child: question['image'].endsWith('.svg')
+                //             ? Opacity(
+                //           opacity: 0.85, // Apply 85% opacity
+                //           child: SvgPicture.asset(
+                //             question['image'], // Directly use the .svg path
+                //             fit: BoxFit.contain,
+                //             // The colorFilter below is useful for making SVGs visible on dark themes
+                //             // by coloring their vector shapes. Uncomment if your SVGs are not visible.
+                //             // colorFilter: const ColorFilter.mode(Colors.white, BlendMode.srcIn),
+                //           ),
+                //         )
+                //             : Image.asset(
+                //           question['image'], // Use for .png, .jpg, etc.
+                //           fit: BoxFit.contain,
+                //         ),
+                //       ),
+                //     ),
+                //   )
                 if (question['image'] != null && question['image'] != "")
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 0),
                     child: Center(
                       child: SizedBox(
-                        width: screenWidth * 0.6,
-                        height: (screenWidth * 0.6) /
-                            1.5, // Calculated height to maintain aspect ratio
+                        // WIDTH LOGIC
+                        width: question['image'].endsWith('.glb')
+                            ? screenWidth * 0.65 // 3D models often need more width
+                            : question['image'].endsWith('.riv')
+                            ? screenWidth * 0.65
+                            : screenWidth * 0.62,
+
+                        // HEIGHT LOGIC
+                        height: question['image'].endsWith('.glb')
+                            ? screenWidth * 0.65 // Square aspect for 3D usually works best
+                            : question['image'].endsWith('.riv')
+                            ? (screenWidth * 0.65) / 1.5
+                            : (screenWidth * 0.62) / 1.5,
+
                         child: question['image'].endsWith('.svg')
                             ? Opacity(
-                          opacity: 0.85, // Apply 85% opacity
+                          opacity: 0.85,
                           child: SvgPicture.asset(
-                            question['image'], // Directly use the .svg path
+                            question['image'],
                             fit: BoxFit.contain,
-                            // The colorFilter below is useful for making SVGs visible on dark themes
-                            // by coloring their vector shapes. Uncomment if your SVGs are not visible.
-                            // colorFilter: const ColorFilter.mode(Colors.white, BlendMode.srcIn),
+                          ),
+                        )
+                            : question['image'].endsWith('.glb')
+                            ? ModelViewer(
+                          key: ValueKey(question['image']),
+                          // If your JSON has "assets/..." use question['image']
+                          // If your JSON has just "file.glb", use 'assets/${question['image']}'
+                          src: question['image'],
+                          backgroundColor: Colors.transparent,
+                          alt: "A 3D model",
+                          ar: false,
+                          autoRotate: true,
+                          disableZoom: false,
+                          disablePan: true,
+                          cameraControls: true,
+                          interactionPrompt: InteractionPrompt.none,
+                          shadowIntensity: 0,
+                          autoPlay: true,
+                        )
+                            : question['image'].endsWith('.riv')
+                            ? Opacity(
+                          opacity: 0.8,
+                          child: FormulaRiveViewer(
+                            key: ValueKey(question['image']),
+                            src: question['image'],
                           ),
                         )
                             : Image.asset(
-                          question['image'], // Use for .png, .jpg, etc.
+                          question['image'],
                           fit: BoxFit.contain,
                         ),
                       ),
                     ),
                   )
+
 ///////  SVG NEW CODE END....................................
                 else
                 // ✨ CHANGE THIS LINE: If no image, use SizedBox.shrink() to take no space ✨

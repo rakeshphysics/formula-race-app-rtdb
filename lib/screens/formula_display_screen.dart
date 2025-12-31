@@ -423,14 +423,23 @@ _active3DIndices.add(index);
     // Check if widget.subject is null just in case, though usually it isn't
     final subject = widget.subject ?? 'Physics';
 
-    if (subject.contains('Chem')) {
-      return Colors.green.shade700.withOpacity(0.7);
-    } else if (subject.contains('Math')) {
-      return Colors.blue.shade700.withOpacity(0.7);
-    }
-    // Default to Physics (Cyan)
-    return Colors.cyan.shade700.withOpacity(0.7);
+  //   if (subject.contains('Chem')) {
+  //     return Colors.green.shade700.withOpacity(0.7);
+  //   } else if (subject.contains('Math')) {
+  //     return Colors.blue.shade700.withOpacity(0.7);
+  //   }
+  //   // Default to Physics (Cyan)
+  //   return Colors.cyan.shade700.withOpacity(0.7);
+  // }
+
+  if (subject.contains('Chem')) {
+  return const Color(0xB3AE9B52);
+  } else if (subject.contains('Math')) {
+    return const Color(0xB3AE9B52);
   }
+  // Default to Physics (Cyan)
+    return const Color(0xB3AE9B52);
+}
 
   Widget _buildMediaTypeBadge(String? imagePath, Color themeColor) {
     if (imagePath == null || imagePath.isEmpty) return const SizedBox.shrink();
@@ -568,14 +577,14 @@ _active3DIndices.add(index);
                       width: questionData['image'].endsWith('.glb')
                           ? screenWidth * 0.6
                           : questionData['image'].endsWith('.riv')
-                          ? screenWidth * 0.8 // Custom size for Rive (currently same as image)
+                          ? screenWidth * 0.65 // Custom size for Rive (currently same as image)
                           : screenWidth * 0.62,
 
                       // HEIGHT LOGIC
                       height: questionData['image'].endsWith('.glb')
                           ? screenWidth * 0.6
                           : questionData['image'].endsWith('.riv')
-                          ? (screenWidth * 0.8) / 1.5 // Custom size for Rive (currently same as image)
+                          ? (screenWidth * 0.65) / 1.5 // Custom size for Rive (currently same as image)
                           : (screenWidth * 0.62) / 1.5,
 
                       child: questionData['image'].endsWith('.svg')

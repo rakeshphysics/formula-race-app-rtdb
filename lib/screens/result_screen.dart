@@ -15,6 +15,8 @@ import 'home_screen.dart';
 import 'package:confetti/confetti.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:model_viewer_plus/model_viewer_plus.dart';
+import 'package:formularacing/widgets/rive_viewer.dart';
 
 
 Future<void> updateMistakeTracker(List<Map<String, dynamic>> responses) async {
@@ -263,18 +265,84 @@ class _ResultScreenState extends State<ResultScreen> {
                               //     ),
                               //   ),
 
+                              // if (wrongAnswer.imagePath.isNotEmpty)
+                              //   Container(
+                              //     margin: const EdgeInsets.symmetric(vertical: 0),
+                              //     child: Center(
+                              //       child: SizedBox(
+                              //         width: screenWidth * 0.6,
+                              //         height: (screenWidth * 0.6) / 1.5, // Calculated height to maintain aspect ratio
+                              //         child: wrongAnswer.imagePath.endsWith('.svg')
+                              //             ? SvgPicture.asset(
+                              //           wrongAnswer.imagePath,
+                              //           fit: BoxFit.contain,
+                              //           placeholderBuilder: (context) => const SizedBox.shrink(), // Prevents errors if SVG fails
+                              //         )
+                              //             : Image.asset(
+                              //           wrongAnswer.imagePath,
+                              //           fit: BoxFit.contain,
+                              //           errorBuilder: (context, error, stackTrace) {
+                              //             return const Text(
+                              //               'Image not found',
+                              //               style: TextStyle(color: Colors.redAccent),
+                              //             );
+                              //           },
+                              //         ),
+                              //       ),
+                              //     ),
+                              //   ),
+
+
                               if (wrongAnswer.imagePath.isNotEmpty)
                                 Container(
                                   margin: const EdgeInsets.symmetric(vertical: 0),
                                   child: Center(
                                     child: SizedBox(
-                                      width: screenWidth * 0.6,
-                                      height: (screenWidth * 0.6) / 1.5, // Calculated height to maintain aspect ratio
+                                      // WIDTH LOGIC
+                                      width: wrongAnswer.imagePath.endsWith('.glb')
+                                          ? screenWidth * 0.65 // 3D models need more width
+                                          : wrongAnswer.imagePath.endsWith('.riv')
+                                          ? screenWidth * 0.65
+                                          : screenWidth * 0.62,
+
+                                      // HEIGHT LOGIC
+                                      height: wrongAnswer.imagePath.endsWith('.glb')
+                                          ? screenWidth * 0.65 // Square aspect for 3D
+                                          : wrongAnswer.imagePath.endsWith('.riv')
+                                          ? (screenWidth * 0.65) / 1.5
+                                          : (screenWidth * 0.62) / 1.5,
+
                                       child: wrongAnswer.imagePath.endsWith('.svg')
-                                          ? SvgPicture.asset(
-                                        wrongAnswer.imagePath,
-                                        fit: BoxFit.contain,
-                                        placeholderBuilder: (context) => const SizedBox.shrink(), // Prevents errors if SVG fails
+                                          ? Opacity(
+                                        opacity: 0.85,
+                                        child: SvgPicture.asset(
+                                          wrongAnswer.imagePath,
+                                          fit: BoxFit.contain,
+                                          placeholderBuilder: (context) => const SizedBox.shrink(),
+                                        ),
+                                      )
+                                          : wrongAnswer.imagePath.endsWith('.glb')
+                                          ? ModelViewer(
+                                        key: ValueKey(wrongAnswer.imagePath), // Unique key for list items
+                                        src: wrongAnswer.imagePath,
+                                        backgroundColor: Colors.transparent,
+                                        alt: "A 3D model",
+                                        ar: false,
+                                        autoRotate: true,
+                                        disableZoom: false,
+                                        disablePan: true,
+                                        cameraControls: true,
+                                        interactionPrompt: InteractionPrompt.none,
+                                        shadowIntensity: 0,
+                                        autoPlay: true,
+                                      )
+                                          : wrongAnswer.imagePath.endsWith('.riv')
+                                          ? Opacity(
+                                        opacity: 0.8,
+                                        child: FormulaRiveViewer(
+                                          key: ValueKey(wrongAnswer.imagePath),
+                                          src: wrongAnswer.imagePath,
+                                        ),
                                       )
                                           : Image.asset(
                                         wrongAnswer.imagePath,
@@ -289,7 +357,6 @@ class _ResultScreenState extends State<ResultScreen> {
                                     ),
                                   ),
                                 ),
-
 
                               Html(
                                 data: "<b>Q:</b> ${wrongAnswer.question}",
