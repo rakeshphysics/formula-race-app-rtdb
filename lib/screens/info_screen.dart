@@ -1,32 +1,66 @@
+import 'package:flutter/gestures.dart'; // Needed for clickable text
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart'; // Needed to open the link
 
 class InfoScreen extends StatelessWidget {
   final String title;
 
-  // Notice 'content' is removed from here
   const InfoScreen({
     Key? key,
     required this.title,
   }) : super(key: key);
 
-  // --- NEW: Function to get content based on title ---
+  // Function to get content for non-clickable pages (like How to Play)
   String _getContentForTitle(String title) {
     switch (title) {
       case 'How to Play':
-        return 'This is where you will write the rules of the game. Explain how to challenge a friend, how the quiz works, and how to win.';
-      case 'About':
-        return 'This app was created by [Your Name].\n\nIt is a multiplayer quiz game designed for Formula Racing fans to test their knowledge against friends.';
+        return """
+1. Play Solo 👤
+• Challenge yourself with 10 questions that get harder as you go.
+• Track Progress: Watch chapter colors change from Red (Needs work) to Green (Mastered).
+
+2. Play with Friend ⚔️
+• Battle Mode: Challenge a friend to a physics duel.
+• Real-time: See who scores higher and answers faster.
+
+3. Revise Formulas 📜
+• Quick Access: Find all important formulas in one place.
+• Pin Favorites: Tap the pin icon 📌 to move difficult formulas to the top.
+
+4. My Mistakes ❌
+• Learn: Every wrong answer is saved automatically.
+• Review: Re-attempt these questions to fix your weak spots.
+
+5. Panda AI 🐼
+• Smart Advice: Tap the Panda for motivation and tips.
+• Analysis: Get post-game feedback on your strong and weak chapters.
+
+6. Profile & Stats 📊
+• Earn Bamboos for every correct answer.
+• Check your overall accuracy to see where you stand.
+""";
       default:
         return 'No information available.';
+    }
+  }
+
+  // Helper to launch the URL
+  Future<void> _launchYoutube() async {
+    final Uri url = Uri.parse('https://www.youtube.com/@physicswithrakesh');
+    if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
+      throw Exception('Could not launch $url');
     }
   }
 
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-    // Get the correct content string using our new function
-    final String content = _getContentForTitle(title);
+    final baseStyle = GoogleFonts.poppins(
+      color: const Color(0xA6FFFFFF),
+      fontSize: screenWidth * 0.04,
+      height: 1.5,
+    );
 
     return Scaffold(
       backgroundColor: Colors.black,
@@ -49,15 +83,43 @@ class InfoScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
-          child: Text(
-            content, // This now uses the content variable defined above
-            style: GoogleFonts.poppins(
-              color: Color(0xD9FFFFFF),
-              fontSize: screenWidth * 0.04,
-              height: 1.5,
-            ),
+          child: title == 'About Me'
+              ? _buildAboutMeContent(baseStyle) // <--- Special clickable content
+              : Text(
+            _getContentForTitle(title), // <--- Standard text content
+            style: baseStyle,
           ),
         ),
+      ),
+    );
+  }
+
+  // Special widget just for "About Me" to handle the link
+  Widget _buildAboutMeContent(TextStyle baseStyle) {
+    return RichText(
+      text: TextSpan(
+        style: baseStyle,
+        children: [
+          const TextSpan(
+            text: "Hello dear students! 👋\n\n"
+                "I am Rakesh, a Physics teacher with over 10 years of experience guiding students for JEE Advanced.\n\n"
+                "I built this app to make formula revision and quick practice fun and accessible.\n\n"
+                "It is designed to help you keep important formulas at your fingertips and test your recall speed anytime, anywhere.\n\n"
+                "You can also learn more on my YouTube channel:\n",
+          ),
+          TextSpan(
+            text: "https://www.youtube.com/@physicswithrakesh\n\n",
+            style: baseStyle.copyWith(
+              color: Colors.blueAccent,
+              decoration: TextDecoration.underline,
+              fontWeight: FontWeight.bold,
+            ),
+            recognizer: TapGestureRecognizer()..onTap = _launchYoutube,
+          ),
+          const TextSpan(
+            text: "Hope you enjoy using it! Love you all! ❤️",
+          ),
+        ],
       ),
     );
   }

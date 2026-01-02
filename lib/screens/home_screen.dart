@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 //import 'online_play_screen.dart';
 import 'solo_mode_selection_screen.dart';
 import 'ai_tracker_screen.dart'; // Add this import
-//import 'package:shared_preferences/shared_preferences.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 //import 'searching_for_opponent.dart';
 //import 'dart:io';
 //import 'package:firebase_auth/firebase_auth.dart';
@@ -81,14 +81,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
     WidgetsBinding.instance.addObserver(this);
     _checkForNewBamboos(); // Check for bamboos on initial load
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      // If the panda is not already talking (from the post-game trigger), then show the daily greeting.
-      // if (!_isTalking) {
-      //   _loadAiMessage(trigger: AiMessageTrigger.dailyGreeting);
-      // }
-
-      if (!_postGameAnalysisTriggered) {
-        _loadAiMessage(trigger: AiMessageTrigger.dailyGreeting);
-      }
+      _checkFirstTimeUser();
     });
     _updatePandaAnimation();
     _pandaUpdateTimer = Timer.periodic(const Duration(minutes: 1), (timer) {
@@ -221,10 +214,10 @@ void _handlePandaTap() async {
   if (_isTalking) return;
 
   // If the panda is idle, just show a new greeting and stop.
-  if (_conversationStage == PandaConversationStage.idle) {
-    _loadAiMessage(trigger: AiMessageTrigger.dailyGreeting);
-    return;
-  }
+  // if (_conversationStage == PandaConversationStage.idle) {
+  //   _loadAiMessage(trigger: AiMessageTrigger.dailyGreeting);
+  //   return;
+  // }
 
   final messageService = HomeMessageService.instance;
   String newMessage;
@@ -242,14 +235,14 @@ void _handlePandaTap() async {
 
     switch (_conversationStage) {
 
-
+      case PandaConversationStage.idle:
       case PandaConversationStage.showingDetailedAdvice:
-      // The user has seen the analysis (A) and is now tapping for advice (B).
-      // Use the pre-fetched advice message.
-        newMessage = _adviceMessage ?? "RKeep playing and I'll have more advice for you soon!";
-        // Now that we've used the pre-fetched advice, clear it to prevent reuse.
-       // _adviceMessage = null;
-        // Set the stage for the NEXT tap (C).
+
+       // newMessage = _adviceMessage ?? "Keep playing and I'll have more advice for you soon!";
+      String? freshAdvice = await messageService.getGameAdviceMessage(widget.userId);
+      newMessage = freshAdvice ?? "Review your past games to find your weak spots!";
+      // Update our local variable just in case
+      _adviceMessage = newMessage;
         _conversationStage = PandaConversationStage.showingFirstMotivation;
         break;
 
@@ -305,8 +298,12 @@ void _handlePandaTap() async {
 
   // This part remains the same.
   _startTypingAnimation();
-  const talkAnimationDuration = Duration(milliseconds: 3700);
-  Future.delayed(talkAnimationDuration, () {
+  int durationMs = (newMessage.length * 70) + 1000;
+
+  // Ensure it plays for at least 2 seconds
+  if (durationMs < 2000) durationMs = 2000;
+
+  Future.delayed(Duration(milliseconds: durationMs), () {
     if (mounted) {
       setState(() {
         _isTalking = false;
@@ -371,7 +368,7 @@ void _handlePersonalQuestionResponse(bool hadMeal) async {
   _startTypingAnimation();
 
   // 4. After a delay, stop the talking animation
-  const talkAnimationDuration = Duration(milliseconds: 3700);
+  const talkAnimationDuration = Duration(milliseconds: 3600);
   Future.delayed(talkAnimationDuration, () {
     if (mounted) {
       setState(() {
@@ -407,7 +404,49 @@ void _handlePersonalQuestionResponse(bool hadMeal) async {
 
 
 
+Future<void> _checkFirstTimeUser() async {
+  final prefs = await SharedPreferences.getInstance();
+  bool isFirstTime = prefs.getBool('isFirstTime') ?? true;
 
+  if (isFirstTime) {
+    // --- CASE A: First Time User ---
+    // Funny intro, 0 bamboos.
+    const introMessage = "Hi! I'm your Panda AI. I love talking, but I love eating more! 🐼 Play games, answer correctly, and win me some bamboo. No bamboo = No talk! 🤐";
+
+    if (mounted) {
+      setState(() {
+        _fullAiMessage = introMessage;
+        _isTalking = true;
+        _currentPandaLottie = 'assets/pandaai/talk.json';
+        _charIndex = 0;
+        _displayedAiMessage = "";
+        // Note: We do NOT set _bamboos = 5 here. It stays 0.
+      });
+    }
+
+    _startTypingAnimation();
+
+    // Stop talking after 6 seconds (slightly longer for the intro)
+    Future.delayed(const Duration(milliseconds: 6000), () {
+      if (mounted) {
+        setState(() {
+          _isTalking = false;
+        });
+        _updatePandaAnimation();
+      }
+    });
+
+    // Save flag so this doesn't happen again
+    await prefs.setBool('isFirstTime', false);
+
+  } else {
+    // --- CASE B: Returning User ---
+    // Show Daily Greeting.
+    if (!_postGameAnalysisTriggered) {
+      _loadAiMessage(trigger: AiMessageTrigger.dailyGreeting);
+    }
+  }
+}
 
   void _updatePandaAnimation() {
     final hour = DateTime.now().hour;
@@ -694,7 +733,7 @@ void _checkForNewBamboos() async {
                     context,
                     MaterialPageRoute(
                       builder: (context) =>  InfoScreen(
-                        title: 'About',
+                        title: 'About Me',
                          ),
                     ),
                   );
@@ -737,7 +776,8 @@ void _checkForNewBamboos() async {
                                         },
                                       child: Lottie.asset(
                                         _currentPandaLottie,
-                                        repeat: !_isTalking,
+                                        //repeat: !_isTalking,
+                                        repeat: true,
                                         fit: BoxFit.contain,
                                       ),
                                     ),
