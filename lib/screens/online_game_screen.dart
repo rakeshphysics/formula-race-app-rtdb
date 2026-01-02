@@ -459,6 +459,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     if (!gameOver && !opponentLeft) {
       // _progressController.stop(); // This line was removed based on your request.
       final screenWidth = MediaQuery.of(context).size.width;
+      final themeColor = _getSubjectColor();
       // Inside _OnlineGameScreenState class, within _onWillPop() function
       final confirm = await showDialog<bool>(
         context: context,
@@ -466,7 +467,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           // APPLY ALERTDIALOG STYLING (Amber Theme)
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(4),
-            side: const BorderSide(color: Color(0xD9FFA500), width: 1.2), // Amber border
+            side: BorderSide(color: themeColor, width: 1.2), // Amber border
           ),
           backgroundColor: const Color(0xFF000000), // Semi-transparent black background
           title: Text(
@@ -489,7 +490,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                 foregroundColor: Colors.white, // White text color
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4),
-                  side: const BorderSide(color: Color(0xD9CC8400), width: 1.2), // Darker amber border
+                  side:  BorderSide(color: themeColor, width: 1.2), // Darker amber border
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               ),
@@ -515,7 +516,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                 foregroundColor: Colors.white, // White text color
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4),
-                  side: const BorderSide(color: Color(0xFFCC8400), width: 1.2), // Darker amber border
+                  side: BorderSide(color: themeColor, width: 1.2), // Darker amber border
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               ),
@@ -1099,6 +1100,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                   youLeftGame: youLeft,
                   totalQuestions: totalQuestions,
                   onlineIncorrectAnswers: onlineResponses,
+                  subject: subject,
                 ),
               ),
             );
@@ -1171,6 +1173,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           opponentLeftGame: true,
           totalQuestions: totalQuestions,
           onlineIncorrectAnswers: onlineResponses,
+          subject: subject,
         ),
       ),
     );
@@ -1449,7 +1452,8 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           if (currentQuestion['image'] != null &&
           currentQuestion['image'].toString().isNotEmpty)
         Container(
-    margin: const EdgeInsets.symmetric(vertical: 0),
+          key: ValueKey('image_${currentQuestionIndex}_${currentQuestion['image']}'),
+          margin: const EdgeInsets.symmetric(vertical: 0),
     child: Center(
     child: SizedBox(
     // WIDTH LOGIC
@@ -1541,6 +1545,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                         .where((opt) => opt != null && opt is String)
                         .map((option) {
                       return FormulaOptionButton(
+                        key: ValueKey('option_${currentQuestionIndex}_$option'),
                         text: option,
                         onPressed: questionLocked
                             ? () {}
@@ -1564,7 +1569,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
                           winnerMessage!,
                           style: TextStyle(
                             fontSize: screenWidth*0.04,
-                            color: Colors.amber,
+                            color: themeColor,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -1574,7 +1579,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
                     Text(
                       feedbackMessage,
-                      style:  TextStyle(fontSize: screenWidth*0.04, color: Colors.amber),
+                      style:  TextStyle(fontSize: screenWidth*0.04, color: themeColor ),
                     ),
                   ],
                 ),

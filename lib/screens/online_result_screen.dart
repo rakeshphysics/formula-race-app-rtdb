@@ -17,6 +17,7 @@ class OnlineResultScreen extends StatefulWidget {
   final bool youLeftGame;
   final int totalQuestions;
   final List<OnlineIncorrectAnswer> onlineIncorrectAnswers;
+  final String subject;
 
   const OnlineResultScreen({
     Key? key,
@@ -27,6 +28,7 @@ class OnlineResultScreen extends StatefulWidget {
     this.youLeftGame = false,
     required this.totalQuestions,
     required this.onlineIncorrectAnswers,
+    required this.subject,
   }) : super(key: key);
 
   @override
@@ -37,7 +39,19 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
   late ConfettiController _confettiController;
   late ConfettiController _confettiDrawController;
 
-
+  Color _getSubjectColor() {
+    // Assuming you have 'widget.subject' available. 
+    // If 'subject' is passed as a string to this screen, use that.
+    if (widget.subject.contains('Chem')) {
+      return Colors.green.shade700.withOpacity(0.7);
+    } else if (widget.subject.contains('Math')) {
+      return Colors.blue.shade700.withOpacity(0.7);
+    }
+    // Default to Physics (Cyan)
+    return Colors.cyan.shade700.withOpacity(0.7);
+  }
+  
+  
   @override
   void initState() {
     super.initState();
@@ -56,6 +70,7 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
+    final themeColor = _getSubjectColor();
 
     int myScore;
     int opponentScore;
@@ -70,24 +85,26 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
 
     String resultMessage;
     Color resultMessageColor;
+    
+    
 
     if (widget.youLeftGame) { // Check this first
       resultMessage = 'You left the Game\nYou Lose \u{1F622}';
       resultMessageColor = Colors.redAccent;
     } else if (widget.opponentLeftGame) { // If opponent left the game
       resultMessage = 'Opponent left the Game\nYou Win 🥳'; // Specific message
-      resultMessageColor = Colors.amberAccent; // Winner color
+      resultMessageColor = themeColor; // Winner color
       myScore = widget.totalQuestions; // Ensure score is displayed as totalQuestions for the win
       opponentScore = 0; // Ensure opponent's score is 0
     } else if (myScore > opponentScore) {
       resultMessage = '🥳 You Win 🥳';
-      resultMessageColor = Colors.amberAccent;
+      resultMessageColor = themeColor;
     } else if (myScore < opponentScore) {
       resultMessage = '🤝 Opponent Wins 🤝';
-      resultMessageColor = Colors.amberAccent;
+      resultMessageColor = themeColor;
     } else {
       resultMessage = '🤝  It\'s a Draw  🤝';
-      resultMessageColor = Colors.amberAccent;
+      resultMessageColor = themeColor;
     }
 
 
@@ -140,9 +157,9 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                 horizontal: screenWidth * 0.08,
               ),
               decoration: BoxDecoration(
-                color: Color(0xFFFC107),
+                color: themeColor.withOpacity(0.2),
                 borderRadius: BorderRadius.circular(4),
-                border: Border.all(color: Colors.amber, width: 1.8),// Responsive border radius
+                border: Border.all(color: themeColor, width: 1.8),// Responsive border radius
                 boxShadow: [
                   BoxShadow(
                     color: Colors.white.withOpacity(0.1),
@@ -228,7 +245,7 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                         break;
                       case 'both_wrong_or_skipped':
                         userStatus = 'Both were incorrect or skipped.';
-                        userStatusColor = Colors.amberAccent;
+                        userStatusColor = themeColor;
                         break;
                     // No specific case for 'user_wrong_opponent_wrong' or 'user_wrong_no_answer' here
                     // as 'both_wrong_or_skipped' covers the outcome display effectively.
@@ -245,8 +262,8 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                         color: const Color(0xFF000000), // Black background, from ResultScreen
                         borderRadius: BorderRadius.circular(12),
                         border: Border.all(
-                          color: Colors.amber, // Amber border as requested
-                          width: 0.8,
+                          color: themeColor, // Amber border as requested
+                          width: 1,
                         ),
                       ),
                       child: Column(
@@ -514,9 +531,9 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                   Navigator.of(context).popUntil((route) => route.isFirst); // Go back to Home Screen
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0x2DFFC107), // More vibrant color
+                  backgroundColor: themeColor.withOpacity(0.2), // More vibrant color
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(4),side: BorderSide(color: Colors.amber, width: 0.8),
+                    borderRadius: BorderRadius.circular(4),side: BorderSide(color: themeColor, width: 0.8),
 
                   ),
                   elevation: 8,

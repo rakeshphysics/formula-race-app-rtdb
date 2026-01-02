@@ -433,12 +433,12 @@ _active3DIndices.add(index);
   // }
 
   if (subject.contains('Chem')) {
-  return const Color(0xB3AE9B52);
+  return  Colors.green.shade700.withOpacity(0.6);
   } else if (subject.contains('Math')) {
-    return const Color(0xB3AE9B52);
+    return Colors.blue.shade700.withOpacity(0.6);
   }
   // Default to Physics (Cyan)
-    return const Color(0xB3AE9B52);
+    return Colors.cyan.shade700.withOpacity(0.6);
 }
 
   Widget _buildMediaTypeBadge(String? imagePath, Color themeColor) {
@@ -472,12 +472,12 @@ _active3DIndices.add(index);
           color: Colors.black.withOpacity(0.7),
           borderRadius: BorderRadius.circular(50),
           // Use the themeColor for the border
-          border: Border.all(color: themeColor.withOpacity(0.8), width: 1),
+          border: Border.all(color: Colors.grey.shade400, width: 1),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(icon, color: themeColor, size: 16),
+            Icon(icon, color: Colors.grey[400], size: 16),
 
             if (label.isNotEmpty) ...[
               const SizedBox(width: 4),
@@ -497,6 +497,214 @@ _active3DIndices.add(index);
     );
   }
 
+
+  // Widget _buildFormulaCard(
+  //     Formula formula,
+  //     int index, {
+  //       Key? key,
+  //     }) {
+  //   final questionData = formula.data;
+  //   final screenWidth = MediaQuery.of(context).size.width;
+  //   final themeColor = _getSubjectColor();
+  //
+  //   return Container(
+  //     key: key,
+  //     width: double.infinity,
+  //     margin: const EdgeInsets.symmetric(vertical: 8),
+  //     decoration: BoxDecoration(
+  //       color: Colors.black,
+  //       borderRadius: BorderRadius.circular(4),
+  //       border: Border.all(
+  //         color: themeColor,
+  //         width: 1.5,
+  //       ),
+  //     ),
+  //     child: Stack(
+  //       children: [
+  //         // --- LAYER 1: CONTENT (Image + Text) ---
+  //         Column(
+  //           mainAxisSize: MainAxisSize.min,
+  //           crossAxisAlignment: CrossAxisAlignment.start,
+  //           children: [
+  //             if (questionData['image'] != null &&
+  //                 questionData['image'].toString().isNotEmpty)
+  //               Align(
+  //                 alignment: Alignment.center,
+  //                 child: Padding(
+  //                   padding: EdgeInsets.symmetric(vertical: screenWidth * 0.02),
+  //
+  //                   child:Stack(
+  //                     children:[
+  //                   SizedBox(
+  //                     // WIDTH LOGIC
+  //                     width: questionData['image'].endsWith('.glb')
+  //                         ? screenWidth * 0.6
+  //                         : questionData['image'].endsWith('.riv')
+  //                         ? screenWidth * 0.65 // Custom size for Rive (currently same as image)
+  //                         : screenWidth * 0.62,
+  //
+  //                     // HEIGHT LOGIC
+  //                     height: questionData['image'].endsWith('.glb')
+  //                         ? screenWidth * 0.6
+  //                         : questionData['image'].endsWith('.riv')
+  //                         ? (screenWidth * 0.65) / 1.5 // Custom size for Rive (currently same as image)
+  //                         : (screenWidth * 0.62) / 1.5,
+  //
+  //                     child: questionData['image'].endsWith('.svg')
+  //                         ? Opacity(
+  //                       opacity: 0.85,
+  //                       child: SvgPicture.asset(
+  //                         questionData['image'],
+  //                         fit: BoxFit.contain,
+  //                       ),
+  //                     )
+  //                         : questionData['image'].endsWith('.glb')
+  //                         ? Formula3DViewer(
+  //                       src: questionData['image'],
+  //                       themeColor: themeColor,
+  //                       index: index,
+  //                       isActive: _active3DIndices.contains(index),
+  //                       onActivate: () => _activate3DModel(index),
+  //                       onDeactivate: () => _deactivate3DModel(index),
+  //                     )
+  //                         : questionData['image'].endsWith('.riv')
+  //                         ? Opacity(
+  //                       opacity: 0.8, // <--- Add this
+  //                       child: FormulaRiveViewer(
+  //                         src: questionData['image'],
+  //                       ),
+  //                     )
+  //                         : Image.asset(
+  //                       questionData['image'],
+  //                       fit: BoxFit.contain,
+  //                     ),
+  //                   ),
+  //                       //_buildMediaTypeBadge(questionData['image']),
+  //                     ],
+  //                   ),
+  //
+  //                 ),
+  //               ),
+  //
+  //
+  //             // B. Text Content
+  //             Padding(
+  //               // Add top padding so text doesn't overlap icons if there is no image
+  //               padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
+  //               child: Column(
+  //                 crossAxisAlignment: CrossAxisAlignment.start,
+  //                 children: [
+  //                   // Question
+  //                   // Add right padding to prevent text from hitting the floating icons
+  //                   // Question
+  //                   Padding(
+  //                     // Only add right padding if there is NO image (to avoid overlap with icons).
+  //                     // If there is an image, icons are above, so we can use full width.
+  //                     padding: EdgeInsets.only(
+  //                       right: (questionData['image'] != null &&
+  //                           questionData['image'].toString().isNotEmpty)
+  //                           ? 0
+  //                           : 40.0,
+  //                     ),
+  //                     child: Html(
+  //                       data: '${index + 1}. ${questionData['question'] ?? 'N/A'}',
+  //                       style: {
+  //                         "body": Style(
+  //                           fontSize: FontSize(screenWidth * 0.037),
+  //                           color: const Color(0xE6DCDCDC),
+  //                           fontFamily: GoogleFonts.poppins().fontFamily,
+  //                           margin: Margins.zero,
+  //                         ),
+  //                       },
+  //                     ),
+  //                   ),
+  //                   SizedBox(height: screenWidth * 0.016),
+  //
+  //                   // Answer
+  //                   Center(
+  //                     child: Padding(
+  //                       padding: EdgeInsets.symmetric(vertical: screenWidth * 0.02),
+  //                         child: SingleChildScrollView(
+  //                         scrollDirection: Axis.horizontal,
+  //                           physics: const BouncingScrollPhysics(),
+  //                       child: Math.tex(
+  //                         '${questionData['answer'] ?? 'N/A'}',
+  //                         textStyle: TextStyle(
+  //                           fontSize: screenWidth * 0.048,
+  //                           color: const Color(0xCCA5FB8F),
+  //                         ),
+  //                       ),
+  //                       ),
+  //                     ),
+  //                   ),
+  //
+  //                   // Tip
+  //                   if (questionData['tip'] != null &&
+  //                       questionData['tip'].toString().isNotEmpty) ...[
+  //                     SizedBox(height: screenWidth * 0.0),
+  //                     Text(
+  //                       'Tip:',
+  //                       style: GoogleFonts.poppins(
+  //                         color: const Color(0xFFF8A46F),
+  //                         fontSize: screenWidth * 0.045,
+  //                         fontWeight: FontWeight.w600,
+  //                         fontStyle: FontStyle.italic,
+  //                       ),
+  //                     ),
+  //                     SizedBox(height: screenWidth * 0.01),
+  //                     Text(
+  //                       questionData['tip'].toString(),
+  //                       style: GoogleFonts.poppins(
+  //                         color: const Color(0xFFF8A46F),
+  //                         fontSize: screenWidth * 0.039,
+  //                         fontStyle: FontStyle.italic,
+  //                       ),
+  //                     ),
+  //                   ],
+  //                 ],
+  //               ),
+  //             ),
+  //           ],
+  //         ),
+  //
+  //         // --- LAYER 2: ICONS (Floating Top Right) ---
+  //         // --- LAYER 2: ICONS (Floating Top Right) ---
+  //         Positioned(
+  //           top: 0,
+  //           right: 0,
+  //           child: Column( // Changed from Row to Column
+  //             mainAxisSize: MainAxisSize.min,
+  //             children: [
+  //               IconButton(
+  //                 constraints: const BoxConstraints(),
+  //                 padding: const EdgeInsets.fromLTRB(8,8,8,0),
+  //                 icon: Icon(
+  //                   formula.isPinned ? Icons.push_pin : Icons.push_pin_outlined,
+  //                   color: formula.isPinned ? themeColor : Colors.grey,
+  //                   size: 20,
+  //                 ),
+  //                 onPressed: () => _togglePin(formula),
+  //               ),
+  //               IconButton(
+  //                 constraints: const BoxConstraints(),
+  //                 padding: const EdgeInsets.fromLTRB(8, 0, 8, 8), // Adjusted padding for vertical stack
+  //                 icon: Icon(
+  //                   formula.isBookmarked ? Icons.bookmark : Icons.bookmark_border,
+  //                   color: formula.isBookmarked ? Colors.amber.shade700 : Colors.grey,
+  //                   size: 20,
+  //                 ),
+  //                 onPressed: () => _toggleBookmark(formula),
+  //               ),
+  //
+  //               if (questionData['image'] != null)
+  //                 _buildMediaTypeBadge(questionData['image'], themeColor),
+  //             ],
+  //           ),
+  //         ),
+  //       ],
+  //     ),
+  //   );
+  // }
 
   Widget _buildFormulaCard(
       Formula formula,
@@ -519,129 +727,126 @@ _active3DIndices.add(index);
           width: 1.5,
         ),
       ),
-      child: Stack(
+      // 1. MAIN LAYOUT: Column (Safe for 3D models)
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // --- LAYER 1: CONTENT (Image + Text) ---
-          Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // A. Image/Model (If exists)
-              // if (questionData['image'] != null &&
-              //     questionData['image'].toString().isNotEmpty)
-              //   Align(
-              //     alignment: Alignment.center,
-              //     child: Padding(
-              //       padding: EdgeInsets.symmetric(vertical: screenWidth * 0.02),
-              //       child: SizedBox(
-              //         width: questionData['image'].endsWith('.glb')
-              //             ? screenWidth * 0.6
-              //             : screenWidth * 0.62,
-              //         height: questionData['image'].endsWith('.glb')
-              //             ? screenWidth * 0.6
-              //             : (screenWidth * 0.62) / 1.5,
-              //         child: questionData['image'].endsWith('.svg')
-              //             ? Opacity(
-              //           opacity: 0.85,
-              //           child: SvgPicture.asset(
-              //             questionData['image'],
-              //             fit: BoxFit.contain,
-              //           ),
-              //         )
-              //             : questionData['image'].endsWith('.glb')
-              //             ? Formula3DViewer(src: questionData['image'], themeColor: themeColor, index:index,
-              //           isActive: _active3DIndices.contains(index), // Pass current state
-              //           onActivate: () => _activate3DModel(index),  // Pass callback
-              //           onDeactivate: () => _deactivate3DModel(index), // Pass callback
-              //         )
-              //             : Image.asset(
-              //           questionData['image'],
-              //           fit: BoxFit.contain,
-              //         ),
-              //       ),
-              //     ),
-              //   ),
 
+          // --- A. IMAGE SECTION (Side-by-Side Layout) ---
+          // Only shows if an image exists.
+          if (questionData['image'] != null &&
+              questionData['image'].toString().isNotEmpty)
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: screenWidth * 0.02),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // 1. LEFT SPACE (Counter-weight to center the image)
+                  const Expanded(child: SizedBox()),
 
-              if (questionData['image'] != null &&
-                  questionData['image'].toString().isNotEmpty)
-                Align(
-                  alignment: Alignment.center,
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(vertical: screenWidth * 0.02),
-
-                    child:Stack(
-                      children:[
-                    SizedBox(
-                      // WIDTH LOGIC
-                      width: questionData['image'].endsWith('.glb')
-                          ? screenWidth * 0.6
-                          : questionData['image'].endsWith('.riv')
-                          ? screenWidth * 0.65 // Custom size for Rive (currently same as image)
-                          : screenWidth * 0.62,
-
-                      // HEIGHT LOGIC
-                      height: questionData['image'].endsWith('.glb')
-                          ? screenWidth * 0.6
-                          : questionData['image'].endsWith('.riv')
-                          ? (screenWidth * 0.65) / 1.5 // Custom size for Rive (currently same as image)
-                          : (screenWidth * 0.62) / 1.5,
-
-                      child: questionData['image'].endsWith('.svg')
-                          ? Opacity(
-                        opacity: 0.85,
-                        child: SvgPicture.asset(
-                          questionData['image'],
-                          fit: BoxFit.contain,
-                        ),
-                      )
-                          : questionData['image'].endsWith('.glb')
-                          ? Formula3DViewer(
-                        src: questionData['image'],
-                        themeColor: themeColor,
-                        index: index,
-                        isActive: _active3DIndices.contains(index),
-                        onActivate: () => _activate3DModel(index),
-                        onDeactivate: () => _deactivate3DModel(index),
-                      )
-                          : questionData['image'].endsWith('.riv')
-                          ? Opacity(
-                        opacity: 0.8, // <--- Add this
-                        child: FormulaRiveViewer(
-                          src: questionData['image'],
-                        ),
-                      )
-                          : Image.asset(
+                  // 2. CENTER IMAGE (Fixed Width)
+                  SizedBox(
+                    width: questionData['image'].endsWith('.glb')
+                        ? screenWidth * 0.6
+                        : questionData['image'].endsWith('.riv')
+                        ? screenWidth * 0.65
+                        : screenWidth * 0.62,
+                    height: questionData['image'].endsWith('.glb')
+                        ? screenWidth * 0.6
+                        : questionData['image'].endsWith('.riv')
+                        ? (screenWidth * 0.65) / 1.5
+                        : (screenWidth * 0.62) / 1.5,
+                    child: questionData['image'].endsWith('.svg')
+                        ? Opacity(
+                      opacity: 0.85,
+                      child: SvgPicture.asset(
                         questionData['image'],
                         fit: BoxFit.contain,
                       ),
+                    )
+                        : questionData['image'].endsWith('.glb')
+                        ? Formula3DViewer(
+                      src: questionData['image'],
+                      themeColor: themeColor,
+                      index: index,
+                      isActive: _active3DIndices.contains(index),
+                      onActivate: () => _activate3DModel(index),
+                      onDeactivate: () => _deactivate3DModel(index),
+                    )
+                        : questionData['image'].endsWith('.riv')
+                        ? Opacity(
+                      opacity: 0.8,
+                      child: FormulaRiveViewer(
+                        src: questionData['image'],
+                      ),
+                    )
+                        : Image.asset(
+                      questionData['image'],
+                      fit: BoxFit.contain,
                     ),
-                        //_buildMediaTypeBadge(questionData['image']),
+                  ),
+
+                  // 3. RIGHT ICONS (Uses the empty space on the right)
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        // Pin Icon
+                        IconButton(
+                          constraints: const BoxConstraints(),
+                          padding: const EdgeInsets.all(8),
+                          icon: Icon(
+                            formula.isPinned ? Icons.push_pin : Icons.push_pin_outlined,
+                            color: formula.isPinned ? themeColor : Colors.grey,
+                            size: 20,
+                          ),
+                          onPressed: () => _togglePin(formula),
+                        ),
+
+                        // Bookmark Icon
+                        IconButton(
+                          constraints: const BoxConstraints(),
+                          padding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
+                          icon: Icon(
+                            formula.isBookmarked ? Icons.bookmark : Icons.bookmark_border,
+                            color: formula.isBookmarked ? Colors.amber.shade700 : Colors.grey,
+                            size: 20,
+                          ),
+                          onPressed: () => _toggleBookmark(formula),
+                        ),
+
+                        // 3D Badge (Below icons)
+                        if (questionData['image'].toString().endsWith('.glb') ||
+                            questionData['image'].toString().endsWith('.riv'))
+                          Padding(
+                            padding: const EdgeInsets.only(right: 12, top: 4),
+                            child: _buildMediaTypeBadge(questionData['image'], themeColor),
+                          ),
                       ],
                     ),
-
                   ),
-                ),
+                ],
+              ),
+            ),
 
-
-              // B. Text Content
+          // --- B. TEXT CONTENT (With Fallback Icons) ---
+          // We use a Stack here so icons can float over text ONLY if there is no image.
+          Stack(
+            children: [
               Padding(
-                // Add top padding so text doesn't overlap icons if there is no image
                 padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Question
-                    // Add right padding to prevent text from hitting the floating icons
-                    // Question
+                    // Question Text
                     Padding(
-                      // Only add right padding if there is NO image (to avoid overlap with icons).
-                      // If there is an image, icons are above, so we can use full width.
+                      // Add right padding ONLY if there is no image (to avoid hitting floating icons)
                       padding: EdgeInsets.only(
                         right: (questionData['image'] != null &&
                             questionData['image'].toString().isNotEmpty)
                             ? 0
-                            : 40.0,
+                            : 25.0,
                       ),
                       child: Html(
                         data: '${index + 1}. ${questionData['question'] ?? 'N/A'}',
@@ -661,16 +866,16 @@ _active3DIndices.add(index);
                     Center(
                       child: Padding(
                         padding: EdgeInsets.symmetric(vertical: screenWidth * 0.02),
-                          child: SingleChildScrollView(
+                        child: SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
-                            physics: const BouncingScrollPhysics(),
-                        child: Math.tex(
-                          '${questionData['answer'] ?? 'N/A'}',
-                          textStyle: TextStyle(
-                            fontSize: screenWidth * 0.048,
-                            color: const Color(0xCCA5FB8F),
+                          physics: const BouncingScrollPhysics(),
+                          child: Math.tex(
+                            '${questionData['answer'] ?? 'N/A'}',
+                            textStyle: TextStyle(
+                              fontSize: screenWidth * 0.048,
+                              color: const Color(0xCCA5FB8F),
+                            ),
                           ),
-                        ),
                         ),
                       ),
                     ),
@@ -701,47 +906,48 @@ _active3DIndices.add(index);
                   ],
                 ),
               ),
+
+              // --- FALLBACK ICONS (Only visible if No Image) ---
+              if (questionData['image'] == null ||
+                  questionData['image'].toString().isEmpty)
+                Positioned(
+                  top: 4,
+                  right: 0,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      IconButton(
+                        constraints: const BoxConstraints(),
+                        padding: const EdgeInsets.fromLTRB(8, 8, 8, 8),
+                        icon: Icon(
+                          formula.isPinned ? Icons.push_pin : Icons.push_pin_outlined,
+                          color: formula.isPinned ? themeColor : Colors.grey,
+                          size: 20,
+                        ),
+                        onPressed: () => _togglePin(formula),
+                      ),
+                      IconButton(
+                        constraints: const BoxConstraints(),
+                        padding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
+                        icon: Icon(
+                          formula.isBookmarked ? Icons.bookmark : Icons.bookmark_border,
+                          color: formula.isBookmarked ? Colors.amber.shade700 : Colors.grey,
+                          size: 20,
+                        ),
+                        onPressed: () => _toggleBookmark(formula),
+                      ),
+                    ],
+                  ),
+                ),
             ],
-          ),
-
-          // --- LAYER 2: ICONS (Floating Top Right) ---
-          // --- LAYER 2: ICONS (Floating Top Right) ---
-          Positioned(
-            top: 0,
-            right: 0,
-            child: Column( // Changed from Row to Column
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                IconButton(
-                  constraints: const BoxConstraints(),
-                  padding: const EdgeInsets.fromLTRB(8,8,8,0),
-                  icon: Icon(
-                    formula.isPinned ? Icons.push_pin : Icons.push_pin_outlined,
-                    color: formula.isPinned ? themeColor : Colors.grey,
-                    size: 20,
-                  ),
-                  onPressed: () => _togglePin(formula),
-                ),
-                IconButton(
-                  constraints: const BoxConstraints(),
-                  padding: const EdgeInsets.fromLTRB(8, 0, 8, 8), // Adjusted padding for vertical stack
-                  icon: Icon(
-                    formula.isBookmarked ? Icons.bookmark : Icons.bookmark_border,
-                    color: formula.isBookmarked ? Colors.amber.shade700 : Colors.grey,
-                    size: 20,
-                  ),
-                  onPressed: () => _toggleBookmark(formula),
-                ),
-
-                if (questionData['image'] != null)
-                  _buildMediaTypeBadge(questionData['image'], themeColor),
-              ],
-            ),
           ),
         ],
       ),
     );
   }
+
+
+
 
 }
 class Formula3DViewer extends StatefulWidget {
