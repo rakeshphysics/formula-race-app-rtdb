@@ -111,7 +111,7 @@
     "id": "ellipse_qn_007",
     "question": "The focal distances of a point P (x,y) on the ellipse are SP and S<sub>1</sub>P equals",
     "options": [
-      "a+ex, a-ex",
+      "2a+ex, 2a-ex",
       "a-ex, a+ex",
       "b+ex, b-ex",
       "b-ex, b+ex"
@@ -309,7 +309,7 @@
     "id": "ellipse_qn_018",
     "question": "The combined equation of pair of tangents drawn from point (x<sub>1</sub>, y<sub>1</sub>) to ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is",
     "options": [
-      "SS_1 = T",
+      "SS_1 = 2T",
       "SS_1 = T^2",
       "SS_1 = 2T^2",
       "SS_1 = T"
@@ -435,7 +435,7 @@
     "id": "ellipse_qn_025",
     "question": "The equation of chord of contact of tangents drawn from (x<sub>1</sub>, y<sub>1</sub>) to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is given by",
     "options": [
-      "T = S_1",
+      "T = 2S_1",
       "T = S_1^2",
       "T = S_1",
       "T = 0"
@@ -472,7 +472,7 @@
     "question": "If &theta;<sub>1</sub>, &theta;<sub>2</sub>, &theta;<sub>3</sub>, &theta;<sub>4</sub> are eccentric angles of conormal points to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 then, &theta;<sub>1</sub> + &theta;<sub>2</sub> + &theta;<sub>3</sub> + &theta;<sub>4</sub> equals (n &isin; Z)",
     "options": [
       "2\\pi",
-      "(2n+1)\\pi",
+      "(3n+4)\\pi",
       "(2n+1)\\pi",
       "4\\pi"
     ],
@@ -530,7 +530,7 @@
       "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2-b^2}}, \\pm \\frac{b^2}{\\sqrt{a^2m^2-b^2}} \\right)",
       "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2+b^2}}, \\mp \\frac{b^2}{\\sqrt{a^2m^2+b^2}} \\right)"
     ],
-    "answer": "(\\pm \\frac{a^2}{\\sqrt{a^2+b^2m^2}}, \\pm \\frac{b^2m}{\\sqrt{a^2+b^2m^2}})",
+    "answer": "\\left( \\pm \\frac{a^2}{\\sqrt{a^2+b^2m^2}}, \\pm \\frac{b^2m}{\\sqrt{a^2+b^2m^2}} \\right)",
     "tags": {
       "chapter": "ellipse",
       "difficulty": "god",
@@ -617,7 +617,7 @@
     "options": [
       "a^2",
       "b^2",
-      "ab",
+      "2ab",
       "ab"
     ],
     "answer": "b^2",
@@ -669,7 +669,7 @@
     "id": "ellipse_qn_038",
     "question": "The polar of point (x<sub>1</sub>, y<sub>1</sub>) with respect to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is (e = eccentricity)",
     "options": [
-      "T = S_1",
+      "T = 2S_1",
       "T = S_1^2",
       "T = S_1",
       "T = 0"

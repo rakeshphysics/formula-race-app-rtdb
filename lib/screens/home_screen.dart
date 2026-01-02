@@ -405,6 +405,10 @@ void _handlePersonalQuestionResponse(bool hadMeal) async {
     });
   }
 
+
+
+
+
   void _updatePandaAnimation() {
     final hour = DateTime.now().hour;
     final minute = DateTime.now().minute;
@@ -480,6 +484,7 @@ void _checkForNewBamboos() async {
 }
 
 
+
   Widget build(BuildContext context) {
 
     // --------- SCREEN DIMENSIONS ----------
@@ -495,7 +500,7 @@ void _checkForNewBamboos() async {
             return AlertDialog(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(4),
-                side: BorderSide(color: Colors.cyan, width: 1.2),
+                side: BorderSide(color: Colors.cyan.withOpacity(0.7), width: 1.2),
               ),
               backgroundColor: Color(0xFF000000),
               title: Text(
@@ -511,7 +516,7 @@ void _checkForNewBamboos() async {
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(4),
-                      side: BorderSide(color: Colors.cyan, width: 1.2),
+                      side: BorderSide(color: Colors.cyan.withOpacity(0.7), width: 1.2),
                     ),
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   ),
@@ -532,7 +537,7 @@ void _checkForNewBamboos() async {
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(4),
-                      side: BorderSide(color: Colors.cyan, width: 1.2),
+                      side: BorderSide(color: Colors.cyan.withOpacity(0.7), width: 1.2),
                     ),
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   ),
