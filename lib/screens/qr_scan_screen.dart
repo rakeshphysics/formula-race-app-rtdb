@@ -170,6 +170,8 @@ class _QRScanScreenState extends State<QRScanScreen> {
                 seed: seed,
                 isPlayer1: false, // Joining player is Player 2
                 playerId: userId,
+                subject: matchData['subject'] ?? 'Physics',  // <--- Pass fetched subject
+
               ),
             ),
           );

@@ -48,10 +48,11 @@ import 'package:formularacing/widgets/rive_viewer.dart';
 // .............END................. Load Qns from combined JSON..........................
 
 // .............START................. Fn loads 10Qns from shared seed with given conditions........................
-Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode, int totalQuestions, List<Map<String, dynamic>> allQuestions) async {
+Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode, int totalQuestions, List<Map<String, dynamic>> allQuestions,String subject) async {
    final random = Random(seed);
 
-  Map<String, List<Map<String, dynamic>>> buckets = {
+
+   Map<String, List<Map<String, dynamic>>> buckets = {
     '11_easy': [],
     '11_medium': [],
     '11_god': [],
@@ -60,14 +61,38 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
     '12_god': [],
   };
 
-  for (var q in allQuestions) {
-    final cls = q['tags']['class'];
-    final diff = q['tags']['difficulty'];
-    final key = '${cls}_$diff';
-    if (buckets.containsKey(key)) {
-      buckets[key]!.add(Map<String, dynamic>.from(q));
-    }
-  }
+   // REPLACEMENT CODE FOR BUCKET SORTING
+   for (var q in allQuestions) {
+     if (q['tags'] == null) continue;
+
+     // 1. Normalize the class tag safely
+     // This handles "Class 11", "11", "11th", "12", "Class 12", etc.
+     String rawClass = q['tags']['class'].toString().toLowerCase();
+     String classKey = '';
+
+     if (rawClass.contains('11')) {
+       classKey = '11';
+     } else if (rawClass.contains('12')) {
+       classKey = '12';
+     }
+
+     // If we couldn't determine the class, skip this question
+     if (classKey.isEmpty) continue;
+
+     // 2. Get Difficulty
+     String difficulty = q['tags']['difficulty'] ?? 'easy';
+
+     // 3. Construct Key (e.g., "11_easy")
+     String key = '${classKey}_$difficulty';
+
+     // 4. Add to Bucket
+     if (buckets.containsKey(key)) {
+       buckets[key]!.add(Map<String, dynamic>.from(q));
+     }
+   }
+
+// Optional: Debug print to confirm buckets are filling for Chemistry/Maths
+// print("🔍 DEBUG: Buckets -> 11E:${buckets['11_easy']?.length}, 12E:${buckets['12_easy']?.length}");
 
   //print('✅✅DEBUG: GameMode received: $gameMode');
 
@@ -137,11 +162,9 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
 // ---------------------------------------------------------
 // 1. DETECT SUBJECT (Physics vs Maths/Chemistry)
 // ---------------------------------------------------------
-  String subject = 'Physics'; // Default
-  if (allQuestions.isNotEmpty && allQuestions[0]['tags'] != null) {
-    subject = allQuestions[0]['tags']['subject'] ?? 'Physics';
-  }
-  bool isPhysics = subject == 'Physics';
+  bool isPhysics = subject.toLowerCase() == 'physics';
+
+  print("🔍 DEBUG: Subject Passed: '$subject' -> Using Physics Logic? $isPhysics");
 
 // ---------------------------------------------------------
 // 2. HELPER: Simple Random Picker (For Maths/Chemistry)
@@ -163,6 +186,8 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
 
     // Record IDs so we don't pick them again in a different bucket
     for (var q in selected) pickedIds.add(q['id']);
+
+    print("🔍 DEBUG: pickSimpleRandom -> BucketSize: ${bucket.length}, Requested: $count, Available(Unique): ${available.length}, Selected: ${selected.length}");
 
     return selected;
   }
@@ -244,14 +269,28 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
 // Inside getRandomQuestions function, within the if-else if structure
   else if (gameMode.startsWith(
       'chapter_wise_')) { // This is your 'chapter_wise' condition
-    String? selectedChapterName = gameMode.substring('chapter_wise_'.length).replaceAll(" ", "_");
-    //print('DEBUG: Chapter Wise - Extracted chapter name: $selectedChapterName');
+    String rawName = gameMode.substring('chapter_wise_'.length);
 
-    if (selectedChapterName != null && selectedChapterName.isNotEmpty) {
+    // 2. Create a "Slug" (lowercase, remove ALL underscores and spaces)
+    //    "Solid_State" -> "solidstate"
+    //    "Solid State" -> "solidstate"
+    String targetSlug = rawName.replaceAll("_", "").replaceAll(" ", "").toLowerCase();
+
+    if (targetSlug.isNotEmpty) {
       final List<Map<String, dynamic>> chapterQuestions = allQuestions
-          .where((q) => q['tags'] != null && (q['tags']['chapter'] as String).toLowerCase() == selectedChapterName!.toLowerCase())
+          .where((q) {
+        if (q['tags'] == null || q['tags']['chapter'] == null) return false;
+
+        // 3. Create a "Slug" from the JSON data too
+        String jsonChapter = (q['tags']['chapter'] as String);
+        String jsonSlug = jsonChapter.replaceAll("_", "").replaceAll(" ", "").toLowerCase();
+
+        // 4. Compare Slugs (Matches regardless of spaces or underscores)
+        return jsonSlug == targetSlug;
+      })
           .map((q) => Map<String, dynamic>.from(q))
           .toList();
+
 
       Map<String, List<Map<String, dynamic>>> chapterBuckets = {
         'easy': [], 'medium': [], 'god': [],
@@ -263,6 +302,11 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
           chapterBuckets[diff]!.add(q);
         }
       }
+
+      print(
+          "🔍 DEBUG: Chapter Wise ($rawName) - Easy=${chapterBuckets['easy']
+              ?.length}, Medium=${chapterBuckets['medium']
+              ?.length}, God=${chapterBuckets['god']?.length}");
 
 // NEW: Create a set to track unique question IDs for this chapter mode
       final Set<String> pickedQuestionIds = {};
@@ -294,12 +338,10 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
           chapterBuckets['medium']!, 5, pickedQuestionIds, random));
       selectedQuestions.addAll(_pickQuestionsById(
           chapterBuckets['god']!, 1, pickedQuestionIds, random));
-
-      if (selectedQuestions.length < totalQuestions) {
-      }
-    } else {
     }
   }
+  print("🔍 DEBUG: Final Selected Questions Count: ${selectedQuestions.length}");
+
  final finalQuestions = selectedQuestions.take(totalQuestions).toList();
   return finalQuestions;
 
@@ -315,6 +357,7 @@ class OnlineGameScreen extends StatefulWidget {
   final String playerId;
   final int seed;           // 👈 Add this
   final bool isPlayer1;
+  final String subject;
 
 
   // 👈 And this
@@ -325,6 +368,9 @@ class OnlineGameScreen extends StatefulWidget {
     required this.playerId,
     required this.seed,      // 👈 Include in constructor
     required this.isPlayer1,
+    required this.subject,
+
+
   });
   @override
   State<OnlineGameScreen> createState() => _OnlineGameScreenState();
@@ -454,7 +500,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
             quizProvider.allQuizData[fileKey]?.cast<Map<String, dynamic>>() ?? [];
 
         // 4. Pass this specific list to the randomizer
-        final qns = await getRandomQuestions(seed, fetchedGameMode, totalQuestions, sourceQuestions);
+        final qns = await getRandomQuestions(seed, fetchedGameMode, totalQuestions, sourceQuestions,fetchedSubject );
 
         setState(() {
           questions = qns;

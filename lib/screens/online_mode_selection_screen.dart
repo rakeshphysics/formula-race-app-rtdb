@@ -491,6 +491,7 @@ class _OnlineModeSelectionScreenState extends State<OnlineModeSelectionScreen> {
             seed: seed,
             isPlayer1: true,
             playerId: widget.userId,
+            subject: _selectedSubject, // <--- Pass the selected subject
           ),
         ),
       );

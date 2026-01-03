@@ -144,7 +144,8 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
                         matchId: matchId,
                         seed: seed,
                         isPlayer1: true, // Host is always Player 1
-                        playerId: userId, // Use userId directly
+                        playerId: userId,
+                        subject: subject,// Use userId directly
                       ),
                     ),
                   );

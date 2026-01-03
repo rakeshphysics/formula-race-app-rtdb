@@ -10,7 +10,9 @@ class QRHostScreen extends StatefulWidget {
   final String matchId;
   final int seed;
   final bool isPlayer1;
-  final String playerId; // Host's own player ID
+  final String playerId;
+  final String subject;   // <--- NEW: Required for game logic
+  // Host's own player ID
 
   const QRHostScreen({
     Key? key,
@@ -18,6 +20,8 @@ class QRHostScreen extends StatefulWidget {
     required this.seed,
     required this.isPlayer1,
     required this.playerId,
+    required this.subject,   // <--- Add this
+
   }) : super(key: key);
 
   @override
@@ -94,6 +98,7 @@ class _QRHostScreenState extends State<QRHostScreen> {
               seed: widget.seed, // Seed is read from initial match data in RTDB now
               isPlayer1: widget.isPlayer1,
               playerId: widget.playerId,
+              subject: widget.subject,   // <--- Pass fetched subject
             ),
           ),
         );

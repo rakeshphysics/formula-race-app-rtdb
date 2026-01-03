@@ -150,26 +150,70 @@ void _loadAiMessage({required AiMessageTrigger trigger}) async {
 
 // --- NEW HELPER FUNCTION ---
 // --- UPDATED HELPER FUNCTION ---
+// --- SIMPLIFIED BAMBOO LOGIC ---
+// We treat SharedPreferences as the "Bank".
+// This function just reloads the bank balance when the app starts.
+Future<void> _checkForNewBamboos() async {
+  final prefs = await SharedPreferences.getInstance();
+
+  // 1. Load the saved total (Default to 0)
+  int savedBalance = prefs.getInt('total_bamboos') ?? 0;
+
+  // 2. Update the UI
+  if (mounted) {
+    setState(() {
+      _bamboos = savedBalance;
+    });
+  }
+  print("--- 🏦 Bank Balance Loaded: $_bamboos ---");
+}
+
+// --- HELPER TO ADD REWARDS ---
+// Call this whenever the user earns bamboos (e.g., winning a game).
+// It updates the UI immediately AND saves it to the "Bank".
+Future<void> _addBamboos(int amount) async {
+  final prefs = await SharedPreferences.getInstance();
+
+  // 1. ALWAYS load the latest balance from disk first
+  // This ensures we include points earned in other screens (like Solo)
+  int currentSavedBalance = prefs.getInt('total_bamboos') ?? 0;
+
+  // 2. Calculate the new total
+  int newTotal = currentSavedBalance + amount;
+
+  // 3. Save the new total to disk
+  await prefs.setInt('total_bamboos', newTotal);
+  print("💰 Added $amount bamboos. Old: $currentSavedBalance, New: $newTotal");
+
+  // 4. Update the UI
+  if (mounted) {
+    setState(() {
+      _bamboos = newTotal;
+    });
+  }
+}
+
+// --- UPDATED HELPER FUNCTION ---
 Future<void> checkPlayFriendResult() async {
   final prefs = await SharedPreferences.getInstance();
-  String? battleResult = prefs.getString('last_battle_result'); // Returns 'win', 'loss', or 'draw'
+  String? battleResult = prefs.getString('last_battle_result');
 
   if (battleResult != null) {
     // 1. Clear the flag immediately
     await prefs.remove('last_battle_result');
 
-    // 2. Get the message using the String result
     final messageService = HomeMessageService.instance;
     String battleMsg = messageService.getBattleMessage(battleResult);
 
-    // 3. Update UI
     if (mounted) {
-      setState(() {
-        // Bamboo Logic: Win = 10, Draw = 5, Loss = 5
-        int bambooReward = (battleResult == 'win') ? 10 : 5;
-        _bamboos += bambooReward;
+      // 2. Calculate Reward
+      int bambooReward = (battleResult == 'win') ? 10 : 5;
 
-        // Set Panda to talking mode
+      // 3. ✅ USE THE HELPER (It now handles the safe saving logic)
+      await _addBamboos(bambooReward);
+
+      // 4. Show Panda Message
+      setState(() {
         _fullAiMessage = battleMsg;
         _conversationStage = PandaConversationStage.idle;
         _isTalking = true;
@@ -180,7 +224,6 @@ Future<void> checkPlayFriendResult() async {
 
       _startTypingAnimation();
 
-      // Stop talking after the message finishes
       Future.delayed(Duration(milliseconds: (battleMsg.length * 70) + 1000), () {
         if (mounted) {
           setState(() {
@@ -403,7 +446,12 @@ void _handlePandaTap() async {
   if (mounted) {
     setState(() {
       if (bambooWasSpent) {
-        _bamboos--; // Decrement bamboos here, just before the UI rebuilds.
+        _bamboos--;// Decrement bamboos here, just before the UI rebuilds.
+
+        SharedPreferences.getInstance().then((prefs) {
+          prefs.setInt('total_bamboos', _bamboos);
+          print("📉 Bamboo spent! New Balance saved: $_bamboos");
+        });
       }
       _fullAiMessage = newMessage; // Set the new message.
       _isTalking = true;
@@ -614,31 +662,7 @@ void didChangeAppLifecycleState(AppLifecycleState state) {
   }
 }
 
-void _checkForNewBamboos() async {
-  print("--- Calculating available bamboo balance... ---");
-  final dbHelper = DatabaseHelper.instance;
 
-  // Get the count of correct answers that have NOT been spent yet.
-  final availableBamboos = await dbHelper.countUncountedCorrectAnswers(widget.userId);
-
-  print("DATABASE REPORT: Found $availableBamboos available bamboos.");
-  final bool hasNewBamboos = availableBamboos > _bamboos;
-  final int newBamboos = availableBamboos;
-
-  if (mounted && newBamboos > 0) { // Only update state if there's something new
-    setState(() {
-      // Add the new bamboos to the existing count.
-      _bamboos += newBamboos;
-    });
-  }
-
-  // if (hasNewBamboos) {
-  //   print("New bamboos detected! Triggering AI message automatically.");
-  //   _postGameAnalysisTriggered = true;
-  //   _loadAiMessage(trigger: AiMessageTrigger.postGameAnalysis); // <-- THIS IS THE CRUCIAL ADDITION
-  // }
-  print("--- Load complete. Final balance on screen: $_bamboos ---");
-}
 
 
 

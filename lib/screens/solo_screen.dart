@@ -675,6 +675,21 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 //   }
 
 
+  Future<void> _incrementBambooBank() async {
+    final prefs = await SharedPreferences.getInstance();
+
+    // 1. Get current balance (default to 0)
+    int currentBalance = prefs.getInt('total_bamboos') ?? 0;
+
+    // 2. Add 1 bamboo
+    int newBalance = currentBalance + 1;
+
+    // 3. Save back to storage
+    await prefs.setInt('total_bamboos', newBalance);
+
+    // print("💰 BANK UPDATE: Correct Answer! Balance increased to $newBalance");
+  }
+
   // ............. Chunk 4 CHECK ANSWER .............
   Future<void> checkAnswer(String selected) async {
     // Stop the timer as soon as an answer is processed (either by tap or timeout)
@@ -713,6 +728,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     if (wasCorrect) {
       score++;
       _consecutiveCorrectAnswers++;
+      _incrementBambooBank();
     } else {
       _consecutiveCorrectAnswers = 0;
       wrongAnswers.add(
