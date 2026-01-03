@@ -145,6 +145,52 @@ void _loadAiMessage({required AiMessageTrigger trigger}) async {
   });
 }
 
+
+// --- NEW HELPER FUNCTION ---
+// --- UPDATED HELPER FUNCTION ---
+Future<void> checkPlayFriendResult() async {
+  final prefs = await SharedPreferences.getInstance();
+  String? battleResult = prefs.getString('last_battle_result'); // Returns 'win', 'loss', or 'draw'
+
+  if (battleResult != null) {
+    // 1. Clear the flag immediately
+    await prefs.remove('last_battle_result');
+
+    // 2. Get the message using the String result
+    final messageService = HomeMessageService.instance;
+    String battleMsg = messageService.getBattleMessage(battleResult);
+
+    // 3. Update UI
+    if (mounted) {
+      setState(() {
+        // Bamboo Logic: Win = 10, Draw = 5, Loss = 5
+        int bambooReward = (battleResult == 'win') ? 10 : 5;
+        _bamboos += bambooReward;
+
+        // Set Panda to talking mode
+        _fullAiMessage = battleMsg;
+        _conversationStage = PandaConversationStage.idle;
+        _isTalking = true;
+        _currentPandaLottie = 'assets/pandaai/talk.json';
+        _charIndex = 0;
+        _displayedAiMessage = "";
+      });
+
+      _startTypingAnimation();
+
+      // Stop talking after the message finishes
+      Future.delayed(Duration(milliseconds: (battleMsg.length * 70) + 1000), () {
+        if (mounted) {
+          setState(() {
+            _isTalking = false;
+          });
+          _updatePandaAnimation();
+        }
+      });
+    }
+  }
+}
+
 // void _handlePandaTap() async {
 //   if (_isTalking) return;
 //
@@ -1006,15 +1052,16 @@ void _checkForNewBamboos() async {
                       screenHeight: screenWidth,
                       color: const Color(0xFF201100),
 
-                      onPressed: () {
+                      onPressed: () async {
                         //print('✅Navigating to MultiplayerSelectionScreen with userId: ${widget.userId}');
-                        Navigator.push(
+                        await Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder: (context) => MultiplayerSelectionScreen(userId: widget.userId),
                             // Navigate to the new page
                           ),
                         );
+                        await checkPlayFriendResult();
                       },
                       gradientColors: const [Color(0xFFFFA500), Color(
                           0xFF874A01)],

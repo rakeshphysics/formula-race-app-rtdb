@@ -8,6 +8,7 @@ import 'package:confetti/confetti.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:model_viewer_plus/model_viewer_plus.dart';
 import 'package:formularacing/widgets/rive_viewer.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class OnlineResultScreen extends StatefulWidget {
   final Map<dynamic, dynamic> scores;
@@ -531,8 +532,41 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
               width: double.infinity, // Responsive width
               height: screenHeight * 0.07, // Responsive height
               child: ElevatedButton(
-                onPressed: () {
-                  Navigator.of(context).popUntil((route) => route.isFirst); // Go back to Home Screen
+                // onPressed: () {
+                //   Navigator.of(context).popUntil((route) => route.isFirst); // Go back to Home Screen
+                // },
+
+                onPressed: () async {
+                  // 1. Determine Result Status
+                  String resultStatus = 'loss'; // Default fallback
+
+                  if (widget.youLeftGame) {
+                    // Case A: You left the game
+                    resultStatus = 'loss';
+                  } else if (widget.opponentLeftGame) {
+                    // Case B: Opponent left (You win automatically)
+                    resultStatus = 'win';
+                  } else {
+                    // Case C: Game finished normally - Compare Scores
+                    if (myScore > opponentScore) {
+                      resultStatus = 'win';
+                    } else if (myScore < opponentScore) {
+                      resultStatus = 'loss';
+                    } else {
+                      // Case D: Scores are equal
+                      resultStatus = 'draw';
+                    }
+                  }
+
+                  // 2. Save Result to SharedPreferences
+                  final prefs = await SharedPreferences.getInstance();
+                  // Saves: 'win', 'loss', or 'draw'
+                  await prefs.setString('last_battle_result', resultStatus);
+
+                  // 3. Navigate Home
+                  if (context.mounted) {
+                    Navigator.of(context).popUntil((route) => route.isFirst);
+                  }
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: themeColor.withOpacity(0.2), // More vibrant color

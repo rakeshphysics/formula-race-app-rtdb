@@ -641,6 +641,70 @@ class HomeMessageService {
     return modifiableQuotes.first;
   }
 
+  // --- NEW BATTLE MESSAGES ---
+// --- UPDATED BATTLE MESSAGES (Handles Win, Loss, and Draw) ---
+  String getBattleMessage(String result) {
+    if (result == 'win') {
+      const wins = [
+        "Victory! You showed them who's boss! 🏆",
+        "Woohoo! Another win for the Formula Racing team! 🏎️💨",
+        "You crushed it! My bamboo tastes sweeter with victory. 🐼✨",
+        "Champion! That was amazing. +10 Bamboo for us! 🎋",
+        "Speed and precision! You are the Formula 1 of math. 🏁",
+        "Winner winner, bamboo dinner! Great job! 🍽️",
+        "That was legendary! You left them in the dust. 💨",
+        "High five! You're unstoppable today. ✋",
+        "Victory tastes sweet! Like fresh bamboo shoots. 🎍",
+        "You're on fire! The competition didn't stand a chance. 🔥",
+        "Bohot hard! You totally dominated that match. 💪",
+        "King of the track! That win was well deserved. 👑",
+        "Smooth operator! You made winning look easy. 😎",
+        "That's how it's done! Another trophy for the shelf. 🏆",
+        "You're a natural! Keep this winning streak alive. 🌟"
+      ];
+      return getRandomMessage(wins);
+    }
+    else if (result == 'draw') {
+      const draws = [
+        "It's a tie! Two speedsters crossing the line together. 🏁",
+        "A draw! You are both equally matched geniuses. 🤝",
+        "No winner today, just two champions! +5 Bamboo. 🐼",
+        "Wow! Exact same score. That was a tight race! ⚖️",
+        "Stalemate! You both played amazingly well. ✨",
+        "A dead heat! Neither of you gave an inch. 🏎️",
+        "Perfectly balanced, as all things should be. A draw! ⚖️",
+        "Close call! It ended in a tie. Good game! 🎮"
+      ];
+      return getRandomMessage(draws);
+    }
+    else {
+      // Result is 'loss'
+      const losses = [
+        "Ouch! That was close. Don't worry, we'll get them next time! 💪",
+        "It's okay! Even the fastest racers need a pit stop. 🛑",
+        "Defeat is just fuel for the next victory. Let's try again! 🔥",
+        "Don't give up! Review your mistakes and come back stronger. 🧠",
+        "A minor setback for a major comeback. You got this! 🚀",
+        "So close! Next time, that win is ours. 🤝",
+        "Chin up, racer! The track is still waiting for you. 🏎️",
+        "Learning from defeat is the first step to victory. 📚",
+        "No worries! Shake it off and let's race again. 🔄",
+        "That was a tough one! But I believe in you. ❤️",
+        "Even champions lose sometimes. It's about how you get back up! 🥊",
+        "Take a deep breath. We'll crush them in the rematch! 😤",
+        "Good effort! Just a little more speed next time. ⚡",
+        "Don't let it get to you. You're still a winner in my eyes! 🐼",
+        "Review the replay, find the gap, and win the next lap! 🏁"
+      ];
+      return getRandomMessage(losses);
+    }
+  }
+  String getRandomMessage(List<String> messages) {
+    if (messages.isEmpty) return "";
+    // Ensure you have 'import 'dart:math';' at the top of the file
+    return messages[DateTime.now().millisecondsSinceEpoch % messages.length];
+  }
+
   // Future<String> getGameAdviceMessage(String userId) async {
   //   final dbHelper = DatabaseHelper.instance;
   //
