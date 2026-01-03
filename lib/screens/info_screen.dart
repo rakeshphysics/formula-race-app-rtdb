@@ -110,9 +110,9 @@ class InfoScreen extends StatelessWidget {
           TextSpan(
             text: "https://www.youtube.com/@physicswithrakesh\n\n",
             style: baseStyle.copyWith(
-              color: Colors.blueAccent,
+              color: Color(0xCC8AFFFF),
               decoration: TextDecoration.underline,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.normal,
             ),
             recognizer: TapGestureRecognizer()..onTap = _launchYoutube,
           ),

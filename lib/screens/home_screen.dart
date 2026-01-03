@@ -411,7 +411,7 @@ Future<void> _checkFirstTimeUser() async {
   if (isFirstTime) {
     // --- CASE A: First Time User ---
     // Funny intro, 0 bamboos.
-    const introMessage = "Hi! I'm your Panda AI. I love talking, but I love eating more! 🐼 Play games, answer correctly, and win me some bamboo. No bamboo = No talk! 🤐";
+    const introMessage = "Hi! I'm Panda AI. I talk for food! 🐼 Win games to earn bamboo. No bamboo = No talk! 🤐";
 
     if (mounted) {
       setState(() {

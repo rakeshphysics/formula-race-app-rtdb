@@ -119,21 +119,68 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
     selectedQuestions.addAll(
         pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
     //print('Online Selected Chapters: $usedChapters');
+  // } else if (gameMode == 'combined_11_12') {
+  //   // 11th 2 easy, 12th 2 easy, 11th 2 medium, 12th 2 medium, 11th 1 god, 12th 1 god
+  //   selectedQuestions.addAll(
+  //       pickUniqueChapters(buckets['11_easy']!, 2, usedChapters, random));
+  //   selectedQuestions.addAll(
+  //       pickUniqueChapters(buckets['12_easy']!, 2, usedChapters, random));
+  //   selectedQuestions.addAll(
+  //       pickUniqueChapters(buckets['11_medium']!, 2, usedChapters, random));
+  //   selectedQuestions.addAll(
+  //       pickUniqueChapters(buckets['12_medium']!, 2, usedChapters, random));
+  //   selectedQuestions.addAll(
+  //       pickUniqueChapters(buckets['11_god']!, 1, usedChapters, random));
+  //   selectedQuestions.addAll(
+  //       pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
+  //   //print('Online Selected Chapters: $usedChapters');
+  // }
+
   } else if (gameMode == 'combined_11_12') {
+    // Helper to pick unique chapters first, then fill with duplicates if needed
+    List<Map<String, dynamic>> pickQuestionsWithFallback(
+        List<Map<String, dynamic>> bucket,
+        int count,
+        Set<String> usedChapters,
+        Random rng) {
+
+      // 1. Try to pick unique chapters first
+      List<Map<String, dynamic>> selected = pickUniqueChapters(bucket, count, usedChapters, rng);
+
+      // 2. If we don't have enough questions (e.g., only 2 chapters exist but we need 2 questions and one was already used),
+      // fill the rest from the same bucket allowing duplicate chapters.
+      if (selected.length < count) {
+        // Create a pool of remaining questions that haven't been selected yet
+        // (We filter out the ones we just picked in step 1)
+        final alreadyPickedIds = selected.map((q) => q['id']).toSet();
+        final remainingInBucket = bucket.where((q) => !alreadyPickedIds.contains(q['id'])).toList();
+
+        remainingInBucket.shuffle(rng);
+
+        for (var q in remainingInBucket) {
+          if (selected.length >= count) break;
+          selected.add(q);
+          // We don't add to 'usedChapters' here because we are intentionally reusing/ignoring chapter constraints now
+        }
+      }
+      return selected;
+    }
+
     // 11th 2 easy, 12th 2 easy, 11th 2 medium, 12th 2 medium, 11th 1 god, 12th 1 god
     selectedQuestions.addAll(
-        pickUniqueChapters(buckets['11_easy']!, 2, usedChapters, random));
+        pickQuestionsWithFallback(buckets['11_easy']!, 2, usedChapters, random));
     selectedQuestions.addAll(
-        pickUniqueChapters(buckets['12_easy']!, 2, usedChapters, random));
+        pickQuestionsWithFallback(buckets['12_easy']!, 2, usedChapters, random));
     selectedQuestions.addAll(
-        pickUniqueChapters(buckets['11_medium']!, 2, usedChapters, random));
+        pickQuestionsWithFallback(buckets['11_medium']!, 2, usedChapters, random));
     selectedQuestions.addAll(
-        pickUniqueChapters(buckets['12_medium']!, 2, usedChapters, random));
+        pickQuestionsWithFallback(buckets['12_medium']!, 2, usedChapters, random));
     selectedQuestions.addAll(
-        pickUniqueChapters(buckets['11_god']!, 1, usedChapters, random));
+        pickQuestionsWithFallback(buckets['11_god']!, 1, usedChapters, random));
     selectedQuestions.addAll(
-        pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
-    //print('Online Selected Chapters: $usedChapters');
+        pickQuestionsWithFallback(buckets['12_god']!, 1, usedChapters, random));
+
+    // print('Online Selected Chapters: $usedChapters');
   }
 // Inside getRandomQuestions function, within the if-else if structure
   else if (gameMode.startsWith(
