@@ -117,7 +117,7 @@ class InfoScreen extends StatelessWidget {
             recognizer: TapGestureRecognizer()..onTap = _launchYoutube,
           ),
           const TextSpan(
-            text: "Hope you enjoy using it! Love you all! ❤️",
+            text: "Hope you enjoy using it ! Love you all ! ❤️",
           ),
         ],
       ),

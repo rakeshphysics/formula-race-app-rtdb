@@ -16,6 +16,8 @@ import '../../widgets/glow_button_red.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:model_viewer_plus/model_viewer_plus.dart';
+import 'package:formularacing/widgets/rive_viewer.dart';
 
 
 
@@ -323,28 +325,89 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
 
 // ... (previous code remains the same)
 
-            if (question['image'] != null && question['image'].toString().isNotEmpty)
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 0),
+            // if (question['image'] != null && question['image'].toString().isNotEmpty)
+            //   Padding(
+            //     padding: const EdgeInsets.symmetric(vertical: 0),
+            //     child: Center(
+            //       child: SizedBox(
+            //         width: screenWidth * 0.6,
+            //         height: (screenWidth * 0.6) / 1.5,
+            //         child: question['image'].endsWith('.svg')
+            //             ? SvgPicture.asset(
+            //           question['image'],
+            //           fit: BoxFit.contain,
+            //           placeholderBuilder: (context) => const SizedBox.shrink(),
+            //         )
+            //             : Image.asset(
+            //           question['image'],
+            //           fit: BoxFit.contain,
+            //           errorBuilder: (context, error, stackTrace) {
+            //             return const Text(
+            //               'Image not found',
+            //               style: TextStyle(color: Colors.redAccent),
+            //             );
+            //           },
+            //         ),
+            //       ),
+            //     ),
+            //   )
+
+            if (question['image'] != null && question['image'] != "")
+              Container(
+                key: ValueKey(currentIndex),
+                margin: const EdgeInsets.symmetric(vertical: 0),
                 child: Center(
                   child: SizedBox(
-                    width: screenWidth * 0.6,
-                    height: (screenWidth * 0.6) / 1.5,
+                    // WIDTH LOGIC
+                    width: question['image'].endsWith('.glb')
+                        ? screenWidth * 0.65 // 3D models often need more width
+                        : question['image'].endsWith('.riv')
+                        ? screenWidth * 0.65
+                        : screenWidth * 0.62,
+
+                    // HEIGHT LOGIC
+                    height: question['image'].endsWith('.glb')
+                        ? screenWidth * 0.65 // Square aspect for 3D usually works best
+                        : question['image'].endsWith('.riv')
+                        ? (screenWidth * 0.65) / 1.5
+                        : (screenWidth * 0.62) / 1.5,
+
                     child: question['image'].endsWith('.svg')
-                        ? SvgPicture.asset(
-                      question['image'],
-                      fit: BoxFit.contain,
-                      placeholderBuilder: (context) => const SizedBox.shrink(),
+                        ? Opacity(
+                      opacity: 0.85,
+                      child: SvgPicture.asset(
+                        question['image'],
+                        fit: BoxFit.contain,
+                      ),
+                    )
+                        : question['image'].endsWith('.glb')
+                        ? ModelViewer(
+                      key: ValueKey(question['image']),
+                      src: question['image'],
+                      backgroundColor: Colors.transparent,
+                      alt: "A 3D model",
+                      ar: false,
+                      autoRotate: true,
+                      disableZoom: false,
+                      disablePan: true,
+                      cameraControls: true,
+                      interactionPrompt: InteractionPrompt.none,
+                      shadowIntensity: 0,
+                      autoPlay: true,
+                    )
+                        : question['image'].endsWith('.riv')
+                        ? Opacity(
+                      opacity: 0.8,
+                      // Ensure you have this widget defined or use RiveAnimation.asset
+                      child: FormulaRiveViewer(
+                        key: ValueKey(question['image']),
+                        src: question['image'],
+                      ),
                     )
                         : Image.asset(
                       question['image'],
                       fit: BoxFit.contain,
-                      errorBuilder: (context, error, stackTrace) {
-                        return const Text(
-                          'Image not found',
-                          style: TextStyle(color: Colors.redAccent),
-                        );
-                      },
+                      key: ValueKey('img_$currentIndex'),
                     ),
                   ),
                 ),

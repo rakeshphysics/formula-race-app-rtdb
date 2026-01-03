@@ -385,10 +385,14 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                                         return ModelViewer(
                                           src: path,
                                           alt: "3D Model",
+                                          ar: false,
                                           autoRotate: true,
-                                          cameraControls: true,
-                                          backgroundColor: Colors.transparent,
                                           disableZoom: false,
+                                          disablePan: true,
+                                          cameraControls: true,
+                                          interactionPrompt: InteractionPrompt.none,
+                                          shadowIntensity: 0,
+                                          autoPlay: true,
                                         );
                                       }
                                       // 4. Handle Standard Images

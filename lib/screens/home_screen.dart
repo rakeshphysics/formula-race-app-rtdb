@@ -335,6 +335,7 @@ String _getOutOfEnergyMessage() {
     "My 'gyaan' factory is closed for now. Reopens with bamboo supply! 🏭",
     "To unlock more advice, you must first defeat a quiz! ⚔️",
     "I'm saving my energy. Come back when you have more bamboo! 🤫"
+
   ];
   // This is an efficient way to get a random item from a const list.
   // Return a random message from the list
@@ -529,6 +530,7 @@ void _checkForNewBamboos() async {
     // --------- SCREEN DIMENSIONS ----------
     final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
+    final isSmallScreen = MediaQuery.of(context).size.height < 700;
 
 
     return WillPopScope(
@@ -834,29 +836,72 @@ void _checkForNewBamboos() async {
                               ],
                             ),),
 
-                            SizedBox(height: screenHeight * 0.02),
+                            SizedBox(height: screenHeight * 0.015),
 
 
                             // --- CHAT BUBBLE ---
                             // --- CHAT BUBBLE ---
-                            Padding(
-                              padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.1), // <-- ADD THIS WRAPPER
-                              child: Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                                decoration: BoxDecoration(
-                                  color: const Color(0xFF1E1E1E), // Dark grey bubble
-                                  borderRadius: BorderRadius.circular(12),
-                                ),
-                                child: Text(
-                                  _displayedAiMessage,
-                                  textAlign: TextAlign.center, // <-- Optional: Looks better when centered
-                                  style: TextStyle(
-                                    color: const Color(0xFFDCDCDC),
-                                    fontSize: screenWidth * 0.04,
-                                  ),
-                                ),
-                              ),
-                            ),
+                            // Padding(
+                            //   padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.1), // <-- ADD THIS WRAPPER
+                            //   child: Container(
+                            //     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                            //     decoration: BoxDecoration(
+                            //       color: const Color(0xFF1E1E1E), // Dark grey bubble
+                            //       borderRadius: BorderRadius.circular(12),
+                            //     ),
+                            //     child: Text(
+                            //       _displayedAiMessage,
+                            //       textAlign: TextAlign.center, // <-- Optional: Looks better when centered
+                            //       style: TextStyle(
+                            //         color: const Color(0xFFDCDCDC),
+                            //         fontSize: screenWidth * 0.04,
+                            //       ),
+                            //     ),
+                            //   ),
+                            // ),
+
+              // Define this variable at the start of your build method
+
+
+// ... inside your Column ...
+
+// --- CHAT BUBBLE ---
+            Padding(
+            padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.1),
+        child: Container(
+          // USE CONSTRAINTS INSTEAD OF FIXED HEIGHT
+          constraints: BoxConstraints(
+            // Minimum height to look like a bubble
+            minHeight: 50,
+            // Maximum height:
+            // On small screens (<700px height), limit to 15% of screen.
+            // On larger screens, allow up to 22% of screen.
+            maxHeight: MediaQuery.of(context).size.height * (isSmallScreen ? 0.15 : 0.15),
+          ),
+
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+          decoration: BoxDecoration(
+            color: const Color(0xFF1E1E1E),
+            borderRadius: BorderRadius.circular(12),
+          ),
+
+          // Make it scrollable ONLY if it exceeds the maxHeight defined above
+          child: SingleChildScrollView(
+            physics: const BouncingScrollPhysics(),
+            child: Center(
+              child: Text(
+                _displayedAiMessage,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: const Color(0xFFDCDCDC),
+                  fontSize: screenWidth * 0.04,
+                  height: 1.4, // Slightly more line height for readability
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
 
                       // --- YES/NO BUTTONS FOR MEAL QUESTIONS ---
                       if (_showMealButtons)

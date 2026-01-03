@@ -1548,10 +1548,14 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     return ModelViewer(
     src: imagePath,
     alt: "3D Model",
-    autoRotate: true,
-    cameraControls: true,
-    backgroundColor: Colors.transparent,
-    disableZoom: false,
+      ar: false,
+      autoRotate: true,
+      disableZoom: false,
+      disablePan: true,
+      cameraControls: true,
+      interactionPrompt: InteractionPrompt.none,
+      shadowIntensity: 0,
+      autoPlay: true,
     );
     }
     // 4. Handle Standard Images (PNG, JPG, etc.)
