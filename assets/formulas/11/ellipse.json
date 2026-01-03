@@ -453,7 +453,7 @@
     "id": "ellipse_qn_026",
     "question": "The equation of chord of ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 bisected at (x<sub>1</sub>, y<sub>1</sub>) is given by",
     "options": [
-      "T = S_1",
+      "T = 2S_1",
       "T = S_1^2",
       "T = S_1",
       "T = 0"

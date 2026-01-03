@@ -82,6 +82,8 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
     _checkForNewBamboos(); // Check for bamboos on initial load
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _checkFirstTimeUser();
+      checkPlayFriendResult();
+      checkMistakesResult();
     });
     _updatePandaAnimation();
     _pandaUpdateTimer = Timer.periodic(const Duration(minutes: 1), (timer) {
@@ -180,6 +182,75 @@ Future<void> checkPlayFriendResult() async {
 
       // Stop talking after the message finishes
       Future.delayed(Duration(milliseconds: (battleMsg.length * 70) + 1000), () {
+        if (mounted) {
+          setState(() {
+            _isTalking = false;
+          });
+          _updatePandaAnimation();
+        }
+      });
+    }
+  }
+}
+
+Future<void> checkMistakesResult() async {
+  final prefs = await SharedPreferences.getInstance();
+
+  // 1. Check if there is a specific activity status
+  String? activityStatus = prefs.getString('last_activity_status');
+
+  // We only care if the status is 'mistakes_activity'
+  if (activityStatus == 'mistakes_activity') {
+
+    // 2. Retrieve the counts
+    int initialCount = prefs.getInt('mistakes_initial_count') ?? 0;
+    int resolvedCount = prefs.getInt('mistakes_resolved_count') ?? 0;
+
+    // 3. Clear the flags immediately
+    await prefs.remove('last_activity_status');
+    await prefs.remove('mistakes_initial_count');
+    await prefs.remove('mistakes_resolved_count');
+
+    // 4. Determine the message based on logic
+    final messageService = HomeMessageService.instance;
+    String mistakesMsg = "";
+
+    // Logic:
+    // A. If Initial was 0, we shouldn't be here usually, but if so, ignore.
+    if (initialCount == 0) {
+      return;
+    }
+    // B. Failed Attempt (Initial > 0 but Resolved == 0)
+    else if (resolvedCount == 0) {
+      mistakesMsg = messageService.getMistakesClearedMessage(0);
+    }
+    // C. Success (Resolved > 0)
+    else {
+      mistakesMsg = messageService.getMistakesClearedMessage(resolvedCount);
+    }
+
+    // 5. Update UI
+    if (mounted) {
+      setState(() {
+        // Optional: Add bamboo reward logic here if desired
+        // if (resolvedCount > 0) _bamboos += 2;
+
+        // Set Panda to talking mode
+        _fullAiMessage = mistakesMsg;
+        _conversationStage = PandaConversationStage.idle;
+        _isTalking = true;
+        _currentPandaLottie = 'assets/pandaai/talk.json';
+        _charIndex = 0;
+        _displayedAiMessage = "";
+      });
+
+      _startTypingAnimation();
+
+      // Stop talking after the message finishes
+      int durationMs = (mistakesMsg.length * 70) + 1000;
+      if (durationMs < 2000) durationMs = 2000; // Minimum duration
+
+      Future.delayed(Duration(milliseconds: durationMs), () {
         if (mounted) {
           setState(() {
             _isTalking = false;
@@ -738,14 +809,15 @@ void _checkForNewBamboos() async {
                     'My Mistakes',
                     style: GoogleFonts.poppins(color: const Color(0xCCFD698C)),
                   ),
-                  onTap: () {
+                  onTap: ()  async {
                     Navigator.pop(context); // Close the drawer
-                    Navigator.push(
+                    await Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) => AITrackerScreen(userId: widget.userId), // Navigate to Mistakes
                       ),
                     );
+                    checkMistakesResult();
                   },
                 ),
               ),

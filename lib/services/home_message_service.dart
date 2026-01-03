@@ -699,6 +699,155 @@ class HomeMessageService {
       return getRandomMessage(losses);
     }
   }
+
+  // --- NEW MISTAKES CLEARED MESSAGES ---
+  String getMistakesClearedMessage(int count) {
+    // SCENARIO: 0 Mistakes Resolved (Tried but failed)
+    if (count == 0) {
+      const messages = [
+        "Koi baat nahi! Bade bade deshon mein aisi chhoti baatein hoti rehti hain. 🕊️",
+        "Zero resolved? Aryabhata would be proud, but let's change it! 🍩",
+        "Oof! Clean bowled on the first ball? Agli baar sixer marenge! 🏏",
+        "Aaj din nahi tha. Kal phod denge! 🌅",
+        "System hang ho gaya kya? Restart and try again! 💻",
+        "No worries! Even Virat Kohli gets out on a duck sometimes. 🦆",
+        "Khata nahi khula? Koi na, abhi poori match baaki hai. 📖",
+        "It happens! Gir kar hi uthne wale ko Baazigar kehte hain. 🎭",
+        "Zero? It's just a circle waiting to be turned into a 100. 💯",
+        "Arey tension nahi lene ka! Chill maar, phir try kar. 🥤",
+        "Oops! The questions were tough, or you were sleepy? 😴",
+        "Blank slate! Drawing board pe wapas jao. 🎨",
+        "Mission failed! We'll get 'em next time. 🕵️‍♂️",
+        "Lagta hai aaj brain holiday pe hai. Wapas bulao! 🏖️",
+        "Zero progress? Nah, you just found ways that don't work. Edison style! 💡",
+        "Thoda focus aur! Agli baar pakka clear hoga. 🎯",
+        "Bhai/Behen, kya kar raha hai? Jago grahak jago! 🔔",
+        "No mistakes cleared? Maybe they are stubborn. You be stubborn-er! 😤",
+        "Aaj ka score: 0. Kal ka target: Hero. 🦸‍♂️",
+        "Galti sudharna mushkil hai, namumkin nahi. Don 3 loading... 🎬",
+        "Warm-up khatam. Ab asli game shuru karo! 🏁",
+        "Sannata kyu hai bhai? Tod phod machao next time! 💥",
+        "Zero resolved. Dil chhota na kar, effort matter karta hai. ❤️",
+        "Lagta hai questions ne dosti kar li galti se. Break the bond! 💔",
+        "Try, try, but don't cry. Agli baar pakka fly! 🦋",
+        "Aaj luck kharab tha. Kal hard work chalega. 🛠️",
+        "Zero? It's a shape. A shape of resilience! (Just kidding, try again). 😜",
+        "Hota hai, chalta hai, duniya hai. Next attempt will be better! 🌍",
+        "Brain.exe stopped working? Reboot and attack! 🤖",
+        "Khali haath aaye the, khali haath... nahi jayenge next time! 👊"
+      ];
+      return getRandomMessage(messages);
+    }
+    // SCENARIO: 1 Mistake Resolved
+    else if (count == 1) {
+      const messages = [
+        "One less mistake! 🎯 Ek galti maaf, but seekh li na?",
+        "Boom! One error deleted. Shuddhikaran complete! 🧘‍♂️",
+        "Nice! That's one concept mastered. Dimag ki batti jali? 💡",
+        "Small steps, big wins. Boond boond se sagar banta hai! 🌊",
+        "One down! Slow and steady wins the race, mere dost. 🐢",
+        "Mistake cleared! Ab ye galti sapne mein bhi nahi hogi. 😴",
+        "Ek galti sudhari, life set! Keep going. 🚀",
+        "One error fixed. You are becoming a Pro, dheere dheere! 😎",
+        "Shabaash! One weak spot is now your strong point. 💪",
+        "Oops moment fixed! Ab ye question exam mein aane do. 🥊",
+        "One mistake gone. Safai abhiyan shuru! 🧹",
+        "Good job! Ek aur concept clear. Confidence badha? 📈",
+        "That's one less trap for you in the exam. Bach gaye! 😅",
+        "Mistake resolved! You 1 - 0 Confusion. 🏆",
+        "Ek kadam safalta ki aur. One step closer to IIT! 🎓",
+        "Fixed it! Galti se mistake ab nahi hogi. 🚫",
+        "One doubt crushed. Maza aaya? 🐼",
+        "Sahi pakde hain! One error corrected perfectly. 👌",
+        "One mistake less. You are polishing your brain diamond! 💎",
+        "Correction done. Ab ye topic makkhan hai! 🧈",
+        "Ek galti gayi paani mein... chapaak! (But you saved it). 🐸",
+        "One hurdle crossed. Ab aage badho! 🏃‍♂️",
+        "Mistake fixed. Your brain just got a software update. 📲",
+        "Ek aur concept lock kiya jaye? Bilkul sahi! 🔒",
+        "One error down. Darr ke aage jeet hai! 🏔️",
+        "Fixed one! Chhota packet, bada dhamaka. 💥",
+        "Mistake gone! Ab tension lene ka nahi, dene ka. 🕶️",
+        "One less red mark. Green signals ahead! 🚦",
+        "Sudhar gaya! One mistake is history now. 📜",
+        "Ek galti kam. You are getting smarter by the second! 🧠"
+      ];
+      return getRandomMessage(messages);
+    }
+    // SCENARIO: 2-4 Mistakes Resolved
+    else if (count < 5) {
+      final messages = [
+        "Great job! 🧹 You cleared $count mistakes! Jhadu laga diya!",
+        "Cleaning up nicely! $count errors gone. Chamka diya boss! ✨",
+        "You're crushing it! $count weak spots fixed. Bahut hard! 💪",
+        "Progress! $count questions ab kabhi galat nahi honge. 🔥",
+        "$count mistakes resolved. You are on a roll today! 🎲",
+        "Waah! $count doubts cleared. Dimag tez ho raha hai. ⚡",
+        "Solid comeback! $count errors fixed. Ab darna mana hai. 🚫",
+        "$count mistakes down. Exam paper ki toh wat lag jayegi! 📝",
+        "Keep it up! $count concepts are now crystal clear. 💎",
+        "Badhiya! $count galtiyan sudhar li. Improvement dikh raha hai! 📈",
+        "$count errors gone. You are cleaning up your act! 🧼",
+        "Nice streak! $count mistakes resolved. Ruke na tu! 🚀",
+        "$count problems solved. You are becoming a legend! 🦁",
+        "Good going! $count less things to worry about. Chill maar! 🍹",
+        "$count mistakes fixed. Ab ye topics halwa hain! 🍲",
+        "Shabaash! $count concepts ab pakke ho gaye. 🧱",
+        "$count errors deleted. System cleaning in progress... 🤖",
+        "You fixed $count mistakes! Mummy will be proud. 👩‍👦",
+        "$count doubts crushed. You are a problem solver! 🧩",
+        "Awesome! $count mistakes won't haunt you anymore. 👻",
+        "$count corrections! Dheere dheere expert ban rahe ho. 🎓",
+        "Well done! $count mistakes cleared. Picture abhi baaki hai! 🎬",
+        "$count errors fixed. You are sharpening your axe! 🪓",
+        "Sahi ja rahe ho! $count mistakes down. Manzil kareeb hai. 🏁",
+        "$count doubts gone. Brain fog clearing up! 🌫️",
+        "You resolved $count mistakes. Confidence level: High! 🌡️",
+        "$count errors bye-bye. Tata, khatam, gaya! 👋",
+        "Nice work! $count mistakes fixed. Ab party toh banti hai? 🍕",
+        "$count corrections done. You are building a fortress! 🏰",
+        "Superb! $count mistakes cleared. You are unstoppable! 🛑"
+      ];
+      return getRandomMessage(messages);
+    }
+    // SCENARIO: 5+ Mistakes Resolved
+    else {
+      final messages = [
+        "Wow! $count mistakes gone! 🚀 Aaj toh phod diya!",
+        "Massive cleanup! $count errors destroyed. Tsunami la di! 🌊",
+        "Unstoppable! $count concepts mastered. Kya baat hai! 👏",
+        "Legendary session! $count mistakes resolved. Salute hai boss! 🫡",
+        "You are a machine! $count problems solved. Robot ho kya? 🤖",
+        "Mind-blowing! $count errors fixed. Toofan mail on fire! 🚂",
+        "$count mistakes cleared! You are in Beast Mode today! 🦍",
+        "Incredible! $count doubts crushed. Exam ki toh band bajegi! 🥁",
+        "$count corrections! You are rewriting your destiny. ✍️",
+        "Oof! $count mistakes gone. Safai abhiyan level: Pro! 🧹",
+        "You fixed $count errors! Is this the power of almonds? 🥜",
+        "$count mistakes down! You are eating problems for breakfast. 🥣",
+        "Insane progress! $count concepts mastered. Chha gaye guru! 🌟",
+        "$count errors deleted. Your brain is running on 5G now! 📶",
+        "What a comeback! $count mistakes resolved. Sher jaag gaya! 🦁",
+        "$count doubts cleared! You are basically a genius now. 🧠",
+        "Epic! $count mistakes fixed. History create kar rahe ho! 📜",
+        "$count corrections! You are unstoppable like a rocket. 🚀",
+        "Boom! $count errors gone. Surgical strike on mistakes! 💥",
+        "You resolved $count mistakes! Sharmaji ka beta who? 🤷‍♂️",
+        "$count mistakes down! You are playing in the big leagues now. 🏏",
+        "Fantastic! $count errors fixed. Ab koi nahi rok sakta! 🛑",
+        "$count concepts clear! You are building an empire of knowledge. 🏰",
+        "Sensational! $count mistakes gone. Aaj toh kamaal kar diya! 🌹",
+        "$count errors crushed. You are the Bahubali of studies! ⚔️",
+        "You fixed $count mistakes! That's some serious dedication. 🙏",
+        "$count doubts resolved. You are winning at life! 🏆",
+        "Crazy good! $count mistakes cleared. Aag laga di! 🔥",
+        "$count corrections! You are polishing your skills to perfection. ✨",
+        "Masterclass! $count mistakes gone. Take a bow, champion! 🙇‍♂️"
+      ];
+      return getRandomMessage(messages);
+    }
+  }
+
   String getRandomMessage(List<String> messages) {
     if (messages.isEmpty) return "";
     // Ensure you have 'import 'dart:math';' at the top of the file

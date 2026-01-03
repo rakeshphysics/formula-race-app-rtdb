@@ -568,6 +568,8 @@ import 'package:confetti/confetti.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:model_viewer_plus/model_viewer_plus.dart';
 import 'package:formularacing/widgets/rive_viewer.dart'; // Ensure this path is correct
+import 'package:shared_preferences/shared_preferences.dart';
+
 
 //.......START.......Render chapter names Correctly......................
 String formatChapter(String input) {
@@ -621,6 +623,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
   bool isLoading = true;
   late ConfettiController _confettiController;
   late TabController _tabController;
+  int _initialTotalMistakes = 0;
 
   // Track active 3D models
   final Set<String> _active3DIndices = {};
@@ -726,6 +729,19 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
       subjectChapterTotals = finalSubjectTotals;
       chapterExpanded = expandedState;
       isLoading = false;
+
+      // ✅ NEW: Calculate total mistakes right now
+      int currentTotal = 0;
+      finalSubjectTotals.forEach((subj, chapters) {
+        chapters.forEach((chap, count) {
+          currentTotal += count;
+        });
+      });
+
+      // Only set the initial count ONCE when the screen first loads
+      if (_initialTotalMistakes == 0 && currentTotal > 0) {
+        _initialTotalMistakes = currentTotal;
+      }
     });
   }
 
@@ -743,7 +759,36 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
       });
     });
 
-    return Stack(
+
+    return PopScope(
+        canPop: false, // We handle the pop manually
+        onPopInvoked: (didPop) async {
+      if (didPop) return;
+
+      // 1. Calculate the difference (Resolved Count)
+      // If _initialTotalMistakes was 0 (maybe first load failed), assume 0 resolved.
+      int resolvedCount = (_initialTotalMistakes > 0)
+          ? _initialTotalMistakes - totalActiveMistakes
+          : 0;
+
+      // 2. If user actually resolved something, save it for the Home Screen Panda
+      if (_initialTotalMistakes > 0) {
+        final prefs = await SharedPreferences.getInstance();
+
+        // Set the flag so Home Screen knows to look for specific data
+        await prefs.setString('last_activity_status', 'mistakes_activity');
+
+        // Save BOTH values so Home Screen can distinguish "Failed Attempt" vs "Success"
+        await prefs.setInt('mistakes_initial_count', _initialTotalMistakes);
+        await prefs.setInt('mistakes_resolved_count', resolvedCount);
+      }
+
+      // 4. Now actually go back to Home Screen
+      if (context.mounted) {
+        Navigator.of(context).pop();
+      }
+        },
+    child:Stack(
       alignment: Alignment.topCenter,
       children: [
         Scaffold(
@@ -878,7 +923,10 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
           ),
         ),
       ],
+    ),
     );
+
+
   }
 
   Widget _buildSubjectList(String subject, double screenWidth, double screenHeight) {

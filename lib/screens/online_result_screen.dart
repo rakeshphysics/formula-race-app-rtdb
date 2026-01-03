@@ -116,7 +116,37 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
     }
 
 
-    return Scaffold(
+    return PopScope(
+        canPop: false, // ⛔️ Prevents default back action
+        onPopInvoked: (didPop) async {
+      if (didPop) return;
+
+      // --- A. Calculate Result Status for the Panda ---
+      String resultStatus = 'loss';
+      if (widget.youLeftGame) {
+        resultStatus = 'loss';
+      } else if (widget.opponentLeftGame) {
+        resultStatus = 'win';
+      } else {
+        if (myScore > opponentScore) {
+          resultStatus = 'win';
+        } else if (myScore < opponentScore) {
+          resultStatus = 'loss';
+        } else {
+          resultStatus = 'draw';
+        }
+      }
+
+      // --- B. Save to SharedPreferences (CRITICAL for Panda) ---
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString('last_battle_result', resultStatus);
+
+      // --- C. Force Navigate to Home ---
+      if (context.mounted) {
+        Navigator.of(context).popUntil((route) => route.isFirst);
+      }
+    },
+    child: Scaffold(
       backgroundColor: Colors.black,
           appBar: AppBar(
           backgroundColor: Colors.black,
@@ -610,6 +640,7 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
 
       ],
       ),
+    ),
     );
   }
 }
