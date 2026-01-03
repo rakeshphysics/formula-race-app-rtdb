@@ -49,12 +49,7 @@ import 'package:formularacing/widgets/rive_viewer.dart';
 
 // .............START................. Fn loads 10Qns from shared seed with given conditions........................
 Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode, int totalQuestions, List<Map<String, dynamic>> allQuestions) async {
-  // ...}
-  //final allQuestions = await loadQuestionsFromAssets();
-  //print('✅✅✅✅DEBUG: getRandomQuestions - Raw gameMode received: "$gameMode"');
-  //print('✅✅DEBUG: Total questions loaded from assets: ${allQuestions.length}');
-  final random = Random(seed);
-  ////////print("🎲 Step 4: Shuffling questions with seed: $seed");
+   final random = Random(seed);
 
   Map<String, List<Map<String, dynamic>>> buckets = {
     '11_easy': [],
@@ -95,93 +90,157 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
     return selected;
   }
 
-  // Inside getRandomQuestions function, after populating buckets
+//.....................OLD CODE WILL USE INCASE FO ERRORS....................
+// final usedChapters = <String>{};
+//   final selectedQuestions = <Map<String, dynamic>>[];
+//
+//   // REPLACING THE SWITCH STATEMENT WITH IF-ELSE IF
+//   if (gameMode == 'full_11th') {
+//     // 4 easy, 5 medium, 1 god for 11th
+//     selectedQuestions.addAll(
+//         pickUniqueChapters(buckets['11_easy']!, 4, usedChapters, random));
+//     selectedQuestions.addAll(
+//         pickUniqueChapters(buckets['11_medium']!, 5, usedChapters, random));
+//     selectedQuestions.addAll(
+//         pickUniqueChapters(buckets['11_god']!, 1, usedChapters, random));
+//     //print('Online Selected Chapters: $usedChapters');
+//   } else if (gameMode == 'full_12th') {
+//     // 4 easy, 5 medium, 1 god for 12th
+//     selectedQuestions.addAll(
+//         pickUniqueChapters(buckets['12_easy']!, 4, usedChapters, random));
+//     selectedQuestions.addAll(
+//         pickUniqueChapters(buckets['12_medium']!, 5, usedChapters, random));
+//     selectedQuestions.addAll(
+//         pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
+//     //print('Online Selected Chapters: $usedChapters');
+//   } else if (gameMode == 'combined_11_12') {
+//     // 11th 2 easy, 12th 2 easy, 11th 2 medium, 12th 2 medium, 11th 1 god, 12th 1 god
+//     selectedQuestions.addAll(
+//         pickUniqueChapters(buckets['11_easy']!, 2, usedChapters, random));
+//     selectedQuestions.addAll(
+//         pickUniqueChapters(buckets['12_easy']!, 2, usedChapters, random));
+//     selectedQuestions.addAll(
+//         pickUniqueChapters(buckets['11_medium']!, 2, usedChapters, random));
+//     selectedQuestions.addAll(
+//         pickUniqueChapters(buckets['12_medium']!, 2, usedChapters, random));
+//     selectedQuestions.addAll(
+//         pickUniqueChapters(buckets['11_god']!, 1, usedChapters, random));
+//     selectedQuestions.addAll(
+//         pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
+//     print('Online Selected Chapters: $usedChapters');
+//   }
+//.....................OLD CODE WILL USE INCASE FO ERRORS....................
 
   final usedChapters = <String>{};
   final selectedQuestions = <Map<String, dynamic>>[];
 
-  // REPLACING THE SWITCH STATEMENT WITH IF-ELSE IF
-  if (gameMode == 'full_11th') {
-    // 4 easy, 5 medium, 1 god for 11th
-    selectedQuestions.addAll(
-        pickUniqueChapters(buckets['11_easy']!, 4, usedChapters, random));
-    selectedQuestions.addAll(
-        pickUniqueChapters(buckets['11_medium']!, 5, usedChapters, random));
-    selectedQuestions.addAll(
-        pickUniqueChapters(buckets['11_god']!, 1, usedChapters, random));
-    //print('Online Selected Chapters: $usedChapters');
-  } else if (gameMode == 'full_12th') {
-    // 4 easy, 5 medium, 1 god for 12th
-    selectedQuestions.addAll(
-        pickUniqueChapters(buckets['12_easy']!, 4, usedChapters, random));
-    selectedQuestions.addAll(
-        pickUniqueChapters(buckets['12_medium']!, 5, usedChapters, random));
-    selectedQuestions.addAll(
-        pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
-    //print('Online Selected Chapters: $usedChapters');
-  // } else if (gameMode == 'combined_11_12') {
-  //   // 11th 2 easy, 12th 2 easy, 11th 2 medium, 12th 2 medium, 11th 1 god, 12th 1 god
-  //   selectedQuestions.addAll(
-  //       pickUniqueChapters(buckets['11_easy']!, 2, usedChapters, random));
-  //   selectedQuestions.addAll(
-  //       pickUniqueChapters(buckets['12_easy']!, 2, usedChapters, random));
-  //   selectedQuestions.addAll(
-  //       pickUniqueChapters(buckets['11_medium']!, 2, usedChapters, random));
-  //   selectedQuestions.addAll(
-  //       pickUniqueChapters(buckets['12_medium']!, 2, usedChapters, random));
-  //   selectedQuestions.addAll(
-  //       pickUniqueChapters(buckets['11_god']!, 1, usedChapters, random));
-  //   selectedQuestions.addAll(
-  //       pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
-  //   //print('Online Selected Chapters: $usedChapters');
-  // }
-
-  } else if (gameMode == 'combined_11_12') {
-    // Helper to pick unique chapters first, then fill with duplicates if needed
-    List<Map<String, dynamic>> pickQuestionsWithFallback(
-        List<Map<String, dynamic>> bucket,
-        int count,
-        Set<String> usedChapters,
-        Random rng) {
-
-      // 1. Try to pick unique chapters first
-      List<Map<String, dynamic>> selected = pickUniqueChapters(bucket, count, usedChapters, rng);
-
-      // 2. If we don't have enough questions (e.g., only 2 chapters exist but we need 2 questions and one was already used),
-      // fill the rest from the same bucket allowing duplicate chapters.
-      if (selected.length < count) {
-        // Create a pool of remaining questions that haven't been selected yet
-        // (We filter out the ones we just picked in step 1)
-        final alreadyPickedIds = selected.map((q) => q['id']).toSet();
-        final remainingInBucket = bucket.where((q) => !alreadyPickedIds.contains(q['id'])).toList();
-
-        remainingInBucket.shuffle(rng);
-
-        for (var q in remainingInBucket) {
-          if (selected.length >= count) break;
-          selected.add(q);
-          // We don't add to 'usedChapters' here because we are intentionally reusing/ignoring chapter constraints now
-        }
-      }
-      return selected;
-    }
-
-    // 11th 2 easy, 12th 2 easy, 11th 2 medium, 12th 2 medium, 11th 1 god, 12th 1 god
-    selectedQuestions.addAll(
-        pickQuestionsWithFallback(buckets['11_easy']!, 2, usedChapters, random));
-    selectedQuestions.addAll(
-        pickQuestionsWithFallback(buckets['12_easy']!, 2, usedChapters, random));
-    selectedQuestions.addAll(
-        pickQuestionsWithFallback(buckets['11_medium']!, 2, usedChapters, random));
-    selectedQuestions.addAll(
-        pickQuestionsWithFallback(buckets['12_medium']!, 2, usedChapters, random));
-    selectedQuestions.addAll(
-        pickQuestionsWithFallback(buckets['11_god']!, 1, usedChapters, random));
-    selectedQuestions.addAll(
-        pickQuestionsWithFallback(buckets['12_god']!, 1, usedChapters, random));
-
-    // print('Online Selected Chapters: $usedChapters');
+// ---------------------------------------------------------
+// 1. DETECT SUBJECT (Physics vs Maths/Chemistry)
+// ---------------------------------------------------------
+  String subject = 'Physics'; // Default
+  if (allQuestions.isNotEmpty && allQuestions[0]['tags'] != null) {
+    subject = allQuestions[0]['tags']['subject'] ?? 'Physics';
   }
+  bool isPhysics = subject == 'Physics';
+
+// ---------------------------------------------------------
+// 2. HELPER: Simple Random Picker (For Maths/Chemistry)
+// ---------------------------------------------------------
+// This ignores "Unique Chapters" and just picks random unique questions.
+// It prevents crashes when Maths/Chem have very few chapters (e.g., only 2).
+  List<Map<String, dynamic>> pickSimpleRandom(
+      List<Map<String, dynamic>> bucket,
+      int count,
+      Set<String> pickedIds, // To ensure we don't pick the exact same QID twice
+      Random rng) {
+
+    // Filter out IDs we already have to prevent duplicate questions
+    var available = bucket.where((q) => !pickedIds.contains(q['id'])).toList();
+
+    // Shuffle and take the needed amount
+    available.shuffle(rng);
+    var selected = available.take(count).toList();
+
+    // Record IDs so we don't pick them again in a different bucket
+    for (var q in selected) pickedIds.add(q['id']);
+
+    return selected;
+  }
+
+// Set to track Question IDs for Maths/Chem to prevent duplicates
+  final Set<String> pickedIds = {};
+
+// ---------------------------------------------------------
+// LOGIC BLOCK: FULL 11TH
+// ---------------------------------------------------------
+  if (gameMode == 'full_11th') {
+    if (isPhysics) {
+      // PHYSICS: Old Logic (Strict Unique Chapters)
+      selectedQuestions.addAll(
+          pickUniqueChapters(buckets['11_easy']!, 4, usedChapters, random));
+      selectedQuestions.addAll(
+          pickUniqueChapters(buckets['11_medium']!, 5, usedChapters, random));
+      selectedQuestions.addAll(
+          pickUniqueChapters(buckets['11_god']!, 1, usedChapters, random));
+    } else {
+      // MATHS/CHEM: New Logic (Safe Random)
+      selectedQuestions.addAll(pickSimpleRandom(buckets['11_easy'] ?? [], 4, pickedIds, random));
+      selectedQuestions.addAll(pickSimpleRandom(buckets['11_medium'] ?? [], 5, pickedIds, random));
+      selectedQuestions.addAll(pickSimpleRandom(buckets['11_god'] ?? [], 1, pickedIds, random));
+    }
+  }
+// ---------------------------------------------------------
+// LOGIC BLOCK: FULL 12TH
+// ---------------------------------------------------------
+  else if (gameMode == 'full_12th') {
+    if (isPhysics) {
+      // PHYSICS: Old Logic (Strict Unique Chapters)
+      selectedQuestions.addAll(
+          pickUniqueChapters(buckets['12_easy']!, 4, usedChapters, random));
+      selectedQuestions.addAll(
+          pickUniqueChapters(buckets['12_medium']!, 5, usedChapters, random));
+      selectedQuestions.addAll(
+          pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
+    } else {
+      // MATHS/CHEM: New Logic (Safe Random)
+      selectedQuestions.addAll(pickSimpleRandom(buckets['12_easy'] ?? [], 4, pickedIds, random));
+      selectedQuestions.addAll(pickSimpleRandom(buckets['12_medium'] ?? [], 5, pickedIds, random));
+      selectedQuestions.addAll(pickSimpleRandom(buckets['12_god'] ?? [], 1, pickedIds, random));
+    }
+  }
+// ---------------------------------------------------------
+// LOGIC BLOCK: COMBINED 11TH + 12TH
+// ---------------------------------------------------------
+  else if (gameMode == 'combined_11_12') {
+    if (isPhysics) {
+      // PHYSICS: Old Logic (Strict Unique Chapters)
+      selectedQuestions.addAll(
+          pickUniqueChapters(buckets['11_easy']!, 2, usedChapters, random));
+      selectedQuestions.addAll(
+          pickUniqueChapters(buckets['12_easy']!, 2, usedChapters, random));
+      selectedQuestions.addAll(
+          pickUniqueChapters(buckets['11_medium']!, 2, usedChapters, random));
+      selectedQuestions.addAll(
+          pickUniqueChapters(buckets['12_medium']!, 2, usedChapters, random));
+      selectedQuestions.addAll(
+          pickUniqueChapters(buckets['11_god']!, 1, usedChapters, random));
+      selectedQuestions.addAll(
+          pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
+      print('Online Selected Chapters: $usedChapters');
+    } else {
+      // MATHS/CHEM: New Logic (Safe Random)
+      selectedQuestions.addAll(pickSimpleRandom(buckets['11_easy'] ?? [], 2, pickedIds, random));
+      selectedQuestions.addAll(pickSimpleRandom(buckets['12_easy'] ?? [], 2, pickedIds, random));
+      selectedQuestions.addAll(pickSimpleRandom(buckets['11_medium'] ?? [], 2, pickedIds, random));
+      selectedQuestions.addAll(pickSimpleRandom(buckets['12_medium'] ?? [], 2, pickedIds, random));
+      selectedQuestions.addAll(pickSimpleRandom(buckets['11_god'] ?? [], 1, pickedIds, random));
+      selectedQuestions.addAll(pickSimpleRandom(buckets['12_god'] ?? [], 1, pickedIds, random));
+    }
+  }
+
+
+
+
 // Inside getRandomQuestions function, within the if-else if structure
   else if (gameMode.startsWith(
       'chapter_wise_')) { // This is your 'chapter_wise' condition
@@ -194,10 +253,6 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
           .map((q) => Map<String, dynamic>.from(q))
           .toList();
 
-       // print(
-       //     'DEBUG: Chapter Wise - Total questions for "$selectedChapterName": ${chapterQuestions
-       //        .length}');
-
       Map<String, List<Map<String, dynamic>>> chapterBuckets = {
         'easy': [], 'medium': [], 'god': [],
       };
@@ -208,13 +263,6 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
           chapterBuckets[diff]!.add(q);
         }
       }
-      // print(
-      //     'DEBUG: Chapter Wise - Easy count: ${chapterBuckets['easy']?.length ??
-      //         0}');
-      // print('DEBUG: Chapter Wise - Medium count: ${chapterBuckets['medium']
-      //     ?.length ?? 0}');
-      // print('DEBUG: Chapter Wise - God count: ${chapterBuckets['god']?.length ??
-      //     0}');
 
 // NEW: Create a set to track unique question IDs for this chapter mode
       final Set<String> pickedQuestionIds = {};
@@ -235,8 +283,7 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
             if (picked.length == count) break;
           }
         }
-        // print('DEBUG: _pickQuestionsById returned ${picked
-        //     .length} questions.'); // New debug print
+
         return picked;
       }
 
@@ -248,36 +295,12 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
       selectedQuestions.addAll(_pickQuestionsById(
           chapterBuckets['god']!, 1, pickedQuestionIds, random));
 
-      // print(
-      //     'DEBUG: Chapter Wise - Selected questions count after picking: ${selectedQuestions
-      //         .length}');
-
       if (selectedQuestions.length < totalQuestions) {
-        // print(
-        //     "Warning: Not enough unique questions in chapter '$selectedChapterName'. Current count: ${selectedQuestions
-        //         .length}");
       }
     } else {
-      // print(
-      //     "Error: 'chapter_wise' mode called without a valid chapter name. Not selecting questions."); // Updated print
     }
   }
-
-  // ... (rest of your getRandomQuestions function, including the finalQuestions part)
-  final finalQuestions = selectedQuestions.take(totalQuestions).toList();
-  // print('✅✅✅✅DEBUG: Final questions list size: ${finalQuestions.length}');
-  //
-  // print('--- Online Selected Questions Details ---');
-  // for (var i = 0; i < finalQuestions.length; i++) {
-  //   final question = finalQuestions[i];
-  //   final chapter = question['tags']['chapter'] ?? 'Unknown Chapter';
-  //   final difficulty = question['tags']['difficulty'] ?? 'Unknown Difficulty';
-  //   final questionId = question['id'] ?? 'No ID'; // Also print ID for easier tracking
-  //   print('😄😄Question ${i + 1}: ID - $questionId, Chapter - $chapter, Difficulty - $difficulty');
-  // }
-  // print('-----------------------------------------');
-
-
+ final finalQuestions = selectedQuestions.take(totalQuestions).toList();
   return finalQuestions;
 
 }
@@ -1015,8 +1038,19 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
   // Track mistake
   final currentQuestion = Map<String, dynamic>.from(questions[currentQuestionIndex]);
   await MistakeTrackerService.trackMistake(
-  questionData: currentQuestion,
-  userId: widget.playerId,
+    userId: widget.playerId,
+    questionData: {
+      ...currentQuestion,
+      'answer': currentQuestion['answer'],
+      'image': currentQuestion['image'] ?? '',
+      'tags': {
+        ...?currentQuestion['tags'],
+        'chapter': currentQuestion['tags']?['chapter'] ?? 'misc',
+        'difficulty': currentQuestion['tags']?['difficulty'] ?? '',
+        'class': currentQuestion['tags']?['class'] ?? '',
+        'subject': subject, // ✅ Matching the Solo Screen structure
+      },
+    },
   );
 
   // Add to wrongAnswers as a map (safer than list)
@@ -1538,6 +1572,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     return Opacity(
     opacity: 0.8,
     child: FormulaRiveViewer(
+        key: ValueKey('rive_${currentQuestionIndex}_$imagePath'),
     src: imagePath
     //fit: BoxFit.contain,
     ),
@@ -1546,6 +1581,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     // 3. Handle 3D Model (.glb)
     else if (imagePath.endsWith('.glb')) {
     return ModelViewer(
+      key: ValueKey('model_${currentQuestionIndex}_$imagePath'),
     src: imagePath,
     alt: "3D Model",
       ar: false,
@@ -1590,13 +1626,24 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
               child: SingleChildScrollView(
                 physics: const BouncingScrollPhysics(),
                 child: Column(
-                  //key: ValueKey(currentQuestionIndex),
+
+                  // children: [
+                  //   ...(currentQuestion['options'] as List)
+                  //       .where((opt) => opt != null && opt is String)
+                  //       .map((option) {
+
                   children: [
                     ...(currentQuestion['options'] as List)
-                        .where((opt) => opt != null && opt is String)
-                        .map((option) {
+                        .asMap() // ✅ FIX 2: Convert to map to get the index (0, 1, 2, 3)
+                        .entries
+                        .where((entry) => entry.value != null && entry.value is String)
+                        .map((entry) {
+
+                      int optionIndex = entry.key;
+                      String option = entry.value;
                       return FormulaOptionButton(
-                        key: ValueKey('option_${currentQuestionIndex}_$option'),
+
+                        key: ValueKey('opt_btn_${currentQuestionIndex}_$optionIndex'),
                         text: option,
                         onPressed: questionLocked
                             ? () {}

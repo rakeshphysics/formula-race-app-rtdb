@@ -737,6 +737,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
             'chapter': question['tags']?['chapter'] ?? 'misc',
             'difficulty': question['tags']?['difficulty'] ?? '',
             'class': question['tags']?['class'] ?? '',
+            'subject': widget.subject,
           },
         },
       );

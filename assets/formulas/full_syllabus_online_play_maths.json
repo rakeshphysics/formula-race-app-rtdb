@@ -1,1627 +1,1628 @@
 [
+
   {
-    "id": "ellipse_qn_001",
-    "question": "For the horizontal ellipse, its vertices are at",
+    "id": "3d_geometry_qn_001",
+    "question": "The distance between two points P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) is given by",
     "options": [
-      "(a,0) and (-a,0)",
-      "(0,b) and (0,-b)",
-      "(0,be) and (0,-be)",
-      "(ae,0) and (-ae,0)"
+      "\\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}",
+      "\\sqrt{(x_2+x_1)^2 + (y_2+y_1)^2 + (z_2+z_1)^2}",
+      "\\sqrt{(x_2+x_1)^2 - (y_2+y_1)^2 - (z_2+z_1)^2}",
+      "\\sqrt{(x_2+x_1)^2 - (y_2-y_1)^2 + (z_2-z_1)^2}"
     ],
-    "answer": "(a,0) and (-a,0)",
+    "answer": "\\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "easy",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_001.svg",
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_001.svg",
     "tip": null
   },
   {
-    "id": "ellipse_qn_002",
-    "question": "For the horizontal ellipse, the length of its major and minor axis are",
+    "id": "3d_geometry_qn_002",
+    "question": "The coordinates of mid point M of P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) is",
     "options": [
-      "b, a",
-      "a, b",
-      "2a, 2b",
-      "2b, 2a"
+      "(\\frac{x_1-x_2}{2}, \\frac{y_1-y_2}{2}, \\frac{z_1-z_2}{2})",
+      "(\\frac{x_1+x_2}{3}, \\frac{y_1+y_2}{3}, \\frac{z_1+z_2}{3})",
+      "(\\frac{x_1-x_2}{3}, \\frac{y_1-y_2}{3}, \\frac{z_1-z_2}{3})",
+      "(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}, \\frac{z_1+z_2}{2})"
     ],
-    "answer": "2a, 2b",
+    "answer": "(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}, \\frac{z_1+z_2}{2})",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "easy",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_002.svg",
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_002.svg",
     "tip": null
   },
   {
-    "id": "ellipse_qn_003",
-    "question": "For the horizontal ellipse, its foci are at",
+    "id": "3d_geometry_qn_003",
+    "question": "The coordinates of a point O which divide P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) in ratio m:n internally is",
     "options": [
-      "(a,0) and (-a,0)",
-      "(0,b) and (0,-b)",
-      "(0,be) and (0,-be)",
-      "(ae,0) and (-ae,0)"
+      "(\\frac{mx_1-nx_2}{m+n}, \\frac{my_1-ny_2}{m+n}, \\frac{mz_1-nz_2}{m+n})",
+      "(\\frac{mx_1-nx_2}{m-n}, \\frac{my_1-ny_2}{m-n}, \\frac{mz_1-nz_2}{m-n})",
+      "(\\frac{mx_2+nx_1}{m+n}, \\frac{my_2+ny_1}{m+n}, \\frac{mz_2+nz_1}{m+n})",
+      "(\\frac{mx_2+nx_1}{m-n}, \\frac{my_2+ny_1}{m-n}, \\frac{mz_2+nz_1}{m-n})"
     ],
-    "answer": "(ae,0) and (-ae,0)",
+    "answer": "(\\frac{mx_2+nx_1}{m+n}, \\frac{my_2+ny_1}{m+n}, \\frac{mz_2+nz_1}{m+n})",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "easy",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_003.svg",
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_003.svg",
     "tip": null
   },
   {
-    "id": "ellipse_qn_004",
-    "question": "For the horizontal ellipse, the equation of its directrices are",
+    "id": "3d_geometry_qn_004",
+    "question": "The coordinates of centroid of triangle with vertices P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>), Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>), R(x<sub>3</sub>, y<sub>3</sub>, z<sub>3</sub>) is",
     "options": [
-      "x = a/e, x = -a/e",
-      "x = ae, x = -ae",
-      "x = b/e, x = -b/e",
-      "x = be, x = -be"
+      "(\\frac{x_1+x_2+x_3}{2}, \\frac{y_1+y_2+y_3}{2}, \\frac{z_1+z_2+z_3}{2})",
+      "(\\frac{x_1+x_2+x_3}{3}, \\frac{y_1+y_2+y_3}{3}, \\frac{z_1+z_2+z_3}{3})",
+      "(\\frac{x_1-x_2-x_3}{2}, \\frac{y_1-y_2-y_3}{2}, \\frac{z_1-z_2-z_3}{2})",
+      "(\\frac{x_1-x_2-x_3}{3}, \\frac{y_1-y_2-y_3}{3}, \\frac{z_1-z_2-z_3}{3})"
     ],
-    "answer": "x = a/e, x = -a/e",
+    "answer": "(\\frac{x_1+x_2+x_3}{3}, \\frac{y_1+y_2+y_3}{3}, \\frac{z_1+z_2+z_3}{3})",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "easy",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_004.svg",
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_004.svg",
     "tip": null
   },
   {
-    "id": "ellipse_qn_005",
-    "question": "For the horizontal ellipse, the length of its latus rectum is",
+    "id": "3d_geometry_qn_005",
+    "question": "The coordinates of a point O which divide P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) in ratio m:n externally is",
     "options": [
-      "\\frac{2a^2}{b}",
-      "\\frac{a^2}{2b}",
-      "\\frac{b^2}{2a}",
-      "\\frac{2b^2}{a}"
+      "(\\frac{mx_2-nx_1}{m+n}, \\frac{my_2-ny_1}{m+n}, \\frac{mz_2-nz_1}{m+n})",
+      "(\\frac{mx_2-nx_1}{m-n}, \\frac{my_2-ny_1}{m-n}, \\frac{mz_2-nz_1}{m-n})",
+      "(\\frac{mx_2+nx_1}{m+n}, \\frac{my_2+ny_1}{m+n}, \\frac{mz_2+nz_1}{m+n})",
+      "(\\frac{mx_2+nx_1}{m-n}, \\frac{my_2+ny_1}{m-n}, \\frac{mz_2+nz_1}{m-n})"
     ],
-    "answer": "\\frac{2b^2}{a}",
+    "answer": "(\\frac{mx_2-nx_1}{m-n}, \\frac{my_2-ny_1}{m-n}, \\frac{mz_2-nz_1}{m-n})",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "medium",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_005.svg",
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_005.svg",
     "tip": null
   },
   {
-    "id": "ellipse_qn_006",
-    "question": "The eccentricity of this horizontal ellipse is",
+    "id": "3d_geometry_qn_006",
+    "question": "The coordinates of centroid of tetrahedron with vertices P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>), Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>), R(x<sub>3</sub>, y<sub>3</sub>, z<sub>3</sub>), S(x<sub>4</sub>, y<sub>4</sub>, z<sub>4</sub>) is",
     "options": [
-      "e = \\frac{b}{a} - 1",
-      "e = \\frac{b^2}{a^2} - 1",
-      "e = \\sqrt{1 - \\frac{b^2}{a^2}}",
-      "e = 1 - \\frac{b}{a}"
+      "(\\frac{x_1+x_2+x_3+x_4}{2}, \\frac{y_1+y_2+y_3+y_4}{2}, \\frac{z_1+z_2+z_3+z_4}{2})",
+      "(\\frac{x_1+x_2+x_3+x_4}{3}, \\frac{y_1+y_2+y_3+y_4}{3}, \\frac{z_1+z_2+z_3+z_4}{3})",
+      "(\\frac{x_1+x_2+x_3+x_4}{4}, \\frac{y_1+y_2+y_3+y_4}{4}, \\frac{z_1+z_2+z_3+z_4}{4})",
+      "(\\frac{x_1+x_2+x_3+x_4}{12}, \\frac{y_1+y_2+y_3+y_4}{12}, \\frac{z_1+z_2+z_3+z_4}{12})"
     ],
-    "answer": "e = \\sqrt{1 - \\frac{b^2}{a^2}}",
+    "answer": "(\\frac{x_1+x_2+x_3+x_4}{4}, \\frac{y_1+y_2+y_3+y_4}{4}, \\frac{z_1+z_2+z_3+z_4}{4})",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "medium",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_006.riv",
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_006.glb",
     "tip": null
   },
   {
-    "id": "ellipse_qn_007",
-    "question": "The focal distances of a point P (x,y) on the ellipse are SP and S<sub>1</sub>P equals",
+    "id": "3d_geometry_qn_007",
+    "question": "If l, m, n are direction cosines of a vector, then",
     "options": [
-      "a+ex, a-ex",
-      "a-ex, a+ex",
-      "b+ex, b-ex",
-      "b-ex, b+ex"
+      "l^2 + m^2 + n^2 = 2",
+      "l^2 + m^2 + n^2 = 1",
+      "l + m + n = 2",
+      "l^3 + m^3 + n^3 = 1"
     ],
-    "answer": "a-ex, a+ex",
+    "answer": "l^2 + m^2 + n^2 = 1",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "medium",
-      "class": "11"
-    },
-    "image": "assets/images/11th/ellipse/ellipse_qn_007.svg",
-    "tip": null
-  },
-  {
-    "id": "ellipse_qn_008",
-    "question": "The distance between two focus of the ellipse is",
-    "options": [
-      "ae",
-      "2ae",
-      "\\frac{2a}{e}",
-      "\\frac{a}{e}"
-    ],
-    "answer": "2ae",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "medium",
-      "class": "11"
-    },
-    "image": "assets/images/11th/ellipse/ellipse_qn_008.svg",
-    "tip": null
-  },
-  {
-    "id": "ellipse_qn_009",
-    "question": "The distance between two directrices of the ellipse is",
-    "options": [
-      "ae",
-      "2ae",
-      "\\frac{2a}{e}",
-      "\\frac{a}{e}"
-    ],
-    "answer": "\\frac{2a}{e}",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "medium",
-      "class": "11"
-    },
-    "image":"assets/images/11th/ellipse/ellipse_qn_009.svg",
-    "tip": null
-  },
-  {
-    "id": "ellipse_qn_010",
-    "question": "The equation of tangents of slope m to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is given by",
-    "options": [
-      "y = mx \\pm \\sqrt{a^2m^2 - b^2}",
-      "y = mx \\pm \\sqrt{a^2m^2 + b^2}",
-      "y = mx \\pm \\sqrt{a^2m - b^2}",
-      "y = mx \\pm \\sqrt{a^2m + b^2}"
-    ],
-    "answer": "y = mx \\pm \\sqrt{a^2m^2 + b^2}",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "god",
-      "class": "11"
-    },
-    "image": "assets/images/11th/ellipse/ellipse_qn_010.svg",
-    "tip": null
-  },
-  {
-    "id": "ellipse_qn_011",
-    "question": "If the center of ellipse is (h,k) and the direction of its axes are parallel to the coordinate axes, its equation is",
-    "options": [
-      "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1",
-      "\\frac{x^2}{h^2} + \\frac{y^2}{k^2} = 1",
-      "\\frac{(x-h)^2}{a^2} + \\frac{(y-k)^2}{b^2} = 1",
-      "\\frac{(x+h)^2}{a^2} + \\frac{(y+k)^2}{b^2} = 1"
-    ],
-    "answer": "\\frac{(x-h)^2}{a^2} + \\frac{(y-k)^2}{b^2} = 1",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "easy",
-      "class": "11"
-    },
-    "image": "assets/images/11th/ellipse/ellipse_qn_011.svg",
-    "tip": null
-  },
-  {
-    "id": "ellipse_qn_012",
-    "question": "If the point (x<sub>1</sub>, y<sub>1</sub>) lies outside the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, then",
-    "options": [
-      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 > 0",
-      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 = 0",
-      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 < 0",
-      "None of these"
-    ],
-    "answer": "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 > 0",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "easy",
-      "class": "11"
-    },
-    "image": "assets/images/11th/ellipse/ellipse_qn_012.svg",
-    "tip": null
-  },
-  {
-    "id": "ellipse_qn_013",
-    "question": "For the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, a > b the equation of auxiliary circle is",
-    "options": [
-      "x^2 + y^2 = a^2 + b^2",
-      "x^2 + y^2 = a^4 + b^4",
-      "x^2 + y^2 = b^2",
-      "x^2 + y^2 = a^2"
-    ],
-    "answer": "x^2 + y^2 = a^2",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "easy",
-      "class": "11"
-    },
-    "image": "assets/images/11th/ellipse/ellipse_qn_013.svg",
-    "tip": null
-  },
-  {
-    "id": "ellipse_qn_014",
-    "question": "The eccentric angle of point P on the ellipse is",
-    "options": [
-      "\\angle ACQ",
-      "\\angle CQA",
-      "\\angle BCQ",
-      "\\angle QAC"
-    ],
-    "answer": "\\angle ACQ",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "easy",
-      "class": "11"
-    },
-    "image": "assets/images/11th/ellipse/ellipse_qn_014.svg",
-    "tip": null
-  },
-  {
-    "id": "ellipse_qn_015",
-    "question": "The equation of tangent to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 at point (x<sub>1</sub>, y<sub>1</sub>) is",
-    "options": [
-      "\\frac{xx_1}{2a} + \\frac{yy_1}{2b} = 1",
-      "\\frac{xx_1}{a} + \\frac{yy_1}{b} = 1",
-      "\\frac{xx_1}{a^2} + \\frac{yy_1}{b^2} = 1",
-      "\\frac{xx_1}{2a^2} + \\frac{yy_1}{2b^2} = 1"
-    ],
-    "answer": "\\frac{xx_1}{a^2} + \\frac{yy_1}{b^2} = 1",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "medium",
-      "class": "11"
-    },
-    "image": "assets/images/11th/ellipse/ellipse_qn_015.svg",
-    "tip": null
-  },
-  {
-    "id": "ellipse_qn_016",
-    "question": "The equation of tangent to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 at point (a cos &theta;<sub>1</sub>, b sin &theta;<sub>1</sub>) is",
-    "options": [
-      "\\frac{x}{a^2}\\cos\\theta_1 + \\frac{y}{b^2}\\sin\\theta_1 = 1",
-      "\\frac{x}{a}\\cos\\theta_1 + \\frac{y}{b}\\sin\\theta_1 = 1",
-      "\\frac{x}{a}\\sin\\theta_1 + \\frac{y}{b}\\cos\\theta_1 = 1",
-      "\\frac{x}{a^2}\\sin\\theta_1 + \\frac{y}{b^2}\\cos\\theta_1 = 1"
-    ],
-    "answer": "\\frac{x}{a}\\cos\\theta_1 + \\frac{y}{b}\\sin\\theta_1 = 1",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "medium",
-      "class": "11"
-    },
-    "image": "assets/images/11th/ellipse/ellipse_qn_016.svg",
-    "tip": null
-  },
-  {
-    "id": "ellipse_qn_017",
-    "question": "The equation of tangents to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 at points P(a cos &theta;<sub>1</sub>, b sin &theta;<sub>1</sub>) and Q(a cos &theta;<sub>2</sub>, b sin &theta;<sub>2</sub>) intersect at point",
-    "options": [
-      "\\left( a\\frac{\\cos\\frac{\\theta_1-\\theta_2}{2}}{\\cos\\frac{\\theta_1+\\theta_2}{2}}, b\\frac{\\sin\\frac{\\theta_1-\\theta_2}{2}}{\\sin\\frac{\\theta_1+\\theta_2}{2}} \\right)",
-      "\\left( a\\frac{\\cos\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}}, b\\frac{\\sin\\frac{\\theta_1+\\theta_2}{2}}{\\sin\\frac{\\theta_1-\\theta_2}{2}} \\right)",
-      "\\left( a\\frac{\\cos\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}}, b\\frac{\\cos\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}} \\right)",
-      "\\left( a\\frac{\\cos\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}}, b\\frac{\\sin\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}} \\right)"
-    ],
-    "answer": "\\left( a\\frac{\\cos\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}}, b\\frac{\\sin\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}} \\right)",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "medium",
-      "class": "11"
-    },
-    "image": "assets/images/11th/ellipse/ellipse_qn_017.svg",
-    "tip": null
-  },
-  {
-    "id": "ellipse_qn_018",
-    "question": "The combined equation of pair of tangents drawn from point (x<sub>1</sub>, y<sub>1</sub>) to ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is",
-    "options": [
-      "SS_1 = T",
-      "SS_1 = T^2",
-      "SS_1 = 2T^2",
-      "SS_1 = T"
-    ],
-    "answer": "SS_1 = T^2",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "medium",
-      "class": "11"
-    },
-    "image": "assets/images/11th/ellipse/ellipse_qn_018.svg",
-    "tip": null
-  },
-  {
-    "id": "ellipse_qn_019",
-    "question": "For the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, the director circle is",
-    "options": [
-      "x^2 + y^2 = a^2 + b^2",
-      "x^2 + y^2 = a^4 + b^4",
-      "x^2 + y^2 = b^2",
-      "x^2 + y^2 = a^2"
-    ],
-    "answer": "x^2 + y^2 = a^2 + b^2",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "medium",
-      "class": "11"
-    },
-    "image": "assets/images/11th/ellipse/ellipse_qn_019.riv",
-    "tip": "The director circle is the locus of point of intersection of two perpendicular tangents drawn to the ellipse"
-  },
-  {
-    "id": "ellipse_qn_020",
-    "question": "The point of contact of tangent of slope m to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is given by",
-    "options": [
-      "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2+b^2}}, \\pm \\frac{b^2}{\\sqrt{a^2m^2+b^2}} \\right)",
-      "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m+b^2}}, \\mp \\frac{b^2}{\\sqrt{a^2m+b^2}} \\right)",
-      "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2-b^2}}, \\pm \\frac{b^2}{\\sqrt{a^2m^2-b^2}} \\right)",
-      "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2+b^2}}, \\mp \\frac{b^2}{\\sqrt{a^2m^2+b^2}} \\right)"
-    ],
-    "answer": "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2+b^2}}, \\mp \\frac{b^2}{\\sqrt{a^2m^2+b^2}} \\right)",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "god",
-      "class": "11"
-    },
-    "image": "assets/images/11th/ellipse/ellipse_qn_020.svg",
-    "tip": null
-  },
-  {
-    "id": "ellipse_qn_021",
-    "question": "The equation of normal to ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 at (x<sub>1</sub>, y<sub>1</sub>) is given by",
-    "options": [
-      "\\frac{a^2x}{x_1} + \\frac{b^2y}{y_1} = a^2 - b^2",
-      "\\frac{a^2x}{x_1} - \\frac{b^2y}{y_1} = a^2 - b^2",
-      "\\frac{a^2x}{x_1} - \\frac{b^2y}{y_1} = a^2 + b^2",
-      "\\frac{a^2x}{x_1} + \\frac{b^2y}{y_1} = a^2 + b^2"
-    ],
-    "answer": "\\frac{a^2x}{x_1} - \\frac{b^2y}{y_1} = a^2 - b^2",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "easy",
-      "class": "11"
-    },
-    "image": "assets/images/11th/ellipse/ellipse_qn_021.svg",
-    "tip": null
-  },
-  {
-    "id": "ellipse_qn_022",
-    "question": "The equation of normal of slope m to ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is given by",
-    "options": [
-      "y = mx \\pm \\frac{m(a^2-b^2)}{\\sqrt{a^2-b^2m^2}}",
-      "y = mx \\pm \\frac{m(a^2+b^2)}{\\sqrt{a^2-b^2m^2}}",
-      "y = mx \\pm \\frac{m(a^2-b^2)}{\\sqrt{a^2+b^2m^2}}",
-      "y = mx \\pm \\frac{m(a^2+b^2)}{\\sqrt{a^2+b^2m^2}}"
-    ],
-    "answer": "y = mx \\pm \\frac{m(a^2-b^2)}{\\sqrt{a^2+b^2m^2}}",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "easy",
-      "class": "11"
-    },
-    "image": "assets/images/11th/ellipse/ellipse_qn_022.svg",
-    "tip": null
-  },
-  {
-    "id": "ellipse_qn_023",
-    "question": "If a normal is drawn from a point on the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, then (S1 and S are foci of ellipse)",
-    "options": [
-      "\\theta_1 = 2\\theta_2",
-      "\\theta_1 = \\theta_2",
-      "\\theta_1 + \\theta_2 = 90",
-      "2\\theta_1 = \\theta_2"
-    ],
-    "answer": "\\theta_1 = \\theta_2",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "easy",
-      "class": "11"
-    },
-    "image": "assets/images/11th/ellipse/ellipse_qn_023.svg",
-    "tip": null
-  },
-  {
-    "id": "ellipse_qn_024",
-    "question": "The maximum number of normals that can be drawn from a point to an ellipse is",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "answer": "4",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "easy",
-      "class": "11"
+      "class": "12"
     },
     "image": null,
     "tip": null
   },
   {
-    "id": "ellipse_qn_025",
-    "question": "The equation of chord of contact of tangents drawn from (x<sub>1</sub>, y<sub>1</sub>) to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is given by",
+    "id": "3d_geometry_qn_008",
+    "question": "If &alpha;, &beta;, &gamma; are angles made by a vector with X, Y, Z axes respectively, then",
     "options": [
-      "T = S_1",
-      "T = S_1^2",
-      "T = S_1",
-      "T = 0"
+      "\\cos^2 \\alpha + \\cos^2 \\beta + \\cos^2 \\gamma = 1",
+      "\\cos^2 \\alpha + \\cos^2 \\beta + \\cos^2 \\gamma = 2",
+      "\\cos \\alpha + \\cos \\beta + \\cos \\gamma = 1",
+      "\\sin^2 \\alpha + \\sin^2 \\beta + \\sin^2 \\gamma = 1"
     ],
-    "answer": "T = 0",
+    "answer": "\\cos^2 \\alpha + \\cos^2 \\beta + \\cos^2 \\gamma = 1",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "medium",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_025.svg",
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_008.svg",
     "tip": null
   },
   {
-    "id": "ellipse_qn_026",
-    "question": "The equation of chord of ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 bisected at (x<sub>1</sub>, y<sub>1</sub>) is given by",
+    "id": "3d_geometry_qn_009",
+    "question": "If &alpha;, &beta;, &gamma; are angles made by a vector with X, Y, Z axes respectively, then",
     "options": [
-      "T = S_1",
-      "T = S_1^2",
-      "T = S_1",
-      "T = 0"
+      "\\cos \\alpha + \\cos \\beta + \\cos \\gamma = 2",
+      "\\cos 2\\alpha + \\cos 2\\beta + \\cos 2\\gamma = 2",
+      "\\cos \\alpha + \\cos \\beta + \\cos \\gamma = 1",
+      "\\sin^2 \\alpha + \\sin^2 \\beta + \\sin^2 \\gamma = 2"
     ],
-    "answer": "T = S_1",
+    "answer": "\\sin^2 \\alpha + \\sin^2 \\beta + \\sin^2 \\gamma = 2",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "medium",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_026.svg",
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_009.svg",
     "tip": null
   },
   {
-    "id": "ellipse_qn_027",
-    "question": "If &theta;<sub>1</sub>, &theta;<sub>2</sub>, &theta;<sub>3</sub>, &theta;<sub>4</sub> are eccentric angles of conormal points to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 then, &theta;<sub>1</sub> + &theta;<sub>2</sub> + &theta;<sub>3</sub> + &theta;<sub>4</sub> equals (n &isin; Z)",
+    "id": "3d_geometry_qn_010",
+    "question": "The angle between the diagonal of a cube and diagonal of a face of a cube is",
     "options": [
-      "2\\pi",
-      "(2n+1)\\pi",
-      "(2n+1)\\pi",
-      "4\\pi"
+      "\\cos^{-1} \\frac{1}{2}",
+      "\\sin^{-1} \\frac{2}{3}",
+      "\\cos^{-1} \\sqrt{\\frac{2}{3}}",
+      "\\cos^{-1} \\frac{1}{3}"
     ],
-    "answer": "(2n+1)\\pi",
+    "answer": "\\cos^{-1} \\sqrt{\\frac{2}{3}}",
     "tags": {
-      "chapter": "ellipse",
-      "difficulty": "medium",
-      "class": "11"
+      "chapter": "3D Geometry",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_010.glb",
+    "tip": "I have removed a face, so you can peek inside!! 👀"
+  },
+  {
+    "id": "3d_geometry_qn_011",
+    "question": "The coordinates of P if the direction cosines of OP are l, m, n is (OP = r)",
+    "options": [
+      "(l, m, n)",
+      "(lm, mn, nl)",
+      "(lr, mr, nr)",
+      "(l^2r, m^2r, n^2r)"
+    ],
+    "answer": "(lr, mr, nr)",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image":"assets/images/12th/3d_geometry/3d_geometry_qn_011.svg",
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_012",
+    "question": "For two points P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>), the direction cosines of PQ are l, m, n. Then x<sub>2</sub> - x<sub>1</sub> equals",
+    "options": [
+      "m |PQ|",
+      "l |PQ|",
+      "n |PQ|",
+      "(l^2 + m^2 + n^2) |PQ|"
+    ],
+    "answer": "l |PQ|",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_012.svg",
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_013",
+    "question": "If a, b, c are direction ratios of a vector and l, m, n are direction cosines such that l/a = m/b = n/c, then l equals",
+    "options": [
+      "\\pm \\frac{a}{\\sqrt{a^2 + b^2 + c^2}}",
+      "\\pm \\frac{c}{\\sqrt{a^2 + b^2 + c^2}}",
+      "\\pm \\frac{b}{\\sqrt{a^2 + b^2 + c^2}}",
+      "\\pm \\frac{abc}{\\sqrt{a^2 + b^2 + c^2}}"
+    ],
+    "answer": "\\pm \\frac{a}{\\sqrt{a^2 + b^2 + c^2}}",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "easy",
+      "class": "12"
     },
     "image": null,
     "tip": null
   },
   {
-    "id": "ellipse_qn_028",
-    "question": "If &theta;<sub>1</sub>, &theta;<sub>2</sub>, &theta;<sub>3</sub>, &theta;<sub>4</sub> are eccentric angles of conormal points to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 then",
+    "id": "3d_geometry_qn_014",
+    "question": "If l<sub>1</sub>, m<sub>1</sub>, n<sub>1</sub> and l<sub>2</sub>, m<sub>2</sub>, n<sub>2</sub> are direction cosines of two given lines, then the lines are parallel if",
     "options": [
-      "\\Sigma \\cos(\\theta_1 + \\theta_2) = 0",
-      "\\Sigma \\text{cosec}(\\theta_1 + \\theta_2) = 0",
-      "\\Sigma \\cot(\\theta_1 + \\theta_2) = 0",
-      "\\Sigma \\tan(\\theta_1 + \\theta_2) = 0"
+      "l_1l_2 + m_1m_2 + n_1n_2 = 0",
+      "l_1l_2 = m_1m_2 + n_1n_2",
+      "\\frac{l_1}{l_2} = \\frac{m_1}{m_2} = \\frac{n_1}{n_2}",
+      "l_1l_2 = m_1m_2 - n_1n_2"
     ],
-    "answer": "\\Sigma \\tan(\\theta_1 + \\theta_2) = 0",
+    "answer": "\\frac{l_1}{l_2} = \\frac{m_1}{m_2} = \\frac{n_1}{n_2}",
     "tags": {
-      "chapter": "ellipse",
-      "difficulty": "medium",
-      "class": "11"
+      "chapter": "3D Geometry",
+      "difficulty": "easy",
+      "class": "12"
     },
     "image": null,
     "tip": null
   },
   {
-    "id": "ellipse_qn_029",
-    "question": "If the normal at four points P(x<sub>1</sub>, y<sub>1</sub>), Q(x<sub>2</sub>, y<sub>2</sub>), R(x<sub>3</sub>, y<sub>3</sub>), S(x<sub>4</sub>, y<sub>4</sub>) on the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 are concurrent then",
+    "id": "3d_geometry_qn_015",
+    "question": "If l<sub>1</sub>, m<sub>1</sub>, n<sub>1</sub> and l<sub>2</sub>, m<sub>2</sub>, n<sub>2</sub> are direction cosines of two given lines, then the lines are perpendicular if",
     "options": [
-      "(x_1+x_2+x_3+x_4)(\\frac{1}{x_1}+\\frac{1}{x_2}+\\frac{1}{x_3}+\\frac{1}{x_4}) = 4",
-      "(x_1+x_2+x_3+x_4)(\\frac{1}{x_1}+\\frac{1}{x_2}+\\frac{1}{x_3}+\\frac{1}{x_4}) = 2",
-      "(x_1+x_2+x_3+x_4)(\\frac{1}{x_1}+\\frac{1}{x_2}+\\frac{1}{x_3}+\\frac{1}{x_4}) = 0",
-      "(x_1+x_2+x_3+x_4)(\\frac{1}{x_1}+\\frac{1}{x_2}+\\frac{1}{x_3}+\\frac{1}{x_4}) = 1"
+      "l_1l_2 + m_1m_2 + n_1n_2 = 0",
+      "l_1l_2 = m_1m_2 + n_1n_2",
+      "\\frac{l_1}{l_2} = \\frac{m_1}{m_2} = \\frac{n_1}{n_2}",
+      "l_1l_2 = m_1m_2 + n_1n_2"
     ],
-    "answer": "(x_1+x_2+x_3+x_4)(\\frac{1}{x_1}+\\frac{1}{x_2}+\\frac{1}{x_3}+\\frac{1}{x_4}) = 4",
+    "answer": "l_1l_2 + m_1m_2 + n_1n_2 = 0",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "medium",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_029.svg",
+    "image": null,
     "tip": null
   },
   {
-    "id": "ellipse_qn_030",
-    "question": "The coordinates of point of contact of normals of slope m to ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is",
+    "id": "3d_geometry_qn_016",
+    "question": "The projection of a line segment joining points P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) on a line having direction cosines l, m, n is",
     "options": [
-      "\\left( \\pm \\frac{a^2}{\\sqrt{a^2+b^2m^2}}, \\pm \\frac{b^2m}{\\sqrt{a^2+b^2m^2}} \\right)",
-      "\\left( \\pm \\frac{a^2}{\\sqrt{a^2-b^2m^2}}, \\pm \\frac{b^2m}{\\sqrt{a^2-b^2m^2}} \\right)",
-      "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2-b^2}}, \\pm \\frac{b^2}{\\sqrt{a^2m^2-b^2}} \\right)",
-      "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2+b^2}}, \\mp \\frac{b^2}{\\sqrt{a^2m^2+b^2}} \\right)"
+      "l(x_2-x_1) - m(y_2-y_1) - n(z_2-z_1)",
+      "l(x_2+x_1) - m(y_2+y_1) - n(z_2+z_1)",
+      "l(x_2+x_1) + m(y_2+y_1) + n(z_2+z_1)",
+      "l(x_2-x_1) + m(y_2-y_1) + n(z_2-z_1)"
     ],
-    "answer": "(\\pm \\frac{a^2}{\\sqrt{a^2+b^2m^2}}, \\pm \\frac{b^2m}{\\sqrt{a^2+b^2m^2}})",
+    "answer": "l(x_2-x_1) + m(y_2-y_1) + n(z_2-z_1)",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_016.svg",
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_017",
+    "question": "If l<sub>1</sub>, m<sub>1</sub>, n<sub>1</sub> and l<sub>2</sub>, m<sub>2</sub>, n<sub>2</sub> are direction cosines of two given lines and &theta; is angle between them, then cos &theta; equals",
+    "options": [
+      "l_1m_1n_1 + l_2m_2n_2",
+      "l_1l_2 + m_1m_2 + n_1n_2",
+      "l_1m_1n_1 - l_2m_2n_2",
+      "l_1l_2 - m_1m_2 - n_1n_2"
+    ],
+    "answer": "l_1l_2 + m_1m_2 + n_1n_2",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_018",
+    "question": "The angle between any two diagonals of a cube is",
+    "options": [
+      "\\cos^{-1} \\frac{1}{3}",
+      "\\sin^{-1} \\frac{1}{3}",
+      "\\cos^{-1} \\frac{2}{3}",
+      "\\cos^{-1} \\frac{1}{3}"
+    ],
+    "answer": "\\cos^{-1} \\frac{1}{3}",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_018.glb",
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_019",
+    "question": "The vector equation of a line passing through two points with position vector a and b is (&lambda; = any real number)",
+    "options": [
+      "r = \\lambda a \\cdot b",
+      "r = a + \\lambda b",
+      "r = \\lambda a \\times b",
+      "r = a + \\lambda (b - a)"
+    ],
+    "answer": "r = a + \\lambda (b - a)",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_019.svg",
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_020",
+    "question": "The length of perpendicular from point P(c) on the line r = a + &lambda;b is",
+    "options": [
+      "\\frac{|(c \\times b)|}{|b|}",
+      "\\frac{|(c \\times b)|}{|b|^2}",
+      "\\frac{|(c - a) \\times b|}{|b|}",
+      "\\frac{|(c - a) \\times b|}{|b|^2}"
+    ],
+    "answer": "\\frac{|(c - a) \\times b|}{|b|}",
+    "tags": {
+      "chapter": "3D Geometry",
       "difficulty": "god",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_030.svg",
-    "tip": null
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_020.svg",
+    "tip": "You can also think of this like, Area of parallelogram formed by c-a and b, divided by its base. Gives height of parallelogram, which is nothing but the length of perpendicular from c to line."
   },
   {
-    "id": "ellipse_qn_031",
-    "question": "If D<sub>1</sub> and D<sub>2</sub> are two conjugate diameters of an ellipse, and a chord C of ellipse is drawn parallel to D<sub>2</sub>, intersecting D<sub>1</sub> at M, the relation between the two segments of chord C created by M is",
+    "id": "3d_geometry_qn_021",
+    "question": "The vector equation of a line passing through a point with position vector a and parallel to vector b is (&lambda; = any real number)",
     "options": [
-      "AM \\times MB = ab",
-      "2AM = MB",
-      "AM = MB",
-      "AM \\times MB = ab^2"
+      "r = \\lambda a \\cdot b",
+      "r = a + \\lambda b",
+      "r = \\lambda a \\times b",
+      "r = a + \\lambda (b - a)"
     ],
-    "answer": "AM = MB",
+    "answer": "r = a + \\lambda b",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "easy",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_031.svg",
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_021.svg",
     "tip": null
   },
   {
-    "id": "ellipse_qn_032",
-    "question": "The eccentric angles of extremities of latus rectum of ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 are",
+    "id": "3d_geometry_qn_022",
+    "question": "The cartesian equation of a line passing through point (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) having direction ratios a, b, c is",
     "options": [
-      "\\text{cosec}^{-1} \\pm \\frac{b}{ae}",
-      "\\cos^{-1} \\pm \\frac{b}{ae}",
-      "\\sin^{-1} \\pm \\frac{b}{ae}",
-      "\\tan^{-1} \\pm \\frac{b}{ae}"
+      "\\frac{x+x_1}{a} = \\frac{y+y_1}{b} = \\frac{z+z_1}{c}",
+      "\\frac{x-x_1}{a} = \\frac{y-y_1}{b} = \\frac{z-z_1}{c}",
+      "\\frac{x}{a} = \\frac{y}{b} = \\frac{z}{c}",
+      "\\frac{x+x_1}{a^2} = \\frac{y+y_1}{b^2} = \\frac{z+z_1}{c^2}"
     ],
-    "answer": "\\tan^{-1} \\pm \\frac{b}{ae}",
+    "answer": "\\frac{x-x_1}{a} = \\frac{y-y_1}{b} = \\frac{z-z_1}{c}",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "easy",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_032.svg",
+    "image": null,
     "tip": null
   },
   {
-    "id": "ellipse_qn_033",
-    "question": "If the point (x<sub>1</sub>, y<sub>1</sub>) lies on the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, then",
+    "id": "3d_geometry_qn_023",
+    "question": "The vector form of a plane is (r = position vector of any point on plane, n = unit normal vector, d = perpendicular distance of plane from origin)",
     "options": [
-      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 > 0",
-      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 = 0",
-      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 < 0",
-      "None of these"
+      "r \\times n = d^2",
+      "r \\cdot n = d^2",
+      "r \\times n = d",
+      "r \\cdot n = d"
     ],
-    "answer": "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 = 0",
+    "answer": "r \\cdot n = d",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "easy",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_033.svg",
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_023.glb",
     "tip": null
   },
   {
-    "id": "ellipse_qn_034",
-    "question": "If the point (x<sub>1</sub>, y<sub>1</sub>) lies inside the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, then",
+    "id": "3d_geometry_qn_024",
+    "question": "The equation of a plane which is at distance p from origin and direction cosines of normal from origin to plane are l, m, n is",
     "options": [
-      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 > 0",
-      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 = 0",
-      "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 < 0",
-      "None of these"
+      "lx + my + nz = p^2",
+      "l^2x + m^2y + n^2z = p^2",
+      "lx + my + nz = p",
+      "l^2x + m^2y + n^2z = p"
     ],
-    "answer": "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 < 0",
+    "answer": "lx + my + nz = p",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "easy",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_034.svg",
+    "image": null,
     "tip": null
   },
   {
-    "id": "ellipse_qn_035",
-    "question": "If SM and S'M' are perpendiculars from the foci to any tangent of the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 then SM &times; S'M' equals",
+    "id": "3d_geometry_qn_025",
+    "question": "The shortest distance between parallel lines r = a<sub>1</sub> + &lambda;b and r = a<sub>2</sub> + &mu;b is given by",
     "options": [
-      "a^2",
-      "b^2",
-      "ab",
-      "ab"
+      "\\frac{|(a_2-a_1) \\cdot b|}{|b|}",
+      "\\frac{|(a_2-a_1) \\times b|}{|b|}",
+      "\\frac{|(a_2-a_1) \\cdot b|}{|b|^2}",
+      "\\frac{|(a_2-a_1) \\times b|}{|b|^2}"
     ],
-    "answer": "b^2",
+    "answer": "\\frac{|(a_2-a_1) \\times b|}{|b|}",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "medium",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_035.svg",
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_025.svg",
+    "tip": "Also we can say, its area of the yellow parallelogram by its base"
+  },
+  {
+    "id": "3d_geometry_qn_026",
+    "question": "The coordinates of foot of perpendicular from origin on the plane lx + my + nz = p is",
+    "options": [
+      "(lp^2, mp^2, np^2)",
+      "(pl, pm, pn)",
+      "(l^2p, m^2p, n^2p)",
+      "(lp, mp, np)"
+    ],
+    "answer": "(lp, mp, np)",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_026.svg",
     "tip": null
   },
   {
-    "id": "ellipse_qn_036",
-    "question": "If the lines y = m<sub>1</sub>x and y = m<sub>2</sub>x are conjugate diameters of ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 then m<sub>1</sub>m<sub>2</sub> =",
+    "id": "3d_geometry_qn_027",
+    "question": "The vector equation of a plane passing through point A(a) and perpendicular to given vector n is",
     "options": [
-      "-\\frac{b^2}{a^2}",
-      "\\frac{b^2}{a^2}",
-      "\\frac{a^2}{b^2}",
-      "-\\frac{a^2}{b^2}"
+      "(r+a) \\cdot n = 0",
+      "(r-a) \\cdot n = 0",
+      "(r \\times a) \\cdot n = 0",
+      "r \\cdot (a \\times n) = 0"
     ],
-    "answer": "-\\frac{b^2}{a^2}",
+    "answer": "(r-a) \\cdot n = 0",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "medium",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_036.svg",
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_027.glb",
     "tip": null
   },
   {
-    "id": "ellipse_qn_037",
-    "question": "The locus of midpoints of focal chords of ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is",
+    "id": "3d_geometry_qn_028",
+    "question": "The length of perpendicular from point P(x<sub>o</sub>, y<sub>o</sub>, z<sub>o</sub>) on the line (x-x<sub>1</sub>)/a = (y-y<sub>1</sub>)/b = (z-z<sub>1</sub>)/c is (Take A(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and d = ai + bj + ck)",
     "options": [
-      "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = \\frac{eb}{a}",
-      "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = \\frac{ex}{b}",
-      "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = \\frac{ex}{a}",
-      "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = \\frac{ea}{x}"
+      "\\frac{|\\vec{PA} \\times \\vec{d}|}{|\\vec{d}|}",
+      "\\frac{|\\vec{PA} \\times \\vec{d}|}{|\\vec{d}|^2}",
+      "\\frac{|\\vec{PA} \\times \\vec{d}|}{|\\vec{d}|^3}",
+      "\\frac{|\\vec{PA} \\times \\vec{d}|^2}{|\\vec{d}|^2}"
     ],
-    "answer": "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = \\frac{ex}{a}",
+    "answer": "\\frac{|\\vec{PA} \\times \\vec{d}|}{|\\vec{d}|}",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "medium",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_037.riv",
-    "tip": "The locus are smaller ellipse of same eccentricity such that one extremity is at origin and another at the focus. They are exact replicas but smaller, KIDS, TWINS !!"
-  },
-  {
-    "id": "ellipse_qn_038",
-    "question": "The polar of point (x<sub>1</sub>, y<sub>1</sub>) with respect to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is (e = eccentricity)",
-    "options": [
-      "T = S_1",
-      "T = S_1^2",
-      "T = S_1",
-      "T = 0"
-    ],
-    "answer": "T = 0",
-    "tags": {
-      "chapter": "ellipse",
-      "difficulty": "medium",
-      "class": "11"
-    },
-    "image": "assets/images/11th/ellipse/ellipse_qn_038.svg",
+    "image": null,
     "tip": null
   },
   {
-    "id": "ellipse_qn_039",
-    "question": "The pole of line xx<sub>1</sub>/a<sup>2</sup> + yy<sub>1</sub>/b<sup>2</sup> = 1 with respect to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is",
+    "id": "3d_geometry_qn_029",
+    "question": "Two lines r = a<sub>1</sub> + &lambda;b<sub>1</sub> and r = a<sub>2</sub> + &mu;b<sub>2</sub> are intersecting or coplanar if",
     "options": [
-      "(-x_1, y_1)",
-      "(x_1, y_1)",
-      "(x_1, -y_1)",
-      "(y_1, x_1)"
+      "(a_2+a_1) \\cdot (b_1 \\times b_2) = 0",
+      "(a_2-a_1) \\cdot (b_1 \\times b_2) = 0",
+      "(a_2 \\times a_1) \\cdot (b_1 \\times b_2) = 0",
+      "(a_2 \\times a_1) \\cdot (b_1 + b_2) = 0"
     ],
-    "answer": "(x_1, y_1)",
+    "answer": "(a_2-a_1) \\cdot (b_1 \\times b_2) = 0",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "medium",
-      "class": "11"
+      "class": "12"
     },
-    "image": "assets/images/11th/ellipse/ellipse_qn_039.svg",
-    "tip": null
+    "image": null,
+    "tip": "The shortest distance between them must be zero"
   },
   {
-    "id": "ellipse_qn_040",
-    "question": "The locus of midpoints of normal chords of ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is",
+    "id": "3d_geometry_qn_030",
+    "question": "The shortest distance between lines r = a<sub>1</sub> + &lambda;b<sub>1</sub> and r = a<sub>2</sub> + &mu;b<sub>2</sub> is given by",
     "options": [
-      "(\\frac{x^2}{a^2} - \\frac{y^2}{b^2})^2 (\\frac{a^6}{x^2} + \\frac{b^6}{y^2}) = (a^2 - b^2)^2",
-      "(\\frac{x^2}{a^2} + \\frac{y^2}{b^2})^2 (\\frac{a^6}{x^2} + \\frac{b^6}{y^2}) = (a^2 - b^2)^2",
-      "(\\frac{x^2}{a^2} + \\frac{y^2}{b^2})^2 (\\frac{a^6}{x^2} - \\frac{b^6}{y^2}) = (a^2 - b^2)^2",
-      "(\\frac{x^2}{a^2} + \\frac{y^2}{b^2})^2 (\\frac{a^6}{x^2} + \\frac{b^6}{y^2}) = (a^2 + b^2)^2"
+      "\\frac{|(a_2 \\times a_1) \\cdot (b_1 - b_2)|}{|b_1 - b_2|}",
+      "\\frac{|(a_2 - a_1) \\cdot (b_1 \\times b_2)|}{|b_1 \\times b_2|}",
+      "\\frac{|(a_2 \\times a_1) \\cdot (b_1 + b_2)|}{|b_1 + b_2|}",
+      "\\frac{|(a_2 + a_1) \\cdot (b_1 \\times b_2)|}{|b_1 \\times b_2|}"
     ],
-    "answer": "(\\frac{x^2}{a^2} + \\frac{y^2}{b^2})^2 (\\frac{a^6}{x^2} + \\frac{b^6}{y^2}) = (a^2 - b^2)^2",
+    "answer": "\\frac{|(a_2 - a_1) \\cdot (b_1 \\times b_2)|}{|b_1 \\times b_2|}",
     "tags": {
-      "chapter": "ellipse",
+      "chapter": "3D Geometry",
       "difficulty": "god",
-      "class": "11"
+      "class": "12"
     },
-    "image":"assets/images/11th/ellipse/ellipse_qn_040.svg",
-    "tip": "A Flower !!"
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_030.glb",
+    "tip": "Its the component of a2-a1 along b1xb2"
+  },
+  {
+    "id": "3d_geometry_qn_031",
+    "question": "The equation of a plane having intercepts a, b, c on X, Y, Z axes respectively is",
+    "options": [
+      "\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 1",
+      "ax + by + cz = 1",
+      "ax + by + cz = 1",
+      "ax + by + cz = 0"
+    ],
+    "answer": "\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 1",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_031.glb",
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_032",
+    "question": "The equation of a plane passing through (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and having direction ratios a, b, c normal to the plane is",
+    "options": [
+      "a(x-x_1) - b(y-y_1) - c(z-z_1) = 1",
+      "a(x+x_1) + b(y+y_1) + c(z+z_1) = 1",
+      "a(x+x_1) + b(y+y_1) + c(z+z_1) = 0",
+      "a(x-x_1) + b(y-y_1) + c(z-z_1) = 0"
+    ],
+    "answer": "a(x-x_1) + b(y-y_1) + c(z-z_1) = 0",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_033",
+    "question": "The equation of a plane passing through three non collinear points A(a), B(b), C(c) is",
+    "options": [
+      "(r-a) \\cdot [(b-a) \\times (c-a)] = 1",
+      "(r-a) \\cdot [(b-a) \\times (c-a)] = 0",
+      "(r-a) \\cdot [(b+a) \\times (c+a)] = 1",
+      "(r-a) \\cdot [(b+a) \\times (c+a)] = 0"
+    ],
+    "answer": "(r-a) \\cdot [(b-a) \\times (c-a)] = 0",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_033.glb",
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_034",
+    "question": "The equation of a plane parallel to ax + by + cz + d<sub>1</sub> = 0 is",
+    "options": [
+      "ax - by - cz - d_1 = 0",
+      "a_2x + b_2y + c_2z + d_2 = 0",
+      "a_2x + b_2y + c_2z + d_1 = 0",
+      "ax + by + cz + d_2 = 0"
+    ],
+    "answer": "ax + by + cz + d_2 = 0",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_035",
+    "question": "The vector equation of a plane parallel to r &middot; n = d<sub>1</sub> is",
+    "options": [
+      "r \\cdot n = d_2",
+      "r \\times n = d_1",
+      "r \\times n = d_2",
+      "r \\cdot (r \\times n) = d_1"
+    ],
+    "answer": "r \\cdot n = d_2",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_036",
+    "question": "The equation of a plane passing through intersection of planes r &middot; n<sub>1</sub> = d<sub>1</sub> and r &middot; n<sub>2</sub> = d<sub>2</sub> is",
+    "options": [
+      "r \\cdot (n_1 - n_2) = d_1 d_2",
+      "r \\cdot (n_1 - n_2) = d_1 + d_2",
+      "r \\cdot (n_1 + \\lambda n_2) = d_1 + \\lambda d_2",
+      "r \\cdot (n_1 \\times n_2) = d_1 d_2"
+    ],
+    "answer": "r \\cdot (n_1 + \\lambda n_2) = d_1 + \\lambda d_2",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_037",
+    "question": "The x coordinate foot of perpendicular of point (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) on plane ax + by + cz + d = 0 is (given &alpha; = (ax<sub>1</sub>+by<sub>1</sub>+cz<sub>1</sub>+d)/(a<sup>2</sup>+b<sup>2</sup>+c<sup>2</sup>))",
+    "options": [
+      "x_1 + 2a\\alpha",
+      "x_1 - 2a\\alpha",
+      "x_1 + a\\alpha",
+      "x_1 - a\\alpha"
+    ],
+    "answer": "x_1 - a\\alpha",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_037.svg",
+    "tip": "Think of it like this, we start from x1 and move towards the plane (negative sign indicates moving towards, positive sign indicates moving away) in direction normal to it (indicated by direction ratio a of normal) by a factor α."
+  },
+  {
+    "id": "3d_geometry_qn_038",
+    "question": "The angle between planes r &middot; n<sub>1</sub> = d<sub>1</sub> and r &middot; n<sub>2</sub> = d<sub>2</sub> is",
+    "options": [
+      "\\cos^{-1} \\frac{|n_1 \\cdot n_2|}{|n_1||n_2|}",
+      "\\sin^{-1} \\frac{|n_1 \\cdot n_2|}{|n_1||n_2|}",
+      "\\tan^{-1} \\frac{|n_1 \\cdot n_2|}{|n_1||n_2|}",
+      "\\cot^{-1} \\frac{|n_1 \\cdot n_2|}{|n_1||n_2|}"
+    ],
+    "answer": "\\cos^{-1} \\frac{|n_1 \\cdot n_2|}{|n_1||n_2|}",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_038.glb",
+    "tip": "Angle between planes equals angle between their normals"
+  },
+
+  {
+    "id": "3d_geometry_qn_039",
+    "question": "The planes r &middot; n<sub>1</sub> = d<sub>1</sub> and r &middot; n<sub>2</sub> = d<sub>2</sub> are perpendicular if",
+    "options": [
+      "n_1 \\cdot n_2 = 0.5",
+      "n_1 \\cdot n_2 = 0",
+      "n_1 \\cdot n_2 = 1",
+      "n_1 \\times n_2 = 0"
+    ],
+    "answer": "n_1 \\cdot n_2 = 0",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+
+  {
+    "id": "3d_geometry_qn_040",
+    "question": "The x coordinate of image of point (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) in plane ax + by + cz + d = 0 is (given &alpha; = (ax<sub>1</sub>+by<sub>1</sub>+cz<sub>1</sub>+d)/(a<sup>2</sup>+b<sup>2</sup>+c<sup>2</sup>))",
+    "options": [
+      "x_1 + 2a\\alpha",
+      "x_1 - 2a\\alpha",
+      "x_1 + a\\alpha",
+      "x_1 - a\\alpha"
+    ],
+    "answer": "x_1 - 2a\\alpha",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_040.svg",
+    "tip": "Think of it like this, we start from x1 and move towards the plane (negative sign indicates moving towards, positive sign indicates moving away) in direction normal to it (indicated by direction ratio a of normal) by a factor 2 α. Factor α is for foot of perpendicular"
+  },
+  {
+    "id": "3d_geometry_qn_041",
+    "question": "The planes r &middot; n<sub>1</sub> = d<sub>1</sub> and r &middot; n<sub>2</sub> = d<sub>2</sub> are parallel if",
+    "options": [
+      "n_1 \\cdot n_2 = 0.5",
+      "n_1 \\cdot n_2 = 0",
+      "n_1 \\cdot n_2 = 1",
+      "n_1 = \\lambda n_2"
+    ],
+    "answer": "n_1 = \\lambda n_2",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_042",
+    "question": "The distance of a point A(a) from a plane r &middot; n = d is",
+    "options": [
+      "\\vec{a} \\cdot \\vec{n} + d/|\\vec{n}|",
+      "\\vec{a} \\cdot \\vec{n} + d/|\\vec{n}|^2",
+      "|\\vec{a} \\cdot \\vec{n} - d| / |\\vec{n}|",
+      "\\vec{a} \\cdot \\vec{n} - d/|\\vec{n}|^2"
+    ],
+    "answer": "|\\vec{a} \\cdot \\vec{n} - d| / |\\vec{n}|",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_042.glb",
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_043",
+    "question": "The distance of a point P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) from a plane ax + by + cz + d = 0 is",
+    "options": [
+      "\\frac{d}{\\sqrt{a^2+b^2+c^2}}",
+      "\\frac{ax_1+by_1+cz_1+d}{\\sqrt{a^2+b^2+c^2}}",
+      "\\frac{|ax_1+by_1+cz_1+d|}{\\sqrt{a^2+b^2+c^2}}",
+      "\\frac{d}{a^2+b^2+c^2}"
+    ],
+    "answer": "\\frac{|ax_1+by_1+cz_1+d|}{\\sqrt{a^2+b^2+c^2}}",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_044",
+    "question": "The distance between two parallel planes ax + by + cz + d<sub>1</sub> = 0 and ax + by + cz + d<sub>2</sub> = 0",
+    "options": [
+      "\\frac{d_2-d_1}{\\sqrt{a^2+b^2+c^2}}",
+      "\\frac{|d_2-d_1|}{\\sqrt{a^2+b^2+c^2}}",
+      "\\frac{d_2+d_1}{\\sqrt{a^2+b^2+c^2}}",
+      "\\frac{|d_2+d_1|}{\\sqrt{a^2+b^2+c^2}}"
+    ],
+    "answer": "\\frac{|d_2-d_1|}{\\sqrt{a^2+b^2+c^2}}",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_045",
+    "question": "The angle between line r = a + &lambda;b and plane r &middot; n = d is",
+    "options": [
+      "\\tan^{-1} \\frac{|n \\cdot b|}{|n||b|}",
+      "\\cos^{-1} \\frac{|n \\cdot b|}{|n||b|}",
+      "\\sin^{-1} \\frac{|n \\cdot b|}{|n||b|}",
+      "\\cot^{-1} \\frac{|n \\cdot b|}{|n||b|}"
+    ],
+    "answer": "\\sin^{-1} \\frac{|n \\cdot b|}{|n||b|}",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": "assets/images/12th/3d_geometry/3d_geometry_qn_045.svg",
+    "tip": "Be careful, it is cos inverse if angle between line and normal to plane is asked."
+  },
+  {
+    "id": "3d_geometry_qn_046",
+    "question": "Two lines (x-x<sub>1</sub>)/a<sub>1</sub> = (y-y<sub>1</sub>)/b<sub>1</sub> = (z-z<sub>1</sub>)/c<sub>1</sub> and (x-x<sub>2</sub>)/a<sub>2</sub> = (y-y<sub>2</sub>)/b<sub>2</sub> = (z-z<sub>2</sub>)/c<sub>2</sub> are coplanar if",
+    "options": [
+      "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 1",
+      "\\begin{vmatrix} x_2+x_1 & y_2+y_1 & z_2+z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x_1 & y_1 & z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0"
+    ],
+    "answer": "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+
+  {
+    "id": "3d_geometry_qn_047",
+    "question": "For two planes a<sub>1</sub>x + b<sub>1</sub>y + c<sub>1</sub>z + d<sub>1</sub> = 0 and a<sub>2</sub>x + b<sub>2</sub>y + c<sub>2</sub>z + d<sub>2</sub> = 0, origin will lie in acute angle between planes if",
+    "options": [
+      "a_1a_2 + b_1b_2 + c_1c_2 < 0",
+      "a_1a_2 + b_1b_2 + c_1c_2 > 0",
+      "a_1a_2 + b_1b_2 + c_1c_2 = 0",
+      "a_1a_2 + b_1b_2 + c_1c_2 = 1"
+    ],
+    "answer": "a_1a_2 + b_1b_2 + c_1c_2 < 0",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_048",
+    "question": "The equation of a plane passing through point A (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and parallel to two lines with direction ratios a<sub>1</sub>, b<sub>1</sub>, c<sub>1</sub> and a<sub>2</sub>, b<sub>2</sub>, c<sub>2</sub> is",
+    "options": [
+      "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x+x_1 & y+y_1 & z+z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ a_1 & a_2 & a_3 \\\\ b_1 & b_2 & b_3 \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0"
+    ],
+    "answer": "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_049",
+    "question": "The equation of a plane passing through point A (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>), B (x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) and parallel to a line with direction ratios a, b, c is",
+    "options": [
+      "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a & b & c \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x+x_1 & y+y_1 & z+z_1 \\\\ x_2+x_1 & y_2+y_1 & z_2+z_1 \\\\ a & b & c \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a & b & c \\end{vmatrix} = 1",
+      "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a & b & c \\end{vmatrix} = 0"
+    ],
+    "answer": "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a & b & c \\end{vmatrix} = 0",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "3d_geometry_qn_050",
+    "question": "Four points A (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>), B (x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>), C (x<sub>3</sub>, y<sub>3</sub>, z<sub>3</sub>), D (x<sub>4</sub>, y<sub>4</sub>, z<sub>4</sub>) are coplanar if and only if",
+    "options": [
+      "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ x_3-x_1 & y_3-y_1 & z_3-z_1 \\\\ x_4-x_1 & y_4-y_1 & z_4-z_1 \\end{vmatrix} = 1",
+      "\\begin{vmatrix} x_2+x_1 & y_2+y_1 & z_2+z_1 \\\\ x_3+x_1 & y_3+y_1 & z_3+z_1 \\\\ x_4+x_1 & y_4+y_1 & z_4+z_1 \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ x_3-x_1 & y_3-y_1 & z_3-z_1 \\\\ x_4-x_1 & y_4-y_1 & z_4-z_1 \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x_1 & y_1 & z_1 \\\\ x_2 & y_2 & z_2 \\\\ x_3 & y_3 & z_3 \\end{vmatrix} = 0"
+    ],
+    "answer": "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ x_3-x_1 & y_3-y_1 & z_3-z_1 \\\\ x_4-x_1 & y_4-y_1 & z_4-z_1 \\end{vmatrix} = 0",
+    "tags": {
+      "chapter": "3D Geometry",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
   },
 
     {
-      "id": "3d_geometry_qn_001",
-      "question": "The distance between two points P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) is given by",
+      "id": "ellipse_qn_001",
+      "question": "For the horizontal ellipse, its vertices are at",
       "options": [
-        "\\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}",
-        "\\sqrt{(x_2+x_1)^2 + (y_2+y_1)^2 + (z_2+z_1)^2}",
-        "\\sqrt{(x_2+x_1)^2 - (y_2+y_1)^2 - (z_2+z_1)^2}",
-        "\\sqrt{(x_2+x_1)^2 - (y_2-y_1)^2 + (z_2-z_1)^2}"
+        "(a,0) and (-a,0)",
+        "(0,b) and (0,-b)",
+        "(0,be) and (0,-be)",
+        "(ae,0) and (-ae,0)"
       ],
-      "answer": "\\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}",
+      "answer": "(a,0) and (-a,0)",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "easy",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_001.svg",
+      "image": "assets/images/11th/ellipse/ellipse_qn_001.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_002",
-      "question": "The coordinates of mid point M of P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) is",
+      "id": "ellipse_qn_002",
+      "question": "For the horizontal ellipse, the length of its major and minor axis are",
       "options": [
-        "(\\frac{x_1-x_2}{2}, \\frac{y_1-y_2}{2}, \\frac{z_1-z_2}{2})",
-        "(\\frac{x_1+x_2}{3}, \\frac{y_1+y_2}{3}, \\frac{z_1+z_2}{3})",
-        "(\\frac{x_1-x_2}{3}, \\frac{y_1-y_2}{3}, \\frac{z_1-z_2}{3})",
-        "(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}, \\frac{z_1+z_2}{2})"
+        "b, a",
+        "a, b",
+        "2a, 2b",
+        "2b, 2a"
       ],
-      "answer": "(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}, \\frac{z_1+z_2}{2})",
+      "answer": "2a, 2b",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "easy",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_002.svg",
+      "image": "assets/images/11th/ellipse/ellipse_qn_002.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_003",
-      "question": "The coordinates of a point O which divide P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) in ratio m:n internally is",
+      "id": "ellipse_qn_003",
+      "question": "For the horizontal ellipse, its foci are at",
       "options": [
-        "(\\frac{mx_1-nx_2}{m+n}, \\frac{my_1-ny_2}{m+n}, \\frac{mz_1-nz_2}{m+n})",
-        "(\\frac{mx_1-nx_2}{m-n}, \\frac{my_1-ny_2}{m-n}, \\frac{mz_1-nz_2}{m-n})",
-        "(\\frac{mx_2+nx_1}{m+n}, \\frac{my_2+ny_1}{m+n}, \\frac{mz_2+nz_1}{m+n})",
-        "(\\frac{mx_2+nx_1}{m-n}, \\frac{my_2+ny_1}{m-n}, \\frac{mz_2+nz_1}{m-n})"
+        "(a,0) and (-a,0)",
+        "(0,b) and (0,-b)",
+        "(0,be) and (0,-be)",
+        "(ae,0) and (-ae,0)"
       ],
-      "answer": "(\\frac{mx_2+nx_1}{m+n}, \\frac{my_2+ny_1}{m+n}, \\frac{mz_2+nz_1}{m+n})",
+      "answer": "(ae,0) and (-ae,0)",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "easy",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_003.svg",
+      "image": "assets/images/11th/ellipse/ellipse_qn_003.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_004",
-      "question": "The coordinates of centroid of triangle with vertices P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>), Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>), R(x<sub>3</sub>, y<sub>3</sub>, z<sub>3</sub>) is",
+      "id": "ellipse_qn_004",
+      "question": "For the horizontal ellipse, the equation of its directrices are",
       "options": [
-        "(\\frac{x_1+x_2+x_3}{2}, \\frac{y_1+y_2+y_3}{2}, \\frac{z_1+z_2+z_3}{2})",
-        "(\\frac{x_1+x_2+x_3}{3}, \\frac{y_1+y_2+y_3}{3}, \\frac{z_1+z_2+z_3}{3})",
-        "(\\frac{x_1-x_2-x_3}{2}, \\frac{y_1-y_2-y_3}{2}, \\frac{z_1-z_2-z_3}{2})",
-        "(\\frac{x_1-x_2-x_3}{3}, \\frac{y_1-y_2-y_3}{3}, \\frac{z_1-z_2-z_3}{3})"
+        "x = a/e, x = -a/e",
+        "x = ae, x = -ae",
+        "x = b/e, x = -b/e",
+        "x = be, x = -be"
       ],
-      "answer": "(\\frac{x_1+x_2+x_3}{3}, \\frac{y_1+y_2+y_3}{3}, \\frac{z_1+z_2+z_3}{3})",
+      "answer": "x = a/e, x = -a/e",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "easy",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_004.svg",
+      "image": "assets/images/11th/ellipse/ellipse_qn_004.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_005",
-      "question": "The coordinates of a point O which divide P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) in ratio m:n externally is",
+      "id": "ellipse_qn_005",
+      "question": "For the horizontal ellipse, the length of its latus rectum is",
       "options": [
-        "(\\frac{mx_2-nx_1}{m+n}, \\frac{my_2-ny_1}{m+n}, \\frac{mz_2-nz_1}{m+n})",
-        "(\\frac{mx_2-nx_1}{m-n}, \\frac{my_2-ny_1}{m-n}, \\frac{mz_2-nz_1}{m-n})",
-        "(\\frac{mx_2+nx_1}{m+n}, \\frac{my_2+ny_1}{m+n}, \\frac{mz_2+nz_1}{m+n})",
-        "(\\frac{mx_2+nx_1}{m-n}, \\frac{my_2+ny_1}{m-n}, \\frac{mz_2+nz_1}{m-n})"
+        "\\frac{2a^2}{b}",
+        "\\frac{a^2}{2b}",
+        "\\frac{b^2}{2a}",
+        "\\frac{2b^2}{a}"
       ],
-      "answer": "(\\frac{mx_2-nx_1}{m-n}, \\frac{my_2-ny_1}{m-n}, \\frac{mz_2-nz_1}{m-n})",
+      "answer": "\\frac{2b^2}{a}",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "medium",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_005.svg",
+      "image": "assets/images/11th/ellipse/ellipse_qn_005.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_006",
-      "question": "The coordinates of centroid of tetrahedron with vertices P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>), Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>), R(x<sub>3</sub>, y<sub>3</sub>, z<sub>3</sub>), S(x<sub>4</sub>, y<sub>4</sub>, z<sub>4</sub>) is",
+      "id": "ellipse_qn_006",
+      "question": "The eccentricity of this horizontal ellipse is",
       "options": [
-        "(\\frac{x_1+x_2+x_3+x_4}{2}, \\frac{y_1+y_2+y_3+y_4}{2}, \\frac{z_1+z_2+z_3+z_4}{2})",
-        "(\\frac{x_1+x_2+x_3+x_4}{3}, \\frac{y_1+y_2+y_3+y_4}{3}, \\frac{z_1+z_2+z_3+z_4}{3})",
-        "(\\frac{x_1+x_2+x_3+x_4}{4}, \\frac{y_1+y_2+y_3+y_4}{4}, \\frac{z_1+z_2+z_3+z_4}{4})",
-        "(\\frac{x_1+x_2+x_3+x_4}{12}, \\frac{y_1+y_2+y_3+y_4}{12}, \\frac{z_1+z_2+z_3+z_4}{12})"
+        "e = \\frac{b}{a} - 1",
+        "e = \\frac{b^2}{a^2} - 1",
+        "e = \\sqrt{1 - \\frac{b^2}{a^2}}",
+        "e = 1 - \\frac{b}{a}"
       ],
-      "answer": "(\\frac{x_1+x_2+x_3+x_4}{4}, \\frac{y_1+y_2+y_3+y_4}{4}, \\frac{z_1+z_2+z_3+z_4}{4})",
+      "answer": "e = \\sqrt{1 - \\frac{b^2}{a^2}}",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "medium",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_006.glb",
+      "image": "assets/images/11th/ellipse/ellipse_qn_006.riv",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_007",
-      "question": "If l, m, n are direction cosines of a vector, then",
+      "id": "ellipse_qn_007",
+      "question": "The focal distances of a point P (x,y) on the ellipse are SP and S<sub>1</sub>P equals",
       "options": [
-        "l^2 + m^2 + n^2 = 2",
-        "l^2 + m^2 + n^2 = 1",
-        "l + m + n = 2",
-        "l^3 + m^3 + n^3 = 1"
+        "2a+ex, 2a-ex",
+        "a-ex, a+ex",
+        "b+ex, b-ex",
+        "b-ex, b+ex"
       ],
-      "answer": "l^2 + m^2 + n^2 = 1",
+      "answer": "a-ex, a+ex",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "medium",
-        "class": "12"
+        "class": "11"
       },
-      "image": null,
+      "image": "assets/images/11th/ellipse/ellipse_qn_007.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_008",
-      "question": "If &alpha;, &beta;, &gamma; are angles made by a vector with X, Y, Z axes respectively, then",
+      "id": "ellipse_qn_008",
+      "question": "The distance between two focus of the ellipse is",
       "options": [
-        "\\cos^2 \\alpha + \\cos^2 \\beta + \\cos^2 \\gamma = 1",
-        "\\cos^2 \\alpha + \\cos^2 \\beta + \\cos^2 \\gamma = 2",
-        "\\cos \\alpha + \\cos \\beta + \\cos \\gamma = 1",
-        "\\sin^2 \\alpha + \\sin^2 \\beta + \\sin^2 \\gamma = 1"
+        "ae",
+        "2ae",
+        "\\frac{2a}{e}",
+        "\\frac{a}{e}"
       ],
-      "answer": "\\cos^2 \\alpha + \\cos^2 \\beta + \\cos^2 \\gamma = 1",
+      "answer": "2ae",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "medium",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_008.svg",
+      "image": "assets/images/11th/ellipse/ellipse_qn_008.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_009",
-      "question": "If &alpha;, &beta;, &gamma; are angles made by a vector with X, Y, Z axes respectively, then",
+      "id": "ellipse_qn_009",
+      "question": "The distance between two directrices of the ellipse is",
       "options": [
-        "\\cos \\alpha + \\cos \\beta + \\cos \\gamma = 2",
-        "\\cos 2\\alpha + \\cos 2\\beta + \\cos 2\\gamma = 2",
-        "\\cos \\alpha + \\cos \\beta + \\cos \\gamma = 1",
-        "\\sin^2 \\alpha + \\sin^2 \\beta + \\sin^2 \\gamma = 2"
+        "ae",
+        "2ae",
+        "\\frac{2a}{e}",
+        "\\frac{a}{e}"
       ],
-      "answer": "\\sin^2 \\alpha + \\sin^2 \\beta + \\sin^2 \\gamma = 2",
+      "answer": "\\frac{2a}{e}",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "medium",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_009.svg",
+      "image":"assets/images/11th/ellipse/ellipse_qn_009.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_010",
-      "question": "The angle between the diagonal of a cube and diagonal of a face of a cube is",
+      "id": "ellipse_qn_010",
+      "question": "The equation of tangents of slope m to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is given by",
       "options": [
-        "\\cos^{-1} \\frac{1}{2}",
-        "\\sin^{-1} \\frac{2}{3}",
-        "\\cos^{-1} \\frac{2}{3}",
-        "\\cos^{-1} \\frac{1}{3}"
+        "y = mx \\pm \\sqrt{a^2m^2 - b^2}",
+        "y = mx \\pm \\sqrt{a^2m^2 + b^2}",
+        "y = mx \\pm \\sqrt{a^2m - b^2}",
+        "y = mx \\pm \\sqrt{a^2m + b^2}"
       ],
-      "answer": "\\cos^{-1} \\sqrt{\\frac{2}{3}}",
+      "answer": "y = mx \\pm \\sqrt{a^2m^2 + b^2}",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "god",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_010.glb",
-      "tip": "I have removed a face, so you can peek inside!! 👀"
+      "image": "assets/images/11th/ellipse/ellipse_qn_010.svg",
+      "tip": null
     },
     {
-      "id": "3d_geometry_qn_011",
-      "question": "The coordinates of P if the direction cosines of OP are l, m, n is (OP = r)",
+      "id": "ellipse_qn_011",
+      "question": "If the center of ellipse is (h,k) and the direction of its axes are parallel to the coordinate axes, its equation is",
       "options": [
-        "(l, m, n)",
-        "(lm, mn, nl)",
-        "(lr, mr, nr)",
-        "(l^2r, m^2r, n^2r)"
+        "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1",
+        "\\frac{x^2}{h^2} + \\frac{y^2}{k^2} = 1",
+        "\\frac{(x-h)^2}{a^2} + \\frac{(y-k)^2}{b^2} = 1",
+        "\\frac{(x+h)^2}{a^2} + \\frac{(y+k)^2}{b^2} = 1"
       ],
-      "answer": "(lr, mr, nr)",
+      "answer": "\\frac{(x-h)^2}{a^2} + \\frac{(y-k)^2}{b^2} = 1",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "easy",
-        "class": "12"
+        "class": "11"
       },
-      "image":"assets/images/12th/3d_geometry/3d_geometry_qn_011.svg",
+      "image": "assets/images/11th/ellipse/ellipse_qn_011.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_012",
-      "question": "For two points P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>), the direction cosines of PQ are l, m, n. Then x<sub>2</sub> - x<sub>1</sub> equals",
+      "id": "ellipse_qn_012",
+      "question": "If the point (x<sub>1</sub>, y<sub>1</sub>) lies outside the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, then",
       "options": [
-        "m |PQ|",
-        "l |PQ|",
-        "n |PQ|",
-        "(l^2 + m^2 + n^2) |PQ|"
+        "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 > 0",
+        "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 = 0",
+        "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 < 0",
+        "None of these"
       ],
-      "answer": "l |PQ|",
+      "answer": "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 > 0",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "easy",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_012.svg",
+      "image": "assets/images/11th/ellipse/ellipse_qn_012.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_013",
-      "question": "If a, b, c are direction ratios of a vector and l, m, n are direction cosines such that l/a = m/b = n/c, then l equals",
+      "id": "ellipse_qn_013",
+      "question": "For the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, a > b the equation of auxiliary circle is",
       "options": [
-        "\\pm \\frac{a}{\\sqrt{a^2 + b^2 + c^2}}",
-        "\\pm \\frac{c}{\\sqrt{a^2 + b^2 + c^2}}",
-        "\\pm \\frac{b}{\\sqrt{a^2 + b^2 + c^2}}",
-        "\\pm \\frac{abc}{\\sqrt{a^2 + b^2 + c^2}}"
+        "x^2 + y^2 = a^2 + b^2",
+        "x^2 + y^2 = a^4 + b^4",
+        "x^2 + y^2 = b^2",
+        "x^2 + y^2 = a^2"
       ],
-      "answer": "\\pm \\frac{a}{\\sqrt{a^2 + b^2 + c^2}}",
+      "answer": "x^2 + y^2 = a^2",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "easy",
-        "class": "12"
+        "class": "11"
       },
-      "image": null,
+      "image": "assets/images/11th/ellipse/ellipse_qn_013.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_014",
-      "question": "If l<sub>1</sub>, m<sub>1</sub>, n<sub>1</sub> and l<sub>2</sub>, m<sub>2</sub>, n<sub>2</sub> are direction cosines of two given lines, then the lines are parallel if",
+      "id": "ellipse_qn_014",
+      "question": "The eccentric angle of point P on the ellipse is",
       "options": [
-        "l_1l_2 + m_1m_2 + n_1n_2 = 0",
-        "l_1l_2 = m_1m_2 + n_1n_2",
-        "\\frac{l_1}{l_2} = \\frac{m_1}{m_2} = \\frac{n_1}{n_2}",
-        "l_1l_2 = m_1m_2 + n_1n_2"
+        "\\angle ACQ",
+        "\\angle CQA",
+        "\\angle BCQ",
+        "\\angle QAC"
       ],
-      "answer": "\\frac{l_1}{l_2} = \\frac{m_1}{m_2} = \\frac{n_1}{n_2}",
+      "answer": "\\angle ACQ",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "easy",
-        "class": "12"
+        "class": "11"
       },
-      "image": null,
+      "image": "assets/images/11th/ellipse/ellipse_qn_014.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_015",
-      "question": "If l<sub>1</sub>, m<sub>1</sub>, n<sub>1</sub> and l<sub>2</sub>, m<sub>2</sub>, n<sub>2</sub> are direction cosines of two given lines, then the lines are perpendicular if",
+      "id": "ellipse_qn_015",
+      "question": "The equation of tangent to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 at point (x<sub>1</sub>, y<sub>1</sub>) is",
       "options": [
-        "l_1l_2 + m_1m_2 + n_1n_2 = 0",
-        "l_1l_2 = m_1m_2 + n_1n_2",
-        "\\frac{l_1}{l_2} = \\frac{m_1}{m_2} = \\frac{n_1}{n_2}",
-        "l_1l_2 = m_1m_2 + n_1n_2"
+        "\\frac{xx_1}{2a} + \\frac{yy_1}{2b} = 1",
+        "\\frac{xx_1}{a} + \\frac{yy_1}{b} = 1",
+        "\\frac{xx_1}{a^2} + \\frac{yy_1}{b^2} = 1",
+        "\\frac{xx_1}{2a^2} + \\frac{yy_1}{2b^2} = 1"
       ],
-      "answer": "l_1l_2 + m_1m_2 + n_1n_2 = 0",
+      "answer": "\\frac{xx_1}{a^2} + \\frac{yy_1}{b^2} = 1",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "medium",
-        "class": "12"
+        "class": "11"
       },
-      "image": null,
+      "image": "assets/images/11th/ellipse/ellipse_qn_015.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_016",
-      "question": "The projection of a line segment joining points P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and Q(x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) on a line having direction cosines l, m, n is",
+      "id": "ellipse_qn_016",
+      "question": "The equation of tangent to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 at point (a cos &theta;<sub>1</sub>, b sin &theta;<sub>1</sub>) is",
       "options": [
-        "l(x_2-x_1) - m(y_2-y_1) - n(z_2-z_1)",
-        "l(x_2+x_1) - m(y_2+y_1) - n(z_2+z_1)",
-        "l(x_2+x_1) + m(y_2+y_1) + n(z_2+z_1)",
-        "l(x_2-x_1) + m(y_2-y_1) + n(z_2-z_1)"
+        "\\frac{x}{a^2}\\cos\\theta_1 + \\frac{y}{b^2}\\sin\\theta_1 = 1",
+        "\\frac{x}{a}\\cos\\theta_1 + \\frac{y}{b}\\sin\\theta_1 = 1",
+        "\\frac{x}{a}\\sin\\theta_1 + \\frac{y}{b}\\cos\\theta_1 = 1",
+        "\\frac{x}{a^2}\\sin\\theta_1 + \\frac{y}{b^2}\\cos\\theta_1 = 1"
       ],
-      "answer": "l(x_2-x_1) + m(y_2-y_1) + n(z_2-z_1)",
+      "answer": "\\frac{x}{a}\\cos\\theta_1 + \\frac{y}{b}\\sin\\theta_1 = 1",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "medium",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_016.svg",
+      "image": "assets/images/11th/ellipse/ellipse_qn_016.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_017",
-      "question": "If l<sub>1</sub>, m<sub>1</sub>, n<sub>1</sub> and l<sub>2</sub>, m<sub>2</sub>, n<sub>2</sub> are direction cosines of two given lines and &theta; is angle between them, then cos &theta; equals",
+      "id": "ellipse_qn_017",
+      "question": "The equation of tangents to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 at points P(a cos &theta;<sub>1</sub>, b sin &theta;<sub>1</sub>) and Q(a cos &theta;<sub>2</sub>, b sin &theta;<sub>2</sub>) intersect at point",
       "options": [
-        "l_1m_1n_1 + l_2m_2n_2",
-        "l_1l_2 + m_1m_2 + n_1n_2",
-        "l_1m_1n_1 - l_2m_2n_2",
-        "l_1l_2 - m_1m_2 - n_1n_2"
+        "\\left( a\\frac{\\cos\\frac{\\theta_1-\\theta_2}{2}}{\\cos\\frac{\\theta_1+\\theta_2}{2}}, b\\frac{\\sin\\frac{\\theta_1-\\theta_2}{2}}{\\sin\\frac{\\theta_1+\\theta_2}{2}} \\right)",
+        "\\left( a\\frac{\\cos\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}}, b\\frac{\\sin\\frac{\\theta_1+\\theta_2}{2}}{\\sin\\frac{\\theta_1-\\theta_2}{2}} \\right)",
+        "\\left( a\\frac{\\cos\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}}, b\\frac{\\cos\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}} \\right)",
+        "\\left( a\\frac{\\cos\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}}, b\\frac{\\sin\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}} \\right)"
       ],
-      "answer": "l_1l_2 + m_1m_2 + n_1n_2",
+      "answer": "\\left( a\\frac{\\cos\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}}, b\\frac{\\sin\\frac{\\theta_1+\\theta_2}{2}}{\\cos\\frac{\\theta_1-\\theta_2}{2}} \\right)",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "medium",
-        "class": "12"
+        "class": "11"
       },
-      "image": null,
+      "image": "assets/images/11th/ellipse/ellipse_qn_017.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_018",
-      "question": "The angle between any two diagonals of a cube is",
+      "id": "ellipse_qn_018",
+      "question": "The combined equation of pair of tangents drawn from point (x<sub>1</sub>, y<sub>1</sub>) to ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is",
       "options": [
-        "\\cos^{-1} \\frac{1}{3}",
-        "\\sin^{-1} \\frac{1}{3}",
-        "\\cos^{-1} \\frac{2}{3}",
-        "\\cos^{-1} \\frac{1}{3}"
+        "SS_1 = 2T",
+        "SS_1 = T^2",
+        "SS_1 = 2T^2",
+        "SS_1 = T"
       ],
-      "answer": "\\cos^{-1} \\frac{1}{3}",
+      "answer": "SS_1 = T^2",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "medium",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_018.glb",
+      "image": "assets/images/11th/ellipse/ellipse_qn_018.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_019",
-      "question": "The vector equation of a line passing through two points with position vector a and b is (&lambda; = any real number)",
+      "id": "ellipse_qn_019",
+      "question": "For the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, the director circle is",
       "options": [
-        "r = \\lambda a \\cdot b",
-        "r = a + \\lambda b",
-        "r = \\lambda a \\times b",
-        "r = a + \\lambda (b - a)"
+        "x^2 + y^2 = a^2 + b^2",
+        "x^2 + y^2 = a^4 + b^4",
+        "x^2 + y^2 = b^2",
+        "x^2 + y^2 = a^2"
       ],
-      "answer": "r = a + \\lambda (b - a)",
+      "answer": "x^2 + y^2 = a^2 + b^2",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "medium",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_019.svg",
-      "tip": null
+      "image": "assets/images/11th/ellipse/ellipse_qn_019.riv",
+      "tip": "The director circle is the locus of point of intersection of two perpendicular tangents drawn to the ellipse"
     },
     {
-      "id": "3d_geometry_qn_020",
-      "question": "The length of perpendicular from point P(c) on the line r = a + &lambda;b is",
+      "id": "ellipse_qn_020",
+      "question": "The point of contact of tangent of slope m to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is given by",
       "options": [
-        "\\frac{|(c \\times b)|}{|b|}",
-        "\\frac{|(c \\times b)|}{|b|^2}",
-        "\\frac{|(c - a) \\times b|}{|b|}",
-        "\\frac{|(c - a) \\times b|}{|b|^2}"
+        "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2+b^2}}, \\pm \\frac{b^2}{\\sqrt{a^2m^2+b^2}} \\right)",
+        "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m+b^2}}, \\mp \\frac{b^2}{\\sqrt{a^2m+b^2}} \\right)",
+        "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2-b^2}}, \\pm \\frac{b^2}{\\sqrt{a^2m^2-b^2}} \\right)",
+        "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2+b^2}}, \\mp \\frac{b^2}{\\sqrt{a^2m^2+b^2}} \\right)"
       ],
-      "answer": "\\frac{|(c - a) \\times b|}{|b|}",
+      "answer": "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2+b^2}}, \\mp \\frac{b^2}{\\sqrt{a^2m^2+b^2}} \\right)",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "god",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_020.svg",
-      "tip": "You can also think of this like, Area of parallelogram formed by c-a and b, divided by its base. Gives height of parallelogram, which is nothing but the length of perpendicular from c to line."
-    },
-    {
-      "id": "3d_geometry_qn_021",
-      "question": "The vector equation of a line passing through a point with position vector a and parallel to vector b is (&lambda; = any real number)",
-      "options": [
-        "r = \\lambda a \\cdot b",
-        "r = a + \\lambda b",
-        "r = \\lambda a \\times b",
-        "r = a + \\lambda (b - a)"
-      ],
-      "answer": "r = a + \\lambda b",
-      "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_021.svg",
+      "image": "assets/images/11th/ellipse/ellipse_qn_020.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_022",
-      "question": "The cartesian equation of a line passing through point (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) having direction ratios a, b, c is",
+      "id": "ellipse_qn_021",
+      "question": "The equation of normal to ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 at (x<sub>1</sub>, y<sub>1</sub>) is given by",
       "options": [
-        "\\frac{x+x_1}{a} = \\frac{y+y_1}{b} = \\frac{z+z_1}{c}",
-        "\\frac{x-x_1}{a} = \\frac{y-y_1}{b} = \\frac{z-z_1}{c}",
-        "\\frac{x}{a} = \\frac{y}{b} = \\frac{z}{c}",
-        "\\frac{x+x_1}{a^2} = \\frac{y+y_1}{b^2} = \\frac{z+z_1}{c^2}"
+        "\\frac{a^2x}{x_1} + \\frac{b^2y}{y_1} = a^2 - b^2",
+        "\\frac{a^2x}{x_1} - \\frac{b^2y}{y_1} = a^2 - b^2",
+        "\\frac{a^2x}{x_1} - \\frac{b^2y}{y_1} = a^2 + b^2",
+        "\\frac{a^2x}{x_1} + \\frac{b^2y}{y_1} = a^2 + b^2"
       ],
-      "answer": "\\frac{x-x_1}{a} = \\frac{y-y_1}{b} = \\frac{z-z_1}{c}",
+      "answer": "\\frac{a^2x}{x_1} - \\frac{b^2y}{y_1} = a^2 - b^2",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "easy",
-        "class": "12"
+        "class": "11"
+      },
+      "image": "assets/images/11th/ellipse/ellipse_qn_021.svg",
+      "tip": null
+    },
+    {
+      "id": "ellipse_qn_022",
+      "question": "The equation of normal of slope m to ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is given by",
+      "options": [
+        "y = mx \\pm \\frac{m(a^2-b^2)}{\\sqrt{a^2-b^2m^2}}",
+        "y = mx \\pm \\frac{m(a^2+b^2)}{\\sqrt{a^2-b^2m^2}}",
+        "y = mx \\pm \\frac{m(a^2-b^2)}{\\sqrt{a^2+b^2m^2}}",
+        "y = mx \\pm \\frac{m(a^2+b^2)}{\\sqrt{a^2+b^2m^2}}"
+      ],
+      "answer": "y = mx \\pm \\frac{m(a^2-b^2)}{\\sqrt{a^2+b^2m^2}}",
+      "tags": {
+        "chapter": "ellipse",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/ellipse/ellipse_qn_022.svg",
+      "tip": null
+    },
+    {
+      "id": "ellipse_qn_023",
+      "question": "If a normal is drawn from a point on the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, then (S1 and S are foci of ellipse)",
+      "options": [
+        "\\theta_1 = 2\\theta_2",
+        "\\theta_1 = \\theta_2",
+        "\\theta_1 + \\theta_2 = 90",
+        "2\\theta_1 = \\theta_2"
+      ],
+      "answer": "\\theta_1 = \\theta_2",
+      "tags": {
+        "chapter": "ellipse",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/ellipse/ellipse_qn_023.svg",
+      "tip": null
+    },
+    {
+      "id": "ellipse_qn_024",
+      "question": "The maximum number of normals that can be drawn from a point to an ellipse is",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": "4",
+      "tags": {
+        "chapter": "ellipse",
+        "difficulty": "easy",
+        "class": "11"
       },
       "image": null,
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_023",
-      "question": "The vector form of a plane is (r = position vector of any point on plane, n = unit normal vector, d = perpendicular distance of plane from origin)",
+      "id": "ellipse_qn_025",
+      "question": "The equation of chord of contact of tangents drawn from (x<sub>1</sub>, y<sub>1</sub>) to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is given by",
       "options": [
-        "r \\times n = d^2",
-        "r \\cdot n = d^2",
-        "r \\times n = d",
-        "r \\cdot n = d"
+        "T = 2S_1",
+        "T = S_1^2",
+        "T = S_1",
+        "T = 0"
       ],
-      "answer": "r \\cdot n = d",
+      "answer": "T = 0",
       "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "easy",
-        "class": "12"
+        "chapter": "ellipse",
+        "difficulty": "medium",
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_023.glb",
+      "image": "assets/images/11th/ellipse/ellipse_qn_025.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_024",
-      "question": "The equation of a plane which is at distance p from origin and direction cosines of normal from origin to plane are l, m, n is",
+      "id": "ellipse_qn_026",
+      "question": "The equation of chord of ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 bisected at (x<sub>1</sub>, y<sub>1</sub>) is given by",
       "options": [
-        "lx + my + nz = p^2",
-        "l^2x + m^2y + n^2z = p^2",
-        "lx + my + nz = p",
-        "l^2x + m^2y + n^2z = p"
+        "T = S_1",
+        "T = S_1^2",
+        "T = S_1",
+        "T = 0"
       ],
-      "answer": "lx + my + nz = p",
+      "answer": "T = S_1",
       "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "easy",
-        "class": "12"
+        "chapter": "ellipse",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/ellipse/ellipse_qn_026.svg",
+      "tip": null
+    },
+    {
+      "id": "ellipse_qn_027",
+      "question": "If &theta;<sub>1</sub>, &theta;<sub>2</sub>, &theta;<sub>3</sub>, &theta;<sub>4</sub> are eccentric angles of conormal points to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 then, &theta;<sub>1</sub> + &theta;<sub>2</sub> + &theta;<sub>3</sub> + &theta;<sub>4</sub> equals (n &isin; Z)",
+      "options": [
+        "2\\pi",
+        "(3n+4)\\pi",
+        "(2n+1)\\pi",
+        "4\\pi"
+      ],
+      "answer": "(2n+1)\\pi",
+      "tags": {
+        "chapter": "ellipse",
+        "difficulty": "medium",
+        "class": "11"
       },
       "image": null,
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_025",
-      "question": "The shortest distance between parallel lines r = a<sub>1</sub> + &lambda;b and r = a<sub>2</sub> + &mu;b is given by",
+      "id": "ellipse_qn_028",
+      "question": "If &theta;<sub>1</sub>, &theta;<sub>2</sub>, &theta;<sub>3</sub>, &theta;<sub>4</sub> are eccentric angles of conormal points to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 then",
       "options": [
-        "\\frac{|(a_2-a_1) \\cdot b|}{|b|}",
-        "\\frac{|(a_2-a_1) \\times b|}{|b|}",
-        "\\frac{|(a_2-a_1) \\cdot b|}{|b|^2}",
-        "\\frac{|(a_2-a_1) \\times b|}{|b|^2}"
+        "\\Sigma \\cos(\\theta_1 + \\theta_2) = 0",
+        "\\Sigma \\text{cosec}(\\theta_1 + \\theta_2) = 0",
+        "\\Sigma \\cot(\\theta_1 + \\theta_2) = 0",
+        "\\Sigma \\tan(\\theta_1 + \\theta_2) = 0"
       ],
-      "answer": "\\frac{|(a_2-a_1) \\times b|}{|b|}",
+      "answer": "\\Sigma \\tan(\\theta_1 + \\theta_2) = 0",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_025.svg",
-      "tip": "Also we can say, its area of the yellow parallelogram by its base"
-    },
-    {
-      "id": "3d_geometry_qn_026",
-      "question": "The coordinates of foot of perpendicular from origin on the plane lx + my + nz = p is",
-      "options": [
-        "(lp^2, mp^2, np^2)",
-        "(pl, pm, pn)",
-        "(l^2p, m^2p, n^2p)",
-        "(lp, mp, np)"
-      ],
-      "answer": "(lp, mp, np)",
-      "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_026.svg",
-      "tip": null
-    },
-    {
-      "id": "3d_geometry_qn_027",
-      "question": "The vector equation of a plane passing through point A(a) and perpendicular to given vector n is",
-      "options": [
-        "(r+a) \\cdot n = 0",
-        "(r-a) \\cdot n = 0",
-        "(r \\times a) \\cdot n = 0",
-        "r \\cdot (a \\times n) = 0"
-      ],
-      "answer": "(r-a) \\cdot n = 0",
-      "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_027.glb",
-      "tip": null
-    },
-    {
-      "id": "3d_geometry_qn_028",
-      "question": "The length of perpendicular from point P(x<sub>o</sub>, y<sub>o</sub>, z<sub>o</sub>) on the line (x-x<sub>1</sub>)/a = (y-y<sub>1</sub>)/b = (z-z<sub>1</sub>)/c is (Take A(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and d = ai + bj + ck)",
-      "options": [
-        "\\frac{|\\vec{PA} \\times \\vec{d}|}{|\\vec{d}|}",
-        "\\frac{|\\vec{PA} \\times \\vec{d}|}{|\\vec{d}|^2}",
-        "\\frac{|\\vec{PA} \\times \\vec{d}|}{|\\vec{d}|^3}",
-        "\\frac{|\\vec{PA} \\times \\vec{d}|^2}{|\\vec{d}|^2}"
-      ],
-      "answer": "\\frac{|\\vec{PA} \\times \\vec{d}|}{|\\vec{d}|}",
-      "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "medium",
-        "class": "12"
+        "class": "11"
       },
       "image": null,
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_029",
-      "question": "Two lines r = a<sub>1</sub> + &lambda;b<sub>1</sub> and r = a<sub>2</sub> + &mu;b<sub>2</sub> are intersecting or coplanar if",
+      "id": "ellipse_qn_029",
+      "question": "If the normal at four points P(x<sub>1</sub>, y<sub>1</sub>), Q(x<sub>2</sub>, y<sub>2</sub>), R(x<sub>3</sub>, y<sub>3</sub>), S(x<sub>4</sub>, y<sub>4</sub>) on the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 are concurrent then",
       "options": [
-        "(a_2+a_1) \\cdot (b_1 \\times b_2) = 0",
-        "(a_2-a_1) \\cdot (b_1 \\times b_2) = 0",
-        "(a_2 \\times a_1) \\cdot (b_1 \\times b_2) = 0",
-        "(a_2 \\times a_1) \\cdot (b_1 + b_2) = 0"
+        "(x_1+x_2+x_3+x_4)(\\frac{1}{x_1}+\\frac{1}{x_2}+\\frac{1}{x_3}+\\frac{1}{x_4}) = 4",
+        "(x_1+x_2+x_3+x_4)(\\frac{1}{x_1}+\\frac{1}{x_2}+\\frac{1}{x_3}+\\frac{1}{x_4}) = 2",
+        "(x_1+x_2+x_3+x_4)(\\frac{1}{x_1}+\\frac{1}{x_2}+\\frac{1}{x_3}+\\frac{1}{x_4}) = 0",
+        "(x_1+x_2+x_3+x_4)(\\frac{1}{x_1}+\\frac{1}{x_2}+\\frac{1}{x_3}+\\frac{1}{x_4}) = 1"
       ],
-      "answer": "(a_2-a_1) \\cdot (b_1 \\times b_2) = 0",
+      "answer": "(x_1+x_2+x_3+x_4)(\\frac{1}{x_1}+\\frac{1}{x_2}+\\frac{1}{x_3}+\\frac{1}{x_4}) = 4",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "medium",
-        "class": "12"
+        "class": "11"
       },
-      "image": null,
-      "tip": "The shortest distance between them must be zero"
+      "image": "assets/images/11th/ellipse/ellipse_qn_029.svg",
+      "tip": null
     },
     {
-      "id": "3d_geometry_qn_030",
-      "question": "The shortest distance between lines r = a<sub>1</sub> + &lambda;b<sub>1</sub> and r = a<sub>2</sub> + &mu;b<sub>2</sub> is given by",
+      "id": "ellipse_qn_030",
+      "question": "The coordinates of point of contact of normals of slope m to ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is",
       "options": [
-        "\\frac{|(a_2 \\times a_1) \\cdot (b_1 - b_2)|}{|b_1 - b_2|}",
-        "\\frac{|(a_2 - a_1) \\cdot (b_1 \\times b_2)|}{|b_1 \\times b_2|}",
-        "\\frac{|(a_2 \\times a_1) \\cdot (b_1 + b_2)|}{|b_1 + b_2|}",
-        "\\frac{|(a_2 + a_1) \\cdot (b_1 \\times b_2)|}{|b_1 \\times b_2|}"
+        "\\left( \\pm \\frac{a^2}{\\sqrt{a^2+b^2m^2}}, \\pm \\frac{b^2m}{\\sqrt{a^2+b^2m^2}} \\right)",
+        "\\left( \\pm \\frac{a^2}{\\sqrt{a^2-b^2m^2}}, \\pm \\frac{b^2m}{\\sqrt{a^2-b^2m^2}} \\right)",
+        "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2-b^2}}, \\pm \\frac{b^2}{\\sqrt{a^2m^2-b^2}} \\right)",
+        "\\left( \\pm \\frac{a^2m}{\\sqrt{a^2m^2+b^2}}, \\mp \\frac{b^2}{\\sqrt{a^2m^2+b^2}} \\right)"
       ],
-      "answer": "\\frac{|(a_2 - a_1) \\cdot (b_1 \\times b_2)|}{|b_1 \\times b_2|}",
+      "answer": "\\left( \\pm \\frac{a^2}{\\sqrt{a^2+b^2m^2}}, \\pm \\frac{b^2m}{\\sqrt{a^2+b^2m^2}} \\right)",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "god",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_030.glb",
-      "tip": "Its the component of a2-a1 along b1xb2"
-    },
-    {
-      "id": "3d_geometry_qn_031",
-      "question": "The equation of a plane having intercepts a, b, c on X, Y, Z axes respectively is",
-      "options": [
-        "\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 1",
-        "ax + by + cz = 1",
-        "ax + by + cz = 1",
-        "ax + by + cz = 0"
-      ],
-      "answer": "\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 1",
-      "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_031.glb",
+      "image": "assets/images/11th/ellipse/ellipse_qn_030.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_032",
-      "question": "The equation of a plane passing through (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and having direction ratios a, b, c normal to the plane is",
+      "id": "ellipse_qn_031",
+      "question": "If D<sub>1</sub> and D<sub>2</sub> are two conjugate diameters of an ellipse, and a chord C of ellipse is drawn parallel to D<sub>2</sub>, intersecting D<sub>1</sub> at M, the relation between the two segments of chord C created by M is",
       "options": [
-        "a(x-x_1) - b(y-y_1) - c(z-z_1) = 1",
-        "a(x+x_1) + b(y+y_1) + c(z+z_1) = 1",
-        "a(x+x_1) + b(y+y_1) + c(z+z_1) = 0",
-        "a(x-x_1) + b(y-y_1) + c(z-z_1) = 0"
+        "AM \\times MB = ab",
+        "2AM = MB",
+        "AM = MB",
+        "AM \\times MB = ab^2"
       ],
-      "answer": "a(x-x_1) + b(y-y_1) + c(z-z_1) = 0",
+      "answer": "AM = MB",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "easy",
-        "class": "12"
+        "class": "11"
       },
-      "image": null,
+      "image": "assets/images/11th/ellipse/ellipse_qn_031.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_033",
-      "question": "The equation of a plane passing through three non collinear points A(a), B(b), C(c) is",
+      "id": "ellipse_qn_032",
+      "question": "The eccentric angles of extremities of latus rectum of ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 are",
       "options": [
-        "(r-a) \\cdot [(b-a) \\times (c-a)] = 1",
-        "(r-a) \\cdot [(b-a) \\times (c-a)] = 0",
-        "(r-a) \\cdot [(b+a) \\times (c+a)] = 1",
-        "(r-a) \\cdot [(b+a) \\times (c+a)] = 0"
+        "\\text{cosec}^{-1} \\pm \\frac{b}{ae}",
+        "\\cos^{-1} \\pm \\frac{b}{ae}",
+        "\\sin^{-1} \\pm \\frac{b}{ae}",
+        "\\tan^{-1} \\pm \\frac{b}{ae}"
       ],
-      "answer": "(r-a) \\cdot [(b-a) \\times (c-a)] = 0",
+      "answer": "\\tan^{-1} \\pm \\frac{b}{ae}",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "easy",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_033.glb",
+      "image": "assets/images/11th/ellipse/ellipse_qn_032.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_034",
-      "question": "The equation of a plane parallel to ax + by + cz + d<sub>1</sub> = 0 is",
+      "id": "ellipse_qn_033",
+      "question": "If the point (x<sub>1</sub>, y<sub>1</sub>) lies on the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, then",
       "options": [
-        "ax - by - cz - d_1 = 0",
-        "a_2x + b_2y + c_2z + d_2 = 0",
-        "a_2x + b_2y + c_2z + d_1 = 0",
-        "ax + by + cz + d_2 = 0"
+        "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 > 0",
+        "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 = 0",
+        "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 < 0",
+        "None of these"
       ],
-      "answer": "ax + by + cz + d_2 = 0",
+      "answer": "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 = 0",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "easy",
-        "class": "12"
+        "class": "11"
       },
-      "image": null,
+      "image": "assets/images/11th/ellipse/ellipse_qn_033.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_035",
-      "question": "The vector equation of a plane parallel to r &middot; n = d<sub>1</sub> is",
+      "id": "ellipse_qn_034",
+      "question": "If the point (x<sub>1</sub>, y<sub>1</sub>) lies inside the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, then",
       "options": [
-        "r \\cdot n = d_2",
-        "r \\times n = d_1",
-        "r \\times n = d_2",
-        "r \\cdot (r \\times n) = d_1"
+        "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 > 0",
+        "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 = 0",
+        "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 < 0",
+        "None of these"
       ],
-      "answer": "r \\cdot n = d_2",
+      "answer": "\\frac{x_1^2}{a^2} + \\frac{y_1^2}{b^2} - 1 < 0",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/ellipse/ellipse_qn_034.svg",
+      "tip": null
+    },
+    {
+      "id": "ellipse_qn_035",
+      "question": "If SM and S'M' are perpendiculars from the foci to any tangent of the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 then SM &times; S'M' equals",
+      "options": [
+        "a^2",
+        "b^2",
+        "2ab",
+        "ab"
+      ],
+      "answer": "b^2",
+      "tags": {
+        "chapter": "ellipse",
         "difficulty": "medium",
-        "class": "12"
+        "class": "11"
       },
-      "image": null,
+      "image": "assets/images/11th/ellipse/ellipse_qn_035.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_036",
-      "question": "The equation of a plane passing through intersection of planes r &middot; n<sub>1</sub> = d<sub>1</sub> and r &middot; n<sub>2</sub> = d<sub>2</sub> is",
+      "id": "ellipse_qn_036",
+      "question": "If the lines y = m<sub>1</sub>x and y = m<sub>2</sub>x are conjugate diameters of ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 then m<sub>1</sub>m<sub>2</sub> =",
       "options": [
-        "r \\cdot (n_1 - n_2) = d_1 d_2",
-        "r \\cdot (n_1 - n_2) = d_1 + d_2",
-        "r \\cdot (n_1 + \\lambda n_2) = d_1 + \\lambda d_2",
-        "r \\cdot (n_1 \\times n_2) = d_1 d_2"
+        "-\\frac{b^2}{a^2}",
+        "\\frac{b^2}{a^2}",
+        "\\frac{a^2}{b^2}",
+        "-\\frac{a^2}{b^2}"
       ],
-      "answer": "r \\cdot (n_1 + \\lambda n_2) = d_1 + \\lambda d_2",
+      "answer": "-\\frac{b^2}{a^2}",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "medium",
-        "class": "12"
+        "class": "11"
       },
-      "image": null,
+      "image": "assets/images/11th/ellipse/ellipse_qn_036.svg",
       "tip": null
     },
     {
-      "id": "3d_geometry_qn_037",
-      "question": "The x coordinate foot of perpendicular of point (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) on plane ax + by + cz + d = 0 is (given &alpha; = (ax<sub>1</sub>+by<sub>1</sub>+cz<sub>1</sub>+d)/(a<sup>2</sup>+b<sup>2</sup>+c<sup>2</sup>))",
+      "id": "ellipse_qn_037",
+      "question": "The locus of midpoints of focal chords of ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is",
       "options": [
-        "x_1 + 2a\\alpha",
-        "x_1 - 2a\\alpha",
-        "x_1 + a\\alpha",
-        "x_1 - a\\alpha"
+        "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = \\frac{eb}{a}",
+        "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = \\frac{ex}{b}",
+        "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = \\frac{ex}{a}",
+        "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = \\frac{ea}{x}"
       ],
-      "answer": "x_1 - a\\alpha",
+      "answer": "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = \\frac{ex}{a}",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "medium",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_037.svg",
-      "tip": "Think of it like this, we start from x1 and move towards the plane (negative sign indicates moving towards, positive sign indicates moving away) in direction normal to it (indicated by direction ratio a of normal) by a factor α."
+      "image": "assets/images/11th/ellipse/ellipse_qn_037.riv",
+      "tip": "The locus are smaller ellipse of same eccentricity such that one extremity is at origin and another at the focus. They are exact replicas but smaller, KIDS, TWINS !!"
     },
     {
-      "id": "3d_geometry_qn_038",
-      "question": "The angle between planes r &middot; n<sub>1</sub> = d<sub>1</sub> and r &middot; n<sub>2</sub> = d<sub>2</sub> is",
+      "id": "ellipse_qn_038",
+      "question": "The polar of point (x<sub>1</sub>, y<sub>1</sub>) with respect to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is (e = eccentricity)",
       "options": [
-        "\\cos^{-1} \\frac{|n_1 \\cdot n_2|}{|n_1||n_2|}",
-        "\\sin^{-1} \\frac{|n_1 \\cdot n_2|}{|n_1||n_2|}",
-        "\\tan^{-1} \\frac{|n_1 \\cdot n_2|}{|n_1||n_2|}",
-        "\\cot^{-1} \\frac{|n_1 \\cdot n_2|}{|n_1||n_2|}"
+        "T = 2S_1",
+        "T = S_1^2",
+        "T = S_1",
+        "T = 0"
       ],
-      "answer": "\\cos^{-1} \\frac{|n_1 \\cdot n_2|}{|n_1||n_2|}",
+      "answer": "T = 0",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
         "difficulty": "medium",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_038.glb",
-      "tip": "Angle between planes equals angle between their normals"
-    },
-
-    {
-      "id": "3d_geometry_qn_039",
-      "question": "The planes r &middot; n<sub>1</sub> = d<sub>1</sub> and r &middot; n<sub>2</sub> = d<sub>2</sub> are perpendicular if",
-      "options": [
-        "n_1 \\cdot n_2 = 0.5",
-        "n_1 \\cdot n_2 = 0",
-        "n_1 \\cdot n_2 = 1",
-        "n_1 \\times n_2 = 0"
-      ],
-      "answer": "n_1 \\cdot n_2 = 0",
-      "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": null,
+      "image": "assets/images/11th/ellipse/ellipse_qn_038.svg",
       "tip": null
     },
-
     {
-      "id": "3d_geometry_qn_040",
-      "question": "The x coordinate of image of point (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) in plane ax + by + cz + d = 0 is (given &alpha; = (ax<sub>1</sub>+by<sub>1</sub>+cz<sub>1</sub>+d)/(a<sup>2</sup>+b<sup>2</sup>+c<sup>2</sup>))",
+      "id": "ellipse_qn_039",
+      "question": "The pole of line xx<sub>1</sub>/a<sup>2</sup> + yy<sub>1</sub>/b<sup>2</sup> = 1 with respect to the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is",
       "options": [
-        "x_1 + 2a\\alpha",
-        "x_1 - 2a\\alpha",
-        "x_1 + a\\alpha",
-        "x_1 - a\\alpha"
+        "(-x_1, y_1)",
+        "(x_1, y_1)",
+        "(x_1, -y_1)",
+        "(y_1, x_1)"
       ],
-      "answer": "x_1 - 2a\\alpha",
+      "answer": "(x_1, y_1)",
       "tags": {
-        "chapter": "3D Geometry",
+        "chapter": "ellipse",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/ellipse/ellipse_qn_039.svg",
+      "tip": null
+    },
+    {
+      "id": "ellipse_qn_040",
+      "question": "The locus of midpoints of normal chords of ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 is",
+      "options": [
+        "(\\frac{x^2}{a^2} - \\frac{y^2}{b^2})^2 (\\frac{a^6}{x^2} + \\frac{b^6}{y^2}) = (a^2 - b^2)^2",
+        "(\\frac{x^2}{a^2} + \\frac{y^2}{b^2})^2 (\\frac{a^6}{x^2} + \\frac{b^6}{y^2}) = (a^2 - b^2)^2",
+        "(\\frac{x^2}{a^2} + \\frac{y^2}{b^2})^2 (\\frac{a^6}{x^2} - \\frac{b^6}{y^2}) = (a^2 - b^2)^2",
+        "(\\frac{x^2}{a^2} + \\frac{y^2}{b^2})^2 (\\frac{a^6}{x^2} + \\frac{b^6}{y^2}) = (a^2 + b^2)^2"
+      ],
+      "answer": "(\\frac{x^2}{a^2} + \\frac{y^2}{b^2})^2 (\\frac{a^6}{x^2} + \\frac{b^6}{y^2}) = (a^2 - b^2)^2",
+      "tags": {
+        "chapter": "ellipse",
         "difficulty": "god",
-        "class": "12"
+        "class": "11"
       },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_040.svg",
-      "tip": "Think of it like this, we start from x1 and move towards the plane (negative sign indicates moving towards, positive sign indicates moving away) in direction normal to it (indicated by direction ratio a of normal) by a factor 2 α. Factor α is for foot of perpendicular"
-    },
-    {
-      "id": "3d_geometry_qn_041",
-      "question": "The planes r &middot; n<sub>1</sub> = d<sub>1</sub> and r &middot; n<sub>2</sub> = d<sub>2</sub> are parallel if",
-      "options": [
-        "n_1 \\cdot n_2 = 0.5",
-        "n_1 \\cdot n_2 = 0",
-        "n_1 \\cdot n_2 = 1",
-        "n_1 = \\lambda n_2"
-      ],
-      "answer": "n_1 = \\lambda n_2",
-      "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": null,
-      "tip": null
-    },
-    {
-      "id": "3d_geometry_qn_042",
-      "question": "The distance of a point A(a) from a plane r &middot; n = d is",
-      "options": [
-        "\\vec{a} \\cdot \\vec{n} + d/|\\vec{n}|",
-        "\\vec{a} \\cdot \\vec{n} + d/|\\vec{n}|^2",
-        "|\\vec{a} \\cdot \\vec{n} - d| / |\\vec{n}|",
-        "\\vec{a} \\cdot \\vec{n} - d/|\\vec{n}|^2"
-      ],
-      "answer": "|\\vec{a} \\cdot \\vec{n} - d| / |\\vec{n}|",
-      "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_042.glb",
-      "tip": null
-    },
-    {
-      "id": "3d_geometry_qn_043",
-      "question": "The distance of a point P(x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) from a plane ax + by + cz + d = 0 is",
-      "options": [
-        "\\frac{d}{\\sqrt{a^2+b^2+c^2}}",
-        "\\frac{ax_1+by_1+cz_1+d}{\\sqrt{a^2+b^2+c^2}}",
-        "\\frac{|ax_1+by_1+cz_1+d|}{\\sqrt{a^2+b^2+c^2}}",
-        "\\frac{d}{a^2+b^2+c^2}"
-      ],
-      "answer": "\\frac{|ax_1+by_1+cz_1+d|}{\\sqrt{a^2+b^2+c^2}}",
-      "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": null,
-      "tip": null
-    },
-    {
-      "id": "3d_geometry_qn_044",
-      "question": "The distance between two parallel planes ax + by + cz + d<sub>1</sub> = 0 and ax + by + cz + d<sub>2</sub> = 0",
-      "options": [
-        "\\frac{d_2-d_1}{\\sqrt{a^2+b^2+c^2}}",
-        "\\frac{|d_2-d_1|}{\\sqrt{a^2+b^2+c^2}}",
-        "\\frac{d_2+d_1}{\\sqrt{a^2+b^2+c^2}}",
-        "\\frac{|d_2+d_1|}{\\sqrt{a^2+b^2+c^2}}"
-      ],
-      "answer": "\\frac{|d_2-d_1|}{\\sqrt{a^2+b^2+c^2}}",
-      "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": null,
-      "tip": null
-    },
-    {
-      "id": "3d_geometry_qn_045",
-      "question": "The angle between line r = a + &lambda;b and plane r &middot; n = d is",
-      "options": [
-        "\\tan^{-1} \\frac{|n \\cdot b|}{|n||b|}",
-        "\\cos^{-1} \\frac{|n \\cdot b|}{|n||b|}",
-        "\\sin^{-1} \\frac{|n \\cdot b|}{|n||b|}",
-        "\\cot^{-1} \\frac{|n \\cdot b|}{|n||b|}"
-      ],
-      "answer": "\\sin^{-1} \\frac{|n \\cdot b|}{|n||b|}",
-      "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": "assets/images/12th/3d_geometry/3d_geometry_qn_045.svg",
-      "tip": "Be careful, it is cos inverse if angle between line and normal to plane is asked."
-    },
-    {
-      "id": "3d_geometry_qn_046",
-      "question": "Two lines (x-x<sub>1</sub>)/a<sub>1</sub> = (y-y<sub>1</sub>)/b<sub>1</sub> = (z-z<sub>1</sub>)/c<sub>1</sub> and (x-x<sub>2</sub>)/a<sub>2</sub> = (y-y<sub>2</sub>)/b<sub>2</sub> = (z-z<sub>2</sub>)/c<sub>2</sub> are coplanar if",
-      "options": [
-        "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 1",
-        "\\begin{vmatrix} x_2+x_1 & y_2+y_1 & z_2+z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
-        "\\begin{vmatrix} x_1 & y_1 & z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
-        "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0"
-      ],
-      "answer": "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
-      "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": null,
-      "tip": null
-    },
-
-    {
-      "id": "3d_geometry_qn_047",
-      "question": "For two planes a<sub>1</sub>x + b<sub>1</sub>y + c<sub>1</sub>z + d<sub>1</sub> = 0 and a<sub>2</sub>x + b<sub>2</sub>y + c<sub>2</sub>z + d<sub>2</sub> = 0, origin will lie in acute angle between planes if",
-      "options": [
-        "a_1a_2 + b_1b_2 + c_1c_2 < 0",
-        "a_1a_2 + b_1b_2 + c_1c_2 > 0",
-        "a_1a_2 + b_1b_2 + c_1c_2 = 0",
-        "a_1a_2 + b_1b_2 + c_1c_2 = 1"
-      ],
-      "answer": "a_1a_2 + b_1b_2 + c_1c_2 < 0",
-      "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": null,
-      "tip": null
-    },
-    {
-      "id": "3d_geometry_qn_048",
-      "question": "The equation of a plane passing through point A (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and parallel to two lines with direction ratios a<sub>1</sub>, b<sub>1</sub>, c<sub>1</sub> and a<sub>2</sub>, b<sub>2</sub>, c<sub>2</sub> is",
-      "options": [
-        "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
-        "\\begin{vmatrix} x+x_1 & y+y_1 & z+z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
-        "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ a_1 & a_2 & a_3 \\\\ b_1 & b_2 & b_3 \\end{vmatrix} = 0",
-        "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0"
-      ],
-      "answer": "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
-      "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": null,
-      "tip": null
-    },
-    {
-      "id": "3d_geometry_qn_049",
-      "question": "The equation of a plane passing through point A (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>), B (x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>) and parallel to a line with direction ratios a, b, c is",
-      "options": [
-        "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a & b & c \\end{vmatrix} = 0",
-        "\\begin{vmatrix} x+x_1 & y+y_1 & z+z_1 \\\\ x_2+x_1 & y_2+y_1 & z_2+z_1 \\\\ a & b & c \\end{vmatrix} = 0",
-        "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a & b & c \\end{vmatrix} = 1",
-        "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a & b & c \\end{vmatrix} = 0"
-      ],
-      "answer": "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ a & b & c \\end{vmatrix} = 0",
-      "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "medium",
-        "class": "12"
-      },
-      "image": null,
-      "tip": null
-    },
-    {
-      "id": "3d_geometry_qn_050",
-      "question": "Four points A (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>), B (x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>), C (x<sub>3</sub>, y<sub>3</sub>, z<sub>3</sub>), D (x<sub>4</sub>, y<sub>4</sub>, z<sub>4</sub>) are coplanar if and only if",
-      "options": [
-        "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ x_3-x_1 & y_3-y_1 & z_3-z_1 \\\\ x_4-x_1 & y_4-y_1 & z_4-z_1 \\end{vmatrix} = 1",
-        "\\begin{vmatrix} x_2+x_1 & y_2+y_1 & z_2+z_1 \\\\ x_3+x_1 & y_3+y_1 & z_3+z_1 \\\\ x_4+x_1 & y_4+y_1 & z_4+z_1 \\end{vmatrix} = 0",
-        "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ x_3-x_1 & y_3-y_1 & z_3-z_1 \\\\ x_4-x_1 & y_4-y_1 & z_4-z_1 \\end{vmatrix} = 0",
-        "\\begin{vmatrix} x_1 & y_1 & z_1 \\\\ x_2 & y_2 & z_2 \\\\ x_3 & y_3 & z_3 \\end{vmatrix} = 0"
-      ],
-      "answer": "\\begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\\\ x_3-x_1 & y_3-y_1 & z_3-z_1 \\\\ x_4-x_1 & y_4-y_1 & z_4-z_1 \\end{vmatrix} = 0",
-      "tags": {
-        "chapter": "3D Geometry",
-        "difficulty": "god",
-        "class": "12"
-      },
-      "image": null,
-      "tip": null
+      "image":"assets/images/11th/ellipse/ellipse_qn_040.svg",
+      "tip": "A Flower !!"
     }
 
 

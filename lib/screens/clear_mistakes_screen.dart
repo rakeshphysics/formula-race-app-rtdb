@@ -22,7 +22,7 @@ import 'package:formularacing/widgets/rive_viewer.dart';
 
 
 class ClearMistakesScreen extends StatefulWidget {
-  final String subject;
+  final String? subject;
   const ClearMistakesScreen({super.key,required this.subject});
 
   @override
@@ -75,8 +75,12 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
   Future<void> loadMistakes() async {
     List<Map<String, dynamic>> all = await MistakeTrackerService.loadMistakesFromLocal();
     //print('Loaded ${all.length} mistakes');
-   for (var q in all) {
-     // print('Question: ${q['question']}');
+    if (widget.subject != null) {
+      all = all.where((m) {
+        // Get subject from tags, or root, or default to 'Physics'
+        String s = (m['tags']?['subject'] ?? m['subject'] ?? 'Physics').toString();
+        return s == widget.subject;
+      }).toList();
     }
     all.shuffle();
     setState(() {

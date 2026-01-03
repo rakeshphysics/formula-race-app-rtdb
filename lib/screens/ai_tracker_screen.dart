@@ -655,30 +655,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
     });
   }
 
-  // 1. Add this helper function to guess subject from chapter name
-  String _guessSubjectFromChapter(String chapter) {
-    String c = chapter.toLowerCase();
 
-    // MATHS KEYWORDS (Updated to include Conic Sections)
-    if (c == 'ellipse' ||
-        c == '3d geometry' ||
-        c.contains('geometry') ||
-        c.contains('ellipse')) {
-      return 'Maths';
-    }
-
-    // --- CHEMISTRY CHAPTERS ---
-    // Explicit checks for your current Chemistry chapters
-    if (c == 'solid state' ||
-        c == 'chemical equilibrium' ||
-        c.contains('chemical') ||
-        c.contains('solid')) {
-      return 'Chemistry';
-    }
-
-    // Default to Physics
-    return 'Physics';
-  }
 
   // -------------------- CHUNK 4 — LOAD MISTAKES -----------------
 // -------------------- CHUNK 4 — LOAD MISTAKES -----------------
@@ -700,18 +677,13 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
     for (var q in all) {
       String chapter = (q['tags']?['chapter'] ?? q['chapter'] ?? 'Unknown').toString();
 
-      // 1. Try to get subject from saved data
+      // 1. Get subject from saved data. Default to 'Physics' if missing.
       String? rawSubject = q['tags']?['subject'] ?? q['subject'];
-      String subject;
+      String subject = (rawSubject != null && rawSubject.toString().isNotEmpty && rawSubject.toString() != 'null')
+          ? rawSubject.toString()
+          : 'Physics';
 
-      // 2. If subject is missing, GUESS it using your helper function
-      if (rawSubject == null || rawSubject.toString().isEmpty || rawSubject.toString() == 'null') {
-        subject = _guessSubjectFromChapter(chapter); // <--- CALLED HERE
-      } else {
-        subject = rawSubject.toString();
-      }
-
-      // 3. Normalize subject string (Safety check)
+      // 2. Normalize subject string (Safety check)
       if (subject.toLowerCase().contains('math')) subject = 'Maths';
       else if (subject.toLowerCase().contains('chem')) subject = 'Chemistry';
       else subject = 'Physics';
@@ -832,7 +804,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
                               AlertDialog(
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(4.0),
-                                  side: const BorderSide(color: Colors.red, width: 0.8),
+                                  side:  BorderSide(color: Colors.red.withOpacity(0.8), width: 0.8),
                                 ),
                                 backgroundColor: const Color(0xFF000000),
                                 title: Text(
@@ -849,7 +821,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
                                       OutlinedButton(
                                         onPressed: () => Navigator.pop(context),
                                         style: OutlinedButton.styleFrom(
-                                          side: const BorderSide(color: Color(0xD9FF0000), width: 0.8),
+                                          side:  BorderSide(color: Colors.red.withOpacity(0.8), width: 0.8),
                                           shape: RoundedRectangleBorder(
                                             borderRadius: BorderRadius.circular(4.0),
                                           ),
@@ -1015,7 +987,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
                                             ? Formula3DViewer(
                                           src: formulaEntry['image'],
                                           index: formulaEntry.hashCode,
-                                          themeColor: Colors.redAccent,
+                                          themeColor: Colors.redAccent.withOpacity(0.8),
                                           isActive: _active3DIndices.contains(formulaEntry['image']),
                                           onActivate: () => _activate3DModel(formulaEntry['image']),
                                           onDeactivate: () => _deactivate3DModel(formulaEntry['image']),
@@ -1031,9 +1003,9 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
                                             : Image.asset(
                                           formulaEntry['image'],
                                           fit: BoxFit.contain,
-                                          errorBuilder: (context, error, stackTrace) => const Text(
+                                          errorBuilder: (context, error, stackTrace) =>  Text(
                                             'Image not found',
-                                            style: TextStyle(color: Colors.redAccent),
+                                            style: TextStyle(color: Colors.redAccent.withOpacity(0.8)),
                                           ),
                                         ),
                                       ),
@@ -1046,7 +1018,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
                                   style: {
                                     "body": Style(
                                       fontSize: FontSize(screenWidth * 0.037),
-                                      color: const Color(0xFFDCDCDC),
+                                      color: const Color(0xD9FFFFFF),
                                       fontFamily: GoogleFonts.poppins().fontFamily,
                                       margin: Margins.zero,
                                     ),
@@ -1060,7 +1032,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
                                   physics: const BouncingScrollPhysics(),
                                   child: Math.tex(
                                     'Ans: ${formulaEntry['answer']}',
-                                    textStyle: TextStyle(fontSize: screenWidth * 0.043, color: Colors.greenAccent),
+                                    textStyle: TextStyle(fontSize: screenWidth * 0.043, color: Colors.greenAccent.withOpacity(0.8)),
                                   ),
                                 ),
 

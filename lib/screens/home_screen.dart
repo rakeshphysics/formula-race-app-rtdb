@@ -458,7 +458,7 @@ Future<void> _checkFirstTimeUser() async {
   if (isFirstTime) {
     // --- CASE A: First Time User ---
     // Funny intro, 0 bamboos.
-    const introMessage = "Hi! I'm Panda AI. I talk for food! 🐼 Win games to earn bamboo. No bamboo = No talk! 🤐";
+    const introMessage = "Hi! I'm Panda AI. 🐼 Tap me for wisdom, but I only talk for food! Win games to earn Bamboo. No Bamboo = The Silent Treatment! 🤐";
 
     if (mounted) {
       setState(() {
@@ -882,7 +882,7 @@ void _checkForNewBamboos() async {
                               ],
                             ),),
 
-                            SizedBox(height: screenHeight * 0.015),
+                            SizedBox(height: screenHeight * 0.01),
 
 
                             // --- CHAT BUBBLE ---
@@ -922,7 +922,7 @@ void _checkForNewBamboos() async {
             // Maximum height:
             // On small screens (<700px height), limit to 15% of screen.
             // On larger screens, allow up to 22% of screen.
-            maxHeight: MediaQuery.of(context).size.height * (isSmallScreen ? 0.15 : 0.15),
+            maxHeight: MediaQuery.of(context).size.height * (isSmallScreen ? 0.12 : 0.12),
           ),
 
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
@@ -1019,7 +1019,7 @@ void _checkForNewBamboos() async {
 
               // --- DOTTED DIVIDER ---
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 10.0), // Add some vertical spacing
+                padding: const EdgeInsets.symmetric(vertical: 0.0), // Add some vertical spacing
                 child: Text(
                   // Using a string of dots. Adjust the number of dots to fit your design.
                   '• • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •',
