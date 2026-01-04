@@ -645,7 +645,7 @@ _active3DIndices.add(index);
                           padding: const EdgeInsets.only(left:8), // Small padding between icons
                           icon: Icon(
                             formula.isPinned ? Icons.push_pin : Icons.push_pin_outlined,
-                            color: formula.isPinned ? themeColor : Colors.grey[700],
+                            color: formula.isPinned ? themeColor.withOpacity(1.0) : Colors.grey[700],
                             size: 18,
                           ),
                           onPressed: () => _togglePin(formula),

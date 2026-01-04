@@ -125,6 +125,7 @@ import 'solo_screen.dart';
 import 'chapter_selection_screen.dart';
 import '../widgets/glow_button_cyan.dart';
 import 'home_screen.dart';
+import 'package:formularacing/widgets/rive_viewer.dart';
 
 class SoloModeSelectionScreen extends StatefulWidget {
   final String userId;
@@ -266,6 +267,7 @@ class _SoloModeSelectionScreenState extends State<SoloModeSelectionScreen> {
       ),
     );
   }
+
   // @override
   // Widget build(BuildContext context) {
   //   // Screen size
@@ -285,90 +287,129 @@ class _SoloModeSelectionScreenState extends State<SoloModeSelectionScreen> {
   //       appBar: AppBar(
   //         backgroundColor: Colors.black,
   //         title: Text(
-  //           'Choose Portion',
+  //           'Play a Solo Game',
   //           style: TextStyle(fontSize: screenWidth * 0.042, color: const Color(0xD9FFFFFF)),
   //         ),
   //         iconTheme: const IconThemeData(color: Color(0xD9FFFFFF)),
   //       ),
-  //       body: Column(
-  //         children: [
-  //           // 1. SUBJECT SELECTION ROW
-  //           Padding(
-  //             padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 10.0),
-  //             child: Row(
-  //               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-  //               children: [
-  //                 _buildSubjectButton('Physics'),
-  //                 _buildSubjectButton('Chemistry'),
-  //                 _buildSubjectButton('Maths'),
-  //               ],
-  //             ),
-  //           ),
+  //       // 1. REMOVED 'Center' WIDGET
+  //       body: SingleChildScrollView(
+  //         child: SizedBox(
+  //           width: double.infinity, // Ensures content is centered horizontally
+  //           child: Column(
+  //             mainAxisAlignment: MainAxisAlignment.start, // Aligns content to top
+  //             crossAxisAlignment: CrossAxisAlignment.center, // Centers buttons horizontally
+  //             children: [
+  //               // 2. ADDED TOP SPACING
+  //               //SizedBox(height: screenHeight * 0.05),
   //
-  //           // 2. MAIN BUTTONS (Centered in remaining space)
-  //           Expanded(
-  //             child: Center(
-  //               child: SingleChildScrollView(
-  //                 child: Column(
-  //                   mainAxisAlignment: MainAxisAlignment.center,
+  //
+  //               Padding(
+  //                 padding: const EdgeInsets.only(top: 0.0, bottom: 15.0),
+  //                 child: Text(
+  //                   "................................................................................................................................................",
+  //                   maxLines: 1,
+  //                   overflow: TextOverflow.clip, // Cuts off extra dots so it fits perfectly
+  //                   softWrap: false,
+  //                   textAlign: TextAlign.center,
+  //                   style: TextStyle(
+  //                     color: Colors.white.withOpacity(0.7),
+  //                     fontSize: 20,
+  //                     fontWeight: FontWeight.w900,
+  //                     letterSpacing: 1, // Adjust this to change space between dots
+  //                     height: 0.5, // Reduces vertical height
+  //                   ),
+  //                 ),
+  //               ),
+  //               // SUBJECT SELECTION ROW
+  //               Padding(
+  //                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
+  //                 child: Row(
+  //                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
   //                   children: [
-  //                     GlowButtonCyan(
-  //                       label: 'Chapter Wise',
-  //                       width: screenWidth * 0.8,
-  //                       height: screenHeight * 0.08,
-  //                       onPressed: () {
-  //                         Navigator.push(
-  //                           context,
-  //                           MaterialPageRoute(
-  //                             // Pass the selected subject to the chapter selection screen
-  //                             builder: (context) => ChapterSelectionScreen(
-  //                               userId: widget.userId,
-  //                               subject: _selectedSubject,
-  //                               // You might need to update ChapterSelectionScreen to accept 'subject'
-  //                               // subject: _selectedSubject,
-  //                             ),
-  //                           ),
-  //                         );
-  //                       },
-  //                     ),
-  //                     SizedBox(height: screenHeight * 0.024),
-  //                     GlowButtonCyan(
-  //                       label: 'Full 11th',
-  //                       width: screenWidth * 0.8,
-  //                       height: screenHeight * 0.08,
-  //                       onPressed: () {
-  //                         _startSoloGame(context, 'full11');
-  //                       },
-  //                     ),
-  //                     SizedBox(height: screenHeight * 0.024),
-  //                     GlowButtonCyan(
-  //                       label: 'Full 12th',
-  //                       width: screenWidth * 0.8,
-  //                       height: screenHeight * 0.08,
-  //                       onPressed: () {
-  //                         _startSoloGame(context, 'full12');
-  //                       },
-  //                     ),
-  //                     SizedBox(height: screenHeight * 0.024),
-  //                     GlowButtonCyan(
-  //                       label: '11th + 12th',
-  //                       width: screenWidth * 0.8,
-  //                       height: screenHeight * 0.08,
-  //                       onPressed: () {
-  //                         _startSoloGame(context, 'fullBoth');
-  //                       },
-  //                     ),
+  //                     _buildSubjectButton('Physics'),
+  //                     _buildSubjectButton('Chemistry'),
+  //                     _buildSubjectButton('Maths'),
   //                   ],
   //                 ),
   //               ),
-  //             ),
+  //
+  //               Padding(
+  //                 padding: const EdgeInsets.only(top: 8.0, bottom: 40.0),
+  //                 child: Text(
+  //                   "................................................................................................................................................",
+  //                   maxLines: 1,
+  //                   overflow: TextOverflow.clip, // Cuts off extra dots so it fits perfectly
+  //                   softWrap: false,
+  //                   textAlign: TextAlign.center,
+  //                   style: TextStyle(
+  //                     color: Colors.white.withOpacity(0.7),
+  //                     fontSize: 20,
+  //                     fontWeight: FontWeight.w900,
+  //                     letterSpacing: 1, // Adjust this to change space between dots
+  //                     height: 0.5, // Reduces vertical height
+  //                   ),
+  //                 ),
+  //               ),
+  //
+  //               // MAIN BUTTONS
+  //               GlowButtonCyan(
+  //                 label: 'Chapter Wise',
+  //                 width: screenWidth * 0.8,
+  //                 height: screenHeight * 0.08,
+  //                 glowColor: subjectColors[_selectedSubject]!,
+  //                 onPressed: () {
+  //                   Navigator.push(
+  //                     context,
+  //                     MaterialPageRoute(
+  //                       builder: (context) => ChapterSelectionScreen(
+  //                         userId: widget.userId,
+  //                         subject: _selectedSubject,
+  //                       ),
+  //                     ),
+  //                   );
+  //                 },
+  //               ),
+  //               SizedBox(height: screenHeight * 0.024),
+  //               GlowButtonCyan(
+  //                 label: 'Full 11th',
+  //                 width: screenWidth * 0.8,
+  //                 height: screenHeight * 0.08,
+  //                 glowColor: subjectColors[_selectedSubject]!,
+  //                 onPressed: () {
+  //                   _startSoloGame(context, 'full11');
+  //                 },
+  //               ),
+  //               SizedBox(height: screenHeight * 0.024),
+  //               GlowButtonCyan(
+  //                 label: 'Full 12th',
+  //                 width: screenWidth * 0.8,
+  //                 height: screenHeight * 0.08,
+  //                 glowColor: subjectColors[_selectedSubject]!,
+  //                 onPressed: () {
+  //                   _startSoloGame(context, 'full12');
+  //                 },
+  //               ),
+  //               SizedBox(height: screenHeight * 0.024),
+  //               GlowButtonCyan(
+  //                 label: '11th + 12th',
+  //                 width: screenWidth * 0.8,
+  //                 height: screenHeight * 0.08,
+  //                 glowColor: subjectColors[_selectedSubject]!,
+  //                 onPressed: () {
+  //                   _startSoloGame(context, 'fullBoth');
+  //                 },
+  //               ),
+  //
+  //               // Bottom spacing for scrolling
+  //               SizedBox(height: screenHeight * 0.1),
+  //             ],
   //           ),
-  //         ],
+  //         ),
   //       ),
   //     ),
   //   );
   // }
-
   @override
   Widget build(BuildContext context) {
     // Screen size
@@ -393,125 +434,139 @@ class _SoloModeSelectionScreenState extends State<SoloModeSelectionScreen> {
           ),
           iconTheme: const IconThemeData(color: Color(0xD9FFFFFF)),
         ),
-        // 1. REMOVED 'Center' WIDGET
-        body: SingleChildScrollView(
-          child: SizedBox(
-            width: double.infinity, // Ensures content is centered horizontally
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start, // Aligns content to top
-              crossAxisAlignment: CrossAxisAlignment.center, // Centers buttons horizontally
-              children: [
-                // 2. ADDED TOP SPACING
-                //SizedBox(height: screenHeight * 0.05),
-
-
-                Padding(
-                  padding: const EdgeInsets.only(top: 0.0, bottom: 15.0),
-                  child: Text(
-                    "................................................................................................................................................",
-                    maxLines: 1,
-                    overflow: TextOverflow.clip, // Cuts off extra dots so it fits perfectly
-                    softWrap: false,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white.withOpacity(0.7),
-                      fontSize: 20,
-                      fontWeight: FontWeight.w900,
-                      letterSpacing: 1, // Adjust this to change space between dots
-                      height: 0.5, // Reduces vertical height
-                    ),
-                  ),
-                ),
-                // SUBJECT SELECTION ROW
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        // SWITCH TO COLUMN TO MANAGE LAYOUT VERTICALLY
+        body: Column(
+          children: [
+            // 1. TOP CONTENT (Your existing buttons, wrapped in Expanded/SingleChildScrollView)
+            Expanded(
+              child: SingleChildScrollView(
+                child: SizedBox(
+                  width: double.infinity,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      _buildSubjectButton('Physics'),
-                      _buildSubjectButton('Chemistry'),
-                      _buildSubjectButton('Maths'),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 0.0, bottom: 15.0),
+                        child: Text(
+                          "................................................................................................................................................",
+                          maxLines: 1,
+                          overflow: TextOverflow.clip,
+                          softWrap: false,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.white.withOpacity(0.7),
+                            fontSize: 20,
+                            fontWeight: FontWeight.w900,
+                            letterSpacing: 1,
+                            height: 0.5,
+                          ),
+                        ),
+                      ),
+                      // SUBJECT SELECTION ROW
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            _buildSubjectButton('Physics'),
+                            _buildSubjectButton('Chemistry'),
+                            _buildSubjectButton('Maths'),
+                          ],
+                        ),
+                      ),
+
+                      Padding(
+                        padding: const EdgeInsets.only(top: 8.0, bottom: 40.0),
+                        child: Text(
+                          "................................................................................................................................................",
+                          maxLines: 1,
+                          overflow: TextOverflow.clip,
+                          softWrap: false,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.white.withOpacity(0.7),
+                            fontSize: 20,
+                            fontWeight: FontWeight.w900,
+                            letterSpacing: 1,
+                            height: 0.5,
+                          ),
+                        ),
+                      ),
+
+                      // MAIN BUTTONS
+                      GlowButtonCyan(
+                        label: 'Chapter Wise',
+                        width: screenWidth * 0.8,
+                        height: screenHeight * 0.08,
+                        glowColor: subjectColors[_selectedSubject]!,
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ChapterSelectionScreen(
+                                userId: widget.userId,
+                                subject: _selectedSubject,
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                      SizedBox(height: screenHeight * 0.024),
+                      GlowButtonCyan(
+                        label: 'Full 11th',
+                        width: screenWidth * 0.8,
+                        height: screenHeight * 0.08,
+                        glowColor: subjectColors[_selectedSubject]!,
+                        onPressed: () {
+                          _startSoloGame(context, 'full11');
+                        },
+                      ),
+                      SizedBox(height: screenHeight * 0.024),
+                      GlowButtonCyan(
+                        label: 'Full 12th',
+                        width: screenWidth * 0.8,
+                        height: screenHeight * 0.08,
+                        glowColor: subjectColors[_selectedSubject]!,
+                        onPressed: () {
+                          _startSoloGame(context, 'full12');
+                        },
+                      ),
+                      SizedBox(height: screenHeight * 0.024),
+                      GlowButtonCyan(
+                        label: '11th + 12th',
+                        width: screenWidth * 0.8,
+                        height: screenHeight * 0.08,
+                        glowColor: subjectColors[_selectedSubject]!,
+                        onPressed: () {
+                          _startSoloGame(context, 'fullBoth');
+                        },
+                      ),
                     ],
                   ),
                 ),
-
-                Padding(
-                  padding: const EdgeInsets.only(top: 8.0, bottom: 40.0),
-                  child: Text(
-                    "................................................................................................................................................",
-                    maxLines: 1,
-                    overflow: TextOverflow.clip, // Cuts off extra dots so it fits perfectly
-                    softWrap: false,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white.withOpacity(0.7),
-                      fontSize: 20,
-                      fontWeight: FontWeight.w900,
-                      letterSpacing: 1, // Adjust this to change space between dots
-                      height: 0.5, // Reduces vertical height
-                    ),
-                  ),
-                ),
-
-                // MAIN BUTTONS
-                GlowButtonCyan(
-                  label: 'Chapter Wise',
-                  width: screenWidth * 0.8,
-                  height: screenHeight * 0.08,
-                  glowColor: subjectColors[_selectedSubject]!,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ChapterSelectionScreen(
-                          userId: widget.userId,
-                          subject: _selectedSubject,
-                        ),
-                      ),
-                    );
-                  },
-                ),
-                SizedBox(height: screenHeight * 0.024),
-                GlowButtonCyan(
-                  label: 'Full 11th',
-                  width: screenWidth * 0.8,
-                  height: screenHeight * 0.08,
-                  glowColor: subjectColors[_selectedSubject]!,
-                  onPressed: () {
-                    _startSoloGame(context, 'full11');
-                  },
-                ),
-                SizedBox(height: screenHeight * 0.024),
-                GlowButtonCyan(
-                  label: 'Full 12th',
-                  width: screenWidth * 0.8,
-                  height: screenHeight * 0.08,
-                  glowColor: subjectColors[_selectedSubject]!,
-                  onPressed: () {
-                    _startSoloGame(context, 'full12');
-                  },
-                ),
-                SizedBox(height: screenHeight * 0.024),
-                GlowButtonCyan(
-                  label: '11th + 12th',
-                  width: screenWidth * 0.8,
-                  height: screenHeight * 0.08,
-                  glowColor: subjectColors[_selectedSubject]!,
-                  onPressed: () {
-                    _startSoloGame(context, 'fullBoth');
-                  },
-                ),
-
-                // Bottom spacing for scrolling
-                SizedBox(height: screenHeight * 0.1),
-              ],
+              ),
             ),
-          ),
+
+            // 2. BOTTOM ANIMATION (Fills remaining space at the bottom)
+            SizedBox(
+              height: screenWidth * 0.8/1.5 ,// Adjust height as needed (e.g., 25% of screen)
+              width: screenWidth * 0.8,
+              child: Align(
+                alignment: Alignment.bottomCenter,
+                child: Opacity(
+                       opacity: 0.9,// Handles the alignment here
+                child: FormulaRiveViewer(
+                  src: 'assets/pandaai/soloGame.riv',
+                ),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
   }
-
 
 
 

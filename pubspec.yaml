@@ -63,6 +63,8 @@ flutter:
     - assets/pandaai/talk.json
     - assets/pandaai/bamboo_full.png
     - assets/pandaai/bamboo_low.png
+    - assets/pandaai/friendGame.riv
+    - assets/pandaai/soloGame.riv
 
 
     - assets/formulas/11/center_of_mass.aes

@@ -55,6 +55,28 @@ class HomeMessageService {
         "Hola! Ready to challenge your brain? 🧠",
         "Hey! Good to see you again. Let's do this! 💪",
         "Welcome! What are we learning today? 🤔",
+        "Arre, finally you're here! The formulas were missing you. 🥺",
+        "Chai pi li? Now let's get the brain brewing too! ☕",
+        "Ready to be smarter than your relatives think you are? 🤫",
+        "Phone silent, Brain violent (mode on)! 🧠",
+        "Sharmaji ka beta is already studying. You coming? 🏃‍♂️",
+        "Physics, Chemistry, Maths... who are we crushing today? 🎸",
+        "Oye Hero! Time to level up your brain. 🎮",
+        "Welcome! Let's get this bread (and the right answers). 🍞",
+        "Abhi maza aayega na bhidu! Let's solve some Qs. 🔥",
+        "Focus mode: ON. Instagram: OFF. Let's go! 🎯",
+        "Ready to confuse the exam paper with your intelligence? 🤯",
+        "Macha, let's crush some questions today! 👊",
+        "Exam sar pe hai! (Just kidding, but let's study anyway). 📅",
+        "No 'jugaad' today, only pure logic! 🛠️",
+        "Welcome! Your brain called, it wants a workout. 📞",
+        "Let's make your future bright (like a tubelight, but faster). 💡",
+        "Kya bolti public? Padhai karein? 📢",
+        "Back again? You must be serious about that 100/100. 💯",
+        "Time to show the syllabus who's boss. 💪",
+        "Don't worry, I won't tell anyone you're actually studying. 🤫",
+        "Let's turn that 'Zero' into 'Hero'. 🦸‍♂️",
+        "Padhai time! Future you will thank you. 🙏",
       ];
       messages = welcomeMessages;
     } else {
@@ -1100,6 +1122,14 @@ class HomeMessageService {
   Future<String> getGeneralAppAdvice() async {
     // We group advice by category to ensure users see a variety of tips.
     const adviceByCategory = {
+
+      'creator': [
+        "Fun Fact: This app was made by Rakesh, an IIT Madras grad, to make revision less boring. Pretty cool, right? ✨",
+        "This app was built by a guy from IIT Madras who got tired of seeing his students bored during revision. 😉",
+        "My creator, Rakesh, made me to spice up your revision. Hope you're having fun! 🎉",
+        "Want more tips? My creator has a YouTube channel: 'Physics with Rakesh | IIT Madras'. Check it out! 📺",
+        "For more cool concepts, search for 'Physics with Rakesh | IIT Madras' on YouTube! 🚀"
+      ],
       'formulas': [
         "Feeling lost in formulas? Just tap 'Revise all formulas' right here on the home screen. Sorted! 📜",
         "Psst! All the formulas you'll ever need are just a tap away. Look for 'Revise all formulas' on the home screen! 🕵️",
@@ -1107,12 +1137,13 @@ class HomeMessageService {
         "Did you know? You can pin important formulas to move them to the top of the list! 📌",
         "Found a tricky formula? Just pin it! It will jump to the top for quick access. ✨",
         "Don't just read the formulas, pin the important ones so they're always at the top waiting for you! 📌"
+        "When i say 90 % in Laws of Motion, i mean your accuracy percentage for all attempted questions in laws of Motion chapter is 90 %"
       ],
       'solo': [
         "Think you're a pro? 'Play Solo' gives you 10 questions that get tougher and tougher. Dum hai? 💪",
         "Heads up: 'Play Solo' isn't a walk in the park. The questions get harder as you go. 🔥",
         "Wanna test yourself? 'Play Solo' mode has 10 questions with increasing difficulty. Let's see what you've got! 🚀",
-        "Chapter colors show your score: 🔴(<40%) 🟠(40-70%) 🟢(>70%). Aim for Green!",
+        "Chapter colors show your attempted questions percentage: 🔴(<40%) 🟠(40-70%) 🟢(>70%). Aim for Green!",
         "Quick Tip: Chapter colors track your progress. Red needs work, Green means you're a pro! 📊",
         "See the chapter colors? Your goal is to turn them all Green (>70%)! ✅"
       ],
@@ -1126,13 +1157,7 @@ class HomeMessageService {
         "Want to see where you're going wrong? Check out 'My Mistakes'. It's your secret weapon for improvement. 🤫",
         "Once you've mastered your errors, hit 'Clear Mistakes' to delete them forever. Bye-bye, silly mistakes! 👋",
       ],
-      'creator': [
-        "Fun Fact: This app was made by Rakesh, an IIT Madras grad, to make revision less boring. Pretty cool, right? ✨",
-        "This app was built by a guy from IIT Madras who got tired of seeing his students bored during revision. 😉",
-        "My creator, Rakesh, made me to spice up your revision. Hope you're having fun! 🎉",
-        "Want more tips? My creator has a YouTube channel: 'Physics with Rakesh | IIT Madras'. Check it out! 📺",
-        "For more cool concepts, search for 'Physics with Rakesh | IIT Madras' on YouTube! 🚀"
-      ],
+
     };
 
     // 1. Move to the next category in a cycle.

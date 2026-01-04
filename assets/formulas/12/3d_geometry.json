@@ -853,7 +853,7 @@
     "id": "3d_geometry_qn_048",
     "question": "The equation of a plane passing through point A (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>) and parallel to two lines with direction ratios a<sub>1</sub>, b<sub>1</sub>, c<sub>1</sub> and a<sub>2</sub>, b<sub>2</sub>, c<sub>2</sub> is",
     "options": [
-      "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
+      "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 1",
       "\\begin{vmatrix} x+x_1 & y+y_1 & z+z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0",
       "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ a_1 & a_2 & a_3 \\\\ b_1 & b_2 & b_3 \\end{vmatrix} = 0",
       "\\begin{vmatrix} x-x_1 & y-y_1 & z-z_1 \\\\ a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\end{vmatrix} = 0"
