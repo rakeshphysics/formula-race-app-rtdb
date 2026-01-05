@@ -432,7 +432,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     if (finalQuestions.isEmpty) {
       // You might want to show an alert dialog here or pop back
       // For now, we just avoid the crash
-      print("⚠️ No questions found for this selection!");
+      //print("⚠️ No questions found for this selection!");
     }
 
     setState(() {
@@ -969,10 +969,9 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
 
         if (shouldExit ?? false) {
           await Future.delayed(const Duration(milliseconds: 350));
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(builder: (context) => SoloModeSelectionScreen(userId: widget.userId)),
-          );
+          if (context.mounted) {
+            Navigator.pop(context);
+          }
           return false; // prevent default back
         }
 

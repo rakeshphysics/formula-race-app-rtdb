@@ -86,7 +86,7 @@ class HomeMessageService {
         // Nudge to revise formulas
         "Feeling a bit rusty? A quick look at the formulas might help! 📜",
         "Pro-tip: Revising formulas before a game can give you an edge. 😉",
-        "Why not start with a quick formula revision? It's in the menu! ☰",
+
         "A quick formula check can warm up your brain. Give it a shot! 🔥",
         "Ready for a quiz? Maybe a quick glance at the formulas first? 🤓",
 

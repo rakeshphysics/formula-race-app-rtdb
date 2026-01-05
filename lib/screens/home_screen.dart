@@ -82,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
     _checkForNewBamboos(); // Check for bamboos on initial load
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _checkFirstTimeUser();
-      checkPlayFriendResult();
+      //checkPlayFriendResult();
       checkMistakesResult();
     });
     _updatePandaAnimation();
@@ -112,7 +112,7 @@ void _loadAiMessage({required AiMessageTrigger trigger}) async {
         _showMealButtons = false;
       });
     }
-    print("Displaying FREE game analysis. Stage: $_conversationStage");
+    //print("Displaying FREE game analysis. Stage: $_conversationStage");
     // --- END OF FIX ---
     _postGameAnalysisTriggered = false;
   }  else {
@@ -148,29 +148,93 @@ void _loadAiMessage({required AiMessageTrigger trigger}) async {
 }
 
 
-// --- NEW HELPER FUNCTION ---
-// --- UPDATED HELPER FUNCTION ---
-// --- SIMPLIFIED BAMBOO LOGIC ---
-// We treat SharedPreferences as the "Bank".
-// This function just reloads the bank balance when the app starts.
+
+// Future<void> _checkForNewBamboos() async {
+//   final prefs = await SharedPreferences.getInstance();
+//
+//   // 1. Load the saved total (Default to 0)
+//   int savedBalance = prefs.getInt('total_bamboos') ?? 0;
+//
+//   // 2. Update the UI
+//   if (mounted) {
+//     setState(() {
+//       _bamboos = savedBalance;
+//     });
+//   }
+//   print("--- 🏦 Bank Balance Loaded: $_bamboos ---");
+// }
+
 Future<void> _checkForNewBamboos() async {
   final prefs = await SharedPreferences.getInstance();
 
-  // 1. Load the saved total (Default to 0)
+  // 1. Load Balance
   int savedBalance = prefs.getInt('total_bamboos') ?? 0;
 
-  // 2. Update the UI
+  // 2. Check for Solo Game Receipt
+  String? lastGameMsg = prefs.getString('last_game_score_msg');
+
+  // 3. Check for Online Battle Result
+  String? battleResult = prefs.getString('last_battle_result');
+
+  // Update UI with initial balance
   if (mounted) {
     setState(() {
       _bamboos = savedBalance;
     });
   }
-  print("--- 🏦 Bank Balance Loaded: $_bamboos ---");
+
+  // --- SCENARIO A: Solo Game Finished ---
+  if (lastGameMsg != null) {
+    await prefs.remove('last_game_score_msg');
+
+    if (mounted) {
+      setState(() {
+        _postGameAnalysisTriggered = true;
+        _loadAiMessage(trigger: AiMessageTrigger.postGameAnalysis);
+      });
+    }
+  }
+
+  // --- SCENARIO B: Online Battle Finished ---
+  else if (battleResult != null) {
+    // 1. Clear the flag
+    await prefs.remove('last_battle_result');
+
+    // 2. Determine Reward & Message
+    int bambooReward = (battleResult == 'win') ? 10 : 5;
+    final messageService = HomeMessageService.instance;
+    String battleMsg = messageService.getBattleMessage(battleResult);
+
+    // 3. Add Bamboos (This saves to disk and updates UI)
+    await _addBamboos(bambooReward);
+
+    // 4. Trigger Panda Animation manually (since it's not a standard analysis)
+    if (mounted) {
+      setState(() {
+        _fullAiMessage = battleMsg;
+        _conversationStage = PandaConversationStage.idle;
+        _isTalking = true;
+        _currentPandaLottie = 'assets/pandaai/talk.json';
+        _charIndex = 0;
+        _displayedAiMessage = "";
+      });
+
+      _startTypingAnimation();
+
+      // Stop talking after message is done
+      Future.delayed(Duration(milliseconds: (battleMsg.length * 70) + 1000), () {
+        if (mounted) {
+          setState(() {
+            _isTalking = false;
+          });
+          _updatePandaAnimation();
+        }
+      });
+    }
+  }
 }
 
-// --- HELPER TO ADD REWARDS ---
-// Call this whenever the user earns bamboos (e.g., winning a game).
-// It updates the UI immediately AND saves it to the "Bank".
+
 Future<void> _addBamboos(int amount) async {
   final prefs = await SharedPreferences.getInstance();
 
@@ -183,7 +247,7 @@ Future<void> _addBamboos(int amount) async {
 
   // 3. Save the new total to disk
   await prefs.setInt('total_bamboos', newTotal);
-  print("💰 Added $amount bamboos. Old: $currentSavedBalance, New: $newTotal");
+  //print("💰 Added $amount bamboos. Old: $currentSavedBalance, New: $newTotal");
 
   // 4. Update the UI
   if (mounted) {
@@ -194,47 +258,47 @@ Future<void> _addBamboos(int amount) async {
 }
 
 // --- UPDATED HELPER FUNCTION ---
-Future<void> checkPlayFriendResult() async {
-  final prefs = await SharedPreferences.getInstance();
-  String? battleResult = prefs.getString('last_battle_result');
-
-  if (battleResult != null) {
-    // 1. Clear the flag immediately
-    await prefs.remove('last_battle_result');
-
-    final messageService = HomeMessageService.instance;
-    String battleMsg = messageService.getBattleMessage(battleResult);
-
-    if (mounted) {
-      // 2. Calculate Reward
-      int bambooReward = (battleResult == 'win') ? 10 : 5;
-
-      // 3. ✅ USE THE HELPER (It now handles the safe saving logic)
-      await _addBamboos(bambooReward);
-
-      // 4. Show Panda Message
-      setState(() {
-        _fullAiMessage = battleMsg;
-        _conversationStage = PandaConversationStage.idle;
-        _isTalking = true;
-        _currentPandaLottie = 'assets/pandaai/talk.json';
-        _charIndex = 0;
-        _displayedAiMessage = "";
-      });
-
-      _startTypingAnimation();
-
-      Future.delayed(Duration(milliseconds: (battleMsg.length * 70) + 1000), () {
-        if (mounted) {
-          setState(() {
-            _isTalking = false;
-          });
-          _updatePandaAnimation();
-        }
-      });
-    }
-  }
-}
+// Future<void> checkPlayFriendResult() async {
+//   final prefs = await SharedPreferences.getInstance();
+//   String? battleResult = prefs.getString('last_battle_result');
+//
+//   if (battleResult != null) {
+//     // 1. Clear the flag immediately
+//     await prefs.remove('last_battle_result');
+//
+//     final messageService = HomeMessageService.instance;
+//     String battleMsg = messageService.getBattleMessage(battleResult);
+//
+//     if (mounted) {
+//       // 2. Calculate Reward
+//       int bambooReward = (battleResult == 'win') ? 10 : 5;
+//
+//       // 3. ✅ USE THE HELPER (It now handles the safe saving logic)
+//       await _addBamboos(bambooReward);
+//
+//       // 4. Show Panda Message
+//       setState(() {
+//         _fullAiMessage = battleMsg;
+//         _conversationStage = PandaConversationStage.idle;
+//         _isTalking = true;
+//         _currentPandaLottie = 'assets/pandaai/talk.json';
+//         _charIndex = 0;
+//         _displayedAiMessage = "";
+//       });
+//
+//       _startTypingAnimation();
+//
+//       Future.delayed(Duration(milliseconds: (battleMsg.length * 70) + 1000), () {
+//         if (mounted) {
+//           setState(() {
+//             _isTalking = false;
+//           });
+//           _updatePandaAnimation();
+//         }
+//       });
+//     }
+//   }
+// }
 
 Future<void> checkMistakesResult() async {
   final prefs = await SharedPreferences.getInstance();
@@ -834,14 +898,17 @@ void didChangeAppLifecycleState(AppLifecycleState state) {
                     style: GoogleFonts.poppins(color: const Color(0xCCFD698C)),
                   ),
                   onTap: ()  async {
-                    Navigator.pop(context); // Close the drawer
-                    await Navigator.push(
+                    Navigator.pop(context);
+                    final bool? mistakesActivityHappened = await// Close the drawer
+                    Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) => AITrackerScreen(userId: widget.userId), // Navigate to Mistakes
                       ),
                     );
-                    checkMistakesResult();
+                    if (mounted && mistakesActivityHappened == true) {
+                      await checkMistakesResult();
+                    }
                   },
                 ),
               ),
@@ -1157,7 +1224,12 @@ void didChangeAppLifecycleState(AppLifecycleState state) {
                             // Navigate to the new page
                           ),
                         );
-                        await checkPlayFriendResult();
+                        await Future.delayed(const Duration(milliseconds: 500));
+
+                        // 3. Check for results/bamboos using the main function (replaces checkPlayFriendResult)
+                        if (mounted) {
+                          await _checkForNewBamboos();
+                        }
                       },
                       gradientColors: const [Color(0xFFFFA500), Color(
                           0xFF874A01)],
@@ -1194,10 +1266,11 @@ void didChangeAppLifecycleState(AppLifecycleState state) {
                         );
 
 
-                        print("<<< User has returned to HomeScreen. Triggering bamboo check.");
-                        _postGameAnalysisTriggered = true;
-                        _loadAiMessage(trigger: AiMessageTrigger.postGameAnalysis);
-                        _checkForNewBamboos();
+
+                        await Future.delayed(const Duration(milliseconds: 500));
+                        if (mounted) {
+                          await _checkForNewBamboos();
+                        }
                       },
                       gradientColors: const [Color(0xFF00FFFF), Color(0xFF006C6C)],
                       child:  Text(

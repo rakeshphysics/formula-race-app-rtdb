@@ -369,15 +369,8 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
     final screenWidth = MediaQuery.of(context).size.width;
     final quizProvider = Provider.of<QuizDataProvider>(context);
     final Color themeColor = subjectColors[widget.subject] ?? Colors.cyan;
-    return WillPopScope(
-      onWillPop: () async {
-        await Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => SoloModeSelectionScreen(userId: widget.userId)),
-        );
-        return false;
-      },
-      child: Scaffold(
+
+      return Scaffold(
         backgroundColor: Colors.black,
         appBar: AppBar(
           // 4. UPDATED TITLE TO SHOW SUBJECT NAME
@@ -461,7 +454,6 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
             ],
           ),
         ),
-      ),
-    );
+      );
   }
 }

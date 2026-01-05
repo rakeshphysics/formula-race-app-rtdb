@@ -416,15 +416,8 @@ class _SoloModeSelectionScreenState extends State<SoloModeSelectionScreen> {
     final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
 
-    return WillPopScope(
-      onWillPop: () async {
-        await Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => HomeScreen(userId: widget.userId)),
-        );
-        return false;
-      },
-      child: Scaffold(
+
+      return Scaffold(
         backgroundColor: Colors.black, // DARK THEME
         appBar: AppBar(
           backgroundColor: Colors.black,
@@ -550,8 +543,8 @@ class _SoloModeSelectionScreenState extends State<SoloModeSelectionScreen> {
 
             // 2. BOTTOM ANIMATION (Fills remaining space at the bottom)
             SizedBox(
-              height: screenWidth * 0.8/1.5 ,// Adjust height as needed (e.g., 25% of screen)
-              width: screenWidth * 0.8,
+              height: screenWidth * 0.6/1.5 ,// Adjust height as needed (e.g., 25% of screen)
+              width: screenWidth * 0.6,
               child: Align(
                 alignment: Alignment.bottomCenter,
                 child: Opacity(
@@ -564,8 +557,7 @@ class _SoloModeSelectionScreenState extends State<SoloModeSelectionScreen> {
             ),
           ],
         ),
-      ),
-    );
+      );
   }
 
 

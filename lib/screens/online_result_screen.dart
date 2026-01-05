@@ -567,6 +567,7 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                 // },
 
                 onPressed: () async {
+                  await Future.delayed(const Duration(milliseconds: 200));
                   // 1. Determine Result Status
                   String resultStatus = 'loss'; // Default fallback
 

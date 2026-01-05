@@ -88,17 +88,10 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
     final List<String> currentChapters = subjectChapters[subject] ?? subjectChapters['Physics']!;
     final Color themeColor = subjectColors[subject] ?? Colors.amber;
 
-    return WillPopScope(
-        onWillPop: () async {
-      await Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => OnlineModeSelectionScreen(userId: userId)),
-      );
-      return false;
-    },
 
 
-  child: Scaffold(
+
+  return Scaffold(
       backgroundColor: Colors.black,
     appBar: AppBar(
       // Show the subject in the title
@@ -175,6 +168,6 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
           );
         }).toList(),
       ),
-    ));
+    );
   }
   }

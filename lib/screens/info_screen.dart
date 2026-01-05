@@ -53,6 +53,18 @@ class InfoScreen extends StatelessWidget {
     }
   }
 
+  Future<void> _launchEmail() async {
+    final Uri emailLaunchUri = Uri(
+      scheme: 'mailto',
+      path: 'rakeshmanusani@gmail.com',
+      query: 'subject=Feedback for Formula Racing App', // Optional: Pre-fill subject
+    );
+
+    if (!await launchUrl(emailLaunchUri)) {
+      throw Exception('Could not launch email');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
@@ -95,6 +107,7 @@ class InfoScreen extends StatelessWidget {
   }
 
   // Special widget just for "About Me" to handle the link
+  // Special widget just for "About Me" to handle the link
   Widget _buildAboutMeContent(TextStyle baseStyle) {
     return RichText(
       text: TextSpan(
@@ -110,11 +123,24 @@ class InfoScreen extends StatelessWidget {
           TextSpan(
             text: "https://www.youtube.com/@physicswithrakesh\n\n",
             style: baseStyle.copyWith(
-              color: Color(0xCC8AFFFF),
+              color: const Color(0xCC8AFFFF),
               decoration: TextDecoration.underline,
               fontWeight: FontWeight.normal,
             ),
             recognizer: TapGestureRecognizer()..onTap = _launchYoutube,
+          ),
+          const TextSpan(
+            text: "You can contact me at:\n",
+          ),
+          TextSpan(
+            text: "rakeshmanusani@gmail.com\n\n",
+            style: baseStyle.copyWith(
+              color: const Color(0xCC8AFFFF),
+              decoration: TextDecoration.underline, // Added underline to indicate clickability
+              fontWeight: FontWeight.normal,
+            ),
+            // ✅ ADDED: Tap recognizer for email
+            recognizer: TapGestureRecognizer()..onTap = _launchEmail,
           ),
           const TextSpan(
             text: "Hope you enjoy using it ! Love you all ! ❤️",

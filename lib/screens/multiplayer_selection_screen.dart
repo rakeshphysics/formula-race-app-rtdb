@@ -18,23 +18,9 @@ class MultiplayerSelectionScreen extends StatelessWidget {
     final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
 
-    return WillPopScope(
-        // This callback is triggered when the user presses the device's back button.
-        onWillPop: () async {
-      // Navigate directly to the actual HomeScreen, replacing the current route.
-      // This prevents the user from navigating back to MultiplayerSelectionScreen again.
-      await Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) => HomeScreen(userId: userId), // Navigate to your actual HomeScreen
-        ),
-      );
-      // Return false to prevent the default back navigation behavior,
-      // as we've already handled the navigation explicitly.
-      return false;
-    },
 
-    child: Scaffold(
+
+    return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text('Choose Mode', style: TextStyle(color: Color(0xD9FFFFFF), fontSize: screenWidth*0.042)),
@@ -144,7 +130,6 @@ class MultiplayerSelectionScreen extends StatelessWidget {
           ],
         ),
       ),
-    ),
     );
   }
 }

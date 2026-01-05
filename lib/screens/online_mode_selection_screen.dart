@@ -485,16 +485,9 @@ class _OnlineModeSelectionScreenState extends State<OnlineModeSelectionScreen> {
 
     final Color currentThemeColor = subjectColors[_selectedSubject]!;
 
-    return WillPopScope(
-        onWillPop: () async {
-          await Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (context) => MultiplayerSelectionScreen(userId: widget.userId))
-          );
-          return false;
-        },
 
-        child: Scaffold(
+
+        return Scaffold(
           backgroundColor: Colors.black,
 
           appBar: AppBar(
@@ -653,8 +646,8 @@ class _OnlineModeSelectionScreenState extends State<OnlineModeSelectionScreen> {
 
               // 2. BOTTOM ANIMATION (Fills remaining space at the bottom)
               SizedBox(
-                height: screenWidth * 0.7/1.5 ,// Adjust height as needed (e.g., 25% of screen)
-                width: screenWidth * 0.7,
+                height: screenWidth * 0.6/1.5 ,// Adjust height as needed (e.g., 25% of screen)
+                width: screenWidth * 0.6,
                 child: Align(
                   alignment: Alignment.bottomCenter,
                   child: Opacity(
@@ -667,8 +660,7 @@ class _OnlineModeSelectionScreenState extends State<OnlineModeSelectionScreen> {
               ),
             ],
           ),
-        )
-    );
+        );
   }
 
   // Helper to handle navigation after match creation

@@ -624,6 +624,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
   late ConfettiController _confettiController;
   late TabController _tabController;
   int _initialTotalMistakes = 0;
+  bool _mistakesWereCleared = false;
 
   // Track active 3D models
   final Set<String> _active3DIndices = {};
@@ -785,7 +786,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
 
       // 4. Now actually go back to Home Screen
       if (context.mounted) {
-        Navigator.of(context).pop();
+        Navigator.of(context).pop(_mistakesWereCleared);
       }
         },
     child:Stack(
@@ -838,6 +839,9 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
                           builder: (_) => ClearMistakesScreen(subject: currentSubject),
                         ),
                       );
+
+                      await Future.delayed(const Duration(milliseconds: 300));
+                      _mistakesWereCleared = true;
 
                       if (resolvedCount != null && resolvedCount > 0) {
                         _confettiController.play();

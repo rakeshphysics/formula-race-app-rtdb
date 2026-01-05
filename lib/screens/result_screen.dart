@@ -17,7 +17,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:model_viewer_plus/model_viewer_plus.dart';
 import 'package:formularacing/widgets/rive_viewer.dart';
-
+import 'package:shared_preferences/shared_preferences.dart';
 
 Future<void> updateMistakeTracker(List<Map<String, dynamic>> responses) async {
   try {
@@ -146,7 +146,14 @@ class _ResultScreenState extends State<ResultScreen> {
     return WillPopScope( // ADD THIS WILLPOPSCOPE
       onWillPop: () async {
         // This will pop all routes until the first one (usually your Home Screen)
-        Navigator.popUntil(context, (route) => route.isFirst);
+        await Future.delayed(const Duration(milliseconds: 200));
+
+        // 2. Check mounted to prevent errors
+        if (context.mounted) {
+          // 3. Pop all routes until the first one (Home Screen)
+          Navigator.popUntil(context, (route) => route.isFirst);
+        }
+
         return false; // Prevent the default back button behavior
       },
       child: Scaffold(
@@ -546,8 +553,13 @@ class _ResultScreenState extends State<ResultScreen> {
               ),
               padding: const EdgeInsets.symmetric(vertical: 16),
             ),
-            onPressed: () {
-              Navigator.popUntil(context, (route) => route.isFirst);
+            onPressed: () async {
+              await Future.delayed(const Duration(milliseconds: 200));
+              final prefs = await SharedPreferences.getInstance();
+              await prefs.setString('last_game_score_msg', 'Game Finished');
+              if (context.mounted) {
+                Navigator.popUntil(context, (route) => route.isFirst);
+              }
             },
             child: Text('Home', style: TextStyle(fontSize: screenWidth*0.046,color: Color(
                 0xD9FFFFFF))),

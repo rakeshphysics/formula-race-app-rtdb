@@ -15,7 +15,7 @@ Future<String> decryptFile(String filePath) async {
     final decrypted = encrypter.decrypt(encrypted, iv: iv);
     return decrypted;
   } catch (e) {
-    print('Error decrypting file: $filePath -> $e');
+    //print('Error decrypting file: $filePath -> $e');
     return '{}'; // Return empty JSON on error
   }
 }

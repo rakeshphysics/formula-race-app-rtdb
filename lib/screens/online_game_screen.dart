@@ -164,7 +164,7 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
 // ---------------------------------------------------------
   bool isPhysics = subject.toLowerCase() == 'physics';
 
-  print("🔍 DEBUG: Subject Passed: '$subject' -> Using Physics Logic? $isPhysics");
+  //print("🔍 DEBUG: Subject Passed: '$subject' -> Using Physics Logic? $isPhysics");
 
 // ---------------------------------------------------------
 // 2. HELPER: Simple Random Picker (For Maths/Chemistry)
@@ -187,7 +187,7 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
     // Record IDs so we don't pick them again in a different bucket
     for (var q in selected) pickedIds.add(q['id']);
 
-    print("🔍 DEBUG: pickSimpleRandom -> BucketSize: ${bucket.length}, Requested: $count, Available(Unique): ${available.length}, Selected: ${selected.length}");
+    //print("🔍 DEBUG: pickSimpleRandom -> BucketSize: ${bucket.length}, Requested: $count, Available(Unique): ${available.length}, Selected: ${selected.length}");
 
     return selected;
   }
@@ -251,7 +251,7 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
           pickUniqueChapters(buckets['11_god']!, 1, usedChapters, random));
       selectedQuestions.addAll(
           pickUniqueChapters(buckets['12_god']!, 1, usedChapters, random));
-      print('Online Selected Chapters: $usedChapters');
+      //print('Online Selected Chapters: $usedChapters');
     } else {
       // MATHS/CHEM: New Logic (Safe Random)
       selectedQuestions.addAll(pickSimpleRandom(buckets['11_easy'] ?? [], 2, pickedIds, random));
@@ -303,10 +303,10 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
         }
       }
 
-      print(
-          "🔍 DEBUG: Chapter Wise ($rawName) - Easy=${chapterBuckets['easy']
-              ?.length}, Medium=${chapterBuckets['medium']
-              ?.length}, God=${chapterBuckets['god']?.length}");
+      // print(
+      //     "🔍 DEBUG: Chapter Wise ($rawName) - Easy=${chapterBuckets['easy']
+      //         ?.length}, Medium=${chapterBuckets['medium']
+      //         ?.length}, God=${chapterBuckets['god']?.length}");
 
 // NEW: Create a set to track unique question IDs for this chapter mode
       final Set<String> pickedQuestionIds = {};
@@ -340,7 +340,7 @@ Future<List<Map<String, dynamic>>> getRandomQuestions(int seed, String gameMode,
           chapterBuckets['god']!, 1, pickedQuestionIds, random));
     }
   }
-  print("🔍 DEBUG: Final Selected Questions Count: ${selectedQuestions.length}");
+  //print("🔍 DEBUG: Final Selected Questions Count: ${selectedQuestions.length}");
 
  final finalQuestions = selectedQuestions.take(totalQuestions).toList();
   return finalQuestions;
@@ -650,8 +650,14 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
       );
 
       if (confirm == true) {
+
+        showDialog(
+          context: context,
+          barrierDismissible: false,
+          builder: (c) => const Center(child: CircularProgressIndicator()),
+        );
         await _handleExitMidGame(); // Handle game exit and opponent win
-        return true; // Allow pop (will navigate via _handleExitMidGame)
+        return false; // Allow pop (will navigate via _handleExitMidGame)
       } else {
         // _progressController.forward(); // This line was removed based on your request.
         return false; // Don't allow pop
