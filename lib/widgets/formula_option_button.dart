@@ -37,17 +37,37 @@ class FormulaOptionButton extends StatelessWidget {
               width: 1.2,
             ),// nicely rounded corners
           ),
-          padding: const EdgeInsets.symmetric(horizontal: 16),
+          //padding: const EdgeInsets.symmetric(horizontal: 16),
+          padding: EdgeInsets.zero,
         ),
+    //     onPressed: onPressed,
+    // child: SingleChildScrollView(
+    // scrollDirection: Axis.horizontal,
+    // physics: const BouncingScrollPhysics(),
+    //     child: Math.tex(
+    //       text,
+    //       textStyle: TextStyle(color: const Color(0xD9FFFFFF),fontSize: screenWidth * 0.045, fontWeight: FontWeight.normal),
+    //     ),
+    // ),
+
         onPressed: onPressed,
-    child: SingleChildScrollView(
-    scrollDirection: Axis.horizontal,
-    physics: const BouncingScrollPhysics(),
-        child: Math.tex(
-          text,
-          textStyle: TextStyle(color: const Color(0xD9FFFFFF),fontSize: screenWidth * 0.045, fontWeight: FontWeight.normal),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Center(
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              physics: const BouncingScrollPhysics(),
+              child: Math.tex(
+                text,
+                textStyle: TextStyle(
+                  color: const Color(0xD9FFFFFF),
+                  fontSize: screenWidth * 0.045,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ),
+          ),
         ),
-    ),
       ),
     );
   }

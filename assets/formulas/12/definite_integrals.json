@@ -1,0 +1,366 @@
+[
+  {
+    "id": "definite_integrals_qn_001",
+    "question": "\\int_{a}^{b} \\text{f(x) dx =}",
+    "options": [
+      "\\int_{b}^{a} \\text{f(t) dt}",
+      "\\int_{b}^{a} \\text{f'(t) dt}",
+      "\\int_{a}^{b} \\text{f(t) dt}",
+      "\\int_{a}^{b} \\text{f'(t) dt}"
+    ],
+    "answer": "\\int_{a}^{b} \\text{f(t) dt}",
+    "tags": {
+      "chapter": "Definite Integrals",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "definite_integrals_qn_002",
+    "question": "\\int_{a}^{a} \\text{f(x) dx =}",
+    "options": [
+      "\\text{0}",
+      "\\text{1}",
+      "\\text{2}",
+      "\\text{0.5}"
+    ],
+    "answer": "\\text{0}",
+    "tags": {
+      "chapter": "Definite Integrals",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "definite_integrals_qn_003",
+    "question": "\\left| \\int_{a}^{b} \\text{f(x) dx} \\right|",
+    "options": [
+      "\\text{= } \\int_{a}^{b} \\left| \\text{f(x)} \\right| \\text{ dx}",
+      "\\leq \\int_{a}^{b} \\left| \\text{f(x)} \\right| \\text{ dx}",
+      "\\geq \\int_{a}^{b} \\left| \\text{f(x)} \\right| \\text{ dx}",
+      "\\text{> } \\int_{a}^{b} \\left| \\text{f(x)} \\right| \\text{ dx}"
+    ],
+    "answer": "\\leq \\int_{a}^{b} \\left| \\text{f(x)} \\right| \\text{ dx}",
+    "tags": {
+      "chapter": "Definite Integrals",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "definite_integrals_qn_004",
+    "question": "\\text{If f(x) is even function, then } \\int_{-a}^{a} \\text{f(x) dx} \\text{ equals}",
+    "options": [
+      "\\text{0}",
+      "\\text{2a}",
+      "\\text{2} \\int_{0}^{a} \\text{f(x) dx}",
+      "\\int_{0}^{a} \\text{f(x) dx}"
+    ],
+    "answer": "\\text{2} \\int_{0}^{a} \\text{f(x) dx}",
+    "tags": {
+      "chapter": "Definite Integrals",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "definite_integrals_qn_005",
+    "question": "\\int_{a}^{b} \\text{f(x) dx = } \\text{(given a < c < b)}",
+    "options": [
+      "\\int_{a}^{c} \\text{f(x) dx} + \\int_{c}^{b} \\text{f(x) dx}",
+      "\\int_{a}^{c} \\text{f(x) dx} + \\int_{b}^{c} \\text{f(x) dx}",
+      "\\int_{a}^{c} \\text{f(x) dx} - \\int_{c}^{b} \\text{f(x) dx}",
+      "\\int_{c}^{a} \\text{f(x) dx} + \\int_{c}^{b} \\text{f(x) dx}"
+    ],
+    "answer": "\\int_{a}^{c} \\text{f(x) dx} + \\int_{c}^{b} \\text{f(x) dx}",
+    "tags": {
+      "chapter": "Definite Integrals",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+
+  {
+    "id": "definite_integrals_qn_006",
+    "question": "\\int_{0}^{a} \\text{f(x) dx =}",
+    "options": [
+      "\\int_{0}^{a} \\text{f}\\left(\\frac{a}{x}\\right) \\text{ dx}",
+      "\\int_{0}^{a} \\text{f}\\left(\\frac{x}{a}\\right) \\text{ dx}",
+      "\\int_{0}^{a} \\text{f(a + x) dx}",
+      "\\int_{0}^{a} \\text{f(a - x) dx}"
+    ],
+    "answer": "\\int_{0}^{a} \\text{f(a - x) dx}",
+    "tags": {
+      "chapter": "Definite Integrals",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "definite_integrals_qn_007",
+    "question": "\\int_{a}^{b} \\text{f(x) dx =}",
+    "options": [
+      "\\int_{a}^{b} \\text{f(a - b + x) dx}",
+      "\\int_{a}^{b} \\text{f(a - b - x) dx}",
+      "\\int_{a}^{b} \\text{f(a + b - x) dx}",
+      "\\int_{a}^{b} \\text{f(a + b + x) dx}"
+    ],
+    "answer": "\\int_{a}^{b} \\text{f(a + b - x) dx}",
+    "tags": {
+      "chapter": "Definite Integrals",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "definite_integrals_qn_008",
+    "question": "\\int_{0}^{2a} \\text{f(x) dx =}",
+    "options": [
+      "\\int_{0}^{a} \\text{f(x) dx} + \\int_{0}^{a} \\text{f(2a + x) dx}",
+      "\\int_{0}^{a} \\text{f(x) dx} + \\int_{0}^{a} \\text{f(2a - x) dx}",
+      "\\int_{0}^{a} \\text{f(x) dx} - \\int_{0}^{a} \\text{f(2a - x) dx}",
+      "\\int_{0}^{a} \\text{f(x) dx} - \\int_{0}^{a} \\text{f(2a + x) dx}"
+    ],
+    "answer": "\\int_{0}^{a} \\text{f(x) dx} + \\int_{0}^{a} \\text{f(2a - x) dx}",
+    "tags": {
+      "chapter": "Definite Integrals",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "definite_integrals_qn_009",
+    "question": "\\int_{-a}^{a} \\text{f(x) dx =}",
+    "options": [
+      "\\int_{0}^{a} \\text{f(x) dx} + \\int_{0}^{a} \\text{f(-x) dx}",
+      "\\text{2} \\int_{0}^{a} \\text{f(x) dx}",
+      "\\text{2} \\int_{0}^{a} \\text{f(-x) dx}",
+      "\\int_{0}^{a} \\text{f(x) dx} - \\int_{0}^{a} \\text{f(-x) dx}"
+    ],
+    "answer": "\\int_{0}^{a} \\text{f(x) dx} + \\int_{0}^{a} \\text{f(-x) dx}",
+    "tags": {
+      "chapter": "Definite Integrals",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "definite_integrals_qn_010",
+    "question": "\\int_{0}^{n} \\text{[x] dx = } \\text{([x] is greatest integer function)}",
+    "options": [
+      "\\int_{0}^{1} \\text{0 dx} + \\int_{1}^{2} \\text{1 dx} + \\dots + \\int_{[n]}^{n} \\text{[n] dx}",
+      "\\int_{0}^{1} \\text{0 dx} + \\int_{1}^{2} \\text{1 dx} + \\dots + \\int_{[n]}^{n} \\text{\\{n\\} dx}",
+      "\\int_{0}^{1} \\text{0 dx} + \\int_{1}^{2} \\text{1 dx} + \\dots + \\int_{[n]}^{n} \\text{n dx}",
+      "\\int_{0}^{1} \\text{0 dx} + \\int_{1}^{2} \\text{1 dx} + \\dots + \\int_{[n]}^{n} \\text{x dx}"
+    ],
+    "answer": "\\int_{0}^{1} \\text{0 dx} + \\int_{1}^{2} \\text{1 dx} + \\dots + \\int_{[n]}^{n} \\text{[n] dx}",
+    "tags": {
+      "chapter": "Definite Integrals",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+
+  {"id": "definite_integrals_qn_011",
+    "question": "\\text{If f(x) is periodic with period T, then } \\int_{0}^{nT} \\text{f(x) dx } = \\text{(n} \\in \\text{I)}",
+    "options": [
+      "\\frac{\\int_{0}^{T} \\text{f(x) dx}}{\\text{n}}",
+      "\\text{n}^2 \\int_{0}^{T} \\text{f(x) dx}",
+      "\\int_{0}^{T} \\text{f(x) dx}",
+      "\\text{n} \\int_{0}^{T} \\text{f(x) dx}"
+    ],
+    "answer": "\\text{n} \\int_{0}^{T} \\text{f(x) dx}",
+    "tags": {
+      "chapter": "Definite Integrals",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "definite_integrals_qn_012",
+    "question": "\\text{If f(x) is periodic with period T, then } \\int_{a}^{a+nT} \\text{f(x) dx = } \\text{ (n } \\in \\text{ I)}",
+    "options": [
+      "\\frac{\\int_{0}^{T} \\text{f(x) dx}}{\\text{an}}",
+      "\\text{n}^2 \\int_{0}^{T} \\text{f(x) dx}",
+      "\\int_{0}^{T} \\text{f(x) dx}",
+      "\\text{n} \\int_{0}^{T} \\text{f(x) dx}"
+    ],
+    "answer": "\\text{n} \\int_{0}^{T} \\text{f(x) dx}",
+    "tags": {
+      "chapter": "Definite Integrals",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "definite_integrals_qn_013",
+    "question": "\\text{If f(x) is periodic with period T, then } \\int_{a+nT}^{a+mT} \\text{f(x) dx = } \\text{ (n, m } \\in \\text{ I)}",
+    "options": [
+      "\\text{m} \\int_{0}^{T} \\text{f(x) dx}",
+      "\\text{(m - n)} \\int_{0}^{T} \\text{f(x) dx}",
+      "\\text{n} \\int_{0}^{T} \\text{f(x) dx}",
+      "\\text{2a} \\int_{0}^{T} \\text{f(x) dx}"
+    ],
+    "answer": "\\text{(m - n)} \\int_{0}^{T} \\text{f(x) dx}",
+    "tags": {
+      "chapter": "Definite Integrals",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "definite_integrals_qn_014",
+    "question": "\\text{If f(x) is periodic with period T, then } \\int_{mT}^{b+mT} \\text{f(x) dx =}",
+    "options": [
+      "\\int_{0}^{b} \\text{f(x) dx}",
+      "\\text{b} \\int_{0}^{T} \\text{f(x) dx}",
+      "\\text{T} \\int_{0}^{b} \\text{f(x) dx}",
+      "\\text{2m} \\int_{0}^{T} \\text{f(x) dx}"
+    ],
+    "answer": "\\int_{0}^{b} \\text{f(x) dx}",
+    "tags": {
+      "chapter": "Definite Integrals",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "definite_integrals_qn_015",
+    "question": "\\text{If m is the least value and M is the greatest value of f(x) in interval [a, b] then}",
+    "options": [
+      "\\int_{a}^{b} \\text{f(x) dx} \\leq \\text{m(b - a)} \\leq \\text{M(b - a)}",
+      "\\text{m(b - a)} \\geq \\int_{a}^{b} \\text{f(x) dx} \\geq \\text{M(b - a)}",
+      "\\text{m(b - a) = } \\int_{a}^{b} \\text{f(x) dx = M(b - a)}",
+      "\\text{m(b - a)} \\leq \\int_{a}^{b} \\text{f(x) dx} \\leq \\text{M(b - a)}"
+    ],
+    "answer": "\\text{m(b - a)} \\leq \\int_{a}^{b} \\text{f(x) dx} \\leq \\text{M(b - a)}",
+    "tags": {
+      "chapter": "Definite Integrals",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "definite_integrals_qn_016",
+    "question": "\\int_{0}^{\\pi/2} \\sin^{\\text{m}} \\text{x cos x dx =}",
+    "options": [
+      "\\frac{1}{m}",
+      "\\text{m}",
+      "\\frac{1}{m+1}",
+      "\\frac{1}{2m+1}"
+    ],
+    "answer": "\\frac{1}{m+1}",
+    "tags": {
+      "chapter": "Definite Integrals",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+
+    {
+      "id": "definite_integrals_qn_017",
+      "question": "\\int_{0}^{\\pi/2} \\cos^{m} x \\sin x \\, dx =",
+      "options": [
+        "\\frac{1}{m}",
+        "\\text{m}",
+        "\\frac{1}{m+1}",
+        "\\frac{1}{2m+1}"
+      ],
+      "answer": "\\frac{1}{m+1}",
+      "tags": {
+        "chapter": "Definite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "definite_integrals_qn_018",
+      "question": "\\int_{0}^{\\infty} e^{-ax} \\sin bx \\, dx =",
+      "options": [
+        "\\frac{b}{a}",
+        "\\frac{b}{a^{2} + b^{2}}",
+        "\\frac{b}{a+b}",
+        "\\frac{1}{a+b}"
+      ],
+      "answer": "\\frac{b}{a^{2} + b^{2}}",
+      "tags": {
+        "chapter": "Definite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "definite_integrals_qn_019",
+      "question": "\\text{If f is continuous on [a, b] then the mean value} \\text{of function f(x) between [a, b] is}",
+      "options": [
+        "\\frac{1}{(b-a)} \\int_{a}^{b} f(x) \\, dx",
+        "\\int_{a}^{b} f(x) \\, dx",
+        "\\frac{1}{(b+a)} \\int_{a}^{b} f(x) \\, dx",
+        "\\frac{ab}{(b+a)} \\int_{a}^{b} f(x) \\, dx"
+      ],
+      "answer": "\\frac{1}{(b-a)} \\int_{a}^{b} f(x) \\, dx",
+      "tags": {
+        "chapter": "Definite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "definite_integrals_qn_020",
+      "question": "\\text{Functions } \\phi(x) \\text{ and } \\psi(x) \\text{ are defined and} \\text{differentiable for } x \\in (a, b) \\text{ and } f(t) \\text{is continuous, then } \\frac{d}{dx} \\left[ \\int_{\\phi(x)}^{\\psi(x)} f(t) \\, dt \\right] =",
+      "options": [
+        "f[\\psi(x)] \\cdot \\psi'(x) + f[\\phi(x)] \\cdot \\phi'(x)",
+        "f[\\psi(x)] \\cdot \\phi'(x) + f[\\phi(x)] \\cdot \\psi'(x)",
+        "f[\\psi(x)] \\cdot \\psi'(x) - f[\\phi(x)] \\cdot \\phi'(x)",
+        "f[\\psi(x)] \\cdot \\phi'(x) - f[\\phi(x)] \\cdot \\psi'(x)"
+      ],
+      "answer": "f[\\psi(x)] \\cdot \\psi'(x) - f[\\phi(x)] \\cdot \\phi'(x)",
+      "tags": {
+        "chapter": "Definite Integrals",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    }
+
+
+]

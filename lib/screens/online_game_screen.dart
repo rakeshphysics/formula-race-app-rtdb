@@ -1624,7 +1624,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     return Opacity(
     opacity: 0.8,
     child: FormulaRiveViewer(
-        key: ValueKey('rive_${currentQuestionIndex}_$imagePath'),
+        //key: ValueKey('rive_${currentQuestionIndex}_$imagePath'),
     src: imagePath
     //fit: BoxFit.contain,
     ),
@@ -1633,7 +1633,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
     // 3. Handle 3D Model (.glb)
     else if (imagePath.endsWith('.glb')) {
     return ModelViewer(
-      key: ValueKey('model_${currentQuestionIndex}_$imagePath'),
+      //key: ValueKey('model_${currentQuestionIndex}_$imagePath'),
     src: imagePath,
     alt: "3D Model",
       ar: false,

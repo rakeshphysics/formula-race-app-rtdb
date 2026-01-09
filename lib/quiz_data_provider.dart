@@ -49,6 +49,7 @@ class QuizDataProvider extends ChangeNotifier {
       'assets/formulas/12/3d_geometry.aes',
       'assets/formulas/11/chemical_equilibrium.aes',
       'assets/formulas/11/ellipse.aes',
+      'assets/formulas/12/definite_integrals.aes',
     ];
 
     for (var filePath in encryptedFiles) {

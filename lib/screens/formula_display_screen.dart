@@ -505,6 +505,13 @@ _active3DIndices.add(index);
     final screenWidth = MediaQuery.of(context).size.width;
     final themeColor = _getSubjectColor();
 
+    final List<String> mathChapters = ['Definite Integrals', 'Integration'];
+    final List<String> mathSubjects = ['Maths', 'Physics'];
+
+// 2. Check the condition (using trim() for safety)
+    final bool useMathTex = mathSubjects.contains(widget.subject?.trim()) &&
+        mathChapters.contains(widget.chapterName?.trim());
+
     return Container(
       key: key,
       width: double.infinity,
@@ -591,9 +598,42 @@ _active3DIndices.add(index);
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // 1. Question Text
+                // Container(
+                //   width: double.infinity,
+                //   child: Html(
+                //     data: '${index + 1}. ${questionData['question'] ?? 'N/A'}',
+                //     style: {
+                //       "body": Style(
+                //         fontSize: FontSize(screenWidth * 0.037),
+                //         color: const Color(0xE6DCDCDC),
+                //         fontFamily: GoogleFonts.poppins().fontFamily,
+                //         margin: Margins.zero,
+                //         display: Display.block,
+                //       ),
+                //     },
+                //   ),
+                // ),
+
+                // 1. Question Text
                 Container(
                   width: double.infinity,
-                  child: Html(
+                  child: useMathTex
+                      ? Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 4.0),
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      physics: const BouncingScrollPhysics(),
+                      child: Math.tex(
+                        '\\text{${index + 1}. } ${questionData['question'] ?? "N/A"}',
+                        textStyle: TextStyle(
+                          fontSize: screenWidth * 0.048,
+                          color: const Color(0xE6DCDCDC),
+                          //fontFamily: GoogleFonts.poppins().fontFamily,
+                        ),
+                      ),
+                    ),
+                  )
+                      : Html(
                     data: '${index + 1}. ${questionData['question'] ?? 'N/A'}',
                     style: {
                       "body": Style(
@@ -606,6 +646,10 @@ _active3DIndices.add(index);
                     },
                   ),
                 ),
+
+
+
+
                 SizedBox(height: screenWidth * 0.01),
 
                 // 2. ANSWER ROW (Pin - Answer - Bookmark)
