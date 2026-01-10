@@ -752,6 +752,8 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
     final double screenWidth = MediaQuery.of(context).size.width;
     final double screenHeight = MediaQuery.of(context).size.height;
 
+
+
     // Calculate total active mistakes across all subjects
     int totalActiveMistakes = 0;
     subjectMistakes.forEach((key, value) {
@@ -836,7 +838,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
                       final resolvedCount = await Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (_) => ClearMistakesScreen(subject: currentSubject),
+                          builder: (_) => ClearMistakesScreen(subject: currentSubject,chapterName: null),
                         ),
                       );
 
@@ -935,6 +937,14 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
 
   Widget _buildSubjectList(String subject, double screenWidth, double screenHeight) {
     var mistakes = subjectMistakes[subject] ?? {};
+
+    final List<String> mathChapters = ['Definite Integrals', 'Integration'];
+    final List<String> mathSubjects = ['Maths'];
+
+
+
+
+
     var totals = subjectChapterTotals[subject] ?? {};
 
     if (mistakes.isEmpty) {
@@ -947,6 +957,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
     }
 
     return ListView(
+      physics: const BouncingScrollPhysics(),
       padding: EdgeInsets.all(screenWidth * 0.03),
       children: [
         // Total count for this subject
@@ -963,6 +974,9 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
           String chapter = entry.key;
           int totalMistakes = totals[chapter]!;
           bool expanded = chapterExpanded[chapter] ?? false;
+
+          final bool useMathTex = mathSubjects.contains(subject.trim()) &&
+              mathChapters.contains(chapter.trim());
 
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -1001,7 +1015,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
                             padding: const EdgeInsets.all(12),
                             decoration: BoxDecoration(
                               color: Colors.black,
-                              borderRadius: BorderRadius.circular(12),
+                              borderRadius: BorderRadius.circular(4),
                               border: Border.all(
                                 color: Colors.redAccent.withOpacity(0.6),
                                 width: 1.5,
@@ -1065,7 +1079,35 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
                                   ),
 
                                 // ---------------- RESTORED QUESTION TEXT (HTML) ----------------
-                                Html(
+                                // Html(
+                                //   data: 'Q: ${formulaEntry['formula']}',
+                                //   style: {
+                                //     "body": Style(
+                                //       fontSize: FontSize(screenWidth * 0.037),
+                                //       color: const Color(0xD9FFFFFF),
+                                //       fontFamily: GoogleFonts.poppins().fontFamily,
+                                //       margin: Margins.zero,
+                                //     ),
+                                //   },
+                                // ),
+
+                                // ---------------- RESTORED QUESTION TEXT (Conditional) ----------------
+                                useMathTex
+                                    ? Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 4.0),
+                                  child: SingleChildScrollView(
+                                    scrollDirection: Axis.horizontal,
+                                    physics: const BouncingScrollPhysics(),
+                                    child: Math.tex(
+                                      '\\text{Q: } ${formulaEntry['formula']}',
+                                      textStyle: TextStyle(
+                                        fontSize: screenWidth * 0.043,
+                                        color: const Color(0xD9FFFFFF),
+                                      ),
+                                    ),
+                                  ),
+                                )
+                                    : Html(
                                   data: 'Q: ${formulaEntry['formula']}',
                                   style: {
                                     "body": Style(
@@ -1076,6 +1118,9 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
                                     ),
                                   },
                                 ),
+
+
+
                                 SizedBox(height: screenWidth * 0.016),
 
                                 // ---------------- RESTORED ANSWER TEXT (Math.tex) ----------------

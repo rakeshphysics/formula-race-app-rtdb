@@ -318,7 +318,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       },
       'Maths': {
         '11': ['Ellipse'],              // Add more chapters here
-        '12': ['3D Geometry'],          // Add more chapters here
+        '12': ['3D Geometry','Definite Integrals'],          // Add more chapters here
       },
     };
 
@@ -738,6 +738,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           correctAnswer: correctAnswer,
           tip: question['tip'] ?? '',
           imagePath: question['image'] ?? '',
+          tags: question['tags'],
         ),
       );
 
@@ -790,6 +791,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
             mode: widget.selectedChapter,
             responses: responses,
             subject: widget.subject,
+            chapterName: widget.selectedChapter,
           ),
           settings: RouteSettings(arguments: totalQuestions),
         ),
@@ -880,6 +882,8 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     final double screenWidth = MediaQuery.of(context).size.width;
     final double screenHeight = MediaQuery.of(context).size.height;
 
+
+
     Color themeColor;
     switch (widget.subject) {
       case 'Chemistry':
@@ -901,6 +905,15 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     }
 
     final question = questions[currentIndex];
+    final List<String> mathChapters = ['Definite Integrals', 'Integration'];
+    final List<String> mathSubjects = ['Maths'];
+
+    String currentQnChapter = (question['tags']?['chapter'] ?? '').toString();
+    final bool useMathTex = mathSubjects.contains(widget.subject?.trim()) &&
+        (mathChapters.contains(widget.selectedChapter?.trim()) ||
+            mathChapters.contains(currentQnChapter.trim()));
+
+    //final question = questions[currentIndex];
     final List<dynamic> options = question['options'];
     final String tip = question['tip'] ?? '';//........................TIP ADDED
     if (shuffledOptions.isEmpty) {
@@ -1013,21 +1026,54 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
                   'Q${currentIndex + 1} of $totalQuestions',
                   style:  TextStyle(color: const Color(0xD9FFFFFF), fontSize: screenWidth * 0.044),
                 ),
-               // SizedBox(height: screenWidth * 0.02),
+                //SizedBox(height: screenWidth * 0.02),
 
                 // --- Question Block (Fixed) ---
-                Html(
-                  data: question['question'],
-                  style: {
-                    "body": Style(
-                      //fontSize: FontSize(16),
-                      fontSize: FontSize(screenWidth * 0.04),
-                      fontWeight: FontWeight.normal,
-                      color: const Color(0xD9FFFFFF),
-                      fontFamily: GoogleFonts.poppins().fontFamily,
+                // Html(
+                //   data: question['question'],
+                //   style: {
+                //     "body": Style(
+                //       //fontSize: FontSize(16),
+                //       fontSize: FontSize(screenWidth * 0.04),
+                //       fontWeight: FontWeight.normal,
+                //       color: const Color(0xD9FFFFFF),
+                //       fontFamily: GoogleFonts.poppins().fontFamily,
+                //     ),
+                //   },
+                // ),
+
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.only(top: 5, bottom: 0),
+                  child: useMathTex
+                      ? SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    physics: const BouncingScrollPhysics(),
+                    child: Math.tex(
+                      question['question'] ?? '',
+                      textStyle: TextStyle(
+                        fontSize: screenWidth * 0.048,
+                        color: const Color(0xD9FFFFFF),
+                      ),
                     ),
-                  },
+                  )
+                      : Html(
+                    data: question['question'],
+                    style: {
+                      "body": Style(
+                        fontSize: FontSize(screenWidth * 0.04),
+                        fontWeight: FontWeight.normal,
+                        color: const Color(0xD9FFFFFF),
+                        fontFamily: GoogleFonts.poppins().fontFamily,
+                        margin: Margins.zero,
+                      ),
+                    },
+                  ),
                 ),
+
+
+
+
                 SizedBox(height: screenWidth * 0.03),
 
                 // if (question['image'] != null && question['image'] != "")

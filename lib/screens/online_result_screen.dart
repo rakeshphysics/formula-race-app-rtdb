@@ -448,16 +448,21 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                             ),
 
 
-                          Html(
-                            data: "<b>Q:</b> ${qa.question}",
-                            style: {
-                              "body": Style(
-                                fontSize: FontSize(screenWidth * 0.037),
-                                color: Color(0xD9FFFFFF),
-                                fontFamily: GoogleFonts.poppins().fontFamily,
-                              ),
-                            },
-                          ),
+                          // Html(
+                          //   data: "<b>Q:</b> ${qa.question}",
+                          //   style: {
+                          //     "body": Style(
+                          //       fontSize: FontSize(screenWidth * 0.037),
+                          //       color: Color(0xD9FFFFFF),
+                          //       fontFamily: GoogleFonts.poppins().fontFamily,
+                          //     ),
+                          //   },
+                          // ),
+
+                    final List<String> mathChapters = ['Definite Integrals', 'Integration'];
+                    // Extract chapter from the tags map inside the qa object
+                    final String currentChapter = (qa.tags?['chapter'] ?? '').toString();
+                    final bool useMathTex = mathChapters.contains(currentChapter.trim());
                           // SizedBox(height: screenWidth * 0.01),
 
                           // Your Answer

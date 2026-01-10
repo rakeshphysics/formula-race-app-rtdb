@@ -23,7 +23,8 @@ import 'package:formularacing/widgets/rive_viewer.dart';
 
 class ClearMistakesScreen extends StatefulWidget {
   final String? subject;
-  const ClearMistakesScreen({super.key,required this.subject});
+  final String? chapterName;
+  const ClearMistakesScreen({super.key,required this.subject, this.chapterName});
 
   @override
   State<ClearMistakesScreen> createState() => _ClearMistakesScreenState();
@@ -150,6 +151,8 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
   Widget build(BuildContext context) {
    // final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
+
+
     if (questions.isEmpty) {
       return const Scaffold(
         body: Center(child: CircularProgressIndicator()),
@@ -157,6 +160,12 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
     }
 
     final question = questions[currentIndex];
+    final List<String> mathChapters = ['Definite Integrals', 'Integration'];
+// Extract chapter from the tags map of the current question
+    final String currentChapter = (question['tags']?['chapter'] ?? '').toString();
+    final bool useMathTex = mathChapters.contains(currentChapter.trim());
+
+
     final List<dynamic> options = question['options'];
     if (shuffledOptions.isEmpty) {
       shuffledOptions = List<String>.from(options);
@@ -279,16 +288,46 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
 
             SizedBox(height: MediaQuery.of(context).size.height * 0.005),
 
-            Html(
-              data: question['question'],
-              style: {
-                "body": Style(
-                  fontSize: FontSize(screenWidth * 0.04),
-                  fontWeight: FontWeight.normal,
-                  color: Color(0xD9FFFFFF),
-                  fontFamily: GoogleFonts.poppins().fontFamily,
+            // Html(
+            //   data: question['question'],
+            //   style: {
+            //     "body": Style(
+            //       fontSize: FontSize(screenWidth * 0.04),
+            //       fontWeight: FontWeight.normal,
+            //       color: Color(0xD9FFFFFF),
+            //       fontFamily: GoogleFonts.poppins().fontFamily,
+            //     ),
+            //   },
+            // ),
+
+            // --- Question Block (Conditional) ---
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.only(top: 0, bottom: 0),
+              child: useMathTex
+                  ? SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                physics: const BouncingScrollPhysics(),
+                child: Math.tex(
+                  question['question'] ?? '',
+                  textStyle: TextStyle(
+                    fontSize: screenWidth * 0.048,
+                    color: const Color(0xD9FFFFFF),
+                  ),
                 ),
-              },
+              )
+                  : Html(
+                data: question['question'],
+                style: {
+                  "body": Style(
+                    fontSize: FontSize(screenWidth * 0.04),
+                    fontWeight: FontWeight.normal,
+                    color: const Color(0xD9FFFFFF),
+                    fontFamily: GoogleFonts.poppins().fontFamily,
+                    //margin: Margins.zero,
+                  ),
+                },
+              ),
             ),
 
             // if (question['image'] != null && question['image'].toString().isNotEmpty)

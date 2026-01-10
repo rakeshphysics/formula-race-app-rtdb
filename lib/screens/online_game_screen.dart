@@ -1372,9 +1372,14 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
       );
     }
 
+
+
     if (!isLoading && questions.isNotEmpty) {
       //////////print("🖥️ Step 7: Displaying question ${currentQuestionIndex + 1}/${questions.length}");
     }
+
+
+
 
     Map<String, dynamic> currentQuestion = Map<String, dynamic>.from(questions[currentQuestionIndex]);
 
@@ -1516,15 +1521,55 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
 
 
 
-        Html(
-          data: currentQuestion['question'] ?? '⚠️ null',
-              style: {
-                "body": Style(
-                  fontSize: FontSize(screenWidth * 0.04),
-                  fontWeight: FontWeight.normal,
-                  color: Color(0xD9FFFFFF),
-                  fontFamily: GoogleFonts.poppins().fontFamily,
-                ),
+        // Html(
+        //   data: currentQuestion['question'] ?? '⚠️ null',
+        //       style: {
+        //         "body": Style(
+        //           fontSize: FontSize(screenWidth * 0.04),
+        //           fontWeight: FontWeight.normal,
+        //           color: Color(0xD9FFFFFF),
+        //           fontFamily: GoogleFonts.poppins().fontFamily,
+        //         ),
+        //       },
+        //     ),
+
+            // --- DYNAMIC QUESTION RENDERING ---
+            Builder(
+              builder: (context) {
+                final List<String> mathChapters = ['Definite Integrals', 'Integration'];
+                // Extract chapter from the tags map of the current question
+                final String currentChapter = (currentQuestion['tags']?['chapter'] ?? '').toString();
+                final bool useMathTex = mathChapters.contains(currentChapter.trim());
+
+                return Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.symmetric(vertical: 10),
+                  child: useMathTex
+                      ? SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    physics: const BouncingScrollPhysics(),
+                    child: Math.tex(
+                      currentQuestion['question'] ?? '',
+                      textStyle: TextStyle(
+                        fontSize: screenWidth * 0.048,
+                        color: const Color(0xD9FFFFFF),
+                      ),
+                    ),
+                  )
+                      : Html(
+                    data: currentQuestion['question'] ?? '⚠️ null',
+                    style: {
+                      "body": Style(
+                        fontSize: FontSize(screenWidth * 0.04),
+                        fontWeight: FontWeight.normal,
+                        color: const Color(0xD9FFFFFF),
+                        fontFamily: GoogleFonts.poppins().fontFamily,
+                        margin: Margins.zero,
+                        padding: HtmlPaddings.zero,
+                      ),
+                    },
+                  ),
+                );
               },
             ),
 

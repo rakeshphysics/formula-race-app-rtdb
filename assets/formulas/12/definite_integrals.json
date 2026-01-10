@@ -327,7 +327,7 @@
     },
     {
       "id": "definite_integrals_qn_019",
-      "question": "\\text{If f is continuous on [a, b] then the mean value} \\text{of function f(x) between [a, b] is}",
+      "question": "\\text{The mean value } \\text{of function f(x) between [a, b] is}",
       "options": [
         "\\frac{1}{(b-a)} \\int_{a}^{b} f(x) \\, dx",
         "\\int_{a}^{b} f(x) \\, dx",
@@ -345,7 +345,7 @@
     },
     {
       "id": "definite_integrals_qn_020",
-      "question": "\\text{Functions } \\phi(x) \\text{ and } \\psi(x) \\text{ are defined and} \\text{differentiable for } x \\in (a, b) \\text{ and } f(t) \\text{is continuous, then } \\frac{d}{dx} \\left[ \\int_{\\phi(x)}^{\\psi(x)} f(t) \\, dt \\right] =",
+      "question": "\\frac{d}{dx} \\left[ \\int_{\\phi(x)}^{\\psi(x)} f(t) \\, dt \\right] =",
       "options": [
         "f[\\psi(x)] \\cdot \\psi'(x) + f[\\phi(x)] \\cdot \\phi'(x)",
         "f[\\psi(x)] \\cdot \\phi'(x) + f[\\phi(x)] \\cdot \\psi'(x)",

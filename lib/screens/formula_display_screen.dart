@@ -619,7 +619,7 @@ _active3DIndices.add(index);
                   width: double.infinity,
                   child: useMathTex
                       ? Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 4.0),
+                    padding: const EdgeInsets.only(top: 0, bottom: 4),
                     child: SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       physics: const BouncingScrollPhysics(),

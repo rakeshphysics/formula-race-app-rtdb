@@ -20,6 +20,7 @@ class IncorrectAnswer {
   final String correctAnswer;
   String tip;
   final String imagePath;
+  final Map<String, dynamic>? tags;
 
   IncorrectAnswer({
     required this.question,
@@ -27,6 +28,7 @@ class IncorrectAnswer {
     required this.correctAnswer,
     required this.tip,
     required this.imagePath,
+    this.tags,
   });
 
   Map<String, dynamic> toJson() => {
@@ -34,6 +36,9 @@ class IncorrectAnswer {
     'userAnswer': userAnswer,
     'correctAnswer': correctAnswer,
     'tip': tip,
+    'imagePath': imagePath,
+    'tags': tags,
+
   };
 
   factory IncorrectAnswer.fromJson(Map<String, dynamic> json) {
@@ -43,6 +48,7 @@ class IncorrectAnswer {
       correctAnswer: json['correctAnswer'],
       tip: json['tip'] ?? '',
       imagePath: json['imagePath'] ?? '',
+      tags: json['tags'],
     );
   }
 }

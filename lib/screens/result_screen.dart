@@ -62,9 +62,10 @@ class ResultScreen extends StatefulWidget {
   final String mode;
   final List<Map<String, dynamic>> responses;
   final String subject;
+  final String chapterName;
 
 
-  const ResultScreen({Key? key, required this.incorrectAnswers, required this.mode, required this.responses,this.subject = 'Physics',}) : super(key: key);
+  const ResultScreen({Key? key, required this.incorrectAnswers, required this.mode, required this.responses,this.subject = 'Physics',this.chapterName = '',}) : super(key: key);
   @override
   State<ResultScreen> createState() => _ResultScreenState();
 }
@@ -112,6 +113,7 @@ class _ResultScreenState extends State<ResultScreen> {
   Widget build(BuildContext context) {
 
     final screenWidth = MediaQuery.of(context).size.width;
+
     // Calculate score
     final int totalQuestions = ModalRoute.of(context)?.settings.arguments as int;
     final int score = totalQuestions - widget.incorrectAnswers.length;
@@ -235,13 +237,19 @@ class _ResultScreenState extends State<ResultScreen> {
                       itemCount: widget.incorrectAnswers.length,
                       physics: const BouncingScrollPhysics(),
                       itemBuilder: (context, index) {
+
                         final wrongAnswer = widget.incorrectAnswers[index];
+                        final String currentChapter = (wrongAnswer.tags?['chapter'] ?? '').toString();
+
+                        final List<String> mathChapters = ['Definite Integrals', 'Integration'];
+                        final bool useMathTex = mathChapters.contains(currentChapter.trim());
+
                         return Container(
                           margin:  EdgeInsets.symmetric(vertical:screenWidth * 0.02),
-                          padding: EdgeInsets.all(screenWidth * 0.02),
+                          padding: EdgeInsets.all(screenWidth * 0.035),
                           decoration: BoxDecoration(
                             color: Color(0xFF000000),
-                            borderRadius: BorderRadius.circular(12),
+                            borderRadius: BorderRadius.circular(4),
                             border: Border.all(
                               color: themeColor, // Border color
                               width: 0.8,            // Border thickness
@@ -315,7 +323,9 @@ class _ResultScreenState extends State<ResultScreen> {
                               //   ),
 
 
-                              if (wrongAnswer.imagePath.isNotEmpty)
+
+
+                        if (wrongAnswer.imagePath.isNotEmpty)
                                 Container(
                                   margin: const EdgeInsets.symmetric(vertical: 0),
                                   child: Center(
@@ -380,13 +390,41 @@ class _ResultScreenState extends State<ResultScreen> {
                                   ),
                                 ),
 
-                              Html(
+                              // Html(
+                              //   data: "<b>Q:</b> ${wrongAnswer.question}",
+                              //   style: {
+                              //     "body": Style(
+                              //       fontSize: FontSize(screenWidth * 0.037),
+                              //       color: Color(0xD9FFFFFF),
+                              //       fontFamily: GoogleFonts.poppins().fontFamily,
+                              //     ),
+                              //   },
+                              // ),
+
+
+                              useMathTex
+                                  ? Padding(
+                                padding: const EdgeInsets.symmetric(vertical: 8.0),
+                                child: SingleChildScrollView(
+                                  scrollDirection: Axis.horizontal,
+                                  physics: const BouncingScrollPhysics(),
+                                  child: Math.tex(
+                                    '\\text{Q: } ${wrongAnswer.question}',
+                                    textStyle: TextStyle(
+                                      fontSize: screenWidth * 0.043,
+                                      color: const Color(0xD9FFFFFF),
+                                    ),
+                                  ),
+                                ),
+                              )
+                                  : Html(
                                 data: "<b>Q:</b> ${wrongAnswer.question}",
                                 style: {
                                   "body": Style(
                                     fontSize: FontSize(screenWidth * 0.037),
-                                    color: Color(0xD9FFFFFF),
+                                    color: const Color(0xD9FFFFFF),
                                     fontFamily: GoogleFonts.poppins().fontFamily,
+                                    margin: Margins.zero,
                                   ),
                                 },
                               ),
@@ -394,11 +432,11 @@ class _ResultScreenState extends State<ResultScreen> {
 
 
 
-                              // SizedBox(height: screenWidth*0.02),
+                               SizedBox(height: screenWidth*0.03),
                               Text(
                                 'Your Answer:',
                                 style: GoogleFonts.poppins(
-                                  color: Color(0xD9FFFFFF),
+                                  color: Color(0xCCFFFFFF),
                                   fontSize: screenWidth*0.037,
                                   fontWeight: FontWeight.normal,
                                 ),
@@ -422,7 +460,7 @@ class _ResultScreenState extends State<ResultScreen> {
                               Text(
                                 'Correct Answer:',
                                 style: GoogleFonts.poppins(
-                                  color: Colors.white,
+                                  color: Color(0xCCFFFFFF),
                                   fontSize: screenWidth*0.037,
                                   fontWeight: FontWeight.normal,
                                 ),
