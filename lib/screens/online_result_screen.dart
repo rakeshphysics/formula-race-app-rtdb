@@ -268,11 +268,11 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                     switch (qa.scenario) {
                       case 'you_answered_first_correctly':
                         userStatus = 'You answered First !';
-                        userStatusColor = Colors.greenAccent;
+                        userStatusColor = Color(0xD9A4FF9D);
                         break;
                       case 'opponent_answered_first_correctly':
                         userStatus = 'Opponent answered First';
-                        userStatusColor = Colors.redAccent;
+                        userStatusColor = Color(0xD9FF5454);
                         break;
                       case 'both_wrong_or_skipped':
                         userStatus = 'Both were incorrect or skipped.';
@@ -284,6 +284,13 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                         userStatus = 'Outcome pending or unknown.'; // Should not typically be seen
                         userStatusColor = Colors.white;
                     }
+
+                    //  ADD MATHTEX FOR QUESTIONS HERE
+
+                    final List<String> mathChapters = ['Definite Integrals', 'Integration'];
+// Extract chapter from the tags map inside the qa object
+                    final String currentChapter = (qa.tags?['chapter'] ?? '').toString();
+                    final bool useMathTex = mathChapters.contains(currentChapter.trim());
 
 
                     return Container(
@@ -459,11 +466,31 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
                           //   },
                           // ),
 
-                    final List<String> mathChapters = ['Definite Integrals', 'Integration'];
-                    // Extract chapter from the tags map inside the qa object
-                    final String currentChapter = (qa.tags?['chapter'] ?? '').toString();
-                    final bool useMathTex = mathChapters.contains(currentChapter.trim());
-                          // SizedBox(height: screenWidth * 0.01),
+
+                          useMathTex
+                              ? SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            physics: const BouncingScrollPhysics(),
+                            child: Math.tex(
+                              '\\text{Q: } ${qa.question}',
+                              textStyle: TextStyle(
+                                fontSize: screenWidth * 0.043,
+                                color: const Color(0xD9FFFFFF),
+                              ),
+                            ),
+                          )
+                              : Html(
+                            data: "<b>Q:</b> ${qa.question}",
+                            style: {
+                              "body": Style(
+                                fontSize: FontSize(screenWidth * 0.037),
+                                color: const Color(0xD9FFFFFF),
+                                fontFamily: GoogleFonts.poppins().fontFamily,
+                                margin: Margins.zero,
+                                padding: HtmlPaddings.zero,
+                              ),
+                            },
+                          ),
 
                           // Your Answer
                           // Display Your Answer and Correct Answer in a Row

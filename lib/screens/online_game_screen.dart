@@ -914,6 +914,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
               opponentAnswer: '', // Will be filled below
               tip: questions[currentQuestionIndex]['tip'],
               scenario: '', // Will be filled below
+              tags: questions[currentQuestionIndex]['tags'],
             ));
           }
         }
@@ -927,6 +928,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           opponentAnswer: opponentSelectedAnswer,
           tip: onlineResponses[currentQuestionIndex].tip,
           scenario: currentScenario,
+          tags: questions[currentQuestionIndex]['tags'],
         );
 
 
@@ -1023,6 +1025,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
           opponentAnswer: '', // Will be updated by listener
           tip: questions[currentQuestionIndex]['tip'],
           scenario: 'pending', // Initial state
+          tags: questions[currentQuestionIndex]['tags'],
         ));
       }
     }
@@ -1036,6 +1039,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
       opponentAnswer: onlineResponses[currentQuestionIndex].opponentAnswer, // Keep existing opponent answer if any
       tip: onlineResponses[currentQuestionIndex].tip,
       scenario: onlineResponses[currentQuestionIndex].scenario, // Keep existing scenario
+      tags: questions[currentQuestionIndex]['tags'],
     );
 
 

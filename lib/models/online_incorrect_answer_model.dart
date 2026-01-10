@@ -7,7 +7,8 @@ class OnlineIncorrectAnswer {
   final String userAnswer;
   final String opponentAnswer; // Could be correct or incorrect
   final String? tip;
-  final String scenario; // e.g., 'user_wrong_opponent_wrong', 'user_wrong_opponent_correct', 'user_skipped', 'opponent_answered_first'
+  final String scenario;
+  final Map<String, dynamic>? tags;// e.g., 'user_wrong_opponent_wrong', 'user_wrong_opponent_correct', 'user_skipped', 'opponent_answered_first'
 
   OnlineIncorrectAnswer({
     required this.question,
@@ -17,5 +18,6 @@ class OnlineIncorrectAnswer {
     required this.opponentAnswer,
     this.tip,
     required this.scenario,
+    this.tags
   });
 }

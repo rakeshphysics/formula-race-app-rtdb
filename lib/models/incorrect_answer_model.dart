@@ -70,6 +70,9 @@ class IncorrectAnswerManager {
         'question': question['question'],
         'userAnswer': selectedAnswer,
         'correctAnswer': question['answer'],
+        'tip': question['tip'] ?? '',
+        'imagePath': question['image'] ?? '',
+        'tags': question['tags'],
       });
       storedList.add(newEntry);
       await prefs.setStringList(_key, storedList);
