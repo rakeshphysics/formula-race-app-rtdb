@@ -52,6 +52,7 @@ void main() {
     '${baseDir}11/chemical_equilibrium.json',
     '${baseDir}11/ellipse.json',
     '${baseDir}12/definite_integrals.json',
+    '${baseDir}12/indefinite_integrals.json',
   ];
 
   final encrypter = Encrypter(AES(key));
