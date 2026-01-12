@@ -1540,7 +1540,7 @@ class _OnlineGameScreenState extends State<OnlineGameScreen> with SingleTickerPr
             // --- DYNAMIC QUESTION RENDERING ---
             Builder(
               builder: (context) {
-                final List<String> mathChapters = ['Definite Integrals', 'Integration'];
+                final List<String> mathChapters = ['Definite Integrals', 'Indefinite Integrals'];
                 // Extract chapter from the tags map of the current question
                 final String currentChapter = (currentQuestion['tags']?['chapter'] ?? '').toString();
                 final bool useMathTex = mathChapters.contains(currentChapter.trim());

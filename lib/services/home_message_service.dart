@@ -910,7 +910,8 @@ class HomeMessageService {
       "Elasticity", "Fluids", "Thermodynamics", "Kinetic Theory", "SHM", "Waves",
       "Electrostatics", "Capacitors", "Current Electricity", "Magnetism", "EMI",
       "AC", "EM Waves", "Ray Optics", "Wave Optics", "Dual Nature of Light",
-      "Atoms", "Nuclei", "X Rays", "Semiconductors", "Vectors"
+      "Atoms", "Nuclei", "X Rays", "Semiconductors", "Vectors","Solid State","Chemical Equilibrium",
+      "3D Geometry","Ellipse", "Definite Integrals","Indefinite Integrals"
     ];
 
     // 2. Call the database function to get performance per chapter.
@@ -1151,6 +1152,13 @@ class HomeMessageService {
         "Studying alone is boring! Challenge your friends using 'Play Friend' and show 'em who's boss. 🏆",
         "Why practice alone? Use 'Play Friend' to make things more exciting. Loser treats, maybe? 😉",
         "Make revision fun! Grab a friend and battle it out in 'Play Friend'. Game on! 🎮",
+        "New: Play with friends anywhere! Go to 'Host Match', select your portion, and share the PIN or QR code. 🌍",
+        "Distance is no longer an excuse! Share your Game PIN with study buddies across the world and start the race. 📍",
+        "Got a rival in another city? Send them your Game PIN and settle the score in real-time! ⚔️",
+        "Play Friend now works globally! Generate a PIN, send it on WhatsApp, and let the battle begin. 🏁",
+        "Your friend is just a PIN away. Enter the same code in 'Join Match' and see who's the real master! 🧠",
+        "No more sitting together to play. Use 'Host Match' to get a PIN and match with anyone, anywhere! 🛰️",
+        "Challenge accepted? Host a match, pick your favorite chapters, and share the PIN to invite your opponent. ✉️",
       ],
       'mistakes': [
         "Every mistake you make is saved in 'My Mistakes'. It's your own personal 'what-not-to-do' list! 😂",

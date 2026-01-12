@@ -318,7 +318,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       },
       'Maths': {
         '11': ['Ellipse'],              // Add more chapters here
-        '12': ['3D Geometry','Definite Integrals'],          // Add more chapters here
+        '12': ['3D Geometry','Definite Integrals','Indefinite Integrals'],          // Add more chapters here
       },
     };
 
@@ -439,6 +439,13 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       questions = finalQuestions;
       currentIndex = 0;
     });
+
+    // print('--- GAME STARTING: QUESTION DIFFICULTY ORDER ---');
+    // for (int i = 0; i < questions.length; i++) {
+    //   String diff = questions[i]['tags']?['difficulty'] ?? 'N/A';
+    //   print('Question ${i + 1}: $diff');
+    // }
+    // print('-----------------------------------------------');
 
     if (questions.isNotEmpty) {
       _progressController.reset();
@@ -905,7 +912,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     }
 
     final question = questions[currentIndex];
-    final List<String> mathChapters = ['Definite Integrals', 'Integration'];
+    final List<String> mathChapters = ['Definite Integrals', 'Indefinite Integrals'];
     final List<String> mathSubjects = ['Maths'];
 
     String currentQnChapter = (question['tags']?['chapter'] ?? '').toString();

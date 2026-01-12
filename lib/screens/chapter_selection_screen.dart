@@ -312,7 +312,8 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
     'Maths': [
       '3D Geometry',
       'Ellipse',
-      'Definite Integrals'
+      'Definite Integrals',
+      'Indefinite Integrals'
       // Add more Maths chapters here as needed
     ],
   };

@@ -505,7 +505,7 @@ _active3DIndices.add(index);
     final screenWidth = MediaQuery.of(context).size.width;
     final themeColor = _getSubjectColor();
 
-    final List<String> mathChapters = ['Definite Integrals', 'Integration'];
+    final List<String> mathChapters = ['Definite Integrals', 'Indefinite Integrals'];
     final List<String> mathSubjects = ['Maths', 'Physics'];
 
 // 2. Check the condition (using trim() for safety)

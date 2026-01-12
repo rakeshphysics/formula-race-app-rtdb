@@ -1824,24 +1824,24 @@
       "image": null,
       "tip": null
     },
-    {
-      "id": "definite_integrals_qn_012",
-      "question": "\\text{If f(x) is periodic with period T, then } \\int_{a}^{a+nT} \\text{f(x) dx = } \\text{ (n } \\in \\text{ I)}",
-      "options": [
-        "\\frac{\\int_{0}^{T} \\text{f(x) dx}}{\\text{an}}",
-        "\\text{n}^2 \\int_{0}^{T} \\text{f(x) dx}",
-        "\\int_{0}^{T} \\text{f(x) dx}",
-        "\\text{n} \\int_{0}^{T} \\text{f(x) dx}"
-      ],
-      "answer": "\\text{n} \\int_{0}^{T} \\text{f(x) dx}",
-      "tags": {
-        "chapter": "Definite Integrals",
-        "difficulty": "easy",
-        "class": "12"
-      },
-      "image": null,
-      "tip": null
+  {
+    "id": "definite_integrals_qn_012",
+    "question": "\\lim_{n \\to \\infty} \\sum \\frac{1}{n} f\\left(\\frac{r}{n}\\right) \\text{ can be expressed as } \\int_{0}^{1} f(x) dx \\text{ by taking}",
+    "options": [
+      "\\frac{1}{n} = dx, \\frac{r}{n} = x",
+      "n = x, r = dx",
+      "\\frac{1}{n} = x, \\frac{r}{n} = dx",
+      "n = dx, r = x"
+    ],
+    "answer": "\\frac{1}{n} = dx, \\frac{r}{n} = x",
+    "tags": {
+      "chapter": "Definite Integrals",
+      "difficulty": "easy",
+      "class": "12"
     },
+    "image": null,
+    "tip": "This logic can be used to solve the JEE Adv 2019 Capacitors Qn"
+  },
     {
       "id": "definite_integrals_qn_013",
       "question": "\\text{If f(x) is periodic with period T, then } \\int_{a+nT}^{a+mT} \\text{f(x) dx = } \\text{ (n, m } \\in \\text{ I)}",
@@ -1986,7 +1986,550 @@
       },
       "image": null,
       "tip": null
+    },
+
+    {
+      "id": "indefinite_integrals_qn_001",
+      "question": "\\int x^n dx = \\quad (n \\neq -1)",
+      "options": [
+        "\\frac{x^{n+2}}{n+1} + c",
+        "\\frac{x^{n+1}}{n+1} + c",
+        "\\frac{x^{n-1}}{n-1} + c",
+        "x^n + c"
+      ],
+      "answer": "\\frac{x^{n+1}}{n+1} + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_002",
+      "question": "\\int \\frac{1}{x} dx =",
+      "options": [
+        "\\log x + c",
+        "\\frac{x^{n+1}}{n+1} + c",
+        "\\ln x + c",
+        "x^n + c"
+      ],
+      "answer": "\\ln x + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_003",
+      "question": "\\int e^x dx =",
+      "options": [
+        "\\log x + c",
+        "e^x + c",
+        "\\ln x + c",
+        "x^n + c"
+      ],
+      "answer": "e^x + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_004",
+      "question": "\\int \\sin x dx =",
+      "options": [
+        "\\sin x + c",
+        "-\\sin x + c",
+        "\\cos x + c",
+        "-\\cos x + c"
+      ],
+      "answer": "-\\cos x + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_005",
+      "question": "\\int \\cos x dx =",
+      "options": [
+        "\\sin x + c",
+        "-\\sin x + c",
+        "\\cos x + c",
+        "-\\cos x + c"
+      ],
+      "answer": "\\sin x + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_006",
+      "question": "\\int \\sec^2 x dx =",
+      "options": [
+        "\\tan x + c",
+        "-\\cot x + c",
+        "-\\tan x + c",
+        "\\cot x + c"
+      ],
+      "answer": "\\tan x + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_007",
+      "question": "\\int \\csc^2 x dx =",
+      "options": [
+        "\\tan x + c",
+        "-\\cot x + c",
+        "-\\tan x + c",
+        "\\cot x + c"
+      ],
+      "answer": "-\\cot x + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+
+    {
+      "id": "indefinite_integrals_qn_008",
+      "question": "\\int \\sec x \\tan x dx =",
+      "options": [
+        "\\sin x + c",
+        "-\\sin x + c",
+        "\\sec x + c",
+        "-\\csc x + c"
+      ],
+      "answer": "\\sec x + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_009",
+      "question": "\\int \\csc x \\cot x dx =",
+      "options": [
+        "-\\sec x + c",
+        "\\csc x + c",
+        "\\sec x + c",
+        "-\\csc x + c"
+      ],
+      "answer": "-\\csc x + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_010",
+      "question": "\\int \\sec x dx =",
+      "options": [
+        "\\ln |\\sec x - \\tan x| + c",
+        "\\ln |\\sec x + \\tan x| + c",
+        "\\ln |\\tan (\\frac{\\pi}{4} - \\frac{x}{2})| + c",
+        "\\ln |\\tan (\\frac{\\pi}{2} + \\frac{x}{4})| + c"
+      ],
+      "answer": "\\ln |\\sec x + \\tan x| + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_011",
+      "question": "\\frac{d}{dx} \\left\\{ \\int f(x) dx \\right\\} =",
+      "options": [
+        "f'(x) + c",
+        "f'(x)",
+        "f(x) + c",
+        "f(x)"
+      ],
+      "answer": "f(x)",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_012",
+      "question": "\\int k \\cdot f(x) dx =",
+      "options": [
+        "\\int f(kx) dx",
+        "k \\cdot \\int f(x) dx",
+        "k \\frac{d}{dx} \\{ f(x) \\}",
+        "\\int f(x) dx"
+      ],
+      "answer": "k \\cdot \\int f(x) dx",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_013",
+      "question": "\\int \\frac{1}{ax + b} dx =",
+      "options": [
+        "\\frac{1}{a} \\ln |ax - b| + c",
+        "\\frac{1}{a} \\log |ax + b| + c",
+        "\\frac{1}{a} \\ln |ax + b| + c",
+        "a \\log (ax - b) + c"
+      ],
+      "answer": "\\frac{1}{a} \\ln |ax + b| + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_014",
+      "question": "\\text{Substitution for function } (a^2 + x^2) \\text{ to integrate is}",
+      "options": [
+        "x = a \\tan \\theta",
+        "x = a \\sin \\theta",
+        "x = a \\sec \\theta",
+        "x = a \\cos \\theta"
+      ],
+      "answer": "x = a \\tan \\theta",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_015",
+      "question": "\\int \\cot x dx =",
+      "options": [
+        "\\ln |\\csc x| + c",
+        "\\csc x + c",
+        "\\ln |\\sin x| + c",
+        "\\ln |\\cos x| + c"
+      ],
+      "answer": "\\ln |\\sin x| + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_016",
+      "question": "\\int \\tan x dx =",
+      "options": [
+        "\\ln |\\sec x| + c",
+        "\\sec x + c",
+        "\\ln |\\sin x| + c",
+        "\\ln |\\cos x| + c"
+      ],
+      "answer": "\\ln |\\sec x| + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_017",
+      "question": "\\int \\frac{1}{\\sqrt{a^2 - x^2}} dx =",
+      "options": [
+        "\\frac{1}{a} \\cos^{-1} \\left( \\frac{x}{a} \\right) + c",
+        "\\frac{1}{a} \\sin^{-1} \\left( \\frac{x}{a} \\right) + c",
+        "\\cos^{-1} \\left( \\frac{x}{a} \\right) + c",
+        "\\sin^{-1} \\left( \\frac{x}{a} \\right) + c"
+      ],
+      "answer": "\\sin^{-1} \\left( \\frac{x}{a} \\right) + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_018",
+      "question": "\\int \\frac{1}{a^2 + x^2} dx =",
+      "options": [
+        "\\frac{1}{a} \\cot^{-1} \\left( \\frac{x}{a} \\right) + c",
+        "\\frac{1}{a} \\tan^{-1} \\left( \\frac{x}{a} \\right) + c",
+        "\\cot^{-1} \\left( \\frac{x}{a} \\right) + c",
+        "\\tan^{-1} \\left( \\frac{x}{a} \\right) + c"
+      ],
+      "answer": "\\frac{1}{a} \\tan^{-1} \\left( \\frac{x}{a} \\right) + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_019",
+      "question": "\\int \\frac{1}{x\\sqrt{x^2 - a^2}} dx =",
+      "options": [
+        "\\frac{1}{a} \\csc^{-1} \\left( \\frac{x}{a} \\right) + c",
+        "\\frac{1}{a} \\sec^{-1} \\left( \\frac{x}{a} \\right) + c",
+        "\\csc^{-1} \\left( \\frac{x}{a} \\right) + c",
+        "\\sec^{-1} \\left( \\frac{x}{a} \\right) + c"
+      ],
+      "answer": "\\frac{1}{a} \\sec^{-1} \\left( \\frac{x}{a} \\right) + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+
+    {
+      "id": "indefinite_integrals_qn_020",
+      "question": "\\int \\csc x dx =",
+      "options": [
+        "\\ln |\\csc x - \\cot x| + c",
+        "\\ln |\\csc x + \\cot x| + c",
+        "\\ln |\\tan (\\frac{\\pi}{4} - \\frac{x}{2})| + c",
+        "\\ln |\\tan (\\frac{x}{4})| + c"
+      ],
+      "answer": "\\ln |\\csc x - \\cot x| + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_021",
+      "question": "\\text{Substitution for function } (a^2 - x^2) \\text{ to integrate is}",
+      "options": [
+        "x = a \\tan \\theta",
+        "x = a \\sin \\theta",
+        "x = a \\sec \\theta",
+        "x = a \\cos \\theta"
+      ],
+      "answer": "x = a \\sin \\theta",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_022",
+      "question": "\\text{Substitution for function } \\frac{1}{\\sqrt{x^2 - a^2}} \\text{to integrate is}",
+      "options": [
+        "x = a \\tan \\theta",
+        "x = a \\sin \\theta",
+        "x = a \\sec \\theta",
+        "x = a \\cos \\theta"
+      ],
+      "answer": "x = a \\sec \\theta",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_023",
+      "question": "\\int \\frac{1}{a^2 - x^2} dx =",
+      "options": [
+        "\\frac{1}{a} \\cot^{-1} \\left( \\frac{x}{a} \\right) + c",
+        "\\frac{1}{a} \\tan^{-1} \\left( \\frac{x}{a} \\right) + c",
+        "\\frac{1}{2a} \\ln \\left| \\frac{a+x}{a-x} \\right| + c",
+        "\\frac{1}{2a} \\ln \\left| \\frac{x-a}{x+a} \\right| + c"
+      ],
+      "answer": "\\frac{1}{2a} \\ln \\left| \\frac{a+x}{a-x} \\right| + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_024",
+      "question": "\\int \\frac{1}{\\sqrt{x^2 - a^2}} dx =",
+      "options": [
+        "\\ln |x + \\sqrt{x^2 - a^2}| + c",
+        "\\ln |x + \\sqrt{x^2 + a^2}| + c",
+        "\\cos^{-1} \\left( \\frac{x}{a} \\right) + c",
+        "\\sin^{-1} \\left( \\frac{x}{a} \\right) + c"
+      ],
+      "answer": "\\ln |x + \\sqrt{x^2 - a^2}| + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+
+    {
+      "id": "indefinite_integrals_qn_025",
+      "question": "\\int f(x) \\cdot g(x) dx =",
+      "options": [
+        "f(x) \\int g(x) dx + \\int \\{f'(x) \\int g(x) dx\\} dx",
+        "f(x) \\int g(x) dx + \\int \\{f(x) \\int g(x) dx\\} dx",
+        "f(x) \\int g(x) dx - \\int \\{f'(x) \\int g(x) dx\\} dx",
+        "f(x) \\int g(x) dx - \\int \\{f(x) \\int g(x) dx\\} dx"
+      ],
+      "answer": "f(x) \\int g(x) dx - \\int \\{f'(x) \\int g(x) dx\\} dx",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": "Preference order for first function, use ILATE (Inverse trigonometric, Logarithmic, Algebric, Trignometric, Exponential)"
+    },
+    {
+      "id": "indefinite_integrals_qn_026",
+      "question": "\\int \\sinh x dx =",
+      "options": [
+        "\\tanh x + c",
+        "-\\text{sech } x + c",
+        "-\\cosh x + c",
+        "\\cosh x + c"
+      ],
+      "answer": "\\cosh x + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_027",
+      "question": "\\int \\cosh x dx =",
+      "options": [
+        "\\sinh x + c",
+        "-\\text{sech } x + c",
+        "-\\sinh x + c",
+        "\\cosh x + c"
+      ],
+      "answer": "\\sinh x + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_028",
+      "question": "\\int \\text{sech}^2 x dx =",
+      "options": [
+        "\\sinh x + c",
+        "-\\text{sech } x + c",
+        "\\tanh x + c",
+        "\\coth x + c"
+      ],
+      "answer": "\\tanh x + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "indefinite_integrals_qn_029",
+      "question": "\\int \\text{sech } x \\tanh x dx =",
+      "options": [
+        "\\sinh x + c",
+        "-\\text{sech } x + c",
+        "\\tanh x + c",
+        "\\coth x + c"
+      ],
+      "answer": "-\\text{sech } x + c",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+
+    {
+      "id": "indefinite_integrals_qn_030",
+      "question": "\\int x e^{ax} \\sin(bx + c) dx",
+      "options": [
+        "\\frac{xe^{ax}}{a^2+b^2} [a \\sin(bx + c) - b \\cos(bx + c)] + C",
+        "\\frac{xe^{ax}}{(a^2+b^2)^2} [(a^2 - b^2)^2 \\sin(bx + c) - 2ab \\cos(bx + c)] + C",
+        "\\frac{xe^{ax}}{a^2+b^2} [a \\sin(bx + c) - b \\cos(bx + c)] - \\frac{e^{ax}}{(a^2+b^2)^2} [(a^2 - b^2) \\sin(bx + c) - 2ab \\cos(bx + c)] + C",
+        "\\frac{xe^{ax}}{a^2+b^2} [a \\sin(bx + c) - b \\cos(bx + c)] + \\frac{e^{ax}}{2(a^2+b^2)^2} [(a^2 - b^2)^2 \\sin(bx + c) + 2ab \\cos(bx + c)] + C"
+      ],
+      "answer": "\\frac{xe^{ax}}{a^2+b^2} [a \\sin(bx + c) - b \\cos(bx + c)] - \\frac{e^{ax}}{(a^2+b^2)^2} [(a^2 - b^2) \\sin(bx + c) - 2ab \\cos(bx + c)] + C",
+      "tags": {
+        "chapter": "Indefinite Integrals",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": null,
+      "tip": "Apply integration by parts twice or faster to use the standard formula for the integral of e^(ax) * sin(bx+c) dx"
     }
-
-
 ]

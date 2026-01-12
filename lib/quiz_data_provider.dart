@@ -51,6 +51,7 @@ class QuizDataProvider extends ChangeNotifier {
       'assets/formulas/11/ellipse.aes',
       'assets/formulas/12/definite_integrals.aes',
       'assets/formulas/12/indefinite_integrals.aes',
+      'assets/formulas/12/electrochemistry.aes',
     ];
 
     for (var filePath in encryptedFiles) {

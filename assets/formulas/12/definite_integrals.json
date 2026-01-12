@@ -200,21 +200,21 @@
   },
   {
     "id": "definite_integrals_qn_012",
-    "question": "\\text{If f(x) is periodic with period T, then } \\int_{a}^{a+nT} \\text{f(x) dx = } \\text{ (n } \\in \\text{ I)}",
+    "question": "\\lim_{n \\to \\infty} \\sum \\frac{1}{n} f\\left(\\frac{r}{n}\\right) \\text{ can be expressed as } \\int_{0}^{1} f(x) dx \\text{ by taking}",
     "options": [
-      "\\frac{\\int_{0}^{T} \\text{f(x) dx}}{\\text{an}}",
-      "\\text{n}^2 \\int_{0}^{T} \\text{f(x) dx}",
-      "\\int_{0}^{T} \\text{f(x) dx}",
-      "\\text{n} \\int_{0}^{T} \\text{f(x) dx}"
+      "\\frac{1}{n} = dx, \\frac{r}{n} = x",
+      "n = x, r = dx",
+      "\\frac{1}{n} = x, \\frac{r}{n} = dx",
+      "n = dx, r = x"
     ],
-    "answer": "\\text{n} \\int_{0}^{T} \\text{f(x) dx}",
+    "answer": "\\frac{1}{n} = dx, \\frac{r}{n} = x",
     "tags": {
       "chapter": "Definite Integrals",
       "difficulty": "easy",
       "class": "12"
     },
     "image": null,
-    "tip": null
+    "tip": "This logic can be used to solve the JEE Adv 2019 Capacitors Qn"
   },
   {
     "id": "definite_integrals_qn_013",

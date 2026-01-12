@@ -287,7 +287,7 @@ class _OnlineResultScreenState extends State<OnlineResultScreen> {
 
                     //  ADD MATHTEX FOR QUESTIONS HERE
 
-                    final List<String> mathChapters = ['Definite Integrals', 'Integration'];
+                    final List<String> mathChapters = ['Definite Integrals', 'Indefinite Integrals'];
 // Extract chapter from the tags map inside the qa object
                     final String currentChapter = (qa.tags?['chapter'] ?? '').toString();
                     final bool useMathTex = mathChapters.contains(currentChapter.trim());

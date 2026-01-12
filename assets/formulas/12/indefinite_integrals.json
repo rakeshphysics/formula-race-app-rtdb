@@ -381,7 +381,7 @@
     },
     {
       "id": "indefinite_integrals_qn_022",
-      "question": "\\text{Substitution for function } \\frac{1}{\\sqrt{x^2 - a^2}} \\\\ \\text{to integrate is}",
+      "question": "\\text{Substitution for function } \\frac{1}{\\sqrt{x^2 - a^2}} \\text{to integrate is}",
       "options": [
         "x = a \\tan \\theta",
         "x = a \\sin \\theta",
