@@ -1,0 +1,728 @@
+[
+  {
+    "id": "parabola_qn_001",
+    "question": "The second degree equation ax<sup>2</sup> + 2hxy + by<sup>2</sup> + 2gx + 2fy + c = 0 represents a pair of straight lines if",
+    "options": [
+      "\\Delta = \\begin{vmatrix} a & h & g \\\\ h & b & f \\\\ g & f & c \\end{vmatrix} = 0",
+      "\\Delta = 0, a + b = 0",
+      "\\Delta = 0, h^2 = ab",
+      "\\Delta = 0, h^2 < ab"
+    ],
+    "answer": "\\Delta = \\begin{vmatrix} a & h & g \\\\ h & b & f \\\\ g & f & c \\end{vmatrix} = 0",
+    "tags": {
+      "chapter": "Parabola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/parabola/parabola_qn_001.svg",
+    "tip": null
+  },
+  {
+    "id": "parabola_qn_002",
+    "question": "The second degree equation ax<sup>2</sup> + 2hxy + by<sup>2</sup> + 2gx + 2fy + c = 0 represents a pair of parallel (coincident) straight lines if",
+    "options": [
+      "\\Delta = \\begin{vmatrix} a & h & g \\\\ h & b & f \\\\ g & f & c \\end{vmatrix} = 0",
+      "\\Delta = 0, a + b = 0",
+      "\\Delta = 0, h^2 = ab",
+      "\\Delta = 0, h^2 < ab"
+    ],
+    "answer": "\\Delta = 0, h^2 = ab",
+    "tags": {
+      "chapter": "Parabola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/parabola/parabola_qn_002.svg",
+    "tip": null
+  },
+  {
+    "id": "parabola_qn_003",
+    "question": "The second degree equation ax<sup>2</sup> + 2hxy + by<sup>2</sup> + 2gx + 2fy + c = 0 represents a pair of perpendicular straight lines if",
+    "options": [
+      "\\Delta = \\begin{vmatrix} a & h & g \\\\ h & b & f \\\\ g & f & c \\end{vmatrix} = 0",
+      "\\Delta = 0, a + b = 0",
+      "\\Delta = 0, h^2 = ab",
+      "\\Delta = 0, h^2 < ab"
+    ],
+    "answer": "\\Delta = 0, a + b = 0",
+    "tags": {
+      "chapter": "Parabola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image":"assets/images/11th/parabola/parabola_qn_003.svg",
+    "tip": null
+  },
+  {
+    "id": "parabola_qn_004",
+    "question": "The second degree equation ax<sup>2</sup> + 2hxy + by<sup>2</sup> + 2gx + 2fy + c = 0 represents a point if",
+    "options": [
+      "\\Delta = \\begin{vmatrix} a & h & g \\\\ h & b & f \\\\ g & f & c \\end{vmatrix} = 0",
+      "\\Delta = 0, a + b = 0",
+      "\\Delta = 0, h^2 = ab",
+      "\\Delta = 0, h^2 < ab"
+    ],
+    "answer": "\\Delta = 0, h^2 < ab",
+    "tags": {
+      "chapter": "Parabola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/parabola/parabola_qn_004.svg",
+    "tip": null
+  },
+  {
+    "id": "parabola_qn_005",
+    "question": "The second degree equation ax<sup>2</sup> + 2hxy + by<sup>2</sup> + 2gx + 2fy + c = 0 represents a circle if",
+    "options": [
+      "a = b \\neq 0, h = 0, \\Delta \\neq 0",
+      "\\Delta \\neq 0, h^2 > ab",
+      "\\Delta \\neq 0, h^2 = ab",
+      "\\Delta \\neq 0, h^2 < ab"
+    ],
+    "answer": "a = b \\neq 0, h = 0, \\Delta \\neq 0",
+    "tags": {
+      "chapter": "Parabola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/parabola/parabola_qn_005.svg",
+    "tip": null
+  },
+  {
+    "id": "parabola_qn_006",
+    "question": "The second degree equation ax<sup>2</sup> + 2hxy + by<sup>2</sup> + 2gx + 2fy + c = 0 represents a parabola if",
+    "options": [
+      "a = b \\neq 0, h = 0, \\Delta \\neq 0",
+      "\\Delta \\neq 0, h^2 > ab",
+      "\\Delta \\neq 0, h^2 = ab",
+      "\\Delta \\neq 0, h^2 < ab"
+    ],
+    "answer": "\\Delta \\neq 0, h^2 = ab",
+    "tags": {
+      "chapter": "Parabola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/parabola/parabola_qn_006.svg",
+    "tip": null
+  },
+
+    {
+      "id": "parabola_qn_007",
+      "question": "The second degree equation ax<sup>2</sup> + 2hxy + by<sup>2</sup> + 2gx + 2fy + c = 0 represents an ellipse if",
+      "options": [
+        "a = b \\neq 0, h = 0, \\Delta \\neq 0",
+        "\\Delta \\neq 0, h^2 > ab",
+        "\\Delta \\neq 0, h^2 = ab",
+        "\\Delta \\neq 0, h^2 < ab"
+      ],
+      "answer": "\\Delta \\neq 0, h^2 < ab",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_007.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_008",
+      "question": "The second degree equation ax<sup>2</sup> + 2hxy + by<sup>2</sup> + 2gx + 2fy + c = 0 represents a hyperbola if",
+      "options": [
+        "a = b \\neq 0, h = 0, \\Delta \\neq 0",
+        "\\Delta \\neq 0, h^2 > ab",
+        "\\Delta \\neq 0, h^2 = ab",
+        "\\Delta \\neq 0, h^2 < ab"
+      ],
+      "answer": "\\Delta \\neq 0, h^2 > ab",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_008.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_009",
+      "question": "The second degree equation ax<sup>2</sup> + 2hxy + by<sup>2</sup> + 2gx + 2fy + c = 0 represents a rectangular hyperbola if",
+      "options": [
+        "a = b \\neq 0, h = 0, \\Delta \\neq 0",
+        "\\Delta \\neq 0, h^2 > ab, a + b = 0",
+        "\\Delta \\neq 0, h^2 = ab",
+        "\\Delta \\neq 0, h^2 < ab"
+      ],
+      "answer": "\\Delta \\neq 0, h^2 > ab, a + b = 0",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_009.svg",
+      "tip": null
+    },
+
+    {
+      "id": "parabola_qn_010",
+      "question": "The combined equation of pair of tangents drawn from a point (x<sub>1</sub>, y<sub>1</sub>) to the parabola y<sup>2</sup> = 4ax is given by",
+      "options": [
+        "(y^2 - 4ax) = (y_1^2 - 4ax_1)",
+        "(y^2 - 4ax) = [yy_1 - 2a(x + x_1)]",
+        "(y^2 - 4ax)(y_1^2 - 4ax_1) = [yy_1 - 2a(x + x_1)]^2",
+        "(y^2 - 4ax) + (y_1^2 - 4ax_1) = 0"
+      ],
+      "answer": "(y^2 - 4ax)(y_1^2 - 4ax_1) = [yy_1 - 2a(x + x_1)]^2",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_010.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_011",
+      "question": "The vertex of parabola y<sup>2</sup> = 4ax is at",
+      "options": [
+        "(0,0)",
+        "(a, 0)",
+        "(-a, 0)",
+        "(0, a)"
+      ],
+      "answer": "(0,0)",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_011.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_012",
+      "question": "The Focus of parabola y<sup>2</sup> = 4ax is at",
+      "options": [
+        "(0,0)",
+        "(a, 0)",
+        "(-a, 0)",
+        "(0, a)"
+      ],
+      "answer": "(a, 0)",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_012.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_013",
+      "question": "The equation of directrix of parabola y<sup>2</sup> = 4ax is",
+      "options": [
+        "x + a^2 = 0",
+        "x = a",
+        "x + a = 0",
+        "x = \\sqrt{a}"
+      ],
+      "answer": "x + a = 0",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_013.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_014",
+      "question": "The eccentricity of parabola is",
+      "options": [
+        "e = 0",
+        "e = 1",
+        "e > 1",
+        "e < 1"
+      ],
+      "answer": "e = 1",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_015",
+      "question": "The extremities of latus rectum of parabola y<sup>2</sup> = 4ax are at",
+      "options": [
+        "(\\pm a, a)",
+        "(a, \\pm a)",
+        "(\\pm a, 2a)",
+        "(a, \\pm 2a)"
+      ],
+      "answer": "(a, \\pm 2a)",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_015.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_016",
+      "question": "The length of latus rectum of parabola y<sup>2</sup> = 4ax is",
+      "options": [
+        "2\\sqrt{2}a",
+        "a",
+        "4a",
+        "2a"
+      ],
+      "answer": "4a",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_016.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_017",
+      "question": "The parametric equation of parabola y<sup>2</sup> = 4ax is",
+      "options": [
+        "x = at, y = at^2",
+        "x = 2at, y = at^2",
+        "x = at^2, y = 2at",
+        "x = 2at^2, y = at"
+      ],
+      "answer": "x = at^2, y = 2at",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_018",
+      "question": "The focal distance of a point (h,k) on parabola y<sup>2</sup> = 4ax is",
+      "options": [
+        "h + a",
+        "a - h",
+        "k + a",
+        "a - k"
+      ],
+      "answer": "h + a",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_018.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_019",
+      "question": "The equation of latus rectum of parabola y<sup>2</sup> = 4ax is",
+      "options": [
+        "x - a = 0",
+        "x + a = 0",
+        "y - a = 0",
+        "y + a = 0"
+      ],
+      "answer": "x - a = 0",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_019.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_020",
+      "question": "The equation of parabola in diagram, having its vertex at (h, k) and length of latus rectum 4a is",
+      "options": [
+        "(y - k)^2 = 4a(x - h)",
+        "(y - k)^2 = -4a(x - h)",
+        "(x - h)^2 = 4a(y - k)",
+        "(x - k)^2 = 4a(y - h)"
+      ],
+      "answer": "(x - h)^2 = 4a(y - k)",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_020.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_021",
+      "question": "The point (x<sub>1</sub>, y<sub>1</sub>) lies on parabola y<sup>2</sup> = 4ax if",
+      "options": [
+        "y_1^2 - 4ax_1 > 0",
+        "y_1^2 - 4ax_1 = 0",
+        "y_1^2 - 4ax_1 < 0",
+        "y_1^2 - 4ax_1 \\neq 0"
+      ],
+      "answer": "y_1^2 - 4ax_1 = 0",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_021.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_022",
+      "question": "The point (x<sub>1</sub>, y<sub>1</sub>) lies inside parabola y<sup>2</sup> = 4ax if",
+      "options": [
+        "y_1^2 - 4ax_1 > 0",
+        "y_1^2 - 4ax_1 = 0",
+        "y_1^2 - 4ax_1 < 0",
+        "y_1^2 - 4ax_1 \\neq 0"
+      ],
+      "answer": "y_1^2 - 4ax_1 < 0",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_022.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_023",
+      "question": "The point (x<sub>1</sub>, y<sub>1</sub>) lies outside parabola y<sup>2</sup> = 4ax if",
+      "options": [
+        "y_1^2 - 4ax_1 > 0",
+        "y_1^2 - 4ax_1 = 0",
+        "y_1^2 - 4ax_1 < 0",
+        "y_1^2 - 4ax_1 \\neq 0"
+      ],
+      "answer": "y_1^2 - 4ax_1 > 0",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_023.svg",
+      "tip": null
+    },
+
+    {
+      "id": "parabola_qn_024",
+      "question": "The equation of tangent at point (x<sub>1</sub>, y<sub>1</sub>) on parabola y<sup>2</sup> = 4ax is",
+      "options": [
+        "yy_1 = 4a(x + x_1)",
+        "yy_1 = 4a(x - x_1)",
+        "yy_1 = a(x + x_1)",
+        "yy_1 = 2a(x + x_1)"
+      ],
+      "answer": "yy_1 = 2a(x + x_1)",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_024.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_025",
+      "question": "The chord joining points P(at<sub>1</sub><sup>2</sup>, 2at<sub>1</sub>) and Q(at<sub>2</sub><sup>2</sup>, 2at<sub>2</sub>) on parabola y<sup>2</sup> = 4ax is",
+      "options": [
+        "y(t_1 - t_2) = x + 2at_1t_2",
+        "y(t_1 - t_2) = 2x + at_1t_2",
+        "y(t_1 - t_2) = 2x + 2at_1t_2",
+        "y(t_1 + t_2) = 2x + 2at_1t_2"
+      ],
+      "answer": "y(t_1 + t_2) = 2x + 2at_1t_2",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_025.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_026",
+      "question": "If P(at<sup>2</sup>, 2at) is one end of focal chord on parabola y<sup>2</sup> = 4ax, the other end is",
+      "options": [
+        "(\\frac{2a}{t^2}, \\frac{-a}{t})",
+        "(\\frac{a}{t^2}, \\frac{-2a}{t})",
+        "(\\frac{-2a}{t^2}, \\frac{a}{t})",
+        "(\\frac{-a}{t^2}, \\frac{2a}{t})"
+      ],
+      "answer": "(\\frac{a}{t^2}, \\frac{-2a}{t})",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_026.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_027",
+      "question": "If l<sub>1</sub> and l<sub>2</sub> are length of focal segments of parabola, the length of its latus rectum is",
+      "options": [
+        "\\frac{2l_1l_2}{l_1 + l_2}",
+        "l_1 + l_2",
+        "\\frac{4l_1l_2}{l_1 + l_2}",
+        "l_1 - l_2"
+      ],
+      "answer": "\\frac{4l_1l_2}{l_1 + l_2}",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_027.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_028",
+      "question": "For a focal chord joining points P(at<sub>1</sub><sup>2</sup>, 2at<sub>1</sub>) and Q(at<sub>2</sub><sup>2</sup>, 2at<sub>2</sub>), t<sub>1</sub>t<sub>2</sub> =",
+      "options": [
+        "-1",
+        "1",
+        "2",
+        "-2"
+      ],
+      "answer": "-1",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_028.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_029",
+      "question": "Length of focal chord joining points P(at<sub>1</sub><sup>2</sup>, 2at<sub>1</sub>) and Q(at<sub>2</sub><sup>2</sup>, 2at<sub>2</sub>) is",
+      "options": [
+        "|t_2 - t_1|",
+        "2a(t_2 - t_1)^2",
+        "a(t_2 - t_1)^2",
+        "2a|t_2 - t_1|"
+      ],
+      "answer": "a(t_2 - t_1)^2",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_029.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_030",
+      "question": "The locus of point of intersection of perpendicular tangents to the parabola y<sup>2</sup> = 4ax is",
+      "options": [
+        "x^2 + y^2 = a^2",
+        "x + a = 0",
+        "x - a = 0",
+        "x^2 + y^2 = 2a^2"
+      ],
+      "answer": "x + a = 0",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_030.riv",
+      "tip": "Its also called Directors circle. The line thats called a Circle :P"
+    },
+    {
+      "id": "parabola_qn_031",
+      "question": "The maximum number of normals that can be drawn to a parabola from a point is",
+      "options": [
+        "1",
+        "3",
+        "2",
+        "4"
+      ],
+      "answer": "3",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_031.svg",
+      "tip": null
+    },
+
+    {
+      "id": "parabola_qn_032",
+      "question": "The equation of tangent of slope m to the parabola y<sup>2</sup> = 4ax is",
+      "options": [
+        "y = m(a + x)",
+        "y = m(x - a)",
+        "y = mx + \\frac{a}{m}",
+        "y = mx - \\frac{a}{m}"
+      ],
+      "answer": "y = mx + \\frac{a}{m}",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_032.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_033",
+      "question": "The equation of tangent to the parabola y<sup>2</sup> = 4ax at point (at<sup>2</sup>, 2at) is",
+      "options": [
+        "yt = x + at",
+        "yt = x - at",
+        "yt = x - at^2",
+        "yt = x + at^2"
+      ],
+      "answer": "yt = x + at^2",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_033.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_034",
+      "question": "The point of intersection of two tangents at P(at<sub>1</sub><sup>2</sup>, 2at<sub>1</sub>) and Q(at<sub>2</sub><sup>2</sup>, 2at<sub>2</sub>) to the parabola y<sup>2</sup> = 4ax is",
+      "options": [
+        "2at_1t_2, a(t_1 + t_2)",
+        "at_1t_2, a(t_1 + t_2)",
+        "at_1t_2, 2a(t_1 + t_2)",
+        "2at_1t_2, -a(t_1 + t_2)"
+      ],
+      "answer": "at_1t_2, a(t_1 + t_2)",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_034.svg",
+      "tip": null
+    },
+
+    {
+      "id": "parabola_qn_035",
+      "question": "The angle between two tangents at P(at<sub>1</sub><sup>2</sup>, 2at<sub>1</sub>) and Q(at<sub>2</sub><sup>2</sup>, 2at<sub>2</sub>) to the parabola y<sup>2</sup> = 4ax is",
+      "options": [
+        "\\sin^{-1} |\\frac{t_2 - t_1}{1 + t_1t_2}|",
+        "\\cos^{-1} |\\frac{t_2 - t_1}{1 + t_1t_2}|",
+        "\\tan^{-1} |\\frac{t_2 - t_1}{1 + t_1t_2}|",
+        "\\tan^{-1} |\\frac{t_2 + t_1}{2 - t_1t_2}|"
+      ],
+      "answer": "\\tan^{-1} |\\frac{t_2 - t_1}{1 + t_1t_2}|",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_035.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_036",
+      "question": "The equation of normal to the parabola y<sup>2</sup> = 4ax at point (at<sup>2</sup>, 2at) is",
+      "options": [
+        "y + tx = 2at - at^3",
+        "y + tx = at + 2at^3",
+        "y + tx = 2at + at^3",
+        "y - tx = 2at + at^3"
+      ],
+      "answer": "y + tx = 2at + at^3",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_036.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_037",
+      "question": "If the normal to parabola y<sup>2</sup> = 4ax at point (at<sub>1</sub><sup>2</sup>, 2at<sub>1</sub>) meets the parabola at (at<sub>2</sub><sup>2</sup>, 2at<sub>2</sub>) then,",
+      "options": [
+        "t_1 + t_2 = -\\frac{2}{t_1}",
+        "t_1 + t_2 = -\\frac{2}{t_2}",
+        "t_1 + t_2 = \\frac{2}{t_2}",
+        "t_1 + t_2 = \\frac{2}{t_1}"
+      ],
+      "answer": "t_1 + t_2 = -\\frac{2}{t_1}",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_037.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_038",
+      "question": "The line y = mx + c touches the parabola y<sup>2</sup> = 4ax if",
+      "options": [
+        "c = ma^2",
+        "c = -\\frac{a^2}{m}",
+        "c = \\frac{a^2}{m}",
+        "c = \\frac{a}{m}"
+      ],
+      "answer": "c = \\frac{a}{m}",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_039",
+      "question": "If y<sub>1</sub>, y<sub>2</sub>, y<sub>3</sub> are the ordinates of the vertices of a triangle inscribed in a parabola y<sup>2</sup> = 4ax, the area of this triangle is",
+      "options": [
+        "\\frac{1}{2a}|(y_1 - y_2)(y_2 - y_3)(y_3 - y_1)|",
+        "\\frac{1}{8a}|(y_1 - y_2)(y_2 - y_3)(y_3 - y_1)|",
+        "2a|(y_1 - y_2)(y_2 - y_3)(y_3 - y_1)|",
+        "8a|(y_1 - y_2)(y_2 - y_3)(y_3 - y_1)|"
+      ],
+      "answer": "\\frac{1}{8a}|(y_1 - y_2)(y_2 - y_3)(y_3 - y_1)|",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_039.svg",
+      "tip": null
+    },
+    {
+      "id": "parabola_qn_040",
+      "question": "The normal at points P(at<sub>1</sub><sup>2</sup>, 2at<sub>1</sub>) and Q(at<sub>2</sub><sup>2</sup>, 2at<sub>2</sub>) to the parabola y<sup>2</sup> = 4ax intersect at points",
+      "options": [
+        "2at_1t_2, a(t_1 + t_2)",
+        "2a + a(t_1^2 + t_2^2 + t_1t_2), -at_1t_2(t_1 + t_2)",
+        "a + 2a(t_1^2 + t_2^2 + t_1t_2), at_1t_2(t_1 + t_2)",
+        "at_1t_2, -a(t_1 + t_2)"
+      ],
+      "answer": "2a + a(t_1^2 + t_2^2 + t_1t_2), -at_1t_2(t_1 + t_2)",
+      "tags": {
+        "chapter": "Parabola",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/parabola/parabola_qn_040.svg",
+      "tip": null
+    }
+
+]

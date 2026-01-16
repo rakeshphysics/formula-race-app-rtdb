@@ -314,10 +314,10 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       },
       'Chemistry': {
         '11': ['Chemical Equilibrium'], // Add more chapters here
-        '12': ['Solid State'],          // Add more chapters here
+        '12': ['Solid State','Electrochemistry'],          // Add more chapters here
       },
       'Maths': {
-        '11': ['Ellipse'],              // Add more chapters here
+        '11': ['Ellipse','Parabola'],              // Add more chapters here
         '12': ['3D Geometry','Definite Integrals','Indefinite Integrals'],          // Add more chapters here
       },
     };
@@ -440,12 +440,12 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       currentIndex = 0;
     });
 
-    // print('--- GAME STARTING: QUESTION DIFFICULTY ORDER ---');
-    // for (int i = 0; i < questions.length; i++) {
-    //   String diff = questions[i]['tags']?['difficulty'] ?? 'N/A';
-    //   print('Question ${i + 1}: $diff');
-    // }
-    // print('-----------------------------------------------');
+    print('--- GAME STARTING: QUESTION DIFFICULTY ORDER ---');
+    for (int i = 0; i < questions.length; i++) {
+      String diff = questions[i]['tags']?['difficulty'] ?? 'N/A';
+      print('Question ${i + 1}: $diff');
+    }
+    print('-----------------------------------------------');
 
     if (questions.isNotEmpty) {
       _progressController.reset();

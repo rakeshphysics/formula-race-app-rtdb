@@ -307,13 +307,15 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
     'Chemistry': [
       'Solid State',
       'Chemical Equilibrium',
+      'Electrochemistry'
       // Add more Chemistry chapters here as needed
     ],
     'Maths': [
       '3D Geometry',
       'Ellipse',
       'Definite Integrals',
-      'Indefinite Integrals'
+      'Indefinite Integrals',
+      'Parabola',
       // Add more Maths chapters here as needed
     ],
   };

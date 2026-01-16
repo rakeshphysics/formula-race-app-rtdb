@@ -911,7 +911,7 @@ class HomeMessageService {
       "Electrostatics", "Capacitors", "Current Electricity", "Magnetism", "EMI",
       "AC", "EM Waves", "Ray Optics", "Wave Optics", "Dual Nature of Light",
       "Atoms", "Nuclei", "X Rays", "Semiconductors", "Vectors","Solid State","Chemical Equilibrium",
-      "3D Geometry","Ellipse", "Definite Integrals","Indefinite Integrals"
+      "3D Geometry","Ellipse", "Definite Integrals","Indefinite Integrals", "Electrochemistry","Parabola"
     ];
 
     // 2. Call the database function to get performance per chapter.

@@ -106,6 +106,7 @@ flutter:
     - assets/formulas/12/definite_integrals.aes
     - assets/formulas/12/indefinite_integrals.aes
     - assets/formulas/12/electrochemistry.aes
+    - assets/formulas/11/parabola.aes
 
 
 
@@ -143,6 +144,7 @@ flutter:
     - assets/images/12th/solid_state/
     - assets/images/12th/3d_geometry/
     - assets/images/11th/ellipse/
+    - assets/images/11th/parabola/
     - assets/icon/
 
 dependency_overrides:

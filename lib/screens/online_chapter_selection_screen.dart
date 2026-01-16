@@ -71,10 +71,10 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
       'Dual Nature of Light', 'Atoms', 'Nuclei', 'X Rays', 'Semiconductors',
     ],
     'Chemistry': [
-      'Solid State','Chemical Equilibrium',
+      'Solid State','Chemical Equilibrium','Electrochemistry'
     ],
     'Maths': [
-      '3D Geometry','Ellipse', 'Definite Integrals','Indefinite Integrals'
+      '3D Geometry','Ellipse', 'Definite Integrals','Indefinite Integrals', 'Parabola'
     ],
   };
 

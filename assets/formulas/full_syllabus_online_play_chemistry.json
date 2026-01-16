@@ -899,6 +899,370 @@
       },
       "image": null,
       "tip": null
+    },
+
+    {
+      "id": "electrochemistry_qn_001",
+      "question": "Conductance G is given by ____ and its units are ____ (R = resistance)",
+      "options": [
+        "R, \\text{ ohm}",
+        "\\frac{1}{R}, \\text{ mho}",
+        "R^2, \\text{ ohm}^2",
+        "\\frac{1}{R^2}, \\text{ mho}^2"
+      ],
+      "answer": "\\frac{1}{R}, \\text{ mho}",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "electrochemistry_qn_002",
+      "question": "Specific conductivity &kappa; is given by ____ and its units are ____ (G = conductance, G* = cell constant)",
+      "options": [
+        "GG^*, \\text{ S cm}^{-1}",
+        "G, \\text{ mho}",
+        "G^*, \\text{ cm}^{-1}",
+        "\\frac{G^*}{G}, \\text{ S}^{-1} \\text{ cm}^{-1}"
+      ],
+      "answer": "GG^*, \\text{ S cm}^{-1}",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "electrochemistry_qn_003",
+      "question": "With increasing the dilution of a solution, Specific conductivity &kappa;",
+      "options": [
+        "\\text{Increases}",
+        "\\text{Decreases}",
+        "\\text{Remains Same}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{Decreases}",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "electrochemistry_qn_004",
+      "question": "Molar conductivity &Lambda;<sub>m</sub> is given by (&kappa; = specific conductivity, M = molarity)",
+      "options": [
+        "\\frac{M \\times 1000}{\\kappa}",
+        "\\kappa \\times M \\times 1000",
+        "\\frac{\\kappa \\times M}{1000}",
+        "\\frac{\\kappa \\times 1000}{M}"
+      ],
+      "answer": "\\frac{\\kappa \\times 1000}{M}",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "electrochemistry_qn_005",
+      "question": "Equivalent conductivity &Lambda;<sub>eq</sub> is given by (&kappa; = specific conductivity, N = Normality)",
+      "options": [
+        "\\frac{N \\times 1000}{\\kappa}",
+        "\\kappa \\times N \\times 1000",
+        "\\frac{\\kappa \\times N}{1000}",
+        "\\frac{\\kappa \\times 1000}{N}"
+      ],
+      "answer": "\\frac{\\kappa \\times 1000}{N}",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+
+    {
+      "id": "electrochemistry_qn_006",
+      "question": "Molar conductivity &Lambda;<sub>m</sub> of a strong electrolyte in dilute solutions is given by (&Lambda;<sup>0</sup><sub>m</sub> = molar conductivity at &infin; dilution, C = concentration, A = constant)",
+      "options": [
+        "\\Lambda^0_m - AC^2",
+        "\\Lambda^0_m + AC^2",
+        "\\Lambda^0_m - A\\sqrt{C}",
+        "\\Lambda^0_m + A\\sqrt{C}"
+      ],
+      "answer": "\\Lambda^0_m - A\\sqrt{C}",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": "This is called Debye Huckel Onsager equation"
+    },
+    {
+      "id": "electrochemistry_qn_007",
+      "question": "Molar conductivity &Lambda;<sup>&infin;</sup><sub>eq</sub> of any electrolyte at infinite dilution is given by (&Lambda;<sup>&infin;</sup><sub>c</sub> = molar conductivity of cations, &Lambda;<sup>&infin;</sup><sub>a</sub> = molar conductivity of anions)",
+      "options": [
+        "\\Lambda^{\\infty}_c - \\Lambda^{\\infty}_a",
+        "\\Lambda^{\\infty}_c + \\Lambda^{\\infty}_a",
+        "\\Lambda^0_c + \\Lambda^{\\infty}_a",
+        "\\frac{\\Lambda^{\\infty}_c}{\\Lambda^{\\infty}_a}"
+      ],
+      "answer": "\\Lambda^{\\infty}_c + \\Lambda^{\\infty}_a",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": "This is called Kohlrausch's law"
+    },
+    {
+      "id": "electrochemistry_qn_008",
+      "question": "The degree of dissociation &alpha; is. (&Lambda;<sup>C</sup><sub>eq</sub> = equivalent conductivity at given concentration, &Lambda;<sup>&infin;</sup><sub>eq</sub> = equivalent conductivity at infinite dilution)",
+      "options": [
+        "\\Lambda^C_{eq} + \\Lambda^{\\infty}_{eq}",
+        "\\Lambda^C_{eq} - \\Lambda^{\\infty}_{eq}",
+        "\\frac{\\Lambda^C_{eq}}{\\Lambda^{\\infty}_{eq}}",
+        "\\frac{\\Lambda^{\\infty}_{eq}}{\\Lambda^C_{eq}}"
+      ],
+      "answer": "\\frac{\\Lambda^C_{eq}}{\\Lambda^{\\infty}_{eq}}",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "electrochemistry_qn_009",
+      "question": "The solubility S of a sparingly soluble salt is given by (&kappa; = Specific conductivity, &Lambda;<sup>0</sup><sub>m</sub> = molar conductivity at &infin; dilution)",
+      "options": [
+        "\\frac{\\Lambda^0_m \\times 1000}{\\kappa}",
+        "\\kappa \\times \\Lambda^0_m \\times 1000",
+        "\\frac{\\kappa \\times \\Lambda^0_m}{1000}",
+        "\\frac{\\kappa \\times 1000}{\\Lambda^0_m}"
+      ],
+      "answer": "\\frac{\\kappa \\times 1000}{\\Lambda^0_m}",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "electrochemistry_qn_010",
+      "question": "The dissociation constant K of a weak electrolyte at concentration C is (&alpha; = degree of dissociation of electrolyte)",
+      "options": [
+        "\\frac{C\\alpha}{1 - \\alpha^2}",
+        "\\frac{C\\alpha^2}{1 - \\alpha}",
+        "\\frac{C\\alpha}{1 + \\alpha^2}",
+        "\\frac{C\\alpha^2}{1 + \\alpha}"
+      ],
+      "answer": "\\frac{C\\alpha^2}{1 - \\alpha}",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+
+    {
+      "id": "electrochemistry_qn_011",
+      "question": "The standard EMF of a cell is given by",
+      "options": [
+        "E^0_{cell} = E^0_{red} + E^0_{oxi}",
+        "E^0_{cell} = E^0_{red} - E^0_{oxi}",
+        "E^0_{cell} = E^0_{red} \\times E^0_{oxi}",
+        "E^0_{cell} = E^0_{red} / E^0_{oxi}"
+      ],
+      "answer": "E^0_{cell} = E^0_{red} + E^0_{oxi}",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "electrochemistry_qn_012",
+      "question": "For a spontaneous cell reaction (&Delta;G<sup>o</sup> = Gibbs free energy change)",
+      "options": [
+        "\\Delta G^o > 0",
+        "\\Delta G^o = 0",
+        "\\Delta G^o < 0",
+        "\\Delta G^o \\neq 0"
+      ],
+      "answer": "\\Delta G^o < 0",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "electrochemistry_qn_013",
+      "question": "For a spontaneous cell reaction (E<sup>o</sup><sub>cell</sub> = standard EMF of cell)",
+      "options": [
+        "E^0_{cell} > 0",
+        "E^0_{cell} = 0",
+        "E^0_{cell} < 0",
+        "E^0_{cell} \\neq 0"
+      ],
+      "answer": "E^0_{cell} > 0",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "electrochemistry_qn_014",
+      "question": "The standard Gibbs free energy change is (n = no of electrons transferred, E<sup>o</sup><sub>cell</sub> = standard EMF of cell)",
+      "options": [
+        "\\Delta G^o = \\frac{FE^0_{cell}}{n}",
+        "\\Delta G^o = \\frac{FE^0_{cell}}{2n}",
+        "\\Delta G^o = nFE^0_{cell}",
+        "\\Delta G^o = -nFE^0_{cell}"
+      ],
+      "answer": "\\Delta G^o = -nFE^0_{cell}",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "electrochemistry_qn_015",
+      "question": "The standard Gibbs free energy change is (K = equilibrium constant, T = temperature)",
+      "options": [
+        "\\Delta G^o = \\frac{RT}{\\ln K}",
+        "\\Delta G^o = \\frac{R \\ln K}{T}",
+        "\\Delta G^o = RT \\ln K",
+        "\\Delta G^o = -RT \\ln K"
+      ],
+      "answer": "\\Delta G^o = -RT \\ln K",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "electrochemistry_qn_016",
+      "question": "The standard electrode potential of a cell is (n = no of electrons transferred, T = temperature, K = equilibrium constant,)",
+      "options": [
+        "E^0_{cell} = -\\frac{RT}{nF} \\ln K",
+        "E^0_{cell} = \\frac{RT}{nF} \\ln K",
+        "E^0_{cell} = \\frac{nRT}{F} \\ln K",
+        "E^0_{cell} = -\\frac{nRT}{F} \\ln K"
+      ],
+      "answer": "E^0_{cell} = \\frac{RT}{nF} \\ln K",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+
+    {
+      "id": "electrochemistry_qn_017",
+      "question": "The amount of substance deposited or liberated at cathode is given by (Q = charge passed, Z = electrochemical equivalent)",
+      "options": [
+        "W = \\sqrt{\\frac{Q}{Z}}",
+        "W = \\frac{Q}{Z}",
+        "W = \\sqrt{QZ}",
+        "W = QZ"
+      ],
+      "answer": "W = QZ",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "electrochemistry_qn_018",
+      "question": "When same amount of electricity is passed through different electrodes, the ratio of amount of substances (w) deposited or liberated equals (E = equivalent weight)",
+      "options": [
+        "\\frac{w_1}{w_2} = \\frac{E_1}{E_2}",
+        "\\frac{w_1}{w_2} = \\frac{E_2}{E_1}",
+        "\\frac{w_1}{w_2} = \\sqrt{\\frac{E_1}{E_2}}",
+        "\\frac{w_1}{w_2} = (\\frac{E_1}{E_2})^2"
+      ],
+      "answer": "\\frac{w_1}{w_2} = \\frac{E_1}{E_2}",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "electrochemistry_qn_019",
+      "question": "The correct relation is (E = equivalent weight, Z = electrochemical equivalent)",
+      "options": [
+        "\\frac{Z_1}{Z_2} = \\frac{E_1}{E_2}",
+        "\\frac{Z_1}{Z_2} = \\frac{E_2}{E_1}",
+        "\\frac{Z_1}{Z_2} = \\sqrt{\\frac{E_1}{E_2}}",
+        "\\frac{Z_1}{Z_2} = (\\frac{E_1}{E_2})^2"
+      ],
+      "answer": "\\frac{Z_1}{Z_2} = \\frac{E_1}{E_2}",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "electrochemistry_qn_020",
+      "question": "In an electrochemical cell undergoing reaction aA + bB &rarr; cC + dD, the correct relation is",
+      "options": [
+        "E_{cell} = E^o_{cell} - \\frac{0.059}{n} \\ln \\frac{[C]^c[D]^d}{[A]^a[B]^b}",
+        "E_{cell} = E^o_{cell} + \\frac{0.059}{n} \\ln \\frac{[C]^c[D]^d}{[A]^a[B]^b}",
+        "E_{cell} = E^o_{cell} + \\frac{0.059}{n} \\ln \\frac{[C][D]}{[A][B]}",
+        "E_{cell} = E^o_{cell} - \\frac{0.059}{n} \\ln \\frac{[C][D]}{[A][B]}"
+      ],
+      "answer": "E_{cell} = E^o_{cell} - \\frac{0.059}{n} \\ln \\frac{[C]^c[D]^d}{[A]^a[B]^b}",
+      "tags": {
+        "chapter": "Electrochemistry",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
     }
 
 
