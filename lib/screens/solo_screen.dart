@@ -314,7 +314,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       },
       'Chemistry': {
         '11': ['Chemical Equilibrium'], // Add more chapters here
-        '12': ['Solid State','Electrochemistry'],          // Add more chapters here
+        '12': ['Solid State','Electrochemistry','Solutions'],          // Add more chapters here
       },
       'Maths': {
         '11': ['Ellipse','Parabola'],              // Add more chapters here

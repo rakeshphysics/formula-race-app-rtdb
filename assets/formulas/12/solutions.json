@@ -1,0 +1,732 @@
+[
+  {
+    "id": "solutions_qn_001",
+    "question": "Concentration expressed as Percentage by Weight (w/w %) is given by formula",
+    "options": [
+      "\\left( \\frac{\\text{Weight of Solute}}{\\text{Weight of Solution}} \\right) \\times 100",
+      "\\left( \\frac{\\text{Weight of Solute}}{\\text{Weight of Solvent}} \\right) \\times 100",
+      "\\left( \\frac{\\text{Weight of Solute}}{\\text{Volume of Solution}} \\right) \\times 100",
+      "\\left( \\frac{\\text{Weight of Solvent}}{\\text{Weight of Solution}} \\right) \\times 100"
+    ],
+    "answer": "\\left( \\frac{\\text{Weight of Solute}}{\\text{Weight of Solution}} \\right) \\times 100",
+    "tags": {
+      "chapter": "Solutions",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "solutions_qn_002",
+    "question": "Concentration expressed as Percentage by Volume (v/V %) is given by formula",
+    "options": [
+      "\\left( \\frac{\\text{Volume of Solute}}{\\text{Volume of Solution}} \\right) \\times 100",
+      "\\left( \\frac{\\text{Volume of Solute}}{\\text{Volume of Solvent}} \\right) \\times 100",
+      "\\left( \\frac{\\text{Weight of Solute}}{\\text{Volume of Solution}} \\right) \\times 100",
+      "\\left( \\frac{\\text{Volume of Solvent}}{\\text{Volume of Solution}} \\right) \\times 100"
+    ],
+    "answer": "\\left( \\frac{\\text{Volume of Solute}}{\\text{Volume of Solution}} \\right) \\times 100",
+    "tags": {
+      "chapter": "Solutions",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "solutions_qn_003",
+    "question": "Concentration expressed as Percentage of Mass by Volume (w/V %) is given by formula",
+    "options": [
+      "\\left( \\frac{\\text{Weight of Solvent}}{\\text{Volume of Solution}} \\right) \\times 100",
+      "\\left( \\frac{\\text{Volume of Solute}}{\\text{Volume of Solvent}} \\right) \\times 100",
+      "\\left( \\frac{\\text{Weight of Solute}}{\\text{Volume of Solution}} \\right) \\times 100",
+      "\\left( \\frac{\\text{Weight of Solute}}{\\text{Volume of Solvent}} \\right) \\times 100"
+    ],
+    "answer": "\\left( \\frac{\\text{Weight of Solute}}{\\text{Volume of Solution}} \\right) \\times 100",
+    "tags": {
+      "chapter": "Solutions",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "solutions_qn_004",
+    "question": "Mole fraction of A in a binary solution is given by (n<sub>A</sub> = no of moles of A, n<sub>B</sub> = no of moles of B)",
+    "options": [
+      "\\chi_A = \\frac{n_A}{n_B}",
+      "\\chi_A = \\frac{n_A}{n_A + n_B}",
+      "\\chi_A = \\frac{n_B}{n_A + n_B}",
+      "\\chi_A = \\frac{n_B}{n_A}"
+    ],
+    "answer": "\\chi_A = \\frac{n_A}{n_A + n_B}",
+    "tags": {
+      "chapter": "Solutions",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "solutions_qn_005",
+    "question": "Molarity (M) is defined as",
+    "options": [
+      "\\frac{\\text{no of moles of Solute}}{\\text{Volume of Solvent (in mL)}}",
+      "\\frac{\\text{no of moles of Solute}}{\\text{Volume of Solvent (in L)}}",
+      "\\frac{\\text{no of moles of Solute}}{\\text{Volume of Solution (in mL)}}",
+      "\\frac{\\text{no of moles of Solute}}{\\text{Volume of Solution (in L)}}"
+    ],
+    "answer": "\\frac{\\text{no of moles of Solute}}{\\text{Volume of Solution (in L)}}",
+    "tags": {
+      "chapter": "Solutions",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "solutions_qn_006",
+    "question": "Molality (m) is defined as",
+    "options": [
+      "\\frac{\\text{no of moles of Solute}}{\\text{Weight of Solvent (in g)}}",
+      "\\frac{\\text{no of moles of Solute}}{\\text{Weight of Solvent (in kg)}}",
+      "\\frac{\\text{no of moles of Solute}}{\\text{Volume of Solution (in mL)}}",
+      "\\frac{\\text{no of moles of Solute}}{\\text{Volume of Solution (in L)}}"
+    ],
+    "answer": "\\frac{\\text{no of moles of Solute}}{\\text{Weight of Solvent (in kg)}}",
+    "tags": {
+      "chapter": "Solutions",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+
+    {
+      "id": "solutions_qn_007",
+      "question": "Number of gram equivalents of solute is defined as",
+      "options": [
+        "\\frac{\\text{mass of Solute (in gm)}}{\\text{Equivalent Weight}}",
+        "\\frac{\\text{mass of Solute (in kg)}}{\\text{Equivalent Weight}}",
+        "\\frac{\\text{mass of Solute (in kg)}}{\\text{Volume of Solute (in mL)}}",
+        "\\frac{\\text{mass of Solute (in kg)}}{\\text{Volume of Solute (in L)}}"
+      ],
+      "answer": "\\frac{\\text{mass of Solute (in gm)}}{\\text{Equivalent Weight}}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_008",
+      "question": "Normality (N) is defined as",
+      "options": [
+        "\\frac{\\text{no of gm Equivalents of Solute}}{\\text{Volume of Solution (in L)}}",
+        "\\frac{\\text{no of gm Equivalents of Solute}}{\\text{Volume of Solution (in mL)}}",
+        "\\frac{\\text{no of gm Equivalents of Solute}}{\\text{Volume of Solvent (in mL)}}",
+        "\\frac{\\text{no of moles of Solute}}{\\text{Volume of Solution (in L)}}"
+      ],
+      "answer": "\\frac{\\text{no of gm Equivalents of Solute}}{\\text{Volume of Solution (in L)}}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_009",
+      "question": "Molarity (M) is defined as",
+      "options": [
+        "\\frac{\\text{mass of Solute (in gms)} \\times 1000}{\\text{mol-wt of Solute} \\times \\text{Volume of Solution (in L)}}",
+        "\\frac{\\text{mass of Solute (in gms)} \\times 1000}{\\text{mol-wt of Solute} \\times \\text{Volume of Solution (in mL)}}",
+        "\\frac{\\text{mass of Solute (in Kg)} \\times 1000}{\\text{mol-wt of Solute} \\times \\text{Volume of Solution (in L)}}",
+        "\\frac{\\text{mass of Solute (in gms)}}{\\text{mol-wt of Solute} \\times \\text{Volume of Solution (in mL)}}"
+      ],
+      "answer": "\\frac{\\text{mass of Solute (in gms)} \\times 1000}{\\text{mol-wt of Solute} \\times \\text{Volume of Solution (in mL)}}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_010",
+      "question": "If two solutions (M<sub>1</sub>, V<sub>1</sub>), (M<sub>2</sub>, V<sub>2</sub>) are mixed, the resulting molarity of the final solution is",
+      "options": [
+        "\\frac{M_1V_1 - M_2V_2}{V_1 + V_2}",
+        "\\frac{M_1V_2 - M_2V_1}{V_1 + V_2}",
+        "\\frac{M_1V_2 + M_2V_1}{V_1 + V_2}",
+        "\\frac{M_1V_1 + M_2V_2}{V_1 + V_2}"
+      ],
+      "answer": "\\frac{M_1V_1 + M_2V_2}{V_1 + V_2}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+
+    {
+      "id": "solutions_qn_011",
+      "question": "Mass fraction of a component in solution is defined as",
+      "options": [
+        "\\frac{\\text{mass of Solution}}{\\text{Mass of Solvent}}",
+        "\\frac{\\text{mass of component}}{\\text{Mass of Solvent}}",
+        "\\frac{\\text{mass of component}}{\\text{Total mass of Solution}}",
+        "\\frac{\\text{mass of component}}{\\text{Mass of Solute}}"
+      ],
+      "answer": "\\frac{\\text{mass of component}}{\\text{Total mass of Solution}}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_012",
+      "question": "The solubility of most gases in liquids ___________ with increase in temperature",
+      "options": [
+        "\\text{Increases}",
+        "\\text{Decreases}",
+        "\\text{Remains Constant}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{Decreases}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_013",
+      "question": "The solubility of gases in liquids ___________ with increase in pressure",
+      "options": [
+        "\\text{Increases}",
+        "\\text{Decreases}",
+        "\\text{Remains Constant}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{Increases}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_014",
+      "question": "Henry's Law is (p = partial pressure of gas in vapour phase, &chi; = mole fraction of gas in Solution, K<sub>H</sub> = constant)",
+      "options": [
+        "p = \\frac{K_H}{\\chi}",
+        "p = K_H \\cdot \\chi",
+        "p = \\frac{K_H}{(1-\\chi)}",
+        "p = K_H \\cdot (1 - \\chi)"
+      ],
+      "answer": "p = K_H \\cdot \\chi",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_015",
+      "question": "In Henry's Law (p = K<sub>H</sub> &cdot; &chi;), higher is the value of K<sub>H</sub> at a given pressure, _________ is the solubility of gas in Liquid",
+      "options": [
+        "\\text{Higher}",
+        "\\text{Lower}",
+        "\\text{High or Low}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{Lower}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_016",
+      "question": "In Henry's Law (p = K<sub>H</sub> &cdot; &chi;), as temperature increases, the value of K<sub>H</sub> _________",
+      "options": [
+        "\\text{Increases}",
+        "\\text{Decreases}",
+        "\\text{Remains Constant}",
+        "\\text{Increases or Decreases}"
+
+      ],
+      "answer":  "\\text{Increases}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_017",
+      "question": "The partial vapour pressure of liquid A (p<sub>A</sub>) is (p<sup>o</sup><sub>A</sub> = vapour pressure of pure liquid, &chi;<sub>A</sub> = mole fraction of A in solution)",
+      "options": [
+        "p_A = \\frac{p^o_A}{\\chi_A}",
+        "p_A = \\frac{p^o_A}{(1-\\chi_A)}",
+        "p_A = p^o_A \\chi_A",
+        "p_A = p^o_A (1 - \\chi_A)"
+      ],
+      "answer": "p_A = p^o_A \\chi_A",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_018",
+      "question": "The total vapour pressure of a solution is given by",
+      "options": [
+        "p_T = p^o_A \\chi_A + p^o_B \\chi_B",
+        "p_T = p^o_A (1 - \\chi_A) + p^o_B (1 - \\chi_B)",
+        "p_T = p^o_A + (p^o_B - p^o_A)\\chi_A",
+        "p_T = p^o_B + (p^o_B - p^o_A)\\chi_B"
+      ],
+      "answer": "p_T = p^o_A \\chi_A + p^o_B \\chi_B",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_019",
+      "question": "We express concentration of very dilute solutions by ppm which equals",
+      "options": [
+        "ppm(\\text{by volume}) = \\frac{\\text{Volume of Solute}}{\\text{Volume of Solvent}} \\times 10^6",
+        "ppm(\\text{by volume}) = \\frac{\\text{Volume of Solute}}{\\text{Volume of Solution}} \\times 10^6",
+        "ppm(\\text{by volume}) = \\frac{\\text{Volume of Solute}}{\\text{Volume of Solvent}} \\times 10^4",
+        "ppm(\\text{by volume}) = \\frac{\\text{Volume of Solute}}{\\text{Volume of Solution}} \\times 10^4"
+      ],
+      "answer": "ppm(\\text{by volume}) = \\frac{\\text{Volume of Solute}}{\\text{Volume of Solution}} \\times 10^6",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+
+    {
+      "id": "solutions_qn_020",
+      "question": "The correct relation between vapour pressure of a solute with temperature (Clausius-Clapeyron equation) is given by (p<sub>1</sub>, p<sub>2</sub> = vapour pressures, T<sub>1</sub>, T<sub>2</sub> = temperatures, &Delta;H = latent heat of vapourisaton per mole)",
+      "options": [
+        "\\ln \\left(\\frac{p_2}{p_1}\\right) = \\frac{\\Delta H}{R} \\left[\\frac{1}{T_2} - \\frac{1}{T_1}\\right]",
+        "\\ln \\left(\\frac{p_2}{p_1}\\right) = \\frac{\\Delta H}{R} \\left[\\frac{1}{T_1} + \\frac{1}{T_2}\\right]",
+        "\\ln \\left(\\frac{p_2}{p_1}\\right) = \\frac{\\Delta H}{2R} \\left[\\frac{1}{T_2} + \\frac{1}{T_1}\\right]",
+        "\\ln \\left(\\frac{p_2}{p_1}\\right) = \\frac{\\Delta H}{R} \\left[\\frac{1}{T_1} - \\frac{1}{T_2}\\right]"
+      ],
+      "answer": "\\ln \\left(\\frac{p_2}{p_1}\\right) = \\frac{\\Delta H}{R} \\left[\\frac{1}{T_1} - \\frac{1}{T_2}\\right]",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+
+    {
+      "id": "solutions_qn_021",
+      "question": "The partial pressure of gas A (p<sub>A</sub>) is (Y<sub>A</sub> = mole fraction of A in vapour, P<sub>T</sub> = Total pressure of gas)",
+      "options": [
+        "p_A = Y_A P_T",
+        "p_A = (1 - Y_A) P_T",
+        "p_A = \\frac{P_T}{Y_A}",
+        "p_A = \\frac{P_T}{(1 - Y_A)}"
+      ],
+      "answer": "p_A = Y_A P_T",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_022",
+      "question": "The correct relation is (p<sup>o</sup><sub>B</sub> = vapour pressure of pure liquid B, &chi;<sub>B</sub> = mole fraction of B in solution, Y<sub>B</sub> = mole fraction of B in vapour, P<sub>T</sub> = Total pressure of gas)",
+      "options": [
+        "(1 - Y_B) p^o_B = \\chi_B P_T",
+        "(1 - \\chi_B) p^o_B = Y_B P_T",
+        "Y_B p^o_B = \\chi_B P_T",
+        "\\chi_B p^o_B = Y_B P_T"
+      ],
+      "answer": "\\chi_B p^o_B = Y_B P_T",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_023",
+      "question": "For a non volatile solute B and a volatile solvent A (p<sup>o</sup><sub>A</sub> = vapour pressure of pure liquid A, &chi;<sub>A</sub> = mole fraction of A in solution, &chi;<sub>B</sub> = mole fraction of B in solution, P<sub>T</sub> = Total pressure of gas)",
+      "options": [
+        "P_T = p^o_A \\chi_A",
+        "P_T = p^o_B",
+        "P_T = p^o_A",
+        "P_T = p^o_A (1 - \\chi_A)"
+      ],
+      "answer": "P_T = p^o_A \\chi_A",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_024",
+      "question": "For an ideal solution that obeys Raoults law at all concentrations and all pressures (&Delta;V<sub>mix</sub> = volume change on mixing, &Delta;H<sub>mix</sub> = Heat change on mixing)",
+      "options": [
+        "\\Delta V_{mix} = 0, \\Delta H_{mix} \\neq 0",
+        "\\Delta V_{mix} = 0, \\Delta H_{mix} = 0",
+        "\\Delta V_{mix} \\neq 0, \\Delta H_{mix} = 0",
+        "\\Delta V_{mix} \\neq 0, \\Delta H_{mix} \\neq 0"
+      ],
+      "answer": "\\Delta V_{mix} = 0, \\Delta H_{mix} = 0",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_025",
+      "question": "Is the below interaction about deviation from Raoults law correct (Drag the slider in diagram below)",
+      "options": [
+        "\\text{Yes}",
+        "\\text{No}",
+        "\\text{May be yes}",
+        "\\text{NA}"
+      ],
+      "answer": "\\text{Yes}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solutions/solutions_qn_025.riv",
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_026",
+      "question": "The relative lowering of vapour pressure when a Nonvolatile solute B is added to a volatile liquid A is (n<sub>B</sub> = number of moles of solute, n<sub>A</sub> = number of moles of solvent)",
+      "options": [
+        "\\frac{n_A}{n_B + n_A}",
+        "\\frac{n_B}{n_A}",
+        "\\frac{n_A}{n_B}",
+        "\\frac{n_B}{n_B + n_A}"
+      ],
+      "answer": "\\frac{n_B}{n_B + n_A}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_027",
+      "question": "Is the below interaction about deviation from Raoults law correct (Drag the slider in diagram below)",
+      "options": [
+        "\\text{Yes}",
+        "\\text{No}",
+        "\\text{May be no}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{No}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solutions/solutions_qn_027.riv",
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_028",
+      "question": "Is the interaction about deviation from Raoults law correct (Drag the slider in diagram)",
+      "options": [
+        "\\text{Yes}",
+        "\\text{No}",
+        "\\text{May be yes}",
+        "\\text{NA}"
+      ],
+      "answer": "\\text{No}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solutions/solutions_qn_028.riv",
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_029",
+      "question": "Is the interaction about deviation from Raoults law correct (Drag the slider in diagram)",
+      "options": [
+        "\\text{Yes}",
+        "\\text{No}",
+        "\\text{May be yes}",
+        "\\text{NA}"
+      ],
+      "answer": "\\text{Yes}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solutions/solutions_qn_029.riv",
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_030",
+      "question": "Two pure liquids are present in beakers as shown. Pull up the separator to mix the liquids. The solution mixture exhibits (The separator in middle has negligible volume)",
+      "options": [
+        "\\text{Positive Deviation from Raoults Law}",
+        "\\text{Negative Deviation from Raoults Law}",
+        "\\text{It's an Ideal Solution}",
+        "\\text{None of these}"
+      ],
+      "answer": "\\text{Negative Deviation from Raoults Law}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "god",
+        "class": "12"
+      },
+      "image": "assets/images/12th/solutions/solutions_qn_030.riv",
+      "tip": "Heat is liberated when the solutions mix, it is exothermic. A-B attraction is much stronger than A-A or B-B. The liquid wants to mix, and vapour pressure is lowered"
+    },
+
+    {
+      "id": "solutions_qn_031",
+      "question": "The elevation in boiling point of a solvent due to addition of a nonvolatile solute is given by (K<sub>b</sub> = Ebullioscopic constant, m = molality)",
+      "options": [
+        "\\Delta T_b = K_b m",
+        "\\Delta T_b = K_b m^2",
+        "\\Delta T_b = K_b \\sqrt{m}",
+        "\\Delta T_b = K_b / m"
+      ],
+      "answer": "\\Delta T_b = K_b m",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": "Adding salt to curry, increases the boiling point of water cooking the curry more effectively. Note: Vant Hoff factor need to be included for correction"
+    },
+    {
+      "id": "solutions_qn_032",
+      "question": "The depression in freezing point of a solvent due to addition of a nonvolatile solute is given by (K<sub>f</sub> = cryoscopic constant, m = molality)",
+      "options": [
+        "\\Delta T_f = K_f m",
+        "\\Delta T_f = K_f m^2",
+        "\\Delta T_f = K_f \\sqrt{m}",
+        "\\Delta T_f = K_f / m"
+      ],
+      "answer": "\\Delta T_f = K_f m",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": "This is how Kulfis are cooled. Ice at 0°C is added to a box. If we directly put the Kulfi metal molds, kulfi doesn’t freeze as its freezing point is well below 0°C. Salt is added to ice, which melts it. To melt itself ice requires heat, so it sucks heat away from the kulfi molds. Now the salt-ice slush temp drops to -10°C solidifying the kulfi. Note: Vant Hoff factor need to be included for correction"
+    },
+    {
+      "id": "solutions_qn_033",
+      "question": "Osmotic pressure of solution is given by (d = density of solution, R = universal gas constant, T = Temperature, M<sub>B</sub> = molar mass of solute)",
+      "options": [
+        "\\pi = \\frac{RT}{dM_B}",
+        "\\pi = \\frac{T}{dRM_B}",
+        "\\pi = \\frac{dRT}{M_B}",
+        "\\pi = \\frac{RTM_B}{d}"
+      ],
+      "answer": "\\pi = \\frac{dRT}{M_B}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_034",
+      "question": "Van’t Hoff factor (i) is given by",
+      "options": [
+        "\\frac{\\text{Number of particles initially}}{\\text{Number of particles after association or dissociation}}",
+        "\\frac{\\text{Number of particles initially}}{2 * \\text{Number of particles after association or dissociation}}",
+        "\\frac{2 * \\text{Number of particles after association or dissociation}}{\\text{Number of particles initially}}",
+        "\\frac{\\text{Number of particles after association or dissociation}}{\\text{Number of particles initially}}"
+      ],
+      "answer": "\\frac{\\text{Number of particles after association or dissociation}}{\\text{Number of particles initially}}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "easy",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+
+
+    {
+      "id": "solutions_qn_035",
+      "question": "Van’t Hoff factor (i) is given by",
+      "options": [
+        "\\frac{\\text{Observed Molecular mass}}{\\text{Calculated Molecular mass}}",
+        "\\frac{\\text{Calculated Molecular mass}}{\\text{Observed Molecular mass}}",
+        "\\frac{2 \\times \\text{Observed Molecular mass}}{\\text{Calculated Molecular mass}}",
+        "\\frac{\\text{Calculated Molecular mass}}{2 \\times \\text{Observed Molecular mass}}"
+      ],
+      "answer": "\\frac{\\text{Calculated Molecular mass}}{\\text{Observed Molecular mass}}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_036",
+      "question": "For the reaction A &rarr; nB, the Vant Hoff factor is",
+      "options": [
+        "i = 1 + (n + 1)\\alpha",
+        "i = 1 + (\\frac{1}{n} + 1)\\alpha",
+        "i = 1 + (n - 1)\\alpha",
+        "i = 1 + (\\frac{1}{n} - 1)\\alpha"
+      ],
+      "answer": "i = 1 + (n - 1)\\alpha",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_037",
+      "question": "For the reaction nA &rarr; B, the van't Hoff factor is",
+      "options": [
+        "i = 1 + (n + 1)\\alpha",
+        "i = 1 + (\\frac{1}{n} + 1)\\alpha",
+        "i = 1 + (n - 1)\\alpha",
+        "i = 1 + (\\frac{1}{n} - 1)\\alpha"
+      ],
+      "answer": "i = 1 + (\\frac{1}{n} - 1)\\alpha",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_038",
+      "question": "Molal Elevation constant (K<sub>b</sub>) equals (M<sub>A</sub> = molar mass of solvent, T<sub>b</sub><sup>&deg;</sup> = boiling point of solvent, &Delta;H<sub>v</sub> = molar enthalpy of vapourisaton)",
+      "options": [
+        "\\frac{1000 \\times M_A R (T_b^o)^2}{\\Delta H_v}",
+        "\\frac{M_A R (T_b^o)^2}{1000 \\times \\Delta H_v}",
+        "\\frac{1000 \\times M_A R T_b^o}{\\Delta H_v}",
+        "\\frac{M_A R T_b^o}{1000 \\times \\Delta H_v}"
+      ],
+      "answer": "\\frac{M_A R (T_b^o)^2}{1000 \\times \\Delta H_v}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+
+    {
+      "id": "solutions_qn_039",
+      "question": "Molal Depression constant (K<sub>f</sub>) equals (M<sub>A</sub> = molar mass of solvent,T<sub>f</sub><sup>&deg;</sup> = freezing point of solvent, &Delta;H<sub>f</sub>  = molar enthalpy of fusion)",
+      "options": [
+        "\\frac{1000 \\times M_A R(T_f^o)^2}{\\Delta H_f}",
+        "\\frac{M_A R(T_f^o)^2}{1000 \\times \\Delta H_f}",
+        "\\frac{1000 \\times M_A R T_f^o}{\\Delta H_f}",
+        "\\frac{M_A R T_f^o}{1000 \\times \\Delta H_f}"
+      ],
+      "answer": "\\frac{M_A R(T_f^o)^2}{1000 \\times \\Delta H_f}",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "solutions_qn_040",
+      "question": "Choose the correct option for minimum boiling azeotrope",
+      "options": [
+        "Boiling point higher than pure components",
+        "Boiling point lower than pure components",
+        "Separated by fractional distillation",
+        "Liquid and Vapour at different composition"
+      ],
+      "answer": "Boiling point lower than pure components",
+      "tags": {
+        "chapter": "Solutions",
+        "difficulty": "medium",
+        "class": "12"
+      },
+      "image": null,
+      "tip": null
+    }
+
+]

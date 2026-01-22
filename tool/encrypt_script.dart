@@ -55,6 +55,7 @@ void main() {
     '${baseDir}12/indefinite_integrals.json',
     '${baseDir}12/electrochemistry.json',
     '${baseDir}11/parabola.json',
+    '${baseDir}12/solutions.json',
   ];
 
   final encrypter = Encrypter(AES(key));
