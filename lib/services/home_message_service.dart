@@ -912,7 +912,7 @@ class HomeMessageService {
       "AC", "EM Waves", "Ray Optics", "Wave Optics", "Dual Nature of Light",
       "Atoms", "Nuclei", "X Rays", "Semiconductors", "Vectors","Solid State","Chemical Equilibrium",
       "3D Geometry","Ellipse", "Definite Integrals","Indefinite Integrals", "Electrochemistry","Parabola",
-      "Solutions"
+      "Solutions","Probability"
 
     ];
 

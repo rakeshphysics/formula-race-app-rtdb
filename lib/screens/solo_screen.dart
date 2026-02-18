@@ -318,7 +318,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
       },
       'Maths': {
         '11': ['Ellipse','Parabola'],              // Add more chapters here
-        '12': ['3D Geometry','Definite Integrals','Indefinite Integrals'],          // Add more chapters here
+        '12': ['3D Geometry','Definite Integrals','Indefinite Integrals', 'Probability'],          // Add more chapters here
       },
     };
 

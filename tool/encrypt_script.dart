@@ -56,6 +56,9 @@ void main() {
     '${baseDir}12/electrochemistry.json',
     '${baseDir}11/parabola.json',
     '${baseDir}12/solutions.json',
+    '${baseDir}12/probability.json',
+    '${baseDir}11/quadratic_equations.json',
+    '${baseDir}11/atomic_structure.json',
   ];
 
   final encrypter = Encrypter(AES(key));

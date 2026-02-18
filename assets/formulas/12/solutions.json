@@ -255,7 +255,7 @@
     },
     {
       "id": "solutions_qn_015",
-      "question": "In Henry's Law (p = K<sub>H</sub> &cdot; &chi;), higher is the value of K<sub>H</sub> at a given pressure, _________ is the solubility of gas in Liquid",
+      "question": "In Henry's Law (p = K<sub>H</sub> . &chi;), higher is the value of K<sub>H</sub> at a given pressure, _________ is the solubility of gas in Liquid",
       "options": [
         "\\text{Higher}",
         "\\text{Lower}",
@@ -273,7 +273,7 @@
     },
     {
       "id": "solutions_qn_016",
-      "question": "In Henry's Law (p = K<sub>H</sub> &cdot; &chi;), as temperature increases, the value of K<sub>H</sub> _________",
+      "question": "In Henry's Law (p = K<sub>H</sub> . &chi;), as temperature increases, the value of K<sub>H</sub> _________",
       "options": [
         "\\text{Increases}",
         "\\text{Decreases}",
@@ -506,7 +506,7 @@
         "class": "12"
       },
       "image": "assets/images/12th/solutions/solutions_qn_028.riv",
-      "tip": null
+      "tip": "DeltaG mix is always negative, for ideal, +ve and -ve Deviation"
     },
     {
       "id": "solutions_qn_029",
@@ -714,15 +714,15 @@
       "id": "solutions_qn_040",
       "question": "Choose the correct option for minimum boiling azeotrope",
       "options": [
-        "Boiling point higher than pure components",
-        "Boiling point lower than pure components",
-        "Separated by fractional distillation",
-        "Liquid and Vapour at different composition"
+        "\\text{Boiling point higher than pure components}",
+        "\\text{Boiling point lower than pure components}",
+        "\\text{Separated by fractional distillation}",
+        "\\text{Liquid and Vapour at different composition}"
       ],
-      "answer": "Boiling point lower than pure components",
+      "answer": "\\text{Boiling point lower than pure components}",
       "tags": {
         "chapter": "Solutions",
-        "difficulty": "medium",
+        "difficulty": "god",
         "class": "12"
       },
       "image": null,

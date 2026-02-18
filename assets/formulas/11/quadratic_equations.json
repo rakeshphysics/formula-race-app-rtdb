@@ -1,0 +1,362 @@
+[
+  {
+    "id": "quadratic_equations_qn_001",
+    "question": "x<sup>4</sup> + 3x - 1 is a polynomial of degree",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "4",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_002",
+    "question": "The range of quadratic equation ax<sup>2</sup> + bx + c = 0 (a > 0)",
+    "options": [
+      "\\left(\\frac{-D}{4a}, \\infty\\right)",
+      "\\left(-\\infty, \\frac{-D}{4a}\\right)",
+      "\\left(\\frac{-b}{2a}, \\frac{-D}{4a}\\right)",
+      "\\left(\\frac{-b}{2a}, \\frac{D}{4a}\\right)"
+    ],
+    "answer": "\\left(\\frac{-D}{4a}, \\infty\\right)",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_003",
+    "question": "For the quadratic equation ax<sup>2</sup> + bx + c = 0, if roots are real and distinct then (D = b<sup>2</sup> - 4ac)",
+    "options": [
+      "D > 0",
+      "D = 0",
+      "D < 0",
+      "D \\neq 0"
+    ],
+    "answer": "D > 0",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_004",
+    "question": "For the quadratic equation ax<sup>2</sup> + bx + c = 0, if roots are imaginary then (D = b<sup>2</sup> - 4ac)",
+    "options": [
+      "D > 0",
+      "D = 0",
+      "D < 0",
+      "D \\neq 0"
+    ],
+    "answer": "D < 0",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_005",
+    "question": "For the quadratic equation ax<sup>2</sup> + bx + c = 0, if roots are real and equal then (D = b<sup>2</sup> - 4ac)",
+    "options": [
+      "D > 0",
+      "D = 0",
+      "D < 0",
+      "D \\neq 0"
+    ],
+    "answer": "D = 0",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_006",
+    "question": "For the quadratic equation ax<sup>2</sup> + bx + c = 0, having roots &alpha; and &beta;, &alpha; + &beta; equals",
+    "options": [
+      "-b/a",
+      "-c/a",
+      "b/a",
+      "c/a"
+    ],
+    "answer": "-b/a",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_007",
+    "question": "For the quadratic equation ax<sup>2</sup> + bx + c = 0, having roots &alpha; and &beta;, &alpha;&beta; equals",
+    "options": [
+      "-b/a",
+      "-c/a",
+      "b/a",
+      "c/a"
+    ],
+    "answer": "c/a",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_008",
+    "question": "For the quadratic equation ax<sup>2</sup> + bx + c = 0, having roots &alpha; and &beta;, |&alpha; - &beta;| equals",
+    "options": [
+      "-b/a",
+      "-c/a",
+      "\\frac{\\sqrt{D}}{|a|}",
+      "c/a"
+    ],
+    "answer": "\\frac{\\sqrt{D}}{|a|}",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_009",
+    "question": "Consider an equation f(x) = 0 where f(x) is a polynomial with roots &alpha;, &alpha;, &beta; then &alpha; is a root to",
+    "options": [
+      "\\text{only } f(x)",
+      "\\text{f(x) and f'(x)}",
+      "\\text{only } f'(x)",
+      "\\text{Neither f(x) nor f'(x)}"
+    ],
+    "answer": "\\text{f(x) and f'(x)}",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_010",
+    "question": "For the two quadratic equations ax<sup>2</sup> + bx + c = 0 and a'x<sup>2</sup> + b'x + c' = 0, if they have one common root, then",
+    "options": [
+      "\\frac{a}{a'} = \\frac{b}{b'} = \\frac{c}{c'}",
+      "\\left(ab' - a'b\\right)\\left(bc' - b'c\\right) = 4\\left(ca' - c'a\\right)^2",
+      "\\frac{a}{a'} = \\frac{b'}{b} = \\frac{c}{c'}",
+      "\\left(ab' - a'b\\right)\\left(bc' - b'c\\right) = \\left(ca' - c'a\\right)^2"
+    ],
+    "answer": "\\left(ab' - a'b\\right)\\left(bc' - b'c\\right) = \\left(ca' - c'a\\right)^2",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_011",
+    "question": "For the quadratic equation ax<sup>2</sup> + bx + c = 0, from the graph we can deduce that",
+    "options": [
+      "a > 0, D < 0",
+      "a > 0, D > 0",
+      "a < 0, D < 0",
+      "a < 0, D > 0"
+    ],
+    "answer": "a > 0, D < 0",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/quadratic_equations/quadratic_equations_qn_011.svg",
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_012",
+    "question": "For the quadratic equation ax<sup>2</sup> + bx + c = 0, from the graph we can deduce that",
+    "options": [
+      "a > 0, D < 0",
+      "a > 0, D > 0",
+      "a < 0, D < 0",
+      "a < 0, D > 0"
+    ],
+    "answer": "a < 0, D > 0",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/quadratic_equations/quadratic_equations_qn_012.svg",
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_013",
+    "question": "For the quadratic equation ax<sup>2</sup> + bx + c = 0, from the graph we can deduce that",
+    "options": [
+      "a > 0, D < 0",
+      "a > 0, D > 0",
+      "a < 0, D < 0",
+      "a < 0, D = 0"
+    ],
+    "answer": "a < 0, D = 0",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/quadratic_equations/quadratic_equations_qn_013.svg",
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_014",
+    "question": "For the cubic equation ax<sup>3</sup> + bx<sup>2</sup> + cx + d = 0 having roots &alpha;, &beta;, &gamma;. &alpha; + &beta; + &gamma; equals",
+    "options": [
+      "c/a",
+      "-b/a",
+      "-d/a",
+      "b/a"
+    ],
+    "answer": "-b/a",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_015",
+    "question": "For the cubic equation ax<sup>3</sup> + bx<sup>2</sup> + cx + d = 0 having roots &alpha;, &beta;, &gamma;. &alpha;&beta; + &beta;&gamma; + &gamma;&alpha; equals",
+    "options": [
+      "c/a",
+      "-b/a",
+      "-d/a",
+      "b/a"
+    ],
+    "answer": "c/a",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_016",
+    "question": "For the cubic equation ax<sup>3</sup> + bx<sup>2</sup> + cx + d = 0 having roots &alpha;, &beta;, &gamma;. &alpha;&beta;&gamma; equals",
+    "options": [
+      "c/a",
+      "-b/a",
+      "-d/a",
+      "b/a"
+    ],
+    "answer": "-d/a",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_017",
+    "question": "For the quadratic equation f(x) = ax<sup>2</sup> + bx + c both roots are greater than a given number k if",
+    "options": [
+      "D \\geq 0,\\ k > \\frac{-b}{2a},\\ a\\ f(k) > 0",
+      "D \\geq 0,\\ k < \\frac{-b}{2a},\\ a\\ f(k) > 0",
+      "D \\geq 0,\\ k < \\frac{-b}{2a},\\ a\\ f(k) < 0",
+      "D \\geq 0,\\ k = \\frac{-b}{2a},\\ a\\ f(k) > 0"
+    ],
+    "answer": "D \\geq 0,\\ k < \\frac{-b}{2a},\\ a\\ f(k) > 0",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image":"assets/images/11th/quadratic_equations/quadratic_equations_qn_017.svg",
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_018",
+    "question": "For the quadratic equation f(x) = ax<sup>2</sup> + bx + c exactly one of the roots lies in the interval (k<sub>1</sub>, k<sub>2</sub>) if",
+    "options": [
+      "D > 0,\\ f(k_1)f(k_2) > 0",
+      "D > 0,\\ f(k_1)f(k_2) < 0",
+      "D < 0,\\ f(k_1)f(k_2) > 0",
+      "D \\geq 0,\\ f(k_1)f(k_2) < 0"
+    ],
+    "answer": "D > 0,\\ f(k_1)f(k_2) < 0",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/quadratic_equations/quadratic_equations_qn_018.svg",
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_019",
+    "question": "For a, b > 0 choose the correct option",
+    "options": [
+      "\\frac{a+b}{2} \\geq \\sqrt{ab} \\geq \\frac{2}{a+b}",
+      "\\frac{a+b}{2} \\geq \\frac{2}{a+b} \\geq \\sqrt{ab}",
+      "\\frac{a+b}{2} \\geq \\sqrt{ab} \\geq \\frac{2}{\\frac{1}{a} + \\frac{1}{b}}",
+      "\\frac{a+b}{2} \\geq \\frac{2}{\\frac{1}{a} + \\frac{1}{b}} \\geq \\sqrt{ab}"
+    ],
+    "answer": "\\frac{a+b}{2} \\geq \\sqrt{ab} \\geq \\frac{2}{\\frac{1}{a} + \\frac{1}{b}}",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "quadratic_equations_qn_020",
+    "question": "If a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub> are n positive real numbers and m<sub>1</sub>, m<sub>2</sub>, ..., m<sub>n</sub> are n positive rational numbers, then",
+    "options": [
+      "\\frac{m_1a_1 + m_2a_2 + \\ldots + m_na_n}{n} \\geq \\left(a_1^{m_1} \\cdot a_2^{m_2} \\cdots a_n^{m_n}\\right)^{\\frac{1}{n}}",
+      "\\frac{m_1a_1 + m_2a_2 + \\ldots + m_na_n}{m_1 + m_2 + \\ldots + m_n} \\geq \\left(a_1^{m_1} \\cdot a_2^{m_2} \\cdots a_n^{m_n}\\right)^{\\frac{1}{m_1 + m_2 + \\ldots + m_n}}",
+      "\\frac{m_1a_1 + m_2a_2 + \\ldots + m_na_n}{m_1 + m_2 + \\ldots + m_n} \\leq \\left(a_1^{m_1} \\cdot a_2^{m_2} \\cdots a_n^{m_n}\\right)^{\\frac{1}{m_1 + m_2 + \\ldots + m_n}}",
+      "\\frac{m_1a_1 + m_2a_2 + \\ldots + m_na_n}{n} \\leq \\left(a_1^{m_1} \\cdot a_2^{m_2} \\cdots a_n^{m_n}\\right)^{\\frac{1}{n}}"
+    ],
+    "answer": "\\frac{m_1a_1 + m_2a_2 + \\ldots + m_na_n}{m_1 + m_2 + \\ldots + m_n} \\geq \\left(a_1^{m_1} \\cdot a_2^{m_2} \\cdots a_n^{m_n}\\right)^{\\frac{1}{m_1 + m_2 + \\ldots + m_n}}",
+    "tags": {
+      "chapter": "Quadratic Equations",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  }
+]

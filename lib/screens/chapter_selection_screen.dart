@@ -317,6 +317,7 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
       'Definite Integrals',
       'Indefinite Integrals',
       'Parabola',
+      'Probability'
       // Add more Maths chapters here as needed
     ],
   };

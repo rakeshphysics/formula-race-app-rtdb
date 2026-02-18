@@ -1,0 +1,722 @@
+[
+  {
+    "id": "atomic_structure_qn_001",
+    "question": "For a neutral atom (e = no of electrons, p = no of protons)",
+    "options": [
+      "e = p",
+      "e > p",
+      "e < p",
+      "e \\neq p"
+    ],
+    "answer": "e = p",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_002",
+    "question": "For an ion with charge +2, the no of electrons is (Z = atomic number)",
+    "options": [
+      "Z",
+      "Z - 2",
+      "Z + 2",
+      "2Z"
+    ],
+    "answer": "Z - 2",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_003",
+    "question": "The energy of each quantum of light is (&nu; = frequency of radiation, h = Planck's constant, c = speed of light)",
+    "options": [
+      "h\\nu",
+      "h\\nu^2",
+      "h\\sqrt{\\nu}",
+      "hc\\nu"
+    ],
+    "answer": "h\\nu",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_004",
+    "question": "The energy of each quantum of light is (&lambda; = wavelength of radiation, h = Planck's constant, c = speed of light)",
+    "options": [
+      "h\\lambda",
+      "h\\lambda^2",
+      "hc\\lambda",
+      "\\frac{hc}{\\lambda}"
+    ],
+    "answer": "\\frac{hc}{\\lambda}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_005",
+    "question": "The wavelength (&lambda;) of photon released when an electron in a hydrogen atom jumps from n<sub>2</sub> to n<sub>1</sub> is given by (R = Rydberg constant)",
+    "options": [
+      "\\frac{1}{\\lambda} = R\\left[\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right]",
+      "\\lambda = R\\left[\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right]",
+      "\\lambda = R\\left[\\frac{1}{n_1^2} + \\frac{1}{n_2^2}\\right]",
+      "\\frac{1}{\\lambda} = R\\left[\\frac{1}{n_1^2} + \\frac{1}{n_2^2}\\right]"
+    ],
+    "answer": "\\frac{1}{\\lambda} = R\\left[\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right]",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_006",
+    "question": "The possible values of principal quantum number n is given by",
+    "options": [
+      "1, 2, 3, 4, \\ldots",
+      "0, 1, 2, 3, \\ldots",
+      "\\ldots -1, 0, 1 \\ldots",
+      "+\\frac{1}{2}, -\\frac{1}{2}"
+    ],
+    "answer": "1, 2, 3, 4, \\ldots",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_007",
+    "question": "The possible values of Azimuthal quantum number l is given by",
+    "options": [
+      "1, 2, 3, 4, \\ldots",
+      "0, 1, 2, 3, \\ldots",
+      "\\ldots -1, 0, 1 \\ldots",
+      "+\\frac{1}{2}, -\\frac{1}{2}"
+    ],
+    "answer": "0, 1, 2, 3, \\ldots",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_008",
+    "question": "The possible values of magnetic quantum number m is given by",
+    "options": [
+      "1, 2, 3, 4, \\ldots",
+      "0, 1, 2, 3, \\ldots",
+      "\\ldots -1, 0, 1 \\ldots",
+      "+\\frac{1}{2}, -\\frac{1}{2}"
+    ],
+    "answer": "\\ldots -1, 0, 1 \\ldots",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_009",
+    "question": "The possible values of spin quantum number s is given by",
+    "options": [
+      "1, 2, 3, 4, \\ldots",
+      "0, 1, 2, 3, \\ldots",
+      "\\ldots -1, 0, 1 \\ldots",
+      "+\\frac{1}{2}, -\\frac{1}{2}"
+    ],
+    "answer": "+\\frac{1}{2}, -\\frac{1}{2}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_010",
+    "question": "Heisenberg uncertainty principle is given by (x = position, p = momentum)",
+    "options": [
+      "\\Delta x \\cdot \\Delta p \\geq \\frac{h}{2\\pi}",
+      "\\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi}",
+      "\\Delta x \\cdot \\Delta p \\leq \\frac{h}{2\\pi}",
+      "\\Delta x \\cdot \\Delta p \\leq \\frac{h}{4\\pi}"
+    ],
+    "answer": "\\Delta x \\cdot \\Delta p \\geq \\frac{h}{4\\pi}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_011",
+    "question": "According to Bohr's model, electrons can only move in orbits that satisfy the condition, angular momentum of electron equals (n = integer)",
+    "options": [
+      "\\frac{nh}{4\\pi}",
+      "\\frac{nh}{2\\pi}",
+      "\\frac{nh}{3\\pi}",
+      "\\frac{nh}{\\pi}"
+    ],
+    "answer": "\\frac{nh}{2\\pi}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_012",
+    "question": "The radius of n<sup>th</sup> orbit is given by (n = principal quantum number, Z = Atomic number)",
+    "options": [
+      "0.529 \\frac{Z}{n} \\text{ Å}",
+      "0.529 \\frac{Z}{n^2} \\text{ Å}",
+      "0.529 \\frac{n^2}{Z} \\text{ Å}",
+      "0.529 \\frac{n}{Z} \\text{ Å}"
+    ],
+    "answer": "0.529 \\frac{n^2}{Z} \\text{ Å}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_013",
+    "question": "The total energy of an electron in n<sup>th</sup> orbit of hydrogen like atom is given by (n = principal quantum number, Z = Atomic number)",
+    "options": [
+      "13.6 \\frac{Z^2}{n^2} \\text{ eV}",
+      "-13.6 \\frac{Z^2}{n^2} \\text{ eV}",
+      "-13.6 \\frac{Z}{n} \\text{ eV}",
+      "13.6 \\frac{Z}{n} \\text{ eV}"
+    ],
+    "answer": "-13.6 \\frac{Z^2}{n^2} \\text{ eV}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_014",
+    "question": "The speed of an electron in n<sup>th</sup> orbit of hydrogen like atom is given by (n = principal quantum number, Z = Atomic number)",
+    "options": [
+      "2.18 \\times 10^6 \\frac{Z^2}{n} \\text{ m/s}",
+      "2.18 \\times 10^6 \\frac{n^2}{Z} \\text{ m/s}",
+      "2.18 \\times 10^6 \\frac{n}{Z} \\text{ m/s}",
+      "2.18 \\times 10^6 \\frac{Z}{n} \\text{ m/s}"
+    ],
+    "answer": "2.18 \\times 10^6 \\frac{Z}{n} \\text{ m/s}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_015",
+    "question": "The maximum number of electrons in the n<sup>th</sup> shell is given by",
+    "options": [
+      "n",
+      "2n",
+      "n^2",
+      "2n^2"
+    ],
+    "answer": "2n^2",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_016",
+    "question": "When an electron jumps from n state to ground state, the number of spectral lines emitted is",
+    "options": [
+      "\\frac{n(n-1)}{2}",
+      "2n^2",
+      "\\frac{(n-1)(n+1)}{2}",
+      "\\frac{n(n+1)}{2}"
+    ],
+    "answer": "\\frac{n(n-1)}{2}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "The above formula can be extended, to calculate the number of lines between any two states. The no of lines from 5 → 3 will be same as the no of lines between 3 → 1"
+  },
+  {
+    "id": "atomic_structure_qn_017",
+    "question": "The atoms shown below are",
+    "options": [
+      "\\text{Isotopes}",
+      "\\text{Isobars}",
+      "\\text{Isotones}",
+      "\\text{Isodiapheres}"
+    ],
+    "answer": "\\text{Isotopes}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/atomic_structure/atomic_structure_qn_017.svg",
+    "tip": "Same atomic number but different mass number"
+  },
+  {
+    "id": "atomic_structure_qn_018",
+    "question": "The atoms shown below are",
+    "options": [
+      "\\text{Isotopes}",
+      "\\text{Isobars}",
+      "\\text{Isotones}",
+      "\\text{Isodiapheres}"
+    ],
+    "answer": "\\text{Isobars}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/atomic_structure/atomic_structure_qn_018.svg",
+    "tip": "Same mass number but different atomic number"
+  },
+  {
+    "id": "atomic_structure_qn_019",
+    "question": "The atoms shown below are",
+    "options": [
+      "\\text{Isotopes}",
+      "\\text{Isobars}",
+      "\\text{Isotones}",
+      "\\text{Isodiapheres}"
+    ],
+    "answer": "\\text{Isotones}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/atomic_structure/atomic_structure_qn_019.svg",
+    "tip": "Same number of neutrons"
+  },
+  {
+    "id": "atomic_structure_qn_020",
+    "question": "The atoms shown below are",
+    "options": [
+      "\\text{Isotopes}",
+      "\\text{Isobars}",
+      "\\text{Isotones}",
+      "\\text{Isosters}"
+    ],
+    "answer": "\\text{Isosters}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "assets/images/11th/atomic_structure/atomic_structure_qn_020.svg",
+    "tip": "Same number of atoms and electrons"
+  },
+  {
+    "id": "atomic_structure_qn_021",
+    "question": "The atoms shown below are",
+    "options": [
+      "\\text{Isotopes}",
+      "\\text{Isobars}",
+      "\\text{Isotones}",
+      "\\text{IsoDiapheres}"
+    ],
+    "answer": "\\text{IsoDiapheres}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/atomic_structure/atomic_structure_qn_021.svg",
+    "tip": "Same difference in number of neutrons and protons"
+  },
+  {
+    "id": "atomic_structure_qn_022",
+    "question": "Is the below pairing of electrons in orbitals correct",
+    "options": [
+      "\\text{Yes}",
+      "\\text{No}",
+      "\\text{NA}",
+      "\\text{.NA.}"
+    ],
+    "answer": "\\text{Yes}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/atomic_structure/atomic_structure_qn_022.svg",
+    "tip": "Filled using Hund's rule"
+  },
+  {
+    "id": "atomic_structure_qn_023",
+    "question": "Is the below pairing of electrons in orbitals correct",
+    "options": [
+      "\\text{Yes}",
+      "\\text{No}",
+      "\\text{NA}",
+      "\\text{.NA.}"
+    ],
+    "answer": "\\text{No}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/atomic_structure/atomic_structure_qn_023.svg",
+    "tip": "Filled using Hund's rule"
+  },
+  {
+    "id": "atomic_structure_qn_024",
+    "question": "The radius of a nucleus equals (R<sub>o</sub> = 1.33 fm, A = Mass no, Z = Atomic number)",
+    "options": [
+      "R = R_o\\sqrt{Z}",
+      "R = R_o Z^{\\frac{1}{3}}",
+      "R = R_o\\sqrt{A}",
+      "R = R_o A^{\\frac{1}{3}}"
+    ],
+    "answer": "R = R_o A^{\\frac{1}{3}}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_025",
+    "question": "Is the below diagram true or false",
+    "options": [
+      "\\text{True}",
+      "\\text{False}",
+      "\\text{NA}",
+      "\\text{.NA.}"
+    ],
+    "answer": "\\text{True}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/atomic_structure/atomic_structure_qn_025.svg",
+    "tip": "Use Pauli's exclusion principle"
+  },
+  {
+    "id": "atomic_structure_qn_026",
+    "question": "Is the below diagram true or false",
+    "options": [
+      "\\text{True}",
+      "\\text{False}",
+      "\\text{NA}",
+      "\\text{.NA.}"
+    ],
+    "answer": "\\text{False}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/atomic_structure/atomic_structure_qn_026.svg",
+    "tip": "Use Pauli's exclusion principle"
+  },
+  {
+    "id": "atomic_structure_qn_027",
+    "question": "Orbital angular momentum is given by (l = azimuthal quantum number)",
+    "options": [
+      "\\sqrt{l(l-1)}\\frac{h}{4\\pi}",
+      "\\sqrt{l(l+1)}\\frac{h}{4\\pi}",
+      "\\sqrt{l(l-1)}\\frac{h}{2\\pi}",
+      "\\sqrt{l(l+1)}\\frac{h}{2\\pi}"
+    ],
+    "answer": "\\sqrt{l(l+1)}\\frac{h}{2\\pi}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_028",
+    "question": "Spin angular momentum for a particle is given by (s = spin quantum number)",
+    "options": [
+      "\\sqrt{s(s-1)}\\frac{h}{4\\pi}",
+      "\\sqrt{s(s+1)}\\frac{h}{4\\pi}",
+      "\\sqrt{s(s-1)}\\frac{h}{2\\pi}",
+      "\\sqrt{s(s+1)}\\frac{h}{2\\pi}"
+    ],
+    "answer": "\\sqrt{s(s+1)}\\frac{h}{2\\pi}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "For electron, proton, neutron s is 1/2;, for Higgs Boson, Pions s is 0. Value depends on the particle."
+  },
+  {
+    "id": "atomic_structure_qn_029",
+    "question": "The maximum number of electrons in a particular subshell equals (l = azimuthal quantum number)",
+    "options": [
+      "\\frac{l(l+1)}{2}",
+      "\\frac{l(l-1)}{2}",
+      "l(l+1)",
+      "2(2l+1)"
+    ],
+    "answer": "2(2l+1)",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_030",
+    "question": "In Rutherford scattering experiment, the correct relation is (N(&theta;) = no of particles scattered at angle theta, Z = atomic number of gold, E<sub>k</sub> = kinetic energy of incident alpha particles)",
+    "options": [
+      "N(\\theta) \\propto \\frac{Z^2}{E_k^2}\\csc^2\\left(\\frac{\\theta}{2}\\right)",
+      "N(\\theta) \\propto \\frac{Z}{E_k}\\csc^2\\left(\\frac{\\theta}{2}\\right)",
+      "N(\\theta) \\propto \\frac{Z^2}{E_k^2}\\csc^4\\left(\\frac{\\theta}{2}\\right)",
+      "N(\\theta) \\propto \\frac{Z}{E_k}\\csc^4\\left(\\frac{\\theta}{2}\\right)"
+    ],
+    "answer": "N(\\theta) \\propto \\frac{Z^2}{E_k^2}\\csc^4\\left(\\frac{\\theta}{2}\\right)",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_031",
+    "question": "The graph of &psi;<sup>2</sup> v/s r for 1s orbital is",
+    "options": [
+      "A",
+      "B",
+      "\\text{Can be both}",
+      "\\text{None of these}"
+    ],
+    "answer": "A",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/atomic_structure/atomic_structure_qn_031.svg",
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_032",
+    "question": "The graph of &psi;<sup>2</sup> v/s r for 2s orbital is",
+    "options": [
+      "A",
+      "B",
+      "\\text{Can be both}",
+      "\\text{None of these}"
+    ],
+    "answer": "B",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image":"assets/images/11th/atomic_structure/atomic_structure_qn_032.svg",
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_033",
+    "question": "The orbital shown in diagram is",
+    "options": [
+      "s",
+      "p_x",
+      "p_z",
+      "d_{xy}"
+    ],
+    "answer": "s",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/atomic_structure/atomic_structure_qn_033.svg",
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_034",
+    "question": "The orbital shown in diagram is",
+    "options": [
+      "s",
+      "p_x",
+      "p_z",
+      "d_{xy}"
+    ],
+    "answer": "p_x",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/atomic_structure/atomic_structure_qn_034.svg",
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_035",
+    "question": "The orbital shown in diagram is",
+    "options": [
+      "s",
+      "p_x",
+      "p_z",
+      "d_{xy}"
+    ],
+    "answer": "p_z",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/atomic_structure/atomic_structure_qn_035.svg",
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_036",
+    "question": "The orbital shown in diagram is",
+    "options": [
+      "s",
+      "p_x",
+      "p_z",
+      "d_{xy}"
+    ],
+    "answer": "d_{xy}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/atomic_structure/atomic_structure_qn_036.svg",
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_037",
+    "question": "The orbital shown in diagram is",
+    "options": [
+      "d_{x^2-y^2}",
+      "d_{z^2}",
+      "d_{yz}",
+      "d_{xy}"
+    ],
+    "answer": "d_{yz}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/atomic_structure/atomic_structure_qn_037.svg",
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_038",
+    "question": "The orbital shown in diagram is",
+    "options": [
+      "d_{x^2-y^2}",
+      "d_{z^2}",
+      "d_{yz}",
+      "d_{xy}"
+    ],
+    "answer": "d_{x^2-y^2}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/atomic_structure/atomic_structure_qn_038.svg",
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_039",
+    "question": "The orbital shown in diagram is",
+    "options": [
+      "d_{x^2-y^2}",
+      "d_{z^2}",
+      "d_{yz}",
+      "d_{xy}"
+    ],
+    "answer": "d_{z^2}",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/atomic_structure/atomic_structure_qn_039.svg",
+    "tip": null
+  },
+  {
+    "id": "atomic_structure_qn_040",
+    "question": "Schrodinger wave equation is given by (x, y, z = cartesian coordinates, m = mass of electron, E = total energy of electron, V = potential energy of electron, &psi; = wave function)",
+    "options": [
+      "\\frac{\\partial^2\\psi}{\\partial x^2} + \\frac{\\partial^2\\psi}{\\partial y^2} + \\frac{\\partial^2\\psi}{\\partial z^2} + \\frac{8\\pi^2m}{h^2}(E + V)\\psi = 0",
+      "\\frac{\\partial^2\\psi}{\\partial x^2} + \\frac{\\partial^2\\psi}{\\partial y^2} + \\frac{\\partial^2\\psi}{\\partial z^2} + \\frac{8\\pi^2m}{h^2}(E - V)\\psi = 0",
+      "\\frac{\\partial^2\\psi}{\\partial x^2} + \\frac{\\partial^2\\psi}{\\partial y^2} + \\frac{\\partial^2\\psi}{\\partial z^2} + \\frac{4\\pi^2m}{h^2}(E + V)\\psi = 0",
+      "\\frac{\\partial^2\\psi}{\\partial x^2} + \\frac{\\partial^2\\psi}{\\partial y^2} + \\frac{\\partial^2\\psi}{\\partial z^2} + \\frac{4\\pi^2m}{h^2}(E - V)\\psi = 0"
+    ],
+    "answer": "\\frac{\\partial^2\\psi}{\\partial x^2} + \\frac{\\partial^2\\psi}{\\partial y^2} + \\frac{\\partial^2\\psi}{\\partial z^2} + \\frac{8\\pi^2m}{h^2}(E - V)\\psi = 0",
+    "tags": {
+      "chapter": "Atomic Structure",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  }
+]

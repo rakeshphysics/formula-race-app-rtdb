@@ -1,0 +1,548 @@
+[
+
+  {
+    "id": "probability_qn_001",
+    "question": "Probability of a Sure Event equals",
+    "options": [
+      "1",
+      "0",
+      "0.5",
+      "0.25"
+    ],
+    "answer": "1",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_002",
+    "question": "Probability of an Impossible Event equals",
+    "options": [
+      "1",
+      "0",
+      "0.5",
+      "0.25"
+    ],
+    "answer": "0",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_003",
+    "question": "P(A) + P(A') =",
+    "options": [
+      "1",
+      "0",
+      "0.5",
+      "0.25"
+    ],
+    "answer": "1",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_004",
+    "question": "P(A &cap; A') =",
+    "options": [
+      "1",
+      "0",
+      "0.5",
+      "P(A)"
+    ],
+    "answer": "0",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_005",
+    "question": "P(A &cup; A') =",
+    "options": [
+      "1",
+      "0",
+      "0.5",
+      "P(A')"
+    ],
+    "answer": "1",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_006",
+    "question": "P(A')' =",
+    "options": [
+      "1",
+      "0",
+      "P(A)",
+      "P(A')"
+    ],
+    "answer": "P(A)",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_007",
+    "question": "P(A &cup; B) =",
+    "options": [
+      "P(A) - P(B)",
+      "P(A) + P(B) + P(A \\cap B)",
+      "P(A) - P(B) + P(A \\cap B)",
+      "P(A) + P(B) - P(A \\cap B)"
+    ],
+    "answer": "P(A) + P(B) - P(A \\cap B)",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_008",
+    "question": "P(B &minus; A) =",
+    "options": [
+      "P(B) + P(A \\cap B)",
+      "P(B) - P(A \\cap B)",
+      "P(A) + P(A \\cap B)",
+      "P(A) - P(A \\cup B)"
+    ],
+    "answer": "P(B) - P(A \\cap B)",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_009",
+    "question": "P{(B &minus; A) &cup; (A &minus; B)} =",
+    "options": [
+      "P(A) + P(B) + 2P(A \\cap B)",
+      "P(A) + P(B) - 2P(A \\cup B)",
+      "P(A) + P(B) - 2P(A \\cap B)",
+      "P(A) - P(A \\cup B)"
+    ],
+    "answer": "P(A) + P(B) - 2P(A \\cap B)",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+
+  {
+    "id": "probability_qn_010",
+    "question": "P(A &cup; B &cup; C) =",
+    "options": [
+      "P(A) + P(B) + P(C) - P(A \\cap B) - P(B \\cap C) - P(C \\cap A) + P(A \\cap B \\cap C)",
+      "P(A) + P(B) + P(C) + P(A \\cap B) + P(B \\cap C) + P(C \\cap A) + P(A \\cap B \\cap C)",
+      "P(A) + P(B) + P(C) + P(A \\cap B) + P(B \\cap C) + P(C \\cap A) - P(A \\cap B \\cap C)",
+      "P(A) + P(B) + P(C) - P(A \\cap B) + P(B \\cap C) - P(C \\cap A) + P(A \\cap B \\cap C)"
+    ],
+    "answer": "P(A) + P(B) + P(C) - P(A \\cap B) - P(B \\cap C) - P(C \\cap A) + P(A \\cap B \\cap C)",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_011",
+    "question": "If A and B are mutually exclusive events, then P(A &cap; B) =",
+    "options": [
+      "0",
+      "P(A) + P(B) - P(A \\cup B)",
+      "1",
+      "P(A) + P(B)"
+    ],
+    "answer": "0",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_012",
+    "question": "If A and B are mutually exclusive events, then P(A &cup; B) =",
+    "options": [
+      "0",
+      "P(A) + P(B) - P(A \\cup B)",
+      "1",
+      "P(A) + P(B)"
+    ],
+    "answer": "P(A) + P(B)",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_013",
+    "question": "P(A/B) =",
+    "options": [
+      "\\frac{P(A \\cap B)}{P(A)}",
+      "\\frac{P(A \\cap B)}{P(B)}",
+      "\\frac{P(A \\cup B)}{P(A)}",
+      "\\frac{P(A \\cup B)}{P(B)}"
+    ],
+    "answer": "\\frac{P(A \\cap B)}{P(B)}",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_014",
+    "question": "If A and B are independent events, then P(A/B) =",
+    "options": [
+      "0",
+      "P(A)",
+      "1",
+      "P(B)"
+    ],
+    "answer": "P(A)",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_015",
+    "question": "P(A/B) + P(A&#772;/B) =",
+    "options": [
+      "0",
+      "P(A)",
+      "1",
+      "P(B)"
+    ],
+    "answer": "1",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_016",
+    "question": "P(A&#772; &cap; B&#772;) =",
+    "options": [
+      "P(A) + 2P(A \\cap B)",
+      "1 - P(A \\cup B)",
+      "P(A \\cup B)",
+      "P(A) - P(A \\cup B)"
+    ],
+    "answer": "1 - P(A \\cup B)",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_017",
+    "question": "P(A&#772; &cup; B&#772;) =",
+    "options": [
+      "1 - P(A \\cap B)",
+      "1 - P(A \\cup B)",
+      "P(A \\cup B)",
+      "P(A) - P(A \\cup B)"
+    ],
+    "answer": "1 - P(A \\cap B)",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_018",
+    "question": "If A, B, C be three events, then P(at least two of A, B, C occur is)",
+    "options": [
+      "P(A) + P(B) + P(C) - 2P(A \\cup B \\cup C)",
+      "P(A) + P(B) + P(C) - P(A \\cup B \\cup C)",
+      "P(A \\cap B) + P(B \\cap C) + P(C \\cap A) - 2P(A \\cap B \\cap C)",
+      "P(A \\cap B) + P(B \\cap C) + P(C \\cap A) - 3P(A \\cap B \\cap C)"
+    ],
+    "answer": "P(A \\cap B) + P(B \\cap C) + P(C \\cap A) - 2P(A \\cap B \\cap C)",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_019",
+    "question": "If A, B, C be three events, then P(exactly two of A, B, C occur is)",
+    "options": [
+      "P(A) + P(B) + P(C) - 3P(A \\cup B \\cup C)",
+      "P(A) + P(B) + P(C) - P(A \\cup B \\cup C)",
+      "P(A \\cap B) + P(B \\cap C) + P(C \\cap A) - 2P(A \\cap B \\cap C)",
+      "P(A \\cap B) + P(B \\cap C) + P(C \\cap A) - 3P(A \\cap B \\cap C)"
+    ],
+    "answer": "P(A \\cap B) + P(B \\cap C) + P(C \\cap A) - 3P(A \\cap B \\cap C)",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+
+  {
+    "id": "probability_qn_020",
+    "question": "If A, B, C be three events, then P(exactly one of A, B, C occur is)",
+    "options": [
+      "P(A) + P(B) + P(C) - 2P(A \\cap B) - 2P(B \\cap C) - 2P(C \\cap A) + 3P(A \\cap B \\cap C)",
+      "P(A) + P(B) + P(C) - P(A \\cup B \\cup C)",
+      "P(A \\cap B) + P(B \\cap C) + P(C \\cap A) - 2P(A \\cap B \\cap C)",
+      "P(A) + P(B) + P(C) - 2P(A \\cap B) - 2P(B \\cap C) - 2P(C \\cap A) + 3P(A \\cup B \\cup C)"
+    ],
+    "answer": "P(A) + P(B) + P(C) - 2P(A \\cap B) - 2P(B \\cap C) - 2P(C \\cap A) + 3P(A \\cap B \\cap C)",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+
+  {
+    "id": "probability_qn_021",
+    "question": "If odds in the favour of event E is a: b, then P(E) =",
+    "options": [
+      "\\frac{a}{b}",
+      "\\frac{b}{a}",
+      "\\frac{a}{a + b}",
+      "\\frac{b}{a + b}"
+    ],
+    "answer": "\\frac{a}{a + b}",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_022",
+    "question": "If odds against event E is a: b, then P(E) =",
+    "options": [
+      "\\frac{a}{b}",
+      "\\frac{b}{a}",
+      "\\frac{a}{a + b}",
+      "\\frac{b}{a + b}"
+    ],
+    "answer": "\\frac{b}{a + b}",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_023",
+    "question": "In an experiment of n letters in n addressed envelopes, the probability of inserting all n letters in correct envelopes is",
+    "options": [
+      "1 - \\frac{1}{n!}",
+      "\\frac{1}{n!}",
+      "\\frac{1}{2!} - \\frac{1}{3!} + .. + \\frac{(-1)^n}{n!}",
+      "\\frac{1}{2!} + \\frac{1}{3!} + .. + \\frac{1}{n!}"
+    ],
+    "answer": "\\frac{1}{n!}",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_024",
+    "question": "In an experiment of n letters in n addressed envelopes, the probability that at least one letter is not in right envelope is",
+    "options": [
+      "1 - \\frac{1}{n!}",
+      "\\frac{1}{n!}",
+      "\\frac{1}{2!} - \\frac{1}{3!} + .. + \\frac{(-1)^n}{n!}",
+      "\\frac{1}{2!} + \\frac{1}{3!} + .. + \\frac{1}{n!}"
+    ],
+    "answer": "1 - \\frac{1}{n!}",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_025",
+    "question": "In an experiment of n letters in n addressed envelopes, the probability of keeping all letters in wrong envelopes is",
+    "options": [
+      "1 - \\frac{1}{n!}",
+      "\\frac{1}{n!}",
+      "\\frac{1}{2!} - \\frac{1}{3!} + .. + \\frac{(-1)^n}{n!}",
+      "\\frac{1}{2!} + \\frac{1}{3!} + .. + \\frac{1}{n!}"
+    ],
+    "answer": "\\frac{1}{2!} - \\frac{1}{3!} + .. + \\frac{(-1)^n}{n!}",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_026",
+    "question": "P( (A &cup; B) / F ) =",
+    "options": [
+      "P(A/F) - P(B/F)",
+      "0",
+      "P(A/F) + P(B/F) - P((A \\cap B)/F)",
+      "P(A/F) + P(B/F) + P((A \\cap B)/F)"
+    ],
+    "answer": "P(A/F) + P(B/F) - P((A \\cap B)/F)",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_027",
+    "question": "If A<sub>1</sub>, A<sub>2</sub>, A<sub>3</sub> are events associated with a random experiment, then P(A<sub>1</sub> &cap; A<sub>2</sub> &cap; A<sub>3</sub>) =",
+    "options": [
+      "P(A_1)P(A_2/A_1)P(A_3/A_2)",
+      "P(A_1)P(A_2/A_1)P(A_3/(A_1 \\cap A_2))",
+      "P(A_1)P(A_2/A_1)P(A_3/(A_1 \\cup A_2))",
+      "P(A_1)P(A_3/A_1)P(A_2/(A_1 \\cup A_2))"
+    ],
+    "answer": "P(A_1)P(A_2/A_1)P(A_3/(A_1 \\cap A_2))",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_028",
+    "question": "Let S be a sample space and E<sub>1</sub>, E<sub>2</sub>, ..., E<sub>n</sub> be a partition of sample space S. If A is any event that occurs with E<sub>1</sub>, E<sub>2</sub>, ..., E<sub>n</sub> then, P(A) =",
+    "options": [
+      "\\sum_{r=2}^{n-1} P(E_r) P\\left(\\frac{A}{E_r}\\right)",
+      "\\sum_{r=2}^{n} P(E_r) P\\left(\\frac{A}{E_r}\\right)",
+      "\\sum_{r=1}^{n-1} P(E_r) P\\left(\\frac{A}{E_r}\\right)",
+      "\\sum_{r=1}^{n} P(E_r) P\\left(\\frac{A}{E_r}\\right)"
+    ],
+    "answer": "\\sum_{r=1}^{n} P(E_r) P\\left(\\frac{A}{E_r}\\right)",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_029",
+    "question": "Let S be a sample space and E<sub>1</sub>, E<sub>2</sub>, ..., E<sub>n</sub> be a partition of sample space S. If A is any event that occurs with E<sub>1</sub>, E<sub>2</sub>, ..., E<sub>n</sub> then the probability of occurrence of E<sub>i</sub> when A occurred is P(E<sub>i</sub>/A) =",
+    "options": [
+      "\\frac{P(E_i) P\\left(\\frac{A}{E_i}\\right)}{\\sum_{i=1}^{n-1} P(E_i) P\\left(\\frac{A}{E_i}\\right)}",
+      "\\frac{P(E_i) P\\left(\\frac{A}{E_i}\\right)}{\\sum_{i=1}^{n} P(E_i) P\\left(\\frac{A}{E_i}\\right)}",
+      "\\frac{P(E_i) P\\left(\\frac{A}{E_i}\\right)}{\\sum_{i=2}^{n-1} P(E_i) P\\left(\\frac{A}{E_i}\\right)}",
+      "\\frac{P(E_i) P\\left(\\frac{A}{E_i}\\right)}{\\sum_{i=2}^{n} P(E_i) P\\left(\\frac{A}{E_i}\\right)}"
+    ],
+    "answer": "\\frac{P(E_i) P\\left(\\frac{A}{E_i}\\right)}{\\sum_{i=1}^{n} P(E_i) P\\left(\\frac{A}{E_i}\\right)}",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "probability_qn_030",
+    "question": "If X is a discrete random variable which assumes values x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub> with probabilities p<sub>1</sub>, p<sub>2</sub>, ..., p<sub>n</sub>, then the Mean &mu; of X is defined as",
+    "options": [
+      "\\sum_{i=1}^{n} p_i x_i",
+      "\\sum_{i=1}^{n-1} p_i x_i",
+      "\\sum_{i=2}^{n-1} p_i x_i",
+      "\\sum_{i=2}^{n} p_i x_i"
+    ],
+    "answer": "\\sum_{i=1}^{n} p_i x_i",
+    "tags": {
+      "chapter": "Probability",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  }
+
+
+]

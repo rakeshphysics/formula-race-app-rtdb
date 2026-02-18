@@ -26,10 +26,11 @@ class _ReviseChapterSelectionScreenState extends State<ReviseChapterSelectionScr
       'Dual Nature of Light', 'Atoms', 'Nuclei', 'X Rays', 'Semiconductors',
     ],
     'Chemistry': [
-      'Solid State','Chemical Equilibrium','Electrochemistry','Solutions'
+      'Solid State','Chemical Equilibrium','Electrochemistry','Solutions','Atomic Structure'
     ],
     'Maths': [
-      '3D Geometry','Ellipse', 'Definite Integrals','Indefinite Integrals','Parabola'
+      '3D Geometry','Ellipse', 'Definite Integrals','Indefinite Integrals','Parabola',
+      'Probability', 'Quadratic Equations'
     ],
   };
 

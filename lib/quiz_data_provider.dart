@@ -54,6 +54,9 @@ class QuizDataProvider extends ChangeNotifier {
       'assets/formulas/12/electrochemistry.aes',
       'assets/formulas/11/parabola.aes',
       'assets/formulas/12/solutions.aes',
+      'assets/formulas/12/probability.aes',
+      'assets/formulas/11/quadratic_equations.aes',
+      'assets/formulas/11/atomic_structure.aes',
     ];
 
     for (var filePath in encryptedFiles) {

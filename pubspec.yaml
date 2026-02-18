@@ -108,6 +108,9 @@ flutter:
     - assets/formulas/12/electrochemistry.aes
     - assets/formulas/11/parabola.aes
     - assets/formulas/12/solutions.aes
+    - assets/formulas/12/probability.aes
+    - assets/formulas/11/quadratic_equations.aes
+    - assets/formulas/11/atomic_structure.aes
 
 
 
@@ -147,6 +150,8 @@ flutter:
     - assets/images/11th/ellipse/
     - assets/images/11th/parabola/
     - assets/images/12th/solutions/
+    - assets/images/11th/quadratic_equations/
+    - assets/images/11th/atomic_structure/
     - assets/icon/
 
 dependency_overrides:

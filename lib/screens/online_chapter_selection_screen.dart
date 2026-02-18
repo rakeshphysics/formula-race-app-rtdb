@@ -74,7 +74,8 @@ class OnlineChapterSelectionScreen extends StatelessWidget {
       'Solid State','Chemical Equilibrium','Electrochemistry','Solutions'
     ],
     'Maths': [
-      '3D Geometry','Ellipse', 'Definite Integrals','Indefinite Integrals', 'Parabola'
+      '3D Geometry','Ellipse', 'Definite Integrals','Indefinite Integrals', 'Parabola',
+      'Probability'
     ],
   };
 
