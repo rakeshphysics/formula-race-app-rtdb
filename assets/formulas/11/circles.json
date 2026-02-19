@@ -14,7 +14,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/circles/circles_qn_001.svg",
     "tip": null
   },
   {
@@ -68,7 +68,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/circles/circles_qn_004.svg",
     "tip": null
   },
   {
@@ -104,7 +104,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/circles/circles_qn_006.svg",
     "tip": null
   },
   {
@@ -122,7 +122,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/circles/circles_qn_007.svg",
     "tip": null
   },
   {
@@ -140,7 +140,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/circles/circles_qn_008.svg",
     "tip": null
   },
   {
@@ -152,7 +152,7 @@
       "\\frac{x}{x_1} = \\frac{y}{y_1}",
       "xx_1 = yy_1"
     ],
-    "answer": "xx_1 = yy_1",
+    "answer": "\\frac{x}{x_1} = \\frac{y}{y_1}",
     "tags": {
       "chapter": "Circles",
       "difficulty": "medium",
@@ -176,7 +176,7 @@
       "difficulty": "god",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/circles/circles_qn_010.svg",
     "tip": null
   },
   {
@@ -184,17 +184,17 @@
     "question": "The equation of directors circle to the circle x<sup>2</sup> + y<sup>2</sup> = a<sup>2</sup> is",
     "options": [
       "x^2 + y^2 = (\\sqrt{2}a)^2",
-      "x^2 + y^2 = a^2",
+      "x^2 + y^2 = 2a^2",
       "x^2 + y^2 = (4a)^2",
       "x^2 + y^2 = (2a)^2"
     ],
-    "answer": "x^2 + y^2 = (2a)^2",
+    "answer": "x^2 + y^2 = 2a^2",
     "tags": {
       "chapter": "Circles",
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/circles/circles_qn_011.riv",
     "tip": null
   },
   {
@@ -212,7 +212,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/circles/circles_qn_012.svg",
     "tip": null
   },
   {
@@ -230,7 +230,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/circles/circles_qn_013.svg",
     "tip": null
   },
   {
@@ -248,7 +248,7 @@
       "difficulty": "easy",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/circles/circles_qn_014.svg",
     "tip": null
   },
   {
@@ -266,7 +266,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/circles/circles_qn_015.svg",
     "tip": null
   },
   {
@@ -284,7 +284,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/circles/circles_qn_016.svg",
     "tip": null
   },
   {
@@ -302,7 +302,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/circles/circles_qn_017.svg",
     "tip": null
   },
   {
@@ -320,7 +320,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/circles/circles_qn_018.svg",
     "tip": null
   },
   {
@@ -338,7 +338,7 @@
       "difficulty": "medium",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/circles/circles_qn_019.svg",
     "tip": null
   },
   {
@@ -356,7 +356,7 @@
       "difficulty": "god",
       "class": "11"
     },
-    "image": null,
+    "image": "assets/images/11th/circles/circles_qn_020.svg",
     "tip": "Basically it is S₁ - S₂ = 0"
   }
 ]

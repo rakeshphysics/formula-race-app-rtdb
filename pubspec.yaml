@@ -153,6 +153,7 @@ flutter:
     - assets/images/12th/solutions/
     - assets/images/11th/quadratic_equations/
     - assets/images/11th/atomic_structure/
+    - assets/images/11th/circles/
     - assets/icon/
 
 dependency_overrides:
