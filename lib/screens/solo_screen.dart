@@ -447,6 +447,20 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     }
     print('-----------------------------------------------');
 
+    print('--- GAME STARTING: QUESTION DETAILS ---');
+    for (int i = 0; i < questions.length; i++) {
+      // Extracting values with null safety (defaults to 'N/A' if missing)
+      String diff = questions[i]['tags']?['difficulty'] ?? 'N/A';
+      String className = questions[i]['tags']?['class'] ?? 'N/A';
+      String chapter = questions[i]['tags']?['chapter'] ?? 'N/A';
+
+      print('Question ${i + 1}:');
+      print('   Class:   $className');
+      print('   Chapter: $chapter');
+      print('   Diff:    $diff');
+      print('-----------------------------------------------');
+    }
+
     if (questions.isNotEmpty) {
       _progressController.reset();
       _progressController.forward();

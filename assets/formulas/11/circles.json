@@ -1,0 +1,362 @@
+[
+  {
+    "id": "circles_qn_001",
+    "question": "The equation of circle with centre (h, k) and radius a is",
+    "options": [
+      "(x - h)^2 + (y - k)^2 = a^2",
+      "(x + h)^2 + (y + k)^2 = a^2",
+      "(x + h)^2 + (y - k)^2 = a^2",
+      "(x - h)^2 + (y + k)^2 = a^2"
+    ],
+    "answer": "(x - h)^2 + (y - k)^2 = a^2",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_002",
+    "question": "For the circle x<sup>2</sup> + y<sup>2</sup> + 2gx + 2fy + c = 0, its radius is given by",
+    "options": [
+      "\\sqrt{g^2 + f^2 - c}",
+      "\\sqrt{g^2 + f^2 + c}",
+      "\\sqrt{g^2 + f^2 - c^2}",
+      "\\sqrt{g^2 + f^2 + c^2}"
+    ],
+    "answer": "\\sqrt{g^2 + f^2 - c}",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_003",
+    "question": "For the circle x<sup>2</sup> + y<sup>2</sup> + 2gx + 2fy + c = 0, its centre is given by",
+    "options": [
+      "(-g, f)",
+      "(g, -f)",
+      "(-g, -f)",
+      "(g, f)"
+    ],
+    "answer": "(-g, -f)",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_004",
+    "question": "The parametric equation of circle x<sup>2</sup> + y<sup>2</sup> = a<sup>2</sup> is",
+    "options": [
+      "x = -a\\sin\\theta, y = a\\cos\\theta",
+      "x = a\\cos\\theta, y = -a\\sin\\theta",
+      "x = a\\sin\\theta, y = a\\cos\\theta",
+      "x = a\\cos\\theta, y = a\\sin\\theta"
+    ],
+    "answer": "x = a\\cos\\theta, y = a\\sin\\theta",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_005",
+    "question": "A point (x<sub>1</sub>, y<sub>1</sub>) lies OUTSIDE or ON or INSIDE the circle S = x<sup>2</sup> + y<sup>2</sup> + 2gx + 2fy + c if",
+    "options": [
+      "S_1 > 0, S_1 < 0, S_1 = 0",
+      "S_1 > 0, S_1 = 0, S_1 < 0",
+      "S_1 < 0, S_1 = 0, S_1 > 0",
+      "S_1 = 0, S_1 < 0, S_1 > 0"
+    ],
+    "answer": "S_1 > 0, S_1 = 0, S_1 < 0",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_006",
+    "question": "The equation of tangent at point (x<sub>1</sub>, y<sub>1</sub>) to the circle x<sup>2</sup> + y<sup>2</sup> = a<sup>2</sup> is",
+    "options": [
+      "xx_1 - yy_1 = a^2",
+      "xx_1 + yy_1 = a^2",
+      "xx_1^2 - yy_1^2 = a^2",
+      "xx_1^2 + yy_1^2 = a^2"
+    ],
+    "answer": "xx_1 + yy_1 = a^2",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_007",
+    "question": "The equation of tangent at point (x<sub>1</sub>, y<sub>1</sub>) to the circle x<sup>2</sup> + y<sup>2</sup> + 2gx + 2fy + c = 0 is",
+    "options": [
+      "xx_1 - yy_1 = c^2",
+      "xx_1 + yy_1 + g(x + x_1) + f(y + y_1) + c = 0",
+      "xx_1 - yy_1 + g(x - x_1) + f(y - y_1) + c = 0",
+      "xx_1 + yy_1 = c^2"
+    ],
+    "answer": "xx_1 + yy_1 + g(x + x_1) + f(y + y_1) + c = 0",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_008",
+    "question": "The length of tangent from point (x<sub>1</sub>, y<sub>1</sub>) to the circle x<sup>2</sup> + y<sup>2</sup> + 2gx + 2fy + c = 0 is",
+    "options": [
+      "\\sqrt{x_1^2 + y_1^2 + 2gx_1 + 2fy_1 + c}",
+      "xx_1 + yy_1 + g(x + x_1) + f(y + y_1) + c",
+      "xx_1 - yy_1 + g(x - x_1) + f(y - y_1) + c = 0",
+      "x_1^2 + y_1^2 + 2gx_1 + 2fy_1 + c"
+    ],
+    "answer": "\\sqrt{x_1^2 + y_1^2 + 2gx_1 + 2fy_1 + c}",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_009",
+    "question": "The equation of normal at point (x<sub>1</sub>, y<sub>1</sub>) to the circle x<sup>2</sup> + y<sup>2</sup> = a<sup>2</sup> is",
+    "options": [
+      "\\frac{x}{x_1} + \\frac{y}{y_1} = 0",
+      "xx_1 + yy_1 = 0",
+      "\\frac{x}{x_1} = \\frac{y}{y_1}",
+      "xx_1 = yy_1"
+    ],
+    "answer": "xx_1 = yy_1",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_010",
+    "question": "The angle between two tangents drawn from point (x<sub>1</sub>, y<sub>1</sub>) to the circle x<sup>2</sup> + y<sup>2</sup> = a<sup>2</sup> is",
+    "options": [
+      "2\\sin^{-1}\\left(\\frac{a}{\\sqrt{x_1^2 + y_1^2 + a^2}}\\right)",
+      "2\\sin^{-1}\\left(\\frac{a}{\\sqrt{x_1^2 + y_1^2 - a^2}}\\right)",
+      "2\\tan^{-1}\\left(\\frac{a}{\\sqrt{x_1^2 + y_1^2 - a^2}}\\right)",
+      "2\\tan^{-1}\\left(\\frac{a}{\\sqrt{x_1^2 + y_1^2 + a^2}}\\right)"
+    ],
+    "answer": "2\\tan^{-1}\\left(\\frac{a}{\\sqrt{x_1^2 + y_1^2 - a^2}}\\right)",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_011",
+    "question": "The equation of directors circle to the circle x<sup>2</sup> + y<sup>2</sup> = a<sup>2</sup> is",
+    "options": [
+      "x^2 + y^2 = (\\sqrt{2}a)^2",
+      "x^2 + y^2 = a^2",
+      "x^2 + y^2 = (4a)^2",
+      "x^2 + y^2 = (2a)^2"
+    ],
+    "answer": "x^2 + y^2 = (2a)^2",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_012",
+    "question": "When two circles are separate, the number of common possible tangents are",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "4",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_013",
+    "question": "When two circles touch externally, the number of common possible tangents are",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "3",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_014",
+    "question": "When two circles intersect, the number of common possible tangents are",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "2",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_015",
+    "question": "When two circles touch internally, one tangent is possible, the equation of this tangent is",
+    "options": [
+      "S_1 - S_2 = 0",
+      "S_1 + S_2 = 0",
+      "S_1 - 2S_2 = 0",
+      "S_1 + 2S_2 = 0"
+    ],
+    "answer": "S_1 - S_2 = 0",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_016",
+    "question": "The length of intercept made by circle S = x<sup>2</sup> + y<sup>2</sup> + 2gx + 2fy + c = 0 with X axis is",
+    "options": [
+      "2\\sqrt{f^2 - c}",
+      "2\\sqrt{f^2 + c}",
+      "2\\sqrt{g^2 - c}",
+      "2\\sqrt{g^2 + c}"
+    ],
+    "answer": "2\\sqrt{g^2 - c}",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_017",
+    "question": "The length of intercept made by circle S = x<sup>2</sup> + y<sup>2</sup> + 2gx + 2fy + c = 0 with Y axis is",
+    "options": [
+      "2\\sqrt{f^2 - c}",
+      "2\\sqrt{f^2 + c}",
+      "2\\sqrt{g^2 - c}",
+      "2\\sqrt{g^2 + c}"
+    ],
+    "answer": "2\\sqrt{f^2 - c}",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_018",
+    "question": "The angle of intersection of two circles (angle between tangents to the circles at point of intersection) of radius r<sub>1</sub>, r<sub>2</sub> and centers separation d is",
+    "options": [
+      "\\theta = \\tan^{-1}\\left(\\frac{r_1^2 + r_2^2 - d^2}{2r_1r_2}\\right)",
+      "\\theta = \\tan^{-1}\\left(\\frac{r_1^2 + r_2^2 + d^2}{2r_1r_2}\\right)",
+      "\\theta = \\cos^{-1}\\left(\\frac{r_1^2 + r_2^2 - d^2}{2r_1r_2}\\right)",
+      "\\theta = \\cos^{-1}\\left(\\frac{r_1^2 + r_2^2 + d^2}{2r_1r_2}\\right)"
+    ],
+    "answer": "\\theta = \\cos^{-1}\\left(\\frac{r_1^2 + r_2^2 - d^2}{2r_1r_2}\\right)",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_019",
+    "question": "The equation of family of circles passing through intersection of circle S = x<sup>2</sup> + y<sup>2</sup> + 2gx + 2fy + c = 0 and line L = lx + my + n = 0 is (&lambda; = any real number)",
+    "options": [
+      "S + \\lambda L^2 = 0",
+      "S + \\lambda L = 0",
+      "\\sqrt{S} + \\lambda L^2 = 0",
+      "S + \\lambda L^3 = 0"
+    ],
+    "answer": "S + \\lambda L = 0",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "circles_qn_020",
+    "question": "The equation of common chord of two circles S<sub>1</sub> = x<sup>2</sup> + y<sup>2</sup> + 2g<sub>1</sub>x + 2f<sub>1</sub>y + c<sub>1</sub> = 0 and S<sub>2</sub> = x<sup>2</sup> + y<sup>2</sup> + 2g<sub>2</sub>x + 2f<sub>2</sub>y + c<sub>2</sub> = 0",
+    "options": [
+      "2(g_1g_2)x + 2(f_1f_2) + (c_1c_2) = 0",
+      "(g_1g_2)x + (f_1f_2) + (c_1c_2) = 0",
+      "2(g_1 + g_2)x + 2(f_1 + f_2) + (c_1 + c_2) = 0",
+      "2(g_1 - g_2)x + 2(f_1 - f_2) + (c_1 - c_2) = 0"
+    ],
+    "answer": "2(g_1 - g_2)x + 2(f_1 - f_2) + (c_1 - c_2) = 0",
+    "tags": {
+      "chapter": "Circles",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Basically it is S₁ - S₂ = 0"
+  }
+]

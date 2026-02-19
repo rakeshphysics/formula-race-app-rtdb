@@ -59,6 +59,7 @@ void main() {
     '${baseDir}12/probability.json',
     '${baseDir}11/quadratic_equations.json',
     '${baseDir}11/atomic_structure.json',
+    '${baseDir}11/circles.json',
   ];
 
   final encrypter = Encrypter(AES(key));
