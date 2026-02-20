@@ -538,5 +538,403 @@
     },
     "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_030.svg",
     "tip": null
-  }
+  },
+  {
+    "id": "general_organic_chemistry_qn_031",
+    "question": "The two compounds shown are",
+    "options": [
+      "\\text{Chain Isomers}",
+      "\\text{Position Isomers}",
+      "\\text{Functional Isomers}",
+      "\\text{Tautomers}"
+    ],
+    "answer": "\\text{Chain Isomers}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_031.svg",
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_032",
+    "question": "The two compounds shown are",
+    "options": [
+      "\\text{Chain Isomers}",
+      "\\text{Position Isomers}",
+      "\\text{Functional Isomers}",
+      "\\text{Tautomers}"
+    ],
+    "answer": "\\text{Position Isomers}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_032.svg",
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_033",
+    "question": "The two compounds shown are",
+    "options": [
+      "\\text{Chain Isomers}",
+      "\\text{Position Isomers}",
+      "\\text{Functional Isomers}",
+      "\\text{Tautomers}"
+    ],
+    "answer": "\\text{Functional Isomers}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_033.svg",
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_034",
+    "question": "The two compounds shown are",
+    "options": [
+      "\\text{Chain Isomers}",
+      "\\text{Position Isomers}",
+      "\\text{Functional Isomers}",
+      "\\text{Tautomers}"
+    ],
+    "answer": "\\text{Tautomers}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_034.svg",
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_035",
+    "question": "The two compounds shown are",
+    "options": [
+      "\\text{Metamers}",
+      "\\text{Position Isomers}",
+      "\\text{Functional Isomers}",
+      "\\text{Tautomers}"
+    ],
+    "answer": "\\text{Metamers}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_035.svg",
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_036",
+    "question": "The two compounds shown are",
+    "options": [
+      "\\text{Chain Isomers}",
+      "\\text{Position Isomers}",
+      "\\text{Ring chain isomers}",
+      "\\text{Tautomers}"
+    ],
+    "answer": "\\text{Ring chain isomers}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_036.svg",
+    "tip": null
+  },
+
+    {
+      "id": "general_organic_chemistry_qn_037",
+      "question": "The two compounds shown are",
+      "options": [
+        "\\text{Enantiomers}",
+        "\\text{Diastereomers}",
+        "\\text{Mesomers}",
+        "\\text{NA}"
+      ],
+      "answer": "\\text{Diastereomers}",
+      "tags": {
+        "chapter": "General Organic Chemistry",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_037.svg",
+      "tip": null
+    },
+    {
+      "id": "general_organic_chemistry_qn_038",
+      "question": "The two compounds shown are",
+      "options": [
+        "\\text{Enantiomers}",
+        "\\text{Diastereomers}",
+        "\\text{Mesomers}",
+        "\\text{NA}"
+      ],
+      "answer": "\\text{Mesomers}",
+      "tags": {
+        "chapter": "General Organic Chemistry",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_038.svg",
+      "tip": null
+    },
+    {
+      "id": "general_organic_chemistry_qn_039",
+      "question": "The two compounds shown are",
+      "options": [
+        "\\text{Enantiomers}",
+        "\\text{Diastereomers}",
+        "\\text{Mesomers}",
+        "\\text{NA}"
+      ],
+      "answer": "\\text{Enantiomers}",
+      "tags": {
+        "chapter": "General Organic Chemistry",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_039.svg",
+      "tip": null
+    },
+    {
+      "id": "general_organic_chemistry_qn_040",
+      "question": "The correct expression for specific rotation is (&alpha; = observed rotation in degrees, l = length of polarimeter tube, c = concentration)",
+      "options": [
+        "[\\alpha] = \\frac{1}{\\alpha \\times c \\times l}",
+        "[\\alpha] = \\alpha \\times l \\times c",
+        "[\\alpha] = \\frac{\\alpha}{l \\times c}",
+        "[\\alpha] = \\frac{\\alpha \\times c}{l}"
+      ],
+      "answer": "[\\alpha] = \\frac{\\alpha}{l \\times c}",
+      "tags": {
+        "chapter": "General Organic Chemistry",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "general_organic_chemistry_qn_041",
+      "question": "A racemic mixture contains enantiomers in ratio",
+      "options": [
+        "1:1",
+        "1:2",
+        "1:3",
+        "2:5"
+      ],
+      "answer": "1:1",
+      "tags": {
+        "chapter": "General Organic Chemistry",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "general_organic_chemistry_qn_042",
+      "question": "The number of optically active isomers if two ends are dissimilar is (n = no of chiral carbons)",
+      "options": [
+        "2^{n-1}",
+        "2^n",
+        "2^{(n-1)/2}",
+        "2^{n-1} - 2^{(n-1)/2}"
+      ],
+      "answer": "2^n",
+      "tags": {
+        "chapter": "General Organic Chemistry",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "general_organic_chemistry_qn_043",
+      "question": "The number of optically active isomers if two ends are similar is (n = no of chiral carbons, n is even)",
+      "options": [
+        "2^{n-1}",
+        "2^n",
+        "2^{(n-1)/2}",
+        "2^{n-1} - 2^{(n-1)/2}"
+      ],
+      "answer": "2^{n-1}",
+      "tags": {
+        "chapter": "General Organic Chemistry",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "general_organic_chemistry_qn_044",
+      "question": "The number of optically active isomers if two ends are similar is (n = no of chiral carbons, n is odd)",
+      "options": [
+        "2^{n-1}",
+        "2^n",
+        "2^{(n-1)/2}",
+        "2^{n-1} - 2^{(n-1)/2}"
+      ],
+      "answer": "2^{n-1} - 2^{(n-1)/2}",
+      "tags": {
+        "chapter": "General Organic Chemistry",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": null,
+      "tip": null
+    },
+    {
+      "id": "general_organic_chemistry_qn_045",
+      "question": "The form shown in image is",
+      "options": [
+        "\\text{Threo-form}",
+        "\\text{Erythro-form}",
+        "\\text{NA}",
+        "\\text{.NA.}"
+      ],
+      "answer": "\\text{Threo-form}",
+      "tags": {
+        "chapter": "General Organic Chemistry",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_045.svg",
+      "tip": null
+    },
+    {
+      "id": "general_organic_chemistry_qn_046",
+      "question": "The form shown in image is",
+      "options": [
+        "\\text{Threo-form}",
+        "\\text{Erythro-form}",
+        "\\text{NA}",
+        "\\text{.NA.}"
+      ],
+      "answer": "\\text{Erythro-form}",
+      "tags": {
+        "chapter": "General Organic Chemistry",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_046.svg",
+      "tip": null
+    },
+    {
+      "id": "general_organic_chemistry_qn_047",
+      "question": "The form shown in image is",
+      "options": [
+        "\\text{Cis-form}",
+        "\\text{Trans-form}",
+        "\\text{NA}",
+        "\\text{.NA.}"
+      ],
+      "answer": "\\text{Trans-form}",
+      "tags": {
+        "chapter": "General Organic Chemistry",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_047.svg",
+      "tip": null
+    },
+    {
+      "id": "general_organic_chemistry_qn_048",
+      "question": "The form shown in image is",
+      "options": [
+        "\\text{Cis-form}",
+        "\\text{Trans-form}",
+        "\\text{NA}",
+        "\\text{.NA.}"
+      ],
+      "answer": "\\text{Cis-form}",
+      "tags": {
+        "chapter": "General Organic Chemistry",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_048.svg",
+      "tip": null
+    },
+    {
+      "id": "general_organic_chemistry_qn_049",
+      "question": "Which of the compound is syn isomer",
+      "options": [
+        "A",
+        "B",
+        "\\text{NA}",
+        "\\text{.NA.}"
+      ],
+      "answer": "A",
+      "tags": {
+        "chapter": "General Organic Chemistry",
+        "difficulty": "medium",
+        "class": "11"
+      },
+      "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_049.svg",
+      "tip": null
+    },
+    {
+      "id": "general_organic_chemistry_qn_050",
+      "question": "Which of the compound is Anti isomer",
+      "options": [
+        "A",
+        "B",
+        "\\text{NA}",
+        "\\text{.NA.}"
+      ],
+      "answer": "B",
+      "tags": {
+        "chapter": "General Organic Chemistry",
+        "difficulty": "god",
+        "class": "11"
+      },
+      "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_050.svg",
+      "tip": null
+    },
+    {
+      "id": "general_organic_chemistry_qn_051",
+      "question": "Which of the compound is Z isomer",
+      "options": [
+        "A",
+        "B",
+        "\\text{NA}",
+        "\\text{.NA.}"
+      ],
+      "answer": "A",
+      "tags": {
+        "chapter": "General Organic Chemistry",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_051.svg",
+      "tip": null
+    },
+    {
+      "id": "general_organic_chemistry_qn_052",
+      "question": "Which of the compound is E isomer",
+      "options": [
+        "A",
+        "B",
+        "\\text{NA}",
+        "\\text{.NA.}"
+      ],
+      "answer": "B",
+      "tags": {
+        "chapter": "General Organic Chemistry",
+        "difficulty": "easy",
+        "class": "11"
+      },
+      "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_052.svg",
+      "tip": null
+    }
+
 ]
