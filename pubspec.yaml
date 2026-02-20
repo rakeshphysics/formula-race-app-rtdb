@@ -112,6 +112,7 @@ flutter:
     - assets/formulas/11/quadratic_equations.aes
     - assets/formulas/11/atomic_structure.aes
     - assets/formulas/11/circles.aes
+    - assets/formulas/11/general_organic_chemistry.aes
 
 
 
@@ -154,6 +155,7 @@ flutter:
     - assets/images/11th/quadratic_equations/
     - assets/images/11th/atomic_structure/
     - assets/images/11th/circles/
+    - assets/images/11th/general_organic_chemistry/
     - assets/icon/
 
 dependency_overrides:

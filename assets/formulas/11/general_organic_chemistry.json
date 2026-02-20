@@ -1,0 +1,542 @@
+[
+  {
+    "id": "general_organic_chemistry_qn_001",
+    "question": "The carbon atom at the position shown is",
+    "options": [
+      "\\text{1° or Primary}",
+      "\\text{2° or Secondary}",
+      "\\text{3° or Tertiary}",
+      "\\text{4° or quaternary}"
+    ],
+    "answer": "\\text{1° or Primary}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_001.svg",
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_002",
+    "question": "The carbon atom at the position shown is",
+    "options": [
+      "\\text{1° or Primary}",
+      "\\text{2° or Secondary}",
+      "\\text{3° or Tertiary}",
+      "\\text{4° or quaternary}"
+    ],
+    "answer": "\\text{3° or Tertiary}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_002.svg",
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_003",
+    "question": "The reactivity of carbon atom is",
+    "options": [
+      "3° < 2° < 1°",
+      "3° = 2° = 1°",
+      "3° < 2° > 1°",
+      "3° > 2° > 1°"
+    ],
+    "answer": "3° > 2° > 1°",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_004",
+    "question": "In the diagram shown, &alpha; carbon is",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": "B",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_004.svg",
+    "tip": "α Carbon is attached to a functional group"
+  },
+  {
+    "id": "general_organic_chemistry_qn_005",
+    "question": "In the diagram shown, &beta; carbon is",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": "C",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_005.svg",
+    "tip": "β Carbon is directly attached to a α carbon"
+  },
+  {
+    "id": "general_organic_chemistry_qn_006",
+    "question": "In the diagram shown, &alpha; hydrogen is",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": "B",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_006.svg",
+    "tip": "α hydrogen is attached to α carbon"
+  },
+  {
+    "id": "general_organic_chemistry_qn_007",
+    "question": "In the diagram shown, &beta; hydrogen is",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": "D",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_007.svg",
+    "tip": "β hydrogen is attached to β carbon"
+  },
+  {
+    "id": "general_organic_chemistry_qn_008",
+    "question": "The consecutive molecules of the Homologous series have a difference of",
+    "options": [
+      "\\text{12 mass units}",
+      "\\text{10 mass units}",
+      "\\text{8 mass units}",
+      "\\text{20 mass units}"
+    ],
+    "answer": "\\text{12 mass units}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_009",
+    "question": "The general formula for Alkanes series is",
+    "options": [
+      "C_nH_{2n}",
+      "C_nH_{2n+2}",
+      "C_nH_{2n+2}O",
+      "C_nH_{2n}O_2"
+    ],
+    "answer": "C_nH_{2n+2}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_010",
+    "question": "The general formula for Acid and ester series is",
+    "options": [
+      "C_nH_{2n}",
+      "C_nH_{2n+2}",
+      "C_nH_{2n+2}O",
+      "C_nH_{2n}O_2"
+    ],
+    "answer": "C_nH_{2n}O_2",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_011",
+    "question": "The Word root for C<sub>2</sub> is",
+    "options": [
+      "\\text{Eth-}",
+      "\\text{Meth-}",
+      "\\text{Dec-}",
+      "\\text{Pent-}"
+    ],
+    "answer": "\\text{Eth-}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_012",
+    "question": "The Word root for C<sub>12</sub> is",
+    "options": [
+      "\\text{Eth-}",
+      "\\text{Meth-}",
+      "\\text{Dodec-}",
+      "\\text{UnDec-}"
+    ],
+    "answer": "\\text{Dodec-}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_013",
+    "question": "The correct order of selection of principal function group is",
+    "options": [
+      "-\\text{COOH} < \\equiv < X",
+      "-\\text{COOH} > \\equiv > X",
+      "-\\text{COOH} < \\equiv > X",
+      "-\\text{COOH} > X > \\equiv"
+    ],
+    "answer": "-\\text{COOH} > \\equiv > X",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_014",
+    "question": "The prefix Diazo is given for substituent",
+    "options": [
+      "-N = N-",
+      "-N = O",
+      "-NO_2",
+      "-Cl"
+    ],
+    "answer": "-N = N-",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_015",
+    "question": "The prefix Nitroso is given for substituent",
+    "options": [
+      "-N = N-",
+      "-N = O",
+      "-NO_2",
+      "-Cl"
+    ],
+    "answer": "-N = O",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_016",
+    "question": "For Carboxylic acids (-COOH) the prefix and suffix are",
+    "options": [
+      "\\text{Carboxy, -oic acid}",
+      "\\text{Carbamoyl, -amide}",
+      "\\text{Formyl, -al}",
+      "\\text{Sulpho, -sulphonic acid}"
+    ],
+    "answer": "\\text{Carboxy, -oic acid}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_017",
+    "question": "For Aldehydes (-CHO) the prefix and suffix are",
+    "options": [
+      "\\text{Carboxy, -oic acid}",
+      "\\text{Carbamoyl, -amide}",
+      "\\text{Formyl, -al}",
+      "\\text{Sulpho, -sulphonic acid}"
+    ],
+    "answer": "\\text{Formyl, -al}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_018",
+    "question": "For Amides (-CONH<sub>2</sub>) the prefix and suffix are",
+    "options": [
+      "\\text{Carboxy, -oic acid}",
+      "\\text{Carbamoyl, -amide}",
+      "\\text{Formyl, -al}",
+      "\\text{Sulpho, -sulphonic acid}"
+    ],
+    "answer": "\\text{Carbamoyl, -amide}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_019",
+    "question": "For Sulphonic Acid (-SO<sub>2</sub>-OH) the prefix and suffix are",
+    "options": [
+      "\\text{Carboxy, -oic acid}",
+      "\\text{Carbamoyl, -amide}",
+      "\\text{Formyl, -al}",
+      "\\text{Sulpho, -sulphonic acid}"
+    ],
+    "answer": "\\text{Sulpho, -sulphonic acid}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_020",
+    "question": "The name of the compound shown is",
+    "options": [
+      "\\text{3-Hydroxybutanal}",
+      "\\text{3-Hydroxy-4-methylpropanal}",
+      "\\text{2-hydroxymethylbutanal}",
+      "\\text{4-hydroxybutanal}"
+    ],
+    "answer": "\\text{3-Hydroxybutanal}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_020.svg",
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_021",
+    "question": "The name of the compound shown is",
+    "options": [
+      "\\text{Hexamethylene}",
+      "\\text{Cyclohexane}",
+      "\\text{Cycle-}C_6H_{12}",
+      "\\text{Cyclohexylene}"
+    ],
+    "answer": "\\text{Cyclohexane}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_021.svg",
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_022",
+    "question": "The name of the compound shown is",
+    "options": [
+      "\\text{1-methylethylcyclohexane}",
+      "\\text{Isopropyl cyclohexane}",
+      "\\text{2-methylcyclohexane}",
+      "\\text{1-1-dimethylcyclohexane}"
+    ],
+    "answer": "\\text{1-methylethylcyclohexane}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_022.svg",
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_023",
+    "question": "The name of the compound shown is",
+    "options": [
+      "\\text{Butyl Cyclopropane}",
+      "\\text{Cyclopropyl Butane}",
+      "\\text{1-Cyclopropylbutane}",
+      "\\text{PropylCyclobutane}"
+    ],
+    "answer": "\\text{Cyclopropyl Butane}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_023.svg",
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_024",
+    "question": "The name of the compound shown is",
+    "options": [
+      "\\text{CyclopropylAllene}",
+      "\\text{1-cyclopropyl-2-propene}",
+      "\\text{3-CycloPropylprop-1-ene}",
+      "\\text{CycloPropylprop-1-ene}"
+    ],
+    "answer": "\\text{3-CycloPropylprop-1-ene}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_024.svg",
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_025",
+    "question": "The name of the compound shown is",
+    "options": [
+      "\\text{1-2-3-Propanetricarbonitrile}",
+      "\\text{1-2-3-tricyanopropane}",
+      "\\text{Propane-1-2-3-trinitrile}",
+      "\\text{Propane-1-2-3-tricarbonitrile}"
+    ],
+    "answer": "\\text{Propane-1-2-3-tricarbonitrile}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_025.svg",
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_026",
+    "question": "The name of the compound shown is",
+    "options": [
+      "\\text{2-propyl-3-methylcyclohex-2-en-1-one}",
+      "\\text{3-methyl-2-propylcyclohex-2-en-1-one}",
+      "\\text{3-propyl-2-methylcyclohex-2-en-1-one}",
+      "\\text{2-methyl-3-propylcyclohex-2-en-1-one}"
+    ],
+    "answer": "\\text{3-methyl-2-propylcyclohex-2-en-1-one}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_026.svg",
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_027",
+    "question": "The name of the compound shown is",
+    "options": [
+      "\\text{Spiro [5.4] decane}",
+      "\\text{Spiro [4.5] decane}",
+      "\\text{Spiro [5.4] Octane}",
+      "\\text{Spiro [3.5]decane}"
+    ],
+    "answer": "\\text{Spiro [4.5] decane}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_027.svg",
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_028",
+    "question": "The name of the compound shown is",
+    "options": [
+      "\\text{6-oxaspiro[4.5]decane}",
+      "\\text{7-oxaspiro[4.5]decane}",
+      "\\text{6-oxaspiro[5.4]decane}",
+      "\\text{6-oxaspiro[4.5]nonane}"
+    ],
+    "answer": "\\text{6-oxaspiro[4.5]decane}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_028.svg",
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_029",
+    "question": "The name of the compound shown is",
+    "options": [
+      "\\text{Bicyclo [3.2.1] heptane}",
+      "\\text{Bicyclo[3.2.2]octane}",
+      "\\text{Bicyclo [3.2.1]octane}",
+      "\\text{Bicyclo[2.3.1]octane}"
+    ],
+    "answer": "\\text{Bicyclo [3.2.1]octane}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_029.svg",
+    "tip": null
+  },
+  {
+    "id": "general_organic_chemistry_qn_030",
+    "question": "The name of the compound shown is",
+    "options": [
+      "\\text{4-chloro-1-(3-bromopropyl)benzene}",
+      "\\text{1-bromo-3-3(2-chlorophenyl)propane}",
+      "\\text{1-(4-chlorophenyl)-3-bromopropane}",
+      "\\text{1-bromo-3-(4-chlorophenyl)propane}"
+    ],
+    "answer": "\\text{1-bromo-3-(4-chlorophenyl)propane}",
+    "tags": {
+      "chapter": "General Organic Chemistry",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "assets/images/11th/general_organic_chemistry/general_organic_chemistry_qn_030.svg",
+    "tip": null
+  }
+]

@@ -60,6 +60,7 @@ void main() {
     '${baseDir}11/quadratic_equations.json',
     '${baseDir}11/atomic_structure.json',
     '${baseDir}11/circles.json',
+    '${baseDir}11/general_organic_chemistry.json',
   ];
 
   final encrypter = Encrypter(AES(key));
