@@ -1,0 +1,722 @@
+[
+  {
+    "id": "p_and_c_qn_001",
+    "question": "The number of permutations of n distinct objects taken r at a time is",
+    "options": [
+      "\\frac{n!}{(n-r)!}",
+      "\\frac{n!}{r!}",
+      "\\frac{n!}{r!(n-r)!}",
+      "\\frac{(n-r)!}{n!}"
+    ],
+    "answer": "\\frac{n!}{(n-r)!}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_002",
+    "question": "The number of combinations of n distinct objects taken r at a time is",
+    "options": [
+      "\\frac{n!}{(n-r)!}",
+      "\\frac{n!}{r!(n-r)!}",
+      "\\frac{n!}{r!}",
+      "\\frac{(n-r)!}{n!r!}"
+    ],
+    "answer": "\\frac{n!}{r!(n-r)!}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_003",
+    "question": "The number of permutations of n things taken all at a time, where p things are alike of one kind, q are alike of second kind, and r are alike of third kind is",
+    "options": [
+      "\\frac{n!}{p!q!r!}",
+      "\\frac{n!}{(p+q+r)!}",
+      "\\frac{(n-p-q-r)!}{p!q!r!}",
+      "\\frac{n!}{p!+q!+r!}"
+    ],
+    "answer": "\\frac{n!}{p!q!r!}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_004",
+    "question": "The number of circular permutations of n distinct objects taken all at a time (clockwise and anti-clockwise different) is",
+    "options": [
+      "(n-1)!",
+      "n!",
+      "\\frac{(n-1)!}{2}",
+      "(n-2)!"
+    ],
+    "answer": "(n-1)!",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_005",
+    "question": "The exponent of prime p in n! is given by",
+    "options": [
+      "\\left\\lfloor\\frac{n}{p}\\right\\rfloor + \\left\\lfloor\\frac{n}{p^2}\\right\\rfloor + \\left\\lfloor\\frac{n}{p^3}\\right\\rfloor + \\ldots",
+      "\\frac{n}{p} + \\frac{n}{p^2} + \\frac{n}{p^3} + \\ldots",
+      "\\left\\lfloor\\frac{n}{p}\\right\\rfloor \\times \\left\\lfloor\\frac{n}{p^2}\\right\\rfloor \\times \\left\\lfloor\\frac{n}{p^3}\\right\\rfloor \\times \\ldots",
+      "\\left\\lfloor\\frac{n!}{p}\\right\\rfloor"
+    ],
+    "answer": "\\left\\lfloor\\frac{n}{p}\\right\\rfloor + \\left\\lfloor\\frac{n}{p^2}\\right\\rfloor + \\left\\lfloor\\frac{n}{p^3}\\right\\rfloor + \\ldots",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_006",
+    "question": "The number of permutations of n different things taken r at a time, when each thing may be repeated any number of times is",
+    "options": [
+      "n^r",
+      "r^n",
+      "n!",
+      "\\frac{n!}{(n-r)!}"
+    ],
+    "answer": "n^r",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_007",
+    "question": "The number of circular permutations of n distinct objects taken all at a time, when clockwise and anti-clockwise are not different is",
+    "options": [
+      "\\frac{(n-1)!}{2}",
+      "(n-1)!",
+      "\\frac{n!}{2}",
+      "\\frac{(n-2)!}{2}"
+    ],
+    "answer": "\\frac{(n-1)!}{2}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_008",
+    "question": "The number of permutations of n different things taken all at a time, when m specified things always come together is",
+    "options": [
+      "m!(n-m+1)!",
+      "(n-m)!m!",
+      "n! - m!(n-m)!",
+      "n!(n-m+1)"
+    ],
+    "answer": "m!(n-m+1)!",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_009",
+    "question": "The number of permutations of n different things taken all at a time, when m specified things never come together is",
+    "options": [
+      "n! - m!(n-m+1)!",
+      "n! - m!(n-m)!",
+      "(n-m)! - m!",
+      "n! - (n-m+1)!m!"
+    ],
+    "answer": "n! - m!(n-m+1)!",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_010",
+    "question": "The number of combinations of n different things taken r at a time, allowing repetition is",
+    "options": [
+      "^{n+r-1}C_r",
+      "^nC_r",
+      "^{n+r}C_r",
+      "^{n-r+1}C_r"
+    ],
+    "answer": "^{n+r-1}C_r",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_011",
+    "question": "The number of ways of selecting at least one item from n distinct items is",
+    "options": [
+      "2^n - 1",
+      "2^n",
+      "2^{n-1}",
+      "2^n + 1"
+    ],
+    "answer": "2^n - 1",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_012",
+    "question": "The relation between permutation and combination is",
+    "options": [
+      "^nP_r = r! \\times {}^nC_r",
+      "^nC_r = r! \\times {}^nP_r",
+      "^nP_r = \\frac{^nC_r}{r!}",
+      "^nP_r = (r-1)! \\times {}^nC_r"
+    ],
+    "answer": "^nP_r = r! \\times {}^nC_r",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_013",
+    "question": "The number of diagonals in an n-sided polygon is",
+    "options": [
+      "^nC_2 - n",
+      "^nC_2",
+      "n(n-3)/2",
+      "n(n-1)/2"
+    ],
+    "answer": "^nC_2 - n",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_014",
+    "question": "The number of integral solutions of x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>r</sub> = n, where x<sub>i</sub> &ge; 0 is",
+    "options": [
+      "^{n+r-1}C_{r-1}",
+      "^nC_{r-1}",
+      "^{n-r+1}C_{r-1}",
+      "^{n+r}C_r"
+    ],
+    "answer": "^{n+r-1}C_{r-1}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_015",
+    "question": "The number of integral solutions of x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>r</sub> = n, where x<sub>i</sub> &ge; 1 is",
+    "options": [
+      "^{n-1}C_{r-1}",
+      "^{n+r-1}C_{r-1}",
+      "^nC_r",
+      "^{n-r}C_{r-1}"
+    ],
+    "answer": "^{n-1}C_{r-1}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_016",
+    "question": "The number of ways of dividing (m+n) different things into two groups containing m and n things respectively (m &ne; n) is",
+    "options": [
+      "\\frac{(m+n)!}{m!n!}",
+      "\\frac{(m+n)!}{2m!n!}",
+      "(m+n)!",
+      "\\frac{(m+n)!}{(m+n-1)!}"
+    ],
+    "answer": "\\frac{(m+n)!}{m!n!}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_017",
+    "question": "The number of ways of dividing 2n different elements into two equal groups of n objects each, when order of groups is not important is",
+    "options": [
+      "\\frac{(2n)!}{2(n!)^2}",
+      "\\frac{(2n)!}{(n!)^2}",
+      "\\frac{(2n)!}{2n!}",
+      "\\frac{(2n)!}{n!}"
+    ],
+    "answer": "\\frac{(2n)!}{2(n!)^2}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_018",
+    "question": "The number of ways of dividing n identical items among r persons, each receiving 0 or more items is",
+    "options": [
+      "^{n+r-1}C_{r-1}",
+      "^{n-1}C_{r-1}",
+      "^{n+r}C_r",
+      "^nC_r"
+    ],
+    "answer": "^{n+r-1}C_{r-1}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_019",
+    "question": "The number of ways of dividing n identical items among r persons, each receiving at least one item is",
+    "options": [
+      "^{n-1}C_{r-1}",
+      "^{n+r-1}C_{r-1}",
+      "^nC_{r-1}",
+      "^{n-r+1}C_{r-1}"
+    ],
+    "answer": "^{n-1}C_{r-1}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_020",
+    "question": "The number of circular permutations of n different things taken r at a time, when clockwise and anti-clockwise are different is",
+    "options": [
+      "\\frac{^nP_r}{r}",
+      "\\frac{^nP_r}{2r}",
+      "\\frac{n!}{r}",
+      "\\frac{(n-1)!}{r}"
+    ],
+    "answer": "\\frac{^nP_r}{r}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_021",
+    "question": "The sum <sup>n</sup>C<sub>0</sub> + <sup>n</sup>C<sub>1</sub> + <sup>n</sup>C<sub>2</sub> + ... + <sup>n</sup>C<sub>n</sub> equals",
+    "options": [
+      "2^n",
+      "2^{n-1}",
+      "n!",
+      "2^{n+1}"
+    ],
+    "answer": "2^n",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_022",
+    "question": "The sum <sup>n</sup>C<sub>0</sub> + <sup>n</sup>C<sub>2</sub> + <sup>n</sup>C<sub>4</sub> + ... equals",
+    "options": [
+      "2^{n-1}",
+      "2^n",
+      "2^{n+1}",
+      "2^{n-2}"
+    ],
+    "answer": "2^{n-1}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_023",
+    "question": "The property <sup>n</sup>C<sub>r</sub> = <sup>n</sup>C<sub>n-r</sub> is valid for",
+    "options": [
+      "0 \\leq r \\leq n",
+      "r < n",
+      "r > 0",
+      "r = n"
+    ],
+    "answer": "0 \\leq r \\leq n",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_024",
+    "question": "The relation <sup>n+1</sup>C<sub>r</sub> = <sup>n</sup>C<sub>r</sub> + <sup>n</sup>C<sub>r-1</sub> is known as",
+    "options": [
+      "\\text{Pascal's Identity}",
+      "\\text{Combination formula}",
+      "\\text{Permutation formula}",
+      "\\text{Binomial Identity}"
+    ],
+    "answer": "\\text{Pascal's Identity}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_025",
+    "question": "The number of ways in which n can be resolved as a product of two factors, when n is not a perfect square, is",
+    "options": [
+      "\\frac{1}{2}[(\\alpha_1+1)(\\alpha_2+1)...(\\alpha_r+1)]",
+      "(\\alpha_1+1)(\\alpha_2+1)...(\\alpha_r+1)",
+      "\\frac{1}{2}[(\\alpha_1+1)(\\alpha_2+1)...(\\alpha_r+1)+1]",
+      "(\\alpha_1+1)(\\alpha_2+1)...(\\alpha_r+1)-1"
+    ],
+    "answer": "\\frac{1}{2}[(\\alpha_1+1)(\\alpha_2+1)...(\\alpha_r+1)]",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_026",
+    "question": "The number of distinct positive integral divisors of n = p<sub>1</sub><sup>&alpha;<sub>1</sub></sup> p<sub>2</sub><sup>&alpha;<sub>2</sub></sup> ... p<sub>r</sub><sup>&alpha;<sub>r</sub></sup> (including 1 and n) is",
+    "options": [
+      "(\\alpha_1+1)(\\alpha_2+1)...(\\alpha_r+1)",
+      "\\alpha_1 \\alpha_2 ... \\alpha_r",
+      "(\\alpha_1+1)+(\\alpha_2+1)+...+(\\alpha_r+1)",
+      "\\alpha_1 + \\alpha_2 + ... + \\alpha_r"
+    ],
+    "answer": "(\\alpha_1+1)(\\alpha_2+1)...(\\alpha_r+1)",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_027",
+    "question": "The number of ways of dividing mn different things equally into m distinct groups, each containing n objects is",
+    "options": [
+      "\\frac{(mn)!}{(n!)^m}",
+      "\\frac{(mn)!}{m!(n!)^m}",
+      "\\frac{(mn)!}{n!m!}",
+      "(mn)!"
+    ],
+    "answer": "\\frac{(mn)!}{(n!)^m}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_028",
+    "question": "The number of ways of dividing mn different things equally into m groups, each containing n objects (order of groups not important) is",
+    "options": [
+      "\\frac{(mn)!}{(n!)^m m!}",
+      "\\frac{(mn)!}{(n!)^m}",
+      "\\frac{(mn)!}{m!n!}",
+      "\\frac{(mn)!}{2(n!)^m}"
+    ],
+    "answer": "\\frac{(mn)!}{(n!)^m m!}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_029",
+    "question": "The number of one-one functions from set A (m elements) to set B (n elements), where m &le; n is",
+    "options": [
+      "^nP_m",
+      "n^m",
+      "m^n",
+      "^nC_m"
+    ],
+    "answer": "^nP_m",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_030",
+    "question": "The number of derangements D(n) of n distinct objects is given by",
+    "options": [
+      "n!\\left(1 - \\frac{1}{1!} + \\frac{1}{2!} - \\frac{1}{3!} + ... + (-1)^n\\frac{1}{n!}\\right)",
+      "n!\\left(1 + \\frac{1}{1!} + \\frac{1}{2!} + \\frac{1}{3!} + ... + \\frac{1}{n!}\\right)",
+      "(n-1)!\\left(1 - \\frac{1}{1!} + \\frac{1}{2!} - \\frac{1}{3!} + ...\\right)",
+      "n!\\left(\\frac{1}{1!} - \\frac{1}{2!} + \\frac{1}{3!} - ...\\right)"
+    ],
+    "answer": "n!\\left(1 - \\frac{1}{1!} + \\frac{1}{2!} - \\frac{1}{3!} + ... + (-1)^n\\frac{1}{n!}\\right)",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_031",
+    "question": "If <sup>n</sup>P<sub>r</sub> denotes permutations, then <sup>n</sup>P<sub>r</sub>/<sup>n</sup>P<sub>r-1</sub> equals",
+    "options": [
+      "n - r + 1",
+      "n - r",
+      "n + r - 1",
+      "n - r - 1"
+    ],
+    "answer": "n - r + 1",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_032",
+    "question": "Given n distinct points on a plane where m of them are collinear (m &ge; 3), the total number of triangles that can be formed is",
+    "options": [
+      "^nC_3 - {}^mC_3",
+      "^nC_3 + {}^mC_3",
+      "^nC_3 - {}^mC_2",
+      "^nC_3 - m"
+    ],
+    "answer": "^nC_3 - {}^mC_3",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_033",
+    "question": "When n distinct points are placed on a plane with m being collinear (m &ge; 3), how many straight lines can be drawn?",
+    "options": [
+      "^nC_2 - {}^mC_2 + 1",
+      "^nC_2 - {}^mC_2",
+      "^nC_2 + {}^mC_2 - 1",
+      "^nC_2 - m + 1"
+    ],
+    "answer": "^nC_2 - {}^mC_2 + 1",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_034",
+    "question": "Total functions that can be defined from set A (having m elements) to set B (having n elements) is",
+    "options": [
+      "n^m",
+      "m^n",
+      "^nP_m",
+      "^nC_m"
+    ],
+    "answer": "n^m",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_035",
+    "question": "The recursive relation <sup>n</sup>P<sub>r</sub> = n · <sup>n-1</sup>P<sub>r-1</sub> is valid when",
+    "options": [
+      "1 \\leq r \\leq n",
+      "0 \\leq r \\leq n",
+      "r < n",
+      "r > 1"
+    ],
+    "answer": "1 \\leq r \\leq n",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_036",
+    "question": "In how many ways can one or more items be selected from p identical items of first kind, q identical items of second kind, and r identical items of third kind?",
+    "options": [
+      "(p+1)(q+1)(r+1) - 1",
+      "(p+1)(q+1)(r+1)",
+      "pqr - 1",
+      "p + q + r"
+    ],
+    "answer": "(p+1)(q+1)(r+1) - 1",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_037",
+    "question": "The alternative formula for <sup>n</sup>C<sub>r</sub> in terms of <sup>n-1</sup>C<sub>r-1</sub> is",
+    "options": [
+      "\\frac{n}{r} \\cdot {}^{n-1}C_{r-1}",
+      "\\frac{r}{n} \\cdot {}^{n-1}C_{r-1}",
+      "n \\cdot {}^{n-1}C_{r-1}",
+      "\\frac{n-1}{r} \\cdot {}^{n-1}C_{r-1}"
+    ],
+    "answer": "\\frac{n}{r} \\cdot {}^{n-1}C_{r-1}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_038",
+    "question": "How many rectangles of any size exist in an n &times; n square grid?",
+    "options": [
+      "\\frac{n(n+1)^2(n+2)}{4}",
+      "\\frac{n^2(n+1)^2}{4}",
+      "n(n+1)(n+2)",
+      "\\frac{n(n+1)(2n+1)}{6}"
+    ],
+    "answer": "\\frac{n(n+1)^2(n+2)}{4}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_039",
+    "question": "If set A has m elements and set B has n elements (m &le; n), then bijective functions from A to B can be formed in how many ways?",
+    "options": [
+      "\\text{Not possible if } m \\neq n",
+      "n!",
+      "^nP_m",
+      "m!"
+    ],
+    "answer": "\\text{Not possible if } m \\neq n",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_and_c_qn_040",
+    "question": "When n straight lines are drawn on a plane such that no two are parallel and no three are concurrent, into how many parts do they divide the plane?",
+    "options": [
+      "1 + \\frac{n(n+1)}{2}",
+      "\\frac{n(n+1)}{2}",
+      "n^2 + 1",
+      "1 + n + {}^nC_2"
+    ],
+    "answer": "1 + \\frac{n(n+1)}{2}",
+    "tags": {
+      "chapter": "Permutations and Combinations",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  }
+]
