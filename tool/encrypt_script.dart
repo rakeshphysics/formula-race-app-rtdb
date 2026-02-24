@@ -62,6 +62,7 @@ void main() {
     '${baseDir}11/circles.json',
     '${baseDir}11/general_organic_chemistry.json',
     '${baseDir}11/permutations_and_combinations.json',
+    '${baseDir}11/hydrocarbons.json',
   ];
 
   final encrypter = Encrypter(AES(key));

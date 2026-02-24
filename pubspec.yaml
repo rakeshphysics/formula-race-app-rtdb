@@ -114,6 +114,7 @@ flutter:
     - assets/formulas/11/circles.aes
     - assets/formulas/11/general_organic_chemistry.aes
     - assets/formulas/11/permutations_and_combinations.aes
+    - assets/formulas/11/hydrocarbons.aes
 
 
 
@@ -157,6 +158,7 @@ flutter:
     - assets/images/11th/atomic_structure/
     - assets/images/11th/circles/
     - assets/images/11th/general_organic_chemistry/
+    - assets/images/11th/hydrocarbons/
     - assets/icon/
 
 dependency_overrides:

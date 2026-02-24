@@ -27,6 +27,7 @@ class _ReviseChapterSelectionScreenState extends State<ReviseChapterSelectionScr
     ],
     'Chemistry': [
       'Solid State','Chemical Equilibrium','Electrochemistry','Solutions','Atomic Structure', 'General Organic Chemistry',
+      'Hydrocarbons'
 
     ],
     'Maths': [

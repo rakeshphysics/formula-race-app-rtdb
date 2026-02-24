@@ -1,7 +1,7 @@
 [
   {
     "id": "p_and_c_qn_001",
-    "question": "The number of permutations of n distinct objects taken r at a time is",
+    "question": "When arranging n distinct objects by taking r at a time, the formula for permutations is",
     "options": [
       "\\frac{n!}{(n-r)!}",
       "\\frac{n!}{r!}",
@@ -19,7 +19,7 @@
   },
   {
     "id": "p_and_c_qn_002",
-    "question": "The number of combinations of n distinct objects taken r at a time is",
+    "question": "For combinations of n distinct objects taken r at a time, which formula applies?",
     "options": [
       "\\frac{n!}{(n-r)!}",
       "\\frac{n!}{r!(n-r)!}",
@@ -37,7 +37,7 @@
   },
   {
     "id": "p_and_c_qn_003",
-    "question": "The number of permutations of n things taken all at a time, where p things are alike of one kind, q are alike of second kind, and r are alike of third kind is",
+    "question": "If n things include p alike of one kind, q alike of second kind, and r alike of third kind, arranging all of them gives",
     "options": [
       "\\frac{n!}{p!q!r!}",
       "\\frac{n!}{(p+q+r)!}",
@@ -55,7 +55,7 @@
   },
   {
     "id": "p_and_c_qn_004",
-    "question": "The number of circular permutations of n distinct objects taken all at a time (clockwise and anti-clockwise different) is",
+    "question": "Circular arrangements of n distinct objects (considering clockwise and anti-clockwise as different) can be done in",
     "options": [
       "(n-1)!",
       "n!",
@@ -91,7 +91,7 @@
   },
   {
     "id": "p_and_c_qn_006",
-    "question": "The number of permutations of n different things taken r at a time, when each thing may be repeated any number of times is",
+    "question": "Permutations with repetition allowed: n different things taken r at a time equals",
     "options": [
       "n^r",
       "r^n",
@@ -109,7 +109,7 @@
   },
   {
     "id": "p_and_c_qn_007",
-    "question": "The number of circular permutations of n distinct objects taken all at a time, when clockwise and anti-clockwise are not different is",
+    "question": "For circular arrangements of n distinct objects where clockwise = anti-clockwise, the count is",
     "options": [
       "\\frac{(n-1)!}{2}",
       "(n-1)!",
@@ -127,7 +127,7 @@
   },
   {
     "id": "p_and_c_qn_008",
-    "question": "The number of permutations of n different things taken all at a time, when m specified things always come together is",
+    "question": "When m specified things must always be together in arrangements of n things, total ways equals",
     "options": [
       "m!(n-m+1)!",
       "(n-m)!m!",
@@ -145,7 +145,7 @@
   },
   {
     "id": "p_and_c_qn_009",
-    "question": "The number of permutations of n different things taken all at a time, when m specified things never come together is",
+    "question": "If m specified things are never together in arrangements of n things, how many arrangements exist?",
     "options": [
       "n! - m!(n-m+1)!",
       "n! - m!(n-m)!",
@@ -163,7 +163,7 @@
   },
   {
     "id": "p_and_c_qn_010",
-    "question": "The number of combinations of n different things taken r at a time, allowing repetition is",
+    "question": "Combinations with repetition: selecting r items from n different items (repetition allowed) gives",
     "options": [
       "^{n+r-1}C_r",
       "^nC_r",
@@ -181,7 +181,7 @@
   },
   {
     "id": "p_and_c_qn_011",
-    "question": "The number of ways of selecting at least one item from n distinct items is",
+    "question": "Selecting at least one item from n distinct items can be done in",
     "options": [
       "2^n - 1",
       "2^n",
@@ -199,7 +199,7 @@
   },
   {
     "id": "p_and_c_qn_012",
-    "question": "The relation between permutation and combination is",
+    "question": "What relation connects permutations and combinations?",
     "options": [
       "^nP_r = r! \\times {}^nC_r",
       "^nC_r = r! \\times {}^nP_r",
@@ -217,7 +217,7 @@
   },
   {
     "id": "p_and_c_qn_013",
-    "question": "The number of diagonals in an n-sided polygon is",
+    "question": "Diagonals in an n-sided polygon can be counted using",
     "options": [
       "^nC_2 - n",
       "^nC_2",
@@ -235,7 +235,7 @@
   },
   {
     "id": "p_and_c_qn_014",
-    "question": "The number of integral solutions of x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>r</sub> = n, where x<sub>i</sub> &ge; 0 is",
+    "question": "For equation x₁ + x₂ + ... + xᵣ = n where xᵢ ≥ 0, total integral solutions equal",
     "options": [
       "^{n+r-1}C_{r-1}",
       "^nC_{r-1}",
@@ -253,7 +253,7 @@
   },
   {
     "id": "p_and_c_qn_015",
-    "question": "The number of integral solutions of x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>r</sub> = n, where x<sub>i</sub> &ge; 1 is",
+    "question": "If x₁ + x₂ + ... + xᵣ = n and each xᵢ ≥ 1, how many integral solutions exist?",
     "options": [
       "^{n-1}C_{r-1}",
       "^{n+r-1}C_{r-1}",

@@ -1,0 +1,1262 @@
+[
+  {
+    "id": "hydrocarbons_qn_001",
+    "question": "In the reaction shown, the product formed is",
+    "options": [
+      "\\text{1-bromopropane}",
+      "\\text{2-bromopropane}",
+      "\\text{1-chloropropane}",
+      "\\text{Propane}"
+    ],
+    "answer": "\\text{1-bromopropane}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hydrocarbons/hydrocarbons_qn_001.svg",
+    "tip": "Anti-Markownikoff (Peroxide effect)"
+  },
+  {
+    "id": "hydrocarbons_qn_002",
+    "question": "Wurtz reaction is carried out using which reagent?",
+    "options": [
+      "\\text{2Na in dry ether}",
+      "\\text{Zn in alcohol}",
+      "\\text{NaOH + CaO}",
+      "\\text{LiAlH}_4"
+    ],
+    "answer": "\\text{2Na in dry ether}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_003",
+    "question": "Halogenation of benzene in presence of anhydrous AlCl<sub>3</sub> gives",
+    "options": [
+      "\\text{Halobenzene (monosubstituted)}",
+      "\\text{Hexahalobenzene}",
+      "\\text{BHC}",
+      "\\text{Benzyl halide}"
+    ],
+    "answer": "\\text{Halobenzene (monosubstituted)}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_004",
+    "question": "Reduction of alkyl halides can be done using",
+    "options": [
+      "\\text{Zn + Cu couple/Alcohol}",
+      "\\text{Only H}_2\\text{O}",
+      "\\text{NaOH only}",
+      "\\text{O}_2"
+    ],
+    "answer": "\\text{Zn + Cu couple/Alcohol}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_005",
+    "question": "Saytzeff's rule states that in elimination reactions, the major product is",
+    "options": [
+      "\\text{More substituted alkene}",
+      "\\text{Less substituted alkene}",
+      "\\text{Primary alcohol}",
+      "\\text{Alkane}"
+    ],
+    "answer": "\\text{More substituted alkene}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_006",
+    "question": "In the structure shown, which conformation has the highest energy?",
+    "options": [
+      "\\text{Eclipsed}",
+      "\\text{Staggered}",
+      "\\text{Both have equal energy}",
+      "\\text{Cannot be determined}"
+    ],
+    "answer": "\\text{Eclipsed}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hydrocarbons/hydrocarbons_qn_006.svg",
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_007",
+    "question": "The most stable conformation of ethane is",
+    "options": [
+      "\\text{Staggered}",
+      "\\text{Eclipsed}",
+      "\\text{Gauche}",
+      "\\text{Skew}"
+    ],
+    "answer": "\\text{Staggered}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_008",
+    "question": "When the compound shown undergoes ozonolysis followed by Zn/H<sub>2</sub>O treatment, the products are",
+    "options": [
+      "\\text{Two aldehydes}",
+      "\\text{Two ketones}",
+      "\\text{One aldehyde + one ketone}",
+      "\\text{Two carboxylic acids}"
+    ],
+    "answer": "\\text{One aldehyde + one ketone}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hydrocarbons/hydrocarbons_qn_008.svg",
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_009",
+    "question": "Decarboxylation of sodium salts of fatty acids requires",
+    "options": [
+      "\\text{NaOH + CaO}",
+      "\\text{Zn-Hg/HCl}",
+      "\\text{H}_2\\text{/Pd}",
+      "\\text{Red P + HI}"
+    ],
+    "answer": "\\text{NaOH + CaO}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_010",
+    "question": "The reaction shown is an example of",
+    "options": [
+      "\\text{Friedel-Crafts alkylation}",
+      "\\text{Friedel-Crafts acylation}",
+      "\\text{Nitration}",
+      "\\text{Sulphonation}"
+    ],
+    "answer": "\\text{Friedel-Crafts alkylation}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hydrocarbons/hydrocarbons_qn_010.svg",
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_011",
+    "question": "The bond angle in alkenes (sp<sup>2</sup> hybridized carbon) is",
+    "options": [
+      "120°",
+      "109.5°",
+      "180°",
+      "90°"
+    ],
+    "answer": "120°",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_012",
+    "question": "Ozonolysis of alkenes followed by treatment with Zn/H<sub>2</sub>O gives",
+    "options": [
+      "\\text{Carbonyl compounds}",
+      "\\text{Alcohols}",
+      "\\text{Carboxylic acids}",
+      "\\text{Alkanes}"
+    ],
+    "answer": "\\text{Carbonyl compounds}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_013",
+    "question": "In decarboxylation reaction, CaO is preferred over NaOH alone because CaO",
+    "options": [
+      "\\text{Is more hygroscopic and keeps NaOH dry}",
+      "\\text{Acts as catalyst}",
+      "\\text{Provides heat}",
+      "\\text{Removes CO}_2"
+    ],
+    "answer": "\\text{Is more hygroscopic and keeps NaOH dry}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_014",
+    "question": "The conformation shown in the Newman projection is",
+    "options": [
+      "\\text{Eclipsed}",
+      "\\text{Staggered}",
+      "\\text{Gauche}",
+      "\\text{Anti}"
+    ],
+    "answer": "\\text{Eclipsed}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hydrocarbons/hydrocarbons_qn_014.svg",
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_015",
+    "question": "Groups like -NO<sub>2</sub>, -CN, -COOH are",
+    "options": [
+      "\\text{meta directing and deactivating}",
+      "\\text{ortho-para directing and activating}",
+      "\\text{ortho-para directing and deactivating}",
+      "\\text{meta directing and activating}"
+    ],
+    "answer": "\\text{meta directing and deactivating}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_016",
+    "question": "Hydroboration-oxidation of alkenes involves",
+    "options": [
+      "\\text{syn-addition}",
+      "\\text{anti-addition}",
+      "\\text{free radical addition}",
+      "\\text{electrophilic addition}"
+    ],
+    "answer": "\\text{syn-addition}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_017",
+    "question": "Fischer-Tropsch process for synthetic petrol uses which catalyst?",
+    "options": [
+      "\\text{Co/Ni}",
+      "\\text{Fe}_2\\text{O}_3",
+      "\\text{V}_2\\text{O}_5",
+      "\\text{Pt}"
+    ],
+    "answer": "\\text{Co/Ni}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_018",
+    "question": "Nitration of benzene requires a mixture of",
+    "options": [
+      "\\text{Conc. HNO}_3\\text{ + Conc. H}_2\\text{SO}_4",
+      "\\text{Dil. HNO}_3",
+      "\\text{HNO}_3\\text{ + NaOH}",
+      "\\text{HNO}_3\\text{ + AlCl}_3"
+    ],
+    "answer": "\\text{Conc. HNO}_3\\text{ + Conc. H}_2\\text{SO}_4",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_019",
+    "question": "The conformation shown in the Newman projection is",
+    "options": [
+      "\\text{Staggered}",
+      "\\text{Eclipsed}",
+      "\\text{Gauche}",
+      "\\text{Boat}"
+    ],
+    "answer": "\\text{Staggered}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hydrocarbons/hydrocarbons_qn_019.svg",
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_020",
+    "question": "The reaction shown represents which type of reaction?",
+    "options": [
+      "\\text{Wurtz reaction}",
+      "\\text{Kolbe's electrolysis}",
+      "\\text{Corey-House synthesis}",
+      "\\text{Friedel-Crafts alkylation}"
+    ],
+    "answer": "\\text{Wurtz reaction}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hydrocarbons/hydrocarbons_qn_020.svg",
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_021",
+    "question": "The reagent used for converting benzene to cyclohexane is",
+    "options": [
+      "\\text{H}_2\\text{/Ni}",
+      "\\text{Na/liq. NH}_3",
+      "\\text{Zn/HCl}",
+      "\\text{LiAlH}_4"
+    ],
+    "answer": "\\text{H}_2\\text{/Ni}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_022",
+    "question": "According to Markownikoff's rule, in addition to unsymmetrical alkenes, the negative part of addendum attaches to the carbon with",
+    "options": [
+      "\\text{Lesser number of hydrogen atoms}",
+      "\\text{Greater number of hydrogen atoms}",
+      "\\text{More alkyl groups}",
+      "\\text{No hydrogen atoms}"
+    ],
+    "answer": "\\text{Lesser number of hydrogen atoms}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_023",
+    "question": "Oxymercuration-demercuration gives Markownikoff product without",
+    "options": [
+      "\\text{Carbocation rearrangement}",
+      "\\text{Using catalyst}",
+      "\\text{Water}",
+      "\\text{Alkene}"
+    ],
+    "answer": "\\text{Carbocation rearrangement}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_024",
+    "question": "In the reaction shown, the product formed is",
+    "options": [
+      "\\text{2-bromopropane}",
+      "\\text{1-bromopropane}",
+      "\\text{2-chloropropane}",
+      "\\text{1-chloropropane}"
+    ],
+    "answer": "\\text{2-bromopropane}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hydrocarbons/hydrocarbons_qn_024.svg",
+    "tip": "Markownikoff's rule"
+  },
+  {
+    "id": "hydrocarbons_qn_025",
+    "question": "Groups like -NH<sub>2</sub>, -OH, -OCH<sub>3</sub> are",
+    "options": [
+      "\\text{ortho-para directing and activating}",
+      "\\text{meta directing and deactivating}",
+      "\\text{ortho-para directing and deactivating}",
+      "\\text{meta directing and activating}"
+    ],
+    "answer": "\\text{ortho-para directing and activating}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_026",
+    "question": "The energy difference between staggered and eclipsed conformations of ethane is approximately",
+    "options": [
+      "12.5 \\text{ kJ mol}^{-1}",
+      "25 \\text{ kJ mol}^{-1}",
+      "6.25 \\text{ kJ mol}^{-1}",
+      "50 \\text{ kJ mol}^{-1}"
+    ],
+    "answer": "12.5 \\text{ kJ mol}^{-1}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_027",
+    "question": "Iodination of alkanes is reversible because",
+    "options": [
+      "\\text{HI can reduce alkyl iodide back}",
+      "\\text{I}_2\\text{ is least reactive}",
+      "\\text{Temperature is low}",
+      "\\text{No catalyst is used}"
+    ],
+    "answer": "\\text{HI can reduce alkyl iodide back}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_028",
+    "question": "The reaction mechanism shown represents",
+    "options": [
+      "\\text{Free radical substitution}",
+      "\\text{Electrophilic addition}",
+      "\\text{Nucleophilic substitution}",
+      "\\text{Elimination}"
+    ],
+    "answer": "\\text{Free radical substitution}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hydrocarbons/hydrocarbons_qn_028.svg",
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_029",
+    "question": "Kolbe's electrolysis of sodium acetate produces",
+    "options": [
+      "\\text{Ethane + CO}_2\\text{ + H}_2",
+      "\\text{Methane + CO}_2",
+      "\\text{Propane + CO}_2",
+      "\\text{Butane + H}_2"
+    ],
+    "answer": "\\text{Ethane + CO}_2\\text{ + H}_2",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_030",
+    "question": "Clemmensen reduction uses which reducing agent?",
+    "options": [
+      "\\text{Zn-Hg/HCl}",
+      "\\text{LiAlH}_4",
+      "\\text{NaBH}_4",
+      "\\text{H}_2\\text{/Ni}"
+    ],
+    "answer": "\\text{Zn-Hg/HCl}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_031",
+    "question": "Ease of hydrogenation of alkenes depends on",
+    "options": [
+      "\\text{Steric crowding across double bond}",
+      "\\text{Number of hydrogen atoms}",
+      "\\text{Molecular weight}",
+      "\\text{Color of compound}"
+    ],
+    "answer": "\\text{Steric crowding across double bond}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "More crowding = Less reactivity"
+  },
+  {
+    "id": "hydrocarbons_qn_032",
+    "question": "The hybridization of carbon atoms in ethyne (acetylene) is",
+    "options": [
+      "sp",
+      "sp^2",
+      "sp^3",
+      "sp^3d"
+    ],
+    "answer": "sp",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_033",
+    "question": "The acidic character order for hydrocarbons is",
+    "options": [
+      "\\text{Alkynes > Alkenes > Alkanes}",
+      "\\text{Alkanes > Alkenes > Alkynes}",
+      "\\text{Alkenes > Alkynes > Alkanes}",
+      "\\text{All are equally acidic}"
+    ],
+    "answer": "\\text{Alkynes > Alkenes > Alkanes}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_034",
+    "question": "Oxymercuration-demercuration of alkenes gives",
+    "options": [
+      "\\text{Markownikoff product without rearrangement}",
+      "\\text{Anti-Markownikoff product}",
+      "\\text{Alkanes}",
+      "\\text{Alkynes}"
+    ],
+    "answer": "\\text{Markownikoff product without rearrangement}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_035",
+    "question": "Boiling point of alkanes decreases on",
+    "options": [
+      "\\text{Branching}",
+      "\\text{Increasing chain length}",
+      "\\text{Adding functional groups}",
+      "\\text{Increasing molecular mass}"
+    ],
+    "answer": "\\text{Branching}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_036",
+    "question": "When the benzene derivative shown reacts with electrophile E<sup>+</sup>, the major product will have substitution at",
+    "options": [
+      "\\text{meta position}",
+      "\\text{ortho and para positions}",
+      "\\text{All positions equally}",
+      "\\text{No substitution occurs}"
+    ],
+    "answer": "\\text{meta position}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hydrocarbons/hydrocarbons_qn_036.svg",
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_037",
+    "question": "The compound shown will undergo addition reactions more readily than benzene because",
+    "options": [
+      "\\text{It is not aromatic (lacks resonance stability)}",
+      "\\text{It has higher molecular weight}",
+      "\\text{It has more hydrogen atoms}",
+      "\\text{It is more polar}"
+    ],
+    "answer": "\\text{It is not aromatic (lacks resonance stability)}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hydrocarbons/hydrocarbons_qn_037.svg",
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_038",
+    "question": "Ethyl mercaptan (C<sub>2</sub>H<sub>5</sub>SH) is added to LPG cylinders to",
+    "options": [
+      "\\text{Detect gas leakage}",
+      "\\text{Increase combustion}",
+      "\\text{Act as catalyst}",
+      "\\text{Reduce cost}"
+    ],
+    "answer": "\\text{Detect gas leakage}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_039",
+    "question": "Anti-Markownikoff addition of HBr to alkenes occurs in the presence of",
+    "options": [
+      "\\text{Peroxide}",
+      "\\text{Anhydrous AlCl}_3",
+      "\\text{Conc. H}_2\\text{SO}_4",
+      "\\text{UV light}"
+    ],
+    "answer": "\\text{Peroxide}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_040",
+    "question": "CNG (Compressed Natural Gas) mainly consists of",
+    "options": [
+      "\\text{Methane (95%)}",
+      "\\text{Ethane}",
+      "\\text{Propane}",
+      "\\text{Butane}"
+    ],
+    "answer": "\\text{Methane (95%)}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_041",
+    "question": "Benzene reacts with excess Cl<sub>2</sub> in sunlight to form",
+    "options": [
+      "\\text{Hexachlorobenzene (C}_6\\text{Cl}_6\\text{)}",
+      "\\text{Chlorobenzene}",
+      "\\text{BHC}",
+      "\\text{Benzyl chloride}"
+    ],
+    "answer": "\\text{Hexachlorobenzene (C}_6\\text{Cl}_6\\text{)}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_042",
+    "question": "When calcium carbide reacts with water, the product formed is",
+    "options": [
+      "\\text{Ethyne (Acetylene)}",
+      "\\text{Ethene}",
+      "\\text{Ethane}",
+      "\\text{Methane}"
+    ],
+    "answer": "\\text{Ethyne (Acetylene)}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_043",
+    "question": "LPG (Liquified Petroleum Gas) is primarily a mixture of",
+    "options": [
+      "\\text{Butane and Isobutane}",
+      "\\text{Methane and Ethane}",
+      "\\text{Propane only}",
+      "\\text{Methane only}"
+    ],
+    "answer": "\\text{Butane and Isobutane}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_044",
+    "question": "In the hydrocarbon shown, the most acidic hydrogen is located at",
+    "options": [
+      "\\text{Terminal position (attached to sp carbon)}",
+      "\\text{Allylic position}",
+      "\\text{Benzylic position}",
+      "\\text{All hydrogens are equally acidic}"
+    ],
+    "answer": "\\text{Terminal position (attached to sp carbon)}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hydrocarbons/hydrocarbons_qn_044.svg",
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_045",
+    "question": "Corey-House synthesis uses",
+    "options": [
+      "\\text{Lithium dialkyl cuprate (Gilman reagent)}",
+      "\\text{Sodium in dry ether}",
+      "\\text{Grignard reagent}",
+      "\\text{Zinc}"
+    ],
+    "answer": "\\text{Lithium dialkyl cuprate (Gilman reagent)}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_046",
+    "question": "Diels-Alder reaction involves",
+    "options": [
+      "\\text{Conjugated diene + dienophile}",
+      "\\text{Alkene + H}_2",
+      "\\text{Alkyne + H}_2",
+      "\\text{Benzene + Cl}_2"
+    ],
+    "answer": "\\text{Conjugated diene + dienophile}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_047",
+    "question": "Benzene reacts with Cl<sub>2</sub> in presence of UV light at 500K to form",
+    "options": [
+      "\\text{BHC (Benzene hexachloride)}",
+      "\\text{Chlorobenzene}",
+      "\\text{Hexachlorobenzene}",
+      "\\text{No reaction}"
+    ],
+    "answer": "\\text{BHC (Benzene hexachloride)}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_048",
+    "question": "According to Huckel's rule, aromatic compounds must have",
+    "options": [
+      "(4n + 2)\\pi \\text{ electrons}",
+      "4n\\pi \\text{ electrons}",
+      "2n\\pi \\text{ electrons}",
+      "(4n - 2)\\pi \\text{ electrons}"
+    ],
+    "answer": "(4n + 2)\\pi \\text{ electrons}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_049",
+    "question": "Alkanes with even number of carbon atoms have higher melting points compared to",
+    "options": [
+      "\\text{Adjacent odd carbon alkanes}",
+      "\\text{All other alkanes}",
+      "\\text{Alkenes}",
+      "\\text{Alkynes}"
+    ],
+    "answer": "\\text{Adjacent odd carbon alkanes}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_050",
+    "question": "The order of reactivity of halogens towards alkanes is",
+    "options": [
+      "F_2 > Cl_2 > Br_2 > I_2",
+      "I_2 > Br_2 > Cl_2 > F_2",
+      "Cl_2 > Br_2 > F_2 > I_2",
+      "Br_2 > Cl_2 > I_2 > F_2"
+    ],
+    "answer": "F_2 > Cl_2 > Br_2 > I_2",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_051",
+    "question": "The cetane number of pure cetane (hexadecane) is",
+    "options": [
+      "100",
+      "0",
+      "50",
+      "130"
+    ],
+    "answer": "100",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_052",
+    "question": "Comparing cis and trans isomers of but-2-ene, which statement is correct?",
+    "options": [
+      "\\text{cis-isomer is more polar than trans-isomer}",
+      "\\text{trans-isomer is more polar than cis-isomer}",
+      "\\text{Both have equal polarity}",
+      "\\text{Both are non-polar}"
+    ],
+    "answer": "\\text{cis-isomer is more polar than trans-isomer}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "trans-but-2-ene has zero dipole moment"
+  },
+  {
+    "id": "hydrocarbons_qn_053",
+    "question": "Baeyer's reagent used to test unsaturation is",
+    "options": [
+      "\\text{Cold dilute KMnO}_4",
+      "\\text{Hot conc. KMnO}_4",
+      "\\text{Br}_2\\text{ in CCl}_4",
+      "\\text{Conc. H}_2\\text{SO}_4"
+    ],
+    "answer": "\\text{Cold dilute KMnO}_4",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_054",
+    "question": "Catalytic hydrogenation of alkynes to alkanes requires how many moles of H<sub>2</sub>?",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "answer": "2",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_055",
+    "question": "Tetraethyl lead (TEL) is used in petrol as",
+    "options": [
+      "\\text{Anti-knocking agent}",
+      "\\text{Fuel}",
+      "\\text{Lubricant}",
+      "\\text{Catalyst}"
+    ],
+    "answer": "\\text{Anti-knocking agent}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_056",
+    "question": "The industrial process to manufacture petrol from coal using H<sub>2</sub> at 450-500°C under high pressure is",
+    "options": [
+      "\\text{Bergius process}",
+      "\\text{Fischer-Tropsch process}",
+      "\\text{Haber process}",
+      "\\text{Contact process}"
+    ],
+    "answer": "\\text{Bergius process}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_057",
+    "question": "The octane number of iso-octane (2,2,4-trimethylpentane) is",
+    "options": [
+      "100",
+      "0",
+      "50",
+      "130"
+    ],
+    "answer": "100",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_058",
+    "question": "Aromatization of alkanes at 773 K using Cr<sub>2</sub>O<sub>3</sub> or V<sub>2</sub>O<sub>5</sub> produces",
+    "options": [
+      "\\text{Aromatic hydrocarbons}",
+      "\\text{Alkenes}",
+      "\\text{Alkynes}",
+      "\\text{Alcohols}"
+    ],
+    "answer": "\\text{Aromatic hydrocarbons}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_059",
+    "question": "The reaction shown is an example of",
+    "options": [
+      "\\text{Friedel-Crafts acylation}",
+      "\\text{Friedel-Crafts alkylation}",
+      "\\text{Halogenation}",
+      "\\text{Nitration}"
+    ],
+    "answer": "\\text{Friedel-Crafts acylation}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hydrocarbons/hydrocarbons_qn_059.svg",
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_060",
+    "question": "Friedel-Crafts alkylation of benzene requires which catalyst?",
+    "options": [
+      "\\text{Anhydrous AlCl}_3",
+      "\\text{Conc. H}_2\\text{SO}_4",
+      "\\text{FeCl}_3",
+      "\\text{Ni}"
+    ],
+    "answer": "\\text{Anhydrous AlCl}_3",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_061",
+    "question": "The catalyst used in Lindlar's reduction to convert alkynes to cis-alkenes is",
+    "options": [
+      "\\text{Pd/C partially poisoned with quinoline}",
+      "\\text{Pt}",
+      "\\text{Ni}",
+      "\\text{Na/liq. NH}_3"
+    ],
+    "answer": "\\text{Pd/C partially poisoned with quinoline}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_062",
+    "question": "Wolff-Kishner reduction converts carbonyl compounds to alkanes using",
+    "options": [
+      "\\text{H}_2\\text{NNH}_2\\text{/KOH/Glycol}",
+      "\\text{Zn-Hg/HCl}",
+      "\\text{Red P/HI}",
+      "\\text{LiAlH}_4"
+    ],
+    "answer": "\\text{H}_2\\text{NNH}_2\\text{/KOH/Glycol}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_063",
+    "question": "Halogens (-F, -Cl, -Br, -I) are",
+    "options": [
+      "\\text{ortho-para directing but deactivating}",
+      "\\text{meta directing and deactivating}",
+      "\\text{ortho-para directing and activating}",
+      "\\text{meta directing and activating}"
+    ],
+    "answer": "\\text{ortho-para directing but deactivating}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_064",
+    "question": "The order of reactivity of hydrogen atoms in alkanes towards halogenation is",
+    "options": [
+      "3° > 2° > 1°",
+      "1° > 2° > 3°",
+      "2° > 3° > 1°",
+      "1° = 2° = 3°"
+    ],
+    "answer": "3° > 2° > 1°",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_065",
+    "question": "When the benzene derivative shown reacts with electrophile E<sup>+</sup>, the major product will have substitution at",
+    "options": [
+      "\\text{ortho and para positions}",
+      "\\text{meta position only}",
+      "\\text{All positions equally}",
+      "\\text{No substitution occurs}"
+    ],
+    "answer": "\\text{ortho and para positions}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hydrocarbons/hydrocarbons_qn_065.svg",
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_066",
+    "question": "The Bergius process converts coal to petrol using",
+    "options": [
+      "\\text{H}_2\\text{ at 450-500°C with FeO catalyst}",
+      "\\text{CO + H}_2\\text{ (water gas)}",
+      "\\text{Only high temperature}",
+      "\\text{O}_2\\text{ combustion}"
+    ],
+    "answer": "\\text{H}_2\\text{ at 450-500°C with FeO catalyst}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_067",
+    "question": "Terminal alkynes react with NaNH<sub>2</sub> to form",
+    "options": [
+      "\\text{Sodium alkynide}",
+      "\\text{Sodium alkoxide}",
+      "\\text{Sodium alkane}",
+      "\\text{Sodium alkene}"
+    ],
+    "answer": "\\text{Sodium alkynide}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_068",
+    "question": "Which alkyne reaction does NOT occur with alkenes and alkanes, making it a distinction test?",
+    "options": [
+      "\\text{Reaction with NaNH}_2\\text{ to form sodium alkynide}",
+      "\\text{Combustion}",
+      "\\text{Hydrogenation}",
+      "\\text{Halogenation}"
+    ],
+    "answer": "\\text{Reaction with NaNH}_2\\text{ to form sodium alkynide}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_069",
+    "question": "The structure shown represents",
+    "options": [
+      "\\text{Benzene (Kekule structure)}",
+      "\\text{Cyclohexane}",
+      "\\text{Cyclohexene}",
+      "\\text{Cyclohexatriene}"
+    ],
+    "answer": "\\text{Benzene (Kekule structure)}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hydrocarbons/hydrocarbons_qn_069.svg",
+    "tip": null
+  },
+  {
+    "id": "hydrocarbons_qn_070",
+    "question": "The alkene shown is more stable than its isomer because of",
+    "options": [
+      "\\text{Greater number of alkyl groups on C=C}",
+      "\\text{Lesser number of alkyl groups}",
+      "\\text{Presence of hydrogen bonding}",
+      "\\text{Resonance stabilization}"
+    ],
+    "answer": "\\text{Greater number of alkyl groups on C=C}",
+    "tags": {
+      "chapter": "Hydrocarbons",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hydrocarbons/hydrocarbons_qn_070.svg",
+    "tip": null
+  }
+]
