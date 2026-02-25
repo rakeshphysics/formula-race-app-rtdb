@@ -1,0 +1,722 @@
+[
+  {
+    "id": "hyperbola_qn_001",
+    "question": "The vertices of the hyperbola x²/a² - y²/b² = 1 are located at",
+    "options": [
+      "(\\pm a, 0)",
+      "(0, \\pm a)",
+      "(\\pm b, 0)",
+      "(0, \\pm b)"
+    ],
+    "answer": "(\\pm a, 0)",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hyperbola/hyperbola_qn_001.svg",
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_002",
+    "question": "Two diameters y = m₁x and y = m₂x are conjugate diameters of x²/a² - y²/b² = 1 if",
+    "options": [
+      "m_1m_2 = \\frac{b^2}{a^2}",
+      "m_1m_2 = \\frac{a^2}{b^2}",
+      "m_1m_2 = -1",
+      "m_1m_2 = 1"
+    ],
+    "answer": "m_1m_2 = \\frac{b^2}{a^2}",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_003",
+    "question": "For rectangular hyperbola xy = c², the asymptotes are",
+    "options": [
+      "x = 0 \\text{ and } y = 0",
+      "x = y \\text{ and } x = -y",
+      "x = c \\text{ and } y = c",
+      "x + y = 0"
+    ],
+    "answer": "x = 0 \\text{ and } y = 0",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hyperbola/hyperbola_qn_003.svg",
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_004",
+    "question": "The focal radii of a point P(x₁, y₁) on the hyperbola x²/a² - y²/b² = 1 are",
+    "options": [
+      "|SP| = |ex_1 - a|, |S_1P| = |ex_1 + a|",
+      "|SP| = ex_1 + a, |S_1P| = ex_1 - a",
+      "|SP| = a - ex_1, |S_1P| = a + ex_1",
+      "|SP| = ey_1 - b, |S_1P| = ey_1 + b"
+    ],
+    "answer": "|SP| = |ex_1 - a|, |S_1P| = |ex_1 + a|",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hyperbola/hyperbola_qn_004.svg",
+    "tip": "S and S₁ are the two foci"
+  },
+  {
+    "id": "hyperbola_qn_005",
+    "question": "For the conjugate hyperbola -x²/a² + y²/b² = 1, the foci are located at",
+    "options": [
+      "(0, \\pm be)",
+      "(\\pm ae, 0)",
+      "(0, \\pm b)",
+      "(\\pm a, 0)"
+    ],
+    "answer": "(0, \\pm be)",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hyperbola/hyperbola_qn_005.svg",
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_006",
+    "question": "The tangent at point (asecθ, btanθ) to the hyperbola x²/a² - y²/b² = 1 is",
+    "options": [
+      "\\frac{x\\sec\\theta}{a} - \\frac{y\\tan\\theta}{b} = 1",
+      "\\frac{x\\cos\\theta}{a} - \\frac{y\\sin\\theta}{b} = 1",
+      "x\\sec\\theta - y\\tan\\theta = 1",
+      "\\frac{x}{a} - \\frac{y}{b} = 1"
+    ],
+    "answer": "\\frac{x\\sec\\theta}{a} - \\frac{y\\tan\\theta}{b} = 1",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hyperbola/hyperbola_qn_006.svg",
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_007",
+    "question": "The equation of the tangent to x²/a² - y²/b² = 1 with slope m is",
+    "options": [
+      "y = mx \\pm \\sqrt{a^2m^2 - b^2}",
+      "y = mx \\pm \\sqrt{a^2m^2 + b^2}",
+      "y = mx \\pm \\sqrt{b^2 - a^2m^2}",
+      "y = mx \\pm ab"
+    ],
+    "answer": "y = mx \\pm \\sqrt{a^2m^2 - b^2}",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hyperbola/hyperbola_qn_007.svg",
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_008",
+    "question": "The equation of normal at (x₁, y₁) to x²/a² - y²/b² = 1 is",
+    "options": [
+      "\\frac{a^2x}{x_1} + \\frac{b^2y}{y_1} = a^2 + b^2",
+      "\\frac{a^2x}{x_1} - \\frac{b^2y}{y_1} = a^2 - b^2",
+      "\\frac{x}{x_1} + \\frac{y}{y_1} = 2",
+      "a^2x + b^2y = 1"
+    ],
+    "answer": "\\frac{a^2x}{x_1} + \\frac{b^2y}{y_1} = a^2 + b^2",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_009",
+    "question": "The equations of directrices for the rectangular hyperbola xy = c² are",
+    "options": [
+      "x + y = \\pm \\sqrt{2}c",
+      "x - y = \\pm \\sqrt{2}c",
+      "x = \\pm c, y = \\pm c",
+      "x + y = \\pm c"
+    ],
+    "answer": "x + y = \\pm \\sqrt{2}c",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hyperbola/hyperbola_qn_009.svg",
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_010",
+    "question": "Maximum number of normals that can be drawn from a point to a hyperbola is",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "6"
+    ],
+    "answer": "4",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_011",
+    "question": "The eccentricity of a rectangular hyperbola is",
+    "options": [
+      "\\sqrt{2}",
+      "1",
+      "2",
+      "\\frac{1}{\\sqrt{2}}"
+    ],
+    "answer": "\\sqrt{2}",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_012",
+    "question": "The equation of chord with midpoint (x₁, y₁) for the hyperbola x²/a² - y²/b² = 1 is",
+    "options": [
+      "\\frac{xx_1}{a^2} - \\frac{yy_1}{b^2} - 1 = \\frac{x_1^2}{a^2} - \\frac{y_1^2}{b^2} - 1",
+      "\\frac{xx_1}{a^2} - \\frac{yy_1}{b^2} = 2",
+      "xx_1 - yy_1 = a^2 - b^2",
+      "\\frac{x}{x_1} - \\frac{y}{y_1} = 2"
+    ],
+    "answer": "\\frac{xx_1}{a^2} - \\frac{yy_1}{b^2} - 1 = \\frac{x_1^2}{a^2} - \\frac{y_1^2}{b^2} - 1",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "T = S₁ formula"
+  },
+  {
+    "id": "hyperbola_qn_013",
+    "question": "The difference of focal distances |S₁P - SP| for any point P on the hyperbola equals",
+    "options": [
+      "2a",
+      "2b",
+      "2ae",
+      "a"
+    ],
+    "answer": "2a",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_014",
+    "question": "The length of conjugate axis of the hyperbola x²/a² - y²/b² = 1 is",
+    "options": [
+      "2b",
+      "2a",
+      "b",
+      "a"
+    ],
+    "answer": "2b",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_015",
+    "question": "The equations of directrices for x²/a² - y²/b² = 1 are",
+    "options": [
+      "x = \\pm \\frac{a}{e}",
+      "x = \\pm ae",
+      "y = \\pm \\frac{b}{e}",
+      "x = \\pm a"
+    ],
+    "answer": "x = \\pm \\frac{a}{e}",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_016",
+    "question": "For four conormal points with eccentric angles θ₁, θ₂, θ₃, θ₄ on a hyperbola, which condition holds?",
+    "options": [
+      "\\sum \\sin(\\theta_1 + \\theta_2) = 0",
+      "\\sum \\cos(\\theta_1 - \\theta_2) = 0",
+      "\\theta_1 + \\theta_2 + \\theta_3 + \\theta_4 = 2\\pi",
+      "\\tan\\theta_1 \\cdot \\tan\\theta_2 \\cdot \\tan\\theta_3 \\cdot \\tan\\theta_4 = 1"
+    ],
+    "answer": "\\sum \\sin(\\theta_1 + \\theta_2) = 0",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Also ∑cos(θ₁ + θ₂) = 0"
+  },
+  {
+    "id": "hyperbola_qn_017",
+    "question": "The parametric equations of the hyperbola x²/a² - y²/b² = 1 are",
+    "options": [
+      "x = a\\sec\\theta, y = b\\tan\\theta",
+      "x = a\\cos\\theta, y = b\\sin\\theta",
+      "x = a\\tan\\theta, y = b\\sec\\theta",
+      "x = a\\cosh\\theta, y = b\\cos\\theta"
+    ],
+    "answer": "x = a\\sec\\theta, y = b\\tan\\theta",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_018",
+    "question": "If a point P(x,y) moves such that frac(ax+by+c₁)²a²+b² - frac(bx-ay+c₂)²a²+b² = k², then the locus is",
+    "options": [
+      "\\text{A hyperbola}",
+      "\\text{An ellipse}",
+      "\\text{A parabola}",
+      "\\text{A circle}"
+    ],
+    "answer": "\\text{A hyperbola}",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Locus w.r.t. two perpendicular lines"
+  },
+  {
+    "id": "hyperbola_qn_019",
+    "question": "For rectangular hyperbola xy = c², the parametric coordinates are",
+    "options": [
+      "(ct, \\frac{c}{t})",
+      "(c\\cos t, c\\sin t)",
+      "(c\\sec t, c\\tan t)",
+      "(ct, ct)"
+    ],
+    "answer": "(ct, \\frac{c}{t})",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_020",
+    "question": "The equation of director circle of x²/a² - y²/b² = 1 is",
+    "options": [
+      "x^2 + y^2 = a^2 - b^2",
+      "x^2 + y^2 = a^2 + b^2",
+      "x^2 - y^2 = a^2 - b^2",
+      "x^2 + y^2 = 1"
+    ],
+    "answer": "x^2 + y^2 = a^2 - b^2",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_021",
+    "question": "The centre of the hyperbola x²/a² - y²/b² = 1 is at",
+    "options": [
+      "(0, 0)",
+      "(a, 0)",
+      "(0, b)",
+      "(a, b)"
+    ],
+    "answer": "(0, 0)",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_022",
+    "question": "The length of transverse axis of the hyperbola x²/a² - y²/b² = 1 is",
+    "options": [
+      "2a",
+      "2b",
+      "a",
+      "b"
+    ],
+    "answer": "2a",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_023",
+    "question": "Maximum number of tangents that can be drawn from an external point to a hyperbola is",
+    "options": [
+      "2",
+      "1",
+      "4",
+      "3"
+    ],
+    "answer": "2",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_024",
+    "question": "The coordinates of ends of latus rectum of x²/a² - y²/b² = 1 are",
+    "options": [
+      "(\\pm ae, \\pm \\frac{b^2}{a})",
+      "(\\pm a, \\pm b)",
+      "(\\pm ae, \\pm b)",
+      "(\\pm \\frac{a}{e}, \\pm b)"
+    ],
+    "answer": "(\\pm ae, \\pm \\frac{b^2}{a})",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_025",
+    "question": "If a triangle is inscribed in a rectangular hyperbola, then its orthocenter lies",
+    "options": [
+      "\\text{On the hyperbola}",
+      "\\text{At the center}",
+      "\\text{On the asymptotes}",
+      "\\text{Outside the hyperbola}"
+    ],
+    "answer": "\\text{On the hyperbola}",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Important property for rectangular hyperbola"
+  },
+  {
+    "id": "hyperbola_qn_026",
+    "question": "The combined equation of asymptotes of x²/a² - y²/b² = 1 is",
+    "options": [
+      "\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 0",
+      "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 0",
+      "x^2 - y^2 = 0",
+      "xy = 0"
+    ],
+    "answer": "\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 0",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_027",
+    "question": "The equation of normal at (asecθ, btanθ) to x²/a² - y²/b² = 1 is",
+    "options": [
+      "ax\\cos\\theta + by\\cot\\theta = a^2 + b^2",
+      "ax\\sec\\theta + by\\tan\\theta = a^2 + b^2",
+      "x\\cos\\theta + y\\sin\\theta = a + b",
+      "\\frac{x}{a}\\cos\\theta + \\frac{y}{b}\\sin\\theta = 2"
+    ],
+    "answer": "ax\\cos\\theta + by\\cot\\theta = a^2 + b^2",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_028",
+    "question": "The sum of eccentric angles of conormal points on a hyperbola is",
+    "options": [
+      "\\text{An odd multiple of } \\pi",
+      "\\text{An even multiple of } \\pi",
+      "\\text{Always } \\pi",
+      "\\text{Always } 2\\pi"
+    ],
+    "answer": "\\text{An odd multiple of } \\pi",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_029",
+    "question": "For the rectangular hyperbola xy = c², the foci are located at",
+    "options": [
+      "(\\sqrt{2}c, \\sqrt{2}c) \\text{ and } (-\\sqrt{2}c, -\\sqrt{2}c)",
+      "(c, c) \\text{ and } (-c, -c)",
+      "(\\sqrt{2}c, 0) \\text{ and } (-\\sqrt{2}c, 0)",
+      "(0, \\sqrt{2}c) \\text{ and } (0, -\\sqrt{2}c)"
+    ],
+    "answer": "(\\sqrt{2}c, \\sqrt{2}c) \\text{ and } (-\\sqrt{2}c, -\\sqrt{2}c)",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hyperbola/hyperbola_qn_029.svg",
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_030",
+    "question": "A hyperbola and its conjugate hyperbola have",
+    "options": [
+      "\\text{Same asymptotes}",
+      "\\text{Same foci}",
+      "\\text{Same vertices}",
+      "\\text{Same eccentricity}"
+    ],
+    "answer": "\\text{Same asymptotes}",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_031",
+    "question": "The angle between the asymptotes of the hyperbola x²/a² - y²/b² = 1 is",
+    "options": [
+      "2\\tan^{-1}\\left(\\frac{b}{a}\\right)",
+      "\\tan^{-1}\\left(\\frac{b}{a}\\right)",
+      "2\\sin^{-1}\\left(\\frac{b}{a}\\right)",
+      "\\frac{\\pi}{2}"
+    ],
+    "answer": "2\\tan^{-1}\\left(\\frac{b}{a}\\right)",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": "assets/images/11th/hyperbola/hyperbola_qn_031.svg",
+    "tip": "Also equals 2sec⁻¹(e)"
+  },
+  {
+    "id": "hyperbola_qn_032",
+    "question": "For rectangular hyperbola, the condition on a and b is",
+    "options": [
+      "a = b",
+      "a^2 = b^2",
+      "a > b",
+      "a < b"
+    ],
+    "answer": "a = b",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_033",
+    "question": "The coordinates of foci for the hyperbola x²/a² - y²/b² = 1 are",
+    "options": [
+      "(\\pm ae, 0)",
+      "(0, \\pm be)",
+      "(\\pm a, 0)",
+      "(\\pm b, 0)"
+    ],
+    "answer": "(\\pm ae, 0)",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_034",
+    "question": "The distance between the two foci of a hyperbola is",
+    "options": [
+      "2ae",
+      "2a",
+      "2be",
+      "ae"
+    ],
+    "answer": "2ae",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_035",
+    "question": "The director circle of hyperbola x²/a² - y²/b² = 1 exists only when",
+    "options": [
+      "a^2 > b^2",
+      "a^2 < b^2",
+      "a = b",
+      "\\text{Always exists}"
+    ],
+    "answer": "a^2 > b^2",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_036",
+    "question": "The equation of chord of contact from point (x₁, y₁) to x²/a² - y²/b² = 1 is",
+    "options": [
+      "\\frac{xx_1}{a^2} - \\frac{yy_1}{b^2} = 1",
+      "\\frac{xx_1}{a^2} + \\frac{yy_1}{b^2} = 1",
+      "xx_1 - yy_1 = 1",
+      "\\frac{x}{x_1} - \\frac{y}{y_1} = 2"
+    ],
+    "answer": "\\frac{xx_1}{a^2} - \\frac{yy_1}{b^2} = 1",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_037",
+    "question": "For the hyperbola x²/a² - y²/b² = 1, the eccentricity e is given by",
+    "options": [
+      "e = \\sqrt{1 + \\frac{b^2}{a^2}}",
+      "e = \\sqrt{1 - \\frac{b^2}{a^2}}",
+      "e = \\sqrt{\\frac{b^2}{a^2} - 1}",
+      "e = \\frac{a}{b}"
+    ],
+    "answer": "e = \\sqrt{1 + \\frac{b^2}{a^2}}",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_038",
+    "question": "For rectangular hyperbola xy = c², the length of latus rectum is",
+    "options": [
+      "2\\sqrt{2}c",
+      "2c",
+      "\\sqrt{2}c",
+      "c"
+    ],
+    "answer": "2\\sqrt{2}c",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_039",
+    "question": "A point (x₁, y₁) lies outside the hyperbola x²/a² - y²/b² = 1 if",
+    "options": [
+      "\\frac{x_1^2}{a^2} - \\frac{y_1^2}{b^2} - 1 > 0",
+      "\\frac{x_1^2}{a^2} - \\frac{y_1^2}{b^2} - 1 < 0",
+      "\\frac{x_1^2}{a^2} - \\frac{y_1^2}{b^2} = 1",
+      "x_1^2 + y_1^2 > a^2 + b^2"
+    ],
+    "answer": "\\frac{x_1^2}{a^2} - \\frac{y_1^2}{b^2} - 1 > 0",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "hyperbola_qn_040",
+    "question": "The equation of tangent at point (ct, c/t) to the rectangular hyperbola xy = c² is",
+    "options": [
+      "\\frac{x}{t} + yt = 2c",
+      "xt + \\frac{y}{t} = 2c",
+      "\\frac{x}{t} + \\frac{y}{t} = c",
+      "tx + \\frac{y}{t} = c"
+    ],
+    "answer": "\\frac{x}{t} + yt = 2c",
+    "tags": {
+      "chapter": "Hyperbola",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  }
+]

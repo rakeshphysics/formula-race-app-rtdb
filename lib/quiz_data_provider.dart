@@ -61,6 +61,7 @@ class QuizDataProvider extends ChangeNotifier {
       'assets/formulas/11/general_organic_chemistry.aes',
       'assets/formulas/11/permutations_and_combinations.aes',
       'assets/formulas/11/hydrocarbons.aes',
+      'assets/formulas/11/hyperbola.aes',
     ];
 
     for (var filePath in encryptedFiles) {
