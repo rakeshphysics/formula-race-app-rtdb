@@ -1,0 +1,562 @@
+[
+  {
+    "id": "seq_series_qn_001",
+    "question": "\\text{The } n\\text{th term of an AP with first term } a \\text{ and common difference } d \\text{ is:}",
+    "options": [
+      "a + nd",
+      "a + (n-1)d",
+      "a - (n-1)d",
+      "nd - a"
+    ],
+    "answer": "a + (n-1)d",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_002",
+    "question": "\\text{Sum of first } n \\text{ terms of an AP with first term } a \\text{ and last term } l \\text{ is:}",
+    "options": [
+      "\\dfrac{n}{2}(a + l)",
+      "\\dfrac{n}{2}(2a + l)",
+      "n(a + l)",
+      "\\dfrac{n-1}{2}(a + l)"
+    ],
+    "answer": "\\dfrac{n}{2}(a + l)",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_003",
+    "question": "\\text{The Arithmetic Mean of two numbers } a \\text{ and } b \\text{ is:}",
+    "options": [
+      "\\sqrt{ab}",
+      "\\dfrac{2ab}{a+b}",
+      "\\dfrac{a+b}{2}",
+      "\\dfrac{a-b}{2}"
+    ],
+    "answer": "\\dfrac{a+b}{2}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_004",
+    "question": "\\text{The } n\\text{th term of a GP with first term } a \\text{ and common ratio } r \\text{ is:}",
+    "options": [
+      "ar^n",
+      "ar^{n-1}",
+      "a(r-1)^n",
+      "\\dfrac{a}{r^{n-1}}"
+    ],
+    "answer": "ar^{n-1}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_005",
+    "question": "\\text{Sum of infinite terms of a GP with first term } a \\text{ and } |r| < 1 \\text{ is:}",
+    "options": [
+      "\\dfrac{a}{1+r}",
+      "\\dfrac{a}{1-r}",
+      "\\dfrac{ar}{1-r}",
+      "\\dfrac{a}{r-1}"
+    ],
+    "answer": "\\dfrac{a}{1-r}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_006",
+    "question": "\\text{If } A,\\ G,\\ H \\text{ are AM, GM, HM of two positive numbers, which relation holds?}",
+    "options": [
+      "G^2 = AH",
+      "A^2 = GH",
+      "H^2 = AG",
+      "G = A + H"
+    ],
+    "answer": "G^2 = AH",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_007",
+    "question": "\\text{The Harmonic Mean of two numbers } a \\text{ and } b \\text{ is:}",
+    "options": [
+      "\\dfrac{a+b}{2ab}",
+      "\\dfrac{ab}{a+b}",
+      "\\dfrac{2ab}{a+b}",
+      "\\sqrt{ab}"
+    ],
+    "answer": "\\dfrac{2ab}{a+b}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_008",
+    "question": "\\sum_{r=1}^{n} r \\ = \\ ?",
+    "options": [
+      "\\dfrac{n(n+1)}{2}",
+      "\\dfrac{n(n-1)}{2}",
+      "\\dfrac{n^2(n+1)}{2}",
+      "n^2"
+    ],
+    "answer": "\\dfrac{n(n+1)}{2}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_009",
+    "question": "\\text{If } S_n = An^2 + Bn \\text{ for an AP, the common difference equals:}",
+    "options": [
+      "A",
+      "B",
+      "2A",
+      "2B"
+    ],
+    "answer": "2A",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Use a_n = S_n - S_(n-1) and simplify."
+  },
+  {
+    "id": "seq_series_qn_010",
+    "question": "\\text{In an AP, if } S_p = q \\text{ and } S_q = p\\text{, then } S_{p+q} \\text{ equals:}",
+    "options": [
+      "p + q",
+      "p - q",
+      "-(p+q)",
+      "0"
+    ],
+    "answer": "-(p+q)",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": "Set up two equations using S_n = n/2 × [2a + (n-1)d], subtract to find a and d, then compute S_(p+q)."
+  },
+  {
+    "id": "seq_series_qn_011",
+    "question": "\\text{Three terms in AP are most conveniently taken as:}",
+    "options": [
+      "a,\\ a+d,\\ a+2d",
+      "a-d,\\ a,\\ a+d",
+      "a,\\ a+2d,\\ a+4d",
+      "a-2d,\\ a-d,\\ a"
+    ],
+    "answer": "a-d,\\ a,\\ a+d",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_012",
+    "question": "\\text{The Geometric Mean of two positive numbers } a \\text{ and } b \\text{ is:}",
+    "options": [
+      "\\dfrac{a+b}{2}",
+      "\\dfrac{2ab}{a+b}",
+      "\\sqrt{ab}",
+      "\\dfrac{ab}{2}"
+    ],
+    "answer": "\\sqrt{ab}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_013",
+    "question": "\\text{The } n\\text{th term of an HP whose corresponding AP has first term } a \\text{ and common difference } d \\text{ is:}",
+    "options": [
+      "a + (n-1)d",
+      "\\dfrac{1}{a+(n-1)d}",
+      "\\dfrac{1}{a-(n-1)d}",
+      "\\dfrac{a}{1+(n-1)d}"
+    ],
+    "answer": "\\dfrac{1}{a+(n-1)d}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_014",
+    "question": "\\sum_{r=1}^{n} r^3 \\ = \\ ?",
+    "options": [
+      "\\dfrac{n^2(n+1)^2}{4}",
+      "\\dfrac{n(n+1)(2n+1)}{6}",
+      "\\dfrac{n(n+1)}{2}",
+      "\\left(\\dfrac{n(n+1)}{2}\\right)^3"
+    ],
+    "answer": "\\dfrac{n^2(n+1)^2}{4}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_015",
+    "question": "\\text{Sum to infinity of AGP } a,\\ (a+d)r,\\ (a+2d)r^2,\\ldots \\text{ for } |r|<1 \\text{ is:}",
+    "options": [
+      "\\dfrac{a}{1-r} + \\dfrac{dr}{(1-r)^2}",
+      "\\dfrac{a}{1-r} - \\dfrac{dr}{(1-r)^2}",
+      "\\dfrac{a}{1+r} + \\dfrac{dr}{(1+r)^2}",
+      "\\dfrac{a+d}{1-r}"
+    ],
+    "answer": "\\dfrac{a}{1-r} + \\dfrac{dr}{(1-r)^2}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Multiply S∞ by r, subtract from itself and use the infinite GP sum formula."
+  },
+  {
+    "id": "seq_series_qn_016",
+    "question": "\\sum_{r=1}^{n} r^2 \\ = \\ ?",
+    "options": [
+      "\\dfrac{n(n+1)}{2}",
+      "\\dfrac{n(n+1)(2n+1)}{6}",
+      "\\dfrac{n^2(n+1)^2}{4}",
+      "\\dfrac{n(2n+1)(2n-1)}{6}"
+    ],
+    "answer": "\\dfrac{n(n+1)(2n+1)}{6}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_017",
+    "question": "\\text{Product of } n \\text{ GM's inserted between } a \\text{ and } b \\text{ equals:}",
+    "options": [
+      "\\left(\\sqrt{ab}\\right)^n",
+      "(ab)^n",
+      "\\left(\\sqrt{ab}\\right)^{n+1}",
+      "n\\sqrt{ab}"
+    ],
+    "answer": "\\left(\\sqrt{ab}\\right)^n",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Each G_k = a × (b/a)^(k/(n+1)). Multiply all n terms and collect the exponents — they sum to n/2."
+  },
+  {
+    "id": "seq_series_qn_018",
+    "question": "\\text{Sum of } n \\text{ AM's inserted between } a \\text{ and } b \\text{ is:}",
+    "options": [
+      "n \\cdot \\dfrac{a+b}{2}",
+      "\\dfrac{n(a+b)}{4}",
+      "n(a+b)",
+      "\\dfrac{a+b}{2n}"
+    ],
+    "answer": "n \\cdot \\dfrac{a+b}{2}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_019",
+    "question": "\\sum_{n=0}^{\\infty} \\dfrac{1}{n!} \\ = \\ ?",
+    "options": [
+      "e-1",
+      "e",
+      "e+1",
+      "2e"
+    ],
+    "answer": "e",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_020",
+    "question": "\\text{If } a,b,c \\text{ are the } p\\text{th, }q\\text{th, }r\\text{th terms of a GP, then } a^{q-r} \\cdot b^{r-p} \\cdot c^{p-q} \\text{ equals:}",
+    "options": [
+      "abc",
+      "0",
+      "1",
+      "a+b+c"
+    ],
+    "answer": "1",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": "Write a = A·R^(p-1), b = A·R^(q-1), c = A·R^(r-1). Substitute and collect exponents of A and R separately — both sum to zero."
+  },
+  {
+    "id": "seq_series_qn_021",
+    "question": "\\text{If the } n\\text{th term of a sequence is } An+B\\text{, the common difference of the AP is:}",
+    "options": [
+      "B",
+      "A+B",
+      "A",
+      "2A"
+    ],
+    "answer": "A",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_022",
+    "question": "\\text{Sum of first } n \\text{ odd natural numbers } 1+3+5+\\cdots+(2n-1) \\text{ equals:}",
+    "options": [
+      "n(n+1)",
+      "n^2",
+      "\\dfrac{n(n+1)}{2}",
+      "2n^2-n"
+    ],
+    "answer": "n^2",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_023",
+    "question": "\\text{The } n\\text{th term from the end of a GP with last term } l \\text{ and common ratio } r \\text{ is:}",
+    "options": [
+      "lr^{n-1}",
+      "\\dfrac{l}{r^{n-1}}",
+      "\\dfrac{l}{r^n}",
+      "l \\cdot r^n"
+    ],
+    "answer": "\\dfrac{l}{r^{n-1}}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_024",
+    "question": "\\text{For } a > 0\\text{, the power series expansion of } a^x \\text{ is:}",
+    "options": [
+      "\\displaystyle\\sum_{n=0}^{\\infty} \\dfrac{x^n (\\log_e a)^n}{n!}",
+      "\\displaystyle\\sum_{n=0}^{\\infty} \\dfrac{x^n}{n!}",
+      "\\displaystyle\\sum_{n=0}^{\\infty} \\dfrac{a^n}{n!}",
+      "e^a \\cdot x"
+    ],
+    "answer": "\\displaystyle\\sum_{n=0}^{\\infty} \\dfrac{x^n (\\log_e a)^n}{n!}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_025",
+    "question": "\\log_e(1+x) - \\log_e(1-x) \\ = \\ ?",
+    "options": [
+      "2\\left(x + \\dfrac{x^3}{3} + \\dfrac{x^5}{5} + \\cdots\\right)",
+      "2\\left(x - \\dfrac{x^3}{3} + \\dfrac{x^5}{5} - \\cdots\\right)",
+      "x + \\dfrac{x^2}{2} + \\dfrac{x^3}{3} + \\cdots",
+      "-2\\left(x + \\dfrac{x^3}{3} + \\cdots\\right)"
+    ],
+    "answer": "2\\left(x + \\dfrac{x^3}{3} + \\dfrac{x^5}{5} + \\cdots\\right)",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Expand both log(1+x) and log(1-x) as series and subtract. Even power terms cancel out."
+  },
+  {
+    "id": "seq_series_qn_026",
+    "question": "\\text{If } H \\text{ is the HM between } a \\text{ and } b\\text{, then } \\dfrac{H-a}{H-b} + \\dfrac{H+a}{H+b} \\text{ equals:}",
+    "options": [
+      "0",
+      "2",
+      "1",
+      "\\dfrac{a}{b}"
+    ],
+    "answer": "2",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Substitute H = 2ab/(a+b) and simplify each fraction separately."
+  },
+  {
+    "id": "seq_series_qn_027",
+    "question": "\\text{For non-zero AP terms with common difference } d, \\text{ the sum } \\dfrac{1}{a_1 a_2} + \\dfrac{1}{a_2 a_3} + \\cdots + \\dfrac{1}{a_{n-1}a_n} \\text{ equals:}",
+    "options": [
+      "\\dfrac{n-1}{a_1 a_n d}",
+      "\\dfrac{n}{a_1 a_n d}",
+      "\\dfrac{n-1}{a_1 a_n}",
+      "\\dfrac{1}{a_1 a_n d}"
+    ],
+    "answer": "\\dfrac{n-1}{a_1 a_n d}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Write 1/(a_k × a_(k+1)) = (1/d) × (1/a_k - 1/a_(k+1)) and telescope the sum."
+  },
+  {
+    "id": "seq_series_qn_028",
+    "question": "\\sum_{n=1}^{\\infty} \\dfrac{n}{n!} \\ = \\ ?",
+    "options": [
+      "e-1",
+      "e",
+      "2e-1",
+      "e+1"
+    ],
+    "answer": "e",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Write n/n! = 1/(n-1)! and reindex the sum starting from 0."
+  },
+  {
+    "id": "seq_series_qn_029",
+    "question": "\\text{If } G_1, G_2 \\text{ are two GMs and } H_1, H_2 \\text{ are two HMs between } a \\text{ and } b\\text{, then } \\dfrac{G_1 G_2}{H_1 H_2} \\text{ equals:}",
+    "options": [
+      "\\dfrac{A_1 + A_2}{H_1 + H_2}",
+      "\\dfrac{H_1 + H_2}{A_1 + A_2}",
+      "\\dfrac{a+b}{H_1+H_2}",
+      "\\dfrac{G_1+G_2}{H_1+H_2}"
+    ],
+    "answer": "\\dfrac{A_1 + A_2}{H_1 + H_2}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Compute G1×G2 = ab and find H1+H2 explicitly using their insertion formulas, then simplify the ratio."
+  },
+  {
+    "id": "seq_series_qn_030",
+    "question": "\\text{If } a, b, c \\text{ are in AP as well as GP simultaneously, the cubic with roots } a, b, c \\text{ reduces to:}",
+    "options": [
+      "x^3 - 3bx^2 + 3b^2x - b^3 = 0 \\text{ with } a=b=c",
+      "x^3 - Ax^2 + Gx - H = 0",
+      "x^3 - 3G^{1/3}x^2 + 3G^{2/3}x - G = 0",
+      "x^3 - 3Ax^2 + 3G^3x - G^3 = 0"
+    ],
+    "answer": "x^3 - 3bx^2 + 3b^2x - b^3 = 0 \\text{ with } a=b=c",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": "A sequence in both AP and GP simultaneously forces a = b = c. Use the general cubic x³ - 3Ax² + (3G³/H)x - G³ = 0 and substitute this condition."
+  },
+  {
+    "id": "seq_series_qn_031",
+    "question": "\\text{The value of } \\log_e 2 = 1 - \\dfrac{1}{2} + \\dfrac{1}{3} - \\dfrac{1}{4} + \\cdots \\text{ is obtained by substituting } x = \\underline{\\quad} \\text{ in } \\log_e(1+x)\\text{:}",
+    "options": [
+      "x = 1",
+      "x = -1",
+      "x = 2",
+      "x = \\dfrac{1}{2}"
+    ],
+    "answer": "x = 1",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_032",
+    "question": "\\sum_{n=0}^{\\infty} \\dfrac{1}{(2n)!} \\ = \\ ?",
+    "options": [
+      "\\dfrac{e + e^{-1}}{2}",
+      "\\dfrac{e - e^{-1}}{2}",
+      "e + e^{-1}",
+      "\\dfrac{e}{2}"
+    ],
+    "answer": "\\dfrac{e + e^{-1}}{2}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": "Add the series for e and e^(-1). Even-power factorial terms survive; odd ones cancel. Divide by 2."
+  },
+  {
+    "id": "seq_series_qn_033",
+    "question": "\\sum_{n=0}^{\\infty} \\dfrac{1}{(2n+1)!} \\ = \\ ?",
+    "options": [
+      "\\dfrac{e + e^{-1}}{2}",
+      "\\dfrac{e - e^{-1}}{2}",
+      "e - 1",
+      "\\dfrac{e+1}{2}"
+    ],
+    "answer": "\\dfrac{e - e^{-1}}{2}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": "Subtract the series for e^(-1) from e. Odd-power factorial terms survive; even ones cancel. Divide by 2."
+  },
+  {
+    "id": "seq_series_qn_034",
+    "question": "\\text{In Method of Difference, the } n\\text{th term } a_n \\text{ is recovered from partial sums using:}",
+    "options": [
+      "a_n = S_n - S_{n-1}",
+      "a_n = S_n + S_{n-1}",
+      "a_n = S_{n+1} - S_n",
+      "a_n = \\dfrac{S_n}{n}"
+    ],
+    "answer": "a_n = S_n - S_{n-1}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "seq_series_qn_035",
+    "question": "\\sum_{n=1}^{\\infty} \\dfrac{n^2}{n!} \\ = \\ ?",
+    "options": [
+      "e",
+      "2e",
+      "3e",
+      "e+1"
+    ],
+    "answer": "2e",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Write n² = n(n-1) + n. Then ∑n(n-1)/n! = ∑1/(n-2)! = e and ∑n/n! = e, giving 2e."
+  },
+  {
+    "id": "seq_series_qn_036",
+    "question": "\\sum_{n=1}^{\\infty} \\dfrac{n^3}{n!} \\ = \\ ?",
+    "options": [
+      "3e",
+      "4e",
+      "5e",
+      "6e"
+    ],
+    "answer": "5e",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Write n³ = n(n-1)(n-2) + 3n(n-1) + n. The three resulting sums give coefficients 1, 3, 1 — total 5e."
+  },
+  {
+    "id": "seq_series_qn_037",
+    "question": "\\text{If the first-order differences of a series form an AP, then } a_n \\text{ is } \\underline{\\quad} \\text{ in } n\\text{, and } S_n \\text{ is } \\underline{\\quad} \\text{ in } n\\text{:}",
+    "options": [
+      "\\text{quadratic; cubic}",
+      "\\text{linear; quadratic}",
+      "\\text{cubic; quartic}",
+      "\\text{linear; linear}"
+    ],
+    "answer": "\\text{quadratic; cubic}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Each summation raises the degree by 1. Differences in AP means differences are degree 1, so a_n is degree 2 and S_n is degree 3."
+  },
+  {
+    "id": "seq_series_qn_038",
+    "question": "\\text{The } n\\text{th term of a series whose first-order differences form a GP with first term } p \\text{ and ratio } r \\text{ is:}",
+    "options": [
+      "a_1 + p \\cdot \\dfrac{r^{n-1}-1}{r-1}",
+      "a_1 + p(n-1)",
+      "a_1 \\cdot r^{n-1}",
+      "a_1 + p \\cdot r^{n-1}"
+    ],
+    "answer": "a_1 + p \\cdot \\dfrac{r^{n-1}-1}{r-1}",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "a_n = a_1 + sum of first (n-1) terms of the GP of differences. Apply the standard GP sum formula."
+  },
+  {
+    "id": "seq_series_qn_039",
+    "question": "\\text{If } \\sum_{n=1}^{\\infty} \\dfrac{n+1}{n!} \\ = \\ ?",
+    "options": [
+      "e",
+      "2e-1",
+      "e+1",
+      "2e"
+    ],
+    "answer": "2e-1",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Split: ∑n/n! + ∑1/n! = e + (e - 1) = 2e - 1. Note ∑(1/n!) from n=1 is e-1, not e."
+  },
+  {
+    "id": "seq_series_qn_040",
+    "question": "\\sum_{n=1}^{\\infty} \\dfrac{n^4}{n!} \\ = \\ ?",
+    "options": [
+      "10e",
+      "12e",
+      "15e",
+      "8e"
+    ],
+    "answer": "15e",
+    "tags": { "chapter": "Sequences and Series", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": "Write n⁴ = n(n-1)(n-2)(n-3) + 6n(n-1)(n-2) + 7n(n-1) + n using falling factorials. Coefficients 1, 6, 7, 1 each multiply e, giving 15e."
+  }
+]

@@ -64,6 +64,7 @@ void main() {
     '${baseDir}11/permutations_and_combinations.json',
     '${baseDir}11/hydrocarbons.json',
     '${baseDir}11/hyperbola.json',
+    '${baseDir}11/sequence_and_series.json',
   ];
 
   final encrypter = Encrypter(AES(key));
