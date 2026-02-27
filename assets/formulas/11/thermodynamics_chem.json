@@ -1,0 +1,422 @@
+[
+  {
+    "id": "thermodynamics_chem_qn_001",
+    "question": "In an <b>isothermal process</b> for an ideal gas, which of the following is true?",
+    "options": [
+      "\\Delta T = 0, \\ \\Delta U = 0",
+      "\\Delta T = 0, \\ \\Delta U \\neq 0",
+      "\\Delta p = 0, \\ \\Delta U = 0",
+      "\\Delta V = 0, \\ \\Delta U = 0"
+    ],
+    "answer": "\\Delta T = 0, \\ \\Delta U = 0",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "thermodynamics_chem_qn_002",
+    "question": "The mathematical statement of the <b>First Law of Thermodynamics</b> is:",
+    "options": [
+      "\\Delta U = q - W",
+      "\\Delta U = q + W",
+      "\\Delta U = W - q",
+      "\\Delta G = q + W"
+    ],
+    "answer": "\\Delta U = q + W",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": "Sign convention: q and W are both positive when added TO the system."
+  },
+  {
+    "id": "thermodynamics_chem_qn_003",
+    "question": "Work done in <b>irreversible expansion</b> against constant external pressure p<sub>ext</sub> is:",
+    "options": [
+      "W = -p_{ext} \\Delta V",
+      "W = p_{ext} \\Delta V",
+      "W = -2.303 \\ nRT \\log \\dfrac{V_2}{V_1}",
+      "W = nR(T_1 - T_2)"
+    ],
+    "answer": "W = -p_{ext} \\Delta V",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "thermodynamics_chem_qn_004",
+    "question": "For a <b>cyclic process</b>, which of the following correctly states both ΔU and ΔH?",
+    "options": [
+      "\\Delta U = 0, \\ \\Delta H \\neq 0",
+      "\\Delta U \\neq 0, \\ \\Delta H = 0",
+      "\\Delta U = 0, \\ \\Delta H = 0",
+      "\\Delta U > 0, \\ \\Delta H < 0"
+    ],
+    "answer": "\\Delta U = 0, \\ \\Delta H = 0",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "thermodynamics_chem_qn_005",
+    "question": "The relationship between ΔH and ΔU for a reaction involving gases is:",
+    "options": [
+      "\\Delta H = \\Delta U + \\Delta n_g RT",
+      "\\Delta H = \\Delta U - \\Delta n_g RT",
+      "\\Delta H = \\Delta U + \\Delta n_g R",
+      "\\Delta H = \\Delta U \\times \\Delta n_g RT"
+    ],
+    "answer": "\\Delta H = \\Delta U + \\Delta n_g RT",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Δnɡ = moles of gaseous products − moles of gaseous reactants"
+  },
+  {
+    "id": "thermodynamics_chem_qn_006",
+    "question": "Work done in <b>reversible isothermal expansion</b> of an ideal gas is:",
+    "options": [
+      "W = -2.303 \\ nRT \\log \\dfrac{V_2}{V_1}",
+      "W = 2.303 \\ nRT \\log \\dfrac{V_2}{V_1}",
+      "W = -p_{ext} \\Delta V",
+      "W = \\dfrac{nR(T_1 - T_2)}{\\gamma - 1}"
+    ],
+    "answer": "W = -2.303 \\ nRT \\log \\dfrac{V_2}{V_1}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Equivalently: W = −2.303nRT log(p₁/p₂)"
+  },
+  {
+    "id": "thermodynamics_chem_qn_007",
+    "question": "The <b>Gibbs free energy</b> is defined as:",
+    "options": [
+      "G = H + TS",
+      "G = U - TS",
+      "G = H - TS",
+      "G = U + pV - TS"
+    ],
+    "answer": "G = H - TS",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "thermodynamics_chem_qn_008",
+    "question": "The standard free energy change ΔG° is related to equilibrium constant K by:",
+    "options": [
+      "\\Delta G^\\circ = RT \\ln K",
+      "\\Delta G^\\circ = -RT \\ln K",
+      "\\Delta G^\\circ = -2.303 \\ RT \\log K",
+      "\\text{Both B and C are correct}"
+    ],
+    "answer": "\\text{Both B and C are correct}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "−RT ln K and −2.303 RT log K are the same expression in different bases."
+  },
+  {
+    "id": "thermodynamics_chem_qn_009",
+    "question": "The <b>Trouton's Rule</b> states that for most liquids:",
+    "options": [
+      "\\dfrac{\\Delta H_{vap}}{T_b} \\approx 88 \\ \\text{J/mol/K}",
+      "\\dfrac{\\Delta H_{fus}}{T_m} \\approx 88 \\ \\text{J/mol/K}",
+      "\\Delta H_{vap} \\times T_b \\approx 88 \\ \\text{J/mol/K}",
+      "\\dfrac{\\Delta H_{vap}}{T_b} \\approx 6.4 \\ \\text{cal/mol/K}"
+    ],
+    "answer": "\\dfrac{\\Delta H_{vap}}{T_b} \\approx 88 \\ \\text{J/mol/K}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "thermodynamics_chem_qn_010",
+    "question": "For a <b>reversible adiabatic expansion</b>, the work done is given by W = nR(T₁−T₂)/(γ−1). If a monoatomic ideal gas expands reversibly and adiabatically from T₁ to T₂, and TV<sup>γ−1</sup> = constant, what is the value of γ and what does T·V<sup>γ−1</sup> = constant imply about T when V increases?",
+    "options": [
+      "\\gamma = 1.40; \\ T \\text{ increases as } V \\text{ increases}",
+      "\\gamma = 1.66; \\ T \\text{ decreases as } V \\text{ increases}",
+      "\\gamma = 1.33; \\ T \\text{ remains constant as } V \\text{ increases}",
+      "\\gamma = 1.66; \\ T \\text{ increases as } V \\text{ increases}"
+    ],
+    "answer": "\\gamma = 1.66; \\ T \\text{ decreases as } V \\text{ increases}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": "γ = 1.66 for monoatomic gas. TV^(γ−1) = constant → as V↑, T must ↓ to keep product constant. This is why adiabatic expansion causes cooling."
+  },
+  {
+    "id": "thermodynamics_chem_qn_011",
+    "question": "Which of the following is an <b>intensive property</b>?",
+    "options": [
+      "\\text{Internal energy}",
+      "\\text{Volume}",
+      "\\text{Temperature}",
+      "\\text{Enthalpy}"
+    ],
+    "answer": "\\text{Temperature}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "thermodynamics_chem_qn_012",
+    "question": "The entropy change during <b>vaporisation</b> at boiling point T<sub>b</sub> is:",
+    "options": [
+      "\\Delta S = \\dfrac{\\Delta H_{vap}}{T_b}",
+      "\\Delta S = \\Delta H_{vap} \\times T_b",
+      "\\Delta S = \\dfrac{T_b}{\\Delta H_{vap}}",
+      "\\Delta S = \\dfrac{\\Delta H_{fus}}{T_b}"
+    ],
+    "answer": "\\Delta S = \\dfrac{\\Delta H_{vap}}{T_b}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "thermodynamics_chem_qn_013",
+    "question": "The <b>Third Law of Thermodynamics</b> states that entropy of a perfectly crystalline substance at 0 K is:",
+    "options": [
+      "\\text{infinity}",
+      "\\text{negative}",
+      "\\text{zero}",
+      "\\text{equal to its enthalpy}"
+    ],
+    "answer": "\\text{zero}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "thermodynamics_chem_qn_014",
+    "question": "The enthalpy of neutralisation of a <b>strong acid with a strong base</b> is always:",
+    "options": [
+      "\\text{+57.1 kJ (endothermic)}",
+      "\\text{−57.1 kJ (exothermic)}",
+      "\\text{variable, depends on the acid}",
+      "\\text{zero}"
+    ],
+    "answer": "\\text{−57.1 kJ (exothermic)}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "thermodynamics_chem_qn_015",
+    "question": "The <b>Clausius-Clapeyron equation</b> relating vapour pressures at two temperatures is:",
+    "options": [
+      "2.303 \\log \\dfrac{p_2}{p_1} = \\dfrac{\\Delta H_V}{R} \\cdot \\dfrac{T_2 - T_1}{T_1 T_2}",
+      "2.303 \\log \\dfrac{p_2}{p_1} = \\dfrac{\\Delta H_V}{R} \\cdot \\dfrac{T_1 T_2}{T_2 - T_1}",
+      "\\log \\dfrac{p_2}{p_1} = \\dfrac{\\Delta H_V}{2.303R} \\cdot \\dfrac{T_1 - T_2}{T_1 T_2}",
+      "2.303 \\log \\dfrac{p_1}{p_2} = \\dfrac{\\Delta H_V}{R} \\cdot \\dfrac{T_2 - T_1}{T_1 T_2}"
+    ],
+    "answer": "2.303 \\log \\dfrac{p_2}{p_1} = \\dfrac{\\Delta H_V}{R} \\cdot \\dfrac{T_2 - T_1}{T_1 T_2}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "thermodynamics_chem_qn_016",
+    "question": "The <b>Kirchhoff's equation</b> for variation of ΔH with temperature is:",
+    "options": [
+      "\\Delta C_p = \\dfrac{\\Delta H_2 - \\Delta H_1}{T_2 - T_1}",
+      "\\Delta C_p = \\dfrac{\\Delta H_2 + \\Delta H_1}{T_2 + T_1}",
+      "\\Delta C_V = \\dfrac{\\Delta H_2 - \\Delta H_1}{T_2 - T_1}",
+      "\\Delta C_p = (\\Delta H_2 - \\Delta H_1)(T_2 - T_1)"
+    ],
+    "answer": "\\Delta C_p = \\dfrac{\\Delta H_2 - \\Delta H_1}{T_2 - T_1}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Similarly ΔCᵥ = (ΔE₂ − ΔE₁)/(T₂ − T₁) for constant volume processes."
+  },
+  {
+    "id": "thermodynamics_chem_qn_017",
+    "question": "The <b>inversion temperature</b> for a van der Waals gas (where Joule-Thomson coefficient μ = 0) is:",
+    "options": [
+      "T_i = \\dfrac{a}{2Rb}",
+      "T_i = \\dfrac{2a}{Rb}",
+      "T_i = \\dfrac{Rb}{2a}",
+      "T_i = \\dfrac{a}{Rb}"
+    ],
+    "answer": "T_i = \\dfrac{2a}{Rb}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "a and b are van der Waals constants. Above Tᵢ, expansion causes heating; below Tᵢ, expansion causes cooling."
+  },
+  {
+    "id": "thermodynamics_chem_qn_018",
+    "question": "The <b>molar heat capacity at constant pressure</b> for a monoatomic ideal gas is:",
+    "options": [
+      "C_p = \\dfrac{3}{2}R",
+      "C_p = \\dfrac{5}{2}R",
+      "C_p = \\dfrac{7}{2}R",
+      "C_p = R"
+    ],
+    "answer": "C_p = \\dfrac{5}{2}R",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Cᵥ = 3/2 R for monoatomic; Cp = Cᵥ + R = 5/2 R"
+  },
+  {
+    "id": "thermodynamics_chem_qn_019",
+    "question": "Which combination of signs of ΔH and ΔS makes a reaction <b>non-spontaneous at ALL temperatures</b>?",
+    "options": [
+      "\\Delta H < 0, \\ \\Delta S > 0",
+      "\\Delta H > 0, \\ \\Delta S < 0",
+      "\\Delta H < 0, \\ \\Delta S < 0",
+      "\\Delta H > 0, \\ \\Delta S > 0"
+    ],
+    "answer": "\\Delta H > 0, \\ \\Delta S < 0",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "ΔG = ΔH − TΔS. If ΔH > 0 and ΔS < 0, then ΔG = (+) − T(−) = (+) + (+) > 0 always. All 4 cases: (−,+)→always spontaneous; (+,−)→never spontaneous; (+,+)→spontaneous at high T; (−,−)→spontaneous at low T."
+  },
+  {
+    "id": "thermodynamics_chem_qn_020",
+    "question": "For a reaction with <b>ΔH < 0 and ΔS < 0</b>, using ΔG = ΔH − TΔS, at what temperature condition is the process spontaneous?",
+    "options": [
+      "\\text{Spontaneous at all temperatures}",
+      "\\text{Non-spontaneous at all temperatures}",
+      "\\text{Spontaneous at low temperature only (where } |\\Delta H| > T|\\Delta S|\\text{)}",
+      "\\text{Spontaneous at high temperature only}"
+    ],
+    "answer": "\\text{Spontaneous at low temperature only (where } |\\Delta H| > T|\\Delta S|\\text{)}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": "ΔG = ΔH − TΔS. Both ΔH and ΔS are negative. At low T: ΔG = (−) − T(−) = (−) − small(+) < 0 → spontaneous. At high T: TΔS term dominates → ΔG > 0 → non-spontaneous."
+  },
+  {
+    "id": "thermodynamics_chem_qn_021",
+    "question": "The <b>entropy change of an ideal gas</b> is given by which expression?",
+    "options": [
+      "\\Delta S = nC_V \\ln \\dfrac{T_2}{T_1} + nR \\ln \\dfrac{V_2}{V_1}",
+      "\\Delta S = nC_p \\ln \\dfrac{T_2}{T_1} - nR \\ln \\dfrac{V_2}{V_1}",
+      "\\Delta S = nR \\ln \\dfrac{T_2}{T_1} + nC_V \\ln \\dfrac{V_2}{V_1}",
+      "\\Delta S = \\dfrac{\\Delta H}{T}"
+    ],
+    "answer": "\\Delta S = nC_V \\ln \\dfrac{T_2}{T_1} + nR \\ln \\dfrac{V_2}{V_1}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "thermodynamics_chem_qn_022",
+    "question": "The <b>Carnot efficiency</b> η of a heat engine operating between temperatures T₁ (cold) and T₂ (hot) is:",
+    "options": [
+      "\\eta = \\dfrac{T_1}{T_2}",
+      "\\eta = \\dfrac{T_2 - T_1}{T_2}",
+      "\\eta = \\dfrac{T_2 - T_1}{T_1}",
+      "\\eta = 1 + \\dfrac{T_1}{T_2}"
+    ],
+    "answer": "\\eta = \\dfrac{T_2 - T_1}{T_2}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": "Also expressed as η = w/q₂, where T₂ is the hot source temperature."
+  },
+  {
+    "id": "thermodynamics_chem_qn_023",
+    "question": "The relationship between standard free energy change ΔG° and standard EMF of a cell is:",
+    "options": [
+      "\\Delta G^\\circ = nFE^\\circ_{cell}",
+      "\\Delta G^\\circ = -nFE^\\circ_{cell}",
+      "\\Delta G^\\circ = \\dfrac{nF}{E^\\circ_{cell}}",
+      "\\Delta G^\\circ = -\\dfrac{E^\\circ_{cell}}{nF}"
+    ],
+    "answer": "\\Delta G^\\circ = -nFE^\\circ_{cell}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": "n = moles of electrons; F = 96500 C (Faraday)"
+  },
+  {
+    "id": "thermodynamics_chem_qn_024",
+    "question": "For a spontaneous process, the criterion in terms of entropy of the universe is:",
+    "options": [
+      "\\Delta S_{universe} = 0",
+      "\\Delta S_{universe} < 0",
+      "\\Delta S_{universe} > 0",
+      "\\Delta S_{system} > 0 \\text{ only}"
+    ],
+    "answer": "\\Delta S_{universe} > 0",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "thermodynamics_chem_qn_025",
+    "question": "The <b>reaction quotient Q</b> appears in the free energy equation as:",
+    "options": [
+      "\\Delta G = \\Delta G^\\circ - RT \\ln Q",
+      "\\Delta G = \\Delta G^\\circ + RT \\ln Q",
+      "\\Delta G = \\Delta G^\\circ \\times RT \\ln Q",
+      "\\Delta G = RT \\ln Q"
+    ],
+    "answer": "\\Delta G = \\Delta G^\\circ + RT \\ln Q",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "At equilibrium Q = K and ΔG = 0, which gives ΔG° = −RT ln K."
+  },
+  {
+    "id": "thermodynamics_chem_qn_026",
+    "question": "The <b>Cp − Cv</b> relationship for an ideal gas is:",
+    "options": [
+      "C_p - C_V = 2R",
+      "C_p - C_V = R",
+      "C_p - C_V = R/2",
+      "C_p \\times C_V = R"
+    ],
+    "answer": "C_p - C_V = R",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "thermodynamics_chem_qn_027",
+    "question": "The <b>enthalpy of solution</b> is related to lattice enthalpy and hydration enthalpy by:",
+    "options": [
+      "\\Delta H^\\circ_{sol} = \\Delta H^\\circ_{lattice} - \\Delta H^\\circ_{hyd}",
+      "\\Delta H^\\circ_{sol} = \\Delta H^\\circ_{lattice} + \\Delta H^\\circ_{hyd}",
+      "\\Delta H^\\circ_{sol} = \\Delta H^\\circ_{hyd} - \\Delta H^\\circ_{lattice}",
+      "\\Delta H^\\circ_{sol} = \\Delta H^\\circ_{lattice} \\times \\Delta H^\\circ_{hyd}"
+    ],
+    "answer": "\\Delta H^\\circ_{sol} = \\Delta H^\\circ_{lattice} + \\Delta H^\\circ_{hyd}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Lattice enthalpy is endothermic (+); hydration enthalpy is exothermic (−). The sign of ΔH°sol depends on which dominates."
+  },
+  {
+    "id": "thermodynamics_chem_qn_028",
+    "question": "The Joule-Thomson coefficient μ is defined as:",
+    "options": [
+      "\\mu = \\dfrac{dp}{dT}",
+      "\\mu = \\dfrac{dT}{dp}",
+      "\\mu = \\dfrac{dT}{dV}",
+      "\\mu = \\dfrac{dH}{dp}"
+    ],
+    "answer": "\\mu = \\dfrac{dT}{dp}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "μ = 0 at inversion temperature. μ > 0 means cooling on expansion (below Tᵢ)."
+  },
+  {
+    "id": "thermodynamics_chem_qn_029",
+    "question": "The <b>heat capacity relationship</b> for specific heats cp and cV and molecular weight M is:",
+    "options": [
+      "c_p - c_V = \\dfrac{R}{M}",
+      "c_p - c_V = R \\times M",
+      "c_p + c_V = \\dfrac{R}{M}",
+      "c_p \\times c_V = \\dfrac{R}{M}"
+    ],
+    "answer": "c_p - c_V = \\dfrac{R}{M}",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Molar: Cp − Cᵥ = R. Divide both sides by M to get specific heat relation."
+  },
+  {
+    "id": "thermodynamics_chem_qn_030",
+    "question": "Using the Third Law, the absolute entropy of a substance at temperature T can be found from the integral. Which expression correctly represents this?",
+    "options": [
+      "S = \\int_0^T C_p \\ dT",
+      "S = \\int_0^T \\dfrac{C_p}{T} \\ dT = 2.303 \\int_0^T C_p \\ d(\\log T)",
+      "S = C_p \\ln T",
+      "S = \\dfrac{\\Delta H}{T}"
+    ],
+    "answer": "S = \\int_0^T \\dfrac{C_p}{T} \\ dT = 2.303 \\int_0^T C_p \\ d(\\log T)",
+    "tags": { "chapter": "Thermodynamics Chem", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": "Since S = 0 at 0 K (Third Law), integrating dS = Cp dT/T from 0 to T gives absolute entropy. This is why Third Law enables absolute entropy measurements unlike ΔU or ΔH."
+  }
+]

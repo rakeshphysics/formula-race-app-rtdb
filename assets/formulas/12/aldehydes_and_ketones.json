@@ -1,0 +1,422 @@
+[
+  {
+    "id": "ak_qn_001",
+    "question": "The nucleophilic addition reactivity order for carbonyl compounds is:",
+    "options": [
+      "HCHO > CH_3CHO > C_2H_5CHO > CH_3COCH_3 > C_6H_5COCH_3",
+      "CH_3CHO > HCHO > C_2H_5CHO > CH_3COCH_3 > C_6H_5COCH_3",
+      "HCHO > C_2H_5CHO > CH_3CHO > CH_3COCH_3 > C_6H_5COCH_3",
+      "C_6H_5COCH_3 > CH_3COCH_3 > CH_3CHO > HCHO"
+    ],
+    "answer": "HCHO > CH_3CHO > C_2H_5CHO > CH_3COCH_3 > C_6H_5COCH_3",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_002",
+    "question": "Rosenmund reduction converts an acyl chloride to an aldehyde using:",
+    "options": [
+      "H_2 / \\text{Pd-BaSO}_4",
+      "H_2 / \\text{Ni}",
+      "\\text{LiAlH}_4",
+      "\\text{NaBH}_4"
+    ],
+    "answer": "H_2 / \\text{Pd-BaSO}_4",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_003",
+    "question": "Tollens reagent is ammoniacal silver nitrate. The product deposited on the inner wall of the test tube when an aldehyde is added is:",
+    "options": [
+      "\\text{Ag (silver mirror)}",
+      "\\text{AgCl (white ppt)}",
+      "\\text{Ag}_2\\text{O (black ppt)}",
+      "\\text{AgNO}_3 \\text{ crystals}"
+    ],
+    "answer": "\\text{Ag (silver mirror)}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_004",
+    "question": "Clemmensen reduction converts a carbonyl group to a methylene group using:",
+    "options": [
+      "\\text{Zn-Hg amalgam / conc. HCl}",
+      "\\text{H}_2\\text{NNH}_2\\text{ / KOH / ethylene glycol}",
+      "\\text{NaBH}_4",
+      "\\text{LiAlH}_4 / \\text{dry ether}"
+    ],
+    "answer": "\\text{Zn-Hg amalgam / conc. HCl}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_005",
+    "question": "Aldol condensation requires at least one alpha-hydrogen. The product of aldol condensation of ethanal with dilute NaOH is:",
+    "options": [
+      "\\text{3-hydroxybutanal (aldol)}",
+      "\\text{but-2-enal (crotonaldehyde) directly}",
+      "\\text{Ethanol}",
+      "\\text{Acetaldehyde dimer}"
+    ],
+    "answer": "\\text{3-hydroxybutanal (aldol)}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "Aldol condensation gives the beta-hydroxy aldehyde first (3-hydroxybutanal). On heating or with stronger base, it dehydrates to but-2-enal (crotonaldehyde)."
+  },
+  {
+    "id": "ak_qn_006",
+    "question": "Cannizzaro reaction is shown by aldehydes with no alpha-hydrogen. In the reaction of benzaldehyde with conc. NaOH, the products are:",
+    "options": [
+      "\\text{Benzyl alcohol} + \\text{Sodium benzoate}",
+      "\\text{Benzoic acid} + \\text{Benzaldehyde}",
+      "\\text{Benzyl alcohol} + \\text{Benzoic acid}",
+      "\\text{Benzoin} + \\text{NaOH}"
+    ],
+    "answer": "\\text{Benzyl alcohol} + \\text{Sodium benzoate}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_007",
+    "question": "Fehling solution gives a reddish-brown precipitate with aldehydes. The precipitate formed is:",
+    "options": [
+      "Cu_2O",
+      "CuO",
+      "Cu(OH)_2",
+      "CuSO_4"
+    ],
+    "answer": "Cu_2O",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_008",
+    "question": "Haloform reaction occurs with methyl ketones (or acetaldehyde) treated with NaOX. The organic product alongside haloform is:",
+    "options": [
+      "\\text{Sodium salt of carboxylic acid (RCOONa)}",
+      "\\text{Carboxylic acid (RCOOH) directly}",
+      "\\text{Alkane}",
+      "\\text{Alkene}"
+    ],
+    "answer": "\\text{Sodium salt of carboxylic acid (RCOONa)}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_009",
+    "question": "Stephen reaction converts a nitrile to an aldehyde. The reagents used are:",
+    "options": [
+      "\\text{SnCl}_2 + \\text{HCl (dry ether), then H}_3\\text{O}^+",
+      "\\text{LiAlH}_4\\text{, then H}_3\\text{O}^+",
+      "\\text{NaBH}_4\\text{, then H}_3\\text{O}^+",
+      "\\text{H}_2\\text{/Ni, then H}_3\\text{O}^+"
+    ],
+    "answer": "\\text{SnCl}_2 + \\text{HCl (dry ether), then H}_3\\text{O}^+",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_010",
+    "question": "Benzaldehyde does NOT give Fehling test or aldol condensation, but DOES give Tollens test and Cannizzaro reaction. Which combination of properties correctly explains both observations simultaneously?",
+    "options": [
+      "\\text{No alpha-H (no aldol/Fehling impossible) — wait: Fehling fails due to steric/electronic effects of Ph group, not alpha-H; Tollens works as it is still an aldehyde}",
+      "\\text{Benzaldehyde has no alpha-H: no aldol. Fehling fails because aromatic aldehydes are mild reducing agents insufficient to reduce Cu}^{2+}\\text{. Tollens works as Ag}^+\\text{ is a milder oxidant. Cannizzaro: no alpha-H present}",
+      "\\text{Benzaldehyde has alpha-H on the ring, preventing aldol}",
+      "\\text{Benzaldehyde reduces both Tollens and Fehling equally}"
+    ],
+    "answer": "\\text{Benzaldehyde has no alpha-H: no aldol. Fehling fails because aromatic aldehydes are mild reducing agents insufficient to reduce Cu}^{2+}\\text{. Tollens works as Ag}^+\\text{ is a milder oxidant. Cannizzaro: no alpha-H present}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": "Key distinctions: (1) Aldol needs alpha-H — PhCHO has none. (2) Fehling needs a stronger reducing aldehyde — aromatic aldehydes can't reduce Cu2+ to Cu2O. (3) Tollens uses Ag+ which is easier to reduce — PhCHO manages this. (4) Cannizzaro: only aldehydes with no alpha-H, PhCHO qualifies."
+  },
+  {
+    "id": "ak_qn_011",
+    "question": "Wolff-Kishner reduction converts a carbonyl group to a methylene group using:",
+    "options": [
+      "\\text{H}_2\\text{NNH}_2 \\text{ then KOH / ethylene glycol, } \\Delta",
+      "\\text{Zn-Hg / conc. HCl}",
+      "\\text{LiAlH}_4 \\text{ / dry ether}",
+      "\\text{NaBH}_4 \\text{ / EtOH}"
+    ],
+    "answer": "\\text{H}_2\\text{NNH}_2 \\text{ then KOH / ethylene glycol, } \\Delta",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_012",
+    "question": "Gattermann-Koch synthesis prepares benzaldehyde from benzene using:",
+    "options": [
+      "CO + HCl / \\text{anhydrous AlCl}_3\\text{/CuCl}",
+      "HCHO / \\text{anhydrous AlCl}_3",
+      "CHCl_3 / \\text{NaOH}",
+      "CO_2 / \\text{AlCl}_3"
+    ],
+    "answer": "CO + HCl / \\text{anhydrous AlCl}_3\\text{/CuCl}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_013",
+    "question": "Wittig reaction converts a carbonyl compound to an alkene using:",
+    "options": [
+      "\\text{Phosphorus ylide (Ph}_3\\text{P=CH}_2\\text{)}",
+      "\\text{Grignard reagent}",
+      "\\text{Zinc carbenoid}",
+      "\\text{NaHSO}_3"
+    ],
+    "answer": "\\text{Phosphorus ylide (Ph}_3\\text{P=CH}_2\\text{)}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_014",
+    "question": "The product of reaction between a ketone and hydroxylamine (NH2OH) is called:",
+    "options": [
+      "\\text{Oxime}",
+      "\\text{Hydrazone}",
+      "\\text{Semicarbazone}",
+      "\\text{Schiff's base}"
+    ],
+    "answer": "\\text{Oxime}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_015",
+    "question": "In Baeyer-Villiger oxidation, a ketone is treated with a peracid to give:",
+    "options": [
+      "\\text{Ester}",
+      "\\text{Alcohol}",
+      "\\text{Carboxylic acid}",
+      "\\text{Alkene}"
+    ],
+    "answer": "\\text{Ester}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_016",
+    "question": "Popoff's rule governs oxidative cleavage of unsymmetrical ketones. The cleavage point is such that:",
+    "options": [
+      "\\text{The keto group stays with the smaller alkyl group}",
+      "\\text{The keto group stays with the larger alkyl group}",
+      "\\text{Cleavage occurs only at the alpha carbon}",
+      "\\text{Both C-C bonds cleave equally}"
+    ],
+    "answer": "\\text{The keto group stays with the smaller alkyl group}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_017",
+    "question": "Cross aldol condensation between an aromatic aldehyde and an aliphatic aldehyde/ketone in the presence of base is specifically called:",
+    "options": [
+      "\\text{Claisen-Schmidt condensation}",
+      "\\text{Knoevenagel condensation}",
+      "\\text{Perkin condensation}",
+      "\\text{Benzoin condensation}"
+    ],
+    "answer": "\\text{Claisen-Schmidt condensation}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_018",
+    "question": "Reformatsky reaction involves reaction of a carbonyl compound with zinc and an alpha-bromo ester to give:",
+    "options": [
+      "\\beta\\text{-hydroxy ester}",
+      "\\alpha\\text{-hydroxy ester}",
+      "\\gamma\\text{-hydroxy ester}",
+      "\\alpha\\text{,}\\beta\\text{-unsaturated ester directly}"
+    ],
+    "answer": "\\beta\\text{-hydroxy ester}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_019",
+    "question": "Reaction of formaldehyde with excess ammonia gives hexamethylenetetramine (urotropine). Urotropine on controlled nitration gives:",
+    "options": [
+      "\\text{RDX (explosive)}",
+      "\\text{TNT}",
+      "\\text{Picric acid}",
+      "\\text{Nitroformaldehyde}"
+    ],
+    "answer": "\\text{RDX (explosive)}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_020",
+    "question": "Benzoin condensation between two molecules of benzaldehyde in the presence of alcoholic KCN gives benzoin. Why does this reaction NOT occur with aliphatic aldehydes having alpha-H, and why does it require CN- specifically?",
+    "options": [
+      "\\text{Alpha-H aldehydes preferentially undergo aldol; CN}^-\\text{ acts as a nucleophile and umpolung catalyst — it attacks carbonyl, making that carbon nucleophilic to attack the second PhCHO}",
+      "\\text{CN}^-\\text{ acts only as a base to remove alpha-H in aliphatic aldehydes causing aldol instead}",
+      "\\text{Benzoin condensation uses CN}^-\\text{ only as a leaving group, not a catalyst}",
+      "\\text{Aliphatic aldehydes cannot form cyanohydrins, so the reaction fails}"
+    ],
+    "answer": "\\text{Alpha-H aldehydes preferentially undergo aldol; CN}^-\\text{ acts as a nucleophile and umpolung catalyst — it attacks carbonyl, making that carbon nucleophilic to attack the second PhCHO}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": "Umpolung: CN- adds to PhCHO → cyanohydrin carbanion → this carbanion (now nucleophilic at what was the electrophilic carbonyl C) attacks second PhCHO → after proton transfer and CN- expulsion → benzoin. With aliphatic aldehydes having alpha-H, aldol pathway is faster and dominates."
+  },
+  {
+    "id": "ak_qn_021",
+    "question": "Etard reaction converts toluene to benzaldehyde using:",
+    "options": [
+      "\\text{CrO}_2\\text{Cl}_2 \\text{ (chromyl chloride) in CS}_2\\text{, then H}_2\\text{O}",
+      "\\text{KMnO}_4 \\text{ / H}^+",
+      "\\text{CrO}_3 \\text{ / acetic acid}",
+      "\\text{MnO}_2 \\text{ / H}_2\\text{SO}_4"
+    ],
+    "answer": "\\text{CrO}_2\\text{Cl}_2 \\text{ (chromyl chloride) in CS}_2\\text{, then H}_2\\text{O}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_022",
+    "question": "In Schmidt reaction, an aldehyde reacts with hydrazoic acid (HN3) in the presence of conc. H2SO4 to give:",
+    "options": [
+      "\\text{N-alkyl formamide} + N_2",
+      "\\text{Primary amine} + N_2",
+      "\\text{Nitrile} + H_2O",
+      "\\text{Amide} + HN_3"
+    ],
+    "answer": "\\text{N-alkyl formamide} + N_2",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_023",
+    "question": "In acetal formation from an aldehyde and excess alcohol, the first intermediate formed is a hemiacetal. The correct sequence and catalyst required are:",
+    "options": [
+      "\\text{Aldehyde + ROH} \\xrightarrow{\\text{HCl(g)}} \\text{Hemiacetal} \\xrightarrow{\\text{ROH, -H}_2\\text{O}} \\text{Acetal}",
+      "\\text{Aldehyde + ROH} \\xrightarrow{\\text{NaOH}} \\text{Hemiacetal} \\xrightarrow{\\text{ROH}} \\text{Acetal}",
+      "\\text{Aldehyde + 2ROH} \\xrightarrow{\\text{HCl(g)}} \\text{Acetal directly (no hemiacetal)}",
+      "\\text{Aldehyde + ROH} \\xrightarrow{\\text{H}_2\\text{SO}_4} \\text{Acetal} \\xrightarrow{} \\text{Hemiacetal}"
+    ],
+    "answer": "\\text{Aldehyde + ROH} \\xrightarrow{\\text{HCl(g)}} \\text{Hemiacetal} \\xrightarrow{\\text{ROH, -H}_2\\text{O}} \\text{Acetal}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": "Acid catalyst (HCl gas) protonates the carbonyl oxygen, making the carbon more electrophilic for ROH attack → hemiacetal. Second ROH attacks, water is lost → acetal. Base cannot catalyse this — acetal formation is acid-catalysed only."
+  },
+  {
+    "id": "ak_qn_024",
+    "question": "Polymerisation of 3 moles of formaldehyde gives trioxane (metaformaldehyde), while polymerisation of 3 moles of acetaldehyde gives:",
+    "options": [
+      "\\text{Paraldehyde (hypnotic)}",
+      "\\text{Metaldehyde}",
+      "\\text{Paraformaldehyde}",
+      "\\text{Acetaldol}"
+    ],
+    "answer": "\\text{Paraldehyde (hypnotic)}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_025",
+    "question": "Knoevenagel reaction involves condensation of a carbonyl compound with an active methylene compound (like malonic acid) in the presence of base. The product after decarboxylation of malonic acid intermediate is:",
+    "options": [
+      "\\alpha,\\beta\\text{-unsaturated monocarboxylic acid}",
+      "\\alpha,\\beta\\text{-unsaturated dicarboxylic acid}",
+      "\\beta\\text{-hydroxy acid}",
+      "\\text{Saturated monocarboxylic acid}"
+    ],
+    "answer": "\\alpha,\\beta\\text{-unsaturated monocarboxylic acid}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "When R = CH3, product is crotonic acid. When R = C6H5, product is cinnamic acid (C6H5-CH=CH-COOH)."
+  },
+  {
+    "id": "ak_qn_026",
+    "question": "Addition of an aldehyde or ketone with sodium bisulphite (NaHSO3) gives a white crystalline addition product. This reaction is used for:",
+    "options": [
+      "\\text{Separation and purification of aldehydes/ketones}",
+      "\\text{Reduction to alcohol}",
+      "\\text{Oxidation to carboxylic acid}",
+      "\\text{Detection of alpha-hydrogen}"
+    ],
+    "answer": "\\text{Separation and purification of aldehydes/ketones}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_027",
+    "question": "Schiff's reagent (decolourised rosaniline/magenta solution) gives pink colour with aldehydes but NOT with ketones. The one exception — which aldehyde does NOT give pink colour with Schiff's reagent?",
+    "options": [
+      "\\text{Formaldehyde (HCHO) — gives pink that is not discharged by H}_2\\text{SO}_4\\text{, unlike others}",
+      "\\text{Benzaldehyde}",
+      "\\text{Acetaldehyde}",
+      "\\text{Propanaldehyde}"
+    ],
+    "answer": "\\text{Formaldehyde (HCHO) — gives pink that is not discharged by H}_2\\text{SO}_4\\text{, unlike others}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "All aldehydes give pink with Schiff's reagent. The distinction is that formaldehyde gives a pink colour that is NOT decolourised on adding H2SO4, while other aldehydes give pink that IS decolourised. This is the basis of distinguishing HCHO from other aldehydes using Schiff's."
+  },
+  {
+    "id": "ak_qn_028",
+    "question": "Tischenko reaction is a modified Cannizzaro reaction. The reaction of acetaldehyde in the presence of Al(OC2H5)3 gives:",
+    "options": [
+      "\\text{Ethyl acetate (CH}_3\\text{COOC}_2\\text{H}_5\\text{)}",
+      "\\text{Acetic acid + ethanol}",
+      "\\text{Acetaldehyde dimer}",
+      "\\text{Crotonaldehyde}"
+    ],
+    "answer": "\\text{Ethyl acetate (CH}_3\\text{COOC}_2\\text{H}_5\\text{)}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_029",
+    "question": "Perkin reaction involves condensation of an aromatic aldehyde with acetic anhydride in the presence of sodium acetate to give:",
+    "options": [
+      "\\alpha,\\beta\\text{-unsaturated acid (e.g., cinnamic acid from benzaldehyde)}",
+      "\\text{Benzoin}",
+      "\\beta\\text{-hydroxy acid}",
+      "\\text{Aromatic ketone}"
+    ],
+    "answer": "\\alpha,\\beta\\text{-unsaturated acid (e.g., cinnamic acid from benzaldehyde)}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ak_qn_030",
+    "question": "Acetaldehyde undergoes both aldol condensation AND Cannizzaro reaction under different conditions, while formaldehyde undergoes ONLY Cannizzaro reaction and benzaldehyde undergoes ONLY Cannizzaro reaction. Which combination of reasons correctly explains all three?",
+    "options": [
+      "\\text{CH}_3\\text{CHO: has alpha-H (aldol possible) and no special stabilisation (Cannizzaro possible with conc. base); HCHO: no alpha-H, only Cannizzaro; PhCHO: no alpha-H, only Cannizzaro}",
+      "\\text{CH}_3\\text{CHO: undergoes only aldol; HCHO and PhCHO: undergo only Cannizzaro}",
+      "\\text{All three undergo both reactions under the same conditions}",
+      "\\text{HCHO undergoes aldol; PhCHO and CH}_3\\text{CHO undergo Cannizzaro}"
+    ],
+    "answer": "\\text{CH}_3\\text{CHO: has alpha-H (aldol possible) and no special stabilisation (Cannizzaro possible with conc. base); HCHO: no alpha-H, only Cannizzaro; PhCHO: no alpha-H, only Cannizzaro}",
+    "tags": { "chapter": "Aldehydes and Ketones", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": "Alpha-H is the deciding factor: if present → aldol is preferred under dil. base; Cannizzaro needs conc. base and competes only if alpha-H reactions are suppressed. HCHO has no alpha-H and no ring — only Cannizzaro. PhCHO has no alpha-H (no aliphatic alpha-C) — only Cannizzaro. CH3CHO has alpha-H — aldol under dil. base, Cannizzaro possible with conc. NaOH but rare."
+  }
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "id": "p_block_15_18_qn_001",
+    "question": "The correct decreasing order of thermal stability of Group 15 hydrides is:",
+    "options": [
+      "\\text{BiH}_3 > \\text{SbH}_3 > \\text{AsH}_3 > \\text{PH}_3 > \\text{NH}_3",
+      "\\text{NH}_3 > \\text{PH}_3 > \\text{AsH}_3 > \\text{SbH}_3 > \\text{BiH}_3",
+      "\\text{PH}_3 > \\text{NH}_3 > \\text{AsH}_3 > \\text{SbH}_3 > \\text{BiH}_3",
+      "\\text{NH}_3 > \\text{AsH}_3 > \\text{PH}_3 > \\text{BiH}_3 > \\text{SbH}_3"
+    ],
+    "answer": "\\text{NH}_3 > \\text{PH}_3 > \\text{AsH}_3 > \\text{SbH}_3 > \\text{BiH}_3",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_15_18_qn_002",
+    "question": "The correct decreasing order of bond angles in Group 15 hydrides is:",
+    "options": [
+      "\\text{BiH}_3 > \\text{SbH}_3 > \\text{AsH}_3 > \\text{PH}_3 > \\text{NH}_3",
+      "\\text{NH}_3 (107.4°) > \\text{PH}_3 (92°) > \\text{AsH}_3 (91°) > \\text{SbH}_3 (90°)",
+      "\\text{PH}_3 > \\text{NH}_3 > \\text{AsH}_3 > \\text{SbH}_3",
+      "\\text{All have equal bond angles of } 90°"
+    ],
+    "answer": "\\text{NH}_3 (107.4°) > \\text{PH}_3 (92°) > \\text{AsH}_3 (91°) > \\text{SbH}_3 (90°)",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "As lone pair repulsion decreases down the group (larger central atom), bond angle approaches 90°."
+  },
+  {
+    "id": "p_block_15_18_qn_003",
+    "question": "Why does nitrogen <b>not</b> form pentavalent compounds like phosphorus?",
+    "options": [
+      "\\text{N has very high electronegativity}",
+      "\\text{N has no vacant d-orbitals to expand its octet}",
+      "\\text{N--N bond is too weak}",
+      "\\text{N has too many lone pairs}"
+    ],
+    "answer": "\\text{N has no vacant d-orbitals to expand its octet}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_15_18_qn_004",
+    "question": "The colours and acid/base nature of nitrogen oxides — which option is fully correct?",
+    "options": [
+      "\\text{N}_2\\text{O: neutral; NO: neutral; N}_2\\text{O}_3\\text{: acidic blue solid; NO}_2\\text{: brown acidic; N}_2\\text{O}_5\\text{: acidic}",
+      "\\text{N}_2\\text{O: acidic; NO: basic; NO}_2\\text{: neutral brown; N}_2\\text{O}_3\\text{: basic}",
+      "\\text{N}_2\\text{O: neutral; NO: acidic; NO}_2\\text{: neutral; N}_2\\text{O}_5\\text{: basic}",
+      "\\text{All nitrogen oxides are acidic}"
+    ],
+    "answer": "\\text{N}_2\\text{O: neutral; NO: neutral; N}_2\\text{O}_3\\text{: acidic blue solid; NO}_2\\text{: brown acidic; N}_2\\text{O}_5\\text{: acidic}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "N₂O = laughing gas (neutral); NO = neutral; N₂O₃, NO₂, N₂O₄, N₂O₅ = acidic."
+  },
+  {
+    "id": "p_block_15_18_qn_005",
+    "question": "In the Haber's process for synthesis of ammonia, the catalyst and conditions used are:",
+    "options": [
+      "\\text{Pt/Rh, 500 K, 9 bar, exothermic}",
+      "\\text{Fe/Mo, low temperature, high pressure, exothermic } (\\Delta H = -46.1 \\text{ kJ/mol})",
+      "\\text{V}_2\\text{O}_5\\text{, 450°C, 1 atm, endothermic}",
+      "\\text{Fe/Mo, high temperature, low pressure, exothermic}"
+    ],
+    "answer": "\\text{Fe/Mo, low temperature, high pressure, exothermic } (\\Delta H = -46.1 \\text{ kJ/mol})",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_15_18_qn_006",
+    "question": "In Ostwald's process, the first step for making HNO₃ is:",
+    "options": [
+      "4\\text{NH}_3 + 3\\text{O}_2 \\rightarrow 2\\text{N}_2 + 6\\text{H}_2\\text{O}",
+      "4\\text{NH}_3 + 5\\text{O}_2 \\xrightarrow{\\text{Pt/Rh, 500 K, 9 bar}} 4\\text{NO} + 6\\text{H}_2\\text{O}",
+      "\\text{N}_2 + \\text{O}_2 \\rightarrow 2\\text{NO}",
+      "3\\text{NO}_2 + \\text{H}_2\\text{O} \\rightarrow 2\\text{HNO}_3 + \\text{NO}"
+    ],
+    "answer": "4\\text{NH}_3 + 5\\text{O}_2 \\xrightarrow{\\text{Pt/Rh, 500 K, 9 bar}} 4\\text{NO} + 6\\text{H}_2\\text{O}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_15_18_qn_007",
+    "question": "Action of <b>dilute</b> HNO₃ on copper gives:",
+    "options": [
+      "3\\text{Cu} + 8\\text{HNO}_3(\\text{dil}) \\rightarrow 3\\text{Cu(NO}_3)_2 + 4\\text{H}_2\\text{O} + 2\\text{NO}",
+      "\\text{Cu} + 4\\text{HNO}_3(\\text{dil}) \\rightarrow \\text{Cu(NO}_3)_2 + 2\\text{H}_2\\text{O} + 2\\text{NO}_2",
+      "3\\text{Cu} + 8\\text{HNO}_3(\\text{dil}) \\rightarrow 3\\text{Cu(NO}_3)_2 + 4\\text{H}_2\\text{O} + 2\\text{NO}_2",
+      "\\text{Cu} + 2\\text{HNO}_3(\\text{dil}) \\rightarrow \\text{Cu(NO}_3)_2 + \\text{H}_2"
+    ],
+    "answer": "3\\text{Cu} + 8\\text{HNO}_3(\\text{dil}) \\rightarrow 3\\text{Cu(NO}_3)_2 + 4\\text{H}_2\\text{O} + 2\\text{NO}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Dilute HNO₃ → NO gas. Concentrated HNO₃ → NO₂ gas. Easy to mix up."
+  },
+  {
+    "id": "p_block_15_18_qn_008",
+    "question": "The brown ring complex formed in the brown ring test for nitrate is:",
+    "options": [
+      "[\\text{Fe(H}_2\\text{O)}_6]^{3+}",
+      "[\\text{Fe(H}_2\\text{O)}_5\\text{NO}]^{2+}",
+      "[\\text{Fe(NO)}_4]^{2-}",
+      "[\\text{FeNO}_3]^+"
+    ],
+    "answer": "[\\text{Fe(H}_2\\text{O)}_5\\text{NO}]^{2+}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_15_18_qn_009",
+    "question": "Which of the following correctly compares white and red phosphorus?",
+    "options": [
+      "\\text{White P: non-poisonous, odourless, stable in air; Red P: poisonous, garlic smell}",
+      "\\text{White P: poisonous, garlic smell, soft, shines in dark; Red P: non-poisonous, odourless, semi-conductor}",
+      "\\text{Both are equally poisonous and have garlic smell}",
+      "\\text{White P: non-poisonous; Red P: poisonous, semi-conductor, shines in dark}"
+    ],
+    "answer": "\\text{White P: poisonous, garlic smell, soft, shines in dark; Red P: non-poisonous, odourless, semi-conductor}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_15_18_qn_010",
+    "question": "In the solid state, PCl₅ exists as an ionic compound. Its cation and anion structures are respectively:",
+    "options": [
+      "[\\text{PCl}_4]^+ \\text{ (tetrahedral)} \\text{ and } [\\text{PCl}_6]^- \\text{ (octahedral)}",
+      "[\\text{PCl}_6]^+ \\text{ (octahedral)} \\text{ and } [\\text{PCl}_4]^- \\text{ (tetrahedral)}",
+      "[\\text{PCl}_3]^+ \\text{ (pyramidal)} \\text{ and } [\\text{PCl}_7]^- \\text{ (pentagonal bipyramidal)}",
+      "\\text{PCl}_5 \\text{ remains covalent in solid state too}"
+    ],
+    "answer": "[\\text{PCl}_4]^+ \\text{ (tetrahedral)} \\text{ and } [\\text{PCl}_6]^- \\text{ (octahedral)}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_15_18_qn_011",
+    "question": "The basicity of an oxoacid of phosphorus is determined by:",
+    "options": [
+      "\\text{Total number of oxygen atoms}",
+      "\\text{Number of P--OH bonds (ionisable H atoms only)}",
+      "\\text{Number of P--H bonds}",
+      "\\text{Oxidation state of phosphorus}"
+    ],
+    "answer": "\\text{Number of P--OH bonds (ionisable H atoms only)}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "P–H bonds are non-ionisable. Only P–OH bonds contribute to basicity. H₃PO₃ is dibasic (2 P–OH), H₃PO₄ is tribasic (3 P–OH)."
+  },
+  {
+    "id": "p_block_15_18_qn_012",
+    "question": "The stability of +5 oxidation state in Group 15 decreases in the order:",
+    "options": [
+      "\\text{Bi} > \\text{Sb} > \\text{As} > \\text{P} > \\text{N}",
+      "\\text{N} > \\text{P} > \\text{As} > \\text{Sb} > \\text{Bi}",
+      "\\text{P} > \\text{N} > \\text{As} > \\text{Sb} > \\text{Bi}",
+      "\\text{As} > \\text{P} > \\text{N} > \\text{Sb} > \\text{Bi}"
+    ],
+    "answer": "\\text{N} > \\text{P} > \\text{As} > \\text{Sb} > \\text{Bi}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Inert pair effect increases down the group — +5 becomes less stable, +3 becomes more stable."
+  },
+  {
+    "id": "p_block_15_18_qn_013",
+    "question": "The catenation order in Group 16 elements is:",
+    "options": [
+      "\\text{O--O} > \\text{S--S} > \\text{Se--Se} > \\text{Te--Te}",
+      "\\text{S--S} > \\text{Se--Se} > \\text{O--O} > \\text{Te--Te}",
+      "\\text{Te--Te} > \\text{Se--Se} > \\text{S--S} > \\text{O--O}",
+      "\\text{S--S} > \\text{O--O} > \\text{Se--Se} > \\text{Te--Te}"
+    ],
+    "answer": "\\text{S--S} > \\text{Se--Se} > \\text{O--O} > \\text{Te--Te}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "O has weak catenation despite being in period 2 — lone pair repulsion weakens O–O bond."
+  },
+  {
+    "id": "p_block_15_18_qn_014",
+    "question": "The boiling point of H₂O is anomalously high compared to H₂S, H₂Se, H₂Te. The reason is:",
+    "options": [
+      "\\text{H}_2\\text{O has a higher molar mass}",
+      "\\text{H}_2\\text{O has strong intermolecular hydrogen bonding}",
+      "\\text{H}_2\\text{O has the highest reducing character}",
+      "\\text{H}_2\\text{O is the strongest acid in the group}"
+    ],
+    "answer": "\\text{H}_2\\text{O has strong intermolecular hydrogen bonding}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_15_18_qn_015",
+    "question": "In the contact process, SO₃ is absorbed in H₂SO₄ (not water) to give oleum. This is because:",
+    "options": [
+      "\\text{SO}_3 + \\text{H}_2\\text{O} \\text{ is too slow a reaction}",
+      "\\text{Direct absorption in water forms a mist of H}_2\\text{SO}_4\\text{ droplets that are difficult to condense}",
+      "\\text{Water is not available in the contact process}",
+      "\\text{SO}_3 \\text{ reacts explosively with water}"
+    ],
+    "answer": "\\text{Direct absorption in water forms a mist of H}_2\\text{SO}_4\\text{ droplets that are difficult to condense}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_15_18_qn_016",
+    "question": "Ozone decomposes on heating. The enthalpy of the reaction 3O₂ → 2O₃ is:",
+    "options": [
+      "\\Delta H = -284 \\text{ kJ/mol (exothermic)}",
+      "\\Delta H = +142 \\text{ kJ/mol (endothermic)}",
+      "\\Delta H = -142 \\text{ kJ/mol (exothermic)}",
+      "\\Delta H = +284 \\text{ kJ/mol (endothermic)}"
+    ],
+    "answer": "\\Delta H = +142 \\text{ kJ/mol (endothermic)}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Formation of O₃ from O₂ is endothermic (+142 kJ/mol). Decomposition of O₃ is exothermic (−284 kJ/mol for 2O₃ → 3O₂)."
+  },
+  {
+    "id": "p_block_15_18_qn_017",
+    "question": "Sodium thiosulphate (hypo) is used as a fixing agent in photography. The reaction involved is:",
+    "options": [
+      "2\\text{Na}_2\\text{S}_2\\text{O}_3 + \\text{AgBr} \\rightarrow \\text{Na}_3[\\text{Ag(S}_2\\text{O}_3)_2] + \\text{NaBr}",
+      "\\text{Na}_2\\text{S}_2\\text{O}_3 + \\text{AgBr} \\rightarrow \\text{AgS}_2\\text{O}_3 + \\text{NaBr}",
+      "2\\text{Na}_2\\text{S}_2\\text{O}_3 + 2\\text{AgBr} \\rightarrow \\text{Ag}_2\\text{S}_2\\text{O}_3 + 2\\text{NaBr}",
+      "\\text{Na}_2\\text{S}_2\\text{O}_3 + 2\\text{AgBr} \\rightarrow \\text{Na}_2\\text{SO}_4 + 2\\text{Ag} + \\text{Br}_2"
+    ],
+    "answer": "2\\text{Na}_2\\text{S}_2\\text{O}_3 + \\text{AgBr} \\rightarrow \\text{Na}_3[\\text{Ag(S}_2\\text{O}_3)_2] + \\text{NaBr}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_15_18_qn_018",
+    "question": "Which pair of oxoacids of sulphur contains a <b>peroxide linkage</b> (O–O bond)?",
+    "options": [
+      "\\text{H}_2\\text{SO}_3 \\text{ and } \\text{H}_2\\text{SO}_4",
+      "\\text{H}_2\\text{S}_2\\text{O}_7 \\text{ (oleum) and } \\text{H}_2\\text{S}_2\\text{O}_6",
+      "\\text{H}_2\\text{S}_2\\text{O}_8 \\text{ (Marshall's acid) and } \\text{H}_2\\text{SO}_5 \\text{ (Caro's acid)}",
+      "\\text{H}_2\\text{SO}_4 \\text{ and } \\text{H}_2\\text{S}_2\\text{O}_7"
+    ],
+    "answer": "\\text{H}_2\\text{S}_2\\text{O}_8 \\text{ (Marshall's acid) and } \\text{H}_2\\text{SO}_5 \\text{ (Caro's acid)}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_15_18_qn_019",
+    "question": "The electron affinity of halogens follows the order:",
+    "options": [
+      "\\text{F} > \\text{Cl} > \\text{Br} > \\text{I}",
+      "\\text{Cl} > \\text{F} > \\text{Br} > \\text{I}",
+      "\\text{I} > \\text{Br} > \\text{Cl} > \\text{F}",
+      "\\text{Cl} > \\text{Br} > \\text{F} > \\text{I}"
+    ],
+    "answer": "\\text{Cl} > \\text{F} > \\text{Br} > \\text{I}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "F anomaly: very small size → high electron density → added electron faces more repulsion → lower EA than Cl."
+  },
+  {
+    "id": "p_block_15_18_qn_020",
+    "question": "For Group 15, which combination of properties increases down the group (NH₃ to BiH₃)?",
+    "options": [
+      "\\text{Thermal stability and basic strength both increase}",
+      "\\text{Reducing character and covalent character both increase; basic strength decreases}",
+      "\\text{Thermal stability increases; reducing character decreases}",
+      "\\text{Bond angle increases; reducing character decreases}"
+    ],
+    "answer": "\\text{Reducing character and covalent character both increase; basic strength decreases}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Thermal stability and basic strength decrease down the group. Reducing character, covalent character, and rate of combustion increase."
+  },
+  {
+    "id": "p_block_15_18_qn_021",
+    "question": "The bond dissociation energy of halogens follows the order:",
+    "options": [
+      "\\text{F}_2 > \\text{Cl}_2 > \\text{Br}_2 > \\text{I}_2",
+      "\\text{Cl}_2 > \\text{Br}_2 > \\text{F}_2 > \\text{I}_2",
+      "\\text{I}_2 > \\text{Br}_2 > \\text{Cl}_2 > \\text{F}_2",
+      "\\text{Cl}_2 > \\text{F}_2 > \\text{Br}_2 > \\text{I}_2"
+    ],
+    "answer": "\\text{Cl}_2 > \\text{Br}_2 > \\text{F}_2 > \\text{I}_2",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "F₂ anomaly: lone pair–lone pair repulsion due to very small F–F distance weakens the bond."
+  },
+  {
+    "id": "p_block_15_18_qn_022",
+    "question": "The correct order of acid strength of HX (hydrogen halides) is:",
+    "options": [
+      "\\text{HF} > \\text{HCl} > \\text{HBr} > \\text{HI}",
+      "\\text{HI} > \\text{HBr} > \\text{HCl} > \\text{HF}",
+      "\\text{HCl} > \\text{HBr} > \\text{HI} > \\text{HF}",
+      "\\text{HF} > \\text{HI} > \\text{HBr} > \\text{HCl}"
+    ],
+    "answer": "\\text{HI} > \\text{HBr} > \\text{HCl} > \\text{HF}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Thermal stability order is reversed: HF > HCl > HBr > HI."
+  },
+  {
+    "id": "p_block_15_18_qn_023",
+    "question": "In interhalogen compounds AXₙ, the values of n can be:",
+    "options": [
+      "n = 1, 2, 3, 4",
+      "n = 1, 3, 5, 7",
+      "n = 2, 4, 6",
+      "n = 1, 2, 4, 6"
+    ],
+    "answer": "n = 1, 3, 5, 7",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_15_18_qn_024",
+    "question": "For oxoacids of the <b>same halogen</b>, the acidic strength increases as:",
+    "options": [
+      "\\text{Number of oxygen atoms decreases}",
+      "\\text{Number of oxygen atoms increases}",
+      "\\text{Electronegativity of the halogen increases}",
+      "\\text{Size of the halogen increases}"
+    ],
+    "answer": "\\text{Number of oxygen atoms increases}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "More O atoms → more electron withdrawal from X–O–H → weaker O–H bond → stronger acid. HOCl < HOClO < HOClO₂ < HOClO₃."
+  },
+  {
+    "id": "p_block_15_18_qn_025",
+    "question": "The chromyl chloride test detects Cl⁻ ions. The red vapour produced is:",
+    "options": [
+      "\\text{CrCl}_3",
+      "\\text{CrO}_2\\text{Cl}_2",
+      "\\text{Cr}_2\\text{O}_3",
+      "\\text{CrO}_3"
+    ],
+    "answer": "\\text{CrO}_2\\text{Cl}_2",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "CrO₂Cl₂ vapours passed into NaOH give yellow Na₂CrO₄; adding Pb(CH₃COO)₂ gives yellow PbCrO₄ precipitate."
+  },
+  {
+    "id": "p_block_15_18_qn_026",
+    "question": "Fluorine shows anomalous behaviour among halogens. Which property is unique to F?",
+    "options": [
+      "\\text{F always shows } -1 \\text{ oxidation state; no positive oxidation state; only forms HOF as oxoacid}",
+      "\\text{F forms the most stable HX compound}",
+      "\\text{F has the highest bond dissociation energy}",
+      "\\text{F forms interhalogen compounds with n up to 7}"
+    ],
+    "answer": "\\text{F always shows } -1 \\text{ oxidation state; no positive oxidation state; only forms HOF as oxoacid}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_15_18_qn_027",
+    "question": "The colours of the halogens in order F₂, Cl₂, Br₂, I₂ are:",
+    "options": [
+      "\\text{Pale yellow, yellowish green, reddish brown, deep violet}",
+      "\\text{Yellowish green, pale yellow, deep violet, reddish brown}",
+      "\\text{Colourless, yellow, orange, purple}",
+      "\\text{Pale yellow, orange, reddish brown, black}"
+    ],
+    "answer": "\\text{Pale yellow, yellowish green, reddish brown, deep violet}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_15_18_qn_028",
+    "question": "The abundance of noble gases in dry air follows the order:",
+    "options": [
+      "\\text{He} > \\text{Ne} > \\text{Ar} > \\text{Kr} > \\text{Xe}",
+      "\\text{Ar} > \\text{Ne} > \\text{He} > \\text{Kr} > \\text{Xe}",
+      "\\text{Xe} > \\text{Kr} > \\text{Ar} > \\text{Ne} > \\text{He}",
+      "\\text{Ne} > \\text{Ar} > \\text{He} > \\text{Kr} > \\text{Xe}"
+    ],
+    "answer": "\\text{Ar} > \\text{Ne} > \\text{He} > \\text{Kr} > \\text{Xe}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_15_18_qn_029",
+    "question": "The geometries of XeF₂, XeF₄, XeF₆, XeOF₄, and XeO₃ are respectively:",
+    "options": [
+      "\\text{Linear, square planar, distorted octahedral, square pyramidal, pyramidal}",
+      "\\text{Linear, tetrahedral, octahedral, trigonal bipyramidal, trigonal planar}",
+      "\\text{V-shaped, square planar, octahedral, square pyramidal, pyramidal}",
+      "\\text{Linear, square planar, octahedral, tetrahedral, pyramidal}"
+    ],
+    "answer": "\\text{Linear, square planar, distorted octahedral, square pyramidal, pyramidal}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_15_18_qn_030",
+    "question": "XeF₆ cannot be stored in glass vessels. When it reacts with SiO₂ (of glass), the final product that forms explosively is:",
+    "options": [
+      "\\text{XeOF}_4",
+      "\\text{XeO}_3",
+      "\\text{XeF}_4",
+      "\\text{XeO}_2\\text{F}_2"
+    ],
+    "answer": "\\text{XeO}_3",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 15-18)",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Stepwise: XeF₆ + SiO₂ → XeOF₄; XeOF₄ + SiO₂ → XeO₂F₂; XeO₂F₂ + SiO₂ → XeO₃. XeO₃ is explosive."
+  }
+]

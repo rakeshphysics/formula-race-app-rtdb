@@ -27,7 +27,10 @@ class _ReviseChapterSelectionScreenState extends State<ReviseChapterSelectionScr
     ],
     'Chemistry': [
       'Solid State','Chemical Equilibrium','Electrochemistry','Solutions','Atomic Structure', 'General Organic Chemistry',
-      'Hydrocarbons'
+      'Hydrocarbons','Haloalkanes and Haloarenes', 'Alcohols Phenols and Ethers', 'Aldehydes and Ketones',
+      'Carboxylic Acids', 'Amines', 'Biomolecules', 'Basic Concepts of Chemistry','Classification of Elements',
+      'Chemical Bonding', 'Thermodynamics', 'Redox Reactions', 'P Block 13 and 14',
+      'P Block 15 to 18', 'D and F Block','Coordination Compounds'
 
     ],
     'Maths': [

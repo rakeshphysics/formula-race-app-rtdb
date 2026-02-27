@@ -1,0 +1,542 @@
+[
+  {
+    "id": "coord_comp_qn_001",
+    "question": "Which of the following is a <b>coordination compound</b> (not a double salt)?",
+    "options": [
+      "\\text{Mohr's salt}",
+      "\\text{Potash alum}",
+      "K_4[\\text{Fe}(\\text{CN})_6]",
+      "\\text{FeSO}_4 \\cdot (\\text{NH}_4)_2\\text{SO}_4 \\cdot 6\\text{H}_2\\text{O}"
+    ],
+    "answer": "K_4[\\text{Fe}(\\text{CN})_6]",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Coordination compounds retain identity in solution; double salts dissociate completely into simple ions."
+  },
+  {
+    "id": "coord_comp_qn_002",
+    "question": "In K₄[Fe(CN)₆], what is the coordination number of iron?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "2"
+    ],
+    "answer": "6",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "coord_comp_qn_003",
+    "question": "The central metal atom/ion in a coordination compound acts as a:",
+    "options": [
+      "\\text{Lewis base}",
+      "\\text{Brønsted acid}",
+      "\\text{Lewis acid}",
+      "\\text{Brønsted base}"
+    ],
+    "answer": "\\text{Lewis acid}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "coord_comp_qn_004",
+    "question": "EDTA⁴⁻ is classified as which type of ligand?",
+    "options": [
+      "\\text{Unidentate}",
+      "\\text{Didentate}",
+      "\\text{Tridentate}",
+      "\\text{Hexadentate}"
+    ],
+    "answer": "\\text{Hexadentate}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "EDTA has 2 N + 4 O donor atoms = 6 donor sites."
+  },
+  {
+    "id": "coord_comp_qn_005",
+    "question": "Which of the following is an example of an <b>ambidentate ligand</b>?",
+    "options": [
+      "\\text{en (ethylenediamine)}",
+      "\\text{ox (oxalate)}",
+      "\\text{NO}_2^-",
+      "\\text{EDTA}^{4-}"
+    ],
+    "answer": "\\text{NO}_2^-",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Ambidentate = one donor atom at a time, but can choose between two — NO₂⁻ binds via N or O."
+  },
+  {
+    "id": "coord_comp_qn_006",
+    "question": "In the IUPAC name of a complex, anionic ligands are given names ending in:",
+    "options": [
+      "\\text{-ium}",
+      "\\text{-o}",
+      "\\text{-ate}",
+      "\\text{-ine}"
+    ],
+    "answer": "\\text{-o}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Anionic ligand → ends in 'o'; complex anion → metal name ends in '-ate'."
+  },
+  {
+    "id": "coord_comp_qn_007",
+    "question": "What is the oxidation state of copper in [Cu(CN)₄]³⁻?",
+    "options": [
+      "+1",
+      "+2",
+      "+3",
+      "0"
+    ],
+    "answer": "+1",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "coord_comp_qn_008",
+    "question": "In Werner's theory, <b>primary valency</b> of a metal corresponds to:",
+    "options": [
+      "\\text{Coordination number}",
+      "\\text{Oxidation number}",
+      "\\text{Number of ligands}",
+      "\\text{Denticity of ligands}"
+    ],
+    "answer": "\\text{Oxidation number}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Primary = ionisable = satisfied by counter ions = oxidation number. Secondary = non-ionisable = CN."
+  },
+  {
+    "id": "coord_comp_qn_009",
+    "question": "Which of the following pairs are <b>ionisation isomers</b>?",
+    "options": [
+      "[\\text{Co}(\\text{NH}_3)_5\\text{SO}_4]\\text{Br} \\text{ and } [\\text{Co}(\\text{NH}_3)_5\\text{Br}]\\text{SO}_4",
+      "[\\text{Cr}(\\text{NH}_3)_6][\\text{Co}(\\text{CN})_6] \\text{ and } [\\text{Co}(\\text{NH}_3)_6][\\text{Cr}(\\text{CN})_6]",
+      "[\\text{Co}(\\text{NH}_3)_5(\\text{NO}_2)] \\text{ and } [\\text{Co}(\\text{NH}_3)_5(\\text{ONO})]",
+      "[\\text{Co}(\\text{H}_2\\text{O})_6]\\text{Cl}_3 \\text{ and } [\\text{Co}(\\text{H}_2\\text{O})_5\\text{Cl}]\\text{Cl}_2 \\cdot \\text{H}_2\\text{O}"
+    ],
+    "answer": "[\\text{Co}(\\text{NH}_3)_5\\text{SO}_4]\\text{Br} \\text{ and } [\\text{Co}(\\text{NH}_3)_5\\text{Br}]\\text{SO}_4",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "coord_comp_qn_010",
+    "question": "For [Co(NH₃)₆]³⁺, the hybridisation is d²sp³ and all electrons are paired. Which statement correctly explains both observations?",
+    "options": [
+      "\\text{NH}_3 \\text{ is a weak field ligand; uses outer d-orbitals; becomes paramagnetic}",
+      "\\text{NH}_3 \\text{ is a strong field ligand; uses inner (n-1)d orbitals; becomes diamagnetic}",
+      "\\text{NH}_3 \\text{ is a weak field ligand; uses inner (n-1)d orbitals; becomes diamagnetic}",
+      "\\text{NH}_3 \\text{ is a strong field ligand; uses outer d-orbitals; becomes paramagnetic}"
+    ],
+    "answer": "\\text{NH}_3 \\text{ is a strong field ligand; uses inner (n-1)d orbitals; becomes diamagnetic}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "d²sp³ = inner orbital (3d used) → strong field → pairs up electrons → diamagnetic. sp³d² = outer orbital → weak field → unpaired → paramagnetic."
+  },
+  {
+    "id": "coord_comp_qn_011",
+    "question": "The coordination sphere in a complex compound consists of:",
+    "options": [
+      "\\text{Counter ions only}",
+      "\\text{Central metal ion only}",
+      "\\text{Central metal ion and ligands enclosed in square brackets}",
+      "\\text{Ligands only}"
+    ],
+    "answer": "\\text{Central metal ion and ligands enclosed in square brackets}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "coord_comp_qn_012",
+    "question": "Which complex has a <b>square planar</b> geometry?",
+    "options": [
+      "[\\text{Ni}(\\text{CO})_4]",
+      "[\\text{CoCl}_4]^{2-}",
+      "[\\text{Ni}(\\text{CN})_4]^{2-}",
+      "[\\text{PtCl}_6]^{2-}"
+    ],
+    "answer": "[\\text{Ni}(\\text{CN})_4]^{2-}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "coord_comp_qn_013",
+    "question": "In [PtCl₆]²⁻, the coordination number of platinum is:",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "answer": "6",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "coord_comp_qn_014",
+    "question": "Which of the following represents a <b>homoleptic</b> complex?",
+    "options": [
+      "[\\text{Co}(\\text{NH}_3)_4\\text{Cl}_2]^+",
+      "[\\text{Co}(\\text{NH}_3)_6]^{3+}",
+      "[\\text{Pt}(\\text{NH}_3)_2\\text{Cl}_2]",
+      "[\\text{CrCl}_2(\\text{en})_2]^+"
+    ],
+    "answer": "[\\text{Co}(\\text{NH}_3)_6]^{3+}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Homoleptic = one kind of ligand only."
+  },
+  {
+    "id": "coord_comp_qn_015",
+    "question": "The IUPAC name of [Cr(NH₃)₃(H₂O)₃]Cl₃ is:",
+    "options": [
+      "\\text{triamminetriaquachromium(III) chloride}",
+      "\\text{triaquatriamminechromium(III) chloride}",
+      "\\text{chromium triammine triaqua chloride}",
+      "\\text{trichlorotriamminetriaquachromium}"
+    ],
+    "answer": "\\text{triamminetriaquachromium(III) chloride}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Ligands are named alphabetically: ammine before aqua."
+  },
+  {
+    "id": "coord_comp_qn_016",
+    "question": "Which type of isomerism is shown by [Co(NH₃)₅(NO₂)]Cl₂ and [Co(NH₃)₅(ONO)]Cl₂?",
+    "options": [
+      "\\text{Coordination isomerism}",
+      "\\text{Linkage isomerism}",
+      "\\text{Ionisation isomerism}",
+      "\\text{Geometrical isomerism}"
+    ],
+    "answer": "\\text{Linkage isomerism}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "coord_comp_qn_017",
+    "question": "In Crystal Field Theory, for an <b>octahedral</b> complex, the energy of the e_g orbitals relative to the barycentre is:",
+    "options": [
+      "+\\frac{2}{5}\\Delta_o",
+      "-\\frac{2}{5}\\Delta_o",
+      "+\\frac{3}{5}\\Delta_o",
+      "-\\frac{3}{5}\\Delta_o"
+    ],
+    "answer": "+\\frac{3}{5}\\Delta_o",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "In octahedral field: eg rises by +3/5 Δo, t₂g falls by −2/5 Δo."
+  },
+  {
+    "id": "coord_comp_qn_018",
+    "question": "Which of the following is a <b>strong field ligand</b> in the spectrochemical series?",
+    "options": [
+      "\\text{F}^-",
+      "\\text{Cl}^-",
+      "\\text{CN}^-",
+      "\\text{OH}^-"
+    ],
+    "answer": "\\text{CN}^-",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Strong field end of spectrochemical series: CO > CN⁻ > en > NH₃. Weak field end: I⁻ > Br⁻ > Cl⁻."
+  },
+  {
+    "id": "coord_comp_qn_019",
+    "question": "The colour of coordination compounds arises due to:",
+    "options": [
+      "\\text{s-p transition of electrons}",
+      "\\text{d-d transition of electrons}",
+      "\\text{p-d transition of electrons}",
+      "\\text{nuclear energy changes}"
+    ],
+    "answer": "\\text{d-d transition of electrons}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "coord_comp_qn_020",
+    "question": "A metal ion with d⁶ configuration forms an octahedral complex with a <b>weak field</b> ligand. The number of unpaired electrons and the hybridisation of the complex are, respectively:",
+    "options": [
+      "0 \\text{ unpaired electrons, } d^2sp^3",
+      "4 \\text{ unpaired electrons, } sp^3d^2",
+      "2 \\text{ unpaired electrons, } d^2sp^3",
+      "4 \\text{ unpaired electrons, } d^2sp^3"
+    ],
+    "answer": "4 \\text{ unpaired electrons, } sp^3d^2",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Weak field → high spin → d⁶ fills as t₂g⁴ eg² with 4 unpaired electrons → outer orbital → sp³d²."
+  },
+  {
+    "id": "coord_comp_qn_021",
+    "question": "EAN (Effective Atomic Number) of a metal in a complex is given by:",
+    "options": [
+      "\\text{EAN} = Z - \\text{ON} + 2\\text{CN}",
+      "\\text{EAN} = Z + \\text{ON} + 2\\text{CN}",
+      "\\text{EAN} = Z - \\text{ON} - 2\\text{CN}",
+      "\\text{EAN} = Z + \\text{ON} - 2\\text{CN}"
+    ],
+    "answer": "\\text{EAN} = Z - \\text{ON} + 2\\text{CN}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "coord_comp_qn_022",
+    "question": "Tetrahedral complexes do <b>not</b> show geometrical isomerism because:",
+    "options": [
+      "\\text{They are always homoleptic}",
+      "\\text{All positions are equivalent in a tetrahedron — there is no cis/trans distinction}",
+      "\\text{They have only 4 ligands}",
+      "\\text{They are always outer orbital complexes}"
+    ],
+    "answer": "\\text{All positions are equivalent in a tetrahedron — there is no cis/trans distinction}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "coord_comp_qn_023",
+    "question": "In an octahedral complex of the type [MA₃X₃], when the three identical ligands occupy positions on the <b>same face</b> of the octahedron, the isomer is called:",
+    "options": [
+      "\\text{trans}",
+      "\\text{mer (meridional)}",
+      "\\text{fac (facial)}",
+      "\\text{cis}"
+    ],
+    "answer": "\\text{fac (facial)}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "fac = face (triangular face); mer = meridian (one ligand on each axis of a plane)."
+  },
+  {
+    "id": "coord_comp_qn_024",
+    "question": "Wilkinson's catalyst [Rh(PPh₃)₃Cl] is used for:",
+    "options": [
+      "\\text{Polymerisation of ethylene (heterogeneous)}",
+      "\\text{Homogeneous hydrogenation of alkenes}",
+      "\\text{Hydration of alkynes}",
+      "\\text{Oxidation of primary alcohols}"
+    ],
+    "answer": "\\text{Homogeneous hydrogenation of alkenes}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Wilkinson's = homogeneous; Ziegler-Natta [TiCl₄ + Al(C₂H₅)₃] = heterogeneous polymerisation."
+  },
+  {
+    "id": "coord_comp_qn_025",
+    "question": "Which formula type of <b>square planar</b> complex gives <b>three</b> geometrical isomers?",
+    "options": [
+      "\\text{MA}_4",
+      "\\text{MA}_2\\text{X}_2",
+      "\\text{MABXL}",
+      "\\text{MA}_2\\text{BX}"
+    ],
+    "answer": "\\text{MABXL}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "coord_comp_qn_026",
+    "question": "The stability constant K of a complex is related to the instability constant K_i by:",
+    "options": [
+      "K_i = K^2",
+      "K_i = \\frac{1}{K}",
+      "K_i = K - 1",
+      "K_i = \\sqrt{K}"
+    ],
+    "answer": "K_i = \\frac{1}{K}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "coord_comp_qn_027",
+    "question": "Zeise's salt has the formula K[PtCl₃(C₂H₄)]. The ethylene ligand acts as:",
+    "options": [
+      "\\text{A σ-only donor ligand via a lone pair}",
+      "\\text{A π-donor ligand using its π electron density}",
+      "\\text{An ambidentate ligand}",
+      "\\text{A chelating ligand}"
+    ],
+    "answer": "\\text{A π-donor ligand using its π electron density}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Ethylene has no lone pair — it donates via its π bond. This is what makes it a π-bonded organometallic ligand."
+  },
+  {
+    "id": "coord_comp_qn_028",
+    "question": "In ferrocene, Fe(C₅H₅)₂, the notation η⁵ indicates that:",
+    "options": [
+      "\\text{5 iron atoms are bonded}",
+      "\\text{5 carbon atoms of each ring are bonded to iron}",
+      "\\text{the complex has 5 coordinate bonds}",
+      "\\text{iron has oxidation state +5}"
+    ],
+    "answer": "\\text{5 carbon atoms of each ring are bonded to iron}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "coord_comp_qn_029",
+    "question": "In Crystal Field Theory for a <b>tetrahedral</b> complex, which set of d-orbitals has <b>higher</b> energy?",
+    "options": [
+      "e_g \\text{ orbitals } (d_{x^2-y^2},\\ d_{z^2})",
+      "t_2 \\text{ orbitals } (d_{xy},\\ d_{yz},\\ d_{zx})",
+      "\\text{Both sets have equal energy}",
+      "\\text{Depends on the ligand}"
+    ],
+    "answer": "t_2 \\text{ orbitals } (d_{xy},\\ d_{yz},\\ d_{zx})",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Tetrahedral splitting is inverted vs octahedral: t₂ > e (opposite of octahedral where eg > t₂g)."
+  },
+  {
+    "id": "coord_comp_qn_030",
+    "question": "A student compares [CoF₆]³⁻ and [Co(CN)₆]³⁻. Both are octahedral Co(III) complexes, but one is high-spin paramagnetic and the other is low-spin diamagnetic. Which of the following correctly identifies both complexes AND the reason?",
+    "options": [
+      "[\\text{CoF}_6]^{3-} \\text{ is low spin (F}^- \\text{ is strong field); } [\\text{Co(CN)}_6]^{3-} \\text{ is high spin (CN}^- \\text{ is weak field)}",
+      "[\\text{CoF}_6]^{3-} \\text{ is high spin, paramagnetic (F}^-\\text{ weak field, }\\Delta_o < P\\text{); } [\\text{Co(CN)}_6]^{3-} \\text{ is low spin, diamagnetic (CN}^-\\text{ strong field, }\\Delta_o > P\\text{)}",
+      "\\text{Both are diamagnetic since Co(III) has d}^6 \\text{ configuration}",
+      "[\\text{Co(CN)}_6]^{3-} \\text{ is paramagnetic because CN}^-\\text{ causes more electron repulsion}"
+    ],
+    "answer": "[\\text{CoF}_6]^{3-} \\text{ is high spin, paramagnetic (F}^-\\text{ weak field, }\\Delta_o < P\\text{); } [\\text{Co(CN)}_6]^{3-} \\text{ is low spin, diamagnetic (CN}^-\\text{ strong field, }\\Delta_o > P\\text{)}",
+    "tags": {
+      "chapter": "Coordination Compounds",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  }
+]

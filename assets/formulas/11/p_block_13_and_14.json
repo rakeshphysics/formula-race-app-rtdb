@@ -1,0 +1,542 @@
+[
+  {
+    "id": "p_block_13_14_qn_001",
+    "question": "The anomalously small atomic radius of Ga compared to Al is due to:",
+    "options": [
+      "\\text{Presence of f-electrons causing poor shielding}",
+      "\\text{Presence of d-electrons causing poor shielding}",
+      "\\text{Higher ionisation enthalpy of Ga}",
+      "\\text{Inert pair effect in Ga}"
+    ],
+    "answer": "\\text{Presence of d-electrons causing poor shielding}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_002",
+    "question": "The stability of +1 oxidation state in Group 13 increases in the order:",
+    "options": [
+      "\\text{Tl} < \\text{In} < \\text{Ga} < \\text{Al}",
+      "\\text{Al} < \\text{Ga} < \\text{In} < \\text{Tl}",
+      "\\text{Ga} < \\text{Al} < \\text{In} < \\text{Tl}",
+      "\\text{In} < \\text{Ga} < \\text{Tl} < \\text{Al}"
+    ],
+    "answer": "\\text{Al} < \\text{Ga} < \\text{In} < \\text{Tl}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Inert pair effect increases down the group, making +1 state progressively more stable."
+  },
+  {
+    "id": "p_block_13_14_qn_003",
+    "question": "The reducing character of Group 13 elements decreases in the order:",
+    "options": [
+      "\\text{Tl} > \\text{In} > \\text{Ga} > \\text{Al}",
+      "\\text{Al} > \\text{Ga} > \\text{In} > \\text{Tl}",
+      "\\text{B} > \\text{Al} > \\text{Ga} > \\text{In}",
+      "\\text{Ga} > \\text{Al} > \\text{In} > \\text{Tl}"
+    ],
+    "answer": "\\text{Al} > \\text{Ga} > \\text{In} > \\text{Tl}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_004",
+    "question": "The Lewis acid strength of boron trihalides follows the order:",
+    "options": [
+      "\\text{BF}_3 > \\text{BCl}_3 > \\text{BBr}_3 > \\text{BI}_3",
+      "\\text{BI}_3 > \\text{BBr}_3 > \\text{BCl}_3 > \\text{BF}_3",
+      "\\text{BCl}_3 > \\text{BF}_3 > \\text{BBr}_3 > \\text{BI}_3",
+      "\\text{BF}_3 > \\text{BI}_3 > \\text{BBr}_3 > \\text{BCl}_3"
+    ],
+    "answer": "\\text{BI}_3 > \\text{BBr}_3 > \\text{BCl}_3 > \\text{BF}_3",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "BF\\u2083 has strongest p\\u03c0\\u2013p\\u03c0 back-bonding (F lone pair \\u2192 empty B orbital), making it least electron-deficient and weakest Lewis acid."
+  },
+  {
+    "id": "p_block_13_14_qn_005",
+    "question": "Which of the following statements about diborane (B₂H₆) is correct?",
+    "options": [
+      "\\text{B is sp}^2\\text{ hybridised with 6 equivalent B--H bonds}",
+      "\\text{B is sp}^3\\text{ hybridised; 4 terminal 2c--2e bonds and 2 bridge 3c--2e bonds}",
+      "\\text{B is sp}^3\\text{ hybridised with all 6 bonds being 3c--2e banana bonds}",
+      "\\text{B is sp hybridised with 2 terminal and 4 bridge bonds}"
+    ],
+    "answer": "\\text{B is sp}^3\\text{ hybridised; 4 terminal 2c--2e bonds and 2 bridge 3c--2e bonds}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_006",
+    "question": "In the borax bead test, what colour does the bead turn in the <b>oxidising flame</b> for <b>cobalt (Co)</b> salts?",
+    "options": [
+      "\\text{Green}",
+      "\\text{Blue}",
+      "\\text{Brown}",
+      "\\text{Yellow}"
+    ],
+    "answer": "\\text{Blue}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Bead colours: Co = blue, Fe = green, Cr = green, Ni = brown. Reaction: CoO + B₂O₃ → Co(BO₂)₂ (cobalt metaborate, blue)."
+  },
+  {
+    "id": "p_block_13_14_qn_007",
+    "question": "On strong heating, borax (Na₂B₄O₇·10H₂O) gives a glassy bead. The products formed are:",
+    "options": [
+      "\\text{NaBO}_2 + \\text{B}_2\\text{O}_3",
+      "\\text{Na}_2\\text{O} + \\text{B}_2\\text{O}_3 + \\text{H}_2\\text{O}",
+      "\\text{NaOH} + \\text{H}_3\\text{BO}_3",
+      "\\text{Na}_2\\text{B}_4\\text{O}_7 \\text{ (anhydrous only)}"
+    ],
+    "answer": "\\text{NaBO}_2 + \\text{B}_2\\text{O}_3",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_008",
+    "question": "Boric acid (H₃BO₃) is a weak acid. Its acidic character arises because it acts as a:",
+    "options": [
+      "\\text{Br\\o{}nsted acid, donating a proton directly}",
+      "\\text{Lewis acid, accepting OH}^- \\text{ from water to give [B(OH)}_4]^-",
+      "\\text{Br\\o{}nsted base, accepting H}^+",
+      "\\text{Strong dibasic acid with two ionisable H atoms}"
+    ],
+    "answer": "\\text{Lewis acid, accepting OH}^- \\text{ from water to give [B(OH)}_4]^-",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "H₃BO₃ is monobasic and a Lewis acid — it accepts OH⁻, not donates H⁺ directly."
+  },
+  {
+    "id": "p_block_13_14_qn_009",
+    "question": "The correct sequence of products on progressive heating of orthoboric acid is:",
+    "options": [
+      "\\text{H}_3\\text{BO}_3 \\overset{\\Delta}{\\rightarrow} \\text{H}_2\\text{B}_4\\text{O}_7 \\overset{\\Delta}{\\rightarrow} \\text{HBO}_2 \\overset{\\Delta}{\\rightarrow} \\text{B}_2\\text{O}_3",
+      "\\text{H}_3\\text{BO}_3 \\overset{\\Delta}{\\rightarrow} \\text{HBO}_2 \\overset{\\Delta}{\\rightarrow} \\text{H}_2\\text{B}_4\\text{O}_7 \\overset{\\Delta}{\\rightarrow} \\text{B}_2\\text{O}_3",
+      "\\text{H}_3\\text{BO}_3 \\overset{\\Delta}{\\rightarrow} \\text{NaBO}_2 \\overset{\\Delta}{\\rightarrow} \\text{B}_2\\text{O}_3",
+      "\\text{H}_3\\text{BO}_3 \\overset{\\Delta}{\\rightarrow} \\text{B}_2\\text{O}_3 \\overset{\\Delta}{\\rightarrow} \\text{HBO}_2"
+    ],
+    "answer": "\\text{H}_3\\text{BO}_3 \\overset{\\Delta}{\\rightarrow} \\text{HBO}_2 \\overset{\\Delta}{\\rightarrow} \\text{H}_2\\text{B}_4\\text{O}_7 \\overset{\\Delta}{\\rightarrow} \\text{B}_2\\text{O}_3",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Orthoboric → metaboric (273K) → tetraboric (473K) → boron trioxide. Sequence frequently tested."
+  },
+  {
+    "id": "p_block_13_14_qn_010",
+    "question": "Which of the following correctly describes the diagonal relationship between B and Si?",
+    "options": [
+      "\\text{Both form ionic hydrides and ionic halides}",
+      "\\text{Both are non-metals, semiconductors, form covalent halides that fume in moist air, and dissolve in alkali}",
+      "\\text{Both form only +3 oxidation state compounds}",
+      "\\text{Both have similar ionisation enthalpies}"
+    ],
+    "answer": "\\text{Both are non-metals, semiconductors, form covalent halides that fume in moist air, and dissolve in alkali}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_011",
+    "question": "Why can anhydrous AlCl₃ not be prepared by heating AlCl₃·6H₂O?",
+    "options": [
+      "\\text{AlCl}_3\\text{ decomposes above 100\\textdegree C}",
+      "\\text{Hydrolysis gives Al(OH)}_3\\text{ and HCl gas, not anhydrous AlCl}_3",
+      "\\text{AlCl}_3\\text{ reacts with water vapour to form Al}_2\\text{O}_3",
+      "\\text{AlCl}_3\\text{ sublimes before dehydration is complete}"
+    ],
+    "answer": "\\text{Hydrolysis gives Al(OH)}_3\\text{ and HCl gas, not anhydrous AlCl}_3",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_012",
+    "question": "In the general formula of alums X⁺Y³⁺(SO₄)₂·24H₂O, which monovalent cation does <b>not</b> form alum?",
+    "options": [
+      "\\text{K}^+",
+      "\\text{Na}^+",
+      "\\text{Li}^+",
+      "\\text{NH}_4^+"
+    ],
+    "answer": "\\text{Li}^+",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Li⁺ is too small to fit the alum crystal structure."
+  },
+  {
+    "id": "p_block_13_14_qn_013",
+    "question": "Borazine (B₃N₃H₆) is prepared by the reaction of diborane with ammonia. The balanced equation is:",
+    "options": [
+      "\\text{B}_2\\text{H}_6 + \\text{NH}_3 \\rightarrow \\text{BN} + 3\\text{H}_2",
+      "3\\text{B}_2\\text{H}_6 + 6\\text{NH}_3 \\rightarrow 2\\text{B}_3\\text{N}_3\\text{H}_6 + 12\\text{H}_2",
+      "\\text{B}_2\\text{H}_6 + 3\\text{NH}_3 \\rightarrow \\text{B}_3\\text{N}_3\\text{H}_6 + 3\\text{H}_2",
+      "2\\text{B}_2\\text{H}_6 + 3\\text{NH}_3 \\rightarrow \\text{B}_3\\text{N}_3\\text{H}_6 + 6\\text{H}_2"
+    ],
+    "answer": "3\\text{B}_2\\text{H}_6 + 6\\text{NH}_3 \\rightarrow 2\\text{B}_3\\text{N}_3\\text{H}_6 + 12\\text{H}_2",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_014",
+    "question": "TlCl₃ acts as an oxidising agent because it readily decomposes to:",
+    "options": [
+      "\\text{Tl}_2\\text{O}_3 + \\text{Cl}_2",
+      "\\text{TlCl} + \\text{Cl}_2",
+      "\\text{TlCl}_2 + \\text{Cl}",
+      "\\text{Tl} + \\text{Cl}_2"
+    ],
+    "answer": "\\text{TlCl} + \\text{Cl}_2",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_015",
+    "question": "Borazine (B₃N₃H₆) is called inorganic benzene. Which statement about it is correct?",
+    "options": [
+      "\\text{It has complete } \\pi\\text{-electron delocalisation like benzene}",
+      "\\text{It is less reactive than benzene due to partial } \\pi\\text{-delocalisation}",
+      "\\text{It has partial } \\pi\\text{-delocalisation and is more reactive than benzene}",
+      "\\text{It is ionic in nature}"
+    ],
+    "answer": "\\text{It has partial } \\pi\\text{-delocalisation and is more reactive than benzene}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_016",
+    "question": "The correct decreasing order of catenation among Group 14 elements is:",
+    "options": [
+      "\\text{Si} > \\text{C} >> \\text{Ge} > \\text{Sn} > \\text{Pb}",
+      "\\text{C} >> \\text{Si} > \\text{Ge} \\approx \\text{Sn} > \\text{Pb}",
+      "\\text{C} > \\text{Si} > \\text{Ge} > \\text{Sn} > \\text{Pb}",
+      "\\text{Pb} > \\text{Sn} > \\text{Ge} > \\text{Si} > \\text{C}"
+    ],
+    "answer": "\\text{C} >> \\text{Si} > \\text{Ge} \\approx \\text{Sn} > \\text{Pb}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_017",
+    "question": "Which Group 14 element does <b>not</b> exhibit allotropy?",
+    "options": [
+      "\\text{Carbon}",
+      "\\text{Silicon}",
+      "\\text{Tin}",
+      "\\text{Lead}"
+    ],
+    "answer": "\\text{Lead}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_018",
+    "question": "Which of the following correctly describes diamond and graphite?",
+    "options": [
+      "\\text{Diamond: sp}^2\\text{, conductor; Graphite: sp}^3\\text{, insulator}",
+      "\\text{Diamond: sp}^3\\text{, insulator, hardest; Graphite: sp}^2\\text{, conductor, thermodynamically most stable}",
+      "\\text{Both: sp}^3\\text{, both are conductors}",
+      "\\text{Diamond: sp}^3\\text{, conductor; Graphite: sp}^2\\text{, insulator}"
+    ],
+    "answer": "\\text{Diamond: sp}^3\\text{, insulator, hardest; Graphite: sp}^2\\text{, conductor, thermodynamically most stable}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_019",
+    "question": "Fullerene C₆₀ contains:",
+    "options": [
+      "\\text{20 five-membered and 12 six-membered rings}",
+      "\\text{12 five-membered and 20 six-membered rings}",
+      "\\text{60 six-membered rings only}",
+      "\\text{30 five-membered and 30 six-membered rings}"
+    ],
+    "answer": "\\text{12 five-membered and 20 six-membered rings}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_020",
+    "question": "Among Group 14 tetrahalides, which element's tetrahalide does <b>not</b> undergo hydrolysis, and why?",
+    "options": [
+      "\\text{Pb — too heavy to react with water}",
+      "\\text{C — no vacant d-orbitals to accommodate attacking water molecules}",
+      "\\text{Si — Si--X bond is too strong}",
+      "\\text{Ge — inert pair effect prevents reaction}"
+    ],
+    "answer": "\\text{C — no vacant d-orbitals to accommodate attacking water molecules}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_021",
+    "question": "SiO₂ is attacked by only two reagents. These are:",
+    "options": [
+      "\\text{HCl and NaOH}",
+      "\\text{HF and NaOH}",
+      "\\text{HNO}_3\\text{ and HF}",
+      "\\text{HF and H}_2\\text{SO}_4"
+    ],
+    "answer": "\\text{HF and NaOH}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_022",
+    "question": "The basic structural unit of all silicates is:",
+    "options": [
+      "\\text{SiO}_3^{2-}",
+      "\\text{SiO}_4^{4-} \\text{ tetrahedron}",
+      "\\text{Si}_2\\text{O}_7^{6-}",
+      "\\text{SiO}_2 \\text{ unit}"
+    ],
+    "answer": "\\text{SiO}_4^{4-} \\text{ tetrahedron}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_023",
+    "question": "In silicates, a <b>pyrosilicate</b> is formed when two SiO₄⁴⁻ units share:",
+    "options": [
+      "\\text{No oxygen atoms (isolated units)}",
+      "\\text{One oxygen atom between two tetrahedra}",
+      "\\text{Two oxygen atoms per tetrahedron}",
+      "\\text{All four oxygen atoms}"
+    ],
+    "answer": "\\text{One oxygen atom between two tetrahedra}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_024",
+    "question": "The acidic/basic nature of Group 14 dioxides follows which pattern?",
+    "options": [
+      "\\text{CO}_2\\text{ acidic; SiO}_2\\text{ acidic; GeO}_2\\text{, SnO}_2\\text{, PbO}_2\\text{ amphoteric}",
+      "\\text{CO}_2\\text{ neutral; SiO}_2\\text{ basic; PbO}_2\\text{ acidic}",
+      "\\text{All Group 14 dioxides are amphoteric}",
+      "\\text{CO}_2\\text{ basic; SiO}_2\\text{ acidic; PbO}_2\\text{ neutral}"
+    ],
+    "answer": "\\text{CO}_2\\text{ acidic; SiO}_2\\text{ acidic; GeO}_2\\text{, SnO}_2\\text{, PbO}_2\\text{ amphoteric}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_025",
+    "question": "In Group 14, the +2 oxidation state gives <b>ionic</b> compounds while the +4 state gives <b>covalent</b> compounds. This is explained by:",
+    "options": [
+      "\\text{Inert pair effect only}",
+      "\\text{Fajan's rule — higher charge/smaller size of M}^{4+}\\text{ causes more polarisation}",
+      "\\text{Electronegativity differences between M and X}",
+      "\\text{Catenation tendency of the element}"
+    ],
+    "answer": "\\text{Fajan's rule — higher charge/smaller size of M}^{4+}\\text{ causes more polarisation}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_026",
+    "question": "Carbon monoxide is highly toxic because:",
+    "options": [
+      "\\text{It reacts with haemoglobin to form a stable complex, blocking O}_2\\text{ transport}",
+      "\\text{It directly destroys lung tissue}",
+      "\\text{It reacts with CO}_2\\text{ in blood to form carbonic acid}",
+      "\\text{It reduces iron in the blood to Fe}^0"
+    ],
+    "answer": "\\text{It reacts with haemoglobin to form a stable complex, blocking O}_2\\text{ transport}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_027",
+    "question": "The repeating unit in <b>silicones</b> is:",
+    "options": [
+      "[-\\text{SiO}_2-]_n",
+      "[-\\text{R}_2\\text{SiO}-]_n",
+      "[-\\text{RSiO}_3-]_n",
+      "[-\\text{Si}_2\\text{O}_3\\text{R}_2-]_n"
+    ],
+    "answer": "[-\\text{R}_2\\text{SiO}-]_n",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_028",
+    "question": "Glass is described as 'not a true solid' because:",
+    "options": [
+      "\\text{It is made of crystalline SiO}_2",
+      "\\text{It has no sharp melting point -- it is an amorphous substance}",
+      "\\text{It contains both ionic and covalent bonds}",
+      "\\text{It decomposes before melting}"
+    ],
+    "answer": "\\text{It has no sharp melting point -- it is an amorphous substance}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_and_14_qn_029",
+    "question": "Tin disease (tin plague) refers to which transformation, and under what condition?",
+    "options": [
+      "\\text{White Sn (}\\beta\\text{, metallic)} \\rightarrow \\text{Grey Sn (}\\alpha\\text{, brittle) at low temperatures; density decreases}",
+      "\\text{Grey Sn} \\rightarrow \\text{White Sn at low temperatures; density increases}",
+      "\\text{White Sn} \\rightarrow \\text{Black Sn at high temperatures}",
+      "\\text{Sn}^{2+}\\text{ oxidising to Sn}^{4+}\\text{ in cold weather}"
+    ],
+    "answer": "\\text{White Sn (}\\beta\\text{, metallic)} \\rightarrow \\text{Grey Sn (}\\alpha\\text{, brittle) at low temperatures; density decreases}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "p_block_13_14_qn_030",
+    "question": "BX₃ compounds exist as <b>monomers</b> while AlX₃ exists as <b>dimers</b> (Al₂X₆). The reason BX₃ does not dimerize is:",
+    "options": [
+      "\\text{B is too electronegative to form bridge bonds}",
+      "\\text{B is too small to coordinate with four large halide ions; also p}\\pi\\text{--p}\\pi\\text{ back-bonding in BF}_3\\text{ makes it stable}",
+      "\\text{B--X bonds are too strong to break for bridge formation}",
+      "\\text{B has no vacant d-orbitals unlike Al}"
+    ],
+    "answer": "\\text{B is too small to coordinate with four large halide ions; also p}\\pi\\text{--p}\\pi\\text{ back-bonding in BF}_3\\text{ makes it stable}",
+    "tags": {
+      "chapter": "The p-Block Elements (Groups 13-14)",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  }
+]

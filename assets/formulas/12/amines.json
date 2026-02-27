@@ -1,0 +1,422 @@
+[
+  {
+    "id": "amines_qn_001",
+    "question": "Gabriel phthalimide synthesis is used to prepare only primary amines. The reaction cannot be used to prepare primary aryl amines because:",
+    "options": [
+      "\\text{Aryl halides do not undergo nucleophilic substitution with potassium phthalimide}",
+      "\\text{Aryl halides react too fast with phthalimide}",
+      "\\text{Aromatic primary amines are unstable}",
+      "\\text{Phthalimide does not dissolve in the presence of aryl halides}"
+    ],
+    "answer": "\\text{Aryl halides do not undergo nucleophilic substitution with potassium phthalimide}",
+    "tags": { "chapter": "Amines", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_002",
+    "question": "Carbylamine reaction is used as a test for primary amines only. The reagents are:",
+    "options": [
+      "\\text{CHCl}_3 + \\text{KOH (alc.), heat}",
+      "\\text{CCl}_4 + \\text{NaOH}",
+      "\\text{CHCl}_3 + \\text{HCl}",
+      "\\text{CH}_2\\text{Cl}_2 + \\text{KOH}"
+    ],
+    "answer": "\\text{CHCl}_3 + \\text{KOH (alc.), heat}",
+    "tags": { "chapter": "Amines", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_003",
+    "question": "The boiling point order among isomeric amines (same molecular formula) is:",
+    "options": [
+      "1^\\circ > 2^\\circ > 3^\\circ",
+      "3^\\circ > 2^\\circ > 1^\\circ",
+      "2^\\circ > 1^\\circ > 3^\\circ",
+      "1^\\circ = 2^\\circ > 3^\\circ"
+    ],
+    "answer": "1^\\circ > 2^\\circ > 3^\\circ",
+    "tags": { "chapter": "Amines", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": "Tertiary amines have no N-H bond → no intermolecular H-bonding → lowest BP. Primary has two N-H bonds → strongest H-bonding → highest BP."
+  },
+  {
+    "id": "amines_qn_004",
+    "question": "Diazotisation of aniline requires temperature of 273-278 K. Excess HCl is added because:",
+    "options": [
+      "\\text{To prevent coupling of diazonium salt with undiazotised aniline}",
+      "\\text{To increase the solubility of aniline}",
+      "\\text{To convert diazonium salt to phenol}",
+      "\\text{To stabilise the diazonium salt as a solid}"
+    ],
+    "answer": "\\text{To prevent coupling of diazonium salt with undiazotised aniline}",
+    "tags": { "chapter": "Amines", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_005",
+    "question": "Reduction of nitrobenzene with Zn/NaOH gives:",
+    "options": [
+      "\\text{Azobenzene (Ph-N=N-Ph)}",
+      "\\text{Aniline}",
+      "\\text{N-phenylhydroxylamine}",
+      "\\text{Azoxybenzene}"
+    ],
+    "answer": "\\text{Azobenzene (Ph-N=N-Ph)}",
+    "tags": { "chapter": "Amines", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "Memory aid for nitrobenzene reduction products by medium — Acid: aniline. Neutral (Zn/NH4Cl): N-phenylhydroxylamine. Alkaline (Zn/NaOH): azobenzene. Strongly alkaline (Zn/NaOH + ethanol): hydrazobenzene."
+  },
+  {
+    "id": "amines_qn_006",
+    "question": "Hinsberg's test distinguishes 1°, 2°, and 3° amines using benzenesulphonyl chloride. Which amine gives a product insoluble in alkali?",
+    "options": [
+      "2^\\circ \\text{ amine}",
+      "1^\\circ \\text{ amine}",
+      "3^\\circ \\text{ amine}",
+      "\\text{All give alkali-insoluble products}"
+    ],
+    "answer": "2^\\circ \\text{ amine}",
+    "tags": { "chapter": "Amines", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "1° amine → sulphonamide with acidic N-H → soluble in alkali. 2° amine → sulphonamide with no N-H → insoluble in alkali. 3° amine → no reaction."
+  },
+  {
+    "id": "amines_qn_007",
+    "question": "Aniline cannot be directly nitrated with HNO3/H2SO4 at room temperature because:",
+    "options": [
+      "\\text{Aniline gets oxidised/protonated; amino group is acetylated first to protect it}",
+      "\\text{Aniline is insoluble in the nitrating mixture}",
+      "\\text{Nitration requires higher temperature than aniline can withstand}",
+      "\\text{HNO}_3\\text{ reacts with aniline to give a salt, not a nitro compound}"
+    ],
+    "answer": "\\text{Aniline gets oxidised/protonated; amino group is acetylated first to protect it}",
+    "tags": { "chapter": "Amines", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_008",
+    "question": "Sulphonation of aniline gives sulphanilic acid as the major product. Sulphanilic acid exists as a zwitterion because:",
+    "options": [
+      "\\text{The -NH}_2\\text{ group gets protonated and the -SO}_3\\text{H group loses a proton intramolecularly}",
+      "\\text{It has two amino groups}",
+      "\\text{Sulphonic acid group donates a proton to water}",
+      "\\text{The benzene ring carries both positive and negative resonance structures}"
+    ],
+    "answer": "\\text{The -NH}_2\\text{ group gets protonated and the -SO}_3\\text{H group loses a proton intramolecularly}",
+    "tags": { "chapter": "Amines", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_009",
+    "question": "In Sandmeyer reaction, benzene diazonium chloride gives chlorobenzene using CuCl/HCl. The Gattermann reaction achieves the same product using:",
+    "options": [
+      "\\text{Cu powder / HCl (instead of CuCl)}",
+      "\\text{CuCl}_2\\text{ / HCl}",
+      "\\text{FeCl}_3\\text{ / HCl}",
+      "\\text{ZnCl}_2\\text{ / HCl}"
+    ],
+    "answer": "\\text{Cu powder / HCl (instead of CuCl)}",
+    "tags": { "chapter": "Amines", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_010",
+    "question": "In aqueous solution, the basicity order of methylamines is (CH3)2NH > CH3NH2 > (CH3)3N > NH3, yet in gas phase (CH3)3N > (CH3)2NH > CH3NH2 > NH3. The reason for the reversal of trimethylamine in aqueous solution is:",
+    "options": [
+      "\\text{(CH}_3\\text{)}_3\\text{N cannot form H-bonds with water (no N-H); solvation of the bulky trimethylammonium ion is poor, destabilising it}",
+      "\\text{(CH}_3\\text{)}_3\\text{N has the highest +I effect, making it too basic}",
+      "\\text{(CH}_3\\text{)}_3\\text{N reacts with water to give a precipitate}",
+      "\\text{Trimethylamine has a lower lone pair availability due to steric effects of three methyl groups}"
+    ],
+    "answer": "\\text{(CH}_3\\text{)}_3\\text{N cannot form H-bonds with water (no N-H); solvation of the bulky trimethylammonium ion is poor, destabilising it}",
+    "tags": { "chapter": "Amines", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": "Basicity in solution = inductive effect + solvation of conjugate acid. Trimethylammonium ion (no N-H) is poorly solvated → conjugate acid less stable → base appears weaker. In gas phase, only +I effect operates → more methyl groups = stronger base."
+  },
+  {
+    "id": "amines_qn_011",
+    "question": "Hofmann bromamide reaction converts RCONH2 to RNH2. The amine product has:",
+    "options": [
+      "\\text{One carbon less than the amide}",
+      "\\text{Same number of carbons as the amide}",
+      "\\text{One carbon more than the amide}",
+      "\\text{Two carbons less than the amide}"
+    ],
+    "answer": "\\text{One carbon less than the amide}",
+    "tags": { "chapter": "Amines", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_012",
+    "question": "Coupling reaction of benzene diazonium chloride with aniline in slightly acidic medium gives:",
+    "options": [
+      "\\text{p-aminoazobenzene (yellow dye)}",
+      "\\text{p-hydroxyazobenzene (orange dye)}",
+      "\\text{Benzene + N}_2",
+      "\\text{Biphenyl}"
+    ],
+    "answer": "\\text{p-aminoazobenzene (yellow dye)}",
+    "tags": { "chapter": "Amines", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": "Coupling with aniline (pH slightly acidic) → yellow dye. Coupling with phenol (pH 9-10, alkaline) → orange dye."
+  },
+  {
+    "id": "amines_qn_013",
+    "question": "Deamination of benzene diazonium chloride using hypophosphorous acid (H3PO2) gives:",
+    "options": [
+      "\\text{Benzene} + N_2",
+      "\\text{Phenol} + N_2",
+      "\\text{Fluorobenzene} + N_2",
+      "\\text{Biphenyl} + N_2"
+    ],
+    "answer": "\\text{Benzene} + N_2",
+    "tags": { "chapter": "Amines", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_014",
+    "question": "Reaction of primary aliphatic amine with HNO2 (NaNO2 + HCl) gives:",
+    "options": [
+      "\\text{Diazonium salt which is unstable and immediately decomposes to alcohol + N}_2",
+      "\\text{Stable diazonium salt like aromatic amines}",
+      "\\text{N-nitroso compound}",
+      "\\text{Nitroalkane}"
+    ],
+    "answer": "\\text{Diazonium salt which is unstable and immediately decomposes to alcohol + N}_2",
+    "tags": { "chapter": "Amines", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_015",
+    "question": "Ammonolysis of alkyl halides gives a mixture of 1°, 2°, 3° amines and quaternary salt. To maximise primary amine yield, the condition used is:",
+    "options": [
+      "\\text{Large excess of NH}_3",
+      "\\text{Large excess of alkyl halide}",
+      "\\text{High temperature}",
+      "\\text{Using a tertiary alkyl halide}"
+    ],
+    "answer": "\\text{Large excess of NH}_3",
+    "tags": { "chapter": "Amines", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_016",
+    "question": "Aromatic amines are weaker bases than aliphatic amines. The reason is:",
+    "options": [
+      "\\text{Lone pair on N is delocalised into the benzene ring via resonance, reducing availability for protonation}",
+      "\\text{Aromatic amines have higher molecular weight}",
+      "\\text{The benzene ring donates electrons to nitrogen, making it too electron-rich}",
+      "\\text{Aromatic amines form stronger H-bonds with water than aliphatic amines}"
+    ],
+    "answer": "\\text{Lone pair on N is delocalised into the benzene ring via resonance, reducing availability for protonation}",
+    "tags": { "chapter": "Amines", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_017",
+    "question": "o-substituted anilines are weaker bases than aniline regardless of whether the substituent is electron-donating or electron-withdrawing. This is called:",
+    "options": [
+      "\\text{Ortho effect (due to steric and electronic factors)}",
+      "\\text{Inductive effect}",
+      "\\text{Resonance effect}",
+      "\\text{Hyperconjugation effect}"
+    ],
+    "answer": "\\text{Ortho effect (due to steric and electronic factors)}",
+    "tags": { "chapter": "Amines", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_018",
+    "question": "Reduction of nitrobenzene with Zn/NH4Cl (neutral medium) gives:",
+    "options": [
+      "\\text{N-phenylhydroxylamine}",
+      "\\text{Aniline}",
+      "\\text{Azobenzene}",
+      "\\text{Azoxybenzene}"
+    ],
+    "answer": "\\text{N-phenylhydroxylamine}",
+    "tags": { "chapter": "Amines", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_019",
+    "question": "Aniline does not undergo Friedel-Crafts reaction. The reason is:",
+    "options": [
+      "\\text{AlCl}_3\\text{ forms a salt with -NH}_2\\text{, making N positively charged — this strongly deactivates the ring}",
+      "\\text{Aniline is insoluble in the reaction medium}",
+      "\\text{The -NH}_2\\text{ group is a meta director}",
+      "\\text{Acyl chlorides react with the amine group instead of the ring}"
+    ],
+    "answer": "\\text{AlCl}_3\\text{ forms a salt with -NH}_2\\text{, making N positively charged — this strongly deactivates the ring}",
+    "tags": { "chapter": "Amines", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_020",
+    "question": "Bromination of aniline with Br2/H2O gives 2,4,6-tribromoaniline immediately, while bromination of benzene requires Br2/FeBr3 and gives monobromobenzene. The correct explanation for both observations is:",
+    "options": [
+      "\\text{-NH}_2\\text{ strongly activates all three ortho/para positions via +M effect — no catalyst needed and all three positions substitute. Benzene is unactivated — needs Lewis acid catalyst and only one substitution occurs under mild conditions}",
+      "\\text{Water acts as catalyst for aniline bromination}",
+      "\\text{Aniline has three times the molecular weight of benzene}",
+      "\\text{Bromine water is a stronger brominating agent than Br}_2\\text{/FeBr}_3"
+    ],
+    "answer": "\\text{-NH}_2\\text{ strongly activates all three ortho/para positions via +M effect — no catalyst needed and all three positions substitute. Benzene is unactivated — needs Lewis acid catalyst and only one substitution occurs under mild conditions}",
+    "tags": { "chapter": "Amines", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": "To get monobromination of aniline: protect the -NH2 by acetylation first → reduced activation → monosubstitution. Deprotect after."
+  },
+  {
+    "id": "amines_qn_021",
+    "question": "Reaction of secondary amine with HNO2 (NaNO2 + HCl) gives:",
+    "options": [
+      "\\text{N-nitroso compound (R}_2\\text{N-NO, yellow oil)}",
+      "\\text{Diazonium salt}",
+      "\\text{Alcohol + N}_2",
+      "\\text{Nitroamine}"
+    ],
+    "answer": "\\text{N-nitroso compound (R}_2\\text{N-NO, yellow oil)}",
+    "tags": { "chapter": "Amines", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_022",
+    "question": "Zinin reduction selectively reduces one -NO2 group in m-dinitrobenzene. The reagent used is:",
+    "options": [
+      "(\\text{NH}_4)_2\\text{S (ammonium sulphide)}",
+      "\\text{Sn/HCl}",
+      "\\text{LiAlH}_4",
+      "\\text{Zn/NaOH}"
+    ],
+    "answer": "(\\text{NH}_4)_2\\text{S (ammonium sulphide)}",
+    "tags": { "chapter": "Amines", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": "Zinin reduction is the only method that selectively reduces one -NO2 without touching the other. Product: m-nitroaniline from m-dinitrobenzene."
+  },
+  {
+    "id": "amines_qn_023",
+    "question": "Electrolytic reduction of nitrobenzene in dilute H2SO4 (acidic medium) gives:",
+    "options": [
+      "\\text{p-aminophenol}",
+      "\\text{Aniline}",
+      "\\text{N-phenylhydroxylamine}",
+      "\\text{Azobenzene}"
+    ],
+    "answer": "\\text{p-aminophenol}",
+    "tags": { "chapter": "Amines", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": "p-aminophenol is industrially important — it is used to make paracetamol (acetaminophen). This is the only route from nitrobenzene that gives a phenol product."
+  },
+  {
+    "id": "amines_qn_024",
+    "question": "Hofmann elimination involves exhaustive methylation of an amine followed by treatment with Ag2O/H2O and heating. The alkene formed is:",
+    "options": [
+      "\\text{Less substituted alkene (anti-Saytzeff product)}",
+      "\\text{More substituted alkene (Saytzeff product)}",
+      "\\text{No alkene — only quaternary salt forms}",
+      "\\text{Cyclic alkene always}"
+    ],
+    "answer": "\\text{Less substituted alkene (anti-Saytzeff product)}",
+    "tags": { "chapter": "Amines", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": "Hofmann vs Saytzeff: Hofmann elimination gives the less substituted (less stable) alkene because the bulky trimethylamine leaving group forces the base to abstract the more accessible (less hindered) beta-H."
+  },
+  {
+    "id": "amines_qn_025",
+    "question": "Primary nitroalkanes give nitrolic acid with HNO2, which turns red with NaOH. Secondary nitroalkanes give pseudo nitrol, which turns blue with NaOH. What do tertiary nitroalkanes give with HNO2?",
+    "options": [
+      "\\text{No reaction (no alpha-H available)}",
+      "\\text{Nitrolic acid}",
+      "\\text{Pseudo nitrol}",
+      "\\text{Nitroalkene}"
+    ],
+    "answer": "\\text{No reaction (no alpha-H available)}",
+    "tags": { "chapter": "Amines", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "Pattern: HNO2 with nitroalkanes requires alpha-H. 1° has two alpha-H → nitrolic acid (red with NaOH). 2° has one alpha-H → pseudo nitrol (blue with NaOH). 3° has no alpha-H → no reaction."
+  },
+  {
+    "id": "amines_qn_026",
+    "question": "In Hofmann's method of separating amines, diethyl oxalate reacts with a mixture of 1°, 2°, and 3° amines. Which amine does NOT react?",
+    "options": [
+      "3^\\circ \\text{ amine}",
+      "1^\\circ \\text{ amine}",
+      "2^\\circ \\text{ amine}",
+      "\\text{All three react}"
+    ],
+    "answer": "3^\\circ \\text{ amine}",
+    "tags": { "chapter": "Amines", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_027",
+    "question": "Alkyl nitrile (RCN) and alkyl isocyanide (RNC) are isomers. At 250°C, alkyl isocyanide isomerises to:",
+    "options": [
+      "\\text{Alkyl nitrile (RCN)}",
+      "\\text{Primary amine}",
+      "\\text{Aldehyde}",
+      "\\text{Carboxylic acid}"
+    ],
+    "answer": "\\text{Alkyl nitrile (RCN)}",
+    "tags": { "chapter": "Amines", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_028",
+    "question": "Arenediazonium salts are more stable than alkyldiazonium salts. The reason is:",
+    "options": [
+      "\\text{Arenediazonium ion is resonance-stabilised — positive charge delocalises into the benzene ring}",
+      "\\text{Aromatic ring increases the molecular weight}",
+      "\\text{The N≡N bond is stronger in arenediazonium than alkyldiazonium}",
+      "\\text{Arenediazonium ions form stronger ionic bonds with Cl}^-"
+    ],
+    "answer": "\\text{Arenediazonium ion is resonance-stabilised — positive charge delocalises into the benzene ring}",
+    "tags": { "chapter": "Amines", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_029",
+    "question": "Reduction of an alkyl nitrile (RCN) with Na/C2H5OH gives a primary amine (Mendius reduction). Reduction of RCN with SnCl2/HCl gives an imine hydrochloride which on hydrolysis gives:",
+    "options": [
+      "\\text{Aldehyde (RCHO) + NH}_4\\text{Cl}",
+      "\\text{Primary amine (RCH}_2\\text{NH}_2\\text{)}",
+      "\\text{Carboxylic acid (RCOOH)}",
+      "\\text{Ketone}"
+    ],
+    "answer": "\\text{Aldehyde (RCHO) + NH}_4\\text{Cl}",
+    "tags": { "chapter": "Amines", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "amines_qn_030",
+    "question": "In strong acidic medium, aniline is protonated to give anilinium ion. This changes the directing effect of the nitrogen group from ortho/para to meta. In nitration under these conditions, the products are a mixture of ortho, para (from unprotonated aniline) AND meta (from anilinium ion). Which observation correctly explains why the meta product is obtained at all, even though -NH2 is always o/p directing?",
+    "options": [
+      "\\text{In strongly acidic medium, a fraction of aniline exists as -NH}_3^+\\text{ (anilinium ion) — this group is electron-withdrawing and meta-directing, so that fraction gives meta-nitroaniline}",
+      "\\text{High temperature in acidic medium reverses the directing effect}",
+      "\\text{HNO}_3\\text{ itself changes the directing effect in the presence of H}_2\\text{SO}_4",
+      "\\text{Meta product arises from rearrangement of ortho product}"
+    ],
+    "answer": "\\text{In strongly acidic medium, a fraction of aniline exists as -NH}_3^+\\text{ (anilinium ion) — this group is electron-withdrawing and meta-directing, so that fraction gives meta-nitroaniline}",
+    "tags": { "chapter": "Amines", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": null
+  }
+]

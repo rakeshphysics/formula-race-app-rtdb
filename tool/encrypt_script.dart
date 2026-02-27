@@ -65,6 +65,22 @@ void main() {
     '${baseDir}11/hydrocarbons.json',
     '${baseDir}11/hyperbola.json',
     '${baseDir}11/sequence_and_series.json',
+    '${baseDir}12/haloalkanes_and_haloarenes.json',
+    '${baseDir}12/alcohols_phenols_and_ethers.json',
+    '${baseDir}12/aldehydes_and_ketones.json',
+    '${baseDir}12/carboxylic_acids.json',
+    '${baseDir}12/amines.json',
+    '${baseDir}12/biomolecules.json',
+    '${baseDir}11/basic_concepts_of_chemistry.json',
+    '${baseDir}11/classification_of_elements.json',
+    '${baseDir}11/chemical_bonding.json',
+    '${baseDir}11/thermodynamics_chem.json',
+    '${baseDir}11/redox_reactions.json',
+    '${baseDir}11/p_block_13_and_14.json',
+    '${baseDir}12/p_block_15_to_18.json',
+    '${baseDir}12/d_and_f_block.json',
+    '${baseDir}12/coordination_compounds.json',
+
   ];
 
   final encrypter = Encrypter(AES(key));

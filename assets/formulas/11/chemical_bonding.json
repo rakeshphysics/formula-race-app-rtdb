@@ -1,0 +1,422 @@
+[
+  {
+    "id": "chemical_bonding_qn_001",
+    "question": "The formal charge on an atom in a Lewis structure is calculated as: valence electrons − lone pair electrons − _____ of bonding electrons.",
+    "options": [
+      "\\text{one-third}",
+      "\\text{one-half}",
+      "\\text{two-thirds}",
+      "\\text{all}"
+    ],
+    "answer": "\\text{one-half}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_002",
+    "question": "Which statement correctly describes Fajan's rule for covalent character of an ionic bond?",
+    "options": [
+      "\\text{Larger cation + smaller anion} \\rightarrow \\text{more covalent character}",
+      "\\text{Smaller cation + larger anion} \\rightarrow \\text{more covalent character}",
+      "\\text{Larger cation + larger anion} \\rightarrow \\text{more covalent character}",
+      "\\text{Smaller cation + smaller anion} \\rightarrow \\text{more covalent character}"
+    ],
+    "answer": "\\text{Smaller cation + larger anion} \\rightarrow \\text{more covalent character}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_003",
+    "question": "The dipole moment (μ) is defined as:",
+    "options": [
+      "\\mu = Q / r",
+      "\\mu = Q \\times r",
+      "\\mu = Q + r",
+      "\\mu = Q^2 \\times r"
+    ],
+    "answer": "\\mu = Q \\times r",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_004",
+    "question": "1 Debye (D) is equal to:",
+    "options": [
+      "1 \\times 10^{-18} \\text{ esu·cm}",
+      "3.336 \\times 10^{-30} \\text{ C·m}",
+      "3.336 \\times 10^{-18} \\text{ C·m}",
+      "1 \\times 10^{-10} \\text{ esu·cm}"
+    ],
+    "answer": "3.336 \\times 10^{-30} \\text{ C·m}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_005",
+    "question": "According to VSEPR theory, the correct decreasing order of repulsive interactions between electron pairs is:",
+    "options": [
+      "\\text{lp-lp} > \\text{lp-bp} > \\text{bp-bp}",
+      "\\text{bp-bp} > \\text{lp-bp} > \\text{lp-lp}",
+      "\\text{lp-bp} > \\text{lp-lp} > \\text{bp-bp}",
+      "\\text{bp-bp} > \\text{lp-lp} > \\text{lp-bp}"
+    ],
+    "answer": "\\text{lp-lp} > \\text{lp-bp} > \\text{bp-bp}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_006",
+    "question": "Using the hybridisation formula Z = ½[V + M + C⁻ − C⁺], the hybridisation of S in SO₄²⁻ is:",
+    "options": [
+      "sp^2",
+      "sp^3",
+      "sp^3d",
+      "sp^3d^2"
+    ],
+    "answer": "sp^3",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Z = ½[6 + 0 + 2 − 0] = 4 → sp³"
+  },
+  {
+    "id": "chemical_bonding_qn_007",
+    "question": "In Molecular Orbital theory, the bond order (BO) formula is:",
+    "options": [
+      "BO = N_b - N_a",
+      "BO = \\dfrac{N_b - N_a}{2}",
+      "BO = \\dfrac{N_b + N_a}{2}",
+      "BO = 2(N_b - N_a)"
+    ],
+    "answer": "BO = \\dfrac{N_b - N_a}{2}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Nb = electrons in bonding MOs, Na = electrons in anti-bonding MOs"
+  },
+  {
+    "id": "chemical_bonding_qn_008",
+    "question": "The Born-Haber cycle for formation of NaCl gives the total enthalpy Q as:",
+    "options": [
+      "Q = S + I + \\frac{1}{2}D + E - U",
+      "Q = S + I + \\frac{1}{2}D - E - U",
+      "Q = S - I + \\frac{1}{2}D - E + U",
+      "Q = S + I - \\frac{1}{2}D - E - U"
+    ],
+    "answer": "Q = S + I + \\frac{1}{2}D - E - U",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "S = sublimation, I = ionisation, D = dissociation, E = electron gain enthalpy, U = lattice enthalpy"
+  },
+  {
+    "id": "chemical_bonding_qn_009",
+    "question": "The Hannay-Smith equation for percentage ionic character in terms of electronegativities X<sub>A</sub> and X<sub>B</sub> is:",
+    "options": [
+      "16(X_A - X_B) + 3.5(X_A - X_B)^2",
+      "16(X_A - X_B) - 3.5(X_A - X_B)^2",
+      "3.5(X_A - X_B) + 16(X_A - X_B)^2",
+      "16(X_A + X_B) + 3.5(X_A - X_B)^2"
+    ],
+    "answer": "16(X_A - X_B) + 3.5(X_A - X_B)^2",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_010",
+    "question": "For homonuclear diatomic molecules with <b>up to 14 electrons</b> (e.g. B₂, C₂, N₂), the correct increasing MO energy order is:",
+    "options": [
+      "\\sigma_{1s} < \\sigma^*_{1s} < \\sigma_{2s} < \\sigma^*_{2s} < \\sigma_{2p_z} < \\pi_{2p_x} \\approx \\pi_{2p_y} < \\pi^*_{2p_x} \\approx \\pi^*_{2p_y} < \\sigma^*_{2p_z}",
+      "\\sigma_{1s} < \\sigma^*_{1s} < \\sigma_{2s} < \\sigma^*_{2s} < \\pi_{2p_x} \\approx \\pi_{2p_y} < \\sigma_{2p_z} < \\pi^*_{2p_x} \\approx \\pi^*_{2p_y} < \\sigma^*_{2p_z}",
+      "\\sigma_{2s} < \\sigma^*_{2s} < \\pi_{2p_x} \\approx \\pi_{2p_y} < \\sigma_{2p_z} < \\pi^*_{2p_x} \\approx \\pi^*_{2p_y} < \\sigma^*_{2p_z}",
+      "\\sigma_{1s} < \\sigma^*_{1s} < \\sigma_{2s} < \\sigma^*_{2s} < \\sigma_{2p_z} < \\sigma^*_{2p_z} < \\pi_{2p_x} \\approx \\pi_{2p_y} < \\pi^*_{2p_x} \\approx \\pi^*_{2p_y}"
+    ],
+    "answer": "\\sigma_{1s} < \\sigma^*_{1s} < \\sigma_{2s} < \\sigma^*_{2s} < \\pi_{2p_x} \\approx \\pi_{2p_y} < \\sigma_{2p_z} < \\pi^*_{2p_x} \\approx \\pi^*_{2p_y} < \\sigma^*_{2p_z}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": "For ≤14 electrons: π comes BEFORE σ2pz. For >14 electrons (O₂, F₂): σ2pz comes before π."
+  },
+  {
+    "id": "chemical_bonding_qn_011",
+    "question": "Which molecule is an example of an <b>incomplete octet</b> at the central atom?",
+    "options": [
+      "\\text{PCl}_5",
+      "\\text{SF}_6",
+      "\\text{BCl}_3",
+      "\\text{H}_2\\text{O}"
+    ],
+    "answer": "\\text{BCl}_3",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_012",
+    "question": "Among C–C, C=C, and C≡C bonds, which has the shortest bond length?",
+    "options": [
+      "\\text{C-C} \\ (154 \\text{ pm})",
+      "\\text{C=C} \\ (133 \\text{ pm})",
+      "\\text{C} {\\equiv} \\text{C} \\ (120 \\text{ pm})",
+      "\\text{All are equal}"
+    ],
+    "answer": "\\text{C} {\\equiv} \\text{C} \\ (120 \\text{ pm})",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_013",
+    "question": "Resonance energy is defined as the difference in energy between:",
+    "options": [
+      "\\text{Most stable and least stable canonical structures}",
+      "\\text{Resonance hybrid and the most stable canonical structure}",
+      "\\text{Resonance hybrid and average energy of all structures}",
+      "\\text{Least stable canonical structure and the resonance hybrid}"
+    ],
+    "answer": "\\text{Resonance hybrid and the most stable canonical structure}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_014",
+    "question": "For a molecule showing resonance, the bond order between two atoms is calculated as:",
+    "options": [
+      "\\dfrac{\\text{Total bonds in one structure}}{\\text{Number of atoms}}",
+      "\\dfrac{\\text{Total bonds across all structures}}{\\text{Number of resonating structures}}",
+      "\\dfrac{\\text{Number of resonating structures}}{\\text{Total bonds}}",
+      "\\text{Bonds in most stable structure} \\times \\text{number of structures}"
+    ],
+    "answer": "\\dfrac{\\text{Total bonds across all structures}}{\\text{Number of resonating structures}}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_015",
+    "question": "Which hybridisation corresponds to a <b>square planar</b> geometry?",
+    "options": [
+      "sp^3",
+      "sp^3d",
+      "dsp^2",
+      "sp^3d^2"
+    ],
+    "answer": "dsp^2",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_016",
+    "question": "A molecule has 5 electron pairs around its central atom: 3 bond pairs and 2 lone pairs. Its shape is:",
+    "options": [
+      "\\text{See-saw}",
+      "\\text{T-shaped}",
+      "\\text{Trigonal bipyramidal}",
+      "\\text{Linear}"
+    ],
+    "answer": "\\text{T-shaped}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "5 pairs: 3 bp + 2 lp → T-shaped. Examples: ClF₃, BrF₃"
+  },
+  {
+    "id": "chemical_bonding_qn_017",
+    "question": "In MO theory, which molecular orbitals have <b>gerade (g)</b> symmetry?",
+    "options": [
+      "\\text{All } \\sigma \\text{ bonding and all } \\pi^* \\text{ anti-bonding MOs}",
+      "\\text{All } \\pi \\text{ bonding and all } \\sigma^* \\text{ anti-bonding MOs}",
+      "\\text{All bonding MOs only}",
+      "\\text{All anti-bonding MOs only}"
+    ],
+    "answer": "\\text{All } \\sigma \\text{ bonding and all } \\pi^* \\text{ anti-bonding MOs}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "g = symmetric w.r.t. centre. σ bonding + π* anti-bonding = g; π bonding + σ* anti-bonding = u."
+  },
+  {
+    "id": "chemical_bonding_qn_018",
+    "question": "The resultant dipole moment when two bond moments μ₁ and μ₂ make an angle θ with each other is:",
+    "options": [
+      "\\mu = \\mu_1 + \\mu_2",
+      "\\mu = \\sqrt{\\mu_1^2 + \\mu_2^2 + 2\\mu_1\\mu_2 \\cos\\theta}",
+      "\\mu = \\sqrt{\\mu_1^2 - \\mu_2^2 + 2\\mu_1\\mu_2 \\cos\\theta}",
+      "\\mu = \\mu_1 \\mu_2 \\cos\\theta"
+    ],
+    "answer": "\\mu = \\sqrt{\\mu_1^2 + \\mu_2^2 + 2\\mu_1\\mu_2 \\cos\\theta}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_019",
+    "question": "Among the three isomers of nitrophenol, which has the <b>highest boiling point</b> and why?",
+    "options": [
+      "\\text{ortho — intramolecular H-bonding (chelation), more volatile}",
+      "\\text{meta — intermolecular H-bonding raises bp}",
+      "\\text{para — higher symmetry increases intermolecular forces}",
+      "\\text{ortho — intermolecular H-bonding raises bp}"
+    ],
+    "answer": "\\text{meta — intermolecular H-bonding raises bp}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "ortho: intramolecular H-bonding → volatile (bp 214°C). Meta (290°C) and para (279°C) have intermolecular H-bonding → higher bp."
+  },
+  {
+    "id": "chemical_bonding_qn_020",
+    "question": "In the Lewis structure of ozone (O₃) with one double bond and one single bond, the formal charges on <b>central O, terminal double-bonded O, and terminal single-bonded O</b> are respectively:",
+    "options": [
+      "0, \\ 0, \\ 0",
+      "+1, \\ 0, \\ -1",
+      "-1, \\ +1, \\ 0",
+      "0, \\ -1, \\ +1"
+    ],
+    "answer": "+1, \\ 0, \\ -1",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": "Apply FC = V − LP − ½(BP) to each O separately. Central O: 6 − 2 − ½(6) = +1. Terminal O (double bond): 6 − 4 − ½(4) = 0. Terminal O (single bond): 6 − 6 − ½(2) = −1."
+  },
+  {
+    "id": "chemical_bonding_qn_021",
+    "question": "Which of the following is an <b>odd-electron molecule</b> that violates the octet rule?",
+    "options": [
+      "\\text{BCl}_3",
+      "\\text{PCl}_5",
+      "\\text{NO}",
+      "\\text{XeF}_4"
+    ],
+    "answer": "\\text{NO}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_022",
+    "question": "Which statement correctly distinguishes a σ bond from a π bond?",
+    "options": [
+      "\\text{σ: sideway overlap; π: axial overlap}",
+      "\\text{σ: axial overlap, free rotation allowed; π: lateral overlap, no free rotation}",
+      "\\text{π bond is stronger than σ bond}",
+      "\\text{σ bond has two electron clouds; π bond has one}"
+    ],
+    "answer": "\\text{σ: axial overlap, free rotation allowed; π: lateral overlap, no free rotation}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_023",
+    "question": "The correct decreasing order of hydrogen bond strength is:",
+    "options": [
+      "\\text{H} {\\cdots} \\text{N} > \\text{H} {\\cdots} \\text{O} > \\text{H} {\\cdots} \\text{F}",
+      "\\text{H} {\\cdots} \\text{F} > \\text{H} {\\cdots} \\text{O} > \\text{H} {\\cdots} \\text{N}",
+      "\\text{H} {\\cdots} \\text{O} > \\text{H} {\\cdots} \\text{F} > \\text{H} {\\cdots} \\text{N}",
+      "\\text{H} {\\cdots} \\text{F} > \\text{H} {\\cdots} \\text{N} > \\text{H} {\\cdots} \\text{O}"
+    ],
+    "answer": "\\text{H} {\\cdots} \\text{F} > \\text{H} {\\cdots} \\text{O} > \\text{H} {\\cdots} \\text{N}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_024",
+    "question": "The correct decreasing order of overall bond strength is:",
+    "options": [
+      "\\text{Ionic} > \\text{Covalent} > \\text{H-bond} > \\text{Metallic}",
+      "\\text{Covalent} > \\text{Ionic} > \\text{Metallic} > \\text{H-bond}",
+      "\\text{Ionic} > \\text{Covalent} > \\text{Metallic} > \\text{H-bond}",
+      "\\text{Covalent} > \\text{Metallic} > \\text{Ionic} > \\text{H-bond}"
+    ],
+    "answer": "\\text{Ionic} > \\text{Covalent} > \\text{Metallic} > \\text{H-bond}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_025",
+    "question": "A molecule has 6 electron pairs around its central atom: 4 bond pairs and 2 lone pairs. Its geometry is:",
+    "options": [
+      "\\text{Octahedral}",
+      "\\text{Square pyramidal}",
+      "\\text{Square planar}",
+      "\\text{Trigonal bipyramidal}"
+    ],
+    "answer": "\\text{Square planar}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "6 pairs: 4 bp + 2 lp → Square planar. Example: XeF₄"
+  },
+  {
+    "id": "chemical_bonding_qn_026",
+    "question": "In the LCAO method, the bonding MO is formed by which combination of atomic orbital wave functions?",
+    "options": [
+      "\\psi_{bonding} = \\psi_A - \\psi_B \\ (\\text{destructive})",
+      "\\psi_{bonding} = \\psi_A \\times \\psi_B",
+      "\\psi_{bonding} = \\psi_A + \\psi_B \\ (\\text{constructive})",
+      "\\psi_{bonding} = \\psi_A / \\psi_B"
+    ],
+    "answer": "\\psi_{bonding} = \\psi_A + \\psi_B \\ (\\text{constructive})",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_027",
+    "question": "For disubstituted benzene with identical substituents, the dipole moment order among ortho, meta, and para isomers is:",
+    "options": [
+      "\\text{para} > \\text{ortho} > \\text{meta}",
+      "\\text{ortho} > \\text{meta} > \\text{para} \\ (\\mu_{para} = 0)",
+      "\\text{meta} > \\text{ortho} > \\text{para}",
+      "\\text{All three are equal}"
+    ],
+    "answer": "\\text{ortho} > \\text{meta} > \\text{para} \\ (\\mu_{para} = 0)",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Para isomer: bond moments cancel exactly → μ = 0. Ortho is greatest."
+  },
+  {
+    "id": "chemical_bonding_qn_028",
+    "question": "NH₃ has a <b>higher dipole moment</b> than NF₃ despite F being more electronegative. The correct reason is:",
+    "options": [
+      "\\text{N-H bond is longer than N-F bond}",
+      "\\text{In NF}_3\\text{, N-F bond dipoles oppose the lone pair dipole on N}",
+      "\\text{NH}_3 \\text{ has a larger bond angle than NF}_3",
+      "\\text{NF}_3 \\text{ has more lone pairs than NH}_3"
+    ],
+    "answer": "\\text{In NF}_3\\text{, N-F bond dipoles oppose the lone pair dipole on N}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "In NH₃: N–H dipoles reinforce the lone pair direction. In NF₃: N–F dipoles point away from N, opposing the lone pair → net μ is lower."
+  },
+  {
+    "id": "chemical_bonding_qn_029",
+    "question": "Ice has <b>lower density</b> than liquid water at 0°C because:",
+    "options": [
+      "\\text{Ice molecules move faster than liquid water molecules}",
+      "\\text{Ice has a cage-like tetrahedral H-bonded structure with larger intermolecular spacing}",
+      "\\text{H-bonds are completely absent in liquid water}",
+      "\\text{Water molecules become heavier upon freezing}"
+    ],
+    "answer": "\\text{Ice has a cage-like tetrahedral H-bonded structure with larger intermolecular spacing}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "chemical_bonding_qn_030",
+    "question": "For O₂ using MO theory (&gt;14 electrons), which combination of bond order, magnetic character, and electron arrangement is correct?",
+    "options": [
+      "BO = 2, \\ \\text{diamagnetic, all electrons paired}",
+      "BO = 2, \\ \\text{paramagnetic, two unpaired e}^- \\text{ in } \\pi^*_{2p_x} \\text{ and } \\pi^*_{2p_y}",
+      "BO = 3, \\ \\text{paramagnetic, one unpaired e}^- \\text{ in } \\sigma^*_{2p_z}",
+      "BO = 1, \\ \\text{diamagnetic, fully paired}"
+    ],
+    "answer": "BO = 2, \\ \\text{paramagnetic, two unpaired e}^- \\text{ in } \\pi^*_{2p_x} \\text{ and } \\pi^*_{2p_y}",
+    "tags": { "chapter": "Chemical Bonding and Molecular Structure", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": "O₂ has 16 electrons. Last 2 electrons fill π*2px and π*2py one each (Hund's rule) → paramagnetic. Nb = 10, Na = 6, BO = (10−6)/2 = 2."
+  }
+]

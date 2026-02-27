@@ -1,0 +1,422 @@
+[
+  {
+    "id": "biomolecules_qn_001",
+    "question": "Which of the following is a non-reducing sugar?",
+    "options": [
+      "\\text{Sucrose}",
+      "\\text{Maltose}",
+      "\\text{Lactose}",
+      "\\text{Glucose}"
+    ],
+    "answer": "\\text{Sucrose}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": "Among disaccharides, sucrose is the only non-reducing sugar because both anomeric carbons (C1 of glucose and C2 of fructose) are involved in the glycosidic bond — no free -CHO or hemiacetal group remains."
+  },
+  {
+    "id": "biomolecules_qn_002",
+    "question": "Glucose on acetylation with acetic anhydride gives a pentaacetate. This confirms:",
+    "options": [
+      "\\text{Five hydroxyl groups in glucose}",
+      "\\text{Five carbonyl groups in glucose}",
+      "\\text{Presence of a carboxylic acid group}",
+      "\\text{Six carbon atoms in glucose}"
+    ],
+    "answer": "\\text{Five hydroxyl groups in glucose}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_003",
+    "question": "Mutarotation is the spontaneous change in specific rotation of glucose in aqueous solution to an equilibrium value of +52.5°. It occurs because:",
+    "options": [
+      "\\alpha\\text{-D-glucose (+111.5°) and }\\beta\\text{-D-glucose (+19.5°) interconvert via open-chain aldehyde form}",
+      "\\text{Glucose isomerises to fructose in water}",
+      "\\text{The aldehyde group is oxidised by dissolved oxygen}",
+      "\\text{Glucose undergoes ring opening to give sorbitol}"
+    ],
+    "answer": "\\alpha\\text{-D-glucose (+111.5°) and }\\beta\\text{-D-glucose (+19.5°) interconvert via open-chain aldehyde form}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_004",
+    "question": "The number of peptide bonds in a polypeptide made up of n amino acids is:",
+    "options": [
+      "n - 1",
+      "n",
+      "n + 1",
+      "n/2"
+    ],
+    "answer": "n - 1",
+    "tags": { "chapter": "Biomolecules", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_005",
+    "question": "Fat-soluble vitamins are A, D, E and K. Which vitamin is neither fat-soluble nor water-soluble?",
+    "options": [
+      "\\text{Vitamin H}",
+      "\\text{Vitamin B}_{12}",
+      "\\text{Vitamin C}",
+      "\\text{Vitamin B}_6"
+    ],
+    "answer": "\\text{Vitamin H}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_006",
+    "question": "Glucose on prolonged heating with HI gives n-hexane. This confirms:",
+    "options": [
+      "\\text{All six carbon atoms in glucose are linked linearly}",
+      "\\text{Glucose contains six oxygen atoms}",
+      "\\text{Glucose has a branched carbon chain}",
+      "\\text{Glucose contains a benzene ring}"
+    ],
+    "answer": "\\text{All six carbon atoms in glucose are linked linearly}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_007",
+    "question": "Glucose and fructose give the same osazone on treatment with excess phenyl hydrazine. This is because:",
+    "options": [
+      "\\text{C1 and C2 are involved in osazone formation — glucose and fructose have identical configurations at C3, C4 and C5}",
+      "\\text{Both have the same molecular formula}",
+      "\\text{Both are reducing sugars}",
+      "\\text{Both contain the same number of hydroxyl groups}"
+    ],
+    "answer": "\\text{C1 and C2 are involved in osazone formation — glucose and fructose have identical configurations at C3, C4 and C5}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "Osazone destroys the structural difference at C1 and C2 — leaving C3–C5 intact. Since glucose and fructose share identical C3–C5 configurations, they give the same glucosazone."
+  },
+  {
+    "id": "biomolecules_qn_008",
+    "question": "Biuret test detects proteins. The colour produced when protein solution is treated with NaOH and dilute CuSO4 is:",
+    "options": [
+      "\\text{Pink or violet}",
+      "\\text{Yellow}",
+      "\\text{Red}",
+      "\\text{Blue}"
+    ],
+    "answer": "\\text{Pink or violet}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_009",
+    "question": "Between adenine-thymine (A-T) and guanine-cytosine (G-C) base pairs in DNA, the number of hydrogen bonds are:",
+    "options": [
+      "\\text{A-T: 2 H-bonds; G-C: 3 H-bonds}",
+      "\\text{A-T: 3 H-bonds; G-C: 2 H-bonds}",
+      "\\text{A-T: 2 H-bonds; G-C: 2 H-bonds}",
+      "\\text{A-T: 3 H-bonds; G-C: 3 H-bonds}"
+    ],
+    "answer": "\\text{A-T: 2 H-bonds; G-C: 3 H-bonds}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_010",
+    "question": "Fructose does not reduce bromine water but does reduce Tollens and Fehling reagents. The correct explanation is:",
+    "options": [
+      "\\text{Bromine water oxidises only aldehydes (aldoses); fructose is a ketose. Tollens/Fehling work in alkaline conditions where fructose isomerises to glucose via enolisation}",
+      "\\text{Fructose has a different ring structure that prevents all oxidation}",
+      "\\text{Bromine water is a weaker oxidant than Tollens reagent}",
+      "\\text{Fructose reduces Tollens because it has more hydroxyl groups}"
+    ],
+    "answer": "\\text{Bromine water oxidises only aldehydes (aldoses); fructose is a ketose. Tollens/Fehling work in alkaline conditions where fructose isomerises to glucose via enolisation}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": "Bromine water test is selective for aldoses — it distinguishes aldose from ketose. Tollens/Fehling use alkaline medium → ketose isomerises to aldose → reduces the reagent. This is why Br2 water but not Tollens/Fehling can differentiate glucose from fructose."
+  },
+  {
+    "id": "biomolecules_qn_011",
+    "question": "Starch is a polymer of α-glucose and turns blue with iodine. Cellulose is a polymer of:",
+    "options": [
+      "\\beta\\text{-D-glucose}",
+      "\\alpha\\text{-D-glucose}",
+      "\\text{D-fructose}",
+      "\\text{D-galactose}"
+    ],
+    "answer": "\\beta\\text{-D-glucose}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_012",
+    "question": "Glucose and galactose are epimers. This means they differ in configuration at:",
+    "options": [
+      "\\text{C4 only}",
+      "\\text{C1 (anomeric carbon)}",
+      "\\text{C2 only}",
+      "\\text{All carbon atoms}"
+    ],
+    "answer": "\\text{C4 only}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_013",
+    "question": "The enzyme that catalyses hydrolysis of sucrose to glucose and fructose is:",
+    "options": [
+      "\\text{Invertase}",
+      "\\text{Maltase}",
+      "\\text{Amylase}",
+      "\\text{Urease}"
+    ],
+    "answer": "\\text{Invertase}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_014",
+    "question": "Deficiency of Vitamin B12 (cyanocobalamin) causes:",
+    "options": [
+      "\\text{Pernicious anaemia}",
+      "\\text{Beriberi}",
+      "\\text{Scurvy}",
+      "\\text{Rickets}"
+    ],
+    "answer": "\\text{Pernicious anaemia}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_015",
+    "question": "Sickle cell anaemia is caused by a single amino acid substitution in haemoglobin. The substitution is:",
+    "options": [
+      "\\text{Glutamic acid replaced by valine}",
+      "\\text{Valine replaced by glutamic acid}",
+      "\\text{Glycine replaced by alanine}",
+      "\\text{Lysine replaced by arginine}"
+    ],
+    "answer": "\\text{Glutamic acid replaced by valine}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_016",
+    "question": "DNA contains deoxyribose sugar and bases A, G, C, T. RNA contains ribose sugar and bases:",
+    "options": [
+      "\\text{A, G, C, U (uracil replaces thymine)}",
+      "\\text{A, G, C, T (same as DNA)}",
+      "\\text{A, G, T, U}",
+      "\\text{G, C, T, U}"
+    ],
+    "answer": "\\text{A, G, C, U (uracil replaces thymine)}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_017",
+    "question": "The iodine value of an oil or fat is defined as:",
+    "options": [
+      "\\text{Grams of iodine absorbed by 100 g of oil/fat}",
+      "\\text{Milligrams of KOH required to neutralise 1 g of fat}",
+      "\\text{Milligrams of KOH required to saponify 1 g of fat}",
+      "\\text{Number of double bonds per gram of fat}"
+    ],
+    "answer": "\\text{Grams of iodine absorbed by 100 g of oil/fat}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "Iodine value measures degree of unsaturation. Higher iodine value = more double bonds = more unsaturated = likely an oil not a fat."
+  },
+  {
+    "id": "biomolecules_qn_018",
+    "question": "The secondary structure of a protein refers to:",
+    "options": [
+      "\\alpha\\text{-helix or }\\beta\\text{-pleated sheet maintained by hydrogen bonds}",
+      "\\text{Sequence of amino acids in the polypeptide chain}",
+      "\\text{Folding of polypeptide into a compact globular shape}",
+      "\\text{Association of multiple polypeptide subunits}"
+    ],
+    "answer": "\\alpha\\text{-helix or }\\beta\\text{-pleated sheet maintained by hydrogen bonds}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_019",
+    "question": "Amylose (20% of starch) and amylopectin (80%) differ in that:",
+    "options": [
+      "\\text{Amylose is unbranched (1,4-glycosidic bonds only); amylopectin is branched (1,4 and 1,6-glycosidic bonds)}",
+      "\\text{Amylose is branched; amylopectin is unbranched}",
+      "\\text{Amylose is water-insoluble; amylopectin is water-soluble}",
+      "\\text{Amylose is a polymer of fructose; amylopectin is a polymer of glucose}"
+    ],
+    "answer": "\\text{Amylose is unbranched (1,4-glycosidic bonds only); amylopectin is branched (1,4 and 1,6-glycosidic bonds)}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_020",
+    "question": "All naturally occurring α-amino acids (except glycine) are L-amino acids and optically active. Glycine is optically inactive because:",
+    "options": [
+      "\\text{Glycine has two identical substituents (H) on the alpha carbon — no chiral centre}",
+      "\\text{Glycine is the smallest amino acid and too light to rotate plane polarised light}",
+      "\\text{Glycine has no amino group}",
+      "\\text{Glycine exists only in zwitterion form which cancels optical activity}"
+    ],
+    "answer": "\\text{Glycine has two identical substituents (H) on the alpha carbon — no chiral centre}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_021",
+    "question": "Xanthoprotein test is positive for proteins containing aromatic amino acids. The colour with conc. HNO3 followed by NaOH is:",
+    "options": [
+      "\\text{Yellow} \\rightarrow \\text{orange}",
+      "\\text{Red} \\rightarrow \\text{yellow}",
+      "\\text{Violet} \\rightarrow \\text{pink}",
+      "\\text{Blue} \\rightarrow \\text{green}"
+    ],
+    "answer": "\\text{Yellow} \\rightarrow \\text{orange}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_022",
+    "question": "Insulin is secreted by which cells of the pancreas and its deficiency causes:",
+    "options": [
+      "\\beta\\text{-cells; diabetes mellitus}",
+      "\\alpha\\text{-cells; diabetes mellitus}",
+      "\\beta\\text{-cells; diabetes insipidus}",
+      "\\alpha\\text{-cells; hypoglycaemia}"
+    ],
+    "answer": "\\beta\\text{-cells; diabetes mellitus}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_023",
+    "question": "Gun cotton is obtained by complete nitration of cellulose. Viscose rayon is obtained by treating cellulose with:",
+    "options": [
+      "\\text{NaOH then CS}_2\\text{ (gives cellulose xanthate)}",
+      "\\text{Conc. H}_2\\text{SO}_4",
+      "\\text{Acetic anhydride (gives cellulose acetate)}",
+      "\\text{Conc. NaOH alone (gives mercerised cotton)}"
+    ],
+    "answer": "\\text{NaOH then CS}_2\\text{ (gives cellulose xanthate)}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_024",
+    "question": "Which of the following correctly matches the hormone with its function?",
+    "options": [
+      "\\text{Adrenaline — increases pulse rate and blood pressure; releases glucose from glycogen}",
+      "\\text{Insulin — increases blood glucose levels}",
+      "\\text{Thyroxin — controls normal functioning of male sex organs}",
+      "\\text{Glucagon — decreases blood glucose levels}"
+    ],
+    "answer": "\\text{Adrenaline — increases pulse rate and blood pressure; releases glucose from glycogen}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": "Common traps: Insulin decreases blood glucose (not increases). Glucagon increases blood glucose (opposite of insulin). Thyroxin stimulates metabolism — not sex organs (that's testosterone/estrogen)."
+  },
+  {
+    "id": "biomolecules_qn_025",
+    "question": "Lactose is a reducing disaccharide made of glucose + galactose. Souring of milk is due to:",
+    "options": [
+      "\\text{Conversion of lactose to lactic acid by bacteria}",
+      "\\text{Hydrolysis of lactose to glucose and galactose}",
+      "\\text{Oxidation of lactose to saccharic acid}",
+      "\\text{Dehydration of lactose to form a polysaccharide}"
+    ],
+    "answer": "\\text{Conversion of lactose to lactic acid by bacteria}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_026",
+    "question": "Among the 20 amino acids needed for protein synthesis, 10 are essential amino acids. They are called essential because:",
+    "options": [
+      "\\text{Human body cannot synthesise them and they must be obtained from diet}",
+      "\\text{They are required in larger quantities than non-essential ones}",
+      "\\text{They form the active sites of all enzymes}",
+      "\\text{They cannot be broken down by the body}"
+    ],
+    "answer": "\\text{Human body cannot synthesise them and they must be obtained from diet}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_027",
+    "question": "Vitamin C (ascorbic acid) deficiency causes scurvy. It is destroyed by:",
+    "options": [
+      "\\text{Cooking and exposure to air}",
+      "\\text{Exposure to light only}",
+      "\\text{Heat only, not air}",
+      "\\text{Acidic conditions}"
+    ],
+    "answer": "\\text{Cooking and exposure to air}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_028",
+    "question": "The Molisch test is a general test for carbohydrates. A positive result gives:",
+    "options": [
+      "\\text{Purple ring at the junction of the two layers}",
+      "\\text{Red precipitate}",
+      "\\text{Yellow colour}",
+      "\\text{Blue colour throughout}"
+    ],
+    "answer": "\\text{Purple ring at the junction of the two layers}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "biomolecules_qn_029",
+    "question": "Denaturation of a protein destroys its tertiary/secondary structure but not its primary structure. Which of the following does NOT cause denaturation?",
+    "options": [
+      "\\text{Change in amino acid sequence}",
+      "\\text{Change in pH}",
+      "\\text{Heating}",
+      "\\text{Addition of alcohol}"
+    ],
+    "answer": "\\text{Change in amino acid sequence}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "Denaturation disrupts secondary and tertiary structure (H-bonds, disulphide bonds, ionic bonds) without breaking peptide bonds. The primary structure (amino acid sequence) remains intact — that's why denaturation is different from hydrolysis."
+  },
+  {
+    "id": "biomolecules_qn_030",
+    "question": "Sucrose is a non-reducing sugar and does not give mutarotation. However, on hydrolysis it gives an equimolar mixture of glucose (+52.5°) and fructose (−92°), and the mixture is laevorotatory. This mixture is called invert sugar. The inversion of sign of rotation occurs because:",
+    "options": [
+      "\\text{Fructose has a higher magnitude of negative rotation (−92°) than glucose's positive rotation (+52.5°), so the mixture becomes net laevorotatory}",
+      "\\text{Hydrolysis converts the dextrorotatory sucrose to two laevorotatory sugars}",
+      "\\text{Both glucose and fructose are laevorotatory in the free state}",
+      "\\text{The glycosidic bond cleavage reverses the optical activity of both sugars}"
+    ],
+    "answer": "\\text{Fructose has a higher magnitude of negative rotation (−92°) than glucose's positive rotation (+52.5°), so the mixture becomes net laevorotatory}",
+    "tags": { "chapter": "Biomolecules", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": null
+  }
+]

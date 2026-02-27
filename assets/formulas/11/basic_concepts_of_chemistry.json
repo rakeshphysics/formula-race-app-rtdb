@@ -1,0 +1,422 @@
+[
+  {
+    "id": "basic_concepts_of_chemistry_qn_001",
+    "question": "According to the law of multiple proportions, in NH<sub>3</sub> and N<sub>2</sub>H<sub>4</sub>, the masses of hydrogen that combine with a fixed mass of nitrogen are in the ratio:",
+    "options": [
+      "3 : 2",
+      "2 : 3",
+      "1 : 2",
+      "3 : 4"
+    ],
+    "answer": "3 : 2",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_002",
+    "question": "The number of significant figures in 0.0132 is:",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "2"
+    ],
+    "answer": "3",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": "Zeros at the beginning of a number are never significant — they are just placeholders. Count only from the first non-zero digit: 1, 3, 2 → 3 significant figures."
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_003",
+    "question": "Gram molecular mass of a gas at STP occupies a volume of:",
+    "options": [
+      "22.4 \\text{ L}",
+      "11.2 \\text{ L}",
+      "44.8 \\text{ L}",
+      "2.24 \\text{ L}"
+    ],
+    "answer": "22.4 \\text{ L}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_004",
+    "question": "The law of conservation of mass does NOT hold good for:",
+    "options": [
+      "\\text{Nuclear reactions}",
+      "\\text{Chemical reactions}",
+      "\\text{Physical changes}",
+      "\\text{Acid-base reactions}"
+    ],
+    "answer": "\\text{Nuclear reactions}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_005",
+    "question": "The n-factor of KMnO<sub>4</sub> in acidic medium (where Mn goes from +7 to +2) is:",
+    "options": [
+      "5",
+      "6",
+      "3",
+      "7"
+    ],
+    "answer": "5",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_006",
+    "question": "Molecular mass = 2 × vapour density. The vapour density of a gas is 22. Its molecular mass is:",
+    "options": [
+      "44",
+      "22",
+      "11",
+      "88"
+    ],
+    "answer": "44",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_007",
+    "question": "According to Dulong and Petit's rule, the approximate atomic weight of a metal with specific heat 0.16 cal/g·°C is:",
+    "options": [
+      "40",
+      "16",
+      "6.4",
+      "64"
+    ],
+    "answer": "40",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Dulong-Petit: atomic weight × specific heat ≈ 6.4. So atomic weight = 6.4 ÷ 0.16 = 40. This is calcium."
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_008",
+    "question": "Precision and accuracy are different. Which statement is correct?",
+    "options": [
+      "\\text{Accurate results are generally precise, but precise results need not be accurate}",
+      "\\text{Precise results are always accurate}",
+      "\\text{Accuracy and precision mean the same thing}",
+      "\\text{Precise results are never accurate}"
+    ],
+    "answer": "\\text{Accurate results are generally precise, but precise results need not be accurate}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_009",
+    "question": "The n-factor of K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> in acidic medium (Cr goes from +6 to +3) is:",
+    "options": [
+      "6",
+      "3",
+      "2",
+      "12"
+    ],
+    "answer": "6",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Each Cr changes from +6 to +3 → change of 3. Two Cr atoms per formula unit → total n-factor = 2 × 3 = 6."
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_010",
+    "question": "The laws of definite proportions and multiple proportions do NOT hold when the same compound is formed using different isotopes of the same element. The classic example is:",
+    "options": [
+      "\\text{H}_2\\text{O and D}_2\\text{O (different isotopes of hydrogen, giving different mass ratios)}",
+      "\\text{CO and CO}_2",
+      "\\text{NO and NO}_2",
+      "\\text{H}_2\\text{SO}_4\\text{ and H}_2\\text{SO}_3"
+    ],
+    "answer": "\\text{H}_2\\text{O and D}_2\\text{O (different isotopes of hydrogen, giving different mass ratios)}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_011",
+    "question": "The Loschmidt number is the number of molecules in 1 cm³ of an ideal gas at STP. Its value is approximately:",
+    "options": [
+      "2.69 \\times 10^{19}",
+      "6.023 \\times 10^{23}",
+      "6.023 \\times 10^{19}",
+      "2.69 \\times 10^{23}"
+    ],
+    "answer": "2.69 \\times 10^{19}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_012",
+    "question": "The basicity of H<sub>3</sub>PO<sub>3</sub> (phosphorous acid) is 2, not 3. This is because:",
+    "options": [
+      "\\text{H}_3\\text{PO}_3\\text{ has only 2 ionisable H}^+\\text{; one H is directly bonded to P and is non-ionisable}",
+      "\\text{H}_3\\text{PO}_3\\text{ has 3 ionisable H}^+\\text{ but loses only 2 during reactions}",
+      "\\text{Phosphorous acid is a weak acid and only partially ionises}",
+      "\\text{The third H}^+\\text{ is blocked by the phosphorus atom}"
+    ],
+    "answer": "\\text{H}_3\\text{PO}_3\\text{ has only 2 ionisable H}^+\\text{; one H is directly bonded to P and is non-ionisable}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Only O-H bonds in acids are ionisable. P-H bonds are not acidic. H<sub>3</sub>PO<sub>3</sub> has structure (HO)<sub>2</sub>P(=O)H — two O-H bonds (ionisable) and one P-H bond (non-ionisable) → basicity = 2."
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_013",
+    "question": "One mole of electrons weighs approximately:",
+    "options": [
+      "0.55 \\text{ mg}",
+      "1.008 \\text{ g}",
+      "9.1 \\times 10^{-28} \\text{ g}",
+      "12 \\text{ g}"
+    ],
+    "answer": "0.55 \\text{ mg}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_014",
+    "question": "In addition/subtraction of measurements, the result is reported to the same number of:",
+    "options": [
+      "\\text{Decimal places as the term with the least decimal places}",
+      "\\text{Significant figures as the term with the least significant figures}",
+      "\\text{Decimal places as the term with the most decimal places}",
+      "\\text{Significant figures as the term with the most significant figures}"
+    ],
+    "answer": "\\text{Decimal places as the term with the least decimal places}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Addition/subtraction → match decimal places. Multiplication/division → match significant figures. These are two different rules."
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_015",
+    "question": "The empirical formula of a compound is CH<sub>2</sub>O and its molecular mass is 180. The molecular formula is:",
+    "options": [
+      "\\text{C}_6\\text{H}_{12}\\text{O}_6",
+      "\\text{C}_3\\text{H}_6\\text{O}_3",
+      "\\text{CH}_2\\text{O}",
+      "\\text{C}_2\\text{H}_4\\text{O}_2"
+    ],
+    "answer": "\\text{C}_6\\text{H}_{12}\\text{O}_6",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_016",
+    "question": "The equivalent mass of Na<sub>2</sub>CO<sub>3</sub> (molecular mass = 106) in a reaction where it acts as a base (acidity = 2) is:",
+    "options": [
+      "53",
+      "106",
+      "26.5",
+      "212"
+    ],
+    "answer": "53",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_017",
+    "question": "1 amu (atomic mass unit) is defined as:",
+    "options": [
+      "\\frac{1}{12}\\text{ of the mass of one }^{12}\\text{C atom}",
+      "\\frac{1}{16}\\text{ of the mass of one oxygen atom}",
+      "\\text{Mass of one proton}",
+      "\\text{Mass of one hydrogen atom}"
+    ],
+    "answer": "\\frac{1}{12}\\text{ of the mass of one }^{12}\\text{C atom}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_018",
+    "question": "Gay-Lussac's law of gaseous volumes states that under same T and P, volumes of reacting gases and gaseous products are in simple whole number ratios. This law is explained by:",
+    "options": [
+      "\\text{Avogadro's hypothesis (equal volumes contain equal number of molecules)}",
+      "\\text{Dalton's atomic theory}",
+      "\\text{Law of conservation of mass}",
+      "\\text{Law of definite proportions}"
+    ],
+    "answer": "\\text{Avogadro's hypothesis (equal volumes contain equal number of molecules)}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_019",
+    "question": "Which of the following has the maximum number of molecules?",
+    "options": [
+      "\\text{1 g of H}_2 \\text{ (mol. mass = 2)}",
+      "\\text{1 g of O}_2 \\text{ (mol. mass = 32)}",
+      "\\text{1 g of CO}_2 \\text{ (mol. mass = 44)}",
+      "\\text{1 g of NH}_3 \\text{ (mol. mass = 17)}"
+    ],
+    "answer": "\\text{1 g of H}_2 \\text{ (mol. mass = 2)}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Number of molecules = (mass/molar mass) × NA. For 1 g: H<sub>2</sub> gives 0.5 mol, NH<sub>3</sub> gives 0.059 mol, O<sub>2</sub> gives 0.031 mol, CO<sub>2</sub> gives 0.023 mol. Lowest molar mass → most moles → most molecules."
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_020",
+    "question": "Avogadro's number (NA = 6.023 × 10²³) was named after Avogadro. Which statement about this is correct?",
+    "options": [
+      "\\text{Avogadro proposed equal volumes hypothesis but did not determine this number}",
+      "\\text{Avogadro experimentally measured this number}",
+      "\\text{The number was named after Dalton, not Avogadro}",
+      "\\text{Avogadro derived this from Gay-Lussac's law directly}"
+    ],
+    "answer": "\\text{Avogadro proposed equal volumes hypothesis but did not determine this number}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_021",
+    "question": "In a reaction, A is the limiting reagent and B is in excess. The amount of product formed is determined by:",
+    "options": [
+      "\\text{Amount of A (limiting reagent)}",
+      "\\text{Amount of B (excess reagent)}",
+      "\\text{Average of A and B}",
+      "\\text{Total moles of A + B}"
+    ],
+    "answer": "\\text{Amount of A (limiting reagent)}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_022",
+    "question": "The most abundant element in the earth's crust is oxygen (46.6%). The most abundant metal in the earth's crust is:",
+    "options": [
+      "\\text{Aluminium (Al)}",
+      "\\text{Iron (Fe)}",
+      "\\text{Silicon (Si)}",
+      "\\text{Calcium (Ca)}"
+    ],
+    "answer": "\\text{Aluminium (Al)}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_023",
+    "question": "The number 18.35 rounded off to 3 significant figures is:",
+    "options": [
+      "18.4",
+      "18.3",
+      "18.35",
+      "18.0"
+    ],
+    "answer": "18.4",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_024",
+    "question": "The n-factor of H<sub>3</sub>PO<sub>4</sub> when it reacts as a triprotic acid is 3. When H<sub>3</sub>PO<sub>4</sub> reacts with NaOH to form Na<sub>2</sub>HPO<sub>4</sub>, the n-factor used is:",
+    "options": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "answer": "2",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "n-factor is not fixed — it depends on the reaction. H<sub>3</sub>PO<sub>4</sub> → Na<sub>2</sub>HPO<sub>4</sub> means only 2 H⁺ are neutralised → n-factor = 2, not 3."
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_025",
+    "question": "Formula mass is used instead of molecular mass for ionic compounds like NaCl because:",
+    "options": [
+      "\\text{Ionic compounds do not exist as discrete molecules — NaCl exists as a 3D lattice of Na}^+\\text{ and Cl}^-\\text{ ions}",
+      "\\text{Molecular mass cannot be calculated for compounds containing metals}",
+      "\\text{NaCl dissociates in solution so it has no fixed molecular mass}",
+      "\\text{Formula mass is always smaller than molecular mass}"
+    ],
+    "answer": "\\text{Ionic compounds do not exist as discrete molecules — NaCl exists as a 3D lattice of Na}^+\\text{ and Cl}^-\\text{ ions}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_026",
+    "question": "The percent yield of a reaction is 80% and the theoretical yield is 25 g. The actual yield is:",
+    "options": [
+      "20 \\text{ g}",
+      "25 \\text{ g}",
+      "31.25 \\text{ g}",
+      "5 \\text{ g}"
+    ],
+    "answer": "20 \\text{ g}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_027",
+    "question": "Avogadro's hypothesis states that equal volumes of all gases at same T and P contain equal numbers of molecules. This implies that at STP, 1 L of H<sub>2</sub> and 1 L of O<sub>2</sub> contain:",
+    "options": [
+      "\\text{Equal number of molecules but different masses}",
+      "\\text{Equal masses and equal number of molecules}",
+      "\\text{Different number of molecules}",
+      "\\text{Equal number of atoms}"
+    ],
+    "answer": "\\text{Equal number of molecules but different masses}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_028",
+    "question": "An element has two isotopes: isotope A (mass 10, abundance 20%) and isotope B (mass 11, abundance 80%). The average atomic mass is:",
+    "options": [
+      "10.8",
+      "10.5",
+      "11.0",
+      "10.2"
+    ],
+    "answer": "10.8",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_029",
+    "question": "In a calculation involving multiplication: 15.724 ÷ 0.41, the result should be reported as:",
+    "options": [
+      "38 \\text{ (2 significant figures)}",
+      "38.35 \\text{ (4 significant figures)}",
+      "38.4 \\text{ (3 significant figures)}",
+      "38.350 \\text{ (5 significant figures)}"
+    ],
+    "answer": "38 \\text{ (2 significant figures)}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "In multiplication/division, report to the same number of significant figures as the least precise term. 0.41 has 2 sig figs → answer rounded to 2 sig figs → 38."
+  },
+  {
+    "id": "basic_concepts_of_chemistry_qn_030",
+    "question": "Dalton's atomic theory failed to explain the difference in masses, sizes and valencies of atoms. The concept that eventually explained these differences was:",
+    "options": [
+      "\\text{Discovery of subatomic particles (electrons, protons, neutrons) — atoms are not indivisible}",
+      "\\text{Avogadro's hypothesis about equal volumes}",
+      "\\text{Gay-Lussac's law of gaseous volumes}",
+      "\\text{Law of reciprocal proportions}"
+    ],
+    "answer": "\\text{Discovery of subatomic particles (electrons, protons, neutrons) — atoms are not indivisible}",
+    "tags": { "chapter": "Basic Concepts of Chemistry", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": null
+  }
+]

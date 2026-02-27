@@ -1,0 +1,562 @@
+[
+  {
+    "id": "ape_qn_001",
+    "question": "The boiling point order among alcohols, ethers, and alkanes of comparable molecular weight is:",
+    "options": [
+      "\\text{Alcohol} > \\text{Ether} > \\text{Alkane}",
+      "\\text{Ether} > \\text{Alcohol} > \\text{Alkane}",
+      "\\text{Alkane} > \\text{Alcohol} > \\text{Ether}",
+      "\\text{Alcohol} > \\text{Alkane} > \\text{Ether}"
+    ],
+    "answer": "\\text{Alcohol} > \\text{Ether} > \\text{Alkane}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_002",
+    "question": "Lucas test is used to distinguish between primary, secondary and tertiary alcohols. The reagent used is:",
+    "options": [
+      "\\text{Anhydrous ZnCl}_2 + \\text{conc. HCl}",
+      "\\text{NaOH} + \\text{I}_2",
+      "\\text{CrO}_3 + \\text{H}_2\\text{SO}_4",
+      "\\text{PCl}_5"
+    ],
+    "answer": "\\text{Anhydrous ZnCl}_2 + \\text{conc. HCl}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_003",
+    "question": "In Lucas test, which alcohol gives an immediate turbidity at room temperature?",
+    "options": [
+      "3^\\circ \\text{ alcohol}",
+      "2^\\circ \\text{ alcohol}",
+      "1^\\circ \\text{ alcohol}",
+      "\\text{All give turbidity at the same rate}"
+    ],
+    "answer": "3^\\circ \\text{ alcohol}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_004",
+    "question": "Williamson synthesis is the best method for preparing ethers. It involves reaction of an alkyl halide with:",
+    "options": [
+      "\\text{Sodium alkoxide (RONa)}",
+      "\\text{Alcohol directly}",
+      "\\text{Silver oxide (Ag}_2\\text{O)}",
+      "\\text{Sodium hydroxide}"
+    ],
+    "answer": "\\text{Sodium alkoxide (RONa)}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_005",
+    "question": "The acidity order among phenol, ethanol, water and carbonic acid is:",
+    "options": [
+      "\\text{H}_2\\text{CO}_3 > \\text{Phenol} > \\text{H}_2\\text{O} > \\text{EtOH}",
+      "\\text{Phenol} > \\text{H}_2\\text{CO}_3 > \\text{H}_2\\text{O} > \\text{EtOH}",
+      "\\text{H}_2\\text{O} > \\text{Phenol} > \\text{H}_2\\text{CO}_3 > \\text{EtOH}",
+      "\\text{EtOH} > \\text{H}_2\\text{O} > \\text{Phenol} > \\text{H}_2\\text{CO}_3"
+    ],
+    "answer": "\\text{H}_2\\text{CO}_3 > \\text{Phenol} > \\text{H}_2\\text{O} > \\text{EtOH}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_006",
+    "question": "Dehydration of alcohols to alkenes requires which conditions?",
+    "options": [
+      "\\text{Conc. H}_2\\text{SO}_4\\text{, 443 K}",
+      "\\text{Conc. H}_2\\text{SO}_4\\text{, 413 K}",
+      "\\text{Dil. H}_2\\text{SO}_4\\text{, 298 K}",
+      "\\text{Conc. HCl, 443 K}"
+    ],
+    "answer": "\\text{Conc. H}_2\\text{SO}_4\\text{, 443 K}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "At 413 K, dehydration gives ether (two alcohol molecules). At 443 K (higher temp), dehydration gives alkene (one alcohol molecule). Temperature determines the product."
+  },
+  {
+    "id": "ape_qn_007",
+    "question": "Oxidation of a primary alcohol with acidic K2Cr2O7 gives:",
+    "options": [
+      "\\text{Aldehyde, then carboxylic acid}",
+      "\\text{Ketone}",
+      "\\text{Carboxylic acid directly}",
+      "\\text{Alkene}"
+    ],
+    "answer": "\\text{Aldehyde, then carboxylic acid}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_008",
+    "question": "Kolbe's reaction involves heating sodium phenoxide with CO2 under pressure to give:",
+    "options": [
+      "\\text{Sodium salicylate} \\rightarrow \\text{Salicylic acid on acidification}",
+      "\\text{Sodium benzoate} \\rightarrow \\text{Benzoic acid on acidification}",
+      "\\text{Phenyl carbonate}",
+      "\\text{Catechol}"
+    ],
+    "answer": "\\text{Sodium salicylate} \\rightarrow \\text{Salicylic acid on acidification}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_009",
+    "question": "Reimer-Tiemann reaction of phenol with CHCl3 and NaOH gives:",
+    "options": [
+      "\\text{Salicylaldehyde (2-hydroxybenzaldehyde)}",
+      "\\text{Salicylic acid}",
+      "\\text{Catechol}",
+      "\\text{Phenyl formate}"
+    ],
+    "answer": "\\text{Salicylaldehyde (2-hydroxybenzaldehyde)}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_010",
+    "question": "Victor Meyer test distinguishes primary, secondary, and tertiary alcohols by the final colour produced. Match the correct combination: 1° gives red, 2° gives blue, 3° gives:",
+    "options": [
+      "\\text{No colour (colourless)}",
+      "\\text{Yellow}",
+      "\\text{Green}",
+      "\\text{Violet}"
+    ],
+    "answer": "\\text{No colour (colourless)}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": "Victor Meyer: alcohol → alkyl iodide (PI3) → nitroso compound (AgNO2) → with NaOH + Liebermann nitroso reagent → colour. 3° has no alpha-H → cannot form nitroso compound → no colour. 1° red, 2° blue, 3° colourless."
+  },
+  {
+    "id": "ape_qn_011",
+    "question": "The reaction of alcohol with SOCl2 in the presence of pyridine proceeds with:",
+    "options": [
+      "\\text{Retention of configuration (SNi mechanism)}",
+      "\\text{Inversion of configuration}",
+      "\\text{Racemisation}",
+      "\\text{No stereochemical change}"
+    ],
+    "answer": "\\text{Retention of configuration (SNi mechanism)}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_012",
+    "question": "Phenol is more acidic than ethanol. The main reason is:",
+    "options": [
+      "\\text{Phenoxide ion is resonance-stabilised; ethoxide ion is not}",
+      "\\text{Phenol has higher molecular weight}",
+      "\\text{Phenol has a higher boiling point}",
+      "\\text{The O-H bond in phenol is longer than in ethanol}"
+    ],
+    "answer": "\\text{Phenoxide ion is resonance-stabilised; ethoxide ion is not}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_013",
+    "question": "Preparation of phenol industrially from cumene involves oxidation of cumene followed by:",
+    "options": [
+      "\\text{Acid hydrolysis of cumene hydroperoxide}",
+      "\\text{Base hydrolysis of cumene hydroperoxide}",
+      "\\text{Direct reduction}",
+      "\\text{Thermal decomposition}"
+    ],
+    "answer": "\\text{Acid hydrolysis of cumene hydroperoxide}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_014",
+    "question": "Ethylene glycol is a diol. Its IUPAC name is:",
+    "options": [
+      "\\text{Ethane-1,2-diol}",
+      "\\text{Ethane-1,1-diol}",
+      "\\text{Propane-1,2-diol}",
+      "\\text{Ethane-2,2-diol}"
+    ],
+    "answer": "\\text{Ethane-1,2-diol}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_015",
+    "question": "When diethyl ether reacts with excess HI, the products are:",
+    "options": [
+      "2C_2H_5I + H_2O",
+      "C_2H_5OH + C_2H_5I",
+      "2C_2H_5OH + I_2",
+      "C_2H_5I + C_2H_5OH \\text{ only}"
+    ],
+    "answer": "2C_2H_5I + H_2O",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "With excess HI: first cleavage gives C2H5I + C2H5OH, then the alcohol reacts with the second HI to give C2H5I + H2O. Final products: 2 moles of ethyl iodide."
+  },
+  {
+    "id": "ape_qn_016",
+    "question": "Nitration of phenol with dilute HNO3 at room temperature gives a mixture of:",
+    "options": [
+      "\\text{o-nitrophenol and p-nitrophenol}",
+      "\\text{m-nitrophenol only}",
+      "\\text{2,4,6-trinitrophenol directly}",
+      "\\text{p-nitrophenol only}"
+    ],
+    "answer": "\\text{o-nitrophenol and p-nitrophenol}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_017",
+    "question": "o-nitrophenol has a lower boiling point than p-nitrophenol. The reason is:",
+    "options": [
+      "\\text{o-isomer forms intramolecular H-bond; p-isomer forms intermolecular H-bond}",
+      "\\text{p-isomer forms intramolecular H-bond; o-isomer forms intermolecular H-bond}",
+      "\\text{o-isomer has higher molecular weight}",
+      "\\text{p-isomer has stronger C-N bond}"
+    ],
+    "answer": "\\text{o-isomer forms intramolecular H-bond; p-isomer forms intermolecular H-bond}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_018",
+    "question": "The reaction of phenol with bromine water (not in CS2) gives:",
+    "options": [
+      "\\text{2,4,6-tribromophenol (white ppt)}",
+      "\\text{2-bromophenol only}",
+      "\\text{4-bromophenol only}",
+      "\\text{Bromobenzene}"
+    ],
+    "answer": "\\text{2,4,6-tribromophenol (white ppt)}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_019",
+    "question": "Absolute alcohol (100% ethanol) is prepared from rectified spirit (95.6% ethanol) by:",
+    "options": [
+      "\\text{Adding quicklime (CaO) and redistilling}",
+      "\\text{Simple distillation}",
+      "\\text{Adding concentrated H}_2\\text{SO}_4",
+      "\\text{Fractional distillation under pressure}"
+    ],
+    "answer": "\\text{Adding quicklime (CaO) and redistilling}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_020",
+    "question": "Why can phenol not be converted to phenyl chloride using PCl5 or SOCl2 under normal conditions, unlike alcohols?",
+    "options": [
+      "\\text{C-O bond in phenol has partial double bond character due to resonance with ring}",
+      "\\text{Phenol is a liquid and cannot react with solid PCl}_5",
+      "\\text{The OH group in phenol is too acidic to be replaced}",
+      "\\text{Phenyl carbocation is too stable to form}"
+    ],
+    "answer": "\\text{C-O bond in phenol has partial double bond character due to resonance with ring}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": "Exactly analogous to vinyl chloride being unreactive. The lone pair on O delocalises into the ring → C-O gets partial double bond character → very hard to break. This is why phenol needs special conditions (e.g., POCl3 + pyridine) to give chlorobenzene."
+  },
+  {
+    "id": "ape_qn_021",
+    "question": "The reagent used to oxidise a secondary alcohol specifically to a ketone without further oxidation is:",
+    "options": [
+      "\\text{PCC (Pyridinium chlorochromate)}",
+      "\\text{Acidic KMnO}_4",
+      "\\text{Acidic K}_2\\text{Cr}_2\\text{O}_7",
+      "\\text{Conc. HNO}_3"
+    ],
+    "answer": "\\text{PCC (Pyridinium chlorochromate)}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_022",
+    "question": "Which of the following correctly distinguishes phenol from ethanol using FeCl3 solution?",
+    "options": [
+      "\\text{Phenol gives violet/purple colour; ethanol gives no colour}",
+      "\\text{Ethanol gives violet colour; phenol gives no colour}",
+      "\\text{Both give violet colour}",
+      "\\text{Phenol gives yellow colour; ethanol gives red colour}"
+    ],
+    "answer": "\\text{Phenol gives violet/purple colour; ethanol gives no colour}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_023",
+    "question": "Methanol is called wood spirit because it was originally obtained by:",
+    "options": [
+      "\\text{Destructive distillation of wood}",
+      "\\text{Fermentation of wood sugars}",
+      "\\text{Oxidation of methane from wood}",
+      "\\text{Hydration of formaldehyde}"
+    ],
+    "answer": "\\text{Destructive distillation of wood}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_024",
+    "question": "Clemmensen reduction converts a ketone to an alkane using:",
+    "options": [
+      "\\text{Zn-Hg amalgam + conc. HCl}",
+      "\\text{NaBH}_4",
+      "\\text{LiAlH}_4",
+      "\\text{H}_2\\text{/Ni}"
+    ],
+    "answer": "\\text{Zn-Hg amalgam + conc. HCl}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_025",
+    "question": "In Williamson synthesis, why is it not possible to prepare an ether with a tertiary alkyl group using a tertiary alkyl halide?",
+    "options": [
+      "\\text{Tertiary alkyl halides undergo elimination (E2) with alkoxide instead of SN2 substitution}",
+      "\\text{Tertiary alkyl halides are too stable to react}",
+      "\\text{Alkoxide is too weak a nucleophile for tertiary halides}",
+      "\\text{Tertiary ethers are thermodynamically unstable}"
+    ],
+    "answer": "\\text{Tertiary alkyl halides undergo elimination (E2) with alkoxide instead of SN2 substitution}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "Alkoxide is a strong base as well as a nucleophile. With 3° alkyl halides (bulky), the E2 elimination pathway dominates over SN2 substitution. To make tert-butyl ether, use tert-butanol + primary alkyl halide instead."
+  },
+  {
+    "id": "ape_qn_026",
+    "question": "The reaction of phenol with phthalic anhydride in the presence of conc. H2SO4 gives a dye used as an acid-base indicator. This dye is:",
+    "options": [
+      "\\text{Phenolphthalein}",
+      "\\text{Fluorescein}",
+      "\\text{Alizarin}",
+      "\\text{Malachite green}"
+    ],
+    "answer": "\\text{Phenolphthalein}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_027",
+    "question": "The effect of an electron-withdrawing group (like -NO2) at ortho/para position on phenol's acidity is:",
+    "options": [
+      "\\text{Increases acidity by stabilising phenoxide ion further through resonance}",
+      "\\text{Decreases acidity by destabilising phenoxide ion}",
+      "\\text{No effect on acidity}",
+      "\\text{Increases acidity only if at meta position}"
+    ],
+    "answer": "\\text{Increases acidity by stabilising phenoxide ion further through resonance}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "-NO2 at o/p delocalises the negative charge of phenoxide further onto the nitro group via resonance → phenoxide more stable → acid stronger. At meta, only inductive effect (weaker)."
+  },
+  {
+    "id": "ape_qn_028",
+    "question": "Fries rearrangement converts phenyl ester to hydroxyaryl ketone in the presence of AlCl3. The product from phenyl acetate is:",
+    "options": [
+      "\\text{o- and p-hydroxyacetophenone}",
+      "\\text{m-hydroxyacetophenone only}",
+      "\\text{Phenol + acetic acid}",
+      "\\text{Acetanilide}"
+    ],
+    "answer": "\\text{o- and p-hydroxyacetophenone}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_029",
+    "question": "Glycerol (propane-1,2,3-triol) on treatment with conc. H2SO4 at 440 K gives:",
+    "options": [
+      "\\text{Acrolein (propenal)}",
+      "\\text{Allyl alcohol}",
+      "\\text{Propanol}",
+      "\\text{Glyceric acid}"
+    ],
+    "answer": "\\text{Acrolein (propenal)}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_030",
+    "question": "Phenol reacts with CO2 in Kolbe reaction at 400K and 4-7 atm. However, phenol does NOT react with CO2 under normal conditions even though phenol is a stronger acid than H2CO3. The reason is:",
+    "options": [
+      "\\text{Phenol reacts as sodium phenoxide (PhO}^-\\text{Na}^+\\text{), not free phenol; phenoxide is a better nucleophile than CO}_2\\text{ is electrophile at STP}",
+      "\\text{CO}_2\\text{ is a weaker electrophile than PhO}^-\\text{ is nucleophile at all conditions}",
+      "\\text{Phenol is a weaker acid than H}_2\\text{CO}_3\\text{ at high temperature}",
+      "\\text{High pressure is needed only to dissolve CO}_2\\text{, not for the reaction}"
+    ],
+    "answer": "\\text{Phenol reacts as sodium phenoxide (PhO}^-\\text{Na}^+\\text{), not free phenol; phenoxide is a better nucleophile than CO}_2\\text{ is electrophile at STP}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": "The apparent contradiction: phenol is a weaker acid than H2CO3, yet PhONa + CO2 + H2O → PhOH + NaHCO3 (phenol displaced). This is because the Kolbe reaction uses PhO-Na+, not free PhOH. Sodium phenoxide (a strong nucleophile) attacks CO2 at high pressure. The product salicylate is then acidified to give salicylic acid."
+  },
+  {
+    "id": "ape_qn_031",
+    "question": "Hydroboration-oxidation of propene gives 1-propanol. The addition is:",
+    "options": [
+      "\\text{Anti-Markovnikov and syn}",
+      "\\text{Markovnikov and syn}",
+      "\\text{Anti-Markovnikov and anti}",
+      "\\text{Markovnikov and anti}"
+    ],
+    "answer": "\\text{Anti-Markovnikov and syn}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_032",
+    "question": "Oxymercuration-demercuration of propene gives 2-propanol. The addition follows:",
+    "options": [
+      "\\text{Markovnikov, no carbocation rearrangement}",
+      "\\text{Anti-Markovnikov, no rearrangement}",
+      "\\text{Markovnikov, with carbocation rearrangement}",
+      "\\text{Anti-Markovnikov, with rearrangement}"
+    ],
+    "answer": "\\text{Markovnikov, no carbocation rearrangement}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_033",
+    "question": "Methanol is manufactured industrially from water gas. The reagents and conditions are:",
+    "options": [
+      "CO + 2H_2 \\xrightarrow{\\text{ZnO/Cr}_2\\text{O}_3,\\ 300\\text{ atm},\\ 300°C} CH_3OH",
+      "CO_2 + H_2 \\xrightarrow{\\text{Ni},\\ 100°C} CH_3OH",
+      "CH_4 + H_2O \\xrightarrow{\\text{500°C}} CH_3OH",
+      "CO + H_2O \\xrightarrow{\\text{400°C}} CH_3OH"
+    ],
+    "answer": "CO + 2H_2 \\xrightarrow{\\text{ZnO/Cr}_2\\text{O}_3,\\ 300\\text{ atm},\\ 300°C} CH_3OH",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_034",
+    "question": "In fermentation of glucose to ethanol, the enzyme that converts glucose to ethanol and CO2 is:",
+    "options": [
+      "\\text{Zymase}",
+      "\\text{Invertase}",
+      "\\text{Diastase}",
+      "\\text{Maltase}"
+    ],
+    "answer": "\\text{Zymase}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_035",
+    "question": "Cleavage of methyl tert-butyl ether (CH3-O-C(CH3)3) with HI proceeds via SN1 or SN2? Which bond breaks and what are the products?",
+    "options": [
+      "\\text{SN1: tert-butyl C-O breaks; products are tert-butyl iodide + methanol}",
+      "\\text{SN2: methyl C-O breaks; products are methyl iodide + tert-butanol}",
+      "\\text{SN2: tert-butyl C-O breaks; products are tert-butyl iodide + methanol}",
+      "\\text{SN1: methyl C-O breaks; products are methyl iodide + tert-butanol}"
+    ],
+    "answer": "\\text{SN1: tert-butyl C-O breaks; products are tert-butyl iodide + methanol}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "Ether cleavage rule: the more substituted C-O bond breaks. 3° carbocation forms easily (SN1) → I- attacks → tert-BuI + CH3OH. If both groups were primary, SN2 would operate and the less hindered C-O would break."
+  },
+  {
+    "id": "ape_qn_036",
+    "question": "Liebermann nitroso test is used to detect phenols. The sequence of observations when phenol reacts with NaNO2 and H2SO4, then NaOH, then acid is:",
+    "options": [
+      "\\text{Green in acid} \\rightarrow \\text{Red in alkali} \\rightarrow \\text{Green on acidification}",
+      "\\text{Red in acid} \\rightarrow \\text{Blue in alkali} \\rightarrow \\text{Red on acidification}",
+      "\\text{Blue in acid} \\rightarrow \\text{Green in alkali} \\rightarrow \\text{Blue on acidification}",
+      "\\text{Yellow in acid} \\rightarrow \\text{Violet in alkali} \\rightarrow \\text{Yellow on acidification}"
+    ],
+    "answer": "\\text{Green in acid} \\rightarrow \\text{Red in alkali} \\rightarrow \\text{Green on acidification}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_037",
+    "question": "Coupling reaction of phenol with benzene diazonium chloride in alkaline medium gives:",
+    "options": [
+      "\\text{p-hydroxyazobenzene (orange-red azo dye)}",
+      "\\text{Diphenyl ether}",
+      "\\text{Phenyl benzoate}",
+      "\\text{Biphenyl}"
+    ],
+    "answer": "\\text{p-hydroxyazobenzene (orange-red azo dye)}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "Alkaline medium converts phenol to phenoxide ion (better nucleophile/activated ring). Diazonium ion (weak electrophile) attacks para position → -N=N- linkage forms → azo dye."
+  },
+  {
+    "id": "ape_qn_038",
+    "question": "Ethylene glycol reacts with periodic acid (HIO4) to give:",
+    "options": [
+      "2HCHO + HIO_3 + H_2O",
+      "CH_3CHO + HIO_3",
+      "HCOOH + HIO_3",
+      "CO_2 + H_2O + HIO_3"
+    ],
+    "answer": "2HCHO + HIO_3 + H_2O",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "HIO4 cleaves vicinal diols (diols on adjacent carbons). Each -OH carbon becomes an aldehyde or ketone. Ethylene glycol (HO-CH2-CH2-OH) gives 2 molecules of HCHO."
+  },
+  {
+    "id": "ape_qn_039",
+    "question": "Glycerol reacts with oxalic acid on heating to give acrolein via:",
+    "options": [
+      "\\text{Dehydration — loss of 2 water molecules}",
+      "\\text{Oxidation of the middle OH group}",
+      "\\text{Reduction of the terminal OH groups}",
+      "\\text{Esterification followed by elimination}"
+    ],
+    "answer": "\\text{Dehydration — loss of 2 water molecules}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ape_qn_040",
+    "question": "Hydroboration-oxidation gives anti-Markovnikov alcohol while acid-catalysed hydration gives Markovnikov alcohol from the same alkene. With 3,3-dimethylbut-1-ene, acid-catalysed hydration gives a rearranged product (2,3-dimethylbutan-2-ol) but hydroboration-oxidation gives the unrearranged product (3,3-dimethylbutan-1-ol). This is because:",
+    "options": [
+      "\\text{Hydroboration has no carbocation intermediate — BH}_3\\text{ adds as a concerted syn process; no 1,2-shift possible}",
+      "\\text{Hydroboration proceeds via a carbocation but the boron blocks rearrangement}",
+      "\\text{Acid hydration also gives no rearrangement; the question premise is incorrect}",
+      "\\text{Both proceed via carbocations, but hydroboration uses a bulkier borane that prevents shift}"
+    ],
+    "answer": "\\text{Hydroboration has no carbocation intermediate — BH}_3\\text{ adds as a concerted syn process; no 1,2-shift possible}",
+    "tags": { "chapter": "Alcohols, Phenols and Ethers", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": "This is the core reason hydroboration-oxidation is superior for sensitive substrates. Acid hydration: forms carbocation → 1,2-hydride or methyl shift → rearranged product. Hydroboration: four-membered cyclic transition state, concerted, no ionic intermediate → absolutely no rearrangement."
+  }
+]

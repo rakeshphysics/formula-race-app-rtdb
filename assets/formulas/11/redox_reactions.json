@@ -1,0 +1,362 @@
+[
+  {
+    "id": "redox_reactions_qn_001",
+    "question": "The oxidation number of hydrogen in metal hydrides like NaH, CaH₂, and LiH is:",
+    "options": [
+      "+1",
+      "-1",
+      "0",
+      "+2"
+    ],
+    "answer": "-1",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "redox_reactions_qn_002",
+    "question": "The oxidation number of oxygen in OF₂ is:",
+    "options": [
+      "-2",
+      "-1",
+      "0",
+      "+2"
+    ],
+    "answer": "+2",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "F is always −1. Since OF₂ is neutral: x + 2(−1) = 0 → x = +2. Oxygen can be positive only when bonded to F."
+  },
+  {
+    "id": "redox_reactions_qn_003",
+    "question": "The equivalent weight of an oxidant or reductant is given by:",
+    "options": [
+      "\\dfrac{\\text{Molar mass}}{\\text{Change in oxidation number}}",
+      "\\text{Molar mass} \\times \\text{Change in oxidation number}",
+      "\\dfrac{\\text{Change in oxidation number}}{\\text{Molar mass}}",
+      "\\dfrac{\\text{Molar mass}}{\\text{Valence electrons}}"
+    ],
+    "answer": "\\dfrac{\\text{Molar mass}}{\\text{Change in oxidation number}}",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "redox_reactions_qn_004",
+    "question": "In a <b>disproportionation reaction</b>, the equivalent weight of the reactant is:",
+    "options": [
+      "\\dfrac{\\text{Molar mass}}{\\text{Change in one half reaction only}}",
+      "\\text{Sum of equivalent weights of the two half reactions}",
+      "\\dfrac{\\text{Molar mass}}{2}",
+      "\\text{Equal to molar mass}"
+    ],
+    "answer": "\\text{Sum of equivalent weights of the two half reactions}",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "redox_reactions_qn_005",
+    "question": "The oxidation number of Cr in K₂Cr₂O₇ is:",
+    "options": [
+      "+3",
+      "+4",
+      "+6",
+      "+7"
+    ],
+    "answer": "+6",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "redox_reactions_qn_006",
+    "question": "The oxidation number of Fe in [Fe(CN)₆]⁴⁻ is:",
+    "options": [
+      "+2",
+      "+3",
+      "+4",
+      "0"
+    ],
+    "answer": "+2",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "redox_reactions_qn_007",
+    "question": "For p-block elements (except F and O), the <b>lowest oxidation number</b> is:",
+    "options": [
+      "\\text{Group number}",
+      "\\text{Group number} - 8",
+      "\\text{Group number} + 8",
+      "\\text{Zero}"
+    ],
+    "answer": "\\text{Group number} - 8",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "e.g. Cl is Group 17 → lowest ON = 17 − 8 = −1. Highest ON = group number = +7."
+  },
+  {
+    "id": "redox_reactions_qn_008",
+    "question": "Which of the following can act as <b>both oxidising and reducing agent</b>?",
+    "options": [
+      "\\text{KMnO}_4",
+      "\\text{SO}_2",
+      "\\text{K}_2\\text{Cr}_2\\text{O}_7",
+      "\\text{F}_2"
+    ],
+    "answer": "\\text{SO}_2",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "redox_reactions_qn_009",
+    "question": "In the <b>ion electron method</b> for balancing in <b>acidic medium</b>, oxygen deficiency is balanced by adding:",
+    "options": [
+      "\\text{OH}^- \\text{ to the oxygen-deficient side}",
+      "\\text{H}_2\\text{O} \\text{ to the oxygen-deficient side, then H}^+ \\text{ to balance H}",
+      "\\text{H}_2\\text{O} \\text{ to both sides equally}",
+      "\\text{H}^+ \\text{ to the oxygen-deficient side directly}"
+    ],
+    "answer": "\\text{H}_2\\text{O} \\text{ to the oxygen-deficient side, then H}^+ \\text{ to balance H}",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "For alkaline medium: add H₂O to the oxygen-excess side and OH⁻ to the other side."
+  },
+  {
+    "id": "redox_reactions_qn_010",
+    "question": "The average oxidation number of sulphur in Na₂S₄O₆ (sodium tetrathionate) is 5/2. This is because Na₂S₄O₆ contains two types of S atoms. The oxidation numbers of the two types of S atoms are respectively:",
+    "options": [
+      "+5 \\text{ and } +5",
+      "+5 \\text{ and } 0",
+      "+4 \\text{ and } +1",
+      "+6 \\text{ and } -1"
+    ],
+    "answer": "+5 \\text{ and } 0",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "redox_reactions_qn_011",
+    "question": "In a redox reaction, the species whose oxidation number <b>increases</b> is called the:",
+    "options": [
+      "\\text{Oxidising agent}",
+      "\\text{Reducing agent}",
+      "\\text{Spectator ion}",
+      "\\text{Lewis acid}"
+    ],
+    "answer": "\\text{Reducing agent}",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "redox_reactions_qn_012",
+    "question": "In <b>Stock notation</b>, the compound FeCl₃ is correctly written as:",
+    "options": [
+      "\text{Fe(II)Cl}_3",
+      "\text{Fe(III)Cl}_3",
+      "\text{Fe(III)Cl}_2",
+      "\text{Fe(I)Cl}_3"
+    ],
+    "answer": "\text{Fe(III)Cl}_3",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "redox_reactions_qn_013",
+    "question": "The oxidation number of oxygen in Na₂O₂ (sodium peroxide) is:",
+    "options": [
+      "-2",
+      "-1",
+      "0",
+      "+1"
+    ],
+    "answer": "-1",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "In peroxides (O–O bond), oxidation number of O = −1, not −2."
+  },
+  {
+    "id": "redox_reactions_qn_014",
+    "question": "A reaction where reduction and oxidation occur in <b>the same compound</b> (same element) is called:",
+    "options": [
+      "\\text{Intermolecular redox reaction}",
+      "\\text{Displacement reaction}",
+      "\\text{Disproportionation reaction}",
+      "\\text{Combination reaction}"
+    ],
+    "answer": "\\text{Disproportionation reaction}",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "redox_reactions_qn_015",
+    "question": "For transition elements, the <b>highest oxidation number</b> is equal to:",
+    "options": [
+      "\\text{Number of } ns \\text{ electrons only}",
+      "\\text{Number of } ns \\text{ and } (n-1)d \\text{ unpaired electrons combined}",
+      "\\text{Group number} - 8",
+      "\\text{Number of } (n-1)d \\text{ electrons only}"
+    ],
+    "answer": "\\text{Number of } ns \\text{ and } (n-1)d \\text{ unpaired electrons combined}",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "redox_reactions_qn_016",
+    "question": "In the <b>indirect redox reaction</b>, energy is released primarily as:",
+    "options": [
+      "\\text{Heat energy}",
+      "\\text{Light energy}",
+      "\\text{Electrical energy}",
+      "\\text{Sound energy}"
+    ],
+    "answer": "\\text{Electrical energy}",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "redox_reactions_qn_017",
+    "question": "The oxidation number of N in NH₄NO₃ — what are the oxidation states of the <b>two nitrogen atoms</b> respectively?",
+    "options": [
+      "-3 \\text{ and } +3",
+      "-3 \\text{ and } +5",
+      "+3 \\text{ and } -3",
+      "0 \\text{ and } +5"
+    ],
+    "answer": "-3 \\text{ and } +5",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "redox_reactions_qn_018",
+    "question": "When a <b>coordinate bond is directed from a less electronegative atom to a more electronegative atom</b>, the contribution to oxidation number is:",
+    "options": [
+      "\\text{+2 to less electronegative, −2 to more electronegative}",
+      "\\text{−2 to less electronegative, +2 to more electronegative}",
+      "\\text{Zero to both atoms}",
+      "\\text{+1 to less electronegative, −1 to more electronegative}"
+    ],
+    "answer": "\\text{+2 to less electronegative, −2 to more electronegative}",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "If coordinate bond goes from more electronegative to less electronegative atom, contribution is zero for both."
+  },
+  {
+    "id": "redox_reactions_qn_019",
+    "question": "The oxidation number of S in Caro's acid (H₂SO₅) is:",
+    "options": [
+      "+4",
+      "+5",
+      "+6",
+      "+7"
+    ],
+    "answer": "+6",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "redox_reactions_qn_020",
+    "question": "In the reaction 4H₃PO₃ → 3H₃PO₄ + PH₃, the equivalent weight of H₃PO₃ undergoing disproportionation is M/x, where M is molar mass. The value of x is:",
+    "options": [
+      "2",
+      "3",
+      "\\dfrac{M}{6}",
+      "\\dfrac{2}{3}M"
+    ],
+    "answer": "3",
+    "tags": {
+      "chapter": "Redox Reactions",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  }
+]

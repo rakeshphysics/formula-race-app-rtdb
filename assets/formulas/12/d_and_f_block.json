@@ -1,0 +1,542 @@
+[
+  {
+    "id": "d_f_block_qn_001",
+    "question": "Which of the following is NOT considered a transition element, and why?",
+    "options": [
+      "\\text{Zn — its d}^{10}\\text{ configuration is complete in both ground and ionic states}",
+      "\\text{Fe — it has a complete d-orbital}",
+      "\\text{Mn — it has too many oxidation states}",
+      "\\text{Cu — its d-orbital is half-filled}"
+    ],
+    "answer": "\\text{Zn — its d}^{10}\\text{ configuration is complete in both ground and ionic states}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Zn, Cd, Hg are called non-typical transition elements — their d¹⁰ is complete and never partially filled."
+  },
+  {
+    "id": "d_f_block_qn_002",
+    "question": "The electronic configurations of Cr and Cu are exceptions to the expected pattern. They are:",
+    "options": [
+      "\\text{Cr: [Ar]3d}^4\\text{4s}^2\\text{; Cu: [Ar]3d}^9\\text{4s}^2",
+      "\\text{Cr: [Ar]3d}^5\\text{4s}^1\\text{; Cu: [Ar]3d}^{10}\\text{4s}^1",
+      "\\text{Cr: [Ar]3d}^6\\text{4s}^0\\text{; Cu: [Ar]3d}^{10}\\text{4s}^1",
+      "\\text{Cr: [Ar]3d}^5\\text{4s}^1\\text{; Cu: [Ar]3d}^9\\text{4s}^2"
+    ],
+    "answer": "\\text{Cr: [Ar]3d}^5\\text{4s}^1\\text{; Cu: [Ar]3d}^{10}\\text{4s}^1",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Extra stability of half-filled (d⁵) and completely filled (d¹⁰) configurations drives these exceptions."
+  },
+  {
+    "id": "d_f_block_qn_003",
+    "question": "Why is mercury (Hg) a liquid at room temperature, unlike other transition metals?",
+    "options": [
+      "\\text{Hg has the highest ionisation enthalpy in the series}",
+      "\\text{Hg has a completely filled d}^{10}\\text{ configuration, no unpaired electrons, and weak metallic bonding}",
+      "\\text{Hg forms amalgams easily which lower its melting point}",
+      "\\text{Hg has the largest atomic radius in the series}"
+    ],
+    "answer": "\\text{Hg has a completely filled d}^{10}\\text{ configuration, no unpaired electrons, and weak metallic bonding}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "d_f_block_qn_004",
+    "question": "The transition metal with the <b>highest melting point</b> and the transition metal with the <b>highest density</b> are respectively:",
+    "options": [
+      "\\text{W (3410°C) and Os}",
+      "\\text{W (3410°C) and Ir}",
+      "\\text{Mo and Ir}",
+      "\\text{W (3410°C) and Pt}"
+    ],
+    "answer": "\\text{W (3410°C) and Ir}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Iridium density = 22.61 g/cm³; Osmium = 22.52 g/cm³. Iridium is denser."
+  },
+  {
+    "id": "d_f_block_qn_005",
+    "question": "The magnetic moment of a transition metal ion is 5.92 BM. The number of unpaired electrons and the most likely ion are:",
+    "options": [
+      "n = 4\\text{; Cr}^{2+}",
+      "n = 5\\text{; Mn}^{2+}\\text{ or Fe}^{3+}",
+      "n = 3\\text{; V}^{2+}",
+      "n = 5\\text{; Mn}^{4+}"
+    ],
+    "answer": "n = 5\\text{; Mn}^{2+}\\text{ or Fe}^{3+}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "\\mu = \\sqrt{n(n+2)}\\text{ BM. For n=5: }\\sqrt{35} \\approx 5.92\\text{ BM.}"
+  },
+  {
+    "id": "d_f_block_qn_006",
+    "question": "The purple colour of KMnO₄ is due to charge transfer, not d-d transition. This is because:",
+    "options": [
+      "\\text{Mn in KMnO}_4\\text{ has a d}^0\\text{ configuration with no unpaired d-electrons}",
+      "\\text{Mn in KMnO}_4\\text{ has a d}^5\\text{ half-filled configuration}",
+      "\\text{MnO}_4^-\\text{ is too large for d-d transitions}",
+      "\\text{Mn(VII) has an even number of electrons}"
+    ],
+    "answer": "\\text{Mn in KMnO}_4\\text{ has a d}^0\\text{ configuration with no unpaired d-electrons}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Charge transfer: O²⁻ → O⁻ and Mn(VII) → Mn(VI). Only possible when energy levels on two atoms are close."
+  },
+  {
+    "id": "d_f_block_qn_007",
+    "question": "Anhydrous CuSO₄ is colourless, but CuSO₄·5H₂O is blue. This is because:",
+    "options": [
+      "\\text{Anhydrous CuSO}_4\\text{ has Cu in +1 oxidation state}",
+      "\\text{In the hydrated salt, water molecules act as ligands causing d-d transitions in Cu}^{2+}",
+      "\\text{Anhydrous CuSO}_4\\text{ has a d}^{10}\\text{ configuration}",
+      "\\text{SO}_4^{2-}\\text{ causes the blue colour in the hydrated salt}"
+    ],
+    "answer": "\\text{In the hydrated salt, water molecules act as ligands causing d-d transitions in Cu}^{2+}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "d_f_block_qn_008",
+    "question": "Which of the following correctly matches the catalyst with its composition?",
+    "options": [
+      "\\text{Wilkinson's catalyst: TiCl}_4 + \\text{(C}_2\\text{H}_5)_3\\text{Al}",
+      "\\text{Ziegler-Natta: TiCl}_4 + \\text{(C}_2\\text{H}_5)_3\\text{Al; Lindlar's: Pd/BaSO}_4\\text{; Wilkinson's: [Ph}_3\\text{P]}_3\\text{RhCl}",
+      "\\text{Lindlar's catalyst: Pt/PtO}",
+      "\\text{Adam's catalyst: Ni boride}"
+    ],
+    "answer": "\\text{Ziegler-Natta: TiCl}_4 + \\text{(C}_2\\text{H}_5)_3\\text{Al; Lindlar's: Pd/BaSO}_4\\text{; Wilkinson's: [Ph}_3\\text{P]}_3\\text{RhCl}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "d_f_block_qn_009",
+    "question": "In a <b>normal spinel</b> structure (e.g. ZnFe₂O₄), which ions occupy which holes?",
+    "options": [
+      "\\text{M}^{3+}\\text{ in tetrahedral holes; M}^{2+}\\text{ in octahedral holes}",
+      "\\text{M}^{3+}\\text{ in octahedral holes; M}^{2+}\\text{ in tetrahedral holes}",
+      "\\text{Both M}^{2+}\\text{ and M}^{3+}\\text{ in octahedral holes}",
+      "\\text{M}^{2+}\\text{ in octahedral holes; M}^{3+}\\text{ in tetrahedral holes (inverse spinel)}"
+    ],
+    "answer": "\\text{M}^{3+}\\text{ in octahedral holes; M}^{2+}\\text{ in tetrahedral holes}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Inverse spinel (e.g. Fe₃O₄): M³⁺ in tetrahedral holes, M²⁺ in octahedral holes."
+  },
+  {
+    "id": "d_f_block_qn_010",
+    "question": "The ore of K₂Cr₂O₇ is chromite. In the preparation, chromite is first fused with Na₂CO₃ in air to give:",
+    "options": [
+      "\\text{Na}_2\\text{Cr}_2\\text{O}_7\\text{ (orange)}",
+      "\\text{Na}_2\\text{CrO}_4\\text{ (yellow)}",
+      "\\text{CrO}_3\\text{ (red)}",
+      "\\text{Cr}_2\\text{O}_3\\text{ (green)}"
+    ],
+    "answer": "\\text{Na}_2\\text{CrO}_4\\text{ (yellow)}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Full sequence: chromite → Na₂CrO₄ (yellow) → Na₂Cr₂O₇ (orange, on acidifying) → K₂Cr₂O₇ (adding KCl)."
+  },
+  {
+    "id": "d_f_block_qn_011",
+    "question": "In aqueous solution, chromate and dichromate ions are interconvertible depending on pH. In <b>acidic</b> medium:",
+    "options": [
+      "\\text{CrO}_4^{2-}\\text{ (yellow) is formed}",
+      "\\text{Cr}_2\\text{O}_7^{2-}\\text{ (orange) is formed}",
+      "\\text{CrO}_3\\text{ precipitates out}",
+      "\\text{Cr}^{3+}\\text{ is formed}"
+    ],
+    "answer": "\\text{Cr}_2\\text{O}_7^{2-}\\text{ (orange) is formed}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Acid → dichromate (orange). Alkali → chromate (yellow). Easy memory: acid = orange, alkali = yellow."
+  },
+  {
+    "id": "d_f_block_qn_012",
+    "question": "Acidified K₂Cr₂O₇ oxidises I⁻ to I₂. The Cr₂O₇²⁻ ion is reduced to:",
+    "options": [
+      "\\text{Cr}^{6+}",
+      "\\text{Cr}^{3+}",
+      "\\text{CrO}_4^{2-}",
+      "\\text{Cr}^{2+}"
+    ],
+    "answer": "\\text{Cr}^{3+}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "d_f_block_qn_013",
+    "question": "The ore of KMnO₄ is pyrolusite (MnO₂). In the commercial preparation, MnO₂ is first fused with KOH and oxidised to give:",
+    "options": [
+      "\\text{KMnO}_4\\text{ (purple) directly}",
+      "\\text{K}_2\\text{MnO}_4\\text{ (green manganate ion)}",
+      "\\text{MnO}\\text{ (black)}",
+      "\\text{Mn}_2\\text{O}_7\\text{ (dark green oil)}"
+    ],
+    "answer": "\\text{K}_2\\text{MnO}_4\\text{ (green manganate ion)}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "MnO₂ → K₂MnO₄ (green) → KMnO₄ (purple) by electrolytic oxidation."
+  },
+  {
+    "id": "d_f_block_qn_014",
+    "question": "KMnO₄ is acidified only with H₂SO₄ and not HCl or HNO₃ in titrations. Why?",
+    "options": [
+      "\\text{HCl and HNO}_3\\text{ are too dilute}",
+      "\\text{HCl reacts with KMnO}_4\\text{ liberating Cl}_2\\text{; HNO}_3\\text{ itself acts as an oxidising agent}",
+      "\\text{HCl precipitates MnCl}_2",
+      "\\text{HNO}_3\\text{ reduces KMnO}_4\\text{ to MnO}_2"
+    ],
+    "answer": "\\text{HCl reacts with KMnO}_4\\text{ liberating Cl}_2\\text{; HNO}_3\\text{ itself acts as an oxidising agent}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "d_f_block_qn_015",
+    "question": "In <b>acidic medium</b>, KMnO₄ is reduced to Mn²⁺. The half-reaction is:",
+    "options": [
+      "\\text{MnO}_4^- + 4\\text{H}^+ + 3e^- \\rightarrow \\text{MnO}_2 + 2\\text{H}_2\\text{O}",
+      "\\text{MnO}_4^- + 8\\text{H}^+ + 5e^- \\rightarrow \\text{Mn}^{2+} + 4\\text{H}_2\\text{O}",
+      "\\text{MnO}_4^- + 2\\text{H}_2\\text{O} + 3e^- \\rightarrow \\text{MnO}_2 + 4\\text{OH}^-",
+      "\\text{MnO}_4^- + e^- \\rightarrow \\text{MnO}_4^{2-}"
+    ],
+    "answer": "\\text{MnO}_4^- + 8\\text{H}^+ + 5e^- \\rightarrow \\text{Mn}^{2+} + 4\\text{H}_2\\text{O}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "d_f_block_qn_016",
+    "question": "The transition metal showing the <b>highest paramagnetism</b> in the 3d series is Mn(II). This is because:",
+    "options": [
+      "\\text{Mn(II) has the highest nuclear charge}",
+      "\\text{Mn(II) has 5 unpaired electrons (d}^5\\text{), the maximum possible in a d-subshell}",
+      "\\text{Mn(II) has the largest ionic radius}",
+      "\\text{Mn(II) forms the most stable complexes}"
+    ],
+    "answer": "\\text{Mn(II) has 5 unpaired electrons (d}^5\\text{), the maximum possible in a d-subshell}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "d_f_block_qn_017",
+    "question": "In the chromyl chloride test for Cl⁻, the red vapour of CrO₂Cl₂ is passed into NaOH solution. The sequence of observations is:",
+    "options": [
+      "\\text{Red vapours} \\rightarrow \\text{red Na}_2\\text{CrO}_4\\text{ solution} \\rightarrow \\text{red PbCrO}_4\\text{ ppt on adding Pb(CH}_3\\text{COO)}_2",
+      "\\text{Red vapours} \\rightarrow \\text{yellow Na}_2\\text{CrO}_4\\text{ solution} \\rightarrow \\text{yellow PbCrO}_4\\text{ ppt on adding Pb(CH}_3\\text{COO)}_2",
+      "\\text{Red vapours} \\rightarrow \\text{green Cr}_2\\text{O}_3\\text{ ppt} \\rightarrow \\text{no further reaction}",
+      "\\text{Red vapours} \\rightarrow \\text{orange Na}_2\\text{Cr}_2\\text{O}_7\\text{ solution} \\rightarrow \\text{yellow ppt}"
+    ],
+    "answer": "\\text{Red vapours} \\rightarrow \\text{yellow Na}_2\\text{CrO}_4\\text{ solution} \\rightarrow \\text{yellow PbCrO}_4\\text{ ppt on adding Pb(CH}_3\\text{COO)}_2",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "CrO₂Cl₂ + 4NaOH → Na₂CrO₄ (yellow) + 2NaCl + 2H₂O. Then Na₂CrO₄ + Pb(CH₃COO)₂ → PbCrO₄ (yellow ppt). Confirms Cl⁻."
+  },
+  {
+    "id": "d_f_block_qn_018",
+    "question": "The composition of <b>German silver</b> is:",
+    "options": [
+      "\\text{Ag = 92.5\\%, Cu = 7.5\\%}",
+      "\\text{Cu = 60\\%, Zn = 20\\%, Ni = 20\\%}",
+      "\\text{Cu = 80\\%, Sn = 20\\%}",
+      "\\text{Al = 95\\%, Cu = 4\\%, Mg and Mn } \\leq 1\\%"
+    ],
+    "answer": "\\text{Cu = 60\\%, Zn = 20\\%, Ni = 20\\%}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "German silver contains no silver at all — a common trick question."
+  },
+  {
+    "id": "d_f_block_qn_019",
+    "question": "Non-stoichiometric compound Fe₀.₉₄O exists because:",
+    "options": [
+      "\\text{Fe and O have different atomic masses}",
+      "\\text{Fe exhibits variable oxidation states (+2 and +3), allowing some Fe}^{2+}\\text{ to be replaced by Fe}^{3+}",
+      "\\text{O has a tendency to exist in excess}",
+      "\\text{The compound is not an oxide but a hydroxide}"
+    ],
+    "answer": "\\text{Fe exhibits variable oxidation states (+2 and +3), allowing some Fe}^{2+}\\text{ to be replaced by Fe}^{3+}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "d_f_block_qn_020",
+    "question": "Only <b>Os and Ru</b> among transition metals show +8 oxidation state, while Ni and Fe show zero oxidation state in their carbonyls. Which option correctly states both facts?",
+    "options": [
+      "\\text{Os/Ru reach +8 in fluorides and oxides; Ni(CO)}_4\\text{ and Fe(CO)}_5\\text{ have M in zero OS}",
+      "\\text{Os/Ru reach +8 only in complex ions; Fe(CO)}_5\\text{ has Fe in +2 OS}",
+      "\\text{All transition metals can reach +8; only Ni shows zero OS in Ni(CO)}_4",
+      "\\text{Os/Ru reach +8 in chlorides; Ni(CO)}_4\\text{ has Ni in -2 OS}"
+    ],
+    "answer": "\\text{Os/Ru reach +8 in fluorides and oxides; Ni(CO)}_4\\text{ and Fe(CO)}_5\\text{ have M in zero OS}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "d_f_block_qn_021",
+    "question": "Lanthanoids are called rare earths. Their atomic numbers range from:",
+    "options": [
+      "57 \\text{ (La) to } 71 \\text{ (Lu), 15 elements}",
+      "58 \\text{ (Ce) to } 71 \\text{ (Lu), 14 elements}",
+      "57 \\text{ (La) to } 70 \\text{ (Yb), 14 elements}",
+      "89 \\text{ (Ac) to } 103 \\text{ (Lr), 15 elements}"
+    ],
+    "answer": "57 \\text{ (La) to } 71 \\text{ (Lu), 15 elements}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "d_f_block_qn_022",
+    "question": "The most stable oxidation state of lanthanoids is +3. Some exhibit +2 or +4 because they achieve stable f-configurations. Which set is correct?",
+    "options": [
+      "\\text{Eu}^{2+}\\text{(f}^7\\text{), Yb}^{2+}\\text{(f}^{14}\\text{) — reducing agents; Ce}^{4+}\\text{(f}^0\\text{), Tb}^{4+}\\text{(f}^7\\text{) — oxidising agents}",
+      "\\text{Ce}^{2+}\\text{(f}^0\\text{), La}^{4+}\\text{(f}^7\\text{) — common exceptions}",
+      "\\text{Eu}^{4+}\\text{ and Yb}^{4+}\\text{ are the stable +4 ions}",
+      "\\text{All lanthanoids show only +3 OS; no exceptions exist}"
+    ],
+    "answer": "\\text{Eu}^{2+}\\text{(f}^7\\text{), Yb}^{2+}\\text{(f}^{14}\\text{) — reducing agents; Ce}^{4+}\\text{(f}^0\\text{), Tb}^{4+}\\text{(f}^7\\text{) — oxidising agents}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "d_f_block_qn_023",
+    "question": "Lanthanoid contraction occurs because:",
+    "options": [
+      "\\text{4f orbitals are small and shield very effectively}",
+      "\\text{4f orbitals are large and diffuse with poor shielding; effective nuclear charge increases steadily}",
+      "\\text{5d electrons are added instead of 4f}",
+      "\\text{The nuclear charge decreases across the lanthanoid series}"
+    ],
+    "answer": "\\text{4f orbitals are large and diffuse with poor shielding; effective nuclear charge increases steadily}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "d_f_block_qn_024",
+    "question": "A direct consequence of lanthanoid contraction is that Zr and Hf, and Nb and Ta have nearly identical sizes. They are called:",
+    "options": [
+      "\\text{Isobars}",
+      "\\text{Chemical twins}",
+      "\\text{Isotopes}",
+      "\\text{Pseudoelements}"
+    ],
+    "answer": "\\text{Chemical twins}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "d_f_block_qn_025",
+    "question": "Which of the following is a consequence of lanthanoid contraction?",
+    "options": [
+      "\\text{Basic strength of Ln oxides/hydroxides increases from La to Lu}",
+      "\\text{Basic strength of Ln oxides/hydroxides decreases from La to Lu}",
+      "\\text{All lanthanoids have identical ionic radii}",
+      "\\text{5d series elements are larger than 4d series elements}"
+    ],
+    "answer": "\\text{Basic strength of Ln oxides/hydroxides decreases from La to Lu}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "d_f_block_qn_026",
+    "question": "The magnetic moment formula for lanthanoids is different from transition elements because:",
+    "options": [
+      "\\text{Lanthanoids have no unpaired electrons}",
+      "\\mu = \\sqrt{4S(S+1) + L(L+1)}\\text{ (includes orbital contribution L); for 3d metals orbital contribution is quenched by ligand fields}",
+      "\\text{Lanthanoids use the spin-only formula }\\mu = \\sqrt{n(n+2)}",
+      "\\text{Lanthanoid ions are all diamagnetic}"
+    ],
+    "answer": "\\mu = \\sqrt{4S(S+1) + L(L+1)}\\text{ (includes orbital contribution L); for 3d metals orbital contribution is quenched by ligand fields}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "d_f_block_qn_027",
+    "question": "Misch metal is used in lighter flints. Its approximate composition is:",
+    "options": [
+      "\\text{Fe 94\\%, lanthanoid metals 5\\%}",
+      "\\text{Lanthanoid metals 94--95\\%, Fe 5\\%, traces of S, C, Ca, Al}",
+      "\\text{Ce 50\\%, Fe 50\\%}",
+      "\\text{Al 95\\%, Ce 5\\%}"
+    ],
+    "answer": "\\text{Lanthanoid metals 94--95\\%, Fe 5\\%, traces of S, C, Ca, Al}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "d_f_block_qn_028",
+    "question": "Actinoids differ from lanthanoids in which key respect?",
+    "options": [
+      "\\text{Actinoids show only +3 OS like lanthanoids}",
+      "\\text{Actinoids show variable OS up to +7; have greater tendency to form complexes; actinoid contraction > lanthanoid contraction}",
+      "\\text{Actinoids have lower tendency to form complexes than lanthanoids}",
+      "\\text{Actinoids all occur naturally; none are man-made}"
+    ],
+    "answer": "\\text{Actinoids show variable OS up to +7; have greater tendency to form complexes; actinoid contraction > lanthanoid contraction}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "d_f_block_qn_029",
+    "question": "Sc³⁺ and Ti⁴⁺ are colourless in solution, whereas Ti³⁺ is coloured. The reason is:",
+    "options": [
+      "\\text{Sc}^{3+}\\text{ and Ti}^{4+}\\text{ have d}^0\\text{ configuration — no d-d transitions possible; Ti}^{3+}\\text{ has d}^1\\text{ — d-d transition possible}",
+      "\\text{Sc}^{3+}\\text{ and Ti}^{4+}\\text{ are too small to absorb visible light}",
+      "\\text{Sc}^{3+}\\text{ and Ti}^{4+}\\text{ have completely filled d}^{10}\\text{ orbitals}",
+      "\\text{Ti}^{3+}\\text{ is coloured due to charge transfer, not d-d transitions}"
+    ],
+    "answer": "\\text{Sc}^{3+}\\text{ and Ti}^{4+}\\text{ have d}^0\\text{ configuration — no d-d transitions possible; Ti}^{3+}\\text{ has d}^1\\text{ — d-d transition possible}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Rule: d⁰ and d¹⁰ ions are colourless (no d-d transitions). All others with partially filled d-orbitals are coloured."
+  },
+  {
+    "id": "d_f_block_qn_030",
+    "question": "Why do the 5d transition elements (e.g. Hf, Ta, W) have nearly the same atomic radii as the corresponding 4d elements (Zr, Nb, Mo), even though they are in a lower period?",
+    "options": [
+      "\\text{5d elements have fewer electrons than expected}",
+      "\\text{Lanthanoid contraction: poor shielding of 4f electrons causes the 5d elements to be unusually small, offsetting the expected increase in size}",
+      "\\text{5d elements have a higher nuclear charge which contracts them}",
+      "\\text{4d and 5d elements have identical electronic configurations}"
+    ],
+    "answer": "\\text{Lanthanoid contraction: poor shielding of 4f electrons causes the 5d elements to be unusually small, offsetting the expected increase in size}",
+    "tags": {
+      "chapter": "The d and f-Block Elements",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  }
+]

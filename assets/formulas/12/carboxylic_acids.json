@@ -1,0 +1,422 @@
+[
+  {
+    "id": "ca_qn_001",
+    "question": "The acidity order of simple aliphatic carboxylic acids based on +I effect of alkyl groups is:",
+    "options": [
+      "HCOOH > CH_3COOH > C_2H_5COOH > C_3H_7COOH",
+      "CH_3COOH > HCOOH > C_2H_5COOH > C_3H_7COOH",
+      "C_3H_7COOH > C_2H_5COOH > CH_3COOH > HCOOH",
+      "HCOOH > C_3H_7COOH > C_2H_5COOH > CH_3COOH"
+    ],
+    "answer": "HCOOH > CH_3COOH > C_2H_5COOH > C_3H_7COOH",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_002",
+    "question": "The acidity order of chloroacetic acids based on number of electron-withdrawing Cl groups is:",
+    "options": [
+      "CCl_3COOH > CHCl_2COOH > CH_2ClCOOH > CH_3COOH",
+      "CH_2ClCOOH > CHCl_2COOH > CCl_3COOH > CH_3COOH",
+      "CH_3COOH > CH_2ClCOOH > CHCl_2COOH > CCl_3COOH",
+      "CCl_3COOH > CH_3COOH > CHCl_2COOH > CH_2ClCOOH"
+    ],
+    "answer": "CCl_3COOH > CHCl_2COOH > CH_2ClCOOH > CH_3COOH",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_003",
+    "question": "Carboxylic acids react with NaHCO3 to give brisk effervescence of CO2. This reaction is used to:",
+    "options": [
+      "\\text{Distinguish carboxylic acids from phenols and alcohols}",
+      "\\text{Distinguish aldehydes from ketones}",
+      "\\text{Detect the presence of alpha-hydrogen}",
+      "\\text{Distinguish primary from secondary acids}"
+    ],
+    "answer": "\\text{Distinguish carboxylic acids from phenols and alcohols}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_004",
+    "question": "Grignard reagent reacts with dry CO2 (dry ice) followed by acidification to give:",
+    "options": [
+      "\\text{Carboxylic acid with one carbon more than the Grignard reagent}",
+      "\\text{Aldehyde}",
+      "\\text{Ketone}",
+      "\\text{Alcohol}"
+    ],
+    "answer": "\\text{Carboxylic acid with one carbon more than the Grignard reagent}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_005",
+    "question": "The −I effect of halogens decreases in the order F > Cl > Br > I. Therefore, the acidity order of mono-haloacetic acids is:",
+    "options": [
+      "FCH_2COOH > ClCH_2COOH > BrCH_2COOH > ICH_2COOH",
+      "ICH_2COOH > BrCH_2COOH > ClCH_2COOH > FCH_2COOH",
+      "ClCH_2COOH > FCH_2COOH > BrCH_2COOH > ICH_2COOH",
+      "BrCH_2COOH > ICH_2COOH > ClCH_2COOH > FCH_2COOH"
+    ],
+    "answer": "FCH_2COOH > ClCH_2COOH > BrCH_2COOH > ICH_2COOH",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_006",
+    "question": "The −I effect of a substituent decreases with distance from the COOH group. Therefore, which is more acidic?",
+    "options": [
+      "\\alpha\\text{-chloropropionic acid} > \\beta\\text{-chloropropionic acid}",
+      "\\beta\\text{-chloropropionic acid} > \\alpha\\text{-chloropropionic acid}",
+      "\\text{Both have equal acidity}",
+      "\\text{Neither is more acidic than propionic acid}"
+    ],
+    "answer": "\\alpha\\text{-chloropropionic acid} > \\beta\\text{-chloropropionic acid}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_007",
+    "question": "Hell-Volhard-Zelinsky (HVZ) reaction introduces a halogen at the alpha position of carboxylic acids. The reagents required are:",
+    "options": [
+      "X_2 \\text{ / red phosphorus}",
+      "X_2 \\text{ / NaOH}",
+      "X_2 \\text{ / UV light}",
+      "\\text{NaX / H}_2\\text{SO}_4"
+    ],
+    "answer": "X_2 \\text{ / red phosphorus}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_008",
+    "question": "In Kolbe electrolysis, the product formed at the anode when sodium acetate solution is electrolysed is:",
+    "options": [
+      "\\text{Ethane} + CO_2",
+      "\\text{Methane} + CO_2",
+      "\\text{Ethene} + CO_2",
+      "\\text{Acetic anhydride}"
+    ],
+    "answer": "\\text{Ethane} + CO_2",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_009",
+    "question": "Hofmann bromamide reaction converts an amide to a primary amine with one carbon less. The reagents are:",
+    "options": [
+      "Br_2 \\text{ / KOH}",
+      "Br_2 \\text{ / HCl}",
+      "\\text{NaNO}_2 \\text{ / HCl}",
+      "\\text{LiAlH}_4"
+    ],
+    "answer": "Br_2 \\text{ / KOH}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_010",
+    "question": "Formic acid (HCOOH) is unique among carboxylic acids in reducing Tollens reagent, Fehling solution and acidified KMnO4. The correct reason for this exceptional reducing property is:",
+    "options": [
+      "\\text{HCOOH has an aldehyde-like H directly on the carbonyl carbon (H-COOH), allowing it to donate electrons like an aldehyde}",
+      "\\text{HCOOH has the lowest molecular weight among acids}",
+      "\\text{HCOOH is a diprotic acid unlike other monocarboxylic acids}",
+      "\\text{HCOOH has no alkyl group to provide +I effect, making it more reactive}"
+    ],
+    "answer": "\\text{HCOOH has an aldehyde-like H directly on the carbonyl carbon (H-COOH), allowing it to donate electrons like an aldehyde}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": "Think of HCOOH as H-CO-OH — it has both carbonyl and hydroxyl, making it a hybrid of aldehyde and acid. That aldehyde character is why it reduces Tollens, Fehling, and KMnO4."
+  },
+  {
+    "id": "ca_qn_011",
+    "question": "The ease of hydrolysis of acid derivatives follows the order:",
+    "options": [
+      "\\text{RCOCl} > (\\text{RCO})_2\\text{O} > \\text{RCOOR'} > \\text{RCONH}_2",
+      "\\text{RCONH}_2 > \\text{RCOOR'} > (\\text{RCO})_2\\text{O} > \\text{RCOCl}",
+      "\\text{RCOOR'} > \\text{RCOCl} > \\text{RCONH}_2 > (\\text{RCO})_2\\text{O}",
+      "(\\text{RCO})_2\\text{O} > \\text{RCOCl} > \\text{RCOOR'} > \\text{RCONH}_2"
+    ],
+    "answer": "\\text{RCOCl} > (\\text{RCO})_2\\text{O} > \\text{RCOOR'} > \\text{RCONH}_2",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_012",
+    "question": "On heating, dicarboxylic acids show different behaviour depending on the distance between the two COOH groups. Malonic acid on heating gives:",
+    "options": [
+      "\\text{Acetic acid} + CO_2 \\text{ (decarboxylation)}",
+      "\\text{Cyclic anhydride}",
+      "\\text{CO}_2 + CO + H_2\\text{O}",
+      "\\text{Cyclic imide}"
+    ],
+    "answer": "\\text{Acetic acid} + CO_2 \\text{ (decarboxylation)}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": "Pattern: 1,3-diacids (malonic) and lower → decarboxylation. 1,4-diacids (succinic) and 1,5-diacids (glutaric) → cyclic anhydride. Oxalic acid (1,2-diacid) → CO2 + CO + H2O (or HCOOH + CO2 depending on conditions)."
+  },
+  {
+    "id": "ca_qn_013",
+    "question": "Decarboxylation of carboxylic acid using soda-lime (NaOH + CaO, 3:1) gives:",
+    "options": [
+      "\\text{Alkane with one carbon less than the acid}",
+      "\\text{Alkene with one carbon less than the acid}",
+      "\\text{Alkane with same number of carbons}",
+      "\\text{Aldehyde}"
+    ],
+    "answer": "\\text{Alkane with one carbon less than the acid}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_014",
+    "question": "Arndt-Eistert reaction converts a carboxylic acid to its next higher homologue. The key intermediate formed is:",
+    "options": [
+      "\\text{Diazoketone (RCOCHN}_2\\text{)}",
+      "\\text{Acyl azide}",
+      "\\text{Ketene}",
+      "\\text{Carbene}"
+    ],
+    "answer": "\\text{Diazoketone (RCOCHN}_2\\text{)}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_015",
+    "question": "The -COOH group shows -R effect in aromatic systems. Therefore, benzoic acid undergoes electrophilic substitution to give predominantly:",
+    "options": [
+      "\\text{meta-substituted product}",
+      "\\text{ortho-substituted product}",
+      "\\text{para-substituted product}",
+      "\\text{ortho and para mixture}"
+    ],
+    "answer": "\\text{meta-substituted product}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_016",
+    "question": "Benzoic acid does NOT undergo Friedel-Crafts reaction. The correct reason is:",
+    "options": [
+      "\\text{-COOH deactivates the ring AND AlCl}_3\\text{ forms a complex with -COOH, removing the catalyst}",
+      "\\text{-COOH is an ortho/para director, preventing Friedel-Crafts}",
+      "\\text{Benzoic acid is insoluble in the reaction medium}",
+      "\\text{AlCl}_3\\text{ oxidises benzoic acid before the reaction can occur}"
+    ],
+    "answer": "\\text{-COOH deactivates the ring AND AlCl}_3\\text{ forms a complex with -COOH, removing the catalyst}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_017",
+    "question": "Esterification of carboxylic acid with alcohol is acid-catalysed and reversible. The mechanism involves attack of alcohol oxygen on the:",
+    "options": [
+      "\\text{Protonated carbonyl carbon of the acid}",
+      "\\text{Alpha carbon of the acid}",
+      "\\text{Carbonyl oxygen of the acid}",
+      "\\text{Hydroxyl hydrogen of the acid}"
+    ],
+    "answer": "\\text{Protonated carbonyl carbon of the acid}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_018",
+    "question": "Schotten-Baumann reaction involves reaction of an acid chloride with an alcohol in the presence of aqueous NaOH to give:",
+    "options": [
+      "\\text{Ester}",
+      "\\text{Amide}",
+      "\\text{Anhydride}",
+      "\\text{Carboxylic acid}"
+    ],
+    "answer": "\\text{Ester}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_019",
+    "question": "Carboxylic acids have higher boiling points than alcohols of comparable molecular mass. The reason is:",
+    "options": [
+      "\\text{Carboxylic acids form hydrogen-bonded dimers; intermolecular H-bonding is stronger than in alcohols}",
+      "\\text{Carboxylic acids have higher molecular weight than alcohols}",
+      "\\text{Carboxylic acids have dipole-dipole interactions while alcohols do not}",
+      "\\text{Carboxylic acids are ionic while alcohols are covalent}"
+    ],
+    "answer": "\\text{Carboxylic acids form hydrogen-bonded dimers; intermolecular H-bonding is stronger than in alcohols}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_020",
+    "question": "Among the three nitrobenzoic acid isomers, Ka values are: o-NO2 (35.0×10-5) > p-NO2 (6.0×10-5) ≈ m-NO2 (32.0×10-5). The ortho isomer is the strongest acid despite -NO2 being a meta-director. The correct explanation for ortho being strongest is:",
+    "options": [
+      "\\text{Ortho -NO}_2\\text{ exerts both -I and -M effects AND the ortho effect (steric inhibition of resonance of -COOH with ring reduces its donation, increasing acidity)}",
+      "\\text{Ortho -NO}_2\\text{ increases acidity only through -M effect}",
+      "\\text{Ortho -NO}_2\\text{ increases acidity by +I effect}",
+      "\\text{The ortho isomer has a lower pKa due to intramolecular H-bonding with -COOH}"
+    ],
+    "answer": "\\text{Ortho -NO}_2\\text{ exerts both -I and -M effects AND the ortho effect (steric inhibition of resonance of -COOH with ring reduces its donation, increasing acidity)}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": "Ortho rule: any substituent at ortho position tends to make benzoic acid stronger than its para counterpart — steric strain forces -COOH out of the ring plane, disrupting its resonance and making the carboxylate more stable on ionisation."
+  },
+  {
+    "id": "ca_qn_021",
+    "question": "Amide (RCONH2) on treatment with P2O5 gives:",
+    "options": [
+      "\\text{Nitrile (RCN)}",
+      "\\text{Primary amine (RNH}_2\\text{)}",
+      "\\text{Carboxylic acid}",
+      "\\text{Acid anhydride}"
+    ],
+    "answer": "\\text{Nitrile (RCN)}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_022",
+    "question": "Reduction of a carboxylic acid to a primary alcohol requires:",
+    "options": [
+      "\\text{LiAlH}_4 \\text{ or B}_2\\text{H}_6",
+      "\\text{NaBH}_4",
+      "\\text{H}_2\\text{/Ni}",
+      "\\text{Zn-Hg / conc. HCl}"
+    ],
+    "answer": "\\text{LiAlH}_4 \\text{ or B}_2\\text{H}_6",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": "NaBH4 is too mild to reduce carboxylic acids — it reduces only aldehydes and ketones. LiAlH4 and B2H6 are strong enough to reduce the COOH group to CH2OH."
+  },
+  {
+    "id": "ca_qn_023",
+    "question": "Hydrolysis of a nitrile proceeds stepwise. The correct sequence and conditions to stop at the amide stage are:",
+    "options": [
+      "\\text{RCN} \\xrightarrow{\\text{H}_2\\text{O, mild H}^+\\text{/OH}^-} \\text{RCONH}_2 \\xrightarrow{\\text{H}_2\\text{O, conc. H}^+\\text{/OH}^-, \\Delta} \\text{RCOOH}",
+      "\\text{RCN} \\xrightarrow{\\text{H}_2\\text{O, conc. H}^+} \\text{RCOOH} \\xrightarrow{\\text{NH}_3} \\text{RCONH}_2",
+      "\\text{RCN} \\xrightarrow{\\text{LiAlH}_4} \\text{RCONH}_2 \\xrightarrow{\\text{H}_2\\text{O}} \\text{RCOOH}",
+      "\\text{RCN} \\xrightarrow{\\text{NaOH}} \\text{RCOOH} \\xrightarrow{\\text{NH}_3} \\text{RCONH}_2"
+    ],
+    "answer": "\\text{RCN} \\xrightarrow{\\text{H}_2\\text{O, mild H}^+\\text{/OH}^-} \\text{RCONH}_2 \\xrightarrow{\\text{H}_2\\text{O, conc. H}^+\\text{/OH}^-, \\Delta} \\text{RCOOH}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_024",
+    "question": "Phthalic acid (benzene-1,2-dicarboxylic acid) on strong heating with ammonia gives phthalimide. The intermediate is:",
+    "options": [
+      "\\text{Phthalamide} \\rightarrow \\text{phthalimide (cyclisation with loss of NH}_3\\text{)}",
+      "\\text{Phthalic anhydride} \\rightarrow \\text{phthalimide}",
+      "\\text{Phthalic acid directly loses water to give phthalimide}",
+      "\\text{Ammonium phthalate} \\rightarrow \\text{phthalimide directly}"
+    ],
+    "answer": "\\text{Phthalamide} \\rightarrow \\text{phthalimide (cyclisation with loss of NH}_3\\text{)}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_025",
+    "question": "In Hunsdiecker reaction, silver salt of acetic acid reacts with Br2 in CCl4 to give:",
+    "options": [
+      "CH_3Br + AgBr + CO_2",
+      "CH_3Br + AgBr + CO",
+      "C_2H_5Br + AgBr + CO_2",
+      "CH_2Br_2 + AgBr"
+    ],
+    "answer": "CH_3Br + AgBr + CO_2",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_026",
+    "question": "Among o-, m-, and p-toluic acids, which is weaker than benzoic acid and why?",
+    "options": [
+      "\\text{m- and p-toluic acids; +I effect of CH}_3\\text{ destabilises carboxylate ion}",
+      "\\text{o-toluic acid only; ortho effect makes it stronger}",
+      "\\text{All three toluic acids are stronger than benzoic acid}",
+      "\\text{p-toluic acid only; para CH}_3\\text{ has +M effect}"
+    ],
+    "answer": "\\text{m- and p-toluic acids; +I effect of CH}_3\\text{ destabilises carboxylate ion}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_027",
+    "question": "Ammonolysis of an ester (RCOOR') with ammonia gives:",
+    "options": [
+      "\\text{Amide (RCONH}_2\\text{) + alcohol (R'OH)}",
+      "\\text{Amine (RNH}_2\\text{) + carboxylic acid}",
+      "\\text{Ammonium salt of acid}",
+      "\\text{Nitrile + water}"
+    ],
+    "answer": "\\text{Amide (RCONH}_2\\text{) + alcohol (R'OH)}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_028",
+    "question": "Melting points of aliphatic monocarboxylic acids show an alternation effect: acids with even number of carbon atoms have higher melting points than their odd-carbon neighbours. The reason is:",
+    "options": [
+      "\\text{Even-carbon acids: terminal -CH}_3\\text{ and -COOH lie on opposite sides of zigzag chain → closer packing in crystal lattice}",
+      "\\text{Even-carbon acids have stronger H-bonding than odd-carbon acids}",
+      "\\text{Even-carbon acids have higher molecular weights}",
+      "\\text{Odd-carbon acids form dimers while even-carbon acids form trimers}"
+    ],
+    "answer": "\\text{Even-carbon acids: terminal -CH}_3\\text{ and -COOH lie on opposite sides of zigzag chain → closer packing in crystal lattice}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_029",
+    "question": "Reaction of an acid chloride (RCOCl) with KCN followed by hydrolysis gives:",
+    "options": [
+      "\\alpha\\text{-oxo acid (R-CO-COOH)}",
+      "\\text{Nitrile (RCN)}",
+      "\\text{Carboxylic acid (RCOOH)}",
+      "\\text{Aldehyde (RCHO)}"
+    ],
+    "answer": "\\alpha\\text{-oxo acid (R-CO-COOH)}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "ca_qn_030",
+    "question": "Peracetic acid (CH3COOOH) is a weaker acid than acetic acid, even though it has an additional electronegative -OOH group. The correct reason is:",
+    "options": [
+      "\\text{Acetate ion (CH}_3\\text{COO}^-\\text{) is resonance-stabilised; peroxyacetate ion is not as well-stabilised due to lone pair repulsion between adjacent oxygens}",
+      "\\text{Peracetic acid has higher molecular weight reducing acidity}",
+      "\\text{The O-O bond in peracetic acid makes it less polar}",
+      "\\text{Peracetic acid forms stronger intramolecular H-bonds reducing ionisation}"
+    ],
+    "answer": "\\text{Acetate ion (CH}_3\\text{COO}^-\\text{) is resonance-stabilised; peroxyacetate ion is not as well-stabilised due to lone pair repulsion between adjacent oxygens}",
+    "tags": { "chapter": "Carboxylic Acids", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": "More electronegative substituent doesn't always mean stronger acid — the stability of the conjugate base matters. Here, O-O lone pair repulsion in peroxyacetate actually destabilises it, outweighing the inductive effect of -OOH."
+  }
+]

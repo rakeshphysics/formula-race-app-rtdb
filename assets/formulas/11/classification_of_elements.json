@@ -1,0 +1,422 @@
+[
+  {
+    "id": "classification_of_elements_qn_001",
+    "question": "In Dobereiner's triads, the atomic mass of the middle element is the arithmetic mean of the other two. In the triad Li, Na, K, the atomic masses are 7, 23, 39. The arithmetic mean of Li and K is:",
+    "options": [
+      "23",
+      "22",
+      "24",
+      "20"
+    ],
+    "answer": "23",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_002",
+    "question": "Moseley's modern periodic law states that properties of elements are periodic functions of their:",
+    "options": [
+      "\\text{Atomic number}",
+      "\\text{Atomic mass}",
+      "\\text{Atomic volume}",
+      "\\text{Electronic configuration}"
+    ],
+    "answer": "\\text{Atomic number}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_003",
+    "question": "The longest period in the modern periodic table is:",
+    "options": [
+      "\\text{6th period (32 elements)}",
+      "\\text{4th period (18 elements)}",
+      "\\text{7th period (incomplete)}",
+      "\\text{5th period (18 elements)}"
+    ],
+    "answer": "\\text{6th period (32 elements)}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_004",
+    "question": "The order of radii is:",
+    "options": [
+      "\\text{covalent} < \\text{metallic} < \\text{van der Waals'}",
+      "\\text{van der Waals'} < \\text{metallic} < \\text{covalent}",
+      "\\text{metallic} < \\text{covalent} < \\text{van der Waals'}",
+      "\\text{covalent} < \\text{van der Waals'} < \\text{metallic}"
+    ],
+    "answer": "\\text{covalent} < \\text{metallic} < \\text{van der Waals'}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_005",
+    "question": "Among isoelectronic ions, the size order is Al³⁺ < Mg²⁺ < Na⁺ < F⁻ < O²⁻ < N³⁻. The reason is:",
+    "options": [
+      "\\text{Same number of electrons; higher nuclear charge → smaller size}",
+      "\\text{Higher nuclear charge → more electrons added}",
+      "\\text{More electrons → larger size regardless of nuclear charge}",
+      "\\text{Isoelectronic ions always have equal size}"
+    ],
+    "answer": "\\text{Same number of electrons; higher nuclear charge → smaller size}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_006",
+    "question": "The first ionisation enthalpy of N is greater than that of O, despite O having higher nuclear charge. The correct reason is:",
+    "options": [
+      "\\text{N has stable half-filled 2p³ configuration; O has 2p⁴ where one orbital has paired electrons — pairing repulsion makes it easier to remove an electron from O}",
+      "\\text{N has smaller atomic size than O}",
+      "\\text{O has higher electronegativity making it harder to remove electrons}",
+      "\\text{N has more protons than O}"
+    ],
+    "answer": "\\text{N has stable half-filled 2p³ configuration; O has 2p⁴ where one orbital has paired electrons — pairing repulsion makes it easier to remove an electron from O}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_007",
+    "question": "Electron gain enthalpy of F is less negative than that of Cl despite F being more electronegative. The reason is:",
+    "options": [
+      "\\text{F has very small size and high charge density — the added electron experiences strong electron-electron repulsion in the compact 2p orbital}",
+      "\\text{F already has a stable octet}",
+      "\\text{Cl has more protons than F}",
+      "\\text{F forms weaker bonds than Cl}"
+    ],
+    "answer": "\\text{F has very small size and high charge density — the added electron experiences strong electron-electron repulsion in the compact 2p orbital}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Same reasoning applies to O vs S: electron gain enthalpy of S is more negative than O. Small size + high charge density = more repulsion for incoming electron."
+  },
+  {
+    "id": "classification_of_elements_qn_008",
+    "question": "The Zeff of the 2s electron in Be (atomic number 4, configuration 1s² 2s²) using Slater's rules is:",
+    "options": [
+      "1.95",
+      "2.05",
+      "4.00",
+      "1.85"
+    ],
+    "answer": "1.95",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "For 2s electron in Be: σ = (1 × 0.35 from the other 2s) + (2 × 0.85 from 1s electrons) = 0.35 + 1.70 = 2.05. Zeff = 4 − 2.05 = 1.95."
+  },
+  {
+    "id": "classification_of_elements_qn_009",
+    "question": "Among 3d transition elements, Cr (Z=24) and Cu (Z=29) have anomalously higher IE₂. The reason is:",
+    "options": [
+      "\\text{After losing one electron, Cr becomes [Ar]3d⁵ (half-filled) and Cu becomes [Ar]3d¹⁰ (fully-filled) — both are extra stable}",
+      "\\text{Cr and Cu are larger than neighbouring elements}",
+      "\\text{Both have higher nuclear charges than neighbours}",
+      "\\text{Cr and Cu form stronger metallic bonds}"
+    ],
+    "answer": "\\text{After losing one electron, Cr becomes [Ar]3d⁵ (half-filled) and Cu becomes [Ar]3d¹⁰ (fully-filled) — both are extra stable}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_010",
+    "question": "In Mendeleev's periodic table, Ar (atomic mass 39.9) was placed before K (atomic mass 39.1), violating the law of increasing atomic masses. This anomaly was resolved by Moseley because:",
+    "options": [
+      "\\text{Atomic number of Ar (18) < atomic number of K (19) — arranging by atomic number eliminates the anomaly}",
+      "\\text{Mendeleev made an error in measuring atomic masses}",
+      "\\text{Ar and K are isotopes of the same element}",
+      "\\text{The anomaly was never resolved and remains a defect}"
+    ],
+    "answer": "\\text{Atomic number of Ar (18) < atomic number of K (19) — arranging by atomic number eliminates the anomaly}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_011",
+    "question": "The IUPAC name for element with atomic number 106 is:",
+    "options": [
+      "\\text{Unnilhexium (Unh)}",
+      "\\text{Unnilpentium (Unp)}",
+      "\\text{Unnilseptium (Uns)}",
+      "\\text{Unniloctium (Uno)}"
+    ],
+    "answer": "\\text{Unnilhexium (Unh)}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": "IUPAC roots: 1=un, 0=nil, 6=hex → 106 = un-nil-hex-ium = Unnilhexium. Symbol: first letters of each root = Unh."
+  },
+  {
+    "id": "classification_of_elements_qn_012",
+    "question": "Electronegativity of carbon in different hybridisation states follows the order:",
+    "options": [
+      "sp > sp^2 > sp^3",
+      "sp^3 > sp^2 > sp",
+      "sp^2 > sp > sp^3",
+      "sp = sp^2 = sp^3"
+    ],
+    "answer": "sp > sp^2 > sp^3",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Electronegativity increases with % s-character. sp has 50% s-character, sp² has 33%, sp³ has 25%. More s-character → electrons held closer to nucleus → higher electronegativity."
+  },
+  {
+    "id": "classification_of_elements_qn_013",
+    "question": "The diagonal relationship exists between Li and Mg, Be and Al, B and Si. The property that makes diagonal pairs similar is:",
+    "options": [
+      "\\text{Similar ionic radii and polarising power (charge/size ratio)}",
+      "\\text{Same number of valence electrons}",
+      "\\text{Same period in the periodic table}",
+      "\\text{Same electronic configuration}"
+    ],
+    "answer": "\\text{Similar ionic radii and polarising power (charge/size ratio)}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_014",
+    "question": "Noble gases have positive electron gain enthalpies. This means:",
+    "options": [
+      "\\text{Energy must be supplied to add an electron — they resist gaining electrons due to stable filled configurations}",
+      "\\text{Noble gases easily gain electrons to form stable anions}",
+      "\\text{The electron is gained and energy is released}",
+      "\\text{Noble gases are good oxidising agents}"
+    ],
+    "answer": "\\text{Energy must be supplied to add an electron — they resist gaining electrons due to stable filled configurations}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_015",
+    "question": "The second electron gain enthalpy of oxygen is positive (+780 kJ/mol), while the first is negative (−141 kJ/mol). This means:",
+    "options": [
+      "\\text{Adding a second electron to O}^-\\text{ requires energy input — repulsion from existing negative charge outweighs nuclear attraction}",
+      "\\text{Oxygen cannot form O}^{2-}\\text{ under any circumstances}",
+      "\\text{O}^{2-}\\text{ is more stable than O}^-",
+      "\\text{The second electron gain enthalpy measures ionisation, not electron gain}"
+    ],
+    "answer": "\\text{Adding a second electron to O}^-\\text{ requires energy input — repulsion from existing negative charge outweighs nuclear attraction}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_016",
+    "question": "Newland's law of octaves failed when noble gases were discovered because:",
+    "options": [
+      "\\text{Inserting noble gases shifted every element one position, breaking the octave pattern}",
+      "\\text{Noble gases have zero valency so they cannot follow octave rules}",
+      "\\text{Noble gases were too heavy to fit the pattern}",
+      "\\text{Noble gases were already included in Newland's table}"
+    ],
+    "answer": "\\text{Inserting noble gases shifted every element one position, breaking the octave pattern}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_017",
+    "question": "The nature of oxides changes across a period from left to right. Which sequence correctly represents this trend?",
+    "options": [
+      "\\text{Basic (Na}_2\\text{O)} \\rightarrow \\text{Amphoteric (Al}_2\\text{O}_3\\text{)} \\rightarrow \\text{Acidic (Cl}_2\\text{O}_7\\text{)}",
+      "\\text{Acidic (Na}_2\\text{O)} \\rightarrow \\text{Amphoteric (Al}_2\\text{O}_3\\text{)} \\rightarrow \\text{Basic (Cl}_2\\text{O}_7\\text{)}",
+      "\\text{Basic (Na}_2\\text{O)} \\rightarrow \\text{Acidic (Al}_2\\text{O}_3\\text{)} \\rightarrow \\text{Neutral (Cl}_2\\text{O}_7\\text{)}",
+      "\\text{Neutral} \\rightarrow \\text{Basic} \\rightarrow \\text{Acidic across all periods}"
+    ],
+    "answer": "\\text{Basic (Na}_2\\text{O)} \\rightarrow \\text{Amphoteric (Al}_2\\text{O}_3\\text{)} \\rightarrow \\text{Acidic (Cl}_2\\text{O}_7\\text{)}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": "Basic oxide character ∝ metallic character. As metallic character decreases left to right, oxides go basic → amphoteric → acidic. Al₂O₃ is the classic amphoteric oxide — reacts with both acids and bases."
+  },
+  {
+    "id": "classification_of_elements_qn_018",
+    "question": "The group number of an element with configuration [Ar] 3d⁵ 4s¹ in the modern periodic table is:",
+    "options": [
+      "6",
+      "5",
+      "7",
+      "4"
+    ],
+    "answer": "6",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "For d-block: group number = (n-1)d electrons + ns electrons = 5 + 1 = 6. This is Cr."
+  },
+  {
+    "id": "classification_of_elements_qn_019",
+    "question": "Electronegativity according to Mulliken scale is calculated as:",
+    "options": [
+      "x = \\frac{IE + \\Delta_{eg}H}{2}",
+      "x = \\frac{IE - \\Delta_{eg}H}{2}",
+      "x = IE \\times \\Delta_{eg}H",
+      "x = IE + \\Delta_{eg}H"
+    ],
+    "answer": "x = \\frac{IE + \\Delta_{eg}H}{2}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_020",
+    "question": "The anomalous behaviour of the first element in each group (e.g. Li, Be, B, C) compared to the rest of the group is due to three factors. Which combination is correct?",
+    "options": [
+      "\\text{Small size + high electronegativity + no d-orbitals available for bonding}",
+      "\\text{Low ionisation energy + large size + high electronegativity}",
+      "\\text{High ionisation energy + availability of d-orbitals + low electronegativity}",
+      "\\text{Large atomic radius + low nuclear charge + stable configuration}"
+    ],
+    "answer": "\\text{Small size + high electronegativity + no d-orbitals available for bonding}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_021",
+    "question": "Among the four blocks, the p-block is unique because it is the only block that contains:",
+    "options": [
+      "\\text{Metals, non-metals, and metalloids all three}",
+      "\\text{Only non-metals}",
+      "\\text{Only metalloids}",
+      "\\text{Transition elements}"
+    ],
+    "answer": "\\text{Metals, non-metals, and metalloids all three}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_022",
+    "question": "Tungsten (W) has the highest melting point among metals (3683 K). Which non-metal has the highest melting point?",
+    "options": [
+      "\\text{Carbon (diamond)}",
+      "\\text{Silicon}",
+      "\\text{Phosphorus}",
+      "\\text{Sulfur}"
+    ],
+    "answer": "\\text{Carbon (diamond)}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_023",
+    "question": "Mendeleev left gaps in his periodic table and predicted properties of undiscovered elements. He named the element below aluminium as Eka-aluminium. It was later discovered as:",
+    "options": [
+      "\\text{Gallium (Ga)}",
+      "\\text{Germanium (Ge)}",
+      "\\text{Scandium (Sc)}",
+      "\\text{Indium (In)}"
+    ],
+    "answer": "\\text{Gallium (Ga)}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_024",
+    "question": "In Slater's rules, electrons in (n-2) or lower shells contribute σ = 1.00 each, while electrons in (n-1) shell contribute σ = 0.85. The difference reflects that:",
+    "options": [
+      "\\text{Inner shell electrons shield more effectively than penultimate shell electrons — closer to nucleus = better shielding}",
+      "\\text{Outer electrons shield more than inner electrons}",
+      "\\text{All inner electrons contribute equally to shielding}",
+      "\\text{The (n-1) electrons have higher energy and shield less}"
+    ],
+    "answer": "\\text{Inner shell electrons shield more effectively than penultimate shell electrons — closer to nucleus = better shielding}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_025",
+    "question": "Reactivity of metals increases with decrease in ionisation enthalpy. Therefore, the most reactive metal in the periodic table belongs to:",
+    "options": [
+      "\\text{Bottom-left of the periodic table (e.g. Cs, Fr)}",
+      "\\text{Top-right of the periodic table}",
+      "\\text{Middle of the d-block}",
+      "\\text{Group 2, period 2 (Be)}"
+    ],
+    "answer": "\\text{Bottom-left of the periodic table (e.g. Cs, Fr)}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_026",
+    "question": "The magic numbers (2, 8, 8, 18, 18, 32) represent the number of elements in successive periods. These numbers arise because:",
+    "options": [
+      "\\text{Properties repeat after intervals corresponding to filling of complete electronic shells/subshells — same valence configuration recurs}",
+      "\\text{They are prime numbers with special mathematical properties}",
+      "\\text{Each period ends when the d-subshell is completely filled}",
+      "\\text{Mendeleev arbitrarily chose these intervals}"
+    ],
+    "answer": "\\text{Properties repeat after intervals corresponding to filling of complete electronic shells/subshells — same valence configuration recurs}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_027",
+    "question": "The valency along a period first increases from 1 to 4, then decreases to 0 (noble gases). For transition metals, variable valency arises because:",
+    "options": [
+      "\\text{They can use electrons from both the outermost (ns) and penultimate (n-1)d shell}",
+      "\\text{They have more protons than s-block elements}",
+      "\\text{Their d-orbitals are always empty}",
+      "\\text{Transition metals always have fixed oxidation states}"
+    ],
+    "answer": "\\text{They can use electrons from both the outermost (ns) and penultimate (n-1)d shell}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_028",
+    "question": "Helium has the lowest melting point among all elements (−270°C). This is because:",
+    "options": [
+      "\\text{He has the weakest interatomic forces — very low polarisability as a monoatomic noble gas with only 2 electrons}",
+      "\\text{He has the lowest atomic mass}",
+      "\\text{He has a filled 1s² shell making it highly stable}",
+      "\\text{He is a gas at all temperatures except near absolute zero}"
+    ],
+    "answer": "\\text{He has the weakest interatomic forces — very low polarisability as a monoatomic noble gas with only 2 electrons}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_029",
+    "question": "Both Mendeleev's and Modern periodic tables fail to assign a definitive position to hydrogen. The reason hydrogen's position remains controversial is:",
+    "options": [
+      "\\text{H resembles both alkali metals (1 valence electron, forms H⁺) AND halogens (1 electron short of noble gas, forms H⁻, exists as diatomic H₂)}",
+      "\\text{Hydrogen has no neutrons in its most common isotope}",
+      "\\text{Hydrogen is a gas while all group 1 elements are solid metals}",
+      "\\text{Hydrogen was discovered after the periodic table was constructed}"
+    ],
+    "answer": "\\text{H resembles both alkali metals (1 valence electron, forms H⁺) AND halogens (1 electron short of noble gas, forms H⁻, exists as diatomic H₂)}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "classification_of_elements_qn_030",
+    "question": "Electron gain enthalpy can be measured using the Born-Haber cycle. Elements with highly negative electron gain enthalpies are good oxidising agents. Which combination of group and position in the period has the most negative electron gain enthalpy?",
+    "options": [
+      "\\text{Group 17, period 3 (Cl) — halogens have smallest atomic size in their period and highest nuclear charge among non-metals}",
+      "\\text{Group 1, period 2 (Li)}",
+      "\\text{Group 18, period 2 (Ne)}",
+      "\\text{Group 16, period 2 (O) — highest electronegativity after F}"
+    ],
+    "answer": "\\text{Group 17, period 3 (Cl) — halogens have smallest atomic size in their period and highest nuclear charge among non-metals}",
+    "tags": { "chapter": "Classification of Elements", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": "Cl not F has the most negative electron gain enthalpy — F's small size causes too much electron repulsion when a new electron is added to its compact 2p orbital. Cl's 3p orbital is larger, less repulsion → more energy released."
+  }
+]

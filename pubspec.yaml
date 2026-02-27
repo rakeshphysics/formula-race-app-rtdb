@@ -117,10 +117,25 @@ flutter:
     - assets/formulas/11/hydrocarbons.aes
     - assets/formulas/11/hyperbola.aes
     - assets/formulas/11/sequence_and_series.aes
+    - assets/formulas/12/haloalkanes_and_haloarenes.aes
+    - assets/formulas/12/alcohols_phenols_and_ethers.aes
+    - assets/formulas/12/aldehydes_and_ketones.aes
+    - assets/formulas/12/carboxylic_acids.aes
+    - assets/formulas/12/amines.aes
+    - assets/formulas/12/biomolecules.aes
+    - assets/formulas/11/basic_concepts_of_chemistry.aes
+    - assets/formulas/11/classification_of_elements.aes
+    - assets/formulas/11/chemical_bonding.aes
+    - assets/formulas/11/thermodynamics_chem.aes
+    - assets/formulas/11/redox_reactions.aes
+    - assets/formulas/11/p_block_13_and_14.aes
+    - assets/formulas/12/p_block_15_to_18.aes
+    - assets/formulas/12/d_and_f_block.aes
+    - assets/formulas/12/coordination_compounds.aes
 
 
 
-      # images
+    # images
     - assets/images/11th/Vectors/
     - assets/images/11th/units_and_dimensions/
     - assets/images/11th/kinematics/

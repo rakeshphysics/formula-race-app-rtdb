@@ -1,0 +1,422 @@
+[
+  {
+    "id": "halo_qn_001",
+    "question": "The reactivity order of hydrogen halides with alcohols is:",
+    "options": [
+      "HI > HBr > HCl > HF",
+      "HCl > HBr > HI > HF",
+      "HF > HCl > HBr > HI",
+      "HBr > HI > HCl > HF"
+    ],
+    "answer": "HI > HBr > HCl > HF",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_002",
+    "question": "In Swarts reaction, the reagent used to convert an alkyl bromide to an alkyl fluoride is:",
+    "options": [
+      "AgF",
+      "NaF",
+      "HF",
+      "KF"
+    ],
+    "answer": "AgF",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_003",
+    "question": "Which method is best for preparing alkyl halides from alcohols because both byproducts (SO2 and HCl) are gaseous and escape easily?",
+    "options": [
+      "\\text{Darzen procedure (SOCl}_2\\text{)}",
+      "\\text{Lucas reagent (ZnCl}_2\\text{/HCl)}",
+      "\\text{Groove's process (PCl}_5\\text{)}",
+      "\\text{Phosphorus tribromide method}"
+    ],
+    "answer": "\\text{Darzen procedure (SOCl}_2\\text{)}",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_004",
+    "question": "The boiling point order among haloalkanes with the same alkyl group is:",
+    "options": [
+      "RI > RBr > RCl > RF",
+      "RF > RCl > RBr > RI",
+      "RCl > RBr > RI > RF",
+      "RI > RCl > RBr > RF"
+    ],
+    "answer": "RI > RBr > RCl > RF",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_005",
+    "question": "In Finkelstein reaction, alkyl chloride or bromide is converted to alkyl iodide using NaI in acetone. The driving force of this equilibrium is:",
+    "options": [
+      "\\text{NaCl/NaBr are insoluble in acetone and precipitate out}",
+      "\\text{NaI is more reactive than NaCl}",
+      "\\text{Formation of a stable carbocation intermediate}",
+      "\\text{High polarity of acetone stabilises the product}"
+    ],
+    "answer": "\\text{NaCl/NaBr are insoluble in acetone and precipitate out}",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_006",
+    "question": "The rate law for an SN2 reaction is:",
+    "options": [
+      "r = k[RX][Nu]",
+      "r = k[RX]",
+      "r = k[Nu]",
+      "r = k[RX]^2"
+    ],
+    "answer": "r = k[RX][Nu]",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_007",
+    "question": "The rate law for an SN1 reaction is:",
+    "options": [
+      "r = k[RX]",
+      "r = k[RX][Nu]",
+      "r = k[Nu]^2",
+      "r = k[RX]^2[Nu]"
+    ],
+    "answer": "r = k[RX]",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_008",
+    "question": "Reactivity of alkyl halides toward SN1 mechanism follows the order:",
+    "options": [
+      "3^\\circ > 2^\\circ > 1^\\circ",
+      "1^\\circ > 2^\\circ > 3^\\circ",
+      "2^\\circ > 3^\\circ > 1^\\circ",
+      "1^\\circ > 3^\\circ > 2^\\circ"
+    ],
+    "answer": "3^\\circ > 2^\\circ > 1^\\circ",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_009",
+    "question": "Which of the following correctly represents the relative nucleophile strength order from the PDF?",
+    "options": [
+      "CN^- > I^- > OH^- > CH_3COO^- > F^-",
+      "F^- > OH^- > I^- > CN^-",
+      "OH^- > CN^- > F^- > I^-",
+      "I^- > F^- > CN^- > OH^-"
+    ],
+    "answer": "CN^- > I^- > OH^- > CH_3COO^- > F^-",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_010",
+    "question": "KCN gives ethyl cyanide as major product while AgCN gives ethyl isocyanide as major product with ethyl bromide. The correct explanation is:",
+    "options": [
+      "\\text{KCN: ionic, C-attack (major); AgCN: covalent, N-attack (major)}",
+      "\\text{KCN: covalent, N-attack; AgCN: ionic, C-attack}",
+      "\\text{Both attack through carbon, but AgCN rearranges}",
+      "\\text{Both attack through nitrogen; product depends on temperature}"
+    ],
+    "answer": "\\text{KCN: ionic, C-attack (major); AgCN: covalent, N-attack (major)}",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": "Same logic applies to KNO2 (ionic, O-attack → R-ONO) vs AgNO2 (covalent, N-attack → R-NO2). The ionic/covalent nature of the metal-X bond determines which end of the ambident nucleophile attacks."
+  },
+  {
+    "id": "halo_qn_011",
+    "question": "The bond strength order among carbon-halogen bonds is:",
+    "options": [
+      "C\\text{-}F > C\\text{-}Cl > C\\text{-}Br > C\\text{-}I",
+      "C\\text{-}I > C\\text{-}Br > C\\text{-}Cl > C\\text{-}F",
+      "C\\text{-}Cl > C\\text{-}F > C\\text{-}Br > C\\text{-}I",
+      "C\\text{-}F > C\\text{-}I > C\\text{-}Br > C\\text{-}Cl"
+    ],
+    "answer": "C\\text{-}F > C\\text{-}Cl > C\\text{-}Br > C\\text{-}I",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_012",
+    "question": "In Hunsdiecker reaction, the products from silver salt of carboxylic acid reacting with Br2 in CCl4 are:",
+    "options": [
+      "\\text{Alkyl bromide} + AgBr + CO_2",
+      "\\text{Alkyl bromide} + AgBr + CO",
+      "\\text{Carboxylic acid} + AgBr",
+      "\\text{Acyl bromide} + Ag_2O"
+    ],
+    "answer": "\\text{Alkyl bromide} + AgBr + CO_2",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_013",
+    "question": "In Sandmeyer reaction, which reagent converts diazonium salt to chlorobenzene?",
+    "options": [
+      "CuCl/HCl",
+      "Cu/HCl",
+      "CuCl_2/HCl",
+      "FeCl_3"
+    ],
+    "answer": "CuCl/HCl",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_014",
+    "question": "In Balz-Schiemann reaction, the diazonium salt is treated with HBF4. The intermediate diazonium fluoroborate decomposes on heating to give:",
+    "options": [
+      "C_6H_5F + N_2 + BF_3",
+      "C_6H_5F + HBF_3",
+      "C_6H_5BF_4 + N_2",
+      "C_6H_5F + NBF_4"
+    ],
+    "answer": "C_6H_5F + N_2 + BF_3",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_015",
+    "question": "SN2 reactions proceed with complete inversion of configuration at the chiral centre. This phenomenon is known as:",
+    "options": [
+      "\\text{Walden inversion}",
+      "\\text{Saytzeff inversion}",
+      "\\text{Markovnikov inversion}",
+      "\\text{Hofmann rearrangement}"
+    ],
+    "answer": "\\text{Walden inversion}",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_016",
+    "question": "According to Saytzeff rule, the major product of dehydrohalogenation of 2-bromobutane with alcoholic KOH is:",
+    "options": [
+      "\\text{but-2-ene}",
+      "\\text{but-1-ene}",
+      "\\text{1-bromobutane}",
+      "\\text{butyne}"
+    ],
+    "answer": "\\text{but-2-ene}",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "Saytzeff rule: the more substituted (more stable) alkene is the major product in elimination reactions."
+  },
+  {
+    "id": "halo_qn_017",
+    "question": "Chloroform is stored in dark brown bottles filled to the brim with 1% ethanol. The role of ethanol is to:",
+    "options": [
+      "\\text{Convert toxic phosgene (COCl}_2\\text{) to harmless diethyl carbonate}",
+      "\\text{Prevent evaporation of CHCl}_3",
+      "\\text{Act as a reducing agent to prevent oxidation}",
+      "\\text{Increase the boiling point of CHCl}_3"
+    ],
+    "answer": "\\text{Convert toxic phosgene (COCl}_2\\text{) to harmless diethyl carbonate}",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_018",
+    "question": "Iodoform test gives a positive yellow precipitate with compounds containing which groups?",
+    "options": [
+      "CH_3CO- \\text{ or } CH_3CH(OH)-",
+      "-CHO \\text{ or } -COOH",
+      "-OH \\text{ or } -COOR",
+      "CH_3CH_2- \\text{ or } -CHO"
+    ],
+    "answer": "CH_3CO- \\text{ or } CH_3CH(OH)-",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_019",
+    "question": "Addition of HBr to propene in the presence of peroxides gives 1-bromopropane as the major product instead of 2-bromopropane. This is because:",
+    "options": [
+      "\\text{Peroxides generate Br}^\\bullet\\text{; it adds to terminal carbon (less hindered) giving more stable radical at C2}",
+      "\\text{Peroxides generate H}^+\\text{; Markovnikov addition gives 1-bromopropane}",
+      "\\text{Peroxides generate Br}^-\\text{; it attacks the terminal carbon by SN2}",
+      "\\text{Peroxides stabilise the secondary carbocation at C1}"
+    ],
+    "answer": "\\text{Peroxides generate Br}^\\bullet\\text{; it adds to terminal carbon (less hindered) giving more stable radical at C2}",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "Peroxide effect applies ONLY to HBr, not HCl or HI. Mechanism is free radical, not ionic. Br radical adds to terminal C → secondary radical at C2 → H adds to C2 → 1-bromopropane (anti-Markovnikov)."
+  },
+  {
+    "id": "halo_qn_020",
+    "question": "In SN1 reactions, partial racemisation occurs rather than complete racemisation. The correct reason is:",
+    "options": [
+      "\\text{Both frontal and backside attack occur on the planar carbocation, but backside is slightly preferred}",
+      "\\text{Only backside attack occurs on the planar carbocation}",
+      "\\text{The nucleophile attacks only from the front}",
+      "\\text{The carbocation formed is tetrahedral, not planar}"
+    ],
+    "answer": "\\text{Both frontal and backside attack occur on the planar carbocation, but backside is slightly preferred}",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": "Complete racemisation needs exactly 50:50 frontal and backside attack. Since the leaving group still partially shields one face even after departure, backside is slightly favoured — giving partial racemisation with slight excess of inverted product."
+  },
+  {
+    "id": "halo_qn_021",
+    "question": "Halogens are deactivating but ortho/para directing in electrophilic substitution. This is because:",
+    "options": [
+      "\\text{Net deactivation via -I effect, but +M effect directs o/p positions}",
+      "\\text{+I effect directs o/p and also deactivates the ring}",
+      "\\text{-M effect deactivates and -I effect alone directs o/p}",
+      "\\text{Halogens only show inductive effect, no mesomeric effect}"
+    ],
+    "answer": "\\text{Net deactivation via -I effect, but +M effect directs o/p positions}",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_022",
+    "question": "Wurtz-Fittig reaction between an aryl halide and an alkyl halide with sodium in dry ether gives:",
+    "options": [
+      "\\text{Alkylarene (arene with alkyl substituent)}",
+      "\\text{Biaryl compound}",
+      "\\text{Alkane only}",
+      "\\text{Grignard reagent}"
+    ],
+    "answer": "\\text{Alkylarene (arene with alkyl substituent)}",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_023",
+    "question": "Fittig reaction involves two moles of aryl halide reacting with sodium in dry ether to give:",
+    "options": [
+      "\\text{Biphenyl}",
+      "\\text{Alkylarene}",
+      "\\text{Benzene}",
+      "\\text{Aryl Grignard reagent}"
+    ],
+    "answer": "\\text{Biphenyl}",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_024",
+    "question": "Carbon tetrachloride is used as a fire extinguisher under the trade name:",
+    "options": [
+      "\\text{Pyrene}",
+      "\\text{Freon}",
+      "\\text{Phosgene}",
+      "\\text{Chloropicrin}"
+    ],
+    "answer": "\\text{Pyrene}",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "easy", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_025",
+    "question": "Which of the following is NOT a correct reason for low reactivity of aryl halides toward nucleophilic substitution?",
+    "options": [
+      "\\text{Phenyl carbocation is highly stable}",
+      "\\text{C-X bond has partial double bond character due to resonance}",
+      "\\text{Electrons are delocalised, stabilising the molecule}",
+      "\\text{Phenyl carbocation is highly unstable}"
+    ],
+    "answer": "\\text{Phenyl carbocation is highly stable}",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "The correct reason is that phenyl carbocation is highly UNSTABLE (sp2 carbon cannot stabilise positive charge). Option A states the opposite — making it the incorrect reason."
+  },
+  {
+    "id": "halo_qn_026",
+    "question": "The melting point of the p-isomer of a dihalobenzene is higher than o- and m-isomers. This is because:",
+    "options": [
+      "\\text{p-isomer has higher symmetry enabling better crystal lattice packing}",
+      "\\text{p-isomer has a higher molecular weight}",
+      "\\text{p-isomer has stronger C-X bonds}",
+      "\\text{p-isomer has a higher dipole moment}"
+    ],
+    "answer": "\\text{p-isomer has higher symmetry enabling better crystal lattice packing}",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_027",
+    "question": "The correct IUPAC-based name of DDT is:",
+    "options": [
+      "\\text{2,2-bis(4-chlorophenyl)-1,1,1-trichloroethane}",
+      "\\text{1,1-bis(4-chlorophenyl)-2,2,2-trichloroethane}",
+      "\\text{4,4-dichlorodiphenyltrichloromethane}",
+      "\\text{2,2-dichloro-1,1-bis(chlorophenyl)ethane}"
+    ],
+    "answer": "\\text{2,2-bis(4-chlorophenyl)-1,1,1-trichloroethane}",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_028",
+    "question": "The balanced equation for oxidation of chloroform in light to give poisonous phosgene is:",
+    "options": [
+      "2CHCl_3 + O_2 \\rightarrow 2COCl_2 + 2HCl",
+      "CHCl_3 + O_2 \\rightarrow COCl_2 + HCl + Cl_2",
+      "2CHCl_3 + O_2 \\rightarrow 2CO_2 + 3Cl_2",
+      "CHCl_3 + O_2 \\rightarrow CO_2 + HCl + Cl_2"
+    ],
+    "answer": "2CHCl_3 + O_2 \\rightarrow 2COCl_2 + 2HCl",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "halo_qn_029",
+    "question": "In Hofmann ammonolysis, when ethyl bromide reacts with excess ammonia, the final product is:",
+    "options": [
+      "(C_2H_5)_4N^+Br^-",
+      "(C_2H_5)_3N",
+      "(C_2H_5)_2NH",
+      "C_2H_5NH_2"
+    ],
+    "answer": "(C_2H_5)_4N^+Br^-",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "medium", "class": "12" },
+    "image": null,
+    "tip": "With excess alkyl halide, each H on N is progressively substituted. The final product is the quaternary ammonium salt where N has four ethyl groups."
+  },
+  {
+    "id": "halo_qn_030",
+    "question": "Vinyl chloride is far less reactive toward SN reactions, while benzyl chloride is far MORE reactive than ordinary alkyl chlorides in SN1. Which combination correctly explains BOTH?",
+    "options": [
+      "\\text{Vinyl: C-Cl has partial double bond character (resonance); Benzyl: carbocation resonance-stabilised by ring}",
+      "\\text{Vinyl: sp}^2 \\text{ carbon is larger; Benzyl: sp}^3 \\text{ carbon is smaller}",
+      "\\text{Vinyl: Cl is a poor leaving group; Benzyl: Cl is a better leaving group than usual}",
+      "\\text{Vinyl: steric hindrance at sp}^2\\text{; Benzyl: no steric hindrance at sp}^3"
+    ],
+    "answer": "\\text{Vinyl: C-Cl has partial double bond character (resonance); Benzyl: carbocation resonance-stabilised by ring}",
+    "tags": { "chapter": "Haloalkanes and Haloarenes", "difficulty": "god", "class": "12" },
+    "image": null,
+    "tip": "Vinyl chloride: lone pair on Cl overlaps with pi bond → C-Cl acquires double bond character → very hard to break. Benzyl chloride: loss of Cl gives benzyl carbocation with 4 resonating structures across the ring → highly stable → SN1 very fast."
+  }
+]
