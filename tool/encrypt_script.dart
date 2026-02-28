@@ -84,6 +84,10 @@ void main() {
     '${baseDir}12/functions.json',
     '${baseDir}11/complex_numbers.json',
     '${baseDir}11/binomial_theorem.json',
+    '${baseDir}11/trigonometry.json',
+    '${baseDir}11/straight_lines.json',
+    '${baseDir}11/limits.json',
+    '${baseDir}11/statistics.json',
 
   ];
 

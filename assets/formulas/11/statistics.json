@@ -1,0 +1,542 @@
+[
+  {
+    "id": "statistics_qn_001",
+    "question": "The mean deviation of <i>n</i> observations from their mean x̄ is:",
+    "options": [
+      "\\text{Upper limit} - \\text{Lower limit}",
+      "\\dfrac{\\text{Lower limit} + \\text{Upper limit}}{2}",
+      "\\dfrac{\\text{Upper limit} - \\text{Lower limit}}{2}",
+      "\\text{Lower limit} \\times \\text{Upper limit}"
+    ],
+    "answer": "\\dfrac{\\text{Lower limit} + \\text{Upper limit}}{2}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_005",
+    "question": "For a symmetric distribution, which of the following holds?",
+    "options": [
+      "\\text{Mean} > \\text{Median} > \\text{Mode}",
+      "\\text{Mean} < \\text{Median} < \\text{Mode}",
+      "\\text{Mean} = \\text{Median} = \\text{Mode}",
+      "\\text{Mean} \\neq \\text{Median} = \\text{Mode}"
+    ],
+    "answer": "\\text{Mean} = \\text{Median} = \\text{Mode}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_003",
+    "question": "The arithmetic mean of <i>n</i> observations x₁, x₂, …, xₙ is:",
+    "options": [
+      "\\dfrac{\\sum x_i}{n-1}",
+      "\\dfrac{\\sum x_i}{n}",
+      "\\dfrac{n}{\\sum x_i}",
+      "\\sqrt[n]{\\prod x_i}"
+    ],
+    "answer": "\\dfrac{\\sum x_i}{n}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_004",
+    "question": "The empirical relation between mean, median and mode is:",
+    "options": [
+      "\\text{Mean} - \\text{Mode} = 2(\\text{Mean} - \\text{Median})",
+      "\\text{Mode} = 3\\,\\text{Median} - 2\\,\\text{Mean}",
+      "\\text{Mode} = 2\\,\\text{Median} - 3\\,\\text{Mean}",
+      "\\text{Mean} = 3\\,\\text{Median} - 2\\,\\text{Mode}"
+    ],
+    "answer": "\\text{Mode} = 3\\,\\text{Median} - 2\\,\\text{Mean}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Memory aid: 3M − 2A = Mode. Three medians minus two averages."
+  },
+  {
+    "id": "statistics_qn_002",
+    "question": "The standard deviation of a combined series (sizes n₁, n₂; means x̄₁, x̄₂; SDs σ₁, σ₂) is:",
+    "options": [
+      "\\dfrac{\\text{Class frequency}}{\\text{Total frequency}} \\times 180°",
+      "\\dfrac{\\text{Class frequency}}{\\text{Total frequency}} \\times 360°",
+      "\\dfrac{\\text{Total frequency}}{\\text{Class frequency}} \\times 360°",
+      "\\text{Class frequency} \\times 360°"
+    ],
+    "answer": "\\dfrac{\\text{Class frequency}}{\\text{Total frequency}} \\times 360°",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_006",
+    "question": "The median for grouped data is <b>M = l + ((N/2 − C) / f) × h</b>. Here <b>C</b> represents:",
+    "options": [
+      "\\text{Frequency of the median class}",
+      "\\text{Cumulative frequency of the class just before the median class}",
+      "\\text{Total frequency}",
+      "\\text{Class width}"
+    ],
+    "answer": "\\text{Cumulative frequency of the class just before the median class}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_007",
+    "question": "The mode for grouped data is <b>M<sub>O</sub> = l + ((f₀ − f₁) / (2f₀ − f₁ − f₂)) × h</b>. Here <b>f₁</b> is:",
+    "options": [
+      "\\text{Frequency of the modal class}",
+      "\\text{Frequency of the pre-modal class}",
+      "\\text{Frequency of the post-modal class}",
+      "\\text{Total frequency}"
+    ],
+    "answer": "\\text{Frequency of the pre-modal class}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_008",
+    "question": "The intersection of the less-than ogive and more-than ogive gives:",
+    "options": [
+      "\\text{Mean}",
+      "\\text{Mode}",
+      "\\text{Median}",
+      "\\text{First quartile}"
+    ],
+    "answer": "\\text{Median}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_009",
+    "question": "The algebraic sum of deviations of a set of values from their arithmetic mean is:",
+    "options": [
+      "\\text{Maximum}",
+      "\\text{Minimum}",
+      "1",
+      "0"
+    ],
+    "answer": "0",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_010",
+    "question": "The standard deviation of the first n natural numbers is:",
+    "options": [
+      "\\sqrt{\\dfrac{n^2 + 1}{12}}",
+      "\\sqrt{\\dfrac{n^2 - 1}{12}}",
+      "\\dfrac{n^2 - 1}{12}",
+      "\\sqrt{\\dfrac{n(n+1)}{12}}"
+    ],
+    "answer": "\\sqrt{\\dfrac{n^2 - 1}{12}}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_011",
+    "question": "For raw data, the median when n is odd is the:",
+    "options": [
+      "\\left(\\dfrac{n}{2}\\right)\\text{th term}",
+      "\\left(\\dfrac{n+1}{2}\\right)\\text{th term}",
+      "\\text{Mean of }\\dfrac{n}{2}\\text{th and }\\left(\\dfrac{n}{2}+1\\right)\\text{th terms}",
+      "\\left(\\dfrac{n-1}{2}\\right)\\text{th term}"
+    ],
+    "answer": "\\left(\\dfrac{n+1}{2}\\right)\\text{th term}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_012",
+    "question": "The range of a data set is defined as:",
+    "options": [
+      "X_{\\max} + X_{\\min}",
+      "X_{\\max} - X_{\\min}",
+      "\\dfrac{X_{\\max} + X_{\\min}}{2}",
+      "\\dfrac{X_{\\max} - X_{\\min}}{2}"
+    ],
+    "answer": "X_{\\max} - X_{\\min}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_013",
+    "question": "The quartile deviation (semi-interquartile range) is:",
+    "options": [
+      "Q_3 - Q_1",
+      "\\dfrac{Q_3 + Q_1}{2}",
+      "\\dfrac{Q_3 - Q_1}{2}",
+      "2(Q_3 - Q_1)"
+    ],
+    "answer": "\\dfrac{Q_3 - Q_1}{2}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_014",
+    "question": "The mean deviation is least when measured from:",
+    "options": [
+      "\\text{Mean}",
+      "\\text{Mode}",
+      "\\text{Median}",
+      "\\text{Standard deviation}"
+    ],
+    "answer": "\\text{Median}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_015",
+    "question": "The standard deviation is independent of change of origin but dependent on change of scale. This means if each observation is multiplied by k, the new SD is:",
+    "options": [
+      "\\sigma",
+      "\\sigma + k",
+      "|k|\\sigma",
+      "k^2 \\sigma"
+    ],
+    "answer": "|k|\\sigma",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_016",
+    "question": "The coefficient of variation is defined as:",
+    "options": [
+      "\\dfrac{\\sigma}{\\bar{x}}",
+      "\\dfrac{\\sigma}{\\bar{x}} \\times 100",
+      "\\dfrac{\\bar{x}}{\\sigma} \\times 100",
+      "\\sigma \\times \\bar{x}"
+    ],
+    "answer": "\\dfrac{\\sigma}{\\bar{x}} \\times 100",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_017",
+    "question": "The relationship between quartile deviation and standard deviation is:",
+    "options": [
+      "\\text{QD} = \\dfrac{4}{5}\\sigma",
+      "\\text{QD} = \\dfrac{2}{3}\\sigma",
+      "\\text{QD} = \\dfrac{3}{2}\\sigma",
+      "\\text{QD} = \\dfrac{5}{4}\\sigma"
+    ],
+    "answer": "\\text{QD} = \\dfrac{2}{3}\\sigma",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "QD = (2/3)σ and MD = (4/5)σ. Both less than σ."
+  },
+  {
+    "id": "statistics_qn_018",
+    "question": "The relationship between mean deviation and standard deviation is:",
+    "options": [
+      "\\text{MD} \\geq \\sigma",
+      "\\text{MD} = \\dfrac{2}{3}\\sigma",
+      "\\text{MD} = \\dfrac{4}{5}\\sigma",
+      "\\text{MD} = \\sigma"
+    ],
+    "answer": "\\text{MD} = \\dfrac{4}{5}\\sigma",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_019",
+    "question": "Karl Pearson's coefficient of correlation r is defined as:",
+    "options": [
+      "r = \\dfrac{\\text{cov}(x,y)}{\\sigma_x + \\sigma_y}",
+      "r = \\dfrac{\\text{cov}(x,y)}{\\sigma_x \\cdot \\sigma_y}",
+      "r = \\dfrac{\\sigma_x \\cdot \\sigma_y}{\\text{cov}(x,y)}",
+      "r = \\text{cov}(x,y) \\cdot \\sigma_x \\cdot \\sigma_y"
+    ],
+    "answer": "r = \\dfrac{\\text{cov}(x,y)}{\\sigma_x \\cdot \\sigma_y}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_020",
+    "question": "The combined mean of two groups with sizes n₁, n₂ and means x̄₁, x̄₂ is:",
+    "options": [
+      "\\dfrac{\\bar{x}_1 + \\bar{x}_2}{2}",
+      "\\dfrac{n_1 \\bar{x}_1 + n_2 \\bar{x}_2}{n_1 + n_2}",
+      "\\dfrac{n_1 \\bar{x}_1 + n_2 \\bar{x}_2}{n_1 \\cdot n_2}",
+      "\\dfrac{n_1 + n_2}{\\bar{x}_1 + \\bar{x}_2}"
+    ],
+    "answer": "\\dfrac{n_1 \\bar{x}_1 + n_2 \\bar{x}_2}{n_1 + n_2}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_021",
+    "question": "Spearman's rank correlation formula (no repeated ranks) is:",
+    "options": [
+      "r = 1 - \\dfrac{6\\sum d_i^2}{n(n^2-1)}",
+      "r = 1 - \\dfrac{6\\sum d_i}{n(n^2-1)}",
+      "r = 1 + \\dfrac{6\\sum d_i^2}{n(n^2-1)}",
+      "r = \\dfrac{\\sum d_i^2}{n(n^2-1)}"
+    ],
+    "answer": "r = 1 - \\dfrac{6\\sum d_i^2}{n(n^2-1)}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_022",
+    "question": "The range of Karl Pearson's correlation coefficient <i>r</i> is:",
+    "options": [
+      "0 \\leq r \\leq 1",
+      "-1 < r < 1",
+      "-1 \\leq r \\leq 1",
+      "0 \\leq r < \\infty"
+    ],
+    "answer": "-1 \\leq r \\leq 1",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_023",
+    "question": "If <i>r</i> = 0 for two variables <i>x</i> and <i>y</i>, then they are:",
+    "options": [
+      "\\text{Perfectly correlated}",
+      "\\text{Independent}",
+      "\\text{Uncorrelated but not necessarily independent}",
+      "\\text{Negatively correlated}"
+    ],
+    "answer": "\\text{Uncorrelated but not necessarily independent}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "r = 0 means no linear relationship. Non-linear dependence can still exist."
+  },
+  {
+    "id": "statistics_qn_024",
+    "question": "The regression coefficient of <i>y</i> on <i>x</i> is:",
+    "options": [
+      "b_{yx} = \\dfrac{\\sigma_x}{\\sigma_y} \\cdot r",
+      "b_{yx} = \\dfrac{\\sigma_y}{\\sigma_x} \\cdot r",
+      "b_{yx} = \\dfrac{\\text{cov}(x,y)}{\\sigma_x^2}",
+      "b_{yx} = \\dfrac{\\text{cov}(x,y)}{\\sigma_y^2}"
+    ],
+    "answer": "b_{yx} = \\dfrac{\\sigma_y}{\\sigma_x} \\cdot r",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "b_{yx}: y on x — denominator is \\sigma_x (the x-variance). b_{xy}: x on y — denominator is \\sigma_y."
+  },
+  {
+    "id": "statistics_qn_025",
+    "question": "The line of regression of <i>y</i> on <i>x</i> is:",
+    "options": [
+      "x - \\bar{x} = b_{yx}(y - \\bar{y})",
+      "y - \\bar{y} = b_{yx}(x - \\bar{x})",
+      "y - \\bar{y} = b_{xy}(x - \\bar{x})",
+      "y = b_{yx} \\cdot x"
+    ],
+    "answer": "y - \\bar{y} = b_{yx}(x - \\bar{x})",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_026",
+    "question": "The correlation coefficient <i>r</i> is the geometric mean of the two regression coefficients. This means:",
+    "options": [
+      "r = b_{yx} + b_{xy}",
+      "r = \\dfrac{b_{yx} + b_{xy}}{2}",
+      "r^2 = b_{yx} \\cdot b_{xy}",
+      "r = b_{yx} - b_{xy}"
+    ],
+    "answer": "r^2 = b_{yx} \\cdot b_{xy}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_027",
+    "question": "When <i>r</i> = 0, the angle between the two regression lines is:",
+    "options": [
+      "0°",
+      "45°",
+      "90°",
+      "180°"
+    ],
+    "answer": "90°",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "r = 0 → lines perpendicular. r = ±1 → lines coincide (angle = 0°)."
+  },
+  {
+    "id": "statistics_qn_028",
+    "question": "If |b<sub>xy</sub>| > 1, then which of the following must be true?",
+    "options": [
+      "|b_{yx}| > 1",
+      "|b_{yx}| = 1",
+      "|b_{yx}| < 1",
+      "b_{yx} = 0"
+    ],
+    "answer": "|b_{yx}| < 1",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_029",
+    "question": "Regression coefficients are independent of change of origin but dependent on change of scale. The correlation coefficient <i>r</i> is:",
+    "options": [
+      "\\text{Dependent on both origin and scale}",
+      "\\text{Independent of both origin and scale}",
+      "\\text{Independent of origin, dependent on scale}",
+      "\\text{Dependent on origin, independent of scale}"
+    ],
+    "answer": "\\text{Independent of both origin and scale}",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "statistics_qn_030",
+    "question": "The arithmetic mean of the two regression coefficients b<sub>yx</sub> and b<sub>xy</sub> satisfies:",
+    "options": [
+      "\\dfrac{b_{yx} + b_{xy}}{2} \\leq r",
+      "\\dfrac{b_{yx} + b_{xy}}{2} = r",
+      "\\dfrac{b_{yx} + b_{xy}}{2} \\geq r",
+      "\\dfrac{b_{yx} + b_{xy}}{2} = r^2"
+    ],
+    "answer": "\\dfrac{b_{yx} + b_{xy}}{2} \\geq r",
+    "tags": {
+      "chapter": "Statistics",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  }
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "id": "lcd_qn_001",
+    "question": "\\lim_{x \\to 0} \\dfrac{\\sin x}{x} =",
+    "options": [
+      "0",
+      "1",
+      "\\infty",
+      "\\text{does not exist}"
+    ],
+    "answer": "1",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "lcd_qn_002",
+    "question": "\\lim_{x \\to 0} \\dfrac{\\tan x}{x} =",
+    "options": [
+      "0",
+      "\\infty",
+      "1",
+      "\\text{does not exist}"
+    ],
+    "answer": "1",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Both \\sin x/x \\to 1 and \\tan x/x \\to 1. A common trap is assuming \\tan x/x \\to 0."
+  },
+  {
+    "id": "lcd_qn_003",
+    "question": "\\lim_{x \\to 0} \\dfrac{e^x - 1}{x} =",
+    "options": [
+      "0",
+      "e",
+      "1",
+      "\\ln 2"
+    ],
+    "answer": "1",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "lcd_qn_004",
+    "question": "\\lim_{x \\to 0} (1 + x)^{1/x} =",
+    "options": [
+      "1",
+      "0",
+      "\\infty",
+      "e"
+    ],
+    "answer": "e",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "lcd_qn_005",
+    "question": "\\lim_{x \\to a} \\dfrac{x^n - a^n}{x - a} =",
+    "options": [
+      "na^{n-1}",
+      "na^n",
+      "(n-1)\\,a^{n-1}",
+      "a^{n-1}"
+    ],
+    "answer": "na^{n-1}",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "lcd_qn_006",
+    "question": "\\lim_{x \\to 0} \\dfrac{\\log(1 + x)}{x} =",
+    "options": [
+      "0",
+      "e",
+      "\\infty",
+      "1"
+    ],
+    "answer": "1",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "lcd_qn_007",
+    "question": "\\lim_{x \\to 0} \\dfrac{a^x - 1}{x} =",
+    "options": [
+      "1",
+      "\\log_e a",
+      "a",
+      "0"
+    ],
+    "answer": "\\log_e a",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Special case: a = e gives \\log_e e = 1, recovering \\lim(e^x - 1)/x = 1."
+  },
+  {
+    "id": "lcd_qn_008",
+    "question": "\\lim_{x \\to 0} \\dfrac{1 - \\cos x}{x} =",
+    "options": [
+      "1",
+      "\\dfrac{1}{2}",
+      "0",
+      "-1"
+    ],
+    "answer": "0",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Using expansion: 1 - \\cos x \\approx x^2/2, so (1 - \\cos x)/x \\approx x/2 \\to 0. Do not confuse with (1 - \\cos x)/x^2 \\to 1/2."
+  },
+  {
+    "id": "lcd_qn_009",
+    "question": "\\text{For } \\lim_{x \\to a} f(x) \\text{ to exist, which is the necessary and sufficient condition?}",
+    "options": [
+      "f(a) \\text{ must be defined}",
+      "\\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x)",
+      "\\lim_{x \\to a^-} f(x) = f(a)",
+      "f \\text{ must be differentiable at } a"
+    ],
+    "answer": "\\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x)",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "lcd_qn_010",
+    "question": "\\text{The Sandwich theorem states: if } f(x) \\leq g(x) \\leq h(x) \\text{ near } x = a \\text{ and } \\lim_{x \\to a} f(x) = \\lim_{x \\to a} h(x) = l, \\text{ then } \\lim_{x \\to a} g(x) =",
+    "options": [
+      "\\text{does not exist}",
+      "0",
+      "l",
+      "f(a)"
+    ],
+    "answer": "l",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "lcd_qn_011",
+    "question": "\\lim_{x \\to \\infty} \\left(1 + \\dfrac{1}{x}\\right)^x =",
+    "options": [
+      "1",
+      "\\infty",
+      "0",
+      "e"
+    ],
+    "answer": "e",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "lcd_qn_012",
+    "question": "\\lim_{x \\to 0} \\dfrac{\\sin^{-1} x}{x} =",
+    "options": [
+      "0",
+      "\\dfrac{\\pi}{2}",
+      "\\infty",
+      "1"
+    ],
+    "answer": "1",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "lcd_qn_013",
+    "question": "\\lim_{x \\to 0} \\dfrac{\\tan^{-1} x}{x} =",
+    "options": [
+      "\\pi",
+      "0",
+      "1",
+      "\\dfrac{\\pi}{4}"
+    ],
+    "answer": "1",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Both \\sin^{-1} x/x \\to 1 and \\tan^{-1} x/x \\to 1, mirroring their forward counterparts."
+  },
+  {
+    "id": "lcd_qn_014",
+    "question": "\\lim_{x \\to \\infty} \\dfrac{x^n}{e^x} = \\qquad (n \\text{ is any fixed positive integer})",
+    "options": [
+      "\\infty",
+      "n!",
+      "1",
+      "0"
+    ],
+    "answer": "0",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Exponential growth dominates any polynomial. e^x grows faster than x^n for any fixed n."
+  },
+  {
+    "id": "lcd_qn_015",
+    "question": "\\text{For the } 1^\\infty \\text{ indeterminate form, if } \\lim_{x \\to a} f(x) = 1 \\text{ and } \\lim_{x \\to a} g(x) = \\infty, \\text{ then } \\lim_{x \\to a} [f(x)]^{g(x)} =",
+    "options": [
+      "e^{\\lim_{x \\to a}\\, g(x)}",
+      "e^{\\lim_{x \\to a}\\, g(x)\\cdot(f(x)-1)}",
+      "e^{\\lim_{x \\to a}\\, f(x) \\cdot g(x)}",
+      "1"
+    ],
+    "answer": "e^{\\lim_{x \\to a}\\, g(x)\\cdot(f(x)-1)}",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Standard 1^\\infty shortcut: exponent = \\lim g(x)(f(x) - 1)."
+  },
+  {
+    "id": "lcd_qn_016",
+    "question": "\\text{The expansion of } \\log(1 + x) \\text{ for } |x| \\leq 1,\\, x \\neq -1 \\text{ begins:}",
+    "options": [
+      "x - \\dfrac{x^2}{2} + \\dfrac{x^3}{3} - \\cdots",
+      "x + \\dfrac{x^2}{2} + \\dfrac{x^3}{3} + \\cdots",
+      "1 - x + \\dfrac{x^2}{2} - \\cdots",
+      "x - \\dfrac{x^2}{2!} + \\dfrac{x^3}{3!} - \\cdots"
+    ],
+    "answer": "x - \\dfrac{x^2}{2} + \\dfrac{x^3}{3} - \\cdots",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Denominators are plain integers, not factorials. Writing 2! and 3! is a very common error."
+  },
+  {
+    "id": "lcd_qn_017",
+    "question": "\\text{L'H\\^{o}pital's Rule is directly applicable when the limit takes the form:}",
+    "options": [
+      "\\dfrac{0}{1} \\text{ or } \\dfrac{1}{0}",
+      "\\dfrac{0}{0} \\text{ or } \\dfrac{\\infty}{\\infty}",
+      "0^0 \\text{ or } 1^\\infty \\text{ only}",
+      "\\text{any indeterminate form directly}"
+    ],
+    "answer": "\\dfrac{0}{0} \\text{ or } \\dfrac{\\infty}{\\infty}",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Forms like 0 \\times \\infty and 1^\\infty must first be rewritten as 0/0 or \\infty/\\infty before applying the rule."
+  },
+  {
+    "id": "lcd_qn_018",
+    "question": "\\lim_{x \\to 0} \\dfrac{\\log(1 - x)}{x} =",
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "e"
+    ],
+    "answer": "-1",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "lcd_qn_019",
+    "question": "\\text{If } \\lim_{x \\to \\infty} \\dfrac{a_0 x^m + \\cdots}{b_0 x^n + \\cdots} \\text{ with } m = n \\text{ and } a_0,\\, b_0 \\neq 0, \\text{ then the limit equals:}",
+    "options": [
+      "0",
+      "\\dfrac{a_0}{b_0}",
+      "+\\infty",
+      "\\text{does not exist}"
+    ],
+    "answer": "\\dfrac{a_0}{b_0}",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Three cases: m < n \\to 0;\\; m = n \\to a_0/b_0;\\; m > n \\to \\pm\\infty."
+  },
+  {
+    "id": "lcd_qn_020",
+    "question": "\\text{If } \\lim_{x \\to \\infty} \\dfrac{a_0 x^m + \\cdots}{b_0 x^n + \\cdots} \\text{ with } m > n \\text{ and } a_0,\\, b_0 > 0, \\text{ then the limit is:}",
+    "options": [
+      "0",
+      "\\dfrac{a_0}{b_0}",
+      "+\\infty",
+      "\\text{does not exist}"
+    ],
+    "answer": "+\\infty",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "When m > n the numerator dominates. Sign of the limit depends on signs of a_0 and b_0."
+  },
+  {
+    "id": "lcd_qn_021",
+    "question": "\\text{A function } f(x) \\text{ is continuous at } x = a \\text{ if and only if:}",
+    "options": [
+      "\\lim_{x \\to a} f(x) \\text{ exists}",
+      "f(a) \\text{ is defined}",
+      "\\lim_{x \\to a} f(x) = f(a)",
+      "\\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x)"
+    ],
+    "answer": "\\lim_{x \\to a} f(x) = f(a)",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "LHL = RHL is necessary but not sufficient. The limit must also equal f(a)."
+  },
+  {
+    "id": "lcd_qn_022",
+    "question": "\\text{A discontinuity at } x = a \\text{ is removable when:}",
+    "options": [
+      "\\lim_{x \\to a} f(x) \\text{ does not exist}",
+      "\\lim_{x \\to a} f(x) \\text{ exists but } \\neq f(a), \\text{ or } f(a) \\text{ is undefined}",
+      "\\lim_{x \\to a^-} f(x) \\neq \\lim_{x \\to a^+} f(x)",
+      "f(a) = 0"
+    ],
+    "answer": "\\lim_{x \\to a} f(x) \\text{ exists but } \\neq f(a), \\text{ or } f(a) \\text{ is undefined}",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "lcd_qn_023",
+    "question": "\\text{A function has a jump discontinuity (non-removable, first kind) at } x = a \\text{ when:}",
+    "options": [
+      "f(a) \\text{ is not defined}",
+      "\\lim_{x \\to a^-} f(x) \\text{ and } \\lim_{x \\to a^+} f(x) \\text{ both exist but are unequal}",
+      "\\lim_{x \\to a^-} f(x) = \\infty",
+      "\\lim_{x \\to a} f(x) = f(a)"
+    ],
+    "answer": "\\lim_{x \\to a^-} f(x) \\text{ and } \\lim_{x \\to a^+} f(x) \\text{ both exist but are unequal}",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "lcd_qn_024",
+    "question": "\\text{Which of the following correctly describes the greatest integer function } f(x) = [x]\\text{?}",
+    "options": [
+      "\\text{Continuous and differentiable everywhere}",
+      "\\text{Discontinuous and non-differentiable at all integers}",
+      "\\text{Continuous everywhere but not differentiable at integers}",
+      "\\text{Differentiable everywhere}"
+    ],
+    "answer": "\\text{Discontinuous and non-differentiable at all integers}",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "lcd_qn_025",
+    "question": "\\text{If } f(x) \\text{ is differentiable at } x = a, \\text{ which of the following must be true?}",
+    "options": [
+      "f \\text{ is continuous at } x = a",
+      "f \\text{ has a local extremum at } x = a",
+      "f'(a) = 0",
+      "f \\text{ is differentiable in a neighbourhood of } a"
+    ],
+    "answer": "f \\text{ is continuous at } x = a",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "lcd_qn_026",
+    "question": "f(x) \\text{ is differentiable at } x = a \\text{ if and only if:}",
+    "options": [
+      "\\lim_{x \\to a} f(x) \\text{ exists}",
+      "\\lim_{x \\to a^-} \\dfrac{f(x)-f(a)}{x-a} = \\lim_{x \\to a^+} \\dfrac{f(x)-f(a)}{x-a}",
+      "f'(a) > 0",
+      "f(a) \\text{ is defined}"
+    ],
+    "answer": "\\lim_{x \\to a^-} \\dfrac{f(x)-f(a)}{x-a} = \\lim_{x \\to a^+} \\dfrac{f(x)-f(a)}{x-a}",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "LHD = RHD is the definition. Continuity alone is not enough."
+  },
+  {
+    "id": "lcd_qn_027",
+    "question": "\\text{Which of the following is NOT necessarily true?}",
+    "options": [
+      "\\text{Differentiable} \\Rightarrow \\text{Continuous}",
+      "\\text{Continuous} \\Rightarrow \\text{Differentiable}",
+      "\\text{Not continuous} \\Rightarrow \\text{Not differentiable}",
+      "\\text{Differentiable} \\Rightarrow \\text{Limit exists}"
+    ],
+    "answer": "\\text{Continuous} \\Rightarrow \\text{Differentiable}",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "f(x) = |x| is the canonical counterexample: continuous at 0, but LHD = -1 \\neq +1 = \\text{RHD}."
+  },
+  {
+    "id": "lcd_qn_028",
+    "question": "\\text{If } f(x) \\text{ is discontinuous at } x = a, \\text{ then } f(x) \\text{ is:}",
+    "options": [
+      "\\text{May still be differentiable at } x = a",
+      "\\text{Definitely not differentiable at } x = a",
+      "\\text{Has a removable discontinuity}",
+      "\\text{Limit must exist at } x = a"
+    ],
+    "answer": "\\text{Definitely not differentiable at } x = a",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "lcd_qn_029",
+    "question": "\\text{The function } f(x) = \\sin x \\text{ is:}",
+    "options": [
+      "\\text{Continuous but not differentiable on } \\mathbb{R}",
+      "\\text{Neither continuous nor differentiable}",
+      "\\text{Continuous and differentiable on } \\mathbb{R}",
+      "\\text{Differentiable only on } (0,\\, \\pi)"
+    ],
+    "answer": "\\text{Continuous and differentiable on } \\mathbb{R}",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "lcd_qn_030",
+    "question": "f(x) \\text{ and } g(x) \\text{ are both discontinuous at } x = a. \\text{ Which statement about } f(x) \\cdot g(x) \\text{ is correct?}",
+    "options": [
+      "\\text{It must be discontinuous at } x = a",
+      "\\text{It must be continuous at } x = a",
+      "\\text{It can be either continuous or discontinuous at } x = a",
+      "\\text{It must be differentiable at } x = a \\text{ if the discontinuities are of the same type}"
+    ],
+    "answer": "\\text{It can be either continuous or discontinuous at } x = a",
+    "tags": {
+      "chapter": "Limits, Continuity & Differentiability",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "\\text{sgn}(x) \\cdot \\text{sgn}(x) = 1 \\text{ for } x \\neq 0 \\text{ (continuous product). But sgn}(x) \\cdot \\frac{1}{x} \\text{ remains discontinuous. Both cases exist.}"
+  }
+]

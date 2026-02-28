@@ -305,20 +305,19 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
       'Dual Nature of Light', 'Atoms', 'Nuclei', 'X Rays', 'Semiconductors',
     ],
     'Chemistry': [
-      'Solid State',
-      'Chemical Equilibrium',
-      'Electrochemistry',
-      'Solutions'
-      // Add more Chemistry chapters here as needed
+      'Solid State','Chemical Equilibrium','Electrochemistry','Solutions','Atomic Structure', 'General Organic Chemistry',
+      'Hydrocarbons','Haloalkanes and Haloarenes', 'Alcohols Phenols and Ethers', 'Aldehydes and Ketones',
+      'Carboxylic Acids', 'Amines', 'Biomolecules', 'Basic Concepts of Chemistry','Classification of Elements',
+      'Chemical Bonding', 'Thermodynamics', 'Redox Reactions', 'P Block 13 and 14',
+      'P Block 15 to 18', 'D and F Block','Coordination Compounds', 'Practical Chemistry'
+
     ],
     'Maths': [
-      '3D Geometry',
-      'Ellipse',
-      'Definite Integrals',
-      'Indefinite Integrals',
-      'Parabola',
-      'Probability'
-      // Add more Maths chapters here as needed
+      '3D Geometry','Ellipse', 'Definite Integrals','Indefinite Integrals','Parabola',
+      'Probability', 'Quadratic Equations','Circles', 'Permutations and Combinations','Hyperbola',
+      'Sequence and Series','Functions', 'Complex Numbers', 'Binomial Theorem', 'Trigonometry', 'Straight Lines',
+      'Limits', 'Statistics'
+
     ],
   };
 

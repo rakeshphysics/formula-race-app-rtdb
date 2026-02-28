@@ -1,0 +1,842 @@
+[
+  {
+    "id": "trig_qn_001",
+    "question": "The relation between degree (D), grade (G) and radian (R) is:",
+    "options": [
+      "\\dfrac{D}{90} = \\dfrac{G}{100} = \\dfrac{2R}{\\pi}",
+      "\\dfrac{D}{180} = \\dfrac{G}{100} = \\dfrac{R}{\\pi}",
+      "\\dfrac{D}{90} = \\dfrac{G}{100} = \\dfrac{R}{2\\pi}",
+      "\\dfrac{D}{180} = \\dfrac{G}{200} = \\dfrac{R}{\\pi}"
+    ],
+    "answer": "\\dfrac{D}{90} = \\dfrac{G}{100} = \\dfrac{2R}{\\pi}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_002",
+    "question": "If an arc of length l subtends angle θ (radians) at the centre of a circle of radius r, then:",
+    "options": [
+      "l = r^2\\theta",
+      "l = r\\theta",
+      "\\theta = rl",
+      "l = \\dfrac{r}{\\theta}"
+    ],
+    "answer": "l = r\\theta",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_003",
+    "question": "The domain and range of sin x are respectively:",
+    "options": [
+      "\\mathbb{R} \\text{ and } (0,1)",
+      "\\mathbb{R} \\text{ and } [-1,1]",
+      "[-1,1] \\text{ and } \\mathbb{R}",
+      "\\mathbb{R} \\text{ and } [0,1]"
+    ],
+    "answer": "\\mathbb{R} \\text{ and } [-1,1]",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_004",
+    "question": "The period of tan x is:",
+    "options": [
+      "2\\pi",
+      "\\pi",
+      "\\dfrac{\\pi}{2}",
+      "4\\pi"
+    ],
+    "answer": "\\pi",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_005",
+    "question": "The value of sin 18° is:",
+    "options": [
+      "\\dfrac{\\sqrt{5}-1}{4}",
+      "\\dfrac{\\sqrt{5}+1}{4}",
+      "\\dfrac{\\sqrt{5}-1}{2}",
+      "\\dfrac{\\sqrt{3}-1}{4}"
+    ],
+    "answer": "\\dfrac{\\sqrt{5}-1}{4}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_006",
+    "question": "Which of the following is the correct identity?",
+    "options": [
+      "\\sec^2\\theta + \\tan^2\\theta = 1",
+      "1 + \\tan^2\\theta = \\sec^2\\theta",
+      "1 - \\tan^2\\theta = \\sec^2\\theta",
+      "\\sec^2\\theta - 1 = \\cot^2\\theta"
+    ],
+    "answer": "1 + \\tan^2\\theta = \\sec^2\\theta",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_007",
+    "question": "sin(A + B) equals:",
+    "options": [
+      "\\sin A \\cos B - \\cos A \\sin B",
+      "\\cos A \\cos B - \\sin A \\sin B",
+      "\\sin A \\cos B + \\cos A \\sin B",
+      "\\sin A \\sin B + \\cos A \\cos B"
+    ],
+    "answer": "\\sin A \\cos B + \\cos A \\sin B",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_008",
+    "question": "cos 2A in terms of tan A is:",
+    "options": [
+      "\\dfrac{1 + \\tan^2 A}{1 - \\tan^2 A}",
+      "\\dfrac{1 - \\tan^2 A}{1 + \\tan^2 A}",
+      "\\dfrac{2\\tan A}{1 + \\tan^2 A}",
+      "\\dfrac{2\\tan A}{1 - \\tan^2 A}"
+    ],
+    "answer": "\\dfrac{1 - \\tan^2 A}{1 + \\tan^2 A}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_009",
+    "question": "The range of sec x is:",
+    "options": [
+      "[-1, 1]",
+      "(-\\infty, -1] \\cup [1, \\infty)",
+      "\\mathbb{R}",
+      "(0, \\infty)"
+    ],
+    "answer": "(-\\infty, -1] \\cup [1, \\infty)",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_010",
+    "question": "In which quadrant are both sin θ and cos θ negative?",
+    "options": [
+      "\\text{Quadrant I}",
+      "\\text{Quadrant II}",
+      "\\text{Quadrant III}",
+      "\\text{Quadrant IV}"
+    ],
+    "answer": "\\text{Quadrant III}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": "ASTC: All positive in I, Sin in II, Tan in III, Cos in IV. In III, tan and cot positive — sin and cos both negative."
+  },
+  {
+    "id": "trig_qn_011",
+    "question": "sin(90° - θ) equals:",
+    "options": [
+      "\\sin\\theta",
+      "-\\sin\\theta",
+      "\\cos\\theta",
+      "-\\cos\\theta"
+    ],
+    "answer": "\\cos\\theta",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_012",
+    "question": "sin(180° + θ) equals:",
+    "options": [
+      "\\sin\\theta",
+      "-\\sin\\theta",
+      "\\cos\\theta",
+      "-\\cos\\theta"
+    ],
+    "answer": "-\\sin\\theta",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_013",
+    "question": "tan(270° - θ) equals:",
+    "options": [
+      "\\tan\\theta",
+      "-\\tan\\theta",
+      "\\cot\\theta",
+      "-\\cot\\theta"
+    ],
+    "answer": "\\cot\\theta",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": "270° ± θ: function changes (sin↔cos, tan↔cot). Sign depends on quadrant of the result."
+  },
+  {
+    "id": "trig_qn_014",
+    "question": "2 sin A cos B equals:",
+    "options": [
+      "\\sin(A+B) - \\sin(A-B)",
+      "\\cos(A-B) - \\cos(A+B)",
+      "\\sin(A+B) + \\sin(A-B)",
+      "\\cos(A+B) + \\cos(A-B)"
+    ],
+    "answer": "\\sin(A+B) + \\sin(A-B)",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_015",
+    "question": "sin C + sin D equals:",
+    "options": [
+      "2\\sin\\dfrac{C+D}{2}\\cos\\dfrac{C-D}{2}",
+      "2\\cos\\dfrac{C+D}{2}\\sin\\dfrac{C-D}{2}",
+      "2\\cos\\dfrac{C+D}{2}\\cos\\dfrac{C-D}{2}",
+      "2\\sin\\dfrac{C+D}{2}\\sin\\dfrac{C-D}{2}"
+    ],
+    "answer": "2\\sin\\dfrac{C+D}{2}\\cos\\dfrac{C-D}{2}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_016",
+    "question": "cos C - cos D equals:",
+    "options": [
+      "2\\sin\\dfrac{C+D}{2}\\sin\\dfrac{D-C}{2}",
+      "-2\\sin\\dfrac{C+D}{2}\\sin\\dfrac{C-D}{2}",
+      "2\\cos\\dfrac{C+D}{2}\\sin\\dfrac{C-D}{2}",
+      "-2\\cos\\dfrac{C+D}{2}\\sin\\dfrac{C-D}{2}"
+    ],
+    "answer": "-2\\sin\\dfrac{C+D}{2}\\sin\\dfrac{C-D}{2}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_017",
+    "question": "sin 3A in terms of sin A is:",
+    "options": [
+      "3\\sin A - 4\\sin^3 A",
+      "4\\sin^3 A - 3\\sin A",
+      "3\\sin A + 4\\sin^3 A",
+      "4\\sin A - 3\\sin^3 A"
+    ],
+    "answer": "3\\sin A - 4\\sin^3 A",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_018",
+    "question": "cos 3A in terms of cos A is:",
+    "options": [
+      "3\\cos A - 4\\cos^3 A",
+      "4\\cos^3 A - 3\\cos A",
+      "4\\cos A - 3\\cos^3 A",
+      "3\\cos^3 A - 4\\cos A"
+    ],
+    "answer": "4\\cos^3 A - 3\\cos A",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_019",
+    "question": "1 - cos 2A equals:",
+    "options": [
+      "2\\cos^2 A",
+      "2\\sin^2 A",
+      "\\sin^2 A",
+      "\\cos^2 A"
+    ],
+    "answer": "2\\sin^2 A",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_020",
+    "question": "sin θ · sin(60° - θ) · sin(60° + θ) equals:",
+    "options": [
+      "\\dfrac{1}{2}\\sin 3\\theta",
+      "\\dfrac{1}{4}\\sin 2\\theta",
+      "\\dfrac{1}{4}\\sin 3\\theta",
+      "\\dfrac{1}{3}\\sin 3\\theta"
+    ],
+    "answer": "\\dfrac{1}{4}\\sin 3\\theta",
+    "tags": { "chapter": "Trigonometry", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": "Product formula: sinθ·sin(60-θ)·sin(60+θ) = ¼sin3θ. Similarly cosθ·cos(60-θ)·cos(60+θ) = ¼cos3θ."
+  },
+  {
+    "id": "trig_qn_021",
+    "question": "tan(A + B) equals:",
+    "options": [
+      "\\dfrac{\\tan A - \\tan B}{1 + \\tan A\\tan B}",
+      "\\dfrac{\\tan A + \\tan B}{1 - \\tan A\\tan B}",
+      "\\dfrac{\\tan A + \\tan B}{1 + \\tan A\\tan B}",
+      "\\dfrac{\\tan A\\tan B - 1}{\\tan A + \\tan B}"
+    ],
+    "answer": "\\dfrac{\\tan A + \\tan B}{1 - \\tan A\\tan B}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_022",
+    "question": "sin 2A in terms of tan A is:",
+    "options": [
+      "\\dfrac{2\\tan A}{1 + \\tan^2 A}",
+      "\\dfrac{2\\tan A}{1 - \\tan^2 A}",
+      "\\dfrac{1 - \\tan^2 A}{1 + \\tan^2 A}",
+      "\\dfrac{\\tan A}{1 + \\tan^2 A}"
+    ],
+    "answer": "\\dfrac{2\\tan A}{1 + \\tan^2 A}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_023",
+    "question": "cos 36° × cos 72° equals:",
+    "options": [
+      "\\dfrac{1}{2}",
+      "\\dfrac{1}{3}",
+      "\\dfrac{1}{4}",
+      "\\dfrac{1}{6}"
+    ],
+    "answer": "\\dfrac{1}{4}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_024",
+    "question": "The value of tan 3A in terms of tan A is:",
+    "options": [
+      "\\dfrac{3\\tan A - \\tan^3 A}{1 + 3\\tan^2 A}",
+      "\\dfrac{3\\tan A + \\tan^3 A}{1 - 3\\tan^2 A}",
+      "\\dfrac{3\\tan A - \\tan^3 A}{1 - 3\\tan^2 A}",
+      "\\dfrac{\\tan^3 A - 3\\tan A}{1 - 3\\tan^2 A}"
+    ],
+    "answer": "\\dfrac{3\\tan A - \\tan^3 A}{1 - 3\\tan^2 A}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_025",
+    "question": "2 cos A cos B equals:",
+    "options": [
+      "\\sin(A+B) + \\sin(A-B)",
+      "\\cos(A-B) + \\cos(A+B)",
+      "\\cos(A+B) - \\cos(A-B)",
+      "\\sin(A+B) - \\sin(A-B)"
+    ],
+    "answer": "\\cos(A-B) + \\cos(A+B)",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_026",
+    "question": "cos C + cos D equals:",
+    "options": [
+      "2\\sin\\dfrac{C+D}{2}\\cos\\dfrac{C-D}{2}",
+      "2\\cos\\dfrac{C+D}{2}\\cos\\dfrac{C-D}{2}",
+      "-2\\sin\\dfrac{C+D}{2}\\sin\\dfrac{C-D}{2}",
+      "2\\cos\\dfrac{C+D}{2}\\sin\\dfrac{C-D}{2}"
+    ],
+    "answer": "2\\cos\\dfrac{C+D}{2}\\cos\\dfrac{C-D}{2}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_027",
+    "question": "1 + cos 2A equals:",
+    "options": [
+      "2\\sin^2 A",
+      "2\\cos^2 A",
+      "\\cos^2 A",
+      "1 - 2\\sin^2 A"
+    ],
+    "answer": "2\\cos^2 A",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_028",
+    "question": "If A + B + C = π, then tan A + tan B + tan C equals:",
+    "options": [
+      "0",
+      "1",
+      "\\tan A\\tan B\\tan C",
+      "\\tan A + \\tan B - \\tan C"
+    ],
+    "answer": "\\tan A\\tan B\\tan C",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_029",
+    "question": "The sub-multiple formula: tan(A/2) in terms of cos A is:",
+    "options": [
+      "\\sqrt{\\dfrac{1+\\cos A}{1-\\cos A}}",
+      "\\sqrt{\\dfrac{1-\\cos A}{1+\\cos A}}",
+      "\\dfrac{\\sin A}{1+\\cos A}",
+      "\\text{Both B and C}"
+    ],
+    "answer": "\\text{Both B and C}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "tan(A/2) = sin A/(1+cos A) = (1-cos A)/sin A = √((1-cosA)/(1+cosA)). Multiple equivalent forms."
+  },
+  {
+    "id": "trig_qn_030",
+    "question": "If A + B + C = π, the value of sin 2A + sin 2B + sin 2C is:",
+    "options": [
+      "\\sin A\\sin B\\sin C",
+      "4\\cos A\\cos B\\cos C",
+      "4\\sin A\\sin B\\sin C",
+      "0"
+    ],
+    "answer": "4\\sin A\\sin B\\sin C",
+    "tags": { "chapter": "Trigonometry", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_031",
+    "question": "The period of |sin θ| is:",
+    "options": [
+      "2\\pi",
+      "\\pi",
+      "\\dfrac{\\pi}{2}",
+      "4\\pi"
+    ],
+    "answer": "\\pi",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_032",
+    "question": "The period of sin(kθ) is:",
+    "options": [
+      "2\\pi k",
+      "\\dfrac{\\pi}{k}",
+      "\\dfrac{2\\pi}{k}",
+      "\\dfrac{k}{2\\pi}"
+    ],
+    "answer": "\\dfrac{2\\pi}{k}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_033",
+    "question": "The maximum value of a sin θ + b cos θ is:",
+    "options": [
+      "a + b",
+      "\\sqrt{a^2 + b^2}",
+      "a^2 + b^2",
+      "|a| + |b|"
+    ],
+    "answer": "\\sqrt{a^2 + b^2}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_034",
+    "question": "The general solution of sin θ = sin α is:",
+    "options": [
+      "\\theta = 2n\\pi \\pm \\alpha",
+      "\\theta = n\\pi + (-1)^n\\alpha",
+      "\\theta = n\\pi \\pm \\alpha",
+      "\\theta = 2n\\pi + \\alpha"
+    ],
+    "answer": "\\theta = n\\pi + (-1)^n\\alpha",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_035",
+    "question": "The general solution of cos θ = cos α is:",
+    "options": [
+      "\\theta = n\\pi + (-1)^n\\alpha",
+      "\\theta = n\\pi \\pm \\alpha",
+      "\\theta = 2n\\pi \\pm \\alpha",
+      "\\theta = 2n\\pi + \\alpha"
+    ],
+    "answer": "\\theta = 2n\\pi \\pm \\alpha",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_036",
+    "question": "The general solution of tan θ = tan α is:",
+    "options": [
+      "\\theta = 2n\\pi \\pm \\alpha",
+      "\\theta = n\\pi + (-1)^n\\alpha",
+      "\\theta = n\\pi + \\alpha",
+      "\\theta = 2n\\pi + \\alpha"
+    ],
+    "answer": "\\theta = n\\pi + \\alpha",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "The three general solutions: sinθ=sinα → nπ+(-1)ⁿα; cosθ=cosα → 2nπ±α; tanθ=tanα → nπ+α."
+  },
+  {
+    "id": "trig_qn_037",
+    "question": "The minimum value of a cos θ + b sin θ + c is:",
+    "options": [
+      "c - \\sqrt{a^2+b^2}",
+      "c + \\sqrt{a^2+b^2}",
+      "-\\sqrt{a^2+b^2}",
+      "c - (a+b)"
+    ],
+    "answer": "c - \\sqrt{a^2+b^2}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_038",
+    "question": "cosh x is defined as:",
+    "options": [
+      "\\dfrac{e^x - e^{-x}}{2}",
+      "\\dfrac{e^x + e^{-x}}{2}",
+      "\\dfrac{e^{2x} + 1}{2}",
+      "\\dfrac{e^x}{e^{-x}}"
+    ],
+    "answer": "\\dfrac{e^x + e^{-x}}{2}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_039",
+    "question": "The fundamental hyperbolic identity is:",
+    "options": [
+      "\\cosh^2 x + \\sinh^2 x = 1",
+      "\\cosh^2 x - \\sinh^2 x = 1",
+      "\\sinh^2 x - \\cosh^2 x = 1",
+      "\\tanh^2 x + \\cosh^2 x = 1"
+    ],
+    "answer": "\\cosh^2 x - \\sinh^2 x = 1",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Note the sign difference from circular: cos²+sin²=1 vs cosh²-sinh²=1."
+  },
+  {
+    "id": "trig_qn_040",
+    "question": "The period of sinⁿθ and cosⁿθ is π when n is even, and 2π when n is odd. What is the period of sin²θ + cos²θ?",
+    "options": [
+      "2\\pi",
+      "\\pi",
+      "\\text{Any positive real — it's a constant}",
+      "\\dfrac{\\pi}{2}"
+    ],
+    "answer": "\\text{Any positive real — it's a constant}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": "sin²θ + cos²θ = 1 (constant). A constant function is periodic with no fundamental period — every T > 0 works."
+  },
+  {
+    "id": "trig_qn_041",
+    "question": "The range of tanh x is:",
+    "options": [
+      "\\mathbb{R}",
+      "[1, \\infty)",
+      "(-1, 1)",
+      "(0, 1)"
+    ],
+    "answer": "(-1, 1)",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_042",
+    "question": "The relation sin(ix) = i sinh x means:",
+    "options": [
+      "\\sinh x = \\sin(ix)",
+      "\\sinh x = -i\\sin(ix)",
+      "\\sin(ix) = i\\sinh x",
+      "\\sinh x = \\cos(ix)"
+    ],
+    "answer": "\\sin(ix) = i\\sinh x",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_043",
+    "question": "cos(ix) equals:",
+    "options": [
+      "i\\cosh x",
+      "-\\cosh x",
+      "\\cosh x",
+      "i\\cos x"
+    ],
+    "answer": "\\cosh x",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_044",
+    "question": "The general solution of sin²θ = sin²α is:",
+    "options": [
+      "\\theta = n\\pi + (-1)^n\\alpha",
+      "\\theta = 2n\\pi \\pm \\alpha",
+      "\\theta = n\\pi \\pm \\alpha",
+      "\\theta = 2n\\pi + \\alpha"
+    ],
+    "answer": "\\theta = n\\pi \\pm \\alpha",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": "sin²θ = sin²α, cos²θ = cos²α, tan²θ = tan²α all give the same general solution: θ = nπ ± α."
+  },
+  {
+    "id": "trig_qn_045",
+    "question": "The equation a cos θ + b sin θ = c has a solution only when:",
+    "options": [
+      "|c| \\leq a + b",
+      "|c| \\leq \\sqrt{a^2 + b^2}",
+      "|c| \\geq \\sqrt{a^2 + b^2}",
+      "c^2 = a^2 + b^2"
+    ],
+    "answer": "|c| \\leq \\sqrt{a^2 + b^2}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_046",
+    "question": "If A + B + C = π, then cos A + cos B + cos C equals:",
+    "options": [
+      "4\\sin\\dfrac{A}{2}\\sin\\dfrac{B}{2}\\sin\\dfrac{C}{2}",
+      "1 + 4\\sin\\dfrac{A}{2}\\sin\\dfrac{B}{2}\\sin\\dfrac{C}{2}",
+      "4\\cos\\dfrac{A}{2}\\cos\\dfrac{B}{2}\\cos\\dfrac{C}{2}",
+      "1 - 4\\sin\\dfrac{A}{2}\\sin\\dfrac{B}{2}\\sin\\dfrac{C}{2}"
+    ],
+    "answer": "1 + 4\\sin\\dfrac{A}{2}\\sin\\dfrac{B}{2}\\sin\\dfrac{C}{2}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_047",
+    "question": "sinh(x + y) equals:",
+    "options": [
+      "\\sinh x\\cosh y - \\cosh x\\sinh y",
+      "\\sinh x\\cosh y + \\cosh x\\sinh y",
+      "\\cosh x\\cosh y + \\sinh x\\sinh y",
+      "\\cosh x\\cosh y - \\sinh x\\sinh y"
+    ],
+    "answer": "\\sinh x\\cosh y + \\cosh x\\sinh y",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_048",
+    "question": "The sum formula: sin A + sin(A+B) + sin(A+2B) + ... (n terms) equals:",
+    "options": [
+      "\\dfrac{\\sin\\left(A + \\frac{(n-1)B}{2}\\right)\\sin\\frac{nB}{2}}{\\sin\\frac{B}{2}}",
+      "\\dfrac{\\cos\\left(A + \\frac{(n-1)B}{2}\\right)\\sin\\frac{nB}{2}}{\\sin\\frac{B}{2}}",
+      "\\dfrac{\\sin nA \\cdot \\sin nB}{\\sin B}",
+      "n\\sin A"
+    ],
+    "answer": "\\dfrac{\\sin\\left(A + \\frac{(n-1)B}{2}\\right)\\sin\\frac{nB}{2}}{\\sin\\frac{B}{2}}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_049",
+    "question": "The range of cosh x is:",
+    "options": [
+      "\\mathbb{R}",
+      "(0, \\infty)",
+      "[1, \\infty)",
+      "[-1, 1]"
+    ],
+    "answer": "[1, \\infty)",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "cosh x = (eˣ + e⁻ˣ)/2 ≥ 1 always (minimum at x=0 where cosh 0 = 1). Unlike cos x, it never goes below 1."
+  },
+  {
+    "id": "trig_qn_050",
+    "question": "If A + B + C = π, then sin A + sin B + sin C equals 4cos(A/2)cos(B/2)cos(C/2). A student claims this maximum occurs at A = B = C = π/3. For an equilateral triangle, the value is:",
+    "options": [
+      "\\dfrac{3\\sqrt{3}}{2}",
+      "\\sqrt{3}",
+      "3",
+      "\\dfrac{3}{2}"
+    ],
+    "answer": "\\dfrac{3\\sqrt{3}}{2}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": "4cos(π/6)·cos(π/6)·cos(π/6) = 4·(√3/2)³ = 4·(3√3/8) = 3√3/2."
+  },
+  {
+    "id": "trig_qn_051",
+    "question": "The general solution of cos θ = 1 is:",
+    "options": [
+      "\\theta = (2n+1)\\pi",
+      "\\theta = n\\pi",
+      "\\theta = 2n\\pi",
+      "\\theta = \\dfrac{(4n+1)\\pi}{2}"
+    ],
+    "answer": "\\theta = 2n\\pi",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_052",
+    "question": "The general solution of sin θ = 0 is:",
+    "options": [
+      "\\theta = 2n\\pi",
+      "\\theta = n\\pi",
+      "\\theta = (2n+1)\\dfrac{\\pi}{2}",
+      "\\theta = 2n\\pi \\pm \\dfrac{\\pi}{2}"
+    ],
+    "answer": "\\theta = n\\pi",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_053",
+    "question": "The period of tan(kθ) is:",
+    "options": [
+      "\\dfrac{2\\pi}{k}",
+      "\\dfrac{\\pi}{k}",
+      "k\\pi",
+      "2k\\pi"
+    ],
+    "answer": "\\dfrac{\\pi}{k}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_054",
+    "question": "If A + B + C = π, then tan(A/2)tan(B/2) + tan(B/2)tan(C/2) + tan(C/2)tan(A/2) equals:",
+    "options": [
+      "0",
+      "\\tan A\\tan B\\tan C",
+      "1",
+      "4"
+    ],
+    "answer": "1",
+    "tags": { "chapter": "Trigonometry", "difficulty": "easy", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_055",
+    "question": "The equation sin θ + cosec θ = 2 implies:",
+    "options": [
+      "\\sin\\theta = 0",
+      "\\sin\\theta = \\dfrac{1}{2}",
+      "\\sin\\theta = 1",
+      "\\sin\\theta = -1"
+    ],
+    "answer": "\\sin\\theta = 1",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "By AM-GM: x + 1/x ≥ 2 for x > 0, equality iff x = 1. So sinθ + cosecθ = 2 iff sinθ = 1."
+  },
+  {
+    "id": "trig_qn_056",
+    "question": "The period of sinⁿθ where n is odd is:",
+    "options": [
+      "\\dfrac{\\pi}{2}",
+      "\\pi",
+      "2\\pi",
+      "n\\pi"
+    ],
+    "answer": "2\\pi",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "n odd: sinⁿ(-θ) = -sinⁿ(θ), so the function still covers negative values → period 2π. n even: sinⁿ(-θ) = sinⁿ(θ) → period π."
+  },
+  {
+    "id": "trig_qn_057",
+    "question": "cosh(x + y) equals:",
+    "options": [
+      "\\cosh x\\sinh y + \\sinh x\\cosh y",
+      "\\cosh x\\cosh y - \\sinh x\\sinh y",
+      "\\cosh x\\cosh y + \\sinh x\\sinh y",
+      "\\sinh x\\sinh y - \\cosh x\\cosh y"
+    ],
+    "answer": "\\cosh x\\cosh y + \\sinh x\\sinh y",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": "Note the + sign: cosh(x+y) = coshx·coshy + sinhx·sinhy. Contrast with cos(A+B) = cosAcosB - sinAsinB."
+  },
+  {
+    "id": "trig_qn_058",
+    "question": "1 - tanh²x equals:",
+    "options": [
+      "\\text{sech}^2 x",
+      "\\text{cosech}^2 x",
+      "-\\text{sech}^2 x",
+      "\\coth^2 x"
+    ],
+    "answer": "\\text{sech}^2 x",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_059",
+    "question": "If A + B + C = π, then cos 2A + cos 2B + cos 2C equals:",
+    "options": [
+      "4\\cos A\\cos B\\cos C",
+      "-1 - 4\\cos A\\cos B\\cos C",
+      "1 + 4\\cos A\\cos B\\cos C",
+      "-1 + 4\\cos A\\cos B\\cos C"
+    ],
+    "answer": "-1 - 4\\cos A\\cos B\\cos C",
+    "tags": { "chapter": "Trigonometry", "difficulty": "medium", "class": "11" },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "trig_qn_060",
+    "question": "For the equation a cosθ + b sinθ = c, the general solution uses the substitution a = r cosφ, b = r sinφ. Which pair of statements is correct? (i) r = √(a²+b²); (ii) The equation has no solution if |c| > r; (iii) If |c| = r, there is exactly one value of θ in [0, 2π).",
+    "options": [
+      "\\text{(i) and (ii) only}",
+      "\\text{(i) and (iii) only}",
+      "\\text{(ii) and (iii) only}",
+      "\\text{All three}"
+    ],
+    "answer": "\\text{(i) and (ii) only}",
+    "tags": { "chapter": "Trigonometry", "difficulty": "god", "class": "11" },
+    "image": null,
+    "tip": "When |c| = r, cos(θ-φ) = 1 → θ-φ = 2nπ, which gives infinitely many solutions, not just one in [0,2π). (iii) is false."
+  }
+]

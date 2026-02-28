@@ -36,7 +36,8 @@ class _ReviseChapterSelectionScreenState extends State<ReviseChapterSelectionScr
     'Maths': [
       '3D Geometry','Ellipse', 'Definite Integrals','Indefinite Integrals','Parabola',
       'Probability', 'Quadratic Equations','Circles', 'Permutations and Combinations','Hyperbola',
-      'Sequence and Series','Functions', 'Complex Numbers', 'Binomial Theorem'
+      'Sequence and Series','Functions', 'Complex Numbers', 'Binomial Theorem', 'Trigonometry','Straight Lines',
+      'Limits', 'Statistics'
     ],
   };
 

@@ -1,0 +1,542 @@
+[
+  {
+    "id": "straight_lines_qn_001",
+    "question": "The slope of a line equally inclined to both axes is:",
+    "options": [
+      "\\text{0}",
+      "\\pm 1",
+      "\\infty",
+      "\\text{undefined}"
+    ],
+    "answer": "\\pm 1",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Equally inclined to both axes means 45° or 135° with X-axis → tan45° = 1, tan135° = −1."
+  },
+  {
+    "id": "straight_lines_qn_002",
+    "question": "The equation of a line parallel to the Y-axis at a distance of 5 units from it is:",
+    "options": [
+      "y = 5",
+      "x = 5",
+      "y = -5",
+      "x = \\pm 5"
+    ],
+    "answer": "x = 5",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "straight_lines_qn_003",
+    "question": "The condition for two lines with slopes m₁ and m₂ to be perpendicular to each other is:",
+    "options": [
+      "m_1 = m_2",
+      "m_1 + m_2 = 0",
+      "m_1 m_2 = -1",
+      "m_1 m_2 = 1"
+    ],
+    "answer": "m_1 m_2 = -1",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "straight_lines_qn_004",
+    "question": "In the intercept form of a line, <b>x/a + y/b = 1</b>, the value of <b>a</b> represents:",
+    "options": [
+      "\\text{y-intercept}",
+      "\\text{x-intercept}",
+      "\\text{slope}",
+      "\\text{perpendicular distance from origin}"
+    ],
+    "answer": "\\text{x-intercept}",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "straight_lines_qn_005",
+    "question": "In the normal form <b>x cosα + y sinα = p</b>, what does <b>p</b> represent?",
+    "options": [
+      "\\text{slope of the line}",
+      "\\text{x-intercept}",
+      "\\text{perpendicular distance from origin to line}",
+      "\\text{y-intercept}"
+    ],
+    "answer": "\\text{perpendicular distance from origin to line}",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "straight_lines_qn_006",
+    "question": "The distance of the point (x₁, y₁) from the line <b>Ax + By + C = 0</b> is:",
+    "options": [
+      "\\dfrac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}",
+      "\\dfrac{Ax_1 + By_1 + C}{A + B}",
+      "\\dfrac{|Ax_1 - By_1 + C|}{\\sqrt{A^2 + B^2}}",
+      "\\dfrac{|Ax_1 + By_1|}{\\sqrt{A^2 + B^2}}"
+    ],
+    "answer": "\\dfrac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "straight_lines_qn_007",
+    "question": "The distance between two parallel lines <b>y = mx + c₁</b> and <b>y = mx + c₂</b> is:",
+    "options": [
+      "\\dfrac{|c_1 - c_2|}{\\sqrt{1 + m^2}}",
+      "\\dfrac{|c_1 + c_2|}{\\sqrt{1 + m^2}}",
+      "\\dfrac{|c_1 - c_2|}{1 + m^2}",
+      "|c_1 - c_2|"
+    ],
+    "answer": "\\dfrac{|c_1 - c_2|}{\\sqrt{1 + m^2}}",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Common error: forgetting the square root in the denominator."
+  },
+  {
+    "id": "straight_lines_qn_008",
+    "question": "The equation of a line perpendicular to <b>ax + by + c = 0</b> is of the form:",
+    "options": [
+      "ax - by + \\lambda = 0",
+      "bx - ay + \\lambda = 0",
+      "bx + ay + \\lambda = 0",
+      "-ax + by + \\lambda = 0"
+    ],
+    "answer": "bx - ay + \\lambda = 0",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Swap a and b, then change sign of one: ax+by → bx−ay."
+  },
+  {
+    "id": "straight_lines_qn_009",
+    "question": "For the homogeneous pair of lines <b>ax² + 2hxy + by² = 0</b>, the sum of slopes of the two lines is:",
+    "options": [
+      "\\dfrac{a}{b}",
+      "\\dfrac{-2h}{b}",
+      "\\dfrac{2h}{a}",
+      "\\dfrac{-a}{b}"
+    ],
+    "answer": "\\dfrac{-2h}{b}",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Think of it like Vieta's: treating the pair as a quadratic in (y/x), sum of roots = −2h/b."
+  },
+  {
+    "id": "straight_lines_qn_010",
+    "question": "The area of the triangle formed by the line <b>ax + by + c = 0</b> with the coordinate axes is:",
+    "options": [
+      "\\dfrac{c^2}{|ab|}",
+      "\\dfrac{c^2}{2|ab|}",
+      "\\dfrac{|c|}{2\\sqrt{a^2+b^2}}",
+      "\\dfrac{c}{ab}"
+    ],
+    "answer": "\\dfrac{c^2}{2|ab|}",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "straight_lines_qn_011",
+    "question": "The slope of a line passing through two points (x₁, y₁) and (x₂, y₂) is:",
+    "options": [
+      "\\dfrac{x_2 - x_1}{y_2 - y_1}",
+      "\\dfrac{y_2 - y_1}{x_2 - x_1}",
+      "\\dfrac{y_2 + y_1}{x_2 + x_1}",
+      "\\dfrac{x_2 + x_1}{y_2 - y_1}"
+    ],
+    "answer": "\\dfrac{y_2 - y_1}{x_2 - x_1}",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "straight_lines_qn_012",
+    "question": "The equation of the X-axis is:",
+    "options": [
+      "x = 0",
+      "y = 0",
+      "x = y",
+      "x + y = 0"
+    ],
+    "answer": "y = 0",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "straight_lines_qn_013",
+    "question": "The equation of the Y-axis is:",
+    "options": [
+      "y = 0",
+      "x = y",
+      "x = 0",
+      "x + y = 1"
+    ],
+    "answer": "x = 0",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "straight_lines_qn_014",
+    "question": "The image of the point (x₁, y₁) with respect to the Y-axis is:",
+    "options": [
+      "(x_1, -y_1)",
+      "(-x_1, y_1)",
+      "(-x_1, -y_1)",
+      "(y_1, x_1)"
+    ],
+    "answer": "(-x_1, y_1)",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Reflecting over Y-axis flips x → −x, y stays the same."
+  },
+  {
+    "id": "straight_lines_qn_015",
+    "question": "The family of lines passing through the intersection of lines <b>L₁: a₁x + b₁y + c₁ = 0</b> and <b>L₂: a₂x + b₂y + c₂ = 0</b> is represented by:",
+    "options": [
+      "L_1 \\cdot L_2 = 0",
+      "L_1 + \\lambda L_2 = 0",
+      "\\lambda L_1 = L_2",
+      "L_1 - L_2 = 0"
+    ],
+    "answer": "L_1 + \\lambda L_2 = 0",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "straight_lines_qn_016",
+    "question": "The condition for the three lines a₁x + b₁y + c₁ = 0, a₂x + b₂y + c₂ = 0, a₃x + b₃y + c₃ = 0 to be concurrent is:",
+    "options": [
+      "a_1(b_2 c_3 - b_3 c_2) - b_1(a_2 c_3 - a_3 c_2) + c_1(a_2 b_3 - a_3 b_2) \\neq 0",
+      "\\begin{vmatrix} a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\\\ a_3 & b_3 & c_3 \\end{vmatrix} = 0",
+      "a_1 a_2 + b_1 b_2 = 0",
+      "a_1 + a_2 + a_3 = b_1 + b_2 + b_3"
+    ],
+    "answer": "\\begin{vmatrix} a_1 & b_1 & c_1 \\\\ a_2 & b_2 & c_2 \\\\ a_3 & b_3 & c_3 \\end{vmatrix} = 0",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "straight_lines_qn_017",
+    "question": "The angle θ between two lines with slopes m₁ and m₂ satisfies:",
+    "options": [
+      "\\tan\\theta = \\left|\\dfrac{m_1 + m_2}{1 - m_1 m_2}\\right|",
+      "\\tan\\theta = \\left|\\dfrac{m_2 - m_1}{1 + m_1 m_2}\\right|",
+      "\\tan\\theta = m_1 - m_2",
+      "\\tan\\theta = \\dfrac{m_1 m_2 - 1}{m_1 + m_2}"
+    ],
+    "answer": "\\tan\\theta = \\left|\\dfrac{m_2 - m_1}{1 + m_1 m_2}\\right|",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "straight_lines_qn_018",
+    "question": "For the general second-degree equation <b>ax² + 2hxy + by² + 2gx + 2fy + c = 0</b> to represent a pair of straight lines, the required condition is:",
+    "options": [
+      "abc + 2fgh - af^2 - bg^2 - ch^2 = 0",
+      "abc - 2fgh - af^2 - bg^2 - ch^2 = 0",
+      "h^2 = ab",
+      "a + b = 0"
+    ],
+    "answer": "abc + 2fgh - af^2 - bg^2 - ch^2 = 0",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "The condition is Δ = 0 where Δ is the determinant of the 3×3 matrix of the conic."
+  },
+  {
+    "id": "straight_lines_qn_019",
+    "question": "The angle between the pair of lines represented by <b>ax² + 2hxy + by² = 0</b> is given by:",
+    "options": [
+      "\\tan\\theta = \\dfrac{2\\sqrt{h^2 - ab}}{a + b}",
+      "\\tan\\theta = \\dfrac{2(h^2 - ab)}{a + b}",
+      "\\tan\\theta = \\dfrac{h^2 - ab}{a - b}",
+      "\\tan\\theta = \\dfrac{\\sqrt{h^2 + ab}}{a + b}"
+    ],
+    "answer": "\\tan\\theta = \\dfrac{2\\sqrt{h^2 - ab}}{a + b}",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "The pair is perpendicular when a + b = 0, and coincident when h² = ab — both follow from this formula."
+  },
+  {
+    "id": "straight_lines_qn_020",
+    "question": "The area of the rhombus formed by the lines <b>ax ± by ± c = 0</b> is:",
+    "options": [
+      "\\dfrac{c^2}{ab}",
+      "\\dfrac{2c^2}{ab}",
+      "\\dfrac{c^2}{2ab}",
+      "\\dfrac{4c^2}{ab}"
+    ],
+    "answer": "\\dfrac{2c^2}{ab}",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "straight_lines_qn_021",
+    "question": "The image of the point (x₁, y₁) with respect to the origin is:",
+    "options": [
+      "(x_1, -y_1)",
+      "(-x_1, y_1)",
+      "(-x_1, -y_1)",
+      "(y_1, x_1)"
+    ],
+    "answer": "(-x_1, -y_1)",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "straight_lines_qn_022",
+    "question": "The image of the point (x₁, y₁) with respect to the line <b>y = x</b> is:",
+    "options": [
+      "(-y_1, -x_1)",
+      "(y_1, x_1)",
+      "(x_1, -y_1)",
+      "(-x_1, y_1)"
+    ],
+    "answer": "(y_1, x_1)",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Reflecting over y = x simply swaps the coordinates."
+  },
+  {
+    "id": "straight_lines_qn_023",
+    "question": "The product of slopes of the two lines represented by <b>ax² + 2hxy + by² = 0</b> is:",
+    "options": [
+      "\\dfrac{-2h}{b}",
+      "\\dfrac{h}{b}",
+      "\\dfrac{a}{b}",
+      "\\dfrac{2h}{a}"
+    ],
+    "answer": "\\dfrac{a}{b}",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Vieta's analogy: product of roots of bt² + 2ht + a = 0 (where t = y/x) is a/b."
+  },
+  {
+    "id": "straight_lines_qn_024",
+    "question": "Two points P(x₁, y₁) and Q(x₂, y₂) lie on the <b>same side</b> of the line ax + by + c = 0 if:",
+    "options": [
+      "(ax_1 + by_1 + c)(ax_2 + by_2 + c) < 0",
+      "(ax_1 + by_1 + c)(ax_2 + by_2 + c) > 0",
+      "ax_1 + by_1 + c = 0",
+      "ax_1 + by_1 = ax_2 + by_2"
+    ],
+    "answer": "(ax_1 + by_1 + c)(ax_2 + by_2 + c) > 0",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Same side → same sign → product positive. Opposite sides → opposite signs → product negative."
+  },
+  {
+    "id": "straight_lines_qn_025",
+    "question": "The line ax + by + c = 0 divides the segment joining (x₁, y₁) and (x₂, y₂) in the ratio λ:1. The value of λ is:",
+    "options": [
+      "\\dfrac{ax_1 + by_1 + c}{ax_2 + by_2 + c}",
+      "-\\dfrac{ax_1 + by_1 + c}{ax_2 + by_2 + c}",
+      "\\dfrac{ax_1 - by_1 + c}{ax_2 + by_2 + c}",
+      "\\dfrac{ax_2 + by_2 + c}{ax_1 + by_1 + c}"
+    ],
+    "answer": "-\\dfrac{ax_1 + by_1 + c}{ax_2 + by_2 + c}",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Negative λ → external division. Positive λ → internal division."
+  },
+  {
+    "id": "straight_lines_qn_026",
+    "question": "The orthocentre, centroid, and circumcentre of a triangle are always:",
+    "options": [
+      "\\text{vertices of a triangle}",
+      "\\text{collinear}",
+      "\\text{equidistant from each other}",
+      "\\text{coincident for any triangle}"
+    ],
+    "answer": "\\text{collinear}",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "This line is called the Euler line. Centroid divides orthocentre–circumcentre in ratio 2:1."
+  },
+  {
+    "id": "straight_lines_qn_027",
+    "question": "The equation of the joint bisectors of angles between the pair of lines <b>ax² + 2hxy + by² = 0</b> is:",
+    "options": [
+      "\\dfrac{x^2 - y^2}{a - b} = \\dfrac{xy}{h}",
+      "\\dfrac{x^2 - y^2}{a + b} = \\dfrac{xy}{2h}",
+      "hx^2 - (a - b)xy - hy^2 = 0",
+      "hx^2 + (a - b)xy + hy^2 = 0"
+    ],
+    "answer": "hx^2 - (a - b)xy - hy^2 = 0",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "straight_lines_qn_028",
+    "question": "For the lines represented by ax² + 2hxy + by² = 0, if h² < ab, then the two lines are:",
+    "options": [
+      "\\text{real and distinct}",
+      "\\text{real and coincident}",
+      "\\text{imaginary}",
+      "\\text{perpendicular}"
+    ],
+    "answer": "\\text{imaginary}",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Discriminant analogy: h² − ab < 0 → no real intersection lines, like a quadratic with negative discriminant."
+  },
+  {
+    "id": "straight_lines_qn_029",
+    "question": "The pair of lines through the origin <b>perpendicular</b> to the pair given by <b>ax² + 2hxy + by² = 0</b> is:",
+    "options": [
+      "ax^2 - 2hxy + by^2 = 0",
+      "bx^2 - 2hxy + ay^2 = 0",
+      "bx^2 + 2hxy + ay^2 = 0",
+      "ax^2 + 2hxy - by^2 = 0"
+    ],
+    "answer": "bx^2 - 2hxy + ay^2 = 0",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Swap a and b, negate h — this is the geometric perpendicular rotation encoded algebraically."
+  },
+  {
+    "id": "straight_lines_qn_030",
+    "question": "For the general second-degree pair <b>ax² + 2hxy + by² + 2gx + 2fy + c = 0</b>, if g² > ac and a/h = h/b = g/f, then the pair represents:",
+    "options": [
+      "\\text{two intersecting lines}",
+      "\\text{a circle}",
+      "\\text{two parallel lines}",
+      "\\text{a parabola}"
+    ],
+    "answer": "\\text{two parallel lines}",
+    "tags": {
+      "chapter": "Straight Lines",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  }
+]
