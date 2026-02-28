@@ -30,13 +30,13 @@ class _ReviseChapterSelectionScreenState extends State<ReviseChapterSelectionScr
       'Hydrocarbons','Haloalkanes and Haloarenes', 'Alcohols Phenols and Ethers', 'Aldehydes and Ketones',
       'Carboxylic Acids', 'Amines', 'Biomolecules', 'Basic Concepts of Chemistry','Classification of Elements',
       'Chemical Bonding', 'Thermodynamics', 'Redox Reactions', 'P Block 13 and 14',
-      'P Block 15 to 18', 'D and F Block','Coordination Compounds'
+      'P Block 15 to 18', 'D and F Block','Coordination Compounds', 'Practical Chemistry'
 
     ],
     'Maths': [
       '3D Geometry','Ellipse', 'Definite Integrals','Indefinite Integrals','Parabola',
       'Probability', 'Quadratic Equations','Circles', 'Permutations and Combinations','Hyperbola',
-      'Sequence and Series'
+      'Sequence and Series','Functions', 'Complex Numbers', 'Binomial Theorem'
     ],
   };
 

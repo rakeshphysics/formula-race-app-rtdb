@@ -1,0 +1,182 @@
+[
+  {
+    "id": "practical_chem_qn_001",
+    "question": "Which of the following gives a <b>brick-red</b> colour in the flame test?",
+    "options": [
+      "\\text{Ba}^{2+}",
+      "\\text{Ca}^{2+}",
+      "\\text{Sr}^{2+}",
+      "\\text{Na}^+"
+    ],
+    "answer": "\\text{Ca}^{2+}",
+    "tags": {
+      "chapter": "Practical Chemistry",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Flame colours: Na⁺ golden yellow, K⁺ violet, Li⁺ carmine, Ca²⁺ brick-red, Sr²⁺ crimson, Ba²⁺ apple-green."
+  },
+  {
+    "id": "practical_chem_qn_002",
+    "question": "The <b>ring test</b> for NO₃⁻ involves the formation of a dark brown ring at the interface. The brown ring compound is:",
+    "options": [
+      "[\\text{Fe}(\\text{H}_2\\text{O})_5\\text{NO}]\\text{SO}_4",
+      "\\text{Fe}_2(\\text{SO}_4)_3",
+      "\\text{FeSO}_4 \\cdot \\text{NO}_3",
+      "[\\text{Fe}(\\text{CN})_5\\text{NO}]^{2-}"
+    ],
+    "answer": "[\\text{Fe}(\\text{H}_2\\text{O})_5\\text{NO}]\\text{SO}_4",
+    "tags": {
+      "chapter": "Practical Chemistry",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "practical_chem_qn_003",
+    "question": "In the <b>Lucas test</b>, which alcohol shows immediate turbidity with Lucas reagent?",
+    "options": [
+      "\\text{Primary alcohol}",
+      "\\text{Secondary alcohol}",
+      "\\text{Tertiary alcohol}",
+      "\\text{Phenol}"
+    ],
+    "answer": "\\text{Tertiary alcohol}",
+    "tags": {
+      "chapter": "Practical Chemistry",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Reactivity order with Lucas reagent (ZnCl₂/conc. HCl): 3° > 2° > 1°. Immediate turbidity = 3°."
+  },
+  {
+    "id": "practical_chem_qn_004",
+    "question": "KMnO₄ acts as a <b>self-indicator</b> in its titration with oxalic acid. The titration must be carried out in the presence of:",
+    "options": [
+      "\\text{Dil. HCl}",
+      "\\text{Dil. HNO}_3",
+      "\\text{Dil. H}_2\\text{SO}_4",
+      "\\text{Dil. CH}_3\\text{COOH}"
+    ],
+    "answer": "\\text{Dil. H}_2\\text{SO}_4",
+    "tags": {
+      "chapter": "Practical Chemistry",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "HCl reacts with KMnO₄; HNO₃ is itself an oxidising agent — both interfere. Only H₂SO₄ is inert here."
+  },
+  {
+    "id": "practical_chem_qn_005",
+    "question": "Which of the following is a <b>primary standard</b> substance?",
+    "options": [
+      "\\text{KMnO}_4",
+      "\\text{NaOH}",
+      "\\text{Crystalline oxalic acid}",
+      "\\text{KOH}"
+    ],
+    "answer": "\\text{Crystalline oxalic acid}",
+    "tags": {
+      "chapter": "Practical Chemistry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "practical_chem_qn_006",
+    "question": "The <b>chromyl chloride test</b> confirms the presence of Cl⁻. The reddish-brown vapours of CrO₂Cl₂ when passed into NaOH solution give a yellow solution of:",
+    "options": [
+      "\\text{Na}_2\\text{Cr}_2\\text{O}_7",
+      "\\text{Na}_2\\text{CrO}_4",
+      "\\text{CrCl}_3",
+      "\\text{NaCrO}_2"
+    ],
+    "answer": "\\text{Na}_2\\text{CrO}_4",
+    "tags": {
+      "chapter": "Practical Chemistry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "practical_chem_qn_007",
+    "question": "Fehling's solution gives a <b>red precipitate</b> with aldehydes. Benedict's solution, however, is used specifically to distinguish:",
+    "options": [
+      "\\text{Aliphatic aldehydes from aromatic aldehydes}",
+      "\\text{Aldehydes from ketones}",
+      "\\text{Aldehydes from carboxylic acids}",
+      "\\text{Primary alcohols from aldehydes}"
+    ],
+    "answer": "\\text{Aliphatic aldehydes from aromatic aldehydes}",
+    "tags": {
+      "chapter": "Practical Chemistry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Benedict's test is positive only for aliphatic aldehydes — aromatic aldehydes do not respond."
+  },
+  {
+    "id": "practical_chem_qn_008",
+    "question": "In group separation, H₂S is passed in the presence of dil. HCl to precipitate Group II sulphides. What is the <b>role of HCl</b>?",
+    "options": [
+      "\\text{Increases [S}^{2-}\\text{] by promoting H}_2\\text{S ionisation}",
+      "\\text{Decreases [S}^{2-}\\text{] via common ion effect}",
+      "\\text{Dissolves Group I chlorides first}",
+      "\\text{Oxidises S}^{2-}\\text{ to S}"
+    ],
+    "answer": "\\text{Decreases [S}^{2-}\\text{] via common ion effect}",
+    "tags": {
+      "chapter": "Practical Chemistry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Low [S²⁻] → only very low Ksp sulphides (Group II) precipitate. Group IV needs high [S²⁻] → basic medium."
+  },
+  {
+    "id": "practical_chem_qn_009",
+    "question": "The <b>carbylamine test</b> uses CHCl₃ and alcoholic KOH. What is observed in a positive test?",
+    "options": [
+      "\\text{Offensive odour of isocyanide}",
+      "\\text{Red/orange azo dye formed}",
+      "\\text{Precipitate soluble in conc. HCl}",
+      "\\text{Fruity smell}"
+    ],
+    "answer": "\\text{Offensive odour of isocyanide}",
+    "tags": {
+      "chapter": "Practical Chemistry",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "practical_chem_qn_010",
+    "question": "In KMnO₄ titrations: (i) HCl is used instead of H₂SO₄, and (ii) oxalic acid solution is not heated before titration. Which option correctly states <b>both consequences</b>?",
+    "options": [
+      "\\text{(i) No effect; (ii) only slows reaction}",
+      "\\text{(i) HCl consumed → low titre; (ii) no effect}",
+      "\\text{(i) HCl reacts with KMnO}_4\\text{ → high titre; (ii) endpoint unreliable}",
+      "\\text{(i) HCl acceptable; (ii) KMnO}_4\\text{ decomposes}"
+    ],
+    "answer": "\\text{(i) HCl reacts with KMnO}_4\\text{ → high titre; (ii) endpoint unreliable}",
+    "tags": {
+      "chapter": "Practical Chemistry",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  }
+]

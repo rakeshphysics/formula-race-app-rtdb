@@ -15,25 +15,25 @@
       "class": "12"
     },
     "image": null,
-    "tip": "Coordination compounds retain identity in solution; double salts dissociate completely into simple ions."
+    "tip": null
   },
   {
     "id": "coord_comp_qn_002",
-    "question": "In K₄[Fe(CN)₆], what is the coordination number of iron?",
+    "question": "In metal carbonyls, M–CO bonding is <b>synergic</b>. Which option correctly describes both components of this bond?",
     "options": [
-      "4",
-      "6",
-      "8",
-      "2"
+      "\\text{σ-donation from CO only; no back-donation}",
+      "\\text{π-back donation from metal only}",
+      "\\text{σ-donation (CO→M) + π-back donation (M→CO π*)}",
+      "\\text{Equal electron sharing via single covalent bond}"
     ],
-    "answer": "6",
+    "answer": "\\text{σ-donation (CO→M) + π-back donation (M→CO π*)}",
     "tags": {
       "chapter": "Coordination Compounds",
       "difficulty": "easy",
       "class": "12"
     },
     "image": null,
-    "tip": null
+    "tip": "Synergic = mutual reinforcement: σ-donation weakens M, back-donation compensates. Net effect: very stable M–CO bond."
   },
   {
     "id": "coord_comp_qn_003",
@@ -69,7 +69,7 @@
       "class": "12"
     },
     "image": null,
-    "tip": "EDTA has 2 N + 4 O donor atoms = 6 donor sites."
+    "tip": null
   },
   {
     "id": "coord_comp_qn_005",
@@ -87,7 +87,7 @@
       "class": "12"
     },
     "image": null,
-    "tip": "Ambidentate = one donor atom at a time, but can choose between two — NO₂⁻ binds via N or O."
+    "tip": null
   },
   {
     "id": "coord_comp_qn_006",
@@ -145,32 +145,32 @@
   },
   {
     "id": "coord_comp_qn_009",
-    "question": "Which of the following pairs are <b>ionisation isomers</b>?",
+    "question": "Which of the following pairs are <b>ionisation isomers</b>?<br><b>A:</b> [Co(NH₃)₅SO₄]Br and [Co(NH₃)₅Br]SO₄<br><b>B:</b> [Cr(NH₃)₆][Co(CN)₆] and [Co(NH₃)₆][Cr(CN)₆]<br><b>C:</b> [Co(NH₃)₅(NO₂)] and [Co(NH₃)₅(ONO)]<br><b>D:</b> [Co(H₂O)₆]Cl₃ and [Co(H₂O)₅Cl]Cl₂·H₂O",
     "options": [
-      "[\\text{Co}(\\text{NH}_3)_5\\text{SO}_4]\\text{Br} \\text{ and } [\\text{Co}(\\text{NH}_3)_5\\text{Br}]\\text{SO}_4",
-      "[\\text{Cr}(\\text{NH}_3)_6][\\text{Co}(\\text{CN})_6] \\text{ and } [\\text{Co}(\\text{NH}_3)_6][\\text{Cr}(\\text{CN})_6]",
-      "[\\text{Co}(\\text{NH}_3)_5(\\text{NO}_2)] \\text{ and } [\\text{Co}(\\text{NH}_3)_5(\\text{ONO})]",
-      "[\\text{Co}(\\text{H}_2\\text{O})_6]\\text{Cl}_3 \\text{ and } [\\text{Co}(\\text{H}_2\\text{O})_5\\text{Cl}]\\text{Cl}_2 \\cdot \\text{H}_2\\text{O}"
+      "\\text{Pair A}",
+      "\\text{Pair B}",
+      "\\text{Pair C}",
+      "\\text{Pair D}"
     ],
-    "answer": "[\\text{Co}(\\text{NH}_3)_5\\text{SO}_4]\\text{Br} \\text{ and } [\\text{Co}(\\text{NH}_3)_5\\text{Br}]\\text{SO}_4",
+    "answer": "\\text{Pair A}",
     "tags": {
       "chapter": "Coordination Compounds",
       "difficulty": "medium",
       "class": "12"
     },
     "image": null,
-    "tip": null
+    "tip": "Ionisation isomers exchange an ionic ligand with a counter ion. Linkage isomers differ in donor atom. Coordination isomers swap ligands between metal centres."
   },
   {
     "id": "coord_comp_qn_010",
-    "question": "For [Co(NH₃)₆]³⁺, the hybridisation is d²sp³ and all electrons are paired. Which statement correctly explains both observations?",
+    "question": "For [Co(NH₃)₆]³⁺, the hybridisation is d²sp³ and the complex is diamagnetic. Which option correctly links <b>ligand field strength → orbital used → magnetic nature</b>?",
     "options": [
-      "\\text{NH}_3 \\text{ is a weak field ligand; uses outer d-orbitals; becomes paramagnetic}",
-      "\\text{NH}_3 \\text{ is a strong field ligand; uses inner (n-1)d orbitals; becomes diamagnetic}",
-      "\\text{NH}_3 \\text{ is a weak field ligand; uses inner (n-1)d orbitals; becomes diamagnetic}",
-      "\\text{NH}_3 \\text{ is a strong field ligand; uses outer d-orbitals; becomes paramagnetic}"
+      "\\text{Weak field → outer d → paramagnetic}",
+      "\\text{Strong field → inner (n−1)d → diamagnetic}",
+      "\\text{Weak field → inner (n−1)d → diamagnetic}",
+      "\\text{Strong field → outer d → paramagnetic}"
     ],
-    "answer": "\\text{NH}_3 \\text{ is a strong field ligand; uses inner (n-1)d orbitals; becomes diamagnetic}",
+    "answer": "\\text{Strong field → inner (n−1)d → diamagnetic}",
     "tags": {
       "chapter": "Coordination Compounds",
       "difficulty": "god",
@@ -249,7 +249,7 @@
       "class": "12"
     },
     "image": null,
-    "tip": "Homoleptic = one kind of ligand only."
+    "tip": null
   },
   {
     "id": "coord_comp_qn_015",
@@ -267,7 +267,7 @@
       "class": "12"
     },
     "image": null,
-    "tip": "Ligands are named alphabetically: ammine before aqua."
+    "tip": null
   },
   {
     "id": "coord_comp_qn_016",
@@ -303,7 +303,7 @@
       "class": "12"
     },
     "image": null,
-    "tip": "In octahedral field: eg rises by +3/5 Δo, t₂g falls by −2/5 Δo."
+    "tip": null
   },
   {
     "id": "coord_comp_qn_018",
@@ -382,11 +382,11 @@
     "question": "Tetrahedral complexes do <b>not</b> show geometrical isomerism because:",
     "options": [
       "\\text{They are always homoleptic}",
-      "\\text{All positions are equivalent in a tetrahedron — there is no cis/trans distinction}",
+      "\\text{All positions are equivalent; no cis/trans distinction}",
       "\\text{They have only 4 ligands}",
       "\\text{They are always outer orbital complexes}"
     ],
-    "answer": "\\text{All positions are equivalent in a tetrahedron — there is no cis/trans distinction}",
+    "answer": "\\text{All positions are equivalent; no cis/trans distinction}",
     "tags": {
       "chapter": "Coordination Compounds",
       "difficulty": "easy",
@@ -451,21 +451,21 @@
   },
   {
     "id": "coord_comp_qn_026",
-    "question": "The stability constant K of a complex is related to the instability constant K_i by:",
+    "question": "The <b>overall stability constant</b> β_n of a complex MLₙ is related to the stepwise stability constants K₁, K₂, … Kₙ by:",
     "options": [
-      "K_i = K^2",
-      "K_i = \\frac{1}{K}",
-      "K_i = K - 1",
-      "K_i = \\sqrt{K}"
+      "\\beta_n = K_1 + K_2 + \\cdots + K_n",
+      "\\beta_n = K_1 \\times K_2 \\times \\cdots \\times K_n",
+      "\\beta_n = \\frac{K_1}{K_2 \\times \\cdots \\times K_n}",
+      "\\beta_n = \\frac{1}{K_1 \\times K_2 \\times \\cdots \\times K_n}"
     ],
-    "answer": "K_i = \\frac{1}{K}",
+    "answer": "\\beta_n = K_1 \\times K_2 \\times \\cdots \\times K_n",
     "tags": {
       "chapter": "Coordination Compounds",
       "difficulty": "medium",
       "class": "12"
     },
     "image": null,
-    "tip": null
+    "tip": "Overall β = product of all stepwise K values. In log form: log βₙ = Σ log Kᵢ — useful for comparing complex stability."
   },
   {
     "id": "coord_comp_qn_027",
@@ -483,7 +483,7 @@
       "class": "12"
     },
     "image": null,
-    "tip": "Ethylene has no lone pair — it donates via its π bond. This is what makes it a π-bonded organometallic ligand."
+    "tip": null
   },
   {
     "id": "coord_comp_qn_028",
@@ -523,14 +523,14 @@
   },
   {
     "id": "coord_comp_qn_030",
-    "question": "A student compares [CoF₆]³⁻ and [Co(CN)₆]³⁻. Both are octahedral Co(III) complexes, but one is high-spin paramagnetic and the other is low-spin diamagnetic. Which of the following correctly identifies both complexes AND the reason?",
+    "question": "Both [CoF₆]³⁻ and [Co(CN)₆]³⁻ are octahedral Co(III) d⁶ complexes. One is high-spin paramagnetic, the other low-spin diamagnetic. Which option correctly identifies <b>both</b>?",
     "options": [
-      "[\\text{CoF}_6]^{3-} \\text{ is low spin (F}^- \\text{ is strong field); } [\\text{Co(CN)}_6]^{3-} \\text{ is high spin (CN}^- \\text{ is weak field)}",
-      "[\\text{CoF}_6]^{3-} \\text{ is high spin, paramagnetic (F}^-\\text{ weak field, }\\Delta_o < P\\text{); } [\\text{Co(CN)}_6]^{3-} \\text{ is low spin, diamagnetic (CN}^-\\text{ strong field, }\\Delta_o > P\\text{)}",
-      "\\text{Both are diamagnetic since Co(III) has d}^6 \\text{ configuration}",
-      "[\\text{Co(CN)}_6]^{3-} \\text{ is paramagnetic because CN}^-\\text{ causes more electron repulsion}"
+      "\\text{[CoF}_6\\text{]}^{3-}\\text{ low spin; [Co(CN)}_6\\text{]}^{3-}\\text{ high spin}",
+      "[\\text{CoF}_6]^{3-}\\text{ high spin }(\\Delta_o{<}P)\\text{; }[\\text{Co(CN)}_6]^{3-}\\text{ low spin }(\\Delta_o{>}P)",
+      "\\text{Both diamagnetic — d}^6\\text{ always pairs}",
+      "\\text{[Co(CN)}_6\\text{]}^{3-}\\text{ paramagnetic (CN}^-\\text{ causes repulsion)}"
     ],
-    "answer": "[\\text{CoF}_6]^{3-} \\text{ is high spin, paramagnetic (F}^-\\text{ weak field, }\\Delta_o < P\\text{); } [\\text{Co(CN)}_6]^{3-} \\text{ is low spin, diamagnetic (CN}^-\\text{ strong field, }\\Delta_o > P\\text{)}",
+    "answer": "[\\text{CoF}_6]^{3-}\\text{ high spin }(\\Delta_o{<}P)\\text{; }[\\text{Co(CN)}_6]^{3-}\\text{ low spin }(\\Delta_o{>}P)",
     "tags": {
       "chapter": "Coordination Compounds",
       "difficulty": "god",

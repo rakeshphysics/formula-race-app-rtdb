@@ -78,6 +78,10 @@ class QuizDataProvider extends ChangeNotifier {
       'assets/formulas/12/p_block_15_to_18.aes',
       'assets/formulas/12/d_and_f_block.aes',
       'assets/formulas/12/coordination_compounds.aes',
+      'assets/formulas/12/practical_chemistry.aes',
+      'assets/formulas/12/functions.aes',
+      'assets/formulas/11/complex_numbers.aes',
+      'assets/formulas/11/binomial_theorem.aes',
 
     ];
 

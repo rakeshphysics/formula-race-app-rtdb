@@ -1,0 +1,542 @@
+[
+  {
+    "id": "binomial_thm_qn_001",
+    "question": "The total number of terms in the expansion of (x + a)ⁿ is:",
+    "options": [
+      "n",
+      "n-1",
+      "n+1",
+      "2n"
+    ],
+    "answer": "n+1",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_002",
+    "question": "The general term T_{r+1} in the expansion of (x + a)ⁿ is:",
+    "options": [
+      "{}^nC_r\\, x^r\\, a^{n-r}",
+      "{}^nC_r\\, x^{n-r}\\, a^r",
+      "{}^nC_{n-r}\\, x^r\\, a^r",
+      "{}^nC_r\\, x^{n+r}\\, a^r"
+    ],
+    "answer": "{}^nC_r\\, x^{n-r}\\, a^r",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_003",
+    "question": "The sum of all binomial coefficients in (1 + x)ⁿ is:",
+    "options": [
+      "n",
+      "2^{n-1}",
+      "2^n",
+      "n!"
+    ],
+    "answer": "2^n",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_004",
+    "question": "The rth term from the end in the expansion of (x + a)ⁿ is the same as the _______ term from the beginning:",
+    "options": [
+      "(n - r + 1)\\text{th}",
+      "(n - r + 2)\\text{th}",
+      "(r + 1)\\text{th}",
+      "(n - r)\\text{th}"
+    ],
+    "answer": "(n - r + 2)\\text{th}",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_005",
+    "question": "In the expansion of (1 + x)ⁿ, the sum of coefficients of odd-position terms (C₁ + C₃ + C₅ + ...) equals:",
+    "options": [
+      "2^n",
+      "2^{n-1}",
+      "2^{n+1}",
+      "0"
+    ],
+    "answer": "2^{n-1}",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_006",
+    "question": "The middle term in the expansion of (x + a)ⁿ when n is even is:",
+    "options": [
+      "T_{n/2}",
+      "T_{n/2+1}",
+      "T_{(n+1)/2}",
+      "T_{(n+3)/2}"
+    ],
+    "answer": "T_{n/2+1}",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_007",
+    "question": "The greatest binomial coefficient in (x + a)ⁿ when n is odd is:",
+    "options": [
+      "{}^nC_{n/2}",
+      "{}^nC_{(n-1)/2} \\text{ or } {}^nC_{(n+1)/2}",
+      "{}^nC_1",
+      "{}^nC_0"
+    ],
+    "answer": "{}^nC_{(n-1)/2} \\text{ or } {}^nC_{(n+1)/2}",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_008",
+    "question": "C₀ - C₁ + C₂ - C₃ + ... + (-1)ⁿ Cₙ equals:",
+    "options": [
+      "2^n",
+      "2^{n-1}",
+      "1",
+      "0"
+    ],
+    "answer": "0",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_009",
+    "question": "The value of ΣrCᵣ (i.e. C₁ + 2C₂ + 3C₃ + ... + nCₙ) is:",
+    "options": [
+      "2^n",
+      "n \\cdot 2^{n-1}",
+      "n \\cdot 2^n",
+      "(n+1) \\cdot 2^{n-1}"
+    ],
+    "answer": "n \\cdot 2^{n-1}",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_010",
+    "question": "In the expansion of (1 + x)ⁿ, the coefficients of the rth and (r+2)th terms are equal. A student concludes n = 2r+1. Another concludes n + 2 = p + q where p and q are the positions of the equal-coefficient terms. Which conclusion(s) are correct?",
+    "options": [
+      "\\text{First student only}",
+      "\\text{Second student only}",
+      "\\text{Both}",
+      "\\text{Neither}"
+    ],
+    "answer": "\\text{Both}",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Equal coefficients: ⁿCᵣ₋₁ = ⁿCᵣ₊₁ → r-1 + r+1 = n → n = 2r. Positions p = r, q = r+2 → p+q = 2r+2 = n+2. ✓ Both hold."
+  },
+  {
+    "id": "binomial_thm_qn_011",
+    "question": "The number of terms in the expansion of (x + y + z)ⁿ is:",
+    "options": [
+      "n+1",
+      "\\dfrac{(n+1)(n+2)}{2}",
+      "3n",
+      "n^2"
+    ],
+    "answer": "\\dfrac{(n+1)(n+2)}{2}",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_012",
+    "question": "The term independent of x in the expansion of \\left(x + \\dfrac{1}{x}\\right)^{2n} is:",
+    "options": [
+      "{}^{2n}C_n",
+      "{}^{2n}C_{n-1}",
+      "{}^{2n}C_{n+1}",
+      "{}^{2n}C_{2n}"
+    ],
+    "answer": "{}^{2n}C_n",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_013",
+    "question": "The value of C₀² + C₁² + C₂² + ... + Cₙ² is:",
+    "options": [
+      "2^{2n}",
+      "{}^{2n}C_n",
+      "{}^{2n}C_{n+1}",
+      "2^n"
+    ],
+    "answer": "{}^{2n}C_n",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "ΣCᵣ² = coefficient of xⁿ in (1+x)ⁿ(1+x)ⁿ = coefficient of xⁿ in (1+x)²ⁿ = ²ⁿCₙ."
+  },
+  {
+    "id": "binomial_thm_qn_014",
+    "question": "The alternating sum C₀² - C₁² + C₂² - C₃² + ... evaluates to:",
+    "options": [
+      "0 \\text{ always}",
+      "{}^{2n}C_n \\text{ always}",
+      "0 \\text{ if } n \\text{ is odd; } (-1)^{n/2}\\cdot{}^nC_{n/2} \\text{ if } n \\text{ is even}",
+      "(-1)^n \\cdot {}^{2n}C_n"
+    ],
+    "answer": "0 \\text{ if } n \\text{ is odd; } (-1)^{n/2}\\cdot{}^nC_{n/2} \\text{ if } n \\text{ is even}",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Contrast with ΣCᵣ² = ²ⁿCₙ (no alternating). The alternating version collapses to 0 for odd n."
+  },
+  {
+    "id": "binomial_thm_qn_015",
+    "question": "For the binomial theorem with rational index, (1 + x)ⁿ is valid (convergent) when:",
+    "options": [
+      "x > 0",
+      "|x| < 1",
+      "|x| \\leq 1",
+      "x < 1"
+    ],
+    "answer": "|x| < 1",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_016",
+    "question": "The coefficient of xʳ in the expansion of (1 - x)⁻¹ is:",
+    "options": [
+      "(-1)^r",
+      "r",
+      "1",
+      "r+1"
+    ],
+    "answer": "1",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_017",
+    "question": "The coefficient of xʳ in (1 - x)⁻² is:",
+    "options": [
+      "r",
+      "r+1",
+      "r-1",
+      "2r"
+    ],
+    "answer": "r+1",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_018",
+    "question": "In the R-f factor method, if (A + B)ⁿ = I + f where I is a positive integer and 0 ≤ f < 1, and we define f' = (A - B)ⁿ, then (I + f)·f' equals:",
+    "options": [
+      "(A^2 - B^2)^n",
+      "(A - B)^{2n}",
+      "k^n \\text{ where } k = A^2 - B^2",
+      "A^n - B^n"
+    ],
+    "answer": "k^n \\text{ where } k = A^2 - B^2",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_019",
+    "question": "The recurrence relation between binomial coefficients is:",
+    "options": [
+      "{}^nC_r + {}^nC_r = {}^{n+1}C_r",
+      "{}^nC_r + {}^nC_{r-1} = {}^{n+1}C_r",
+      "{}^nC_r - {}^nC_{r-1} = {}^{n-1}C_r",
+      "{}^nC_r \\cdot {}^nC_{r-1} = {}^{2n}C_r"
+    ],
+    "answer": "{}^nC_r + {}^nC_{r-1} = {}^{n+1}C_r",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_020",
+    "question": "In the expansion of \\left(ax^p + \\dfrac{b}{x^q}\\right)^n, the term independent of x occurs at r =",
+    "options": [
+      "\\dfrac{np}{p+q}",
+      "\\dfrac{nq}{p+q}",
+      "\\dfrac{np}{p-q}",
+      "\\dfrac{n}{p+q}"
+    ],
+    "answer": "\\dfrac{np}{p+q}",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "In Tᵣ₊₁ = ⁿCᵣ (ax^p)^(n-r) (b/x^q)^r, power of x = p(n-r) - qr. Set = 0 → r = np/(p+q)."
+  },
+  {
+    "id": "binomial_thm_qn_021",
+    "question": "In the first principle of Mathematical Induction, after verifying P(1) is true and assuming P(k) is true, the next step is to prove:",
+    "options": [
+      "P(k-1) \\text{ is true}",
+      "P(k+1) \\text{ is true}",
+      "P(2k) \\text{ is true}",
+      "P(n) \\text{ is true for all } n"
+    ],
+    "answer": "P(k+1) \\text{ is true}",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_022",
+    "question": "The total number of terms in the expansion of (a + b + c + d)ⁿ is:",
+    "options": [
+      "\\dfrac{(n+1)(n+2)}{2}",
+      "\\dfrac{(n+1)(n+2)(n+3)}{6}",
+      "4^n",
+      "(n+1)^3"
+    ],
+    "answer": "\\dfrac{(n+1)(n+2)(n+3)}{6}",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_023",
+    "question": "The value of C₀/1 + C₁/2 + C₂/3 + ... + Cₙ/(n+1) is:",
+    "options": [
+      "\\dfrac{2^n}{n+1}",
+      "\\dfrac{2^{n+1} - 1}{n+1}",
+      "\\dfrac{2^n - 1}{n}",
+      "\\dfrac{2^{n+1}}{n+1}"
+    ],
+    "answer": "\\dfrac{2^{n+1} - 1}{n+1}",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Integrate (1+x)ⁿ = ΣCᵣxʳ from 0 to 1 → [(1+x)ⁿ⁺¹/(n+1)] from 0 to 1 = (2ⁿ⁺¹-1)/(n+1)."
+  },
+  {
+    "id": "binomial_thm_qn_024",
+    "question": "If the coefficients of the rth, (r+1)th and (r+2)th terms in (1+x)ⁿ are in AP, then:",
+    "options": [
+      "n^2 - 2r(n-1) + 4r^2 = 0",
+      "n^2 - n(4r+1) + 4r^2 - 2 = 0",
+      "n^2 - n(4r-1) + 4r^2 + 2 = 0",
+      "n^2 - 2r^2 + n = 0"
+    ],
+    "answer": "n^2 - n(4r+1) + 4r^2 - 2 = 0",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_025",
+    "question": "The coefficient of xʳ in (1 + x)⁻³ is:",
+    "options": [
+      "(-1)^r\\,{}^{r+2}C_2",
+      "{}^{r+2}C_2",
+      "(-1)^r(r+1)(r+2)",
+      "\\dfrac{(r+1)(r+2)}{2}"
+    ],
+    "answer": "(-1)^r\\,{}^{r+2}C_2",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_026",
+    "question": "The greatest term rule: in (x + a)ⁿ, if (n+1)|a/x| / (1 + |a/x|) equals an integer p, then:",
+    "options": [
+      "T_p \\text{ alone is the greatest term}",
+      "T_{p+1} \\text{ alone is the greatest term}",
+      "T_p \\text{ and } T_{p+1} \\text{ are both greatest terms}",
+      "T_{p-1} \\text{ and } T_p \\text{ are both greatest terms}"
+    ],
+    "answer": "T_p \\text{ and } T_{p+1} \\text{ are both greatest terms}",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_027",
+    "question": "(1 + x)ⁿ - 1 - nx is divisible by:",
+    "options": [
+      "x",
+      "nx",
+      "x^2",
+      "x^3"
+    ],
+    "answer": "x^2",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_028",
+    "question": "The ratio of consecutive terms in (x + a)ⁿ is T_{r+1}/T_r =",
+    "options": [
+      "\\dfrac{n-r+1}{r} \\cdot \\dfrac{a}{x}",
+      "\\dfrac{n-r}{r} \\cdot \\dfrac{a}{x}",
+      "\\dfrac{r}{n-r+1} \\cdot \\dfrac{x}{a}",
+      "\\dfrac{n+r}{r} \\cdot \\dfrac{a}{x}"
+    ],
+    "answer": "\\dfrac{n-r+1}{r} \\cdot \\dfrac{a}{x}",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "binomial_thm_qn_029",
+    "question": "The value of C₀ - C₂ + C₄ - C₆ + ... (alternating even-indexed coefficients) is:",
+    "options": [
+      "2^{n-1}",
+      "(\\sqrt{2})^n \\cos\\dfrac{n\\pi}{4}",
+      "2^n \\cos\\dfrac{n\\pi}{2}",
+      "0"
+    ],
+    "answer": "(\\sqrt{2})^n \\cos\\dfrac{n\\pi}{4}",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Put x = i in (1+x)ⁿ = ΣCᵣxʳ. Then (1+i)ⁿ = (√2)ⁿ e^(inπ/4). Real part gives C₀-C₂+C₄-... = (√2)ⁿcos(nπ/4)."
+  },
+  {
+    "id": "binomial_thm_qn_030",
+    "question": "A student uses binomial theorem to show 9ⁿ - 8n - 1 is divisible by 64 for all n ≥ 1. He writes 9ⁿ = (1+8)ⁿ and expands. Which step gives the divisibility by 64?",
+    "options": [
+      "\\text{The first two terms } 1 + 8n \\text{ cancel with } -8n-1",
+      "\\text{The } {}^nC_2 \\cdot 64 \\text{ term and all higher terms are divisible by 64}",
+      "\\text{The alternating sign property makes all terms cancel}",
+      "\\text{Setting } x = -1 \\text{ in } (1+x)^n"
+    ],
+    "answer": "\\text{The } {}^nC_2 \\cdot 64 \\text{ term and all higher terms are divisible by 64}",
+    "tags": {
+      "chapter": "Binomial Theorem",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "9ⁿ - 8n - 1 = (1+8)ⁿ - 8n - 1. The 1 and 8n terms cancel with -1 and -8n. Remaining: ⁿC₂·64 + ⁿC₃·8³ + ... — every term has 8² = 64 as factor."
+  }
+]

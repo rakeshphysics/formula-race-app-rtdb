@@ -1,0 +1,542 @@
+[
+  {
+    "id": "functions_qn_001",
+    "question": "Which of the following is <b>not</b> a valid function from A to B?",
+    "options": [
+      "\\text{One element of A maps to two elements of B}",
+      "\\text{Two elements of A map to the same element of B}",
+      "\\text{Every element of A has exactly one image in B}",
+      "\\text{One element of B has no pre-image in A}"
+    ],
+    "answer": "\\text{One element of A maps to two elements of B}",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_002",
+    "question": "The <b>range</b> of the signum function sgn(x) is:",
+    "options": [
+      "\\mathbb{R}",
+      "\\{-1,\\ 0,\\ 1\\}",
+      "\\{0,\\ 1\\}",
+      "\\mathbb{Z}"
+    ],
+    "answer": "\\{-1,\\ 0,\\ 1\\}",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_003",
+    "question": "For the greatest integer function f(x) = [x], which property is correct?",
+    "options": [
+      "[x + n] = [x] + n,\\ n \\in \\mathbb{I}",
+      "[x + y] = [x] + [y] \\text{ always}",
+      "[-x] = -[x] \\text{ always}",
+      "[x] = x \\text{ for all } x \\in \\mathbb{R}"
+    ],
+    "answer": "[x + n] = [x] + n,\\ n \\in \\mathbb{I}",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "[x+y] ≥ [x]+[y] (not always equal). [-x] = -[x] only if x is an integer."
+  },
+  {
+    "id": "functions_qn_004",
+    "question": "The domain of the logarithmic function f(x) = log_a(x) (a > 0, a ≠ 1) is:",
+    "options": [
+      "\\mathbb{R}",
+      "(0,\\ \\infty)",
+      "[0,\\ \\infty)",
+      "\\mathbb{R} - \\{0\\}"
+    ],
+    "answer": "(0,\\ \\infty)",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_005",
+    "question": "A function f : A → B is <b>onto</b> if and only if:",
+    "options": [
+      "\\text{Range} \\subset \\text{Codomain}",
+      "\\text{Range} = \\text{Codomain}",
+      "\\text{Range} = \\text{Domain}",
+      "\\text{Codomain} \\subset \\text{Range}"
+    ],
+    "answer": "\\text{Range} = \\text{Codomain}",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_006",
+    "question": "The number of <b>bijective</b> functions from a set A with m elements to a set B with n elements is:",
+    "options": [
+      "n^m",
+      "{}^nP_m",
+      "n! \\text{ if } m = n,\\ \\text{else } 0",
+      "m! \\text{ always}"
+    ],
+    "answer": "n! \\text{ if } m = n,\\ \\text{else } 0",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_007",
+    "question": "If f(x) is periodic with period T, then the period of f(ax + b) (a ≠ 0) is:",
+    "options": [
+      "T",
+      "aT",
+      "\\dfrac{T}{|a|}",
+      "\\dfrac{T}{a}"
+    ],
+    "answer": "\\dfrac{T}{|a|}",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Horizontal scaling by 1/|a| compresses the period by |a|. The b (shift) does not affect period."
+  },
+  {
+    "id": "functions_qn_008",
+    "question": "The product of an even function and an odd function is:",
+    "options": [
+      "\\text{Even}",
+      "\\text{Odd}",
+      "\\text{Neither even nor odd}",
+      "\\text{Depends on the specific functions}"
+    ],
+    "answer": "\\text{Odd}",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Even × Odd = Odd. Think of x² × x = x³ as a concrete example."
+  },
+  {
+    "id": "functions_qn_009",
+    "question": "Which of the following statements about <b>even functions</b> is correct?",
+    "options": [
+      "\\text{An even function can be one-one}",
+      "\\text{An even function is always one-one}",
+      "\\text{An even function can never be one-one}",
+      "\\text{An even function is always onto}"
+    ],
+    "answer": "\\text{An even function can never be one-one}",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "f(-x) = f(x) means symmetric about Y-axis → two inputs give same output → always many-one."
+  },
+  {
+    "id": "functions_qn_010",
+    "question": "Sets A and B have m and n elements respectively with n ≥ m. The number of <b>one-one</b> functions from A to B is P, and total functions is Q. A student claims the number of <b>many-one</b> functions is Q − P. For which condition is this formula valid?",
+    "options": [
+      "\\text{Always valid}",
+      "\\text{Valid only when } n < m",
+      "\\text{Valid only when } n \\geq m",
+      "\\text{Valid only when } n = m"
+    ],
+    "answer": "\\text{Valid only when } n \\geq m",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "When n < m, one-one functions = 0, so Q − P = Q = nᵐ, which is the total (all are many-one). The formula Q − P still gives the correct count — but P = 0 in that case, not ⁿPₘ."
+  },
+  {
+    "id": "functions_qn_011",
+    "question": "For two functions f and g to be <b>equal</b>, which condition is NOT required?",
+    "options": [
+      "\\text{Domain of } f = \\text{Domain of } g",
+      "\\text{Codomain of } f = \\text{Codomain of } g",
+      "f(x) = g(x) \\text{ for all } x \\text{ in common domain}",
+      "\\text{Range of } f = \\text{Range of } g"
+    ],
+    "answer": "\\text{Range of } f = \\text{Range of } g",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_012",
+    "question": "The fractional part function {x} satisfies:",
+    "options": [
+      "\\{x\\} = x - [x]",
+      "\\{x\\} = x + [x]",
+      "\\{x\\} = [x] - x",
+      "\\{x\\} = 1 + [x] - x"
+    ],
+    "answer": "\\{x\\} = x - [x]",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_013",
+    "question": "The range of the fractional part function {x} is:",
+    "options": [
+      "[0,\\ 1]",
+      "(0,\\ 1)",
+      "[0,\\ 1)",
+      "(0,\\ 1]"
+    ],
+    "answer": "[0,\\ 1)",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_014",
+    "question": "The domain of f(x) = √x has range [0, ∞). Which power function shares the <b>same domain and range</b>?",
+    "options": [
+      "x^2",
+      "x^{-2}",
+      "x^3",
+      "x^4"
+    ],
+    "answer": "x^4",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_015",
+    "question": "If f and g are both <b>surjective</b> functions, then fog is:",
+    "options": [
+      "\\text{Necessarily injective}",
+      "\\text{Necessarily surjective}",
+      "\\text{Necessarily bijective}",
+      "\\text{Not necessarily surjective}"
+    ],
+    "answer": "\\text{Necessarily surjective}",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_016",
+    "question": "For an invertible function f, which relation is correct?",
+    "options": [
+      "\\text{Domain}(f^{-1}) = \\text{Domain}(f)",
+      "\\text{Domain}(f^{-1}) = \\text{Range}(f)",
+      "\\text{Range}(f^{-1}) = \\text{Range}(f)",
+      "f^{-1}(x) = \\dfrac{1}{f(x)}"
+    ],
+    "answer": "\\text{Domain}(f^{-1}) = \\text{Range}(f)",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_017",
+    "question": "The exponential function f(x) = aˣ (a > 0, a ≠ 1) has range:",
+    "options": [
+      "\\mathbb{R}",
+      "[0,\\ \\infty)",
+      "(0,\\ \\infty)",
+      "(-\\infty,\\ 0)"
+    ],
+    "answer": "(0,\\ \\infty)",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_018",
+    "question": "A binary operation * on a set S is <b>commutative</b> if:",
+    "options": [
+      "a * (b * c) = (a * b) * c",
+      "a * b = b * a \\text{ for all } a, b \\in S",
+      "a * e = a \\text{ for some } e \\in S",
+      "a * b \\in S \\text{ for all } a, b \\in S"
+    ],
+    "answer": "a * b = b * a \\text{ for all } a, b \\in S",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_019",
+    "question": "The total number of binary operations on a set S with n elements is:",
+    "options": [
+      "n^n",
+      "n^{2n}",
+      "n^{n^2}",
+      "2^n"
+    ],
+    "answer": "n^{n^2}",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "S×S has n² pairs. Each pair can map to any of n elements → n^(n²) total binary operations."
+  },
+  {
+    "id": "functions_qn_020",
+    "question": "f(x) is periodic with period T₁ and g(x) is periodic with period T₂. Under which condition is the period of f(x) + g(x) equal to LCM(T₁, T₂)?",
+    "options": [
+      "\\text{Always}",
+      "\\text{When T}_1 = T_2",
+      "\\text{When no positive } k \\text{ exists such that } f(x+k)=g(x) \\text{ and } g(x+k)=f(x)",
+      "\\text{When f and g are both even functions}"
+    ],
+    "answer": "\\text{When no positive } k \\text{ exists such that } f(x+k)=g(x) \\text{ and } g(x+k)=f(x)",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "If such k exists, the period could be LCM/2. Classic trap: sin x + cos x has period 2π = LCM(2π, 2π), but sin x + sin x has period 2π not π."
+  },
+  {
+    "id": "functions_qn_021",
+    "question": "The power function f(x) = x⁻² has domain:",
+    "options": [
+      "\\mathbb{R}",
+      "[0,\\ \\infty)",
+      "\\mathbb{R} - \\{0\\}",
+      "(0,\\ \\infty)"
+    ],
+    "answer": "\\mathbb{R} - \\{0\\}",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_022",
+    "question": "If f(x) is an odd function, then its derivative f'(x) is:",
+    "options": [
+      "\\text{Odd}",
+      "\\text{Even}",
+      "\\text{Neither even nor odd}",
+      "\\text{Depends on f}"
+    ],
+    "answer": "\\text{Even}",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_023",
+    "question": "Which function f : ℝ → ℝ is <b>always onto</b>?",
+    "options": [
+      "f(x) = x^2",
+      "f(x) = x^3",
+      "f(x) = e^x",
+      "f(x) = |x|"
+    ],
+    "answer": "f(x) = x^3",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_024",
+    "question": "For the exponential function f(x) = aˣ, which statement is correct?",
+    "options": [
+      "\\text{Increasing if } 0 < a < 1,\\ \\text{decreasing if } a > 1",
+      "\\text{Increasing if } a > 1,\\ \\text{decreasing if } 0 < a < 1",
+      "\\text{Always increasing for all } a > 0,\\ a \\neq 1",
+      "\\text{Decreasing for all } a > 0,\\ a \\neq 1"
+    ],
+    "answer": "\\text{Increasing if } a > 1,\\ \\text{decreasing if } 0 < a < 1",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_025",
+    "question": "The number of <b>onto</b> functions from a set A (m elements) to set B (n elements), where m ≥ n, is given by:",
+    "options": [
+      "n^m",
+      "\\sum_{r=0}^{n} (-1)^r\\ {}^nC_r\\ (n-r)^m",
+      "{}^nP_m",
+      "n!"
+    ],
+    "answer": "\\sum_{r=0}^{n} (-1)^r\\ {}^nC_r\\ (n-r)^m",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_026",
+    "question": "The number of <b>commutative</b> binary operations on a set with n elements is:",
+    "options": [
+      "n^{n^2}",
+      "n^{n(n+1)/2}",
+      "n^{n(n-1)/2}",
+      "n!"
+    ],
+    "answer": "n^{n(n+1)/2}",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Commutativity fixes a*b = b*a, so only n(n+1)/2 distinct pairs (diagonal + upper triangle) need to be freely assigned."
+  },
+  {
+    "id": "functions_qn_027",
+    "question": "For gof to be defined, which condition must hold?",
+    "options": [
+      "\\text{Range}(f) \\subseteq \\text{Domain}(g)",
+      "\\text{Domain}(f) = \\text{Domain}(g)",
+      "\\text{Range}(g) \\subseteq \\text{Domain}(f)",
+      "\\text{Range}(f) = \\text{Range}(g)"
+    ],
+    "answer": "\\text{Range}(f) \\subseteq \\text{Domain}(g)",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_028",
+    "question": "The constant function f(x) = c is periodic. Its fundamental period is:",
+    "options": [
+      "1",
+      "0",
+      "\\text{Any positive real number}",
+      "\\text{Does not exist}"
+    ],
+    "answer": "\\text{Does not exist}",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Constant function satisfies f(x+T) = f(x) for every T > 0. Since there is no smallest positive T, the fundamental period does not exist."
+  },
+  {
+    "id": "functions_qn_029",
+    "question": "Exponential operation (a, b) → aᵇ is a binary operation on ℕ but <b>not</b> on ℤ. The reason is:",
+    "options": [
+      "\\text{aᵇ is not always positive for a, b} \\in \\mathbb{Z}",
+      "\\text{aᵇ may not be an integer for a, b} \\in \\mathbb{Z}",
+      "\\text{aᵇ is not defined for b} = 0",
+      "\\text{aᵇ is not commutative on} \\mathbb{Z}"
+    ],
+    "answer": "\\text{aᵇ may not be an integer for a, b} \\in \\mathbb{Z}",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "functions_qn_030",
+    "question": "f : A → B is bijective with |A| = |B| = 3. A student says: (i) f⁻¹ exists and is also bijective; (ii) the number of such bijections is 6; (iii) fog = gof always for any bijection g : B → A. Which of these are correct?",
+    "options": [
+      "\\text{(i) and (ii) only}",
+      "\\text{(i), (ii) and (iii)}",
+      "\\text{(ii) and (iii) only}",
+      "\\text{(i) only}"
+    ],
+    "answer": "\\text{(i) and (ii) only}",
+    "tags": {
+      "chapter": "Functions and Binary Operations",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "fog and gof are both defined but need not be equal — composition is generally not commutative. (i) ✓ bijection is invertible and f⁻¹ is bijective. (ii) ✓ 3! = 6. (iii) ✗."
+  }
+]

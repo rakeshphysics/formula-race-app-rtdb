@@ -80,6 +80,10 @@ void main() {
     '${baseDir}12/p_block_15_to_18.json',
     '${baseDir}12/d_and_f_block.json',
     '${baseDir}12/coordination_compounds.json',
+    '${baseDir}12/practical_chemistry.json',
+    '${baseDir}12/functions.json',
+    '${baseDir}11/complex_numbers.json',
+    '${baseDir}11/binomial_theorem.json',
 
   ];
 

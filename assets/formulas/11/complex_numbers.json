@@ -1,0 +1,542 @@
+[
+  {
+    "id": "complex_num_qn_001",
+    "question": "The value of i⁴⁷ is:",
+    "options": [
+      "1",
+      "-1",
+      "i",
+      "-i"
+    ],
+    "answer": "-i",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "47 = 4×11 + 3, so i⁴⁷ = i³ = -i. Divide power by 4, use remainder: 0→1, 1→i, 2→-1, 3→-i."
+  },
+  {
+    "id": "complex_num_qn_002",
+    "question": "If z = x + iy is purely imaginary, then which condition holds?",
+    "options": [
+      "z = \\bar{z}",
+      "z + \\bar{z} = 0",
+      "z - \\bar{z} = 0",
+      "z\\bar{z} = 0"
+    ],
+    "answer": "z + \\bar{z} = 0",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_003",
+    "question": "For any complex number z, z·z̄ equals:",
+    "options": [
+      "|z|",
+      "|z|^2",
+      "2\\text{Re}(z)",
+      "2i\\,\\text{Im}(z)"
+    ],
+    "answer": "|z|^2",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_004",
+    "question": "The principal argument of a purely negative real number is:",
+    "options": [
+      "0",
+      "\\dfrac{\\pi}{2}",
+      "\\pi",
+      "-\\dfrac{\\pi}{2}"
+    ],
+    "answer": "\\pi",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_005",
+    "question": "The modulus of the multiplicative inverse of z = 3 + 4i is:",
+    "options": [
+      "5",
+      "\\dfrac{1}{5}",
+      "25",
+      "\\dfrac{1}{25}"
+    ],
+    "answer": "\\dfrac{1}{5}",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_006",
+    "question": "Which of the following is always true for the triangle inequality?",
+    "options": [
+      "|z_1 + z_2| \\geq |z_1| + |z_2|",
+      "|z_1 + z_2| \\leq |z_1| + |z_2|",
+      "|z_1 + z_2| = |z_1| + |z_2|",
+      "|z_1 + z_2| \\leq |z_1| - |z_2|"
+    ],
+    "answer": "|z_1 + z_2| \\leq |z_1| + |z_2|",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_007",
+    "question": "Using De Moivre's theorem, (cos θ + i sin θ)⁻³ equals:",
+    "options": [
+      "\\cos 3\\theta + i\\sin 3\\theta",
+      "\\cos 3\\theta - i\\sin 3\\theta",
+      "-\\cos 3\\theta + i\\sin 3\\theta",
+      "-\\cos 3\\theta - i\\sin 3\\theta"
+    ],
+    "answer": "\\cos 3\\theta - i\\sin 3\\theta",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_008",
+    "question": "The cube roots of unity satisfy 1 + ω + ω² = 0. Which identity uses this directly?",
+    "options": [
+      "x^3 + y^3 = (x+y)(x^2 - xy + y^2)",
+      "x^2 + x + 1 = (x - \\omega)(x - \\omega^2)",
+      "x^2 - x + 1 = (x + \\omega)(x + \\omega^2)",
+      "x^3 - 1 = (x-1)(x^2+x+1)"
+    ],
+    "answer": "x^2 + x + 1 = (x - \\omega)(x - \\omega^2)",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "ω and ω² are the non-real roots of x³ = 1, hence roots of x² + x + 1 = 0."
+  },
+  {
+    "id": "complex_num_qn_009",
+    "question": "The locus of z satisfying |z - z₁| - |z - z₂| = k, where k < |z₁ - z₂|, is:",
+    "options": [
+      "\\text{An ellipse with foci } z_1, z_2",
+      "\\text{A circle}",
+      "\\text{A hyperbola with foci } z_1, z_2",
+      "\\text{A straight line}"
+    ],
+    "answer": "\\text{A hyperbola with foci } z_1, z_2",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Ellipse: sum of distances = k (k > |z₁-z₂|). Hyperbola: difference of distances = k (k < |z₁-z₂|)."
+  },
+  {
+    "id": "complex_num_qn_010",
+    "question": "If |z₁ + z₂| = |z₁ - z₂|, then which of the following is necessarily true?",
+    "options": [
+      "z_1 = z_2",
+      "\\arg(z_1) = \\arg(z_2)",
+      "\\arg\\left(\\dfrac{z_1}{z_2}\\right) = \\dfrac{\\pi}{2}",
+      "|z_1| = |z_2|"
+    ],
+    "answer": "\\arg\\left(\\dfrac{z_1}{z_2}\\right) = \\dfrac{\\pi}{2}",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "|z₁+z₂|² = |z₁-z₂|² expands to Re(z₁z̄₂) = 0, meaning z₁z̄₂ is purely imaginary → arg(z₁/z₂) = ±π/2."
+  },
+  {
+    "id": "complex_num_qn_011",
+    "question": "The argument of z = 1 + i (in principal value) is:",
+    "options": [
+      "\\dfrac{\\pi}{4}",
+      "\\dfrac{\\pi}{3}",
+      "\\dfrac{3\\pi}{4}",
+      "-\\dfrac{\\pi}{4}"
+    ],
+    "answer": "\\dfrac{\\pi}{4}",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_012",
+    "question": "The conjugate of a complex number is geometrically its:",
+    "options": [
+      "\\text{Rotation by } 90°\\text{ about origin}",
+      "\\text{Reflection in the imaginary axis}",
+      "\\text{Reflection in the real axis}",
+      "\\text{Reflection in the line } y = x"
+    ],
+    "answer": "\\text{Reflection in the real axis}",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_013",
+    "question": "In the Argand plane, the addition z₁ + z₂ is represented geometrically by:",
+    "options": [
+      "\\text{Midpoint of segment joining } z_1 \\text{ and } z_2",
+      "\\text{Diagonal of parallelogram with sides } z_1, z_2",
+      "\\text{Rotation of } z_1 \\text{ by arg}(z_2)",
+      "\\text{Perpendicular bisector of segment } z_1z_2"
+    ],
+    "answer": "\\text{Diagonal of parallelogram with sides } z_1, z_2",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_014",
+    "question": "The product of nth roots of unity is:",
+    "options": [
+      "0",
+      "1",
+      "(-1)^{n-1}",
+      "(-1)^n"
+    ],
+    "answer": "(-1)^{n-1}",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Product of roots of zⁿ - 1 = 0 is (-1)ⁿ × (constant term/leading coeff) = (-1)ⁿ × (-1) = (-1)^(n-1)."
+  },
+  {
+    "id": "complex_num_qn_015",
+    "question": "Four points z₁, z₂, z₃, z₄ in the Argand plane are <b>concyclic</b> if:",
+    "options": [
+      "\\dfrac{(z_4 - z_1)(z_2 - z_3)}{(z_4 - z_3)(z_2 - z_1)} \\text{ is purely imaginary}",
+      "\\dfrac{(z_4 - z_1)(z_2 - z_3)}{(z_4 - z_3)(z_2 - z_1)} \\text{ is purely real}",
+      "z_1 + z_2 + z_3 + z_4 = 0",
+      "|z_1 - z_3| = |z_2 - z_4|"
+    ],
+    "answer": "\\dfrac{(z_4 - z_1)(z_2 - z_3)}{(z_4 - z_3)(z_2 - z_1)} \\text{ is purely real}",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Cross-ratio is purely real ⟺ four points are concyclic or collinear. Purely imaginary ⟺ the two pairs subtend supplementary angles."
+  },
+  {
+    "id": "complex_num_qn_016",
+    "question": "The locus of z satisfying |z - z₁| = |z - z₂| in the Argand plane is:",
+    "options": [
+      "\\text{A circle with diameter } z_1z_2",
+      "\\text{Perpendicular bisector of segment joining } z_1 \\text{ and } z_2",
+      "\\text{A line through } z_1 \\text{ and } z_2",
+      "\\text{An ellipse with foci } z_1, z_2"
+    ],
+    "answer": "\\text{Perpendicular bisector of segment joining } z_1 \\text{ and } z_2",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_017",
+    "question": "The parallelogram law for complex numbers states:",
+    "options": [
+      "|z_1 + z_2|^2 - |z_1 - z_2|^2 = 2(|z_1|^2 + |z_2|^2)",
+      "|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2(|z_1|^2 + |z_2|^2)",
+      "|z_1 + z_2|^2 + |z_1 - z_2|^2 = |z_1|^2 + |z_2|^2",
+      "|z_1 + z_2|^2 - |z_1 - z_2|^2 = 4\\,\\text{Re}(z_1\\bar{z}_2)"
+    ],
+    "answer": "|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2(|z_1|^2 + |z_2|^2)",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_018",
+    "question": "The concept of rotation says that multiplying z by e^(iα) results in:",
+    "options": [
+      "\\text{Scaling } |z| \\text{ by } \\alpha",
+      "\\text{Rotating } z \\text{ by angle } \\alpha \\text{ anticlockwise}",
+      "\\text{Rotating } z \\text{ by angle } \\alpha \\text{ clockwise}",
+      "\\text{Reflecting } z \\text{ about the real axis}"
+    ],
+    "answer": "\\text{Rotating } z \\text{ by angle } \\alpha \\text{ anticlockwise}",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_019",
+    "question": "The locus of z satisfying |z - z₁| + |z - z₂| = k, where k > |z₁ - z₂|, is:",
+    "options": [
+      "\\text{A circle}",
+      "\\text{A hyperbola}",
+      "\\text{An ellipse with foci } z_1, z_2",
+      "\\text{A straight line}"
+    ],
+    "answer": "\\text{An ellipse with foci } z_1, z_2",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_020",
+    "question": "In the Argand plane, the three points z, iz, and z + iz form a triangle. Its area is:",
+    "options": [
+      "|z|^2",
+      "\\dfrac{1}{2}|z|^2",
+      "2|z|^2",
+      "\\dfrac{1}{4}|z|^2"
+    ],
+    "answer": "\\dfrac{1}{2}|z|^2",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "iz is z rotated by 90°. So z and iz are perpendicular with equal moduli |z|. The triangle has legs |z| each → area = ½|z|²."
+  },
+  {
+    "id": "complex_num_qn_021",
+    "question": "The centroid of a triangle with vertices z₁, z₂, z₃ in the Argand plane is:",
+    "options": [
+      "\\dfrac{z_1 z_2 z_3}{3}",
+      "\\dfrac{z_1 + z_2 + z_3}{3}",
+      "\\dfrac{|z_1| + |z_2| + |z_3|}{3}",
+      "z_1 + z_2 + z_3"
+    ],
+    "answer": "\\dfrac{z_1 + z_2 + z_3}{3}",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_022",
+    "question": "Three points z₁, z₂, z₃ are collinear in the Argand plane if:",
+    "options": [
+      "z_1 + z_2 + z_3 = 0",
+      "\\begin{vmatrix} z_1 & \\bar{z}_1 & 1 \\\\ z_2 & \\bar{z}_2 & 1 \\\\ z_3 & \\bar{z}_3 & 1 \\end{vmatrix} = 0",
+      "|z_1 - z_2| = |z_2 - z_3|",
+      "\\arg(z_1) = \\arg(z_2) = \\arg(z_3)"
+    ],
+    "answer": "\\begin{vmatrix} z_1 & \\bar{z}_1 & 1 \\\\ z_2 & \\bar{z}_2 & 1 \\\\ z_3 & \\bar{z}_3 & 1 \\end{vmatrix} = 0",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_023",
+    "question": "The general equation of a circle in the complex plane is:",
+    "options": [
+      "z\\bar{z} + a\\bar{z} + \\bar{a}z + b = 0,\\ b \\in \\mathbb{R}",
+      "z + \\bar{z} + b = 0,\\ b \\in \\mathbb{R}",
+      "|z|^2 + a + \\bar{a} = 0",
+      "z\\bar{z} = r^2"
+    ],
+    "answer": "z\\bar{z} + a\\bar{z} + \\bar{a}z + b = 0,\\ b \\in \\mathbb{R}",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_024",
+    "question": "The locus of z satisfying |z - z₁|/|z - z₂| = k (k ≠ 1) is:",
+    "options": [
+      "\\text{A straight line}",
+      "\\text{An ellipse}",
+      "\\text{A circle}",
+      "\\text{A parabola}"
+    ],
+    "answer": "\\text{A circle}",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "easy",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Apollonius circle: locus of point whose distances from two fixed points are in constant ratio k ≠ 1."
+  },
+  {
+    "id": "complex_num_qn_025",
+    "question": "The argument of z = -1 - i (principal value) is:",
+    "options": [
+      "-\\dfrac{3\\pi}{4}",
+      "\\dfrac{3\\pi}{4}",
+      "-\\dfrac{\\pi}{4}",
+      "\\dfrac{5\\pi}{4}"
+    ],
+    "answer": "-\\dfrac{3\\pi}{4}",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "x < 0, y < 0 (third quadrant): arg = -(π - θ) where θ = tan⁻¹(|-1/-1|) = π/4. So arg = -3π/4."
+  },
+  {
+    "id": "complex_num_qn_026",
+    "question": "If arg(z - z₁)/(z - z₂) = π/2, the locus of z is:",
+    "options": [
+      "\\text{A straight line through } z_1 \\text{ and } z_2",
+      "\\text{An arc of a circle with diameter } z_1z_2",
+      "\\text{The perpendicular bisector of } z_1z_2",
+      "\\text{A full circle with diameter } z_1z_2"
+    ],
+    "answer": "\\text{An arc of a circle with diameter } z_1z_2",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": "Angle in a semicircle = π/2. The locus is the arc (not full circle) on which z subtends a right angle over chord z₁z₂."
+  },
+  {
+    "id": "complex_num_qn_027",
+    "question": "For an equilateral triangle with vertices z₁, z₂, z₃, which condition holds?",
+    "options": [
+      "z_1^2 + z_2^2 + z_3^2 = 0",
+      "z_1^2 + z_2^2 + z_3^2 = z_1z_2 + z_2z_3 + z_3z_1",
+      "|z_1 - z_2| = |z_2 - z_3| \\text{ only}",
+      "z_1 + z_2 + z_3 = 0"
+    ],
+    "answer": "z_1^2 + z_2^2 + z_3^2 = z_1z_2 + z_2z_3 + z_3z_1",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_028",
+    "question": "The square root of z = x + iy (y > 0) is:",
+    "options": [
+      "\\pm\\left(\\sqrt{\\dfrac{|z|+x}{2}} + i\\sqrt{\\dfrac{|z|-x}{2}}\\right)",
+      "\\pm\\left(\\sqrt{\\dfrac{|z|-x}{2}} + i\\sqrt{\\dfrac{|z|+x}{2}}\\right)",
+      "\\pm\\left(\\sqrt{x} + i\\sqrt{y}\\right)",
+      "\\pm\\sqrt{|z|}\\,e^{i\\arg(z)}"
+    ],
+    "answer": "\\pm\\left(\\sqrt{\\dfrac{|z|+x}{2}} + i\\sqrt{\\dfrac{|z|-x}{2}}\\right)",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_029",
+    "question": "The logarithm of a complex number z = re^(iθ) is:",
+    "options": [
+      "\\log r + \\theta",
+      "\\log r + i\\theta",
+      "r + i\\theta",
+      "\\log\\theta + ir"
+    ],
+    "answer": "\\log r + i\\theta",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "medium",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "complex_num_qn_030",
+    "question": "z₁, z₂, z₃ are vertices of triangle ABC (anticlockwise). A student writes the rotation formula as (z₃ - z₁)/(z₂ - z₁) = |z₃ - z₁|/|z₂ - z₁| · e^(iα), where α = ∠BAC. He then claims: (i) |z₃ - z₁| = |z₂ - z₁| implies the triangle is isoceles with AB = AC; (ii) if α = π/3 and |z₃ - z₁| = |z₂ - z₁|, the triangle is equilateral. Which is correct?",
+    "options": [
+      "\\text{(i) only}",
+      "\\text{(ii) only}",
+      "\\text{Both (i) and (ii)}",
+      "\\text{Neither}"
+    ],
+    "answer": "\\text{Both (i) and (ii)}",
+    "tags": {
+      "chapter": "Complex Numbers",
+      "difficulty": "god",
+      "class": "11"
+    },
+    "image": null,
+    "tip": null
+  }
+]
