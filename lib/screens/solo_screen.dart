@@ -334,9 +334,10 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
           'Ellipse', 'Hyperbola', 'Limits', 'Statistics'
         ],
         '12': [
-          'Functions', 'Matrices', 'Determinants', 'Indefinite Integrals',
-          'Definite Integrals', '3D Geometry', 'Probability','Sets and Relations','Inverse Trigonometric Functions',
-          'Differentiation','Differential Equations','Application of Derivatives', 'Area under Curves'
+           'Matrices', 'Determinants', 'Indefinite Integrals',
+          'Definite Integrals', '3D Geometry', 'Probability','Inverse Trigonometric Functions',
+          'Differentiation','Differential Equations','Application of Derivatives', 'Area under Curves',
+          'Sets and Relations','Functions'
         ]
       }
     };
