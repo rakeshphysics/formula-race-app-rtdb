@@ -1,0 +1,542 @@
+[
+  {
+    "id": "determinants_qn_001",
+    "question": "If two rows (or columns) of a determinant are identical, then its value is:",
+    "options": [
+      "1",
+      "-1",
+      "\\text{doubled}",
+      "0"
+    ],
+    "answer": "0",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_002",
+    "question": "The cofactor C<sub>ij</sub> of element a<sub>ij</sub> is related to its minor M<sub>ij</sub> by:",
+    "options": [
+      "C_{ij} = M_{ij}",
+      "C_{ij} = (-1)^{i+j} M_{ij}",
+      "C_{ij} = (-1)^{i-j} M_{ij}",
+      "C_{ij} = (-1)^{ij} M_{ij}"
+    ],
+    "answer": "C_{ij} = (-1)^{i+j} M_{ij}",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_003",
+    "question": "For a square matrix A of order n, |kA| equals:",
+    "options": [
+      "k|A|",
+      "k^2|A|",
+      "k^n|A|",
+      "|A|"
+    ],
+    "answer": "k^n|A|",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_004",
+    "question": "For two square matrices A and B of the same order, |AB| equals:",
+    "options": [
+      "|A| + |B|",
+      "|A| - |B|",
+      "|A| \\cdot |B|",
+      "|A|^2"
+    ],
+    "answer": "|A| \\cdot |B|",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_005",
+    "question": "The sum of products of elements of a row with cofactors of a <b>different</b> row is:",
+    "options": [
+      "|A|",
+      "1",
+      "n \\cdot |A|",
+      "0"
+    ],
+    "answer": "0",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Same row → gives |A|. Different row → gives 0. This is the alien cofactor property."
+  },
+  {
+    "id": "determinants_qn_006",
+    "question": "For a non-singular matrix A of order n, |adj(A)| equals:",
+    "options": [
+      "|A|^{n-2}",
+      "|A|^n",
+      "|A|^{n-1}",
+      "|A|^{n+1}"
+    ],
+    "answer": "|A|^{n-1}",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_007",
+    "question": "The relation A·adj(A) equals:",
+    "options": [
+      "|A| \\cdot A",
+      "|A| \\cdot I",
+      "\\text{adj}(A) \\cdot |A|^{-1}",
+      "I"
+    ],
+    "answer": "|A| \\cdot I",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_008",
+    "question": "The inverse of a non-singular matrix A is:",
+    "options": [
+      "\\dfrac{A}{|A|}",
+      "\\dfrac{\\text{adj}(A)}{|A|}",
+      "|A| \\cdot \\text{adj}(A)",
+      "\\dfrac{1}{\\text{adj}(A)}"
+    ],
+    "answer": "\\dfrac{\\text{adj}(A)}{|A|}",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_009",
+    "question": "adj(AB) equals:",
+    "options": [
+      "\\text{adj}(A) \\cdot \\text{adj}(B)",
+      "\\text{adj}(B) \\cdot \\text{adj}(A)",
+      "|AB| \\cdot I",
+      "\\text{adj}(A) + \\text{adj}(B)"
+    ],
+    "answer": "\\text{adj}(B) \\cdot \\text{adj}(A)",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Reversal rule — same pattern as (AB)⁻¹ = B⁻¹A⁻¹ and (AB)′ = B′A′."
+  },
+  {
+    "id": "determinants_qn_010",
+    "question": "The determinant of a skew-symmetric matrix of <b>odd</b> order is:",
+    "options": [
+      "1",
+      "-1",
+      "\\text{a non-zero perfect square}",
+      "0"
+    ],
+    "answer": "0",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_011",
+    "question": "For a non-homogeneous system AX = B, if |A| ≠ 0, then the system has:",
+    "options": [
+      "\\text{No solution}",
+      "\\text{Infinitely many solutions}",
+      "\\text{A unique solution}",
+      "\\text{Exactly two solutions}"
+    ],
+    "answer": "\\text{A unique solution}",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_012",
+    "question": "For a non-homogeneous system AX = B, if |A| = 0 and (adj A)B ≠ O, then:",
+    "options": [
+      "\\text{Unique solution exists}",
+      "\\text{Infinitely many solutions}",
+      "\\text{System is inconsistent}",
+      "\\text{Trivial solution only}"
+    ],
+    "answer": "\\text{System is inconsistent}",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_013",
+    "question": "For a homogeneous system AX = O, if |A| = 0, then the system has:",
+    "options": [
+      "\\text{Only the trivial solution X = O}",
+      "\\text{No solution}",
+      "\\text{Infinitely many non-trivial solutions}",
+      "\\text{Exactly one non-trivial solution}"
+    ],
+    "answer": "\\text{Infinitely many non-trivial solutions}",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_014",
+    "question": "In Cramer's Rule for a 2×2 system, if D = 0 and D₁ = D₂ = 0, then the system is:",
+    "options": [
+      "\\text{Inconsistent}",
+      "\\text{Consistent with unique solution}",
+      "\\text{Consistent with infinitely many solutions}",
+      "\\text{Consistent with exactly two solutions}"
+    ],
+    "answer": "\\text{Consistent with infinitely many solutions}",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_015",
+    "question": "The area of a triangle with vertices (x₁,y₁), (x₂,y₂), (x₃,y₃) is:",
+    "options": [
+      "\\begin{vmatrix} x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1 \\end{vmatrix}",
+      "\\dfrac{1}{2}\\begin{vmatrix} x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1 \\end{vmatrix}",
+      "2\\begin{vmatrix} x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1 \\end{vmatrix}",
+      "\\dfrac{1}{3}\\begin{vmatrix} x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1 \\end{vmatrix}"
+    ],
+    "answer": "\\dfrac{1}{2}\\begin{vmatrix} x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1 \\end{vmatrix}",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_016",
+    "question": "Three points (x₁,y₁), (x₂,y₂), (x₃,y₃) are collinear if:",
+    "options": [
+      "\\begin{vmatrix} x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1 \\end{vmatrix} = 1",
+      "\\begin{vmatrix} x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1 \\end{vmatrix} \\neq 0",
+      "\\begin{vmatrix} x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1 \\end{vmatrix} = 0",
+      "x_1 + x_2 + x_3 = 0"
+    ],
+    "answer": "\\begin{vmatrix} x_1 & y_1 & 1 \\\\ x_2 & y_2 & 1 \\\\ x_3 & y_3 & 1 \\end{vmatrix} = 0",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Collinear → area = 0 → determinant = 0. Same determinant as area formula, just set to zero."
+  },
+  {
+    "id": "determinants_qn_017",
+    "question": "For rank method applied to AX = B, the system is inconsistent when:",
+    "options": [
+      "\\rho(A) = \\rho(A:B) = n",
+      "\\rho(A) = \\rho(A:B) < n",
+      "\\rho(A) \\neq \\rho(A:B)",
+      "\\rho(A) = n"
+    ],
+    "answer": "\\rho(A) \\neq \\rho(A:B)",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_018",
+    "question": "For rank method applied to AX = B, the system has infinitely many solutions when:",
+    "options": [
+      "\\rho(A) \\neq \\rho(A:B)",
+      "\\rho(A) = \\rho(A:B) = n",
+      "\\rho(A) = \\rho(A:B) < n",
+      "\\rho(A) = 0"
+    ],
+    "answer": "\\rho(A) = \\rho(A:B) < n",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_019",
+    "question": "For (A⁻¹)′ and (A′)⁻¹, which of the following is true?",
+    "options": [
+      "(A^{-1})' = A'",
+      "(A^{-1})' \\neq (A')^{-1}",
+      "(A^{-1})' = (A')^{-1}",
+      "(A^{-1})' = -A'"
+    ],
+    "answer": "(A^{-1})' = (A')^{-1}",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_020",
+    "question": "If interchanging two rows of a determinant changes its sign, then interchanging two rows <b>twice</b> will:",
+    "options": [
+      "\\text{Change the sign}",
+      "\\text{Make the determinant zero}",
+      "\\text{Leave the determinant unchanged}",
+      "\\text{Double the determinant}"
+    ],
+    "answer": "\\text{Leave the determinant unchanged}",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_021",
+    "question": "The determinant of an orthogonal matrix is:",
+    "options": [
+      "0",
+      "\\pm 1",
+      "\\dfrac{1}{2}",
+      "n"
+    ],
+    "answer": "\\pm 1",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_022",
+    "question": "For a non-singular matrix A, |A⁻¹| equals:",
+    "options": [
+      "|A|",
+      "-|A|",
+      "\\dfrac{1}{|A|}",
+      "|A|^2"
+    ],
+    "answer": "\\dfrac{1}{|A|}",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_023",
+    "question": "adj(adj A) for a non-singular matrix A of order n equals:",
+    "options": [
+      "|A|^{n-1} A",
+      "|A|^{n-2} A",
+      "|A|^2 A",
+      "|A|^{n} A"
+    ],
+    "answer": "|A|^{n-2} A",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_024",
+    "question": "If adding a scalar multiple of one row to another row, the determinant:",
+    "options": [
+      "\\text{Gets multiplied by that scalar}",
+      "\\text{Changes sign}",
+      "\\text{Becomes zero}",
+      "\\text{Remains unchanged}"
+    ],
+    "answer": "\\text{Remains unchanged}",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_025",
+    "question": "For a homogeneous system AX = O with n unknowns, ρ(A) < n implies:",
+    "options": [
+      "\\text{Only trivial solution}",
+      "\\text{No solution}",
+      "\\text{Infinitely many non-trivial solutions}",
+      "\\text{Exactly n solutions}"
+    ],
+    "answer": "\\text{Infinitely many non-trivial solutions}",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_026",
+    "question": "The Vandermonde determinant <math>|1,a,a²; 1,b,b²; 1,c,c²|</math> equals:",
+    "options": [
+      "(a-b)(b-c)(c-a)",
+      "(b-a)(c-b)(c-a)",
+      "(a-b)(b-c)(a-c)",
+      "(a+b)(b+c)(c+a)"
+    ],
+    "answer": "(b-a)(c-b)(c-a)",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_027",
+    "question": "For the determinant of a diagonal matrix, the value equals:",
+    "options": [
+      "\\text{Sum of diagonal elements}",
+      "\\text{Product of diagonal elements}",
+      "\\text{Sum of all elements}",
+      "\\text{Trace of the matrix}"
+    ],
+    "answer": "\\text{Product of diagonal elements}",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Same rule applies to triangular matrices (upper or lower)."
+  },
+  {
+    "id": "determinants_qn_028",
+    "question": "For |A| = Δ of order n, |adj(adj A)| equals:",
+    "options": [
+      "|A|^{(n-1)^2}",
+      "|A|^{n-1}",
+      "|A|^{n^2-1}",
+      "|A|^{n(n-1)}"
+    ],
+    "answer": "|A|^{(n-1)^2}",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "determinants_qn_029",
+    "question": "In Cramer's Rule for a 3×3 system, if D ≠ 0 and D₁ = D₂ = D₃ = 0, then:",
+    "options": [
+      "\\text{System is inconsistent}",
+      "\\text{Infinitely many solutions}",
+      "\\text{Only trivial solution x = y = z = 0}",
+      "\\text{No solution exists}"
+    ],
+    "answer": "\\text{Only trivial solution x = y = z = 0}",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "D ≠ 0 forces a unique solution. That unique solution happens to be x=y=z=0 when all Dᵢ=0."
+  },
+  {
+    "id": "determinants_qn_030",
+    "question": "If A and B are non-zero matrices but AB = O, then which must be true?",
+    "options": [
+      "|A| \\neq 0 \\text{ and } |B| \\neq 0",
+      "|A| = 0 \\text{ or } |B| = 0",
+      "|A| = 0 \\text{ and } |B| = 0",
+      "|AB| \\neq 0"
+    ],
+    "answer": "|A| = 0 \\text{ and } |B| = 0",
+    "tags": {
+      "chapter": "Determinants",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  }
+]

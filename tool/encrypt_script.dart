@@ -88,7 +88,14 @@ void main() {
     '${baseDir}11/straight_lines.json',
     '${baseDir}11/limits.json',
     '${baseDir}11/statistics.json',
-
+    '${baseDir}12/sets_and_relations.json',
+    '${baseDir}12/matrices.json',
+    '${baseDir}12/determinants.json',
+    '${baseDir}12/inverse_trigonometric_functions.json',
+    '${baseDir}12/differentiation.json',
+    '${baseDir}12/differential_equations.json',
+    '${baseDir}12/application_of_derivatives.json',
+    '${baseDir}12/area_under_curves.json',
   ];
 
   final encrypter = Encrypter(AES(key));

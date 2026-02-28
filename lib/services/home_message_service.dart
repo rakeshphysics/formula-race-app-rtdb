@@ -904,16 +904,37 @@ class HomeMessageService {
     // Note: The _random variable is already part of your class, so we use it.
 
     // 1. Define the master list of all chapters.
-    const allChapters = [
-      "Units and Dimensions", "Kinematics", "Laws of Motion", "Circular Motion",
-      "Work Power Energy", "Center of Mass", "Rotational Motion", "Gravitation",
-      "Elasticity", "Fluids", "Thermodynamics", "Kinetic Theory", "SHM", "Waves",
-      "Electrostatics", "Capacitors", "Current Electricity", "Magnetism", "EMI",
-      "AC", "EM Waves", "Ray Optics", "Wave Optics", "Dual Nature of Light",
-      "Atoms", "Nuclei", "X Rays", "Semiconductors", "Vectors","Solid State","Chemical Equilibrium",
-      "3D Geometry","Ellipse", "Definite Integrals","Indefinite Integrals", "Electrochemistry","Parabola",
-      "Solutions","Probability"
+    // const allChapters = [
+    //   "Units and Dimensions", "Kinematics", "Laws of Motion", "Circular Motion",
+    //   "Work Power Energy", "Center of Mass", "Rotational Motion", "Gravitation",
+    //   "Elasticity", "Fluids", "Thermodynamics", "Kinetic Theory", "SHM", "Waves",
+    //   "Electrostatics", "Capacitors", "Current Electricity", "Magnetism", "EMI",
+    //   "AC", "EM Waves", "Ray Optics", "Wave Optics", "Dual Nature of Light",
+    //   "Atoms", "Nuclei", "X Rays", "Semiconductors", "Vectors","Solid State","Chemical Equilibrium",
+    //   "3D Geometry","Ellipse", "Definite Integrals","Indefinite Integrals", "Electrochemistry","Parabola",
+    //   "Solutions","Probability"
+    //
+    // ];
 
+    const allChapters = [
+      "Vectors", "Units and Dimensions", "Kinematics", "Laws of Motion",
+      "Circular Motion", "Work Power Energy", "Center of Mass", "Rotational Motion",
+      "Gravitation", "Elasticity", "Fluids", "Thermodynamics", "Kinetic Theory",
+      "SHM", "Waves", "Electrostatics", "Capacitors", "Current Electricity",
+      "Magnetism", "EMI", "AC", "EM Waves", "Ray Optics", "Wave Optics",
+      "Dual Nature of Light", "Atoms", "Nuclei", "X Rays", "Semiconductors",
+      "Solid State", "3D Geometry", "Chemical Equilibrium", "Ellipse",
+      "Definite Integrals", "Indefinite Integrals", "Electrochemistry", "Parabola",
+      "Solutions", "Probability", "Quadratic Equations", "Atomic Structure",
+      "Circles", "General Organic Chemistry", "Permutations and Combinations",
+      "Hydrocarbons", "Hyperbola", "Sequence and Series", "Haloalkanes and Haloarenes",
+      "Alcohols Phenols and Ethers", "Aldehydes and Ketones", "Carboxylic Acids",
+      "Amines", "Biomolecules", "Basic Concepts of Chemistry", "Classification of Elements",
+      "Chemical Bonding", "Thermodynamics Chem", "Redox Reactions", "P Block 13 and 14",
+      "P Block 15 to 18", "D and F Block", "Coordination Compounds", "Practical Chemistry",
+      "Functions", "Complex Numbers", "Binomial Theorem", "Trigonometry",
+      "Straight Lines", "Limits", "Statistics", "Sets and Relations",
+      "Matrices", "Determinants","Inverse Trigonometric Functions","Differentiation","Differential Equations","Application of Derivatives", "Area under Curves"
     ];
 
     // 2. Call the database function to get performance per chapter.

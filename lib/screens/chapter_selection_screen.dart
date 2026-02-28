@@ -316,7 +316,8 @@ class _ChapterSelectionScreenState extends State<ChapterSelectionScreen> {
       '3D Geometry','Ellipse', 'Definite Integrals','Indefinite Integrals','Parabola',
       'Probability', 'Quadratic Equations','Circles', 'Permutations and Combinations','Hyperbola',
       'Sequence and Series','Functions', 'Complex Numbers', 'Binomial Theorem', 'Trigonometry', 'Straight Lines',
-      'Limits', 'Statistics'
+      'Limits', 'Statistics', 'Sets and Relations','Matrices', 'Determinants','Inverse Trigonometric Functions',
+      'Differentiation','Differential Equations','Application of Derivatives', 'Area under Curves'
 
     ],
   };

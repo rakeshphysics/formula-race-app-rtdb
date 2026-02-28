@@ -1,0 +1,542 @@
+[
+  {
+    "id": "matrices_qn_001",
+    "question": "A square matrix A is called <b>singular</b> if:",
+    "options": [
+      "\\text{tr}(A) = 0",
+      "|A| = 1",
+      "|A| = 0",
+      "A = A'"
+    ],
+    "answer": "|A| = 0",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_002",
+    "question": "A matrix A is called <b>symmetric</b> if:",
+    "options": [
+      "A' = -A",
+      "A' = A",
+      "A^2 = A",
+      "A^2 = I"
+    ],
+    "answer": "A' = A",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_003",
+    "question": "A matrix A is called <b>skew-symmetric</b> if:",
+    "options": [
+      "A' = A",
+      "A^2 = 0",
+      "A' = -A",
+      "|A| = 0"
+    ],
+    "answer": "A' = -A",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_004",
+    "question": "The diagonal elements of a skew-symmetric matrix are always:",
+    "options": [
+      "\\text{1}",
+      "\\text{equal to each other}",
+      "\\text{0}",
+      "\\text{negative}"
+    ],
+    "answer": "\\text{0}",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_005",
+    "question": "For any square matrix A, the matrix A + A′ is always:",
+    "options": [
+      "\\text{Skew-symmetric}",
+      "\\text{Symmetric}",
+      "\\text{Identity}",
+      "\\text{Null}"
+    ],
+    "answer": "\\text{Symmetric}",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_006",
+    "question": "For any square matrix A, the matrix A − A′ is always:",
+    "options": [
+      "\\text{Symmetric}",
+      "\\text{Identity}",
+      "\\text{Skew-symmetric}",
+      "\\text{Orthogonal}"
+    ],
+    "answer": "\\text{Skew-symmetric}",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_007",
+    "question": "Every square matrix A can be uniquely expressed as a sum of a symmetric and a skew-symmetric matrix. The symmetric part is:",
+    "options": [
+      "\\dfrac{1}{2}(A - A')",
+      "\\dfrac{1}{2}(A + A')",
+      "A + A'",
+      "A - A'"
+    ],
+    "answer": "\\dfrac{1}{2}(A + A')",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_008",
+    "question": "The transpose of a product of two matrices satisfies:",
+    "options": [
+      "(AB)' = A'B'",
+      "(AB)' = B'A'",
+      "(AB)' = AB",
+      "(AB)' = (A'B')'"
+    ],
+    "answer": "(AB)' = B'A'",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Reversal rule: transpose reverses the order. Same pattern as (AB)⁻¹ = B⁻¹A⁻¹."
+  },
+  {
+    "id": "matrices_qn_009",
+    "question": "For matrix multiplication, which of the following is always true?",
+    "options": [
+      "AB = BA",
+      "AB = O \\Rightarrow A = O \\text{ or } B = O",
+      "(AB)C = A(BC)",
+      "AB \\text{ is defined for any } A, B"
+    ],
+    "answer": "(AB)C = A(BC)",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_010",
+    "question": "The trace of the n×n identity matrix Iₙ is:",
+    "options": [
+      "0",
+      "n^2",
+      "1",
+      "n"
+    ],
+    "answer": "n",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_011",
+    "question": "A matrix A is called <b>idempotent</b> if:",
+    "options": [
+      "A^2 = I",
+      "A^2 = O",
+      "A^2 = A",
+      "A' = -A"
+    ],
+    "answer": "A^2 = A",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_012",
+    "question": "A matrix A is called <b>involutory</b> if:",
+    "options": [
+      "A^2 = A",
+      "A' = A",
+      "A^2 = I",
+      "A^m = O"
+    ],
+    "answer": "A^2 = I",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Involutory: A² = I → A is its own inverse. Idempotent: A² = A. Don't mix these."
+  },
+  {
+    "id": "matrices_qn_013",
+    "question": "A matrix A is called <b>nilpotent</b> if:",
+    "options": [
+      "A^2 = I",
+      "A^m = O \\text{ for some positive integer } m",
+      "A^2 = A",
+      "A' = -A"
+    ],
+    "answer": "A^m = O \\text{ for some positive integer } m",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_014",
+    "question": "A square matrix A is called <b>orthogonal</b> if:",
+    "options": [
+      "AA' = O",
+      "AA' = A",
+      "AA' = I",
+      "A' = -A"
+    ],
+    "answer": "AA' = I",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_015",
+    "question": "For two symmetric matrices A and B of the same order, the product AB is symmetric if and only if:",
+    "options": [
+      "A = B",
+      "AB = O",
+      "BA = AB",
+      "|A| = |B|"
+    ],
+    "answer": "BA = AB",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_016",
+    "question": "A square matrix A is called <b>unitary</b> if:",
+    "options": [
+      "A' = A",
+      "A^2 = I",
+      "A^* A = I",
+      "AA' = O"
+    ],
+    "answer": "A^* A = I",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "A* is the conjugate transpose (transpose conjugate) of A. For real matrices, unitary = orthogonal."
+  },
+  {
+    "id": "matrices_qn_017",
+    "question": "For a non-singular matrix A of order n, the rank ρ(A) is:",
+    "options": [
+      "0",
+      "n-1",
+      "n",
+      "n^2"
+    ],
+    "answer": "n",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_018",
+    "question": "Which of the following is true about rank of a matrix?",
+    "options": [
+      "\\rho(AB) \\geq \\rho(A) + \\rho(B)",
+      "\\rho(AB) \\leq \\min(\\rho(A),\\, \\rho(B))",
+      "\\rho(AB) = \\rho(A) \\cdot \\rho(B)",
+      "\\rho(AB) = \\rho(A) + \\rho(B)"
+    ],
+    "answer": "\\rho(AB) \\leq \\min(\\rho(A),\\, \\rho(B))",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_019",
+    "question": "Elementary row/column operations on a matrix:",
+    "options": [
+      "\\text{Always increase the rank}",
+      "\\text{Always decrease the rank}",
+      "\\text{Do not change the rank}",
+      "\\text{Change the rank by exactly 1}"
+    ],
+    "answer": "\\text{Do not change the rank}",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_020",
+    "question": "For trace of matrices, which of the following holds?",
+    "options": [
+      "\\text{tr}(AB) = \\text{tr}(A) \\times \\text{tr}(B)",
+      "\\text{tr}(A') \\neq \\text{tr}(A)",
+      "\\text{tr}(A + B) = \\text{tr}(A) + \\text{tr}(B)",
+      "\\text{tr}(kA) = \\text{tr}(A)"
+    ],
+    "answer": "\\text{tr}(A + B) = \\text{tr}(A) + \\text{tr}(B)",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Common trap: tr(AB) ≠ tr(A)×tr(B) and tr(kA) = k·tr(A) not tr(A)."
+  },
+  {
+    "id": "matrices_qn_021",
+    "question": "Positive <b>even</b> integral powers of a skew-symmetric matrix are:",
+    "options": [
+      "\\text{Skew-symmetric}",
+      "\\text{Null}",
+      "\\text{Symmetric}",
+      "\\text{Orthogonal}"
+    ],
+    "answer": "\\text{Symmetric}",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Even powers of skew-symmetric → symmetric. Odd powers → skew-symmetric."
+  },
+  {
+    "id": "matrices_qn_022",
+    "question": "If A is an orthogonal matrix, then A⁻¹ is:",
+    "options": [
+      "\\text{The null matrix}",
+      "A^2",
+      "A'",
+      "-A"
+    ],
+    "answer": "A'",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_023",
+    "question": "A matrix A is called <b>periodic</b> with period k if:",
+    "options": [
+      "A^k = I",
+      "A^{k+1} = A",
+      "A^k = O",
+      "A^k = A^{k-1}"
+    ],
+    "answer": "A^{k+1} = A",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "k is the least positive integer satisfying A^{k+1} = A. Idempotent is the special case k=1."
+  },
+  {
+    "id": "matrices_qn_024",
+    "question": "For any matrix A, which of the following is always symmetric?",
+    "options": [
+      "AB",
+      "A - A'",
+      "AA'",
+      "A + I"
+    ],
+    "answer": "AA'",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_025",
+    "question": "If A is a skew-symmetric matrix of <b>odd</b> order, then its rank satisfies:",
+    "options": [
+      "\\rho(A) = n",
+      "\\rho(A) < n",
+      "\\rho(A) = 0",
+      "\\rho(A) = n - 2"
+    ],
+    "answer": "\\rho(A) < n",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_026",
+    "question": "The matrix B′AB is skew-symmetric when:",
+    "options": [
+      "\\text{A is symmetric}",
+      "\\text{B is symmetric}",
+      "\\text{A is skew-symmetric}",
+      "\\text{B is skew-symmetric}"
+    ],
+    "answer": "\\text{A is skew-symmetric}",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_027",
+    "question": "For two symmetric matrices A and B of the same order, AB − BA is:",
+    "options": [
+      "\\text{Symmetric}",
+      "\\text{Skew-symmetric}",
+      "\\text{Identity}",
+      "\\text{Null}"
+    ],
+    "answer": "\\text{Skew-symmetric}",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_028",
+    "question": "Which property of matrix multiplication does NOT generally hold?",
+    "options": [
+      "A(BC) = (AB)C",
+      "A(B + C) = AB + AC",
+      "AI = IA = A",
+      "AB = BA"
+    ],
+    "answer": "AB = BA",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_029",
+    "question": "Which of the following trace properties is always true?",
+    "options": [
+      "\\text{tr}(AB) = \\text{tr}(A) \\times \\text{tr}(B)",
+      "\\text{tr}(AB) = \\text{tr}(BA)",
+      "\\text{tr}(AB) = \\text{tr}(A) + \\text{tr}(B)",
+      "\\text{tr}(AB) = \\text{tr}(A) - \\text{tr}(B)"
+    ],
+    "answer": "\\text{tr}(AB) = \\text{tr}(BA)",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "matrices_qn_030",
+    "question": "For a square matrix A of order n, if ρ(A) = ρ(B) = n, then ρ(AB) is:",
+    "options": [
+      "0",
+      "< n",
+      "n",
+      "n^2"
+    ],
+    "answer": "n",
+    "tags": {
+      "chapter": "Matrices",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  }
+]

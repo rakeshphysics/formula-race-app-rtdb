@@ -1,0 +1,542 @@
+[
+  {
+    "id": "area_curves_qn_001",
+    "question": "The area bounded by y = F(x), the X-axis, and the lines x = a and x = b (with the curve <b>above</b> the X-axis) is given by:",
+    "options": [
+      "\\int_a^b F(x)\\,dx",
+      "\\int_a^b \\bigl|F(x)\\bigr|\\,dx",
+      "-\\int_a^b F(x)\\,dx",
+      "\\int_a^b F'(x)\\,dx"
+    ],
+    "answer": "\\int_a^b F(x)\\,dx",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_002",
+    "question": "When the curve y = F(x) lies <b>below</b> the X-axis between x = a and x = b, the required area is:",
+    "options": [
+      "\\left|\\int_a^b F(x)\\,dx\\right|",
+      "\\int_a^b F(x)\\,dx",
+      "-\\left|\\int_a^b F(x)\\,dx\\right|",
+      "\\int_a^b \\bigl|F'(x)\\bigr|\\,dx"
+    ],
+    "answer": "\\left|\\int_a^b F(x)\\,dx\\right|",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Area is always positive — take the absolute value when the curve dips below the X-axis."
+  },
+  {
+    "id": "area_curves_qn_003",
+    "question": "A curve has <b>all even powers of y</b>. This means it is symmetric about:",
+    "options": [
+      "\\text{X-axis}",
+      "\\text{Y-axis}",
+      "\\text{The line } y = x",
+      "\\text{The origin}"
+    ],
+    "answer": "\\text{X-axis}",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Even powers of y → replacing y with −y leaves equation unchanged → X-axis symmetry."
+  },
+  {
+    "id": "area_curves_qn_004",
+    "question": "The area bounded by x = F(y), the Y-axis, and lines y = c and y = d (curve to the <b>right</b> of Y-axis) is:",
+    "options": [
+      "\\int_c^d F(y)\\,dy",
+      "\\int_c^d F'(y)\\,dy",
+      "\\left|\\int_c^d F(y)\\,dy\\right|",
+      "\\int_c^d x^2\\,dy"
+    ],
+    "answer": "\\int_c^d F(y)\\,dy",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_005",
+    "question": "The area bounded by two curves y = F(x) and y = G(x) between x = a and x = b, where F(x) ≥ G(x), is:",
+    "options": [
+      "\\int_a^b \\bigl[F(x) - G(x)\\bigr]\\,dx",
+      "\\int_a^b F(x)\\,dx - \\int_a^b G(x)\\,dx \\text{ (absolute value taken)}",
+      "\\int_a^b \\bigl[G(x) - F(x)\\bigr]\\,dx",
+      "\\int_a^b F(x)\\,dx \\cdot \\int_a^b G(x)\\,dx"
+    ],
+    "answer": "\\int_a^b \\bigl[F(x) - G(x)\\bigr]\\,dx",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_006",
+    "question": "The area enclosed by a polar curve r = f(θ) between angles θ = α and θ = β is:",
+    "options": [
+      "\\dfrac{1}{2}\\int_\\alpha^\\beta r^2\\,d\\theta",
+      "\\int_\\alpha^\\beta r^2\\,d\\theta",
+      "\\int_\\alpha^\\beta r\\,d\\theta",
+      "\\dfrac{1}{2}\\int_\\alpha^\\beta r\\,d\\theta"
+    ],
+    "answer": "\\dfrac{1}{2}\\int_\\alpha^\\beta r^2\\,d\\theta",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "The extra factor of ½ comes from integrating the area of infinitesimal triangular sectors."
+  },
+  {
+    "id": "area_curves_qn_007",
+    "question": "For the parametric curve x = φ(t), y = ψ(t), the area bounded with the X-axis between t = t₁ and t = t₂ is:",
+    "options": [
+      "\\left|\\int_{t_1}^{t_2} y\\,\\dfrac{dx}{dt}\\,dt\\right|",
+      "\\int_{t_1}^{t_2} y\\,\\dfrac{dy}{dt}\\,dt",
+      "\\int_{t_1}^{t_2} x\\,\\dfrac{dy}{dt}\\,dt",
+      "\\left|\\int_{t_1}^{t_2} x\\,\\dfrac{dx}{dt}\\,dt\\right|"
+    ],
+    "answer": "\\left|\\int_{t_1}^{t_2} y\\,\\dfrac{dx}{dt}\\,dt\\right|",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_008",
+    "question": "If F(x) ≥ G(x) on [a, c] and F(x) ≤ G(x) on [c, b] (with a < c < b), the total enclosed area is:",
+    "options": [
+      "\\int_a^c\\!\\bigl[F-G\\bigr]dx + \\int_c^b\\!\\bigl[G-F\\bigr]dx",
+      "\\int_a^b\\!\\bigl[F(x)-G(x)\\bigr]dx",
+      "\\left|\\int_a^b\\!\\bigl[F(x)-G(x)\\bigr]dx\\right|",
+      "\\int_a^c\\!\\bigl[G-F\\bigr]dx + \\int_c^b\\!\\bigl[F-G\\bigr]dx"
+    ],
+    "answer": "\\int_a^c\\!\\bigl[F-G\\bigr]dx + \\int_c^b\\!\\bigl[G-F\\bigr]dx",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_009",
+    "question": "To locate asymptotes parallel to the X-axis for a curve, you should:",
+    "options": [
+      "\\text{Equate the coefficient of the highest power of }x\\text{ to zero}",
+      "\\text{Set }y = 0\\text{ and solve for }x",
+      "\\text{Equate the coefficient of the highest power of }y\\text{ to zero}",
+      "\\text{Put }x = 0\\text{ and solve for }y"
+    ],
+    "answer": "\\text{Equate the coefficient of the highest power of }x\\text{ to zero}",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_010",
+    "question": "The area bounded by the parabola y² = 4ax and its <b>latus rectum</b> (x = a) is:",
+    "options": [
+      "\\dfrac{8}{3}a^2",
+      "\\dfrac{4}{3}a^2",
+      "4a^2",
+      "\\dfrac{16}{3}a^2"
+    ],
+    "answer": "\\dfrac{8}{3}a^2",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_011",
+    "question": "When the curve equation remains <b>unchanged after interchanging x and y</b>, the curve is symmetric about:",
+    "options": [
+      "\\text{The line }y = x",
+      "\\text{X-axis}",
+      "\\text{Y-axis}",
+      "\\text{The line }y = -x"
+    ],
+    "answer": "\\text{The line }y = x",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_012",
+    "question": "The equation ay² = x³ is the <b>semi-cubical parabola</b>. About which axis is it symmetric?",
+    "options": [
+      "\\text{X-axis (all powers of }y\\text{ are even)}",
+      "\\text{Y-axis (all powers of }x\\text{ are even)}",
+      "\\text{The line }y = x",
+      "\\text{The origin}"
+    ],
+    "answer": "\\text{X-axis (all powers of }y\\text{ are even)}",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_013",
+    "question": "The volume of the solid generated by revolving the area bounded by y = f(x), the X-axis, and x = a, x = b about the <b>X-axis</b> is:",
+    "options": [
+      "\\pi\\int_a^b y^2\\,dx",
+      "2\\pi\\int_a^b y\\,dx",
+      "\\pi\\int_a^b y\\,dx",
+      "2\\pi\\int_a^b y^2\\,dx"
+    ],
+    "answer": "\\pi\\int_a^b y^2\\,dx",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Disc method about the X-axis: each cross-section is a circle of radius y, so area = πy²."
+  },
+  {
+    "id": "area_curves_qn_014",
+    "question": "The volume of revolution about the <b>Y-axis</b>, for the curve x = g(y) between y = c and y = d, is:",
+    "options": [
+      "\\pi\\int_c^d x^2\\,dy",
+      "2\\pi\\int_c^d x\\,dy",
+      "\\pi\\int_c^d x\\,dy",
+      "2\\pi\\int_c^d x^2\\,dy"
+    ],
+    "answer": "\\pi\\int_c^d x^2\\,dy",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_015",
+    "question": "The area enclosed by the two parabolas x² = 4ay and y² = 4bx is:",
+    "options": [
+      "\\dfrac{16}{3}\\sqrt{ab}",
+      "\\dfrac{16}{3}ab",
+      "\\dfrac{8}{3}ab",
+      "\\dfrac{4}{3}ab"
+    ],
+    "answer": "\\dfrac{16}{3}\\sqrt{ab}",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_016",
+    "question": "The area between the curve y = ax² and the line y = mx (m > 0, a > 0) is:",
+    "options": [
+      "\\dfrac{m^3}{6a^2}",
+      "\\dfrac{m^2}{6a}",
+      "\\dfrac{m^3}{3a^2}",
+      "\\dfrac{m^2}{4a}"
+    ],
+    "answer": "\\dfrac{m^3}{6a^2}",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_017",
+    "question": "The surface area generated by revolving the curve y = f(x) about the <b>X-axis</b> between x = a and x = b is:",
+    "options": [
+      "2\\pi\\int_a^b y\\,\\sqrt{1+\\left(\\tfrac{dy}{dx}\\right)^{\\!2}}\\;dx",
+      "\\pi\\int_a^b y\\,\\sqrt{1+\\left(\\tfrac{dy}{dx}\\right)^{\\!2}}\\;dx",
+      "2\\pi\\int_a^b y^2\\,dx",
+      "2\\pi\\int_a^b \\sqrt{1+\\left(\\tfrac{dy}{dx}\\right)^{\\!2}}\\;dx"
+    ],
+    "answer": "2\\pi\\int_a^b y\\,\\sqrt{1+\\left(\\tfrac{dy}{dx}\\right)^{\\!2}}\\;dx",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_018",
+    "question": "To find the region where a curve <b>does not exist</b> during curve sketching, you check:",
+    "options": [
+      "\\text{Values of one variable that make the other variable imaginary or undefined}",
+      "\\text{Values where }dy/dx = 0",
+      "\\text{Values where }d^2y/dx^2 = 0",
+      "\\text{Values where the curve crosses the axes}"
+    ],
+    "answer": "\\text{Values of one variable that make the other variable imaginary or undefined}",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_019",
+    "question": "The area of the region bounded by the ellipse x²/a² + y²/b² ≤ 1 and the chord x/a + y/b ≥ 1 (first quadrant) is:",
+    "options": [
+      "ab\\cdot\\dfrac{\\pi - 2}{4}",
+      "\\dfrac{\\pi ab}{4}",
+      "ab\\cdot\\dfrac{\\pi - 2}{2}",
+      "\\dfrac{\\pi ab}{2} - ab"
+    ],
+    "answer": "ab\\cdot\\dfrac{\\pi - 2}{4}",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_020",
+    "question": "The area bounded by y² = 4ax and y = |mx| (m > 0) is:",
+    "options": [
+      "\\dfrac{8a^2}{3m^3}",
+      "\\dfrac{8a^2}{3m}",
+      "\\dfrac{4a^2}{3m^3}",
+      "\\dfrac{16a^2}{3m^3}"
+    ],
+    "answer": "\\dfrac{8a^2}{3m^3}",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_021",
+    "question": "The curve xy = p² is symmetric about:",
+    "options": [
+      "\\text{Both axes and the lines }y = \\pm x",
+      "\\text{X-axis only}",
+      "\\text{Y-axis only}",
+      "\\text{The line }y = x\\text{ only}"
+    ],
+    "answer": "\\text{Both axes and the lines }y = \\pm x",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_022",
+    "question": "To determine points of inflection on a curve, one sets:",
+    "options": [
+      "\\dfrac{d^2y}{dx^2} = 0 \\text{ (or }\\dfrac{d^2x}{dy^2}=0\\text{) and solves}",
+      "\\dfrac{dy}{dx} = 0",
+      "\\dfrac{dy}{dx} = \\infty",
+      "y = 0"
+    ],
+    "answer": "\\dfrac{d^2y}{dx^2} = 0 \\text{ (or }\\dfrac{d^2x}{dy^2}=0\\text{) and solves}",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_023",
+    "question": "The area bounded by two curves x = F(y) and x = G(y) between y = c and y = d, where F(y) ≥ G(y), is:",
+    "options": [
+      "\\int_c^d \\bigl[F(y)-G(y)\\bigr]\\,dy",
+      "\\int_c^d \\bigl[G(y)-F(y)\\bigr]\\,dy",
+      "\\int_c^d F(y)\\,dy - \\int_c^d G(y)\\,dy \\text{ (with absolute value)}",
+      "\\int_c^d \\bigl[F(y)+G(y)\\bigr]\\,dy"
+    ],
+    "answer": "\\int_c^d \\bigl[F(y)-G(y)\\bigr]\\,dy",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_024",
+    "question": "The surface area of revolution about the <b>Y-axis</b> for the curve x = f(y) between y = c and y = d is:",
+    "options": [
+      "2\\pi\\int_c^d x\\,\\sqrt{1+\\left(\\tfrac{dx}{dy}\\right)^{\\!2}}\\;dy",
+      "\\pi\\int_c^d x\\,\\sqrt{1+\\left(\\tfrac{dx}{dy}\\right)^{\\!2}}\\;dy",
+      "2\\pi\\int_c^d x^2\\,dy",
+      "2\\pi\\int_c^d \\sqrt{1+\\left(\\tfrac{dx}{dy}\\right)^{\\!2}}\\;dy"
+    ],
+    "answer": "2\\pi\\int_c^d x\\,\\sqrt{1+\\left(\\tfrac{dx}{dy}\\right)^{\\!2}}\\;dy",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_025",
+    "question": "The area between the curve y = cx² (a parabola), the Y-axis, and the horizontal lines y = a and y = b (0 < a < b) is:",
+    "options": [
+      "\\dfrac{2}{3c}\\left(b^{3/2} - a^{3/2}\\right)",
+      "\\dfrac{2}{3c}\\left(b^{1/2} - a^{1/2}\\right)",
+      "\\dfrac{1}{3c}\\left(b^{3/2} - a^{3/2}\\right)",
+      "\\dfrac{2}{3}\\left(b^{3/2} - a^{3/2}\\right)"
+    ],
+    "answer": "\\dfrac{2}{3c}\\left(b^{3/2} - a^{3/2}\\right)",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_026",
+    "question": "The area bounded by the hyperbola xy = p² between ordinates x = β and x = α (α > β > 0) is:",
+    "options": [
+      "p^2\\ln\\!\\dfrac{\\alpha}{\\beta}",
+      "p^2\\ln\\!\\dfrac{\\beta}{\\alpha}",
+      "p^2(\\alpha - \\beta)",
+      "p\\ln\\!\\dfrac{\\alpha}{\\beta}"
+    ],
+    "answer": "p^2\\ln\\!\\dfrac{\\alpha}{\\beta}",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "∫dx/x = ln x, and the 1/x decay of the hyperbola gives the logarithmic area formula."
+  },
+  {
+    "id": "area_curves_qn_027",
+    "question": "The area bounded by the two parabolas y² = 4a(x + a) and y² = 4b(b − x) is:",
+    "options": [
+      "\\dfrac{8}{3}\\sqrt{ab}\\,(a+b)",
+      "\\dfrac{16}{3}\\sqrt{ab}\\,(a+b)",
+      "\\dfrac{8}{3}ab\\,(a+b)",
+      "\\dfrac{4}{3}\\sqrt{ab}\\,(a+b)"
+    ],
+    "answer": "\\dfrac{8}{3}\\sqrt{ab}\\,(a+b)",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_028",
+    "question": "When curve-sketching, the origin is a <b>double point</b> when:",
+    "options": [
+      "\\text{The curve passes through (0,0) and the lowest-degree terms give two distinct tangents}",
+      "dy/dx = 0 \\text{ at the origin}",
+      "\\text{The curve crosses both axes at the origin}",
+      "d^2y/dx^2 = 0 \\text{ at the origin}"
+    ],
+    "answer": "\\text{The curve passes through (0,0) and the lowest-degree terms give two distinct tangents}",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_029",
+    "question": "The common area enclosed by the two ellipses x²/b² + y²/a² = 1/(a²b²) and x²/a² + y²/b² = 1/(a²b²) is:",
+    "options": [
+      "\\dfrac{4}{ab}\\tan^{-1}\\!\\dfrac{a}{b}",
+      "\\dfrac{4}{ab}\\tan^{-1}\\!\\dfrac{b}{a}",
+      "\\dfrac{2}{ab}\\tan^{-1}\\!\\dfrac{a}{b}",
+      "\\dfrac{\\pi}{ab}"
+    ],
+    "answer": "\\dfrac{4}{ab}\\tan^{-1}\\!\\dfrac{a}{b}",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "area_curves_qn_030",
+    "question": "For the region bounded by x² + y² ≤ 2ax and y² ≥ ax (x ≥ 0), both intersection points and the area for the full x ≥ 0 half are needed. Which option correctly states <b>both</b>?",
+    "options": [
+      "\\text{Points: }O(0,0),\\,A(a,a),\\,B(a,-a);\\quad\\text{Area} = 2a^2\\!\\left(\\tfrac{\\pi}{4}-\\tfrac{2}{3}\\right)",
+      "\\text{Points: }O(0,0),\\,A(a,a),\\,B(a,-a);\\quad\\text{Area} = a^2\\!\\left(\\tfrac{\\pi}{4}-\\tfrac{2}{3}\\right)",
+      "\\text{Points: }O(0,0),\\,A(2a,0);\\quad\\text{Area} = 2a^2\\!\\left(\\tfrac{\\pi}{4}-\\tfrac{2}{3}\\right)",
+      "\\text{Points: }O(0,0),\\,A(a,a),\\,B(a,-a);\\quad\\text{Area} = a^2\\!\\left(\\tfrac{\\pi}{2}-\\tfrac{2}{3}\\right)"
+    ],
+    "answer": "\\text{Points: }O(0,0),\\,A(a,a),\\,B(a,-a);\\quad\\text{Area} = 2a^2\\!\\left(\\tfrac{\\pi}{4}-\\tfrac{2}{3}\\right)",
+    "tags": {
+      "chapter": "Area Under Curves",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  }
+]

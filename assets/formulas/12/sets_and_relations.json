@@ -1,0 +1,542 @@
+[
+  {
+    "id": "sets_relations_qn_001",
+    "question": "If a set A has <b>n</b> elements, the number of elements in its power set P(A) is:",
+    "options": [
+      "2n",
+      "n^2",
+      "2^n",
+      "n!"
+    ],
+    "answer": "2^n",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "easy",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_002",
+    "question": "Which of the following is true for any set A?",
+    "options": [
+      "\\phi \\not\\subset A",
+      "A \\not\\subseteq A",
+      "\\phi \\subseteq A",
+      "A \\subseteq \\phi"
+    ],
+    "answer": "\\phi \\subseteq A",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "easy",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_003",
+    "question": "The symmetric difference A△B is equal to:",
+    "options": [
+      "(A \\cup B) - (A \\cap B)",
+      "(A - B) \\cup (B - A)",
+      "A \\cap B",
+      "A \\cup B"
+    ],
+    "answer": "(A - B) \\cup (B - A)",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "easy",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_004",
+    "question": "For two sets A and B, n(A△B) is equal to:",
+    "options": [
+      "n(A) + n(B) - n(A \\cap B)",
+      "n(A) + n(B) + 2n(A \\cap B)",
+      "n(A) + n(B) - 2n(A \\cap B)",
+      "n(A \\cup B) - n(A \\cap B)"
+    ],
+    "answer": "n(A) + n(B) - 2n(A \\cap B)",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "easy",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_005",
+    "question": "De Morgan's law states that (A∪B)′ equals:",
+    "options": [
+      "A' \\cup B'",
+      "A' \\cap B'",
+      "A \\cap B",
+      "A \\cup B"
+    ],
+    "answer": "A' \\cap B'",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "medium",
+     "class": "12"
+    },
+    "image": null,
+    "tip": "De Morgan: union complement → intersection of complements. Flip the operation, complement each set."
+  },
+  {
+    "id": "sets_relations_qn_006",
+    "question": "For three sets A, B, C — the formula n(A∪B∪C) is:",
+    "options": [
+      "n(A)+n(B)+n(C)-n(A\\cap B)-n(B\\cap C)-n(A\\cap C)",
+      "n(A)+n(B)+n(C)-n(A\\cap B)-n(B\\cap C)-n(A\\cap C)+n(A\\cap B\\cap C)",
+      "n(A)+n(B)+n(C)+n(A\\cap B\\cap C)",
+      "n(A)+n(B)+n(C)-n(A\\cap B\\cap C)"
+    ],
+    "answer": "n(A)+n(B)+n(C)-n(A\\cap B)-n(B\\cap C)-n(A\\cap C)+n(A\\cap B\\cap C)",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "medium",
+     "class": "12"
+    },
+    "image": null,
+    "tip": "Inclusion-exclusion: subtract pairwise intersections, then add back the triple intersection."
+  },
+  {
+    "id": "sets_relations_qn_007",
+    "question": "For sets A and B, n(A−B) is equal to:",
+    "options": [
+      "n(A) + n(A \\cap B)",
+      "n(A) - n(A \\cap B)",
+      "n(A) - n(B)",
+      "n(A \\cup B) - n(B)"
+    ],
+    "answer": "n(A) - n(A \\cap B)",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "medium",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_008",
+    "question": "For non-empty sets A and B, n(A×B) is equal to:",
+    "options": [
+      "n(A) + n(B)",
+      "n(A) - n(B)",
+      "n(A) \\cdot n(B)",
+      "2^{n(A)+n(B)}"
+    ],
+    "answer": "n(A) \\cdot n(B)",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "medium",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_009",
+    "question": "If |A| = m and |B| = n, the total number of relations from A to B is:",
+    "options": [
+      "mn",
+      "2^{m+n}",
+      "2^{mn}",
+      "m^n"
+    ],
+    "answer": "2^{mn}",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "medium",
+     "class": "12"
+    },
+    "image": null,
+    "tip": "A×B has mn ordered pairs. Each subset of A×B is a relation. Number of subsets of a set with mn elements = 2^{mn}."
+  },
+  {
+    "id": "sets_relations_qn_010",
+    "question": "The number of reflexive relations on a set A with n elements is:",
+    "options": [
+      "2^n",
+      "2^{n^2}",
+      "2^{n^2 - n}",
+      "n^2"
+    ],
+    "answer": "2^{n^2 - n}",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "god",
+     "class": "12"
+    },
+    "image": null,
+    "tip": "Reflexive forces all n diagonal pairs (a,a) to be included. The remaining n²−n pairs are free → 2^{n²−n}."
+  },
+  {
+    "id": "sets_relations_qn_011",
+    "question": "Which of the following sets is <b>not</b> a null set?",
+    "options": [
+      "\\{ x : x \\in \\mathbb{R},\\; x^2 = -1 \\}",
+      "\\{ x : x \\in \\mathbb{N},\\; x < 1 \\}",
+      "\\{ \\phi \\}",
+      "\\{ x : x \\in \\mathbb{N},\\; 1 < x < 2 \\}"
+    ],
+    "answer": "\\{ \\phi \\}",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "easy",
+     "class": "12"
+    },
+    "image": null,
+    "tip": "{φ} is a set containing one element (the empty set itself). It is not empty."
+  },
+  {
+    "id": "sets_relations_qn_012",
+    "question": "Two sets A and B are called <b>disjoint</b> if:",
+    "options": [
+      "A = B",
+      "A \\subseteq B",
+      "A \\cap B = \\phi",
+      "A \\cup B = \\phi"
+    ],
+    "answer": "A \\cap B = \\phi",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "easy",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_013",
+    "question": "For any set A and its universal set U, the complement law states:",
+    "options": [
+      "A \\cup A' = \\phi",
+      "A \\cap A' = U",
+      "A \\cup A' = U",
+      "A \\cap A = \\phi"
+    ],
+    "answer": "A \\cup A' = U",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "easy",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_014",
+    "question": "Which property does the identity relation I = {(a,a) : a∈A} satisfy?",
+    "options": [
+      "\\text{Symmetric only}",
+      "\\text{Reflexive only}",
+      "\\text{Reflexive and symmetric but not transitive}",
+      "\\text{Reflexive, symmetric and transitive}"
+    ],
+    "answer": "\\text{Reflexive, symmetric and transitive}",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "easy",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_015",
+    "question": "For sets A and B, n(A′∩B′) is equal to:",
+    "options": [
+      "n(U) - n(A \\cap B)",
+      "n(U) - n(A \\cup B)",
+      "n(A) + n(B) - n(U)",
+      "n(U) + n(A \\cap B)"
+    ],
+    "answer": "n(U) - n(A \\cup B)",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "medium",
+     "class": "12"
+    },
+    "image": null,
+    "tip": "By De Morgan: A'∩B' = (A∪B)'. So n(A'∩B') = n(U) - n(A∪B)."
+  },
+  {
+    "id": "sets_relations_qn_016",
+    "question": "The reversal rule for composition of relations states:",
+    "options": [
+      "(SoR)^{-1} = S^{-1} o R^{-1}",
+      "(SoR)^{-1} = R^{-1} o S^{-1}",
+      "(SoR)^{-1} = RoS",
+      "(SoR)^{-1} = SoR"
+    ],
+    "answer": "(SoR)^{-1} = R^{-1} o S^{-1}",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "medium",
+     "class": "12"
+    },
+    "image": null,
+    "tip": "Same pattern as matrix/function inverses: reverse the order when inverting a composition."
+  },
+  {
+    "id": "sets_relations_qn_017",
+    "question": "A×B = B×A if and only if:",
+    "options": [
+      "A \\subseteq B",
+      "B \\subseteq A",
+      "A = B",
+      "A \\cap B = \\phi"
+    ],
+    "answer": "A = B",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "medium",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_018",
+    "question": "Which of the following is the distributive law for Cartesian products?",
+    "options": [
+      "A \\times (B \\cup C) = (A \\cup B) \\times (A \\cup C)",
+      "A \\times (B \\cup C) = (A \\times B) \\cup (A \\times C)",
+      "A \\times (B \\cup C) = (A \\times B) \\cap (A \\times C)",
+      "A \\times (B \\cup C) = (A \\cup B) \\times C"
+    ],
+    "answer": "A \\times (B \\cup C) = (A \\times B) \\cup (A \\times C)",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "medium",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_019",
+    "question": "A relation R on set A is an <b>equivalence relation</b> if it is:",
+    "options": [
+      "\\text{Reflexive and symmetric only}",
+      "\\text{Symmetric and transitive only}",
+      "\\text{Reflexive, symmetric and transitive}",
+      "\\text{Reflexive and transitive only}"
+    ],
+    "answer": "\\text{Reflexive, symmetric and transitive}",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "medium",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_020",
+    "question": "If A⊆B and C⊆D, then which of the following is true?",
+    "options": [
+      "A \\times C \\supseteq B \\times D",
+      "A \\times C \\subseteq B \\times D",
+      "A \\times C = B \\times D",
+      "A \\times D \\subseteq B \\times C"
+    ],
+    "answer": "A \\times C \\subseteq B \\times D",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "god",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_021",
+    "question": "Equal sets are always equivalent. Equivalent sets are:",
+    "options": [
+      "\\text{Always equal}",
+      "\\text{Not necessarily equal}",
+      "\\text{Always disjoint}",
+      "\\text{Always subsets of each other}"
+    ],
+    "answer": "\\text{Not necessarily equal}",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "easy",
+     "class": "12"
+    },
+    "image": null,
+    "tip": "Equal → same elements (hence same size). Equivalent → only same size. e.g. {1,2} and {3,4} are equivalent but not equal."
+  },
+  {
+    "id": "sets_relations_qn_022",
+    "question": "The intersection distributes over union. Which identity expresses this?",
+    "options": [
+      "A \\cap (B \\cup C) = (A \\cup B) \\cap (A \\cup C)",
+      "A \\cup (B \\cap C) = (A \\cap B) \\cup (A \\cap C)",
+      "A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C)",
+      "A \\cup (B \\cup C) = (A \\cap B) \\cup C"
+    ],
+    "answer": "A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C)",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "easy",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_023",
+    "question": "For a relation R from A to B, the inverse relation R⁻¹ is defined as:",
+    "options": [
+      "R^{-1} = \\{(a,b) : (a,b) \\in R\\}",
+      "R^{-1} = \\{(b,a) : (a,b) \\in R\\}",
+      "R^{-1} = A \\times B - R",
+      "R^{-1} = \\{(a,a) : a \\in A\\}"
+    ],
+    "answer": "R^{-1} = \\{(b,a) : (a,b) \\in R\\}",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "easy",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_024",
+    "question": "If R and S are both equivalence relations on set A, then R∩S is:",
+    "options": [
+      "\\text{Never an equivalence relation}",
+      "\\text{Always an equivalence relation}",
+      "\\text{An equivalence relation only if } R = S",
+      "\\text{Always the universal relation}"
+    ],
+    "answer": "\\text{Always an equivalence relation}",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "easy",
+     "class": "12"
+    },
+    "image": null,
+    "tip": "Contrast: R∪S is NOT necessarily an equivalence relation — transitivity can fail in the union."
+  },
+  {
+    "id": "sets_relations_qn_025",
+    "question": "The domain of a relation R is:",
+    "options": [
+      "\\text{The set of all second components of ordered pairs in } R",
+      "\\text{The set B when } R \\subseteq A \\times B",
+      "\\text{The set of all first components of ordered pairs in } R",
+      "\\text{The set } A \\times B"
+    ],
+    "answer": "\\text{The set of all first components of ordered pairs in } R",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "medium",
+     "class": "12"
+    },
+    "image": null,
+    "tip": "Domain = first components (inputs). Range = second components (outputs). Codomain = the full set B."
+  },
+  {
+    "id": "sets_relations_qn_026",
+    "question": "Which law states that (A−B)∩B = φ?",
+    "options": [
+      "\\text{Idempotent law}",
+      "\\text{Complement law}",
+      "\\text{Law of difference of sets}",
+      "\\text{De Morgan's law}"
+    ],
+    "answer": "\\text{Law of difference of sets}",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "medium",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_027",
+    "question": "For two non-empty finite sets A and B with n elements in common, the number of elements (A×B)∩(B×A) has is:",
+    "options": [
+      "n",
+      "n^2",
+      "2n",
+      "n^2 - n"
+    ],
+    "answer": "n^2",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "medium",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_028",
+    "question": "A relation R on A is <b>transitive</b> if:",
+    "options": [
+      "(a,b) \\in R \\Rightarrow (b,a) \\in R",
+      "(a,a) \\in R \\;\\forall\\, a \\in A",
+      "(a,b) \\in R \\text{ and } (b,c) \\in R \\Rightarrow (a,c) \\in R",
+      "(a,b) \\in R \\Rightarrow a = b"
+    ],
+    "answer": "(a,b) \\in R \\text{ and } (b,c) \\in R \\Rightarrow (a,c) \\in R",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "medium",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "sets_relations_qn_029",
+    "question": "n(A′∪B′) equals:",
+    "options": [
+      "n(U) - n(A \\cap B)",
+      "n(U) - n(A \\cup B)",
+      "n(A') + n(B')",
+      "n(U) + n(A \\cap B)"
+    ],
+    "answer": "n(U) - n(A \\cap B)",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "medium",
+     "class": "12"
+    },
+    "image": null,
+    "tip": "By De Morgan: A'∪B' = (A∩B)'. So n(A'∪B') = n(U) - n(A∩B)."
+  },
+  {
+    "id": "sets_relations_qn_030",
+    "question": "The number of elements in exactly two of the three sets A, B, C is:",
+    "options": [
+      "n(A\\cap B)+n(B\\cap C)+n(A\\cap C) - 3n(A\\cap B\\cap C)",
+      "n(A\\cap B)+n(B\\cap C)+n(A\\cap C) - 2n(A\\cap B\\cap C)",
+      "n(A\\cap B)+n(B\\cap C)+n(A\\cap C) + n(A\\cap B\\cap C)",
+      "n(A\\cap B)+n(B\\cap C)+n(A\\cap C) - n(A\\cap B\\cap C)"
+    ],
+    "answer": "n(A\\cap B)+n(B\\cap C)+n(A\\cap C) - 3n(A\\cap B\\cap C)",
+    "tags": {
+      "chapter": "Sets and Relations",
+      "difficulty": "god",
+     "class": "12"
+    },
+    "image": null,
+    "tip": null
+  }
+]

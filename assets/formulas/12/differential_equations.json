@@ -1,0 +1,542 @@
+[
+  {
+    "id": "diff_eq_qn_001",
+    "question": "What is the <b>order</b> of the differential equation &nbsp; &#x221A;(1 + (dy/dx)&#xB2;) = d&#xB2;y/dx&#xB2; ?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "\\text{Not defined}"
+    ],
+    "answer": "2",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_002",
+    "question": "The degree of &nbsp; dy/dx + cos(dy/dx) = 0 &nbsp; is:",
+    "options": [
+      "1",
+      "2",
+      "0",
+      "\\text{Not defined}"
+    ],
+    "answer": "\\text{Not defined}",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Degree is undefined whenever a transcendental function (sin, cos, log, e^…) acts on a derivative."
+  },
+  {
+    "id": "diff_eq_qn_003",
+    "question": "The general solution of a differential equation of order <b>n</b> contains exactly how many independent arbitrary constants?",
+    "options": [
+      "n",
+      "n-1",
+      "n+1",
+      "2n"
+    ],
+    "answer": "n",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_004",
+    "question": "Which of the following is a <b>linear</b> differential equation?",
+    "options": [
+      "\\dfrac{dy}{dx} + xy = x^2",
+      "\\left(\\dfrac{dy}{dx}\\right)^2 + y = x",
+      "y\\,\\dfrac{dy}{dx} + x = 0",
+      "\\dfrac{d^2y}{dx^2} + y\\,\\dfrac{dy}{dx} = 0"
+    ],
+    "answer": "\\dfrac{dy}{dx} + xy = x^2",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "In a linear DE, y and all its derivatives appear only in the first power with no products between them."
+  },
+  {
+    "id": "diff_eq_qn_005",
+    "question": "The integrating factor (IF) of the linear equation &nbsp; dy/dx + P(x)·y = Q(x) &nbsp; is:",
+    "options": [
+      "e^{\\int P\\,dx}",
+      "e^{\\int Q\\,dx}",
+      "e^{-\\int P\\,dx}",
+      "\\int P\\,dx"
+    ],
+    "answer": "e^{\\int P\\,dx}",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_006",
+    "question": "To solve &nbsp; dy/dx = f(ax + by + c), &nbsp; the substitution that converts it to variable-separable form is:",
+    "options": [
+      "v = ax + by + c",
+      "v = \\dfrac{y}{x}",
+      "v = ax - by",
+      "v = x + y"
+    ],
+    "answer": "v = ax + by + c",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_007",
+    "question": "After substituting <b>y = vx</b> in the homogeneous equation dy/dx = F(y/x), the resulting equation in v and x is:",
+    "options": [
+      "x\\,\\dfrac{dv}{dx} = F(v) - v",
+      "x\\,\\dfrac{dv}{dx} = F(v) + v",
+      "\\dfrac{dv}{dx} = F(v) - v",
+      "v\\,\\dfrac{dx}{dv} = F(v) - v"
+    ],
+    "answer": "x\\,\\dfrac{dv}{dx} = F(v) - v",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_008",
+    "question": "A family of curves has <b>3 arbitrary constants</b>. The differential equation formed by eliminating them has order:",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "answer": "3",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Order of the resulting DE = number of arbitrary constants eliminated."
+  },
+  {
+    "id": "diff_eq_qn_009",
+    "question": "In Bernoulli's equation &nbsp; dy/dx + P(x)·y = Q(x)·y<sup>n</sup>, &nbsp; the substitution that reduces it to a linear equation is:",
+    "options": [
+      "z = y^{1-n}",
+      "z = y^{n}",
+      "z = y^{n+1}",
+      "z = y^{-1}"
+    ],
+    "answer": "z = y^{1-n}",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "After dividing by y^n, the term y^{−n} dy/dx becomes (1/(1−n)) dz/dx."
+  },
+  {
+    "id": "diff_eq_qn_010",
+    "question": "For the linear equation &nbsp; dx/dy + R(y)·x = S(y), &nbsp; which statement correctly gives <b>both</b> the integrating factor and the general solution structure?",
+    "options": [
+      "\\text{IF} = e^{\\int R\\,dy};\\quad x\\cdot\\text{IF} = \\int S\\cdot\\text{IF}\\,dy + C",
+      "\\text{IF} = e^{\\int S\\,dy};\\quad x\\cdot\\text{IF} = \\int R\\cdot\\text{IF}\\,dy + C",
+      "\\text{IF} = e^{-\\int R\\,dy};\\quad x\\cdot\\text{IF} = \\int S\\cdot\\text{IF}\\,dy + C",
+      "\\text{IF} = e^{\\int R\\,dy};\\quad y\\cdot\\text{IF} = \\int S\\cdot\\text{IF}\\,dy + C"
+    ],
+    "answer": "\\text{IF} = e^{\\int R\\,dy};\\quad x\\cdot\\text{IF} = \\int S\\cdot\\text{IF}\\,dy + C",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_011",
+    "question": "The degree of &nbsp; (d³y/dx³)² + 3(d²y/dx²)³ + y = 0 &nbsp; is:",
+    "options": [
+      "2",
+      "3",
+      "1",
+      "6"
+    ],
+    "answer": "2",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Degree = exponent of the <i>highest-order</i> derivative, which is d³y/dx³ here, raised to power 2."
+  },
+  {
+    "id": "diff_eq_qn_012",
+    "question": "A particular solution is obtained from the general solution by:",
+    "options": [
+      "\\text{Assigning specific numerical values to the arbitrary constants}",
+      "\\text{Differentiating the general solution once more}",
+      "\\text{Setting all arbitrary constants equal to zero}",
+      "\\text{Replacing y with dy/dx}"
+    ],
+    "answer": "\\text{Assigning specific numerical values to the arbitrary constants}",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_013",
+    "question": "Which of the following is <b>directly</b> in variable-separable form?",
+    "options": [
+      "\\dfrac{dy}{dx} = \\dfrac{x^2}{y^3}",
+      "\\dfrac{dy}{dx} = x + y",
+      "\\dfrac{dy}{dx} = \\dfrac{x + y}{x - y}",
+      "\\dfrac{dy}{dx} = \\dfrac{y^2 + x}{x}"
+    ],
+    "answer": "\\dfrac{dy}{dx} = \\dfrac{x^2}{y^3}",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_014",
+    "question": "A function f(x, y) is homogeneous of degree <b>n</b> if and only if:",
+    "options": [
+      "f(\\lambda x,\\,\\lambda y) = \\lambda^n\\,f(x,y)",
+      "f(\\lambda x,\\,\\lambda y) = n\\,f(x,y)",
+      "f(\\lambda x,\\,\\lambda y) = \\lambda\\,f(x,y)",
+      "f(x,y) = x^n + y^n"
+    ],
+    "answer": "f(\\lambda x,\\,\\lambda y) = \\lambda^n\\,f(x,y)",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_015",
+    "question": "After substituting z = ax + by + c in &nbsp; dy/dx = f(ax + by + c), &nbsp; the separated equation in z and x is:",
+    "options": [
+      "\\dfrac{dz}{a + b\\,f(z)} = dx",
+      "\\dfrac{dz}{f(z)} = dx",
+      "\\dfrac{dz}{b\\,f(z)} = dx",
+      "b\\,dz = f(z)\\,dx"
+    ],
+    "answer": "\\dfrac{dz}{a + b\\,f(z)} = dx",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_016",
+    "question": "The general solution of &nbsp; dy/dx + Py = Q &nbsp; (where μ = e^∫P dx is the IF) can be written as:",
+    "options": [
+      "y\\,\\mu = \\int Q\\,\\mu\\,dx + C",
+      "y = \\int Q\\,\\mu\\,dx + C",
+      "y\\,\\mu = \\int P\\,\\mu\\,dx + C",
+      "\\dfrac{y}{\\mu} = \\int Q\\,\\mu\\,dx + C"
+    ],
+    "answer": "y\\,\\mu = \\int Q\\,\\mu\\,dx + C",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_017",
+    "question": "After substituting z = y<sup>1−n</sup> in Bernoulli's equation &nbsp; dy/dx + Py = Qy<sup>n</sup>, &nbsp; the reduced linear equation in z is:",
+    "options": [
+      "\\dfrac{dz}{dx} + (1-n)\\,P\\,z = (1-n)\\,Q",
+      "\\dfrac{dz}{dx} + n\\,P\\,z = n\\,Q",
+      "\\dfrac{dz}{dx} - (1-n)\\,P\\,z = (1-n)\\,Q",
+      "\\dfrac{dz}{dx} + P\\,z = Q"
+    ],
+    "answer": "\\dfrac{dz}{dx} + (1-n)\\,P\\,z = (1-n)\\,Q",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_018",
+    "question": "To find the orthogonal trajectories of a family of curves, the term &nbsp; dy/dx &nbsp; in the family's differential equation is replaced by:",
+    "options": [
+      "-\\dfrac{dx}{dy}",
+      "\\dfrac{dx}{dy}",
+      "-\\dfrac{dy}{dx}",
+      "\\dfrac{1}{dy/dx}"
+    ],
+    "answer": "-\\dfrac{dx}{dy}",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Orthogonal means slopes are negative reciprocals: m₁·m₂ = −1."
+  },
+  {
+    "id": "diff_eq_qn_019",
+    "question": "Which exact differential identity is correct?",
+    "options": [
+      "d\\!\\left(\\dfrac{y}{x}\\right) = \\dfrac{x\\,dy - y\\,dx}{x^2}",
+      "d\\!\\left(\\dfrac{y}{x}\\right) = \\dfrac{y\\,dx - x\\,dy}{x^2}",
+      "d(xy) = x\\,dx + y\\,dy",
+      "d\\!\\left(\\dfrac{y}{x}\\right) = \\dfrac{x\\,dy + y\\,dx}{x^2}"
+    ],
+    "answer": "d\\!\\left(\\dfrac{y}{x}\\right) = \\dfrac{x\\,dy - y\\,dx}{x^2}",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_020",
+    "question": "Which pair of exact-differential identities is <b>entirely</b> correct?",
+    "options": [
+      "d\\!\\left(\\tan^{-1}\\!\\dfrac{y}{x}\\right)=\\dfrac{x\\,dy-y\\,dx}{x^2+y^2} \\;\\;\\text{and}\\;\\; d(\\ln xy)=\\dfrac{x\\,dy+y\\,dx}{xy}",
+      "d\\!\\left(\\tan^{-1}\\!\\dfrac{y}{x}\\right)=\\dfrac{y\\,dx-x\\,dy}{x^2+y^2} \\;\\;\\text{and}\\;\\; d(\\ln xy)=\\dfrac{x\\,dy+y\\,dx}{xy}",
+      "d\\!\\left(\\tan^{-1}\\!\\dfrac{y}{x}\\right)=\\dfrac{x\\,dy-y\\,dx}{x^2+y^2} \\;\\;\\text{and}\\;\\; d(\\ln xy)=\\dfrac{x\\,dy-y\\,dx}{xy}",
+      "d\\!\\left(\\tan^{-1}\\!\\dfrac{y}{x}\\right)=\\dfrac{x\\,dy+y\\,dx}{x^2+y^2} \\;\\;\\text{and}\\;\\; d(\\ln xy)=\\dfrac{x\\,dy+y\\,dx}{xy}"
+    ],
+    "answer": "d\\!\\left(\\tan^{-1}\\!\\dfrac{y}{x}\\right)=\\dfrac{x\\,dy-y\\,dx}{x^2+y^2} \\;\\;\\text{and}\\;\\; d(\\ln xy)=\\dfrac{x\\,dy+y\\,dx}{xy}",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_021",
+    "question": "Which statement about linear differential equations is <b>always</b> true?",
+    "options": [
+      "\\text{A linear DE is always of the first degree, but a first-degree DE need not be linear.}",
+      "\\text{Every first-degree DE is linear.}",
+      "\\text{A linear DE can have products of }y\\text{ and }y'.",
+      "\\text{A linear DE can be of degree 2 or higher.}"
+    ],
+    "answer": "\\text{A linear DE is always of the first degree, but a first-degree DE need not be linear.}",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_022",
+    "question": "The equation &nbsp; dy/dx = (a₁x + b₁y + c₁)/(a₂x + b₂y + c₂) &nbsp; is <b>directly</b> homogeneous (no translation needed) when:",
+    "options": [
+      "c_1 = c_2 = 0",
+      "a_1 b_2 = a_2 b_1",
+      "c_1 = c_2",
+      "a_1 = a_2 \\text{ and } b_1 = b_2"
+    ],
+    "answer": "c_1 = c_2 = 0",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_023",
+    "question": "For the reducible-to-homogeneous form &nbsp; dy/dx = (a₁x+b₁y+c₁)/(a₂x+b₂y+c₂), &nbsp; the constants h and k in the substitution x = X+h, y = Y+k are found by solving:",
+    "options": [
+      "a_1 h + b_1 k + c_1 = 0 \\;\\;\\text{and}\\;\\; a_2 h + b_2 k + c_2 = 0",
+      "a_1 h + b_1 k = 0 \\;\\;\\text{and}\\;\\; a_2 h + b_2 k = 0",
+      "h = -c_1/a_1 \\;\\;\\text{and}\\;\\; k = -c_2/b_2",
+      "a_1 h = a_2 k \\;\\;\\text{and}\\;\\; b_1 h = b_2 k"
+    ],
+    "answer": "a_1 h + b_1 k + c_1 = 0 \\;\\;\\text{and}\\;\\; a_2 h + b_2 k + c_2 = 0",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_024",
+    "question": "In the equation &nbsp; f′(y)·dy/dx + P(x)·f(y) = Q(x), &nbsp; the substitution that reduces it to a linear DE is:",
+    "options": [
+      "u = f(y)",
+      "u = f'(y)",
+      "u = \\dfrac{1}{f(y)}",
+      "u = y\\,f(y)"
+    ],
+    "answer": "u = f(y)",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "After this substitution du/dx = f'(y)·dy/dx, so the equation becomes du/dx + Pu = Q directly."
+  },
+  {
+    "id": "diff_eq_qn_025",
+    "question": "Which exact differential equals &nbsp; d(x/y)?",
+    "options": [
+      "\\dfrac{y\\,dx - x\\,dy}{y^2}",
+      "\\dfrac{x\\,dy - y\\,dx}{y^2}",
+      "\\dfrac{y\\,dx + x\\,dy}{y^2}",
+      "\\dfrac{x\\,dx - y\\,dy}{y^2}"
+    ],
+    "answer": "\\dfrac{y\\,dx - x\\,dy}{y^2}",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_026",
+    "question": "For a Bernoulli equation with n = 1, &nbsp; dy/dx + P(x)·y = Q(x)·y, &nbsp; the equation simplifies to:",
+    "options": [
+      "\\dfrac{dy}{dx} + (P-Q)\\,y = 0, \\text{ which is already linear}",
+      "\\text{A homogeneous equation requiring substitution }y = vx",
+      "\\text{An exact equation requiring an integrating factor in }y",
+      "\\text{A variable-separable equation only when }P = Q"
+    ],
+    "answer": "\\dfrac{dy}{dx} + (P-Q)\\,y = 0, \\text{ which is already linear}",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "This is why Bernoulli's substitution is defined only for n ≠ 0, 1."
+  },
+  {
+    "id": "diff_eq_qn_027",
+    "question": "The exact differential &nbsp; d(e<sup>x</sup>/y) &nbsp; equals:",
+    "options": [
+      "\\dfrac{y\\,e^x\\,dx - e^x\\,dy}{y^2}",
+      "\\dfrac{e^x\\,dy - y\\,e^x\\,dx}{y^2}",
+      "\\dfrac{y\\,e^x\\,dx + e^x\\,dy}{y^2}",
+      "\\dfrac{e^x\\,(dx + dy)}{y^2}"
+    ],
+    "answer": "\\dfrac{y\\,e^x\\,dx - e^x\\,dy}{y^2}",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_028",
+    "question": "A curve, which cuts <b>every member</b> of a given family of curves at right angles, is called:",
+    "options": [
+      "\\text{Orthogonal trajectory of the family}",
+      "\\text{Envelope of the family}",
+      "\\text{Isogonal trajectory of the family}",
+      "\\text{Polar of the family}"
+    ],
+    "answer": "\\text{Orthogonal trajectory of the family}",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_029",
+    "question": "Which of the following is <b>not</b> a valid standard form for a first-order first-degree DE covered in this chapter?",
+    "options": [
+      "\\text{Clairaut's equation: } y = px + f(p)",
+      "\\text{Variable separable: } f(x)\\,dx = g(y)\\,dy",
+      "\\text{Homogeneous: } dy/dx = F(y/x)",
+      "\\text{Linear: } dy/dx + Py = Q"
+    ],
+    "answer": "\\text{Clairaut's equation: } y = px + f(p)",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "diff_eq_qn_030",
+    "question": "The equation &nbsp; sin y · dy/dx + x·cos y = x &nbsp; is reducible to linear form. Identify the correct substitution <b>and</b> the resulting linear equation in one step:",
+    "options": [
+      "v = \\cos y \\;\\Rightarrow\\; \\dfrac{dv}{dx} - xv = -x",
+      "v = \\sin y \\;\\Rightarrow\\; \\dfrac{dv}{dx} + xv = x",
+      "v = \\cos y \\;\\Rightarrow\\; \\dfrac{dv}{dx} + xv = x",
+      "v = \\sin y \\;\\Rightarrow\\; \\dfrac{dv}{dx} - xv = -x"
+    ],
+    "answer": "v = \\cos y \\;\\Rightarrow\\; \\dfrac{dv}{dx} - xv = -x",
+    "tags": {
+      "chapter": "Differential Equations",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  }
+]

@@ -313,13 +313,32 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
         ],
       },
       'Chemistry': {
-        '11': ['Chemical Equilibrium'], // Add more chapters here
-        '12': ['Solid State','Electrochemistry','Solutions'],          // Add more chapters here
+        '11': [
+          'Basic Concepts of Chemistry', 'Atomic Structure', 'Classification of Elements',
+          'Chemical Bonding', 'Thermodynamics Chem', 'Chemical Equilibrium',
+          'Redox Reactions', 'General Organic Chemistry', 'Hydrocarbons',
+          'P Block 13 and 14'
+        ],
+        '12': [
+          'Solid State', 'Solutions', 'Electrochemistry', 'P Block 15 to 18',
+          'D and F Block', 'Coordination Compounds', 'Haloalkanes and Haloarenes',
+          'Alcohols Phenols and Ethers', 'Aldehydes and Ketones', 'Carboxylic Acids',
+          'Amines', 'Biomolecules', 'Practical Chemistry'
+        ]
       },
       'Maths': {
-        '11': ['Ellipse','Parabola'],              // Add more chapters here
-        '12': ['3D Geometry','Definite Integrals','Indefinite Integrals', 'Probability'],          // Add more chapters here
-      },
+        '11': [
+           'Trigonometry', 'Quadratic Equations',
+          'Complex Numbers', 'Permutations and Combinations', 'Binomial Theorem',
+          'Sequence and Series', 'Straight Lines', 'Circles', 'Parabola',
+          'Ellipse', 'Hyperbola', 'Limits', 'Statistics'
+        ],
+        '12': [
+          'Functions', 'Matrices', 'Determinants', 'Indefinite Integrals',
+          'Definite Integrals', '3D Geometry', 'Probability','Sets and Relations','Inverse Trigonometric Functions',
+          'Differentiation','Differential Equations','Application of Derivatives', 'Area under Curves'
+        ]
+      }
     };
 
     if (widget.selectedChapter == 'full11' ||

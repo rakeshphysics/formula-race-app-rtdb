@@ -1,0 +1,542 @@
+[
+  {
+    "id": "app_deriv_qn_001",
+    "question": "dy/dx is <b>positive</b> when:",
+    "options": [
+      "y \\text{ increases as } x \\text{ increases}",
+      "y \\text{ decreases as } x \\text{ increases}",
+      "y \\text{ is constant}",
+      "x \\text{ increases as } y \\text{ decreases}"
+    ],
+    "answer": "y \\text{ increases as } x \\text{ increases}",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_002",
+    "question": "The <b>marginal cost</b> MC when the cost function is C(x) is:",
+    "options": [
+      "\\dfrac{d}{dx}\\{C(x)\\}",
+      "\\dfrac{C(x)}{x}",
+      "\\int C(x)\\,dx",
+      "C(x) - C(x-1)"
+    ],
+    "answer": "\\dfrac{d}{dx}\\{C(x)\\}",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_003",
+    "question": "The slope of the <b>normal</b> to a curve y = f(x) at a point P is:",
+    "options": [
+      "-\\dfrac{dx}{dy}\\bigg|_P",
+      "\\dfrac{dy}{dx}\\bigg|_P",
+      "-\\dfrac{dy}{dx}\\bigg|_P",
+      "\\dfrac{dx}{dy}\\bigg|_P"
+    ],
+    "answer": "-\\dfrac{dx}{dy}\\bigg|_P",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Slope of normal = −1/(slope of tangent) = −dx/dy."
+  },
+  {
+    "id": "app_deriv_qn_004",
+    "question": "If dy/dx = 0 at a point P on y = f(x), then the <b>tangent</b> at P is:",
+    "options": [
+      "\\text{Parallel to the X-axis}",
+      "\\text{Parallel to the Y-axis}",
+      "\\text{Perpendicular to the X-axis}",
+      "\\text{At 45° to the X-axis}"
+    ],
+    "answer": "\\text{Parallel to the X-axis}",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_005",
+    "question": "The equation of the <b>tangent</b> to the curve y = f(x) at the point (x₀, y₀) is:",
+    "options": [
+      "Y - y_0 = \\left.\\dfrac{dy}{dx}\\right|_{x_0}(X - x_0)",
+      "Y - y_0 = -\\left.\\dfrac{dx}{dy}\\right|_{x_0}(X - x_0)",
+      "Y + y_0 = \\left.\\dfrac{dy}{dx}\\right|_{x_0}(X + x_0)",
+      "Y - y_0 = \\left.\\dfrac{dx}{dy}\\right|_{x_0}(X - x_0)"
+    ],
+    "answer": "Y - y_0 = \\left.\\dfrac{dy}{dx}\\right|_{x_0}(X - x_0)",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_006",
+    "question": "The <b>length of the subtangent</b> AS at a point P on y = f(x) is:",
+    "options": [
+      "\\dfrac{y}{dy/dx}",
+      "y\\,\\dfrac{dy}{dx}",
+      "y\\sqrt{1+(dy/dx)^2}",
+      "\\dfrac{dy/dx}{y}"
+    ],
+    "answer": "\\dfrac{y}{dy/dx}",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Subtangent = y·cotθ = y/(dy/dx). Easy memory: 'sub' is short, divide by slope."
+  },
+  {
+    "id": "app_deriv_qn_007",
+    "question": "The <b>length of the subnormal</b> BS at a point P on y = f(x) is:",
+    "options": [
+      "y\\,\\dfrac{dy}{dx}",
+      "\\dfrac{y}{dy/dx}",
+      "y\\sqrt{1+(dy/dx)^2}",
+      "\\dfrac{1}{y}\\cdot\\dfrac{dy}{dx}"
+    ],
+    "answer": "y\\,\\dfrac{dy}{dx}",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Subnormal = y·tanθ = y·(dy/dx). 'Sub-normal is slope-times-y'."
+  },
+  {
+    "id": "app_deriv_qn_008",
+    "question": "Two curves are <b>orthogonal</b> at their intersection point when:",
+    "options": [
+      "m_1 \\cdot m_2 = -1",
+      "m_1 = m_2",
+      "m_1 + m_2 = 0",
+      "m_1 \\cdot m_2 = 1"
+    ],
+    "answer": "m_1 \\cdot m_2 = -1",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_009",
+    "question": "The <b>Rolle's theorem</b> guarantees that f′(c) = 0 for some c ∈ (a, b) provided:",
+    "options": [
+      "f \\text{ is continuous on }[a,b],\\text{ differentiable on }(a,b),\\text{ and }f(a)=f(b)",
+      "f \\text{ is differentiable on }[a,b]\\text{ and }f(a)=f(b)",
+      "f \\text{ is continuous on }(a,b)\\text{ and }f(a)=f(b)",
+      "f(a)=f(b)=0"
+    ],
+    "answer": "f \\text{ is continuous on }[a,b],\\text{ differentiable on }(a,b),\\text{ and }f(a)=f(b)",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_010",
+    "question": "For f′(a) = f″(a) = 0 but f‴(a) ≠ 0, the second-derivative test classifies x = a as a point of <b>local maximum or minimum</b>. Which statement is correct?",
+    "options": [
+      "x=a \\text{ is a point of inflection, neither max nor min}",
+      "x=a \\text{ is a local maximum since }f'''(a)\\neq 0",
+      "x=a \\text{ is a local minimum since }f'''(a)\\neq 0",
+      "x=a \\text{ is a local maximum if }f'''(a)<0,\\text{ minimum if }f'''(a)>0"
+    ],
+    "answer": "x=a \\text{ is a point of inflection, neither max nor min}",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_011",
+    "question": "The rate of change of y with respect to x when both vary with a third variable t is:",
+    "options": [
+      "\\dfrac{dy/dt}{dx/dt}",
+      "\\dfrac{dx/dt}{dy/dt}",
+      "\\dfrac{dy}{dt} \\cdot \\dfrac{dy}{dt}",
+      "\\dfrac{d^2y}{dt^2}"
+    ],
+    "answer": "\\dfrac{dy/dt}{dx/dt}",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_012",
+    "question": "If dy/dx = ∞ at a point P, the <b>normal</b> at P is:",
+    "options": [
+      "\\text{Parallel to the X-axis}",
+      "\\text{Parallel to the Y-axis}",
+      "\\text{At 45° to both axes}",
+      "\\text{Perpendicular to the X-axis}"
+    ],
+    "answer": "\\text{Parallel to the X-axis}",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "When the tangent is vertical (dy/dx = ∞), the normal is horizontal — parallel to X-axis."
+  },
+  {
+    "id": "app_deriv_qn_013",
+    "question": "The <b>length of the tangent</b> PA at a point P(x, y) on the curve is:",
+    "options": [
+      "y\\sqrt{1+(dx/dy)^2}",
+      "y\\sqrt{1+(dy/dx)^2}",
+      "\\dfrac{y}{dy/dx}",
+      "y\\,\\dfrac{dy}{dx}"
+    ],
+    "answer": "y\\sqrt{1+(dx/dy)^2}",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_014",
+    "question": "The <b>algebraic interpretation</b> of Rolle's theorem states that:",
+    "options": [
+      "\\text{Between any two roots of }f(x)\\text{ there is always a root of }f'(x)",
+      "\\text{Between any two roots of }f'(x)\\text{ there is always a root of }f(x)",
+      "f'(x)=0\\text{ has exactly one root between two roots of }f(x)",
+      "f(x)\\text{ and }f'(x)\\text{ share at least one common root}"
+    ],
+    "answer": "\\text{Between any two roots of }f(x)\\text{ there is always a root of }f'(x)",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_015",
+    "question": "The <b>LMVT</b> states that for f continuous on [a,b] and differentiable on (a,b), there exists c ∈ (a, b) such that:",
+    "options": [
+      "f'(c) = \\dfrac{f(b)-f(a)}{b-a}",
+      "f'(c) = \\dfrac{f(a)+f(b)}{b-a}",
+      "f'(c) = \\dfrac{f(a)-f(b)}{a-b}",
+      "f'(c) = f(b) - f(a)"
+    ],
+    "answer": "f'(c) = \\dfrac{f(b)-f(a)}{b-a}",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_016",
+    "question": "If f′(x) > 0 for all x ∈ (a, b) <b>except at a finite number of points</b> where f′(x) = 0, then f(x) is:",
+    "options": [
+      "\\text{Increasing (but not strictly increasing) on }(a,b)",
+      "\\text{Strictly increasing on }(a,b)",
+      "\\text{Strictly decreasing on }(a,b)",
+      "\\text{Neither increasing nor decreasing on }(a,b)"
+    ],
+    "answer": "\\text{Increasing (but not strictly increasing) on }(a,b)",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_017",
+    "question": "If f(x) and g(x) are both <b>strictly increasing</b> on [a, b], then g(f(x)) is:",
+    "options": [
+      "\\text{Strictly increasing on }[a,b]",
+      "\\text{Strictly decreasing on }[a,b]",
+      "\\text{Neither increasing nor decreasing}",
+      "\\text{Constant on }[a,b]"
+    ],
+    "answer": "\\text{Strictly increasing on }[a,b]",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Same type + same type = increasing; different types (one ↑ one ↓) = decreasing."
+  },
+  {
+    "id": "app_deriv_qn_018",
+    "question": "The <b>first derivative test</b> says x = a is a point of <b>local minimum</b> when:",
+    "options": [
+      "f'(a)=0,\\; f'(x)<0 \\text{ just left of }a,\\; f'(x)>0 \\text{ just right of }a",
+      "f'(a)=0,\\; f'(x)>0 \\text{ just left of }a,\\; f'(x)<0 \\text{ just right of }a",
+      "f'(a)=0 \\text{ and } f''(a)<0",
+      "f'(a)=0 \\text{ and } f'(x)\\text{ does not change sign}"
+    ],
+    "answer": "f'(a)=0,\\; f'(x)<0 \\text{ just left of }a,\\; f'(x)>0 \\text{ just right of }a",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_019",
+    "question": "The <b>percentage error</b> in y due to error Δx in x is:",
+    "options": [
+      "\\dfrac{\\Delta y}{y} \\times 100",
+      "\\Delta y \\times 100",
+      "\\dfrac{dy}{dx} \\times 100",
+      "\\dfrac{\\Delta x}{x} \\times 100"
+    ],
+    "answer": "\\dfrac{\\Delta y}{y} \\times 100",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_020",
+    "question": "To find the global maximum of f(x) on [a, b], you must evaluate f at:",
+    "options": [
+      "\\text{All critical points of }f\\text{ in }[a,b]\\text{ AND both endpoints }a\\text{ and }b",
+      "\\text{Only the critical points of }f\\text{ in }(a,b)",
+      "\\text{Only the endpoints }a\\text{ and }b",
+      "\\text{The single point where }f''(x)=0"
+    ],
+    "answer": "\\text{All critical points of }f\\text{ in }[a,b]\\text{ AND both endpoints }a\\text{ and }b",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_021",
+    "question": "The approximation formula for Δy in terms of the derivative is:",
+    "options": [
+      "\\Delta y \\approx \\dfrac{dy}{dx}\\cdot\\Delta x",
+      "\\Delta y \\approx \\dfrac{\\Delta x}{dy/dx}",
+      "\\Delta y \\approx \\dfrac{d^2y}{dx^2}\\cdot(\\Delta x)^2",
+      "\\Delta y \\approx y\\cdot\\Delta x"
+    ],
+    "answer": "\\Delta y \\approx \\dfrac{dy}{dx}\\cdot\\Delta x",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_022",
+    "question": "A function f(x) = |x| has a <b>local minimum</b> at x = 0 even though:",
+    "options": [
+      "f'(0)\\text{ does not exist}",
+      "f'(0) = 0",
+      "f''(0) > 0",
+      "f(0) = 0"
+    ],
+    "answer": "f'(0)\\text{ does not exist}",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "A function can attain an extreme value at a point where it is not differentiable."
+  },
+  {
+    "id": "app_deriv_qn_023",
+    "question": "A strictly monotonic function is always:",
+    "options": [
+      "\\text{One-one (injective)}",
+      "\\text{Onto (surjective)}",
+      "\\text{Bounded}",
+      "\\text{Differentiable everywhere}"
+    ],
+    "answer": "\\text{One-one (injective)}",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_024",
+    "question": "The <b>second derivative test</b> concludes x = a is a <b>local maximum</b> when:",
+    "options": [
+      "f'(a) = 0 \\text{ and } f''(a) < 0",
+      "f'(a) = 0 \\text{ and } f''(a) > 0",
+      "f'(a) < 0 \\text{ and } f''(a) = 0",
+      "f'(a) = 0 \\text{ and } f''(a) = 0"
+    ],
+    "answer": "f'(a) = 0 \\text{ and } f''(a) < 0",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Negative second derivative = curve is concave down = maximum. Positive = concave up = minimum."
+  },
+  {
+    "id": "app_deriv_qn_025",
+    "question": "The <b>angle of intersection</b> θ of two curves with slopes m₁ and m₂ satisfies:",
+    "options": [
+      "\\tan\\theta = \\left|\\dfrac{m_1 - m_2}{1 + m_1 m_2}\\right|",
+      "\\tan\\theta = m_1 - m_2",
+      "\\tan\\theta = \\dfrac{m_1 + m_2}{1 - m_1 m_2}",
+      "\\tan\\theta = m_1 \\cdot m_2"
+    ],
+    "answer": "\\tan\\theta = \\left|\\dfrac{m_1 - m_2}{1 + m_1 m_2}\\right|",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_026",
+    "question": "If f(x) → ∞ as x → a or x → b, and f′(x) = 0 at exactly <b>one</b> point c ∈ (a, b), then f(c) is:",
+    "options": [
+      "\\text{Necessarily the minimum (least value) on }(a,b)",
+      "\\text{Necessarily the maximum (greatest value) on }(a,b)",
+      "\\text{A point of inflection}",
+      "\\text{Either a maximum or a minimum — cannot be determined}"
+    ],
+    "answer": "\\text{Necessarily the minimum (least value) on }(a,b)",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_027",
+    "question": "Maxima and minima of a function <b>alternate</b>. This means:",
+    "options": [
+      "\\text{Between any two maxima there is at least one minimum, and vice versa}",
+      "\\text{A function cannot have two maxima in the same interval}",
+      "\\text{Every critical point is either a max or a min}",
+      "\\text{The number of maxima equals the number of minima}"
+    ],
+    "answer": "\\text{Between any two maxima there is at least one minimum, and vice versa}",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_028",
+    "question": "The <b>nth derivative test</b>: if f′(a) = f″(a) = … = f^(n−1)(a) = 0 and f^(n)(a) ≠ 0, then x = a is a local minimum when:",
+    "options": [
+      "n \\text{ is even and } f^{(n)}(a) > 0",
+      "n \\text{ is even and } f^{(n)}(a) < 0",
+      "n \\text{ is odd and } f^{(n)}(a) > 0",
+      "n \\text{ is odd and } f^{(n)}(a) < 0"
+    ],
+    "answer": "n \\text{ is even and } f^{(n)}(a) > 0",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_029",
+    "question": "The <b>length of the normal</b> PB at a point P(x, y) on the curve y = f(x) is:",
+    "options": [
+      "y\\sqrt{1+(dy/dx)^2}",
+      "y\\sqrt{1+(dx/dy)^2}",
+      "\\dfrac{y}{dy/dx}",
+      "y\\,\\dfrac{dy}{dx}"
+    ],
+    "answer": "y\\sqrt{1+(dy/dx)^2}",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "app_deriv_qn_030",
+    "question": "The <b>geometric meaning of LMVT</b> is that for any chord of the curve y = f(x), there exists a point on the curve where:",
+    "options": [
+      "\\text{The tangent is parallel to that chord}",
+      "\\text{The normal is parallel to that chord}",
+      "\\text{The tangent is perpendicular to that chord}",
+      "\\text{The curve crosses the chord}"
+    ],
+    "answer": "\\text{The tangent is parallel to that chord}",
+    "tags": {
+      "chapter": "Application of Derivatives",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  }
+]

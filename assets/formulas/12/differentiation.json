@@ -1,0 +1,542 @@
+[
+  {
+    "id": "differentiation_qn_001",
+    "question": "d/dx(xⁿ) equals:",
+    "options": [
+      "nx^{n+1}",
+      "x^{n-1}",
+      "nx^{n-1}",
+      "(n-1)x^n"
+    ],
+    "answer": "nx^{n-1}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_002",
+    "question": "d/dx(aˣ) equals:",
+    "options": [
+      "a^x",
+      "xa^{x-1}",
+      "a^x \\log_e a",
+      "a^x \\log_a e"
+    ],
+    "answer": "a^x \\log_e a",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_003",
+    "question": "d/dx(sin⁻¹x) equals:",
+    "options": [
+      "\\dfrac{-1}{\\sqrt{1-x^2}}",
+      "\\dfrac{1}{1+x^2}",
+      "\\dfrac{1}{\\sqrt{1+x^2}}",
+      "\\dfrac{1}{\\sqrt{1-x^2}}"
+    ],
+    "answer": "\\dfrac{1}{\\sqrt{1-x^2}}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_004",
+    "question": "d/dx(tan⁻¹x) equals:",
+    "options": [
+      "\\dfrac{-1}{1+x^2}",
+      "\\dfrac{1}{\\sqrt{1-x^2}}",
+      "\\dfrac{1}{1-x^2}",
+      "\\dfrac{1}{1+x^2}"
+    ],
+    "answer": "\\dfrac{1}{1+x^2}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_005",
+    "question": "The product rule for differentiation of u·v is:",
+    "options": [
+      "u'v'",
+      "u'v + uv'",
+      "uv' - u'v",
+      "\\dfrac{u'v - uv'}{v^2}"
+    ],
+    "answer": "u'v + uv'",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_006",
+    "question": "The quotient rule for d/dx(u/v) is:",
+    "options": [
+      "\\dfrac{u'v + uv'}{v^2}",
+      "\\dfrac{u'v - uv'}{v^2}",
+      "\\dfrac{uv' - u'v}{v^2}",
+      "\\dfrac{u'}{v'}"
+    ],
+    "answer": "\\dfrac{u'v - uv'}{v^2}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Numerator: derivative of top × bottom − top × derivative of bottom. Order matters — getting it backwards is the most common error."
+  },
+  {
+    "id": "differentiation_qn_007",
+    "question": "For parametric equations x = f(t) and y = g(t), dy/dx equals:",
+    "options": [
+      "\\dfrac{dx/dt}{dy/dt}",
+      "\\dfrac{dy/dt}{dx/dt}",
+      "\\dfrac{dy}{dt} \\cdot \\dfrac{dx}{dt}",
+      "\\dfrac{d^2y}{dt^2}"
+    ],
+    "answer": "\\dfrac{dy/dt}{dx/dt}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_008",
+    "question": "The standard substitution for √(a²−x²) is:",
+    "options": [
+      "x = a \\tan\\theta",
+      "x = a \\sec\\theta",
+      "x = a \\sin\\theta",
+      "x = a \\cosh\\theta"
+    ],
+    "answer": "x = a \\sin\\theta",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "√(a²−x²): use sinθ. √(a²+x²): use tanθ. √(x²−a²): use secθ."
+  },
+  {
+    "id": "differentiation_qn_009",
+    "question": "d/dx[f(ax+b)] equals:",
+    "options": [
+      "f'(ax+b)",
+      "a \\cdot f'(ax+b)",
+      "a^2 \\cdot f'(ax+b)",
+      "\\dfrac{1}{a} f'(ax+b)"
+    ],
+    "answer": "a \\cdot f'(ax+b)",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_010",
+    "question": "Euler's theorem for a homogeneous function f(x,y) of degree n states:",
+    "options": [
+      "x\\dfrac{\\partial f}{\\partial x} - y\\dfrac{\\partial f}{\\partial y} = nf",
+      "\\dfrac{\\partial f}{\\partial x} + \\dfrac{\\partial f}{\\partial y} = nf",
+      "x\\dfrac{\\partial f}{\\partial x} + y\\dfrac{\\partial f}{\\partial y} = nf",
+      "x\\dfrac{\\partial^2 f}{\\partial x^2} + y\\dfrac{\\partial^2 f}{\\partial y^2} = nf"
+    ],
+    "answer": "x\\dfrac{\\partial f}{\\partial x} + y\\dfrac{\\partial f}{\\partial y} = nf",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_011",
+    "question": "d/dx(sec⁻¹x) equals:",
+    "options": [
+      "\\dfrac{1}{|x|\\sqrt{x^2+1}}",
+      "\\dfrac{-1}{|x|\\sqrt{x^2-1}}",
+      "\\dfrac{1}{x\\sqrt{x^2-1}}",
+      "\\dfrac{1}{|x|\\sqrt{x^2-1}}"
+    ],
+    "answer": "\\dfrac{1}{|x|\\sqrt{x^2-1}}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "|x| (not just x) in the denominator — the absolute value is essential for sec⁻¹ and cosec⁻¹."
+  },
+  {
+    "id": "differentiation_qn_012",
+    "question": "d/dx(cos⁻¹x) equals:",
+    "options": [
+      "\\dfrac{1}{\\sqrt{1-x^2}}",
+      "\\dfrac{-1}{1+x^2}",
+      "\\dfrac{-1}{\\sqrt{1-x^2}}",
+      "\\dfrac{1}{\\sqrt{1+x^2}}"
+    ],
+    "answer": "\\dfrac{-1}{\\sqrt{1-x^2}}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_013",
+    "question": "d/dx(cot⁻¹x) equals:",
+    "options": [
+      "\\dfrac{1}{1+x^2}",
+      "\\dfrac{-1}{\\sqrt{1+x^2}}",
+      "\\dfrac{1}{\\sqrt{1-x^2}}",
+      "\\dfrac{-1}{1+x^2}"
+    ],
+    "answer": "\\dfrac{-1}{1+x^2}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "tan⁻¹ and cot⁻¹ differ only in sign: d/dx(tan⁻¹x) = 1/(1+x²), d/dx(cot⁻¹x) = −1/(1+x²)."
+  },
+  {
+    "id": "differentiation_qn_014",
+    "question": "For an implicit function f(x,y) = 0, dy/dx is found by:",
+    "options": [
+      "\\text{Differentiating only w.r.t. } y",
+      "\\text{Differentiating both sides w.r.t. } x \\text{ and solving for } dy/dx",
+      "\\text{Setting } dx/dy = 0",
+      "\\text{Differentiating both sides w.r.t. } y"
+    ],
+    "answer": "\\text{Differentiating both sides w.r.t. } x \\text{ and solving for } dy/dx",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_015",
+    "question": "For logarithmic differentiation of y = [f(x)]^g(x), the first step is:",
+    "options": [
+      "\\text{Differentiate directly}",
+      "\\text{Apply product rule to } g(x) \\cdot f(x)",
+      "\\text{Take log on both sides: } \\log y = g(x) \\log f(x)",
+      "\\text{Write as } e^{g(x)/f(x)}"
+    ],
+    "answer": "\\text{Take log on both sides: } \\log y = g(x) \\log f(x)",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_016",
+    "question": "The nth derivative of sin(ax + b) is:",
+    "options": [
+      "a^n \\sin\\!\\left(ax + b + \\dfrac{n\\pi}{2}\\right)",
+      "a^n \\cos\\!\\left(ax + b + \\dfrac{n\\pi}{2}\\right)",
+      "na^{n-1} \\sin(ax+b)",
+      "a^n \\sin(ax+b)"
+    ],
+    "answer": "a^n \\sin\\!\\left(ax + b + \\dfrac{n\\pi}{2}\\right)",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_017",
+    "question": "The nth derivative of eˢˣ is:",
+    "options": [
+      "e^{ax}",
+      "na^{n-1}e^{ax}",
+      "a^n e^{ax}",
+      "n! \\cdot e^{ax}"
+    ],
+    "answer": "a^n e^{ax}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_018",
+    "question": "If y = f(x) and z = g(x), then dy/dz equals:",
+    "options": [
+      "\\dfrac{dy}{dx} \\cdot \\dfrac{dz}{dx}",
+      "\\dfrac{dy}{dx} + \\dfrac{dz}{dx}",
+      "\\dfrac{dy/dx}{dz/dx}",
+      "\\dfrac{dz/dx}{dy/dx}"
+    ],
+    "answer": "\\dfrac{dy/dx}{dz/dx}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_019",
+    "question": "Which is true about d²y/dx² for parametric functions?",
+    "options": [
+      "\\dfrac{d^2y/dt^2}{d^2x/dt^2}",
+      "\\dfrac{d}{dt}\\!\\left(\\dfrac{dy}{dx}\\right) \\div \\dfrac{dx}{dt}",
+      "\\dfrac{d^2y/dt^2}{dx/dt}",
+      "\\left(\\dfrac{dy/dt}{dx/dt}\\right)^{\\!2}"
+    ],
+    "answer": "\\dfrac{d}{dt}\\!\\left(\\dfrac{dy}{dx}\\right) \\div \\dfrac{dx}{dt}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "d²y/dx² ≠ (d²y/dt²)/(d²x/dt²). First find dy/dx = (dy/dt)/(dx/dt), then differentiate that result w.r.t. t and divide by dx/dt."
+  },
+  {
+    "id": "differentiation_qn_020",
+    "question": "The nth derivative of log(ax + b) is:",
+    "options": [
+      "\\dfrac{(-1)^{n-1}(n-1)!\\cdot a^n}{(ax+b)^n}",
+      "\\dfrac{(n-1)!\\cdot a^n}{(ax+b)^n}",
+      "\\dfrac{(-1)^n n!\\cdot a}{(ax+b)^n}",
+      "\\dfrac{a^n}{(ax+b)^n}"
+    ],
+    "answer": "\\dfrac{(-1)^{n-1}(n-1)!\\cdot a^n}{(ax+b)^n}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_021",
+    "question": "d/dx(logₐx) equals:",
+    "options": [
+      "\\dfrac{1}{x}",
+      "\\dfrac{\\log_a e}{x}",
+      "\\dfrac{x}{\\log_a e}",
+      "\\dfrac{a}{x}"
+    ],
+    "answer": "\\dfrac{\\log_a e}{x}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_022",
+    "question": "The partial derivative ∂f/∂x of f(x,y) is obtained by:",
+    "options": [
+      "\\text{Differentiating w.r.t. } x \\text{, treating } x \\text{ as constant}",
+      "\\text{Differentiating w.r.t. } y \\text{, treating } x \\text{ as constant}",
+      "\\text{Differentiating w.r.t. } x \\text{, treating } y \\text{ as constant}",
+      "\\text{Differentiating w.r.t. both } x \\text{ and } y"
+    ],
+    "answer": "\\text{Differentiating w.r.t. } x \\text{, treating } y \\text{ as constant}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_023",
+    "question": "d/dx(cosec⁻¹x) equals:",
+    "options": [
+      "\\dfrac{1}{|x|\\sqrt{x^2-1}}",
+      "\\dfrac{-1}{|x|\\sqrt{x^2+1}}",
+      "\\dfrac{1}{x\\sqrt{x^2-1}}",
+      "\\dfrac{-1}{|x|\\sqrt{x^2-1}}"
+    ],
+    "answer": "\\dfrac{-1}{|x|\\sqrt{x^2-1}}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_027",
+    "question": "The standard substitution for √(x²−a²) is:",
+    "options": [
+      "x = a\\sin\\theta",
+      "x = a\\tan\\theta",
+      "x = a\\cosh\\theta",
+      "x = a\\sec\\theta"
+    ],
+    "answer": "x = a\\sec\\theta",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_025",
+    "question": "The nth derivative of eˢˣ·sin(bx + c) is:",
+    "options": [
+      "r^n e^{ax} \\sin(bx + c + n\\phi), \\text{ where } r = \\sqrt{a^2+b^2},\\, \\phi = \\tan^{-1}\\!\\dfrac{a}{b}",
+      "r^n e^{ax} \\sin(bx + c + n\\phi), \\text{ where } r = \\sqrt{a^2+b^2},\\, \\phi = \\tan^{-1}\\!\\dfrac{b}{a}",
+      "a^n e^{ax} \\sin(bx+c)",
+      "b^n e^{ax} \\cos(bx+c)"
+    ],
+    "answer": "r^n e^{ax} \\sin(bx + c + n\\phi), \\text{ where } r = \\sqrt{a^2+b^2},\\, \\phi = \\tan^{-1}\\!\\dfrac{b}{a}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "r = √(a²+b²), φ = tan⁻¹(b/a). The angle φ uses b/a (not a/b) — a common mix-up."
+  },
+  {
+    "id": "differentiation_qn_026",
+    "question": "If y = √(f(x) + √(f(x) + √(f(x) + ... ∞))), then dy/dx equals:",
+    "options": [
+      "\\dfrac{f'(x)}{2y-1}",
+      "\\dfrac{f'(x)}{y}",
+      "\\dfrac{f'(x)}{2y+1}",
+      "\\dfrac{f'(x)}{2}"
+    ],
+    "answer": "\\dfrac{f'(x)}{2y-1}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_024",
+    "question": "When differentiating a determinant with all elements as functions of x, the rule is:",
+    "options": [
+      "\\text{Differentiate all elements simultaneously}",
+      "\\text{Differentiate one row at a time, keeping others unchanged, and sum}",
+      "\\text{Take the determinant of the differentiated matrix}",
+      "\\text{Multiply the determinant by the number of rows}"
+    ],
+    "answer": "\\text{Differentiate one row at a time, keeping others unchanged, and sum}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_028",
+    "question": "The nth derivative of (ax+b)ᵐ is:",
+    "options": [
+      "\\dfrac{m!}{(m+n)!} a^n (ax+b)^{m+n}",
+      "\\dfrac{m!}{(m-n)!} a^n (ax+b)^{m-n}",
+      "m! \\cdot a^n (ax+b)^{m-n}",
+      "n! \\cdot a^n (ax+b)^{m-n}"
+    ],
+    "answer": "\\dfrac{m!}{(m-n)!} a^n (ax+b)^{m-n}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "differentiation_qn_029",
+    "question": "The notation f_xy (or ∂²f/∂y∂x) means:",
+    "options": [
+      "\\text{Differentiate first w.r.t. } y \\text{, then w.r.t. } x",
+      "\\text{Differentiate twice w.r.t. } x",
+      "\\text{Differentiate first w.r.t. } x \\text{, then w.r.t. } y",
+      "\\text{Differentiate w.r.t. } xy \\text{ simultaneously}"
+    ],
+    "answer": "\\text{Differentiate first w.r.t. } x \\text{, then w.r.t. } y",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "∂²f/∂y∂x: read right to left — differentiate x first, then y. The denominator order is the reverse of the operation order."
+  },
+  {
+    "id": "differentiation_qn_030",
+    "question": "If y = f(x)^f(x)^f(x)^... ∞, then dy/dx equals:",
+    "options": [
+      "\\dfrac{y^2 f'(x)}{f(x)(1 - y\\log f(x))}",
+      "\\dfrac{y f'(x)}{f(x)(1 - y\\log f(x))}",
+      "\\dfrac{y^2 f'(x)}{f(x)(1 + y\\log f(x))}",
+      "\\dfrac{y f'(x)}{1 - y\\log f(x)}"
+    ],
+    "answer": "\\dfrac{y^2 f'(x)}{f(x)(1 - y\\log f(x))}",
+    "tags": {
+      "chapter": "Differentiation",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  }
+]

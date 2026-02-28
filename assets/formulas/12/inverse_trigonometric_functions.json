@@ -1,0 +1,542 @@
+[
+  {
+    "id": "itf_qn_001",
+    "question": "The domain of sin⁻¹x is:",
+    "options": [
+      "\\mathbb{R}",
+      "(-1, 1)",
+      "[-1, 1]",
+      "[0, 1]"
+    ],
+    "answer": "[-1, 1]",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_002",
+    "question": "The principal value branch (range) of cos⁻¹x is:",
+    "options": [
+      "\\left(-\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}\\right)",
+      "[0, \\pi]",
+      "\\left[-\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}\\right]",
+      "(0, \\pi)"
+    ],
+    "answer": "[0, \\pi]",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_003",
+    "question": "The range of tan⁻¹x is:",
+    "options": [
+      "[0, \\pi]",
+      "\\left(-\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}\\right)",
+      "\\left[-\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}\\right]",
+      "\\mathbb{R}"
+    ],
+    "answer": "\\left(-\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}\\right)",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_004",
+    "question": "sin⁻¹x + cos⁻¹x equals:",
+    "options": [
+      "\\pi",
+      "0",
+      "\\dfrac{\\pi}{2}",
+      "1"
+    ],
+    "answer": "\\dfrac{\\pi}{2}",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_005",
+    "question": "cos⁻¹(−x) equals:",
+    "options": [
+      "-\\cos^{-1} x",
+      "\\pi + \\cos^{-1} x",
+      "\\pi - \\cos^{-1} x",
+      "\\dfrac{\\pi}{2} - \\cos^{-1} x"
+    ],
+    "answer": "\\pi - \\cos^{-1} x",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "sin⁻¹(−x) = −sin⁻¹x (odd function). cos⁻¹(−x) = π − cos⁻¹x (not odd). Same for sec⁻¹ and cot⁻¹."
+  },
+  {
+    "id": "itf_qn_006",
+    "question": "tan⁻¹(−x) equals:",
+    "options": [
+      "\\pi - \\tan^{-1} x",
+      "-\\tan^{-1} x",
+      "\\pi + \\tan^{-1} x",
+      "\\dfrac{\\pi}{2} - \\tan^{-1} x"
+    ],
+    "answer": "-\\tan^{-1} x",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_007",
+    "question": "cot⁻¹(−x) equals:",
+    "options": [
+      "-\\cot^{-1} x",
+      "\\dfrac{\\pi}{2} - \\cot^{-1} x",
+      "\\pi - \\cot^{-1} x",
+      "\\pi + \\cot^{-1} x"
+    ],
+    "answer": "\\pi - \\cot^{-1} x",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_008",
+    "question": "sin⁻¹(1/x) equals (for |x| ≥ 1):",
+    "options": [
+      "\\cos^{-1} x",
+      "\\text{cosec}^{-1} x",
+      "\\sec^{-1} x",
+      "\\cot^{-1} x"
+    ],
+    "answer": "\\text{cosec}^{-1} x",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_009",
+    "question": "tan⁻¹(1/x) for x > 0 equals:",
+    "options": [
+      "\\pi + \\cot^{-1} x",
+      "-\\cot^{-1} x",
+      "\\cot^{-1} x",
+      "\\dfrac{\\pi}{2} + \\cot^{-1} x"
+    ],
+    "answer": "\\cot^{-1} x",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "For x > 0: tan⁻¹(1/x) = cot⁻¹x. For x < 0: tan⁻¹(1/x) = π + cot⁻¹x. The sign of x matters."
+  },
+  {
+    "id": "itf_qn_010",
+    "question": "tan⁻¹x + tan⁻¹y = tan⁻¹((x+y)/(1−xy)) when:",
+    "options": [
+      "xy > 1",
+      "x > 0,\\, y > 0",
+      "xy < 1",
+      "x + y < 1"
+    ],
+    "answer": "xy < 1",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "When xy > 1 and x,y > 0: add π. When xy > 1 and x,y < 0: subtract π. The condition xy < 1 is the clean case."
+  },
+  {
+    "id": "itf_qn_011",
+    "question": "The domain of sec⁻¹x is:",
+    "options": [
+      "[-1, 1]",
+      "\\mathbb{R}",
+      "\\mathbb{R} - (-1, 1)",
+      "(1, \\infty)"
+    ],
+    "answer": "\\mathbb{R} - (-1, 1)",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_012",
+    "question": "tan⁻¹x + cot⁻¹x equals:",
+    "options": [
+      "\\pi",
+      "0",
+      "\\dfrac{\\pi}{4}",
+      "\\dfrac{\\pi}{2}"
+    ],
+    "answer": "\\dfrac{\\pi}{2}",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_013",
+    "question": "sec⁻¹x + cosec⁻¹x equals:",
+    "options": [
+      "\\pi",
+      "\\dfrac{\\pi}{4}",
+      "\\dfrac{\\pi}{2}",
+      "0"
+    ],
+    "answer": "\\dfrac{\\pi}{2}",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_014",
+    "question": "2tan⁻¹x expressed as sin⁻¹ is:",
+    "options": [
+      "\\sin^{-1}\\!\\left(\\dfrac{1-x^2}{1+x^2}\\right)",
+      "\\sin^{-1}\\!\\left(\\dfrac{2x}{1+x^2}\\right)",
+      "\\sin^{-1}\\!\\left(\\dfrac{2x}{1-x^2}\\right)",
+      "\\sin^{-1}\\!\\left(\\dfrac{x^2-1}{x^2+1}\\right)"
+    ],
+    "answer": "\\sin^{-1}\\!\\left(\\dfrac{2x}{1+x^2}\\right)",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_015",
+    "question": "2tan⁻¹x expressed as cos⁻¹ is:",
+    "options": [
+      "\\cos^{-1}\\!\\left(\\dfrac{2x}{1+x^2}\\right)",
+      "\\cos^{-1}\\!\\left(\\dfrac{1+x^2}{1-x^2}\\right)",
+      "\\cos^{-1}\\!\\left(\\dfrac{1-x^2}{1+x^2}\\right)",
+      "\\cos^{-1}\\!\\left(\\dfrac{x^2-1}{x^2+1}\\right)"
+    ],
+    "answer": "\\cos^{-1}\\!\\left(\\dfrac{1-x^2}{1+x^2}\\right)",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "Memory: 2tan⁻¹x = sin⁻¹(2x/(1+x²)) = cos⁻¹((1−x²)/(1+x²)) = tan⁻¹(2x/(1−x²)). Numerator changes: 2x, 1−x², 2x."
+  },
+  {
+    "id": "itf_qn_016",
+    "question": "3sin⁻¹x = sin⁻¹(3x − 4x³) holds for:",
+    "options": [
+      "x \\in [-1, 1]",
+      "x \\in \\left[-\\dfrac{1}{2}, \\dfrac{1}{2}\\right]",
+      "x \\in (0, 1)",
+      "x \\in \\mathbb{R}"
+    ],
+    "answer": "x \\in \\left[-\\dfrac{1}{2}, \\dfrac{1}{2}\\right]",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_017",
+    "question": "2sin⁻¹x = sin⁻¹(2x√(1−x²)) holds when:",
+    "options": [
+      "x \\in [-1, 1]",
+      "x \\in \\left[-\\dfrac{1}{\\sqrt{2}},\\, \\dfrac{1}{\\sqrt{2}}\\right]",
+      "x \\in [0, 1]",
+      "x \\in \\mathbb{R}"
+    ],
+    "answer": "x \\in \\left[-\\dfrac{1}{\\sqrt{2}},\\, \\dfrac{1}{\\sqrt{2}}\\right]",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_018",
+    "question": "If tan⁻¹x + tan⁻¹y = π/2, then xy equals:",
+    "options": [
+      "0",
+      "-1",
+      "\\dfrac{1}{2}",
+      "1"
+    ],
+    "answer": "1",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_019",
+    "question": "sin⁻¹x expressed as tan⁻¹ is:",
+    "options": [
+      "\\tan^{-1}\\!\\left(\\dfrac{x}{1+x^2}\\right)",
+      "\\tan^{-1}\\!\\left(\\dfrac{\\sqrt{1-x^2}}{x}\\right)",
+      "\\tan^{-1}\\!\\left(\\dfrac{x}{\\sqrt{1-x^2}}\\right)",
+      "\\tan^{-1}\\!\\left(\\dfrac{1-x^2}{x}\\right)"
+    ],
+    "answer": "\\tan^{-1}\\!\\left(\\dfrac{x}{\\sqrt{1-x^2}}\\right)",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_020",
+    "question": "If tan⁻¹x + tan⁻¹y + tan⁻¹z = π/2, then which relation holds?",
+    "options": [
+      "x + y + z = xyz",
+      "xy + yz + zx = 0",
+      "xy + yz + zx = 1",
+      "xyz = 1"
+    ],
+    "answer": "xy + yz + zx = 1",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_021",
+    "question": "The range of cot⁻¹x is:",
+    "options": [
+      "\\left(-\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}\\right)",
+      "[0, \\pi]",
+      "(0, \\pi)",
+      "\\left[0, \\dfrac{\\pi}{2}\\right)"
+    ],
+    "answer": "(0, \\pi)",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "cot⁻¹ has open endpoints. cos⁻¹ has closed endpoints [0, π]. Don't mix these."
+  },
+  {
+    "id": "itf_qn_022",
+    "question": "sec⁻¹(−x) equals:",
+    "options": [
+      "-\\sec^{-1} x",
+      "\\pi + \\sec^{-1} x",
+      "\\dfrac{\\pi}{2} - \\sec^{-1} x",
+      "\\pi - \\sec^{-1} x"
+    ],
+    "answer": "\\pi - \\sec^{-1} x",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_023",
+    "question": "cos⁻¹x + cos⁻¹y = cos⁻¹(xy − √(1−x²)√(1−y²)) when:",
+    "options": [
+      "x + y \\geq 0",
+      "x + y < 0",
+      "xy \\geq 1",
+      "x, y \\in (0,1)"
+    ],
+    "answer": "x + y \\geq 0",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_027",
+    "question": "If cos⁻¹x + cos⁻¹y + cos⁻¹z = π, then x² + y² + z² + 2xyz equals:",
+    "options": [
+      "0",
+      "3",
+      "2",
+      "1"
+    ],
+    "answer": "1",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "easy",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_025",
+    "question": "tan⁻¹x − tan⁻¹y equals (when xy > −1):",
+    "options": [
+      "\\tan^{-1}\\!\\left(\\dfrac{x+y}{1-xy}\\right)",
+      "\\tan^{-1}\\!\\left(\\dfrac{x-y}{1-xy}\\right)",
+      "\\tan^{-1}\\!\\left(\\dfrac{x-y}{1+xy}\\right)",
+      "\\tan^{-1}\\!\\left(\\dfrac{x+y}{1+xy}\\right)"
+    ],
+    "answer": "\\tan^{-1}\\!\\left(\\dfrac{x-y}{1+xy}\\right)",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_026",
+    "question": "3cos⁻¹x = cos⁻¹(4x³ − 3x) holds for:",
+    "options": [
+      "x \\in [-1, 1]",
+      "x \\in \\left[\\dfrac{1}{2}, 1\\right]",
+      "x \\in \\left[-\\dfrac{1}{2}, \\dfrac{1}{2}\\right]",
+      "x \\in [0, 1]"
+    ],
+    "answer": "x \\in \\left[\\dfrac{1}{2}, 1\\right]",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "3sin⁻¹ holds for |x| ≤ 1/2. 3cos⁻¹ holds for x ∈ [1/2, 1]. Different domains — a common confusion."
+  },
+  {
+    "id": "itf_qn_024",
+    "question": "If cos⁻¹(x/a) + cos⁻¹(y/b) = θ, then which identity holds?",
+    "options": [
+      "\\dfrac{x^2}{a^2} + \\dfrac{2xy}{ab}\\cos\\theta + \\dfrac{y^2}{b^2} = \\sin^2\\theta",
+      "\\dfrac{x^2}{a^2} - \\dfrac{2xy}{ab}\\cos\\theta + \\dfrac{y^2}{b^2} = \\sin^2\\theta",
+      "\\dfrac{x^2}{a^2} + \\dfrac{y^2}{b^2} = \\sin^2\\theta",
+      "\\dfrac{x^2}{a^2} - \\dfrac{y^2}{b^2} = \\cos^2\\theta"
+    ],
+    "answer": "\\dfrac{x^2}{a^2} - \\dfrac{2xy}{ab}\\cos\\theta + \\dfrac{y^2}{b^2} = \\sin^2\\theta",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": "The middle term has − cos θ (not + cos θ). The RHS is sin²θ (not cos²θ). Both sign traps appear in options."
+  },
+  {
+    "id": "itf_qn_028",
+    "question": "2tan⁻¹x expressed as tan⁻¹ is:",
+    "options": [
+      "\\tan^{-1}\\!\\left(\\dfrac{2x}{1+x^2}\\right)",
+      "\\tan^{-1}\\!\\left(\\dfrac{x}{1-x^2}\\right)",
+      "\\tan^{-1}\\!\\left(\\dfrac{2x}{1-x^2}\\right)",
+      "\\tan^{-1}\\!\\left(\\dfrac{1-x^2}{2x}\\right)"
+    ],
+    "answer": "\\tan^{-1}\\!\\left(\\dfrac{2x}{1-x^2}\\right)",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_029",
+    "question": "If tan⁻¹x + tan⁻¹y + tan⁻¹z = π, then x + y + z equals:",
+    "options": [
+      "0",
+      "xyz",
+      "1",
+      "xy + yz + zx"
+    ],
+    "answer": "xyz",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "medium",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  },
+  {
+    "id": "itf_qn_030",
+    "question": "If sin⁻¹x + sin⁻¹y + sin⁻¹z = π, then x√(1−x²) + y√(1−y²) + z√(1−z²) equals:",
+    "options": [
+      "0",
+      "xyz",
+      "2xyz",
+      "x + y + z"
+    ],
+    "answer": "2xyz",
+    "tags": {
+      "chapter": "Inverse Trigonometric Functions",
+      "difficulty": "god",
+      "class": "12"
+    },
+    "image": null,
+    "tip": null
+  }
+]

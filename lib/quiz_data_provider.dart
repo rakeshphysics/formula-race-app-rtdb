@@ -82,6 +82,18 @@ class QuizDataProvider extends ChangeNotifier {
       'assets/formulas/12/functions.aes',
       'assets/formulas/11/complex_numbers.aes',
       'assets/formulas/11/binomial_theorem.aes',
+      'assets/formulas/11/trigonometry.aes',
+      'assets/formulas/11/straight_lines.aes',
+      'assets/formulas/11/limits.aes',
+      'assets/formulas/11/statistics.aes',
+      'assets/formulas/12/sets_and_relations.aes',
+      'assets/formulas/12/matrices.aes',
+      'assets/formulas/12/determinants.aes',
+      'assets/formulas/12/inverse_trigonometric_functions.aes',
+      'assets/formulas/12/differentiation.aes',
+      'assets/formulas/12/differential_equations.aes',
+      'assets/formulas/12/area_under_curves.aes',
+      'assets/formulas/12/application_of_derivatives.aes',
 
     ];
 
