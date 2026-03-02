@@ -3459,7 +3459,7 @@
     },
     {
       "id": "binomial_thm_qn_012",
-      "question": "The term independent of x in the expansion of \\left(x + \\dfrac{1}{x}\\right)^{2n} is:",
+      "question": "The term independent of x in the expansion of (x + 1/x)<sup>2n</sup> is:",
       "options": [
         "{}^{2n}C_n",
         "{}^{2n}C_{n-1}",
@@ -3603,7 +3603,7 @@
     },
     {
       "id": "binomial_thm_qn_020",
-      "question": "In the expansion of \\left(ax^p + \\dfrac{b}{x^q}\\right)^n, the term independent of x occurs at r =",
+      "question": "In the expansion of (ax<sup>p</sup> + b/x<sup>q</sup>)<sup>n</sup>, the term independent of x occurs at r =",
       "options": [
         "\\dfrac{np}{p+q}",
         "\\dfrac{nq}{p+q}",

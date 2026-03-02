@@ -946,7 +946,7 @@ class _SoloScreenState extends State<SoloScreen> with SingleTickerProviderStateM
     }
 
     final question = questions[currentIndex];
-    final List<String> mathChapters = ['Definite Integrals', 'Indefinite Integrals'];
+    final List<String> mathChapters = ['Definite Integrals', 'Indefinite Integrals','Sequence and Series','Limits'];
     final List<String> mathSubjects = ['Maths'];
 
     String currentQnChapter = (question['tags']?['chapter'] ?? '').toString();

@@ -241,7 +241,7 @@ class _ResultScreenState extends State<ResultScreen> {
                         final wrongAnswer = widget.incorrectAnswers[index];
                         final String currentChapter = (wrongAnswer.tags?['chapter'] ?? '').toString();
 
-                        final List<String> mathChapters = ['Definite Integrals', 'Indefinite Integrals'];
+                        final List<String> mathChapters = ['Definite Integrals', 'Indefinite Integrals','Sequence and Series','Limits'];
                         final bool useMathTex = mathChapters.contains(currentChapter.trim());
 
                         return Container(

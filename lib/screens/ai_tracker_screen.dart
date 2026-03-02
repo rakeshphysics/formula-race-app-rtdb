@@ -938,7 +938,7 @@ class _AITrackerScreenState extends State<AITrackerScreen> with SingleTickerProv
   Widget _buildSubjectList(String subject, double screenWidth, double screenHeight) {
     var mistakes = subjectMistakes[subject] ?? {};
 
-    final List<String> mathChapters = ['Definite Integrals', 'Indefinite Integrals'];
+    final List<String> mathChapters = ['Definite Integrals', 'Indefinite Integrals','Sequence and Series','Limits'];
     final List<String> mathSubjects = ['Maths'];
 
 

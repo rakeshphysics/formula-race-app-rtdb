@@ -160,7 +160,7 @@ class _ClearMistakesScreenState extends State<ClearMistakesScreen> with SingleTi
     }
 
     final question = questions[currentIndex];
-    final List<String> mathChapters = ['Definite Integrals', 'Indefinite Integrals'];
+    final List<String> mathChapters = ['Definite Integrals', 'Indefinite Integrals','Sequence and Series','Limits'];
 // Extract chapter from the tags map of the current question
     final String currentChapter = (question['tags']?['chapter'] ?? '').toString();
     final bool useMathTex = mathChapters.contains(currentChapter.trim());
